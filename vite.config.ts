@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/toujou-chip/toujou-chip.ts',
+      entry: 'src/toujou-example/toujou-example.ts',
       formats: ['es']
     },
     rollupOptions: {

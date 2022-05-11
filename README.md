@@ -1,13 +1,14 @@
 # TOUJOU 2.0 STORYBOOK
 
-## Open-wc Starter App
+This project with build using [VITEJS](https://vitejs.dev/).
 
-[![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
+We also use [Storybook](https://storybook.js.org/)
 
 ## Scripts
 
-- `start` runs your app for development, reloading on file changes
-- `start:build` runs your app after it has been built using the build command
-- `build` builds your app and outputs it in your `dist` directory
-- `test` runs your test suite with Web Test Runner
-- `lint` runs the linter for your project
+- `npm run dev` runs the app (`index.html` file) in dev mode, which import the `.ts` files, hast Hot Module Replacement, ...
+- `npm run build` build the project files
+- `npm run storybook` opens a Storybook instance where you can see all the components
+- `npm run build-storybook` build the project files so they can be displayed on Storybook
+
+## How to create a new component
