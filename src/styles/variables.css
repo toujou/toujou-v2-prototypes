@@ -1,0 +1,12 @@
+:root {
+    --color-primary: tomato;
+    --color-secondary: blue;
+    --color-font: grey;
+    --color-bg: white;
+
+    --spacing-normal: 1rem;
+    --spacing-s: .5rem;
+
+    --border-radius-normal: .25rem;
+    --border-radius-s: .125rem;
+}

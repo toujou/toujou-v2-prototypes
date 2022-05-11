@@ -13,7 +13,7 @@ export class ToujouExample extends LitElement {
   `
 
     render() {
-        return html`<h1><slot></slot></h1>`
+        return html`<h4><slot></slot></h4>`
     }
 }
 
