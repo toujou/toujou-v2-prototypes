@@ -1,7 +1,13 @@
 :root {
-    --color-primary: tomato;
-    --color-secondary: blue;
-    --color-font: grey;
+    --color-primary: #0079A8;
+    --color-primary-light: #75E3FF;
+    --color-primary-dark: #4BB7D2;
+    --color-secondary: #D32E5E;
+    --color-secondary-light: #E06C8E;
+    --color-secondary-dark: #531225;
+    --color-font: #546e7a;
+    --color-font-light: #b7c6cd;
+    --color-font-dark: #263238;
     --color-bg: white;
 
     --spacing-normal: 1rem;
