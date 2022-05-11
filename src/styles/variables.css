@@ -10,8 +10,22 @@
     --color-font-dark: #263238;
     --color-bg: white;
 
+    --spacing-xl: 3rem;
+    --spacing-l: 2rem;
+    --spacing-m: 1.5rem;
     --spacing-normal: 1rem;
     --spacing-s: .5rem;
+    --spacing-xs: .25rem;
+
+    --font-size-xxxl: 3.5rem;       /* 56px */
+    --font-size-xxl: 2.75rem;       /* 44px */
+    --font-size-xl: 2rem;           /* 32px */
+    --font-size-l: 1.625rem;        /* 26px */
+    --font-size-m: 1.5rem;          /* 24px */
+    --font-size-ms: 1.25rem;        /* 20px */
+    --font-size-normal: 1rem;       /* 16px */
+    --font-size-s: .875rem;         /* 14px */
+    --font-size-xs: .75rem;         /* 12px */
 
     --border-radius-normal: .25rem;
     --border-radius-s: .125rem;
