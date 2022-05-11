@@ -1,7 +1,7 @@
 .button {
-    border: none;
     padding: var(--spacing-s) var(--spacing-normal);
     border-radius: var(--border-radius-normal);
+    border: 1px solid transparent;
     cursor: pointer;
 }
 
@@ -47,6 +47,7 @@
     background-color: var(--color-font-light);
     color: var(--color-font-dark);
     opacity: .5;
+    border: 1px solid transparent !important;
 }
 
 @media (hover: hover) {

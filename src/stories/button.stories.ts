@@ -4,8 +4,10 @@ export default {
     title: 'Toujou/Button',
     argTypes: {
         buttonType: {
-            name: 'Button type (accepted: "primary", "secondary", "font")',
-            type: 'string',
+            name: 'Button type',
+            options: ['primary', 'secondary', 'font'],
+            control: { type: 'radio' },
+            defaultValue: ['primary']
         },
         isShadow: {
             name: 'Shadow button',
