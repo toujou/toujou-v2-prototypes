@@ -1,0 +1,20 @@
+* {
+    font-family: var(--font-family-roboto);
+}
+
+p,
+ul,
+ol,
+a {
+    color: var(--color-font);
+}
+
+a:focus {
+    color: var(--color-primary);
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: var(--color-primary);
+    }
+}

@@ -1,4 +1,5 @@
-import "../src/toujou-example/toujou-example";
+import "../src/components/toujou-example/toujou-example";
+import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/styles/globalStyles.css";
 
 export const parameters = {
@@ -9,4 +10,5 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }

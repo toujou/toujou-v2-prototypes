@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/web-components';
 
 export default {
-    title: 'Toujou/Button',
+    title: 'HTML/Button',
     argTypes: {
         buttonType: {
             name: 'Button type',

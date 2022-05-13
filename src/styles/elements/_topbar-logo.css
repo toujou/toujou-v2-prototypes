@@ -1,0 +1,16 @@
+.topbar-logo {
+    vertical-align: middle;;
+    width: auto;
+}
+
+.topbar-logo--small {
+    height: var(--topbar-logo-size-small);
+}
+
+.topbar-logo--medium {
+    height: var(--topbar-logo-size-medium);
+}
+
+.topbar-logo--large {
+    height: var(--topbar-logo-size-large);
+}

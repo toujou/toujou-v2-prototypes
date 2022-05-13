@@ -1,0 +1,58 @@
+.service-nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-normal);
+    opacity: .75;
+}
+
+.toujou-topbar[logo-position="right"] .service-nav {
+    justify-content: flex-start;
+}
+
+.service-nav__link {
+    text-decoration: none;
+    padding: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-s);
+    font-size: var(--font-size-s);
+}
+
+.service-nav__link-icon {
+    display: block;
+    height: var(--topbar-service-nav-icon-size);
+    width: var(--topbar-service-nav-icon-size);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-color: var(--color-font);
+}
+
+.service-nav__link-icon--account {
+    mask-image: var(--icon-acount);
+    -webkit-mask-image: var(--icon-acount);
+}
+
+.service-nav__link-icon--heart {
+    mask-image: var(--icon-heart);
+    -webkit-mask-image: var(--icon-heart);
+}
+
+.service-nav__link-icon--downloads {
+    mask-image: var(--icon-download);
+    -webkit-mask-image: var(--icon-download);
+}
+
+@media (hover: hover) {
+    .service-nav__link:hover .service-nav__link-icon {
+        background-color: var(--color-primary);
+    }
+}

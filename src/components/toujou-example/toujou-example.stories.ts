@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/web-components';
 
 export default {
-    title: 'Toujou/Example',
+    title: 'WEBCOMPONENTS/Example',
 } as Meta;
 
 const Template = (args) => {
