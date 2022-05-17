@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #0079A8;
-    --color-primary-light: #75E3FF;
-    --color-primary-dark: #4BB7D2;
-    --color-secondary: #D32E5E;
-    --color-secondary-light: #E06C8E;
-    --color-secondary-dark: #531225;
+    --color-primary: #8E44AD;
+    --color-primary-light: #af5dd2;
+    --color-primary-dark: #6f2588;
+    --color-secondary: #16A085;
+    --color-secondary-light: #3bc0a7;
+    --color-secondary-dark: #027c67;
     --color-font: #546e7a;
     --color-font-light: #b7c6cd;
     --color-font-dark: #263238;
@@ -39,9 +39,9 @@
 
     /* TOPBAR */
     --topbar-border-width: 2px;
-    --topbar-logo-size-small: 64px;
-    --topbar-logo-size-medium: 80px;
-    --topbar-logo-size-large: 96px;
+    --topbar-logo-size-small: 48px;
+    --topbar-logo-size-medium: 64px;
+    --topbar-logo-size-large: 80px;
     --topbar-service-nav-icon-size: 1.25rem;
     --topbar-box-shadow:
         0.3px 0.5px 0.7px var(--color-shadow),

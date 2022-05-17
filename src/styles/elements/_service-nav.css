@@ -51,6 +51,14 @@
     -webkit-mask-image: var(--icon-download);
 }
 
+.toujou-topbar.toujou-topbar--service-navbar-icons-only .service-nav__link-text {
+    display: none;
+}
+
+.toujou-topbar.toujou-topbar--service-navbar-text-only .service-nav__link-icon {
+    display: none;
+}
+
 @media (hover: hover) {
     .service-nav__link:hover .service-nav__link-icon {
         background-color: var(--color-primary);

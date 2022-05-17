@@ -11,10 +11,10 @@ export class ToujouTopbar extends LitElement {
             <div class="logo">
                 <slot name="topbar-logo"></slot>
             </div>
-            <div class="main-nav">
+            <div class="main-navbar">
                 <slot name="topbar-main-nav"></slot>
             </div>
-            <div class="service-nav">
+            <div class="service-navbar">
                 <slot name="topbar-service-nav"></slot>
             </div>
         `

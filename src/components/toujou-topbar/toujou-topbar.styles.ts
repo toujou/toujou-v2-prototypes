@@ -7,7 +7,7 @@ export const toujouTopbarStyles = css`
     gap: var(--spacing-s) var(--spacing-normal);
     width: 100%;
     background-color: var(--color-bg);
-    padding: var(--spacing-normal);
+    padding: var(--spacing-s) var(--spacing-normal);
   }
 
   :host([logo-position="left"]) {
@@ -34,14 +34,20 @@ export const toujouTopbarStyles = css`
   }
 
   .logo {
-    grid-area: logo
+    grid-area: logo;
+    display: flex;
+    align-items: center;
   }
   
-  .main-nav {
+  .main-navbar {
     grid-area: mainnav;
   }
   
-  .service-nav {
+  .service-navbar {
     grid-area: servicenav;
+  }
+
+  :host([service-navbar-visible="false"])  .service-navbar {
+    display: none;
   }
 `;
