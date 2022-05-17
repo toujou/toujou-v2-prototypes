@@ -48,7 +48,7 @@ const Template = (args) => {
         toujou-topbar
         ${args.hasBorderBottom ? 'toujou-topbar--has-border-bottom' : ''}
         ${args.hasBottomShadow ? 'toujou-topbar--has-bottom-shadow' : ''}
-        toujou-topbar--service-navbar-${args.serviceNavStyle.replace(/\s+/g, '-').toLowerCase()}
+        toujou-topbar--service-navbarbar-${args.serviceNavStyle.replace(/\s+/g, '-').toLowerCase()}
         toujou-topbar--logo-size-${args.logoSize}
     `;
 
@@ -61,29 +61,63 @@ const Template = (args) => {
             }
         </style>
         
-        <toujou-topbar class="${elClasses}" logo-position="${args.logoPosition}" service-navbar-visible="${args.hideServiceNavbar}">
+        <toujou-topbar class="${elClasses}" logo-position="${args.logoPosition}" service-navbarbar-visible="${args.hideServiceNavbar}">
             <img slot="topbar-logo" src="${logoImage}" alt="logo" class="topbar-logo topbar-logo--${args.logoSize}">
     
-            <nav slot="topbar-main-nav" class="main-nav">
-                <ul class="main-nav__list main-nav__list--first-level">
-                    <li class="main-nav__item">Fruit</li>
-                    <li class="main-nav__item">Veggies</li>
-                    <li class="main-nav__item">Cereals</li>
+            <nav slot="topbar-main-navbar" class="main-navbar">
+                <ul class="main-navbar__list main-navbar__list--first-level">
+                    <li class="main-navbar__item main-navbar__item--has-subnav">
+                        <span class="main-navbar__item-text">Fruit</span>
+                        <ul class="main-navbar__list main-navbar__list--second-level">
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Apple</span>
+                            </li>
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Banana</span>
+                            </li>
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Ananas</span>
+                            </li>
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Peach</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-navbar__item main-navbar__item--has-subnav">
+                        <span class="main-navbar__item-text">Veggies</span>
+                        <ul class="main-navbar__list main-navbar__list--second-level">
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Carrot</span>
+                            </li>
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Potato</span>
+                            </li>
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Pumpkin</span>
+                            </li>
+                            <li class="main-navbar__item">
+                                <span class="main-navbar__item-text">Peach</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-navbar__item">
+                        <span class="main-navbar__item-text">Cereals</span>
+                    </li>
                 </ul>
             </nav>
             
-            <nav slot="topbar-service-nav" class="service-nav">
-                <a href="#" class="service-nav__link">
-                    <span class="service-nav__link-icon service-nav__link-icon--account"></span>
-                    <span class="service-nav__link-text">Account</span>
+            <nav slot="topbar-service-navbar" class="service-navbar">
+                <a href="#" class="service-navbar__link">
+                    <span class="service-navbar__link-icon service-navbar__link-icon--account"></span>
+                    <span class="service-navbar__link-text">Account</span>
                 </a>
-                <a href="#" class="service-nav__link">
-                    <span class="service-nav__link-icon service-nav__link-icon--heart"></span>
-                    <span class="service-nav__link-text">Heart</span>
+                <a href="#" class="service-navbar__link">
+                    <span class="service-navbar__link-icon service-navbar__link-icon--heart"></span>
+                    <span class="service-navbar__link-text">Heart</span>
                 </a>
-                <a href="#" class="service-nav__link">
-                    <span class="service-nav__link-icon service-nav__link-icon--downloads"></span>
-                    <span class="service-nav__link-text">Downloads</span>
+                <a href="#" class="service-navbar__link">
+                    <span class="service-navbar__link-icon service-navbar__link-icon--downloads"></span>
+                    <span class="service-navbar__link-text">Downloads</span>
                 </a>
             </nav>
         </toujou-topbar>

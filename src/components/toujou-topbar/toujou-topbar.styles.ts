@@ -2,6 +2,7 @@ import { css } from "lit";
 
 export const toujouTopbarStyles = css`
   :host {
+    position: relative;
     display: grid;
     grid-template-rows: auto 1fr;
     gap: var(--spacing-s) var(--spacing-normal);

@@ -1,4 +1,4 @@
-.service-nav {
+.service-navbar {
     padding: 0;
     margin: 0;
     display: flex;
@@ -9,11 +9,11 @@
     opacity: .75;
 }
 
-.toujou-topbar[logo-position="right"] .service-nav {
+.toujou-topbar[logo-position="right"] .service-navbar {
     justify-content: flex-start;
 }
 
-.service-nav__link {
+.service-navbar__link {
     text-decoration: none;
     padding: var(--spacing-xs);
     display: flex;
@@ -23,10 +23,10 @@
     font-size: var(--font-size-s);
 }
 
-.service-nav__link-icon {
+.service-navbar__link-icon {
     display: block;
-    height: var(--topbar-service-nav-icon-size);
-    width: var(--topbar-service-nav-icon-size);
+    height: var(--topbar-service-navbar-icon-size);
+    width: var(--topbar-service-navbar-icon-size);
     mask-position: center;
     -webkit-mask-position: center;
     mask-size: contain;
@@ -36,31 +36,31 @@
     background-color: var(--color-font);
 }
 
-.service-nav__link-icon--account {
+.service-navbar__link-icon--account {
     mask-image: var(--icon-acount);
     -webkit-mask-image: var(--icon-acount);
 }
 
-.service-nav__link-icon--heart {
+.service-navbar__link-icon--heart {
     mask-image: var(--icon-heart);
     -webkit-mask-image: var(--icon-heart);
 }
 
-.service-nav__link-icon--downloads {
+.service-navbar__link-icon--downloads {
     mask-image: var(--icon-download);
     -webkit-mask-image: var(--icon-download);
 }
 
-.toujou-topbar.toujou-topbar--service-navbar-icons-only .service-nav__link-text {
+.toujou-topbar.toujou-topbar--service-navbarbar-icons-only .service-navbar__link-text {
     display: none;
 }
 
-.toujou-topbar.toujou-topbar--service-navbar-text-only .service-nav__link-icon {
+.toujou-topbar.toujou-topbar--service-navbarbar-text-only .service-navbar__link-icon {
     display: none;
 }
 
 @media (hover: hover) {
-    .service-nav__link:hover .service-nav__link-icon {
+    .service-navbar__link:hover .service-navbar__link-icon {
         background-color: var(--color-primary);
     }
 }

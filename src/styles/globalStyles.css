@@ -2,8 +2,8 @@
 @import './elements/_fonts.css';
 @import './elements/_type.css';
 @import './elements/_button.css';
-@import './elements/_main-nav.css';
-@import './elements/_service-nav.css';
+@import './elements/_main-navbar.css';
+@import './elements/_service-navbar.css';
 @import './elements/_topbar-logo.css';
 
 * {
