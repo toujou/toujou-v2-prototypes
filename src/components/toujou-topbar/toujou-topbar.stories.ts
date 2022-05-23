@@ -1,4 +1,5 @@
 import { Meta } from '@storybook/web-components';
+// @ts-ignore
 import logoImage from './../../assets/logoipsum.svg';
 
 export default {
@@ -43,8 +44,7 @@ export default {
     }
 } as Meta;
 
-const Template = (args) => {
-    console.log('XXXX', args);
+const Template = (args: { hasBorderBottom: boolean; hasBottomShadow: boolean; serviceNavStyle: string; logoSize: string; logoPosition: string; showServiceNavbar: boolean; }) => {
     const elClasses = `
         toujou-topbar
         ${args.hasBorderBottom ? 'toujou-topbar--has-border-bottom' : ''}
@@ -127,6 +127,7 @@ const Template = (args) => {
 
 export const ToujouTopbar = Template.bind({});
 
+// @ts-ignore
 ToujouTopbar.args = {
     logoPosition: 'left',
     logoSize: 'small',
@@ -135,4 +136,3 @@ ToujouTopbar.args = {
     hasBorderBottom: false,
     hasBottomShadow: false,
 }
-
