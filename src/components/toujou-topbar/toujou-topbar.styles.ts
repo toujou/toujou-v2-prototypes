@@ -8,7 +8,7 @@ export const toujouTopbarStyles = css`
     gap: var(--spacing-s) var(--spacing-normal);
     width: 100%;
     background-color: var(--color-bg);
-    padding: var(--spacing-s) var(--spacing-normal);
+    padding: var(--spacing-s) var(--spacing-normal) 0 var(--spacing-normal);
   }
 
   :host([logo-position="left"]) {
@@ -26,6 +26,12 @@ export const toujouTopbarStyles = css`
         "mainnav logo";
   }
 
+  :host([logo-position="center"]) {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "mainnav logo servicenav";
+    gap: 0 var(--spacing-normal);
+  }
+
   :host(.toujou-topbar--has-border-bottom) {
     border-bottom: var(--topbar-border-width) solid var(--color-primary);
   }
@@ -38,6 +44,7 @@ export const toujouTopbarStyles = css`
     grid-area: logo;
     display: flex;
     align-items: center;
+    padding: var(--spacing-s);
   }
   
   .main-navbar {

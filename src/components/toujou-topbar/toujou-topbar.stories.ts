@@ -6,7 +6,7 @@ export default {
     argTypes: {
         logoPosition: {
             name: 'Logo position',
-            options: ['right', 'left'],
+            options: ['right', 'left', 'center'],
             control: { type: 'radio' },
             defaultValue: ['right'],
             required: true,
@@ -44,6 +44,7 @@ export default {
 } as Meta;
 
 const Template = (args) => {
+    console.log('XXXX', args);
     const elClasses = `
         toujou-topbar
         ${args.hasBorderBottom ? 'toujou-topbar--has-border-bottom' : ''}
@@ -61,7 +62,7 @@ const Template = (args) => {
             }
         </style>
         
-        <toujou-topbar class="${elClasses}" logo-position="${args.logoPosition}" service-navbarbar-visible="${args.hideServiceNavbar}">
+        <toujou-topbar class="${elClasses}" logo-position="${args.logoPosition}" service-navbar-visible="${args.showServiceNavbar}">
             <img slot="topbar-logo" src="${logoImage}" alt="logo" class="topbar-logo topbar-logo--${args.logoSize}">
     
             <nav slot="topbar-main-navbar" class="main-navbar">
@@ -127,9 +128,9 @@ const Template = (args) => {
 export const ToujouTopbar = Template.bind({});
 
 ToujouTopbar.args = {
-    logoPosition: 'right',
+    logoPosition: 'left',
     logoSize: 'small',
-    hideServiceNavbar: true,
+    showServiceNavbar: true,
     serviceNavStyle: 'Both',
     hasBorderBottom: false,
     hasBottomShadow: false,

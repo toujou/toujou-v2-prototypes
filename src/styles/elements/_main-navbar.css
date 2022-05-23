@@ -18,13 +18,18 @@
     gap: var(--spacing-normal);
 }
 
-.toujou-topbar[logo-position="right"] .main-navbar {
+.toujou-topbar[logo-position="right"] .main-navbar,
+.toujou-topbar[logo-position="center"] .main-navbar {
     padding-right: 0;
     justify-content: flex-start;
 }
 
 .main-navbar__item {
     cursor: pointer;
+}
+
+.main-navbar__list--first-level > .main-navbar__item {
+    padding-bottom: var(--spacing-s);
 }
 
 .main-navbar__item-text {
@@ -55,8 +60,14 @@
     right: 0;
     width: 100%;
     background-color: var(--color-bg);
-    transform: translateY(calc(var(--spacing-s) * -1));
+    transform: translateY(calc(var(--spacing-s) * -1) + var(--spacing-s));
     padding: var(--spacing-s) var(--spacing-normal);
+    border-top: 1px solid var(--color-primary);
+}
+
+.toujou-topbar[logo-position="right"] .main-navbar__list--second-level,
+.toujou-topbar[logo-position="center"] .main-navbar__list--second-level {
+    justify-content: flex-start;
 }
 
 .main-navbar__list--second-level {
