@@ -13,38 +13,68 @@ export default {
     },
     argTypes: {
         logoPosition: {
+            table: {
+                category: "Topbar logo",
+                defaultValue: { summary: 'left' },
+            },
             name: 'Logo position',
+            description: "Rearrange the topbar layout by setting the logo's position",
             options: ['right', 'left', 'center'],
             control: { type: 'radio' },
             defaultValue: ['right'],
             required: true,
         },
         logoSize: {
+            table: {
+                category: "Topbar logo",
+                defaultValue: { summary: 'small' },
+            },
             name: 'Logo size',
+            description: 'Change the logo size, which in turn will also automatically change the topbar height',
             options: ['small', 'medium', 'large'],
             control: { type: 'radio' },
             defaultValue: ['small'],
             required: true,
         },
         showServiceNavbar: {
+            table: {
+                category: "Service navigation",
+                defaultValue: { summary: 'true' },
+            },
             name: 'Show service navbar',
+            description: 'Set the service bar visibility',
             type: 'boolean',
             required: true,
         },
         serviceNavStyle: {
+            table: {
+                category: "Service navigation",
+                defaultValue: { summary: 'both' },
+            },
             name: 'Service nav style',
+            description: 'Choose the type of service bar link by combining the icons / text as you see fit',
             options: ['Both', 'Icons only', 'Text only'],
             control: { type: 'radio' },
             defaultValue: ['Both'],
             required: true,
         },
         hasBorderBottom: {
+            table: {
+                category: "Topbar bottom",
+                defaultValue: { summary: 'false' },
+            },
             name: 'Border bottom',
+            description: 'Toggle a (primary color) border at the bottom of the topbar',
             type: 'boolean',
             required: true,
         },
         hasBottomShadow: {
+            table: {
+                category: "Topbar bottom",
+                defaultValue: { summary: 'true' },
+            },
             name: 'Bottom shadow',
+            description: 'Toggle a shadow under the topbar',
             type: 'boolean',
             required: true,
         },
@@ -141,5 +171,5 @@ ToujouTopbar.args = {
     showServiceNavbar: true,
     serviceNavStyle: 'Both',
     hasBorderBottom: false,
-    hasBottomShadow: false,
+    hasBottomShadow: true,
 }

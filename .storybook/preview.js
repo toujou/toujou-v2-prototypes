@@ -8,6 +8,7 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+    expanded: true,
   },
   // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }
