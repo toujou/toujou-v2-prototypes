@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: var(--spacing-normal);
-    opacity: .75;
+    opacity: 1;
 }
 
 .toujou-topbar[logo-position="right"] .service-navbar {

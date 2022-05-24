@@ -91,7 +91,7 @@ const Template = (args: { hasBorderBottom: boolean; hasBottomShadow: boolean; se
     `;
 
     return `
-        <style>
+        <style>       
             body {
                 background-color: #ECF0F1;
                 padding: 0 !important;
@@ -102,7 +102,7 @@ const Template = (args: { hasBorderBottom: boolean; hasBottomShadow: boolean; se
         <toujou-topbar class="${elClasses}" logo-position="${args.logoPosition}" service-navbar-visible="${args.showServiceNavbar}">
             <img slot="topbar-logo" src="${logoImage}" alt="logo" class="topbar-logo topbar-logo--${args.logoSize}">
     
-            <nav slot="topbar-main-navbar" class="main-navbar">
+            <nav slot="topbar-main-navbar" aria-label="Main navigation" class="main-navbar">
                 <ul class="main-navbar__list main-navbar__list--first-level">
                     <li class="main-navbar__item main-navbar__item--has-subnav">
                         <span class="main-navbar__item-text">Fruit</span>
@@ -144,7 +144,7 @@ const Template = (args: { hasBorderBottom: boolean; hasBottomShadow: boolean; se
                 </ul>
             </nav>
             
-            <nav slot="topbar-service-navbar" class="service-navbar">
+            <nav slot="topbar-service-navbar" aria-label="Service navigation" class="service-navbar">
                 <a href="#" class="service-navbar__link">
                     <span class="service-navbar__link-icon service-navbar__link-icon--account"></span>
                     <span class="service-navbar__link-text">Account</span>

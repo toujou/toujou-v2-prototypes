@@ -20,15 +20,15 @@
 
     --font-family-roboto: 'Roboto', sans-serif;
 
-    --font-size-xxxl: 3.5rem;       /* 56px */
-    --font-size-xxl: 2.75rem;       /* 44px */
-    --font-size-xl: 2rem;           /* 32px */
-    --font-size-l: 1.625rem;        /* 26px */
-    --font-size-m: 1.5rem;          /* 24px */
-    --font-size-ms: 1.25rem;        /* 20px */
-    --font-size-normal: 1rem;       /* 16px */
-    --font-size-s: .875rem;         /* 14px */
-    --font-size-xs: .75rem;         /* 12px */
+    --font-size-xxxl: 3.5rem; /* 56px */
+    --font-size-xxl: 2.75rem; /* 44px */
+    --font-size-xl: 2rem; /* 32px */
+    --font-size-l: 1.625rem; /* 26px */
+    --font-size-m: 1.5rem; /* 24px */
+    --font-size-ms: 1.25rem; /* 20px */
+    --font-size-normal: 1rem; /* 16px */
+    --font-size-s: .875rem; /* 14px */
+    --font-size-xs: .75rem; /* 12px */
 
     --border-radius-normal: .25rem;
     --border-radius-s: .125rem;
@@ -48,9 +48,8 @@
     --topbar-logo-size-large: 80px;
     --topbar-service-navbar-icon-size: 1.25rem;
     --topbar-main-navbar-chevron-size: 1.25rem;
-    --topbar-box-shadow:
-        0.3px 0.5px 0.7px var(--color-shadow),
-        0.8px 1.6px 2px -0.8px var(--color-shadow),
-        2.1px 4.1px 5.2px -1.7px var(--color-shadow),
-        5px 10px 12.6px -2.5px var(--color-shadow);
+    --topbar-box-shadow: 0.3px 0.5px 0.7px var(--color-shadow),
+    0.8px 1.6px 2px -0.8px var(--color-shadow),
+    2.1px 4.1px 5.2px -1.7px var(--color-shadow),
+    5px 10px 12.6px -2.5px var(--color-shadow);
 }
