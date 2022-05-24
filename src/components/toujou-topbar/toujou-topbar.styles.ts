@@ -27,8 +27,10 @@ export const toujouTopbarStyles = css`
   }
 
   :host([logo-position="center"]) {
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-areas: "mainnav logo servicenav";
+    grid-template-columns: 1fr 0;
+    grid-template-areas:
+            "logo servicenav"
+            "mainnav mainnav";
     gap: 0 var(--spacing-normal);
   }
 

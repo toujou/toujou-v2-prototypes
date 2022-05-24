@@ -1,4 +1,3 @@
-import "../src/components/toujou-example/toujou-example";
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/styles/globalStyles.css";
 

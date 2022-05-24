@@ -14,8 +14,9 @@
 }
 
 .toujou-topbar[logo-position="center"] .service-navbar {
-    height: 100%;
-    align-items: flex-end;
+    position: absolute;
+    top: var(--spacing-s);
+    right: var(--spacing-s);
 }
 
 .service-navbar__link {
@@ -30,6 +31,14 @@
 
 .toujou-topbar[logo-position="center"] .service-navbar__link {
     padding-bottom: 0;
+}
+
+.toujou-topbar[logo-position="right"] .service-navbar__link:first-child {
+    padding-left: 0;
+}
+
+.toujou-topbar[logo-position="left"] .service-navbar__link:last-child {
+    padding-right: 0;
 }
 
 .service-navbar__link-icon {
