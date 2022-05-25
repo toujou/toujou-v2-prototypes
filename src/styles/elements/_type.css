@@ -1,16 +1,144 @@
-* {
-    font-family: var(--font-family-roboto);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-headline);
+    font-weight: var(--font-weight-headline);
 }
 
 p,
 ul,
 ol,
 a {
+    font-family: var(--font-family-text);
     color: var(--color-font);
+    font-weight: var(--font-weight-text-normal);
 }
 
 a:focus {
     color: var(--color-primary);
+}
+
+.font-size-xxxxl {
+    font-size: var(--font-size-xxxxl);
+}
+
+.font-size-xxxl {
+    font-size: var(--font-size-xxxl);
+}
+
+.font-size-xxl {
+    font-size: var(--font-size-xxl);
+}
+
+.font-size-xl {
+    font-size: var(--font-size-xl);
+}
+
+.font-size-l {
+    font-size: var(--font-size-l);
+}
+
+.font-size-m {
+    font-size: var(--font-size-m);
+}
+
+.font-size-ms {
+    font-size: var(--font-size-ms);
+}
+
+.font-size-normal {
+    font-size: var(--font-size-normal);
+}
+
+.font-size-s {
+    font-size: var(--font-size-s);
+}
+
+.font-size-xs {
+    font-size: var(--font-size-xs);
+}
+
+.font-size-xxs {
+    font-size: var(--font-size-xxs);
+}
+
+.line-height-l {
+    line-height: var(--line-height-l);
+}
+
+.line-height-m {
+    line-height: var(--line-height-m);
+}
+
+.line-height-normal {
+    line-height: var(--line-height-normal);
+}
+
+.line-height-s {
+    line-height: var(--line-height-s);
+}
+
+.line-height-1 {
+    line-height: var(--line-height-1);
+}
+
+.font-family-text {
+    font-family: var(--font-family-text);
+}
+
+.font-family-headline {
+    font-family: var(--font-family-headline);
+}
+
+.font-weight-text-normal {
+    font-weight: var(--font-weight-text-normal);
+}
+
+.font-weight-text-bold {
+    font-weight: var(--font-weight-text-bold);
+}
+
+.font-weight-headline {
+    font-weight: var(--font-weight-headline);
+}
+
+.letter-spacing-l {
+    letter-spacing: var(--letter-spacing-l)
+}
+
+.letter-spacing-m {
+    letter-spacing: var(--letter-spacing-m)
+}
+
+.letter-spacing-normal {
+    letter-spacing: var(--letter-spacing-normal)
+}
+
+.letter-spacing-s {
+    letter-spacing: var(--letter-spacing-s)
+}
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.font-style-bold {
+    font-weight: var(--font-weight-text-bold);
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-style-strikethrough {
+    text-decoration: line-through;
+}
+
+.font-style-underline {
+    text-decoration: underline;
 }
 
 @media (hover: hover) {

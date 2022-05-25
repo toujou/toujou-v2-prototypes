@@ -1,0 +1,36 @@
+:root {
+    /* FONT FAMILIES */
+    --font-family-headline: 'Ubuntu', sans-serif;
+    --font-family-text: 'Mulish', sans-serif;
+
+    /* FONT WEIGHTS */
+    --font-weight-text-normal: 600;
+    --font-weight-text-bold: 800;
+    --font-weight-headline: 600;
+
+    /* FONT SIZE*/
+    --font-size-xxxxl: 3.875rem; /* 62px */
+    --font-size-xxxl: 3rem;      /* 48px */
+    --font-size-xxl: 2.5rem;     /* 40px */
+    --font-size-xl: 2rem;        /* 32px */
+    --font-size-l: 1.75rem;      /* 28px */
+    --font-size-m: 1.5rem;       /* 24px */
+    --font-size-ms: 1.25rem;     /* 20px */
+    --font-size-normal: 1rem;    /* 16px */
+    --font-size-s: .875rem;      /* 14px */
+    --font-size-xs: .75rem;      /* 12px */
+    --font-size-xxs: .625rem;    /* 10px */
+
+    /* LINE HEIGHTS */
+    --line-height-l: 2;
+    --line-height-m: 1.75;
+    --line-height-normal: 1.5;
+    --line-height-s: 1.25;
+    --line-height-reset: normal;
+
+    /* LETTER SPACING */
+    --letter-spacing-l: .150em;
+    --letter-spacing-m: .050em;
+    --letter-spacing-normal: normal;
+    --letter-spacing-s: -.025em;
+}
