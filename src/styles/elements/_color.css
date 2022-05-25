@@ -2,12 +2,52 @@
     background-color: hsl(var(--color-primary-h) var(--custom-color-s, var(--color-primary-s)) var(--custom-color-l, var(--color-primary-l)) / var(--custom-color-o, 100%));
 }
 
+.bg-color-primary-light {
+    background-color: hsl(var(--color-primary-light-h) var(--custom-color-s, var(--color-primary-light-s)) var(--custom-color-l, var(--color-primary-light-l)) / var(--custom-color-o, 100%));
+}
+
+.bg-color-primary-dark {
+    background-color: hsl(var(--color-primary-dark-h) var(--custom-color-s, var(--color-primary-dark-s)) var(--custom-color-l, var(--color-primary-dark-l)) / var(--custom-color-o, 100%));
+}
+
 .bg-color-secondary {
     background-color: hsl(var(--color-secondary-h) var(--custom-color-s, var(--color-secondary-s)) var(--custom-color-l, var(--color-secondary-l)) / var(--custom-color-o, 100%));
 }
 
+.bg-color-secondary-light {
+    background-color: hsl(var(--color-secondary-light-h) var(--custom-color-s, var(--color-secondary-light-s)) var(--custom-color-l, var(--color-secondary-light-l)) / var(--custom-color-o, 100%));
+}
+
+.bg-color-secondary-dark {
+    background-color: hsl(var(--color-secondary-dark-h) var(--custom-color-s, var(--color-secondary-dark-s)) var(--custom-color-l, var(--color-secondary-dark-l)) / var(--custom-color-o, 100%));
+}
+
 .bg-color-font {
     background-color: hsl(var(--color-font-h) var(--custom-color-s, var(--color-font-s)) var(--custom-color-l, var(--color-font-l)) / var(--custom-color-o, 100%));
+}
+
+.bg-color-font-light {
+    background-color: hsl(var(--color-font-light-h) var(--custom-color-s, var(--color-font-light-s)) var(--custom-color-l, var(--color-font-light-l)) / var(--custom-color-o, 100%));
+}
+
+.bg-color-font-dark {
+    background-color: hsl(var(--color-font-dark-h) var(--custom-color-s, var(--color-font-dark-s)) var(--custom-color-l, var(--color-font-dark-l)) / var(--custom-color-o, 100%));
+}
+
+.bg-color-bg {
+    background-color: var(--color-bg)
+}
+
+.bg-color-success {
+    background-color: var(--color-success);
+}
+
+.bg-color-warning {
+    background-color: var(--color-warning);
+}
+
+.bg-color-error {
+    background-color: var(--color-error)
 }
 
 .custom-color-o-100 { --custom-color-o: 100% }
