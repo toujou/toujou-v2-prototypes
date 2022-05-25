@@ -27,7 +27,7 @@ const FontFamiliesTemplate = () => {
 
 const FontSizeTemplate = () => {
     return `
-        <h1 class="tokens-demo__title">Type Tokens</h1>
+        <h1 class="tokens-demo__title">Type tokens</h1>
         
         <h2 class="tokens-demo__subtitle">Font sizes</h2>
         
@@ -48,9 +48,9 @@ const FontSizeTemplate = () => {
 
 const LineHeightTemplate = () => {
     return `
-        <h1 class="tokens-demo__title">Type Tokens</h1>
+        <h1 class="tokens-demo__title">Type tokens</h1>
         
-        <h2 class="tokens-demo__subtitle">Line Heights</h2>
+        <h2 class="tokens-demo__subtitle">Line heights</h2>
         
         <p class="line-height-l">
             <strong>This is line height l.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -73,7 +73,7 @@ const LineHeightTemplate = () => {
 
 const LetterSpacingTemplate = () => {
     return `
-        <h1 class="tokens-demo__title">Type Tokens</h1>
+        <h1 class="tokens-demo__title">Type tokens</h1>
         
         <h2 class="tokens-demo__subtitle">Letter spacing</h2>
         
@@ -86,9 +86,9 @@ const LetterSpacingTemplate = () => {
 
 const FontStylesTemplate = () => {
     return `
-        <h1 class="tokens-demo__title">Type Tokens</h1>
+        <h1 class="tokens-demo__title">Type tokens</h1>
         
-        <h2 class="tokens-demo__subtitle">Font Styles</h2>
+        <h2 class="tokens-demo__subtitle">Font styles</h2>
         
         <p class="font-style-normal">This is the normal font style</p>
         <p class="font-style-bold">This is the bold font style</p>

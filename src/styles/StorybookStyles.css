@@ -1,9 +1,9 @@
 @import 'variables/variables.css';
-@import 'demo/_fonts.css';
+@import 'demo/_font.css';
 @import 'demo/_type.css';
 @import 'demo/_color.css';
-@import 'demo/_shadows.css';
-@import 'demo/_ratios.css';
+@import 'demo/_shadow.css';
+@import 'demo/_aspect-ratio.css';
 @import 'demo/_tokens-demo.css';
 @import './elements/_main-navbar.css';
 @import './elements/_service-navbar.css';

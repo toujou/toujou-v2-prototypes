@@ -27,4 +27,4 @@ const ShadowsTemplate = () => {
     `;
 }
 
-export const Shadows = ShadowsTemplate.bind({});
+export const Shadow = ShadowsTemplate.bind({});
