@@ -1,0 +1,20 @@
+.button {
+    --button-color-bg: var(--color-primary);
+    --button-color-text: var(--color-bg);
+    --button-font-size: var(--font-size-normal);
+    --button-font-family: var(--font-family-text);
+    --button-padding: var(--spacing-s) var(--spacing-m);
+    --button-border-radius: var(--border-radius-normal);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: var(--button-color-bg);
+    color: var(--button-color-text);
+    font-size: var(--button-font-size);
+    font-family: var(--button-font-family);
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+}

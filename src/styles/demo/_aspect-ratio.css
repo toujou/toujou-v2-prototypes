@@ -1,3 +1,7 @@
+.ratio-auto {
+    aspect-ratio: var(--aspect-ratio-auto);
+}
+
 .ratio-square {
     aspect-ratio: var(--aspect-ratio-square);
 }

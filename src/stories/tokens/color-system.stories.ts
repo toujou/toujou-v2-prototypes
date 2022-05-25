@@ -7,7 +7,7 @@ export default {
 
 
 const ColorsTemplate = () => {
-    return `
+    return `        
         <h1 class="tokens-demo__title">Color tokens</h1>
         
         <h2 class="tokens-demo__subtitle">Background color</h2>

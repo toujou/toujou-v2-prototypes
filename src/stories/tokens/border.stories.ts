@@ -7,14 +7,7 @@ export default {
 
 
 const BorderTemplate = () => {
-    return `
-        <style>       
-            body {
-                background-color: var(--demo-color-grey-light);
-                min-height: 100%;
-            }
-        </style>
-        
+    return `        
         <h1 class="tokens-demo__title">Border tokens</h1>
                 
         <div class="tokens-demo__border-container">

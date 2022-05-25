@@ -1,3 +1,8 @@
+.size-1px {
+    width: var(--spacing-1px);
+    height: var(--spacing-1px);
+}
+
 .size-xs {
     width: var(--spacing-xs);
     height: var(--spacing-xs);

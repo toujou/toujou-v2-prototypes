@@ -1,20 +1,13 @@
 import { Meta } from '@storybook/web-components';
 
 export default {
-    title: 'TOKENS/Shadows',
+    title: 'TOKENS/Shadow',
     argTypes: {}
 } as Meta;
 
 
 const ShadowsTemplate = () => {
-    return `
-        <style>       
-            body {
-                background-color: var(--demo-color-grey-light);
-                min-height: 100%;
-            }
-        </style>
-        
+    return `       
         <h1 class="tokens-demo__title">Shadow tokens</h1>
         
         <div class="tokens-demo__shadows-container">

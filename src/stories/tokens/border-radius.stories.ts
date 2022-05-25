@@ -8,13 +8,6 @@ export default {
 
 const BorderRadiusTemplate = () => {
     return `
-        <style>       
-            body {
-                background-color: var(--demo-color-grey-light);
-                min-height: 100%;
-            }
-        </style>
-        
         <h1 class="tokens-demo__title">Border radius tokens</h1>
                 
         <div class="tokens-demo__border-radius-container">

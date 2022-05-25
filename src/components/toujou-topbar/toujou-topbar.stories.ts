@@ -4,7 +4,7 @@ import logoImage from './../../assets/logoipsum.svg';
 import { withXD } from "storybook-addon-xd-designs";
 
 export default {
-    title: 'WEBCOMPONENTS/Topbar',
+    title: 'COMPONENTS/Topbar',
     decorators: [withXD],
     parameters: {
         design: {
@@ -93,9 +93,7 @@ const Template = (args: { hasBorderBottom: boolean; hasBottomShadow: boolean; se
     return `
         <style>       
             body {
-                background-color: var(--demo-color-grey-light);
                 padding: 0 !important;
-                min-height: 100%;
             }
         </style>
         
