@@ -93,7 +93,7 @@ const Template = (args: { hasBorderBottom: boolean; hasBottomShadow: boolean; se
     return `
         <style>       
             body {
-                background-color: #ECF0F1;
+                background-color: var(--demo-color-grey-light);
                 padding: 0 !important;
                 min-height: 100%;
             }

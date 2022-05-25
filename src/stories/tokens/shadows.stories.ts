@@ -10,12 +10,12 @@ const ShadowsTemplate = () => {
     return `
         <style>       
             body {
-                background-color: #ECF0F1;
+                background-color: var(--demo-color-grey-light);
                 min-height: 100%;
             }
         </style>
         
-        <h1 class="tokens-demo__title">Shadow Tokens</h1>
+        <h1 class="tokens-demo__title">Shadow tokens</h1>
         
         <div class="tokens-demo__shadows-container">
             <div class="tokens-demo__shadow-box shadow-none">None</div>

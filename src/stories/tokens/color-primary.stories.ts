@@ -8,7 +8,7 @@ export default {
 
 const ColorsTemplate = () => {
     return `
-        <h1 class="tokens-demo__title">Color Tokens</h1>
+        <h1 class="tokens-demo__title">Color tokens</h1>
         
         <h2 class="tokens-demo__subtitle">Primary color</h2>
         <div class="tokens-demo__color-stripe bg-color-primary">Primary</div>

@@ -8,7 +8,7 @@ export default {
 
 const FontFamiliesTemplate = () => {
     return `
-        <h1 class="tokens-demo__title">Type Tokens</h1>
+        <h1 class="tokens-demo__title">Type tokens</h1>
         
         <h2 class="tokens-demo__subtitle">Font families</h2>
         
