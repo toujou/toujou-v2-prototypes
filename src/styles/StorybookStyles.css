@@ -4,7 +4,9 @@
 @import 'demo/_color.css';
 @import 'demo/_shadow.css';
 @import 'demo/_aspect-ratio.css';
+@import 'demo/_animation.css';
 @import 'demo/_tokens-demo.css';
+
 @import './elements/_main-navbar.css';
 @import './elements/_service-navbar.css';
 @import './elements/_topbar-logo.css';

@@ -1,0 +1,8 @@
+:root {
+    --animation-duration-slow: 1s;
+    --animation-duration-normal: .5s;
+    --animation-duration-fast: .25s;
+    --animation-duration-very-fast: .125s;
+
+    --animation-easing-normal: ease-in-out;
+}

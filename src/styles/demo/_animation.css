@@ -1,0 +1,15 @@
+.animation-slow {
+    transition: transform var(--animation-duration-slow) var(--animation-easing-normal);
+}
+
+.animation-normal {
+    transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
+}
+
+.animation-fast {
+    transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
+}
+
+.animation-very-fast {
+    transition: transform var(--animation-duration-very-fast) var(--animation-easing-normal);
+}
