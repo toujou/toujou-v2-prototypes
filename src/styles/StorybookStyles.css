@@ -1,13 +1,15 @@
 @import 'variables/variables.css';
-@import 'demo/_font.css';
-@import 'demo/_type.css';
-@import 'demo/_color.css';
-@import 'demo/_shadow.css';
-@import 'demo/_aspect-ratio.css';
 @import 'demo/_animation.css';
+@import 'demo/_aspect-ratio.css';
+@import 'demo/_border.css';
+@import 'demo/_border-radius.css';
+@import 'demo/_color.css';
+@import 'demo/_font.css';
 @import 'demo/_padding.css';
+@import 'demo/_shadow.css';
 @import 'demo/_size.css';
 @import 'demo/_tokens-demo.css';
+@import 'demo/_type.css';
 
 @import './elements/_main-navbar.css';
 @import './elements/_service-navbar.css';

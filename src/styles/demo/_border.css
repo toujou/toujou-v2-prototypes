@@ -1,0 +1,11 @@
+.border-normal {
+    border: var(--border-width-normal) solid var(--color-secondary);
+}
+
+.border-m {
+    border: var(--border-width-m) solid var(--color-secondary);
+}
+
+.border-l {
+    border: var(--border-width-l) solid var(--color-secondary);
+}
