@@ -1,0 +1,12 @@
+:root {
+    --shadow-color: 286deg 0% 56%;
+    --shadow-color-1: hsl(0 0% 0% / 5%);
+    --shadow-color-2: hsl(0 0% 0% / 6%);
+    --shadow-color-3: hsl(0 0% 0% / 10%);
+
+    --shadow-s: 0 4px 5px 0 var(--shadow-color-1), 0 1px 10px 0 var(--shadow-color-2), 0 2px 4px -1px var(--shadow-color-3);
+    --shadow-normal: 0 6px 10px 0 var(--shadow-color-1), 0 1px 18px 0 var(--shadow-color-2), 0 3px 5px -1px var(--shadow-color-3);
+    --shadow-l: 0 12px 15px 2px var(--shadow-color-1), 0 4px 24px 4px var(--shadow-color-2), 0 9px 8px -4px var(--shadow-color-3);
+    --shadow-xl: 0 16px 24px 2px var(--shadow-color-1), 0 6px 30px 6px var(--shadow-color-2), 0 12px 12px -5px var(--shadow-color-3);
+;
+}

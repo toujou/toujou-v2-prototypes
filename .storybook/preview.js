@@ -1,5 +1,5 @@
 import "../src/components/toujou-topbar/toujou-topbar";
-import "../src/styles/globalStyles.css";
+import "../src/styles/StorybookStyles.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

@@ -1,0 +1,20 @@
+.shadow-none {
+    box-shadow: none;
+}
+
+.shadow-small {
+    box-shadow: var(--shadow-s);
+}
+
+.shadow-normal {
+    box-shadow: var(--shadow-normal);
+}
+
+.shadow-large {
+    box-shadow: var(--shadow-l);
+}
+
+
+.shadow-x-large {
+    box-shadow: var(--shadow-xl);
+}

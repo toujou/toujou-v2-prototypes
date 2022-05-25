@@ -35,6 +35,26 @@
     height: 3rem;
 }
 
+.tokens-demo__shadows-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: var(--spacing-xl);
+}
+
+.tokens-demo__shadow-box {
+    background-color: var(--color-bg);
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    font-family: var(--font-family-text);
+    color: var(--color-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-normal);
+}
+
 .margin-top-xl {
     margin-top: var(--spacing-xl);
 }
+
