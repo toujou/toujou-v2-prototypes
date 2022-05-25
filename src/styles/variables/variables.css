@@ -1,13 +1,6 @@
 @import 'tokens.css';
 
 :root {
-    --spacing-xl: 3rem;
-    --spacing-l: 2rem;
-    --spacing-m: 1.5rem;
-    --spacing-normal: 1rem;
-    --spacing-s: .5rem;
-    --spacing-xs: .25rem;
-
     --demo-color-grey-light: #ecf0f1;
 
     --border-radius-normal: .25rem;

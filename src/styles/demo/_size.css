@@ -1,0 +1,44 @@
+.size-xs {
+    width: var(--spacing-xs);
+    height: var(--spacing-xs);
+}
+
+.size-s {
+    width: var(--spacing-s);
+    height: var(--spacing-s);
+}
+
+.size-normal {
+    width: var(--spacing-normal);
+    height: var(--spacing-normal);
+}
+
+.size-m {
+    width: var(--spacing-m);
+    height: var(--spacing-m);
+}
+
+.size-l {
+    width: var(--spacing-l);
+    height: var(--spacing-l);
+}
+
+.size-xl {
+    width: var(--spacing-xl);
+    height: var(--spacing-xl);
+}
+
+.size-xxl {
+    width: var(--spacing-xxl);
+    height: var(--spacing-xxl);
+}
+
+.size-xxxl {
+    width: var(--spacing-xxxl);
+    height: var(--spacing-xxxl);
+}
+
+.size-xxxxl {
+    width: var(--spacing-xxxxl);
+    height: var(--spacing-xxxxl);
+}

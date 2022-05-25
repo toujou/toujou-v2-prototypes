@@ -1,0 +1,35 @@
+.padding-xs {
+    padding: var(--spacing-xs);
+}
+
+.padding-s {
+    padding: var(--spacing-s);
+}
+
+.padding-normal {
+    padding: var(--spacing-normal);
+}
+
+.padding-m {
+    padding: var(--spacing-m);
+}
+
+.padding-l {
+    padding: var(--spacing-l);
+}
+
+.padding-xl {
+    padding: var(--spacing-xl);
+}
+
+.padding-xxl {
+    padding: var(--spacing-xxl);
+}
+
+.padding-xxxl {
+    padding: var(--spacing-xxxl);
+}
+
+.padding-xxxxl {
+    padding: var(--spacing-xxxxl);
+}
