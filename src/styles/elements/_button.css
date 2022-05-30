@@ -28,6 +28,13 @@
     --button-color-bg: var(--color-font);
 }
 
+.button[disabled] {
+    --button-color-bg: var(--color-font-light) !important;
+    --button-color-text: var(--color-font) !important;
+
+    cursor: not-allowed !important;
+}
+
 /* FOCUS */
 .button:focus {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);

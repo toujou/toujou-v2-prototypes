@@ -24,6 +24,16 @@ export default {
             defaultValue: ['primary'],
             required: true,
         },
+        isDisabled: {
+            table: {
+                category: "Button Settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Disabled',
+            description: "Toggle the button disabled attribute",
+            control: { type: 'boolean' },
+            required: true,
+        },
     }
 } as Meta;
 
@@ -32,7 +42,7 @@ const Template = (args) => {
     buttonClasses += ` button--${args.buttonVariant}`;
 
     return `       
-        <button class="${buttonClasses}">Test</button>
+        <button class="${buttonClasses}" ${args.isDisabled ? 'disabled' : ''}>Test</button>
     `
 };
 
@@ -41,4 +51,5 @@ export const Button = Template.bind({});
 // @ts-ignore
 ToujouTopbar.args = {
     buttonVariant: 'primary',
+    isDisabled: false,
 }

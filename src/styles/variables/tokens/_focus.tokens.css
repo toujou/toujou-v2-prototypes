@@ -1,5 +1,5 @@
 :root {
-    --focus-outline-width: 2px;
-    --focus-outline-offset: 2px;
+    --focus-outline-width: var(--spacing-2px);
+    --focus-outline-offset: var(--spacing-2px);
     --focus-outline-color: var(--color-primary);
 }
