@@ -46,6 +46,18 @@ export default {
             control: { type: 'boolean' },
             required: true,
         },
+        size: {
+            table: {
+                category: "Button Settings",
+                defaultValue: { summary: 'normal' },
+            },
+            name: 'Size',
+            description: "Set the button text size",
+            options: ['tiny', 'small', 'normal', 'large'],
+            control: { type: 'radio' },
+            defaultValue: ['normal'],
+            required: true,
+        },
     }
 } as Meta;
 
@@ -55,7 +67,7 @@ const Template = (args) => {
 
 
     // CSS CLASSES
-    let buttonClasses = `button button--${args.buttonVariant}`;
+    let buttonClasses = `button button--${args.buttonVariant} button--size-${args.size}`;
     buttonEl.setAttribute('class', buttonClasses);
 
     // DISABLED
@@ -78,4 +90,5 @@ ToujouTopbar.args = {
     buttonVariant: 'primary',
     isDisabled: false,
     hasIcon: false,
+    size: 'normal',
 }

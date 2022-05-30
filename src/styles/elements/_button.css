@@ -5,6 +5,7 @@
     --button-font-family: var(--font-family-text);
     --button-padding: var(--spacing-s) var(--spacing-m);
     --button-border-radius: var(--border-radius-normal);
+    --button-icon-size: var(--button-font-size);
 
     display: flex;
     align-items: center;
@@ -56,6 +57,26 @@
     --button-color-bg: var(--color-font-light);
     --button-color-text: var(--color-font-dark);
 }
+
+/* BUTTON SIZE */
+.button--size-tiny {
+    --button-font-size: var(--font-size-xs);
+}
+
+.button--size-small {
+    --button-font-size: var(--font-size-s);
+}
+
+.button--size-large {
+    --button-font-size: var(--font-size-ms);
+}
+
+/* BUTTON ICON */
+.icon.button__icon {
+    --icon-size: var(--button-icon-size);
+}
+
+
 
 @media (hover: hover) {
     .button:hover {
