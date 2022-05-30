@@ -3,15 +3,17 @@
 This project uses:
 - [VITEJS](https://vitejs.dev/).
 - [Storybook](https://storybook.js.org/)
+- [Storybook-deployer](https://github.com/storybookjs/storybook-deployer)
 
 ## Scripts
 
 - `npm run dev` runs the app (`index.html` file) in dev mode, which import the `.ts` files, hast Hot Module Replacement, ...
 - `npm run build` build the project files
-- `npm run storybook` opens a Storybook instance where you can see all the components
-- `npm run build-storybook` build the project files so they can be displayed on Storybook
+- `npm run sb` opens a Storybook instance where you can see all the components
+- `npm run build-sb` build the project files so they can be displayed on Storybook
+- `npm run deploy-sb` deploy storybook to github pages
 
-## How to create a new webcompoent
+## How to create a new webcomponent
 1. Create a new component folder inside `src`, like `toujou-example`
 2. Create the `.ts` file for your component, like `toujou-example.ts`
 3. Create the component

@@ -1,7 +1,6 @@
 import { Meta } from '@storybook/web-components';
 // @ts-ignore
 import { withXD } from "storybook-addon-xd-designs";
-import {ToujouTopbar} from "../toujou-topbar/toujou-topbar.stories";
 
 const DEFAULT_BUTTON_TEXT = 'Hello';
 
@@ -58,6 +57,18 @@ export default {
             control: { type: 'boolean' },
             required: true,
         },
+        iconPosition: {
+            table: {
+                category: "Button Settings",
+                defaultValue: { summary: 'left' },
+            },
+            name: 'Icon position',
+            description: "Set the button's icon position",
+            options: ['left', 'right',],
+            control: { type: 'radio' },
+            defaultValue: ['left'],
+            required: true,
+        },
         size: {
             table: {
                 category: "Button Settings",
@@ -104,12 +115,14 @@ const Template = (args) => {
         buttonEl.classList.add('button--ghost')
     }
 
+
     // DISABLED
     buttonEl.disabled = args.isDisabled === 'true' || args.isDisabled === true;
 
     // ICON
     if (args.hasIcon === 'true' || args.hasIcon === true) {
         buttonEl.innerHTML = `<i class="button__icon icon icon--arrow-right"></i> ${DEFAULT_BUTTON_TEXT}`;
+        buttonEl.classList.add(`button--icon-${args.iconPosition}`);
     } else {
         buttonEl.textContent = DEFAULT_BUTTON_TEXT;
     }
@@ -120,11 +133,12 @@ const Template = (args) => {
 export const Button = Template.bind({});
 
 // @ts-ignore
-ToujouTopbar.args = {
+Button.args = {
     buttonVariant: 'primary',
-    buttonType: 'defaull',
+    buttonType: 'default',
     isDisabled: false,
     hasIcon: false,
+    iconPosition: 'left',
     size: 'normal',
     isExpanded: false,
 }

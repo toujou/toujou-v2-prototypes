@@ -15,7 +15,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "sb": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
-    "build-sb": "export NODE_OPTIONS=--openssl-legacy-provider; build-storybook"
+    "build-sb": "export NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
+    "deploy-sb": "export NODE_OPTIONS=--openssl-legacy-provider; storybook-to-ghpages"
   },
   "dependencies": {
     "lit": "^2.0.2",
@@ -29,6 +30,7 @@
     "@storybook/addon-essentials": "^6.5.4",
     "@storybook/addon-links": "^6.5.4",
     "@storybook/builder-vite": "^0.1.35",
+    "@storybook/storybook-deployer": "^2.8.11",
     "@storybook/web-components": "^6.5.4",
     "babel-loader": "^8.2.5",
     "typescript": "^4.5.4",
