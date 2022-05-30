@@ -4,6 +4,7 @@
 @import "tokens/_border-radius.tokens.css";
 @import "tokens/_color.tokens.css";
 @import "tokens/_focus.tokens.css";
+@import "tokens/_icon.tokens.css";
 @import "tokens/_shadow.tokens.css";
 @import "tokens/_spacing.tokens.css";
 @import "tokens/_type.tokens.css";

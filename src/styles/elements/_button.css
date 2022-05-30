@@ -11,6 +11,7 @@
     justify-content: center;
     border: none;
     outline: none;
+    gap: var(--spacing-s);
     background-color: var(--button-color-bg);
     color: var(--button-color-text);
     font-size: var(--button-font-size);

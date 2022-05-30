@@ -36,6 +36,16 @@ export default {
             control: { type: 'boolean' },
             required: true,
         },
+        hasIcon: {
+            table: {
+                category: "Button Settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Icon',
+            description: "Toggle visibility of the button's icon",
+            control: { type: 'boolean' },
+            required: true,
+        },
     }
 } as Meta;
 
@@ -43,12 +53,20 @@ const Template = (args) => {
     console.log(args);
     let buttonEl = document.createElement('button');
 
-    buttonEl.textContent = DEFAULT_BUTTON_TEXT;
 
+    // CSS CLASSES
     let buttonClasses = `button button--${args.buttonVariant}`;
     buttonEl.setAttribute('class', buttonClasses);
 
+    // DISABLED
     buttonEl.disabled = args.isDisabled === 'true' || args.isDisabled === true;
+
+    // ICON
+    if (args.hasIcon === 'true' || args.hasIcon === true) {
+        buttonEl.innerHTML = `<i class="button__icon icon icon--arrow-right"></i> ${DEFAULT_BUTTON_TEXT}`;
+    } else {
+        buttonEl.textContent = DEFAULT_BUTTON_TEXT;
+    }
 
     return buttonEl;
 };
@@ -59,4 +77,5 @@ export const Button = Template.bind({});
 ToujouTopbar.args = {
     buttonVariant: 'primary',
     isDisabled: false,
+    hasIcon: false,
 }

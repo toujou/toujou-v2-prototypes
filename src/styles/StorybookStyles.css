@@ -16,6 +16,7 @@
 @import './elements/_service-navbar.css';
 @import './elements/_topbar-logo.css';
 @import './elements/_button.css';
+@import './elements/_icon.css';
 
 * {
     box-sizing: border-box;

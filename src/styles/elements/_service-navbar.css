@@ -55,8 +55,8 @@
 }
 
 .service-navbar__link-icon--account {
-    mask-image: var(--icon-acount);
-    -webkit-mask-image: var(--icon-acount);
+    mask-image: var(--icon-account);
+    -webkit-mask-image: var(--icon-account);
 }
 
 .service-navbar__link-icon--heart {

@@ -1,0 +1,20 @@
+.icon {
+    --icon-size: var(--icon-size-normal);
+    --icon-color: currentColor;
+
+    display: inline-block;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: var(--icon-color);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.icon--arrow-right {
+    mask-image: var(--icon-arrow-right);
+    -webkit-mask-image: var(--icon-arrow-right);
+}
