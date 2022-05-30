@@ -3,6 +3,7 @@
     --color-primary-s: 100%;
     --color-primary-l: 33%;
     --color-primary: hsl(var(--color-primary-h) var(--color-primary-s) var(--color-primary-l));
+    --color-primary-o-10: hsl(var(--color-primary-h) var(--color-primary-s) var(--color-primary-l) / 10%);
 
     --color-primary-light-h: 192;
     --color-primary-light-s: 100%;
@@ -18,6 +19,7 @@
     --color-secondary-s: 65%;
     --color-secondary-l: 50%;
     --color-secondary: hsl(var(--color-secondary-h) var(--color-secondary-s) var(--color-secondary-l));
+    --color-secondary-o-10: hsl(var(--color-secondary-h) var(--color-secondary-s) var(--color-secondary-l) / 10%);
 
     --color-secondary-light-h: 342;
     --color-secondary-light-s: 65%;
@@ -33,6 +35,7 @@
     --color-font-s: 18%;
     --color-font-l: 40%;
     --color-font: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l));
+    --color-font-o-10: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 10%);
 
     --color-font-light-h: 199;
     --color-font-light-s: 18%;

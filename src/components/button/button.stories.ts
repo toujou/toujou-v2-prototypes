@@ -26,6 +26,18 @@ export default {
             defaultValue: ['primary'],
             required: true,
         },
+        buttonType: {
+            table: {
+                category: "Button Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Button type',
+            description: "Set the button's type",
+            options: ['default', 'border', 'ghost'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
         isDisabled: {
             table: {
                 category: "Button Settings",
@@ -58,6 +70,16 @@ export default {
             defaultValue: ['normal'],
             required: true,
         },
+        isExpanded: {
+            table: {
+                category: "Button Settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Expanded',
+            description: "Toggle the button's width",
+            control: { type: 'boolean' },
+            required: true,
+        },
     }
 } as Meta;
 
@@ -69,6 +91,18 @@ const Template = (args) => {
     // CSS CLASSES
     let buttonClasses = `button button--${args.buttonVariant} button--size-${args.size}`;
     buttonEl.setAttribute('class', buttonClasses);
+
+    if (args.isExpanded === 'true' || args.isExpanded === true) {
+        buttonEl.classList.add('button--expanded')
+    }
+
+    if (args.buttonType === 'border') {
+        buttonEl.classList.add('button--border')
+    }
+
+    if (args.buttonType === 'ghost') {
+        buttonEl.classList.add('button--ghost')
+    }
 
     // DISABLED
     buttonEl.disabled = args.isDisabled === 'true' || args.isDisabled === true;
@@ -88,7 +122,9 @@ export const Button = Template.bind({});
 // @ts-ignore
 ToujouTopbar.args = {
     buttonVariant: 'primary',
+    buttonType: 'defaull',
     isDisabled: false,
     hasIcon: false,
     size: 'normal',
+    isExpanded: false,
 }

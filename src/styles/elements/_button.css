@@ -5,12 +5,16 @@
     --button-font-family: var(--font-family-text);
     --button-padding: var(--spacing-s) var(--spacing-m);
     --button-border-radius: var(--border-radius-normal);
+    --button-border-width: var(--spacing-1px);
+    --button-border-color: var(--button-color-bg);
     --button-icon-size: var(--button-font-size);
+    --button-width: fit-content;
 
+    width: var(--button-width);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    border: var(--button-border-width) solid var(--button-border-color);
     outline: none;
     gap: var(--spacing-s);
     background-color: var(--button-color-bg);
@@ -76,7 +80,45 @@
     --icon-size: var(--button-icon-size);
 }
 
+/* EXPANDED */
+.button--expanded {
+    --button-width: 100%;
+}
 
+/* BUTTON TYPE BORDER */
+.button--border {
+    --button-color-bg: transparent;
+    --button-border-color: var(--color-primary);
+    --button-color-text: var(--color-primary);
+}
+
+.button--border:focus-visible {
+    --button-color-bg: var(--color-primary-o-10);
+    --button-border-color: var(--color-primary);
+    --button-color-text: var(--color-primary);
+}
+
+.button--secondary.button--border {
+    --button-border-color: var(--color-secondary);
+    --button-color-text: var(--color-secondary);
+}
+
+.button--secondary.button--border:focus-visible {
+    --button-color-bg: var(--color-secondary-o-10);
+    --button-border-color: var(--color-secondary);
+    --button-color-text: var(--color-secondary);
+}
+
+.button--font.button--border {
+    --button-border-color: var(--color-font);
+    --button-color-text: var(--color-font);
+}
+
+.button--font.button--border:focus-visible {
+    --button-color-bg: var(--color-font-o-10);
+    --button-border-color: var(--color-font);
+    --button-color-text: var(--color-font);
+}
 
 @media (hover: hover) {
     .button:hover {
@@ -92,5 +134,24 @@
     .button--font:hover {
         --button-color-bg: var(--color-font-light);
         --button-color-text: var(--color-font-dark);
+    }
+
+    /* BUTTON TYPE BORDER */
+    .button--border:hover {
+        --button-color-bg: var(--color-primary-o-10);
+        --button-border-color: var(--color-primary);
+        --button-color-text: var(--color-primary);
+    }
+
+    .button--secondary.button--border:hover {
+        --button-color-bg: var(--color-secondary-o-10);
+        --button-border-color: var(--color-secondary);
+        --button-color-text: var(--color-secondary);
+    }
+
+    .button--font.button--border:hover {
+        --button-color-bg: var(--color-font-o-10);
+        --button-border-color: var(--color-font);
+        --button-color-text: var(--color-font);
     }
 }
