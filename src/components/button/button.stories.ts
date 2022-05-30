@@ -3,6 +3,8 @@ import { Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 import {ToujouTopbar} from "../toujou-topbar/toujou-topbar.stories";
 
+const DEFAULT_BUTTON_TEXT = 'Hello';
+
 export default {
     title: 'COMPONENTS/Button',
     decorators: [withXD],
@@ -38,12 +40,17 @@ export default {
 } as Meta;
 
 const Template = (args) => {
-    let buttonClasses = 'button';
-    buttonClasses += ` button--${args.buttonVariant}`;
+    console.log(args);
+    let buttonEl = document.createElement('button');
 
-    return `       
-        <button class="${buttonClasses}" ${args.isDisabled ? 'disabled' : ''}>Test</button>
-    `
+    buttonEl.textContent = DEFAULT_BUTTON_TEXT;
+
+    let buttonClasses = `button button--${args.buttonVariant}`;
+    buttonEl.setAttribute('class', buttonClasses);
+
+    buttonEl.disabled = args.isDisabled === 'true' || args.isDisabled === true;
+
+    return buttonEl;
 };
 
 export const Button = Template.bind({});
