@@ -95,7 +95,7 @@ const FontStylesTemplate = () => {
         <p class="font-style-italic">This is the italic font style</p>
         <p class="font-style-bold font-style-italic">This is the bold italic font style</p>
         <p class="font-style-strikethrough">This is the strikethrough font style</p>
-        <p class="font-style-underline">This is the strikethrough font style</p>
+        <p class="font-style-underline">This is the underlined font style</p>
     `;
 }
 

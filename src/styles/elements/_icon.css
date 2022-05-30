@@ -18,3 +18,13 @@
     mask-image: var(--icon-arrow-right);
     -webkit-mask-image: var(--icon-arrow-right);
 }
+
+.icon--arrow-left {
+    mask-image: var(--icon-arrow-left);
+    -webkit-mask-image: var(--icon-arrow-left);
+}
+
+.icon--close {
+    mask-image: var(--icon-close);
+    -webkit-mask-image: var(--icon-close);
+}

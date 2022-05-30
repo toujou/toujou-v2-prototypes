@@ -25,3 +25,19 @@ This project uses:
 
 ## How to create stories for plain html elements
 1. Create a new story files on `src/stories`, like `src/stories/button.stories.ts`
+
+## Github page
+We can deploy storybook to a [github page](https://toujou.github.io/toujou-v2-prototypes/). Followed [this tutorial](https://medium.com/swlh/how-to-deploy-storybook-to-github-pages-4894097d49ab)
+
+This currently doesn't work 100%.
+The problem are some relative / absolute paths that aren't correctly resolved during the build
+
+- [Same problem?!](https://github.com/storybookjs/storybook/issues/11694)
+
+The current **solution** is after the `npm run build-sb` command to to add the missing `./` to the iframe links on the `storybook-static/iframe.html` file:
+
+```html
+    <!-- around line 370 on the current build -->
+    <script type="module" crossorigin src="./assets/iframe.2998cd67.js"></script>
+    <link rel="stylesheet" href="./assets/iframe.f0ce4956.css">
+```

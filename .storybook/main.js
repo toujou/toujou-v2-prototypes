@@ -13,5 +13,5 @@ module.exports = {
     "framework": "@storybook/web-components",
     "core": {
         "builder": "@storybook/builder-vite"
-    }
+    },
 };

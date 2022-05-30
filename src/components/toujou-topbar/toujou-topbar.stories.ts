@@ -160,10 +160,10 @@ const Template = (args: { hasBorderBottom: boolean; hasBottomShadow: boolean; se
     `
 };
 
-export const ToujouTopbar = Template.bind({});
+export const Topbar = Template.bind({});
 
 // @ts-ignore
-ToujouTopbar.args = {
+Topbar.args = {
     logoPosition: 'left',
     logoSize: 'small',
     showServiceNavbar: true,

@@ -95,7 +95,6 @@ export default {
 } as Meta;
 
 const Template = (args) => {
-    console.log(args);
     let buttonEl = document.createElement('button');
 
 
@@ -107,6 +106,7 @@ const Template = (args) => {
         buttonEl.classList.add('button--expanded')
     }
 
+    // BUTTON TYPES (border / ghost)
     if (args.buttonType === 'border') {
         buttonEl.classList.add('button--border')
     }
@@ -114,7 +114,6 @@ const Template = (args) => {
     if (args.buttonType === 'ghost') {
         buttonEl.classList.add('button--ghost')
     }
-
 
     // DISABLED
     buttonEl.disabled = args.isDisabled === 'true' || args.isDisabled === true;

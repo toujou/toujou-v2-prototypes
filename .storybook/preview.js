@@ -1,4 +1,5 @@
 import "../src/components/toujou-topbar/toujou-topbar";
+import "../src/components/toujou-breadcrumb/toujou-breadcrumb";
 import "../src/styles/StorybookStyles.css";
 
 export const parameters = {

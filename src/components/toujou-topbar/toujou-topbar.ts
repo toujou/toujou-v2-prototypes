@@ -22,8 +22,6 @@ export class ToujouTopbar extends LitElement {
 
     constructor() {
         super();
-
-        console.log('initing topbar...')
     }
 }
 

@@ -12,11 +12,12 @@
 @import 'demo/_tokens-demo.css';
 @import 'demo/_type.css';
 
+@import './elements/_breadcrumb.css';
+@import './elements/_button.css';
+@import './elements/_icon.css';
 @import './elements/_main-navbar.css';
 @import './elements/_service-navbar.css';
 @import './elements/_topbar-logo.css';
-@import './elements/_button.css';
-@import './elements/_icon.css';
 
 * {
     box-sizing: border-box;

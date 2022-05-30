@@ -1,0 +1,85 @@
+.breadcrumb {
+    --breadcrumb-separator: "/";
+    --breadcrumb-separator-horizontal-gap: var(--spacing-s);
+    --breadcrumb-active-item-color: var(--color-primary);
+    --breadcrumb-toggle-icon-size: var(--spacing-m);
+    --breadcrumb-toggle-icon-color: var(--color-font);
+    --breadcrumb-link-font-size: var(--font-size-normal);
+    --breadcrumb-font-family: var(--font-family-text);
+    --breadcrumb-link-color: var(--color-font);
+    --breadcrumb-link-text-decoration: none;
+    --breadcrumb-mobile-menu-top: 100%;
+    --breadcrumb-mobile-menu-bg-color: var(--color-bg);
+    --breadcrumb-mobile-menu-shadow: var(--shadow-normal);
+    --breadcrumb-mobile-menu-padding: var(--spacing-normal) var(--spacing-l);
+    --breadcrumb-mobile-menu-list-gap: var(--spacing-s);
+    --breadcrumb-fake-list-triangle-size: var(--spacing-s);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.breadcrumb__list {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.breadcrumb__item {
+    width: fit-content;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+    content: var(--breadcrumb-separator);
+    margin: 0 var(--breadcrumb-separator-horizontal-gap);
+}
+
+.breadcrumb__link {
+    font-size: var(--breadcrumb-link-font-size);
+    font-family: var(--breadcrumb-font-family);
+    color: var(--breadcrumb-link-color);
+    text-decoration: var(--breadcrumb-link-text-decoration);
+}
+
+.breadcrumb__link[aria-current="page"] {
+    color: var(--breadcrumb-active-item-color);
+    pointer-events: none;
+}
+
+.breadcrumb__toggle {
+    padding: var(--spacing-xs);
+    border: none;
+    display: none;
+    margin-right: var(--spacing-s);
+    position: relative;
+    top: 2px;
+}
+
+.breadcrumb__toggle--close {
+    display: none;
+}
+
+.icon.breadcrumb__toggle-icon {
+    height: var(--breadcrumb-toggle-icon-size);
+    width: var(--breadcrumb-toggle-icon-size);
+    background-color: var(--breadcrumb-toggle-icon-color);
+}
+
+/* MOBILE */
+.breadcrumb[ismobile] .breadcrumb__toggle--open {
+    display: block;
+}
+
+.breadcrumb[ismobile][mobilemenuisopen] .breadcrumb__toggle--open {
+    display: none;
+}
+
+.breadcrumb[ismobile][mobilemenuisopen] .breadcrumb__toggle--close {
+    display: block;
+}
+
+.breadcrumb[ismobile] .breadcrumb__item:not(:last-child) {
+    display: none;
+}

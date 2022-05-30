@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "main": "dist/my-element.es.js",
+  "homepage": "https://github.com/toujou/toujou-v2-prototypes",
   "exports": {
     ".": "./dist/my-element.es.js"
   },
@@ -16,7 +17,7 @@
     "build": "tsc && vite build",
     "sb": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
     "build-sb": "export NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
-    "deploy-sb": "export NODE_OPTIONS=--openssl-legacy-provider; storybook-to-ghpages"
+    "deploy-sb": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "lit": "^2.0.2",
@@ -30,9 +31,9 @@
     "@storybook/addon-essentials": "^6.5.4",
     "@storybook/addon-links": "^6.5.4",
     "@storybook/builder-vite": "^0.1.35",
-    "@storybook/storybook-deployer": "^2.8.11",
     "@storybook/web-components": "^6.5.4",
     "babel-loader": "^8.2.5",
+    "gh-pages": "^4.0.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.7"
   }
