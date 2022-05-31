@@ -9,7 +9,7 @@
     --animation-easing-ease-out: ease-out;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
     :root {
         --animation-duration-slow: 0s;
         --animation-duration-normal: 0s;

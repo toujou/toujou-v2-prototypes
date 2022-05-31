@@ -1,11 +1,14 @@
 import { Meta } from '@storybook/web-components';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
     title: 'COMPONENTS/Breadcrumb',
-    argTypes: {}
+    parameters: {
+        badges: [BADGE.BETA]
+    },
 } as Meta;
 
-const Template = (args) => {
+const Template = () => {
 
     return `       
         <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">

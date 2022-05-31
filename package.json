@@ -23,6 +23,7 @@
     "deploy-sb": "gh-pages -d storybook-static"
   },
   "dependencies": {
+    "@geometricpanda/storybook-addon-badges": "^0.2.1",
     "lit": "^2.0.2",
     "storybook-addon-xd-designs": "^6.0.0"
   },

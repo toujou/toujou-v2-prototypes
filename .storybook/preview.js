@@ -11,5 +11,15 @@ export const parameters = {
     },
     expanded: true,
   },
+  badgesConfig: {
+    beta: {
+      styles: {
+        backgroundColor: '#7a17da',
+        borderColor: '#550e96',
+        color: '#e3d4ef',
+      },
+      title: 'In progress',
+    },
+  },
   // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }
