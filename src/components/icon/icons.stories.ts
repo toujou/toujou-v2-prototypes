@@ -30,7 +30,7 @@ export default {
             name: 'Icon size',
             description: "Set the icon's size. If the class isn't set it defaults to `ms`",
             options: ['xxxl', 'xxl', 'xl', 'l', 'm', 'ms', 'normal', 's', 'xs', 'xxs'],
-            control: { type: 'radio' },
+            control: { type: 'select' },
             defaultValue: ['ms'],
             required: true,
         },

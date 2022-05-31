@@ -20,6 +20,7 @@
 @import './elements/_main-navbar.css';
 @import './elements/_service-navbar.css';
 @import './elements/_topbar-logo.css';
+@import './elements/_toujou-chip.css';
 
 * {
     box-sizing: border-box;
