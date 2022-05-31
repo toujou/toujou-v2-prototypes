@@ -70,6 +70,18 @@ export default {
             defaultValue: ['false'],
             required: true,
         },
+        iconPosition: {
+            table: {
+                category: "Chip Settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Icon position',
+            description: "Set the icon on the right or left side of the chip",
+            options: ['left', 'right',],
+            control: { type: 'radio' },
+            defaultValue: ['left'],
+            required: true,
+        },
         allCaps: {
             table: {
                 category: "Chip Settings",
@@ -90,7 +102,7 @@ const Template = (args) => {
     // ICON
     if (args.hasIcon === 'true' || args.hasIcon === true) {
         toujouChip.innerHTML = `<i class="icon icon--heart toujou-chip__icon"></i> ${DEFAULT_BUTTON_TEXT}`;
-        toujouChip.classList.add(`button--icon-${args.iconPosition}`);
+        toujouChip.classList.add(`toujou-chip--icon-${args.iconPosition}`);
     } else {
         toujouChip.textContent = DEFAULT_BUTTON_TEXT;
     }
@@ -125,5 +137,6 @@ Chip.args = {
     size: 'small',
     isClickable: false,
     hasIcon: false,
+    iconPosition: 'left',
     allCaps: false,
 }

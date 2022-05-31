@@ -3,6 +3,7 @@
     --toujou-chip-font-size: var(--font-size-xs);
     --toujou-chip-font-family: var(--font-family-text);
     --toujou-chip-text-color: var(--color-font);
+    --toujou-chip-flex-direction: row;
     --toujou-chip-padding: var(--spacing-xs) var(--spacing-normal);
     --toujou-chip-border-radius: var(--spacing-xs);
     --toujou-chip-gap: var(--spacing-s);
@@ -17,6 +18,7 @@
     padding: var(--toujou-chip-padding);
     border-radius: var(--toujou-chip-border-radius);
     display: flex;
+    flex-direction: var(--toujou-chip-flex-direction);
     align-items: center;
     justify-content: center;
     gap: var(--toujou-chip-gap);
@@ -134,6 +136,16 @@
 /* ALL CAPS */
 .toujou-chip--all-caps {
     --toujou-chip-text-transform: uppercase;
+}
+
+/* ICON POSITION */
+.toujou-chip--icon-left {
+    --toujou-chip-padding: var(--spacing-xs) var(--spacing-normal) var(--spacing-xs) var(--spacing-s);
+}
+
+.toujou-chip--icon-right {
+    --toujou-chip-flex-direction: row-reverse;
+    --toujou-chip-padding: var(--spacing-xs) var(--spacing-s) var(--spacing-xs) var(--spacing-normal);
 }
 
 @media (hover: hover) {
