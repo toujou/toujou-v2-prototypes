@@ -1,0 +1,18 @@
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: var(--spacing-xl);
+    margin-top: var(--spacing-l);
+}
+
+.icon-grid__cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.icon-grid__title {
+    font-size: var(--font-size-s);
+    color: var(--color-font-light);
+}

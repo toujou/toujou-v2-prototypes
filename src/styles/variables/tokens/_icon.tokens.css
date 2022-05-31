@@ -1,3 +1,50 @@
 :root {
     --icon-size-normal: var(--spacing-ms);
+
+    --icon-arrow-drop-down: url('../src/assets/icons/icon-arrow-drop-down.svg');
+    --icon-arrow-right: url('../src/assets/icons/icon-arrow-right.svg');
+    --icon-blockquote: url('../src/assets/icons/icon-blockquote.svg');
+    --icon-blockquote-round: url('../src/assets/icons/icon-blockquote-round.svg');
+    --icon-bookmark: url('../src/assets/icons/icon-bookmark.svg');
+    --icon-bookmark-filled: url('../src/assets/icons/icon-bookmark-filled.svg');
+    --icon-breakfast: url('../src/assets/icons/icon-breakfast.svg');
+    --icon-calendar: url('../src/assets/icons/icon-calender.svg');
+    --icon-cancel-circle-filled: url('../src/assets/icons/icon-cancel-circle-filled.svg');
+    --icon-check: url('../src/assets/icons/icon-check.svg');
+    --icon-chevron-down: url('../src/assets/icons/icon-chevron-down.svg');
+    --icon-chevron-filled-down: url('../src/assets/icons/icon-chevron-filled-down.svg');
+    --icon-chevron-left: url('../src/assets/icons/icon-chevron-left.svg');
+    --icon-chevron-right: url('../src/assets/icons/icon-chevron-right.svg');
+    --icon-chevron-up: url('../src/assets/icons/icon-chevron-up.svg');
+    --icon-clock-circle: url('../src/assets/icons/icon-clock-circle.svg');
+    --icon-clock-circle-filled: url('../src/assets/icons/icon-clock-circle-filled.svg');
+    --icon-dinner: url('../src/assets/icons/icon-dinner.svg');
+    --icon-euro: url('../src/assets/icons/icon-euro.svg');
+    --icon-ext-people-company: url('../src/assets/icons/icon-ext-people-company.svg');
+    --icon-ext-people-person: url('../src/assets/icons/icon-ext-people-person.svg');
+    --icon-filter-list: url('../src/assets/icons/icon-filter-list.svg');
+    --icon-heart: url('../src/assets/icons/icon-heart.svg');
+    --icon-heart-stroke: url('../src/assets/icons/icon-heart-stroke.svg');
+    --icon-home: url('../src/assets/icons/icon-home.svg');
+    --icon-home-smooth: url('../src/assets/icons/icon-home-smooth.svg');
+    --icon-info-circle-filled: url('../src/assets/icons/icon-info-circle-filled.svg');
+    --icon-location: url('../src/assets/icons/icon-location.svg');
+    --icon-lunch: url('../src/assets/icons/icon-lunch.svg');
+    --icon-map: url('../src/assets/icons/icon-map.svg');
+    --icon-pending-circle-filled: url('../src/assets/icons/icon-pending-circle-filled.svg');
+    --icon-play-circle: url('../src/assets/icons/icon-play-circle.svg');
+    --icon-play-circle-filled: url('../src/assets/icons/icon-play-circle-filled.svg');
+    --icon-rate-star-filled: url('../src/assets/icons/icon-rate-star-filled.svg');
+    --icon-socialmedia-facebook: url('../src/assets/icons/icon-sm-facebook.svg');
+    --icon-socialmedia-instagram: url('../src/assets/icons/icon-sm-instagram.svg');
+    --icon-socialmedia-linkedin: url('../src/assets/icons/icon-sm-linkedin.svg');
+    --icon-socialmedia-pinterest: url('../src/assets/icons/icon-sm-pinterest.svg');
+    --icon-socialmedia-twitter: url('../src/assets/icons/icon-sm-twitter.svg');
+    --icon-socialmedia-xing: url('../src/assets/icons/icon-sm-xing.svg');
+    --icon-socialmedia-youtube: url('../src/assets/icons/icon-sm-youtube.svg');
+    --icon-stop-circle-filled: url('../src/assets/icons/icon-stop-circle-filled.svg');
+
+
+    --icon-arrow-left: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIwLDExVjEzSDhMMTMuNSwxOC41TDEyLjA4LDE5LjkyTDQuMTYsMTJMMTIuMDgsNC4wOEwxMy41LDUuNUw4LDExSDIwWiIgLz48L3N2Zz4=");
+
 }

@@ -11,6 +11,7 @@
 @import 'demo/_size.css';
 @import 'demo/_tokens-demo.css';
 @import 'demo/_type.css';
+@import 'demo/_icon-grid.css';
 
 @import './elements/_accordion.css';
 @import './elements/_breadcrumb.css';

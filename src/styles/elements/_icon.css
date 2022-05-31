@@ -14,22 +14,267 @@
     -webkit-mask-repeat: no-repeat;
 }
 
+/* ICON COLORS */
+.icon--color-font {
+    --icon-color: var(--color-font);
+}
+
+.icon--color-primary {
+    --icon-color: var(--color-primary);
+}
+
+.icon--color-secondary {
+    --icon-color: var(--color-secondary);
+}
+
+/* ICON SIZES */
+.icon--size-xxxl {
+    --icon-size: var(--font-size-xxxl);
+}
+
+.icon--size-xxl {
+    --icon-size: var(--font-size-xxl);
+}
+
+.icon--size-xl {
+    --icon-size: var(--font-size-xl);
+}
+
+.icon--size-l {
+    --icon-size: var(--font-size-l);
+}
+
+.icon--size-m {
+    --icon-size: var(--font-size-m);
+}
+
+.icon--size-ms {
+    --icon-size: var(--font-size-ms);
+}
+
+.icon--size-normal {
+    --icon-size: var(--font-size-normal);
+}
+
+.icon--size-s {
+    --icon-size: var(--font-size-s);
+}
+
+.icon--size-xs {
+    --icon-size: var(--font-size-xs);
+}
+
+.icon--size-xxs {
+    --icon-size: var(--font-size-xxs);
+}
+
+/* ICON IMAGES */
+.icon--arrow-drop-down {
+    mask-image: var(--icon-arrow-drop-down);
+    -webkit-mask-image: var(--icon-arrow-drop-down);
+}
+
 .icon--arrow-right {
     mask-image: var(--icon-arrow-right);
     -webkit-mask-image: var(--icon-arrow-right);
 }
 
-.icon--arrow-left {
-    mask-image: var(--icon-arrow-left);
-    -webkit-mask-image: var(--icon-arrow-left);
+.icon--blockquote {
+    mask-image: var(--icon-blockquote);
+    -webkit-mask-image: var(--icon-blockquote);
 }
 
-.icon--close {
-    mask-image: var(--icon-close);
-    -webkit-mask-image: var(--icon-close);
+.icon--blockquote-round {
+    mask-image: var(--icon-blockquote-round);
+    -webkit-mask-image: var(--icon-blockquote-round);
+}
+
+.icon--bookmark {
+    mask-image: var(--icon-bookmark);
+    -webkit-mask-image: var(--icon-bookmark);
+}
+
+.icon--bookmark-filled {
+    mask-image: var(--icon-bookmark-filled);
+    -webkit-mask-image: var(--icon-bookmark-filled);
+}
+
+.icon--breakfast {
+    mask-image: var(--icon-breakfast);
+    -webkit-mask-image: var(--icon-breakfast);
+}
+
+.icon--calendar {
+    mask-image: var(--icon-calendar);
+    -webkit-mask-image: var(--icon-calendar);
+}
+
+.icon--cancel-circle-filled {
+    mask-image: var(--icon-cancel-circle-filled);
+    -webkit-mask-image: var(--icon-cancel-circle-filled);
+}
+
+.icon--check {
+    mask-image: var(--icon-check);
+    -webkit-mask-image: var(--icon-check);
 }
 
 .icon--chevron-down {
     mask-image: var(--icon-chevron-down);
     -webkit-mask-image: var(--icon-chevron-down);
+}
+
+.icon--chevron-filled-down {
+    mask-image: var(--icon-chevron-filled-down);
+    -webkit-mask-image: var(--icon-chevron-filled-down);
+}
+
+.icon--chevron-left {
+    mask-image: var(--icon-chevron-left);
+    -webkit-mask-image: var(--icon-chevron-left);
+}
+
+.icon--chevron-right {
+    mask-image: var(--icon-chevron-right);
+    -webkit-mask-image: var(--icon-chevron-right);
+}
+
+.icon--chevron-up {
+    mask-image: var(--icon-chevron-up);
+    -webkit-mask-image: var(--icon-chevron-up);
+}
+
+.icon--clock-circle {
+    mask-image: var(--icon-clock-circle);
+    -webkit-mask-image: var(--icon-clock-circle);
+}
+
+.icon--clock-circle-filled {
+    mask-image: var(--icon-clock-circle-filled);
+    -webkit-mask-image: var(--icon-clock-circle-filled);
+}
+
+.icon--dinner {
+    mask-image: var(--icon-dinner);
+    -webkit-mask-image: var(--icon-dinner);
+}
+
+.icon--euro {
+    mask-image: var(--icon-euro);
+    -webkit-mask-image: var(--icon-euro);
+}
+
+.icon--ext-people-company {
+    mask-image: var(--icon-ext-people-company);
+    -webkit-mask-image: var(--icon-ext-people-company);
+}
+
+.icon--ext-people-person {
+    mask-image: var(--icon-ext-people-person);
+    -webkit-mask-image: var(--icon-ext-people-person);
+}
+
+.icon--filter-list {
+    mask-image: var(--icon-filter-list);
+    -webkit-mask-image: var(--icon-filter-list);
+}
+
+.icon--heart {
+    mask-image: var(--icon-heart);
+    -webkit-mask-image: var(--icon-heart);
+}
+
+.icon--heart-stroke {
+    mask-image: var(--icon-heart-stroke);
+    -webkit-mask-image: var(--icon-heart-stroke);
+}
+
+.icon--home {
+    mask-image: var(--icon-home);
+    -webkit-mask-image: var(--icon-home);
+}
+
+.icon--home-smooth {
+    mask-image: var(--icon-home-smooth);
+    -webkit-mask-image: var(--icon-home-smooth);
+}
+
+.icon--info-circle-filled {
+    mask-image: var(--icon-info-circle-filled);
+    -webkit-mask-image: var(--icon-info-circle-filled);
+}
+
+.icon--location {
+    mask-image: var(--icon-location);
+    -webkit-mask-image: var(--icon-location);
+}
+
+.icon--lunch {
+    mask-image: var(--icon-lunch);
+    -webkit-mask-image: var(--icon-lunch);
+}
+
+.icon--map {
+    mask-image: var(--icon-map);
+    -webkit-mask-image: var(--icon-map);
+}
+
+.icon--pending-circle-filled {
+    mask-image: var(--icon-pending-circle-filled);
+    -webkit-mask-image: var(--icon-pending-circle-filled);
+}
+
+.icon--play-circle {
+    mask-image: var(--icon-play-circle);
+    -webkit-mask-image: var(--icon-play-circle);
+}
+
+.icon--play-circle-filled {
+    mask-image: var(--icon-play-circle-filled);
+    -webkit-mask-image: var(--icon-play-circle-filled);
+}
+
+.icon--rate-star-filled {
+    mask-image: var(--icon-rate-star-filled);
+    -webkit-mask-image: var(--icon-rate-star-filled);
+}
+
+.icon--socialmedia-facebook {
+    mask-image: var(--icon-socialmedia-facebook);
+    -webkit-mask-image: var(--icon-socialmedia-facebook);
+}
+
+.icon--socialmedia-instagram {
+    mask-image: var(--icon-socialmedia-instagram);
+    -webkit-mask-image: var(--icon-socialmedia-instagram);
+}
+
+.icon--socialmedia-linkedin {
+    mask-image: var(--icon-socialmedia-linkedin);
+    -webkit-mask-image: var(--icon-socialmedia-linkedin);
+}
+
+.icon--socialmedia-pinterest {
+    mask-image: var(--icon-socialmedia-pinterest);
+    -webkit-mask-image: var(--icon-socialmedia-pinterest);
+}
+
+.icon--socialmedia-twitter {
+    mask-image: var(--icon-socialmedia-twitter);
+    -webkit-mask-image: var(--icon-socialmedia-twitter);
+}
+
+.icon--socialmedia-xing {
+    mask-image: var(--icon-socialmedia-xing);
+    -webkit-mask-image: var(--icon-socialmedia-xing);
+}
+
+.icon--socialmedia-youtube {
+    mask-image: var(--icon-socialmedia-youtube);
+    -webkit-mask-image: var(--icon-socialmedia-youtube);
+}
+
+.icon--stop-circle-filled {
+    mask-image: var(--icon-stop-circle-filled);
+    -webkit-mask-image: var(--icon-stop-circle-filled);
 }
