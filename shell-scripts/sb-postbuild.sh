@@ -12,8 +12,9 @@ echo "${PURPLE}Starting storybook fix...${NOCOLOR} 👷"
 
 # Replace absolute path for the src
 sed -i '' 's/src="/src="./g' ${IFRAME_PATH}
+
 # Replace absolute path for the href
 sed -i '' 's/ href="/ href="./g' ${IFRAME_PATH}
 
 # Output success message
-echo "${GREEN}Patched the iframe successfully!${NOCOLOR} 🎉"
+echo "${GREEN}Successfully patched the iframe!${NOCOLOR} 🎉"

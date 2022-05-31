@@ -10,7 +10,10 @@ This project uses:
 - `npm run dev` runs the app (`index.html` file) in dev mode, which import the `.ts` files, hast Hot Module Replacement, ...
 - `npm run build` build the project files
 - `npm run sb` opens a Storybook instance where you can see all the components
-- `npm run build-sb` build the project files so they can be displayed on Storybook
+- `npm run build-sb` build the project files so they can be displayed on Storybook. This will also automatically run the `postbuild-sb` task
+- `npm run postbuild-sb` run a couple of tasks needed to make the static storybook work
+- `npm run build-fix` change absolute paths to relative paths on the storybook-static/iframe.html file
+- `npm run copy-icons-folder` copy the icons folder to the storybook-static/assets folder
 - `npm run deploy-sb` deploy storybook to github pages
 
 ## How to create a new webcomponent

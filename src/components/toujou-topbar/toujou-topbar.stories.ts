@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/web-components';
 // @ts-ignore
-import logoImage from './../../assets/logoipsum.svg';
+import logoImage from '../../../assets/logoipsum.svg';
 import { withXD } from "storybook-addon-xd-designs";
 
 export default {
