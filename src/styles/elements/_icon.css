@@ -28,3 +28,8 @@
     mask-image: var(--icon-close);
     -webkit-mask-image: var(--icon-close);
 }
+
+.icon--chevron-down {
+    mask-image: var(--icon-chevron-down);
+    -webkit-mask-image: var(--icon-chevron-down);
+}

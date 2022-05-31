@@ -1,0 +1,6 @@
+:root {
+    --content-width-100: 100%;
+    --content-width-with-padding: calc(100% - calc(var(--content-padding-to-border) * 2));
+    --content-max-width: 720px;
+    --content-padding-to-border: var(--spacing-normal);
+}

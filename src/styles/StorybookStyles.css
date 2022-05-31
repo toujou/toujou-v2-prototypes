@@ -12,6 +12,7 @@
 @import 'demo/_tokens-demo.css';
 @import 'demo/_type.css';
 
+@import './elements/_accordion.css';
 @import './elements/_breadcrumb.css';
 @import './elements/_button.css';
 @import './elements/_icon.css';
