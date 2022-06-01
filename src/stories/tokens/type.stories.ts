@@ -99,8 +99,23 @@ const FontStylesTemplate = () => {
     `;
 }
 
+const TagsTemplate = () => {
+    return `
+        <div class="demo-font-tags">
+            <h1>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h1>
+            <h2>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h2>
+            <h3>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h3>
+            <h4>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h4>
+            <h5>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h5>
+            <h6>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h6>
+            <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+        </div>
+    `;
+}
+
 export const FontFamilies = FontFamiliesTemplate.bind({});
 export const FontSizes = FontSizeTemplate.bind({});
 export const LineHeights = LineHeightTemplate.bind({});
 export const LetterSpacing = LetterSpacingTemplate.bind({});
 export const FontStyles = FontStylesTemplate.bind({});
+export const Tags = TagsTemplate.bind({});

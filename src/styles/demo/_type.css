@@ -1,27 +1,27 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-family-headline);
-    font-weight: var(--font-weight-headline);
-    color: var(--color-primary);
-}
+/*h1,*/
+/*h2,*/
+/*h3,*/
+/*h4,*/
+/*h5,*/
+/*h6 {*/
+/*    font-family: var(--font-family-headline);*/
+/*    font-weight: var(--font-weight-headline);*/
+/*    color: var(--color-primary);*/
+/*}*/
 
-:is(h1, h2, h3, h4, h5, h6):not(:first-child) {
-    margin-top: var(--spacing-xl);
-}
+/*:is(h1, h2, h3, h4, h5, h6):not(:first-child) {*/
+/*    margin-top: var(--spacing-xl);*/
+/*}*/
 
-p,
-ul,
-ol,
-a {
-    font-family: var(--font-family-text);
-    color: var(--color-font);
-    font-weight: var(--font-weight-text-normal);
-    line-height: var(--line-height-normal);
-}
+/*p,*/
+/*ul,*/
+/*ol,*/
+/*a {*/
+/*    font-family: var(--font-family-text);*/
+/*    color: var(--color-font);*/
+/*    font-weight: var(--font-weight-text-normal);*/
+/*    line-height: var(--line-height-normal);*/
+/*}*/
 
 a:focus {
     color: var(--color-primary);

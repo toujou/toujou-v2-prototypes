@@ -23,6 +23,10 @@
     min-height: 0;
 }
 
+:is(.blockquote-grid--2, .blockquote-grid--3) .blockquote--vertical {
+    --blockquote-image-size: 132px;
+}
+
 .blockquote__image {
     height: var(--blockquote-image-size);
     width: var(--blockquote-image-size);

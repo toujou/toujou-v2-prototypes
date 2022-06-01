@@ -1,7 +1,7 @@
 .breadcrumb {
     --breadcrumb-separator-icon: var(--icon-chevron-right);
     --breadcrumb-separator-color: var(--color-font);
-    --breadcrumb-separator-size: var(--font-size-normal);
+    --breadcrumb-separator-size: var(--font-size-ms);
     --breadcrumb-separator-horizontal-gap: var(--spacing-xs);
     --breadcrumb-separator-top: var(--spacing-1px);
     --breadcrumb-home-icon: var(--icon-home-smooth);

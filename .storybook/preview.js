@@ -2,30 +2,8 @@ import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-breadcrumb/toujou-breadcrumb";
 import "../src/styles/StorybookStyles.css";
 import { badgeCustomConfig } from "./badgeCustomConfig.js";
-
-// const toujouViewports = {
-//   kindleFire2: {
-//     name: 'Kindle Fire 2',
-//     styles: {
-//       width: '600px',
-//       height: '963px',
-//     },
-//   },
-//   kindleFireHD: {
-//     name: 'Kindle Fire HD',
-//     styles: {
-//       width: '533px',
-//       height: '801px',
-//     },
-//   },
-//   toujouMobile: {
-//     name: 'Toujou Mobile',
-//     styles: {
-//       width: '640px',
-//       height: '801px',
-//     },
-//   },
-// }
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { customViewports } from "./customViewports.js";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -37,8 +15,11 @@ export const parameters = {
     expanded: true,
   },
   badgesConfig: badgeCustomConfig,
-  // viewport: {
-  //   viewports: toujouViewports
-  // },
+  viewport: {
+    viewports: {
+      ...customViewports,
+      ...INITIAL_VIEWPORTS,
+    }
+  },
   // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }

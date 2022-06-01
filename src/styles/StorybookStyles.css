@@ -31,6 +31,7 @@
 @import './elements/_text-block.css';
 @import './elements/_topbar-logo.css';
 @import './elements/_toujou-chip.css';
+@import './elements/_type.css';
 
 body {
     background-color: var(--demo-color-grey-light);
