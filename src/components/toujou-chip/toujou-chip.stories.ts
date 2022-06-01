@@ -112,7 +112,7 @@ const Template = (args: {
 
     // ICON
     if (args.hasIcon === 'true' || args.hasIcon === true) {
-        toujouChip.innerHTML = `<i class="icon icon--heart toujou-chip__icon"></i> ${DEFAULT_BUTTON_TEXT}`;
+        toujouChip.innerHTML = `<i class="icon icon--home toujou-chip__icon"></i> ${DEFAULT_BUTTON_TEXT}`;
         toujouChip.classList.add(`toujou-chip--icon-${args.iconPosition}`);
     } else {
         toujouChip.textContent = DEFAULT_BUTTON_TEXT;

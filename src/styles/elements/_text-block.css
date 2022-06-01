@@ -21,6 +21,10 @@
     margin: var(--text-block-margin);
 }
 
+.accordion .text-block {
+    --text-block-width: 100%;
+}
+
 .text-block + .text-block {
     margin-top: var(--content-spacing-between-elements);
 }

@@ -13,6 +13,7 @@ export const toujouBreadcrumbStyles = css`
     display: none;
     list-style: none;
     position: relative;
+    border-radius: var(--breadcrumb-fake-list-border-radius);
   }
   
   .breadcrumb__fake-list::before {

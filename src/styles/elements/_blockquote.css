@@ -2,6 +2,7 @@
     --blockquote-image-size: 112px;
     --blockquote-image-border-radius: 50%;
     --blockquote-icon-size: var(--spacing-xxl);
+    --blockquote-icon-image: var(--icon-blockquote-round);
     --blockquote-font-family: var(--font-family-text);
     --blockquote-font-size: var(--font-size-normal);
     --blockquote-color: var(--color-font);
@@ -10,6 +11,7 @@
     --blockquote-line-height: var(--line-height-normal);
     --blockquote-author-prefix: "—";
     --blockquote-max-width: var(--content-max-width);
+
 
     display: grid;
     grid-gap: var(--blockquote-gap);
@@ -58,8 +60,8 @@
     -webkit-mask-size: contain;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    mask-image: var(--icon-blockquote);
-    -webkit-mask-image: var(--icon-blockquote);
+    mask-image: var(--blockquote-icon-image);
+    -webkit-mask-image: var(--blockquote-icon-image);
 }
 
 .blockquote__text {

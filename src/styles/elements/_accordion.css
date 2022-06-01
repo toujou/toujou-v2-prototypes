@@ -1,26 +1,30 @@
 .accordion {
+    --accordion-display: block;
     --accordion-width: var(--content-width-with-padding);
     --accordion-max-width: var(--content-max-width);
     --accordion-margin: 0 auto;
     --accordion-panel-padding: var(--spacing-normal);
     --accordion-panel-gap: var(--spacing-normal);
+    --accordion-panel-max-height: 50rem;
     --accordion-title-color: var(--color-font-dark);
     --accordion-title-active-color: var(--color-primary);
     --accordion-title-margin: 0;
+    --accordion-title-font-size: var(--font-size-ms);
     --accordion-subtitle-font-size: var(--font-size-s);
-    --accordion-subtitle-color: var(--color-font-light);
+    --accordion-subtitle-color: var(--color-primary);
     --accordion-subtitle-margin: 0;
     --accordion-subtitle-list-separator: ">";
     --accordion-subtitle-list-separator-margin: 0 var(--spacing-s);
+    --accordion-subtitle-padding: var(--spacing-s) 0 0;
     --accordion-chevron-size: 1.5rem;
     --accordion-chevron-color: var(--color-font-dark);
     --accordion-chevron-active-color: var(--color-primary);
     --accordion-chevron-active-transform: rotate(180deg);
-    --accordion-content-padding: 0 var(--spacing-normal) var(--spacing-normal);
-    --accordion-item-border: 1px solid var(--color-font-light);
+    --accordion-content-padding: 0 var(--spacing-normal) var(--spacing-l);
+    --accordion-item-border: 2px solid var(--color-font-light);
     --accordion-chevron-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
 
-    display: block;
+    display: var(--accordion-display);
     width: var(--accordion-width);
     max-width: var(--accordion-max-width);
     margin: var(--accordion-margin);
@@ -52,17 +56,19 @@
 .accordion__title {
     color: var(--accordion-title-color);
     margin: var(--accordion-title-margin);
+    font-size: var(--accordion-title-font-size);
 }
 
 .accordion__subtitle {
     margin: var(--accordion-subtitle-margin);
     font-size: var(--accordion-subtitle-font-size);
     color: var(--accordion-subtitle-color);
+    padding: var(--accordion-subtitle-padding);
 }
 
 .accordion__subtitle-list {
     list-style: none;
-    padding: 0;
+    padding: var(--accordion-subtitle-padding);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -90,7 +96,7 @@
 /* OPEN PANEL */
 .accordion__content[aria-expanded="true"] {
     padding: var(--accordion-content-padding);
-    max-height: 50rem;
+    max-height: var(--accordion-panel-max-height);
 }
 
 .accordion__panel[data-open="true"] .accordion__title {
