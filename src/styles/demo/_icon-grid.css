@@ -1,7 +1,7 @@
 .icon-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    grid-gap: var(--spacing-xl);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: var(--spacing-l);
     margin-top: var(--spacing-l);
 }
 
@@ -13,6 +13,6 @@
 }
 
 .icon-grid__title {
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-xs);
     color: var(--color-font-light);
 }

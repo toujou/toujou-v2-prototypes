@@ -69,9 +69,34 @@
 }
 
 /* ICON IMAGES */
+.icon--accessibility {
+    mask-image: var(--icon-accessiblity);
+    -webkit-mask-image: var(--icon-accessiblity);
+}
+
+.icon--account {
+    mask-image: var(--icon-account);
+    -webkit-mask-image: var(--icon-account);
+}
+
+.icon--alarm {
+    mask-image: var(--icon-alarm);
+    -webkit-mask-image: var(--icon-alarm);
+}
+
+.icon--arrow-down {
+    mask-image: var(--icon-arrow-down);
+    -webkit-mask-image: var(--icon-arrow-down);
+}
+
 .icon--arrow-drop-down {
     mask-image: var(--icon-arrow-drop-down);
     -webkit-mask-image: var(--icon-arrow-drop-down);
+}
+
+.icon--arrow-left {
+    mask-image: var(--icon-arrow-left);
+    -webkit-mask-image: var(--icon-arrow-left);
 }
 
 .icon--arrow-right {
@@ -79,9 +104,19 @@
     -webkit-mask-image: var(--icon-arrow-right);
 }
 
-.icon--blockquote {
-    mask-image: var(--icon-blockquote);
-    -webkit-mask-image: var(--icon-blockquote);
+.icon--arrow-up {
+    mask-image: var(--icon-arrow-up);
+    -webkit-mask-image: var(--icon-arrow-up);
+}
+
+.icon--article {
+    mask-image: var(--icon-article);
+    -webkit-mask-image: var(--icon-article);
+}
+
+.icon--bell {
+    mask-image: var(--icon-bell);
+    -webkit-mask-image: var(--icon-bell);
 }
 
 .icon--blockquote-round {
@@ -99,19 +134,39 @@
     -webkit-mask-image: var(--icon-bookmark-filled);
 }
 
-.icon--breakfast {
-    mask-image: var(--icon-breakfast);
-    -webkit-mask-image: var(--icon-breakfast);
+.icon--calendar-check {
+    mask-image: var(--icon-calendar-check);
+    -webkit-mask-image: var(--icon-calendar-check);
 }
 
-.icon--calendar {
-    mask-image: var(--icon-calendar);
-    -webkit-mask-image: var(--icon-calendar);
+.icon--calendar-day {
+    mask-image: var(--icon-calendar-day);
+    -webkit-mask-image: var(--icon-calendar-day);
+}
+
+.icon--calendar-empty {
+    mask-image: var(--icon-calendar-empty);
+    -webkit-mask-image: var(--icon-calendar-empty);
+}
+
+.icon--calendar-lines {
+    mask-image: var(--icon-calendar-lines);
+    -webkit-mask-image: var(--icon-calendar-lines);
+}
+
+.icon--campaign {
+    mask-image: var(--icon-campaign);
+    -webkit-mask-image: var(--icon-campaign);
 }
 
 .icon--cancel-circle-filled {
     mask-image: var(--icon-cancel-circle-filled);
     -webkit-mask-image: var(--icon-cancel-circle-filled);
+}
+
+.icon--chart {
+    mask-image: var(--icon-chart);
+    -webkit-mask-image: var(--icon-chart);
 }
 
 .icon--check {
@@ -127,6 +182,21 @@
 .icon--chevron-filled-down {
     mask-image: var(--icon-chevron-filled-down);
     -webkit-mask-image: var(--icon-chevron-filled-down);
+}
+
+.icon--chevron-filled-left {
+    mask-image: var(--icon-chevron-filled-left);
+    -webkit-mask-image: var(--icon-chevron-filled-left);
+}
+
+.icon--chevron-filled-right {
+    mask-image: var(--icon-chevron-filled-right);
+    -webkit-mask-image: var(--icon-chevron-filled-right);
+}
+
+.icon--chevron-filled-up {
+    mask-image: var(--icon-chevron-filled-up);
+    -webkit-mask-image: var(--icon-chevron-filled-up);
 }
 
 .icon--chevron-left {
@@ -154,9 +224,39 @@
     -webkit-mask-image: var(--icon-clock-circle-filled);
 }
 
-.icon--dinner {
-    mask-image: var(--icon-dinner);
-    -webkit-mask-image: var(--icon-dinner);
+.icon--close {
+    mask-image: var(--icon-close);
+    -webkit-mask-image: var(--icon-close);
+}
+
+.icon--cloud {
+    mask-image: var(--icon-cloud);
+    -webkit-mask-image: var(--icon-cloud);
+}
+
+.icon--coffee {
+    mask-image: var(--icon-coffee);
+    -webkit-mask-image: var(--icon-coffee);
+}
+
+.icon--coronavirus {
+    mask-image: var(--icon-coronavirus);
+    -webkit-mask-image: var(--icon-coronavirus);
+}
+
+.icon--dashboard {
+    mask-image: var(--icon-dashboard);
+    -webkit-mask-image: var(--icon-dashboard);
+}
+
+.icon--drink {
+    mask-image: var(--icon-drink);
+    -webkit-mask-image: var(--icon-drink);
+}
+
+.icon--email {
+    mask-image: var(--icon-email);
+    -webkit-mask-image: var(--icon-email);
 }
 
 .icon--euro {
@@ -164,19 +264,33 @@
     -webkit-mask-image: var(--icon-euro);
 }
 
-.icon--ext-people-company {
-    mask-image: var(--icon-ext-people-company);
-    -webkit-mask-image: var(--icon-ext-people-company);
+.icon--file-download {
+    mask-image: var(--icon-file-download);
+    -webkit-mask-image: var(--icon-file-download);
 }
 
-.icon--ext-people-person {
-    mask-image: var(--icon-ext-people-person);
-    -webkit-mask-image: var(--icon-ext-people-person);
+.icon--flag {
+    mask-image: var(--icon-flag);
+    -webkit-mask-image: var(--icon-flag);
+}
+.icon--flower {
+    mask-image: var(--icon-flower);
+    -webkit-mask-image: var(--icon-flower);
 }
 
-.icon--filter-list {
-    mask-image: var(--icon-filter-list);
-    -webkit-mask-image: var(--icon-filter-list);
+.icon--folder {
+    mask-image: var(--icon-folder);
+    -webkit-mask-image: var(--icon-folder);
+}
+
+.icon--food {
+    mask-image: var(--icon-food);
+    -webkit-mask-image: var(--icon-food);
+}
+
+.icon--globe {
+    mask-image: var(--icon-globe);
+    -webkit-mask-image: var(--icon-globe);
 }
 
 .icon--heart {
@@ -199,9 +313,24 @@
     -webkit-mask-image: var(--icon-home-smooth);
 }
 
-.icon--info-circle-filled {
-    mask-image: var(--icon-info-circle-filled);
-    -webkit-mask-image: var(--icon-info-circle-filled);
+.icon--hotel {
+    mask-image: var(--icon-hotel);
+    -webkit-mask-image: var(--icon-hotel);
+}
+
+.icon--info {
+    mask-image: var(--icon-info);
+    -webkit-mask-image: var(--icon-info);
+}
+
+.icon--link {
+    mask-image: var(--icon-link);
+    -webkit-mask-image: var(--icon-link);
+}
+
+.icon--list {
+    mask-image: var(--icon-list);
+    -webkit-mask-image: var(--icon-list);
 }
 
 .icon--location {
@@ -209,14 +338,24 @@
     -webkit-mask-image: var(--icon-location);
 }
 
-.icon--lunch {
-    mask-image: var(--icon-lunch);
-    -webkit-mask-image: var(--icon-lunch);
-}
-
 .icon--map {
     mask-image: var(--icon-map);
     -webkit-mask-image: var(--icon-map);
+}
+
+.icon--message-bubble {
+    mask-image: var(--icon-message-bubble);
+    -webkit-mask-image: var(--icon-message-bubble);
+}
+
+.icon--monument {
+    mask-image: var(--icon-monument);
+    -webkit-mask-image: var(--icon-monument);
+}
+
+.icon--new {
+    mask-image: var(--icon-new);
+    -webkit-mask-image: var(--icon-new);
 }
 
 .icon--pending-circle-filled {
@@ -234,47 +373,148 @@
     -webkit-mask-image: var(--icon-play-circle-filled);
 }
 
-.icon--rate-star-filled {
-    mask-image: var(--icon-rate-star-filled);
-    -webkit-mask-image: var(--icon-rate-star-filled);
+.icon--prize {
+    mask-image: var(--icon-prize);
+    -webkit-mask-image: var(--icon-prize);
 }
 
-.icon--socialmedia-facebook {
-    mask-image: var(--icon-socialmedia-facebook);
-    -webkit-mask-image: var(--icon-socialmedia-facebook);
+.icon--question {
+    mask-image: var(--icon-question);
+    -webkit-mask-image: var(--icon-question);
 }
 
-.icon--socialmedia-instagram {
-    mask-image: var(--icon-socialmedia-instagram);
-    -webkit-mask-image: var(--icon-socialmedia-instagram);
+.icon--school {
+    mask-image: var(--icon-school);
+    -webkit-mask-image: var(--icon-school);
 }
 
-.icon--socialmedia-linkedin {
-    mask-image: var(--icon-socialmedia-linkedin);
-    -webkit-mask-image: var(--icon-socialmedia-linkedin);
+.icon--science {
+    mask-image: var(--icon-science);
+    -webkit-mask-image: var(--icon-science);
 }
 
-.icon--socialmedia-pinterest {
-    mask-image: var(--icon-socialmedia-pinterest);
-    -webkit-mask-image: var(--icon-socialmedia-pinterest);
+.icon--search {
+    mask-image: var(--icon-search);
+    -webkit-mask-image: var(--icon-search);
 }
 
-.icon--socialmedia-twitter {
-    mask-image: var(--icon-socialmedia-twitter);
-    -webkit-mask-image: var(--icon-socialmedia-twitter);
+.icon--settings {
+    mask-image: var(--icon-settings);
+    -webkit-mask-image: var(--icon-settings);
 }
 
-.icon--socialmedia-xing {
-    mask-image: var(--icon-socialmedia-xing);
-    -webkit-mask-image: var(--icon-socialmedia-xing);
+.icon--shopping-bag {
+    mask-image: var(--icon-shopping-bag);
+    -webkit-mask-image: var(--icon-shopping-bag);
 }
 
-.icon--socialmedia-youtube {
-    mask-image: var(--icon-socialmedia-youtube);
-    -webkit-mask-image: var(--icon-socialmedia-youtube);
+.icon--shopping-cart {
+    mask-image: var(--icon-shopping-cart);
+    -webkit-mask-image: var(--icon-shopping-cart);
+}
+
+.icon--sm-facebook {
+    mask-image: var(--icon-sm-facebook);
+    -webkit-mask-image: var(--icon-sm-facebook);
+}
+
+.icon--sm-facebook-circle {
+    mask-image: var(--icon-sm-facebook-circle);
+    -webkit-mask-image: var(--icon-sm-facebook-circle);
+}
+
+.icon--sm-instagram {
+    mask-image: var(--icon-sm-instagram);
+    -webkit-mask-image: var(--icon-sm-instagram);
+}
+
+.icon--sm-instagram-circle {
+    mask-image: var(--icon-sm-instagram-circle);
+    -webkit-mask-image: var(--icon-sm-instagram-circle);
+}
+
+.icon--sm-linkedin {
+    mask-image: var(--icon-sm-linkedin);
+    -webkit-mask-image: var(--icon-sm-linkedin);
+}
+
+.icon--sm-linkedin-circle {
+    mask-image: var(--icon-sm-linkedin-circle);
+    -webkit-mask-image: var(--icon-sm-linkedin-circle);
+}
+
+.icon--sm-pinterest {
+    mask-image: var(--icon-sm-pinterest);
+    -webkit-mask-image: var(--icon-sm-pinterest);
+}
+
+.icon--sm-pinterest-circle {
+    mask-image: var(--icon-sm-pinterest-circle);
+    -webkit-mask-image: var(--icon-sm-pinterest-circle);
+}
+
+.icon--sm-twitter {
+    mask-image: var(--icon-sm-twitter);
+    -webkit-mask-image: var(--icon-sm-twitter);
+}
+
+.icon--sm-twitter-circle {
+    mask-image: var(--icon-sm-twitter-circle);
+    -webkit-mask-image: var(--icon-sm-twitter-circle);
+}
+
+.icon--sm-xing {
+    mask-image: var(--icon-sm-xing);
+    -webkit-mask-image: var(--icon-sm-xing);
+}
+
+.icon--sm-xing-circle {
+    mask-image: var(--icon-sm-xing-circle);
+    -webkit-mask-image: var(--icon-sm-xing-circle);
+}
+
+.icon--sm-youtube {
+    mask-image: var(--icon-sm-youtube);
+    -webkit-mask-image: var(--icon-sm-youtube);
+}
+
+.icon--sm-youtube-circle {
+    mask-image: var(--icon-sm-youtube-circle);
+    -webkit-mask-image: var(--icon-sm-youtube-circle);
+}
+
+.icon--sports {
+    mask-image: var(--icon-sports);
+    -webkit-mask-image: var(--icon-sports);
+}
+
+.icon--star {
+    mask-image: var(--icon-star);
+    -webkit-mask-image: var(--icon-star);
 }
 
 .icon--stop-circle-filled {
     mask-image: var(--icon-stop-circle-filled);
     -webkit-mask-image: var(--icon-stop-circle-filled);
 }
+
+.icon--support {
+    mask-image: var(--icon-support);
+    -webkit-mask-image: var(--icon-support);
+}
+
+.icon--telephone {
+    mask-image: var(--icon-telephone);
+    -webkit-mask-image: var(--icon-telephone);
+}
+
+.icon--thumb-up {
+    mask-image: var(--icon-thumb-up);
+    -webkit-mask-image: var(--icon-thumb-up);
+}
+
+.icon--tools {
+    mask-image: var(--icon-tools);
+    -webkit-mask-image: var(--icon-tools);
+}
+
