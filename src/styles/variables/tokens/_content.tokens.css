@@ -4,4 +4,5 @@
     --content-max-width: 944px;
     --content-wide-max-width: 1440px;
     --content-padding-to-border: var(--spacing-normal);
+    --content-spacing-between-elements: var(--spacing-xl);
 }

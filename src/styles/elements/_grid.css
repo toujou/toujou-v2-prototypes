@@ -1,0 +1,22 @@
+.grid {
+    --grid-width: var(--content-width-with-padding);
+    --grid-max-width: var(--content-max-width);
+    --grid-margin: 0 auto;
+
+    width: var(--grid-width);
+    max-width: var(--grid-max-width);
+    margin: var(--grid-margin);
+}
+
+.grid--wide {
+    --grid-max-width: var(--content-wide-max-width);
+}
+
+.grid--fullwidth {
+    width: var(--content-width-100);
+    max-width: var(--content-width-100);
+}
+
+.grid--ignore {
+    display: contents;
+}

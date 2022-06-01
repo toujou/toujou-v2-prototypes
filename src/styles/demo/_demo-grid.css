@@ -1,0 +1,11 @@
+.demo-grid {
+    background-color: tomato;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-grid__title {
+    color: white;
+}

@@ -1,0 +1,75 @@
+/*
+    Inspiration:
+    - https://tailwindcss.com/docs/preflight
+    - https://piccalil.li/blog/a-modern-css-reset/
+    - https://css-tricks.com/an-interview-with-elad-shechter-on-the-new-css-reset/
+ */
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    vertical-align: middle;
+}
+
+::-moz-selection {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    text-shadow: none;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    text-shadow: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* Remove smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}

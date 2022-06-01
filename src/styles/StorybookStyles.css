@@ -1,3 +1,4 @@
+/* DEMO */
 @import 'demo/_demo-variables.css';
 @import 'variables/variables.css';
 @import 'demo/_animation.css';
@@ -12,21 +13,24 @@
 @import 'demo/_tokens-demo.css';
 @import 'demo/_type.css';
 @import 'demo/_icon-grid.css';
+@import 'demo/_demo-grid.css';
 
+/* CSS RESET */
+@import './elements/_reset.css';
+
+/* ELEMENTS */
 @import './elements/_accordion.css';
 @import './elements/_blockquote.css';
 @import './elements/_blockquote-grid.css';
 @import './elements/_breadcrumb.css';
 @import './elements/_button.css';
+@import './elements/_grid.css';
 @import './elements/_icon.css';
 @import './elements/_main-navbar.css';
 @import './elements/_service-navbar.css';
+@import './elements/_text-block.css';
 @import './elements/_topbar-logo.css';
 @import './elements/_toujou-chip.css';
-
-* {
-    box-sizing: border-box;
-}
 
 body {
     background-color: var(--demo-color-grey-light);
