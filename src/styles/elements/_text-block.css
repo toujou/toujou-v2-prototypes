@@ -54,8 +54,15 @@
     --text-block-image-aspect-ratio: var(--aspect-ratio-golden);
 }
 
-:is(.text-block--media-left, .text-block--media-right) .text-block__content {
+:is(.text-block--media-left, .text-block--media-right, .text-block--media-above) .text-block__content {
     margin-top: var(--text-blocks-grid-gap);
+}
+
+.text-block--media-below .text-block__column {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--text-blocks-grid-gap);
+    justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
