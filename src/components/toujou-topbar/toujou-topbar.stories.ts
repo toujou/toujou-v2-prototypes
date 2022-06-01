@@ -2,6 +2,8 @@ import { Meta } from '@storybook/web-components';
 // @ts-ignore
 import logoImage from '../../../assets/logoipsum.svg';
 import { withXD } from "storybook-addon-xd-designs";
+// @ts-ignore
+import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
 
 export default {
     title: 'COMPONENTS/Topbar',
@@ -9,7 +11,8 @@ export default {
     parameters: {
         design: {
             artboardUrl: 'https://xd.adobe.com/view/c5b5ae33-8b35-4536-be9f-a39f5a3c447f-90e6/screen/9b61f9cb-3a4b-4df5-9706-2991633fc53e/Desktop',
-        }
+        },
+        badges: [TOUJOU_BADGES.TESTING]
     },
     argTypes: {
         logoPosition: {

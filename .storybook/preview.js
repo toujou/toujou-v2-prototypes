@@ -1,6 +1,7 @@
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-breadcrumb/toujou-breadcrumb";
 import "../src/styles/StorybookStyles.css";
+import { badgeCustomConfig } from "./badgeCustomConfig.js";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,15 +12,6 @@ export const parameters = {
     },
     expanded: true,
   },
-  badgesConfig: {
-    beta: {
-      styles: {
-        backgroundColor: '#7a17da',
-        borderColor: '#550e96',
-        color: '#e3d4ef',
-      },
-      title: 'In progress',
-    },
-  },
+  badgesConfig: badgeCustomConfig,
   // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }

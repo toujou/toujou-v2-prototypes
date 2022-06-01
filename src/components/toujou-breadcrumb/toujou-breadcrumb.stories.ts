@@ -1,10 +1,11 @@
 import { Meta } from '@storybook/web-components';
-import { BADGE } from '@geometricpanda/storybook-addon-badges';
+// @ts-ignore
+import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
 
 export default {
     title: 'COMPONENTS/Breadcrumb',
     parameters: {
-        badges: [BADGE.BETA]
+        badges: [TOUJOU_BADGES.TESTING]
     },
 } as Meta;
 

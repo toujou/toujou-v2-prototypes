@@ -1,7 +1,7 @@
 import {Meta} from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
-import { BADGE } from '@geometricpanda/storybook-addon-badges';
-
+// @ts-ignore
+import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
 
 export default {
     title: 'COMPONENTS/Blockquote',
@@ -10,7 +10,7 @@ export default {
         design: {
             artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/16a665e8-5a1e-451f-ac52-717e48e2f4dd/Desktop',
         },
-        badges: [BADGE.BETA]
+        badges: [TOUJOU_BADGES.TESTING]
     },
     argTypes: {
         direction: {
@@ -28,7 +28,7 @@ export default {
     },
 } as Meta;
 
-const BlockquoteTemplate = (args) => {
+const BlockquoteTemplate = (args: { direction: string; }) => {
     return `
         <figure class="blockquote blockquote--${args.direction}">
             <img src="https://picsum.photos/200/200" alt="quote image" class="blockquote__image">

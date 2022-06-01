@@ -1,6 +1,7 @@
 import {Meta} from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
-import { BADGE } from '@geometricpanda/storybook-addon-badges';
+// @ts-ignore
+import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
 
 export default {
     title: 'COMPONENTS/Accordion',
@@ -9,7 +10,7 @@ export default {
         design: {
             artboardUrl: 'https://xd.adobe.com/view/c5b5ae33-8b35-4536-be9f-a39f5a3c447f-90e6/screen/154e8bfd-4e6a-48d2-914c-5bafe3af7289/Desktop',
         },
-        badges: [BADGE.BETA]
+        badges: [TOUJOU_BADGES.TESTING]
     },
 } as Meta;
 
