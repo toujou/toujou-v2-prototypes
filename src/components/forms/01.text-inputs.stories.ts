@@ -45,7 +45,7 @@ const Template = (args: { state: string; }) => {
 
         	<div class="input-group input-group--type-text input-group--required ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">			
 				<label class="input-label" for="testform-1000091-text-1">Ihr Name</label>
-				<span class="input__description">Enter your name so we can print out the documents correctly.</span>
+				<span class="form__description">Enter your name so we can print out the documents correctly.</span>
         		<input
                     placeholder="Max Mustermann"
                     data-pristine-required-message="The given subject was empty."
@@ -61,7 +61,7 @@ const Template = (args: { state: string; }) => {
 
             <div class="input-group input-group--type-email ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
                 <label class="input-label" for="testform-1000091-email-1">Email address</label>
-                <span class="input__description">This is a description</span>
+                <span class="form__description">This is a description</span>
                 <input
                     placeholder="This is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -76,7 +76,7 @@ const Template = (args: { state: string; }) => {
             
             <div class="input-group input-group--type-telephone ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
                 <label class="input-label" for="testform-1000091-telephone-1">Telephone number</label>
-                <span class="input__description">This is a description</span>
+                <span class="form__description">This is a description</span>
                 <input
                     placeholder="this is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -91,7 +91,7 @@ const Template = (args: { state: string; }) => {
 	
             <div class="input-group input-group--type-url ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
                 <label class="input-label" for="testform-1000091-url-1">URL</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                 <input
                     placeholder="this is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -106,7 +106,7 @@ const Template = (args: { state: string; }) => {
 	
             <div class="input-group input-group--type-number ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
                 <label class="input-label" for="testform-1000091-number-1">Number</label>
-                <span class="input__description">this is a descripton</span>
+                <span class="form__description">this is a descripton</span>
                 <input
                     step="1"
                     placeholder="this is a placeholder"

@@ -56,22 +56,6 @@
     color: var(--input-placeholder-color);
 }
 
-.input__description {
-    --input-description-order: 10;
-    --input-description-padding: 0 var(--spacing-s);
-    --input-description-color: var(--color-font-light);
-    --input-description-font-family: var(--font-family-text);
-    --input-description-font-size: var(--font-size-normal);
-    --input-description-font-weight: var(--font-weight-text-normal);
-
-    order: var(--input-description-order);
-    padding: var(--input-description-padding);
-    color: var(--input-description-color);
-    font-family: var(--input-description-font-family);
-    font-size: var(--input-description-font-size);
-    font-weight: var(--input-description-font-weight);
-}
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     opacity: 1;

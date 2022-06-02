@@ -32,6 +32,8 @@
 @import './elements/_topbar-logo.css';
 @import './elements/_toujou-chip.css';
 @import './elements/_type.css';
+@import './elements/forms/_checkbox.css';
+@import './elements/forms/_checkbox-group.css';
 @import './elements/forms/_form.css';
 @import './elements/forms/_input-group.css';
 @import './elements/forms/_input.css';

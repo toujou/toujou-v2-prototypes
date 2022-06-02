@@ -57,6 +57,7 @@
     --color-success-l: 45%;
     --color-success: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l));
     --color-success-darken-15: hsl(var(--color-success-h) var(--color-success-s) calc(var(--color-success-l) - 15%));
+    --color-success-o-25: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l) / 25%);
 
 
     --color-warning-h: 34;
@@ -70,4 +71,5 @@
     --color-error-l: 55%;
     --color-error: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l));
     --color-error-darken-15: hsl(var(--color-error-h) var(--color-error-s) calc(var(--color-error-l) - 15%));
+    --color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);
 }

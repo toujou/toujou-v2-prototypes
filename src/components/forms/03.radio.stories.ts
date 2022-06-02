@@ -27,7 +27,7 @@ const Template = () => {
 
 	        <div class="input-group input-group--radio ">
 				<label class="input-label" for="testform-1000091-radiobutton-1">Radio button</label>
-				<span class="input__description">this is a descriptions</span>
+				<span class="form__description">this is a descriptions</span>
                 <div class="radio-group">
                     <label class="radio__label">
                         <input

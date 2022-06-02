@@ -30,7 +30,7 @@ const Template = () => {
     
                 <div class="input-group ">
                     <label class="input-label" for="testform-1000091-text-2">Text</label>
-                    <span class="input__description">description</span>
+                    <span class="form__description">description</span>
                     <input placeholder="placeholder"
                         class=" input input--text"
                         id="testform-1000091-text-2"
@@ -41,7 +41,7 @@ const Template = () => {
                 
                 <div class="input-group ">
                     <label class="input-label" for="testform-1000091-text-3">Text</label>
-                    <span class="input__description">description</span>
+                    <span class="form__description">description</span>
                     <input placeholder="placeholder"
                         class=" input input--text"
                         id="testform-1000091-text-3"

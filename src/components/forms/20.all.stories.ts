@@ -27,7 +27,7 @@ const Template = () => {
 
         	<div class="input-group ">			
 				<label class="input-label" for="testform-1000091-text-1">Text</label>
-				<span class="input__description">This is a description</span>
+				<span class="form__description">This is a description</span>
         		<input
                     placeholder="This is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -40,7 +40,7 @@ const Template = () => {
 
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-email-1">Email address</label>
-                <span class="input__description">This is a description</span>
+                <span class="form__description">This is a description</span>
                 <input
                     placeholder="This is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -53,7 +53,7 @@ const Template = () => {
             
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-telephone-1">Telephone number</label>
-                <span class="input__description">This is a description</span>
+                <span class="form__description">This is a description</span>
                 <input
                     placeholder="this is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -66,7 +66,7 @@ const Template = () => {
 	
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-url-1">URL</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                 <input
                     placeholder="this is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -79,7 +79,7 @@ const Template = () => {
 	
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-number-1">Number</label>
-                <span class="input__description">this is a descripton</span>
+                <span class="form__description">this is a descripton</span>
                 <input
                     step="1"
                     placeholder="this is a placeholder"
@@ -93,7 +93,7 @@ const Template = () => {
             
             <div class="input-group ">
 				<label class="input-label" for="testform-1000091-textarea-1">Textarea</label>
-				<span class="input__description">This is a description</span>
+				<span class="form__description">This is a description</span>
                 <textarea
                     placeholder="This is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -105,7 +105,7 @@ const Template = () => {
             
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-date-1">Date</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                 <input pattern="/([0-9]{4})-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])/"
                     step="1"
                     data-pristine-required-message="The given subject was empty."
@@ -134,7 +134,7 @@ const Template = () => {
 	
             <div class="input-group input-group--single-select ">
                 <label class="input-label" for="testform-1000091-singleselect-1">Single select</label>
-                <span class="input__description">this is a descriptions</span>
+                <span class="form__description">this is a descriptions</span>
                 <div class="select__wrapper">
                     <select
                     data-pristine-required-message="The given subject was empty."
@@ -152,7 +152,7 @@ const Template = () => {
 	
 	        <div class="input-group input-group--radio ">
 				<label class="input-label" for="testform-1000091-radiobutton-1">Radio button</label>
-				<span class="input__description">this is a descriptions</span>
+				<span class="form__description">this is a descriptions</span>
                 <div class="radio-group">
                     <label class="radio__label">
                         <input
@@ -216,7 +216,7 @@ const Template = () => {
 	
 	        <div class="input-group input-group--multi-check ">
 				<label class="input-label" for="testform-1000091-multicheckbox-1">Multi checkbox</label>
-				<span class="input__description">this is a descriptions</span>
+				<span class="form__description">this is a descriptions</span>
                 <div class="checkbox-group">
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">
                         <input
@@ -296,7 +296,7 @@ const Template = () => {
 	
 	        <div class="input-group input-group--multi-select ">
 				<label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
-				<span class="input__description">this is a description</span>
+				<span class="form__description">this is a description</span>
 				<input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">
 				<select
 				    data-pristine-required-message="The given subject was empty."
@@ -314,7 +314,7 @@ const Template = () => {
 	
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                     <input
                         data-pristine-required-message="The given subject was empty."
                         class="input input--file-upload"
@@ -326,7 +326,7 @@ const Template = () => {
             
             <div class="input-group " data-format="Y-m-d">
                 <label class="input-label" for="testform-1000091-datepicker-1">Date picker (jQuery)</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                     <input
                         placeholder="this is a placeholder"
                         data-pristine-required-message="The given subject was empty."
@@ -342,7 +342,7 @@ const Template = () => {
             
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                 <input
                     data-pristine-required-message="The given subject was empty."
                     class="input input--imageupload image-upload"
@@ -357,7 +357,7 @@ const Template = () => {
     
                 <div class="input-group ">
                     <label class="input-label" for="testform-1000091-text-2">Text</label>
-                    <span class="input__description">description</span>
+                    <span class="form__description">description</span>
                     <input placeholder="placeholder"
                         class=" input input--text"
                         id="testform-1000091-text-2"
@@ -368,7 +368,7 @@ const Template = () => {
                 
                 <div class="input-group ">
                     <label class="input-label" for="testform-1000091-text-3">Text</label>
-                    <span class="input__description">description</span>
+                    <span class="form__description">description</span>
                     <input placeholder="placeholder"
                         class=" input input--text"
                         id="testform-1000091-text-3"

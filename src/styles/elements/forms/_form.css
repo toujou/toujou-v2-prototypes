@@ -24,6 +24,30 @@
     font-size: var(--form-error-font-size);
 }
 
+.form__error--after-group {
+    --form-error-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 3px);
+}
+
 .input-group--has-error .form__error {
     --form-error-display: block;
+}
+
+.form__description {
+    --form-description-order: 10;
+    --form-description-padding: 0 var(--spacing-s);
+    --form-description-color: var(--color-font-light);
+    --form-description-font-family: var(--font-family-text);
+    --form-description-font-size: var(--font-size-normal);
+    --form-description-font-weight: var(--font-weight-text-normal);
+
+    order: var(--form-description-order);
+    padding: var(--form-description-padding);
+    color: var(--form-description-color);
+    font-family: var(--form-description-font-family);
+    font-size: var(--form-description-font-size);
+    font-weight: var(--form-description-font-weight);
+}
+
+.form__description--after-group {
+    --form-description-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 2px);
 }

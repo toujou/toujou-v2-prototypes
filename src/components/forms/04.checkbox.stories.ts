@@ -10,12 +10,30 @@ export default {
         design: {
             artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/9b61f9cb-3a4b-4df5-9706-2991633fc53e/Desktop',
         },
-        badges: [TOUJOU_BADGES.PROGRESS]
+        badges: [TOUJOU_BADGES.TESTING]
     },
-    argTypes: {}
+    argTypes: {
+        state: {
+            table: {
+                category: "Inputs settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Input state',
+            description: "Set the visible input state",
+            options: ['default', 'disabled', 'success', 'error'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+const Template = (args) => {
+    const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
+    const inputGroupDisabledClass = args.state === 'disabled' ? 'input-group--disabled' : '';
+    const inputGroupErrorClass = args.state === 'error' ? 'input-group--has-error' : '';
+    const inputGroupSuccessClass = args.state === 'success' ? 'input-group--has-success' : '';
+
     return `
         <form
             enctype="multipart/form-data"
@@ -25,101 +43,93 @@ const Template = () => {
             action="#"
             novalidate="true">
 	
-            <div class="input-group input-group--checkbox ">
+            <div class="input-group input-group--type-checkbox ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
                 <div class="checkbox-group">
-                    <label class="add-on checkbox-group__label" for="testform-1000091-checkbox-1">
-                        <input type="hidden" name="tx_form_formframework[testform-1000091][checkbox-1]" value="">
-                        <input
+                     <input
                             data-pristine-required-message="The given subject was empty."
                             class="add-on checkbox checkbox--single"
                             id="testform-1000091-checkbox-1"
                             type="checkbox"
                             name="tx_form_formframework[testform-1000091][checkbox-1]"
-                            value="1">
-                        <span class="checkbox__description">Checkbox</span>
-                    </label>
+                            value="1"
+                            ${disabledAttribute}>
+                    <label class="add-on checkbox-group__label" for="testform-1000091-checkbox-1">This is the label</label>
+                    <span class="form__description checkbox-group__description">Checkbox</span>
+                    <span class="pristine-error form__error checkbox-group__error">The given subject was empty.</span>
                 </div>
             </div>
 	
 	
-	        <div class="input-group input-group--multi-check ">
-				<label class="input-label" for="testform-1000091-multicheckbox-1">Multi checkbox</label>
-				<span class="input__description">this is a descriptions</span>
+	        <div class="input-group input-group--type-multi-check ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
+				<label class="multi-checkbox__label" for="testform-1000091-multicheckbox-1">Multi checkbox</label>
                 <div class="checkbox-group">
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">
-                        <input
-                        type="hidden"
-                        name="tx_form_formframework[testform-1000091][multicheckbox-1]"
-                        value="">
-                        <input
-                            data-pristine-required-message="The given subject was empty."
-                            class=" checkbox"
-                            id="testform-1000091-multicheckbox-1_1" type="checkbox" name="tx_form_formframework[testform-1000091][multicheckbox-1][]" value="aaaaa">
-                        <span class="checkbox__description">aaaaa</span>
-                    </label>
+                    <input
+                        data-pristine-required-message="The given subject was empty."
+                        class=" checkbox"
+                        id="testform-1000091-multicheckbox-1_1"
+                        type="checkbox"
+                        name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
+                        value="aaaaa">
+                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Option one</label>
                 </div>
             
                 <div class="checkbox-group">
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_2">
-                        <input
-                            data-pristine-required-message="The given subject was empty."
-                            class=" checkbox"
-                            id="testform-1000091-multicheckbox-1_2" type="checkbox" name="tx_form_formframework[testform-1000091][multicheckbox-1][]" value="bbbbb">
-                        <span class="checkbox__description">bbbbb</span>
-                    </label>
+                    <input
+                        data-pristine-required-message="The given subject was empty."
+                        class=" checkbox"
+                        id="testform-1000091-multicheckbox-1_2"
+                        type="checkbox"
+                        name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
+                        value="bbbbb">
+                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_2">Option two</label>
                 </div>
             
                 <div class="checkbox-group">
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_3">
-                        <input
-                            data-pristine-required-message="The given subject was empty."
-                            class=" checkbox"
-                            id="testform-1000091-multicheckbox-1_3"
-                            type="checkbox"
-                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                            value="ccccc">
-                        <span class="checkbox__description">ccccc</span>
-                    </label>
+                    <input
+                        data-pristine-required-message="The given subject was empty."
+                        class=" checkbox"
+                        id="testform-1000091-multicheckbox-1_3"
+                        type="checkbox"
+                        name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
+                        value="ccccc">
+                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_3">Option three</label>
                 </div>
             
                 <div class="checkbox-group">
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_4">
-                        <input
-                            data-pristine-required-message="The given subject was empty."
-                            class=" checkbox"
-                            id="testform-1000091-multicheckbox-1_4"
-                            type="checkbox" 
-                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                            value="ddddd">
-                        <span class="checkbox__description">ddddd</span>
-                    </label>
+                    <input
+                        data-pristine-required-message="The given subject was empty."
+                        class=" checkbox"
+                        id="testform-1000091-multicheckbox-1_4"
+                        type="checkbox" 
+                        name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
+                        value="ddddd">
+                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_4">Option four</label>
                 </div>
             
                 <div class="checkbox-group">
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_5">
-                        <input
-                            data-pristine-required-message="The given subject was empty."
-                            class=" checkbox"
-                            id="testform-1000091-multicheckbox-1_5"
-                            type="checkbox"
-                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                            value="eeeee">
-                        <span class="checkbox__description">eeeee</span>
-                    </label>
+                    <input
+                        data-pristine-required-message="The given subject was empty."
+                        class=" checkbox"
+                        id="testform-1000091-multicheckbox-1_5"
+                        type="checkbox"
+                        name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
+                        value="eeeee">
+                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_5">Option five</label>
                 </div>
             
                 <div class="checkbox-group">
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_6">
-                        <input
-                            data-pristine-required-message="The given subject was empty."
-                            class=" checkbox"
-                            id="testform-1000091-multicheckbox-1_6"
-                            type="checkbox"
-                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                            value="fffff">
-                        <span class="checkbox__description">fffff</span>
-                    </label>
+                    <input
+                        data-pristine-required-message="The given subject was empty."
+                        class=" checkbox"
+                        id="testform-1000091-multicheckbox-1_6"
+                        type="checkbox"
+                        name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
+                        value="fffff">
+                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_6">Option six</label>
                 </div>
+                <span class="form__description form__description--after-group">this is a descriptions</span>
+				<span class="form__error form__error--after-group">The given subject was empty.</span>
+
 	        </div>
 	
         </form>
@@ -129,4 +139,6 @@ const Template = () => {
 export const CheckboxInputs = Template.bind({});
 
 // @ts-ignore
-CheckboxInputs.args = {}
+CheckboxInputs.args = {
+    state: 'default'
+}

@@ -45,7 +45,7 @@ const Template = (args: { state: string; }) => {
 	        
 	        <div class="input-group input-group--type-textarea ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
 				<label class="input-label" for="testform-1000091-textarea-1">Textarea</label>
-				<span class="input__description">This is a description</span>
+				<span class="form__description">This is a description</span>
                 <textarea
                     placeholder="This is a placeholder"
                     data-pristine-required-message="The given subject was empty."

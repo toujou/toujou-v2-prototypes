@@ -27,7 +27,7 @@ const Template = () => {
 
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                     <input
                         data-pristine-required-message="The given subject was empty."
                         class="input input--file-upload"
@@ -39,7 +39,7 @@ const Template = () => {
             
             <div class="input-group ">
                 <label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
-                <span class="input__description">this is a description</span>
+                <span class="form__description">this is a description</span>
                 <input
                     data-pristine-required-message="The given subject was empty."
                     class="input input--imageupload image-upload"
@@ -51,7 +51,7 @@ const Template = () => {
             
             <div class="input-group input-group--multi-select ">
 				<label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
-				<span class="input__description">this is a description</span>
+				<span class="form__description">this is a description</span>
 				<input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">
 				<select
 				    data-pristine-required-message="The given subject was empty."
