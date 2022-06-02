@@ -36,6 +36,7 @@
 @import './elements/forms/_input-group.css';
 @import './elements/forms/_input.css';
 @import './elements/forms/_input-label.css';
+@import './elements/forms/_select.css';
 
 body {
     background-color: var(--demo-color-grey-light);

@@ -28,7 +28,7 @@ export default {
     }
 } as Meta;
 
-const Template = (args) => {
+const Template = (args: { state: string; }) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
     const inputGroupDisabledClass = args.state === 'disabled' ? 'input-group--disabled' : '';
     const inputGroupErrorClass = args.state === 'error' ? 'input-group--has-error' : '';

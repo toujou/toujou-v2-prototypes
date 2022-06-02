@@ -48,6 +48,24 @@ const Template = () => {
                     type="file"
                     name="tx_form_formframework[testform-1000091][imageupload-1]">
             </div>
+            
+            <div class="input-group input-group--multi-select ">
+				<label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
+				<span class="input__description">this is a description</span>
+				<input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">
+				<select
+				    data-pristine-required-message="The given subject was empty."
+				    class="xlarge form-control multi-select"
+				    id="testform-1000091-multiselect-1"
+				    multiple="multiple"
+				    name="tx_form_formframework[testform-1000091][multiselect-1][]">
+				    <option value="">first option</option>
+                    <option value="aaaaa">aaaaa</option>
+                    <option value="bbbbb">bbbbb</option>
+                    <option value="ccccc">ccccc</option>
+                    <option value="ddddd">ddddd</option>
+                </select>
+	        </div>
     
         </form>
     `

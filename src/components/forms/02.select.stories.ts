@@ -12,10 +12,28 @@ export default {
         },
         badges: [TOUJOU_BADGES.PROGRESS]
     },
-    argTypes: {}
+    argTypes: {
+        state: {
+            table: {
+                category: "Inputs settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Input state',
+            description: "Set the visible input state",
+            options: ['default', 'disabled', 'success', 'error'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+const Template = (args) => {
+    const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
+    const inputGroupDisabledClass = args.state === 'disabled' ? 'input-group--disabled' : '';
+    const inputGroupErrorClass = args.state === 'error' ? 'input-group--has-error' : '';
+    const inputGroupSuccessClass = args.state === 'success' ? 'input-group--has-success' : '';
+
     return `
         <form
             enctype="multipart/form-data"
@@ -25,15 +43,16 @@ const Template = () => {
             action="#"
             novalidate="true">
 
-            <div class="input-group input-group--single-select ">
-                <label class="input-label" for="testform-1000091-singleselect-1">Single select</label>
-                <span class="input__description">this is a descriptions</span>
+            <div class="input-group input-group--type-single-select ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
+                <label class="input-label" for="testform-1000091-singleselect-1">Land</label>
+                <span class="input__description">this is a description</span>
                 <div class="select__wrapper">
                     <select
                     data-pristine-required-message="The given subject was empty."
                     class=" form-control input select"
                     id="testform-1000091-singleselect-1"
-                    name="tx_form_formframework[testform-1000091][singleselect-1]">
+                    name="tx_form_formframework[testform-1000091][singleselect-1]"
+                    ${disabledAttribute}>
                         <option value="">First options</option>
                         <option value="aaaaa">aaaaa</option>
                         <option value="bbbbb">bbbbb</option>
@@ -43,24 +62,6 @@ const Template = () => {
                 </div>
             </div>
 	
-	        <div class="input-group input-group--multi-select ">
-				<label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
-				<span class="input__description">this is a description</span>
-				<input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">
-				<select
-				    data-pristine-required-message="The given subject was empty."
-				    class="xlarge form-control multi-select"
-				    id="testform-1000091-multiselect-1"
-				    multiple="multiple"
-				    name="tx_form_formframework[testform-1000091][multiselect-1][]">
-				    <option value="">first option</option>
-                    <option value="aaaaa">aaaaa</option>
-                    <option value="bbbbb">bbbbb</option>
-                    <option value="ccccc">ccccc</option>
-                    <option value="ddddd">ddddd</option>
-                </select>
-	        </div>
-	
         </form>
     `;
 };
@@ -68,4 +69,6 @@ const Template = () => {
 export const SelectInput = Template.bind({});
 
 // @ts-ignore
-SelectInput.args = {}
+SelectInput.args = {
+    state: 'default'
+}

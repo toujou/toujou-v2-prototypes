@@ -10,7 +10,9 @@
     --input-background-color: transparent;
     --input-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
     --input-color: var(--color-font);
+    --input-font-family: var(--font-family-text);
     --input-font-size: var(--font-size-normal);
+    --input-font-weight: var(--font-weight-text-normal);
 
     --input-placeholder-color: var(--color-font-light);
 
@@ -23,7 +25,9 @@
     background-color: var(--input-background-color);
     padding: var(--input-padding);
     color: var(--input-color);
+    font-family: var(--input-font-family);
     font-size: var(--input-font-size);
+    font-weight: var(--input-font-weight);
 }
 
 .input:focus {
@@ -57,11 +61,15 @@
     --input-description-padding: 0 var(--spacing-s);
     --input-description-color: var(--color-font-light);
     --input-description-font-family: var(--font-family-text);
+    --input-description-font-size: var(--font-size-normal);
+    --input-description-font-weight: var(--font-weight-text-normal);
 
     order: var(--input-description-order);
     padding: var(--input-description-padding);
     color: var(--input-description-color);
     font-family: var(--input-description-font-family);
+    font-size: var(--input-description-font-size);
+    font-weight: var(--input-description-font-weight);
 }
 
 input[type=number]::-webkit-inner-spin-button,
