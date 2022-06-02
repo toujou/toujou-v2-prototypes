@@ -34,6 +34,7 @@
 @import './elements/_type.css';
 @import './elements/forms/_checkbox.css';
 @import './elements/forms/_checkbox-group.css';
+@import './elements/forms/_multi-checkbox-group.css';
 @import './elements/forms/_form.css';
 @import './elements/forms/_input-group.css';
 @import './elements/forms/_input.css';

@@ -54,14 +54,14 @@ const Template = (args) => {
                             value="1"
                             ${disabledAttribute}>
                     <label class="add-on checkbox-group__label" for="testform-1000091-checkbox-1">This is the label</label>
-                    <span class="form__description checkbox-group__description">Checkbox</span>
+                    <span class="form__description checkbox-group__description">This is the description</span>
                     <span class="pristine-error form__error checkbox-group__error">The given subject was empty.</span>
                 </div>
             </div>
 	
 	
-	        <div class="input-group input-group--type-multi-check ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
-				<label class="multi-checkbox__label" for="testform-1000091-multicheckbox-1">Multi checkbox</label>
+	        <div class="input-group input-group--type-multi-check multi-checkbox-group ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
+				<label class="multi-checkbox-group__label" for="testform-1000091-multicheckbox-1">This is the label</label>
                 <div class="checkbox-group">
                     <input
                         data-pristine-required-message="The given subject was empty."
@@ -69,7 +69,8 @@ const Template = (args) => {
                         id="testform-1000091-multicheckbox-1_1"
                         type="checkbox"
                         name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                        value="aaaaa">
+                        value="aaaaa"
+                        ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Option one</label>
                 </div>
             
@@ -80,7 +81,8 @@ const Template = (args) => {
                         id="testform-1000091-multicheckbox-1_2"
                         type="checkbox"
                         name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                        value="bbbbb">
+                        value="bbbbb"
+                        ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_2">Option two</label>
                 </div>
             
@@ -91,7 +93,8 @@ const Template = (args) => {
                         id="testform-1000091-multicheckbox-1_3"
                         type="checkbox"
                         name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                        value="ccccc">
+                        value="ccccc"
+                        ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_3">Option three</label>
                 </div>
             
@@ -102,7 +105,8 @@ const Template = (args) => {
                         id="testform-1000091-multicheckbox-1_4"
                         type="checkbox" 
                         name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                        value="ddddd">
+                        value="ddddd"
+                        ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_4">Option four</label>
                 </div>
             
@@ -113,21 +117,12 @@ const Template = (args) => {
                         id="testform-1000091-multicheckbox-1_5"
                         type="checkbox"
                         name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                        value="eeeee">
+                        value="eeeee"
+                        ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_5">Option five</label>
                 </div>
             
-                <div class="checkbox-group">
-                    <input
-                        data-pristine-required-message="The given subject was empty."
-                        class=" checkbox"
-                        id="testform-1000091-multicheckbox-1_6"
-                        type="checkbox"
-                        name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                        value="fffff">
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_6">Option six</label>
-                </div>
-                <span class="form__description form__description--after-group">this is a descriptions</span>
+                <span class="form__description form__description--after-group">This is a description</span>
 				<span class="form__error form__error--after-group">The given subject was empty.</span>
 
 	        </div>

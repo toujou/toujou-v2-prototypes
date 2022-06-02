@@ -54,7 +54,6 @@
     grid-column: var(--checkbox-group-error-column);
 }
 
-
 @media (hover: hover) {
     .checkbox-group__label:hover {
         cursor: pointer;

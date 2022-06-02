@@ -12,10 +12,28 @@ export default {
         },
         badges: [TOUJOU_BADGES.PROGRESS]
     },
-    argTypes: {}
+    argTypes: {
+        state: {
+            table: {
+                category: "Inputs settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Input state',
+            description: "Set the visible input state",
+            options: ['default', 'disabled', 'success', 'error'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+const Template = (args) => {
+    const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
+    const inputGroupDisabledClass = args.state === 'disabled' ? 'input-group--disabled' : '';
+    const inputGroupErrorClass = args.state === 'error' ? 'input-group--has-error' : '';
+    const inputGroupSuccessClass = args.state === 'success' ? 'input-group--has-success' : '';
+
     return `
         <form
             enctype="multipart/form-data"
@@ -96,4 +114,6 @@ const Template = () => {
 export const RadioInputs = Template.bind({});
 
 // @ts-ignore
-RadioInputs.args = {}
+RadioInputs.args = {
+    state: 'default'
+}

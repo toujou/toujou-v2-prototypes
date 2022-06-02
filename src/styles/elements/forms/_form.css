@@ -16,12 +16,14 @@
     --form-error-padding: 0 var(--spacing-s);
     --form-error-font-size: var(--font-size-s);
     --form-error-display: none;
+    --form-error-column: 1 / -1;
 
     display: var(--form-error-display);
     order: var(--form-error-order);
     color: var(--form-error-color);
     padding: var(--form-error-padding);
     font-size: var(--form-error-font-size);
+    grid-column: var(--form-error-column);
 }
 
 .form__error--after-group {
@@ -39,6 +41,7 @@
     --form-description-font-family: var(--font-family-text);
     --form-description-font-size: var(--font-size-normal);
     --form-description-font-weight: var(--font-weight-text-normal);
+    --form-description-column: 1 / -1;
 
     order: var(--form-description-order);
     padding: var(--form-description-padding);
@@ -46,6 +49,7 @@
     font-family: var(--form-description-font-family);
     font-size: var(--form-description-font-size);
     font-weight: var(--form-description-font-weight);
+    grid-column: var(--form-description-column);
 }
 
 .form__description--after-group {
