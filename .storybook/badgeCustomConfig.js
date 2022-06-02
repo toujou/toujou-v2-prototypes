@@ -43,12 +43,13 @@ export const badgeCustomConfig = {
     },
 }
 
-export const TOUJOU_BADGES = BADGE;
-
-TOUJOU_BADGES.PROGRESS = 'progress';
-TOUJOU_BADGES.DONE = 'done';
-TOUJOU_BADGES.BLOCKED = 'blocked';
-TOUJOU_BADGES.TESTING = 'testing';
-TOUJOU_BADGES.REFINEMENT = 'refinement';
+export const TOUJOU_BADGES = {
+    ...BADGE,
+    PROGRESS: 'progress',
+    DONE: 'done',
+    BLOCKED: 'blocked',
+    TESTING: 'testing',
+    REFINEMENT: 'refinement',
+};
 
 
