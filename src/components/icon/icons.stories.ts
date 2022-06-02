@@ -62,6 +62,7 @@ const iconNames = [
     'cancel-circle-filled',
     'chart',
     'check',
+    'check-circle',
     'chevron-down',
     'chevron-filled-down',
     'chevron-filled-left',

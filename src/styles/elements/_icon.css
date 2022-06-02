@@ -174,6 +174,11 @@
     -webkit-mask-image: var(--icon-check);
 }
 
+.icon--check-circle {
+    mask-image: var(--icon-check-circle);
+    -webkit-mask-image: var(--icon-check-circle);
+}
+
 .icon--chevron-down {
     mask-image: var(--icon-chevron-down);
     -webkit-mask-image: var(--icon-chevron-down);

@@ -10,8 +10,11 @@
     --checkbox-position: relative;
     --checkbox-top: 3px;
 
-    --checkbox-check-size: calc(var(--checkbox-size) - 4px);
+    --checkbox-check-size: var(--checkbox-size);
     --checkbox-check-background-color: var(--color-bg);
+    --checkbox-check-position: absolute;
+    --checkbox-check-top: calc(var(--checkbox-border-width) * -1);
+    --checkbox-check-left: calc(var(--checkbox-border-width) * -1);
 
     appearance: var(--checkbox-appearance);
     -webkit-appearance: var(--checkbox-appearance);
@@ -34,6 +37,9 @@
 .checkbox:checked::after {
     content: "";
     display: block;
+    position: var(--checkbox-check-position);
+    top: var(--checkbox-check-top);
+    left: var(--checkbox-check-left);
     height: var(--checkbox-check-size);
     width: var(--checkbox-check-size);
     background-color: var(--checkbox-check-background-color);

@@ -57,7 +57,7 @@
 .input-group--has-success::after {
     --input-group-icon-display: block;
     --input-group-icon-background-color: var(--color-success);
-    --input-group-icon-image: var(--icon-check);
+    --input-group-icon-image: var(--icon-check-circle);
 }
 
 .input-group--type-number,
