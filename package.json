@@ -20,7 +20,8 @@
     "postbuild-sb": "npm run build-fix && npm run copy-icons-folder ",
     "build-fix": "sh shell-scripts/sb-postbuild.sh",
     "copy-icons-folder": "sh shell-scripts/copy-icons-folder.sh",
-    "deploy-sb": "gh-pages -d storybook-static"
+    "deploy-sb": "gh-pages -d storybook-static",
+    "deploy-full": "npm run build && npm run build-sb && npm run deploy-sb"
   },
   "dependencies": {
     "@geometricpanda/storybook-addon-badges": "^0.2.1",

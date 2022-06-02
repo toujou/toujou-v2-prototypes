@@ -15,6 +15,7 @@ This project uses:
 - `npm run build-fix` change absolute paths to relative paths on the storybook-static/iframe.html file
 - `npm run copy-icons-folder` copy the icons folder to the storybook-static/assets folder
 - `npm run deploy-sb` deploy storybook to github pages
+- `deploy-full` build and deploy to github
 
 ## How to create a new webcomponent
 1. Create a new component folder inside `src`, like `toujou-example`
