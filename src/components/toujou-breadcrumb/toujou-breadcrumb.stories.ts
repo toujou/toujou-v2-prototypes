@@ -5,7 +5,7 @@ import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
 export default {
     title: 'COMPONENTS/Breadcrumb',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING]
+        badges: [TOUJOU_BADGES.DONE]
     },
 } as Meta;
 

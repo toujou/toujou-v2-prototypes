@@ -1,0 +1,76 @@
+.input {
+    --input-position: relative;
+    --input-width: 100%;
+    --input-border-width: 2px;
+    --input-border-color: var(--color-font-light);
+    --input-hover-border-color: var(--color-font);
+    --input-focus-border-color: var(--color-primary);
+    --input-border: var(--input-border-width) solid var(--input-border-color);
+    --input-border-radius: var(--border-radius-normal);
+    --input-background-color: transparent;
+    --input-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
+    --input-color: var(--color-font);
+    --input-font-size: var(--font-size-normal);
+
+    --input-placeholder-color: var(--color-font-light);
+
+    --input-focus-caret-color: var(--color-primary);
+
+    position: var(--input-position);
+    width: var(--input-width);
+    border-radius: var(--input-border-radius);
+    border: var(--input-border);
+    background-color: var(--input-background-color);
+    padding: var(--input-padding);
+    color: var(--input-color);
+    font-size: var(--input-font-size);
+}
+
+.input:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+    caret-color: var(--input-focus-caret-color);
+}
+
+.input[disabled] {
+    --input-color: red;
+    --input-border-color: var(--color-font-light);
+
+    pointer-events: none;
+}
+
+.input-group--has-error .input {
+    --input-border-color: var(--color-error);
+}
+
+.input-group--has-success .input {
+    --input-border-color: var(--color-success);
+    --input-color: var(--color-font);
+}
+
+.input::placeholder {
+    color: var(--input-placeholder-color);
+}
+
+.input__description {
+    --input-description-order: 10;
+    --input-description-padding: 0 var(--spacing-s);
+    --input-description-color: var(--color-font-light);
+    --input-description-font-family: var(--font-family-text);
+
+    order: var(--input-description-order);
+    padding: var(--input-description-padding);
+    color: var(--input-description-color);
+    font-family: var(--input-description-font-family);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+@media (hover: hover) {
+    .input:not(:focus):hover {
+        --input-border-color: var(--input-hover-border-color);
+    }
+}

@@ -1,0 +1,62 @@
+.input-group {
+    --input-group-position: relative;
+    --input-group-display: flex;
+    --input-group-flex-direction: column;
+    --input-group-flex-align-items: flex-start;
+    --input-group-flex-justify-content: flex-start;
+    --input-group-flex-gap: 0;
+    --input-group-margin-between: var(--spacing-m);
+
+    --input-group-icon-display: none;
+    --input-group-icon-size: var(--spacing-m);
+    --input-group-icon-position: absolute;
+    --input-group-icon-right: var(--spacing-s);
+    --input-group-icon-top: var(--spacing-normal);
+    --input-group-icon-background-color: var(--color-error);
+
+    position: var(--input-group-position);
+    display: var(--input-group-display);
+    flex-direction: var(--input-group-flex-direction);
+    align-items: var(--input-group-flex-align-items);
+    justify-content: var(--input-group-flex-justify-content);
+    gap: var(--input-group-flex-gap);
+}
+
+.input-group + .input-group {
+    margin-top: var(--input-group-margin-between);
+}
+
+.input-group::after {
+    content: "";
+    display: var(--input-group-icon-display);
+    height: var(--input-group-icon-size);
+    width: var(--input-group-icon-size);
+    position: var(--input-group-icon-position);
+    right: var(--input-group-icon-right);
+    top: var(--input-group-icon-top);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: var(--input-group-icon-image);
+    -webkit-mask-image: var(--input-group-icon-image);
+    background-color: var(--input-group-icon-background-color);
+}
+
+.input-group--has-error::after {
+    --input-group-icon-display: block;
+    --input-group-icon-background-color: var(--color-error);
+    --input-group-icon-image: var(--icon-info);
+}
+
+.input-group--has-success::after {
+    --input-group-icon-display: block;
+    --input-group-icon-background-color: var(--color-success);
+    --input-group-icon-image: var(--icon-check);
+}
+
+.input-group--type-number {
+    --input-group-icon-right: var(--spacing-l);
+}

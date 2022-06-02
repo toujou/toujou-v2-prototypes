@@ -49,7 +49,7 @@ h6,
 p,
 ul,
 ol {
-    font-size: var(--font-size-normal);;
+    font-size: var(--font-size-normal);
     font-weight: var(--line-height-normal);
     line-height: var(--line-height-normal);
     font-family: var(--font-family-text);

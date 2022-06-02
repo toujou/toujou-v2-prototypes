@@ -1,0 +1,29 @@
+.form {
+    --form-font-family: var(--font-family-text);
+    --form-font-size: var(--font-size-normal);
+    --form-font-weight: var(--font-weight-text-normal);
+    --form-line-height: var(--line-height-reset);
+
+    font-family: var(--form-font-family);
+    font-size: var(--form-font-size);
+    font-weight: var(--form-font-weight);
+    line-height: var(--form-line-height);
+}
+
+.form__error {
+    --form-error-order: 20;
+    --form-error-color: var(--color-error);
+    --form-error-padding: 0 var(--spacing-s);
+    --form-error-font-size: var(--font-size-s);
+    --form-error-display: none;
+
+    display: var(--form-error-display);
+    order: var(--form-error-order);
+    color: var(--form-error-color);
+    padding: var(--form-error-padding);
+    font-size: var(--form-error-font-size);
+}
+
+.input-group--has-error .form__error {
+    --form-error-display: block;
+}

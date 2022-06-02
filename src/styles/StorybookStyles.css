@@ -32,6 +32,10 @@
 @import './elements/_topbar-logo.css';
 @import './elements/_toujou-chip.css';
 @import './elements/_type.css';
+@import './elements/forms/_form.css';
+@import './elements/forms/_input-group.css';
+@import './elements/forms/_input.css';
+@import './elements/forms/_input-label.css';
 
 body {
     background-color: var(--demo-color-grey-light);
