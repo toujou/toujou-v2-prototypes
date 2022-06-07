@@ -1,4 +1,5 @@
 :root {
+    --icon-size-m: var(--spacing-m);
     --icon-size-normal: var(--spacing-ms);
 
     --icon-accessiblity: url('../assets/icons/icon-accessibility.svg');

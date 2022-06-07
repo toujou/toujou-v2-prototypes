@@ -8,7 +8,7 @@ export default {
     decorators: [withXD],
     parameters: {
         design: {
-            artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/edaf3b92-9a40-4082-9504-de34d306f6cf/Desktop',
+            artboardUrl: 'https://xd.adobe.com/view/3d1d0926-79e2-4ae4-aa1c-162dcd451a3a-684e/Desktop',
         },
         badges: [TOUJOU_BADGES.PROGRESS]
     },
@@ -25,13 +25,24 @@ export default {
             defaultValue: ['default'],
             required: true,
         },
+        isFullwidth: {
+            table: {
+                category: "Slider settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Fullwidth',
+            description: "Toggle the fullwidth attribute",
+            control: { type: 'boolean' },
+            defaultValue: 'false',
+            required: true,
+        },
     }
 } as Meta;
 
 
 const Template = (args) => {
     return `
-        <div class="slider slider--single slider--design-${args.designColor}">
+        <div class="slider slider--single slider--design-${args.designColor} ${args.isFullwidth ? 'slider--fullwidth' : ''}">
             <div class="slider__top">
                 <div class="slider__frame glider draggable" data-autoslide="0" data-slideinterval="6">
                     <div class="glider-track slider__track">
@@ -68,5 +79,6 @@ const Template = (args) => {
 export const ImageSliderNormal = Template.bind({});
 
 ImageSliderNormal.args = {
-    designColor: 'default'
+    designColor: 'default',
+    isFullwidth: false,
 }

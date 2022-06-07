@@ -13,8 +13,8 @@
 }
 
 .grid--fullwidth {
-    width: var(--content-width-100);
-    max-width: var(--content-width-100);
+    width: var(--content-fullwidth);
+    max-width: var(--content-fullwidth);
 }
 
 .grid--ignore {
