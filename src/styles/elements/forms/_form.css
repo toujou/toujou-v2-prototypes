@@ -3,7 +3,18 @@
     --form-font-size: var(--font-size-normal);
     --form-font-weight: var(--font-weight-text-normal);
     --form-line-height: var(--line-height-reset);
+    --form-margin: 0 auto;
 
+    /* form row */
+    --form-row-display: grid;
+    --form-row-grid-template-columns: repeat(var(--form-row-columns-count), 1fr);
+    --form-row-gap: 0 var(--spacing-normal);
+    --form-row-padding-top: 0;
+    --form-row-align-items: baseline;
+
+    width: var(--form-width);
+    max-width: var(--form-max-width);
+    margin: var(--form-margin);
     font-family: var(--form-font-family);
     font-size: var(--form-font-size);
     font-weight: var(--form-font-weight);
@@ -54,4 +65,13 @@
 
 .form__description--after-group {
     --form-description-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 2px);
+}
+
+.form__row {
+    /*grid-column: span 12;*/
+    display: var(--form-row-display);
+    grid-template-columns: var(--form-row-grid-template-columns);
+    grid-gap: var(--form-row-gap);
+    padding-top: var(--form-row-padding-top);
+    align-items: var(--form-row-align-items);
 }

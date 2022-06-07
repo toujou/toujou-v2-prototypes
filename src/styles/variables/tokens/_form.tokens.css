@@ -1,4 +1,6 @@
 :root {
+    --form-width: var(--content-width-with-padding);
+    --form-max-width: var(--content-max-width);
     --form-input-border-width: 2px;
     --form-input-default-border-color: var(--color-font-light);
     --form-input-hover-border-color: var(--color-font);
@@ -16,4 +18,5 @@
     --form-required-suffix: "*";
     --form-placeholder-color: var(--color-font-light);
     --form-input-caret-color: var(--color-primary);
+    --form-row-columns-count: 12;
 }
