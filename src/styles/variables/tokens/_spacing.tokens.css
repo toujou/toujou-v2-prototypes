@@ -9,6 +9,7 @@
     --spacing-normal: 1rem;     /* 16px */
     --spacing-s: .5rem;         /* 8px */
     --spacing-xs: .25rem;       /* 4px */
+    --spacing-xxs: .125rem;       /* 2px */
     --spacing-1px: 1px;
     --spacing-2px: 2px;
 }

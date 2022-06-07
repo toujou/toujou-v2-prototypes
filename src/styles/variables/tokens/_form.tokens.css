@@ -16,6 +16,7 @@
     --form-successive-groups-distance: var(--spacing-m);
     --form-radio-and-checkbox-option-margin: var(--spacing-xs) 0;
     --form-required-suffix: "*";
+    --form-require-suffix-margin: 0 0 0 var(--spacing-xxs);
     --form-placeholder-color: var(--color-font-light);
     --form-input-caret-color: var(--color-primary);
     --form-row-columns-count: 12;
