@@ -1,17 +1,17 @@
 .multi-select {
     --multi-select-width: 100%;
-    --multi-select-background-color: transparent;
-    --multi-select-border-width: 2px;
-    --multi-select-border-color: var(--color-font-light);
-    --multi-select-border: var(--input-border-width) solid var(--input-border-color);
-    --multi-select-border-radius: var(--border-radius-normal);
-    --multi-select-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
+    --multi-select-background-color: var(--form-input-background-color);
+    --multi-select-border-width: var(--form-input-border-width);
+    --multi-select-border-color: var(--form-input-default-border-color);
+    --multi-select-border: var(--form-input-default-border);
+    --multi-select-border-radius: var(--form-input-border-radius);
+    --multi-select-padding: var(--form-input-padding);
 
-    --multi-select-option-color: var(--color-font);
-    --multi-select-option-font-family: var(--font-family-text);
-    --multi-select-option-font-size: var(--font-size-normal);
-    --multi-select-option-font-weight: var(--font-weight-text-normal);
-    --multi-select-option-background-color: transparent;
+    --multi-select-option-color: var(--form-input-color);
+    --multi-select-option-font-family: var(--form-input-font-family);
+    --multi-select-option-font-size: var(--form-input-font-size);
+    --multi-select-option-font-weight: var(--form-input-font-weight);
+    --multi-select-option-background-color: var(--form-input-background-color);
 
     width: var(--multi-select-width);
     background-color: var(--multi-select-background-color);

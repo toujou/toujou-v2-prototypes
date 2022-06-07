@@ -6,7 +6,7 @@
     --input-group-flex-align-items: flex-start;
     --input-group-flex-justify-content: flex-start;
     --input-group-flex-gap: 0;
-    --input-group-margin-between: var(--spacing-m);
+    --input-group-margin-between: var(--form-successive-groups-distance);
 
     --input-group-icon-display: none;
     --input-group-icon-size: var(--spacing-m);

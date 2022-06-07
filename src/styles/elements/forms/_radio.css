@@ -1,8 +1,8 @@
 .radio {
     --radio-appearance: none;
     --radio-display: block;
-    --radio-size: var(--font-size-normal);
-    --radio-background-color: transparent;
+    --radio-size: var(--form-input-font-size);
+    --radio-background-color: var(--form-input-background-color);
     --radio-border-width: 2px;
     --radio-border-color: var(--color-font);
     --radio-border: var(--radio-border-width) solid var(--radio-border-color);

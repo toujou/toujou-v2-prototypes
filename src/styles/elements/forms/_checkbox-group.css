@@ -3,17 +3,17 @@
     --checkbox-group-grid-template-columns: auto 1fr;
     --checkbox-group-grid-gap: 0 var(--spacing-s);
 
-    --checkbox-group-label-font-family: var(--font-family-text);
-    --checkbox-group-label-font-size: var(--font-size-normal);
-    --checkbox-group-label-font-weight: var(--font-weight-text-normal);
-    --checkbox-group-label-color: var(--color-font);
+    --checkbox-group-label-font-family: var(--form-input-font-family);
+    --checkbox-group-label-font-size: var(--form-input-font-size);
+    --checkbox-group-label-font-weight: var(--form-input-font-weight);
+    --checkbox-group-label-color: var(--form-input-color);
 
     --checkbox-group-description-column: 2;
 
     --checkbox-group-error-column: 2;
     --checkbox-group-error-padding: 0;
 
-    --multi-check-group-row-margin: var(--spacing-xs) 0;
+    --multi-check-group-row-margin: var(--form-radio-and-checkbox-option-margin) 0;
 
 
     display: var(--checkbox-group-display);

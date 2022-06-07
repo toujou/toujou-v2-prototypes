@@ -1,0 +1,19 @@
+:root {
+    --form-input-border-width: 2px;
+    --form-input-default-border-color: var(--color-font-light);
+    --form-input-hover-border-color: var(--color-font);
+    --form-input-focus-border-color: var(--color-primary);
+    --form-input-default-border: var(--form-input-border-width) solid var(--form-input-default-border-color);
+    --form-input-border-radius: var(--border-radius-normal);
+    --form-input-background-color: transparent;
+    --form-input-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
+    --form-input-color: var(--color-font);
+    --form-input-font-family: var(--font-family-text);
+    --form-input-font-size: var(--font-size-normal);
+    --form-input-font-weight: var(--font-weight-text-normal);
+    --form-successive-groups-distance: var(--spacing-m);
+    --form-radio-and-checkbox-option-margin: var(--spacing-xs) 0;
+    --form-required-suffix: "*";
+    --form-placeholder-color: var(--color-font-light);
+    --form-input-caret-color: var(--color-primary);
+}

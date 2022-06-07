@@ -305,7 +305,7 @@ const Template = (args: { state: string; }) => {
 
 	        </div>
 	
-	        <div class="input-group input-group--multi-select ">
+	        <div class="input-group input-group--type-multi-select ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
 				<label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
 				<span class="form__description">this is a description</span>
 				<input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">
@@ -314,12 +314,13 @@ const Template = (args: { state: string; }) => {
 				    class="xlarge form-control multi-select"
 				    id="testform-1000091-multiselect-1"
 				    multiple="multiple"
-				    name="tx_form_formframework[testform-1000091][multiselect-1][]">
-				    <option value="">first option</option>
-                    <option value="aaaaa">aaaaa</option>
-                    <option value="bbbbb">bbbbb</option>
-                    <option value="ccccc">ccccc</option>
-                    <option value="ddddd">ddddd</option>
+				    name="tx_form_formframework[testform-1000091][multiselect-1][]"
+				    ${disabledAttribute}>
+				    <option class="multi-select__option" value="">first option</option>
+                    <option class="multi-select__option" value="aaaaa">aaaaa</option>
+                    <option class="multi-select__option" value="bbbbb">bbbbb</option>
+                    <option class="multi-select__option" value="ccccc">ccccc</option>
+                    <option class="multi-select__option" value="ddddd">ddddd</option>
                 </select>
 	        </div>
 	
@@ -363,29 +364,53 @@ const Template = (args: { state: string; }) => {
                     name="tx_form_formframework[testform-1000091][imageupload-1]">
             </div>
     
-            <fieldset id="testform-1000091-fieldset-1" class="form-group">
-                <legend>Fieldset super name</legend>
+            <fieldset id="testform-1000091-fieldset-1" class="fieldset">
+                <legend class="fieldset__legend">Fieldset super name</legend>
     
-                <div class="input-group ">
-                    <label class="input-label" for="testform-1000091-text-2">Text</label>
-                    <span class="form__description">description</span>
-                    <input placeholder="placeholder"
-                        class=" input input--text"
-                        id="testform-1000091-text-2"
+                <div class="input-group input-group--type-text input-group--required ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">			
+                    <label class="input-label" for="testform-1000091-text-1">Ihr Name</label>
+                    <span class="form__description">Enter your name so we can print out the documents correctly.</span>
+                    <input
+                        placeholder="Max Mustermann"
+                        data-pristine-required-message="The given subject was empty."
+                        class="input input--text"
+                        id="testform-1000091-text-1"
                         type="text"
-                        name="tx_form_formframework[testform-1000091][text-2]"
-                        value="">
+                        name="tx_form_formframework[testform-1000091][text-1]"
+                        value=""
+                        required="required"
+                        ${disabledAttribute}>
+                    <span class="pristine-error form__error">The given subject was empty.</span>
+                </div>
+    
+                <div class="input-group input-group--type-email ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
+                    <label class="input-label" for="testform-1000091-email-1">Email address</label>
+                    <span class="form__description">This is a description</span>
+                    <input
+                        placeholder="This is a placeholder"
+                        data-pristine-required-message="The given subject was empty."
+                        class=" form-control input input--text"
+                        id="testform-1000091-email-1"
+                        type="email"
+                        name="tx_form_formframework[testform-1000091][email-1]"
+                        value=""
+                        ${disabledAttribute}>
+                    <span class="pristine-error form__error">The given subject was empty.</span>
                 </div>
                 
-                <div class="input-group ">
-                    <label class="input-label" for="testform-1000091-text-3">Text</label>
-                    <span class="form__description">description</span>
-                    <input placeholder="placeholder"
-                        class=" input input--text"
-                        id="testform-1000091-text-3"
-                        type="text"
-                        name="tx_form_formframework[testform-1000091][text-3]"
-                        value="">
+                <div class="input-group input-group--type-telephone ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
+                    <label class="input-label" for="testform-1000091-telephone-1">Telephone number</label>
+                    <span class="form__description">This is a description</span>
+                    <input
+                        placeholder="this is a placeholder"
+                        data-pristine-required-message="The given subject was empty."
+                        class=" form-control input input--text"
+                        id="testform-1000091-telephone-1"
+                        type="tel"
+                        name="tx_form_formframework[testform-1000091][telephone-1]"
+                        value=""
+                        ${disabledAttribute}>
+                    <span class="pristine-error form__error">The given subject was empty.</span>
                 </div>
             
             </fieldset>

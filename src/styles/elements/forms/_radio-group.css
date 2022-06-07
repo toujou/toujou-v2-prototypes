@@ -3,12 +3,12 @@
     --radio-group-grid-column-count: 1;
     --radio-group-grid-gap: 0 var(--spacing-s);
 
-    --radio-group-label-font-family: var(--font-family-text);
-    --radio-group-label-font-size: var(--font-size-normal);
-    --radio-group-label-font-weight: var(--font-weight-text-normal);
-    --radio-group-label-color: var(--color-font);
+    --radio-group-label-font-family: var(--form-input-font-family);
+    --radio-group-label-font-size: var(--form-input-font-size);
+    --radio-group-label-font-weight: var(--form-input-font-weight);
+    --radio-group-label-color: var(--form-input-color);
     --radio-group-label-grid-column: 1 / -1;
-    --radio-group-option-row-margin: var(--spacing-xs);
+    --radio-group-option-row-margin: var(--form-radio-and-checkbox-option-margin);
 
     --radio-group-description-column: 2;
 
@@ -35,7 +35,7 @@
 }
 
 .radio-group__option {
-    margin: var(--radio-group-option-row-margin) 0;
+    margin: var(--radio-group-option-row-margin);
     cursor: pointer;
 }
 

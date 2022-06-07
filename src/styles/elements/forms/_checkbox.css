@@ -1,8 +1,8 @@
 .checkbox {
     --checkbox-appearance: none;
     --checkbox-display: block;
-    --checkbox-size: var(--font-size-normal);
-    --checkbox-background-color: transparent;
+    --checkbox-size: var(--form-input-font-size);
+    --checkbox-background-color: var(--form-input-background-color);
     --checkbox-border-width: 2px;
     --checkbox-border-color: var(--color-font);
     --checkbox-border: var(--checkbox-border-width) solid var(--checkbox-border-color);

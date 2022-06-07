@@ -3,8 +3,8 @@
     --input-label-top: var(--spacing-s);
     --input-label-left: var(--spacing-s);
     --input-label-font-size: var(--font-size-xs);
-    --input-label-color: var(--color-font);
-    --input-label-required-content: "*";
+    --input-label-color: var(--form-input-color);
+    --input-label-required-content: var(--form-required-suffix);
     --input-label-required-content-margin: 0 0 0 var(--spacing-xs);
 
     position: var(--input-label-position);

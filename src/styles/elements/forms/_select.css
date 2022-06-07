@@ -8,7 +8,7 @@
     --select-wrapper-width: 100%;
     --select-chevron-size: var(--spacing-normal);
     --select-chevron-image: var(--icon-chevron-filled-down);
-    --select-chevron-background-color: var(--color-font);
+    --select-chevron-background-color: var(--form-input-color);
     --select-chevron-position: absolute;
     --select-chevron-right: var(--spacing-s);
     --select-chevron-top: calc(var(--spacing-normal) + var(--spacing-xs));
