@@ -28,7 +28,7 @@ export default {
     }
 } as Meta;
 
-const Template = (args) => {
+const Template = (args: { state: string; }) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
     const inputGroupDisabledClass = args.state === 'disabled' ? 'input-group--disabled' : '';
     const inputGroupErrorClass = args.state === 'error' ? 'input-group--has-error' : '';
@@ -43,65 +43,71 @@ const Template = (args) => {
             action="#"
             novalidate="true">
 
-	        <div class="input-group input-group--radio ">
-				<label class="input-label" for="testform-1000091-radiobutton-1">Radio button</label>
-				<span class="form__description">this is a descriptions</span>
-                <div class="radio-group">
-                    <label class="radio__label">
+	        <div class="input-group radio-group input-group--type-radio ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
+				<label class="radio-group__label" for="testform-1000091-radiobutton-1">Radio buttons label</label>
+				<span class="form__description form__description--after-group">This is a description</span>
+                <div class="radio-group__option">
+                    <label class="radio-group__option-label">
                         <input
                             data-pristine-required-message="The given subject was empty."
                             class="xlarge radio"
                             type="radio"
                             name="tx_form_formframework[testform-1000091][radiobutton-1]"
-                            value="aaaaa">
+                            value="aaaaa"
+                            checked
+                            ${disabledAttribute}>
                         aaaaa
                     </label>
                 </div>
 		
-                <div class="radio-group">
-                    <label class="radio__label">
+                <div class="radio-group__option">
+                    <label class="radio-group__option-label">
                         <input
                             data-pristine-required-message="The given subject was empty."
                             class="xlarge radio"
                             type="radio"
                             name="tx_form_formframework[testform-1000091][radiobutton-1]"
-                            value="bbbb">
+                            value="bbbb"
+                            ${disabledAttribute}>
                         bbbb
                     </label>
                 </div>
             
-                <div class="radio-group">
-                    <label class="radio__label">
+                <div class="radio-group__option">
+                    <label class="radio-group__option-label">
                         <input
                             data-pristine-required-message="The given subject was empty."
                             class="xlarge radio"
                             type="radio"
                             name="tx_form_formframework[testform-1000091][radiobutton-1]"
-                            value="ccccc">
+                            value="ccccc"
+                            ${disabledAttribute}>
                         ccccc
                     </label>
                 </div>
 		
-                <div class="radio-group">
-                    <label class="radio__label">
+                <div class="radio-group__option">
+                    <label class="radio-group__option-label">
                         <input
                             data-pristine-required-message="The given subject was empty."
                             class="xlarge radio"
                             type="radio"
                             name="tx_form_formframework[testform-1000091][radiobutton-1]"
-                            value="ddddd">
+                            value="ddddd"
+                            ${disabledAttribute}>
                         ddddd
                     </label>
                 </div>
             
-                <div class="radio-group">
-                    <label class="radio__label">
+                <div class="radio-group__option">
+                    <label class="radio-group__option-label">
                         <input
                             data-pristine-required-message="The given subject was empty."
                             class="xlarge radio"
                             type="radio"
                             name="tx_form_formframework[testform-1000091][radiobutton-1]"
-                            value="">
+                            value=""
+                            ${disabledAttribute}>
                         eeeee
                     </label>
                 </div>

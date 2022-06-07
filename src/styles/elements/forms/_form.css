@@ -36,7 +36,7 @@
 
 .form__description {
     --form-description-order: 10;
-    --form-description-padding: 0 var(--spacing-s);
+    --form-description-padding: 0 var(--spacing-xs);
     --form-description-color: var(--color-font-light);
     --form-description-font-family: var(--font-family-text);
     --form-description-font-size: var(--font-size-normal);
