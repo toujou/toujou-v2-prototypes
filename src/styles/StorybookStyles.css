@@ -42,6 +42,7 @@
 @import './elements/forms/_select.css';
 @import './elements/forms/_radio.css';
 @import './elements/forms/_radio-group.css';
+@import './elements/forms/_fieldset.css';
 
 body {
     background-color: var(--demo-color-grey-light);
