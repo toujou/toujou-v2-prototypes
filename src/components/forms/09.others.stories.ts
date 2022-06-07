@@ -12,10 +12,28 @@ export default {
         },
         badges: [TOUJOU_BADGES.PROGRESS]
     },
-    argTypes: {}
+    argTypes: {
+        state: {
+            table: {
+                category: "Inputs settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Input state',
+            description: "Set the visible input state",
+            options: ['default', 'disabled', 'success', 'error'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+const Template = (args: { state: string; }) => {
+    const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
+    const inputGroupDisabledClass = args.state === 'disabled' ? 'input-group--disabled' : '';
+    const inputGroupErrorClass = args.state === 'error' ? 'input-group--has-error' : '';
+    const inputGroupSuccessClass = args.state === 'success' ? 'input-group--has-success' : '';
+
     return `
         <form
             enctype="multipart/form-data"
@@ -25,19 +43,20 @@ const Template = () => {
             action="#"
             novalidate="true">
 
-            <div class="input-group ">
+            <div class="input-group input-group--type-file ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
                 <label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
                 <span class="form__description">this is a description</span>
-                    <input
-                        data-pristine-required-message="The given subject was empty."
-                        class="input input--file-upload"
-                        id="testform-1000091-fileupload-1"
-                        accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.oasis.opendocument.text,application/pdf"
-                        type="file"
-                        name="tx_form_formframework[testform-1000091][fileupload-1]">
+                <input
+                    data-pristine-required-message="The given subject was empty."
+                    class="input input--file-upload"
+                    id="testform-1000091-fileupload-1"
+                    accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.oasis.opendocument.text,application/pdf"
+                    type="file"
+                    name="tx_form_formframework[testform-1000091][fileupload-1]"
+                    ${disabledAttribute}>
             </div>
             
-            <div class="input-group ">
+            <div class="input-group input-group--type-file ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
                 <label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
                 <span class="form__description">this is a description</span>
                 <input
@@ -46,10 +65,11 @@ const Template = () => {
                     id="testform-1000091-imageupload-1"
                     accept="image/jpeg,image/png,image/bmp"
                     type="file"
-                    name="tx_form_formframework[testform-1000091][imageupload-1]">
+                    name="tx_form_formframework[testform-1000091][imageupload-1]"
+                    ${disabledAttribute}>
             </div>
             
-            <div class="input-group input-group--multi-select ">
+            <div class="input-group input-group--type-multi-select ${inputGroupDisabledClass} ${inputGroupErrorClass} ${inputGroupSuccessClass}">
 				<label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
 				<span class="form__description">this is a description</span>
 				<input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">
@@ -58,12 +78,13 @@ const Template = () => {
 				    class="xlarge form-control multi-select"
 				    id="testform-1000091-multiselect-1"
 				    multiple="multiple"
-				    name="tx_form_formframework[testform-1000091][multiselect-1][]">
-				    <option value="">first option</option>
-                    <option value="aaaaa">aaaaa</option>
-                    <option value="bbbbb">bbbbb</option>
-                    <option value="ccccc">ccccc</option>
-                    <option value="ddddd">ddddd</option>
+				    name="tx_form_formframework[testform-1000091][multiselect-1][]"
+				    ${disabledAttribute}>
+				    <option class="multi-select__option" value="">first option</option>
+                    <option class="multi-select__option" value="aaaaa">aaaaa</option>
+                    <option class="multi-select__option" value="bbbbb">bbbbb</option>
+                    <option class="multi-select__option" value="ccccc">ccccc</option>
+                    <option class="multi-select__option" value="ddddd">ddddd</option>
                 </select>
 	        </div>
     
@@ -74,4 +95,6 @@ const Template = () => {
 export const OtherInputs = Template.bind({});
 
 // @ts-ignore
-OtherInputs.args = {}
+OtherInputs.args = {
+    state: 'default'
+}

@@ -1,0 +1,38 @@
+.multi-select {
+    --multi-select-width: 100%;
+    --multi-select-background-color: transparent;
+    --multi-select-border-width: 2px;
+    --multi-select-border-color: var(--color-font-light);
+    --multi-select-border: var(--input-border-width) solid var(--input-border-color);
+    --multi-select-border-radius: var(--border-radius-normal);
+    --multi-select-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
+
+    --multi-select-option-color: var(--color-font);
+    --multi-select-option-font-family: var(--font-family-text);
+    --multi-select-option-font-size: var(--font-size-normal);
+    --multi-select-option-font-weight: var(--font-weight-text-normal);
+    --multi-select-option-background-color: transparent;
+
+    width: var(--multi-select-width);
+    background-color: var(--multi-select-background-color);
+    border: var(--multi-select-border-width) solid var(--multi-select-border-color);
+    border-radius: var(--multi-select-border-radius);
+    padding: var(--multi-select-padding);
+}
+
+.multi-select__option {
+    color: var(--multi-select-option-color);
+    background-color: var(--multi-select-option-background-color);
+    font-family: var(--multi-select-option-font-family);
+    font-size: var(--multi-select-option-font-size);
+    font-weight: var(--multi-select-option-font-weight);
+}
+
+.multi-select__option:checked {
+    --multi-select-option-background-color: var(--color-primary);
+    --multi-select-option-color: var(--color-bg);
+}
+
+.multi-select[disabled] {
+    --multi-select-option-color: var(--color-font-light);
+}

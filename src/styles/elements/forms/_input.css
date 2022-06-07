@@ -37,7 +37,7 @@
 }
 
 .input[disabled] {
-    --input-color: red;
+    --input-color: var(--color-font-light);
     --input-border-color: var(--color-font-light);
 
     pointer-events: none;
