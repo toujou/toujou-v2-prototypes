@@ -17,6 +17,7 @@ export default {
 const Template = () => {
     return `       
         <toujou-accordion class="accordion accordion--design-default">
+            
             <div class="accordion__item">
                 <div id="accordion-panel-4-0"
                      class="accordion__panel"

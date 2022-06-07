@@ -46,6 +46,8 @@
 @import './elements/forms/_radio-group.css';
 @import './elements/forms/_fieldset.css';
 @import './elements/forms/_multi-select.css';
+@import './elements/forms/_toggle.css';
+@import './elements/forms/_toggle-group.css';
 
 body {
     background-color: var(--demo-color-grey-light);

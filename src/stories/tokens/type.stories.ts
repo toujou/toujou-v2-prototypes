@@ -113,7 +113,7 @@ const TagsTemplate = () => {
     `;
 }
 
-const TextTypesTemplate = () => {
+const TextStylesTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Text types</h1>
                 
@@ -146,4 +146,4 @@ export const LineHeights = LineHeightTemplate.bind({});
 export const LetterSpacing = LetterSpacingTemplate.bind({});
 export const FontStyles = FontStylesTemplate.bind({});
 export const Tags = TagsTemplate.bind({});
-export const TextTypes = TextTypesTemplate.bind({});
+export const TextStyles = TextStylesTemplate.bind({});
