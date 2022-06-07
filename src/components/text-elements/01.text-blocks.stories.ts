@@ -1,5 +1,6 @@
 import {Meta} from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
+// @ts-ignore
 import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
 
 export default {
