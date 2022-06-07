@@ -75,3 +75,19 @@ h6,
     font-family: var(--font-family-headline);
     color: var(--color-primary);
 }
+
+p + :is(p, ul, ol) {
+    margin-top: var(--spacing-normal);
+}
+
+.teasertext {
+    font-weight: var(--font-weight-text-bold);
+}
+
+.infotext {
+    font-size: var(--font-size-ms);
+}
+
+.notes {
+    font-size: var(--font-size-s);
+}

@@ -133,6 +133,10 @@
 }
 
 @media screen and (min-width: 840px) {
+    .text-block {
+        --text-blocks-grid-gap: var(--spacing-xl);
+    }
+
     .text-block--2,
     .text-block--4 {
         --text-blocks-grid-template-columns: 1fr 1fr;

@@ -10,7 +10,7 @@ export default {
         design: {
             artboardUrl: 'https://xd.adobe.com/view/3d1d0926-79e2-4ae4-aa1c-162dcd451a3a-684e/Desktop',
         },
-        badges: [TOUJOU_BADGES.PROGRESS]
+        badges: [TOUJOU_BADGES.TESTING]
     },
     argTypes: {
         designColor: {
@@ -40,7 +40,7 @@ export default {
 } as Meta;
 
 
-const Template = (args) => {
+const Template = (args: { designColor: any; isFullwidth: any; }) => {
     return `
         <div class="slider slider--single slider--design-${args.designColor} ${args.isFullwidth ? 'slider--fullwidth' : ''}">
             <div class="slider__top">
@@ -78,6 +78,7 @@ const Template = (args) => {
 
 export const ImageSliderNormal = Template.bind({});
 
+// @ts-ignore
 ImageSliderNormal.args = {
     designColor: 'default',
     isFullwidth: false,
