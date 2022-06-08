@@ -29,10 +29,14 @@ const ZIndexTemplate = () => {
         
         <p>We should still research and find a good system for organizing our z-index</p>
         
-        <ul>
+        <ul class="list">
             <li>
                 <a href="https://tailwindcss.com/docs/z-index">Tailwind z-index</a>
+            </li>
+            <li>
                 <a href="https://getbootstrap.com/docs/5.0/layout/z-index/">Bootstrap z-index</a>
+            </li>
+            <li>
                 <a href="https://mui.com/material-ui/customization/z-index/">Material UI z-index</a>
             </li>
         </ul>

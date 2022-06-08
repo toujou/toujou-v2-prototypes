@@ -23,7 +23,6 @@ const BorderRadiusTemplate = () => {
             <div class="tokens-demo__border-radius-box border-radius-xxxxl">XXXXL</div>
             <div class="tokens-demo__border-radius-box border-radius-circle">Circle</div>
         </div>  
-   
     `;
 }
 

@@ -1,5 +1,3 @@
-import './toujou-icon.css';
-
 export class ToujouIcon extends HTMLElement {
     constructor() {
         super();

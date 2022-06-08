@@ -1,0 +1,55 @@
+# &lt;toujou-blockquote-grid&gt;
+The `<toujou-blockquote-grid>` is a custom element that renders a grid with `<toujou-blockquote>` elements to the page.
+
+
+## Markup example
+```html
+<toujou-blockquote-grid blockquote-grid-count="${args.gridCount}">
+    <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+        <img slot="image" src="https://picsum.photos/200/200" alt="quote image" />
+        <blockquote slot="quote">
+            <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
+        </blockquote>
+        <figcaption slot="author">Jack Handey</figcaption>
+    </toujou-blockquote>
+
+    <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+        <img slot="image" src="https://picsum.photos/200/200" alt="quote image" />
+        <blockquote slot="quote">
+            <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
+        </blockquote>
+        <figcaption slot="author">Jack Handey</figcaption>
+    </toujou-blockquote>
+
+    <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+        <img slot="image" src="https://picsum.photos/200/200" alt="quote image" />
+        <blockquote slot="quote">
+            <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
+        </blockquote>
+        <figcaption slot="author">Jack Handey</figcaption>
+    </toujou-blockquote>
+
+    <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+        <img slot="image" src="https://picsum.photos/200/200" alt="quote image" />
+        <blockquote slot="quote">
+            <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
+        </blockquote>
+        <figcaption slot="author">Jack Handey</figcaption>
+    </toujou-blockquote>
+
+</toujou-blockquote-grid>
+```
+
+
+## Attributes
+This element has a single attribute (`blockquote-grid-count`) which we can customize to set the number of columns on the grid (on mobile there is always only one column).
+
+
+### blockquote-grid-count [required]
+The `<toujou-blockquote>` must have the `role` attribute. It must be set to `role="figure"`.
+
+| value | Example |
+|---|:---|
+| 1 | `<toujou-blockquote-grid blockquote-grid-count="1">` |
+| 2 | `<toujou-blockquote-grid blockquote-grid-count="2">` |
+| 3 | `<toujou-blockquote-grid blockquote-grid-count="3">` |

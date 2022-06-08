@@ -1,0 +1,112 @@
+toujou-blockquote {
+    --blockquote-image-size: 112px;
+    --blockquote-image-border-radius: 50%;
+    --blockquote-icon-size: var(--spacing-xxl);
+    --blockquote-icon-image: var(--icon-blockquote-round);
+    --blockquote-font-family: var(--font-family-text);
+    --blockquote-font-size: var(--font-size-normal);
+    --blockquote-color: var(--color-font);
+    --blockquote-gap: var(--spacing-normal);
+    --blockquote-quote-margin: 0;
+    --blockquote-line-height: var(--line-height-normal);
+    --blockquote-author-prefix: "—";
+    --blockquote-max-width: var(--content-max-width);
+
+    display: grid;
+    grid-gap: var(--blockquote-gap);
+    grid-template-columns: var(--blockquote-grid-template-columns);
+    grid-template-areas: var(--blockquote-grid-template-areas);
+    margin: 0 auto;
+    max-width: var(--blockquote-max-width);
+    min-width: 0;
+    min-height: 0;
+}
+
+toujou-blockquote-grid[blockquote-grid-count="2"] toujou-blockquote[blockquote-direction="vertical"],
+toujou-blockquote-grid[blockquote-grid-count="3"] toujou-blockquote[blockquote-direction="vertical"] {
+    --blockquote-image-size: 132px;
+}
+
+.toujou-blockquote__image {
+    height: var(--blockquote-image-size);
+    width: var(--blockquote-image-size);
+    object-fit: cover;
+    border-radius: var(--blockquote-image-border-radius);
+    display: block;
+    margin: 0 auto;
+    grid-area: blockquoteImage;
+}
+
+.toujou-blockquote__blockquote {
+    position: relative;
+    font-family: var(--blockquote-font-family);
+    font-size: var(--blockquote-font-size);
+    color: var(--blockquote-color);
+    margin: var(--blockquote-quote-margin);
+    line-height: var(--blockquote-line-height);
+    margin-top: var(--blockquote-icon-size);
+    grid-area: blockquoteQuote;
+}
+
+.toujou-blockquote__blockquote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: var(--blockquote-icon-size);
+    width: var(--blockquote-icon-size);
+    transform: translateY(-100%);
+    background-color: var(--color-font-dark);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: var(--blockquote-icon-image);
+    -webkit-mask-image: var(--blockquote-icon-image);
+}
+
+.toujou-blockquote__text {
+    margin: 0;
+}
+
+.toujou-blockquote__author {
+    font-family: var(--blockquote-font-family);
+    font-size: var(--blockquote-font-size);
+    color: var(--blockquote-color);
+    line-height: var(--blockquote-line-height);
+    grid-column: 2;
+    grid-area: blockquoteAuthor;
+}
+
+.toujou-blockquote__author::before {
+    content: var(--blockquote-author-prefix);
+    margin-right: var(--spacing-s);
+}
+
+/* HORIZONTAL BLOCKQUOTE */
+toujou-blockquote[blockquote-direction="horizontal"] {
+    --blockquote-gap: 0 var(--spacing-m);
+    --blockquote-grid-template-columns: var(--blockquote-image-size) 1fr;
+    --blockquote-grid-template-areas: "blockquoteImage blockquoteQuote" "blockquoteImage blockquoteAuthor";
+
+    grid-template-rows: auto auto;
+}
+
+/* VERTICAL BLOCKQUOTE */
+toujou-blockquote[blockquote-direction="vertical"] {
+    --blockquote-grid-template-columns: 1fr;
+    --blockquote-grid-template-areas: "blockquoteImage" "blockquoteQuote" "blockquoteAuthor"
+}
+
+@media screen and (min-width: 960px) {
+    toujou-blockquote {
+        --blockquote-image-size: 160px;
+    }
+
+    toujou-blockquote[blockquote-direction="horizontal"] {
+        --blockquote-gap: var(--spacing-normal) var(--spacing-xxl);
+    }
+}

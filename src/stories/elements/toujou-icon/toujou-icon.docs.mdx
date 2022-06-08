@@ -3,18 +3,17 @@ The `<toujou-icon>` is a simple custom element that allows us to render an icon 
 
 
 ## Example
-<toujou-icon class="icon icon--size-ms icon--color-font icon--account"></toujou-icon>
+<toujou-icon icon-name="account" icon-size="normal" icon-color="primary"></toujou-icon>
 
 
 ## Markup example
 ```html
-<toujou-icon class="icon icon--size-ms icon--color-font icon--account"></toujou-icon>
+<toujou-icon icon-name="account" icon-size="normal" icon-color="primary"></toujou-icon>
 ```
 
 ## Attributes
 There are some attributes that allow us to customize the icon. we can change the icon image, size and color.
 
-<br/>
 
 ### icon-name [required]
 By setting the `icon-name` attribute we can choose which icon to show. For a list of all possible icons please see the story
@@ -28,7 +27,6 @@ Examples:
 | monument | `icon-name="monument"`  | <toujou-icon class="icon icon--size-ms icon--color-font icon--monument"></toujou-icon> |
 | heart | `icon-name="heart"`  | <toujou-icon class="icon icon--size-ms icon--color-font icon--heart"></toujou-icon> |
 
-<br/>
 
 ### Icon color [required]
 | Color | Modifier | Example |
@@ -37,7 +35,6 @@ Examples:
 | primary color | `icon--color-primary` | <toujou-icon class="icon icon--size-ms icon--color-primary icon--account"></toujou-icon> |
 | secondary color | `icon--color-secondary` | <toujou-icon class="icon icon--size-ms icon--color-secondary icon--account"></toujou-icon> |
 
-<br/>
 
 ### Icon size [required]
 | Size | Modifier | Example |
