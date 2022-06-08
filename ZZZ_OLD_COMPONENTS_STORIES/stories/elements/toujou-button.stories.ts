@@ -4,7 +4,7 @@ import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
 
-const DEFAULT_BUTTON_TEXT = 'Hello';
+const DEFAULT_BUTTON_TEXT = 'HelloXXX';
 
 export default {
     title: 'COMPONENTS/Button',
@@ -97,7 +97,7 @@ export default {
     }
 } as Meta;
 
-const Template = (args: {
+interface ToujouButtonProps {
     buttonVariant: string;
     size: string;
     isExpanded: string | boolean;
@@ -105,9 +105,10 @@ const Template = (args: {
     isDisabled: string | boolean;
     hasIcon: string | boolean;
     iconPosition: string;
-}) => {
-    let buttonEl = document.createElement('button');
+}
 
+const Template = (args: ToujouButtonProps) => {
+    let buttonEl = document.createElement('button', { is: 'toujou-button' });
 
     // CSS CLASSES
     let buttonClasses = `button button--${args.buttonVariant} button--size-${args.size}`;

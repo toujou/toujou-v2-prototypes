@@ -1,0 +1,525 @@
+toujou-icon {
+    --icon-size: var(--icon-size-normal);
+    --icon-color: currentColor;
+
+    display: inline-block;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: var(--icon-color);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+/* ICON COLORS */
+toujou-icon[icon-color="font"] {
+    --icon-color: var(--color-font);
+}
+
+toujou-icon[icon-color="primary"] {
+    --icon-color: var(--color-primary);
+}
+
+toujou-icon[icon-color="secondary"] {
+    --icon-color: var(--color-secondary);
+}
+
+/* ICON SIZES */
+toujou-icon[icon-size="xxxl"] {
+    --icon-size: var(--font-size-xxxl);
+}
+
+toujou-icon[icon-size="xxl"] {
+    --icon-size: var(--font-size-xxl);
+}
+
+toujou-icon[icon-size="xl"] {
+    --icon-size: var(--font-size-xl);
+}
+
+toujou-icon[icon-size="l"] {
+    --icon-size: var(--font-size-l);
+}
+
+toujou-icon[icon-size="m"] {
+    --icon-size: var(--font-size-m);
+}
+
+toujou-icon[icon-size="ms"] {
+    --icon-size: var(--font-size-ms);
+}
+
+toujou-icon[icon-size="normal"] {
+    --icon-size: var(--font-size-normal);
+}
+
+toujou-icon[icon-size="s"] {
+    --icon-size: var(--font-size-s);
+}
+
+toujou-icon[icon-size="xs"] {
+    --icon-size: var(--font-size-xs);
+}
+
+toujou-icon[icon-size="xxs"] {
+    --icon-size: var(--font-size-xxs);
+}
+
+/* ICON IMAGES */
+toujou-icon[icon-name="accessibility"] {
+    mask-image: var(--icon-accessiblity);
+    -webkit-mask-image: var(--icon-accessiblity);
+}
+
+toujou-icon[icon-name="account"] {
+    mask-image: var(--icon-account);
+    -webkit-mask-image: var(--icon-account);
+}
+
+toujou-icon[icon-name="alarm"] {
+    mask-image: var(--icon-alarm);
+    -webkit-mask-image: var(--icon-alarm);
+}
+
+toujou-icon[icon-name="arrow-down"] {
+    mask-image: var(--icon-arrow-down);
+    -webkit-mask-image: var(--icon-arrow-down);
+}
+
+toujou-icon[icon-name="arrow-drop-down"] {
+    mask-image: var(--icon-arrow-drop-down);
+    -webkit-mask-image: var(--icon-arrow-drop-down);
+}
+
+toujou-icon[icon-name="arrow-left"] {
+    mask-image: var(--icon-arrow-left);
+    -webkit-mask-image: var(--icon-arrow-left);
+}
+
+toujou-icon[icon-name="arrow-right"] {
+    mask-image: var(--icon-arrow-right);
+    -webkit-mask-image: var(--icon-arrow-right);
+}
+
+toujou-icon[icon-name="arrow-up"] {
+    mask-image: var(--icon-arrow-up);
+    -webkit-mask-image: var(--icon-arrow-up);
+}
+
+toujou-icon[icon-name="article"] {
+    mask-image: var(--icon-article);
+    -webkit-mask-image: var(--icon-article);
+}
+
+toujou-icon[icon-name="bell"] {
+    mask-image: var(--icon-bell);
+    -webkit-mask-image: var(--icon-bell);
+}
+
+toujou-icon[icon-name="blockquote-round"] {
+    mask-image: var(--icon-blockquote-round);
+    -webkit-mask-image: var(--icon-blockquote-round);
+}
+
+toujou-icon[icon-name="bookmark"] {
+    mask-image: var(--icon-bookmark);
+    -webkit-mask-image: var(--icon-bookmark);
+}
+
+toujou-icon[icon-name="bookmark-filled"] {
+    mask-image: var(--icon-bookmark-filled);
+    -webkit-mask-image: var(--icon-bookmark-filled);
+}
+
+toujou-icon[icon-name="calendar-check"] {
+    mask-image: var(--icon-calendar-check);
+    -webkit-mask-image: var(--icon-calendar-check);
+}
+
+toujou-icon[icon-name="calendar-day"] {
+    mask-image: var(--icon-calendar-day);
+    -webkit-mask-image: var(--icon-calendar-day);
+}
+
+toujou-icon[icon-name="calendar-empty"] {
+    mask-image: var(--icon-calendar-empty);
+    -webkit-mask-image: var(--icon-calendar-empty);
+}
+
+toujou-icon[icon-name="calendar-lines"] {
+    mask-image: var(--icon-calendar-lines);
+    -webkit-mask-image: var(--icon-calendar-lines);
+}
+
+toujou-icon[icon-name="campaign"] {
+    mask-image: var(--icon-campaign);
+    -webkit-mask-image: var(--icon-campaign);
+}
+
+toujou-icon[icon-name="cancel-circle-filled"] {
+    mask-image: var(--icon-cancel-circle-filled);
+    -webkit-mask-image: var(--icon-cancel-circle-filled);
+}
+
+toujou-icon[icon-name="chart"] {
+    mask-image: var(--icon-chart);
+    -webkit-mask-image: var(--icon-chart);
+}
+
+toujou-icon[icon-name="check"] {
+    mask-image: var(--icon-check);
+    -webkit-mask-image: var(--icon-check);
+}
+
+toujou-icon[icon-name="check-circle"] {
+    mask-image: var(--icon-check-circle);
+    -webkit-mask-image: var(--icon-check-circle);
+}
+
+toujou-icon[icon-name="chevron-down"] {
+    mask-image: var(--icon-chevron-down);
+    -webkit-mask-image: var(--icon-chevron-down);
+}
+
+toujou-icon[icon-name="chevron-filled-down"] {
+    mask-image: var(--icon-chevron-filled-down);
+    -webkit-mask-image: var(--icon-chevron-filled-down);
+}
+
+toujou-icon[icon-name="chevron-filled-left"] {
+    mask-image: var(--icon-chevron-filled-left);
+    -webkit-mask-image: var(--icon-chevron-filled-left);
+}
+
+toujou-icon[icon-name="chevron-filled-right"] {
+    mask-image: var(--icon-chevron-filled-right);
+    -webkit-mask-image: var(--icon-chevron-filled-right);
+}
+
+toujou-icon[icon-name="chevron-filled-up"] {
+    mask-image: var(--icon-chevron-filled-up);
+    -webkit-mask-image: var(--icon-chevron-filled-up);
+}
+
+toujou-icon[icon-name="chevron-left"] {
+    mask-image: var(--icon-chevron-left);
+    -webkit-mask-image: var(--icon-chevron-left);
+}
+
+toujou-icon[icon-name="chevron-right"] {
+    mask-image: var(--icon-chevron-right);
+    -webkit-mask-image: var(--icon-chevron-right);
+}
+
+toujou-icon[icon-name="chevron-up"] {
+    mask-image: var(--icon-chevron-up);
+    -webkit-mask-image: var(--icon-chevron-up);
+}
+
+toujou-icon[icon-name="clock-circle"] {
+    mask-image: var(--icon-clock-circle);
+    -webkit-mask-image: var(--icon-clock-circle);
+}
+
+toujou-icon[icon-name="clock-circle-filled"] {
+    mask-image: var(--icon-clock-circle-filled);
+    -webkit-mask-image: var(--icon-clock-circle-filled);
+}
+
+toujou-icon[icon-name="close"] {
+    mask-image: var(--icon-close);
+    -webkit-mask-image: var(--icon-close);
+}
+
+toujou-icon[icon-name="cloud"] {
+    mask-image: var(--icon-cloud);
+    -webkit-mask-image: var(--icon-cloud);
+}
+
+toujou-icon[icon-name="coffee"] {
+    mask-image: var(--icon-coffee);
+    -webkit-mask-image: var(--icon-coffee);
+}
+
+toujou-icon[icon-name="coronavirus"] {
+    mask-image: var(--icon-coronavirus);
+    -webkit-mask-image: var(--icon-coronavirus);
+}
+
+toujou-icon[icon-name="dashboard"] {
+    mask-image: var(--icon-dashboard);
+    -webkit-mask-image: var(--icon-dashboard);
+}
+
+toujou-icon[icon-name="drink"] {
+    mask-image: var(--icon-drink);
+    -webkit-mask-image: var(--icon-drink);
+}
+
+toujou-icon[icon-name="email"] {
+    mask-image: var(--icon-email);
+    -webkit-mask-image: var(--icon-email);
+}
+
+toujou-icon[icon-name="euro"] {
+    mask-image: var(--icon-euro);
+    -webkit-mask-image: var(--icon-euro);
+}
+
+toujou-icon[icon-name="file-download"] {
+    mask-image: var(--icon-file-download);
+    -webkit-mask-image: var(--icon-file-download);
+}
+
+toujou-icon[icon-name="flag"] {
+    mask-image: var(--icon-flag);
+    -webkit-mask-image: var(--icon-flag);
+}
+toujou-icon[icon-name="flower"] {
+    mask-image: var(--icon-flower);
+    -webkit-mask-image: var(--icon-flower);
+}
+
+toujou-icon[icon-name="folder"] {
+    mask-image: var(--icon-folder);
+    -webkit-mask-image: var(--icon-folder);
+}
+
+toujou-icon[icon-name="food"] {
+    mask-image: var(--icon-food);
+    -webkit-mask-image: var(--icon-food);
+}
+
+toujou-icon[icon-name="globe"] {
+    mask-image: var(--icon-globe);
+    -webkit-mask-image: var(--icon-globe);
+}
+
+toujou-icon[icon-name="heart"] {
+    mask-image: var(--icon-heart);
+    -webkit-mask-image: var(--icon-heart);
+}
+
+toujou-icon[icon-name="heart-stroke"] {
+    mask-image: var(--icon-heart-stroke);
+    -webkit-mask-image: var(--icon-heart-stroke);
+}
+
+toujou-icon[icon-name="home"] {
+    mask-image: var(--icon-home);
+    -webkit-mask-image: var(--icon-home);
+}
+
+toujou-icon[icon-name="home-smooth"] {
+    mask-image: var(--icon-home-smooth);
+    -webkit-mask-image: var(--icon-home-smooth);
+}
+
+toujou-icon[icon-name="hotel"] {
+    mask-image: var(--icon-hotel);
+    -webkit-mask-image: var(--icon-hotel);
+}
+
+toujou-icon[icon-name="info"] {
+    mask-image: var(--icon-info);
+    -webkit-mask-image: var(--icon-info);
+}
+
+toujou-icon[icon-name="link"] {
+    mask-image: var(--icon-link);
+    -webkit-mask-image: var(--icon-link);
+}
+
+toujou-icon[icon-name="list"] {
+    mask-image: var(--icon-list);
+    -webkit-mask-image: var(--icon-list);
+}
+
+toujou-icon[icon-name="location"] {
+    mask-image: var(--icon-location);
+    -webkit-mask-image: var(--icon-location);
+}
+
+toujou-icon[icon-name="map"] {
+    mask-image: var(--icon-map);
+    -webkit-mask-image: var(--icon-map);
+}
+
+toujou-icon[icon-name="message-bubble"] {
+    mask-image: var(--icon-message-bubble);
+    -webkit-mask-image: var(--icon-message-bubble);
+}
+
+toujou-icon[icon-name="monument"] {
+    mask-image: var(--icon-monument);
+    -webkit-mask-image: var(--icon-monument);
+}
+
+toujou-icon[icon-name="new"] {
+    mask-image: var(--icon-new);
+    -webkit-mask-image: var(--icon-new);
+}
+
+toujou-icon[icon-name="pending-circle-filled"] {
+    mask-image: var(--icon-pending-circle-filled);
+    -webkit-mask-image: var(--icon-pending-circle-filled);
+}
+
+toujou-icon[icon-name="play-circle"] {
+    mask-image: var(--icon-play-circle);
+    -webkit-mask-image: var(--icon-play-circle);
+}
+
+toujou-icon[icon-name="play-circle-filled"] {
+    mask-image: var(--icon-play-circle-filled);
+    -webkit-mask-image: var(--icon-play-circle-filled);
+}
+
+toujou-icon[icon-name="prize"] {
+    mask-image: var(--icon-prize);
+    -webkit-mask-image: var(--icon-prize);
+}
+
+toujou-icon[icon-name="question"] {
+    mask-image: var(--icon-question);
+    -webkit-mask-image: var(--icon-question);
+}
+
+toujou-icon[icon-name="school"] {
+    mask-image: var(--icon-school);
+    -webkit-mask-image: var(--icon-school);
+}
+
+toujou-icon[icon-name="science"] {
+    mask-image: var(--icon-science);
+    -webkit-mask-image: var(--icon-science);
+}
+
+toujou-icon[icon-name="search"] {
+    mask-image: var(--icon-search);
+    -webkit-mask-image: var(--icon-search);
+}
+
+toujou-icon[icon-name="settings"] {
+    mask-image: var(--icon-settings);
+    -webkit-mask-image: var(--icon-settings);
+}
+
+toujou-icon[icon-name="shopping-bag"] {
+    mask-image: var(--icon-shopping-bag);
+    -webkit-mask-image: var(--icon-shopping-bag);
+}
+
+toujou-icon[icon-name="shopping-cart"] {
+    mask-image: var(--icon-shopping-cart);
+    -webkit-mask-image: var(--icon-shopping-cart);
+}
+
+toujou-icon[icon-name="sm-facebook"] {
+    mask-image: var(--icon-sm-facebook);
+    -webkit-mask-image: var(--icon-sm-facebook);
+}
+
+toujou-icon[icon-name="sm-facebook-circle"] {
+    mask-image: var(--icon-sm-facebook-circle);
+    -webkit-mask-image: var(--icon-sm-facebook-circle);
+}
+
+toujou-icon[icon-name="sm-instagram"] {
+    mask-image: var(--icon-sm-instagram);
+    -webkit-mask-image: var(--icon-sm-instagram);
+}
+
+toujou-icon[icon-name="sm-instagram-circle"] {
+    mask-image: var(--icon-sm-instagram-circle);
+    -webkit-mask-image: var(--icon-sm-instagram-circle);
+}
+
+toujou-icon[icon-name="sm-linkedin"] {
+    mask-image: var(--icon-sm-linkedin);
+    -webkit-mask-image: var(--icon-sm-linkedin);
+}
+
+toujou-icon[icon-name="sm-linkedin-circle"] {
+    mask-image: var(--icon-sm-linkedin-circle);
+    -webkit-mask-image: var(--icon-sm-linkedin-circle);
+}
+
+toujou-icon[icon-name="sm-pinterest"] {
+    mask-image: var(--icon-sm-pinterest);
+    -webkit-mask-image: var(--icon-sm-pinterest);
+}
+
+toujou-icon[icon-name="sm-pinterest-circle"] {
+    mask-image: var(--icon-sm-pinterest-circle);
+    -webkit-mask-image: var(--icon-sm-pinterest-circle);
+}
+
+toujou-icon[icon-name="sm-twitter"] {
+    mask-image: var(--icon-sm-twitter);
+    -webkit-mask-image: var(--icon-sm-twitter);
+}
+
+toujou-icon[icon-name="sm-twitter-circle"] {
+    mask-image: var(--icon-sm-twitter-circle);
+    -webkit-mask-image: var(--icon-sm-twitter-circle);
+}
+
+toujou-icon[icon-name="sm-xing"] {
+    mask-image: var(--icon-sm-xing);
+    -webkit-mask-image: var(--icon-sm-xing);
+}
+
+toujou-icon[icon-name="sm-xing-circle"] {
+    mask-image: var(--icon-sm-xing-circle);
+    -webkit-mask-image: var(--icon-sm-xing-circle);
+}
+
+toujou-icon[icon-name="sm-youtube"] {
+    mask-image: var(--icon-sm-youtube);
+    -webkit-mask-image: var(--icon-sm-youtube);
+}
+
+toujou-icon[icon-name="sm-youtube-circle"] {
+    mask-image: var(--icon-sm-youtube-circle);
+    -webkit-mask-image: var(--icon-sm-youtube-circle);
+}
+
+toujou-icon[icon-name="sports"] {
+    mask-image: var(--icon-sports);
+    -webkit-mask-image: var(--icon-sports);
+}
+
+toujou-icon[icon-name="star"] {
+    mask-image: var(--icon-star);
+    -webkit-mask-image: var(--icon-star);
+}
+
+toujou-icon[icon-name="stop-circle-filled"] {
+    mask-image: var(--icon-stop-circle-filled);
+    -webkit-mask-image: var(--icon-stop-circle-filled);
+}
+
+toujou-icon[icon-name="support"] {
+    mask-image: var(--icon-support);
+    -webkit-mask-image: var(--icon-support);
+}
+
+toujou-icon[icon-name="telephone"] {
+    mask-image: var(--icon-telephone);
+    -webkit-mask-image: var(--icon-telephone);
+}
+
+toujou-icon[icon-name="thumb-up"] {
+    mask-image: var(--icon-thumb-up);
+    -webkit-mask-image: var(--icon-thumb-up);
+}
+
+toujou-icon[icon-name="tools"] {
+    mask-image: var(--icon-tools);
+    -webkit-mask-image: var(--icon-tools);
+}
+

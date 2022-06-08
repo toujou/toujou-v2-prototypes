@@ -1,5 +1,5 @@
-import "../src/components/toujou-topbar/toujou-topbar";
-import "../src/components/toujou-breadcrumb/toujou-breadcrumb";
+import "../src/components/toujou-icon/toujou-icon";
+
 import "../src/styles/StorybookStyles.css";
 import { badgeCustomConfig } from "./badgeCustomConfig.js";
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
@@ -23,3 +23,4 @@ export const parameters = {
   },
   // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }
+
