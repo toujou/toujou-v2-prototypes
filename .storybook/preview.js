@@ -1,7 +1,8 @@
 import "../src/components/toujou-blockquote/toujou-blockquote";
-import "../src/components/toujou-blockquote-grid/toujou-blockquote-grid";
-import "../src/components/toujou-grid/toujou-grid";
-import "../src/components/toujou-icon/toujou-icon";
+// import "../src/components/toujou-blockquote-grid/toujou-blockquote-grid";
+// import "../src/components/toujou-grid/toujou-grid";
+// import "../src/components/toujou-icon/toujou-icon";
+// import "../src/components/toujou-text-block/toujou-text-block";
 
 import "../src/styles/StorybookStyles.css";
 import { badgeCustomConfig } from "./badgeCustomConfig.js";

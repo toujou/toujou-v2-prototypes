@@ -4,12 +4,12 @@ The `<toujou-blockquote>` is a custom element that renders a blockquote element 
 
 ## Markup example
 ```html
-<toujou-blockquote role="figcaption" blockquote-direction="vertical">
-    <img slot="image" src="https://picsum.photos/200/200" alt="quote image" />
-    <blockquote slot="quote">
-        <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
+<toujou-blockquote role="figcaption" class="toujou-blockquote" blockquote-direction="${args.direction}">
+    <img slot="image" class="toujou-blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
+    <blockquote slot="quote" class="toujou-blockquote__blockquote">
+        <p class="toujou-blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
     </blockquote>
-    <figcaption slot="author">Jack Handey</figcaption>
+    <figcaption slot="author" class="toujou-blockquote__author">Jack Handey</figcaption>
 </toujou-blockquote>
 ```
 

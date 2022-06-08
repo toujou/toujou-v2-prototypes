@@ -38,6 +38,7 @@
 @import './elements/_toujou-blockquote-grid.css';
 @import './elements/_toujou-grid.css';
 @import './elements/_toujou-icon.css';
+@import './elements/_toujou-text-blocks.css';
 
 @import './elements/forms/_checkbox.css';
 @import './elements/forms/_checkbox-group.css';

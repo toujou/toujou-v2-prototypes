@@ -1,4 +1,4 @@
-import {Meta} from '@storybook/web-components';
+import { Story, Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/badgeCustomConfig.js'
@@ -33,9 +33,13 @@ export default {
     }
 } as Meta;
 
-const Template = (args: { type: string; }) => {
+interface ToujouGridProps {
+    type: string;
+}
+
+const Template: Story<ToujouGridProps> = (args: ToujouGridProps) => {
     const gridEl = document.createElement('toujou-grid');
-    gridEl.classList.add('demo-grid');
+    gridEl.classList.add('toujou-grid', 'demo-grid');
 
     const titleEl = document.createElement('p');
     titleEl.textContent = `grid--${args.type}`;
@@ -49,7 +53,6 @@ const Template = (args: { type: string; }) => {
 
 export const Grid = Template.bind({});
 
-// @ts-ignore
 Grid.args = {
     type: 'default',
 }

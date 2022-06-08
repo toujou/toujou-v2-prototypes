@@ -3,6 +3,7 @@ import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/badgeCustomConfig.js'
 
+// @ts-ignore
 import toujouBlockquoteGridDocs from './toujou-blockquote-grid.docs.mdx';
 
 export default {
@@ -49,8 +50,8 @@ interface ToujouBlockquoteGridProps { gridCount: string; direction: string; }
 
 const Template: Story<ToujouBlockquoteGridProps> = (args: ToujouBlockquoteGridProps) => {
     return `
-        <toujou-blockquote-grid blockquote-grid-count="${args.gridCount}">
-            <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+        <toujou-blockquote-grid class="toujou-blockquote-grid" blockquote-grid-count="${args.gridCount}">
+            <toujou-blockquote role="figcaption" class="toujou-blockquote" blockquote-direction="${args.direction}">
                 <img slot="image" class="toujou-blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="toujou-blockquote__blockquote">
                     <p class="toujou-blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -58,7 +59,7 @@ const Template: Story<ToujouBlockquoteGridProps> = (args: ToujouBlockquoteGridPr
                 <figcaption slot="author" class="toujou-blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
             
-            <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+            <toujou-blockquote role="figcaption" class="toujou-blockquote" blockquote-direction="${args.direction}">
                 <img slot="image" class="toujou-blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="toujou-blockquote__blockquote">
                     <p class="toujou-blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -66,7 +67,7 @@ const Template: Story<ToujouBlockquoteGridProps> = (args: ToujouBlockquoteGridPr
                 <figcaption slot="author" class="toujou-blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
             
-            <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+            <toujou-blockquote role="figcaption" class="toujou-blockquote" blockquote-direction="${args.direction}">
                 <img slot="image" class="toujou-blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="toujou-blockquote__blockquote">
                     <p class="toujou-blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -74,7 +75,7 @@ const Template: Story<ToujouBlockquoteGridProps> = (args: ToujouBlockquoteGridPr
                 <figcaption slot="author" class="toujou-blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
             
-            <toujou-blockquote role="figcaption" blockquote-direction="${args.direction}">
+            <toujou-blockquote role="figcaption" class="toujou-blockquote" blockquote-direction="${args.direction}">
                 <img slot="image" class="toujou-blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="toujou-blockquote__blockquote">
                     <p class="toujou-blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -83,53 +84,11 @@ const Template: Story<ToujouBlockquoteGridProps> = (args: ToujouBlockquoteGridPr
             </toujou-blockquote>
 
         </toujou-blockquote-grid>
-        
-        
-        
-        
-        <!--
-        <div class="blockquote-grid blockquote-grid--${args.gridCount}">
-            <figure class="blockquote blockquote--${args.direction}">
-                <img src="https://picsum.photos/200/200" alt="quote image" class="blockquote__image">
-                <blockquote class="blockquote__quote">
-                    <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
-                </blockquote>
-                <figcaption class="blockquote__author">Jack Handey</figcaption>
-            </figure>
-
-            <figure class="blockquote blockquote--${args.direction}">
-                <img src="https://picsum.photos/200/200" alt="quote image" class="blockquote__image">
-                <blockquote class="blockquote__quote">
-                    <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
-                </blockquote>
-                <figcaption class="blockquote__author">Jack Handey</figcaption>
-            </figure>
-
-            <figure class="blockquote blockquote--${args.direction}">
-                <img src="https://picsum.photos/200/200" alt="quote image" class="blockquote__image">
-                <blockquote class="blockquote__quote">
-                    <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
-                </blockquote>
-                <figcaption class="blockquote__author">Jack Handey</figcaption>
-            </figure>
-
-            <figure class="blockquote blockquote--${args.direction}">
-                <img src="https://picsum.photos/200/200" alt="quote image" class="blockquote__image">
-                <blockquote class="blockquote__quote">
-                    <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
-                </blockquote>
-                <figcaption class="blockquote__author">Jack Handey</figcaption>
-            </figure>
-
-        </div>
-        -->
-
     `;
 };
 
 export const ToujouBlockquoteGrid = Template.bind({});
 
-// @ts-ignore
 ToujouBlockquoteGrid.args = {
     gridCount: '1',
     direction: 'vertical',

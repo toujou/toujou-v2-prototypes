@@ -147,7 +147,7 @@ const Template: Story<ToujouIconProps> = (args: ToujouIconProps) => {
         iconEl.setAttribute('icon-size', args.iconSize);
         iconEl.setAttribute('icon-color', args.iconColor);
         iconEl.setAttribute('icon-name', iconName);
-        // iconEl.classList.add(`icon--${iconName}`);
+        iconEl.classList.add(`toujou-icon`);
         iconCell.appendChild(iconEl);
 
         const iconTitle = document.createElement('p');
