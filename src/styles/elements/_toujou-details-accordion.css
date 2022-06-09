@@ -5,7 +5,7 @@
     --accordion-margin: 0 auto;
     --accordion-panel-padding: var(--spacing-normal);
     --accordion-panel-gap: var(--spacing-normal);
-    --accordion-content-max-height: 50rem;
+    --accordion-panel-max-height: 50rem;
     --accordion-title-color: var(--color-font-dark);
     --accordion-title-active-color: var(--color-primary);
     --accordion-title-margin: 0;
@@ -96,6 +96,14 @@
 /* OPEN PANEL */
 .accordion__content[aria-expanded="true"] {
     padding: var(--accordion-content-padding);
-    max-height: var(--accordion-content-max-height);
+    max-height: var(--accordion-panel-max-height);
 }
 
+.accordion__panel[data-open="true"] .accordion__title {
+    color: var(--accordion-title-active-color);
+}
+
+.accordion__panel[data-open="true"] .accordion__chevron {
+    background-color: var(--accordion-chevron-active-color);
+    transform: var(--accordion-chevron-active-transform);
+}

@@ -1,12 +1,11 @@
 import "../src/components/toujou-blockquote/toujou-blockquote";
 import "../src/components/toujou-breadcrumb/toujou-breadcrumb";
 import "../src/components/toujou-button/toujou-button";
-// import "../src/components/toujou-blockquote-grid/toujou-blockquote-grid";
-// import "../src/components/toujou-grid/toujou-grid";
-// import "../src/components/toujou-icon/toujou-icon";
-// import "../src/components/toujou-text-block/toujou-text-block";
+import "../src/components/toujou-details-accordion/toujou-details-accordion";
+import "../src/components/toujou-details/toujou-details";
 
 import "../src/styles/StorybookStyles.css";
+
 import { badgeCustomConfig } from "./badgeCustomConfig.js";
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { customViewports } from "./customViewports.js";
@@ -30,3 +29,4 @@ export const parameters = {
   // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }
 
+console.clear();

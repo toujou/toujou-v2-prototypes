@@ -12,9 +12,17 @@ export declare class ToujouBreadcrumb extends LitElement {
     constructor();
     firstUpdated(): void;
     connectedCallback(): void;
-    disconnectedCallback(): void;
+    /**
+     * Calculate at which width the breakpoint between "mobile" and "normal" mode is
+     */
     _calculateBreakpoint(): void;
+    /**
+     * Toggle the mobile menu open / close
+     */
     _handleToggleClick(): void;
+    /**
+     * Get clones of all the nav list items and copy them into the fake list element
+     */
     _populateFakeList(): void;
 }
 declare global {
