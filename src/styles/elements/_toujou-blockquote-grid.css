@@ -1,4 +1,4 @@
-toujou-blockquote-grid {
+.toujou-blockquote-grid {
     --blockquote-grid-columns-count: 100%;
     --blockquote-grid-gap: var(--spacing-l);
     --blockquote-grid-max-width: var(--content-max-width);
@@ -10,23 +10,23 @@ toujou-blockquote-grid {
     margin: 0 auto;
 }
 
-toujou-blockquote-grid[blockquote-grid-count="2"],
-toujou-blockquote-grid[blockquote-grid-count="3"] {
+.toujou-blockquote-grid[blockquote-grid-count="2"],
+.toujou-blockquote-grid[blockquote-grid-count="3"] {
     --blockquote-grid-max-width: var(--content-wide-max-width);
 }
 
 @media screen and (min-width: 640px) {
-    toujou-blockquote-grid[blockquote-grid-count="2"] {
+    .toujou-blockquote-grid[blockquote-grid-count="2"] {
         --blockquote-grid-columns-count: 2;
     }
 
-    toujou-blockquote-grid[blockquote-grid-count="3"] {
+    .toujou-blockquote-grid[blockquote-grid-count="3"] {
         --blockquote-grid-columns-count: 3;
     }
 }
 
 @media screen and (min-width: 960px) {
-    toujou-blockquote-grid{
+    .toujou-blockquote-grid{
         --blockquote-grid-gap: var(--spacing-xl);
     }
 }

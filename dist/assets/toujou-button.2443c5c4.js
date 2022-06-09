@@ -1,0 +1,1 @@
+class t extends HTMLButtonElement{constructor(){super(),console.log("initing toujou-button..."),this.addEventListener("click",()=>{console.log("TOUJOU BUTTON CLICKED!!!!!")})}}customElements.define("toujou-button",t,{extends:"button"});

@@ -1,4 +1,4 @@
-toujou-blockquote {
+.toujou-blockquote {
     --blockquote-image-size: 112px;
     --blockquote-image-border-radius: 50%;
     --blockquote-icon-size: var(--spacing-xxl);
@@ -22,8 +22,8 @@ toujou-blockquote {
     min-height: 0;
 }
 
-toujou-blockquote-grid[blockquote-grid-count="2"] toujou-blockquote[blockquote-direction="vertical"],
-toujou-blockquote-grid[blockquote-grid-count="3"] toujou-blockquote[blockquote-direction="vertical"] {
+.toujou-blockquote-grid.toujou-blockquote-grid[blockquote-grid-count="2"] .toujou-blockquote[blockquote-direction="vertical"],
+toujou-blockquote-grid[blockquote-grid-count="3"] .toujou-blockquote[blockquote-direction="vertical"] {
     --blockquote-image-size: 132px;
 }
 
@@ -87,7 +87,7 @@ toujou-blockquote-grid[blockquote-grid-count="3"] toujou-blockquote[blockquote-d
 }
 
 /* HORIZONTAL BLOCKQUOTE */
-toujou-blockquote[blockquote-direction="horizontal"] {
+.toujou-blockquote[blockquote-direction="horizontal"] {
     --blockquote-gap: 0 var(--spacing-m);
     --blockquote-grid-template-columns: var(--blockquote-image-size) 1fr;
     --blockquote-grid-template-areas: "blockquoteImage blockquoteQuote" "blockquoteImage blockquoteAuthor";
@@ -96,17 +96,17 @@ toujou-blockquote[blockquote-direction="horizontal"] {
 }
 
 /* VERTICAL BLOCKQUOTE */
-toujou-blockquote[blockquote-direction="vertical"] {
+.toujou-blockquote[blockquote-direction="vertical"] {
     --blockquote-grid-template-columns: 1fr;
     --blockquote-grid-template-areas: "blockquoteImage" "blockquoteQuote" "blockquoteAuthor"
 }
 
 @media screen and (min-width: 960px) {
-    toujou-blockquote {
+    .toujou-blockquote {
         --blockquote-image-size: 160px;
     }
 
-    toujou-blockquote[blockquote-direction="horizontal"] {
+    .toujou-blockquote[blockquote-direction="horizontal"] {
         --blockquote-gap: var(--spacing-normal) var(--spacing-xxl);
     }
 }

@@ -1,4 +1,4 @@
-toujou-grid {
+.toujou-grid {
     --grid-width: var(--content-width-with-padding);
     --grid-max-width: var(--content-max-width);
     --grid-margin: 0 auto;
@@ -8,15 +8,15 @@ toujou-grid {
     margin: var(--grid-margin);
 }
 
-toujou-grid[grid-type="wide"] {
+.toujou-grid[grid-type="wide"] {
     --grid-max-width: var(--content-wide-max-width);
 }
 
-toujou-grid[grid-type="fullwidth"] {
+.toujou-grid[grid-type="fullwidth"] {
     width: var(--content-fullwidth);
     max-width: var(--content-fullwidth);
 }
 
-toujou-grid[grid-type="ignore"] {
+.toujou-grid[grid-type="ignore"] {
     display: contents;
 }

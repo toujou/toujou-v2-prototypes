@@ -3,7 +3,6 @@ import { LitElement, html } from 'lit';
 export class ToujouBlockquote extends LitElement {
     constructor() {
         super();
-        console.log('initing toujou-blockquote...');
     }
 
     render() {
@@ -12,6 +11,12 @@ export class ToujouBlockquote extends LitElement {
             <slot name="quote"></slot>
             <slot name="author"></slot>
         `;
+    }
+}
+
+declare global {
+    interface HTMLElementTagNameMap {
+        'toujou-blockquote': ToujouBlockquote
     }
 }
 
