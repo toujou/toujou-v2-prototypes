@@ -1,0 +1,93 @@
+# &lt;toujou-chip&gt;
+The `<toujou-chip>` is simple chip element which allows us to render a small piece of information, like a filter option or a category. It may be displayed in many colors, sizes, with or without icon, ...
+
+## Example
+<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal">Jetzt 30% Rabatt</toujou-chip>
+
+## Markup example
+```html
+<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal">Jetzt 30% Rabatt</toujou-chip>
+```
+
+
+## Attributes
+This element has a several attributes which allow us to customizae it to our needs
+
+
+### background color [required]
+Define the background color of the chip element
+
+| Value | Example |
+|---|---|:---|
+| transparent | `<toujou-chip class="toujou-chip" chip-bg-color="transparent" chip-border-radius="small" chip-size="normal">` |
+| primary | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal">` |
+| primary-light | `<toujou-chip class="toujou-chip" chip-bg-color="primary-light" chip-border-radius="small" chip-size="normal">` |
+| primary-very-light | `<toujou-chip class="toujou-chip" chip-bg-color="primary-very-light" chip-border-radius="small" chip-size="normal">` |
+| secondary | `<toujou-chip class="toujou-chip" chip-bg-color="secondary" chip-border-radius="small" chip-size="normal">` |
+| secondary-light | `<toujou-chip class="toujou-chip" chip-bg-color="secondary-light" chip-border-radius="small" chip-size="normal">` |
+| secondary-very-light | `<toujou-chip class="toujou-chip" chip-bg-color="secondary-very-light" chip-border-radius="small" chip-size="normal">` |
+| font | `<toujou-chip class="toujou-chip" chip-bg-color="font" chip-border-radius="small" chip-size="normal">` |
+| font-light | `<toujou-chip class="toujou-chip" chip-bg-color="font-light" chip-border-radius="small" chip-size="normal">` |
+| font-very-light | `<toujou-chip class="toujou-chip" chip-bg-color="font-very-light" chip-border-radius="small" chip-size="normal">` |
+| success | `<toujou-chip class="toujou-chip" chip-bg-color="success" chip-border-radius="small" chip-size="normal">` |
+| warning | `<toujou-chip class="toujou-chip" chip-bg-color="warning" chip-border-radius="small" chip-size="normal">` |
+| error | `<toujou-chip class="toujou-chip" chip-bg-color="error" chip-border-radius="small" chip-size="normal">` |
+
+
+### border radius [required]
+Define the border-radius amount of the chip element
+
+| Value | Example |
+|---|---|:---|
+| none | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="none" chip-size="normal">` |
+| small | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal">` |
+| medium | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="medium" chip-size="normal">` |
+| round | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="round" chip-size="normal">` |
+
+
+### size [required]
+Define the chip element's text size
+
+| Value | Example |
+|---|---|:---|
+| extra-small | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="none" chip-size="extra-small">` |
+| small | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="none" chip-size="small">` |
+| normal | `<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="none" chip-size="normal">` |
+
+
+### is clickable
+If this attribute is set the chip element will have a hover effect
+
+Example:
+<toujou-chip chip-icon-position="left" class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal" is-clickable>Jetzt 30% Rabatt</toujou-chip>
+
+Markup Example:
+```html
+<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal" is-clickable="">
+```
+
+### icon position
+Set if the icon should be shown on the left or right side of the text. It must be used in combination with a `toujou-icon` element (see example)
+
+Example:
+<toujou-chip chip-icon-position="left" class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal">
+    <toujou-icon class="toujou-icon toujou-chip__icon" icon-name="home"></toujou-icon> Jetzt 30% Rabatt
+</toujou-chip>
+
+Markup Example:
+```html
+<toujou-chip chip-icon-position="left" class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal">
+    <toujou-icon class="toujou-icon toujou-chip__icon" icon-name="home"></toujou-icon> Jetzt 30% Rabatt
+</toujou-chip>
+```
+
+### is uppercase
+Set the chip element's text as uppercase
+
+Example:
+<toujou-chip chip-icon-position="left" class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal" is-uppercase>Jetzt 30% Rabatt</toujou-chip>
+
+Markup Example:
+```html
+<toujou-chip class="toujou-chip" chip-bg-color="primary" chip-border-radius="small" chip-size="normal" is-clickable="" is-uppercase>
+```
