@@ -1,4 +1,8 @@
 .toujou-details {
+    --toujou-details-display: block;
+    --toujou-details-width: var(--content-width-with-padding);
+    --toujou-details-max-width: var(--content-max-width);
+    --toujou-details-margin: 0 auto;
     --toujou-details-title-color: var(--color-font-dark);
     --toujou-details-title-active-color: var(--color-primary);
     --toujou-details-title-margin: 0;
@@ -19,6 +23,16 @@
     --toujou-details-chevron-active-transform: rotate(180deg);
     --toujou-details-chevron-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
     --toujou-details-chevron-area: chevron;
+
+    display: var(--toujou-details-display);
+    width: var(--toujou-details-width);
+    max-width: var(--toujou-details-max-width);
+    margin: var(--toujou-details-margin);
+}
+
+.toujou-details-accordion .toujou-details {
+    --toujou-details-width: 100%;
+    --toujou-details-max-width: 100%;
 }
 
 .toujou-details__title {
