@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
-import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
+import { TOUJOU_BADGES } from '../../../../.storybook/badgeCustomConfig.js'
 // @ts-ignore
 import ToujouSliderDocs from "./toujou-slider.docs.mdx";
 
@@ -47,7 +47,7 @@ export default {
 
 const Template = (args: { designColor: any; isFullwidth: any; }) => {
     return `
-        <toujou-slider class="toujou-slider slider toujou-slider--slider--single" slider-design="${args.designColor}" ${args.isFullwidth ? 'slider-fullwidth' : ''}>
+        <toujou-slider class="toujou-slider slider" slider-design="${args.designColor}" ${args.isFullwidth ? 'slider-fullwidth' : ''}>
             <div class="toujou-slider__top">
                 <div class="toujou-slider__frame glider draggable" data-autoslide="0" data-slideinterval="6">
                     <div class="glider-track toujou-slider__track">

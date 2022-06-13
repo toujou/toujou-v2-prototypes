@@ -17,7 +17,7 @@
     color: var(--toujou-chip-text-color);
     padding: var(--toujou-chip-padding);
     border-radius: var(--toujou-chip-border-radius);
-    display: flex;
+    display: inline-flex;
     flex-direction: var(--toujou-chip-flex-direction);
     align-items: center;
     justify-content: center;
