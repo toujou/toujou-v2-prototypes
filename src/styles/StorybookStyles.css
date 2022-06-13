@@ -26,6 +26,8 @@
 @import './elements/_toujou-bullets.css';
 @import './elements/_toujou-button.css';
 @import './elements/_toujou-chip.css';
+@import './elements/_toujou-content-card.css';
+@import './elements/_toujou-content-card-grid.css';
 @import './elements/_toujou-details.css';
 @import './elements/_toujou-details-accordion.css';
 @import './elements/_toujou-grid.css';

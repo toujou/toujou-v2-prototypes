@@ -70,19 +70,19 @@
 
 @media screen and (min-width: 640px) {
     .toujou-image-card {
-        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-title-gap) * 2) / 2);
+        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap)) / 2);
     }
 }
 
 @media screen and (min-width: 840px) {
     .toujou-image-card {
-        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-title-gap) * 4) / 3);
+        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap) * 2) / 3);
     }
 }
 
 @media screen and (min-width: 960px) {
     .toujou-image-card {
-        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-title-gap) * 6) / 4);
+        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap) * 3) / 4);
     }
 }
 

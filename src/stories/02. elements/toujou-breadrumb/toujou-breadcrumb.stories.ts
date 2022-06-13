@@ -8,7 +8,7 @@ import ToujouBreadcrumbDocs from './toujou-breadcrumb.docs.mdx';
 export default {
     title: 'COMPONENTS/Breadcrumb',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
+        badges: [TOUJOU_BADGES.TESTING],
         docs: {
             page: ToujouBreadcrumbDocs,
         }
