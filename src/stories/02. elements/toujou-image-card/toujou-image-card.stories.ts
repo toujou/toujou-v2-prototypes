@@ -96,7 +96,14 @@ function createImageCardElement(imageFormat: string, cardVariant: string): strin
     `;
 }
 
-const Template = (args: { columnCount: number; imageFormat: string; cardsAreLinks: boolean, cardVariant: string}) => {
+interface ToujouImageCardStoryProps {
+    columnCount: number;
+    imageFormat: string;
+    cardsAreLinks: boolean,
+    cardVariant: string
+}
+
+const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
 
     const toujouImageCardGrid = document.createElement('toujou-image-card-grid');
     toujouImageCardGrid.classList.add('toujou-image-card-grid');

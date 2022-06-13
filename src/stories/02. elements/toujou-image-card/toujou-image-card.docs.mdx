@@ -1,25 +1,31 @@
 # &lt;toujou-image-card&gt;
-The `<toujou-icon>` is a simple custom element that allows us to render an icon on the page.
+The `<toujou-image-card>` is a simple element that render an image card on the page (image, with a title, either as link or as a simple card)
 
+The `<toujou-image-card>` element must be rendered inside a `<toujou-image-card-grid>` element to be displayed correctly.
 
-## Example
-<button is="toujou-button" class="toujou-button" button-variant="primary" button-type="default" button-size="normal">Hello world</button>
+If there is a link available, the whole card will be linked. If no link is available, instead of an `<a>` it will be rendered as a `<toujou-image-card>` element.
 
-
-## Markup example
+Markup Example:
 ```html
-<button is="toujou-button" class="toujou-button" button-variant="primary" button-type="default" button-size="normal">Hello world</button>
+<toujou-image-card-grid class="toujou-image-card-grid">
+    <a class="toujou-image-card" href="#" image-format="square" card-variant="secondary">
+        <figure class="toujou-image-card__figure">
+            <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image" />
+        </figure>
+        <h3 class="toujou-image-card__title">
+            <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+            Beautiful title
+        </h3>
+    </a>
+</toujou-image-card-grid>
 ```
 
 ## Attributes
-There are some attributes that allow us to customize the button
+There are a couple of attribute that allow us to customize the `<toujou-image-card>` element
 
 
-### button variant <toujou-chip class="toujou-chip" chip-bg-color="warning">required</toujou-chip>
-By setting the `button-variant` attribute we can choose between primary, secondary or font color buttons
+### card variant <toujou-chip class="toujou-chip" chip-bg-color="warning">required</toujou-chip>
+By setting the `card-variant` attribute we can choose between the default, primary, secondary or inverted element designs (can be set on the BE by the users)
 
-| Name | Attribute | Example |
-|---|---|:---:|
-| primary | `button-variant="primary"`  | `<button is="toujou-button" class="toujou-button" button-variant="primary" button-type="default" button-size="normal">Hello world</button>` |
-| secondary | `button-variant="secondary"`  | `<button is="toujou-button" class="toujou-button" button-variant="secondary" button-type="default" button-size="normal">Hello world</button>` |
-| font | `button-variant="font"`  | `<button is="toujou-button" class="toujou-button" button-variant="font" button-type="default" button-size="normal">Hello world</button>` |
+### image format <toujou-chip class="toujou-chip" chip-bg-color="warning">required</toujou-chip>
+By setting the `image-format` attribute we can choose between the "cinema" and "square" formats for the image cards image (depending on the BE element used)
