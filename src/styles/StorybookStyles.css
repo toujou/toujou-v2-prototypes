@@ -37,12 +37,16 @@
 @import './elements/_toujou-blockquote.css';
 @import './elements/_toujou-blockquote-grid.css';
 @import './elements/_toujou-breadcrumb.css';
+@import './elements/_toujou-bullets.css';
 @import './elements/_toujou-button.css';
 @import './elements/_toujou-chip.css';
 @import './elements/_toujou-details.css';
 @import './elements/_toujou-details-accordion.css';
 @import './elements/_toujou-grid.css';
 @import './elements/_toujou-icon.css';
+@import './elements/_toujou-slider.css';
+@import './elements/_toujou-slider-slide.css';
+@import './elements/_toujou-slider-control.css';
 @import './elements/_toujou-text-blocks.css';
 
 @import './elements/forms/_checkbox.css';
