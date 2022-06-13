@@ -143,7 +143,7 @@
 }
 
 @media screen and (min-width: 840px) {
-    toujou.-text-block {
+    .toujou-text-block {
         --text-blocks-grid-gap: var(--spacing-xl);
     }
 

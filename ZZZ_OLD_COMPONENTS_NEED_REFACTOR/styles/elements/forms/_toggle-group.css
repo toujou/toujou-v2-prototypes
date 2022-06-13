@@ -18,12 +18,12 @@
     grid-gap: var(--toggle-group-grid-gap);
 }
 
-.toujou-input-group[type="multi-check"] .toggle-group {
+.input-group--type-multi-check .toggle-group {
     margin: var(--multi-check-group-row-margin);
 }
 
-.input-group.toujou-input-group[type="checkbox"]::after,
-.input-group.toujou-input-group[type="multi-check"]::after{
+.input-group.input-group--type-checkbox::after,
+.input-group.input-group--type-multi-check::after{
     --input-group-icon-display: none;
 }
 
@@ -38,6 +38,18 @@
     --toggle-group-label-color: var(--color-font-light);
 
     pointer-events: none;
+}
+
+.form__description.toggle-group__description {
+    --form-description-padding: 0;
+
+    grid-column: var(--toggle-group-description-column);
+}
+
+.form__error.toggle-group__error {
+    --form-error-padding: 0;
+
+    grid-column: var(--toggle-group-error-column);
 }
 
 @media (hover: hover) {

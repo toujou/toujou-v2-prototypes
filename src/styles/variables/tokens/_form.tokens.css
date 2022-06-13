@@ -5,7 +5,14 @@
     --form-input-default-border-color: var(--color-font-light);
     --form-input-hover-border-color: var(--color-font);
     --form-input-focus-border-color: var(--color-primary);
+    --form-input-error-border-color: var(--color-error);
+    --form-input-success-border-color: var(--color-success);
     --form-input-default-border: var(--form-input-border-width) solid var(--form-input-default-border-color);
+    --form-input-default-border: var(--form-input-border-width) solid var(--form-input-default-border-color);
+    --form-input-hover-border: var(--form-input-border-width) solid var(--form-input-hover-border-color);
+    --form-input-focus-border: var(--form-input-border-width) solid var(--form-input-focus-border-color);
+    --form-input-error-border: var(--form-input-border-width) solid var(--form-input-error-border-color);
+    --form-input-success-border: var(--form-input-border-width) solid var(--form-input-success-border-color);
     --form-input-border-radius: var(--border-radius-normal);
     --form-input-background-color: transparent;
     --form-input-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);

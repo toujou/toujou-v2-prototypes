@@ -1,0 +1,35 @@
+.toujou-form-error {
+    --form-error-order: 20;
+    --form-error-color: var(--color-error);
+    --form-error-padding: 0 var(--spacing-s);
+    --form-error-font-size: var(--font-size-s);
+    --form-error-display: none;
+    --form-error-column: 1 / -1;
+
+    display: var(--form-error-display);
+    order: var(--form-error-order);
+    color: var(--form-error-color);
+    padding: var(--form-error-padding);
+    font-size: var(--form-error-font-size);
+    grid-column: var(--form-error-column);
+}
+
+.toujou-form-error--after-group {
+    --form-error-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 3px);
+}
+
+.toujou-input-group[has-error] .toujou-form-error {
+    --form-error-display: block;
+}
+
+.toujou-form-error--checkbox-group {
+    --form-error-padding: 0;
+
+    grid-column: var(--checkbox-group-error-column);
+}
+
+.toujou-form-error--toggle-group {
+    --form-error-padding: 0;
+
+    grid-column: var(--toggle-group-error-column);
+}

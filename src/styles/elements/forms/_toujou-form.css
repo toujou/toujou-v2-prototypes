@@ -1,0 +1,15 @@
+.toujou-form {
+    --form-font-family: var(--font-family-text);
+    --form-font-size: var(--font-size-normal);
+    --form-font-weight: var(--font-weight-text-normal);
+    --form-line-height: var(--line-height-reset);
+    --form-margin: 0 auto;
+
+    width: var(--form-width);
+    max-width: var(--form-max-width);
+    margin: var(--form-margin);
+    font-family: var(--form-font-family);
+    font-size: var(--form-font-size);
+    font-weight: var(--form-font-weight);
+    line-height: var(--form-line-height);
+}

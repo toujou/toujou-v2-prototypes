@@ -14,23 +14,23 @@
     color: var(--input-label-color);
 }
 
-.toujou-input-group[is-required] .input-label::after {
+.input-group--required .input-label::after {
     content: var(--input-label-required-content);
     margin: var(--input-label-required-content-margin);
 }
 
-.toujou-input-group:focus-within .input-label {
+.input-group:focus-within .input-label {
     --input-label-color: var(--color-primary);
 }
 
-.toujou-input-group[is-disabled] .input-label {
+.input-group--disabled .input-label {
     --input-label-color: var(--color-font-light);
 }
 
-.toujou-input-group[has-error] .input-label {
+.input-group--has-error .input-label {
     --input-label-color: var(--color-error);
 }
 
-.toujou-input-group[has-success] .input-label {
+.input-group--has-success .input-label {
     --input-label-color: var(--color-success);
 }
