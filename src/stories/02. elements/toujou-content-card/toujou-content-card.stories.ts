@@ -19,29 +19,6 @@ export default {
         }
     },
     argTypes: {
-        imageFormat: {
-            table: {
-                category: "Image card settings",
-                defaultValue: { summary: '16-9' },
-            },
-            name: 'Image format',
-            description: "Set the image card's image format",
-            options: ['16-9', 'square'],
-            control: { type: 'radio' },
-            defaultValue: ['cinema'],
-            required: true,
-        },
-        cardsAreLinks: {
-            table: {
-                category: "Image card settings",
-                defaultValue: { summary: true },
-            },
-            name: 'Cards are links',
-            description: "Choose if the cards should be a link or not",
-            control: { type: 'boolean' },
-            defaultValue: true,
-            required: true,
-        },
         columnCount: {
             table: {
                 category: "Image card settings",
@@ -71,8 +48,6 @@ export default {
 
 interface ToujouImageCardStoryProps {
     columnCount: number;
-    imageFormat: string;
-    cardsAreLinks: boolean,
     cardVariant: string
 }
 
@@ -81,70 +56,26 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
     const toujouImageCardGrid = document.createElement('toujou-content-card-grid');
     toujouImageCardGrid.classList.add('toujou-content-card-grid');
 
-    // for (let i = 0; i < args.columnCount; i++) {
-    //     // const imageCard = args.cardsAreLinks
-    //     //     ? createImageCardLink(args.imageFormat, args.cardVariant)
-    //     //     : createImageCardElement(args.imageFormat, args.cardVariant);
-    //
-    //
-    // }
+    for (let i = 0; i < args.columnCount; i++) {
+        const contentCard = `
+            <toujou-content-card class="toujou-content-card" href="#" card-variant="${args.cardVariant}">
+                <figure class="toujou-content-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-content-card__image">
+                </figure>
+                <div class="toujou-content-card__content">
+                    <h3 class="toujou-content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                    <p class="toujou-content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <a href="#" class="toujou-content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
+                        <toujou-icon class="toujou-icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
+                        zur Beschreibung
+                    </a>
+                </div>
+            </toujou-content-card>   
+        `;
 
-    const contentCard = `
-            <toujou-content-card class="toujou-content-card" href="#">
-                <figure class="toujou-content-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-content-card__image">
-                </figure>
-                <div class="toujou-content-card__content">
-                    <h3 class="toujou-content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="toujou-content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="toujou-content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="toujou-icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-            <toujou-content-card class="toujou-content-card" href="#">
-                <figure class="toujou-content-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-content-card__image">
-                </figure>
-                <div class="toujou-content-card__content">
-                    <h3 class="toujou-content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="toujou-content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="toujou-content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="toujou-icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-            <toujou-content-card class="toujou-content-card" href="#">
-                <figure class="toujou-content-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-content-card__image">
-                </figure>
-                <div class="toujou-content-card__content">
-                    <h3 class="toujou-content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="toujou-content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="toujou-content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="toujou-icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-            <toujou-content-card class="toujou-content-card" href="#">
-                <figure class="toujou-content-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-content-card__image">
-                </figure>
-                <div class="toujou-content-card__content">
-                    <h3 class="toujou-content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="toujou-content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="toujou-content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="toujou-icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-        `
+        toujouImageCardGrid.insertAdjacentHTML('beforeend', contentCard);
+    }
 
-    toujouImageCardGrid.insertAdjacentHTML('beforeend', contentCard);
 
     return toujouImageCardGrid;
 };
@@ -152,9 +83,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
 export const ContentCard = Template.bind({});
 
 ContentCard.args = {
-    imageFormat: '16-9',
     columnCount: 4,
-    cardsAreLinks: true,
     cardVariant: 'default',
 }
 

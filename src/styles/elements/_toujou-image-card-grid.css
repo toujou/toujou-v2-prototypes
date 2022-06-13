@@ -5,7 +5,7 @@
     --toujou-image-card-title-justify-content: center;
     --toujou-image-card-grid-gap: var(--spacing-normal);
     --toujou-image-card-grid-width: var(--content-width-with-padding);
-    --toujou-image-card-grid-max-width: var(--content-max-width);
+    --toujou-image-card-grid-max-width: var(--content-wide-max-width);
     --toujou-image-card-grid-margin: 0 auto;
 
     display: var(--toujou-image-card-grid-display);
