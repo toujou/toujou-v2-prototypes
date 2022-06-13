@@ -1,7 +1,7 @@
 .toujou-form-row {
     --form-row-display: grid;
     --form-row-grid-template-columns: repeat(var(--form-row-columns-count), 1fr);
-    --form-row-gap: 0 var(--spacing-normal);
+    --form-row-gap: var(--form-successive-groups-distance) var(--spacing-normal);
     --form-row-padding-top: 0;
     --form-row-align-items: baseline;
 

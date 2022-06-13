@@ -17,6 +17,7 @@ In this documentation we will also cover the different form children. Here is a 
     8. [ fieldset ](#toujou-input-example-fieldset)
     9. [ file-upload ](#toujou-input-example-file-upload)
     10. [ multi-select ](#toujou-input-example-multi-select)
+    11. [ submit button ](#toujou-input-example-submit)
 
 ## Markup example
 ```html
@@ -300,7 +301,7 @@ Here you can find markup examples for the different types of inputs
 
 #### 5.10 Multi-select
 ```html
-<ditoujou-input-group class="toujou-input-group"
+<toujou-input-group class="toujou-input-group"
     input-group-type="multi-select">
     <label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
     <toujou-form-description class="toujou-form-description">This is a description</toujou-form-description>
@@ -317,7 +318,24 @@ Here you can find markup examples for the different types of inputs
         <option class="multi-select__option" value="ccccc">ccccc</option>
         <option class="multi-select__option" value="ddddd">ddddd</option>
     </select>
-</ditoujou-input-group>
+</toujou-input-group>
+```
+
+<a name="toujou-input-example-submit"></a>
+
+#### 5.10 Submit button
+```html
+<toujou-input-group class="toujou-input-group" input-group-type="submit">
+    <button
+        is="toujou-button"
+        class="toujou-button"
+        button-variant="primary"
+        type="submit"
+        name="tx_form_formframework[selectWithChips-1000064][__currentPage]"
+        value="Submit">
+        Submit
+    </button>
+</toujou-input-group>
 ```
 
 For example of how each input looks like, please see the relevant stories.

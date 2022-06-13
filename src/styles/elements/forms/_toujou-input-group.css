@@ -22,10 +22,15 @@
     justify-content: var(--input-group-flex-justify-content);
     gap: var(--input-group-flex-gap);
     width: var(--input-group-width);
+    grid-column: span 12;
 }
 
-.toujou-input-group + .toujou-input-group {
+:is(.toujou-input-group, .toujou-form-row) + .toujou-input-group {
     margin-top: var(--input-group-margin-between);
+}
+
+.toujou-form-row .toujou-input-group {
+    margin-top: 0;
 }
 
 .toujou-input-group::after {
