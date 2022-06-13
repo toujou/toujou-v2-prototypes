@@ -1,5 +1,5 @@
-.demo-grid {
-    background-color: tomato;
+.demo-grid .toujou-grid-column {
+    background-color: lightcoral;
     height: 4rem;
     display: flex;
     align-items: center;

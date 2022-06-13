@@ -1,15 +1,22 @@
 .toujou-grid {
-    --grid-width: var(--content-width-with-padding);
-    --grid-max-width: var(--content-max-width);
-    --grid-margin: 0 auto;
+    --toujou-grid-display: grid;
+    --toujou-grid-number-of-columns: 1;
+    --toujou-grid-template-columns: repeat(var(--toujou-grid-number-of-columns), 1fr);
+    --toujou-grid-gap: var(--spacing-normal);
+    --toujou-grid-width: var(--content-width-with-padding);
+    --toujou-grid-max-width: var(--content-max-width);
+    --toujou-grid-margin: 0 auto;
 
-    width: var(--grid-width);
-    max-width: var(--grid-max-width);
-    margin: var(--grid-margin);
+    display: grid;
+    grid-template-columns: var(--toujou-grid-template-columns);
+    grid-gap: var(--toujou-grid-gap);
+    width: var(--toujou-grid-width);
+    max-width: var(--toujou-grid-max-width);
+    margin: var(--toujou-grid-margin);
 }
 
 .toujou-grid[grid-type="wide"] {
-    --grid-max-width: var(--content-wide-max-width);
+    --toujou-grid-max-width: var(--content-wide-max-width);
 }
 
 .toujou-grid[grid-type="fullwidth"] {
@@ -20,3 +27,24 @@
 .toujou-grid[grid-type="ignore"] {
     display: contents;
 }
+
+@media screen and (min-width: 840px) {
+    .toujou-grid[number-of-columns="2"] {
+        --toujou-grid-number-of-columns: 2;
+    }
+
+    .toujou-grid[number-of-columns="3"] {
+        --toujou-grid-number-of-columns: 3;
+    }
+
+    .toujou-grid[number-of-columns="4"] {
+        --toujou-grid-number-of-columns: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .toujou-grid[number-of-columns="4"] {
+        --toujou-grid-number-of-columns: 4;
+    }
+}
+

@@ -1,0 +1,106 @@
+.toujou-image-card {
+    --toujou-image-card-width: 100%;
+    --toujou-image-card-max-width: 100%;
+    --toujou-image-card-display: block;
+    --toujou-image-card-position: relative;
+
+    --toujou-image-card-aspect-ratio: var(--aspect-ratio-16-9);
+
+    --toujou-image-card-title-position: absolute;
+    --toujou-image-card-title-inset: auto auto 0 0;
+    --toujou-image-card-title-width: 100%;
+    --toujou-image-card-title-background-color: var(--color-font-dark);
+    --toujou-image-card-title-color: var(--color-bg);
+    --toujou-image-card-title-padding: var(--spacing-s);
+    --toujou-image-card-title-font-family: var(--font-family-text);
+    --toujou-image-card-title-font-size: var(--font-size-normal);
+    --toujou-image-card-title-font-weight: var(--font-weight-text-normal);
+    --toujou-image-card-title-display: flex;
+    --toujou-image-card-title-align-items: center;
+    --toujou-image-card-title-justify-content: flex-start;
+    --toujou-image-card-title-gap: var(--spacing-s);
+    --toujou-image-card-title-margin: 0;
+
+    position: var(--toujou-image-card-position);
+    display: var(--toujou-image-card-display);
+    width: var(--toujou-image-card-width);
+    max-width: var(--toujou-image-card-max-width);
+}
+
+.toujou-image-card[card-variant="primary"] {
+    --toujou-image-card-title-background-color: var(--color-primary);
+}
+
+.toujou-image-card[card-variant="secondary"] {
+    --toujou-image-card-title-background-color: var(--color-secondary);
+}
+
+.toujou-image-card[card-variant="inverted"] {
+    --toujou-image-card-title-background-color: var(--color-font-light);
+    --toujou-image-card-title-color: var(--color-font-dark);
+}
+
+.toujou-image-card[image-format="square"] {
+    --toujou-image-card-aspect-ratio: var(--aspect-ratio-square);
+}
+
+.toujou-image-card__image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: var(--toujou-image-card-aspect-ratio);
+    object-fit: cover;
+}
+
+.toujou-image-card__title {
+    display: var(--toujou-image-card-title-display);
+    align-items: var(--toujou-image-card-title-align-items);
+    justify-content: var(--toujou-image-card-title-justify-content);
+    gap: var(--toujou-image-card-title-gap);
+    position: var(--toujou-image-card-title-position);
+    inset: auto auto 0 0;
+    width: var(--toujou-image-card-title-width);
+    color: var(--toujou-image-card-title-color);
+    background-color: var(--toujou-image-card-title-background-color);
+    font-family: var(--toujou-image-card-title-font-family);
+    font-size: var(--toujou-image-card-title-font-size);
+    font-weight: var(--toujou-image-card-title-font-weight);
+    padding: var(--toujou-image-card-title-padding);
+    margin: var(--toujou-image-card-title-margin);
+}
+
+@media screen and (min-width: 640px) {
+    .toujou-image-card {
+        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-title-gap) * 2) / 2);
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .toujou-image-card {
+        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-title-gap) * 4) / 3);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .toujou-image-card {
+        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-title-gap) * 6) / 4);
+    }
+}
+
+@media (hover: hover) {
+    a.toujou-image-card:hover {
+        --toujou-image-card-title-background-color: var(--color-primary);
+    }
+
+    a.toujou-image-card[card-variant="primary"]:hover {
+        --toujou-image-card-title-background-color: var(--color-primary-dark);
+    }
+
+    a.toujou-image-card[card-variant="secondary"]:hover {
+        --toujou-image-card-title-background-color: var(--color-secondary-dark);
+    }
+
+    a.toujou-image-card[card-variant="inverted"]:hover {
+        --toujou-image-card-title-background-color: var(--color-font-dark);
+        --toujou-image-card-title-color: var(--color-bg);
+    }
+}

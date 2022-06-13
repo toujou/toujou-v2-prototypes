@@ -61,6 +61,11 @@ textarea {
     white-space: revert;
 }
 
+/* remove margin on figure element */
+figure {
+    margin: 0;
+}
+
 /* Remove smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {

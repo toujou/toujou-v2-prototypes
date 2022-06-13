@@ -1,8 +1,10 @@
 .toujou-icon {
     --icon-size: var(--icon-size-normal);
     --icon-color: currentColor;
+    --icon-flex-shrink: 0;
 
     display: inline-block;
+    flex-shrink: var(--icon-flex-shrink);
     height: var(--icon-size);
     width: var(--icon-size);
     background-color: var(--icon-color);
