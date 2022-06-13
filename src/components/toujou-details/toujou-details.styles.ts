@@ -32,6 +32,11 @@ export const ToujouDetailsStyles = css`
     padding: var(--toujou-details-summary-padding);
   }
   
+  :host(:focus) .details__summary {
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+  }
+  
   .details__summary::-webkit-details-marker {
     display: none;
   }
