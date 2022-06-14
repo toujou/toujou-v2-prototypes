@@ -58,9 +58,9 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
 
     for (let i = 0; i < args.columnCount; i++) {
         const contentCard = `
-            <toujou-content-card class="toujou-content-card" href="#" card-variant="${args.cardVariant}">
+            <toujou-content-card class="toujou-content-card" href="#" card-variant="${args.cardVariant}" card-direction="vertical">
                 <figure class="toujou-content-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-content-card__image">
+                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="toujou-content-card__image">
                 </figure>
                 <div class="toujou-content-card__content">
                     <h3 class="toujou-content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
@@ -80,9 +80,9 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
     return toujouImageCardGrid;
 };
 
-export const ContentCard = Template.bind({});
+export const VerticalContentCard = Template.bind({});
 
-ContentCard.args = {
+VerticalContentCard.args = {
     columnCount: 4,
     cardVariant: 'default',
 }

@@ -70,21 +70,24 @@
 
 @media screen and (min-width: 640px) {
     .toujou-image-card {
+        /*--toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap)) / 2);*/
         --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap)) / 2);
     }
 }
 
-@media screen and (min-width: 840px) {
-    .toujou-image-card {
-        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap) * 2) / 3);
-    }
-}
+/*@media screen and (min-width: 840px) {*/
+/*    .toujou-image-card {*/
+/*        --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap) * 2) / 3);*/
+/*    }*/
+/*}*/
 
 @media screen and (min-width: 960px) {
     .toujou-image-card {
         --toujou-image-card-max-width: calc(calc(100% - var(--toujou-image-card-grid-gap) * 3) / 4);
     }
 }
+
+
 
 @media (hover: hover) {
     a.toujou-image-card:hover {
