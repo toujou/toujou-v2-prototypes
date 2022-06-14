@@ -20,5 +20,12 @@
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.stories.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "paths": {
+    "@/utils/*": ["utils/*"]
+  }
 }
+
+// Try the paths property for resources: https://www.youtube.com/watch?v=1o9YOHeKhNQ @10:00
+// add module alias @21:30
+// register alias @47:00

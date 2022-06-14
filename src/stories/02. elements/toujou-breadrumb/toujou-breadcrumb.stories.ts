@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/web-components';
 // @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/badgeCustomConfig.js'
+import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 // @ts-ignore
 import ToujouBreadcrumbDocs from './toujou-breadcrumb.docs.mdx';

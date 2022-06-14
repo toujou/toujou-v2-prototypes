@@ -6,9 +6,9 @@ import "../src/components/toujou-details/toujou-details";
 
 import "../src/styles/StorybookStyles.css";
 
-import { badgeCustomConfig } from "./badgeCustomConfig.js";
+import { badgeCustomConfig } from "./configUtils/badgeCustomConfig.js";
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { customViewports } from "./customViewports.js";
+import { customViewports } from "./configUtils/customViewports.js";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

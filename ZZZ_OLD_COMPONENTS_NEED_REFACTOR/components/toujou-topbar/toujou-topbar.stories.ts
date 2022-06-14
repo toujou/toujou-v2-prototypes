@@ -3,7 +3,7 @@ import { Meta } from '@storybook/web-components';
 import logoImage from '../../../assets/logoipsum.svg';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
-import { TOUJOU_BADGES } from '../../../.storybook/badgeCustomConfig.js'
+import { TOUJOU_BADGES } from '../../../.storybook/configUtils/badgeCustomConfig.js'
 
 export default {
     title: 'COMPONENTS/Topbar',
