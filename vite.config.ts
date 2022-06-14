@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite'
 import * as path from "path";
-import postcss from 'rollup-plugin-postcss';
 // @ts-ignore
 import postcssLit from 'rollup-plugin-postcss-lit';
-// @ts-ignore
-import autoprefixer from 'autoprefixer';
 
 // https://vitejs.dev/config/
 export default defineConfig({

@@ -1,25 +1,30 @@
 import { html, LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
+// @ts-ignore
+import Splide from "@splidejs/splide";
 
 // @ts-ignore
-import toujouSliderStyles from "./toujou-slider.css";
+import splideSliderStyles from "@splidejs/splide/dist/css/splide.min.css";
 
 @customElement('toujou-slider')
 export class ToujouSlider extends LitElement {
 
-    public static styles = [ toujouSliderStyles ];
+    // public static styles = [ toujouSliderStyles ];
 
     constructor() {
         super();
-        console.log('toujou slider starting up...')
-
-        console.log(toujouSliderStyles);
     }
 
     render() {
         return html`
-            <h1>HELLO</h1>
+            <style>${splideSliderStyles}</style>
         `
+    }
+
+    createRenderRoot() { return this;}
+
+    firstUpdated() {
+        new Splide(this).mount();
     }
 }
 

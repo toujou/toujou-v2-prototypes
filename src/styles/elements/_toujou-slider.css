@@ -16,10 +16,15 @@
     --slider-control-border-radius: var(--border-radius-circle);
     --slider-control-distance-to-margin: var(--spacing-normal);
     --slider-control-border: none;
+    --slider-control-opacity: 1;
+    --slider-control-disabled-opacity: 0;
 
     --slider-control-icon-position: absolute;
     --slider-control-icon-inset: 50% auto auto 50%;
     --slider-control-icon-transform: translate(-50%, -50%);
+
+    --slider-item-width: 100%;
+    --slider-item-margin: 0;
 
     display: var(--slider-display);
     position: var(--slider-position);
@@ -65,12 +70,7 @@
     --slider-max-width: var(--content-fullwidth);
 }
 
-.toujou-slider__top {
-    position: var(--slider-top-position);
-}
-
-
-/* JUST FOR THE DEMO */
-.toujou-slider__slide--DEMO-HIDE {
-    display: none;
+.toujou-slider__item {
+    width: var(--slider-item-width);
+    margin: var(--slider-item-margin);
 }

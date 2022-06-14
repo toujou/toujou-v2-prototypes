@@ -1,5 +1,5 @@
-/* SLIDER CONTROLS */
-.toujou-slider-control {
+button.toujou-slider-control {
+    border: 10px solid red;
     position: var(--slider-control-position);
     display: block;
     inset: var(--slider-control-inset);
@@ -9,22 +9,27 @@
     height: var(--slider-control-size);
     width: var(--slider-control-size);
     border-radius: var(--slider-control-border-radius);
+    opacity: var(--slider-control-opacity) !important;
 }
 
-.toujou-slider-control:focus-visible {
+button.toujou-slider-control[disabled] {
+    opacity: var(--slider-control-disabled-opacity);
+}
+
+button.toujou-slider-control:focus-visible {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
 
-.toujou-slider-control--prev {
+button.toujou-slider-control--prev {
     --slider-control-inset: 50% auto auto var(--slider-control-distance-to-margin);
 }
 
-.toujou-slider-control--next {
+button.toujou-slider-control--next {
     --slider-control-inset: 50% var(--slider-control-distance-to-margin) auto auto;
 }
 
-.toujou-slider[slider-fullwidth] .toujou-slider-control {
+.toujou-slider[slider-fullwidth] button.toujou-slider-control {
     --slider-control-height: 92px;
     --slider-control-width: calc(var(--slider-control-height) / 2);
 
@@ -32,14 +37,14 @@
     width: var(--slider-control-width);
 }
 
-.toujou-slider[slider-fullwidth] .toujou-slider-control--prev {
+.toujou-slider[slider-fullwidth] button.toujou-slider-control--prev {
     --slider-control-inset: 50% auto auto 0;
     --slider-control-icon-transform: translate(-65%, -50%);
 
     border-radius: 0 var(--slider-control-width) var(--slider-control-width) 0;
 
 }
-.toujou-slider[slider-fullwidth] .toujou-slider-control--next {
+.toujou-slider[slider-fullwidth] button.toujou-slider-control--next {
     --slider-control-inset: 50% 0 auto auto;
     --slider-control-icon-transform: translate(-35%, -50%);
 
@@ -58,7 +63,7 @@
 }
 
 @media (hover: hover) {
-    .toujou-slider-control:hover {
+    button.toujou-slider-control:hover {
         --slider-control-default-background-color: var(--slider-control-hover-background-color);
         --slider-control-icon-default-color: var(--slider-control-icon-hover-color);
 
