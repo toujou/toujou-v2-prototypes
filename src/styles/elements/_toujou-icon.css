@@ -73,7 +73,6 @@
 /* ICON IMAGES */
 .toujou-icon[icon-name="accessibility"] {
     mask-image: var(--icon-accessiblity);
-    -webkit-mask-image: var(--icon-accessiblity);
 }
 
 .toujou-icon[icon-name="account"] {

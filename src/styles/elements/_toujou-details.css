@@ -21,7 +21,7 @@
     --toujou-details-chevron-color: var(--color-font-dark);
     --toujou-details-chevron-active-color: var(--color-primary);
     --toujou-details-chevron-active-transform: rotate(180deg);
-    --toujou-details-chevron-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
+    --toujou-details-chevron-transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
     --toujou-details-chevron-area: chevron;
 
     display: var(--toujou-details-display);

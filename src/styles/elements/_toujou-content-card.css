@@ -27,6 +27,7 @@
     --toujou-content-card-title-font-size: var(--font-size-ms);
     --toujou-content-card-title-font-weight: var(--font-weight-text-bold);
     --toujou-content-card-title-color: var(--color-font-dark);
+    --toujou-content-card-title-margin: 0 0 var(--spacing-normal);
 
     --toujou-content-card-text-color: var(--color-font);
 
@@ -78,6 +79,7 @@
     font-size: var(--toujou-content-card-title-font-size);
     font-weight: var(--toujou-content-card-title-font-weight);
     color: var(--toujou-content-card-title-color);
+    margin: var(--toujou-content-card-title-margin);
 }
 
 .toujou-content-card__text {

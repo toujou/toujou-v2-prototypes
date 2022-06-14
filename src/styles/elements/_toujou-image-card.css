@@ -3,6 +3,8 @@
     --toujou-image-card-max-width: 100%;
     --toujou-image-card-display: block;
     --toujou-image-card-position: relative;
+    --toujou-image-card-overflow: hidden;
+    --toujou-image-card-border-radius: var(--border-radius-normal);
 
     --toujou-image-card-aspect-ratio: var(--aspect-ratio-16-9);
 
@@ -25,6 +27,8 @@
     display: var(--toujou-image-card-display);
     width: var(--toujou-image-card-width);
     max-width: var(--toujou-image-card-max-width);
+    border-radius: var(--toujou-image-card-border-radius);
+    overflow: var(--toujou-image-card-overflow);
 }
 
 .toujou-image-card[card-variant="primary"] {

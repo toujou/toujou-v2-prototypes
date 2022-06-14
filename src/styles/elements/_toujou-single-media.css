@@ -1,0 +1,20 @@
+.toujou-single-media {
+    --single-media-width: var(--content-width-with-padding);
+    --single-media-max-width: var(--content-max-width);
+    --single-media-margin: 0 auto;
+    --single-media-display: block;
+
+    --single-media-media-width: 100%;
+    --single-media-media-height: auto;
+
+    display: var(--single-media-display);
+    width: var(--single-media-width);
+    max-width: var(--single-media-max-width);
+    margin: var(--single-media-margin);
+}
+
+.toujou-single-media__image,
+.toujou-single-media__video {
+    width: var(--single-media-media-width);
+    height: var(--single-media-media-height);
+}

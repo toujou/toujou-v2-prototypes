@@ -6,7 +6,7 @@ import { ToujouDetailsStyles } from "./toujou-details.styles.js";
 @customElement('toujou-details')
 export class ToujouDetails extends LitElement {
 
-    static styles = [ToujouDetailsStyles];
+    static styles = [ ToujouDetailsStyles ];
 
     accordionParentTag = 'toujou-details-accordion';
 
