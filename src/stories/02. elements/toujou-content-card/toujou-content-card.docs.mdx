@@ -1,47 +1,34 @@
 # &lt;toujou-content-card&gt;
-The `<toujou-content-card>` is a simple element that render an image card on the page (image, with a title, either as link or as a simple card)
+The `<toujou-content-card>` is a simple element that renders an image card on the page (image, title, text and link)
 
-[//]: # ()
-[//]: # (Markup Example:)
+| ⚠ The content must always be placed inside a `<toujou-content-card-grid>` element |
+|-----------------------------------------------------------------------------------|
 
-[//]: # (```html)
 
-[//]: # (<toujou-image-card-grid class="toujou-image-card-grid">)
+## Markup example
+```html
+<toujou-content-card-grid class="toujou-content-card-grid">
+    <toujou-content-card class="toujou-content-card" href="#" card-variant="${args.cardVariant}" card-direction="vertical">
+        <figure class="toujou-content-card__figure">
+            <img src="https://picsum.photos/640/640" alt="beautiful image" class="toujou-content-card__image">
+        </figure>
+        <div class="toujou-content-card__content">
+            <h3 class="toujou-content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
+            <p class="toujou-content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+            <a href="#" class="toujou-content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
+                <toujou-icon class="toujou-icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
+                zur Beschreibung
+            </a>
+        </div>
+    </toujou-content-card>
+</toujou-content-card-grid>
+```
 
-[//]: # (    <a class="toujou-image-card" href="#" image-format="square" card-variant="secondary">)
+## Attributes
+There are a couple of attributes that allow us to customize the content cards
 
-[//]: # (        <figure class="toujou-image-card__figure">)
+### card variant <toujou-chip class="toujou-chip" chip-bg-color="warning">required</toujou-chip>
+By setting the `card-variant` attribute we can choose between the default, primary, secondary or inverted element designs (can be set on the BE by the users)
 
-[//]: # (            <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image" />)
-
-[//]: # (        </figure>)
-
-[//]: # (        <h3 class="toujou-image-card__title">)
-
-[//]: # (            <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>)
-
-[//]: # (            Beautiful title)
-
-[//]: # (        </h3>)
-
-[//]: # (    </a>)
-
-[//]: # (</toujou-image-card-grid>)
-
-[//]: # (```)
-
-[//]: # ()
-[//]: # (## Attributes)
-
-[//]: # (There are a couple of attribute that allow us to customize the `<toujou-image-card>` element)
-
-[//]: # ()
-[//]: # ()
-[//]: # (### card variant <toujou-chip class="toujou-chip" chip-bg-color="warning">required</toujou-chip>)
-
-[//]: # (By setting the `card-variant` attribute we can choose between the default, primary, secondary or inverted element designs &#40;can be set on the BE by the users&#41;)
-
-[//]: # ()
-[//]: # (### image format <toujou-chip class="toujou-chip" chip-bg-color="warning">required</toujou-chip>)
-
-[//]: # (By setting the `image-format` attribute we can choose between the "cinema" and "square" formats for the image cards image &#40;depending on the BE element used&#41;)
+### card direction <toujou-chip class="toujou-chip" chip-bg-color="warning">required</toujou-chip>
+By setting the `card-direction` attribute we can choose between the "vertical" or "horizontal" layout for the cards (set according to the chosen content element)
