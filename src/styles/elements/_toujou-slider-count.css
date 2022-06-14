@@ -1,0 +1,25 @@
+.toujou-slider-count {
+    --slider-count-display: block;
+    --slider-count-margin: var(--spacing-normal) auto 0;
+    --slider-count-width: fit-content;
+    --slider-count-color: var(--color-font);
+    --slider-count-bg-color: var(--color-bg);
+    --slider-count-shadow: var(--shadow-s);
+    --slider-count-padding: var(--spacing-s) var(--spacing-m);
+    --slider-count-border-radius: var(--border-radius-xxl);
+    --slider-count-font-family: var(--font-family-text);
+    --slider-count-font-weight: var(--font-weight-text-normal);
+    --slider-count-font-size: var(--font-size-s);
+
+    display: var(--slider-count-display);
+    margin: var(--slider-count-margin);
+    width: var(--slider-count-width);
+    color: var(--slider-count-color);
+    background-color: var(--slider-count-bg-color);
+    padding: var(--slider-count-padding);
+    box-shadow: var(--slider-count-shadow);
+    border-radius: var(--slider-count-border-radius);
+    font-family: var(--slider-count-font-family);
+    font-size: var(--slider-count-font-size);
+    font-weight: var(--slider-count-font-weight);
+}

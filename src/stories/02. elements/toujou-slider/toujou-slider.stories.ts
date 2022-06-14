@@ -6,7 +6,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 import ToujouSliderDocs from "./toujou-slider.docs.mdx";
 
 export default {
-    title: 'COMPONENTS/Slider',
+    title: 'COMPONENTS/Media',
     decorators: [withXD],
     parameters: {
         design: {
@@ -62,29 +62,34 @@ const Template = (args: { designColor: any; isFullwidth: any; }) => {
                 <button class="toujou-slider-control toujou-slider-control--next" aria-label="Next slide">
                     <toujou-icon class="toujou-icon toujou-slider-control__icon toujou-slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                 </button>
+                <toujou-slider-bullets class="toujou-slider-bullets toujou-slider__bullets glider-dots" bullets-design="${args.designColor}">
+                    <button data-index="0" aria-label="Page 1" role="tab" class="toujou-slider-bullets__bullet toujou-slider__bullet glider-dot active" aria-current="true">
+                        <span class="toujou-slider-bullets__circle"></span>
+                    </button>
+                    <button data-index="1" aria-label="Page 2" role="tab" class="toujou-slider-bullets__bullet toujou-slider__bullet glider-dot ">
+                        <span class="toujou-slider-bullets__circle"></span>
+                    </button>
+                    <button data-index="2" aria-label="Page 3" role="tab" class="toujou-slider-bullets__bullet toujou-slider__bullet glider-dot ">
+                        <span class="toujou-slider-bullets__circle"></span>
+                    </button>
+                    <button data-index="3" aria-label="Page 4" role="tab" class="toujou-slider-bullets__bullet toujou-slider__bullet glider-dot ">
+                        <span class="toujou-slider-bullets__circle"></span>
+                    </button>
+                </toujou-slider-bullets>
             </div>
-	        <toujou-bullets class="toujou-bullets toujou-slider__bullets glider-dots" bullets-design="${args.designColor}">
-	            <button data-index="0" aria-label="Page 1" role="tab" class="toujou-bullets__bullet toujou-slider__bullet glider-dot active" aria-current="true">
-	                <span class="toujou-bullets__circle"></span>
-                </button>
-	            <button data-index="1" aria-label="Page 2" role="tab" class="toujou-bullets__bullet toujou-slider__bullet glider-dot ">
-	                <span class="toujou-bullets__circle"></span>
-                </button>
-	            <button data-index="2" aria-label="Page 3" role="tab" class="toujou-bullets__bullet toujou-slider__bullet glider-dot ">
-	                <span class="toujou-bullets__circle"></span>
-                </button>
-	            <button data-index="3" aria-label="Page 4" role="tab" class="toujou-bullets__bullet toujou-slider__bullet glider-dot ">
-	                <span class="toujou-bullets__circle"></span>
-                </button>
-            </toujou-bullets>
+            <toujou-slider-count class="toujou-slider-count">
+                <span class="toujou-slider-count__current">1</span>
+                <span class="toujou-slider-count__separator">of</span>
+                <span class="toujou-slider-count__total">10</span>
+            </toujou-slider-count>
         </toujou-slider>
     `;
 };
 
-export const ImageSliderNormal = Template.bind({});
+export const Slider = Template.bind({});
 
 // @ts-ignore
-ImageSliderNormal.args = {
+Slider.args = {
     designColor: 'default',
     isFullwidth: false,
 }

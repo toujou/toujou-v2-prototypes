@@ -1,0 +1,89 @@
+.toujou-slider-bullets {
+    --slider-bullets-width: 100%;
+    --slider-bullets-display: flex;
+    --slider-bullets-align-items: center;
+    --slider-bullets-justify-content: center;
+    --slider-bullets-gap: var(--spacing-xs);
+    --slider-bullets-margin: var(--spacing-s) 0 0;
+    --slider-bullets-position: absolute;
+    --slider-bullets-inset: auto auto var(--spacing-normal) auto;
+
+    --slider-bullets-bullet-display: flex;
+    --slider-bullets-bullet-align-items: center;
+    --slider-bullets-bullet-justify-content: center;
+    --slider-bullets-bullet-size: var(--font-size-m);
+    --slider-bullets-bullet-border: none;
+    --slider-bullets-bullet-background-color: transparent;
+
+    --slider-bullets-circle-size: calc(var(--spacing-s) + var(--spacing-xxs));
+
+    position: var(--slider-bullets-position);
+    inset: var(--slider-bullets-inset);
+    width: var(--slider-bullets-width);
+    display: var(--slider-bullets-display);
+    align-items: var(--slider-bullets-align-items);
+    justify-content: var(--slider-bullets-justify-content);
+    gap: var(--slider-bullets-gap);
+    margin: var(--slider-bullets-margin)
+}
+
+.toujou-slider-bullets[bullets-design="default"] {
+    --slider-bullets-icon-default-background-color: var(--color-font-light);
+    --slider-bullets-icon-active-background-color: var(--color-font);
+    --slider-bullets-icon-hover-background-color: var(--color-font-dark);
+}
+
+.toujou-slider-bullets[bullets-design="primary"] {
+    --slider-bullets-icon-default-background-color: var(--color-font-light);
+    --slider-bullets-icon-active-background-color: var(--color-primary);
+    --slider-bullets-icon-hover-background-color: var(--color-primary-light);
+}
+
+.toujou-slider-bullets[bullets-design="secondary"] {
+    --slider-bullets-icon-default-background-color: var(--color-font-light);
+    --slider-bullets-icon-active-background-color: var(--color-secondary);
+    --slider-bullets-icon-hover-background-color: var(--color-secondary-light);
+}
+
+.toujou-slider-bullets[bullets-design="light-grey"] {
+    --slider-bullets-icon-default-background-color: var(--color-font-light);
+    --slider-bullets-icon-active-background-color: var(--color-font);
+    --slider-bullets-icon-hover-background-color: var(--color-font-dark);
+}
+
+.toujou-slider-bullets__bullet {
+    display: var(--slider-bullets-bullet-display);
+    align-items: var(--slider-bullets-bullet-align-items);
+    justify-content: var(--slider-bullets-bullet-justify-content);
+    height: var(--slider-bullets-bullet-size);
+    width: var(--slider-bullets-bullet-size);
+    border: var(--slider-bullets-bullet-border);
+    background-color: var(--slider-bullets-bullet-background-color);
+}
+
+.toujou-slider-bullets__bullet:focus-visible {
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.toujou-slider-bullets__circle {
+    display: block;
+    height: var(--slider-bullets-circle-size);
+    width: var(--slider-bullets-circle-size);
+    background-color: var(--slider-bullets-icon-default-background-color);
+    border-radius: 50%;
+}
+
+.toujou-slider-bullets__bullet.active .toujou-slider-bullets__circle {
+    background-color: var(--slider-bullets-icon-active-background-color);
+}
+
+@media (hover: hover) {
+    .toujou-slider-bullets__bullet:not(.active) {
+        cursor: pointer;
+    }
+
+    .toujou-slider-bullets__bullet:not(.active):hover .toujou-slider-bullets__circle {
+        background-color: var(--slider-bullets-icon-hover-background-color);
+    }
+}
