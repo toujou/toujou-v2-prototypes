@@ -20,6 +20,13 @@
     padding: var(--multi-select-padding);
 }
 
+.multi-select:focus,
+.multi-select:focus-within,
+.multi-select:focus-visible {
+    border: var(--form-input-focus-border) !important;
+    outline: none;
+}
+
 .multi-select__option {
     color: var(--multi-select-option-color);
     background-color: var(--multi-select-option-background-color);
