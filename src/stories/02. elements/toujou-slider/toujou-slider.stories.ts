@@ -24,7 +24,7 @@ export default {
                 defaultValue: { summary: 'default' },
             },
             name: 'Slider design',
-            description: "Set the value for the slider design color",
+            description: "Set the slider's design color",
             options: ['default', 'primary', 'secondary', 'light-grey'],
             control: { type: 'radio' },
             defaultValue: ['default'],
@@ -36,7 +36,7 @@ export default {
                 defaultValue: { summary: 'false' },
             },
             name: 'Fullwidth',
-            description: "Toggle the fullwidth attribute",
+            description: "Show slider in fullwidth",
             control: { type: 'boolean' },
             defaultValue: 'false',
             required: true,
@@ -46,8 +46,8 @@ export default {
                 category: "Slider settings",
                 defaultValue: { summary: true },
             },
-            name: 'Show counter',
-            description: "Show the counter element",
+            name: 'Show count',
+            description: "Show the count element",
             control: { type: 'boolean' },
             defaultValue: true,
             required: true,
@@ -69,7 +69,7 @@ export default {
                 defaultValue: { summary: 6 },
             },
             name: 'autoplay interval',
-            description: "Interval for the auto slide function",
+            description: "Interval for the autoplay function (in seconds)",
             control: { type: 'number' },
             defaultValue: 6,
             required: true,
@@ -89,8 +89,9 @@ const Template: Story<ToujouSliderStoryProps> = (args: ToujouSliderStoryProps) =
     return `       
         <toujou-slider
             class="toujou-slider"
-            aria-label="Splide Basic HTML Example!!"
-            slider-design="${args.designColor}" ${args.isFullwidth ? 'slider-fullwidth' : ''}
+            aria-label="Toujou slider example"
+            slider-design="${args.designColor}"
+            ${args.isFullwidth ? 'slider-fullwidth' : ''}
             ${args.showCount ? 'show-count' : ''}
             ${args.autoplay ? 'auto-play' : ''}>
             <div class="splide toujou-slider__slider">
@@ -137,14 +138,11 @@ const Template: Story<ToujouSliderStoryProps> = (args: ToujouSliderStoryProps) =
                 </div>
             </div>
             
-            
             <toujou-slider-count class="toujou-slider-count">
                 <span class="toujou-slider-count__current"></span>
                 <span class="toujou-slider-count__separator">of</span>
                 <span class="toujou-slider-count__total"></span>
             </toujou-slider-count>
-                
-            
         </toujou-slider>
     `;
 };
