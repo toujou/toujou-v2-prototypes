@@ -4,7 +4,7 @@
     --form-description-padding: 0 var(--spacing-xs);
     --form-description-color: var(--color-font-light);
     --form-description-font-family: var(--font-family-text);
-    --form-description-font-size: var(--font-size-normal);
+    --form-description-font-size: var(--font-size-s);
     --form-description-font-weight: var(--font-weight-text-normal);
     --form-description-column: 1 / -1;
 
