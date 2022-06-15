@@ -42,7 +42,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
         <toujou-text-block class="toujou-text-block" text-block-column-count="2" text-block-media-position="above">
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -51,7 +51,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -63,7 +63,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
         <toujou-text-block class="toujou-text-block" text-block-column-count="2" text-block-third-direction="left" " text-block-media-position="above">
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -72,7 +72,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -84,7 +84,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
         <toujou-text-block class="toujou-text-block" text-block-column-count="2" text-block-third-direction="right" text-block-media-position="above">
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -93,7 +93,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -105,7 +105,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
         <toujou-text-block class="toujou-text-block" text-block-column-count="3" text-block-media-position="above">
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -114,7 +114,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -123,7 +123,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -135,7 +135,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
         <toujou-text-block class="toujou-text-block" text-block-column-count="4" text-block-media-position="above">
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -144,7 +144,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -153,7 +153,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -162,7 +162,7 @@ const Template: Story<ToujouTextBlockMediaAboveProps> = (args: ToujouTextBlockMe
             </toujou-text-block-column>
             <toujou-text-block-column class="toujou-text-block-column">
                 <figure class="toujou-text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="toujou-text-block__image toujou-text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="toujou-text-block__content">
                     <h3>Left aligned H3 headline</h3>
