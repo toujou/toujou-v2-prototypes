@@ -41,6 +41,11 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
     const disabledAttribute = args.state === 'disabled' ? 'is-disabled' : ''
 
     return `
+        <style>
+            body {
+                background-color: var(--color-bg);
+            }
+        </style>
         <form
             enctype="multipart/form-data"
             method="post" 

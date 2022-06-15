@@ -38,6 +38,11 @@ interface ToujouToggleStoryProps {
 
 const Template: Story<ToujouToggleStoryProps> = (args: ToujouToggleStoryProps) => {
     return `
+        <style>
+            body {
+                background-color: var(--color-bg);
+            }
+        </style>
         <form
             enctype="multipart/form-data"
             method="post" 

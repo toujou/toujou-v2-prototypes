@@ -41,6 +41,11 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
 
     return `
+        <style>
+            body {
+                background-color: var(--color-bg);
+            }
+        </style>
         <form
             enctype="multipart/form-data"
             method="post" 
@@ -67,7 +72,7 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
                     ${disabledAttribute}>
             </toujou-input-group>
             
-            <ditoujou-input-group class="toujou-input-group"
+            <toujou-input-group class="toujou-input-group"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
                 ${args.state === 'error' ? 'has-error' : ''}
                 ${args.state === 'success' ? 'has-success' : ''}
@@ -82,9 +87,9 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
                     type="file"
                     name="tx_form_formframework[testform-1000091][imageupload-1]"
                     ${disabledAttribute}>
-            </ditoujou-input-group>
+            </toujou-input-group>
             
-            <ditoujou-input-group class="toujou-input-group"
+            <toujou-input-group class="toujou-input-group"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
                 ${args.state === 'error' ? 'has-error' : ''}
                 ${args.state === 'success' ? 'has-success' : ''}
@@ -105,7 +110,7 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
                     <option class="multi-select__option" value="ccccc">ccccc</option>
                     <option class="multi-select__option" value="ddddd">ddddd</option>
                 </select>
-	        </ditoujou-input-group>
+	        </toujou-input-group>
     
         </form>
     `

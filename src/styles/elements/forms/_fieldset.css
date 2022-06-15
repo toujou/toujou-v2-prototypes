@@ -2,7 +2,7 @@
     --fieldset-padding: var(--spacing-normal);
     --fieldset-border-color: var(--form-input-default-border-color);
     --fieldset-focus-border-color: var(--form-input-focus-border-color);
-    --fieldset-border-width: var(--form-input-border-width);
+    --fieldset-border-width: 1px;
     --fieldset-border-radius: var(--form-input-border-radius);
     --fieldset-margin-top: 0;
 
@@ -10,6 +10,7 @@
     --fieldset-legend-font-family: var(--form-input-font-family);
     --fieldset-legend-font-size: var(--form-input-font-size);
     --fieldset-legend-font-weight: var(--form-input-font-weight);
+    --fieldset-legend-padding: 0 var(--spacing-s);
 
     padding: var(--fieldset-padding);
     border: var(--fieldset-border-width) solid var(--fieldset-border-color);
@@ -35,4 +36,5 @@
     font-family: var(--fieldset-legend-font-family);
     font-size: var(--fieldset-legend-font-size);
     font-weight: var(--fieldset-legend-font-weight);
+    padding: var(--fieldset-legend-padding);
 }

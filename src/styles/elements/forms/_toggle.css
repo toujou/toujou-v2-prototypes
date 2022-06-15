@@ -23,7 +23,6 @@
     --toggle-thumb-position: absolute;
 
     position: var(--toggle-position);
-    top: var(--toggle-top);
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;

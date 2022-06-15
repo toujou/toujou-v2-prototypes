@@ -22,6 +22,11 @@ export default {
 
 const Template = () => {
     return `
+        <style>
+            body {
+                background-color: var(--color-bg);
+            }
+        </style>
         <form
             enctype="multipart/form-data"
             method="post" 

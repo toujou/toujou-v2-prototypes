@@ -34,3 +34,8 @@
 .toujou-input-group[has-success] .input-label {
     --input-label-color: var(--color-success);
 }
+
+.toujou-input-group[input-group-type="multi-select"] .input-label {
+    background-color: var(--color-bg);
+    width: calc(100% - var(--spacing-l))
+}

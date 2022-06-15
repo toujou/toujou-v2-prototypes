@@ -1,5 +1,6 @@
 .toujou-form-description {
     --form-description-order: 10;
+    --form-description-margin: var(--spacing-s) 0 0;
     --form-description-padding: 0 var(--spacing-xs);
     --form-description-color: var(--color-font-light);
     --form-description-font-family: var(--font-family-text);
@@ -8,6 +9,7 @@
     --form-description-column: 1 / -1;
 
     order: var(--form-description-order);
+    margin: var(--form-description-margin);
     padding: var(--form-description-padding);
     color: var(--form-description-color);
     font-family: var(--form-description-font-family);
