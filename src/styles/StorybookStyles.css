@@ -39,6 +39,7 @@
 @import './elements/_toujou-slider-slide.css';
 @import './elements/_toujou-slider-control.css';
 @import './elements/_toujou-slider-count.css';
+@import './elements/_toujou-slider-progress.css';
 @import './elements/_toujou-text-blocks.css';
 
 @import './elements/forms/_checkbox.css';

@@ -1,5 +1,5 @@
 .toujou-slider-count {
-    --slider-count-display: block;
+    --slider-count-display: none;
     --slider-count-margin: var(--spacing-normal) auto 0;
     --slider-count-width: fit-content;
     --slider-count-color: var(--color-font);
@@ -22,4 +22,8 @@
     font-family: var(--slider-count-font-family);
     font-size: var(--slider-count-font-size);
     font-weight: var(--slider-count-font-weight);
+}
+
+.toujou-slider[show-count] .toujou-slider-count {
+    --slider-count-display: block;
 }
