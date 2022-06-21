@@ -1,0 +1,20 @@
+.slider-progress {
+    --slider-progress-display: none;
+    --slider-progress-height: var(--spacing-xs);
+    --slider-progress-bg-color: var(--color-primary-light);
+
+    --slider-progress-bar-bg-color: var(--color-primary-dark);
+
+    display: var(--slider-progress-display);
+    height: var(--slider-progress-height);
+    background-color: var(--slider-progress-bg-color);
+}
+
+.slider[auto-play] .slider-progress {
+    --slider-progress-display: block;
+}
+
+.slider-progress__bar {
+    height: var(--slider-progress-height);
+    background-color: var(--slider-progress-bar-bg-color);
+}

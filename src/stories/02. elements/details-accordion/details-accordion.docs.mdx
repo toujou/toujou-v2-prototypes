@@ -1,0 +1,49 @@
+# &lt;toujou-details&gt;
+The `<toujou-details-accordion>` renders an accordion element consisting of multiple `<toujou-details>` elements
+
+
+## Example
+<toujou-details-accordion class="toujou-details-accordion" single-expand-mode>
+    <toujou-details id="details-1" class="toujou-details" is-open>
+        <h3 slot="summary" class="toujou-details__title">This is the first summary</h3>
+        <toujou-icon class="icon toujou-details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+        <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </toujou-details>
+    <toujou-details id="details-2" class="toujou-details">
+        <h3 slot="summary" class="toujou-details__title">Just another summary</h3>
+        <toujou-icon class="icon toujou-details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+        <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </toujou-details>
+</toujou-details-accordion>
+
+## Markup example
+```html
+<toujou-details-accordion class="toujou-details-accordion" single-expand-mode>
+    <toujou-details id="details-1" class="toujou-details" is-open>
+        <h3 slot="summary" class="toujou-details__title">This is the first summary</h3>
+        <toujou-icon class="icon toujou-details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+        <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </toujou-details>
+    <toujou-details id="details-1" class="toujou-details">
+        <h3 slot="summary" class="toujou-details__title">Just another summary</h3>
+        <toujou-icon class="icon toujou-details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+        <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </toujou-details>
+</toujou-details-accordion>
+```
+
+## Attributes
+There are some attributes that allow us to customize the button
+
+
+### single-expand-mode
+When the `single-expand-mode` attribute is set, only one `<toujou-details>` element can be open at a time. When we open one accordion item, all others close.
+
+This attribute is set when the corresponding option on the BE is selected.
+
+Example:
+```html
+<toujou-details-accordion class="toujou-details-accordion" single-expand-mode>
+    ...
+</toujou-details-accordion>
+```

@@ -1,0 +1,31 @@
+# &lt;toujou-blockquote&gt;
+The `<toujou-blockquote>` is a custom element that renders a blockquote element to the page.
+
+
+## Markup example
+```html
+<toujou-blockquote role="figcaption" class="blockquote" blockquote-direction="${args.direction}">
+    <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
+    <blockquote slot="quote" class="blockquote__blockquote">
+        <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
+    </blockquote>
+    <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
+</toujou-blockquote>
+```
+
+
+## Attributes
+There are some attributes that allow us to customize the blockquote element:
+
+
+### role <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `<toujou-blockquote>` must have the `role` attribute. It must be set to `role="figure"`.
+
+
+### blockquote-direction <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `<toujou-blockquote>` element has a `blockquote-direction` attribute which defines the blockquote's content direction.
+
+| value | Example |
+|---|:---|
+| horizontal | `<toujou-blockquote role="figcaption" blockquote-direction="horizontal">` |
+| vertical | `<toujou-blockquote role="figcaption" blockquote-direction="vertical">` |

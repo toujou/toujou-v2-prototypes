@@ -15,11 +15,11 @@ const Template = () => {
     return `
         <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
-                <toujou-icon class="toujou-icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
+                <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
             
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
-                <toujou-icon class="toujou-icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
+                <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
 
             <ol class="breadcrumb__list" slot="list">
@@ -47,150 +47,150 @@ const Template = () => {
             </ol>
         </toujou-breadcrumb>
         
-        <toujou-text-block class="toujou-text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="toujou-text-block-column">
-                <div class="toujou-text-block__content">
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
                     <h1>This is a test page</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-image-card-grid class="toujou-image-card-grid">
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+        <toujou-image-card-grid class="image-card-grid">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         </toujou-image-card-grid>
         
-        <toujou-text-block class="toujou-text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="toujou-text-block-column">
-                <div class="toujou-text-block__content">
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-image-card-grid class="toujou-image-card-grid">
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+        <toujou-image-card-grid class="image-card-grid">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         </toujou-image-card-grid>
         
-        <toujou-text-block class="toujou-text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="toujou-text-block-column">
-                <div class="toujou-text-block__content">
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-image-card-grid class="toujou-image-card-grid">
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+        <toujou-image-card-grid class="image-card-grid">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         </toujou-image-card-grid>
         
-        <toujou-text-block class="toujou-text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="toujou-text-block-column">
-                <div class="toujou-text-block__content">
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-image-card-grid class="toujou-image-card-grid">
-            <a class="toujou-image-card" href="#" image-format="16-9" card-variant="default">
-                <figure class="toujou-image-card__figure">
-                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="toujou-image-card__image">
+        <toujou-image-card-grid class="image-card-grid">
+            <a class="image-card" href="#" image-format="16-9" card-variant="default">
+                <figure class="image-card__figure">
+                    <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
                 </figure>
-                <h3 class="toujou-image-card__title">
-                    <toujou-icon class="toujou-icon" icon-name="arrow-right"></toujou-icon>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                     Beautiful title
                 </h3>
             </a>
         </toujou-image-card-grid>
         
-        <toujou-text-block class="toujou-text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="toujou-text-block-column">
-                <div class="toujou-text-block__content">
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>

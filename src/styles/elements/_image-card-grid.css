@@ -1,0 +1,18 @@
+.image-card-grid {
+    --image-card-grid-display: flex;
+    --image-card-grid-flex-wrap: wrap;
+    --image-card-grid-align-items: center;
+    --image-card-grid-gap: var(--spacing-normal);
+    --image-card-grid-width: var(--content-width-with-padding);
+    --image-card-grid-max-width: var(--content-wide-max-width);
+    --image-card-grid-margin: 0 auto;
+
+    display: var(--image-card-grid-display);
+    grid-gap: var(--image-card-grid-gap);
+    flex-wrap: var(--image-card-grid-flex-wrap);
+    align-items: var(--image-card-title-align-items);
+    justify-content: var(--image-card-grid-align-items);
+    width: var(--image-card-grid-width);
+    max-width: var(--image-card-grid-max-width);
+    margin: var(--image-card-grid-margin);
+}

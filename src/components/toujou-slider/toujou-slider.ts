@@ -93,8 +93,8 @@ export class ToujouSlider extends LitElement {
     private _initSlider() {
         const sliderOptions = {
             classes: {
-                pagination: 'splide__pagination toujou-slider-bullets',
-                page: 'splide__pagination__page toujou-slider-bullets__bullet',
+                pagination: 'splide__pagination slider-bullets',
+                page: 'splide__pagination__page slider-bullets__bullet',
             },
             type: 'loop',
             rewind: true,
@@ -124,8 +124,8 @@ export class ToujouSlider extends LitElement {
      * Get the DOM elements that are used to display the count information
      */
     private _getCountInfo() {
-        this._currentIndexCountElement = this.querySelector('.toujou-slider-count__current');
-        this._totalSlidesCountElement = this.querySelector('.toujou-slider-count__total');
+        this._currentIndexCountElement = this.querySelector('.slider-count__current');
+        this._totalSlidesCountElement = this.querySelector('.slider-count__total');
     }
 
     /**

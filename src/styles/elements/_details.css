@@ -1,0 +1,82 @@
+.details {
+    --details-display: block;
+    --details-width: var(--content-width-with-padding);
+    --details-max-width: var(--content-max-width);
+    --details-margin: 0 auto;
+    --details-title-color: var(--color-font-dark);
+    --details-title-active-color: var(--color-primary);
+    --details-title-margin: 0;
+    --details-title-font-size: var(--font-size-ms);
+    --details-title-area: title;
+
+    --details-subtitle-font-size: var(--font-size-s);
+    --details-subtitle-color: var(--color-primary);
+    --details-subtitle-margin: 0;
+    --details-subtitle-list-separator: ">";
+    --details-subtitle-list-separator-margin: 0 var(--spacing-s);
+    --details-subtitle-padding: var(--spacing-s) 0 0;
+    --details-subtitle-area: subtitle;
+
+    --details-chevron-size: 1.5rem;
+    --details-chevron-color: var(--color-font-dark);
+    --details-chevron-active-color: var(--color-primary);
+    --details-chevron-active-transform: rotate(180deg);
+    --details-chevron-transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
+    --details-chevron-area: chevron;
+
+    display: var(--details-display);
+    width: var(--details-width);
+    max-width: var(--details-max-width);
+    margin: var(--details-margin);
+}
+
+.details-accordion .details {
+    --details-width: 100%;
+    --details-max-width: 100%;
+}
+
+.details__title {
+    color: var(--details-title-color);
+    margin: var(--details-title-margin);
+    font-size: var(--details-title-font-size);
+    grid-area: var(--details-title-area);
+}
+
+.details__subtitle {
+    margin: var(--details-subtitle-margin);
+    font-size: var(--details-subtitle-font-size);
+    color: var(--details-subtitle-color);
+    padding: var(--details-subtitle-padding);
+    grid-area: var(--details-subtitle-area);
+}
+
+.details__subtitle-list {
+    list-style: none;
+    padding: var(--details-subtitle-padding);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.details__subtitle-list-item:not(:last-child)::after {
+    content: var(--details-subtitle-list-separator);
+    margin: var(--details-subtitle-list-separator-margin);
+}
+
+.icon.details__chevron {
+    height: var(--details-chevron-size);
+    width: var(--details-chevron-size);
+    transition: var(--details-chevron-transition);
+    background-color: var(--details-chevron-color);
+    grid-area: var(--details-chevron-area);
+}
+
+.details[is-open] .details__title {
+    color: var(--details-title-active-color);
+}
+
+.details[is-open] .details__chevron {
+    background-color: var(--details-chevron-active-color);
+    transform: var(--details-chevron-active-transform);
+}
+

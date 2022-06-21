@@ -15,11 +15,11 @@ const Template = () => {
     return `
         <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
-                <toujou-icon class="toujou-icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
+                <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
             
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
-                <toujou-icon class="toujou-icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
+                <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
 
             <ol class="breadcrumb__list" slot="list">
@@ -35,9 +35,9 @@ const Template = () => {
             </ol>
         </toujou-breadcrumb>
         
-        <toujou-text-block class="toujou-text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="toujou-text-block-column">
-                <div class="toujou-text-block__content">
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
                     <h1>This is a contact ppage</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -48,14 +48,14 @@ const Template = () => {
         <form
             enctype="multipart/form-data"
             method="post" 
-            class="toujou-form" 
+            class="form" 
             id="testform-1000091" 
             action="#"
             novalidate="true">
 
-        	<toujou-form-row class="toujou-form-row">
+        	<toujou-form-row class="form-row">
                 <toujou-input-group
-                    class="toujou-input-group"
+                    class="input-group"
                     input-group-type="text"
                     input-group-span-xs="12"
                     input-group-span-sm="6"
@@ -71,11 +71,11 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error toujou-form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
-                    class="toujou-input-group"
+                    class="input-group"
                     input-group-type="text"
                     input-group-span-xs="12"
                     input-group-span-sm="6"
@@ -91,11 +91,11 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error toujou-form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
-                    class="toujou-input-group"
+                    class="input-group"
                     input-group-type="text"
                     input-group-span-xs="12"
                     input-group-span-sm="12"
@@ -111,11 +111,11 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error toujou-form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
-                    class="toujou-input-group"
+                    class="input-group"
                     input-group-type="text"
                     input-group-span-xs="12"
                     input-group-span-sm="12"
@@ -131,11 +131,11 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error toujou-form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
-                    class="toujou-input-group"
+                    class="input-group"
                     input-group-type="text"
                     input-group-span-xs="12"
                     input-group-span-sm="12"
@@ -151,14 +151,14 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error toujou-form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
-	            class="toujou-input-group"
+	            class="input-group"
 	            input-group-type="textarea"">
 				<label class="input-label" for="testform-1000091-textarea-1">Message</label>
-				<toujou-form-description class="toujou-form-description">This is the input description. Hey, send us a nice message!</toujou-form-description>
+				<toujou-form-description class="orm-description">This is the input description. Hey, send us a nice message!</toujou-form-description>
                 <textarea
                     placeholder="This is a placeholder"
                     data-pristine-required-message="The given subject was empty."
@@ -166,21 +166,21 @@ const Template = () => {
                     id="testform-1000091-textarea-1"
                     name="tx_form_formframework[testform-1000091][textarea-1]">
                 </textarea>
-                <toujou-form-error class="pristine-error toujou-form-error">The given subject was empty.</span>
+                <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
 	        </toujou-input-group>
 
 	        </toujou-form-row>
 	        
-            <toujou-input-group class="toujou-input-group" input-group-type="submit">			
-        		<button is="toujou-button" class="toujou-button" button-variant="primary" type="submit" name="tx_form_formframework[selectWithChips-1000064][__currentPage]" value="1">
+            <toujou-input-group class="input-group" input-group-type="submit">			
+        		<button is="toujou-button" class="button" button-variant="primary" type="submit" name="tx_form_formframework[selectWithChips-1000064][__currentPage]" value="1">
 					Submit
 				</button>
 	        </toujou-input-group>        	
         </form>
         
-        <toujou-text-block class="toujou-text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="toujou-text-block-column">
-                <div class="toujou-text-block__content">
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>

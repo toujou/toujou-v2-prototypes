@@ -1,0 +1,29 @@
+# &lt;toujou-grid&gt;
+The `<toujou-grid>` is a custom element to help us place content on the page. It provides a width and max-width and nothing else
+
+
+## Markup example
+```html
+<toujou-grid class="toujou-grid" grid-type="fullwidth" number-of-columns="4">
+    ...
+</toujou-grid>
+```
+
+
+## Attributes
+This element has a single attribute (`grid-type`) which defines how wide the grid is on the page
+
+
+### grid-type <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+
+| value     | width                                              | Example                               |
+|-----------|----------------------------------------------------|:--------------------------------------|
+| default   | normal content width and max-width                 | `<toujou-grid grid-type="default">`   |
+| wide      | wide content max-width                             | `<toujou-grid grid-type="wide">`      |
+| fullwidth | fullwidth, no paddings or margins                  | `<toujou-grid grid-type="fullwidth">` |
+| ignore    | `display: contents` so the grid element is ignored | `<toujou-grid grid-type="ignore">`    |
+
+### number-of-columns <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Define the number of columns for the grid (may not be the same across all viewport widths).
+
+Possible values are: `1`, `2`, `3`, and `4`

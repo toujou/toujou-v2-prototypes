@@ -1,0 +1,50 @@
+.grid {
+    --griddisplay: grid;
+    --gridnumber-of-columns: 1;
+    --gridtemplate-columns: repeat(var(--gridnumber-of-columns), 1fr);
+    --gridgap: var(--spacing-normal);
+    --gridwidth: var(--content-width-with-padding);
+    --gridmax-width: var(--content-max-width);
+    --gridmargin: 0 auto;
+
+    display: grid;
+    grid-template-columns: var(--gridtemplate-columns);
+    grid-gap: var(--gridgap);
+    width: var(--gridwidth);
+    max-width: var(--gridmax-width);
+    margin: var(--gridmargin);
+}
+
+.grid[grid-type="wide"] {
+    --gridmax-width: var(--content-wide-max-width);
+}
+
+.grid[grid-type="fullwidth"] {
+    width: var(--content-fullwidth);
+    max-width: var(--content-fullwidth);
+}
+
+.grid[grid-type="ignore"] {
+    display: contents;
+}
+
+@media screen and (min-width: 840px) {
+    .grid[number-of-columns="2"] {
+        --gridnumber-of-columns: 2;
+    }
+
+    .grid[number-of-columns="3"] {
+        --gridnumber-of-columns: 3;
+    }
+
+    .grid[number-of-columns="4"] {
+        --gridnumber-of-columns: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid[number-of-columns="4"] {
+        --gridnumber-of-columns: 4;
+    }
+}
+

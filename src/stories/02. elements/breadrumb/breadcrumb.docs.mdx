@@ -1,0 +1,50 @@
+# &lt;toujou-breadcrumb&gt;
+The `<toujou-breadcrumb>` is a custom element that renders a breadcrumb navigation.
+
+## toujou breadcrumb modes
+The `<toujou-breadcrumb>` has two render modes: a "normal" and a "mobile" mode.
+
+The normal mode is displayed whenever there is enough place on the page to show all breadcrumb links side by side.
+
+If the links take more space then the page's width, then it will automatically change into "mobile" mode, where it show the links in a dropdown menu.
+
+## Markup example
+```html
+<toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">
+    <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
+        <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
+    </button>
+
+    <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
+        <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
+    </button>
+
+    <ol class="breadcrumb__list" slot="list">
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">Home</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">Item One</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">Item Two</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">Item Three</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">Item Four</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link">Item Five</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="#" class="breadcrumb__link" aria-current="page">Item Six</a>
+        </li>
+    </ol>
+</toujou-breadcrumb>
+```
+
+## Accessibility
+- The `<toujou-breadcrumb>` element needs the `role="nav" and `aria-label="Breadcrumb"` attributes
+- The item for the current page needs the `aria-current="page"` attribute

@@ -1,0 +1,61 @@
+# &lt;toujou-text-block&gt;
+The `<toujou-text-block>` is a custom element that renders text and image content (possibly) in different combinations.
+
+The `<toujou-text-block>` element is rendered when we use the Textmedia content element
+
+
+## Example
+<toujou-text-block class="toujouext-block" text-blocks-column-count="1">
+    <toujou-text-block-column class="text-block-column">
+        <div class="text-block__content">
+            <h1>Left aligned H1 headline</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </toujou-text-block-column>
+</toujou-text-block>
+
+
+## Markup example
+```html
+<toujou-text-block class="text-block" text-blocks-column-count="1">
+    <toujou-text-block-column class="text-block-column">
+        <div class="text-block__content">
+            <h1>Left aligned H1 headline</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </toujou-text-block-column>
+</toujou-text-block>
+```
+
+
+## Attributes
+There are several attributes that allow us to customize the `<toujou-text-block>` element.
+
+
+### text-block-column-count
+The `text-block-column-count` attribute allows us to define the number of columns we want to use to display the content (on desktop)
+Examples:
+
+| Attribute | Possible values | Example                                                                |
+|---|:---:|:-----------------------------------------------------------------------|
+| `text-block-column-count` | 1, 2, 3, 4 | `<toujou-text-block class="text-block" text-blocks-column-count="1">`  |
+
+
+### text-block-media-position
+The `text-block-media-position` allows us to define where we want to place the media in relation to the text.
+
+Examples:
+
+| Attribute | Possible values | Example |
+|---|:---:|:---|
+| `text-block-media-position` | "beside-right", "beside-left", "inside-right", "inside-left", "above", "below" | `<toujou-text-block class="text-block" text-block-media-position="beside-right">`  |
+
+
+### text-block-third-direction
+The `text-block-third-direction` must be used in combination with the `text-block-column-count="2"`. It renders one column 33% (either on the right or or left side) and the other 66% width.
+
+Examples:
+
+| Attribute | Possible values | Example |
+|---|:---:|:---|
+| `text-block-third-direction="left"` | "left", "right" | `<toujou-text-block class="text-block" text-blocks-column-count="2" text-block-third-direction="left">`  |

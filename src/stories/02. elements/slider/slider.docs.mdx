@@ -1,0 +1,171 @@
+# &lt;toujou-slider&gt;
+The `<toujou-slider>` renders a slider on the page, using the [Splide](https://splidejs.com/guides/getting-started) library.
+
+1. [ Useful links ](#toujou-slider-useful-links)
+2. [ Child components ](#toujou-slider-child-components)
+3. [ Markup exmaple ](#toujou-slider-example)
+4. [ Attributes ](#toujou-slider-attributes)
+    1. [ Slider design ](#toujou-slider-attributes-design)
+    2. [ Fullwidth ](#toujou-slider-attributes-fullwidth)
+    3. [ Autoplay ](#toujou-slider-attributes-autoplay)
+        1. [ Autoplay duration ](#toujou-slider-attributes-autoplay-duration)
+    4. [ Show count ](#toujou-slider-attributes-show-count)
+5. [ Default options ](#toujou-slider-default-options)
+
+
+<a name="toujou-slider-useful-link"></a>
+
+## 1. Useful links
+- [Splide structure](https://splidejs.com/guides/structure/)
+- [Splide option](https://splidejs.com/guides/options/)
+- [Splide APIs](https://splidejs.com/guides/apis/)
+- [Splide events](https://splidejs.com/guides/events/)
+
+
+<a name="toujou-slider-child-components"></a>
+
+## 2. Child components
+- `toujou-slider-control` (the "prev" and "next" buttons)
+- `toujou-bullets` (the bullet buttons at the bottom of the slider element)
+- `toujou-slider-count` (the element that shows the index of the active slide and the total number of slides)
+- `toujou-slider-progress` (the progress bar showing the time left for the autoplay to change to the next slide)
+
+
+<a name="toujou-slider-example"></a>
+
+## 3. Markup example
+```html
+<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary">
+    <div class="splide slider__slider">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
+                <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
+            </button>
+            <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
+                <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
+            </button>
+        </div>
+
+        <div class="splide__track slider__track">
+            <ul class="splide__list slider__list">
+                <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
+                    <toujou-single-media class="single-media slider__item" slot="slider-item">
+                        <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
+                    </toujou-single-media>
+                </li>
+                <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
+                    <toujou-single-media class="single-media slider__item" slot="slider-item">
+                        <img class="single-media__image" src="https://picsum.photos/1601/900" alt="Nice image">
+                    </toujou-single-media>
+                </li>
+            </ul>
+        </div>
+        <div class="splide__progress slider-progress">
+            <div class="splide__progress__bar slider-progress__bar"></div>
+        </div>
+    </div>
+
+    <toujou-slider-count class="slider-count">
+        <span class="slider-count__current"></span>
+        <span class="slider-count__separator">of</span>
+        <span class="slider-count__total"></span>
+    </toujou-slider-count>
+
+</toujou-slider>
+```
+
+
+<a name="toujou-slider-attributes"></a>
+
+## 4. Attributes
+There are some attributes that allow us to customize the slider
+
+
+<a name="toujou-slider-attributes-design"></a>
+
+### 4.1. Slider design <toujou-chip class="chip" chip-bg-color="warning" is-uppercase>required</toujou-chip>
+The `slider-design` attribute allows us to change the slider element's styles. It is set by the user on the BE with the "Color" option.
+
+Possible values are: `default`, `primary`, `secondary` and `light-grey`
+
+Example:
+```html
+<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary">
+...
+</toujou-slider>
+```
+
+
+<a name="toujou-slider-attribute-fullwidth"></a>
+
+### 4.2. Slider fullwidth
+Per default the slider element has the same max-width as the content. We can set the `slider-fullwidth` attribute to make it 100% width of its container.
+
+The `slider-fullwidth` attribute also has an impact in some visual elements of the slider, like the control buttons.
+
+Example:
+```html
+<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary" slider-fullwidth>
+...
+</toujou-slider>
+```
+
+
+<a name="toujou-slider-attributes-autoplay"></a>
+
+### 4.3. Autoplay
+Per default the users must click the slider controls or drag the slider to move to the next / prev slide. If we set the `auto-play` attribute the slider will automatically move to the next slide after a certain amount of time (default 5s).
+
+When the `auto-play` is set the "auto-play progress bar" will also be shown.
+
+Example:
+```html
+<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary" auto-play>
+...
+</toujou-slider>
+```
+
+
+<a name="toujou-slider-attributes-autoplay-duration"></a>
+
+#### 4.4. Autoplay duration
+We can set custom intervals for each slide by adding the `data-splide-interval="6000">` attribute to the `.toujou-slider__slide` elements
+
+Example:
+```html
+<li class="splide__slide slider__slide" data-splide-interval="6000">
+...
+</li>
+```
+
+
+<a name="toujou-slider-attributes-show-count"></a>
+
+### 4.5. show-count
+We can show a "count" element after the slider by adding the `show-count` attribute. The count element shows the index of the current active slide and the total number of slides, which may help the users when there are many slides.
+
+Example:
+```html
+<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary" show-count>
+...
+</toujou-slider>
+```
+
+<a name="toujou-slider-default-options"></a>
+
+### 5. Default options
+These are the default options for the toujou slider
+
+```js
+const sliderOptions = {
+    classes: {
+        pagination: 'splide__pagination slider-bullets',
+        page: 'splide__pagination__page slider-bullets__bullet',
+    },
+    type: 'loop',
+    rewind: true,
+    autoplay: this.autoplay,
+    pauseOnHover: this.autoplay,
+    pauseOnFocus: this.autoplay,
+}
+```

@@ -1,0 +1,64 @@
+# &lt;toujou-.logo-slider&gt;
+The `<toujou-logo-slider>` renders a slider on the page, using the [Glider.js](https://nickpiscitelli.github.io/Glider.js/) library.
+
+It has a couple of child components, like:
+- `toujou-slider-slide` (each of the sliders inside the `toujou-slide` element)
+- `toujou-slider-control` (the "prev" and "next" buttons)
+- `toujou-bullets` (the bullet buttons at the bottom of the slider element)
+
+## Markup example
+```html
+<toujou-slider class="slider" slider-design="${args.designColor}" ${args.isFullwidth ? 'slider-fullwidth' : ''}>
+    <div class="slider__top">
+        <div class="slider__frame glider draggable" data-autoslide="0" data-slideinterval="6">
+            <div class="glider-track slider__track">
+                <toujou-slider-slide class="slider-slide glider-slide active center visible" aria-label="slide 1 of 2">
+                    <img src="https://picsum.photos/1200" alt="nice image" class="slider-slide__media slider-slide__media--image">
+                </toujou-slider-slide>
+            </div>
+        </div>
+        <button class="slider-control slider-control--prev" aria-label="Previous slide">
+            <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
+        </button>
+        <button class="slider-control slider-control--next" aria-label="Next slide">
+            <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
+        </button>
+    </div>
+    <toujou-bullets class="bullets slider__bullets glider-dots" bullets-design="${args.designColor}">
+        <button data-index="0" aria-label="Page 1" role="tab" class="bullets__bullet slider__bullet glider-dot active" aria-current="true">
+            <span class="bullets__circle"></span>
+        </button>
+        <button data-index="1" aria-label="Page 2" role="tab" class="bullets__bullet slider__bullet glider-dot ">
+            <span class="bullets__circle"></span>
+        </button>
+    </toujou-bullets>
+</toujou-slider>
+```
+
+## Attributes
+There are some attributes that allow us to customize the slider
+
+
+### Slider design <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `slider-design` attribute allows us to change the slider element's styles. It is set by the user on the BE with the "Color" option.
+
+Possible values are: `default` (font-color), `primary`, `secondary` and `light-grey`
+
+Example:
+```html
+<toujou-slider class="toujou-slider" slider-design="primary">
+...
+</toujou-slider>
+```
+
+### Slider fullwidth
+Per default the slider element has the same max-width and the content. We can set the `slider-fullwidth` attribute to make it 100% width of its container.
+
+The `slider-fullwidth` attribute also has an impact in some visual elements of the slider, like the control buttons
+
+Example:
+```html
+<toujou-slider class="toujou-slider" slider-design="primary" slider-fullwidth>
+...
+</toujou-slider>
+```
