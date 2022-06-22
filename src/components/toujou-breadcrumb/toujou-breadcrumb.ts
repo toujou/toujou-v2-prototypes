@@ -57,6 +57,7 @@ export class ToujouBreadcrumb extends LitElement {
         super.connectedCallback();
 
         this.toggleButtons = Array.from(this.querySelectorAll('.breadcrumb__toggle'));
+        this.dispatchEvent(new Event('toujou-breadcrumb-connected'));
     }
 
     /**

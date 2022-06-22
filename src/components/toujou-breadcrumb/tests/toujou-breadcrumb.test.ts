@@ -60,4 +60,31 @@ describe('Toujou blockquote', async () => {
         expect(role).toBeTruthy();
         expect(role).to.equal('nav');
     })
+
+    // it('Dispatches connected event', () => {
+    //     const mockConnectedCallback = vi.fn(() => true);
+    //     window.addEventListener('toujou-breadcrumb-connected', () => { mockConnectedCallback() });
+    //
+    //     expect(mockConnectedCallback).toHaveBeenCalled();
+    // })
+
+    it('has correct children structur', () => {
+        const openButton = breadcrumbEl?.querySelector('.breadcrumb__toggle--open');
+        const closeButton = breadcrumbEl?.querySelector('.breadcrumb__toggle--close');
+        const list = breadcrumbEl?.querySelector('.breadcrumb__list');
+        const listItems = breadcrumbEl?.querySelectorAll('.breadcrumb__item');
+
+        expect(openButton).toBeTruthy();
+        expect(closeButton).toBeTruthy();
+        expect(list).toBeTruthy();
+        expect(listItems?.length).toBeGreaterThan(1);
+    })
+
+    it('has clickable items', () => {
+        const listItems = breadcrumbEl?.querySelectorAll('.breadcrumb__item');
+        const listLinks = breadcrumbEl?.querySelectorAll('.breadcrumb__link');
+
+        expect(listItems?.length).toEqual(listLinks?.length);
+    })
+
 });
