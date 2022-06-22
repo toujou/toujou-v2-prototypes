@@ -1,8 +1,8 @@
 import type { IWindow } from 'happy-dom';
 import { expect, describe, it, beforeEach } from 'vitest';
 
-import './toujou-blockquote';
-import { ToujouBlockquote } from "./toujou-blockquote";
+import '../toujou-blockquote';
+import { ToujouBlockquote } from "../toujou-blockquote";
 
 declare global {
     interface Window extends IWindow {}
