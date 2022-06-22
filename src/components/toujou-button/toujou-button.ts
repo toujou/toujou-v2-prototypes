@@ -8,7 +8,6 @@ export class ToujouButton extends HTMLButtonElement {
 
     constructor() {
         super();
-
         // this.addEventListener('click', () => {
         //     console.log('TOUJOU BUTTON CLICKED!!!!!');
         // });
@@ -41,7 +40,7 @@ export class ToujouButton extends HTMLButtonElement {
         const type = this.getAttribute('button-type');
         if (!type) {
             this.setAttribute('button-type', this.defaultButtonType);
-        } else if (!Object.values(ToujouButtonType).includes(size as ToujouButtonType)) {
+        } else if (!Object.values(ToujouButtonType).includes(type as ToujouButtonType)) {
             console.warn(`TOUJOU: Invalid button-type value, falling back to default: "${this.defaultButtonType}"`)
             this.setAttribute('button-size', this.defaultButtonType);
         }

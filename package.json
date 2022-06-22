@@ -22,7 +22,8 @@
     "copy-icons-folder": "sh shell-scripts/copy-icons-folder.sh",
     "deploy-sb": "gh-pages -d storybook-static",
     "deploy-full": "npm run build && npm run build-sb && npm run deploy-sb",
-    "test": "vitest"
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "@geometricpanda/storybook-addon-badges": "^0.2.1",
@@ -39,6 +40,7 @@
     "@storybook/addon-links": "^6.5.9",
     "@storybook/builder-vite": "^0.1.36",
     "@storybook/web-components": "^6.5.9",
+    "@vitest/ui": "^0.15.2",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "gh-pages": "^4.0.0",

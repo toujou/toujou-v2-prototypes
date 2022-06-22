@@ -2,14 +2,15 @@ import type { IWindow } from 'happy-dom';
 import { expect, describe, it, beforeEach, } from 'vitest';
 
 import '../toujou-button';
-import { ToujouButton } from "../toujou-button";
 
 declare global {
     interface Window extends IWindow {}
 }
 
+/* TODO: Test if the default values for the attributes are set when the attributes are missing or when they have invalid values */
+
 describe('Toujou button with required attributes', async () => {
-    let buttonEl: ToujouButton | null = null;
+    let buttonEl: Element | null;
 
     beforeEach(async () => {
         document.body.innerHTML = `
@@ -63,7 +64,7 @@ describe('Toujou button with required attributes', async () => {
 });
 
 describe('Toujou button with icon', async () => {
-    let buttonEl: ToujouButton | null = null;
+    let buttonEl: Element | null;
 
     beforeEach(async () => {
         document.body.innerHTML = `
