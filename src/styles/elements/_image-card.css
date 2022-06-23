@@ -84,8 +84,6 @@
     }
 }
 
-
-
 @media (hover: hover) {
     a.image-card:hover {
         --image-card-title-background-color: var(--color-primary);

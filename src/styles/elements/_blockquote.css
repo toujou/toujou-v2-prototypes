@@ -59,13 +59,15 @@
     transform: translateY(-100%);
     background-color: var(--color-font-dark);
     mask-position: center;
-    -webkit-mask-position: center;
     mask-size: contain;
-    -webkit-mask-size: contain;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-image: var(--blockquote-icon-image);
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
     -webkit-mask-image: var(--blockquote-icon-image);
+    /* stylelint-enable property-no-vendor-prefix */
 }
 
 .blockquote__text {
@@ -98,7 +100,7 @@
 /* VERTICAL BLOCKQUOTE */
 .blockquote[blockquote-direction="vertical"] {
     --blockquote-grid-template-columns: 1fr;
-    --blockquote-grid-template-areas: "blockquoteImage" "blockquoteQuote" "blockquoteAuthor"
+    --blockquote-grid-template-areas: "blockquoteImage" "blockquoteQuote" "blockquoteAuthor";
 }
 
 @media screen and (min-width: 960px) {

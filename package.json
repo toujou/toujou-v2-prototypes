@@ -23,7 +23,8 @@
     "deploy-sb": "gh-pages -d storybook-static",
     "deploy-full": "npm run build && npm run build-sb && npm run deploy-sb",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "lint:css": "npx stylelint ./src/styles/**/*.css"
   },
   "dependencies": {
     "@geometricpanda/storybook-addon-badges": "^0.2.1",
@@ -51,6 +52,8 @@
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-postcss-lit": "^2.0.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.7",
     "vitest": "^0.15.2"

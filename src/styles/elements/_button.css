@@ -39,13 +39,11 @@
 
 /* FOCUS */
 .button:focus-visible {
-    outline: var(--focus-outline-width) solid var(--focus-outline-color);
-    outline-offset: var(--focus-outline-offset);
-}
-
-.button:focus-visible {
     --button-color-bg: var(--color-primary-light);
     --button-color-text: var(--color-primary-dark);
+
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
 }
 
 .button[button-variant="secondary"]:focus-visible {

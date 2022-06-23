@@ -1,5 +1,4 @@
 button.slider-control {
-    border: 10px solid red;
     position: var(--slider-control-position);
     display: block;
     inset: var(--slider-control-inset);
@@ -42,8 +41,8 @@ button.slider-control--next {
     --slider-control-icon-transform: translate(-65%, -50%);
 
     border-radius: 0 var(--slider-control-width) var(--slider-control-width) 0;
-
 }
+
 .slider[slider-fullwidth] button.slider-control--next {
     --slider-control-inset: 50% 0 auto auto;
     --slider-control-icon-transform: translate(-35%, -50%);

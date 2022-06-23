@@ -52,13 +52,15 @@
     margin: 0 var(--breadcrumb-separator-horizontal-gap);
     background-color: currentColor;
     mask-position: center;
-    -webkit-mask-position: center;
     mask-size: contain;
-    -webkit-mask-size: contain;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-image: var(--breadcrumb-separator-icon);
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
     -webkit-mask-image: var(--breadcrumb-separator-icon);
+    /* stylelint-enable property-no-vendor-prefix */
 }
 
 .breadcrumb__item:first-child::before {
@@ -69,13 +71,15 @@
     margin: 0 var(--breadcrumb-separator-horizontal-gap);
     background-color: currentColor;
     mask-position: center;
-    -webkit-mask-position: center;
     mask-size: contain;
-    -webkit-mask-size: contain;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-image: var(--breadcrumb-home-icon);
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
     -webkit-mask-image: var(--breadcrumb-home-icon);
+    /* stylelint-enable property-no-vendor-prefix */
 }
 
 .breadcrumb__link {

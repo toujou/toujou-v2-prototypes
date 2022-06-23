@@ -1,25 +1,6 @@
-@import 'tokens.css';
+@import "tokens.css";
 
 :root {
-
-    /**
-     **********   CSS USED ON THE ELEMENTS   ************
-     */
-
-
-
-
-
-    /**
-     **********   CSS USED ON THE DEMO   ************
-     */
-
-    /*--border-radius-normal: .25rem;*/
-    /*--border-radius-s: .125rem;*/
-
-    /*--transition-normal: .5s;*/
-    /*--transition-fast: .25s;*/
-
     /* TOPBAR */
     --topbar-border-width: 2px;
     --topbar-logo-size-small: 48px;
