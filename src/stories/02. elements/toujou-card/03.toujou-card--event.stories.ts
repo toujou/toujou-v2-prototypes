@@ -41,7 +41,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
     return `
         <ul class="card-collection">
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
+                <toujou-card class="toujou-card" card-type="event" card-design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
@@ -71,7 +71,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-card>
             </li>
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
+                <toujou-card class="toujou-card" card-type="event" card-design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
@@ -101,7 +101,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-card>
             </li>
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
+                <toujou-card class="toujou-card" card-type="event" card-design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
@@ -131,7 +131,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-card>
             </li>
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
+                <toujou-card class="toujou-card" card-type="event" card-design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
