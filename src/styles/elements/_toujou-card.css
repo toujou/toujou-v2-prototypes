@@ -27,6 +27,27 @@
     --toujou-card-category-border-radius: 0 var(--border-radius-xxxl) var(--border-radius-xxxl) 0;
     --toujou-card-category-font-size: var(--font-size-s);
 
+    --toujou-card-date-position: absolute;
+    --toujou-card-date-top: var(--spacing-normal);
+    --toujou-card-date-left: var(--spacing-normal);
+    --toujou-card-date-background-color: var(--color-bg);
+    --toujou-card-date-border-radius: var(--border-radius-normal);
+    --toujou-card-date-display: flex;
+    --toujou-card-date-align-items: center;
+    --toujou-card-date-justify-content: center;
+    --toujou-card-date-flex-direction: column;
+    --toujou-card-date-padding: var(--spacing-s);
+    --toujou-card-date-color: var(--color-font);
+    --toujou-card-date-line-height: 1;
+    --toujou-card-date-height: 4rem;
+    --toujou-card-date-width: var(--toujou-card-date-height);
+
+    --toujou-card-date-day-font-size: var(--font-size-m);
+    --toujou-card-date-day-font-weight: var(--font-weight-text-bold);
+
+    --toujou-card-date-month-text-transfrom: uppercase;
+    --toujou-card-date-month-font-size: var(--font-size-s);
+
     --toujou-card-bottom-padding: var(--spacing-normal);
 
     --toujou-card-title-font-size: var(--font-size-ms);
@@ -43,6 +64,23 @@
     --toujou-card-subtitle-font-size: var(--font-size-normal);
     --toujou-card-subtitle-color: var(--color-font);
     --toujou-card-subtitle-font-style: italic;
+
+    --toujou-card-info-display: grid;
+    --toujou-card-info-grid-template-columns: auto 1fr;
+    --toujou-card-info-grid-gap: var(--spacing-s);
+    --toujou-card-info-margin: var(--spacing-normal) 0 0;
+    --toujou-card-info-icon-top: 2px;
+    --toujou-card-info-text-margin: 0;
+
+    --toujou-card-extension-background-color: var(--color-error);
+    --toujou-card-extension-width: fit-content;
+    --toujou-card-extension-padding: var(--spacing-xs) var(--spacing-s);
+    --toujou-card-extension-color: var(--color-bg);
+    --toujou-card-extension-font-size: var(--font-size-s);
+    --toujou-card-extension-border-radius: var(--border-radius-normal);
+    --toujou-card-extension-margin: var(--spacing-normal) 0;
+
+    --toujou-card-abstract-number-of-line: 3;
 
     --toujou-card-button-text-decoration: none;
 
@@ -83,6 +121,33 @@
     font-size: var(--toujou-card-category-font-size);
 }
 
+.toujou-card__date {
+    position: var(--toujou-card-date-position);
+    height: var(--toujou-card-date-height);
+    width: var(--toujou-card-date-width);
+    top: var(--toujou-card-date-top);
+    left: var(--toujou-card-date-left);
+    background-color: var(--toujou-card-date-background-color);
+    border-radius: var(--toujou-card-date-border-radius);
+    display: var(--toujou-card-date-display);
+    align-items: var(--toujou-card-date-align-items);
+    justify-content: var(--toujou-card-date-justify-content);
+    flex-direction: var(--toujou-card-date-flex-direction);
+    padding: var(--toujou-card-date-padding);
+    color: var(--toujou-card-date-color);
+    line-height: var(--toujou-card-date-line-height);
+}
+
+.toujou-card__date-day {
+    font-size: var(--toujou-card-date-day-font-size);
+    font-weight: var(--toujou-card-date-day-font-weight);
+}
+
+.toujou-card__date-month {
+    text-transform: var(--toujou-card-date-month-text-transfrom);
+    font-size: var(--toujou-card-date-month-font-size);
+}
+
 .toujou-card__bottom {
     padding: var(--toujou-card-bottom-padding);
 }
@@ -110,6 +175,40 @@
 .toujou-card__subtitle + .toujou-card__subtitle::before {
     content: var(--toujou-card-subtitles-separator);
     margin: 0 var(--spacing-xs);
+}
+
+.toujou-card__info {
+    display: var(--toujou-card-info-display);
+    grid-template-columns: var(--toujou-card-info-grid-template-columns);
+    grid-gap: var(--toujou-card-info-grid-gap);
+    margin: var(--toujou-card-info-margin);
+}
+
+.toujou-card__info-icon {
+    position: relative;
+    top: var(--toujou-card-info-icon-top);
+}
+
+.toujou-card__info-text {
+    margin: var(--toujou-card-info-text-margin);
+}
+
+.toujou-card__extension {
+    background-color: var(--toujou-card-extension-background-color);
+    color: var(--toujou-card-extension-color);
+    width: var(--toujou-card-extension-width);
+    padding: var(--toujou-card-extension-padding);
+    font-size: var(--toujou-card-extension-font-size);
+    border-radius: var(--toujou-card-extension-border-radius);
+    margin: var(--toujou-card-extension-margin);
+}
+
+.toujou-card__abstract {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--toujou-card-abstract-number-of-line);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .toujou-card__button {

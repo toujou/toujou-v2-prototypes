@@ -30,9 +30,7 @@ const Template = () => {
                 <toujou-card class="toujou-card" card-type="blog">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
-                            <a href="#" class="toujou-card__figure-link">
-                                <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
-                            </a>
+                            <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
                         </figure>
                         <div class="toujou-card__categories">
                             <span class="toujou-card__category">
@@ -59,9 +57,7 @@ const Template = () => {
                 <toujou-card class="toujou-card" card-type="blog">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
-                            <a href="#" class="toujou-card__figure-link">
-                                <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
-                            </a>
+                            <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
                         </figure>
                         <div class="toujou-card__categories">
                             <span class="toujou-card__category">
@@ -88,9 +84,7 @@ const Template = () => {
                 <toujou-card class="toujou-card" card-type="blog">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
-                            <a href="#" class="toujou-card__figure-link">
-                                <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
-                            </a>
+                            <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
                         </figure>
                         <div class="toujou-card__categories">
                             <span class="toujou-card__category">
@@ -117,9 +111,7 @@ const Template = () => {
                 <toujou-card class="toujou-card" card-type="blog">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
-                            <a href="#" class="toujou-card__figure-link">
-                                <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
-                            </a>
+                            <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
                         </figure>
                         <div class="toujou-card__categories">
                             <span class="toujou-card__category">
