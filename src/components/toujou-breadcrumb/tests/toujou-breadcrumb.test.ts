@@ -1,5 +1,5 @@
 import type { IWindow } from 'happy-dom';
-import { expect, describe, it, beforeEach } from 'vitest';
+import { expect, describe, it, beforeEach, vi } from 'vitest';
 
 import '../toujou-breadcrumb';
 import { ToujouBreadcrumb } from "../toujou-breadcrumb";
@@ -61,7 +61,7 @@ describe('Toujou blockquote', async () => {
         expect(role).to.equal('nav');
     })
 
-    it('has correct children structur', () => {
+    it('has correct children structure', () => {
         const openButton = breadcrumbEl?.querySelector('.breadcrumb__toggle--open');
         const closeButton = breadcrumbEl?.querySelector('.breadcrumb__toggle--close');
         const list = breadcrumbEl?.querySelector('.breadcrumb__list');
@@ -82,43 +82,43 @@ describe('Toujou blockquote', async () => {
 
 });
 
-// describe('Toujou connected callback events', async () => {
-//     it('Dispatches connected event', async () => {
-//         const mockConnectedCallback = vi.fn(() => true);
-//         window.addEventListener('toujou-breadcrumb-connected', () => {
-//             console.log('GOT THE EVENT');
-//             mockConnectedCallback()
-//         });
-//
-//         document.body.innerHTML = `
-//             <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb" ismobile="">
-//                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
-//                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
-//                 </button>
-//
-//                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
-//                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
-//                 </button>
-//
-//                 <ol class="breadcrumb__list" slot="list">
-//                     <li class="breadcrumb__item">
-//                         <a href="#" class="breadcrumb__link">Home</a>
-//                     </li>
-//                     <li class="breadcrumb__item">
-//                         <a href="#" class="breadcrumb__link">Item One</a>
-//                     </li>
-//                     <li class="breadcrumb__item">
-//                         <a href="#" class="breadcrumb__link">Item Two</a>
-//                     </li>
-//                     <li class="breadcrumb__item">
-//                         <a href="#" class="breadcrumb__link" aria-current="page">Item Three</a>
-//                     </li>
-//                 </ol>
-//             </toujou-breadcrumb>
-//         `;
-//         await window.happyDOM.whenAsyncComplete();
-//         await new Promise(resolve => setTimeout(resolve, 0));
-//
-//         expect(mockConnectedCallback).toHaveBeenCalled();
-//     })
-// });
+describe('Toujou connected callback events', async () => {
+    it('Dispatches connected event', async () => {
+        const mockConnectedCallback = vi.fn(() => true);
+        window.addEventListener('toujou-breadcrumb-connected', () => {
+            console.log('GOT THE EVENT');
+            mockConnectedCallback()
+        });
+
+        document.body.innerHTML = `
+            <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb" ismobile="">
+                <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
+                    <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
+                </button>
+
+                <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
+                    <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
+                </button>
+
+                <ol class="breadcrumb__list" slot="list">
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Home</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Item One</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Item Two</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link" aria-current="page">Item Three</a>
+                    </li>
+                </ol>
+            </toujou-breadcrumb>
+        `;
+        await window.happyDOM.whenAsyncComplete();
+        await new Promise(resolve => setTimeout(resolve, 0));
+
+        expect(mockConnectedCallback).toHaveBeenCalled();
+    })
+});

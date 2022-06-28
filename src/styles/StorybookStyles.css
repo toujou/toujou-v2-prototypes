@@ -24,6 +24,7 @@
 @import './elements/_blockquote-grid.css';
 @import './elements/_breadcrumb.css';
 @import './elements/_button.css';
+@import './elements/_card-collection.css';
 @import './elements/_chip.css';
 @import './elements/_content-card.css';
 @import './elements/_content-card-grid.css';
@@ -41,6 +42,7 @@
 @import './elements/_slider-count.css';
 @import './elements/_slider-progress.css';
 @import './elements/_text-blocks.css';
+@import './elements/_toujou-card.css';
 
 @import './elements/forms/_checkbox.css';
 @import './elements/forms/_checkbox-group.css';

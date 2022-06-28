@@ -25,7 +25,7 @@ export default {
             },
             name: 'Icon color',
             description: "Set the icon's color. If this class isn't set it defaults to 'currentColor'",
-            options: ['font', 'primary', 'secondary'],
+            options: ['font', 'font-dark', 'font-light', 'primary', 'primary-dark', 'primary-light', 'secondary', 'secondary-dark', 'secondary-light'],
             control: { type: 'radio' },
             defaultValue: ['font'],
             required: true,

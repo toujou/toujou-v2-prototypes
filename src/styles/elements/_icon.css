@@ -22,6 +22,14 @@
     --icon-color: var(--color-font);
 }
 
+.icon[icon-color="font-dark"] {
+    --icon-color: var(--color-font-dark);
+}
+
+.icon[icon-color="font-light"] {
+    --icon-color: var(--color-font-light);
+}
+
 .icon[icon-color="primary"] {
     --icon-color: var(--color-primary);
 }

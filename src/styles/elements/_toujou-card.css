@@ -1,0 +1,117 @@
+.toujou-card {
+    --toujou-card-display: flex;
+    --toujou-card-flex-direction: column;
+    --toujou-card-width: 100%;
+    --toujou-card-max-width: 100%;
+    --toujou-card-shadow: var(--shadow-normal);
+    --toujou-card-border-radius: var(--border-radius-normal);
+    --toujou-card-overflow: hidden;
+    --toujou-card-bg-color: var(--color-bg);
+
+    --toujou-card-top-position: relative;
+
+    --toujou-card-image-ratio: var(--aspect-ratio-4-3);
+
+    --toujou-card-categories-position: absolute;
+    --toujou-card-categories-top: var(--spacing-normal);
+    --toujou-card-categories-left: 0;
+
+    --toujou-card-category-background-color: var(--color-primary-light);
+    --toujou-card-category-color: var(--color-primary-dark);
+    --toujou-card-category-display: flex;
+    --toujou-card-category-align-items: center;
+    --toujou-card-category-justify-content: flex-start;
+    --toujou-card-category-gap: var(--spacing-xs);
+    --toujou-card-category-line-height: normal;
+    --toujou-card-category-padding: var(--spacing-xs) var(--spacing-s);
+    --toujou-card-category-border-radius: 0 var(--border-radius-xxxl) var(--border-radius-xxxl) 0;
+    --toujou-card-category-font-size: var(--font-size-s);
+
+    --toujou-card-bottom-padding: var(--spacing-normal);
+
+    --toujou-card-title-font-size: var(--font-size-ms);
+    --toujou-card-title-color: var(--color-font-dark);
+    --toujou-card-title-margin: 0 0 var(--spacing-xs);
+    --toujou-card-title-font-family: var(--font-family-text);
+    --toujou-card-title-font-weight: var(--font-weight-text-bold);
+
+    --toujou-card-subtitles-margin: 0;
+    --toujou-card-subtitles-separator: "-";
+
+    --toujou-card-subtitle-font-family: var(--font-family-text);
+    --toujou-card-subtitle-font-weight: var(--font-weight-text-normal);
+    --toujou-card-subtitle-font-size: var(--font-size-normal);
+    --toujou-card-subtitle-color: var(--color-font);
+    --toujou-card-subtitle-font-style: italic;
+
+    --toujou-card-button-text-decoration: none;
+
+    display: var(--toujou-card-display);
+    flex-direction: var(--toujou-card-flex-direction);
+    width: var(--toujou-card-width);
+    max-width: var(--toujou-card-max-width);
+    box-shadow: var(--toujou-card-shadow);
+    border-radius: var(--toujou-card-border-radius);
+    overflow: var(--toujou-card-overflow);
+    background-color: var(--toujou-card-bg-color);
+}
+
+.toujou-card__top {
+    position: var(--toujou-card-top-position);
+}
+
+.toujou-card__image {
+    aspect-ratio: var(--toujou-card-image-ratio);
+}
+
+.toujou-card__categories {
+    position: var(--toujou-card-categories-position);
+    top: var(--toujou-card-categories-top);
+    left: var(--toujou-card-categories-left);
+}
+
+.toujou-card__category {
+    background-color: var(--toujou-card-category-background-color);
+    color: var(--toujou-card-category-color);
+    display: var(--toujou-card-category-display);
+    align-items: var(--toujou-card-category-align-items);
+    justify-content: var(--toujou-card-category-justify-content);
+    gap: var(--toujou-card-category-gap);
+    line-height: var(--toujou-card-category-line-height);
+    padding: var(--toujou-card-category-padding);
+    border-radius: var(--toujou-card-category-border-radius);
+    font-size: var(--toujou-card-category-font-size);
+}
+
+.toujou-card__bottom {
+    padding: var(--toujou-card-bottom-padding);
+}
+
+.toujou-card__title {
+    font-size: var(--toujou-card-title-font-size);
+    color: var(--toujou-card-title-color);
+    margin: var(--toujou-card-title-margin);
+    font-family: var(--toujou-card-title-font-family);
+    font-weight: var(--toujou-card-title-font-weight);
+}
+
+.toujou-card__subtitles {
+    margin: var(--toujou-card-subtitles-margin);
+}
+
+.toujou-card__subtitle {
+    font-family: var(--toujou-card-subtitle-font-family);
+    font-weight: var(--toujou-card-subtitle-font-weight);
+    font-size: var(--toujou-card-subtitle-font-size);
+    color: var(--toujou-card-subtitle-color);
+    font-style: var(--toujou-card-subtitle-font-style);
+}
+
+.toujou-card__subtitle + .toujou-card__subtitle::before {
+    content: var(--toujou-card-subtitles-separator);
+    margin: 0 var(--spacing-xs);
+}
+
+.toujou-card__button {
+    text-decoration: var(--toujou-card-button-text-decoration);
+}
