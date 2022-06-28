@@ -26,6 +26,7 @@
     --toujou-card-category-padding: var(--spacing-xs) var(--spacing-s);
     --toujou-card-category-border-radius: 0 var(--border-radius-xxxl) var(--border-radius-xxxl) 0;
     --toujou-card-category-font-size: var(--font-size-s);
+    --toujou-card-category-margin: 0 0 var(--spacing-xs);
 
     --toujou-card-date-position: absolute;
     --toujou-card-date-top: var(--spacing-normal);
@@ -47,6 +48,30 @@
 
     --toujou-card-date-month-text-transfrom: uppercase;
     --toujou-card-date-month-font-size: var(--font-size-s);
+
+    --toujou-card-location-display: flex;
+    --toujou-card-location-align-items: flex-start;
+    --toujou-card-location-justofy-content: flex-start;
+    --toujou-card-location-flex-direction: column;
+    --toujou-card-location-gap: var(--spacing-xs);
+    --toujou-card-location-position: absolute;
+    --toujou-card-location-bottom: 0;
+    --toujou-card-location-left: 0;
+    --toujou-card-location-padding: var(--spacing-normal);
+    --toujou-card-location-gradient: linear-gradient(0deg, rgb(0 0 0 / 100%) 0%, rgb(0 0 0 / 0%) 100%);
+    --toujou-card-location-width: 100%;
+
+    --toujou-card-city-font-size: var(--font-size-ms);
+    --toujou-card-city-font-family: var(--font-family-text);
+    --toujou-card-city-font-weight: var(--font-weight-text-bold);
+    --toujou-card-city-color: var(--color-bg);
+    --toujou-card-city-margin: 0;
+
+    --toujou-card-country-font-size: var(--font-size-normal);
+    --toujou-card-country-font-family: var(--font-family-text);
+    --toujou-card-country-font-weight: var(--font-weight-text-normal);
+    --toujou-card-country-color: var(--color-bg);
+    --toujou-card-country-margin: 0;
 
     --toujou-card-bottom-padding: var(--spacing-normal);
 
@@ -81,6 +106,11 @@
     --toujou-card-extension-margin: var(--spacing-normal) 0;
 
     --toujou-card-abstract-number-of-line: 3;
+
+    --toujou-card-trip-info-margin: 0;
+    --toujou-card-trip-price-amount-font-weight: var(--font-weight-text-bold);
+    --toujou-card-trip-price-amount-font-size: var(--font-size-ms);
+    --toujou-card-trip-price-suffix-font-size: var(--font-size-xs);
 
     --toujou-card-button-text-decoration: none;
 
@@ -117,6 +147,7 @@
     gap: var(--toujou-card-category-gap);
     line-height: var(--toujou-card-category-line-height);
     padding: var(--toujou-card-category-padding);
+    margin: var(--toujou-card-category-margin);
     border-radius: var(--toujou-card-category-border-radius);
     font-size: var(--toujou-card-category-font-size);
 }
@@ -146,6 +177,36 @@
 .toujou-card__date-month {
     text-transform: var(--toujou-card-date-month-text-transfrom);
     font-size: var(--toujou-card-date-month-font-size);
+}
+
+.toujou-card__location {
+    display: var(--toujou-card-location-display);
+    align-items: var(--toujou-card-location-align-items);
+    justify-content: var(--toujou-card-location-justofy-content);
+    flex-direction: var(--toujou-card-location-flex-direction);
+    gap: var(--toujou-card-location-gap);
+    position: var(--toujou-card-location-position);
+    bottom: var(--toujou-card-location-bottom);
+    left: var(--toujou-card-location-left);
+    padding: var(--toujou-card-location-padding);
+    background: var(--toujou-card-location-gradient);
+    width: var(--toujou-card-location-width);
+}
+
+.toujou-card__location-city {
+    font-size: var(--toujou-card-city-font-size);
+    font-family: var(--toujou-card-city-font-family);
+    font-weight: var(--toujou-card-city-font-weight);
+    color: var(--toujou-card-city-color);
+    margin: var(--toujou-card-city-margin);
+}
+
+.toujou-card__location-country {
+    font-size: var(--toujou-card-country-font-size);
+    font-family: var(--toujou-card-country-font-family);
+    font-weight: var(--toujou-card-country-font-weight);
+    color: var(--toujou-card-country-color);
+    margin: var(--toujou-card-country-margin);
 }
 
 .toujou-card__bottom {
@@ -209,6 +270,19 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.toujou-card__trip-info {
+    margin: var(--toujou-card-trip-info-margin);
+}
+
+.toujou-card__trip-price-amount {
+    font-weight: var(--toujou-card-trip-price-amount-font-weight);
+    font-size: var(--toujou-card-trip-price-amount-font-size);
+}
+
+.toujou-card__trip-price-suffix {
+    font-size: var(--toujou-card-trip-price-suffix-font-size);
 }
 
 .toujou-card__button {
