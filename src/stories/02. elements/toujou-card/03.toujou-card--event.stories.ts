@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Story, Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -18,16 +18,30 @@ export default {
         },
     },
     argTypes: {
-
+        elementDesign: {
+            table: {
+                category: "Toujou card settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Element Design',
+            description: "Choose element design for the cards",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
     }
 } as Meta;
 
+interface ToujouCardStoryProps {
+    elementDesign: any;
+}
 
-const Template = () => {
+const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
     return `
         <ul class="card-collection">
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event">
+                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
@@ -57,7 +71,7 @@ const Template = () => {
                 </toujou-card>
             </li>
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event">
+                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
@@ -87,7 +101,7 @@ const Template = () => {
                 </toujou-card>
             </li>
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event">
+                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
@@ -117,7 +131,7 @@ const Template = () => {
                 </toujou-card>
             </li>
             <li class="card-collection__item">
-                <toujou-card class="toujou-card" card-type="event">
+                <toujou-card class="toujou-card" card-type="event" design="${args.elementDesign}">
                     <div class="toujou-card__top">
                         <figure class="toujou-card__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="toujou-card__image">
@@ -153,3 +167,6 @@ const Template = () => {
 
 export const ToujouCardEvent = Template.bind({});
 
+ToujouCardEvent.args = {
+    elementDesign: 'default',
+}
