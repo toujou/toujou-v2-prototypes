@@ -1,0 +1,30 @@
+.item-collection {
+    --item-collection-display: flex;
+    --item-collection-flex-wrap: wrap;
+    --item-collection-align-items: center;
+    --item-collection-justify-content: center;
+    --item-collection-gap: var(--spacing-normal);
+    --item-collection-width: var(--content-width-with-padding);
+    /*--item-collection-max-width: var(--content-wide-max-width);*/
+    --item-collection-max-width: var(--content-max-width);
+    --item-collection-margin: 0 auto;
+    --item-collection-list-style: none;
+    --item-collection-padding: 0;
+    --item-collection-item-max-width: 100%;
+
+    display: var(--item-collection-display);
+    grid-gap: var(--item-collection-gap);
+    flex-wrap: var(--item-collection-flex-wrap);
+    align-items: var(--item-collection-align-items);
+    justify-content: var(--item-collection-justify-content);
+    width: var(--item-collection-width);
+    max-width: var(--item-collection-max-width);
+    margin: var(--item-collection-margin);
+    list-style: var(--item-collection-list-style);
+    padding: var(--item-collection-padding);
+}
+
+.item-collection__item {
+    width: 100%;
+    max-width: var(--item-collection-item-max-width);
+}
