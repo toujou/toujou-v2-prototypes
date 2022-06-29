@@ -63,22 +63,22 @@
     --radio-check-background-color: var(--color-font-light);
 }
 
-.toujou-input-group[has-error] .radio {
+.input-group[has-error] .radio {
     --radio-border-color: var(--color-error);
     --radio-background-color: var(--color-error-o-25);
 }
 
-.toujou-input-group[has-error] .radio:checked {
+.input-group[has-error] .radio:checked {
     --radio-background-color: var(--color-bg);
     --radio-check-background-color: var(--color-error);
 }
 
-.toujou-input-group[has-success] .radio:checked {
+.input-group[has-success] .radio:checked {
     --radio-border-color: var(--color-success);
     --radio-background-color: var(--color-success-o-25);
 }
 
-.toujou-input-group[has-success] .radio:checked {
+.input-group[has-success] .radio:checked {
     --radio-border-color: var(--color-success);
     --radio-background-color: var(--color-bg);
     --radio-check-background-color: var(--color-success);

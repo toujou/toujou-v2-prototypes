@@ -39,11 +39,11 @@
     pointer-events: none;
 }
 
-.toujou-input-group[has-error] .input {
+.input-group[has-error] .input {
     border: var(--form-input-error-border);
 }
 
-.toujou-input-group[has-success] .input {
+.input-group[has-success] .input {
     border: var(--form-input-success-border);
     --input-color: var(--color-font);
 }

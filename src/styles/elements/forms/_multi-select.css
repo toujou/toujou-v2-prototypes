@@ -44,6 +44,6 @@
     --multi-select-option-color: var(--color-font-light);
 }
 
-.toujou-input-group[input-group-type="multi-select"] {
+.input-group[input-group-type="multi-select"] {
     --input-group-icon-right: var(--spacing-l);
 }

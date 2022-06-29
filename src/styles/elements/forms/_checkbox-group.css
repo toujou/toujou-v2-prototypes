@@ -21,12 +21,12 @@
     grid-gap: var(--checkbox-group-grid-gap);
 }
 
-.toujou-input-group[input-group-type="multi-check"] .checkbox-group {
+.input-group[input-group-type="multi-check"] .checkbox-group {
     margin: var(--multi-check-group-row-margin);
 }
 
-.input-group.toujou-input-group[input-group-type="checkbox"]::after,
-.input-group.toujou-input-group[input-group-type="multi-check"]::after{
+.input-group.input-group[input-group-type="checkbox"]::after,
+.input-group.input-group[input-group-type="multi-check"]::after{
     --input-group-icon-display: none;
 }
 

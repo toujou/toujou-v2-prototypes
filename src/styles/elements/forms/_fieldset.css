@@ -22,7 +22,7 @@
     --fieldset-legend-color: var(--color-font-light);
 }
 
-.toujou-input-group + .fieldset {
+.input-group + .fieldset {
     --fieldset-margin-top: var(--form-successive-groups-distance);
 }
 
