@@ -21,7 +21,7 @@ export default {
 
 const Template = () => {
     return `       
-        <toujou-text-block class="text-block" text-blocks-column-count="1">
+        <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
                     <h1>Left aligned H1 headline</h1>
@@ -30,7 +30,7 @@ const Template = () => {
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-text-block class="text-block" text-blocks-column-count="2">
+        <toujou-text-block class="text-block" text-block-column-count="2">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -45,7 +45,7 @@ const Template = () => {
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-text-block class="text-block" text-blocks-column-count="3">
+        <toujou-text-block class="text-block" text-block-column-count="3">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -66,7 +66,7 @@ const Template = () => {
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-text-block class="text-block" text-blocks-column-count="4">
+        <toujou-text-block class="text-block" text-block-column-count="4">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>

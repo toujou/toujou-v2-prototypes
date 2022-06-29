@@ -7,6 +7,8 @@
     --hero-media-margin: 0;
 
     --hero-media-media-object-fit: cover;
+    --hero-media-media-width: 100%;
+    --hero-media-media-height: auto;
 
     --hero-media-title-position: absolute;
     --hero-media-title-top: 50%;
@@ -38,6 +40,8 @@
 .hero-media__media {
     aspect-ratio: var(--hero-media-aspect-ratio);
     object-fit: var(--hero-media-media-object-fit);
+    width: var(--hero-media-media-width);
+    height: var(--hero-media-media-height);
 }
 
 .hero-media__title {

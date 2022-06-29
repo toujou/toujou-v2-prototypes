@@ -1,7 +1,7 @@
 import { html, fixture, expect, fixtureSync, oneEvent } from '@open-wc/testing';
 
 import '../toujou-details';
-import { ToujouDetails } from "../../../../types/toujou-details/toujou-details";
+import { ToujouDetails } from "../toujou-details";
 
 describe('toujou-details', () => {
     let detailsEl: ToujouDetails | null = null;

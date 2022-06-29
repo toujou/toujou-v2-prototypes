@@ -38,6 +38,38 @@ export declare class ToujouSlider extends LitElement {
      * @private
      */
     private splideSlider;
+    /**
+     * Number of slides to show per "page"
+     * Docs: https://splidejs.com/guides/options/#perpage
+     */
+    slidesToShow: number;
+    /**
+     * Number of slider to advance per move
+     * Docs: https://splidejs.com/guides/options/#permove
+     */
+    slidesPerMove: number;
+    /**
+     * Type of slider. Valid values are "loop", "slide" and "fade"
+     * Docs: https://splidejs.com/guides/options/#type
+     */
+    sliderType: 'loop' | 'slide' | 'fade';
+    /**
+     * Gap between the slides
+     * Docs: https://splidejs.com/guides/options/#gap
+     */
+    sliderGap: string;
+    /**
+     * Duration between automatic moves when autoplay is active
+     * Docs: https://splidejs.com/guides/options/#interval
+     */
+    autoplayInterval: string;
+    /**
+     * Stringified JSON with object defining the breakpoints for the slider
+     * Docs: https://splidejs.com/guides/options/#breakpoints
+     */
+    sliderBreakpoints: string | null;
+    sliderPadding: string;
+    sliderFocusCenter: string | boolean;
     constructor();
     /**
      * Disable shadow root
