@@ -22,8 +22,7 @@
     "copy-icons-folder": "sh shell-scripts/copy-icons-folder.sh",
     "deploy:sb": "gh-pages -d storybook-static",
     "deploy:full": "npm run build && npm run build:sb && npm run deploy:sb",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
+    "test": "web-test-runner",
     "lint:css": "npx stylelint ./src/styles/**/*.css"
   },
   "dependencies": {
@@ -34,6 +33,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
+    "@open-wc/testing": "^3.1.6",
     "@storybook/addon-a11y": "^6.5.9",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-controls": "^6.5.9",
@@ -41,21 +41,21 @@
     "@storybook/addon-links": "^6.5.9",
     "@storybook/builder-vite": "^0.1.36",
     "@storybook/web-components": "^6.5.9",
-    "@vitest/ui": "^0.15.2",
+    "@web/dev-server-esbuild": "^0.3.1",
+    "@web/test-runner": "^0.13.31",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "gh-pages": "^4.0.0",
-    "happy-dom": "^5.3.1",
     "i": "^0.3.7",
     "npm": "^8.11.0",
     "postcss": "^8.4.14",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-postcss-lit": "^2.0.0",
+    "sinon": "^14.0.0",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^26.0.0",
     "typescript": "^4.5.4",
-    "vite": "^2.9.7",
-    "vitest": "^0.15.2"
+    "vite": "^2.9.7"
   }
 }

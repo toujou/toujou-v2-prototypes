@@ -4,7 +4,7 @@ This project uses:
 - [VITEJS](https://vitejs.dev/).
 - [Storybook](https://storybook.js.org/)
 - [Storybook-deployer](https://github.com/storybookjs/storybook-deployer)
-- [vitest](https://github.com/vitest-dev/vitest#readme)
+- [web test runner](https://modern-web.dev/docs/test-runner/overview/)
 
 ## Scripts
 
