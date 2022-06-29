@@ -27,7 +27,6 @@ export const parameters = {
       ...INITIAL_VIEWPORTS,
     }
   },
-  // layout: 'fullscreen' // This removes that padding on the storybook canvas
 }
 
-console.clear();
+// console.clear();

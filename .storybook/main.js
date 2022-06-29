@@ -9,7 +9,7 @@ module.exports = {
         "@storybook/addon-essentials",
         "@storybook/addon-a11y",
         "storybook-addon-xd-designs/register",
-        "@geometricpanda/storybook-addon-badges"
+        "@geometricpanda/storybook-addon-badges",
     ],
     "framework": "@storybook/web-components",
     "core": {

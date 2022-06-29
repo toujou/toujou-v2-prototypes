@@ -163,7 +163,9 @@ export class ToujouSlider extends LitElement {
         }
 
         if (this.sliderFocusCenter === 'true') {
+            // @ts-ignore
             sliderOptions.focus = 'center';
+            // @ts-ignore
             sliderOptions.trimSpace = false;
         }
 

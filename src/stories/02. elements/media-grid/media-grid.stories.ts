@@ -50,7 +50,7 @@ interface SingleMediaStoryProps {
     numberOfCols: number;
 }
 
-function createMediaElement(mediaType) {
+function createMediaElement(mediaType: string) {
     const singleMedia = document.createElement('toujou-single-media');
     singleMedia.classList.add('single-media');
 
