@@ -1,6 +1,6 @@
 .single-media {
-    --single-media-width: var(--content-width-with-padding);
-    --single-media-max-width: var(--content-max-width);
+    --single-media-width: 100%;
+    --single-media-max-width: 100%;
     --single-media-margin: 0 auto;
     --single-media-display: block;
 

@@ -1,0 +1,28 @@
+# Media elements;
+The media elements, both images and video, are placed inside a `media-grid` element. It has the width of normal content.
+
+For each media element we use `<toujou-single-media>` element.
+
+Example:
+```html
+<div class="media-grid" media-grid-column-number="2">
+    <toujou-single-media class="single-media">
+        <img class="single-media__image" src="https://picsum.photos/1599/900" alt="Nice image">
+    </toujou-single-media>
+    <toujou-single-media class="single-media">
+        <img class="single-media__image" src="https://picsum.photos/1599/900" alt="Nice image">
+    </toujou-single-media>
+</div>
+```
+
+| ⚠️ We still need to add the `<toujou-third-party-content>` element |
+|--------------------------------------------------------------------|
+
+## Attributes
+
+The `media-grid` element has some attributes that allow us to configure how it is rendered
+
+### media-grid-column-number
+This attribute allows us to defined the number of columns we want to render. The grid will automatically adjust to the different viewports.
+
+Valid values are `1`, `2`, `3`, and `4`

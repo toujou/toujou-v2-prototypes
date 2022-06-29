@@ -3,7 +3,7 @@ import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
-import singleMediaDocs from "./single-media.docs.mdx";
+import mediaGridDocs from "./media-grid.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Media',
@@ -14,18 +14,30 @@ export default {
         },
         badges: [TOUJOU_BADGES.TESTING],
         docs: {
-            page: singleMediaDocs,
+            page: mediaGridDocs,
         }
     },
     argTypes: {
         mediaType: {
             table: {
                 category: "Single media settings",
-                defaultValue: { summary: 'image' },
+                defaultValue: { summary: 2 },
             },
             name: 'Media type',
             description: "Choose media type to display",
             options: ['image', 'video'],
+            control: { type: 'radio' },
+            defaultValue: [2],
+            required: true,
+        },
+        numberOfCols: {
+            table: {
+                category: "Single media settings",
+                defaultValue: { summary: '2' },
+            },
+            name: 'Number of columns',
+            description: "Choose the number of columns for the media grid",
+            options: [1, 2, 3, 4],
             control: { type: 'radio' },
             defaultValue: ['image'],
             required: true,
@@ -35,13 +47,14 @@ export default {
 
 interface SingleMediaStoryProps {
     mediaType: string;
+    numberOfCols: number;
 }
 
-const Template: Story<SingleMediaStoryProps> = (args: SingleMediaStoryProps) => {
+function createMediaElement(mediaType) {
     const singleMedia = document.createElement('toujou-single-media');
     singleMedia.classList.add('single-media');
 
-    if (args.mediaType === 'image') {
+    if (mediaType === 'image') {
         const mediaImage = document.createElement('img');
         mediaImage.classList.add('single-media__image');
         mediaImage.setAttribute('src', 'https://picsum.photos/1600/900');
@@ -57,10 +70,24 @@ const Template: Story<SingleMediaStoryProps> = (args: SingleMediaStoryProps) => 
     }
 
     return singleMedia;
+}
+
+const Template: Story<SingleMediaStoryProps> = (args: SingleMediaStoryProps) => {
+    const mediaGrid = document.createElement('div');
+    mediaGrid.classList.add('media-grid');
+    mediaGrid.setAttribute('media-grid-column-number', args.numberOfCols.toString());
+
+    for(let i = 0; i < args.numberOfCols; i++) {
+        const mediaEl = createMediaElement(args.mediaType);
+        mediaGrid.appendChild(mediaEl)
+    }
+
+    return mediaGrid;
 };
 
-export const SingleMedia = Template.bind({});
+export const MediaGrid = Template.bind({});
 
-SingleMedia.args = {
+MediaGrid.args = {
     mediaType: 'image',
+    numberOfCols: 2,
 }
