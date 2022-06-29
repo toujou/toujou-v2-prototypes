@@ -8,10 +8,6 @@ export class ToujouButton extends HTMLButtonElement {
 
     constructor() {
         super();
-        this.addEventListener('click', () => {
-            console.log('TOUJOU BUTTON CLICKED!!!!!');
-            this.dispatchEvent(new CustomEvent('test-test', { bubbles: true, composed: true }))
-        });
     }
 
     connectedCallback() {
