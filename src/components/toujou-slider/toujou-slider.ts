@@ -63,6 +63,54 @@ export class ToujouSlider extends LitElement {
     @property()
     private splideSlider: any;
 
+    /**
+     * Number of slides to show per "page"
+     * Docs: https://splidejs.com/guides/options/#perpage
+     */
+    @property({ reflect: true, attribute: 'slides-to-show' })
+    slidesToShow: number = 1;
+
+    /**
+     * Number of slider to advance per move
+     * Docs: https://splidejs.com/guides/options/#permove
+     */
+    @property({ reflect: true, attribute: 'slides-per-move' })
+    slidesPerMove: number = 1;
+
+    /**
+     * Type of slider. Valid values are "loop", "slide" and "fade"
+     * Docs: https://splidejs.com/guides/options/#type
+     */
+    @property({ reflect: true, attribute: 'slider-type' })
+    sliderType: 'loop' | 'slide' | 'fade' = 'loop';
+
+    /**
+     * Gap between the slides
+     * Docs: https://splidejs.com/guides/options/#gap
+     */
+    @property({ reflect: true, attribute: 'slider-gap' })
+    sliderGap: string = '0';
+
+    /**
+     * Duration between automatic moves when autoplay is active
+     * Docs: https://splidejs.com/guides/options/#interval
+     */
+    @property({ reflect: true, attribute: 'autoplay-interval' })
+    autoplayInterval: string = '6000';
+
+    /**
+     * Stringified JSON with object defining the breakpoints for the slider
+     * Docs: https://splidejs.com/guides/options/#breakpoints
+     */
+    @property({ reflect: true, attribute: 'slider-breakpoints' })
+    sliderBreakpoints: string | null = null;
+
+    @property({ reflect: true, attribute: 'slider-padding' })
+    sliderPadding: string = '0';
+
+    @property({ reflect: true, attribute: 'slider-focus-center' })
+    sliderFocusCenter: string | boolean = false;
+
     constructor() {
         super();
 
@@ -96,11 +144,31 @@ export class ToujouSlider extends LitElement {
                 pagination: 'splide__pagination slider-bullets',
                 page: 'splide__pagination__page slider-bullets__bullet',
             },
-            type: 'loop',
-            rewind: true,
+            type: this.sliderType,
             autoplay: this.autoplay,
+            interval: this.autoplayInterval,
             pauseOnHover: this.autoplay,
             pauseOnFocus: this.autoplay,
+            perPage: this.slidesToShow,
+            perMove: this.slidesPerMove,
+            gap: this.sliderGap,
+            breakpoints: this.sliderBreakpoints,
+            reducedMotion: {
+                speed: 0,
+                rewindSpeed: 0,
+                autoplay: 'pause'
+            },
+            padding: this.sliderPadding,
+
+        }
+
+        if (this.sliderFocusCenter === 'true') {
+            sliderOptions.focus = 'center';
+            sliderOptions.trimSpace = false;
+        }
+
+        if (this.sliderBreakpoints) {
+            sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
         }
 
         // @ts-ignore

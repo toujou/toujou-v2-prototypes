@@ -2,22 +2,46 @@
 The `<toujou-slider>` renders a slider on the page, using the [Splide](https://splidejs.com/guides/getting-started) library.
 
 1. [ Useful links ](#toujou-slider-useful-links)
+
 2. [ Child components ](#toujou-slider-child-components)
+
 3. [ Markup exmaple ](#toujou-slider-example)
+
 4. [ Attributes ](#toujou-slider-attributes)
-    1. [ Slider design ](#toujou-slider-attributes-design)
-    2. [ Fullwidth ](#toujou-slider-attributes-fullwidth)
-    3. [ Autoplay ](#toujou-slider-attributes-autoplay)
-        1. [ Autoplay duration ](#toujou-slider-attributes-autoplay-duration)
-    4. [ Show count ](#toujou-slider-attributes-show-count)
+
+    4.1. [ Slider design ](#toujou-slider-attributes-design)
+
+    4.2. [ Fullwidth ](#toujou-slider-attributes-fullwidth)
+
+    4.3. [ Autoplay ](#toujou-slider-attributes-autoplay)
+
+    4.4. [ Autoplay duration ](#toujou-slider-attributes-autoplay-duration)
+
+    4.4.1. [ Show count ](#toujou-slider-attributes-show-count)
+
+    4.5. [ Slides to show ](#toujou-slider-attributes-slides-to-show)
+
+    4.6. [ Slides to move ](#toujou-slider-attributes-slides-to-move)
+
+    4.7. [ Slider type ](#toujou-slider-attributes-slider-type)
+
+    4.8. [ Slider gap ](#toujou-slider-attributes-slider-gap)
+
+    4.9. [ Slider breakpoints ](#toujou-slider-attributes-slider-breakpoints)
+
+    4.10. [ Slider padding ](#toujou-slider-attributes-slider-padding)
+
+    4.11. [ Slider focus center ](#toujou-slider-attributes-slider-focus-center)
+
 5. [ Default options ](#toujou-slider-default-options)
+
 
 
 <a name="toujou-slider-useful-link"></a>
 
 ## 1. Useful links
 - [Splide structure](https://splidejs.com/guides/structure/)
-- [Splide option](https://splidejs.com/guides/options/)
+- [Splide options](https://splidejs.com/guides/options/)
 - [Splide APIs](https://splidejs.com/guides/apis/)
 - [Splide events](https://splidejs.com/guides/events/)
 
@@ -128,7 +152,7 @@ Example:
 
 <a name="toujou-slider-attributes-autoplay-duration"></a>
 
-#### 4.4. Autoplay duration
+#### 4.3.1. Autoplay duration
 We can set custom intervals for each slide by adding the `data-splide-interval="6000">` attribute to the `.toujou-slider__slide` elements
 
 Example:
@@ -141,7 +165,7 @@ Example:
 
 <a name="toujou-slider-attributes-show-count"></a>
 
-### 4.5. show-count
+### 4.4. show-count
 We can show a "count" element after the slider by adding the `show-count` attribute. The count element shows the index of the current active slide and the total number of slides, which may help the users when there are many slides.
 
 Example:
@@ -150,6 +174,112 @@ Example:
 ...
 </toujou-slider>
 ```
+
+<a name="toujou-slider-attributes-slides-to-show"></a>
+
+### 4.5 slides to show
+We can define how many slides to show per page with the `slides-to-show` attribute. Default is `1`.
+
+Example:
+```html
+<toujou-slider class="toujou-slider" slider-design="primary" slides-to-show="3">
+...
+</toujou-slider>
+```
+
+<a name="toujou-slider-attributes-slides-to-move"></a>
+
+### 4.6 slides to move
+We can define how many slides to advance on each move with the `slides-per-move` attribute. Default is `1`.
+
+Example:
+```html
+<toujou-slider class="toujou-slider" slider-design="primary" slides-to-show="2" slides-per-move="2">
+...
+</toujou-slider>
+```
+
+<a name="toujou-slider-attributes-slider-type"></a>
+
+### 4.7 slider type
+We can choose between 3 different slider types: "loop", "slide" and "fade". Default is `loop`
+
+- "loop": A carousel that loops around when it gets to the end
+- "slide": Does not loop once it gets to the last slide
+- "fade": It has a fade transition between slides, but doesn't support the "perPage" option
+
+Example:
+```html
+<toujou-slider class="toujou-slider" slider-design="primary" slider-type="slide">
+...
+</toujou-slider>
+```
+
+<a name="toujou-slider-attributes-slider-gap"></a>
+
+### 4.8 slider gap
+Define a gap between the slides. Any valid css gap value is also valid here. Default is `0`
+
+Example:
+```html
+<toujou-slider class="toujou-slider" slider-design="primary" slider-gap="1rem">
+...
+</toujou-slider>
+```
+
+<a name="toujou-slider-attributes-slider-breakpoints"></a>
+
+### 4.9 slider breakpoints
+We can also define different settings for each breakpoint, for instance to show a different number of slider on mobile, tablet and desktop.
+
+The value must be a valid stringified JSON object. Default is `{}`.
+
+Example:
+```html
+<toujou-slider
+    class="toujou-slider"
+    slider-design="primary"
+    slider-breakpoints='{"640":{"perPage":1},"768":{"perPage":2},"1024":{"perPage":3},"1440":{"perPage":4}}'>
+...
+</toujou-slider>
+```
+
+<a name="toujou-slider-attributes-padding"></a>
+
+### 4.10 slider padding
+With the `slider-padding` attribute we can define how much of the previous and next slides we want to see at the sides of the slider.
+
+Any valid css size value is also a valid padding value here
+
+Example:
+```html
+<toujou-slider
+    class="toujou-slider"
+    slider-design="primary"
+    slider-padding="1rem">
+...
+</toujou-slider>
+```
+
+<a name="toujou-slider-attributes-focus-center"></a>
+
+### 4.10 slider focus center
+With the `slider-focus-center` attribute we can define if the active slide is always shown in the center, event when we are at the first of last slides.
+
+The "focus center" option works only with the `slider-type="slide"`.
+
+It accepts either `true` or `false`.
+
+Example:
+```html
+<toujou-slider
+    class="toujou-slider"
+    slider-design="primary"
+    slider-focus-center="false">
+...
+</toujou-slider>
+```
+
 
 <a name="toujou-slider-default-options"></a>
 
@@ -162,10 +292,29 @@ const sliderOptions = {
         pagination: 'splide__pagination slider-bullets',
         page: 'splide__pagination__page slider-bullets__bullet',
     },
-    type: 'loop',
-    rewind: true,
+    type: this.sliderType,
     autoplay: this.autoplay,
+    interval: this.autoplayInterval,
     pauseOnHover: this.autoplay,
     pauseOnFocus: this.autoplay,
+    perPage: this.slidesToShow,
+    perMove: this.slidesPerMove,
+    gap: this.sliderGap,
+    breakpoints: this.sliderBreakpoints,
+    reducedMotion: {
+        speed: 0,
+        rewindSpeed: 0,
+        autoplay: 'pause'
+    },
+    padding: this.sliderPadding,
+}
+
+if (this.sliderFocusCenter === 'true') {
+    sliderOptions.focus = 'center';
+    sliderOptions.trimSpace = false;
+}
+
+if (this.sliderBreakpoints) {
+    sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
 }
 ```

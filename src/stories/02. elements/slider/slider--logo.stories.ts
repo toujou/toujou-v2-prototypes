@@ -89,14 +89,17 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
     return `       
         <toujou-slider
             class="slider"
+            is-logo-slider
             aria-label="Toujou slider example"
             slider-design="${args.designColor}"
             ${args.isFullwidth ? 'slider-fullwidth' : ''}
             ${args.showCount ? 'show-count' : ''}
             ${args.autoplay ? 'auto-play' : ''}
             auto-play-interval="${args.autoplayInterval}"
-            slides-to-show="1"
-            slider-type="loop">
+            slides-per-move="1"
+            slider-type="loop"
+            slider-gap="var(--spacing-normal)"
+            slider-breakpoints='{"640":{"perPage":2},"768":{"perPage":3},"840":{"perPage":4},"1024":{"perPage":4},"1240":{"perPage":5}}'>
             <div class="splide slider__slider">
                 <div class="splide__arrows">
                     <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
@@ -111,27 +114,37 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
+                                <img class="single-media__image" src="https://picsum.photos/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <img class="single-media__image" src="https://picsum.photos/1601/900" alt="Nice image">
+                                <img class="single-media__image" src="https://picsum.photos/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <img class="toujou-single-media__image" src="https://picsum.photos/1602/900" alt="Nice image">
+                                <img class="single-media__image" src="https://picsum.photos/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <img class="single-media__image" src="https://picsum.photos/1603/900" alt="Nice image">
+                                <img class="single-media__image" src="https://picsum.photos/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <img class="single-media__image" src="https://picsum.photos/1604/900" alt="Nice image">
+                                <img class="single-media__image" src="https://picsum.photos/200" alt="Nice image">
+                            </toujou-single-media>
+                        </li>
+                        <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <img class="single-media__image" src="https://picsum.photos/200" alt="Nice image">
+                            </toujou-single-media>
+                        </li>
+                        <li class="splide__slide slider__slide" data-splide-interval="${args.autoplayInterval * 1000}">
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <img class="single-media__image" src="https://picsum.photos/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
                     </ul>
@@ -150,9 +163,9 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
     `;
 };
 
-export const Slider = Template.bind({});
+export const SliderLogo = Template.bind({});
 
-Slider.args = {
+SliderLogo.args = {
     designColor: 'default',
     showCount: true,
     isFullwidth: false,
