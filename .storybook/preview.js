@@ -11,7 +11,12 @@ import { badgeCustomConfig } from "./configUtils/badgeCustomConfig.js";
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { customViewports } from "./configUtils/customViewports.js";
 
+import toujouTheme from "./toujouTheme";
+
 export const parameters = {
+  docs: {
+    theme: toujouTheme,
+  },
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {

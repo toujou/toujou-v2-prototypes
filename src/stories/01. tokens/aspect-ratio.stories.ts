@@ -16,6 +16,7 @@ const ShadowsTemplate = () => {
             <div class="tokens-demo__ratio-box ratio-4-3">4 / 3</div>
             <div class="tokens-demo__ratio-box ratio-golden">Golden</div>
             <div class="tokens-demo__ratio-box ratio-16-9">16 / 9</div>
+            <div class="tokens-demo__ratio-box ratio-3-1">3 / 1</div>
         </div>        
     `;
 }

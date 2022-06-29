@@ -17,3 +17,7 @@
 .ratio-golden {
     aspect-ratio: var(--aspect-ratio-golden);
 }
+
+.ratio-3-1 {
+    aspect-ratio: var(--aspect-ratio-3-1);
+}

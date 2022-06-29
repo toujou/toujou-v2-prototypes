@@ -63,7 +63,7 @@
 }
 
 .tokens-demo__ratio-box {
-    background-color: var(--color-bg);
+    background-color: lightpink;
     height: auto;
     width: 100%;
     max-width: 260px;
