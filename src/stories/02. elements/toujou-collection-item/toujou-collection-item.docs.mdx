@@ -65,12 +65,12 @@ Markup Example (as item collection):
 There are a couple of attribute that allow us to customize the `<toujou-card>` element
 
 
-### item type
+### item type <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 The `item-type` attribute tells us what kind of page the item is rendering. It may be used by our JS or CSS to target items of a certain page type.
 
 Example: `item-type="default"` or `item-type="trip"`
 
-### item design
+### item design <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 The `item-design` attribute reflects the "Element design" option chosen in the backend.
 It is used to change the style of the items, so we can make an item standout, for instance by giving it a "primary" design
 
@@ -78,7 +78,7 @@ Example: `item-design="primary"` or `item-design="inverted"`.
 
 > ℹ️ Currently the "Element design" isn't available on the "Selected pages as list" element!
 
-### item orientation
+### item orientation <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 The `item-orientation` defines if the image is rendered above the content or next to it. On mobile devices the image is always rendered above the text.
 
 Example: `item-orientation="vertical"` (for the "cards") or `item-orientation="horizontal"` (for the "list items")

@@ -43,8 +43,8 @@
     --color-font-light: hsl(var(--color-font-light-h) var(--color-font-light-s) var(--color-font-light-l));
 
     --color-font-dark-h: 200;
-    --color-font-dark-s: 19%;
-    --color-font-dark-l: 18%;
+    --color-font-dark-s: 18%;
+    --color-font-dark-l: 20%;
     --color-font-dark: hsl(var(--color-font-dark-h) var(--color-font-dark-s) var(--color-font-dark-l));
 
     --color-bg-h: 0;

@@ -17,7 +17,7 @@ The `<toujou-text-block>` element is rendered when we use the Textmedia content 
 
 ## Markup example
 ```html
-<toujou-text-block class="text-block" text-blocks-column-count="1">
+<toujou-text-block class="text-block" text-blocks-column-count="1" text-block-media-position="above">
     <toujou-text-block-column class="text-block-column">
         <div class="text-block__content">
             <h1>Left aligned H1 headline</h1>
@@ -32,7 +32,7 @@ The `<toujou-text-block>` element is rendered when we use the Textmedia content 
 There are several attributes that allow us to customize the `<toujou-text-block>` element.
 
 
-### text-block-column-count
+### text-block-column-count <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 The `text-block-column-count` attribute allows us to define the number of columns we want to use to display the content (on desktop)
 Examples:
 
@@ -41,7 +41,7 @@ Examples:
 | `text-block-column-count` | 1, 2, 3, 4 | `<toujou-text-block class="text-block" text-blocks-column-count="1">`  |
 
 
-### text-block-media-position
+### text-block-media-position <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 The `text-block-media-position` allows us to define where we want to place the media in relation to the text.
 
 Examples:
