@@ -12,6 +12,7 @@ const ColorsTemplate = () => {
         
         <h2 class="tokens-demo__subtitle margin-top-xl">Extra colors</h2>
         <div class="tokens-demo__color-stripe bg-color-black-o-75">Black 75% opacity</div>
+        <div class="tokens-demo__color-stripe bg-color-black-o-10">Black 10% opacity</div>
         
     `;
 }

@@ -28,6 +28,13 @@ ul.slider-bullets {
     z-index: 1;
 }
 
+.slider[content-type="teaser"] .slider-bullets {
+    --slider-bullets-position: relative;
+    --slider-bullets-inset: auto;
+    --slider-bullets-margin: var(--spacing-normal) 0 0;
+    --slider-bullets-bullet-background-color: var(--color-black-o-10);
+}
+
 .slider[slider-design="default"] .slider-bullets {
     --slider-bullets-icon-default-background-color: var(--color-font-light);
     --slider-bullets-icon-active-background-color: var(--color-font);

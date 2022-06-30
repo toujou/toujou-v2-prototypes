@@ -75,4 +75,5 @@
     --color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);
 
     --color-black-o-75: hsl(0 0% 0% / 75%);
+    --color-black-o-10: hsl(0 0% 0% / 10%);
 }

@@ -25,6 +25,10 @@
     margin: var(--teaser-margin);
 }
 
+.slider .teaser {
+    --teaser-width: 100%;
+}
+
 .teaser[teaser-type="media"] {
     --teaser-image-aspect-ratio: auto;
 }
