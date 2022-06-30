@@ -1,6 +1,7 @@
 .collection-item {
     --collection-item-text-color: var(--color-font);
 
+    --collection-item-position: relative;
     --collection-item-display: flex;
     --collection-item-width: 100%;
     --collection-item-max-width: 100%;
@@ -17,6 +18,7 @@
     --collection-item-figure-overflow: hidden;
 
     --collection-item-image-ratio: var(--aspect-ratio-4-3);
+    --collection-item-image-object-fit: cover;
 
     --collection-item-categories-position: absolute;
     --collection-item-categories-top: var(--spacing-normal);
@@ -81,6 +83,11 @@
     --collection-item-country-margin: 0;
 
     --collection-item-bottom-padding: var(--spacing-normal);
+    --collection-item-bottom-position: absolute;
+    --collection-item-bottom-bottom: 0;
+    --collection-item-bottom-left: 0;
+    --collection-item-bottom-width: 100%;
+    --collection-item-bottom-background-color: var(--color-black-o-75);
 
     --collection-item-title-font-size: var(--font-size-ms);
     --collection-item-title-color: var(--color-font-dark);
@@ -127,6 +134,7 @@
     --collection-item-button-text-decoration: none;
     --collection-item-button-text-color: var(--color-primary);
 
+    position: var(--collection-item-position);
     display: var(--collection-item-display);
     flex-direction: var(--collection-item-flex-direction);
     width: var(--collection-item-width);
@@ -171,6 +179,12 @@
     --collection-item-info-icon-color: var(--color-font-light);
 }
 
+.collection-item[item-type="product"][item-orientation="vertical"] {
+    --collection-item-bottom-padding: var(--spacing-s) var(--spacing-normal);
+    --collection-item-image-ratio: var(--aspect-ratio-16-9);
+    --collection-item-title-color: var(--color-bg);
+}
+
 .collection-item__top {
     position: var(--collection-item-top-position);
     margin: var(--collection-item-top-margin);
@@ -184,6 +198,7 @@
 
 .collection-item__image {
     aspect-ratio: var(--collection-item-image-ratio);
+    object-fit: var(--collection-item-image-object-fit);
 }
 
 .collection-item__categories {
@@ -266,6 +281,14 @@
 
 .collection-item__bottom {
     padding: var(--collection-item-bottom-padding);
+}
+
+.collection-item[item-type="product"][item-orientation="vertical"] .collection-item__bottom {
+    position: var(--collection-item-bottom-position);
+    bottom: var(--collection-item-bottom-bottom);
+    left: var(--collection-item-bottom-left);
+    width: var(--collection-item-bottom-width);
+    background-color: var(--collection-item-bottom-background-color);
 }
 
 .collection-item__title {

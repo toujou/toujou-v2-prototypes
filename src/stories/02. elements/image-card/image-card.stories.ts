@@ -82,6 +82,7 @@ function createImageCardLink(imageFormat: string, cardVariant: string): string {
         </a>
     `;
 }
+
 function createImageCardElement(imageFormat: string, cardVariant: string): string {
     return `
         <toujou-image-card class="image-card" image-format="${imageFormat}" card-variant="${cardVariant}">
