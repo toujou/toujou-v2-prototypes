@@ -1,0 +1,40 @@
+# teaser
+
+The teaser element render an image and a text side by side (in a column on mobile).
+
+## Markup Example
+```html
+<toujou-teaser class="teaser" teaser-type="cinema" image-width="50" image-side="left">
+    <div class="teaser__figure">
+        <img class="teaser__image" src="https://picsum.photos/1024" alt="nice image" />
+    </div>
+    <div class="teaser__content">
+        <h3>Nice headline</h3>
+        <p>This is a simple element containing a headline and this text. There are no restrictions for the amount of content. So feel free to add as much information as long as it helps your story or your customer.</p>
+    </div>
+</toujou-teaser>
+```
+
+## Attribute
+There are a couple of attributes that allow us to customize the teasers
+
+### teaser-type
+When the `teaser-type` is set to `cinema` the teaser image will have a 16:9 format. If it is set to `media` the teaser image will have its natural format.
+
+Possible values are `cinema` and `media`.
+
+This attribute is set depending on the chosen content element.
+
+### image-width
+This attribute defines how wide the teaser image in relation to the teaser it self.
+
+Possible values are `50`, `33`, `66` (which refer to width percentage)
+
+This attribute is set depending on the chosen content element.
+
+### image-side
+This attribute changes if the image is rendered on the right or left side of the teaser.
+
+Possible values are `left` and `right`.
+
+This attribute is set depending on the chosen content element.
