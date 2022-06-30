@@ -1,0 +1,88 @@
+# Header element
+The header element render a `<header>` element with an image and header content on the page.
+
+It can be placed only on the "header" column on the pages.
+
+If there is just an image and title, the title will be shown directly on top of the image, without any background. If there is text and / or link, then the content will have a background.
+
+
+## Markup example
+```html
+<header
+    class="header"
+    text-alignment="default"
+    image-height="full"
+    accent-color="default"
+    vertical-position="mid"
+    horizontal-position="center"
+    content-size="half">
+
+    <img class="header__image" src="https://picsum.photos/2400" alt="quote image">
+
+    <div class="header__content">
+        <h1 class="header__title font--default">This is a headline</h1>
+        <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="#" class="button header__cta" button-variant="primary">Let's go</a>
+    </div>
+</header>
+```
+
+## Attributes
+There are a couple of attributes that allow us to customize the header element
+
+### 1. image-height <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's image height in relation to the viewport.
+
+Corresponds to the "Header Imageheight" option.
+
+Possible values are `default`, `fullscreen`, `halfscreen` and `quarterscreen`. Default is `default` (80%).
+
+
+### 2. vertical-position <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's content vertical position in relation to the header element.
+
+Corresponds to the "Vertical Position" option.
+
+Possible values are `top`, `mid` and `bottom`. Default is `mid`;
+
+
+### 3. horizontal-position <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's content horizontal position in relation to the header element.
+
+Corresponds to the "Horizontal Position" option.
+
+Possible values are `left`, `center` and `right`. Default is `center`.
+
+
+### 4. content-size <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's content width in relation to the header element.
+
+Corresponds to the "Headercontent Size" option.
+
+Possible values are `full`, `half`, `third`,  and `quarter`. Default is `half`.
+
+
+### 5. headline-size <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's headline size.
+
+Corresponds to the "Headline Size" option.
+
+Possible values are `default`, `alpha`, `beta`, `gamma`, `delta`, `epsilon`,  and `omega`. Default is `default`.
+
+
+### 6. text-alignment <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's content text alignment.
+
+Corresponds to the "Alignment" option.
+
+Possible values are `default`, `center`, `left`, and `right`. Default is `default`.
+
+
+### 7. accent-control <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Changes the color of the headline and button elements in the header content.
+
+Corresponds to the "Accent-Color" option.
+
+Possible values are `default`, `primary`, `secondary` and `grey`. Default is `default`.
+
+

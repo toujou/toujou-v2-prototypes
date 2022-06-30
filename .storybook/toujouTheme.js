@@ -15,5 +15,5 @@ export default create({
     appBg: bgColor,
     barBg: bgColor,
     inputBg: bgColor,
-    colorSecondary: '#0092b7'
+    colorSecondary: '#00d7fd'
 })
