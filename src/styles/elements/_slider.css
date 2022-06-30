@@ -65,7 +65,8 @@
     --slider-control-icon-hover-color: var(--color-bg);
 }
 
-.slider[slider-fullwidth] {
+.slider[slider-fullwidth],
+.header .slider {
     --slider-width: var(--content-fullwidth);
     --slider-max-width: var(--content-fullwidth);
 }

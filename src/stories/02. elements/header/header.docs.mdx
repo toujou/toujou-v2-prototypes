@@ -8,27 +8,20 @@ If there is just an image and title, the title will be shown directly on top of 
 
 ## Markup example
 ```html
-<header
-    class="header"
-    text-alignment="default"
-    image-height="full"
-    accent-color="default"
-    vertical-position="mid"
-    horizontal-position="center"
-    content-size="half">
+<header class="header" image-height="full">
+    <img class="header__image" src="https://picsum.photos/2000" alt="quote image">
 
-    <img class="header__image" src="https://picsum.photos/2400" alt="quote image">
+    <div class="header-content" accent-color="grey" vertical-position="bottom" horizontal-position="right" content-size="full" text-alignment="left">
+        <h1 class="header-content__title font--delta">This is a headline</h1>
 
-    <div class="header__content">
-        <h1 class="header__title font--default">This is a headline</h1>
-        <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <a href="#" class="button header__cta" button-variant="primary">Let's go</a>
+        <p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="#" class="button header-content__cta" button-variant="font">Let's go</a>
     </div>
 </header>
 ```
 
 ## Attributes
-There are a couple of attributes that allow us to customize the header element
+There are a couple of attributes that allow us to customize the header element. Some attributes must be added to the `header` element, others to the `.header-content` element
 
 ### 1. image-height <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 Allows us to set the header's image height in relation to the viewport.

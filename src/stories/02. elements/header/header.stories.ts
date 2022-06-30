@@ -11,7 +11,7 @@ export default {
     decorators: [withXD],
     parameters: {
         design: {
-            artboardUrl: 'https://xd.adobe.com/view/c5b5ae33-8b35-4536-be9f-a39f5a3c447f-90e6/screen/8273eb7a-a8b4-4953-be35-18a8929d90c5/Desktop',
+            artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/3edbd260-09a0-4b35-ad8a-73b46782965e/Desktop',
         },
         badges: [TOUJOU_BADGES.TESTING],
         docs: {
@@ -132,28 +132,26 @@ interface HeaderStoryProps {
 function getHeaderContentText(accentColor: string) {
     const buttonColor = accentColor === 'default' ? 'primary' : accentColor === 'grey' ? 'font' : accentColor;
 
-    console.log('xxx', accentColor, buttonColor);
     return `
-    <p class="header__text">
+    <p class="header-content__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    <a href="#" class="button header__cta" button-variant="${buttonColor}">Let's go</a>
+    <a href="#" class="button header-content__cta" button-variant="${buttonColor}">Let's go</a>
 `
 }
 
 const Template: Story<HeaderStoryProps> = (args: HeaderStoryProps) => {
     return `
-        <header
-            class="header"
-            text-alignment="${args.headerTextAlignment}" ${args.isTitleOnly ? 'is-title-only' : ''}
-            image-height="${args.imageHeight}"
-            accent-color="${args.accentColor}"
-            vertical-position="${args.headerVerticalPos}"
-            horizontal-position="${args.headerHorizontalPos}"
-            content-size="${args.headerContentSize}">
-            <img class="header__image" src="https://picsum.photos/2400" alt="quote image" />
+        <header class="header" image-height="${args.imageHeight}">
+            <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />
 
-            <div class="header__content">
-                <h1 class="header__title font--${args.headlineSize}">This is a headline</h1>
+            <div class="header-content"
+                accent-color="${args.accentColor}"
+                vertical-position="${args.headerVerticalPos}"
+                horizontal-position="${args.headerHorizontalPos}"
+                content-size="${args.headerContentSize}"
+                text-alignment="${args.headerTextAlignment}"
+                ${args.isTitleOnly ? 'is-title-only' : ''}>
+                <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
                 ${args.isTitleOnly ? '' : getHeaderContentText(args.accentColor)}
             </div>
 

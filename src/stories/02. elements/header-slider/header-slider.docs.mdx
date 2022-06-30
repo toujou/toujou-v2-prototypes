@@ -1,0 +1,117 @@
+# Header slider element
+The header slider render a slider with image and text content on the header section of the page.
+
+It can be placed only on the "header" column on the pages.
+
+Unlike the "header" element, the header slider element does not allow for a link and has fewer options.
+
+## Markup example
+```html
+<header class="header" image-height="default" header-type="slider">
+
+    <toujou-slider
+        class="slider"
+        aria-label="Toujou slider example"
+        slider-design="primary"
+        slides-to-show="1"
+        slider-type="loop">
+        <div class="splide slider__slider">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
+                    <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
+                </button>
+                <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
+                    <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
+                </button>
+            </div>
+
+            <div class="splide__track slider__track">
+                <ul class="splide__list slider__list">
+                    <li class="splide__slide slider__slide" data-splide-interval="1000">
+                        <div class="slider__item" slot="slider-item">
+                            <toujou-single-media class="single-media">
+                                <img class="single-media__image" src="https://picsum.photos/2000" alt="Nice image">
+                            </toujou-single-media>
+                            <div class="header-content"
+                                accent-color="default"
+                                vertical-position="mid"
+                                horizontal-position="center"
+                                content-size="half"
+                                text-alignment="default">
+                                <p class="header-content__text">Slide 1.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide slider__slide" data-splide-interval="1000">
+                        <div class="slider__item" slot="slider-item">
+                            <toujou-single-media class="single-media">
+                                <img class="single-media__image" src="https://picsum.photos/2001" alt="Nice image">
+                            </toujou-single-media>
+                            <div class="header-content"
+                                accent-color="default"
+                                vertical-position="mid"
+                                horizontal-position="center"
+                                content-size="half"
+                                text-alignment="default">
+                                <p class="header-content__text">Slide 2.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="splide__progress slider-progress">
+                <div class="splide__progress__bar slider-progress__bar"></div>
+            </div>
+        </div>
+
+        <toujou-slider-count class="slider-count">
+            <span class="slider-count__current"></span>
+            <span class="slider-count__separator">of</span>
+            <span class="slider-count__total"></span>
+        </toujou-slider-count>
+    </toujou-slider>
+
+</header>
+```
+
+## Attributes
+There are a couple of attributes that allow us to customize the header element. Some attributes must be added to the `header` element, others to the `.header-content` element
+
+### 1. image-height <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's slider height in relation to the viewport.
+
+Corresponds to the "Header Imageheight" option.
+
+Possible values are `default`, `fullscreen`, `halfscreen` and `quarterscreen`. Default is `default` (80%).
+
+
+### 2. vertical-position <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's content vertical position in relation to the header element.
+
+Corresponds to the "Vertical Position" option.
+
+Possible values are `top`, `mid` and `bottom`. Default is `mid`;
+
+
+### 3. horizontal-position <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's content horizontal position in relation to the header element.
+
+Corresponds to the "Horizontal Position" option.
+
+Possible values are `left`, `center` and `right`. Default is `center`.
+
+
+### 4. content-size <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Allows us to set the header's content width in relation to the header element.
+
+Corresponds to the "Headercontent Size" option.
+
+Possible values are `full`, `half`, `third`,  and `quarter`. Default is `half`.
+
+
+### 5. header-type
+The `header-type` must be set to `header-type="slider"` so the different element inside the slider have the correct styles
+
+
