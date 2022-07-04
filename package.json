@@ -22,7 +22,9 @@
     "copy-icons-folder": "sh shell-scripts/copy-icons-folder.sh",
     "deploy:sb": "gh-pages -d storybook-static",
     "deploy:full": "npm run build && npm run build:sb && npm run deploy:sb",
-    "test": "web-test-runner",
+    "test:unit": "web-test-runner",
+    "test:e2e": "cypress open",
+    "test:all": "npm run test:unit",
     "lint:css": "npx stylelint ./src/styles/**/*.css"
   },
   "dependencies": {
@@ -30,6 +32,7 @@
     "@splidejs/splide": "^4.0.7",
     "@storybook/addons": "^6.5.9",
     "@storybook/theming": "^6.5.9",
+    "cypress": "^10.3.0",
     "lit": "^2.0.2",
     "storybook-addon-xd-designs": "^6.0.0"
   },
@@ -50,8 +53,9 @@
     "chai": "^4.3.6",
     "gh-pages": "^4.0.0",
     "i": "^0.3.7",
+    "install": "^0.13.0",
     "mocha": "^10.0.0",
-    "npm": "^8.11.0",
+    "npm": "^8.13.2",
     "postcss": "^8.4.14",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-postcss": "^4.0.2",
