@@ -3,7 +3,7 @@
     --card-collection-flex-wrap: wrap;
     --card-collection-align-items: center;
     --card-collection-justify-content: center;
-    --card-collection-gap: var(--spacing-normal);
+    --card-collection-gap: var(--content-spacing-between-columns);
     --card-collection-width: var(--content-width-with-padding);
     --card-collection-max-width: var(--content-wide-max-width);
     --card-collection-margin: 0 auto;
