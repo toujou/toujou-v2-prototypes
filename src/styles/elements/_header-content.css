@@ -88,6 +88,10 @@
     --header-content-width: calc(100% - calc(var(--header-content-padding) * 2));
 }
 
+.header[header-type="slider"] .header-content[content-size="full"] {
+    --header-content-width: calc(100% - calc(var(--spacing-xl) * 3));
+}
+
 .header-content[content-size="half"] {
     --header-content-width: 50%;
 }
