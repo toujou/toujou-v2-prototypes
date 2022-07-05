@@ -3,7 +3,7 @@
     --content-card-grid-flex-wrap: wrap;
     --content-card-grid-align-items: center;
     --content-card-grid-justify-content: center;
-    --content-card-grid-gap: var(--spacing-normal);
+    --content-card-grid-gap: var(--content-spacing-between-columns);
     --content-card-grid-width: var(--content-width-with-padding);
     --content-card-grid-max-width: var(--content-wide-max-width);
     --content-card-grid-margin: 0 auto;

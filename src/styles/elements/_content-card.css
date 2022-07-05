@@ -144,6 +144,19 @@
     }
 }
 
+@media screen and (min-width: 840px) {
+    .content-card[card-direction="vertical"] {
+        --content-card-content-padding: var(--spacing-m);
+    }
+
+    .content-card[card-direction="horizontal"] {
+        --content-card-padding: var(--spacing-m);
+        --content-card-figure-flex: 0 0 calc(50% - var(--spacing-normal));
+        --content-card-content-flex: 0 0 calc(50% - var(--spacing-normal));
+        --content-card-gap: var(--spacing-l);
+    }
+}
+
 @media screen and (min-width: 960px) {
     .content-card[card-direction="vertical"] {
         --content-card-max-width: calc(calc(100% - var(--content-card-grid-gap) * 3) / 4);
