@@ -1,13 +1,23 @@
 .slider-progress {
     --slider-progress-display: none;
     --slider-progress-height: var(--spacing-xs);
-    --slider-progress-bg-color: var(--color-primary-light);
+    --slider-progress-bg-color: var(--color-font-light);
 
-    --slider-progress-bar-bg-color: var(--color-primary-dark);
+    --slider-progress-bar-bg-color: var(--color-font-dark);
 
     display: var(--slider-progress-display);
     height: var(--slider-progress-height);
     background-color: var(--slider-progress-bg-color);
+}
+
+.slider[slider-design="primary"] .slider-progress {
+    --slider-progress-bg-color: var(--color-primary-light);
+    --slider-progress-bar-bg-color: var(--color-primary-dark);
+}
+
+.slider[slider-design="secondary"] .slider-progress {
+    --slider-progress-bg-color: var(--color-secondary-light);
+    --slider-progress-bar-bg-color: var(--color-secondary-dark);
 }
 
 .slider[auto-play] .slider-progress {

@@ -356,7 +356,7 @@ describe('toujou-button with icon', () => {
         cy.get('.button .button__icon').should('exist');
     });
 
-    it.only('shows icon on the correct side', () => {
+    it('shows icon on the correct side', () => {
         cy.get('.button').then((el) => {
             // @ts-ignore
             const win = cy.state('window');
