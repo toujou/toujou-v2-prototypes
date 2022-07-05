@@ -33,6 +33,10 @@
     margin: var(--slider-margin);
 }
 
+.slider[is-logo-slider] {
+    --slider-margin: 0 auto var(--spacing-normal);
+}
+
 .slider[slider-design="default"] {
     --slider-control-default-background-color: var(--color-font);
     --slider-control-hover-background-color: var(--color-font-light);

@@ -1,5 +1,11 @@
 .slider-slide {
     aspect-ratio: var(--slider-aspect-ratio);
+    /*height: fit-content !important;*/
+}
+
+.slider[is-logo-slider] .slider-slide {
+    aspect-ratio: auto;
+    height: fit-content !important;
 }
 
 .slider-slide__media--image {

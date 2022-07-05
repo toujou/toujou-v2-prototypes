@@ -105,11 +105,27 @@ export class ToujouSlider extends LitElement {
     @property({ reflect: true, attribute: 'slider-breakpoints' })
     sliderBreakpoints: string | null = null;
 
+    /**
+     * Carousel padding
+     * https://splidejs.com/guides/options/#padding
+     */
     @property({ reflect: true, attribute: 'slider-padding' })
     sliderPadding: string = '0';
 
+    /**
+     * Center the active slide
+     * https://splidejs.com/guides/options/#focus
+     * https://splidejs.com/guides/options/#trimspace
+     */
     @property({ reflect: true, attribute: 'slider-focus-center' })
     sliderFocusCenter: string | boolean = false;
+
+    /**
+     * Define the aspect ratio of the images on the carousel
+     * https://splidejs.com/guides/options/#heightratio
+     */
+    @property({ reflect: true, attribute: 'slider-aspect-ratio' })
+    sliderAspectRatio: string = '0.5625';
 
     constructor() {
         super();
@@ -153,6 +169,7 @@ export class ToujouSlider extends LitElement {
             perMove: this.slidesPerMove,
             gap: this.sliderGap,
             breakpoints: this.sliderBreakpoints,
+            heightRatio: this.sliderAspectRatio,
             reducedMotion: {
                 speed: 0,
                 rewindSpeed: 0,

@@ -70,6 +70,7 @@ export declare class ToujouSlider extends LitElement {
     sliderBreakpoints: string | null;
     sliderPadding: string;
     sliderFocusCenter: string | boolean;
+    sliderAspectRatio: string;
     constructor();
     /**
      * Disable shadow root
