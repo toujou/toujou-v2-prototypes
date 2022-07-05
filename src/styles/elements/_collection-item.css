@@ -82,7 +82,7 @@
     --collection-item-country-color: var(--color-bg);
     --collection-item-country-margin: 0;
 
-    --collection-item-bottom-padding: var(--spacing-normal);
+    --collection-item-bottom-padding: var(--spacing-m);
     --collection-item-bottom-position: absolute;
     --collection-item-bottom-bottom: 0;
     --collection-item-bottom-left: 0;
@@ -387,10 +387,6 @@
 }
 
 @media screen and (min-width: 640px) {
-    .collection-item {
-        --collection-item-bottom-padding: var(--spacing-m);
-    }
-
     .collection-item[item-orientation="horizontal"] {
         --collection-item-flex-direction: row;
         --collection-item-top-margin: var(--spacing-normal);
