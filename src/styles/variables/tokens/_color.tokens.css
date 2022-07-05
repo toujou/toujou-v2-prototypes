@@ -36,6 +36,7 @@
     --color-font-l: 40%;
     --color-font: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l));
     --color-font-o-10: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 10%);
+    --color-font-o-20: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 20%);
 
     --color-font-light-h: 199;
     --color-font-light-s: 18%;

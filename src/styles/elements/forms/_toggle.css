@@ -31,7 +31,7 @@
 }
 
 .toggle[disabled] {
-    --toggle-track-default-color: var(--color-font-light);
+    --toggle-track-default-color: var(--color-font-o-20);
     --toggle-thumb-default-color: var(--color-font-light);
 }
 
