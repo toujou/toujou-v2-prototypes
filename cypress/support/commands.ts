@@ -35,3 +35,31 @@
 //     }
 //   }
 // }
+
+function unquote(str: string) {
+    return str.replace(/(^")|("$)/g, '');
+}
+
+/**
+ * Get a css property from an Element's "before" pseudo-element
+ * https://stackoverflow.com/questions/55516990/cypress-testing-pseudo-css-class-before
+ */
+// @ts-ignore
+Cypress.Commands.add('before', { prevSubject: 'element' }, (el: HTMLElement[], property) => {
+        const win = el[0].ownerDocument.defaultView;
+        const before = win?.getComputedStyle(el[0], 'before');
+        // @ts-ignore
+        return unquote(before.getPropertyValue(property));
+    },
+);
+
+/**
+ * Reset the hovered element (hovered with cypress-real-events)
+ */
+// @ts-ignore
+Cypress.Commands.add('resetRealHover', { prevSubject: 'element' }, () => {
+    cy.get("body").realHover({ position: "topLeft" });
+    return;
+});
+
+export {}

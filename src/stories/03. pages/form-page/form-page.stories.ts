@@ -155,19 +155,19 @@ const Template = () => {
                 </toujou-input-group>
                 
                 <toujou-input-group
-	            class="input-group"
-	            input-group-type="textarea"">
-				<label class="input-label" for="testform-1000091-textarea-1">Message</label>
-				<toujou-form-description class="orm-description">This is the input description. Hey, send us a nice message!</toujou-form-description>
-                <textarea
-                    placeholder="This is a placeholder"
-                    data-pristine-required-message="The given subject was empty."
-                    class="xxlarge form-control input input--textarea"
-                    id="testform-1000091-textarea-1"
-                    name="tx_form_formframework[testform-1000091][textarea-1]">
-                </textarea>
-                <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
-	        </toujou-input-group>
+                    class="input-group"
+                    input-group-type="textarea">
+                    <label class="input-label" for="testform-1000091-textarea-1">Textarea</label>
+                    <toujou-form-description class="form-description">This is a description</toujou-form-description>
+                    <textarea
+                        placeholder="This is a placeholder"
+                        data-pristine-required-message="The given subject was empty."
+                        class="xxlarge form-control input input--textarea"
+                        id="testform-1000091-textarea-1"
+                        name="tx_form_formframework[testform-1000091][textarea-1]">
+                    </textarea>
+                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                </toujou-input-group>
 
 	        </toujou-form-row>
 	        

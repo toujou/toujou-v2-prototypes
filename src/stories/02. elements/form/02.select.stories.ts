@@ -55,7 +55,7 @@ const Template: Story<ToujouSelectStoryProps> = (args: ToujouSelectStoryProps) =
             novalidate="true">
 
             <toujou-input-group
-                class="nput-group"
+                class="input-group"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
                 ${args.state === 'error' ? 'has-error' : ''}
                 ${args.state === 'success' ? 'has-success' : ''}

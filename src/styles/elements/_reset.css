@@ -18,6 +18,8 @@ html:focus-within {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img,
