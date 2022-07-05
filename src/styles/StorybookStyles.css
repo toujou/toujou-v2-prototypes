@@ -32,6 +32,9 @@
 @import './elements/_content-card-grid.css';
 @import './elements/_details.css';
 @import './elements/_details-accordion.css';
+@import './elements/_footer.css';
+@import './elements/_footer-column.css';
+@import './elements/_footer-content.css';
 @import './elements/_grid.css';
 @import './elements/_header.css';
 @import './elements/_header-content.css';

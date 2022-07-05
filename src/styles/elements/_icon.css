@@ -34,8 +34,28 @@
     --icon-color: var(--color-primary);
 }
 
+.icon[icon-color="primary-light"] {
+    --icon-color: var(--color-primary-light);
+}
+
+.icon[icon-color="primary-dark"] {
+    --icon-color: var(--color-primary-dark);
+}
+
 .icon[icon-color="secondary"] {
     --icon-color: var(--color-secondary);
+}
+
+.icon[icon-color="secondary-light"] {
+    --icon-color: var(--color-secondary-light);
+}
+
+.icon[icon-color="secondary-dark"] {
+    --icon-color: var(--color-secondary-dark);
+}
+
+.icon[icon-color="background"] {
+    --icon-color: var(--color-bg);
 }
 
 /* ICON SIZES */
