@@ -28,6 +28,7 @@
 
 .input:focus {
     border: var(--form-input-focus-border);
+    outline: var(--form-input-focus-border);
     outline: none;
     caret-color: var(--input-focus-caret-color);
 }
@@ -41,11 +42,14 @@
 
 .input-group[has-error] .input {
     border: var(--form-input-error-border);
+    outline: var(--form-input-error-border);
 }
 
 .input-group[has-success] .input {
-    border: var(--form-input-success-border);
     --input-color: var(--color-font);
+
+    border: var(--form-input-success-border);
+    outline: var(--form-input-success-border);
 }
 
 .input::placeholder {
@@ -60,5 +64,6 @@ input[type=number]::-webkit-outer-spin-button {
 @media (hover: hover) {
     .input:not(:focus):hover {
         border: var(--form-input-hover-border);
+        outline: var(--form-input-hover-border);
     }
 }

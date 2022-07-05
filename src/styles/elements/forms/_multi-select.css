@@ -24,7 +24,18 @@
 .multi-select:focus-within,
 .multi-select:focus-visible {
     border: var(--form-input-focus-border) !important;
+    outline: var(--form-input-focus-border) !important;
     outline: none;
+}
+
+.input-group[has-error] .multi-select {
+    border: var(--form-input-error-border);
+    outline: var(--form-input-error-border);
+}
+
+.input-group[has-success] .multi-select {
+    border: var(--form-input-success-border);
+    outline: var(--form-input-success-border);
 }
 
 .multi-select__option {
@@ -45,5 +56,5 @@
 }
 
 .input-group[input-group-type="multi-select"] {
-    --input-group-icon-right: var(--spacing-l);
+    --input-group-icon-right: var(--spacing-m);
 }

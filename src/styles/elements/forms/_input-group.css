@@ -51,6 +51,7 @@
     -webkit-mask-image: var(--input-group-icon-image);
     background-color: var(--input-group-icon-background-color);
     pointer-events: none;
+    z-index: 1;
 }
 
 .input-group[has-error]::after {
