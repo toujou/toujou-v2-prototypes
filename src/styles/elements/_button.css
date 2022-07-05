@@ -192,6 +192,7 @@
 @media (hover: hover) {
     .button:hover {
         --button-color-bg: var(--color-primary-dark);
+        --button-color-text: var(--color-bg) !important;
     }
 
     .button[button-variant="secondary"]:hover {

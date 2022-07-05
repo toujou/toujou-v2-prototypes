@@ -127,8 +127,8 @@ code {
     padding: var(--spacing-xs);
 }
 
-@media (hover: hover) {
-    a:hover {
-        color: var(--color-primary);
-    }
-}
+/*@media (hover: hover) {*/
+/*    a:hover {*/
+/*        color: var(--color-primary);*/
+/*    }*/
+/*}*/
