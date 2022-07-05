@@ -2,7 +2,7 @@
     --image-card-grid-display: flex;
     --image-card-grid-flex-wrap: wrap;
     --image-card-grid-align-items: center;
-    --image-card-grid-gap: var(--spacing-normal);
+    --image-card-grid-gap: var(--content-spacing-between-columns);
     --image-card-grid-width: var(--content-width-with-padding);
     --image-card-grid-max-width: var(--content-wide-max-width);
     --image-card-grid-margin: 0 auto;
