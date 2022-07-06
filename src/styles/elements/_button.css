@@ -192,6 +192,12 @@
 @media (hover: hover) {
     .button:hover {
         --button-color-bg: var(--color-primary-dark);
+
+        text-decoration: none;
+    }
+
+    .button[button-type="defult"]:hover,
+    .button[button-type="border"]:hover {
         --button-color-text: var(--color-bg) !important;
     }
 

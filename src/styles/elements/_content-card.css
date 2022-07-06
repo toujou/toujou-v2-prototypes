@@ -37,9 +37,7 @@
     --content-card-button-justify-content: center;
     --content-card-button-gap: var(--spacing-s);
     --content-card-button-margin: var(--spacing-s) 0;
-    --content-card-button-font-family: var(--font-family-text);
     --content-card-button-font-size: var(--font-size-normal);
-    --content-card-button-font-weight: var(--font-weight-text-bold);
     --content-card-button-color: var(--color-primary);
     --content-card-button-text-decoration: none;
 
@@ -93,9 +91,7 @@
     justify-content: var(--content-card-button-justify-content);
     gap: var(--content-card-button-gap);
     margin: var(--content-card-button-margin);
-    font-family: var(--content-card-button-font-family);
     font-size: var(--content-card-button-font-size);
-    font-weight: var(--content-card-button-font-weight);
     color: var(--content-card-button-color);
     text-decoration: var(--content-card-button-text-decoration);
 }
@@ -178,9 +174,5 @@
         --content-card-button-text-decoration: underline;
 
         color: var(--content-card-button-color);
-    }
-
-    .content-card__button:hover .icon {
-        transform: translateX(var(--spacing-xs));
     }
 }

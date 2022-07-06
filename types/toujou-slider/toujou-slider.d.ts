@@ -68,8 +68,21 @@ export declare class ToujouSlider extends LitElement {
      * Docs: https://splidejs.com/guides/options/#breakpoints
      */
     sliderBreakpoints: string | null;
+    /**
+     * Carousel padding
+     * https://splidejs.com/guides/options/#padding
+     */
     sliderPadding: string;
+    /**
+     * Center the active slide
+     * https://splidejs.com/guides/options/#focus
+     * https://splidejs.com/guides/options/#trimspace
+     */
     sliderFocusCenter: string | boolean;
+    /**
+     * Define the aspect ratio of the images on the carousel
+     * https://splidejs.com/guides/options/#heightratio
+     */
     sliderAspectRatio: string;
     constructor();
     /**
