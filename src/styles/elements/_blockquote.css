@@ -12,6 +12,10 @@
     --blockquote-author-prefix: "—";
     --blockquote-max-width: var(--content-max-width);
 
+    --blockquote-text-font-size: var(--font-size-m);
+    --blockquote-text-line-height: 1.5;
+    --blockquote-text-margin: 0;
+
     display: grid;
     grid-gap: var(--blockquote-gap);
     grid-template-columns: var(--blockquote-grid-template-columns);
@@ -71,7 +75,9 @@
 }
 
 .blockquote__text {
-    margin: 0;
+    font-size: var(--blockquote-text-font-size);
+    line-height: var(--blockquote-text-line-height);
+    margin: var(--blockquote-text-margin);
 }
 
 .blockquote__author {
