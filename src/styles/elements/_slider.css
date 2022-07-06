@@ -33,7 +33,7 @@
     margin: var(--slider-margin);
 }
 
-.slider[is-logo-slider] {
+.slider[content-type="logos"] {
     --slider-margin: 0 auto var(--spacing-normal);
 }
 

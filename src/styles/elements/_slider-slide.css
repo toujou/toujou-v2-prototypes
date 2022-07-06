@@ -3,7 +3,8 @@
     /*height: fit-content !important;*/
 }
 
-.slider[is-logo-slider] .slider-slide {
+.slider[content-type="logos"] .slider-slide,
+.slider[content-type="teaser"] .slider-slide{
     aspect-ratio: auto;
     height: fit-content !important;
 }

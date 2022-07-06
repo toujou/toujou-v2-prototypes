@@ -36,6 +36,8 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
             aria-label="Toujou slider example"
             slider-design="primary"
             slides-to-show="1"
+            slider-gap="0"
+            slider-aspect-ratio="0.5625"
             slider-type="loop"
             content-type="teaser">
             <div class="splide slider__slider">
@@ -50,7 +52,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                 
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
-                        <li class="splide__slide slider__slide" data-splide-interval="1000">
+                        <li class="splide__slide slider-slide" data-splide-interval="1000">
                             <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1024" alt="nice image" />
@@ -61,7 +63,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                                 </div> 
                             </toujou-teaser>
                         </li>
-                        <li class="splide__slide slider__slide" data-splide-interval="1000">
+                        <li class="splide__slide slider-slide" data-splide-interval="1000">
                             <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
@@ -72,7 +74,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                                 </div> 
                             </toujou-teaser>
                         </li>
-                        <li class="splide__slide slider__slide" data-splide-interval="1000">
+                        <li class="splide__slide slider-slide" data-splide-interval="1000">
                             <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1026" alt="nice image" />
@@ -83,7 +85,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                                 </div> 
                             </toujou-teaser>
                         </li>
-                        <li class="splide__slide slider__slide" data-splide-interval="1000">
+                        <li class="splide__slide slider-slide" data-splide-interval="1000">
                             <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1027" alt="nice image" />

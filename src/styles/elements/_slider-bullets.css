@@ -28,18 +28,12 @@ ul.slider-bullets {
     z-index: 1;
 }
 
-.slider[is-logo-slider] ul.slider-bullets {
+.slider[content-type="logos"] ul.slider-bullets,
+.slider[content-type="teaser"] ul.slider-bullets {
     --slider-bullets-position: relative;
     --slider-bullets-inset: unset;
     --slider-bullets-margin: var(--spacing-normal) 0;
     --slider-bullets-bullet-background-color: var(--color-font-o-20);
-}
-
-.slider[content-type="teaser"] .slider-bullets {
-    --slider-bullets-position: relative;
-    --slider-bullets-inset: auto;
-    --slider-bullets-margin: var(--spacing-normal) 0 0;
-    --slider-bullets-bullet-background-color: var(--color-black-o-10);
 }
 
 .slider[slider-design="default"] .slider-bullets {

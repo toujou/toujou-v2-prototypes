@@ -78,7 +78,8 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
     return `       
         <toujou-slider
             class="slider"
-            is-logo-slider
+            content-type="logos"
+            slider-design="primary"
             aria-label="Toujou slider example"
             slider-design="${args.designColor}"
             ${args.isFullwidth ? 'slider-fullwidth' : ''}
