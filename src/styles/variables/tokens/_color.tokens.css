@@ -53,6 +53,7 @@
     --color-bg-l: 100%;
     --color-bg: hsl(var(--color-bg-h) var(--color-bg-s) var(--color-bg-l));
     --color-bg-o-10: hsl(var(--color-bg-h) var(--color-bg-s) var(--color-bg-l) / 10%);
+    --color-bg-o-75: hsl(var(--color-bg-h) var(--color-bg-s) var(--color-bg-l) / 75%);
 
     --color-success-h: 151;
     --color-success-s: 100%;

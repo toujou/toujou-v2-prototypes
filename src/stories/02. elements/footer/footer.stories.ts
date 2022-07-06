@@ -75,13 +75,13 @@ const Template = () => {
                     </address>
                     <div class="footer__socials">
                         <a href="#" class="footer__socials-link">
-                            <toujou-icon class="icon" icon-name="home" icon-color="primary-light" icon-size="l"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="sm-facebook" icon-color="primary-light" icon-size="l"></toujou-icon>
                         </a>
                         <a href="#" class="footer__socials-link">
-                            <toujou-icon class="icon" icon-name="account" icon-color="primary-light" icon-size="l"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="sm-twitter" icon-color="primary-light" icon-size="l"></toujou-icon>
                         </a>
                         <a href="#" class="footer__socials-link">
-                            <toujou-icon class="icon" icon-name="science" icon-color="primary-light" icon-size="l"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="sm-instagram" icon-color="primary-light" icon-size="l"></toujou-icon>
                         </a>
                     </div>
                 </footer-column>

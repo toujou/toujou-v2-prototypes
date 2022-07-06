@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -22,13 +22,7 @@ export default {
 } as Meta;
 
 
-interface ToujouImageCardStoryProps {
-    teaserType: string;
-    imageWidth: string,
-    imageSide: string,
-}
-
-const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
+const Template = () => {
     return `
 
         <toujou-slider
@@ -53,7 +47,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1024" alt="nice image" />
                                 </div>
@@ -64,7 +58,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -75,7 +69,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1026" alt="nice image" />
                                 </div>
@@ -86,7 +80,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1027" alt="nice image" />
                                 </div>
@@ -113,10 +107,4 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
 };
 
 export const TeaserSlider = Template.bind({});
-
-TeaserSlider.args = {
-    teaserType: 'cinema',
-    imageWidth: '50',
-    imageSide: 'left',
-}
 
