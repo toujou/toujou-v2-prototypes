@@ -58,6 +58,18 @@
     --icon-color: var(--color-bg);
 }
 
+.icon[icon-color="success"] {
+    --icon-color: var(--color-success);
+}
+
+.icon[icon-color="warning"] {
+    --icon-color: var(--color-warning);
+}
+
+.icon[icon-color="error"] {
+    --icon-color: var(--color-error);
+}
+
 /* ICON SIZES */
 .icon[icon-size="xxxl"] {
     --icon-size: var(--font-size-xxxl);
