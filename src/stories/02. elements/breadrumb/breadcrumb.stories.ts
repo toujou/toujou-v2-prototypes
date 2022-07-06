@@ -8,7 +8,7 @@ import breadcrumbDocs from './breadcrumb.docs.mdx';
 export default {
     title: 'COMPONENTS/Breadcrumb',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: breadcrumbDocs,
         }

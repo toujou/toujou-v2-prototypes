@@ -95,3 +95,17 @@ p + :is(p, ul, ol) {
 .notes {
     font-size: var(--font-size-s);
 }
+
+p a {
+    color: var(--color-primary);
+}
+
+p a:focus {
+    color: var(--color-primary-dark);
+}
+
+@media (hover: hover) {
+    p a:hover {
+        color: var(--color-primary-dark);
+    }
+}

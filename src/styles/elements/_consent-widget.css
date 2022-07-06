@@ -1,0 +1,84 @@
+.consent-widget {
+    --consent-widget-position: absolute;
+    --consent-widget-bottom: var(--spacing-normal);
+    --consent-widget-left: var(--spacing-normal);
+    --consent-widget-border: 1px solid var(--color-font-light);
+    --consent-widget-padding: var(--spacing-normal);
+    --consent-widget-border-radius: var(--border-radius-normal);
+    --consent-widget-max-width: 560px;
+    --consent-widget-background-color: var(--color-bg);
+
+    --consent-widget-title-color: var(--color-font);
+    --consent-widget-title-margin: 0 0 var(--spacing-normal);
+
+    --consent-widget-bottom-display: flex;
+    --consent-widget-bottom-align-items: flex-end;
+    --consent-widget-bottom-justify-content: flex-start;
+    --consent-widget-bottom-gap: var(--spacing-normal);
+
+    --consent-widget-summary-list-style: none;
+
+    --consent-widget-summary-marker-display: none;
+
+    --consent-widget-elements-display: flex;
+    --consent-widget-elements-flex-grow: 1;
+    --consent-widget-elements-flex-direction: column;
+    --consent-widget-elements-gap: var(--spacing-xs);
+
+    position: var(--consent-widget-position);
+    bottom: var(--consent-widget-bottom);
+    left: var(--consent-widget-left);
+    border: var(--consent-widget-border);
+    padding: var(--consent-widget-padding);
+    border-radius: var(--consent-widget-border-radius);
+    max-width: var(--consent-widget-max-width);
+    background-color: var(--consent-widget-background-color);
+}
+
+.consent-widget__title {
+    color: var(--consent-widget-title-color);
+    margin: var(--consent-widget-title-margin);
+}
+
+.consent-widget__bottom {
+    display: var(--consent-widget-bottom-display);
+    align-items: var(--consent-widget-bottom-align-items);
+    justify-content: var(--consent-widget-bottom-justify-content);
+    gap: var(--consent-widget-bottom-gap);
+}
+
+.consent-widget__details-summary {
+    list-style: var(--consent-widget-summary-list-style);
+    pointer-events: none;
+}
+
+.consent-widget__details-summary::-webkit-details-marker {
+    display: var(--consent-widget-summary-marker-display);
+}
+
+.consent-widget[open] #consentSettingsButton,
+.consent-widget[open] #consentAcceptAllButton {
+    display: none;
+}
+
+#consentSaveButton {
+    display: none;
+}
+
+.consent-widget[open] #consentSaveButton {
+    display: block;
+    margin-left: auto;
+}
+
+.consent-widget__consent-elements {
+    display: var(--consent-widget-elements-display);
+    flex-direction: var(--consent-widget-elements-flex-direction);
+    flex-grow: var(--consent-widget-elements-flex-grow);
+    gap: var(--consent-widget-elements-gap);
+}
+
+@media screen and (min-width: 840px) {
+    .consent-widget {
+        --consent-widget-padding: var(--spacing-m);
+    }
+}
