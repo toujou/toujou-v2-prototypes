@@ -49,6 +49,10 @@
 }
 
 @media screen and (min-width: 840px) {
+    .teaser {
+        --teaser-grid-gap: var(--spacing-l);
+    }
+
     .teaser[image-width="50"] {
         --teaser-grid-template-columns: 1fr 1fr;
     }
@@ -71,5 +75,9 @@
 
     .teaser[image-width="66"][image-side="right"] {
         --teaser-grid-template-columns: 1fr 2fr;
+    }
+
+    .slider .teaser__content {
+        padding-right: var(--spacing-xxl);
     }
 }

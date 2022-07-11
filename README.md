@@ -50,3 +50,8 @@ The current **solution** is after the `npm run build-sb` command to to add the m
 
 # Badges addon
 We use the [Badges Addon](https://storybook.js.org/addons/@geometricpanda/storybook-addon-badges) to help us track the state of each story
+
+# Troubleshooting
+1. `node: --openssl-legacy-provider is not allowed in NODE_OPTIONS` error when running the `npm run sb` command or `npm run deploy:full`
+
+Please try `npm install` and `nvm use` before running the `npm run sb` command again

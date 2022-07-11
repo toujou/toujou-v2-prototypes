@@ -4,9 +4,13 @@
 }
 
 .slider[content-type="logos"] .slider-slide,
-.slider[content-type="teaser"] .slider-slide{
+.slider[content-type="teaser"] .slider-slide {
     aspect-ratio: auto;
     height: fit-content !important;
+}
+
+.slider[content-type="teaser"] .slider-slide {
+    width: fit-content;
 }
 
 .slider-slide__media--image {
