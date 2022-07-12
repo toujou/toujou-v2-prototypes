@@ -133,10 +133,10 @@ function getHeaderContentText(accentColor: string) {
     const buttonColor = accentColor === 'default' ? 'primary' : accentColor === 'grey' ? 'font' : accentColor;
 
     return `
-    <p class="header-content__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    <a href="#" class="button header-content__cta" button-variant="${buttonColor}">Let's go</a>
-`
+        <p class="header-content__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="#" class="button header-content__cta" button-variant="${buttonColor}">Let's go</a>
+    `
 }
 
 const Template: Story<HeaderStoryProps> = (args: HeaderStoryProps) => {

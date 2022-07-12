@@ -100,12 +100,12 @@ p a {
     color: var(--color-primary);
 }
 
-p a:focus {
+a:focus {
     color: var(--color-primary-dark);
 }
 
 @media (hover: hover) {
-    p a:hover {
+    a:hover {
         color: var(--color-primary-dark);
     }
 }

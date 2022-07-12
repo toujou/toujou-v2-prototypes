@@ -67,8 +67,8 @@ const Template = () => {
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -119,8 +119,8 @@ const Template = () => {
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -171,8 +171,8 @@ const Template = () => {
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -223,8 +223,8 @@ const Template = () => {
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>

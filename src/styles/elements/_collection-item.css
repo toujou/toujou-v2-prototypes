@@ -133,6 +133,11 @@
 
     --collection-item-button-text-decoration: none;
     --collection-item-button-text-color: var(--color-primary);
+    --collection-item-button-display: flex;
+    --collection-item-button-align-items: end;
+    --collection-item-button-justify-content: center;
+    --collection-item-button-width: fit-content;
+    --collection-item-button-gap: var(--spacing-s);
 
     position: var(--collection-item-position);
     display: var(--collection-item-display);
@@ -375,6 +380,11 @@
 .collection-item__button {
     text-decoration: var(--collection-item-button-text-decoration);
     color: var(--collection-item-button-text-color);
+    display: var(--collection-item-button-display);
+    align-items: var(--collection-item-button-align-items);
+    justify-content: var(--collection-item-button-justify-content);
+    width: var(--collection-item-button-width);
+    gap: var(--collection-item-button-gap);
 }
 
 @media (hover: hover) {

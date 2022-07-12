@@ -60,8 +60,8 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -87,8 +87,8 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -114,8 +114,8 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -141,8 +141,8 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>

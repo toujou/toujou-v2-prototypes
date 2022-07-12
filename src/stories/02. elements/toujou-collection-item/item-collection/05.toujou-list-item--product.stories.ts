@@ -38,8 +38,8 @@ const Template = () => {
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Product A</h3>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -61,8 +61,8 @@ const Template = () => {
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Product B</h3>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -78,8 +78,8 @@ const Template = () => {
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Product C</h3>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -95,8 +95,8 @@ const Template = () => {
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Product D</h3>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                        <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
