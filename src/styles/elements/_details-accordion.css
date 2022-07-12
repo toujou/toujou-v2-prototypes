@@ -9,3 +9,7 @@
     max-width: var(--details-accordion-max-width);
     margin: var(--details-accordion-margin);
 }
+
+.grid-column .details-accordion {
+    --details-accordion-width: 100%;
+}

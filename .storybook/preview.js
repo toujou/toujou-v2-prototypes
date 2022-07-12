@@ -32,6 +32,12 @@ export const parameters = {
       ...INITIAL_VIEWPORTS,
     }
   },
+  options: {
+    storySort: {
+      method: 'alphabetical',
+      order: ['COMPONENTS', 'TOKENS', 'PAGES']
+    }
+  }
 }
 
 console.clear();

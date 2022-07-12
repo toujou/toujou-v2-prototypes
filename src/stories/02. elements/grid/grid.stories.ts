@@ -42,12 +42,26 @@ export default {
             defaultValue: [1],
             required: true,
         },
+        columnsLayout: {
+            table: {
+                category: "Grid settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Two columns layout',
+            description: "Define layout of the grid columns",
+            options: ['default', 'third-right', 'third-left'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+            if: { arg: 'numberOfColumns', eq: 2 }
+        },
     }
 } as Meta;
 
 interface GridStoryProps {
     type: string;
     numberOfColumns: number;
+    columnsLayout: string;
 }
 
 const Template: Story<GridStoryProps> = (args: GridStoryProps) => {
@@ -55,9 +69,12 @@ const Template: Story<GridStoryProps> = (args: GridStoryProps) => {
     gridEl.classList.add('grid', 'demo-grid');
     gridEl.setAttribute('number-of-columns', String(args.numberOfColumns));
     gridEl.setAttribute('grid-type', args.type);
+    if (args.numberOfColumns == 2) {
+        gridEl.setAttribute('column-layout', args.columnsLayout);
+    }
 
     for (let i = 0; i < args.numberOfColumns; i++) {
-        const col = document.createElement('toujjou-grid-column');
+        const col = document.createElement('toujou-grid-column');
         col.classList.add('grid-column');
 
         const titleEl = document.createElement('p');
@@ -75,4 +92,5 @@ export const Grid = Template.bind({});
 Grid.args = {
     type: 'default',
     numberOfColumns: 1,
+    columnsLayout: 'default',
 }

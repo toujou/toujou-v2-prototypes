@@ -80,6 +80,10 @@ p + :is(p, ul, ol) {
     margin-top: var(--spacing-normal);
 }
 
+.grid-column  :is(p, ul, ol):first-child {
+    margin-top: 0;
+}
+
 * + :is(h1, h2, h3, h4, h5, h6) {
     margin-top: var(--spacing-xl);
 }
