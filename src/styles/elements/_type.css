@@ -109,7 +109,7 @@ a:focus {
 }
 
 @media (hover: hover) {
-    a:hover {
+    a:not(.button):hover {
         color: var(--color-primary-dark);
     }
 }
