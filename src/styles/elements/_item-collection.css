@@ -10,6 +10,8 @@
     --item-collection-margin: 0 auto;
     --item-collection-list-style: none;
     --item-collection-padding: 0;
+    --item-collection-z-index: var(--z-index-content);
+
     --item-collection-item-max-width: 100%;
 
     display: var(--item-collection-display);
@@ -22,6 +24,7 @@
     margin: var(--item-collection-margin);
     list-style: var(--item-collection-list-style);
     padding: var(--item-collection-padding);
+    z-index: var(--item-collection-z-index);
 }
 
 .item-collection__item {

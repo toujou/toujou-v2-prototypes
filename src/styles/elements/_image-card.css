@@ -5,6 +5,7 @@
     --image-card-position: relative;
     --image-card-overflow: hidden;
     --image-card-border-radius: var(--border-radius-normal);
+    --image-card-z-index: var(--z-index-content);
 
     --image-card-aspect-ratio: var(--aspect-ratio-16-9);
 
@@ -29,6 +30,7 @@
     max-width: var(--image-card-max-width);
     border-radius: var(--image-card-border-radius);
     overflow: var(--image-card-overflow);
+    z-index: var(--image-card-z-index);
 }
 
 .image-card[card-variant="primary"] {

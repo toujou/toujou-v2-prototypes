@@ -10,6 +10,7 @@
     --consent-widget-background-color: var(--color-bg);
     --consent-widget-display: block;
     --consent-widget-margin: 0;
+    --consent-widget-z-index: var(--z-index-consent);
 
     --consent-widget-title-color: var(--color-font);
     --consent-widget-title-margin: 0 0 var(--spacing-normal);
@@ -50,6 +51,7 @@
     width: var(--consent-widget-width);
     max-width: var(--consent-widget-max-width);
     background-color: var(--consent-widget-background-color);
+    z-index: var(--consent-widget-z-index);
 }
 
 .consent-widget[in-page] {
@@ -58,6 +60,7 @@
     --consent-widget-left: unset;
     --consent-widget-max-width: var(--consent-widget-max-width);
     --consent-widget-margin: 0 auto;
+    --consent-widget-z-index: var(--z-index-content);
 }
 
 .consent-widget__title {

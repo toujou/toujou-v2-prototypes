@@ -7,6 +7,7 @@
     --teaser-grid-auto-flow: dense;
     --teaser-grid-template-columns: 1fr;
     --teaser-grid-gap: var(--spacing-normal);
+    --teaser-grid-z-index: var(--z-index-content);
 
     --teaser-figure-column: 1;
     --teaser-figure-border-radius: var(--border-radius-normal);
@@ -23,6 +24,7 @@
     width: var(--teaser-width);
     max-width: var(--teaser-max-width);
     margin: var(--teaser-margin);
+    z-index: var(--teaser-grid-z-index);
 }
 
 .slider .teaser {

@@ -5,6 +5,7 @@
     --hero-media-position: relative;
     --hero-media-padding: 0;
     --hero-media-margin: 0;
+    --hero-media-z-index: var(--z-index-content);
 
     --hero-media-media-object-fit: cover;
     --hero-media-media-width: 100%;
@@ -24,6 +25,7 @@
     padding: var(--hero-media-padding);
     margin: var(--hero-media-margin);
     width: var(--hero-media-width);
+    z-index: var(--hero-media-z-index);
 }
 
 .hero-media[headline-alignment="left"] {

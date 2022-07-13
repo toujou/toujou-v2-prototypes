@@ -5,7 +5,7 @@
     --pn-nav-width: 100%;
     --pn-nav-height: var(--spacing-xxxl);
     --pn-nav-tranform: translateY(-50%);
-    --pn-nav-z-index: 1;
+    --pn-nav-z-index: var(--z-index-pn-nav);
 
     --pn-nav-link-position: absolute;
     --pn-nav-link-bg-color: var(--color-primary);

@@ -8,6 +8,7 @@
     --details-title-margin: 0;
     --details-title-font-size: var(--font-size-ms);
     --details-title-area: title;
+    --details-z-index: var(--z-index-content);
 
     --details-subtitle-font-size: var(--font-size-s);
     --details-subtitle-color: var(--color-primary);
@@ -28,6 +29,7 @@
     width: var(--details-width);
     max-width: var(--details-max-width);
     margin: var(--details-margin);
+    z-index: var(--details-z-index);
 }
 
 .details-accordion .details {

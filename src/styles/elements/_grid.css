@@ -6,6 +6,7 @@
     --grid-width: var(--content-width-with-padding);
     --grid-max-width: var(--content-max-width);
     --grid-margin: 0 auto;
+    --grid-z-index: var(--z-index-content);
 
     display: var(--grid-display);
     grid-template-columns: var(--grid-template-columns);
@@ -13,6 +14,7 @@
     width: var(--grid-width);
     max-width: var(--grid-max-width);
     margin: var(--grid-margin);
+    z-index: var(--grid-z-index);
 }
 
 .grid[grid-type="wide"] {

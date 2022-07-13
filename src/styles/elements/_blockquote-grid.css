@@ -2,12 +2,14 @@
     --blockquote-grid-columns-count: 100%;
     --blockquote-grid-gap: var(--spacing-l);
     --blockquote-grid-max-width: var(--content-max-width);
+    --blockquote-grid-z-index: var(--z-index-content);
 
     display: grid;
     grid-template-columns: repeat(var(--blockquote-grid-columns-count), 1fr);
     grid-gap: var(--blockquote-grid-gap);
     max-width: var(--blockquote-grid-max-width);
     margin: 0 auto;
+    z-index: var(--blockquote-grid-z-index);
 }
 
 .blockquote-grid[blockquote-grid-count="2"],

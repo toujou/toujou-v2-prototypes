@@ -6,6 +6,7 @@
     --image-card-grid-width: var(--content-width-with-padding);
     --image-card-grid-max-width: var(--content-wide-max-width);
     --image-card-grid-margin: 0 auto;
+    --image-card-grid-z-index: var(--z-index-content);
 
     display: var(--image-card-grid-display);
     grid-gap: var(--image-card-grid-gap);
@@ -15,4 +16,5 @@
     width: var(--image-card-grid-width);
     max-width: var(--image-card-grid-max-width);
     margin: var(--image-card-grid-margin);
+    z-index: var(--image-card-grid-z-index);
 }

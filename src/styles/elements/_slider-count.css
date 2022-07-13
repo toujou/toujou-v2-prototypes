@@ -10,6 +10,7 @@
     --slider-count-font-family: var(--font-family-text);
     --slider-count-font-weight: var(--font-weight-text-normal);
     --slider-count-font-size: var(--font-size-s);
+    --slider-count-z-index: var(--z-index-content);
 
     display: var(--slider-count-display);
     margin: var(--slider-count-margin);
@@ -22,6 +23,7 @@
     font-family: var(--slider-count-font-family);
     font-size: var(--slider-count-font-size);
     font-weight: var(--slider-count-font-weight);
+    z-index: var(--slider-count-z-index);
 }
 
 .slider[show-count] .slider-count {

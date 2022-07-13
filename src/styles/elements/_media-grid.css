@@ -6,6 +6,7 @@
     --media-grid-width: var(--content-width-with-padding);
     --media-grid-max-width: var(--content-wide-max-width);
     --media-grid-margin: 0 auto;
+    --media-grid-z-index: var(--z-index-content);
 
     display: var(--media-grid-display);
     grid-gap: var(--media-grid-gap);
@@ -13,6 +14,7 @@
     width: var(--media-grid-width);
     max-width: var(--media-grid-max-width);
     margin: var(--media-grid-margin);
+    z-index: var(--media-grid-z-index);
 }
 
 @media screen and (min-width: 640px) {

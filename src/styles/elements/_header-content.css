@@ -11,6 +11,7 @@
     --header-content-padding: var(--spacing-normal);
     --header-content-background-color: var(--color-bg);
     --header-content-border-radius: var(--border-radius-normal);
+    --header-content-z-index: var(--z-index-content);
 
     --header-title-color: var(--color-primary);
 
@@ -28,6 +29,7 @@
     padding: var(--header-content-padding);
     background-color: var(--header-content-background-color);
     border-radius: var(--header-content-border-radius);
+    z-index: var(--header-content-z-index);
 }
 
 .header-content[is-title-only] {

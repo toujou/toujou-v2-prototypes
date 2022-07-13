@@ -21,11 +21,13 @@
     --breadcrumb-mobile-menu-list-gap: var(--spacing-s);
     --breadcrumb-fake-list-triangle-size: var(--spacing-s);
     --breadcrumb-fake-list-border-radius: var(--border-radius-normal);
+    --breadcrumb-z-index: var(--z-index-content);
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    z-index: var(--breadcrumb-z-index);
 }
 
 .breadcrumb__list {

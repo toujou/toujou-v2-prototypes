@@ -9,6 +9,7 @@
     --collection-item-border-radius: var(--border-radius-normal);
     --collection-item-overflow: hidden;
     --collection-item-bg-color: var(--color-bg);
+    --collection-item-z-index: var(--z-index-content);
 
     --collection-item-top-position: relative;
     --collection-item-top-margin: 0;
@@ -148,6 +149,7 @@
     border-radius: var(--collection-item-border-radius);
     overflow: var(--collection-item-overflow);
     background-color: var(--collection-item-bg-color);
+    z-index: var(--collection-item-z-index);
 }
 
 .collection-item[item-orientation="vertical"] {

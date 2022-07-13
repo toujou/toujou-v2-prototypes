@@ -15,6 +15,7 @@
     --blockquote-text-font-size: var(--font-size-m);
     --blockquote-text-line-height: 1.5;
     --blockquote-text-margin: 0;
+    --blockquote-z-index: var(--z-index-content);
 
     display: grid;
     grid-gap: var(--blockquote-gap);
@@ -24,6 +25,7 @@
     max-width: var(--blockquote-max-width);
     min-width: 0;
     min-height: 0;
+    z-index: var(--blockquote-z-index);
 }
 
 .blockquote-grid[blockquote-grid-count="2"] .blockquote[blockquote-direction="vertical"],

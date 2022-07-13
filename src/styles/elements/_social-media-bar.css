@@ -11,6 +11,7 @@
     --social-media-bar-max-width: var(--content-max-width);
     --social-media-bar-border-radius: var(--border-radius-normal);
     --social-media-bar-background-color: var(--color-bg);
+    --social-media-bar-z-index: var(--z-index-content);
 
     --social-media-bar-headline-color: var(--color-font);
 
@@ -34,6 +35,7 @@
     max-width: var(--social-media-bar-max-width);
     border-radius: var(--social-media-bar-border-radius);
     background-color: var(--social-media-bar-background-color);
+    z-index: var(--social-media-bar-z-index);
 }
 
 .social-media-bar[element-design="primary"],

@@ -3,11 +3,13 @@
     --details-accordion-width: var(--content-width-with-padding);
     --details-accordion-max-width: var(--content-max-width);
     --details-accordion-margin: 0 auto;
+    --details-accordion-z-index: var(--z-index-content);
 
     display: var(--details-accordion-display);
     width: var(--details-accordion-width);
     max-width: var(--details-accordion-max-width);
     margin: var(--details-accordion-margin);
+    z-index: var(--details-accordion-z-index);
 }
 
 .grid-column .details-accordion {
