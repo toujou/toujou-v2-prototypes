@@ -1,12 +1,15 @@
 import { defineConfig } from "cypress";
 
+const desktopViewportWidth = 1920;
+const desktopViewportHeight = 1080;
+
 export default defineConfig({
   e2e: {
     baseUrl: 'http://localhost:6006',
     includeShadowDom: true,
     specPattern: ['src/tests/**/*.cy.ts'],
-    viewportWidth: 1920,
-    viewportHeight: 1080,
+    viewportWidth: desktopViewportWidth,
+    viewportHeight: desktopViewportHeight,
   },
   env: {
     colorPrimary: 'rgb(0, 121, 168)',
@@ -29,5 +32,7 @@ export default defineConfig({
     colorWarningDarken15: `rgb(179, 101, 0)`,
     colorError: `rgb(255, 26, 71)`,
     colorErrorDarken15: `rgb(204, 0, 41)`,
+    desktopViewportWidth: desktopViewportWidth,
+    desktopViewportHeight: desktopViewportHeight,
   },
 });

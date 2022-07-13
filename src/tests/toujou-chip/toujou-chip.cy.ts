@@ -29,7 +29,6 @@ describe('toujou-chip', () => {
     it('has correct class', () => {
         cy.get('toujou-chip').invoke('attr', 'class').should('eq', 'chip');
     });
-
 })
 
 describe('toujou-chip - background-colors', () => {
@@ -120,7 +119,7 @@ describe('toujou-chip - background-colors', () => {
             e[0].setAttribute('is-clickable', '');
         });
         cy.get('.chip').realHover();
-        cy.get('.chip').should('have.css', 'background-color', colorPrimaryDark);
+        cy.get('.chip').should('have.css', 'background-color', colorSecondaryDark);
         cy.get('.chip').should('have.css', 'color', colorBg);
     });
 
