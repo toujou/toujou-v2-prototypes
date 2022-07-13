@@ -1,1 +1,36 @@
-# Prev-next
+# PN Navigation
+
+The "previous / next page navigation" element can be added as a content element to any page ("Widgets" tab on the new element wizard).
+
+It provides a way to navigate to a previous or next page inside the same folder, which is very nice for instance on recipe or product pages.
+
+The element is fixed in the middle of the screen and shows an arrow. On :hover it also shows the title and resource image of the target page.
+
+## Markup example:
+```html
+<toujou-pn-nav class="pn-nav" aria="Page navigation buttons">
+    <link rel="prefetch" href="link1">
+    <link rel="prefetch" href="link2">
+    <a href="link1" class="pn-nav__link" button-direction="prev" title="Vorherige Seite">
+        <span class="pn-nav__button">
+            <toujou-icon class="icon pn-nav__icon" icon-name="arrow-left" icon-size="m" icon-color="background"></toujou-icon>
+        </span>
+        <span class="pn-nav__content">
+            <h5 class="pn-nav__title">Another Page</h5>
+            <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
+        </span>
+    </a>
+    <a href="link2" class="pn-nav__link" button-direction="next" title="Nächste Seite">
+        <span class="pn-nav__button">
+            <toujou-icon class="icon pn-nav__icon" icon-name="arrow-right" icon-size="m" icon-color="background"></toujou-icon>
+        </span>
+        <span class="pn-nav__content">
+            <h5 class="pn-nav__title">Nice Page</h5>
+            <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
+        </span>
+    </a>
+</toujou-pn-nav>
+```
+
+## Toujou library
+The toujou library has a link with some information about this content element [here](https://www.toujou.de/service/elementbibliothek/widgets/previous/next-page-navigation/)
