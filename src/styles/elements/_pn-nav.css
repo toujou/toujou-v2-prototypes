@@ -141,7 +141,7 @@
     --pn-nav-content-right: var(--pn-nav-button-width);
     --pn-nav-content-border-radius: var(--pn-nav-button-width) 0 0 var(--pn-nav-button-width);
     --pn-nav-content-transform: translateX(calc(100% + var(--pn-nav-button-width)));
-    --pn-nav-content-padding: var(--spacing-s) var(--pn-nav-button-width) var(--spacing-s) var(--spacing-normal);
+    --pn-nav-content-padding: var(--spacing-s) var(--pn-nav-button-width) var(--spacing-s) var(--spacing-s);
 
     right: var(--pn-nav-link-next-right);
 }
