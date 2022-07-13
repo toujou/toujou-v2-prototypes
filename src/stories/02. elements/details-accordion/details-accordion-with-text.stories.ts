@@ -90,7 +90,7 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
                 ${args.columnsLayout === 'third-right' ? renderAccordion() : renderText()}
             </toujou-grid-column>
             <toujou-grid-column class="grid-column">
-                ${args.columnsLayout === 'third-right' ? renderText() : renderAccordion(0)}
+                ${args.columnsLayout === 'third-right' ? renderText() : renderAccordion()}
             </toujou-grid-column>
         </toujou-grid>
     `
