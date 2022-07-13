@@ -10,7 +10,8 @@
   "types": "types/my-element.d.ts",
   "files": [
     "dist",
-    "types"
+    "types",
+    "assets"
   ],
   "scripts": {
     "dev": "vite",
