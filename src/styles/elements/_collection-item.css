@@ -388,11 +388,12 @@
 }
 
 @media (hover: hover) {
-    .collection-item[item-design="primary"] .button.collection-item__button:hover,
-    .collection-item[item-design="secondary"] .button.collection-item__button:hover,
-    .collection-item[item-design="inverted"] .button.collection-item__button:hover {
-        color: var(--collection-item-text-color);
-        background-color: var(--color-bg-o-10);
+    .collection-item__button:hover {
+        --collection-item-button-text-decoration: underline;
+    }
+
+    .collection-item__button:hover .icon {
+        --icon-color: var(--color-primary-dark);
     }
 }
 
