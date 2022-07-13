@@ -6,7 +6,7 @@ export default {
     preserveSymlinks: true,
     browserLogs: false,
     files: [
-        'src/**/*.test.ts'
+        'src/tests/**/*.test.ts'
     ],
     plugins: [
         esbuildPlugin({ ts: true })

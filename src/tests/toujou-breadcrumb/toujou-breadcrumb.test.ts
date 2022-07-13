@@ -1,7 +1,7 @@
 import { html, fixture, expect, fixtureSync, oneEvent } from '@open-wc/testing';
 
-import '../toujou-breadcrumb';
-import { ToujouBreadcrumb } from "../toujou-breadcrumb";
+import '../../components/toujou-breadcrumb/toujou-breadcrumb';
+import { ToujouBreadcrumb } from "../../components/toujou-breadcrumb/toujou-breadcrumb";
 
 describe('toujou-breadcrumb', () => {
     let breadcrumbEl: Element | null = null;

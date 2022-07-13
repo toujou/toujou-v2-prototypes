@@ -1,6 +1,6 @@
 .chip {
     --toujou-chip-color-bg: var(--color-primary-o-10);
-    --toujou-chip-font-size: var(--font-size-xs);
+    --toujou-chip-font-size: var(--font-size-s);
     --toujou-chip-font-family: var(--font-family-text);
     --toujou-chip-text-color: var(--color-font);
     --toujou-chip-flex-direction: row;
@@ -121,11 +121,7 @@
     --toujou-chip-font-size: var(--font-size-s);
 }
 
-.chip[chip-size="small"] .icon.chip__icon {
-    --icon-size: var(--font-size-normal);
-}
-
-.chip[chip-size="size-normal"] {
+.chip[chip-size="normal"] {
     --toujou-chip-font-size: var(--font-size-normal);
 }
 

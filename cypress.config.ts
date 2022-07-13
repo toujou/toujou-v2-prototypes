@@ -4,7 +4,7 @@ export default defineConfig({
   e2e: {
     baseUrl: 'http://localhost:6006',
     includeShadowDom: true,
-    specPattern: ['src/**/*.cy.ts'],
+    specPattern: ['src/tests/**/*.cy.ts'],
     viewportWidth: 1920,
     viewportHeight: 1080,
   },
@@ -23,5 +23,11 @@ export default defineConfig({
     colorFontO10: 'rgba(84, 109, 120, 0.1)',
     colorBg: 'rgb(255, 255, 255)',
     colorTransparent: `rgba(0, 0, 0, 0)`,
+    colorSuccess: `rgb(0, 230, 119)`,
+    colorSuccessDarken15: `rgb(0, 153, 79)`,
+    colorWarning: `rgb(255, 145, 0)`,
+    colorWarningDarken15: `rgb(179, 101, 0)`,
+    colorError: `rgb(255, 26, 71)`,
+    colorErrorDarken15: `rgb(204, 0, 41)`,
   },
 });

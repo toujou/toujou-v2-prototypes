@@ -1,6 +1,6 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
-import '../toujou-blockquote';
+import '../../components/toujou-blockquote/toujou-blockquote';
 
 describe('toujou-blockquote', () => {
     let blockquoteGridEl: Element | null = null;

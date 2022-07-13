@@ -1,5 +1,5 @@
 import { html, fixture, expect } from '@open-wc/testing';
-import { ToujouDetailsAccordion } from "../toujou-details-accordion";
+import { ToujouDetailsAccordion } from "../../components/toujou-details-accordion/toujou-details-accordion";
 
 describe('toujou-details-accordion', () => {
     let toujouDetailsAccordion: ToujouDetailsAccordion | null = null;
