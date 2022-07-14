@@ -1,0 +1,1 @@
+import{LitElement as f}from"lit";import{customElement as m}from"lit/decorators.js";var c=Object.defineProperty,n=Object.getOwnPropertyDescriptor,v=(u,r,t,o)=>{for(var e=o>1?void 0:o?n(r,t):r,l=u.length-1,s;l>=0;l--)(s=u[l])&&(e=(o?s(r,t,e):s(e))||e);return o&&e&&c(r,t,e),e};let p=class extends f{constructor(){super()}};p=v([m("toujou-gallery")],p);

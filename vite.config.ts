@@ -14,9 +14,22 @@ export default defineConfig({
                 'toujou-details': path.resolve(__dirname, 'src/components/toujou-details/toujou-details.ts'),
                 'toujou-details-accordion': path.resolve(__dirname, 'src/components/toujou-details-accordion/toujou-details-accordion.ts'),
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
+                'toujou-gallery': path.resolve(__dirname, 'src/components/toujou-gallery/toujou-gallery.ts'),
             },
             external: /^lit/,
-        }
+            output: {
+                assetFileNames: (assetInfo) => {
+                    let extType = assetInfo?.name?.split('.').at(1);
+                    // @ts-ignore
+                    if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+                        extType = 'img';
+                    }
+                    return `${extType}/[name]-[hash][extname]`;
+                },
+                chunkFileNames: 'js/[name]-[hash].js',
+                entryFileNames: 'js/[name]-[hash].js',
+            },
+        },
     },
     plugins: [
         postcssLit()

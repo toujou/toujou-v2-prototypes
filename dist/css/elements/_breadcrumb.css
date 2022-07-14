@@ -1,0 +1,138 @@
+.breadcrumb {
+    --breadcrumb-separator-icon: var(--icon-chevron-right);
+    --breadcrumb-separator-color: var(--color-font);
+    --breadcrumb-separator-size: var(--font-size-ms);
+    --breadcrumb-separator-horizontal-gap: var(--spacing-xs);
+    --breadcrumb-separator-top: var(--spacing-1px);
+    --breadcrumb-home-icon: var(--icon-home-smooth);
+    --breadcrumb-home-icon-size: var(--font-size-ms);
+    --breadcrumb-active-item-color: var(--color-primary);
+    --breadcrumb-toggle-icon-size: var(--spacing-m);
+    --breadcrumb-toggle-icon-color: var(--color-font);
+    --breadcrumb-toggle-background-color: transparent;
+    --breadcrumb-link-font-size: var(--font-size-normal);
+    --breadcrumb-font-family: var(--font-family-text);
+    --breadcrumb-link-color: var(--color-font);
+    --breadcrumb-link-text-decoration: none;
+    --breadcrumb-mobile-menu-top: 100%;
+    --breadcrumb-mobile-menu-bg-color: var(--color-bg);
+    --breadcrumb-mobile-menu-shadow: var(--shadow-normal);
+    --breadcrumb-mobile-menu-padding: var(--spacing-normal) var(--spacing-l);
+    --breadcrumb-mobile-menu-list-gap: var(--spacing-s);
+    --breadcrumb-fake-list-triangle-size: var(--spacing-s);
+    --breadcrumb-fake-list-border-radius: var(--border-radius-normal);
+    --breadcrumb-z-index: var(--z-index-content);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: var(--breadcrumb-z-index);
+}
+
+.breadcrumb__list {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.breadcrumb__item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+    content: "";
+    position: relative;
+    top: var(--breadcrumb-separator-top);
+    display: inline-block;
+    height: var(--breadcrumb-separator-size);
+    width: var(--breadcrumb-separator-size);
+    margin: 0 var(--breadcrumb-separator-horizontal-gap);
+    background-color: currentColor;
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-image: var(--breadcrumb-separator-icon);
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: var(--breadcrumb-separator-icon);
+    /* stylelint-enable property-no-vendor-prefix */
+}
+
+.breadcrumb__item:first-child::before {
+    content: "";
+    display: inline-block;
+    height: var(--breadcrumb-home-icon-size);
+    width: var(--breadcrumb-home-icon-size);
+    margin: 0 var(--breadcrumb-separator-horizontal-gap);
+    background-color: currentColor;
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-image: var(--breadcrumb-home-icon);
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: var(--breadcrumb-home-icon);
+    /* stylelint-enable property-no-vendor-prefix */
+}
+
+.breadcrumb__link {
+    font-size: var(--breadcrumb-link-font-size);
+    font-family: var(--breadcrumb-font-family);
+    color: var(--breadcrumb-link-color);
+    -webkit-text-decoration: var(--breadcrumb-link-text-decoration);
+            text-decoration: var(--breadcrumb-link-text-decoration);
+}
+
+.breadcrumb__link[aria-current="page"] {
+    color: var(--breadcrumb-active-item-color);
+    pointer-events: none;
+}
+
+.breadcrumb__toggle {
+    padding: var(--spacing-xs);
+    border: none;
+    display: none;
+    margin-right: var(--spacing-s);
+    position: relative;
+    top: 2px;
+    background-color: var(--breadcrumb-toggle-background-color);
+}
+
+.breadcrumb__toggle--close {
+    display: none;
+}
+
+.icon.breadcrumb__toggle-icon {
+    height: var(--breadcrumb-toggle-icon-size);
+    width: var(--breadcrumb-toggle-icon-size);
+    background-color: var(--breadcrumb-toggle-icon-color);
+}
+
+/* MOBILE */
+
+.breadcrumb[ismobile] .breadcrumb__toggle--open {
+    display: block;
+}
+
+.breadcrumb[ismobile][mobilemenuisopen] .breadcrumb__toggle--open {
+    display: none;
+}
+
+.breadcrumb[ismobile][mobilemenuisopen] .breadcrumb__toggle--close {
+    display: block;
+}
+
+.breadcrumb[ismobile] .breadcrumb__item:not(:last-child) {
+    display: none;
+}

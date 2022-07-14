@@ -1,0 +1,26 @@
+.slider-slide {
+    aspect-ratio: var(--slider-aspect-ratio);
+    /*height: fit-content !important;*/
+}
+
+.slider[content-type="logos"] .slider-slide,
+.slider[content-type="teaser"] .slider-slide {
+    aspect-ratio: auto;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+}
+
+.slider[content-type="teaser"] .slider-slide {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.slider-slide__media--image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: var(--slider-aspect-ratio);
+    -o-object-fit: var(--slider-image-object-fit);
+       object-fit: var(--slider-image-object-fit);
+}
