@@ -1,13 +1,8 @@
 {
   "name": "toujou-2-prototypes",
   "private": true,
-  "version": "0.0.0",
-  "main": "dist/my-element.es.js",
+  "version": "0.0.1",
   "homepage": "https://github.com/toujou/toujou-v2-prototypes",
-  "exports": {
-    ".": "./dist/my-element.es.js"
-  },
-  "types": "types/my-element.d.ts",
   "files": [
     "dist",
     "types",
@@ -15,9 +10,13 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --config vite.toujou.config.ts",
+    "build:toujou": "tsc && vite build --config vite.toujou.config.ts && npm run build:css",
     "sb": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
     "build:sb": "export NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
+    "build:css:tokens": "NODE_ENV=production postcss ./src/styles/variables/tokens.css -d ./dist/css",
+    "build:css:elements": "NODE_ENV=production postcss ./src/styles/elements/*.css -d ./dist/css/elements",
+    "build:css": "npm run build:css:tokens && npm run build:css:elements",
     "postbuild:sb": "npm run build:fix && npm run copy-icons-folder ",
     "build:fix": "sh shell-scripts/sb-postbuild.sh",
     "copy-icons-folder": "sh shell-scripts/copy-icons-folder.sh",
@@ -59,6 +58,8 @@
     "mocha": "^10.0.0",
     "npm": "^8.13.2",
     "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^14.1.0",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-postcss-lit": "^2.0.0",
