@@ -32,7 +32,7 @@
     --collection-item-category-justify-content: flex-start;
     --collection-item-category-gap: var(--spacing-xs);
     --collection-item-category-line-height: normal;
-    --collection-item-category-padding: var(--spacing-xs) var(--spacing-s);
+    --collection-item-category-padding: var(--spacing-xs) var(--spacing-normal) var(--spacing-xs) var(--spacing-s);
     --collection-item-category-border-radius: 0 var(--border-radius-xxxl) var(--border-radius-xxxl) 0;
     --collection-item-category-font-size: var(--font-size-s);
     --collection-item-category-margin: 0 0 var(--spacing-xs);
@@ -60,13 +60,13 @@
 
     --collection-item-location-display: flex;
     --collection-item-location-align-items: flex-start;
-    --collection-item-location-justofy-content: flex-start;
+    --collection-item-location-justify-content: flex-start;
     --collection-item-location-flex-direction: column;
     --collection-item-location-gap: var(--spacing-xs);
     --collection-item-location-position: absolute;
     --collection-item-location-bottom: 0;
     --collection-item-location-left: 0;
-    --collection-item-location-padding: var(--spacing-normal);
+    --collection-item-location-padding: var(--spacing-m);
     --collection-item-location-gradient: linear-gradient(0deg, rgb(0 0 0 / 100%) 0%, rgb(0 0 0 / 0%) 100%);
     --collection-item-location-width: 100%;
     --collection-item-location-border-radius: 0;
@@ -258,7 +258,7 @@
 .collection-item__location {
     display: var(--collection-item-location-display);
     align-items: var(--collection-item-location-align-items);
-    justify-content: var(--collection-item-location-justofy-content);
+    justify-content: var(--collection-item-location-justify-content);
     flex-direction: var(--collection-item-location-flex-direction);
     gap: var(--collection-item-location-gap);
     position: var(--collection-item-location-position);
