@@ -16,7 +16,6 @@ export default defineConfig({
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
                 'toujou-gallery': path.resolve(__dirname, 'src/components/toujou-gallery/toujou-gallery.ts'),
             },
-            external: /^lit/,
             output: {
                 assetFileNames: (assetInfo) => {
                     let extType = assetInfo?.name?.split('.').at(1);

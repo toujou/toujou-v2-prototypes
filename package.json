@@ -27,9 +27,6 @@
     "test:all": "npm run test:unit",
     "lint:css": "npx stylelint ./src/styles/**/*.css"
   },
-  "dependencies": {
-    "lit": "^2.0.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@geometricpanda/storybook-addon-badges": "^0.2.1",
@@ -54,6 +51,7 @@
     "gh-pages": "^4.0.0",
     "i": "^0.3.7",
     "install": "^0.13.0",
+    "lit": "^2.2.7",
     "mocha": "^10.0.0",
     "npm": "^8.14.0",
     "photoswipe": "^5.2.8",
