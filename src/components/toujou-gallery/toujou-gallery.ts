@@ -1,8 +1,7 @@
 import { LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
-
-import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
 import PhotoSwipe from 'photoswipe';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
 @customElement('toujou-gallery')
 export class ToujouGallery extends LitElement {
