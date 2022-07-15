@@ -1,4 +1,4 @@
-import{css as u,LitElement as c,html as m}from"lit";import{property as d,customElement as p}from"lit/decorators.js";const h=u`
+import{r as u,s as c,$ as m}from"./lit-element-a6bf029f.js";import{n as p}from"./query-assigned-elements-caae21e2.js";import{e as d}from"./property-19bdaa8a.js";const h=u`
   :host {
     --toujou-details-border: 2px solid var(--color-font-light);
     
@@ -48,7 +48,7 @@ import{css as u,LitElement as c,html as m}from"lit";import{property as d,customE
       cursor: pointer;
     }
   }
-`;var g=Object.defineProperty,y=Object.getOwnPropertyDescriptor,i=(t,s,l,a)=>{for(var e=a>1?void 0:a?y(s,l):s,r=t.length-1,n;r>=0;r--)(n=t[r])&&(e=(a?n(s,l,e):n(e))||e);return a&&e&&g(s,l,e),e};let o=class extends c{constructor(){super(),this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.detailsEl=null,this.isOpen=!1}connectedCallback(){super.connectedCallback(),this.isAccordionItem=!!this.closest(this.accordionParentTag),this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-connected",{bubbles:!0,composed:!0,detail:{detailsEl:this}}))}firstUpdated(){var t;this.detailsEl=this.shadowRoot.querySelector(".details"),this.isOpen=((t=this.detailsEl)==null?void 0:t.hasAttribute("open"))||!1}render(){return m`
+`;var g=Object.defineProperty,v=Object.getOwnPropertyDescriptor,i=(t,s,r,a)=>{for(var e=a>1?void 0:a?v(s,r):s,l=t.length-1,n;l>=0;l--)(n=t[l])&&(e=(a?n(s,r,e):n(e))||e);return a&&e&&g(s,r,e),e};let o=class extends c{constructor(){super(),this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.detailsEl=null,this.isOpen=!1}connectedCallback(){super.connectedCallback(),this.isAccordionItem=!!this.closest(this.accordionParentTag),this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-connected",{bubbles:!0,composed:!0,detail:{detailsEl:this}}))}firstUpdated(){var t;this.detailsEl=this.shadowRoot.querySelector(".details"),this.isOpen=((t=this.detailsEl)==null?void 0:t.hasAttribute("open"))||!1}render(){return m`
             <details class="details" ?open="${this.isOpen}" @toggle="${this._handleDetailsChange}">
                 <summary class="details__summary">
                     <slot name="summary"></slot>
