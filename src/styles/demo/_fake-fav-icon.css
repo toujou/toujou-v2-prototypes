@@ -13,8 +13,8 @@
 
 .fake-fav-item::after {
     content: "";
-    height: 65%;
-    width: 65%;
+    height: 60%;
+    width: 60%;
     display: block;
     position: absolute;
     top: 50%;
