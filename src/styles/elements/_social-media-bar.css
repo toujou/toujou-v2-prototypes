@@ -21,6 +21,7 @@
     --social-media-bar-links-flex-wrap: wrap;
     --social-media-bar-links-gap: var(--spacing-normal) var(--spacing-l);
 
+    --social-media-bar-link-display: flex;
     --social-media-bar-link-color: var(--color-primary);
     --social-media-bar-link-hover-color: var(--color-primary-dark);
 
@@ -36,6 +37,10 @@
     border-radius: var(--social-media-bar-border-radius);
     background-color: var(--social-media-bar-background-color);
     z-index: var(--social-media-bar-z-index);
+}
+
+.social-media-bar[no-headline] {
+    --social-media-bar-padding: var(--spacing-normal);
 }
 
 .social-media-bar[element-design="primary"],
@@ -72,6 +77,10 @@
     justify-content: var(--social-media-bar-links-justify-content);
     flex-wrap: var(--social-media-bar-links-flex-wrap);
     gap: var(--social-media-bar-links-gap);
+}
+
+.social-media-bar-link {
+    display: var(--social-media-bar-link-display);
 }
 
 .social-media-bar__link .icon {

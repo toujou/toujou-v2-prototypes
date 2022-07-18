@@ -51,7 +51,7 @@ interface SliderStoryProps {
 
 const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
     return `       
-        <toujou-social-media-bar class="social-media-bar" element-design="${args.elementDesign}">
+        <toujou-social-media-bar class="social-media-bar" element-design="${args.elementDesign}" ${args.hideHeadline ? 'no-headline' : ''}>
             ${args.hideHeadline ? '' : `<h3 class="social-media-bar__headline">Get in touch</h3>`}
             <div class="social-media-bar__links">
                 <a href="#" class="social-media-bar__link" aria-label="Our facebook account">
