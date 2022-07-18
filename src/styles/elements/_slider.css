@@ -82,3 +82,12 @@
     width: var(--slider-item-width);
     margin: var(--slider-item-margin);
 }
+
+/* Header slider height */
+.header .splide,
+.header .splide__track,
+.header .splide__list,
+.header .splide__slide,
+.header .slider__item {
+    height: var(--header-height) !important;
+}
