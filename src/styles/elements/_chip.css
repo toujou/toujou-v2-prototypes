@@ -78,17 +78,17 @@
 
 .chip[chip-bg-color="success"] {
     --toujou-chip-color-bg: var(--color-success);
-    --toujou-chip-text-color: var(--color-bg);
+    --toujou-chip-text-color: var(--color-white);
 }
 
 .chip[chip-bg-color="warning"] {
     --toujou-chip-color-bg: var(--color-warning);
-    --toujou-chip-text-color: var(--color-bg);
+    --toujou-chip-text-color: var(--color-white);
 }
 
 .chip[chip-bg-color="error"] {
     --toujou-chip-color-bg: var(--color-error);
-    --toujou-chip-text-color: var(--color-bg);
+    --toujou-chip-text-color: var(--color-white);
 }
 
 /* BORDER RADIUS */
