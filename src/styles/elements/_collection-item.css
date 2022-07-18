@@ -38,8 +38,8 @@
     --collection-item-category-margin: 0 0 var(--spacing-xs);
 
     --collection-item-date-position: absolute;
-    --collection-item-date-top: var(--spacing-normal);
-    --collection-item-date-left: var(--spacing-normal);
+    --collection-item-date-top: var(--spacing-m);
+    --collection-item-date-left: var(--spacing-m);
     --collection-item-date-background-color: var(--color-bg);
     --collection-item-date-border-radius: var(--border-radius-normal);
     --collection-item-date-display: flex;
