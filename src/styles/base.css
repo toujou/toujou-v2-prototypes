@@ -1,2 +1,17 @@
 @import url('./globals/_reset.css');
 @import url('./globals/_variables.css');
+@import url("./globals/forms");
+@import url("./globals/_button.css");
+@import url("./globals/_chip.css");
+@import url("./globals/_footer.css");
+@import url("./globals/_footer-column.css");
+@import url("./globals/_footer-content.css");
+@import url("./globals/_grid.css");
+@import url("./globals/_header.css");
+@import url("./globals/_header-content.css");
+@import url("./globals/_icon.css");
+@import url("./globals/_pn-nav.css");
+@import url("./globals/_single-media.css");
+@import url("./globals/_teaser.css");
+@import url("./globals/_text-blocks.css");
+@import url("./globals/_type.css");
