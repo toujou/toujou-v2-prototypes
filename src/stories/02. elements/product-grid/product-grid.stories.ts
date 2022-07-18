@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Story, Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -17,7 +17,38 @@ export default {
             page: productGridDocs,
         },
     },
+    argTypes: {
+        imageFormat: {
+            table: {
+                category: "Product grid card settings",
+                defaultValue: { summary: '16-9' },
+            },
+            name: 'Image format',
+            description: "Set the product grid cards image format",
+            options: ['16-9', 'square'],
+            control: { type: 'radio' },
+            defaultValue: ['cinema'],
+            required: true,
+        },
+        cardVariant: {
+            table: {
+                category: "Product grid card settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Card variant',
+            description: "Set the product grid cards element design",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+    }
 } as Meta;
+
+interface ProductGridStoryProps {
+    imageFormat: string,
+    cardVariant: string
+}
 
 function createImageCardLink(imageFormat: string, cardVariant: string): string {
     return `
@@ -33,13 +64,13 @@ function createImageCardLink(imageFormat: string, cardVariant: string): string {
     `;
 }
 
-const Template = () => {
+const Template: Story<ProductGridStoryProps> = (args: ProductGridStoryProps) => {
     const colNumber = 4;
         const toujouImageCardGrid = document.createElement('toujou-image-card-grid');
         toujouImageCardGrid.classList.add('image-card-grid');
 
         for (let i = 0; i < colNumber; i++) {
-            const imageCard = createImageCardLink('16-9', 'default')
+            const imageCard = createImageCardLink(args.imageFormat, args.cardVariant)
             toujouImageCardGrid.insertAdjacentHTML('beforeend', imageCard);
         }
 
@@ -47,3 +78,8 @@ const Template = () => {
 };
 
 export const ProductGrid = Template.bind({});
+
+ProductGrid.args = {
+    imageFormat: '16-9',
+    cardVariant: 'default',
+}
