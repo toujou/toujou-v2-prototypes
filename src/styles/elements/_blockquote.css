@@ -12,7 +12,7 @@
     --blockquote-author-prefix: "—";
     --blockquote-max-width: var(--content-max-width);
 
-    --blockquote-text-font-size: var(--font-size-m);
+    --blockquote-text-font-size: var(--font-size-normal);
     --blockquote-text-line-height: 1.5;
     --blockquote-text-margin: 0;
     --blockquote-z-index: var(--z-index-content);
