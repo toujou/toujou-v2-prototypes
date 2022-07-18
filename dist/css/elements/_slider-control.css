@@ -21,7 +21,7 @@ button.slider-control:focus-visible {
 }
 
 button.slider-control--prev {
-    --slider-control-inset: var(--slider-control-top) auto auto var(--slider-control-distance-to-margin);
+    --slider-control-inset: 50% auto auto var(--slider-control-distance-to-margin);
 }
 
 .slider[content-type="logos"] button.slider-control--prev {
@@ -29,7 +29,7 @@ button.slider-control--prev {
 }
 
 button.slider-control--next {
-    --slider-control-inset: var(--slider-control-top) var(--slider-control-distance-to-margin) auto auto;
+    --slider-control-inset: 50% var(--slider-control-distance-to-margin) auto auto;
 }
 
 .slider[content-type="logos"] button.slider-control--next {

@@ -49,7 +49,7 @@ const Template = () => {
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
                             <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
                                 <div class="teaser__figure">
-                                    <img class="teaser__image" src="https://picsum.photos/1024" alt="nice image" />
+                                    <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
                                 <div class="teaser__content">
                                     <h3>Nice headline</h3>

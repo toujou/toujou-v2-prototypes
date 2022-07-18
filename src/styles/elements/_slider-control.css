@@ -21,19 +21,27 @@ button.slider-control:focus-visible {
 }
 
 button.slider-control--prev {
-    --slider-control-inset: var(--slider-control-top) auto auto var(--slider-control-distance-to-margin);
+    --slider-control-inset: 50% auto auto var(--slider-control-distance-to-margin);
 }
 
 .slider[content-type="logos"] button.slider-control--prev {
     --slider-control-inset: var(--slider-control-top) auto auto var(--slider-control-distance-to-margin);
 }
 
+.slider[content-type="teaser"] button.slider-control--prev {
+    --slider-control-inset: 23vw auto auto var(--slider-control-distance-to-margin);
+}
+
 button.slider-control--next {
-    --slider-control-inset: var(--slider-control-top) var(--slider-control-distance-to-margin) auto auto;
+    --slider-control-inset: 50% var(--slider-control-distance-to-margin) auto auto;
 }
 
 .slider[content-type="logos"] button.slider-control--next {
     --slider-control-inset: var(--slider-control-top) var(--slider-control-distance-to-margin) auto auto;
+}
+
+.slider[content-type="teaser"] button.slider-control--next {
+    --slider-control-inset: 23vw var(--slider-control-distance-to-margin) auto auto;
 }
 
 .slider[slider-fullwidth] button.slider-control {
@@ -75,5 +83,35 @@ button.slider-control--next {
         --slider-control-icon-default-color: var(--slider-control-icon-hover-color);
 
         cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .slider[content-type="teaser"] button.slider-control--prev {
+        --slider-control-inset: 25vw auto auto var(--slider-control-distance-to-margin);
+    }
+
+    .slider[content-type="teaser"] button.slider-control--next {
+        --slider-control-inset: 25vw var(--slider-control-distance-to-margin) auto auto;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .slider[content-type="teaser"] button.slider-control--prev {
+        --slider-control-inset: 12.5vw auto auto var(--slider-control-distance-to-margin);
+    }
+
+    .slider[content-type="teaser"] button.slider-control--next {
+        --slider-control-inset: 12.5vw var(--slider-control-distance-to-margin) auto auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .slider[content-type="teaser"] button.slider-control--prev {
+        --slider-control-inset: 8rem auto auto var(--slider-control-distance-to-margin);
+    }
+
+    .slider[content-type="teaser"] button.slider-control--next {
+        --slider-control-inset: 8rem var(--slider-control-distance-to-margin) auto auto;
     }
 }
