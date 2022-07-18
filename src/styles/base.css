@@ -1,2 +1,2 @@
-@import url('./elements/_reset.css');
-@import url('./elements/_type.css');
+@import url('./globals/_reset.css');
+@import url('./globals/_variables.css');
