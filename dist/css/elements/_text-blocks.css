@@ -5,7 +5,7 @@
     --text-block-width: var(--content-width-with-padding);
     --text-block-max-width: var(--content-max-width);
     --text-block-margin: 0 auto;
-    --text-block-image-aspect-ratio: var(--aspect-ratio-auto);
+    --text-block-image-aspect-ratio: var(--aspect-ratio-default);
     --text-block-image-object-fit: cover;
     --text-block-media-inside-image-width: 50%;
     --text-block-media-inside-offset: calc(100% / 8);

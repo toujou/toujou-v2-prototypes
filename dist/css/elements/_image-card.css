@@ -8,7 +8,7 @@
     --image-card-text-decoration: none;
     --image-card-z-index: var(--z-index-content);
 
-    --image-card-aspect-ratio: var(--aspect-ratio-16-9);
+    --image-card-aspect-ratio: var(--aspect-ratio-default);
 
     --image-card-title-position: relative;
     --image-card-title-width: 100%;
