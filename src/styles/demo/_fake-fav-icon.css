@@ -3,8 +3,8 @@
     bottom: 0;
     right: var(--spacing-normal);
     transform: translateY(50%);
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: var(--color-bg);
     border-radius: var(--border-radius-circle);
     box-shadow: var(--shadow-normal);
