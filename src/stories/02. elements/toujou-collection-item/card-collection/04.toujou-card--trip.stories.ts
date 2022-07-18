@@ -81,7 +81,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
-                            <span class="collection-item__trip-price-amount">1.5000,00€</span>
+                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
@@ -133,7 +133,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
-                            <span class="collection-item__trip-price-amount">1.5000,00€</span>
+                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
@@ -185,7 +185,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
-                            <span class="collection-item__trip-price-amount">1.5000,00€</span>
+                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
@@ -237,7 +237,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
-                            <span class="collection-item__trip-price-amount">1.5000,00€</span>
+                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
                         
