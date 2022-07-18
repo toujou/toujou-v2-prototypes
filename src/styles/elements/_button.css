@@ -74,12 +74,12 @@
 /* BUTTON ICON */
 .button[button-icon-position="left"] {
     --button-flex-direction: row;
-    --button-padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) var(--spacing-ms);
+    --button-padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) var(--spacing-normal);
 }
 
 .button[button-icon-position="right"] {
     --button-flex-direction: row-reverse;
-    --button-padding: var(--spacing-s) var(--spacing-ms) var(--spacing-s) var(--spacing-m);
+    --button-padding: var(--spacing-s) var(--spacing-normal) var(--spacing-s) var(--spacing-m);
 }
 
 .icon.button__icon {
