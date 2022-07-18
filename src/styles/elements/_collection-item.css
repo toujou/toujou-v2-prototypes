@@ -36,6 +36,7 @@
     --collection-item-category-border-radius: 0 var(--border-radius-xxxl) var(--border-radius-xxxl) 0;
     --collection-item-category-font-size: var(--font-size-s);
     --collection-item-category-margin: 0 0 var(--spacing-xs);
+    --collection-item-category-width: fit-content;
 
     --collection-item-date-position: absolute;
     --collection-item-date-top: var(--spacing-m);
@@ -225,6 +226,7 @@
     margin: var(--collection-item-category-margin);
     border-radius: var(--collection-item-category-border-radius);
     font-size: var(--collection-item-category-font-size);
+    width: var(--collection-item-category-width);
 }
 
 .collection-item__date {
