@@ -5,12 +5,12 @@
     --image-card-position: relative;
     --image-card-overflow: hidden;
     --image-card-border-radius: var(--border-radius-normal);
+    --image-card-text-decoration: none;
     --image-card-z-index: var(--z-index-content);
 
     --image-card-aspect-ratio: var(--aspect-ratio-16-9);
 
-    --image-card-title-position: absolute;
-    --image-card-title-inset: auto auto 0 0;
+    --image-card-title-position: relative;
     --image-card-title-width: 100%;
     --image-card-title-background-color: var(--color-font-dark);
     --image-card-title-color: var(--color-bg);
@@ -30,6 +30,7 @@
     max-width: var(--image-card-max-width);
     border-radius: var(--image-card-border-radius);
     overflow: var(--image-card-overflow);
+    text-decoration: var(--image-card-text-decoration);
     z-index: var(--image-card-z-index);
 }
 

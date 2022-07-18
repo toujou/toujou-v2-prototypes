@@ -55,7 +55,7 @@ const Template: Story<HeroMediaStoryProps> = (args: HeroMediaStoryProps) => {
         <a href="#" class="hero-media" headline-alignment="${args.headerAlignment}">
             <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="hero-media__media">
             <h3 class="hero-media__title font--${args.headerSize}">Hero Media</h3>
-        </tou>
+        </a>
     `;
 };
 

@@ -12,6 +12,7 @@
     --slider-top-position: relative;
 
     --slider-control-position: absolute;
+    --slider-control-top: calc(calc(100% - 2rem) / 2);
     --slider-control-transform: translateY(-50%);
     --slider-control-size: calc(var(--spacing-l) + var(--spacing-s));
     --slider-control-border-radius: var(--border-radius-circle);

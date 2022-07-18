@@ -18,6 +18,7 @@
     --hero-media-transform: translate(-50%, -50%);
     --hero-media-title-margin: 0;
     --hero-media-title-color: var(--color-bg);
+    --hero-media-title-padding: var(--spacing-normal);
 
     aspect-ratio: var(--hero-media-aspect-ratio);
     display: var(--hero-media-display);
@@ -54,6 +55,7 @@
     transform: var(--hero-media-transform);
     margin: var(--hero-media-title-margin);
     color: var(--hero-media-title-color);
+    padding: var(--hero-media-title-padding);
 }
 
 a.hero-media:focus {
@@ -63,5 +65,11 @@ a.hero-media:focus {
 @media (hover: hover) {
     a.hero-media:hover {
         --hero-media-title-color: var(--color-primary);
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .hero-media {
+        --hero-media-title-padding: var(--spacing-normal) var(--spacing-xl);
     }
 }
