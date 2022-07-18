@@ -18,7 +18,7 @@
     --collection-item-figure-border-radius: 0;
     --collection-item-figure-overflow: hidden;
 
-    --collection-item-image-ratio: var(--aspect-ratio-4-3);
+    --collection-item-image-ratio: var(--aspect-ratio-default);
     --collection-item-image-object-fit: cover;
 
     --collection-item-categories-position: absolute;
@@ -188,7 +188,6 @@
 
 .collection-item[item-type="product"][item-orientation="vertical"] {
     --collection-item-bottom-padding: var(--spacing-s) var(--spacing-normal);
-    --collection-item-image-ratio: var(--aspect-ratio-16-9);
     --collection-item-title-color: var(--color-bg);
 }
 

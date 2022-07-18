@@ -13,7 +13,7 @@
     --teaser-figure-border-radius: var(--border-radius-normal);
     --teaser-figure-overflow: hidden;
 
-    --teaser-image-aspect-ratio: var(--aspect-ratio-16-9);
+    --teaser-image-aspect-ratio: var(--aspect-ratio-default);
     --teaser-image-object-fit: cover;
 
     position: var(--teaser-position);
