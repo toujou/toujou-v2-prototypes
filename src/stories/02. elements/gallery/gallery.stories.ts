@@ -24,8 +24,8 @@ export default {
 const Template = () => {
     return `
         <h1>Gallery!!!</h1>
-        <toujou-gallery id="gallery1" class="gallery pswp">
-            <div class="pswp-gallery" id="my-gallery">
+        <toujou-gallery id="gallery1" class="gallery">
+            <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
                 <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
                     data-pswp-width="1669" 
                     data-pswp-height="2500" 

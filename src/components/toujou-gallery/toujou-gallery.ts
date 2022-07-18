@@ -1,32 +1,25 @@
-import { LitElement, css, unsafeCSS } from 'lit'
+import { LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import PhotoSwipe from 'photoswipe';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-// @ts-ignore
-import PhotoSwipeStyles from 'photoswipe/dist/photoswipe.css';
 
 @customElement('toujou-gallery')
 export class ToujouGallery extends LitElement {
-    public static styles = css`${unsafeCSS(PhotoSwipeStyles)}`
-    private lightbox: any;
 
-    constructor() {
-        super();
+    protected createRenderRoot(): Element | ShadowRoot {
+        return this;
     }
-
-    createRenderRoot() { return this;}
 
     connectedCallback() {
         super.connectedCallback();
 
-        this.lightbox = new PhotoSwipeLightbox({
-            gallery: `#my-gallery`,
+        const lb = new PhotoSwipeLightbox({
+            gallery: `#gallery--getting-started`,
             children: 'a',
             pswpModule: PhotoSwipe
         })
 
-        this.lightbox.init();
-        console.log('2222', this.lightbox)
+        lb.init();
     }
 }
 

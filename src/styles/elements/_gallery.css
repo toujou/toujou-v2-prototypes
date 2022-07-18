@@ -1,6 +1,1 @@
-.gallery {
-    border: 3px solid red;
-    height: 1000px;
-    width: 100%;
-    display: block;
-}
+@import "../../../node_modules/photoswipe/dist/photoswipe.css";
