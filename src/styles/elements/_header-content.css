@@ -123,4 +123,12 @@
     .header-content {
         --header-content-padding: var(--spacing-l);
     }
+
+    .header-content[horizontal-position="left"] {
+        --header-content-left: var(--spacing-xxl);
+    }
+
+    .header-content[horizontal-position="right"] {
+        --header-content-right: var(--spacing-xxl);
+    }
 }
