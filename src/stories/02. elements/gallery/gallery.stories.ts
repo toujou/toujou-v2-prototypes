@@ -23,41 +23,44 @@ export default {
 
 const Template = () => {
     return `
-        <h1>Gallery!!!</h1>
-        <toujou-gallery id="gallery1" class="gallery">
-            <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
-                <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
-                    data-pswp-width="1669" 
-                    data-pswp-height="2500" 
-                    target="_blank">
-                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
-                  </a>
-                  <!-- cropped thumbnail: -->
-                  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
-                    data-pswp-width="1875" 
-                    data-pswp-height="2500" 
-                    data-cropped="true" 
-                    target="_blank">
-                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
-                    Cropped
-                  </a>
-                  <!-- data-pswp-src with custom URL in href -->
-                  <a href="https://unsplash.com" 
-                    data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
-                    data-pswp-width="2500" 
-                    data-pswp-height="1666" 
-                    target="_blank">
-                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
-                  </a>
-                  <!-- Without thumbnail: -->
-                  <a href="http://example.com" 
-                    data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
-                    data-pswp-width="2500" 
-                    data-pswp-height="1668" 
-                    target="_blank">
-                    No thumbnail
-                  </a>
-          </div>
+        <toujou-gallery id="test-gallery" class="gallery">
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" 
+                data-pswp-width="1669" 
+                data-pswp-height="2500" 
+                target="_blank"
+                class="gallery__item"
+                title="This is a beautiful caption">
+                <img class="gallery__image" src="https://picsum.photos/600" alt=""/>
+              </a>
+              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+                data-pswp-width="1669" 
+                data-pswp-height="2500" 
+                target="_blank"
+                class="gallery__item"
+                title="This is a another nice caption">
+                <img class="gallery__image" src="https://picsum.photos/601" alt="" />
+              </a>
+              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" 
+                data-pswp-width="1669" 
+                data-pswp-height="2500" 
+                target="_blank"
+                class="gallery__item">
+                <img class="gallery__image" src="https://picsum.photos/602" alt="" />
+              </a>
+              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg" 
+                data-pswp-width="1669" 
+                data-pswp-height="2500" 
+                target="_blank"
+                class="gallery__item">
+                <img class="gallery__image" src="https://picsum.photos/603" alt="" />
+              </a>
+              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg" 
+                data-pswp-width="1669" 
+                data-pswp-height="2500" 
+                target="_blank"
+                class="gallery__item">
+                <img class="gallery__image" src="https://picsum.photos/604" alt="" />
+              </a>
         </toujou-gallery>
     `;
 };

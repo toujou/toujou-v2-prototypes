@@ -6,6 +6,14 @@ import PhotoSwipeLightbox from 'photoswipe/lightbox';
 @customElement('toujou-gallery')
 export class ToujouGallery extends LitElement {
 
+    private lightbox: any;
+
+    // @ts-ignore
+    private get galleryID(): string | undefined {
+        const galleryId = this.getAttribute('id');
+        return galleryId ? `#${galleryId}` : undefined;
+    }
+
     protected createRenderRoot(): Element | ShadowRoot {
         return this;
     }
@@ -13,14 +21,48 @@ export class ToujouGallery extends LitElement {
     connectedCallback() {
         super.connectedCallback();
 
-        const lb = new PhotoSwipeLightbox({
-            gallery: `#gallery--getting-started`,
+        this.lightbox = new PhotoSwipeLightbox({
+            gallery: this.galleryID,
             children: 'a',
-            pswpModule: PhotoSwipe
+            pswpModule: PhotoSwipe,
+            allowPanToNext: true,
+            preloaderDelay: 0,
         })
 
-        lb.init();
+        this.lightbox.on('uiRegister', () => this._handleUiRegister());
+        this.lightbox.init();
     }
+
+    /**
+     * Register a new UI element: the caption
+     */
+    _handleUiRegister = () => {
+        this.lightbox.pswp.ui.registerElement({
+            name: 'caption',
+            order: 9,
+            isButton: false,
+            appendTo: 'root',
+            onInit: (el: HTMLElement) => {
+                this.lightbox.pswp.on('change', () => this._handleChange(el));
+            },
+        });
+    }
+
+    /**
+     * Reacto to change on the lightbox so we can add the correct caption text
+     * @param {HTMLElement} el
+     */
+    _handleChange = (el: HTMLElement) => {
+        let captionText = '';
+        const currSlideElement = this.lightbox.pswp.currSlide.data.element;
+
+        if (currSlideElement) {
+            captionText = currSlideElement.getAttribute('title');
+        }
+
+        el.textContent = captionText ? captionText : '';
+    }
+
 }
 
 

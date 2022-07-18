@@ -109,6 +109,7 @@ const iconNames = [
     'play-circle',
     'play-circle-filled',
     'prize',
+    'plus-circle',
     'question',
     'school',
     'science',
