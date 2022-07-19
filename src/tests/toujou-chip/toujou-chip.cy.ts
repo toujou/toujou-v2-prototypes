@@ -103,7 +103,7 @@ describe('toujou-chip - background-colors', () => {
         });
         cy.get('.chip').realHover();
         cy.get('.chip').should('have.css', 'background-color', colorPrimaryLight);
-        cy.get('.chip').should('have.css', 'color', colorPrimaryDark);
+        cy.get('.chip').should('have.css', 'color', colorFontDark);
     });
 
     it('has correct secondary bg colors', () => {
@@ -154,7 +154,7 @@ describe('toujou-chip - background-colors', () => {
         });
         cy.get('.chip').realHover();
         cy.get('.chip').should('have.css', 'background-color', colorSecondaryLight);
-        cy.get('.chip').should('have.css', 'color', colorSecondaryDark);
+        cy.get('.chip').should('have.css', 'color', colorFontDark);
     });
 
     it('has correct font bg colors', () => {
