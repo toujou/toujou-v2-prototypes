@@ -27,7 +27,7 @@ export default {
             description: "Set the image aspect ratio",
             options: ['auto', 'square', '4-3', '16-9', 'golden'],
             control: { type: 'radio' },
-            defaultValue: ['4-3'],
+            defaultValue: ['golden'],
             required: true,
         },
     }
@@ -92,5 +92,5 @@ const Template: Story<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStoryPr
 export const TextBlockMedia = Template.bind({});
 
 TextBlockMedia.args = {
-    imageAspectRatio: '4-3'
+    imageAspectRatio: 'golden'
 }

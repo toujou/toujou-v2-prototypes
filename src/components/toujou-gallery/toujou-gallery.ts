@@ -34,7 +34,7 @@ export class ToujouGallery extends LitElement {
     }
 
     /**
-     * Register a new UI element: the caption
+     * Register a new UI element: caption
      */
     _handleUiRegister = () => {
         this.lightbox.pswp.ui.registerElement({
@@ -49,7 +49,7 @@ export class ToujouGallery extends LitElement {
     }
 
     /**
-     * Reacto to change on the lightbox so we can add the correct caption text
+     * React to change on the lightbox so that we can add the correct caption text
      * @param {HTMLElement} el
      */
     _handleChange = (el: HTMLElement) => {
@@ -62,10 +62,7 @@ export class ToujouGallery extends LitElement {
 
         el.textContent = captionText ? captionText : '';
     }
-
 }
-
-
 
 declare global {
     interface HTMLElementTagNameMap {

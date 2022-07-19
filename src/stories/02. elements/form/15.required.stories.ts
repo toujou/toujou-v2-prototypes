@@ -65,8 +65,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                     type="text"
                     name="tx_form_formframework[testform-1000091][text-1]"
                     value=""
-                    required="required"
-                    disabled>
+                    required="required">
                 <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
 	        </toujou-input-group>
 
@@ -83,8 +82,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                     id="testform-1000091-email-1"
                     type="email"
                     name="tx_form_formframework[testform-1000091][email-1]"
-                    value=""
-                    disabled>
+                    value="">
                 <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
             </toujou-input-group>
             
@@ -101,8 +99,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                     id="testform-1000091-telephone-1"
                     type="tel"
                     name="tx_form_formframework[testform-1000091][telephone-1]"
-                    value=""
-                    disabled>
+                    value="">
                 <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
             </toujou-input-group>
 	

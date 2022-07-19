@@ -1,0 +1,144 @@
+import { Story, Meta } from '@storybook/web-components';
+import { withXD } from "storybook-addon-xd-designs";
+// @ts-ignore
+import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+// @ts-ignore
+import overlayDocs from "./overlay.docs.mdx";
+
+export default {
+    title: 'COMPONENTS/Overlay',
+    decorators: [withXD],
+    parameters: {
+        design: {
+            artboardUrl: 'https://xd.adobe.com/view/3d1d0926-79e2-4ae4-aa1c-162dcd451a3a-684e/screen/61e6af1e-563f-4ce8-92ba-ac3b191c5f0c/Desktop',
+        },
+        badges: [TOUJOU_BADGES.TESTING],
+        docs: {
+            page: overlayDocs,
+        },
+        layout: "fullscreen",
+    },
+    argTypes: {
+        overlayTheme: {
+            table: {
+                category: "Overlay settings",
+                defaultValue: { summary: 'light' },
+            },
+            name: 'Overlay theme',
+            description: "Choose theme for the overlay",
+            options: ['light', 'dark'],
+            control: { type: 'radio' },
+            defaultValue: ['light'],
+            required: true,
+        },
+        showLogo: {
+            table: {
+                category: "Overlay settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Show logo',
+            description: "Toggle the logo visibility",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
+        showCloseButton: {
+            table: {
+                category: "Overlay settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Show close button',
+            description: "Toggle close button visibility",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
+        showConclusionText: {
+            table: {
+                category: "Overlay settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Show conclusion text',
+            description: "Toggle conclusion text visibility",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
+    }
+} as Meta;
+
+interface OverlayStoryProps {
+    overlayTheme: string
+    showLogo: boolean
+    showCloseButton: boolean
+    showConclusionText: boolean
+}
+
+function checkForExistingCookie() {
+    const match = document.cookie.match(new RegExp('toujou-overlay-super-overlay'));
+    console.log('TOUJOU OVERLAY: Deleting previous overlay cookie', match)
+    document.cookie = 'toujou-overlay-super-overlay= ; expires = Thu, 01 Jan 1970 00:00:00 GMT';
+}
+
+const Template: Story<OverlayStoryProps> = (args: OverlayStoryProps) => {
+    checkForExistingCookie()
+
+    return `
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+
+        <toujou-overlay id="super-overlay" class="overlay" overlay-theme="${args.overlayTheme}">
+            <section class="overlay__infos">
+            
+                ${args.showLogo ? `
+                    <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
+                ` : ``}
+                
+                <p class="overlay__text">Sind Sie 18 Jahre oder älter?</p>
+                
+                <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
+                <section class="overlay__buttons">
+                    <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
+                    <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
+                </section>
+                
+                ${args.showConclusionText ? `
+                    <p class="overlay__conclusion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                ` : ``}
+                
+                ${args.showCloseButton ? `
+                    <button class="button overlay__close-button">
+                        <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="normal"></toujou-icon>
+                    </button>
+                ` : ''}
+            </section>
+        </toujou-overlay>
+    `;
+};
+
+export const Overlay = Template.bind({});
+
+Overlay.args = {
+    overlayTheme: 'light',
+    showLogo: false,
+    showCloseButton: false,
+    showConclusionText: false,
+}

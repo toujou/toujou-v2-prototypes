@@ -15,6 +15,7 @@ export default defineConfig({
                 'toujou-details-accordion': path.resolve(__dirname, 'src/components/toujou-details-accordion/toujou-details-accordion.ts'),
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
                 'toujou-gallery': path.resolve(__dirname, 'src/components/toujou-gallery/toujou-gallery.ts'),
+                'toujou-overlay': path.resolve(__dirname, 'src/components/toujou-overlay/toujou-overlay.ts'),
             },
             output: {
                 assetFileNames: (assetInfo) => {
