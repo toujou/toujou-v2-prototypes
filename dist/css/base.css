@@ -2022,6 +2022,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .chip[chip-bg-color="primary-very-light"][is-clickable]:hover {
         --toujou-chip-color-bg: var(--color-primary-light);
+        --toujou-chip-text-color: var(--color-font-dark);
     }
 
     .chip[chip-bg-color="secondary"][is-clickable]:hover {
@@ -2035,6 +2036,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .chip[chip-bg-color="secondary-very-light"][is-clickable]:hover {
         --toujou-chip-color-bg: var(--color-secondary-light);
+        --toujou-chip-text-color: var(--color-font-dark);
     }
 
     .chip[chip-bg-color="font"][is-clickable]:hover {

@@ -65,7 +65,7 @@ interface ContentCardStoryProps {
 
 const Template: Story<ContentCardStoryProps> = (args: ContentCardStoryProps) => {
 
-    const contentCardGrid = document.createElement('content-card-grid');
+    const contentCardGrid = document.createElement('toujou-content-card-grid');
     contentCardGrid.classList.add('content-card-grid');
 
     for (let i = 0; i < args.columnCount; i++) {
