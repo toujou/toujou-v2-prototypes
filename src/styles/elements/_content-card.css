@@ -12,6 +12,7 @@
     --content-card-overflow: hidden;
     --content-card-bg-color: var(--color-bg);
     --content-card-padding: 0;
+    --content-card-text-decoration: none;
     --content-card-z-index: var(--z-index-content);
 
     --content-card-figure-flex: 0 0 100%;
@@ -56,6 +57,7 @@
     overflow: var(--content-card-overflow);
     background-color: var(--content-card-bg-color);
     padding: var(--content-card-padding);
+    text-decoration: var(--content-card-text-decoration);
     z-index: var(--content-card-z-index);
 }
 
@@ -168,11 +170,7 @@
 }
 
 @media (hover: hover) {
-    .content-card__button:hover {
+    a.content-card:hover .content-card__button {
         --content-card-button-text-decoration: underline;
-    }
-
-    .content-card__button:hover .icon {
-        --icon-color: var(--color-primary-dark) !important;
     }
 }

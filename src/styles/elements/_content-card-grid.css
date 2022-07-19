@@ -1,7 +1,7 @@
 .content-card-grid {
     --content-card-grid-display: flex;
     --content-card-grid-flex-wrap: wrap;
-    --content-card-grid-align-items: center;
+    --content-card-grid-align-items: start;
     --content-card-grid-justify-content: center;
     --content-card-grid-gap: var(--content-spacing-between-columns);
     --content-card-grid-width: var(--content-width-with-padding);

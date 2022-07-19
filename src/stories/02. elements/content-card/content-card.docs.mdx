@@ -1,26 +1,42 @@
 # &lt;toujou-content-card&gt;
-The `<toujou-content-card>` is a simple element that renders an image card on the page (image, title, text and link)
+The `<toujou-content-card>` is a simple element that renders an content card on the page (image, title, text and link)
 
 | ⚠ The content must always be placed inside a `<toujou-content-card-grid>` element |
 |-----------------------------------------------------------------------------------|
 
+The link on the content card is optional. If there is a link we render `<a class="content-card"...>` otherwise we render a `<toujou-content-card class="content-card"...>` element.
 
-## Markup example
+## Markup example for content card withou link
 ```html
 <toujou-content-card-grid class="content-card-grid">
-    <toujou-content-card class="content-card" href="#" card-variant="${args.cardVariant}" card-direction="vertical">
+    <toujou-content-card class="content-card" card-variant="primary" card-direction="vertical">
         <figure class="content-card__figure">
             <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
         </figure>
         <div class="content-card__content">
             <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
             <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-            <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                zur Beschreibung
-            </a>
         </div>
     </toujou-content-card>
+</toujou-content-card-grid>
+```
+
+## Markup example for content card with link
+```html
+<toujou-content-card-grid class="content-card-grid">
+    <a href="#" class="content-card" card-variant="primary" card-direction="vertical">
+        <figure class="content-card__figure">
+            <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
+        </figure>
+        <div class="content-card__content">
+            <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
+            <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+            <span class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
+                <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
+                zur Beschreibung
+            </span>
+        </div>
+    </a>
 </toujou-content-card-grid>
 ```
 
