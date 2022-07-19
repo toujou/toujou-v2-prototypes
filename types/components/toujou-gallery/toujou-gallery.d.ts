@@ -5,11 +5,11 @@ export declare class ToujouGallery extends LitElement {
     protected createRenderRoot(): Element | ShadowRoot;
     connectedCallback(): void;
     /**
-     * Register a new UI element: the caption
+     * Register a new UI element: caption
      */
     _handleUiRegister: () => void;
     /**
-     * Reacto to change on the lightbox so we can add the correct caption text
+     * React to change on the lightbox so that we can add the correct caption text
      * @param {HTMLElement} el
      */
     _handleChange: (el: HTMLElement) => void;

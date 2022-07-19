@@ -211,6 +211,7 @@ figure {
     --color-black-o-10: hsl(0 0% 0% / 10%);
 
     --color-white: hsl(0 100% 100% / 100%);
+    --color-white-o-75: hsl(0 100% 100% / 75%);
 }
 
 :root {
