@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colorPrimary = Cypress.env('colorPrimary');
+const colorPrimaryDark = Cypress.env('colorPrimaryDark');
 const colorFont = Cypress.env('colorFont');
 
 describe('toujou-breadcrumb - desktop', () => {
@@ -30,7 +31,7 @@ describe('toujou-breadcrumb - desktop', () => {
         cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colorFont);
         // @ts-ignore
         cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').realHover()
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colorPrimary);
+        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colorPrimaryDark);
     });
 
     it('first item has "hover" icon', () => {

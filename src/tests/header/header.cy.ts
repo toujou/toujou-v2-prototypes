@@ -115,14 +115,14 @@ describe('header - vertical position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('vertical-position', 'top');
         });
-        cy.get('.header-content').should('have.css', 'top', '16px');
+        cy.get('.header-content').should('have.css', 'top', '64px');
     });
 
     it('has correct "bottom" vertical position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('vertical-position', 'bottom');
         });
-        cy.get('.header-content').should('have.css', 'bottom', '16px');
+        cy.get('.header-content').should('have.css', 'bottom', '64px');
     });
 });
 
@@ -146,14 +146,14 @@ describe('header - horizontal position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'left');
         });
-        cy.get('.header-content').should('have.css', 'left', '16px');
+        cy.get('.header-content').should('have.css', 'left', '64px');
     });
 
     it('has correct "right" horizontal position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'right');
         });
-        cy.get('.header-content').should('have.css', 'right', '16px');
+        cy.get('.header-content').should('have.css', 'right', '64px');
     });
 });
 
@@ -218,14 +218,14 @@ describe('header - accent color', () => {
         cy.get('.header-content__title').should('have.css', 'color', colorPrimary);
     });
 
-    it('has correct primary headline accent color', () => {
+    it('has correct secondary headline accent color', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('accent-color', 'secondary');
         });
         cy.get('.header-content__title').should('have.css', 'color', colorSecondary);
     });
 
-    it('has correct primary headline grey color', () => {
+    it('has correct grey headline accent color', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('accent-color', 'grey');
         });
