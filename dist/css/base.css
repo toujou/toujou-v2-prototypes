@@ -2880,6 +2880,11 @@ a.footer__list-link:focus {
     -webkit-mask-image: var(--icon-prize);
 }
 
+.icon[icon-name="plus-circle"] {
+    mask-image: var(--icon-plus-circle);
+    -webkit-mask-image: var(--icon-plus-circle);
+}
+
 .icon[icon-name="question"] {
     mask-image: var(--icon-question);
     -webkit-mask-image: var(--icon-question);

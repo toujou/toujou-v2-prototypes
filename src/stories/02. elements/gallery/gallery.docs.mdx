@@ -1,3 +1,40 @@
 # Gallery
+This element displays a gallery and a lightbox on the page
 
-https://photoswipe.com/
+We use the [PhotoSwipe](https://photoswipe.com/)
+
+## Markup Example
+```html
+<toujou-gallery id="test-gallery" class="gallery">
+    <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
+        data-pswp-width="1669"
+        data-pswp-height="2500"
+        target="_blank"
+        class="gallery__item"
+        title="This is a beautiful caption">
+        <img class="gallery__image" src="https://picsum.photos/600" alt=""/>
+    </a>
+    <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"
+        data-pswp-width="1669"
+        data-pswp-height="2500"
+        target="_blank"
+        class="gallery__item">
+        <img class="gallery__image" src="https://picsum.photos/601" alt="" />
+    </a>
+</toujou-gallery>
+```
+
+## Attributes
+
+### id <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `toujou-gallery` element must have a unique `id` attribute
+
+### photoswipe attributes
+The gallery items (the `a` elements inside the `toujou-gallery`) must have:
+- `class="gallery__item"`
+- `target="_blank"`
+- `data-pswp-width="..."` (width of the target image)
+- `data-pswp-height="..."` (height of the target image)
+
+They may also have:
+- `title="..."` (this is the caption that will be shown on the lightbox)
