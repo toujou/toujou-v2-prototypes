@@ -17,6 +17,8 @@
     --blockquote-text-margin: 0;
     --blockquote-z-index: var(--z-index-content);
 
+    --blockquote-author-grid-column: 2;
+
     display: grid;
     grid-gap: var(--blockquote-gap);
     grid-template-columns: var(--blockquote-grid-template-columns);
@@ -26,6 +28,10 @@
     min-width: 0;
     min-height: 0;
     z-index: var(--blockquote-z-index);
+}
+
+.blockquote[blockquote-direction="vertical"] {
+    --blockquote-author-grid-column: 1;
 }
 
 .blockquote-grid[blockquote-grid-count="2"] .blockquote[blockquote-direction="vertical"],
@@ -87,7 +93,7 @@
     font-size: var(--blockquote-font-size);
     color: var(--blockquote-color);
     line-height: var(--blockquote-line-height);
-    grid-column: 2;
+    grid-column: var(--blockquote-author-grid-column);
     grid-area: blockquoteAuthor;
 }
 
