@@ -38,13 +38,14 @@
 
     --main-nav-back-button-display: flex;
     --main-nav-back-button-padding: 0;
-    --main-nav-back-button-margin: var(--spacing-normal) 0 0;
+    --main-nav-back-button-margin: var(--spacing-normal) 0 32px;
 
     --main-nav-subtitle-display: block;
     --main-nav-subtitle-font-family: var(--font-family-text);
     --main-nav-subtitle-font-weight: var(--font-weight-text-bold);
     --main-nav-subtitle-font-size: var(--font-size-l);
     --main-nav-subtitle-color: var(--color-bg);
+    --main-nav-subtitle-margin-bottom: 0;
 
     --main-nav-chevron-color: var(--color-bg);
 
@@ -94,6 +95,7 @@
     font-weight: var(--main-nav-subtitle-font-weight);
     font-size: var(--main-nav-subtitle-font-size);
     color: var(--main-nav-subtitle-color);
+    margin-bottom: var(--main-nav-subtitle-margin-bottom);
 }
 
 .main-nav__chevron .icon {
