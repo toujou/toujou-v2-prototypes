@@ -4,8 +4,6 @@ import { withXD } from "storybook-addon-xd-designs";
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import topbarDocs from "./topbar.docs.mdx";
-// @ts-ignore
-import logoImage from '../../../../assets/logoipsum.svg';
 
 export default {
     title: 'COMPONENTS/Topbar',
@@ -27,7 +25,7 @@ const Template = () => {
     return `       
         <toujou-topbar id="topbar" class="topbar">
             <a href="#" class="topbar__logo-link">
-                <img src="${logoImage}" alt="logo" class="topbar__logo">
+                <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
             </a>
 
             <ul class="topbar__actions">
