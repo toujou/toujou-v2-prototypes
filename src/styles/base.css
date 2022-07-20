@@ -12,7 +12,10 @@
 @import "./globals/_header.css";
 @import "./globals/_header-content.css";
 @import "./globals/_icon.css";
-@import "./globals/_main-nav.css";
+@import "./globals/navigation/_main-nav.css";
+@import "./globals/navigation/_main-nav-first-level.css";
+@import "./globals/navigation/_main-nav-second-level.css";
+@import "./globals/navigation/_service-nav.css";
 @import "./globals/_pn-nav.css";
 @import "./globals/_single-media.css";
 @import "./globals/_teaser.css";

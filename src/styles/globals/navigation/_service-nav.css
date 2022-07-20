@@ -1,0 +1,55 @@
+.service-nav {
+    --service-nav-opacity: 0;
+    --service-nav-position: fixed;
+    --service-nav-bottom: 0;
+    --service-nav-padding: 0;
+    --service-nav-border-top: 1px solid var(--color-white-o-75);
+    --service-nav-background-color: var(--color-primary);
+    --service-nav-width: calc(100% - var(--spacing-l));
+    --service-nav: flex;
+    --service-nav-align-items: center;
+    --service-nav-justify-content: flex-start;
+    --service-nav-gap: var(--spacing-normal);
+    --service-nav-transform: translateY(-100vh);
+    --service-nav-pointer-events: none;
+    --service-nav-transition:
+            transform var(--animation-duration-normal) var(--animation-easing-normal),
+            opacity var(--animation-duration-normal) var(--animation-easing-normal);
+
+    --service-nav-link-font-family: var(--font-family-text);
+    --service-nav-link-font-size: var(--font-size-normal);
+    --service-nav-link-text-decoration: none;
+    --font-nav-link-color: var(--color-bg);
+
+    position: var(--service-nav-position);
+    height: var(--service-nav-height);
+    bottom: var(--service-nav-bottom);
+    padding: var(--service-nav-padding);
+    border-top: var(--service-nav-border-top);
+    background: var(--service-nav-background-color);
+    width: var(--service-nav-width);
+    display: var(--service-nav);
+    align-items: var(--service-nav-align-items);
+    justify-content: var(--service-nav-justify-content);
+    gap: var(--service-nav-gap);
+    opacity: var(--service-nav-opacity);
+    transform: var(--service-nav-transform);
+    transition: var(--service-nav-transition);
+    pointer-events: var(--service-nav-pointer-events);
+}
+
+.service-nav__link {
+    font-family: var(--service-nav-link-font-family);
+    font-size: var(--service-nav-link-font-size);
+    text-decoration: var(--service-nav-link-text-decoration);
+    color: var(--font-nav-link-color);
+}
+
+.topbar[open-nav="true"] .service-nav {
+    --service-nav-opacity: 1;
+    --service-nav-pointer-events: all;
+    --service-nav-transform: translateY(0);
+    --service-nav-transition:
+            transform var(--animation-duration-normal) var(--animation-easing-normal),
+            opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
+}

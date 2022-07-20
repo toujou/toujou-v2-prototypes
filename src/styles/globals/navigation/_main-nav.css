@@ -1,0 +1,124 @@
+.main-nav {
+    --main-nav-position: fixed;
+    --main-nav-top: var(--topbar-height);
+    --main-nav-left: 0;
+    --main-nav-width: 100%;
+    --main-nav-height: calc(100% - var(--topbar-height));
+    --main-nav-bg-color: var(--color-primary);
+    --main-nav-padding: var(--spacing-normal) var(--spacing-normal) calc(var(--service-nav-height) + var(--spacing-l)) var(--spacing-normal);
+    --main-nav-display: block;
+    --main-nav-transform: translateY(calc(-100% - var(--topbar-height)));
+    --main-nav-opacity: 0;
+    --main-nav-transition:
+            transform var(--animation-duration-normal) var(--animation-easing-normal),
+            opacity var(--animation-duration-normal) var(--animation-easing-normal);
+
+    --main-nav-list-display: flex;
+    --main-nav-list-flex-direction: column;
+    --main-nav-list-align-items: flex-start;
+    --main-nav-list-justify-content: center;
+    --main-nav-list-gap: var(--spacing-normal);
+    --main-nav-list-list-style: none;
+    --main-nav-list-margin: var(--spacing-normal) 0 0;
+    --main-nav-list-padding: 0;
+    --main-nav-overflow-y: auto;
+
+    --main-nav-list-item-text-width: 100%;
+    --main-nav-list-item-text-display: flex;
+    --main-nav-list-item-text-align-items: center;
+    --main-nav-list-item-text-justify-content: space-between;
+    --main-nav-list-item-text-gap: var(--spacing-normal);
+
+    --main-nav-link-text-decoration: none;
+    --main-nav-link-font-family: var(--font-family-text);
+    --main-nav-link-font-weight: var(--font-weight-text-bold);
+    --main-nav-link-font-size: var(--font-size-l);
+    --main-nav-link-color: var(--color-bg);
+    --main-nav-link-color-hover: var(--color-primary-dark);
+
+    --main-nav-back-button-display: flex;
+    --main-nav-back-button-padding: 0;
+    --main-nav-back-button-margin: var(--spacing-normal) 0 0;
+
+    --main-nav-subtitle-display: block;
+    --main-nav-subtitle-font-family: var(--font-family-text);
+    --main-nav-subtitle-font-weight: var(--font-weight-text-bold);
+    --main-nav-subtitle-font-size: var(--font-size-l);
+    --main-nav-subtitle-color: var(--color-bg);
+
+    --main-nav-chevron-color: var(--color-bg);
+
+    display: var(--main-nav-display);
+    position: var(--main-nav-position);
+    top: var(--main-nav-top);
+    left: var(--main-nav-left);
+    width: var(--main-nav-width);
+    height: var(--main-nav-height);
+    background-color: var(--main-nav-bg-color);
+    padding: var(--main-nav-padding);
+    transform: var(--main-nav-transform);
+    opacity: var(--main-nav-opacity);
+    transition: var(--main-nav-transition);
+    z-index: -1;
+    overflow-y: var(--main-nav-overflow-y);
+}
+
+.main-nav[open-level="1"] {
+    --main-nav-back-button-display: none;
+    --main-nav-subtitle-display: none;
+}
+
+.main-nav[open-level="2"] .main-nav__list-item[is-open] > .main-nav__link,
+.main-nav[open-level="2"] .main-nav__list-item[is-open] > .main-nav__chevron {
+    display: none;
+}
+
+.main-nav[open-level="2"] .main-nav__list-item[nav-item-level="1"]:not([is-open]) {
+    display: none;
+}
+
+.topbar[open-nav="true"] .main-nav {
+    --main-nav-transform: translateX(0);
+    --main-nav-opacity: 1;
+}
+
+.main-nav__back-button {
+    display: var(--main-nav-back-button-display);
+    padding: var(--main-nav-back-button-padding);
+    margin: var(--main-nav-back-button-margin);
+}
+
+.main-nav__subtitle {
+    display: var(--main-nav-subtitle-display);
+    font-family: var(--main-nav-subtitle-font-family);
+    font-weight: var(--main-nav-subtitle-font-weight);
+    font-size: var(--main-nav-subtitle-font-size);
+    color: var(--main-nav-subtitle-color);
+}
+
+.main-nav__chevron .icon {
+    --icon-color: var(--main-nav-chevron-color);
+}
+
+.main-nav__chevron:focus .icon {
+    --icon-color: var(--color-primary-dark);
+}
+
+@media (hover: hover) {
+    .main-nav__chevron:hover {
+        cursor: pointer;
+    }
+
+    .main-nav__chevron:hover .icon {
+        --icon-color: var(--color-primary-dark);
+    }
+
+    .main-nav__back-button:hover {
+        --button-color-bg: transparent;
+        --button-color-text: var(--color-primary-dark);
+    }
+
+    .main-nav__back-button:hover .icon {
+        --icon-color: var(--color-primary-dark);
+    }
+}

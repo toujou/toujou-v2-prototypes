@@ -12,7 +12,7 @@
     --burger-button-line-color-active: var(--topbar-icons-active-color, var(--color-primary-dark));
     --burger-button-line-animation-settings: var(--animation-duration-normal) var(--animation-easing-normal) 0s 1 normal forwards;
     --burger-button-line-border-radius: calc(var(--burger-button-line-height) / 2);
-    --burger-button-line-transition: background-color var(--animation-duration-normal) var(--animation-easing-normal);
+    --burger-button-line-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
 
     position: var(--burger-button-position);
     height: var(--burger-button-size);

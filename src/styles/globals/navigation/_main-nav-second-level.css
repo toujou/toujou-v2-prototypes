@@ -1,0 +1,27 @@
+.main-nav__list[nav-list-level="2"] {
+    --main-nav-level-2-display: none;
+    --main-nav-level-2-visibility: invisible;
+    --main-nav-level-2-list-margin: 0;
+
+    --main-nav-level-2-list-item-font-size: var(--font-size-ms);
+
+    display: var(--main-nav-level-2-display);
+    visibility: var(--main-nav-level-2-visibility);
+
+    flex-direction: var(--main-nav-list-flex-direction);
+    align-items: var(--main-nav-list-align-items);
+    justify-content: var(--main-nav-list-justify-content);
+    gap: var(--main-nav-list-gap);
+    list-style: var(--main-nav-list-list-style);
+    margin: var(--main-nav-level-2-list-margin);
+    padding: var(--main-nav-list-padding);
+}
+
+.main-nav__list-item[is-open] .main-nav__list[nav-list-level="2"] {
+    --main-nav-level-2-display: block;
+    --main-nav-level-2-visibility: visible;
+}
+
+.main-nav__list-item[nav-item-level="2"] .main-nav__text {
+    font-size: var(--main-nav-level-2-list-item-font-size);
+}

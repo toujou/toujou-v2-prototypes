@@ -38,9 +38,15 @@ const Template = () => {
                     </a>
                 </li>
             </ul>            
-
             
-            <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
+            <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation">
+                <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
+                    <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
+                    Zurück
+                </button>
+                
+                <p class="main-nav__subtitle">this is a test</p>
+                
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
                         <a href="#" class="main-nav__link">
@@ -52,7 +58,7 @@ const Template = () => {
                             <span class="main-nav__text">Bürgerservice</span>
                         </a>
                         <span class="main-nav__chevron">
-                            <toujou-icon class="icon" icon-size="m" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
                         </span>
                         <ul class="main-nav__list" nav-list-level="2">
                             <li class="main-nav__list-item" nav-item-level="2">
@@ -233,6 +239,11 @@ const Template = () => {
                 <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
                 <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
             </toujou-burger-button>
+            
+            <nav class="service-nav">
+                <a href="#" class="service-nav__link">Impressum</a>
+                <a href="#" class="service-nav__link">Datenschutz</a>
+            </nav>
 
         </toujou-topbar>   
     `;

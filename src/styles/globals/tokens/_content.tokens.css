@@ -7,6 +7,7 @@
     --content-spacing-between-elements: var(--spacing-xl);
     --content-spacing-between-columns: var(--spacing-normal);
     --topbar-height: 64px;
+    --service-nav-height: var(--spacing-xl);
 }
 
 @media screen and (min-width: 840px) {
