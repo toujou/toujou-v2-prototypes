@@ -1,0 +1,95 @@
+.topbar {
+    --topbar-display: grid;
+    --topbar-position: fixed;
+    --topbar-top: 0;
+    --topbar-width: 100%;
+    --topbar-grid-template-columns: 1fr auto auto;
+    --topbar-grid-template-areas: "logo actions burger";
+    --topbar-grid-gap: var(--spacing-normal);
+    --topbar-align-items: center;
+    --topbar-padding: 0 var(--spacing-normal);
+    --topbar-shadow: var(--shadow-normal);
+    --topbar-icons-color: var(--color-primary);
+    --topbar-icons-active-color: var(--color-primary-dark);
+    --topbar-bg-color: var(--color-bg);
+    --topbar-transition: background-color var(--animation-duration-normal) var(--animation-easing-normal);
+
+    --topbar-logo-link-grid-area: logo;
+    --topbar-logo-link-height: calc(100% - calc(var(--spacing-normal) * 2));
+
+    --topbar-logo-height: 100%;
+    --topbar-logo-width: auto;
+
+    --topbar-actions-grid-area: actions;
+    --topbar-actions-margin: 0;
+    --topbar-actions-height: fit-content;
+    --topbar-actions-list-style: none;
+
+    --topbar-actions-link-display: flex;
+    --topbar-actions-link-align-items: center;
+    --topbar-actions-link-justify-content: center;
+    --topbar-actions-link-gap: var(--spacing-s);
+    --topbar-actions-link-icon-transition: background-color var(--animation-duration-normal) var(--animation-easing-normal);
+
+    --topbar-actions-text-display: none;
+
+    display: var(--topbar-display);
+    position: var(--topbar-position);
+    top: var(--topbar-top);
+    width: var(--topbar-width);
+    grid-template-columns: var(--topbar-grid-template-columns);
+    grid-template-areas: var(--topbar-grid-template-areas);
+    grid-gap: var(--topbar-grid-gap);
+    align-items: var(--topbar-align-items);
+    height: var(--topbar-height);
+    padding: var(--topbar-padding);
+    box-shadow: var(--topbar-shadow);
+    background-color: var(--topbar-bg-color);
+    transition: var(--topbar-transition);
+}
+
+.topbar[open-nav="true"] {
+    --topbar-bg-color: var(--color-primary);
+    --topbar-icons-color: var(--color-bg);
+    --topbar-icons-active-color: var(--color-white-o-75);
+}
+
+.topbar__logo-link {
+    grid-area: var(--topbar-logo-link-grid-area);
+    height: var(--topbar-logo-link-height);
+}
+
+.topbar__logo {
+    height: var(--topbar-logo-height);
+    width: var(--topbar-logo-width);
+}
+
+.topbar__actions {
+    grid-area: var(--topbar-actions-grid-area);
+    margin: var(--topbar-actions-margin);
+    height: var(--topbar-actions-height);
+    list-style: var(--topbar-actions-list-style);
+}
+
+.topbar__actions-link {
+    display: var(--topbar-actions-link-display);
+    align-items: var(--topbar-actions-link-align-items);
+    justify-content: var(--topbar-actions-link-justify-content);
+    gap: var(--topbar-actions-link-gap);
+}
+
+.topbar__actions-link .icon {
+    --icon-color: var(--topbar-icons-color);
+
+    transition: var(--topbar-actions-link-icon-transition);
+}
+
+.topbar__actions-text {
+    display: var(--topbar-actions-text-display);
+}
+
+@media (hover: hover) {
+    .topbar__actions-link:hover .icon {
+        --icon-color: var(--topbar-icons-active-color);
+    }
+}
