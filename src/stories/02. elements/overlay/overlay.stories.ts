@@ -113,7 +113,7 @@ const Template: Story<OverlayStoryProps> = (args: OverlayStoryProps) => {
                     <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
                 ` : ``}
                 
-                <p class="overlay__text">Sind Sie 18 Jahre oder älter?</p>
+                <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
                 
                 <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
                 <section class="overlay__buttons">
@@ -127,7 +127,7 @@ const Template: Story<OverlayStoryProps> = (args: OverlayStoryProps) => {
                 
                 ${args.showCloseButton ? `
                     <button class="button overlay__close-button">
-                        <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="normal"></toujou-icon>
+                        <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m"></toujou-icon>
                     </button>
                 ` : ''}
             </section>

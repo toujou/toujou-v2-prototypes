@@ -25,7 +25,7 @@
     --overlay-logo-width: auto;
     --overlay-logo-object-fit: contain;
 
-    --overlay-text-margin: 0;
+    --overlay-title-margin: 0;
 
     --overlay-buttons-display: flex;
     --overlay-buttons-align-items: center;
@@ -85,8 +85,8 @@
     object-fit: var(--overlay-logo-object-fit);
 }
 
-.overlay__text {
-    margin: var(--overlay-text-margin);
+.overlay__title {
+    margin: var(--overlay-title-margin);
 }
 
 .overlay__buttons {
