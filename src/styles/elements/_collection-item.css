@@ -71,6 +71,7 @@
     --collection-item-location-gradient: linear-gradient(0deg, rgb(0 0 0 / 100%) 0%, rgb(0 0 0 / 0%) 100%);
     --collection-item-location-width: 100%;
     --collection-item-location-border-radius: 0;
+    --collection-item-location-transform: none;
 
     --collection-item-city-font-size: var(--font-size-ms);
     --collection-item-city-font-family: var(--font-family-text);
@@ -269,6 +270,7 @@
     background: var(--collection-item-location-gradient);
     width: var(--collection-item-location-width);
     border-radius: var(--collection-item-location-border-radius);
+    transform: var(--collection-item-location-transform);
 }
 
 .collection-item__location-city {
@@ -406,5 +408,15 @@
         --collection-item-top-margin: var(--spacing-normal);
         --collection-item-figure-border-radius: var(--border-radius-normal);
         --collection-item-location-border-radius: 0 0 var(--collection-item-figure-border-radius) var(--collection-item-figure-border-radius);
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+    .collection-item[item-orientation="horizontal"][item-type="trip"] {
+        --collection-item-location-transform: translateY(100%);
+        --collection-item-location-gradient: none;
+        --collection-item-location-padding: var(--spacing-normal);
+        --collection-item-country-color: var(--color-font);
+        --collection-item-city-color: var(--color-font);
     }
 }
