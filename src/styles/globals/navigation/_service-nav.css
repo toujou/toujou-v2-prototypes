@@ -45,7 +45,7 @@
     color: var(--font-nav-link-color);
 }
 
-.topbar[open-nav="true"] .service-nav {
+.topbar[open-nav] .service-nav {
     --service-nav-opacity: 1;
     --service-nav-pointer-events: all;
     --service-nav-transform: translateY(0);

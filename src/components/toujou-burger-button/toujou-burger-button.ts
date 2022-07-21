@@ -1,37 +1,21 @@
 import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
+/**
+ * Burger button class which dispatches events on click and listens to media query changes
+ */
 @customElement('toujou-burger-button')
 export class ToujouBurgerButton extends LitElement {
-
-    /**
-     * Selector to the target element to toggle
-     */
-    @property({
-        type: String,
-        attribute: 'toggle-element-selector',
-    })
-    toggleElementSelector: string | null = null;
-
-    /**
-     * DOM target element to toggle when state changes
-     */
-    @property({
-        type: HTMLElement,
-    })
-    _elementToToggle: HTMLElement | null = null;
-
     /**
      * Internal state
      */
-    @property({
-        type: Boolean
-    })
+    @property({ type: Boolean })
     _state: boolean = false;
 
     // constants
-    static clickEventName = 'toujou-burger-button-click'
-    static targetToggleAttribute = 'open-nav'
+    clickEventName = 'toujou-burger-button-click';
+    targetToggleAttribute = 'open-nav';
+    topbarMqlChangeEventName = 'toujou-topbar-breakpoint-change';
 
     /**
      * When the state changes we need to update the UI attributes on the relevant elements
@@ -42,7 +26,6 @@ export class ToujouBurgerButton extends LitElement {
         this._state = value;
         this.setAttribute('aria-pressed', String(value));
         this.setAttribute('aria-expanded', String(value));
-        this._elementToToggle?.setAttribute(ToujouBurgerButton.targetToggleAttribute, String(value));
     }
     
     // @ts-ignore
@@ -54,23 +37,23 @@ export class ToujouBurgerButton extends LitElement {
         return html`<slot name="content"></slot>`
     }
 
+    /**
+     * Add event listeners
+     */
     connectedCallback() {
         super.connectedCallback();
-
-        // Get the target element from the DOM. If not found, print error to console
-        this._elementToToggle = document.querySelector(this.toggleElementSelector!);
-        if (!this._elementToToggle) {
-            console.error('TOUJOU: Could not find the toggle element for the burger menu. Please make sure you are using a valid selector');
-            return;
-        }
-
         this.addEventListener('click', this._handleClickEvent.bind(this));
+        window.addEventListener(this.topbarMqlChangeEventName, this._handleMqlChange.bind(this));
     }
 
+    /**
+     * Remove event listeners
+     */
     disconnectedCallback() {
         super.disconnectedCallback();
 
         this.removeEventListener('click', this._handleClickEvent.bind(this));
+        window.removeEventListener(this.topbarMqlChangeEventName, this._handleMqlChange.bind(this));
     }
 
     /**
@@ -79,11 +62,21 @@ export class ToujouBurgerButton extends LitElement {
     _handleClickEvent() {
         this.state = !this._state;
 
-        this.dispatchEvent(new CustomEvent(ToujouBurgerButton.clickEventName, {
+        this.dispatchEvent(new CustomEvent(this.clickEventName, {
             bubbles: true,
             composed: true,
             detail: { state: this.state }
         }));
+    }
+
+    /**
+     * Close the button when the window grows to desktop width
+     * @param event
+     */
+    _handleMqlChange(event: Event) {
+        if (!(<CustomEvent>event).detail.state) {
+            this.state = false;
+        }
     }
 }
 

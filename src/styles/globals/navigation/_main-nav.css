@@ -78,7 +78,7 @@
     display: none;
 }
 
-.topbar[open-nav="true"] .main-nav {
+.topbar[open-nav] .main-nav {
     --main-nav-transform: translateX(0);
     --main-nav-opacity: 1;
 }
@@ -123,7 +123,9 @@
     .main-nav__back-button:hover .icon {
         --icon-color: var(--color-primary-dark);
     }
+}
 
+@media (hover: hover) and (min-width: 840px) {
     .main-nav__list-item[nav-item-level="1"][has-subnav]:hover .main-nav__list[nav-list-level="2"] {
         --main-nav-level-2-display: block;
         --main-nav-level-2-visibility: visible;

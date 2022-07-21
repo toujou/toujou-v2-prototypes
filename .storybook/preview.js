@@ -8,6 +8,7 @@ import "../src/components/toujou-gallery/toujou-gallery";
 import "../src/components/toujou-overlay/toujou-overlay";
 import "../src/components/toujou-burger-button/toujou-burger-button";
 import "../src/components/toujou-sliding-nav/toujou-sliding-nav";
+import "../src/components/toujou-topbar/toujou-topbar";
 
 import "../src/styles/StorybookStyles.css";
 
