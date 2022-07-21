@@ -175,3 +175,9 @@
         cursor: pointer;
     }
 }
+
+@media screen and (min-width: 840px) {
+    .burger-button {
+        --burger-button-display: none;
+    }
+}

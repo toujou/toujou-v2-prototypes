@@ -6,12 +6,18 @@
     --content-padding-to-border: var(--spacing-normal);
     --content-spacing-between-elements: var(--spacing-xl);
     --content-spacing-between-columns: var(--spacing-normal);
-    --topbar-height: 64px;
+    --topbar-height-small: 54px;
+    --topbar-height-medium: 64px;
+    --topbar-height-large: 80px;
+    --topbar-height: var(--topbar-height-medium);
     --service-nav-height: var(--spacing-xl);
 }
 
 @media screen and (min-width: 840px) {
     :root {
         --content-spacing-between-columns: var(--spacing-l);
+        --topbar-height-small: 64px;
+        --topbar-height-medium: 80px;
+        --topbar-height-large: 100px;
     }
 }

@@ -6,7 +6,7 @@
     --service-nav-border-top: 1px solid var(--color-white-o-75);
     --service-nav-background-color: var(--color-primary);
     --service-nav-width: calc(100% - var(--spacing-l));
-    --service-nav: flex;
+    --service-nav-display: flex;
     --service-nav-align-items: center;
     --service-nav-justify-content: flex-start;
     --service-nav-gap: var(--spacing-normal);
@@ -28,7 +28,7 @@
     border-top: var(--service-nav-border-top);
     background: var(--service-nav-background-color);
     width: var(--service-nav-width);
-    display: var(--service-nav);
+    display: var(--service-nav-display);
     align-items: var(--service-nav-align-items);
     justify-content: var(--service-nav-justify-content);
     gap: var(--service-nav-gap);
@@ -52,4 +52,10 @@
     --service-nav-transition:
             transform var(--animation-duration-normal) var(--animation-easing-normal),
             opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
+}
+
+@media screen and (min-width: 840px) {
+    .service-nav {
+        --service-nav-display: none;
+    }
 }

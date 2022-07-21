@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Story, Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -18,14 +18,63 @@ export default {
         },
         layout: "fullscreen",
     },
+    argTypes: {
+        navigationTheme: {
+            table: {
+                category: "Topbar settings",
+                defaultValue: { summary: 'light' },
+            },
+            name: 'Navigation theme',
+            description: "Set the navigation theme",
+            options: ['light', 'dark'],
+            control: { type: 'radio' },
+            defaultValue: ['light'],
+            required: true,
+        },
+        titleType: {
+            table: {
+                category: "Topbar settings",
+                defaultValue: { summary: 'logo' },
+            },
+            name: 'Page title type',
+            description: "Toggle between logo or text for the topbar page title",
+            options: ['logo', 'text'],
+            control: { type: 'radio' },
+            defaultValue: ['logo'],
+            required: true,
+        },
+        logoSize: {
+            table: {
+                category: "Topbar settings",
+                defaultValue: { summary: 'medium' },
+            },
+            name: 'Logo size',
+            description: "Set the logo size",
+            options: ['small', 'medium', 'large'],
+            control: { type: 'radio' },
+            defaultValue: ['medium'],
+            required: true,
+        },
+    }
 } as Meta;
 
+interface TopbarStoryProps {
+    navigationTheme: string
+    titleType: string
+    logoSize: string
+}
 
-const Template = () => {
+const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
+    document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
+
     return `       
-        <toujou-topbar id="topbar" class="topbar">
+        <toujou-topbar id="topbar" class="topbar" navigation-theme="${args.navigationTheme}" logo-size="${args.logoSize}">
             <a href="#" class="topbar__logo-link">
-                <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
+                ${args.titleType === 'logo' ? `
+                    <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
+                ` : `
+                    <span class="topbar__title">Nice title</span>
+                `}
             </a>
 
             <ul class="topbar__actions">
@@ -244,9 +293,31 @@ const Template = () => {
             </nav>
 
         </toujou-topbar>   
+        
+        <toujou-text-block class="text-block" text-block-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
+                    <h1>Left aligned H1 headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </toujou-text-block-column>
+        </toujou-text-block>
+        
+        <toujou-text-block class="text-block" text-block-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
+                    <h1>Left aligned H1 headline</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </toujou-text-block-column>
+        </toujou-text-block>
     `;
 };
 
 export const Topbar = Template.bind({});
 
-
+Topbar.args = {
+    navigationTheme: 'light',
+    titleType: 'logo',
+    logoSize: 'medium',
+}

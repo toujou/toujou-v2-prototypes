@@ -25,23 +25,38 @@
     --topbar-logo-link-grid-area: logo;
     --topbar-logo-link-height: calc(100% - var(--spacing-normal));
     --topbar-logo-link-max-height: calc(100% - var(--spacing-normal));
+    --topbar-logo-link-width: fit-content;
     --topbar-logo-link-z-index: 1;
+    --topbar-logo-link-display: flex;
+    --topbar-logo-link-align-items: center;
+    --topbar-logo-link-text-decoration: none;
 
     --topbar-logo-height: 100%;
     --topbar-logo-width: auto;
+
+    --topbar-title-font-family: var(--font-family-text);
+    --topbar-title-font-size: var(--font-size-l);
+    --topbar-title-font-weight: var(--font-weight-text-bold);
+    --topbar-title-color: var(--color-primary);
 
     --topbar-actions-grid-area: actions;
     --topbar-actions-margin: 0;
     --topbar-actions-height: fit-content;
     --topbar-actions-list-style: none;
+    --topbar-actions-padding: 0;
 
     --topbar-actions-link-display: flex;
     --topbar-actions-link-align-items: center;
     --topbar-actions-link-justify-content: center;
     --topbar-actions-link-gap: var(--spacing-s);
     --topbar-actions-link-icon-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
+    --topbar-actions-link-text-decoration: none;
 
     --topbar-actions-text-display: none;
+    --topbar-actions-text-z-index: 1;
+    --topbar-actions-text-color: var(--color-font);
+    --topbar-actions-text-font-size: var(--font-size-s);
+    --topbar-actions-text-line-height: 1;
 
     display: var(--topbar-display);
     position: var(--topbar-position);
@@ -74,14 +89,17 @@
 .topbar[open-nav="true"] {
     --topbar-bg-color: var(--color-primary);
     --topbar-icons-color: var(--color-bg);
-    /*--topbar-icons-active-color: var(--color-white-o-75);*/
 }
 
 .topbar__logo-link {
     grid-area: var(--topbar-logo-link-grid-area);
     height: var(--topbar-logo-link-height);
     max-height: var(--topbar-height);
+    width: var(--topbar-logo-link-width);
     z-index: var(--topbar-logo-link-z-index);
+    display: var(--topbar-logo-link-display);
+    align-items: var(--topbar-logo-link-align-items);
+    text-decoration: var(--topbar-logo-link-text-decoration);
 }
 
 .topbar__logo {
@@ -89,11 +107,19 @@
     width: var(--topbar-logo-width);
 }
 
+.topbar__title {
+    font-family: var(--topbar-title-font-family);
+    font-size: var(--topbar-title-font-size);
+    font-weight: var(--topbar-title-font-weight);
+    color: var(--topbar-title-color);
+}
+
 .topbar__actions {
     grid-area: var(--topbar-actions-grid-area);
     margin: var(--topbar-actions-margin);
     height: var(--topbar-actions-height);
     list-style: var(--topbar-actions-list-style);
+    padding: var(--topbar-actions-padding);
 }
 
 .topbar__actions-link {
@@ -101,6 +127,7 @@
     align-items: var(--topbar-actions-link-align-items);
     justify-content: var(--topbar-actions-link-justify-content);
     gap: var(--topbar-actions-link-gap);
+    text-decoration: none;
 }
 
 .topbar__actions-link .icon {
@@ -111,12 +138,56 @@
 
 .topbar__actions-text {
     display: var(--topbar-actions-text-display);
+    z-index:var(--topbar-actions-text-z-index);
+    color: var(--topbar-actions-text-color);
+    font-size: var(--topbar-actions-text-font-size);
+    line-height: var(--topbar-actions-text-line-height);
 }
-
-
 
 @media (hover: hover) {
     .topbar__actions-link:hover .icon {
         --icon-color: var(--topbar-icons-active-color);
+    }
+
+    .topbar__logo-link:hover .topbar__title {
+        --topbar-title-color: var(--color-font-dark);
+    }
+
+    .topbar__actions-link:hover {
+        --topbar-actions-text-color: var(--color-primary-dark);
+    }
+}
+
+@media (hover: hover) and (min-width: 840px) {
+    .topbar {
+        --topbar-icons-active-color: var(--color-primary-dark);
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .topbar {
+        --topbar-padding: 0 max(var(--spacing-normal), calc(calc(100% - var(--content-max-width)) / 2));
+        --topbar-grid-template-columns: auto 1fr;
+        --topbar-grid-template-areas:
+                "logo actions"
+                "logo main-nav";
+        --topbar-icons-color: var(--color-font);
+        --topbar-actions-link-icon-transition: none;
+
+        --topbar-actions-text-display: block;
+        --topbar-actions-padding: var(--spacing-s) 0 0;
+        --topbar-grid-gap: 0 var(--spacing-normal);
+    }
+
+    .topbar__actions-link .icon {
+        --icon-size: var(--font-size-ms);
+    }
+
+    .topbar__actions {
+        --topbar-actions-display: flex;
+        --topbar-actions-justify-content: flex-end;
+
+        display: var(--topbar-actions-display);
+        justify-content: var(--topbar-actions-justify-content);
     }
 }
