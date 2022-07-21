@@ -4566,6 +4566,13 @@ a:focus {
     color: var(--color-primary-dark);
 }
 
+main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
+    width: var(--content-width-with-padding);
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (hover: hover) {
     a:not(.button):hover {
         color: var(--color-primary-dark);
