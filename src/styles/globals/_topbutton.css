@@ -1,0 +1,38 @@
+.topbutton {
+    --topbutton-display: flex;
+    --topbutton-align-items: center;
+    --topbutton-justify-content: center;
+    --topbutton-bg-color: var(--color-secondary);
+    --topbutton-position: fixed;
+    --topbutton-bottom: var(--spacing-normal);
+    --topbutton-right: var(--spacing-normal);
+    --topbutton-padding: var(--spacing-s);
+    --topbutton-margin: 0;
+    --topbutton-border-radius: var(--border-radius-normal);
+    --topbutton-transform: translateY(200%);
+    --topbutton-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
+
+    display: var(--topbutton-display);
+    align-items: var(--topbutton-align-items);
+    justify-content: var(--topbutton-justify-content);
+    background-color: var(--topbutton-bg-color);
+    position: var(--topbutton-position);
+    bottom: var(--topbutton-bottom);
+    right: var(--topbutton-right);
+    padding: var(--topbutton-padding);
+    margin: var(--topbutton-margin);
+    border-radius: var(--topbutton-border-radius);
+    transform: var(--topbutton-transform);
+    transition: var(--topbutton-transition);
+}
+
+.topbutton.topbutton--visible {
+    --topbutton-transform: translateY(0);
+}
+
+@media (hover: hover) {
+    .topbutton:hover {
+        cursor: pointer;
+        --topbutton-bg-color: var(--color-secondary-dark);
+    }
+}
