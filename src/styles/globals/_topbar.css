@@ -49,6 +49,7 @@
     --topbar-actions-link-align-items: center;
     --topbar-actions-link-justify-content: center;
     --topbar-actions-link-gap: var(--spacing-s);
+    /* stylelint-disable-next-line max-line-length */
     --topbar-actions-link-icon-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
     --topbar-actions-link-text-decoration: none;
 
@@ -138,7 +139,7 @@
 
 .topbar__actions-text {
     display: var(--topbar-actions-text-display);
-    z-index:var(--topbar-actions-text-z-index);
+    z-index: var(--topbar-actions-text-z-index);
     color: var(--topbar-actions-text-color);
     font-size: var(--topbar-actions-text-font-size);
     line-height: var(--topbar-actions-text-line-height);
@@ -169,8 +170,8 @@
         --topbar-padding: 0 max(var(--spacing-normal), calc(calc(100% - var(--content-max-width)) / 2));
         --topbar-grid-template-columns: auto 1fr;
         --topbar-grid-template-areas:
-                "logo actions"
-                "logo main-nav";
+            "logo actions"
+            "logo main-nav";
         --topbar-grid-gap: 0 var(--spacing-normal);
 
         --topbar-icons-color: var(--color-font);

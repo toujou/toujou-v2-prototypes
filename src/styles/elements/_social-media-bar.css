@@ -54,7 +54,6 @@
 .social-media-bar[element-design="primary"] {
     --social-media-bar-border-color: var(--color-primary);
     --social-media-bar-background-color: var(--color-primary);
-
 }
 
 .social-media-bar[element-design="secondary"] {

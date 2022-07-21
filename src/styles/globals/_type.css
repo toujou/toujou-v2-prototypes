@@ -81,7 +81,7 @@ p + :is(p, ul, ol) {
     margin-top: var(--spacing-normal);
 }
 
-.grid-column  :is(p, ul, ol):first-child {
+.grid-column :is(p, ul, ol):first-child {
     margin-top: 0;
 }
 

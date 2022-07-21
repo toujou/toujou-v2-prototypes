@@ -38,8 +38,8 @@
     --pn-nav-content-padding: var(--spacing-s);
     --pn-nav-content-gap: var(--spacing-normal);
     --pn-nav-content-transition:
-            transform var(--animation-duration-normal) var(--animation-easing-normal),
-            background-color var(--animation-duration-normal) var(--animation-easing-normal);
+        transform var(--animation-duration-normal) var(--animation-easing-normal),
+        background-color var(--animation-duration-normal) var(--animation-easing-normal);
 
     --pn-nav-title-color: var(--color-primary-dark);
     --pn-nav-title-cont-size: var(--font-size-normal);

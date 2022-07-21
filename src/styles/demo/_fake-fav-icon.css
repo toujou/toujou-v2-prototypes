@@ -20,6 +20,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* stylelint-disable property-no-vendor-prefix */
     mask-image: var(--icon-heart-stroke);
     -webkit-mask-image: var(--icon-heart-stroke);
     mask-position: center;
@@ -28,6 +29,7 @@
     -webkit-mask-repeat: no-repeat;
     mask-size: contain;
     -webkit-mask-size: contain;
+    /* stylelint-enable property-no-vendor-prefix */
     background-color: var(--color-font);
 }
 
@@ -64,5 +66,4 @@
     .collection-item[item-design="inverted"] .fake-fav-item:hover::after {
         background-color: var(--color-font-dark);
     }
-
 }

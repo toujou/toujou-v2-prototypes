@@ -28,6 +28,7 @@
     --line-height-s: 1.25;
     --line-height-xs: 1.125;
     --line-height-reset: normal;
+    --line-height-1: 1;
 
     /* LETTER SPACING */
     --letter-spacing-l: .150em;

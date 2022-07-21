@@ -1,6 +1,5 @@
 .slider-slide {
     aspect-ratio: var(--slider-aspect-ratio);
-    /*height: fit-content !important;*/
 }
 
 .slider[content-type="logos"] .slider-slide,

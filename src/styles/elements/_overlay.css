@@ -62,7 +62,7 @@
 }
 
 .overlay[overlay-theme="light"] {
-    --overlay-bg-color: var(--color-white-o-75)
+    --overlay-bg-color: var(--color-white-o-75);
 }
 
 .overlay__infos {
@@ -76,7 +76,7 @@
     box-shadow: var(--overlay-infos-shadow);
     border-radius: var(--overlay-infos-border-radius);
     background-color: var(--overlay-infos-bg-color);
-    max-width: var(--overlay-infos-max-width)
+    max-width: var(--overlay-infos-max-width);
 }
 
 .overlay__logo {
@@ -93,8 +93,7 @@
     display: var(--overlay-buttons-display);
     align-items: var(--overlay-buttons-align-items);
     justify-content: var(--overlay-buttons-justify-content);
-    flex-direction: var(--overlay-flex-direction);
-    flex-wrap: var(--overlay-button-flex-wrap);
+    flex-flow: var(--overlay-flex-direction) var(--overlay-button-flex-wrap);
     gap: var(--overlay-buttons-gap);
 }
 

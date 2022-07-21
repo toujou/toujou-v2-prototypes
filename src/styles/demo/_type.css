@@ -126,9 +126,3 @@ code {
     background-color: rgb(0 0 0 / 10%);
     padding: var(--spacing-xs);
 }
-
-/*@media (hover: hover) {*/
-/*    a:hover {*/
-/*        color: var(--color-primary);*/
-/*    }*/
-/*}*/

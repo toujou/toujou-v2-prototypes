@@ -6,6 +6,7 @@
     --header-content-left: 50%;
     --header-content-translate-x: -50%;
     --header-content-translate-y: -50%;
+    /* stylelint-disable-next-line max-line-length */
     --header-content-transform: translate(var(--header-content-translate-x), var(--header-content-translate-y)) !important;
     --header-content-width: 50%;
     --header-content-padding: var(--spacing-normal);
@@ -19,13 +20,13 @@
 
     --header-cta-margins: 0 auto;
 
-
     position: var(--header-content-position);
     top: var(--header-content-top);
     bottom: var(--header-content-bottom);
     right: var(--header-content-right);
     left: var(--header-content-left);
-    transform: var(--header-content-transform);width: var(--header-content-width);
+    transform: var(--header-content-transform);
+    width: var(--header-content-width);
     padding: var(--header-content-padding);
     background-color: var(--header-content-background-color);
     border-radius: var(--header-content-border-radius);

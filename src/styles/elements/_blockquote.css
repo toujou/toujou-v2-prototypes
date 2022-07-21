@@ -30,10 +30,6 @@
     z-index: var(--blockquote-z-index);
 }
 
-.blockquote[blockquote-direction="vertical"] {
-    --blockquote-author-grid-column: 1;
-}
-
 .blockquote-grid[blockquote-grid-count="2"] .blockquote[blockquote-direction="vertical"],
 .blockquote-grid[blockquote-grid-count="3"] .blockquote[blockquote-direction="vertical"] {
     --blockquote-image-size: 132px;
@@ -115,6 +111,7 @@
 .blockquote[blockquote-direction="vertical"] {
     --blockquote-grid-template-columns: 1fr;
     --blockquote-grid-template-areas: "blockquoteImage" "blockquoteQuote" "blockquoteAuthor";
+    --blockquote-author-grid-column: 1;
 }
 
 @media screen and (min-width: 960px) {
