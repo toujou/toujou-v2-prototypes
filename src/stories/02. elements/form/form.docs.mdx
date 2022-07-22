@@ -35,7 +35,7 @@ In this documentation we will also cover the different form children. Here is a 
             value=""
             required="required"
             ${disabledAttribute}>
-        <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+        <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
     </toujou-input-group>
 </form>
 ```
@@ -47,13 +47,18 @@ This is a wrapper element for all input types. It helps us with styling, validat
 
 | Attribute          | What is it?                                                                 | Required |
 |--------------------|-----------------------------------------------------------------------------|:--------:|
-| `class`            | It must have at least the `input-group` class                        |   yes    |
+| `class`            | It must have at least the `input-group` class                               |   yes    |
 | `input-group-type` | Defines the type of child input. Ex: `input-group-type="text"`              |   yes    |
 | `is-required`      | Added to the group if the input is required. Will add `*` to the label      |   yes    |
-| `has-success`      | Added to the group when validation passes                                   |    no    |
-| `has-error`        | Added to the group when validation fails                                    |    no    |
 | `is-disabled`      | Added to the group when the child input is disabled (disables whole group!) |    no    |
 
+
+Following attributes were replaced by class names (`input-group`) with modifier due to the due to the need to support pristine
+
+| Modifier           | What is it?                                                                 | Required |
+|--------------------|-----------------------------------------------------------------------------|:--------:|
+| `has-success`      | Added to the group when validation passes                                   |    no    |
+| `has-error`        | Added to the group when validation fails                                    |    no    |
 
 
 The `input-group` also accepts attributes to be placed inside the `row` element. Each of these attributes takes a value between 1 and 12, for the number of columns it should span inside the row.
@@ -118,7 +123,7 @@ Here you can find markup examples for the different types of inputs
         name="tx_form_formframework[testform-1000091][text-1]"
         value=""
         required="required">
-    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
 </toujou-input-group>
 ```
 
@@ -143,7 +148,7 @@ Here you can find markup examples for the different types of inputs
 
         </select>
     </div>
-    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
 </toujou-input-group>
 ```
 
@@ -244,7 +249,7 @@ Here you can find markup examples for the different types of inputs
         id="testform-1000091-textarea-1"
         name="tx_form_formframework[testform-1000091][textarea-1]">
     </textarea>
-    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
 </toujou-input-group>
 ```
 

@@ -54,13 +54,13 @@
     z-index: 1;
 }
 
-.input-group[has-error]::after {
+.input-group.input-group--has-error::after {
     --input-group-icon-display: block;
     --input-group-icon-background-color: var(--color-error);
     --input-group-icon-image: var(--icon-info);
 }
 
-.input-group[has-success]::after {
+.input-group.input-group--has-success::after {
     --input-group-icon-display: block;
     --input-group-icon-background-color: var(--color-success);
     --input-group-icon-image: var(--icon-check-circle);

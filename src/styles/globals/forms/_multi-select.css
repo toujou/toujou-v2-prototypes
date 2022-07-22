@@ -28,12 +28,12 @@
     outline: none;
 }
 
-.input-group[has-error] .multi-select {
+.input-group.input-group--has-error .multi-select {
     border: var(--form-input-error-border);
     outline: var(--form-input-error-border);
 }
 
-.input-group[has-success] .multi-select {
+.input-group.input-group--has-success .multi-select {
     border: var(--form-input-success-border);
     outline: var(--form-input-success-border);
 }

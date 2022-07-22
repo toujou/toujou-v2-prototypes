@@ -67,7 +67,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                     value=""
                     required="required"
                     disabled>
-                <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
 	        </toujou-input-group>
 	        
 	        <toujou-input-group class="input-group" input-group-type="submit">			

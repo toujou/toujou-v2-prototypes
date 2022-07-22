@@ -54,7 +54,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -75,7 +75,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -96,7 +96,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                <toujou-input-group
@@ -117,7 +117,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -138,7 +138,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -159,7 +159,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -180,7 +180,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -201,7 +201,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -222,7 +222,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -243,7 +243,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
                 
                 <toujou-input-group
@@ -264,7 +264,7 @@ const Template = () => {
                         name="tx_form_formframework[testform-1000091][text-1]"
                         value=""
                         required="required">
-                    <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                    <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
                 </toujou-input-group>
 
 	        </toujou-form-row>

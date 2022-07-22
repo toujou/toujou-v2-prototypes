@@ -63,22 +63,22 @@
     --radio-check-background-color: var(--color-font-light);
 }
 
-.input-group[has-error] .radio {
+.input-group.input-group--has-error .radio {
     --radio-border-color: var(--color-error);
     --radio-background-color: var(--color-error-o-25);
 }
 
-.input-group[has-error] .radio:checked {
+.input-group.input-group--has-error .radio:checked {
     --radio-background-color: var(--color-bg);
     --radio-check-background-color: var(--color-error);
 }
 
-.input-group[has-success] .radio:checked {
+.input-group.input-group--has-success .radio:checked {
     --radio-border-color: var(--color-success);
     --radio-background-color: var(--color-success-o-25);
 }
 
-.input-group[has-success] .radio:checked {
+.input-group.input-group--has-success .radio:checked {
     --radio-border-color: var(--color-success);
     --radio-background-color: var(--color-bg);
     --radio-check-background-color: var(--color-success);

@@ -40,12 +40,12 @@
     pointer-events: none;
 }
 
-.input-group[has-error] .input {
+.input-group.input-group--has-error .input {
     border: var(--form-input-error-border);
     outline: var(--form-input-error-border);
 }
 
-.input-group[has-success] .input {
+.input-group.input-group--has-success .input {
     --input-color: var(--color-font);
 
     border: var(--form-input-success-border);

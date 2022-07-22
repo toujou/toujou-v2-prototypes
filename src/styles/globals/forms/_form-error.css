@@ -1,4 +1,4 @@
-.form-error {
+.form__error {
     --form-error-order: 20;
     --form-error-color: var(--color-error);
     --form-error-padding: 0 var(--spacing-s);
@@ -14,21 +14,21 @@
     grid-column: var(--form-error-column);
 }
 
-.form-error--after-group {
+.form__error--after-group {
     --form-error-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 3px);
 }
 
-.input-group[has-error] .form-error {
+.input-group.input-group--has-error .form__error {
     --form-error-display: block;
 }
 
-.form-error--checkbox-group {
+.form__error--checkbox-group {
     --form-error-padding: 0;
 
     grid-column: var(--checkbox-group-error-column);
 }
 
-.form-error--toggle-group {
+.form__error--toggle-group {
     --form-error-padding: 0;
 
     grid-column: var(--toggle-group-error-column);

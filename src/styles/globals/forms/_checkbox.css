@@ -66,21 +66,21 @@
     --checkbox-background-color: var(--color-font-light);
 }
 
-.input-group[has-error] .checkbox {
+.input-group.input-group--has-error .checkbox {
     --checkbox-border-color: var(--color-error);
     --checkbox-background-color: var(--color-error-o-25);
 }
 
-.input-group[has-error] .checkbox:checked {
+.input-group.input-group--has-error .checkbox:checked {
     --checkbox-background-color: var(--color-error);
 }
 
-.input-group[has-success] .checkbox {
+.input-group.input-group--has-success .checkbox {
     --checkbox-border-color: var(--color-success);
     --checkbox-background-color: var(--color-success-o-25);
 }
 
-.input-group[has-success] .checkbox:checked {
+.input-group.input-group--has-success .checkbox:checked {
     --checkbox-border-color: var(--color-success);
     --checkbox-background-color: var(--color-success);
 }

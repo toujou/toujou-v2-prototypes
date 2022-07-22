@@ -58,10 +58,8 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                 <legend class="fieldset__legend">Fieldset super name</legend>
     
                 <toujou-input-group
-        	    class="input-group"
+        	    class="input-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
         	    ${args.state === 'disabled' ? 'is-disabled' : ''}
-                ${args.state === 'error' ? 'has-error' : ''}
-                ${args.state === 'success' ? 'has-success' : ''}
         	    input-group-type="text">			
 				<label class="input-label" for="testform-1000091-text-1">Ihr Name</label>
 				<toujou-form-description class="form-description">Enter your name so we can print out the documents correctly.</toujou-form-description>
@@ -75,14 +73,12 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                     value=""
                     required="required"
                     ${disabledAttribute}>
-                <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
 	        </toujou-input-group>
 
             <toujou-input-group
-                class="input-group"
+                class="input-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
-                ${args.state === 'error' ? 'has-error' : ''}
-                ${args.state === 'success' ? 'has-success' : ''}
                 input-group-type="email">
                 <label class="input-label" for="testform-1000091-email-1">Email address</label>
                 <toujou-form-description class="form-description">This is a description</toujou-form-description>
@@ -95,14 +91,12 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                     name="tx_form_formframework[testform-1000091][email-1]"
                     value=""
                     ${disabledAttribute}>
-                <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
             </toujou-input-group>
             
             <toujou-input-group
-                class="input-group"
+                class="input-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
-                ${args.state === 'error' ? 'has-error' : ''}
-                ${args.state === 'success' ? 'has-success' : ''}
                 input-group-type="telephone">
                 <label class="input-label" for="testform-1000091-telephone-1">Telephone number</label>
                 <toujou-form-description class="form-description">This is a description</toujou-form-description>
@@ -115,7 +109,7 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                     name="tx_form_formframework[testform-1000091][telephone-1]"
                     value=""
                     ${disabledAttribute}>
-                <toujou-form-error class="pristine-error form-error">The given subject was empty.</span>
+                <toujou-form-error class="pristine-error form__error">The given subject was empty.</span>
             </toujou-input-group>
             
             </fieldset>

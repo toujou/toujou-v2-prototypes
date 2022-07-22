@@ -55,10 +55,8 @@ const Template: Story<ToujouRadioStoryProps> = (args: ToujouRadioStoryProps) => 
             novalidate="true">
 
 	        <toujou-input-group
-	            class="input-group radio-group"
+	            class="input-group radio-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
-                ${args.state === 'error' ? 'has-error' : ''}
-                ${args.state === 'success' ? 'has-success' : ''}
 	            input-group-type="radio">
 				<label class="radio-group__label" for="testform-1000091-radiobutton-1">Radio buttons label</label>
 				<toujou-form-description class="form-description form-description--after-group">This is a description</toujou-form-description>

@@ -55,10 +55,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
             novalidate="true">
 	
             <toujou-input-group
-                class="input-group"
+                class="input-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
-                ${args.state === 'error' ? 'has-error' : ''}
-                ${args.state === 'success' ? 'has-success' : ''}
                 input-group-type="checkbox">
                 <div class="checkbox-group">
                      <input
@@ -77,10 +75,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
 	
 	
 	        <toujou-input-group
-	            class="input-group multi-checkbox-group"
+	            class="input-group multi-checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
                 ${args.state === 'disabled' ? 'is-disabled' : ''}
-                ${args.state === 'error' ? 'has-error' : ''}
-                ${args.state === 'success' ? 'has-success' : ''}
                 input-group-type="multi-check">
 				<label class="multi-checkbox-group__label" for="testform-1000091-multicheckbox-1">This is the label</label>
                 <div class="checkbox-group">

@@ -29,11 +29,11 @@
     --input-label-color: var(--color-font-light);
 }
 
-.input-group[has-error] .input-label {
+.input-group.input-group--has-error .input-label {
     --input-label-color: var(--color-error);
 }
 
-.input-group[has-success] .input-label {
+.input-group.input-group--has-success .input-label {
     --input-label-color: var(--color-success);
 }
 
