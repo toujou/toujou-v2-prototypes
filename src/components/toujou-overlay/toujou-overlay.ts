@@ -1,4 +1,4 @@
-import { LitElement } from 'lit'
+import { LitElement, PropertyValues } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
 enum COOKIE_STATES {
@@ -29,7 +29,10 @@ export class ToujouOverlay extends LitElement {
     _overlayCookie: string | false = false;
 
     @property({ type: String, attribute: 'state', reflect: true })
-    _state: string = STATE.CLOSED;
+    state: string = STATE.CLOSED;
+
+    @property({ type: Boolean, attribute: 'warning-visible', reflect: true })
+    warningVisible: boolean = false;
 
     protected createRenderRoot(): Element | ShadowRoot {
         return this;
@@ -42,23 +45,6 @@ export class ToujouOverlay extends LitElement {
         this._handleCloseButtonClick = this._handleCloseButtonClick.bind(this);
     }
 
-    /**
-     * Set correct internal state value and show / hide overlay accordingly
-     * @param value
-     */
-    // @ts-ignore
-    set state(value) {
-        this._state = value;
-        this._state === STATE.OPEN ? this._showOverlay() : this._hideOverlay();
-    }
-
-    /**
-     * Get value from internal state
-     */
-    // @ts-ignore
-    get state() {
-        return this._state;
-    }
 
     connectedCallback() {
         super.connectedCallback();
@@ -86,6 +72,15 @@ export class ToujouOverlay extends LitElement {
             this.state = STATE.OPEN;
         } else if (this._overlayCookie === COOKIE_STATES.ACCEPTED) {
             this.state = STATE.CLOSED;
+        }
+    }
+
+    updated(_changedProperties: PropertyValues) {
+        super.updated(_changedProperties);
+
+        if (_changedProperties.has('state')) {
+            // Enable/disable body scroll via overlay-open attribute
+            document.body.toggleAttribute('overlay-open', STATE.OPEN === this.state);
         }
     }
 
@@ -124,7 +119,7 @@ export class ToujouOverlay extends LitElement {
         if (choice === 'no') {
             this.state = STATE.OPEN;
             this._setCookie(COOKIE_STATES.REJECTED);
-            this._showWarning();
+            this.warningVisible = true;
         } else if (choice === 'yes') {
             this.state = STATE.CLOSED;
             this._setCookie(COOKIE_STATES.ACCEPTED);
@@ -157,27 +152,6 @@ export class ToujouOverlay extends LitElement {
     _checkCookie(cookieName: string): string | false {
         const match = document.cookie.match(new RegExp('(^| )' + cookieName + '=([^;]+)'));
         return match ? match[2] : false;
-    }
-
-    /**
-     * Show overlay by setting the style and preventing body scroll in background
-     */
-    _showOverlay() {
-        document.body.setAttribute('overlay-open', '');
-    }
-
-    /**
-     * Hide overlay by setting display to none, allow body scroll again
-     */
-    _hideOverlay() {
-        document.body.removeAttribute('overlay-open');
-    }
-
-    /**
-     * Add attribute to show warning and hide the buttons
-     */
-    _showWarning() {
-        this.setAttribute('warning-visible', '');
     }
 }
 
