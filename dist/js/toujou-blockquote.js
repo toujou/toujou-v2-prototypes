@@ -3,3 +3,4 @@ import{s as o,$ as t}from"./lit-element-a6bf029f.js";class e extends o{construct
             <slot name="quote"></slot>
             <slot name="author"></slot>
         `}}customElements.define("toujou-blockquote",e);
+//# sourceMappingURL=toujou-blockquote.js.map

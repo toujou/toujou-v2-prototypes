@@ -7,3 +7,4 @@
  * Copyright 2021 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */var o;((o=window.HTMLSlotElement)===null||o===void 0?void 0:o.prototype.assignedElements)!=null;export{m as n};
+//# sourceMappingURL=query-assigned-elements-caae21e2.js.map

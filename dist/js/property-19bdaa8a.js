@@ -3,3 +3,4 @@ var p=Object.defineProperty,s=Object.defineProperties;var d=Object.getOwnPropert
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */const h=(t,i)=>i.kind==="method"&&i.descriptor&&!("value"in i.descriptor)?c(n({},i),{finisher(r){r.createProperty(i.key,t)}}):{kind:"field",key:Symbol(),placement:"own",descriptor:{},originalKey:i.key,initializer(){typeof i.initializer=="function"&&(this[i.key]=i.initializer.call(this))},finisher(r){r.createProperty(i.key,t)}};function m(t){return(i,r)=>r!==void 0?((y,a,l)=>{a.constructor.createProperty(l,y)})(t,i,r):h(t,i)}export{m as e};
+//# sourceMappingURL=property-19bdaa8a.js.map

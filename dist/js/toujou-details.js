@@ -59,3 +59,4 @@ import{r as u,s as c,$ as m}from"./lit-element-a6bf029f.js";import{n as p}from".
                 </section>
             </details>
         `}_handleDetailsChange(t){const s=t.target;this.isOpen=s.hasAttribute("open")||!1,this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-toggle",{bubbles:!0,composed:!0,detail:{detailsEl:this,state:this.isOpen}}))}};o.styles=[h];i([d({type:Boolean})],o.prototype,"isAccordionItem",2);i([d({type:HTMLDetailsElement})],o.prototype,"detailsEl",2);i([d({type:Boolean,reflect:!0,attribute:"is-open"})],o.prototype,"isOpen",2);o=i([p("toujou-details")],o);
+//# sourceMappingURL=toujou-details.js.map

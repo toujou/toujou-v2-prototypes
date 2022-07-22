@@ -16,10 +16,20 @@ html:focus-within {
 }
 
 body {
+    margin: 0;
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 img,
@@ -4593,7 +4603,7 @@ h6,
     font-size: var(--text-tag-font-size);
     font-weight: var(--text-tag-font-weight);
     line-height: var(--text-tag-line-height);
-    margin: 0 0 var(--text-tag-margin-bottom) 0;
+    margin-bottom: var(--text-tag-margin-bottom);
     font-family: var(--font-family-headline);
     color: var(--color-primary);
     text-decoration: none;
@@ -4623,7 +4633,7 @@ p + :is(p, ul, ol) {
     font-size: var(--font-size-s);
 }
 
-p a {
+a {
     color: var(--color-primary);
 }
 
