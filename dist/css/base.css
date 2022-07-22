@@ -4493,6 +4493,10 @@ a.footer__list-link:focus {
     }
 }
 
+main {
+    padding-top: var(--topbar-height);
+}
+
 .topbutton {
     --topbutton-display: flex;
     --topbutton-align-items: center;

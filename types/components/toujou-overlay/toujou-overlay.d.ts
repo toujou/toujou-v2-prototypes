@@ -1,25 +1,16 @@
-import { LitElement } from 'lit';
+import { LitElement, PropertyValues } from 'lit';
 export declare class ToujouOverlay extends LitElement {
     _overlayId: string | null;
     _warningEl: Element | null;
     _closeButton: Element | null;
     _buttons: Element[];
     _overlayCookie: string | false;
-    _state: string;
-    private COOKIE_STATES;
-    private STATE;
+    state: string;
+    warningVisible: boolean;
     protected createRenderRoot(): Element | ShadowRoot;
     constructor();
-    /**
-     * Set correct internal state value and show / hide overlay accordingly
-     * @param value
-     */
-    set state(value: string);
-    /**
-     * Get value from internal state
-     */
-    get state(): string;
     connectedCallback(): void;
+    updated(_changedProperties: PropertyValues): void;
     disconnectedCallback(): void;
     /**
      * Close overlay when the close button is clicked
@@ -44,18 +35,6 @@ export declare class ToujouOverlay extends LitElement {
      * @param cookieName
      */
     _checkCookie(cookieName: string): string | false;
-    /**
-     * Show overlay by setting the style and preventing body scroll in background
-     */
-    _showOverlay(): void;
-    /**
-     * Hide overlay by setting display to none, allow body scroll again
-     */
-    _hideOverlay(): void;
-    /**
-     * Add attribute to show warning and hide the buttons
-     */
-    _showWarning(): void;
 }
 declare global {
     interface HTMLElementTagNameMap {
