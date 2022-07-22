@@ -549,21 +549,21 @@ body[overlay-open] {
     --checkbox-background-color: var(--color-font-light);
 }
 
-.input-group[has-error] .checkbox {
+.input-group.input-group--has-error .checkbox {
     --checkbox-border-color: var(--color-error);
     --checkbox-background-color: var(--color-error-o-25);
 }
 
-.input-group[has-error] .checkbox:checked {
+.input-group.input-group--has-error .checkbox:checked {
     --checkbox-background-color: var(--color-error);
 }
 
-.input-group[has-success] .checkbox {
+.input-group.input-group--has-success .checkbox {
     --checkbox-border-color: var(--color-success);
     --checkbox-background-color: var(--color-success-o-25);
 }
 
-.input-group[has-success] .checkbox:checked {
+.input-group.input-group--has-success .checkbox:checked {
     --checkbox-border-color: var(--color-success);
     --checkbox-background-color: var(--color-success);
 }
@@ -726,7 +726,7 @@ body[overlay-open] {
     grid-column: var(--toggle-group-description-column);
 }
 
-.form-error {
+.form__error {
     --form-error-order: 20;
     --form-error-color: var(--color-error);
     --form-error-padding: 0 var(--spacing-s);
@@ -742,21 +742,21 @@ body[overlay-open] {
     grid-column: var(--form-error-column);
 }
 
-.form-error--after-group {
+.form__error--after-group {
     --form-error-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 3px);
 }
 
-.input-group[has-error] .form-error {
+.input-group.input-group--has-error .form__error {
     --form-error-display: block;
 }
 
-.form-error--checkbox-group {
+.form__error--checkbox-group {
     --form-error-padding: 0;
 
     grid-column: var(--checkbox-group-error-column);
 }
 
-.form-error--toggle-group {
+.form__error--toggle-group {
     --form-error-padding: 0;
 
     grid-column: var(--toggle-group-error-column);
@@ -818,12 +818,12 @@ body[overlay-open] {
     pointer-events: none;
 }
 
-.input-group[has-error] .input {
+.input-group.input-group--has-error .input {
     border: var(--form-input-error-border);
     outline: var(--form-input-error-border);
 }
 
-.input-group[has-success] .input {
+.input-group.input-group--has-success .input {
     --input-color: var(--color-font);
 
     border: var(--form-input-success-border);
@@ -910,13 +910,13 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 1;
 }
 
-.input-group[has-error]::after {
+.input-group.input-group--has-error::after {
     --input-group-icon-display: block;
     --input-group-icon-background-color: var(--color-error);
     --input-group-icon-image: var(--icon-info);
 }
 
-.input-group[has-success]::after {
+.input-group.input-group--has-success::after {
     --input-group-icon-display: block;
     --input-group-icon-background-color: var(--color-success);
     --input-group-icon-image: var(--icon-check-circle);
@@ -1161,11 +1161,11 @@ input[type=number]::-webkit-outer-spin-button {
     --input-label-color: var(--color-font-light);
 }
 
-.input-group[has-error] .input-label {
+.input-group.input-group--has-error .input-label {
     --input-label-color: var(--color-error);
 }
 
-.input-group[has-success] .input-label {
+.input-group.input-group--has-success .input-label {
     --input-label-color: var(--color-success);
 }
 
@@ -1241,12 +1241,12 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none;
 }
 
-.input-group[has-error] .multi-select {
+.input-group.input-group--has-error .multi-select {
     border: var(--form-input-error-border);
     outline: var(--form-input-error-border);
 }
 
-.input-group[has-success] .multi-select {
+.input-group.input-group--has-success .multi-select {
     border: var(--form-input-success-border);
     outline: var(--form-input-success-border);
 }
@@ -1337,22 +1337,22 @@ input[type=number]::-webkit-outer-spin-button {
     --radio-check-background-color: var(--color-font-light);
 }
 
-.input-group[has-error] .radio {
+.input-group.input-group--has-error .radio {
     --radio-border-color: var(--color-error);
     --radio-background-color: var(--color-error-o-25);
 }
 
-.input-group[has-error] .radio:checked {
+.input-group.input-group--has-error .radio:checked {
     --radio-background-color: var(--color-bg);
     --radio-check-background-color: var(--color-error);
 }
 
-.input-group[has-success] .radio:checked {
+.input-group.input-group--has-success .radio:checked {
     --radio-border-color: var(--color-success);
     --radio-background-color: var(--color-success-o-25);
 }
 
-.input-group[has-success] .radio:checked {
+.input-group.input-group--has-success .radio:checked {
     --radio-border-color: var(--color-success);
     --radio-background-color: var(--color-bg);
     --radio-check-background-color: var(--color-success);
