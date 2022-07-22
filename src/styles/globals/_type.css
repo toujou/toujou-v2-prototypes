@@ -101,7 +101,7 @@ p + :is(p, ul, ol) {
     font-size: var(--font-size-s);
 }
 
-p a {
+a {
     color: var(--color-primary);
 }
 
