@@ -64,11 +64,11 @@ export class ToujouOverlay extends LitElement {
         super.connectedCallback();
         this._getElements();
 
-        this._overlayCookie = this._checkCookie('toujou-overlay-' + this._overlayId)
-
         if (location.hash === '#aaa') {
             this._setCookie(this.COOKIE_STATES.ACCEPTED);
         }
+
+        this._overlayCookie = this._checkCookie('toujou-overlay-' + this._overlayId)
 
         if (this._buttons.length) {
             this._buttons.forEach((button) => {
@@ -108,6 +108,7 @@ export class ToujouOverlay extends LitElement {
      */
     _handleCloseButtonClick() {
         this.state = this.STATE.CLOSED;
+        this._setCookie(this.COOKIE_STATES.ACCEPTED)
     }
 
     /**
@@ -119,11 +120,14 @@ export class ToujouOverlay extends LitElement {
         const target = event?.target as HTMLButtonElement;
         const choice: string | null = target.getAttribute('data-overlay-value') || null;
 
+
         if (choice === 'no') {
             this.state = this.STATE.OPEN;
+            this._setCookie(this.COOKIE_STATES.REJECTED);
             this._showWarning();
         } else if (choice === 'yes') {
             this.state = this.STATE.CLOSED;
+            this._setCookie(this.COOKIE_STATES.ACCEPTED);
         }
         target.blur();
     }
