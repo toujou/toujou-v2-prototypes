@@ -31,6 +31,7 @@ export default defineConfig({
                 },
                 chunkFileNames: 'js/[name]-[hash].js',
                 entryFileNames: 'js/[name].js',
+                sourcemap: true,
             },
         },
     },
