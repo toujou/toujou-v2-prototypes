@@ -195,3 +195,7 @@
         align-self: var(--topbar-actions-align-self);
     }
 }
+
+main {
+    padding-top: var(--topbar-height);
+}
