@@ -8,6 +8,7 @@
     --overlay-display: flex;
     --overlay-align-items: center;
     --overlay-justify-content: center;
+    --overlay-z-index: 2147483641;
 
     --overlay-infos-position: relative;
     --overlay-infos-display: flex;
@@ -54,6 +55,7 @@
     display: var(--overlay-display);
     align-items: var(--overlay-align-items);
     justify-content: var(--overlay-justify-content);
+    z-index: var(--overlay-z-index);
 }
 
 .overlay[warning-visible] {
