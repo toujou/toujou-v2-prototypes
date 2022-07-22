@@ -52,10 +52,14 @@
     left: var(--overlay-left);
     height: var(--overlay-height);
     width: var(--overlay-width);
-    display: var(--overlay-display);
     align-items: var(--overlay-align-items);
     justify-content: var(--overlay-justify-content);
     z-index: var(--overlay-z-index);
+    display: none;
+}
+
+.overlay[state="open"] {
+    display: var(--overlay-display);
 }
 
 .overlay[warning-visible] {

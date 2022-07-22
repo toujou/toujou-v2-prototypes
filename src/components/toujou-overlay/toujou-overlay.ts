@@ -1,6 +1,16 @@
 import { LitElement } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
+enum COOKIE_STATES {
+    ACCEPTED = 'accepted',
+    REJECTED = 'rejected'
+}
+
+enum STATE {
+    OPEN = 'open',
+    CLOSED = 'closed'
+}
+
 @customElement('toujou-overlay')
 export class ToujouOverlay extends LitElement {
     @property({ type: String })
@@ -18,18 +28,8 @@ export class ToujouOverlay extends LitElement {
     @property({ type: String })
     _overlayCookie: string | false = false;
 
-    @property({ type: String })
-    _state: string = 'open';
-
-    private COOKIE_STATES = {
-        ACCEPTED: 'accepted',
-        REJECTED: 'rejected',
-    }
-
-    private STATE = {
-        OPEN: 'open',
-        CLOSED: 'closed'
-    }
+    @property({ type: String, attribute: 'state', reflect: true })
+    _state: string = STATE.CLOSED;
 
     protected createRenderRoot(): Element | ShadowRoot {
         return this;
@@ -49,7 +49,7 @@ export class ToujouOverlay extends LitElement {
     // @ts-ignore
     set state(value) {
         this._state = value;
-        this._state === this.STATE.OPEN ? this._showOverlay() : this._hideOverlay();
+        this._state === STATE.OPEN ? this._showOverlay() : this._hideOverlay();
     }
 
     /**
@@ -65,7 +65,7 @@ export class ToujouOverlay extends LitElement {
         this._getElements();
 
         if (location.hash === '#aaa') {
-            this._setCookie(this.COOKIE_STATES.ACCEPTED);
+            this._setCookie(COOKIE_STATES.ACCEPTED);
         }
 
         this._overlayCookie = this._checkCookie('toujou-overlay-' + this._overlayId)
@@ -81,11 +81,11 @@ export class ToujouOverlay extends LitElement {
         }
 
         if (!this._overlayCookie) {
-            this.state = this.STATE.OPEN;
-        } else if (this._overlayCookie === this.COOKIE_STATES.REJECTED) {
-            this.state = this.STATE.OPEN;
-        } else if (this._overlayCookie === this.COOKIE_STATES.ACCEPTED) {
-            this.state = this.STATE.CLOSED;
+            this.state = STATE.OPEN;
+        } else if (this._overlayCookie === COOKIE_STATES.REJECTED) {
+            this.state = STATE.OPEN;
+        } else if (this._overlayCookie === COOKIE_STATES.ACCEPTED) {
+            this.state = STATE.CLOSED;
         }
     }
 
@@ -107,8 +107,8 @@ export class ToujouOverlay extends LitElement {
      * Close overlay when the close button is clicked
      */
     _handleCloseButtonClick() {
-        this.state = this.STATE.CLOSED;
-        this._setCookie(this.COOKIE_STATES.ACCEPTED)
+        this.state = STATE.CLOSED;
+        this._setCookie(COOKIE_STATES.ACCEPTED)
     }
 
     /**
@@ -122,12 +122,12 @@ export class ToujouOverlay extends LitElement {
 
 
         if (choice === 'no') {
-            this.state = this.STATE.OPEN;
-            this._setCookie(this.COOKIE_STATES.REJECTED);
+            this.state = STATE.OPEN;
+            this._setCookie(COOKIE_STATES.REJECTED);
             this._showWarning();
         } else if (choice === 'yes') {
-            this.state = this.STATE.CLOSED;
-            this._setCookie(this.COOKIE_STATES.ACCEPTED);
+            this.state = STATE.CLOSED;
+            this._setCookie(COOKIE_STATES.ACCEPTED);
         }
         target.blur();
     }
@@ -163,7 +163,6 @@ export class ToujouOverlay extends LitElement {
      * Show overlay by setting the style and preventing body scroll in background
      */
     _showOverlay() {
-        this.style.display = 'flex';
         document.body.setAttribute('overlay-open', '');
     }
 
@@ -171,7 +170,6 @@ export class ToujouOverlay extends LitElement {
      * Hide overlay by setting display to none, allow body scroll again
      */
     _hideOverlay() {
-        this.style.display = 'none';
         document.body.removeAttribute('overlay-open');
     }
 
