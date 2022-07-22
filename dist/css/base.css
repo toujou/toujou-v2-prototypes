@@ -4654,6 +4654,13 @@ main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
     margin-right: auto;
 }
 
+@media screen and (max-width: 420px) {
+    h1, h2, h3, h4, h5,
+    p, ol, ul {
+        word-break: break-word;
+    }
+}
+
 @media (hover: hover) {
     a:not(.button):hover {
         color: var(--color-primary-dark);
