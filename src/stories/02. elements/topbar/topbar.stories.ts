@@ -294,6 +294,21 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
 
         </toujou-topbar>   
         <main>
+            <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">
+                <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
+                    <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
+                </button>
+                
+                <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
+                    <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
+                </button>
+    
+                <ol class="breadcrumb__list" slot="list">
+                    <li class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Home</a>
+                    </li>
+                </ol>
+            </toujou-breadcrumb>
             <toujou-text-block class="text-block" text-block-column-count="1">
                 <toujou-text-block-column class="text-block-column">
                     <div class="text-block__content">
