@@ -3,7 +3,8 @@
     --form-progress-display: flex;
     --form-progress-gap: var(--spacing-normal);
     --form-progress-justify-content: flex-start;
-    --form-progress-margin: var(--spacing-m) 0;
+    --form-progress-margin: var(--spacing-m) auto;
+    --form-progress-max-width: var(--content-max-width);
 
     --form-progress-item-size: var(--font-size-l);
     --form-progress-item-font-size: var(--font-size-normal);
@@ -26,6 +27,7 @@
     gap: var(--form-progress-gap);
     margin: var(--form-progress-margin);
     justify-content: var(--form-progress-justify-content);
+    max-width: var(--form-progress-max-width);
 }
 
 .form-progress-bar {
