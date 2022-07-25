@@ -10,6 +10,9 @@
     --footer-logo-max-width: 180px;
 
     --footer-list-link-color: var(--color-primary-light);
+    --footer-list-link-hover-color: var(--color-white);
+
+    --footer-list-link-text-decoration: underline;
 
     --footer-address-color: var(--color-bg);
     --footer-address-margin-bottom: var(--spacing-l);
@@ -40,6 +43,7 @@
 
 .footer__list-link {
     color: var(--footer-list-link-color);
+    text-decoration: var(--footer-list-link-text-decoration);
 }
 
 a.footer__list-link:focus {
@@ -81,8 +85,8 @@ a.footer__list-link:focus {
 }
 
 @media (hover: hover) {
-    a.footer__list-link:hover {
-        --footer-list-link-color: var(--color-bg);
+    .footer__list-item > a.footer__list-link:hover {
+        color: var(--footer-list-link-hover-color);
     }
 
     a.footer__socials-link:hover .icon {
