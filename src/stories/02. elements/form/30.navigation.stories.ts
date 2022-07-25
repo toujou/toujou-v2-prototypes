@@ -33,10 +33,9 @@ const Template = () => {
             class="form" 
             id="testform-1000091" 
             action="#"
-            novalidate="true">
+            novalidate="true"
+    >
             
-            
-
             <toujou-input-group
                 class="input-group"
                 input-group-type="text"

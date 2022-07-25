@@ -1,5 +1,4 @@
 .form-navigation {
-
    --form-navigation-display: flex;
    --form-navigation-flex-direction: row-reverse;
    --form-navigation-gap: var(--spacing-normal);
@@ -11,7 +10,6 @@
    gap: var(--form-navigation-gap);
    margin: var(--form-navigation-margin);
    justify-content: var(--form-navigation-justify-content);
-
 }
 
 

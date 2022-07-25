@@ -1,0 +1,87 @@
+.form-progress {
+
+    --form-progress-display: flex;
+    --form-progress-gap: var(--spacing-normal);
+    --form-progress-justify-content: flex-start;
+    --form-progress-margin: var(--spacing-m) 0;
+
+    --form-progress-item-size: var(--font-size-l);
+    --form-progress-item-font-size: var(--font-size-normal);
+    --form-progress-item-line-height: var(--form-progress-item-size);
+    --form-progress-item-border-width: var(--border-width-m);
+    --form-progress-item-border-color: var(--color-primary);
+    --form-progress-item-background-color: var(--color-white);
+    --form-progress-item-font-color: var(--color-primary);
+    --form-progress-item-active-background-color: var(--color-primary);
+    --form-progress-item-active-font-color: var(--color-white);
+
+    --form-progress-item-completed-background-color: var(--color-primary-o-10);
+    --form-progress-item-completed-font-color: var(--color-primary);
+
+
+    --form-progress-bar-width: var(--border-width-m);
+    --form-progress-bar-color: var(--color-font-light);
+
+    display: var(--form-progress-display);
+    gap: var(--form-progress-gap);
+    margin: var(--form-progress-margin);
+    justify-content: var(--form-progress-justify-content);
+}
+
+.form-progress-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    list-style:none;
+    padding: 0;
+    margin: 0
+}
+
+.form-progress__headline {
+    margin-bottom: 0;
+}
+
+.form-progress__item {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--form-progress-item-size);
+}
+
+.form-progress__index {
+    width: var(--form-progress-item-size);
+    height: var(--form-progress-item-size);
+    font-size: var(--form-progress-item-font-size);
+    line-height: var(--form-progress-item-line-height);
+    border-radius: 50%;
+    text-align: center;
+    border: var(--form-progress-item-border-width) solid var(--form-progress-item-border-color);
+    color: var(--form-progress-item-font-color);
+    box-sizing: content-box;
+}
+
+.form-progress__item[active] .form-progress__index {
+    background-color: var(--form-progress-item-active-background-color);
+    color: var(--form-progress-item-active-font-color);
+}
+
+.form-progress__item[completed] .form-progress__index {
+    background-color: var(--form-progress-item-completed-background-color);
+    color: var(--form-progress-item-completed-font-color);
+}
+
+.form-progress__item:not(:first-child) {
+    margin-left: var(--form-progress-item-size);
+}
+
+.form-progress__item:not(:first-child):after {
+    content: "";
+    background: var(--form-progress-bar-color);
+    width: calc(var(--form-progress-item-size) * 2);
+    height: var(--form-progress-bar-width);
+    position: absolute;
+    right: 100%;
+    top: 50%;
+}
