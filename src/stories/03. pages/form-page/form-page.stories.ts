@@ -171,11 +171,16 @@ const Template = () => {
 
 	        </toujou-form-row>
 	        
-            <toujou-input-group class="input-group" input-group-type="submit">			
-        		<button is="toujou-button" class="button" button-variant="primary" type="submit" name="tx_form_formframework[selectWithChips-1000064][__currentPage]" value="1">
-					Submit
-				</button>
-	        </toujou-input-group>        	
+            <nav class="form-navigation" role="toolbar">
+                <span class="form-navigation__submit">
+                    <button is="toujou-button" class="button" button-variant="primary" type="submit"  name="tx_form_formframework[kontaktformular-8][__currentPage]" value="2">
+                        Submit
+                    </button>
+                </span>
+                <span class="form-navigation__previous">
+                    <button formnovalidate="formnovalidate" class="button" button-variant="primary" button-type="border" type="submit" name="tx_form_formframework[kontaktformular-8][__currentPage]" value="0">Cancel</button>
+                </span>
+            </nav>	
         </form>
         
         <toujou-text-block class="text-block" text-blocks-column-count="1">
