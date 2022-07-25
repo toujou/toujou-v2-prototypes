@@ -4,7 +4,7 @@
     --footer-content-grid-gap: var(--spacing-l);
     --footer-content-align-items: flex-start;
     --footer-content-justify-content: center;
-    --footer-content-max-width: var(--content-max-width);
+    --footer-content-max-width: var(--content-wide-max-width);
     --footer-content-margin: 0 auto;
 
     display: var(--footer-content-display);
