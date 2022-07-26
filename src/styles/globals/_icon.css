@@ -312,6 +312,11 @@
     -webkit-mask-image: var(--icon-euro);
 }
 
+.icon[icon-name="fax"] {
+    mask-image: var(--icon-fax);
+    -webkit-mask-image: var(--icon-fax);
+}
+
 .icon[icon-name="file-download"] {
     mask-image: var(--icon-file-download);
     -webkit-mask-image: var(--icon-file-download);

@@ -86,6 +86,7 @@ const iconNames = [
     'drink',
     'email',
     'euro',
+    'fax',
     'file-download',
     'flag',
     'flower',
