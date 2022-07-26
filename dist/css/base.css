@@ -330,6 +330,7 @@ figure {
     --icon-drink: url('../assets/icons/icon-drink.svg');
     --icon-email: url('../assets/icons/icon-email.svg');
     --icon-euro: url('../assets/icons/icon-euro.svg');
+    --icon-fax: url('../assets/icons/icon-fax.svg');
     --icon-file-download: url('../assets/icons/icon-file-download.svg');
     --icon-flag: url('../assets/icons/icon-flag.svg');
     --icon-flower: url('../assets/icons/icon-flower.svg');
@@ -2514,12 +2515,13 @@ input[type=number]::-webkit-outer-spin-button {
     --footer-list-style: none;
     --footer-list-padding: 0;
     --footer-list-margin: 0;
-    --footer-list-text-align: center;
+    --footer-list-text-align: left;
 
     --footer-logo-max-width: 180px;
 
-    --footer-list-link-color: var(--color-primary-light);
-    --footer-list-link-hover-color: var(--color-white);
+    --footer-link-color: var(--color-primary-light);
+    --footer-link-hover-color: var(--color-bg);
+    --footer-link-focus-color: var(--color-bg);
 
     --footer-list-link-text-decoration: underline;
 
@@ -2528,7 +2530,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     --footer-address-text-style: normal;
     --footer-address-text-margin: 0;
-    --footer-address-text-align: center;
+    --footer-address-text-align: left;
 
     --footer-socials-display: flex;
     --footer-socials-align-items: center;
@@ -2550,14 +2552,21 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: var(--footer-list-text-align);
 }
 
-.footer__list-link {
-    color: var(--footer-list-link-color);
+.footer__list-link,
+.footer__address-link {
+    color: var(--footer-link-color);
     -webkit-text-decoration: var(--footer-list-link-text-decoration);
             text-decoration: var(--footer-list-link-text-decoration);
 }
 
-a.footer__list-link:focus {
-    --footer-list-link-color: var(--color-bg);
+.footer__socials-link {
+    color: var(--footer-link-color);
+}
+
+.footer__list-item > a.footer__list-link:focus,
+.footer__address-text > a.footer__address-link:focus,
+.footer__socials > a.footer__socials-link:focus {
+    color: var(--footer-link-focus-color);
 }
 
 .footer__address {
@@ -2576,6 +2585,10 @@ a.footer__list-link:focus {
     font-style: var(--footer-address-text-style);
 }
 
+.footer__address-text .icon {
+    margin-right: var(--spacing-normal);
+}
+
 .footer__socials {
     display: var(--footer-socials-display);
     align-items: var(--footer-socials-align-items);
@@ -2583,34 +2596,21 @@ a.footer__list-link:focus {
     gap: var(--footer-socials-gap);
 }
 
-@media screen and (min-width: 640px) {
-    .footer {
-        --footer-list-text-align: left;
-        --footer-address-text-align: left;
-    }
-
-    .footer__socials {
-        align-self: flex-start;
-    }
-}
-
 @media (hover: hover) {
-    .footer__list-item > a.footer__list-link:hover {
-        color: var(--footer-list-link-hover-color);
-    }
-
-    a.footer__socials-link:hover .icon {
-        --icon-color: var(--color-bg);
+    .footer__list-item > a.footer__list-link:hover,
+    .footer__address-text > a.footer__address-link:hover,
+    .footer__socials > a.footer__socials-link:hover
+    {
+        color: var(--footer-link-hover-color);
     }
 }
 
 .footer-column {
     --footer-column-display: flex;
     --footer-column-flex-direction: column;
-    --footer-column-align-items: center;
+    --footer-column-align-items: flex-start;
     --footer-column-justify-content: flex-start;
 
-    --footer-column-logo-align-items: center;
 
     display: var(--footer-column-display);
     flex-direction: var(--footer-column-flex-direction);
@@ -2619,20 +2619,13 @@ a.footer__list-link:focus {
 }
 
 @media screen and (min-width: 640px) {
-    .footer-column {
-        --footer-column-align-items: flex-start;
-    }
-
     .footer-column[column-name="logo"] {
         grid-column: 1 / -1;
-        align-items: var(--footer-column-logo-align-items);
     }
 }
 
 @media screen and (min-width: 960px) {
     .footer-column[column-name="logo"] {
-        --footer-column-logo-align-items: flex-start;
-
         grid-column: 1;
     }
 }
@@ -3216,6 +3209,11 @@ a.footer__list-link:focus {
     -webkit-mask-image: var(--icon-euro);
 }
 
+.icon[icon-name="fax"] {
+    mask-image: var(--icon-fax);
+    -webkit-mask-image: var(--icon-fax);
+}
+
 .icon[icon-name="file-download"] {
     mask-image: var(--icon-file-download);
     -webkit-mask-image: var(--icon-file-download);
@@ -3628,7 +3626,7 @@ a.footer__list-link:focus {
         --main-nav-top: unset;
         --main-nav-bottom: 0;
         --main-nav-left: unset;
-        --main-nav-right: max(var(--spacing-normal), calc(calc(100% - var(--content-max-width)) / 2));
+        --main-nav-right: max(var(--spacing-normal), calc(calc(100% - var(--content-wide-max-width)) / 2));
         --main-nav-width: auto;
         --main-nav-height: auto;
         --main-nav-padding: 0;
@@ -4610,13 +4608,14 @@ main {
     --topbutton-display: flex;
     --topbutton-align-items: center;
     --topbutton-justify-content: center;
-    --topbutton-bg-color: var(--color-secondary);
+    --topbutton-bg-color: var(--color-white);
     --topbutton-position: fixed;
     --topbutton-bottom: var(--spacing-normal);
     --topbutton-right: var(--spacing-normal);
     --topbutton-padding: var(--spacing-s);
     --topbutton-margin: 0;
     --topbutton-border-radius: var(--border-radius-normal);
+    --topbutton-border: 1px solid var(--color-primary);
     --topbutton-transform: translateY(200%);
     --topbutton-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
 
@@ -4632,6 +4631,7 @@ main {
     border-radius: var(--topbutton-border-radius);
     transform: var(--topbutton-transform);
     transition: var(--topbutton-transition);
+    border: var(--topbutton-border);
 }
 
 .topbutton.topbutton--visible {
@@ -4641,7 +4641,10 @@ main {
 @media (hover: hover) {
     .topbutton:hover {
         cursor: pointer;
-        --topbutton-bg-color: var(--color-secondary-dark);
+        --topbutton-bg-color: var(--color-primary-dark);
+    }
+    .topbutton:hover .icon {
+        --icon-color: var(--color-bg);
     }
 }
 
