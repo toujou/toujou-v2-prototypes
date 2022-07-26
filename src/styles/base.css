@@ -17,6 +17,7 @@
 @import "./globals/navigation/_main-nav-second-level.css";
 @import "./globals/navigation/_service-nav.css";
 @import "./globals/_pn-nav.css";
+@import "./globals/_search.css";
 @import "./globals/_single-media.css";
 @import "./globals/_teaser.css";
 @import "./globals/_text-blocks.css";
