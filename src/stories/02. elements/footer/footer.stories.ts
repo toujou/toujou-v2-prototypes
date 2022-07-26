@@ -69,19 +69,31 @@ const Template = () => {
                 <footer-column class="footer-column" column-name="address">
                     <address class="footer__address">
                         <p class="footer__address-title">Ein Service der:</p>
-                        <p class="footer__address-text">DFAU GmbH</p>
-                        <p class="footer__address-text">Gustav-Weißkopf-Straße 5</p>
-                        <p class="footer__address-text">90768 Fürth</p>
+                        <p class="footer__address-text footer__address-text--name">DFAU GmbH</p>
+                        <p class="footer__address-text footer__address-text--street">Gustav-Weißkopf-Straße 5</p>
+                        <p class="footer__address-text footer__address-text--city">90768 Fürth</p>
+                        <p class="footer__address-text footer__address-text--phone">
+                            <toujou-icon class="icon" icon-name="telephone" icon-size="ms"></toujou-icon> 
+                            Tel: <a class="footer__address-link" href="tel:+1 (291) 264-9318">+1 (291) 264-9318</a>
+                        </p>
+                        <p class="footer__address-text footer__address-text--fax">
+                            <toujou-icon class="icon" icon-name="fax" icon-size="ms"></toujou-icon>
+                            Fax: +1 (569) 939-1286
+                        </p>
+                        <p class="footer__address-text footer__address-text--mail">
+                            <toujou-icon class="icon" icon-name="email" icon-size="ms"></toujou-icon>
+                            <a class="footer__address-link" href="mailto:cevijakesi@mailinator.com">cevijakesi@mailinator.com</a>
+                        </p>
                     </address>
                     <div class="footer__socials">
                         <a href="#" class="footer__socials-link">
-                            <toujou-icon class="icon" icon-name="sm-facebook" icon-color="primary-light" icon-size="l"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="sm-facebook" icon-size="l"></toujou-icon>
                         </a>
                         <a href="#" class="footer__socials-link">
-                            <toujou-icon class="icon" icon-name="sm-twitter" icon-color="primary-light" icon-size="l"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="sm-twitter" icon-size="l"></toujou-icon>
                         </a>
                         <a href="#" class="footer__socials-link">
-                            <toujou-icon class="icon" icon-name="sm-instagram" icon-color="primary-light" icon-size="l"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="sm-instagram" icon-size="l"></toujou-icon>
                         </a>
                     </div>
                 </footer-column>
