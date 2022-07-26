@@ -148,7 +148,7 @@
         --main-nav-top: unset;
         --main-nav-bottom: 0;
         --main-nav-left: unset;
-        --main-nav-right: max(var(--spacing-normal), calc(calc(100% - var(--content-max-width)) / 2));
+        --main-nav-right: max(var(--spacing-normal), calc(calc(100% - var(--content-wide-max-width)) / 2));
         --main-nav-width: auto;
         --main-nav-height: auto;
         --main-nav-padding: 0;
