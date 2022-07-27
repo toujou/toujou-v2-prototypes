@@ -132,6 +132,7 @@ const iconNames = [
     'telephone',
     'thumb-up',
     'tools',
+    'warning',
 ];
 
 interface IconStoryProps { iconSize: string; iconColor: string; }
