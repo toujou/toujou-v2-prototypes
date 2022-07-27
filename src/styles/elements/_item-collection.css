@@ -12,9 +12,10 @@
     --item-collection-z-index: var(--z-index-content);
 
     --item-collection-item-max-width: 100%;
+    --item-collection-item-border-bottom: var(--border-width-normal) solid var(--color-font-light);
+    --item-collection-divider: 100%;
 
     display: var(--item-collection-display);
-    grid-gap: var(--item-collection-gap);
     flex-wrap: var(--item-collection-flex-wrap);
     align-items: var(--item-collection-align-items);
     justify-content: var(--item-collection-justify-content);
@@ -29,4 +30,8 @@
 .item-collection__item {
     width: 100%;
     max-width: var(--item-collection-item-max-width);
+
+    margin-bottom: var(--item-collection-gap);
+    border-bottom: var(--item-collection-item-border-bottom);
+    padding-bottom: var(--item-collection-gap);
 }
