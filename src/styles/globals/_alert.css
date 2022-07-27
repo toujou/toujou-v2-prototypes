@@ -23,6 +23,7 @@
     padding: var(--alert-padding);
     border-radius: var(--alert-border-radius);
     text-decoration: var(--alert-text-decoration);
+    align-items: center;
 }
 
 .alert[alert-variant="secondary"] {
