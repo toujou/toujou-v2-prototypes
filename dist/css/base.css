@@ -384,6 +384,7 @@ figure {
     --icon-telephone: url('../assets/icons/icon-telephone.svg');
     --icon-thumb-up: url('../assets/icons/icon-thumb-up.svg');
     --icon-tools: url('../assets/icons/icon-tools.svg');
+    --icon-warning: url('../assets/icons/icon-warning.svg');
 }
 
 :root {
@@ -3521,6 +3522,11 @@ input[type=number]::-webkit-outer-spin-button {
 .icon[icon-name="tools"] {
     mask-image: var(--icon-tools);
     -webkit-mask-image: var(--icon-tools);
+}
+
+.icon[icon-name="warning"] {
+    mask-image: var(--icon-warning);
+    -webkit-mask-image: var(--icon-warning);
 }
 
 /* stylelint-enable property-no-vendor-prefix */
