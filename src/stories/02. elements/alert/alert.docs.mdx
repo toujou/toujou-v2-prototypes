@@ -1,0 +1,31 @@
+# &lt;toujou-alert&gt;
+The `<toujou-alert>` is a custom element that renders a alert element to the page.
+
+
+## Markup example
+```html
+<toujou-alert class="alert" role="alert" alert-variant="primary">
+    <typo3-icon></typo3-icon>
+    This is an alert
+</toujou-alert>
+```
+
+
+## Attributes
+There are some attributes that allow us to customize the alert element:
+
+
+### role <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `<toujou-alert>` must have the `role` attribute. It must be set to `role="alert"`.
+
+
+### alert variant <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+By setting the `alert-variant` attribute we can choose between different variants:
+
+| Name      | Attribute                   |
+|-----------|-----------------------------|
+| primary   | `alert-variant="primary"`   |
+| secondary | `alert-variant="secondary"` |
+| warning   | `alert-variant="warning"`   |
+| success   | `alert-variant="success"`   |
+| error     | `alert-variant="success"`   |

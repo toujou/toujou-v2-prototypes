@@ -1,0 +1,46 @@
+.alert {
+    --alert-bg-color: var(--color-primary-o-10);
+    --alert-text-color: var(--color-font);
+    --alert-border-color:var(--color-primary);
+    --alert-font-size: var(--font-size-normal);
+    --alert-font-family: var(--font-family-text);
+    --alert-padding: var(--spacing-s) var(--spacing-m);
+    --alert-border-radius: var(--border-radius-normal);
+    --alert-border-width: var(--spacing-1px);
+    --alert-border: var(--alert-border-width) solid var(--alert-border-color);
+    --alert-width: auto;
+    --alert-text-decoration: none;
+
+    width: var(--alert-width);
+    display: flex;
+    border: var(--alert-border);
+    outline: none;
+    gap: var(--spacing-s);
+    background-color: var(--alert-bg-color);
+    color: var(--alert-text-color);
+    font-size: var(--alert-font-size);
+    font-family: var(--alert-font-family);
+    padding: var(--alert-padding);
+    border-radius: var(--alert-border-radius);
+    text-decoration: var(--alert-text-decoration);
+}
+
+.alert[alert-variant="secondary"] {
+    --alert-bg-color: var(--color-secondary-o-10);
+    --alert-border-color: var(--color-secondary-dark);
+}
+
+.alert[alert-variant="warning"] {
+    --alert-bg-color: var(--color-warning-o-25);
+    --alert-border-color: var(--color-warning-darken-15);
+}
+
+.alert[alert-variant="error"] {
+    --alert-bg-color: var(--color-error-o-25);
+    --alert-border-color: var(--color-error-darken-15);
+}
+
+.alert[alert-variant="success"] {
+    --alert-bg-color: var(--color-success-o-25);
+    --alert-border-color: var(--color-success-darken-15);
+}

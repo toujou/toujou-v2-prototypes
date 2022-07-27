@@ -67,6 +67,7 @@
     --color-warning-l: 50%;
     --color-warning: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l));
     --color-warning-darken-15: hsl(var(--color-warning-h) var(--color-warning-s) calc(var(--color-warning-l) - 15%));
+    --color-warning-o-25: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l) / 25%);
 
     --color-error-h: 348;
     --color-error-s: 100%;
