@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     --z-index-content: 1;
     --z-index-pn-nav: 30;
     --z-index-top-button: 50;

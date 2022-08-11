@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     --shadow-color: 286deg 0% 56%;
     --shadow-color-1: hsl(0 0% 0% / 5%);
     --shadow-color-2: hsl(0 0% 0% / 6%);

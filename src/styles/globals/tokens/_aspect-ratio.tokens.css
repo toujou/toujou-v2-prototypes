@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     --aspect-ratio-auto: auto;
     --aspect-ratio-square: 1;
     --aspect-ratio-4-3: 4 / 3;

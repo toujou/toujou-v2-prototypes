@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     --form-width: var(--content-width-with-padding);
     --form-max-width: var(--content-max-width);
 

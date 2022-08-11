@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     /* FONT FAMILIES */
     --font-family-headline: 'Ubuntu', sans-serif;
     --font-family-text: 'Mulish', sans-serif;

@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     --icon-size-m: var(--spacing-m);
     --icon-size-normal: var(--spacing-ms);
 

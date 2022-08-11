@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     --border-radius-xxxxl: 3rem;
     --border-radius-xxxl: 2rem;
     --border-radius-xxl: 1.5rem;

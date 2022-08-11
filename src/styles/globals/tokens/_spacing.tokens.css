@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     --spacing-xxxxl: 7.5rem;    /* 120px */
     --spacing-xxxl: 6rem;       /* 96px */
     --spacing-xxl: 4rem;        /* 64px */
