@@ -15,6 +15,7 @@
 @import "./globals/form/_input-group.css";
 @import "./globals/form/_input-label.css";
 @import "./globals/form/_multi-checkbox-group.css";
+@import "./globals/form/_multi-select.css";
 @import "./globals/form/_radio.css";
 @import "./globals/form/_radio-group.css";
 @import "./globals/form/_select.css";

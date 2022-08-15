@@ -66,9 +66,11 @@
     --input-group-icon-image: var(--icon-check-circle);
 }
 
-.input-group[input-group-type="number"],
-.input-group[input-group-type="single-select"],
-.input-group[input-group-type="date"] {
+.input-group--number,
+.input-group--multi-select,
+.input-group--single-select,
+.input-group--date,
+.input-group--date-jquery {
     --input-group-icon-right: var(--spacing-l);
 }
 

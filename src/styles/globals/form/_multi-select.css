@@ -1,0 +1,60 @@
+.multi-select {
+    --multi-select-width: 100%;
+    --multi-select-background-color: var(--form-input-background-color);
+    --multi-select-border-width: var(--form-input-border-width);
+    --multi-select-border-color: var(--form-input-default-border-color);
+    --multi-select-border: var(--form-input-default-border);
+    --multi-select-border-radius: var(--form-input-border-radius);
+    --multi-select-padding: var(--form-input-padding);
+
+    --multi-select-option-color: var(--form-input-color);
+    --multi-select-option-font-family: var(--form-input-font-family);
+    --multi-select-option-font-size: var(--form-input-font-size);
+    --multi-select-option-font-weight: var(--form-input-font-weight);
+    --multi-select-option-background-color: var(--form-input-background-color);
+
+    width: var(--multi-select-width);
+    background-color: var(--multi-select-background-color);
+    border: var(--multi-select-border-width) solid var(--multi-select-border-color);
+    border-radius: var(--multi-select-border-radius);
+    padding: var(--multi-select-padding);
+}
+
+.multi-select:focus,
+.multi-select:focus-within,
+.multi-select:focus-visible {
+    border: var(--form-input-focus-border) !important;
+    outline: var(--form-input-focus-border) !important;
+    outline: none;
+}
+
+.input-group.input-group--has-error .multi-select {
+    border: var(--form-input-error-border);
+    outline: var(--form-input-error-border);
+}
+
+.input-group.input-group--has-success .multi-select {
+    border: var(--form-input-success-border);
+    outline: var(--form-input-success-border);
+}
+
+.multi-select__option {
+    color: var(--multi-select-option-color);
+    background-color: var(--multi-select-option-background-color);
+    font-family: var(--multi-select-option-font-family);
+    font-size: var(--multi-select-option-font-size);
+    font-weight: var(--multi-select-option-font-weight);
+}
+
+.multi-select__option:checked {
+    --multi-select-option-background-color: var(--color-primary);
+    --multi-select-option-color: var(--color-bg);
+}
+
+.multi-select[disabled] {
+    --multi-select-option-color: var(--color-font-light);
+}
+
+.input-group[input-group-type="multi-select"] {
+    --input-group-icon-right: var(--spacing-m);
+}
