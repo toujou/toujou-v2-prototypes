@@ -61,7 +61,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            id="testform-1000091-multicheckbox-1_1"
                            type="checkbox"
                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                           value="aaaaa">
+                           value="aaaaa"
+                           ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Checkbox beautiful label</label>
                     <span class="input-description input-description--checkbox-group">This is a description</span>
                     <span class="pristine-error form__error">The given subject was empty.</span>			
@@ -77,7 +78,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            id="testform-1000091-multicheckbox-1_1"
                            type="checkbox"
                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                           value="aaaaa">
+                           value="aaaaa"
+                           ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Option one</label>
                 </div>
                 
@@ -87,7 +89,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            id="testform-1000091-multicheckbox-1_2"
                            type="checkbox"
                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                           value="bbbbb">
+                           value="bbbbb"
+                           ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_2">Option two</label>
                 </div>
                 
@@ -97,7 +100,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            id="testform-1000091-multicheckbox-1_3"
                            type="checkbox"
                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                           value="bbbbb">
+                           value="ccccc"
+                           ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_3">Option three</label>
                 </div>
                 
@@ -107,7 +111,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            id="testform-1000091-multicheckbox-1_4"
                            type="checkbox"
                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                           value="bbbbb">
+                           value="ddddd"
+                           ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_4">Option four</label>
                 </div>
                 
@@ -117,7 +122,8 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            id="testform-1000091-multicheckbox-1_5"
                            type="checkbox"
                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
-                           value="bbbbb">
+                           value="eeeee"
+                           ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_5">Option five</label>
                 </div>
                 
