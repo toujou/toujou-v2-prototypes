@@ -65,6 +65,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        type="text" name="tx_form_formframework[testform-1000091][text-1]"
                        value=""
                        ${disabledAttribute}>
+                <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
             
             <toujou-input-group class="input-group input-group--email input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
@@ -79,6 +80,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        name="tx_form_formframework[testform-1000091][email-1]"
                        value=""
                        ${disabledAttribute}>
+                <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
             
             <toujou-input-group class="input-group input-group--telephone input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
@@ -93,6 +95,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        name="tx_form_formframework[testform-1000091][telephone-1]"
                        value=""
                        ${disabledAttribute}>
+                <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
 
             <toujou-input-group class="input-group input-group--url input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
@@ -107,6 +110,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        name="tx_form_formframework[testform-1000091][url-1]"
                        value=""
                        ${disabledAttribute}>
+                <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
             
             <toujou-input-group class="input-group input-group--number input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
@@ -122,6 +126,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        name="tx_form_formframework[testform-1000091][number-1]"
                        value=""
                        ${disabledAttribute}>
+                <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
         </form>
     `;

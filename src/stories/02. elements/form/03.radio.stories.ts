@@ -118,6 +118,8 @@ const Template: Story<ToujouRadioStoryProps> = (args: ToujouRadioStoryProps) => 
                         eeeee
                     </label>
                 </div>
+                
+                <span class="pristine-error form__error">This is an error message!</span>
         	</div>
 	
         </form>

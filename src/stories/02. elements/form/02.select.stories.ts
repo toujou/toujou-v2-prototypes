@@ -69,6 +69,7 @@ const Template: Story<ToujouSelectStoryProps> = (args: ToujouSelectStoryProps) =
                         <option class="seclect__option" value="ddddd">ddddd</option>
                     </select>
 				</div>
+                <span class="pristine-error form__error">This is an error message!</span>
         	</toujou-input-group>	
         </form>
     `;
