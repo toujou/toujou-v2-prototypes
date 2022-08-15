@@ -90,7 +90,9 @@ figure {
     }
 }
 
-:root {
+:root,
+::before,
+::after {
     --animation-duration-slow: 1s;
     --animation-duration-normal: .5s;
     --animation-duration-fast: .25s;
@@ -102,7 +104,9 @@ figure {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    :root {
+    :root,
+    ::before,
+    ::after {
         --animation-duration-slow: 0s;
         --animation-duration-normal: 0s;
         --animation-duration-fast: 0s;
@@ -110,7 +114,9 @@ figure {
     }
 }
 
-:root {
+:root,
+::before,
+::after {
     --aspect-ratio-auto: auto;
     --aspect-ratio-square: 1;
     --aspect-ratio-4-3: 4 / 3;
@@ -120,13 +126,17 @@ figure {
     --aspect-ratio-default: var(--aspect-ratio-golden);
 }
 
-:root {
+:root,
+::before,
+::after {
     --border-width-l: 4px;
     --border-width-m: 2px;
     --border-width-normal: 1px;
 }
 
-:root {
+:root,
+::before,
+::after {
     --border-radius-xxxxl: 3rem;
     --border-radius-xxxl: 2rem;
     --border-radius-xxl: 1.5rem;
@@ -140,7 +150,9 @@ figure {
     --border-radius-0: 0;
 }
 
-:root {
+:root,
+::before,
+::after {
     --color-primary-h: 197;
     --color-primary-s: 100%;
     --color-primary-l: 33%;
@@ -225,7 +237,9 @@ figure {
     --color-white-o-75: hsl(0 100% 100% / 75%);
 }
 
-:root {
+:root,
+::before,
+::after {
     --content-fullwidth: 100%;
     --content-width-with-padding: calc(100% - calc(var(--content-padding-to-border) * 2));
     --content-max-width: 944px;
@@ -241,7 +255,9 @@ figure {
 }
 
 @media screen and (min-width: 840px) {
-    :root {
+    :root,
+    ::before,
+    ::after {
         --content-spacing-between-columns: var(--spacing-l);
         --topbar-height-small: 64px;
         --topbar-height-medium: 80px;
@@ -249,13 +265,17 @@ figure {
     }
 }
 
-:root {
+:root,
+::before,
+::after {
     --focus-outline-width: var(--spacing-2px);
     --focus-outline-offset: var(--spacing-2px);
     --focus-outline-color: var(--color-primary);
 }
 
-:root {
+:root,
+::before,
+::after {
     --form-width: var(--content-width-with-padding);
     --form-max-width: var(--content-max-width);
 
@@ -287,7 +307,9 @@ figure {
     --form-row-columns-count: 12;
 }
 
-:root {
+:root,
+::before,
+::after {
     --icon-size-m: var(--spacing-m);
     --icon-size-normal: var(--spacing-ms);
 
@@ -387,7 +409,9 @@ figure {
     --icon-warning: url('../assets/icons/icon-warning.svg');
 }
 
-:root {
+:root,
+::before,
+::after {
     --shadow-color: 286deg 0% 56%;
     --shadow-color-1: hsl(0 0% 0% / 5%);
     --shadow-color-2: hsl(0 0% 0% / 6%);
@@ -400,7 +424,9 @@ figure {
 ;
 }
 
-:root {
+:root,
+::before,
+::after {
     --spacing-xxxxl: 7.5rem;    /* 120px */
     --spacing-xxxl: 6rem;       /* 96px */
     --spacing-xxl: 4rem;        /* 64px */
@@ -416,7 +442,9 @@ figure {
     --spacing-2px: 2px;
 }
 
-:root {
+:root,
+::before,
+::after {
     /* FONT FAMILIES */
     --font-family-headline: 'Ubuntu', sans-serif;
     --font-family-text: 'Mulish', sans-serif;
@@ -455,7 +483,9 @@ figure {
     --letter-spacing-s: -.025em;
 }
 
-:root {
+:root,
+::before,
+::after {
     --z-index-content: 1;
     --z-index-pn-nav: 30;
     --z-index-top-button: 50;
