@@ -1,0 +1,72 @@
+.radio-group {
+    --radio-group-display: grid;
+    --radio-group-grid-column-count: 1;
+    --radio-group-grid-gap: 0 var(--spacing-s);
+
+    --radio-group-label-font-family: var(--form-input-font-family);
+    --radio-group-label-font-size: var(--form-input-font-size);
+    --radio-group-label-font-weight: var(--form-input-font-weight);
+    --radio-group-label-color: var(--form-input-color);
+    --radio-group-label-grid-column: 1 / -1;
+    --radio-group-option-row-margin: var(--form-radio-and-checkbox-option-margin);
+
+    --radio-group-description-column: 2;
+
+    --radio-group-error-column: 2;
+    --radio-group-error-padding: 0;
+
+    display: var(--radio-group-display);
+    grid-template-columns: repeat(var(--radio-group-grid-column-count), 1fr);
+    grid-gap: var(--radio-group-grid-gap);
+}
+
+.radio-group::after {
+    --input-group-icon-display: none !important;
+}
+
+.radio-group__label,
+.radio-group__option-label {
+    font-family: var(--radio-group-label-font-family);
+    font-size: var(--radio-group-label-font-size);
+    font-weight: var(--radio-group-label-font-weight);
+    color: var(--radio-group-label-color);
+
+    grid-column: var(--radio-group-label-grid-column);
+}
+
+.radio-group__option {
+    margin: var(--radio-group-option-row-margin);
+    cursor: pointer;
+}
+
+.radio-group[is-disabled] .radio-group__option {
+    pointer-events: none;
+}
+
+.radio-group[is-disabled] .radio-group__label {
+    --checkbox-group-label-color: var(--color-font-light);
+
+    pointer-events: none;
+}
+
+.radio-group__option-label {
+    --radio-group-option-label-display: grid;
+    --radio-group-option-label-grid-template-columns: auto 1fr;
+    --radio-group-option-label-grid-gap: var(--spacing-s);
+
+    display: var(--radio-group-option-label-display);
+    grid-template-columns: var(--radio-group-option-label-grid-template-columns);
+    grid-gap: var(--radio-group-option-label-grid-gap);
+}
+
+@media screen and (min-width: 640px) {
+    .radio-group {
+        --radio-group-grid-column-count: 2;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .radio-group {
+        --radio-group-grid-column-count: 3;
+    }
+}
