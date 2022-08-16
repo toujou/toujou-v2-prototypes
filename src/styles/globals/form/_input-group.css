@@ -29,7 +29,8 @@
     margin-top: var(--input-group-margin-between);
 }
 
-.form-row .input-group {
+.form-row .input-group,
+.form-row :is(.input-group, .form-row, input[hidden], .fieldset) + .input-group {
     margin-top: 0;
 }
 

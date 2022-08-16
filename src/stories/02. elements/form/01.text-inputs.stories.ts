@@ -54,7 +54,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
             action="#"
             novalidate="true">
             
-            <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
+            <toujou-input-group class="input-group input-group--text input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                 <span class="input-description">This is a description</span>
                 <input placeholder="This is a placeholder"
@@ -68,7 +68,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
             
-            <toujou-input-group class="input-group input-group--email input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
+            <toujou-input-group class="input-group input-group--email input-group--email input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-email-1" class="input-label">Email address</label>
                 <span class="input-description">This is a description</span>
                 <input placeholder="This is a placeholder"
@@ -84,7 +84,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
             </toujou-input-group>
             
             <toujou-input-group class="input-group input-group--telephone input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
-                <label for="testform-1000091-email-1" class="input-label">Telephone number</label>
+                <label for="testform-1000091-telephone-1" class="input-label">Telephone number</label>
                 <span class="input-description">This is a description</span>
                 <input placeholder="This is a placeholder"
                        required="required"
