@@ -22,7 +22,7 @@ export default {
 
 interface ToujouRequireInputStoryProps {}
 
-const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputStoryProps) => {
+const Template: Story<ToujouRequireInputStoryProps> = () => {
     return `
         <style>
             body {

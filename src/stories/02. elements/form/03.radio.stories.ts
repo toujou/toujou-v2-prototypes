@@ -54,7 +54,7 @@ const Template: Story<ToujouRadioStoryProps> = (args: ToujouRadioStoryProps) => 
             action="#"
             novalidate="true">
             
-            <div class="input-group input-group--radio radio-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
+            <toujou-input-group class="input-group input-group--radio radio-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
                  ${args.state === 'disabled' ? 'is-disabled' : ''}>
 				<label class="radio-group__label" for="testform-1000091-radiobutton-1">Radio button</label>
 				<span class="input-description input-description--after-group">This is a description</span>
@@ -120,7 +120,7 @@ const Template: Story<ToujouRadioStoryProps> = (args: ToujouRadioStoryProps) => 
                 </div>
                 
                 <span class="pristine-error form__error">This is an error message!</span>
-        	</div>
+        	</toujou-input-group>
 	
         </form>
     `;

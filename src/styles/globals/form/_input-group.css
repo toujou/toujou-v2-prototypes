@@ -25,7 +25,7 @@
     grid-column: span 12;
 }
 
-:is(.input-group, .form-row, input[hidden]) + .input-group {
+:is(.input-group, .form-row, input[hidden], .fieldset) + .input-group {
     margin-top: var(--input-group-margin-between);
 }
 
