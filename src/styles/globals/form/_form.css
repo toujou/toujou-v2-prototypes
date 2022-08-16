@@ -21,7 +21,7 @@
 .form__error {
     --form-error-order: 20;
     --form-error-color: var(--color-error);
-    --form-error-padding: 0 var(--spacing-s);
+    --form-error-padding: 0 var(--spacing-xs);
     --form-error-font-size: var(--font-size-s);
     --form-error-display: none;
     --form-error-column: 1 / -1;
@@ -32,6 +32,14 @@
     padding: var(--form-error-padding);
     font-size: var(--form-error-font-size);
     grid-column: var(--form-error-column);
+}
+
+.checkbox-group .form__error {
+    --form-error-padding: 0 var(--spacing-xs) 0 var(--spacing-l);
+}
+
+.input-group--toggle .form__error {
+    --form-error-padding: 0 var(--spacing-xs) 0 calc(var(--spacing-l) + calc(var(--spacing-normal) * .75));
 }
 
 .form__error--after-group {

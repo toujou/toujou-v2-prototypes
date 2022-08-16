@@ -336,6 +336,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                     type="date"
                     name="tx_form_formframework[testform-1000091][date-1]"
                     value="">
+                <span class="pristine-error form__error">This is an error message!</span>
         	</toujou-input-group>
 	
             <toujou-input-group class="input-group input-group--date-jquery ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''} data-format="Y-m-d">
@@ -352,6 +353,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                        placeholder="Y-m-d"
                        readonly="readonly">
                    <input type="hidden" name="tx_form_formframework[testform-1000091][datepicker-2][dateFormat]" value="Y-m-d">
+                   <span class="pristine-error form__error">This is an error message!</span>
 	        </toujou-input-group>
 	        
 	        <fieldset id="testform-1000091-fieldset-1" class="fieldset" ${args.state === 'disabled' ? 'is-disabled' : ''}>

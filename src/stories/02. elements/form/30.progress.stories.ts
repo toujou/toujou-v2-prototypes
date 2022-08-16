@@ -28,7 +28,7 @@ const Template = () => {
             }
         </style>
         <toujou-form-progress class="form-progress">
-            <h3 class="form-progress__headline">Schritt 1 von 4</h3>
+            <h3 class="form-progress__headline">Schritt 3 von 4</h3>
     
             <ul class="form-progress-bar">
                 <li class="form-progress__item" completed >
@@ -84,7 +84,7 @@ const Template = () => {
             <nav class="form-navigation" role="toolbar">
                 <span class="form-navigation__submit">
                     <button is="toujou-button"
-                            class="button"
+                            class="button form-navigation__button"
                             button-variant="primary"
                             button-icon-position="right"
                             type="submit" 
@@ -97,7 +97,7 @@ const Template = () => {
                 <span class="form-navigation__previous">
                     <button is="toujou-button"
                             formnovalidate="formnovalidate"
-                            class="button"
+                            class="button form-navigation__button"
                             button-variant="primary"
                             button-icon-position="left"
                             button-type="border"

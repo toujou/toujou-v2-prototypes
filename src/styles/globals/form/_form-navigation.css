@@ -1,6 +1,6 @@
 .form-navigation {
    --form-navigation-display: flex;
-   --form-navigation-flex-direction: row-reverse;
+   --form-navigation-flex-direction: column-reverse;
    --form-navigation-gap: var(--spacing-normal);
    --form-navigation-margin: var(--spacing-m) 0;
    --form-navigation-justify-content: flex-start;
@@ -12,4 +12,16 @@
    justify-content: var(--form-navigation-justify-content);
 }
 
+.button.form-navigation__button {
+   width: 100%;
+}
 
+@media screen and (min-width: 480px) {
+   .form-navigation {
+      --form-navigation-flex-direction: row-reverse;
+   }
+
+   .button.form-navigation__button {
+      width: inherit;
+   }
+}

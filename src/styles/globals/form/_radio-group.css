@@ -39,11 +39,11 @@
     cursor: pointer;
 }
 
-.radio-group[is-disabled] .radio-group__option {
+.input-group--disabled .radio-group__option {
     pointer-events: none;
 }
 
-.radio-group[is-disabled] .radio-group__label {
+.input-group--disabled .radio-group__label {
     --checkbox-group-label-color: var(--color-font-light);
 
     pointer-events: none;

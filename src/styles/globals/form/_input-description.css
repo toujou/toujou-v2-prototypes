@@ -19,7 +19,8 @@
 }
 
 .input-description--after-group {
-    --input-description-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 2px);
+    /*--input-description-padding: 0 var(--spacing-s) 0 calc(var(--spacing-m) + 2px);*/
+    --input-description-padding: 0 var(--spacing-s) 0 var(--spacing-xs)
 }
 
 .input-description--checkbox-group {

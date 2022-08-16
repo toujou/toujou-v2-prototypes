@@ -1,5 +1,4 @@
 .form-progress {
-
     --form-progress-display: flex;
     --form-progress-display-direction: column;
     --form-progress-gap: var(--spacing-normal);
@@ -22,7 +21,6 @@
     --form-progress-item-completed-background-color: var(--color-primary-o-10);
     --form-progress-item-completed-font-color: var(--color-primary);
 
-
     --form-progress-bar-width: var(--border-width-m);
     --form-progress-bar-color: var(--color-font-light);
 
@@ -37,7 +35,7 @@
 }
 
 .form-progress-bar {
-    display: flex;
+    display: none;
     flex-flow: row nowrap;
     justify-content: center;
     list-style:none;
@@ -96,4 +94,10 @@
     position: absolute;
     right: 100%;
     top: 50%;
+}
+
+@media screen and (min-width: 640px) {
+    .form-progress-bar {
+        display: flex;
+    }
 }

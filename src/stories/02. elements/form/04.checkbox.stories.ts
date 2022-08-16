@@ -54,22 +54,22 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
             action="#"
             novalidate="true">
             
-            <toujou-input-group class="input-group input-group--check checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
+            <toujou-input-group class="input-group input-group--check checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
-                           id="testform-1000091-multicheckbox-1_1"
+                           id="testform-1000091-multicheckbox-1_0"
                            type="checkbox"
                            name="tx_form_formframework[testform-1000091][multicheckbox-1][]"
                            value="aaaaa"
                            ${disabledAttribute}>
-                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Checkbox beautiful label</label>
+                    <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_0">Checkbox beautiful label</label>
                     <span class="input-description input-description--checkbox-group">This is a description</span>
                     <span class="pristine-error form__error">The given subject was empty.</span>			
                 </div>
             </toujou-input-group>
             
-            <toujou-input-group class="input-group input-group--multi-check multi-checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
+            <toujou-input-group class="input-group input-group--multi-check multi-checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label class="multi-checkbox-group__label" for="testform-1000091-multicheckbox-1">This is the group label</label>
 
                 <div class="checkbox-group">

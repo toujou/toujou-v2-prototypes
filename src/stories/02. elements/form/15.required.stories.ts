@@ -51,7 +51,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
             action="#"
             novalidate="true">
             
-            <toujou-input-group class="input-group input-group--required" ${args.isRequired ? 'is-required' : ''}>
+            <toujou-input-group class="input-group ${args.isRequired ? 'input-group--required' : ''}">
                 <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                 <span class="input-description">This is a description</span>
                 <input placeholder="This is a placeholder"
@@ -62,7 +62,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                        type="text" name="tx_form_formframework[testform-1000091][text-1]"
                        value="">
                 <span class="pristine-error form__error">This is an error message!</span>
-            </toujou-input-group><toujou-input-group class="input-group input-group--email input-group--required" ${args.isRequired ? 'is-required' : ''}>
+            </toujou-input-group><toujou-input-group class="input-group input-group--email ${args.isRequired ? 'input-group--required' : ''}">
                 <label for="testform-1000091-email-1" class="input-label">Email address</label>
                 <span class="input-description">This is a description</span>
                 <input placeholder="This is a placeholder"
@@ -76,7 +76,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
             
-            <toujou-input-group class="input-group input-group--telephone input-group--required" ${args.isRequired ? 'is-required' : ''}>
+            <toujou-input-group class="input-group input-group--telephone ${args.isRequired ? 'input-group--required' : ''}">
                 <label for="testform-1000091-email-1" class="input-label">Telephone number</label>
                 <span class="input-description">This is a description</span>
                 <input placeholder="This is a placeholder"

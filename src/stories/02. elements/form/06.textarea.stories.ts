@@ -54,7 +54,7 @@ const Template: Story<ToujouTextareaStoryProps> = (args: ToujouTextareaStoryProp
             action="#"
             novalidate="true">
             
-            <toujou-input-group class="input-group input-group--textarea ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
+            <toujou-input-group class="input-group input-group--textarea ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
 				<label class="input-label" for="testform-1000091-textarea-1">Textarea</label>
 				<span class="input-description">This is a description</span>
 		        <textarea placeholder="This is a placeholder"

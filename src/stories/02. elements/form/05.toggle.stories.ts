@@ -61,7 +61,7 @@ const Template: Story<ToujouToggleStoryProps> = (args: ToujouToggleStoryProps) =
                            value="aaaaa"
                            role="switch"
                            ${args.isDisabled ? 'disabled' : ''}>
-                    <label class="toggle-group__label" for="testform-1000091-multicheckbox-1_1">Checkbox beautiful label</label>
+                    <label class="toggle-group__label" for="testform-1000091-multicheckbox-1_1">Toggle beautiful label</label>
                     <span class="input-description input-description--toggle-group">This is a description</span>
                     <span class="pristine-error form__error form-error--toggle-group">The given subject was empty.</span>			
                 </div>

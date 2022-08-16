@@ -54,7 +54,7 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
             action="#"
             novalidate="true">
     
-            <fieldset id="testform-1000091-fieldset-1" class="fieldset" ${args.state === 'disabled' ? 'is-disabled' : ''}>
+            <fieldset id="testform-1000091-fieldset-1" class="fieldset ${args.state === 'disabled' ? 'fieldset--disabled' : ''}">
                 <legend class="fieldset__legend">Fieldset super name</legend>
     
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">

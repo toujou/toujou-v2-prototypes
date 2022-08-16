@@ -18,12 +18,12 @@
     grid-gap: var(--toggle-group-grid-gap);
 }
 
-.input-group[type="multi-check"] .toggle-group {
+.input-group--multi-check .toggle-group {
     margin: var(--multi-check-group-row-margin);
 }
 
-.input-group.input-group[type="checkbox"]::after,
-.input-group.input-group[type="multi-check"]::after{
+.input-group.input-group--checkbox::after,
+.input-group.input-group--multi-check::after{
     --input-group-icon-display: none;
 }
 

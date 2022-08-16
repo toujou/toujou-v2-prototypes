@@ -54,7 +54,7 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
             action="#"
             novalidate="true">
             
-            <toujou-input-group class="input-group input-group--file-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
+            <toujou-input-group class="input-group input-group--file-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
 				<label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
 				<span class="input-description">This is a description</span>
 		        <input data-pristine-required-message-de="The given subject was empty."
@@ -67,7 +67,7 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
                    <span class="pristine-error form__error">The given subject was empty.</span>
         	</toujou-input-group>
         	
-        	<toujou-input-group class="input-group inout-group--image-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
+        	<toujou-input-group class="input-group inout-group--image-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
 				<label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
 				<span class="input-description">This is a description</span>
 		        <input data-pristine-required-message-de="The given subject was empty."
@@ -80,7 +80,7 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
                <span class="pristine-error form__error">The given subject was empty.</span>
         	</toujou-input-group>
 
-            <toujou-input-group class="input-group input-group--multi-select ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
+            <toujou-input-group class="input-group input-group--multi-select ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
 				<label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
 				<span class="input-description">This is a description</span>
 				<input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">

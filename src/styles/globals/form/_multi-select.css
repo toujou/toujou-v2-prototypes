@@ -55,6 +55,6 @@
     --multi-select-option-color: var(--color-font-light);
 }
 
-.input-group[input-group-type="multi-select"] {
+.input-group.input-group--multi-select {
     --input-group-icon-right: var(--spacing-m);
 }
