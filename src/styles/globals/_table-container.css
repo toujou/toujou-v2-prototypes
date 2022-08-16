@@ -1,0 +1,17 @@
+.table-container {
+    --table-content-display: block;
+    --table-content-width: var(--content-width-with-padding);
+    --table-content-max-width: var(--content-max-width);
+    --table-container-x-overflow: auto;
+    --table-container-margin: 0 auto 2rem;
+
+    display: var(--table-content-display);
+    width: var(--table-content-width);
+    max-width: var(--table-content-max-width);
+    overflow-x: var(--table-container-x-overflow);
+    margin: var(--table-container-margin);
+}
+
+main > .table-container {
+    --table-container-width: var(--content-max-width);
+}

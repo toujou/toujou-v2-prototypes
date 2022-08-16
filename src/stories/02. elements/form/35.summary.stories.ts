@@ -27,8 +27,9 @@ const Template = () => {
                 background-color: var(--color-bg);
             }
         </style>
+        
         <toujou-form-progress class="form-progress">
-            <h3 class="form-progress__headline">Schritt 3 von 4</h3>
+            <h3 class="form-progress__headline">Schritt 4 von 4</h3>
     
             <ul class="form-progress-bar">
                 <li class="form-progress__item" completed >
@@ -37,10 +38,10 @@ const Template = () => {
                 <li class="form-progress__item" completed>
                     <span class="form-progress__index">2</span>
                 </li>
-                <li class="form-progress__item" active>
+                <li class="form-progress__item" completed>
                     <span class="form-progress__index">3</span>
                 </li>
-                <li class="form-progress__item">
+                <li class="form-progress__item" active>
                     <span class="form-progress__index">3</span>
                 </li>
             </ul>
@@ -54,34 +55,24 @@ const Template = () => {
             action="#"
             novalidate="true">
             
-            <h3 class="form-step__title">Step 3</h3>
+            <h3 class="form-step__title">Summary</h3>
             
-            <toujou-input-group class="input-group input-group--text">
-                <label for="testform-1000091-text-1" class="input-label">Nice label</label>
-                <span class="input-description">This is a description</span>
-                <input placeholder="This is a placeholder"
-                       required="required"
-                       data-pristine-required-message-de="The given subject was empty."
-                       class="input input--text"
-                       id="testform-1000091-text-1"
-                       type="text" name="tx_form_formframework[testform-1000091][text-1]"
-                       value="">
-                <span class="pristine-error form__error">This is an error message!</span>
-            </toujou-input-group>
-            
-            <toujou-input-group class="input-group input-group--email input-group--email">
-                <label for="testform-1000091-email-1" class="input-label">Email address</label>
-                <span class="input-description">This is a description</span>
-                <input placeholder="This is a placeholder"
-                       required="required"
-                       data-pristine-required-message="The given subject was empty."
-                       class="form-control input input--text"
-                       id="testform-1000091-email-1"
-                       type="email"
-                       name="tx_form_formframework[testform-1000091][email-1]"
-                       value="">
-                <span class="pristine-error form__error">This is an error message!</span>
-            </toujou-input-group>
+            <toujou-table-container class="table-container">
+                <table text-alignment="left" class="table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Luke Skywalker</td>
+                    </tr>
+                    <tr>
+                        <th>Street</th>
+                        <td>Gartenstraße</td>
+                    </tr>
+                    <tr>
+                        <th>County</th>
+                        <td>Chile</td>
+                    </tr>
+                </table>
+            </toujou-table-container>
             
             <nav class="form-navigation" role="toolbar">
                 <span class="form-navigation__submit">
@@ -112,9 +103,8 @@ const Template = () => {
                 </span>
             </nav>	
         </form>
-     
     `;
 };
 
-export const FormProgress = Template.bind({});
+export const FormSummary = Template.bind({});
 

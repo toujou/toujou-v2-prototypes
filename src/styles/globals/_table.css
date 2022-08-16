@@ -1,0 +1,65 @@
+.table {
+    --table-width: 100%;
+    --table-margin: 0 auto;
+    --table-text-align: left;
+    --table-bg-color-light: var(--color-bg);
+    --table-bg-color-dark: var(--color-font-o-10);
+    --table-border: var(--border-width-normal) solid var(--color-font-o-10);
+
+    --table-caption-margin: 0 auto var(--spacing-s) auto;
+
+    --table-summary-display: block;
+    --table-summary-font-size: var(--font-size-s);
+
+    --table-head-color: var(--color-primary);
+
+    --table-cell-padding: var(--spacing-s) var(--spacing-normal);
+
+    border: var(--table-border);
+    width: var(--table-width);
+    margin: var(--table-margin);
+    text-align: var(--table-text-align);
+}
+
+.table[text-alignment="left"] {
+    --table-text-align: left;
+}
+
+.table[text-alignment="right"] {
+    --table-text-align: right;
+}
+
+.table[text-alignment="center"] {
+    --table-text-align: center;
+}
+
+.table__caption {
+    margin: var(--table-caption-margin);
+    text-align: var(--table-text-align);
+}
+
+.table__summary {
+    display: var(--table-summary-display);
+    font-size: var(--table-summary-font-size);
+}
+
+thead {
+    background-color: var(--table-bg-color-dark);
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-bg-color-light);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--table-bg-color-dark);
+}
+
+th {
+    color: var(--table-head-color);
+    padding: var(--table-cell-padding);
+}
+
+td {
+    padding: var(--table-cell-padding);
+}

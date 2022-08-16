@@ -48,7 +48,8 @@ h6,
 
 p,
 ul,
-ol {
+ol,
+table {
     font-size: var(--font-size-normal);
     font-weight: var(--line-height-normal);
     line-height: var(--line-height-normal);
