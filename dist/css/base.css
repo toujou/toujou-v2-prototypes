@@ -4460,6 +4460,11 @@ main > .table-container {
     z-index: var(--text-block-z-index);
 }
 
+.grid .text-block {
+    --text-block-width: var(--content-fullwidth);
+    --text-block-max-width: var(--content-fullwidth);
+}
+
 .accordion .text-block {
     --text-block-width: 100%;
 }
