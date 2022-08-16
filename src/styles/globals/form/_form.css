@@ -14,6 +14,10 @@
     line-height: var(--form-line-height);
 }
 
+.form-progress + .form {
+    margin-top: var(--spacing-xl);
+}
+
 .form__error {
     --form-error-order: 20;
     --form-error-color: var(--color-error);
