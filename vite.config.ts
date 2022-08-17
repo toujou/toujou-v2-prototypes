@@ -8,6 +8,7 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
+                // single components, that will be imported via asset collector
                 'toujou-blockquote': path.resolve(__dirname, 'src/components/toujou-blockquote/toujou-blockquote.ts'),
                 'toujou-breadcrumb': path.resolve(__dirname, 'src/components/toujou-breadcrumb/toujou-breadcrumb.ts'),
                 'toujou-button': path.resolve(__dirname, 'src/components/toujou-button/toujou-button.ts'),
@@ -19,9 +20,8 @@ export default defineConfig({
                 'toujou-burger-button': path.resolve(__dirname, 'src/components/toujou-burger-button/toujou-burger-button.ts'),
                 'toujou-sliding-nav': path.resolve(__dirname, 'src/components/toujou-sliding-nav/toujou-sliding-nav.ts'),
                 'toujou-topbar': path.resolve(__dirname, 'src/components/toujou-topbar/toujou-topbar.ts'),
-                // COPIED COMPONENTS FROM TOUJOU
-                'toujou-modal': path.resolve(__dirname, 'src/components/copied/toujou-modal/toujou-modal.js'),
-                'toujou-snackbar': path.resolve(__dirname, 'src/components/copied/toujou-snackbar/toujou-snackbar.js'),
+                // base js, which imports all other js that needs to be loaded on all pages
+                'base': path.resolve(__dirname, 'src/js/base.js'),
             },
             output: {
                 assetFileNames: (assetInfo) => {
