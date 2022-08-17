@@ -124,4 +124,8 @@
     .header-content {
         --header-content-padding: var(--spacing-l);
     }
+
+    .header[header-type="slider"] .header-content[content-size="full"] {
+        --header-content-width: calc(100% - calc(var(--spacing-xxxl) * 3));
+    }
 }
