@@ -7,7 +7,7 @@
     --burger-button-line-position: absolute;
     --burger-button-line-left: 1px;
     --burger-button-line-height: 3px;
-    --burger-button-line-width: calc(var(--burger-button-size) - 4px);
+    --burger-button-line-width: calc(var(--burger-button-size));
     --burger-button-line-color: var(--topbar-icons-color, var(--color-primary));
     --burger-button-line-color-active: var(--topbar-icons-active-color, var(--color-primary-dark));
     /* stylelint-disable-next-line max-line-length */
@@ -22,12 +22,12 @@
 }
 
 .burger-button__line[line-position="top"] {
-    --burger-button-line-top: 4px;
+    --burger-button-line-top: 3px;
     --burger-button-line-animation: line-top-deactivate var(--burger-button-line-animation-settings);
 }
 
 .burger-button[aria-pressed="true"] .burger-button__line[line-position="top"] {
-    --burger-button-line-top: 4px;
+    --burger-button-line-top: 3px;
     --burger-button-line-animation: line-top-activate var(--burger-button-line-animation-settings);
 }
 
@@ -42,19 +42,19 @@
 }
 
 .burger-button__line[line-position="bottom"] {
-    --burger-button-line-top: 16px;
+    --burger-button-line-top: 17px;
     --burger-button-line-animation: line-bottom-deactivate var(--burger-button-line-animation-settings);
 }
 
 .burger-button[aria-pressed="true"] .burger-button__line[line-position="bottom"] {
-    --burger-button-line-top: 16px;
+    --burger-button-line-top: 17px;
     --burger-button-line-animation: line-bottom-activate var(--burger-button-line-animation-settings);
 }
 
 .burger-button__line {
     position: var(--burger-button-line-position);
-    left: var(--burger-button-line-left);
     top: var(--burger-button-line-top);
+    left: var(--burger-button-line-left);
     height: var(--burger-button-line-height);
     width: var(--burger-button-line-width);
     background-color: var(--burger-button-line-color);
@@ -79,13 +79,13 @@
     }
 
     100% {
-        top: 4px;
+        top: var(--burger-button-line-top);
     }
 }
 
 @keyframes line-top-activate {
     0% {
-        top: 4px;
+        top: var(--burger-button-line-top);
     }
 
     30% {
@@ -155,13 +155,13 @@
     }
 
     100% {
-        top: 16px;
+        top: var(--burger-button-line-top);
     }
 }
 
 @keyframes line-bottom-activate {
     0% {
-        top: 16px;
+        top: var(--burger-button-line-top);
     }
 
     30% {

@@ -81,7 +81,7 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 <li class="topbar__actions-item">
                     <a href="#" class="topbar__actions-link">
                         <span class="topbar__actions-text">Suche</span>
-                        <toujou-icon icon-name="search" icon-color="font" icon-size="l" class="icon"></toujou-icon>
+                        <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
             </ul>            

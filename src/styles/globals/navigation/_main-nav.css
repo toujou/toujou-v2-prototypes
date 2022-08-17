@@ -83,7 +83,7 @@
     --main-nav-opacity: 1;
 }
 
-.main-nav__back-button {
+.button.main-nav__back-button {
     display: var(--main-nav-back-button-display);
     padding: var(--main-nav-back-button-padding);
     margin: var(--main-nav-back-button-margin);
@@ -182,6 +182,8 @@
         --main-nav-align-items: center;
 
         --main-nav-chevron-display: none;
+
+        --main-nav-back-button-display: none;
 
         z-index: var(--main-nav-z-index);
         right: var(--main-nav-right);

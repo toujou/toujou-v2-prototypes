@@ -183,7 +183,7 @@
     }
 
     .topbar__actions-link .icon {
-        --icon-size: var(--font-size-ms);
+        --icon-size: var(--font-size-m);
     }
 
     .topbar__actions {
