@@ -5207,3 +5207,11 @@ main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
         color: var(--color-primary-dark);
     }
 }
+
+.wrap--iframe {
+    padding-bottom: var(--spacing-l);
+}
+
+.wrap--iframe main {
+    padding-top: 0;
+}

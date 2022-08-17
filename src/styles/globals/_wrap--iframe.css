@@ -1,0 +1,7 @@
+.wrap--iframe {
+    padding-bottom: var(--spacing-l);
+}
+
+.wrap--iframe main {
+    padding-top: 0;
+}

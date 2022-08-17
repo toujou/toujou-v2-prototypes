@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/web-components';
 
 export default {
-    title: 'COMPONENTS/ModalContent',
+    title: 'PAGES/Modal Content',
 } as Meta;
 
 
