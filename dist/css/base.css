@@ -3119,6 +3119,23 @@ body[overlay-open] {
     }
 }
 
+exit-warning {
+    --toujou-modal-header-border-bottom: var(--border-width-normal) solid var(--color-font-light);
+    --toujou-modal-header-padding: var(--spacing-s);
+
+    --toujou-modal-title-font-family: var(--font-family-headline);
+    --toujou-modal-title-color: var(--color-warning);
+    --toujou-modal-title-font-size: var(--font-size-l);
+
+    --toujou-modal-close-color: var(--color-warning);
+    --toujou-modal-close-hover-color: var(--color-warning-darken-15);
+
+    --toujou-modal-progressbar-color: var(--color-secondary);
+    --toujou-modal-z-index: var(--z-index-modal);
+
+    z-index: var(--toujou-modal-z-index);
+}
+
 .footer {
     --footer-bg-color: var(--color-font-dark);
     --footer-padding: var(--spacing-xl) var(--spacing-normal);
