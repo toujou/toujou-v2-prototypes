@@ -75,7 +75,19 @@ export default {
             },
             name: 'Accent color',
             description: "Set the header's accent color",
-            options: ['default', 'primary', 'secondary', 'grey'],
+            options: ['default', 'primary', 'secondary', 'font'],
+            control: { type: 'select' },
+            defaultValue: ['default'],
+            required: true,
+        },
+        contentAlignment: {
+            table: {
+                category: "Header Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Content alignment',
+            description: "Set the header's content alignment",
+            options: ['default', 'left', 'center', 'right'],
             control: { type: 'select' },
             defaultValue: ['default'],
             required: true,
@@ -89,6 +101,7 @@ interface HeaderSliderStoryProps {
     headerHorizontalPos: string,
     headerContentSize: string,
     accentColor: string,
+    contentAlignment: string,
 }
 
 const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) => {
@@ -123,9 +136,10 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                                         vertical-position="${args.headerVerticalPos}"
                                         horizontal-position="${args.headerHorizontalPos}"
                                         content-size="${args.headerContentSize}"
-                                        text-alignment="default">
-                                        <p class="header-content__text">Slide 1.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        text-alignment="${args.contentAlignment}">
+                                        <h3>Slide 1.</h3>
+                                        <p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <button is="toujou-button" class="button" button-variant="${args.accentColor}" button-type="default" button-size="normal">Hello world</button>
                                     </div>
                                 </div>
                             </li>  
@@ -139,7 +153,7 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                                         vertical-position="${args.headerVerticalPos}"
                                         horizontal-position="${args.headerHorizontalPos}"
                                         content-size="${args.headerContentSize}"
-                                        text-alignment="default">
+                                        text-alignment="${args.contentAlignment}">
                                         <p class="header-content__text">Slide 2.
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     </div>
@@ -155,7 +169,7 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                                         vertical-position="${args.headerVerticalPos}"
                                         horizontal-position="${args.headerHorizontalPos}"
                                         content-size="${args.headerContentSize}"
-                                        text-alignment="default">
+                                        text-alignment="${args.contentAlignment}">
                                         <p class="header-content__text">Slide 3.
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     </div>
@@ -188,4 +202,5 @@ HeaderSlider.args = {
     headerHorizontalPos: 'center',
     headerContentSize: 'half',
     accentColor: 'default',
+    contentAlignment: 'default'
 }
