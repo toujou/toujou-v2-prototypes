@@ -19,6 +19,7 @@ export default defineConfig({
                 'toujou-burger-button': path.resolve(__dirname, 'src/components/toujou-burger-button/toujou-burger-button.ts'),
                 'toujou-sliding-nav': path.resolve(__dirname, 'src/components/toujou-sliding-nav/toujou-sliding-nav.ts'),
                 'toujou-topbar': path.resolve(__dirname, 'src/components/toujou-topbar/toujou-topbar.ts'),
+                'toujou-snackbar': path.resolve(__dirname, 'src/components/copied/toujou-snackbar/toujou-snackbar.js'),
             },
             output: {
                 assetFileNames: (assetInfo) => {

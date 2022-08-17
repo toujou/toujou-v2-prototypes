@@ -62,6 +62,7 @@
     --color-success-l: 45%;
     --color-success: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l));
     --color-success-darken-15: hsl(var(--color-success-h) var(--color-success-s) calc(var(--color-success-l) - 15%));
+    --color-success-l-15: hsl(var(--color-success-h) var(--color-success-s) 15%);
     --color-success-o-25: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l) / 25%);
 
     --color-warning-h: 34;
@@ -69,6 +70,7 @@
     --color-warning-l: 50%;
     --color-warning: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l));
     --color-warning-darken-15: hsl(var(--color-warning-h) var(--color-warning-s) calc(var(--color-warning-l) - 15%));
+    --color-warning-l-15: hsl(var(--color-warning-h) var(--color-warning-s) 15%);
     --color-warning-o-25: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l) / 25%);
 
     --color-error-h: 348;
@@ -76,6 +78,7 @@
     --color-error-l: 55%;
     --color-error: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l));
     --color-error-darken-15: hsl(var(--color-error-h) var(--color-error-s) calc(var(--color-error-l) - 15%));
+    --color-error-l-15: hsl(var(--color-error-h) var(--color-error-s) 15%);
     --color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);
 
     --color-black-o-75: hsl(0 0% 0% / 75%);
