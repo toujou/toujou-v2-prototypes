@@ -9,9 +9,6 @@
     --topbar-align-items: center;
     --topbar-padding: 0 var(--spacing-normal);
     --topbar-shadow: var(--shadow-normal);
-    --topbar-icons-color: var(--color-primary);
-    --topbar-icons-active-color: var(--color-primary-dark);
-    --topbar-bg-color: var(--color-bg);
     --topbar-transition: background-color var(--animation-duration-normal) var(--animation-easing-normal);
     --topbar-z-index: var(--z-index-topbar);
 
@@ -37,7 +34,7 @@
     --topbar-title-font-family: var(--font-family-text);
     --topbar-title-font-size: var(--font-size-l);
     --topbar-title-font-weight: var(--font-weight-text-bold);
-    --topbar-title-color: var(--color-primary);
+    --topbar-title-color: var(--topbar-icons-color);
 
     --topbar-actions-grid-area: actions;
     --topbar-actions-margin: 0;
@@ -75,6 +72,18 @@
     z-index: var(--topbar-z-index);
 }
 
+.topbar[navigation-theme="light"] {
+    --topbar-icons-color: var(--color-primary);
+    --topbar-icons-active-color: var(--color-primary-dark);
+    --topbar-bg-color: var(--color-bg);
+}
+
+.topbar[navigation-theme="dark"] {
+    --topbar-icons-color: var(--color-bg);
+    --topbar-icons-active-color: var(--color-primary-light);
+    --topbar-bg-color: var(--color-primary-dark);
+}
+
 .topbar::before {
     content: "";
     position: var(--topbar-before-position);
@@ -87,9 +96,18 @@
     transition: var(--topbar-transition);
 }
 
-.topbar[open-nav] {
+/*.topbar[open-nav] {*/
+/*    --topbar-bg-color: var(--color-primary);*/
+/*    --topbar-icons-color: var(--color-bg);*/
+/*}*/
+
+.topbar[navigation-theme="light"][open-nav] {
     --topbar-bg-color: var(--color-primary);
     --topbar-icons-color: var(--color-bg);
+}
+
+.topbar[navigation-theme="dark"][open-nav] {
+    --topbar-bg-color: var(--color-primary-dark);
 }
 
 .topbar__logo-link {
@@ -151,7 +169,8 @@
     }
 
     .topbar__logo-link:hover .topbar__title {
-        --topbar-title-color: var(--color-font-dark);
+        --topbar-title-color: var(--topbar-icons-active-color);
+
     }
 
     .topbar__actions-link:hover {

@@ -4,7 +4,6 @@
     --service-nav-bottom: 0;
     --service-nav-padding: 0;
     --service-nav-border-top: 1px solid var(--color-white-o-75);
-    --service-nav-background-color: var(--color-primary);
     --service-nav-width: calc(100% - var(--spacing-l));
     --service-nav-display: flex;
     --service-nav-align-items: center;
@@ -19,7 +18,7 @@
     --service-nav-link-font-family: var(--font-family-text);
     --service-nav-link-font-size: var(--font-size-normal);
     --service-nav-link-text-decoration: none;
-    --font-nav-link-color: var(--color-bg);
+    --service-nav-link-color: var(--color-bg);
 
     position: var(--service-nav-position);
     height: var(--service-nav-height);
@@ -38,11 +37,21 @@
     pointer-events: var(--service-nav-pointer-events);
 }
 
+.topbar[navigation-theme="light"] .service-nav {
+    --service-nav-background-color: var(--color-primary);
+    --service-nav-link-color-active: var(--color-primary-dark);
+}
+
+.topbar[navigation-theme="dark"] .service-nav {
+    --service-nav-background-color: var(--color-primary-dark);
+    --service-nav-link-color-active: var(--color-primary-light);
+}
+
 .service-nav__link {
     font-family: var(--service-nav-link-font-family);
     font-size: var(--service-nav-link-font-size);
     text-decoration: var(--service-nav-link-text-decoration);
-    color: var(--font-nav-link-color);
+    color: var(--service-nav-link-color);
 }
 
 .topbar[open-nav] .service-nav {
@@ -57,5 +66,11 @@
 @media screen and (min-width: 840px) {
     .service-nav {
         --service-nav-display: none;
+    }
+}
+
+@media (hover: hover) {
+    a.service-nav__link:hover {
+        color: var(--service-nav-link-color-active) !important;
     }
 }

@@ -110,7 +110,7 @@ export default {
             },
             name: 'Accent color',
             description: "Set the header's accent color",
-            options: ['default', 'primary', 'secondary', 'grey'],
+            options: ['default', 'primary', 'secondary', 'font'],
             control: { type: 'select' },
             defaultValue: ['default'],
             required: true,

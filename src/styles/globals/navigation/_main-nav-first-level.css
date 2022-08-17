@@ -36,7 +36,7 @@
 }
 
 @media (hover: hover) {
-    .main-nav__link:hover {
-        color: var(--main-nav-link-color-hover);
+    a.main-nav__link:hover {
+        color: var(--main-nav-link-color-hover) !important;
     }
 }
