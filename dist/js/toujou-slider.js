@@ -1,4 +1,4 @@
-import{r as Gr,o as Ur,s as Br}from"./lit-element-a6bf029f.js";import{n as Wr}from"./query-assigned-elements-caae21e2.js";import{e as $}from"./property-19bdaa8a.js";/**
+import{r as Gr,o as Ur,s as Br}from"./lit-element-4f5b1f7c.js";import{n as Wr}from"./custom-element-fb5c5745.js";import{e as $}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause

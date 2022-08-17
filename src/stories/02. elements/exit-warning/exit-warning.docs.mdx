@@ -1,0 +1,17 @@
+# Exit warning
+
+The link must have the `toujou-exit-warning` attribute:
+```html
+    <a class="link" target="toujou-exit-warning" href="https://google.com">Link</a>
+```
+
+and we also need to add the `exit warning` element to the page
+```html
+<exit-warning title="Sie sind dabei die Seite zu verlassen">
+    <template>
+        <span id="c283"></span>
+        <p>Sie werden in <strong>${secondsRemaining} Sekunden</strong> auf die Seite <a href="${targetUrl}">${targetUrl}</a> weitergeleitet. Wenn Sie dies abbrechen wollen, schließen Sie dieses Popup.</p>
+    </template>
+</exit-warning>
+```
+The variables (`$secondsRemaining}` and `${targetURL}`) need to be rendered like that so they are then filled by the webcomponent

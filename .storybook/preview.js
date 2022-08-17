@@ -12,6 +12,7 @@ import "../src/components/toujou-topbar/toujou-topbar";
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-snackbar/toujou-snackbar";
 import "../src/components/copied/toujou-modal/toujou-modal";
+import "../src/components/copied/toujou-exit-warning/toujou-exit-warning";
 
 import "../src/styles/StorybookStyles.css";
 
