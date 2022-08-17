@@ -1,0 +1,13 @@
+toujou-modal {
+    --toujou-modal-header-border-bottom: var(--border-width-normal) solid var(--color-font-light);
+    --toujou-modal-header-padding: var(--spacing-s);
+
+    --toujou-modal-title-font-family: var(--font-family-headline);
+    --toujou-modal-title-color: var(--color-primary);
+    --toujou-modal-title-font-size: var(--font-size-l);
+
+    --toujou-modal-close-color: var(--color-primary);
+    --toujou-modal-close-hover-color: var(--color-primary-dark);
+
+    --toujou-modal-progressbar-color: var(--color-secondary);
+}

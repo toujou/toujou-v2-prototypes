@@ -214,6 +214,7 @@ figure {
     --color-success-l: 45%;
     --color-success: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l));
     --color-success-darken-15: hsl(var(--color-success-h) var(--color-success-s) calc(var(--color-success-l) - 15%));
+    --color-success-l-15: hsl(var(--color-success-h) var(--color-success-s) 15%);
     --color-success-o-25: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l) / 25%);
 
     --color-warning-h: 34;
@@ -221,6 +222,7 @@ figure {
     --color-warning-l: 50%;
     --color-warning: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l));
     --color-warning-darken-15: hsl(var(--color-warning-h) var(--color-warning-s) calc(var(--color-warning-l) - 15%));
+    --color-warning-l-15: hsl(var(--color-warning-h) var(--color-warning-s) 15%);
     --color-warning-o-25: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l) / 25%);
 
     --color-error-h: 348;
@@ -228,6 +230,7 @@ figure {
     --color-error-l: 55%;
     --color-error: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l));
     --color-error-darken-15: hsl(var(--color-error-h) var(--color-error-s) calc(var(--color-error-l) - 15%));
+    --color-error-l-15: hsl(var(--color-error-h) var(--color-error-s) 15%);
     --color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);
 
     --color-black-o-75: hsl(0 0% 0% / 75%);
@@ -4337,6 +4340,50 @@ body[overlay-open] {
 .single-media__video {
     width: var(--single-media-media-width);
     height: var(--single-media-media-height);
+}
+
+/* These variables have the "toujou" prefix because they come from the webcomponent */
+
+.snackbar {
+    --toujou-snackbar-font-family: var(--font-family-text);
+    --toujou-snackbar-font-weight: var(--font-weight-text-normal);
+    --toujou-snackbar-bg-color: var(--color-font);
+    --toujou-snackbar-border: var(--border-width-normal) solid var(--toujou-snackbar-bg-color);
+    --toujou-snackbar-bottom: var(--spacing-normal);
+    --toujou-snackbar-left: var(--spacing-normal);
+    --toujou-snackbar-padding: var(--spacing-normal);
+    --toujou-snackbar-border-radius: var(--border-radius-normal);
+    --toujou-snackbar-z-index: var(--z-index-notifications);
+    --toujou-snackbar-transition: all var(--animation-duration-fast) var(--animation-easing-normal);
+
+    --toujou-snackbar-message-color: var(--color-bg);
+
+    font-family: var(--toujou-snackbar-font-family);
+    font-weight: var(--toujou-snackbar-font-weight);
+}
+
+.snackbar[success] {
+    --toujou-snackbar-bg-color: var(--color-success);
+    --toujou-snackbar-success-message-color: var(--color-success-l-15);
+    --toujou-snackbar-success-button-color: var(--color-success-l-15);
+}
+
+.snackbar[error] {
+    --toujou-snackbar-bg-color: var(--color-error);
+    --toujou-snackbar-error-message-color: var(--color-error-l-15);
+    --toujou-snackbar-error-button-color: var(--color-error-l-15);
+}
+
+.snackbar[warning] {
+    --toujou-snackbar-bg-color: var(--color-warning);
+    --toujou-snackbar-warning-message-color: var(--color-warning-l-15);
+    --toujou-snackbar-warning-button-color: var(--color-warning-l-15);
+}
+
+.snackbar[info] {
+    --toujou-snackbar-bg-color: var(--color-primary);
+    --toujou-snackbar-info-message-color: var(--color-bg);
+    --toujou-snackbar-info-button-color: var(--color-bg);
 }
 
 .table {

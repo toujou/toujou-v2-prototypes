@@ -79,14 +79,13 @@ function createEvent(snackbarVariant: string, snackbarType: string, snackbarDura
 
 const Template: Story<SnackbarStoryProps> = (args: SnackbarStoryProps) => {
     window.addEventListener('click', (event: Event) => {
-        console.log('CLICK');
         const clickTarget = event.target as HTMLElement;
         if (clickTarget.getAttribute('id') === "snackbarTriggerButton") {
             clickTarget.dispatchEvent(createEvent(args.snackbarVariant, args.snackbarType, args.snackbarDuration));
         }
     })
     return `
-        <button id="snackbarTriggerButton" class="button" onclick="window.dispatchEvent(new CustomEvent('test-test'))">Show snackbar</button>
+        <button id="snackbarTriggerButton" class="button">Show snackbar</button>
         <toujou-snackbar class="snackbar" visible></toujou-snackbar>        
     `;
 

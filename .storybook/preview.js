@@ -9,7 +9,9 @@ import "../src/components/toujou-overlay/toujou-overlay";
 import "../src/components/toujou-burger-button/toujou-burger-button";
 import "../src/components/toujou-sliding-nav/toujou-sliding-nav";
 import "../src/components/toujou-topbar/toujou-topbar";
+// COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-snackbar/toujou-snackbar";
+import "../src/components/copied/toujou-modal/toujou-modal";
 
 import "../src/styles/StorybookStyles.css";
 
