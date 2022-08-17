@@ -4137,6 +4137,9 @@ toujou-modal {
     --toujou-modal-close-hover-color: var(--color-primary-dark);
 
     --toujou-modal-progressbar-color: var(--color-secondary);
+    --toujou-modal-z-index: var(--z-index-modal);
+
+    z-index: var(--toujou-modal-z-index);
 }
 
 .pn-nav {
