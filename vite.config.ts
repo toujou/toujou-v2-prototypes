@@ -20,6 +20,7 @@ export default defineConfig({
                 'toujou-burger-button': path.resolve(__dirname, 'src/components/toujou-burger-button/toujou-burger-button.ts'),
                 'toujou-sliding-nav': path.resolve(__dirname, 'src/components/toujou-sliding-nav/toujou-sliding-nav.ts'),
                 'toujou-topbar': path.resolve(__dirname, 'src/components/toujou-topbar/toujou-topbar.ts'),
+                'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
             },

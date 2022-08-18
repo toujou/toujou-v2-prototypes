@@ -1,0 +1,48 @@
+.cover-slider {
+    --cover-slider-card-max-width: 240;
+    --cover-slider-card-gap: 0;
+    --cover-slider-card-height: 160%;
+
+    --cover-slider-display: block;
+    --cover-slider-width: 100%;
+    --cover-slider-height: fit-content;
+
+    --cover-slider-control-display: none;
+
+    --cover-slider-bullets-display: none;
+
+    display: var(--cover-slider-display);
+    width: var(--cover-slider-width);
+    height: var(--cover-slider-height);
+}
+
+.cover-slider .splide {
+    max-width: 100% !important;
+}
+
+.cover-slider button.slider-control {
+    display: var(--cover-slider-control-display);
+}
+
+.cover-slider ul.slider-bullets {
+    --slider-bullets-display: var(--cover-slider-bullets-display);
+}
+
+.cover-slider__media {
+    aspect-ratio: 9 / 16;
+}
+
+.cover-slider__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* not slider */
+.cover-slider:not([is-slider]) .splide__track {
+    padding-right: 0 !important;
+}
+
+.cover-slider:not([is-slider]) .splide__list {
+    justify-content: center;
+}
