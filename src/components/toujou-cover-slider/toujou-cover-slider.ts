@@ -90,7 +90,7 @@ export class ToujouCoverSlider extends LitElement {
             autoplay: false,
             perPage: Math.floor(this._slidesThatFitIntoScreen),
             perMove: 1,
-            gap: 0,
+            gap: this._cardGap,
             padding: {
                 right: this._calculatePadding()
             },

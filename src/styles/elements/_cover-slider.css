@@ -1,7 +1,8 @@
 .cover-slider {
-    --cover-slider-card-max-width: 240;
-    --cover-slider-card-gap: 0;
-    --cover-slider-card-height: 160%;
+    /* variables to be used by the webcomponent */
+    --cover-slider-card-max-width: 240; /* in px, no unit */
+    --cover-slider-card-gap: 0;        /* in px, no unit */
+    --cover-slider-card-height: 160%;   /* percentage */
 
     --cover-slider-display: block;
     --cover-slider-width: 100%;
@@ -72,6 +73,10 @@
     --color-slider-title-color-hover: var(--color-font-light);
 }
 
+.cover-slider[is-slider]:hover {
+    --cover-slider-control-display: block;
+}
+
 .cover-slider .splide {
     max-width: var(--cover-slider-splide-max-width) !important;
 }
@@ -82,6 +87,16 @@
 
 .cover-slider ul.slider-bullets {
     --slider-bullets-display: var(--cover-slider-bullets-display);
+}
+
+.cover-slider__link:focus .cover-slider__title {
+    color: var(--color-slider-title-color-hover);
+}
+
+.cover-slider__link:focus .cover-slider__media {
+    filter: var(--cover-slider-media-hover-filter);
+    border: 2px solid var(--color-primary-light);
+    outline: var(--focus-outline-width) solid var(--focus-outline-color) var(--focus-outline-offset);
 }
 
 .cover-slider__media {
@@ -115,7 +130,7 @@
 }
 
 @media (hover: hover) {
-    .cover-slider:hover {
+    .cover-slider[is-slider]:hover {
         --cover-slider-control-display: block;
     }
 

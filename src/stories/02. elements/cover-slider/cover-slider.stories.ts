@@ -26,14 +26,46 @@ export default {
             defaultValue: ['default'],
             required: true,
         },
+        isSlider: {
+            table: {
+                category: "Cover slider settings",
+                defaultValue: { summary: true },
+            },
+            name: 'Is Slider',
+            description: "It should only be a slider if it contains more items than it can fit on the page. Otherwise it should show the items centered on the page",
+            control: { type: 'boolean' },
+            defaultValue: [true],
+            required: true,
+        },
+        gap: {
+            table: {
+                category: "Cover slider settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Gap',
+            description: "Add a gap between the elements, can normally be done via CSS variables",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
     }
 } as Meta;
 
 interface CoverSliderStoryProps {
     elementDesign: string,
+    isSlider: boolean,
+    gap: boolean,
 }
 
 const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => {
+    function addVariable() {
+        requestAnimationFrame(() => {
+            const coverSliderEl = document.querySelector('.cover-slider') as HTMLElement;
+            coverSliderEl!.style.setProperty('--cover-slider-card-gap', '16');
+        });
+        return ''
+    }
+
     return `
         <toujou-cover-slider class="cover-slider" aria-label="Toujou cover slider example">
             <div class="splide slider__slider">
@@ -56,58 +88,64 @@ const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => 
                                 <h3 class="cover-slider__title">Bazinga</h3>
                             </a>
                         </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <a href="#" class="cover-slider__link">
+                        ${args.isSlider ? `
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
                                 <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
                                     <img class="single-media__image cover-slider__image" src="https://picsum.photos/801" alt="Nice image">
                                 </toujou-single-media>
-                                <h3 class="cover-slider__title">Tatooine</h3>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
+                        ` : ''}
                         <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
                             <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
                                 <img class="single-media__image cover-slider__image" src="https://picsum.photos/402" alt="Nice image">
+                                <h3 class="cover-slider__title">Bonanza</h3>
                             </toujou-single-media>
                         </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                <img class="single-media__image cover-slider__image" src="https://picsum.photos/403" alt="Nice image">
-                            </toujou-single-media>
-                        </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                <img class="single-media__image cover-slider__image" src="https://picsum.photos/404" alt="Nice image">
-                            </toujou-single-media>
-                        </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                <img class="single-media__image cover-slider__image" src="https://picsum.photos/405" alt="Nice image">
-                            </toujou-single-media>
-                        </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                <img class="single-media__image cover-slider__image" src="https://picsum.photos/406" alt="Nice image">
-                            </toujou-single-media>
-                        </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                <img class="single-media__image cover-slider__image" src="https://picsum.photos/407" alt="Nice image">
-                            </toujou-single-media>
-                        </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                <img class="single-media__image cover-slider__image" src="https://picsum.photos/408" alt="Nice image">
-                            </toujou-single-media>
-                        </li>
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                            <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                <img class="single-media__image cover-slider__image" src="https://picsum.photos/409" alt="Nice image">
-                            </toujou-single-media>
-                        </li>
+                        ${args.isSlider ? `
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
+                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/403" alt="Nice image">
+                                </toujou-single-media>
+                            </li>
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
+                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/404" alt="Nice image">
+                                </toujou-single-media>
+                            </li>
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
+                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/405" alt="Nice image">
+                                </toujou-single-media>
+                            </li>
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
+                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/406" alt="Nice image">
+                                </toujou-single-media>
+                            </li>
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
+                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/407" alt="Nice image">
+                                </toujou-single-media>
+                            </li>
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
+                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/408" alt="Nice image">
+                                </toujou-single-media>
+                            </li>
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
+                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/409" alt="Nice image">
+                                </toujou-single-media>
+                            </li>
+                        ` : ''}
+
                     </ul>
                 </div>      
             </div>
         </toujou-cover-slider>
+        
+        ${args.gap ? addVariable() : ''}
     `;
 };
 
@@ -115,6 +153,8 @@ export const CoverSlider = Template.bind({});
 
 CoverSlider.args = {
     elementDesign: 'default',
+    isSlider: true,
+    gap: false,
 }
 
 
