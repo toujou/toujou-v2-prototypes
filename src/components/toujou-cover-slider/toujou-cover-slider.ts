@@ -62,7 +62,6 @@ export class ToujouCoverSlider extends LitElement {
     firstUpdated() {
         this._updateCustomProperties();
         this._numberOfSlidesInSlider = this.querySelectorAll('.cover-slider__item').length;
-
         this.splideContainer = this.querySelector('.splide') || null;
 
         if (!this.splideContainer) {
@@ -149,7 +148,6 @@ export class ToujouCoverSlider extends LitElement {
      */
     private _calculatePadding() {
         const numberOfParts = this._slidesThatFitIntoScreen! * 2;
-        console.log('number of parts', numberOfParts);
         return `${100 / numberOfParts}%`;
     }
 }

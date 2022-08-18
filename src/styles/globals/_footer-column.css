@@ -4,7 +4,6 @@
     --footer-column-align-items: flex-start;
     --footer-column-justify-content: flex-start;
 
-
     display: var(--footer-column-display);
     flex-direction: var(--footer-column-flex-direction);
     align-items: var(--footer-column-align-items);

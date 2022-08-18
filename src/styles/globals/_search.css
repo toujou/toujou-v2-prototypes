@@ -4,14 +4,16 @@
     --search-justify-content: center;
     --search-flex-direction: row;
     --search-input-padding: 0 var(--spacing-s);
-    
+
     display: var(--search-display);
     align-items: var(--search-align-items);
     justify-content: var(--search-justify-content);
     flex-direction: var(--search-flex-direction);
 }
+
 .input--search {
     --input-padding: var(--search-input-padding);
+
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }

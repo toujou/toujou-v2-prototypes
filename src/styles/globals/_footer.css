@@ -88,8 +88,7 @@
 @media (hover: hover) {
     .footer__list-item > a.footer__list-link:hover,
     .footer__address-text > a.footer__address-link:hover,
-    .footer__socials > a.footer__socials-link:hover
-    {
+    .footer__socials > a.footer__socials-link:hover {
         color: var(--footer-link-hover-color);
     }
 }

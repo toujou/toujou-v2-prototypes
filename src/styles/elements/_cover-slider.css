@@ -1,8 +1,8 @@
 .cover-slider {
     /* variables to be used by the webcomponent */
-    --cover-slider-card-max-width: 240; /* in px, no unit */
-    --cover-slider-card-gap: 0;        /* in px, no unit */
-    --cover-slider-card-height: 160%;   /* percentage */
+    --cover-slider-card-max-width: 240;     /* in px, no unit */
+    --cover-slider-card-gap: 0;             /* in px, no unit */
+    --cover-slider-card-height: 160%;       /* percentage */
 
     --cover-slider-display: block;
     --cover-slider-width: 100%;
@@ -139,6 +139,6 @@
     }
 
     .cover-slider__link:hover .cover-slider__media {
-        filter: var(--cover-slider-media-hover-filter)
+        filter: var(--cover-slider-media-hover-filter);
     }
 }

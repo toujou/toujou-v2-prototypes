@@ -1,7 +1,7 @@
 .alert {
     --alert-bg-color: var(--color-primary-o-10);
     --alert-text-color: var(--color-font);
-    --alert-border-color:var(--color-primary);
+    --alert-border-color: var(--color-primary);
     --alert-font-size: var(--font-size-normal);
     --alert-font-family: var(--font-family-text);
     --alert-padding: var(--spacing-s) var(--spacing-m);

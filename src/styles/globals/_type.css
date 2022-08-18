@@ -110,6 +110,7 @@ a:focus {
     color: var(--color-primary-dark);
 }
 
+/* stylelint-disable-next-line selector-list-comma-newline-after */
 main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
@@ -118,8 +119,14 @@ main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
 }
 
 @media screen and (max-width: 420px) {
-    h1, h2, h3, h4, h5,
-    p, ol, ul {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    ol,
+    ul {
         word-break: break-word;
     }
 }
@@ -129,5 +136,3 @@ main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
         color: var(--color-primary-dark);
     }
 }
-
-

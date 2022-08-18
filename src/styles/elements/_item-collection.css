@@ -30,7 +30,6 @@
 .item-collection__item {
     width: 100%;
     max-width: var(--item-collection-item-max-width);
-
     margin-bottom: var(--item-collection-gap);
     border-bottom: var(--item-collection-item-border-bottom);
     padding-bottom: var(--item-collection-gap);

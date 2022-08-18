@@ -96,11 +96,6 @@
     transition: var(--topbar-transition);
 }
 
-/*.topbar[open-nav] {*/
-/*    --topbar-bg-color: var(--color-primary);*/
-/*    --topbar-icons-color: var(--color-bg);*/
-/*}*/
-
 .topbar[navigation-theme="light"][open-nav] {
     --topbar-bg-color: var(--color-primary);
     --topbar-icons-color: var(--color-bg);
@@ -170,7 +165,6 @@
 
     .topbar__logo-link:hover .topbar__title {
         --topbar-title-color: var(--topbar-icons-active-color);
-
     }
 
     .topbar__actions-link:hover {

@@ -37,6 +37,7 @@
         cursor: pointer;
         --topbutton-bg-color: var(--color-primary-dark);
     }
+
     .topbutton:hover .icon {
         --icon-color: var(--color-bg);
     }
