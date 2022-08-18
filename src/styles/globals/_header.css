@@ -29,6 +29,10 @@
     --header-height: 25vh;
 }
 
+.header[image-height="3-1"] {
+    --header-height: calc(100 / 3 * 1vw);
+}
+
 .header__image {
     height: var(--header-image-height);
     width: var(--header-image-width);
