@@ -1,0 +1,40 @@
+hr,
+.divider {
+    --divider-display: block;
+    --divider-height: var(--spacing-xs);
+    --divider-width: var(--content-fullwidth);
+    --divider-max-width: var(--spacing-xxxxl);
+    --divider-margin: var(--spacing-xl) auto;
+    --divider-border: none;
+    --divider-border-radius: var(--border-radius-xs);
+
+    display: var(--divider-display);
+    height: var(--divider-height);
+    width: var(--divider-width);
+    max-width: var(--divider-max-width);
+    margin: var(--divider-margin);
+    border: var(--divider-border);
+    background-color: var(--divider-bg-color);
+    border-radius: var(--divider-border-radius);
+}
+
+hr[divider-type="background"],
+.divider[divider-type="background"] {
+    --divider-bg-color: var(--color-bg);
+}
+
+hr,
+hr[divider-type="primary"],
+.divider[divider-type="primary"] {
+    --divider-bg-color: var(--color-primary);
+}
+
+hr[divider-type="secondary"],
+.divider[divider-type="secondary"] {
+    --divider-bg-color: var(--color-secondary);
+}
+
+hr[divider-type="grey"],
+.divider[divider-type="grey"] {
+    --divider-bg-color: var(--color-font-light);
+}
