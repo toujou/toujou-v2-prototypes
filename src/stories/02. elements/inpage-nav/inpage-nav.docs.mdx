@@ -1,1 +1,70 @@
 # Inpage nav
+
+Display a inpage navigation bar on the page. There are different options that the users can set on the BE
+
+## Markup example
+```html
+<toujou-inpage-nav class="inpage-nav" element-design="default">
+    <button class="inpage-nav__toggle" aria-label="Toggle the inpage navigation" aria-expanded="false" aria-hidden="false" aria-controls="nav-uid">
+        <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>
+    </button>
+
+    <span class="inpage-nav__label">Beautiful label</span>
+
+    <nav id="nav-uid" class="inpage-nav__nav">
+        <ul class="inpage-nav__list">
+            <li class="inpage-nav__item" active="">
+                <a class="inpage-nav__link" href="one">Link one</a>
+            </li>
+            <li class="inpage-nav__item">
+                <a class="inpage-nav__link" href="two">Link two</a>
+            </li>
+            <li class="inpage-nav__item">
+                <a class="inpage-nav__link" href="three">Link three</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a href="#" slot="cta" class="button inpage-nav__cta">Buy now</a>
+</toujou-inpage-nav>
+```
+
+## Backend options:
+
+#### Label text
+When no "label text" is selected, a default label will be shown
+
+#### Scroll type
+Choose between sticky or scrollable position
+
+#### Element width
+Toggle between content and full width
+
+#### Alignment:
+Align the inpage nav items to the left or to the center
+
+#### CTA
+Users can add a CTA button consisting of a text and a link. it will be rendered as a `.button`
+
+#### Element design:
+Choose between default, primary, secondary and inverted styles
+
+## Attributes
+
+### element design <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `element-design` attribute defines the style in which the element will be rendered. It is set by the users in the BE. Possible values are `default`, `primary`, `secondary` and `inverted`.
+
+### is-sticky
+Is added to the element when the user choose `sticky` as the scroll type
+
+### alignment <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `alignment` attribute set how the text is aligned inside the element. It is set by the users on the BE. Possible values are `left` or `center`
+
+### ismobile
+The `ismobile` attribute is added with JS when the list items don't all fit side by side on the element. Sets the element's "view type" to mobile
+
+### mobileopen
+The `mobileopen` attribute is added with JS when the mobile menu is open
+
+### active
+The `active` attribute is added to the list item that corresponds to the current active section on the page
