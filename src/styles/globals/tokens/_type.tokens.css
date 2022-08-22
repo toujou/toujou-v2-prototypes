@@ -1,15 +1,6 @@
 :root,
 ::before,
 ::after {
-    /* FONT FAMILIES */
-    --font-family-headline: 'Ubuntu', sans-serif;
-    --font-family-text: 'Mulish', sans-serif;
-
-    /* FONT WEIGHTS */
-    --font-weight-text-normal: 600;
-    --font-weight-text-bold: 800;
-    --font-weight-headline: 600;
-
     /* FONT SIZE*/
     --font-size-xxxxl: 3.875rem; /* 62px */
     --font-size-xxxl: 3rem;      /* 48px */

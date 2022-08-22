@@ -1,4 +1,5 @@
 /* DEMO */
+@import 'demo/_be-variables.css'; /* These are the variables that com from the theme settings in BE */
 @import 'demo/_demo-variables.css';
 @import 'demo/_animation.css';
 @import 'demo/_aspect-ratio.css';
