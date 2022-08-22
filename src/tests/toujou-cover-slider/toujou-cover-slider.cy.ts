@@ -2,24 +2,11 @@
 
 const colorPrimary = Cypress.env('colorPrimary');
 const colorPrimaryLight = Cypress.env('colorPrimaryLight');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
-const colorPrimaryO10 = Cypress.env('colorPrimaryO10');
 const colorSecondary = Cypress.env('colorSecondary');
 const colorSecondaryLight = Cypress.env('colorSecondaryLight');
-const colorSecondaryDark = Cypress.env('colorSecondaryDark');
-const colorSecondaryO10 = Cypress.env('colorSecondaryO10');
 const colorFont = Cypress.env('colorFont');
-const colorFontDark = Cypress.env('colorFontDark');
 const colorFontLight = Cypress.env('colorFontLight');
-const colorFontO10 = Cypress.env('colorFontO10');
 const colorBg = Cypress.env('colorBg');
-const colorTransparent = Cypress.env('colorTransparent');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorSuccessDarken15 = Cypress.env('colorSuccessDarken15');
-const colorWarning = Cypress.env('colorWarning');
-const colorWarningDarken15 = Cypress.env('colorWarningDarken15');
-const colorError = Cypress.env('colorError');
-const colorErrorDarken15 = Cypress.env('colorErrorDarken15');
 
 describe('toujou-cover-slider - desktop', () => {
     beforeEach(() => {
