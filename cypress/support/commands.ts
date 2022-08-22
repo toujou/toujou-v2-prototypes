@@ -62,4 +62,20 @@ Cypress.Commands.add('resetRealHover', { prevSubject: 'element' }, () => {
     return;
 });
 
+/**
+ * Check if an element is visible inside the viewport
+ * From here: https://github.com/cypress-io/cypress/issues/877
+ */
+Cypress.Commands.add('isInViewport', element => {
+    cy.get(element).then($el => {
+        const bottom = Cypress.$(cy.state('window')).height();
+        const rect = $el[0].getBoundingClientRect();
+
+        expect(rect.top).not.to.be.greaterThan(bottom);
+        expect(rect.bottom).not.to.be.greaterThan(bottom);
+        expect(rect.top).not.to.be.greaterThan(bottom);
+        expect(rect.bottom).not.to.be.greaterThan(bottom);
+    });
+})
+
 export {}
