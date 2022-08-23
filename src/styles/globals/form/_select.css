@@ -17,6 +17,10 @@
     width: var(--select-wrapper-width);
 }
 
+.input-group--disabled .select__wrapper {
+    --select-chevron-background-color: var(--color-font-light);
+}
+
 .select__wrapper::after {
     content: "";
     display: block;
