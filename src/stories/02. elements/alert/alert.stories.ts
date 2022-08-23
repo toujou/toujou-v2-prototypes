@@ -35,7 +35,7 @@ export default {
 } as Meta;
 
 interface alertStoryProps {
-    direction: any;
+    alertVariant: any;
 }
 
 const Template: Story<alertStoryProps> = (args: alertStoryProps) => {
@@ -48,7 +48,7 @@ const Template: Story<alertStoryProps> = (args: alertStoryProps) => {
 
 export const Alert = Template.bind({});
 
-alert.args = {
-    direction: 'vertical'
+Alert.args = {
+    alertVariant: 'primary'
 }
 

@@ -12,6 +12,7 @@ describe('toujou-cover-slider - desktop', () => {
     beforeEach(() => {
         cy.viewport(1920, 1080);
         cy.visit('/iframe.html?viewMode=story&id=components-cover-slider--cover-slider');
+        // @ts-ignore
         cy.get('.cover-slider').resetRealHover();
     });
 

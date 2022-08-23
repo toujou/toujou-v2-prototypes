@@ -4,7 +4,7 @@
     --alert-border-color: var(--color-primary);
     --alert-font-size: var(--font-size-normal);
     --alert-font-family: var(--font-family-text);
-    --alert-padding: var(--spacing-s) var(--spacing-m);
+    --alert-padding: var(--spacing-s) var(--spacing-normal);
     --alert-border-radius: var(--border-radius-normal);
     --alert-border-width: var(--spacing-1px);
     --alert-border: var(--alert-border-width) solid var(--alert-border-color);
@@ -15,7 +15,6 @@
     display: flex;
     border: var(--alert-border);
     outline: none;
-    gap: var(--spacing-s);
     background-color: var(--alert-bg-color);
     color: var(--alert-text-color);
     font-size: var(--alert-font-size);
