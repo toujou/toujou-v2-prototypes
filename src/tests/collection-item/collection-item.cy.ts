@@ -358,7 +358,7 @@ describe('collection item - type product', () => {
         });
     });
 
-    it.only('product title has correct styles', () => {
+    it('product title has correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__title`).then((titleEl) => {
             expect(titleEl).to.have.css('color').equal(colorBg);
             expect(titleEl).to.have.css('font-size').equal('20px');
