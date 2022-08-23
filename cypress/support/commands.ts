@@ -54,6 +54,19 @@ Cypress.Commands.add('before', { prevSubject: 'element' }, (el: HTMLElement[], p
 );
 
 /**
+ * Get a css property from an Element's "after" pseudo-element
+ * https://stackoverflow.com/questions/55516990/cypress-testing-pseudo-css-class-before
+ */
+// @ts-ignore
+Cypress.Commands.add('after', { prevSubject: 'element' }, (el: HTMLElement[], property) => {
+        const win = el[0].ownerDocument.defaultView;
+        const before = win?.getComputedStyle(el[0], 'after');
+        // @ts-ignore
+        return unquote(before.getPropertyValue(property));
+    },
+);
+
+/**
  * Reset the hovered element (hovered with cypress-real-events)
  */
 // @ts-ignore

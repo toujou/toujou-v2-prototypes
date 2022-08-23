@@ -79,7 +79,7 @@ describe('consent widget - open', () => {
         cy.get('toujou-consent-widget').invoke('attr', 'open').should('exist');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.consent-widget__consent-elements').then((consentElements) => {
             expect(consentElements).to.have.css('display').equal('flex');
             expect(consentElements).to.have.css('flex-direction').equal('column');
