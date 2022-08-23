@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 const colorFont = Cypress.env('colorFont');
-const colorPrimary = Cypress.env('colorPrimary');
 
 describe('Forms / radio input', () => {
     beforeEach(() => {
