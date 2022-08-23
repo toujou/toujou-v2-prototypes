@@ -136,6 +136,7 @@
 
     --collection-item-button-text-decoration: none;
     --collection-item-button-text-color: var(--color-primary);
+    --collection-item-button-text-color-hover: var(--color-primary-dark);
     --collection-item-button-display: flex;
     --collection-item-button-align-items: end;
     --collection-item-button-justify-content: center;
@@ -180,12 +181,14 @@
     --collection-item-bg-color: var(--color-secondary);
     --collection-item-date-background-color: var(--color-secondary);
     --collection-item-info-icon-color: var(--color-white);
+    --collection-item-button-text-color-hover: var(--color-secondary-dark);
 }
 
 .collection-item[item-design="inverted"] {
     --collection-item-bg-color: var(--color-font-dark);
     --collection-item-date-background-color: var(--color-font-dark);
     --collection-item-info-icon-color: var(--color-white);
+    --collection-item-button-text-color-hover: var(--color-font-light);
 }
 
 .collection-item[item-type="product"][item-orientation="vertical"] {
@@ -395,12 +398,14 @@
 }
 
 @media (hover: hover) {
-    .collection-item__button:hover {
+    a.collection-item__button:hover {
         --collection-item-button-text-decoration: underline;
+
+        color: var(--collection-item-button-text-color-hover)
     }
 
     .collection-item__button:hover .icon {
-        --icon-color: var(--color-primary-dark);
+        --icon-color: var(--collection-item-button-text-color-hover);
     }
 }
 
