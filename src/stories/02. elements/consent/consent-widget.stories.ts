@@ -111,12 +111,8 @@ const Template: Story<ConsentWidgetStoryProps> = (args: ConsentWidgetStoryProps)
                     </div>
                 </details>
         
-                <button id="consentAcceptAllButton" accept-all="" class="button consent-widget__button" button-type="default" button-size="small" button-variant="primary">
-                    Alles akzeptieren
-                </button>
-                <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">
-                    OK
-                </button>
+                <button id="consentAcceptAllButton" accept-all="" class="button consent-widget__button" button-type="default" button-size="small" button-variant="primary">Alles akzeptieren</button>
+                <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">OK</button>
             </div>
         </toujou-consent-widget>
      `;
