@@ -3,8 +3,6 @@
 const colorFont = Cypress.env('colorFont');
 const colorFontLight = Cypress.env('colorFontLight');
 const colorPrimary = Cypress.env('colorPrimary');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorError = Cypress.env('colorError');
 const colorBg = Cypress.env('colorBg');
 
 describe('Forms / date inputs', () => {

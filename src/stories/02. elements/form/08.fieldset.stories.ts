@@ -38,7 +38,7 @@ interface ToujouFieldsetStoryProps {
 }
 
 const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProps) => {
-    const disabledAttribute = args.state === 'disabled' ? 'is-disabled' : ''
+    const disabledAttribute = args.state === 'disabled' ? 'disabled' : ''
 
     return `
         <style>
