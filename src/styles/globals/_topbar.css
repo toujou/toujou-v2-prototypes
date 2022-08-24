@@ -52,7 +52,6 @@
 
     --topbar-actions-text-display: none;
     --topbar-actions-text-z-index: 1;
-    --topbar-actions-text-color: var(--color-font);
     --topbar-actions-text-font-size: var(--font-size-s);
     --topbar-actions-text-line-height: 1;
 
@@ -76,12 +75,14 @@
     --topbar-icons-color: var(--color-primary);
     --topbar-icons-active-color: var(--color-primary-dark);
     --topbar-bg-color: var(--color-bg);
+    --topbar-actions-text-color: var(--color-font);
 }
 
 .topbar[navigation-theme="dark"] {
     --topbar-icons-color: var(--color-bg);
     --topbar-icons-active-color: var(--color-primary-light);
     --topbar-bg-color: var(--color-primary-dark);
+    --topbar-actions-text-color: var(--color-bg);
 }
 
 .topbar::before {
@@ -168,7 +169,7 @@
     }
 
     .topbar__actions-link:hover {
-        --topbar-actions-text-color: var(--color-primary-dark);
+        --topbar-actions-text-color: var(--topbar-icons-active-color);
     }
 }
 
