@@ -42,7 +42,7 @@ const Template = () => {
                     <span class="form-progress__index">3</span>
                 </li>
                 <li class="form-progress__item" active>
-                    <span class="form-progress__index">3</span>
+                    <span class="form-progress__index">4</span>
                 </li>
             </ul>
         </toujou-form-progress>

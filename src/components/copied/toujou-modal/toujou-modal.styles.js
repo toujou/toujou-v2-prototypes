@@ -78,6 +78,8 @@ export const ToujouModalStyles = css`
     display: var(--toujou-modal-header-display, flex);
     justify-content: var(--toujou-modal-header-justify, space-between);
     width: var(--toujou-modal-header-width, 100%);
+    top: var(--toujou-modal-header-top, unset);
+    box-shadow: var(--toujou-modal-header-box-shadow, none);
   }
 
   :host([no-header]) #modal-header {
