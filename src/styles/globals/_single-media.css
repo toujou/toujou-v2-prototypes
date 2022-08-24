@@ -4,6 +4,8 @@
     --single-media-margin: 0 auto;
     --single-media-display: block;
     --single-media-max-height: 100%;
+    --single-media-border-radius: unset;
+    --single-media-overflow: unset;
 
     --single-media-media-width: 100%;
     --single-media-media-height: auto;
@@ -13,6 +15,8 @@
     max-width: var(--single-media-max-width);
     margin: var(--single-media-margin);
     max-height: var(--single-media-max-height);
+    border-radius: var(--single-media-border-radius);
+    overflow: var(--single-media-overflow);
 }
 
 .header[header-type="slider"] .single-media {
