@@ -1,0 +1,119 @@
+/// <reference types="cypress" />
+
+const colorPrimary = Cypress.env('colorPrimary');
+const colorBg = Cypress.env('colorBg');
+const colorSuccess = Cypress.env('colorSuccess');
+const colorSuccessL15 = Cypress.env('colorSuccessL15');
+const colorError = Cypress.env('colorError');
+const colorErrorL15 = Cypress.env('colorErrorL15');
+const colorWarning = Cypress.env('colorWarning');
+const colorWarningL15 = Cypress.env('colorWarningL15');
+
+describe('toujou-snackbar action', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-snackbar--snackbar&args=snackbarType:action');
+    });
+
+    it('has correct structure', () => {
+        cy.get('toujou-snackbar').invoke('attr', 'class').should('eq', 'snackbar');
+        cy.get('toujou-snackbar').invoke('prop', 'tagName').should('eq', 'TOUJOU-SNACKBAR');
+    });
+
+    it('shows when we click the button', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').invoke('attr', 'visible').should('exist');
+        cy.get('toujou-snackbar').invoke('attr', 'info').should('exist');
+    });
+
+    it('has correct inner structure', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('exist')
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.text', "welcome to the bonus page!");
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('exist')
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.text', "ok");
+    });
+
+    it('has correct info styles', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colorPrimary);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'font-size', '16px');
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'font-size', '14px');
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'text-transform', 'uppercase');
+    });
+});
+
+describe('toujou-snackbar action info', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-snackbar--snackbar&args=snackbarType:action');
+    });
+
+    it('has correct info styles', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colorPrimary);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'font-size', '16px');
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'font-size', '14px');
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'text-transform', 'uppercase');
+    });
+});
+
+describe('toujou-snackbar action success', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-snackbar--snackbar&args=snackbarVariant:success;snackbarType:action');
+    });
+
+    it('has correct success styles', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').invoke('attr', 'success').should('exist');
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colorSuccess);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorSuccessL15);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorSuccessL15);
+    });
+});
+
+describe('toujou-snackbar action error', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-snackbar--snackbar&args=snackbarVariant:error;snackbarType:action');
+    });
+
+    it('has correct error styles', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').invoke('attr', 'error').should('exist');
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colorError);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorErrorL15);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorErrorL15);
+    });
+});
+
+describe('toujou-snackbar action warning', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-snackbar--snackbar&args=snackbarVariant:warning;snackbarType:action');
+    });
+
+    it('has correct error styles', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').invoke('attr', 'warning').should('exist');
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colorWarning);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorWarningL15);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorWarningL15);
+    });
+});
+
+describe('toujou-snackbar auto info', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-snackbar--snackbar');
+    });
+
+    it.only('has correct structure', () => {
+        cy.get('#snackbarTriggerButton').click();
+        cy.get('toujou-snackbar').invoke('attr', 'info').should('exist');
+        cy.get('toujou-snackbar').invoke('attr', 'visible').should('exist');
+        cy.wait(4050);
+        cy.get('toujou-snackbar').invoke('attr', 'visible').should('not.exist');
+    });
+});
+
+export {}

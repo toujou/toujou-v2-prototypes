@@ -10,11 +10,14 @@
     --toujou-snackbar-border-radius: var(--border-radius-normal);
     --toujou-snackbar-z-index: var(--z-index-notifications);
     --toujou-snackbar-transition: all var(--animation-duration-fast) var(--animation-easing-normal);
+    --toujou-snackbar-shadow: var(--shadow-normal);
 
     --toujou-snackbar-message-color: var(--color-bg);
 
     font-family: var(--toujou-snackbar-font-family);
     font-weight: var(--toujou-snackbar-font-weight);
+    box-shadow: var(--toujou-snackbar-shadow);
+    border: var(--toujou-snackbar-border) !important;
 }
 
 .snackbar[success] {
