@@ -17,7 +17,7 @@
     --toggle-thumb-size: var(--toggle-height);
     --toggle-thumb-default-color: var(--color-font);
     --toggle-thumb-checked-color: var(--color-primary);
-    --toggle-thumb-hover-color: var(--color-font-dark);
+    --toggle-thumb-hover-color: var(--color-primary);
     --toggle-thumb-checked-hover-color: var(--color-primary-dark);
     --toggle-thumb-border-radius: var(--border-radius-circle);
     --toggle-thumb-position: absolute;
