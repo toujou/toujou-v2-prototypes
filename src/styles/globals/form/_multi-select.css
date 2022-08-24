@@ -58,3 +58,10 @@
 .input-group.input-group--multi-select {
     --input-group-icon-right: var(--spacing-m);
 }
+
+@media (hover: hover) {
+    .multi-select:hover {
+        border: var(--form-input-hover-border);
+        outline: var(--form-input-hover-border);
+    }
+}

@@ -7,14 +7,14 @@ const colorPrimary = Cypress.env('colorPrimary');
 const colorSuccess = Cypress.env('colorSuccess');
 const colorError = Cypress.env('colorError');
 
-describe('Forms / file upload', () => {
+describe('Forms / image upload', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--other-inputs');
         // @ts-ignore
         cy.get('body').resetRealHover();
     });
 
-    it('file upload has correct structure', () => {
+    it('image upload has correct structure', () => {
         cy.get('.input-group--file-upload').should('exist');
         cy.get('.input-group--file-upload .input-label').should('exist');
         cy.get('.input-group--file-upload .input-description').should('exist');
@@ -25,7 +25,7 @@ describe('Forms / file upload', () => {
         cy.get('.input-group--file-upload .form__error').should('exist');
     });
 
-    it('file upload has correct styles', () => {
+    it('image upload has correct styles', () => {
         cy.get('.input-group--file-upload .input').then((fileUploadInput) => {
             expect(fileUploadInput).to.exist;
             expect(fileUploadInput).to.have.attr('type').equal('file');
@@ -39,18 +39,18 @@ describe('Forms / file upload', () => {
         });
     });
 
-    it('file upload input has correct hover styles', () => {
+    it('image upload input has correct hover styles', () => {
         cy.get('.input-group--file-upload .input').realHover();
         cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colorFont}`)
     });
 
-    it('file upload input has correct focus styles', () => {
+    it('image upload input has correct focus styles', () => {
         cy.get('.input-group--file-upload .input').focus();
         cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colorPrimary}`)
     });
 });
 
-describe('Forms / file upload input - disabled', () => {
+describe('Forms / image upload input - disabled', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--other-inputs&args=state:disabled');
         // @ts-ignore
@@ -71,7 +71,7 @@ describe('Forms / file upload input - disabled', () => {
     });
 });
 
-describe('Forms / file upload input - success', () => {
+describe('Forms / image upload input - success', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--other-inputs&args=state:success');
         // @ts-ignore
@@ -85,7 +85,7 @@ describe('Forms / file upload input - success', () => {
     });
 });
 
-describe('Forms / file upload input - error', () => {
+describe('Forms / image upload input - error', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--other-inputs&args=state:error');
         // @ts-ignore
