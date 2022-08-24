@@ -26,8 +26,6 @@ describe('Forms / text input', () => {
            expect(textInput).to.have.css('font-size').equal('16px');
            expect(textInput).to.have.css('font-weight').equal('600');
         });
-        cy.get('.input-group--text .input--text').realHover();
-        cy.get('.input-group--text .input--text').should('have.css', 'border', `1px solid ${colorFont}`)
     });
 
     it('input--text group has correct hover styles', () => {
