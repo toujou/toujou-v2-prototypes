@@ -11,7 +11,7 @@ describe('Forms / text input', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs');
         // @ts-ignore
-        cy.get('.input--text').resetRealHover();
+        cy.get('body').resetRealHover();
     });
 
     it('input--text has correct styles', () => {
@@ -45,7 +45,7 @@ describe('Forms / text input - disabled', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:disabled');
         // @ts-ignore
-        cy.get('.input--text').resetRealHover();
+        cy.get('body').resetRealHover();
     });
 
     it('input--text group has correct disabled styles', () => {
@@ -66,7 +66,7 @@ describe('Forms / text input - success', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:success');
         // @ts-ignore
-        cy.get('.input--text').resetRealHover();
+        cy.get('body').resetRealHover();
     });
 
     it('input--text group has correct success styles', () => {
@@ -80,7 +80,7 @@ describe('Forms / text input - error', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:error');
         // @ts-ignore
-        cy.get('.input--text').resetRealHover();
+        cy.get('body').resetRealHover();
     });
 
     it('input--text group has correct success styles', () => {
@@ -94,7 +94,7 @@ describe('Forms / text input - types', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:error');
         // @ts-ignore
-        cy.get('.input--text').resetRealHover();
+        cy.get('body').resetRealHover();
     });
 
     it('text inputs have correct types', () => {
