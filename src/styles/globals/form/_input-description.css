@@ -7,6 +7,7 @@
     --input-description-font-size: var(--font-size-s);
     --input-description-font-weight: var(--font-weight-text-normal);
     --input-description-column: 1 / -1;
+    --input-description-pointer-events: none;
 
     order: var(--input-description-order);
     margin: var(--input-description-margin);
@@ -16,6 +17,7 @@
     font-size: var(--input-description-font-size);
     font-weight: var(--input-description-font-weight);
     grid-column: var(--input-description-column);
+    pointer-events: var(--input-description-pointer-events);
 }
 
 .input-description--after-group {

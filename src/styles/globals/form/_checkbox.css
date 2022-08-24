@@ -86,8 +86,9 @@
 }
 
 @media (hover: hover) {
-    .checkbox:hover {
-        --checkbox-border-color: var(--color-font-dark);
+    .checkbox:hover,
+    .checkbox-group:hover .checkbox {
+        --checkbox-border-color: var(--color-primary);
 
         cursor: pointer;
     }
