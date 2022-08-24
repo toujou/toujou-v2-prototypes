@@ -35,7 +35,6 @@ describe('Forms / multi-select input', () => {
         cy.get('.multi-select').realHover();
         cy.get('.multi-select').should('have.css', 'border', `1px solid ${colorFont}`);
         cy.get('.multi-select').should('have.css', 'outline', `${colorFont} solid 1px`);
-
     });
 
     it('select has correct focus styles', () => {

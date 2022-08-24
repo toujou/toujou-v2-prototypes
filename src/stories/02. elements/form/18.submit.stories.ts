@@ -51,9 +51,7 @@ const Template: Story<ToujouRequireInputStoryProps> = () => {
             </toujou-input-group>
 	        
 	        <toujou-input-group class="input-group" input-group-type="submit">			
-        		<button is="toujou-button" class="button" button-variant="primary" type="submit" name="tx_form_formframework[selectWithChips-1000064][__currentPage]" value="1">
-					Submit
-				</button>
+        		<button is="toujou-button" class="button" button-variant="primary" type="submit" name="tx_form_formframework[selectWithChips-1000064][__currentPage]" value="1">Submit</button>
 	        </toujou-input-group>
 	
         </form>
