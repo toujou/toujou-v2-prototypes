@@ -5,7 +5,7 @@
     --collection-item-display: flex;
     --collection-item-width: 100%;
     --collection-item-max-width: 100%;
-    --collection-item-shadow: none;
+    --collection-item-shadow: var(--shadow-s);
     --collection-item-border-radius: var(--border-radius-normal);
     --collection-item-overflow: hidden;
     --collection-item-bg-color: var(--color-bg);

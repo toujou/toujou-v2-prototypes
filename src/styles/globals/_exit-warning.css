@@ -1,6 +1,10 @@
 exit-warning {
-    --toujou-modal-header-border-bottom: var(--border-width-normal) solid var(--color-font-light);
     --toujou-modal-header-padding: var(--spacing-s);
+    --toujou-modal-header-position: sticky;
+    --toujou-modal-header-top: 0;
+    --toujou-modal-header-box-shadow: var(--shadow-s);
+    --toujou-modal-header-background: var(--color-bg);
+    --toujou-modal-header-border-bottom: none;
 
     --toujou-modal-title-font-family: var(--font-family-headline);
     --toujou-modal-title-color: var(--color-warning);
@@ -11,6 +15,7 @@ exit-warning {
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);
+    --toujou-modal-content-border-radius: var(--border-radius-normal);
 
     z-index: var(--toujou-modal-z-index);
 }
