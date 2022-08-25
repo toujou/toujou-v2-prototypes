@@ -369,4 +369,46 @@ describe('collection item - type product', () => {
     });
 });
 
+describe('collection item - type product - design primary', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-product&args=elementDesign:primary');
+        // @ts-ignore
+        cy.get(`${firstCardSelector}`).resetRealHover();
+    });
+
+    it('product bottom has correct styles', () => {
+        cy.get(`${firstCardSelector} .collection-item__bottom`).then((bottomEl) => {
+            expect(bottomEl).to.have.css('background-color').equal(colorPrimary);
+        });
+    });
+});
+
+describe('collection item - type product - design secondary', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-product&args=elementDesign:secondary');
+        // @ts-ignore
+        cy.get(`${firstCardSelector}`).resetRealHover();
+    });
+
+    it('product bottom has correct styles', () => {
+        cy.get(`${firstCardSelector} .collection-item__bottom`).then((bottomEl) => {
+            expect(bottomEl).to.have.css('background-color').equal(colorSecondary);
+        });
+    });
+});
+
+describe('collection item - type product - design inverted', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-product&args=elementDesign:inverted');
+        // @ts-ignore
+        cy.get(`${firstCardSelector}`).resetRealHover();
+    });
+
+    it('product bottom has correct styles', () => {
+        cy.get(`${firstCardSelector} .collection-item__bottom`).then((bottomEl) => {
+            expect(bottomEl).to.have.css('background-color').equal(colorFontDark);
+        });
+    });
+});
+
 export {}
