@@ -1,16 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryO10 = Cypress.env('colorPrimaryO10');
-const colorSecondaryDark = Cypress.env('colorSecondaryDark');
-const colorSecondaryO10 = Cypress.env('colorSecondaryO10');
-const colorWarningDarken15 = Cypress.env('colorWarningDarken15');
-const colorWarningO25 = Cypress.env('colorWarningO25');
-const colorErrorO25 = Cypress.env('colorErrorO25');
-const colorErrorDarken15 = Cypress.env('colorErrorDarken15');
-const colorSuccessO25 = Cypress.env('colorSuccessO25');
-const colorSuccessDarken15 = Cypress.env('colorSuccessDarken15');
+const colors = Cypress.env('colors');
 
 describe('table', () => {
     beforeEach(() => {
@@ -32,8 +22,8 @@ describe('table', () => {
         cy.get('toujou-alert').should('have.css', 'font-size', '16px');
         cy.get('toujou-alert').should('have.css', 'padding', '8px 16px');
         cy.get('toujou-alert').should('have.css', 'border-radius', '4px');
-        cy.get('toujou-alert').should('have.css', 'text-decoration', `none solid ${colorFont}`);
-        cy.get('toujou-alert').should('have.css', 'color', colorFont);
+        cy.get('toujou-alert').should('have.css', 'text-decoration', `none solid ${colors.colorFont}`);
+        cy.get('toujou-alert').should('have.css', 'color', colors.colorFont);
     });
 })
 
@@ -44,8 +34,8 @@ describe('table - primary', () => {
 
     it('has correct primary styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'primary');
-        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colorPrimary}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colorPrimaryO10);
+        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorPrimaryO10);
     });
 })
 
@@ -56,8 +46,8 @@ describe('alert - secondary', () => {
 
     it('has correct secondary styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'secondary');
-        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colorSecondaryDark}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colorSecondaryO10);
+        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colors.colorSecondaryDark}`);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorSecondaryO10);
     });
 })
 
@@ -68,8 +58,8 @@ describe('alert - warning', () => {
 
     it('has correct warning styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'warning');
-        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colorWarningDarken15}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colorWarningO25);
+        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colors.colorWarningDarken15}`);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorWarningO25);
     });
 })
 
@@ -80,8 +70,8 @@ describe('alert - error', () => {
 
     it('has correct warning styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'error');
-        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colorErrorO25}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colorErrorDarken15);
+        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colors.colorErrorO25}`);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorErrorDarken15);
     });
 })
 
@@ -92,8 +82,8 @@ describe('alert - success', () => {
 
     it('has correct warning styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'success');
-        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colorSuccessO25}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colorSuccessDarken15);
+        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colors.colorSuccessO25}`);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorSuccessDarken15);
     });
 })
 

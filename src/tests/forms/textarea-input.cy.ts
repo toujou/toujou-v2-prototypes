@@ -1,11 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorError = Cypress.env('colorError');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('Forms / textarea', () => {
     beforeEach(() => {
@@ -18,25 +13,25 @@ describe('Forms / textarea', () => {
         cy.get('.input-group--textarea .input--textarea').then((textInput) => {
             expect(textInput).to.exist;
             expect(textInput).to.have.css('position').equal('relative');
-            expect(textInput).to.have.css('border').equal(`1px solid ${colorFontLight}`);
-            expect(textInput).to.have.css('background-color').equal(colorBg);
+            expect(textInput).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
+            expect(textInput).to.have.css('background-color').equal(colors.colorBg);
             expect(textInput).to.have.css('padding').equal('24px 8px 8px');
-            expect(textInput).to.have.css('color').equal(colorFont);
+            expect(textInput).to.have.css('color').equal(colors.colorFont);
             expect(textInput).to.have.css('font-size').equal('16px');
             expect(textInput).to.have.css('font-weight').equal('600');
         });
         cy.get('.input-group--textarea .input--textarea').realHover();
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colorFont}`)
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
 
     it('textarea has correct hover styles', () => {
         cy.get('.input-group--textarea .input--textarea').realHover();
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colorFont}`)
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
 
     it('textarea has correct focus styles', () => {
         cy.get('.input-group--textarea .input--textarea').focus();
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colorPrimary}`)
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
     });
 });
 
@@ -49,8 +44,8 @@ describe('Forms / textarea - disabled', () => {
 
     it('textarea has correct disabled styles', () => {
         cy.get('.input-group--textarea .input--textarea').invoke('attr', 'disabled').should('exist');
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colorFontLight)
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colors.colorFontLight)
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
         cy.get('.input-group--textarea .input--textarea').should('have.css', 'pointer-events', 'none');
     });
 
@@ -69,9 +64,9 @@ describe('Forms / textarea - success', () => {
     });
 
     it('textarea has correct success styles', () => {
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colorFont)
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colorSuccess}`);
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colorSuccess} solid 1px`);
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colors.colorFont)
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colors.colorSuccess}`);
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
     });
 });
 
@@ -83,9 +78,9 @@ describe('Forms / textarea - error', () => {
     });
 
     it('textarea has correct success styles', () => {
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colorFont)
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colorError}`);
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colorError} solid 1px`);
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colors.colorFont)
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `1px solid ${colors.colorError}`);
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colors.colorError} solid 1px`);
     });
 });
 

@@ -3,13 +3,7 @@
 const desktopViewportHeight = Cypress.env('desktopViewportHeight');
 const desktopViewportWidth = Cypress.env('desktopViewportWidth');
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
-const colorSecondary = Cypress.env('colorSecondary');
-const colorSecondaryDark = Cypress.env('colorSecondaryDark');
-const colorFont = Cypress.env('colorFont');
-const colorFontDark = Cypress.env('colorFontDark');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('header', () => {
     beforeEach(() => {
@@ -208,66 +202,66 @@ describe('header - accent color', () => {
     });
 
     it('has correct default headline accent color', () => {
-        cy.get('.header-content__title').should('have.css', 'color', colorPrimary);
+        cy.get('.header-content__title').should('have.css', 'color', colors.colorPrimary);
     });
 
     it('has correct primary headline accent color', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('accent-color', 'primary');
         });
-        cy.get('.header-content__title').should('have.css', 'color', colorPrimary);
+        cy.get('.header-content__title').should('have.css', 'color', colors.colorPrimary);
     });
 
     it('has correct secondary headline accent color', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('accent-color', 'secondary');
         });
-        cy.get('.header-content__title').should('have.css', 'color', colorSecondary);
+        cy.get('.header-content__title').should('have.css', 'color', colors.colorSecondary);
     });
 
     it('has correct grey headline accent color', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('accent-color', 'grey');
         });
-        cy.get('.header-content__title').should('have.css', 'color', colorFontDark);
+        cy.get('.header-content__title').should('have.css', 'color', colors.colorFontDark);
     });
 
     it('has correct default button variant color', () => {
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorPrimary);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
         cy.get('.header-content__cta').realHover();
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorPrimaryDark);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimaryDark);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
     });
 
     it('has correct primary button variant color', () => {
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorPrimary);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
         cy.get('.header-content__cta').realHover();
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorPrimaryDark);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimaryDark);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
     });
 
     it('has correct secondary button variant color', () => {
         cy.get('.header-content__cta').then((e) => {
             e[0].setAttribute('button-variant', 'secondary');
         });
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorSecondary);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorSecondary);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
         cy.get('.header-content__cta').realHover();
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorSecondaryDark);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorSecondaryDark);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
     });
 
     it('has correct font button variant color', () => {
         cy.get('.header-content__cta').then((e) => {
             e[0].setAttribute('button-variant', 'font');
         });
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorFont);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorFont);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
         cy.get('.header-content__cta').realHover();
-        cy.get('.header-content__cta').should('have.css', 'background-color', colorFontDark);
-        cy.get('.header-content__cta').should('have.css', 'color', colorBg);
+        cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorFontDark);
+        cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
     });
 });
 

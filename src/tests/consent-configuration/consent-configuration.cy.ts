@@ -1,9 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorWarning = Cypress.env('colorWarning');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('consent configuration', () => {
     beforeEach(() => {
@@ -28,13 +25,13 @@ describe('consent configuration', () => {
             expect(consentWidget).to.have.css('margin-bottom').equal('0px');
             expect(consentWidget).to.have.css('z-index').equal('1');
             expect(consentWidget).to.have.css('padding').equal('24px');
-            expect(consentWidget).to.have.css('border').equal(`1px solid ${colorFontLight}`);
+            expect(consentWidget).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
             expect(consentWidget).to.have.css('border-radius').equal('4px');
-            expect(consentWidget).to.have.css('background-color').equal(colorBg);
+            expect(consentWidget).to.have.css('background-color').equal(colors.colorBg);
         });
 
         cy.get('.consent-widget__title').then((consentWidgetTitle) => {
-            expect(consentWidgetTitle).to.have.css('color').equal(colorFont);
+            expect(consentWidgetTitle).to.have.css('color').equal(colors.colorFont);
             expect(consentWidgetTitle).to.have.css('margin').equal('0px 0px 16px');
         });
 
@@ -59,8 +56,8 @@ describe('consent configuration with warning', () => {
             expect(warning).to.have.css('justify-content').equal('center');
             expect(warning).to.have.css('gap').equal('16px');
             expect(warning).to.have.css('margin').equal('0px');
-            expect(warning).to.have.css('color').equal(colorWarning);
-            expect(warning).to.have.css('border').equal(`1px solid ${colorWarning}`);
+            expect(warning).to.have.css('color').equal(colors.colorWarning);
+            expect(warning).to.have.css('border').equal(`1px solid ${colors.colorWarning}`);
             expect(warning).to.have.css('padding').equal('8px');
             expect(warning).to.have.css('border-radius').equal('4px');
         });
@@ -69,7 +66,7 @@ describe('consent configuration with warning', () => {
             expect(warningIcon).to.have.attr('icon-name').equal('tools');
             expect(warningIcon).to.have.attr('icon-color').equal('warning');
             expect(warningIcon).to.have.attr('icon-size').equal('normal');
-            expect(warningIcon).to.have.css('background-color').equal(colorWarning);
+            expect(warningIcon).to.have.css('background-color').equal(colors.colorWarning);
         })
     });
 });

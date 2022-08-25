@@ -1,11 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontO20 = Cypress.env('colorFontO20');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryLight = Cypress.env('colorPrimaryLight');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
+const colors = Cypress.env('colors');
 
 describe('Forms / toggle input', () => {
     beforeEach(() => {
@@ -47,7 +42,7 @@ describe('Forms / toggle input', () => {
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').before('border-radius').should('eq', '5px');
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorFontLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontLight);
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').after('display').should('eq', 'block');
         // @ts-ignore
@@ -59,42 +54,42 @@ describe('Forms / toggle input', () => {
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').after('border-radius').should('eq', '50%');
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorFont);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorFont);
     });
 
     it('select has correct hover styles', () => {
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorFontLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontLight);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorFont);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorFont);
         cy.get('.input-group--toggle .toggle-group .toggle').realHover();
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorFontLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontLight);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorPrimary);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorPrimary);
     });
 
     it('has correct checked styles', () => {
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorFontLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontLight);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorFont);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorFont);
         cy.get('.input-group--toggle .toggle-group .toggle').click();
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorPrimaryLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorPrimaryLight);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorPrimary);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorPrimary);
         cy.get('.input-group--toggle .toggle-group .toggle').realHover();
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorPrimaryLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorPrimaryLight);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorPrimaryDark);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorPrimaryDark);
     });
 
     it('select has correct focus styles', () => {
         cy.get('.input-group--toggle .toggle-group .toggle').should('have.css', 'outline', 'rgb(0, 0, 0) none 0px');
         cy.get('.input-group--toggle .toggle-group .toggle').focus();
-        cy.get('.input-group--toggle .toggle-group .toggle').should('have.css', 'outline', `${colorPrimary} solid 2px`);
+        cy.get('.input-group--toggle .toggle-group .toggle').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 });
 
@@ -107,17 +102,17 @@ describe('Forms / toggle - disabled', () => {
 
     it('checkbox has correct disabled styles', () => {
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorFontO20);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontO20);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorFontLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorFontLight);
     });
 
     it('checkbox has correct hover styles when disabled', () => {
         cy.get('.input-group--toggle .toggle-group .toggle').realHover();
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colorFontO20);
+        cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontO20);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colorFontLight);
+        cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorFontLight);
     });
 });
 

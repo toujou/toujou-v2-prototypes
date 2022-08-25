@@ -1,11 +1,6 @@
 /// <reference types="cypress" />
 
-const colorBg = Cypress.env('colorBg');
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorError = Cypress.env('colorError');
+const colors = Cypress.env('colors');
 
 describe('Forms / image upload', () => {
     beforeEach(() => {
@@ -30,10 +25,10 @@ describe('Forms / image upload', () => {
             expect(fileUploadInput).to.exist;
             expect(fileUploadInput).to.have.attr('type').equal('file');
             expect(fileUploadInput).to.have.css('position').equal('relative');
-            expect(fileUploadInput).to.have.css('border').equal(`1px solid ${colorFontLight}`);
-            expect(fileUploadInput).to.have.css('background-color').equal(colorBg);
+            expect(fileUploadInput).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
+            expect(fileUploadInput).to.have.css('background-color').equal(colors.colorBg);
             expect(fileUploadInput).to.have.css('padding').equal('24px 8px 8px');
-            expect(fileUploadInput).to.have.css('color').equal(colorFont);
+            expect(fileUploadInput).to.have.css('color').equal(colors.colorFont);
             expect(fileUploadInput).to.have.css('font-size').equal('16px');
             expect(fileUploadInput).to.have.css('font-weight').equal('600');
         });
@@ -41,12 +36,12 @@ describe('Forms / image upload', () => {
 
     it('image upload input has correct hover styles', () => {
         cy.get('.input-group--file-upload .input').realHover();
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colorFont}`)
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
 
     it('image upload input has correct focus styles', () => {
         cy.get('.input-group--file-upload .input').focus();
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colorPrimary}`)
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
     });
 });
 
@@ -59,8 +54,8 @@ describe('Forms / image upload input - disabled', () => {
 
     it('input--text group has correct disabled styles', () => {
         cy.get('.input-group--file-upload .input').invoke('attr', 'disabled').should('exist');
-        cy.get('.input-group--file-upload .input').should('have.css', 'color', colorFontLight)
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'color', colors.colorFontLight)
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
         cy.get('.input-group--file-upload .input').should('have.css', 'pointer-events', 'none');
     });
 
@@ -79,9 +74,9 @@ describe('Forms / image upload input - success', () => {
     });
 
     it('input--text group has correct success styles', () => {
-        cy.get('.input-group--file-upload .input').should('have.css', 'color', colorFont)
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colorSuccess}`);
-        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colorSuccess} solid 1px`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'color', colors.colorFont)
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorSuccess}`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
     });
 });
 
@@ -93,9 +88,9 @@ describe('Forms / image upload input - error', () => {
     });
 
     it('input--text group has correct success styles', () => {
-        cy.get('.input-group--file-upload .input').should('have.css', 'color', colorFont)
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colorError}`);
-        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colorError} solid 1px`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'color', colors.colorFont)
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorError}`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colors.colorError} solid 1px`);
     });
 });
 

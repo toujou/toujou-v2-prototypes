@@ -1,10 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorError = Cypress.env('colorError');
+const colors = Cypress.env('colors');
 
 describe('Forms / input label', () => {
     beforeEach(() => {
@@ -18,14 +14,14 @@ describe('Forms / input label', () => {
            expect(label).to.have.css('top').equal('8px');
            expect(label).to.have.css('left').equal('8px');
            expect(label).to.have.css('font-size').equal('12px');
-           expect(label).to.have.css('color').equal(colorFont);
+           expect(label).to.have.css('color').equal(colors.colorFont);
            expect(label).to.have.css('z-index').equal('1');
         });
     });
 
     it('has correct styles when group has focus', () => {
         cy.get('.input-group--text .input--text').focus();
-        cy.get('.input-group--text .input-label').should('have.css', 'color', colorPrimary);
+        cy.get('.input-group--text .input-label').should('have.css', 'color', colors.colorPrimary);
     });
 });
 
@@ -35,7 +31,7 @@ describe('Forms / input label - disabled group', () => {
     });
 
     it('has correct styles when group is disabled', () => {
-        cy.get('.input-group--text .input-label').should('have.css', 'color', colorFontLight);
+        cy.get('.input-group--text .input-label').should('have.css', 'color', colors.colorFontLight);
     });
 })
 
@@ -45,7 +41,7 @@ describe('Forms / input label - success group', () => {
     });
 
     it('has correct styles when group has success', () => {
-        cy.get('.input-group--text .input-label').should('have.css', 'color', colorSuccess);
+        cy.get('.input-group--text .input-label').should('have.css', 'color', colors.colorSuccess);
     });
 })
 
@@ -55,7 +51,7 @@ describe('Forms / input label - error group', () => {
     });
 
     it('has correct styles when group has error', () => {
-        cy.get('.input-group--text .input-label').should('have.css', 'color', colorError);
+        cy.get('.input-group--text .input-label').should('have.css', 'color', colors.colorError);
     });
 })
 

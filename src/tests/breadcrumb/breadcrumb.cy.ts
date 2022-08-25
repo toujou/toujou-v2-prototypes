@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
-const colorFont = Cypress.env('colorFont');
+const colors = Cypress.env('colors');
 
 describe('toujou-breadcrumb - desktop', () => {
     beforeEach(() => {
@@ -23,15 +21,15 @@ describe('toujou-breadcrumb - desktop', () => {
 
     it('last item is selected', () => {
         cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').invoke('attr', 'aria-current').should('eq', 'page');
-        cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').should('have.css', 'color', colorPrimary);
+        cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').should('have.css', 'color', colors.colorPrimary);
         cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').should('have.css', 'pointer-events', 'none');
     });
 
     it('nav items have correct hover styles', () => {
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colorFont);
+        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorFont);
         // @ts-ignore
         cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').realHover()
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colorPrimaryDark);
+        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorPrimaryDark);
     });
 
     it('first item has "hover" icon', () => {

@@ -1,15 +1,6 @@
 /// <reference types="cypress" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryLight = Cypress.env('colorPrimaryLight');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
-const colorSecondary= Cypress.env('colorSecondary');
-const colorSecondaryLight = Cypress.env('colorSecondaryLight');
-const colorSecondaryDark = Cypress.env('colorSecondaryDark');
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorFontDark = Cypress.env('colorFontDark');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('toujou-breadcrumb - desktop', () => {
     beforeEach(() => {
@@ -34,14 +25,14 @@ describe('toujou-breadcrumb - desktop', () => {
         cy.get('toujou-slider').then((e) => {
             e[0].setAttribute('auto-play', '');
         });
-        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colorFont);
-        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colorFont);
-        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colorFont);
-        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colorFontLight);
-        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colorFontDark);
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colors.colorFont);
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorFont);
+        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colors.colorFont);
+        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colors.colorFontDark);
     });
 
     it('has correct primary design colors', () => {
@@ -49,14 +40,14 @@ describe('toujou-breadcrumb - desktop', () => {
             e[0].setAttribute('auto-play', '');
             e[0].setAttribute('slider-design', 'primary');
         });
-        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colorPrimary);
-        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colorPrimary);
-        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colorPrimary);
-        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colorPrimaryLight);
-        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colorPrimaryDark);
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colors.colorPrimaryLight);
+        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colors.colorPrimaryDark);
     });
 
     it('has correct secondary design colors', () => {
@@ -64,14 +55,14 @@ describe('toujou-breadcrumb - desktop', () => {
             e[0].setAttribute('auto-play', '');
             e[0].setAttribute('slider-design', 'secondary');
         });
-        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colorSecondary);
-        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colorSecondary);
-        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colorSecondary);
-        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colorSecondaryLight);
-        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colorSecondaryDark);
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colors.colorSecondary);
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorSecondary);
+        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colors.colorSecondary);
+        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colors.colorSecondaryLight);
+        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colors.colorSecondaryDark);
     });
 
     it('has correct default light-grey colors', () => {
@@ -79,14 +70,14 @@ describe('toujou-breadcrumb - desktop', () => {
             e[0].setAttribute('auto-play', '');
             e[0].setAttribute('slider-design', 'light-grey');
         });
-        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colorFontLight);
-        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colorFontLight);
-        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colorFontDark);
-        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colorFontDark);
-        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colorFont);
-        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colorBg);
-        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colorFontLight);
-        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colorFontDark);
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colors.colorFontDark);
+        cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colors.colorFontDark);
+        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colors.colorFont);
+        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colors.colorBg);
+        cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colors.colorFontDark);
     });
 
     it('has can hide the counter', () => {

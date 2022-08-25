@@ -1,9 +1,6 @@
 /// <reference types="cypress" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorSecondary = Cypress.env('colorSecondary');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('divider', () => {
     beforeEach(() => {
@@ -25,7 +22,7 @@ describe('divider', () => {
     });
 
     it('has correct primary color', () => {
-        cy.get('.divider').should('have.css', 'background-color', colorPrimary);
+        cy.get('.divider').should('have.css', 'background-color', colors.colorPrimary);
     });
 })
 
@@ -35,7 +32,7 @@ describe('divider - type background', () => {
     });
 
     it('has correct background color', () => {
-        cy.get('.divider').should('have.css', 'background-color', colorBg);
+        cy.get('.divider').should('have.css', 'background-color', colors.colorBg);
     });
 })
 
@@ -45,7 +42,7 @@ describe('divider - type primary', () => {
     });
 
     it('has correct primary color', () => {
-        cy.get('.divider').should('have.css', 'background-color', colorPrimary);
+        cy.get('.divider').should('have.css', 'background-color', colors.colorPrimary);
     });
 })
 
@@ -55,7 +52,7 @@ describe('divider - type secondary', () => {
     });
 
     it('has correct secondary color', () => {
-        cy.get('.divider').should('have.css', 'background-color', colorSecondary);
+        cy.get('.divider').should('have.css', 'background-color', colors.colorSecondary);
     });
 })
 
@@ -65,7 +62,7 @@ describe('divider - type grey', () => {
     });
 
     it('has correct grey color', () => {
-        cy.get('.divider').should('have.css', 'background-color', colorFontLight);
+        cy.get('.divider').should('have.css', 'background-color', colors.colorFontLight);
     });
 })
 

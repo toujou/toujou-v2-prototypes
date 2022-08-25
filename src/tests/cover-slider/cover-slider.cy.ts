@@ -1,12 +1,6 @@
 /// <reference types="cypress" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryLight = Cypress.env('colorPrimaryLight');
-const colorSecondary = Cypress.env('colorSecondary');
-const colorSecondaryLight = Cypress.env('colorSecondaryLight');
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('toujou-cover-slider - desktop', () => {
     beforeEach(() => {
@@ -35,10 +29,10 @@ describe('toujou-cover-slider - desktop', () => {
     });
 
     it('link has correct link hover effect', () => {
-        cy.get('a.cover-slider__link h3').should('have.css', 'color', colorBg);
+        cy.get('a.cover-slider__link h3').should('have.css', 'color', colors.colorBg);
         cy.get('a.cover-slider__link .single-media').should('have.css', 'filter', 'none');
         cy.get('#splide01-slide01 a.cover-slider__link').realHover();
-        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colorPrimaryLight);
+        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colors.colorPrimaryLight);
         cy.get('#splide01-slide01 a.cover-slider__link .single-media').should('have.css', 'filter', 'brightness(0.75)');
     });
 })
@@ -50,10 +44,10 @@ describe('toujou-cover-slider - primary design', () => {
     });
 
     it('link has correct link hover effect', () => {
-        cy.get('a.cover-slider__link h3').should('have.css', 'color', colorPrimary);
+        cy.get('a.cover-slider__link h3').should('have.css', 'color', colors.colorPrimary);
         cy.get('a.cover-slider__link .single-media').should('have.css', 'filter', 'none');
         cy.get('#splide01-slide01 a.cover-slider__link').realHover();
-        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colorPrimaryLight);
+        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colors.colorPrimaryLight);
         cy.get('#splide01-slide01 a.cover-slider__link .single-media').should('have.css', 'filter', 'brightness(0.75)');
     });
 })
@@ -65,10 +59,10 @@ describe('toujou-cover-slider - secondary design', () => {
     });
 
     it('link has correct link hover effect', () => {
-        cy.get('a.cover-slider__link h3').should('have.css', 'color', colorSecondary);
+        cy.get('a.cover-slider__link h3').should('have.css', 'color', colors.colorSecondary);
         cy.get('a.cover-slider__link .single-media').should('have.css', 'filter', 'none');
         cy.get('#splide01-slide01 a.cover-slider__link').realHover();
-        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colorSecondaryLight);
+        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colors.colorSecondaryLight);
         cy.get('#splide01-slide01 a.cover-slider__link .single-media').should('have.css', 'filter', 'brightness(0.75)');
     });
 })
@@ -80,10 +74,10 @@ describe('toujou-cover-slider - inverted design', () => {
     });
 
     it('link has correct link hover effect', () => {
-        cy.get('a.cover-slider__link h3').should('have.css', 'color', colorFont);
+        cy.get('a.cover-slider__link h3').should('have.css', 'color', colors.colorFont);
         cy.get('a.cover-slider__link .single-media').should('have.css', 'filter', 'none');
         cy.get('#splide01-slide01 a.cover-slider__link').realHover();
-        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colorFontLight);
+        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colors.colorFontLight);
         cy.get('#splide01-slide01 a.cover-slider__link .single-media').should('have.css', 'filter', 'brightness(0.75)');
     });
 })

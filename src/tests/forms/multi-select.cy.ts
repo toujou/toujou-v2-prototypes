@@ -1,11 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorError = Cypress.env('colorError');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('Forms / multi-select input', () => {
     beforeEach(() => {
@@ -25,22 +20,22 @@ describe('Forms / multi-select input', () => {
     });
 
     it('multi-select select input has correct styles', () => {
-        cy.get('.multi-select').should('have.css', 'background-color', colorBg);
+        cy.get('.multi-select').should('have.css', 'background-color', colors.colorBg);
         cy.get('.multi-select').should('have.css', 'border-radius', '4px');
         cy.get('.multi-select').should('have.css', 'padding', '24px 8px 8px');
-        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
     });
 
     it('select has correct hover styles', () => {
         cy.get('.multi-select').realHover();
-        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colorFont}`);
-        cy.get('.multi-select').should('have.css', 'outline', `${colorFont} solid 1px`);
+        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colors.colorFont}`);
+        cy.get('.multi-select').should('have.css', 'outline', `${colors.colorFont} solid 1px`);
     });
 
     it('select has correct focus styles', () => {
         cy.get('.multi-select').focus();
-        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colorPrimary}`);
-        cy.get('.multi-select').should('have.css', 'outline', `${colorPrimary} solid 1px`);
+        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
+        cy.get('.multi-select').should('have.css', 'outline', `${colors.colorPrimary} solid 1px`);
     });
 });
 
@@ -53,7 +48,7 @@ describe('Forms / multi-select input - disabled', () => {
 
     it('multi-select has correct disabled styles', () => {
         cy.get('.input-group--multi-select').invoke('attr', 'class').should('contain', 'input-group--disabled');
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
         cy.get('.input-group--multi-select .multi-select').should('have.css', 'pointer-events', 'none');
         // @ts-ignore
     });
@@ -74,8 +69,8 @@ describe('Forms / multi-select - success', () => {
     });
 
     it('multi-select has correct success styles', () => {
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colorSuccess}`);
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colorSuccess} solid 1px`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colors.colorSuccess}`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
     });
 });
 
@@ -87,8 +82,8 @@ describe('Forms / multi-select - error', () => {
     });
 
     it('multi-select has correct error styles', () => {
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colorError}`);
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colorError} solid 1px`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colors.colorError}`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colors.colorError} solid 1px`);
     });
 });
 

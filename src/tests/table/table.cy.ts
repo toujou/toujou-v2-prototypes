@@ -1,9 +1,6 @@
 /// <reference types="cypress" />
 
-const colorBg = Cypress.env('colorBg');
-const colorFont = Cypress.env('colorFont');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorFontO10 = Cypress.env('colorFontO10');
+const colors = Cypress.env('colors');
 
 describe('table', () => {
     beforeEach(() => {
@@ -26,20 +23,20 @@ describe('table', () => {
     });
 
     it('table element has correct styles', () => {
-        cy.get('table.table tr:nth-child(1)').should('have.css', 'background-color', colorFontO10);
-        cy.get('table.table tr:nth-child(2)').should('have.css', 'background-color', colorBg);
-        cy.get('table.table tr:nth-child(3)').should('have.css', 'background-color', colorFontO10);
-        cy.get('table.table tr:nth-child(4)').should('have.css', 'background-color', colorBg);
+        cy.get('table.table tr:nth-child(1)').should('have.css', 'background-color', colors.colorFontO10);
+        cy.get('table.table tr:nth-child(2)').should('have.css', 'background-color', colors.colorBg);
+        cy.get('table.table tr:nth-child(3)').should('have.css', 'background-color', colors.colorFontO10);
+        cy.get('table.table tr:nth-child(4)').should('have.css', 'background-color', colors.colorBg);
 
-        cy.get('table.table tr td').should('have.css', 'color', colorFont);
-        cy.get('table.table tr th').should('have.css', 'color', colorPrimary);
+        cy.get('table.table tr td').should('have.css', 'color', colors.colorFont);
+        cy.get('table.table tr th').should('have.css', 'color', colors.colorPrimary);
     });
 
     it('table caption and summary have correct styles', () => {
-        cy.get('table.table .table__caption').should('have.css', 'color', colorFont);
+        cy.get('table.table .table__caption').should('have.css', 'color', colors.colorFont);
         cy.get('table.table .table__caption').should('have.css', 'margin-bottom', '8px');
         cy.get('table.table .table__caption').should('have.css', 'font-size', '16px');
-        cy.get('table.table .table__summary').should('have.css', 'color', colorFont);
+        cy.get('table.table .table__summary').should('have.css', 'color', colors.colorFont);
         cy.get('table.table .table__summary').should('have.css', 'font-size', '14px');
     });
 })

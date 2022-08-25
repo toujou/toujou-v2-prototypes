@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
-const colorBg = Cypress.env('colorBg');
-const colorPrimary = Cypress.env('colorPrimary');
+const colors = Cypress.env('colors');
 
 describe('Forms / required inputs', () => {
     beforeEach(() => {
@@ -18,8 +17,8 @@ describe('Forms / required inputs', () => {
             expect(button).to.have.attr('type').eq('submit');
             expect(button).to.have.attr('is').eq('toujou-button');
             expect(button).to.have.text('Submit');
-            expect(button).to.have.css('background-color').eq(colorPrimary);
-            expect(button).to.have.css('color').eq(colorBg);
+            expect(button).to.have.css('background-color').eq(colors.colorPrimary);
+            expect(button).to.have.css('color').eq(colors.colorBg);
         })
     });
 });

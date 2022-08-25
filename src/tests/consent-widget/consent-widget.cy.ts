@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('consent widget', () => {
     beforeEach(() => {
@@ -27,13 +25,13 @@ describe('consent widget', () => {
             expect(consentWidget).to.have.css('margin-bottom').equal('0px');
             expect(consentWidget).to.have.css('z-index').equal('100');
             expect(consentWidget).to.have.css('padding').equal('24px');
-            expect(consentWidget).to.have.css('border').equal(`1px solid ${colorFontLight}`);
+            expect(consentWidget).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
             expect(consentWidget).to.have.css('border-radius').equal('4px');
-            expect(consentWidget).to.have.css('background-color').equal(colorBg);
+            expect(consentWidget).to.have.css('background-color').equal(colors.colorBg);
         });
 
         cy.get('.consent-widget__title').then((consentWidgetTitle) => {
-            expect(consentWidgetTitle).to.have.css('color').equal(colorFont);
+            expect(consentWidgetTitle).to.have.css('color').equal(colors.colorFont);
             expect(consentWidgetTitle).to.have.css('margin').equal('0px 0px 16px');
         });
 

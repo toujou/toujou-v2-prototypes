@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
-const colorError = Cypress.env('colorError');
-const colorSuccess = Cypress.env('colorSuccess');
+const colors = Cypress.env('colors');
 
 describe('Forms / input group', () => {
     beforeEach(() => {
@@ -31,7 +30,7 @@ describe('Forms / input group with error', () => {
         // @ts-ignore
         cy.get('.input-group--text').after('display').should('eq', 'block');
         // @ts-ignore
-        cy.get('.input-group--text').after('background-color').should('eq', colorError);
+        cy.get('.input-group--text').after('background-color').should('eq', colors.colorError);
         // @ts-ignore
         cy.get('.input-group--text').after('-webkit-mask-image').should('contain', 'icon-info');
 
@@ -47,7 +46,7 @@ describe('Forms / input group with success', () => {
         // @ts-ignore
         cy.get('.input-group--text').after('display').should('eq', 'block');
         // @ts-ignore
-        cy.get('.input-group--text').after('background-color').should('eq', colorSuccess);
+        cy.get('.input-group--text').after('background-color').should('eq', colors.colorSuccess);
         // @ts-ignore
         cy.get('.input-group--text').after('-webkit-mask-image').should('contain', 'icon-check');
 

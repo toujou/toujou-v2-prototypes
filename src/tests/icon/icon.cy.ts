@@ -1,18 +1,6 @@
 /// <reference types="cypress" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryLight = Cypress.env('colorPrimaryLight');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
-const colorSecondary = Cypress.env('colorSecondary');
-const colorSecondaryLight = Cypress.env('colorSecondaryLight');
-const colorSecondaryDark = Cypress.env('colorSecondaryDark');
-const colorFont = Cypress.env('colorFont');
-const colorFontDark = Cypress.env('colorFontDark');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorBg = Cypress.env('colorBg');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorWarning = Cypress.env('colorWarning');
-const colorError = Cypress.env('colorError');
+const colors = Cypress.env('colors');
 
 describe('toujou-icon', () => {
     beforeEach(() => {
@@ -119,91 +107,91 @@ describe('toujou-icon - colors', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'font');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorFont);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorFont);
     });
 
     it('has correct font dark color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'font-dark');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorFontDark);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorFontDark);
     });
 
     it('has correct font light color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'font-light');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorFontLight);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorFontLight);
     });
 
     it('has correct primary color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'primary');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorPrimary);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorPrimary);
     });
 
     it('has correct primary dark color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'primary-dark');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorPrimaryDark);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorPrimaryDark);
     });
 
     it('has correct primary light color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'primary-light');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorPrimaryLight);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorPrimaryLight);
     });
 
     it('has correct secondary color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'secondary');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorSecondary);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorSecondary);
     });
 
     it('has correct secondary dark color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'secondary-dark');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorSecondaryDark);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorSecondaryDark);
     });
 
     it('has correct secondary light color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'secondary-light');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorSecondaryLight);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorSecondaryLight);
     });
 
     it('has correct background color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'background');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorBg);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorBg);
     });
 
     it('has correct success color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'success');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorSuccess);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorSuccess);
     });
 
     it('has correct warning color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'warning');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorWarning);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorWarning);
     });
 
     it('has correct error color', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-color', 'error');
         });
-        cy.get('.icon').should('have.css', 'background-color', colorError);
+        cy.get('.icon').should('have.css', 'background-color', colors.colorError);
     });
 });
 

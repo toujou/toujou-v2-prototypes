@@ -1,9 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorBg = Cypress.env('colorBg');
+const colors = Cypress.env('colors');
 
 describe('Forms / date inputs', () => {
     beforeEach(() => {
@@ -38,10 +35,10 @@ describe('Forms / date inputs', () => {
         cy.get('.input-group--date .input--date').then((inputDate) => {
             expect(inputDate).to.exist;
             expect(inputDate).to.have.css('position').equal('relative');
-            expect(inputDate).to.have.css('border').equal(`1px solid ${colorFontLight}`);
-            expect(inputDate).to.have.css('background-color').equal(colorBg);
+            expect(inputDate).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
+            expect(inputDate).to.have.css('background-color').equal(colors.colorBg);
             expect(inputDate).to.have.css('padding').equal('24px 8px 8px');
-            expect(inputDate).to.have.css('color').equal(colorFont);
+            expect(inputDate).to.have.css('color').equal(colors.colorFont);
             expect(inputDate).to.have.css('font-size').equal('16px');
             expect(inputDate).to.have.css('font-weight').equal('600');
         });
@@ -51,10 +48,10 @@ describe('Forms / date inputs', () => {
         cy.get('.input-group--date-jquery .input--date').then((inputDateJQuery) => {
             expect(inputDateJQuery).to.exist;
             expect(inputDateJQuery).to.have.css('position').equal('relative');
-            expect(inputDateJQuery).to.have.css('border').equal(`1px solid ${colorFontLight}`);
-            expect(inputDateJQuery).to.have.css('background-color').equal(colorBg);
+            expect(inputDateJQuery).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
+            expect(inputDateJQuery).to.have.css('background-color').equal(colors.colorBg);
             expect(inputDateJQuery).to.have.css('padding').equal('24px 8px 8px');
-            expect(inputDateJQuery).to.have.css('color').equal(colorFont);
+            expect(inputDateJQuery).to.have.css('color').equal(colors.colorFont);
             expect(inputDateJQuery).to.have.css('font-size').equal('16px');
             expect(inputDateJQuery).to.have.css('font-weight').equal('600');
         });
@@ -62,22 +59,22 @@ describe('Forms / date inputs', () => {
 
     it('input date has correct hover styles', () => {
         cy.get('.input-group--date .input--date').realHover();
-        cy.get('.input-group--date .input--date').should('have.css', 'border', `1px solid ${colorFont}`)
+        cy.get('.input-group--date .input--date').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
 
     it('input jquery date has correct hover styles', () => {
         cy.get('.input-group--date-jquery .input--date').realHover();
-        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `1px solid ${colorFont}`)
+        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
 
     it('input date has correct focus styles', () => {
         cy.get('.input-group--date .input--date').focus();
-        cy.get('.input-group--date .input--date').should('have.css', 'border', `1px solid ${colorPrimary}`)
+        cy.get('.input-group--date .input--date').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
     });
 
     it('input date jquery has correct focus styles', () => {
         cy.get('.input-group--date-jquery .input--date').focus();
-        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `1px solid ${colorPrimary}`)
+        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
     });
 });
 

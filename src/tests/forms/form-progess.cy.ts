@@ -1,10 +1,6 @@
 /// <reference types="cypress" />
 
-const colorBg = Cypress.env('colorBg');
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryO10 = Cypress.env('colorPrimaryO10');
+const colors = Cypress.env('colors');
 
 describe('Forms / form progress', () => {
     beforeEach(() => {
@@ -63,16 +59,16 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress__index').should('have.css', 'text-align', 'center');
         cy.get('.form-progress__index').should('have.css', 'box-sizing', 'content-box');
         // completed
-        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `2px solid ${colorPrimary}`);
-        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'background-color', colorPrimary);
-        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'color', colorBg);
+        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
+        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'color',colors. colorBg);
         // active
-        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'border', `2px solid ${colorPrimary}`);
-        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'background-color', colorPrimaryO10);
-        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'color', colorPrimary);
+        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
+        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'background-color', colors.colorPrimaryO10);
+        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'color', colors.colorPrimary);
         // active
-        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'border', `2px solid ${colorFontLight}`);
-        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'color', colorFont);
+        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
+        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'color', colors.colorFont);
     });
 });
 

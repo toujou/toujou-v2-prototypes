@@ -1,13 +1,6 @@
 /// <reference types="cypress" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorBg = Cypress.env('colorBg');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorSuccessL15 = Cypress.env('colorSuccessL15');
-const colorError = Cypress.env('colorError');
-const colorErrorL15 = Cypress.env('colorErrorL15');
-const colorWarning = Cypress.env('colorWarning');
-const colorWarningL15 = Cypress.env('colorWarningL15');
+const colors = Cypress.env('colors');
 
 describe('toujou-snackbar action', () => {
     beforeEach(() => {
@@ -35,10 +28,10 @@ describe('toujou-snackbar action', () => {
 
     it('has correct info styles', () => {
         cy.get('#snackbarTriggerButton').click();
-        cy.get('toujou-snackbar').should('have.css', 'background-color', colorPrimary);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colors.colorBg);
         cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'font-size', '16px');
-        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colors.colorBg);
         cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'font-size', '14px');
         cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'text-transform', 'uppercase');
     });
@@ -51,10 +44,10 @@ describe('toujou-snackbar action info', () => {
 
     it('has correct info styles', () => {
         cy.get('#snackbarTriggerButton').click();
-        cy.get('toujou-snackbar').should('have.css', 'background-color', colorPrimary);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colors.colorBg);
         cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'font-size', '16px');
-        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorBg);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colors.colorBg);
         cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'font-size', '14px');
         cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'text-transform', 'uppercase');
     });
@@ -68,9 +61,9 @@ describe('toujou-snackbar action success', () => {
     it('has correct success styles', () => {
         cy.get('#snackbarTriggerButton').click();
         cy.get('toujou-snackbar').invoke('attr', 'success').should('exist');
-        cy.get('toujou-snackbar').should('have.css', 'background-color', colorSuccess);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorSuccessL15);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorSuccessL15);
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colors.colorSuccess);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colors.colorSuccessL15);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colors.colorSuccessL15);
     });
 });
 
@@ -82,9 +75,9 @@ describe('toujou-snackbar action error', () => {
     it('has correct error styles', () => {
         cy.get('#snackbarTriggerButton').click();
         cy.get('toujou-snackbar').invoke('attr', 'error').should('exist');
-        cy.get('toujou-snackbar').should('have.css', 'background-color', colorError);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorErrorL15);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorErrorL15);
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colors.colorError);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colors.colorErrorL15);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colors.colorErrorL15);
     });
 });
 
@@ -96,9 +89,9 @@ describe('toujou-snackbar action warning', () => {
     it('has correct error styles', () => {
         cy.get('#snackbarTriggerButton').click();
         cy.get('toujou-snackbar').invoke('attr', 'warning').should('exist');
-        cy.get('toujou-snackbar').should('have.css', 'background-color', colorWarning);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colorWarningL15);
-        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colorWarningL15);
+        cy.get('toujou-snackbar').should('have.css', 'background-color', colors.colorWarning);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__message').should('have.css', 'color', colors.colorWarningL15);
+        cy.get('toujou-snackbar').shadow().find('.snackbar__button').should('have.css', 'color', colors.colorWarningL15);
     });
 });
 

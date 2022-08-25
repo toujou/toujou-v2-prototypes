@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorFontDark = Cypress.env('colorFontDark');
+const colors = Cypress.env('colors');
 
 describe('toujou-details', () => {
     beforeEach(() => {
@@ -42,21 +41,21 @@ describe('toujou-details', () => {
     })
 
     it('title has correct color when closed', () => {
-        cy.get('.details__title').should('have.css', 'color', colorFontDark);
+        cy.get('.details__title').should('have.css', 'color', colors.colorFontDark);
     })
 
     it('title has correct color when open', () => {
         cy.get('.details__title').click();
-        cy.get('.details__title').should('have.css', 'color', colorPrimary);
+        cy.get('.details__title').should('have.css', 'color', colors.colorPrimary);
     })
 
     it('chevron has correct color when closed', () => {
-        cy.get('.details__chevron').should('have.css', 'background-color', colorFontDark);
+        cy.get('.details__chevron').should('have.css', 'background-color', colors.colorFontDark);
     })
 
     it('chevron has correct color when open', () => {
         cy.get('.details__title').click();
-        cy.get('.details__chevron').should('have.css', 'background-color', colorPrimary);
+        cy.get('.details__chevron').should('have.css', 'background-color', colors.colorPrimary);
     })
 })
 

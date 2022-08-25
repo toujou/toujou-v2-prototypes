@@ -394,4 +394,8 @@ a.inpage-nav__link:hover {
     .inpage-nav:not([ismobile]):not([element-design="default"]) .inpage-nav__link:hover {
         --inpage-nav-link-after-opacity: 0;
     }
+
+    .inpage-nav:not([ismobile]):not([element-design="default"]) .inpage-nav__item[active] .inpage-nav__link:hover {
+        color: var(--color-bg);
+    }
 }

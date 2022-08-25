@@ -1,18 +1,7 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-real-events" />
 
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
-const colorPrimaryO10 = Cypress.env('colorPrimaryO10');
-const colorSecondary = Cypress.env('colorSecondary');
-const colorSecondaryDark = Cypress.env('colorSecondaryDark');
-const colorSecondaryO10 = Cypress.env('colorSecondaryO10');
-const colorFont = Cypress.env('colorFont');
-const colorFontDark = Cypress.env('colorFontDark');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorFontO10 = Cypress.env('colorFontO10');
-const colorBg = Cypress.env('colorBg');
-const colorTransparent = Cypress.env('colorTransparent');
+const colors = Cypress.env('colors');
 
 describe('toujou-button', () => {
     beforeEach(() => {
@@ -30,39 +19,39 @@ describe('toujou-button', () => {
     });
 
     it('has correct primary colors', () => {
-        cy.get('.button').should('have.css', 'background-color', colorPrimary);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorPrimary}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorPrimaryDark);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorPrimaryDark}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorPrimaryDark);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorPrimaryDark}`);
     });
 
     it('has correct secondary colors', () => {
         cy.get('.button').then((e) => {
             e[0].setAttribute('button-variant', 'secondary');
         });
-        cy.get('.button').should('have.css', 'background-color', colorSecondary);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorSecondary}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorSecondary);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorSecondary}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorSecondaryDark);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorSecondaryDark}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorSecondaryDark);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorSecondaryDark}`);
     });
 
     it('has correct font colors', () => {
         cy.get('.button').then((e) => {
             e[0].setAttribute('button-variant', 'font');
         });
-        cy.get('.button').should('have.css', 'background-color', colorFont);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFont}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFont);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFont}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorFontDark);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontDark}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFontDark);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontDark}`);
     });
 
     it('has correct disabled primary colors', () => {
@@ -70,9 +59,9 @@ describe('toujou-button', () => {
             e[0].setAttribute('button-variant', 'primary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorFontLight);
-        cy.get('.button').should('have.css', 'color', colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'color', colors.colorFont);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
     });
 
     it('has correct disabled secondary colors', () => {
@@ -80,9 +69,9 @@ describe('toujou-button', () => {
             e[0].setAttribute('button-variant', 'secondary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorFontLight);
-        cy.get('.button').should('have.css', 'color', colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'color', colors.colorFont);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
     });
 
     it('has correct disabled font colors', () => {
@@ -90,9 +79,9 @@ describe('toujou-button', () => {
             e[0].setAttribute('button-variant', 'secondary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorFontLight);
-        cy.get('.button').should('have.css', 'color', colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'color', colors.colorFont);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
     });
 
     it('has correct default font size', () => {
@@ -161,39 +150,39 @@ describe('toujou-button border', () => {
     });
 
     it('has correct primary colors', () => {
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorPrimary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorPrimary}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorPrimary);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorPrimaryDark);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorPrimaryDark}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorPrimaryDark);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorPrimaryDark}`);
     });
 
     it('has correct secondary colors', () => {
         cy.get('.button').then((e) => {
             e[0].setAttribute('button-variant', 'secondary');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorSecondary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorSecondary}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorSecondary);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorSecondary}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorSecondaryDark);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorSecondaryDark}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorSecondaryDark);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorSecondaryDark}`);
     });
 
     it('has correct font colors', () => {
         cy.get('.button').then((e) => {
             e[0].setAttribute('button-variant', 'font');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFont}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFont);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFont}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorFontDark);
-        cy.get('.button').should('have.css', 'color', colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontDark}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFontDark);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontDark}`);
     });
 
     it('has correct disabled primary border colors', () => {
@@ -201,9 +190,9 @@ describe('toujou-button border', () => {
             e[0].setAttribute('button-variant', 'primary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
     });
 
     it('has correct disabled secondary border colors', () => {
@@ -211,9 +200,9 @@ describe('toujou-button border', () => {
             e[0].setAttribute('button-variant', 'secondary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
     });
 
     it('has correct disabled font border colors', () => {
@@ -221,9 +210,9 @@ describe('toujou-button border', () => {
             e[0].setAttribute('button-variant', 'font');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
     });
 })
 
@@ -243,39 +232,39 @@ describe('toujou-button ghost', () => {
     });
 
     it('has correct primary colors', () => {
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorPrimary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorPrimary);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorPrimaryO10);
-        cy.get('.button').should('have.css', 'color', colorPrimary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorPrimaryO10);
+        cy.get('.button').should('have.css', 'color', colors.colorPrimary);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
     });
 
     it('has correct secondary colors', () => {
         cy.get('.button').then((e) => {
             e[0].setAttribute('button-variant', 'secondary');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorSecondary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorSecondary);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorSecondaryO10);
-        cy.get('.button').should('have.css', 'color', colorSecondary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorSecondaryO10);
+        cy.get('.button').should('have.css', 'color', colors.colorSecondary);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
     });
 
     it('has correct font colors', () => {
         cy.get('.button').then((e) => {
             e[0].setAttribute('button-variant', 'font');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFont);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
         cy.get('.button').realHover();
-        cy.get('.button').should('have.css', 'background-color', colorFontO10);
-        cy.get('.button').should('have.css', 'color', colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFontO10);
+        cy.get('.button').should('have.css', 'color', colors.colorFont);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
     });
 
     it('has correct disabled primary ghost colors', () => {
@@ -283,9 +272,9 @@ describe('toujou-button ghost', () => {
             e[0].setAttribute('button-variant', 'primary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
     });
 
     it('has correct disabled secondary ghost colors', () => {
@@ -293,9 +282,9 @@ describe('toujou-button ghost', () => {
             e[0].setAttribute('button-variant', 'secondary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
     });
 
     it('has correct disabled font ghost colors', () => {
@@ -303,9 +292,9 @@ describe('toujou-button ghost', () => {
             e[0].setAttribute('button-variant', 'font');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colorTransparent);
-        cy.get('.button').should('have.css', 'color', colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colorTransparent}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('.button').should('have.css', 'color', colors.colorFontLight);
+        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
     });
 })
 

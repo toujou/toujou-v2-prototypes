@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
+const colors = Cypress.env('colors');
 
 describe('Forms / fieldset', () => {
     beforeEach(() => {
@@ -21,13 +19,13 @@ describe('Forms / fieldset', () => {
         cy.get('.fieldset').then((fieldset) => {
             expect(fieldset).to.exist;
             expect(fieldset).to.have.css('padding').equal('16px');
-            expect(fieldset).to.have.css('border').equal(`1px solid ${colorFontLight}`);
+            expect(fieldset).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
             expect(fieldset).to.have.css('border-radius').equal('4px');
             expect(fieldset).to.have.css('margin-top').equal('0px');
         });
         cy.get('.fieldset .fieldset__legend').then((fieldsetLegend) => {
             expect(fieldsetLegend).to.exist;
-            expect(fieldsetLegend).to.have.css('color').equal(colorFont);
+            expect(fieldsetLegend).to.have.css('color').equal(colors.colorFont);
             expect(fieldsetLegend).to.have.css('font-size').equal('16px');
             expect(fieldsetLegend).to.have.css('font-weight').equal('600');
             expect(fieldsetLegend).to.have.css('padding').equal('0px 8px');
@@ -36,8 +34,8 @@ describe('Forms / fieldset', () => {
 
     it('fieldset has correct focus styles', () => {
         cy.get('.fieldset .input-group:last-child .input').focus();
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colorPrimary}`)
-        cy.get('.fieldset__legend').should('have.css', 'color', colorPrimary)
+        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
+        cy.get('.fieldset__legend').should('have.css', 'color', colors.colorPrimary)
     });
 });
 
@@ -50,13 +48,13 @@ describe('Forms / fieldset - disabled', () => {
 
     it('fieldset has correct disabled styles', () => {
         cy.get('.fieldset').invoke('attr', 'class').should('contain', 'fieldset--disabled');
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colorFontLight}`);
-        cy.get('.fieldset__legend').should('have.css', 'color', colorFontLight);
+        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFontLight);
     });
 
     it('fieldset has correct hover styles when disabled', () => {
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colorFontLight}`);
-        cy.get('.fieldset__legend').should('have.css', 'color', colorFontLight);
+        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFontLight);
     });
 });
 
@@ -68,8 +66,8 @@ describe('Forms / fieldset - success', () => {
     });
 
     it('fieldset has correct success styles', () => {
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colorFontLight}`);
-        cy.get('.fieldset__legend').should('have.css', 'color', colorFont);
+        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFont);
     });
 });
 
@@ -81,8 +79,8 @@ describe('Forms / fieldset - error', () => {
     });
 
     it('fieldset has correct error styles', () => {
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colorFontLight}`);
-        cy.get('.fieldset__legend').should('have.css', 'color', colorFont);
+        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFont);
     });
 });
 

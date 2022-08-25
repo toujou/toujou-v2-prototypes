@@ -1,14 +1,6 @@
 /// <reference types="cypress" />
 
-const colorBg = Cypress.env('colorBg');
-const colorFont = Cypress.env('colorFont');
-const colorFontLight = Cypress.env('colorFontLight');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryLight = Cypress.env('colorPrimaryLight');
-const colorSuccess = Cypress.env('colorSuccess');
-const colorSuccessO25 = Cypress.env('colorSuccessO25');
-const colorError = Cypress.env('colorError');
-const colorErrorO25 = Cypress.env('colorErrorO25');
+const colors = Cypress.env('colors');
 
 describe('Forms / single checkbox input', () => {
     beforeEach(() => {
@@ -36,49 +28,49 @@ describe('Forms / single checkbox input', () => {
             expect(checkbox).to.have.css('appearance').equal('none');
             expect(checkbox).to.have.css('height').equal('16px');
             expect(checkbox).to.have.css('width').equal('16px');
-            expect(checkbox).to.have.css('background-color').equal(colorBg);
-            expect(checkbox).to.have.css('border').equal(`2px solid ${colorFont}`);
+            expect(checkbox).to.have.css('background-color').equal(colors.colorBg);
+            expect(checkbox).to.have.css('border').equal(`2px solid ${colors.colorFont}`);
             expect(checkbox).to.have.css('border-radius').equal('2px');
             expect(checkbox).to.have.css('position').equal('relative');
         });
     });
 
     it('select has correct hover styles', () => {
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFont}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFont}`);
         cy.get('.input-group--check:first-child .checkbox-group').realHover();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorPrimary}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox-group').resetRealHover();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFont}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFont}`);
         cy.get('.input-group--check:first-child .checkbox').realHover();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorPrimary}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
     });
 
     it('select has correct checked styles', () => {
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFont}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFont}`);
         cy.get('.input-group--check:first-child .checkbox').click();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorPrimary}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colorPrimary);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorPrimary);
         // @ts-ignore
-        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('eq', colorBg);
+        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('eq', colors.colorBg);
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').after('-webkit-mask-image').should('contain', 'check');
         // // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').realHover();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorPrimaryLight}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colorPrimaryLight);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorPrimaryLight}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorPrimaryLight);
         // @ts-ignore
-        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('eq', colorBg);
+        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('eq', colors.colorBg);
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').after('-webkit-mask-image').should('contain', 'check');
     });
 
     it('select has correct focus styles', () => {
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFont}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFont}`);
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'outline', 'rgb(0, 0, 0) none 0px');
         cy.get('.input-group--check:first-child .checkbox').focus();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFont}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'outline', `${colorPrimary} solid 2px`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFont}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
 
     });
 });
@@ -92,17 +84,17 @@ describe('Forms / checkbox input - disabled', () => {
 
     it('checkbox has correct disabled styles', () => {
         cy.get('.input-group--check:first-child').invoke('attr', 'class').should('contain', 'input-group--disabled');
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFontLight}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFontLight}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
     });
 
     it('checkbox has correct hover styles when disabled', () => {
         cy.get('.input-group--check:first-child .checkbox-group').realHover()
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFontLight}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFontLight}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
         cy.get('.input-group--check:first-child .checkbox').realHover()
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFontLight}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorFontLight}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
     });
 });
 
@@ -115,15 +107,15 @@ describe('Forms / checkbox - success', () => {
 
     it('radio group has correct success styles', () => {
         cy.get('.input-group--check:first-child').invoke('attr', 'class').should('contain', 'input-group--has-success');
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorSuccess}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colorSuccessO25);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorSuccess}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorSuccessO25);
         cy.get('.input-group--check:first-child .checkbox').click();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorSuccess}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colorSuccess);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorSuccess}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorSuccess);
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').after('-webkit-mask-image').should('contain', 'check');
         // @ts-ignore
-        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('contain', colorBg);
+        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('contain', colors.colorBg);
     });
 });
 
@@ -136,15 +128,15 @@ describe('Forms / checkbox - error', () => {
 
     it('radio group has correct success styles', () => {
         cy.get('.input-group--check:first-child').invoke('attr', 'class').should('contain', 'input-group--has-error');
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorError}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colorErrorO25);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorError}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorErrorO25);
         cy.get('.input-group--check:first-child .checkbox').click();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colorError}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colorError);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorError}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorError);
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').after('-webkit-mask-image').should('contain', 'check');
         // @ts-ignore
-        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('contain', colorBg);
+        cy.get('.input-group--check:first-child .checkbox').after('background-color').should('contain', colors.colorBg);
     });
 });
 
