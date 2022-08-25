@@ -386,7 +386,7 @@ a.inpage-nav__link:hover {
     .inpage-nav[ismobile][element-design="secondary"] .inpage-nav__link:hover {
         color: var(--color-secondary-dark);
     }
-    
+
     .inpage-nav[ismobile][element-design="inverted"] .inpage-nav__link:hover {
         color: var(--color-primary);
     }
