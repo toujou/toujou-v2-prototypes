@@ -37,35 +37,15 @@ export default {
             defaultValue: [true],
             required: true,
         },
-        gap: {
-            table: {
-                category: "Cover slider settings",
-                defaultValue: { summary: false },
-            },
-            name: 'Gap',
-            description: "Add a gap between the elements, can normally be done via CSS variables",
-            control: { type: 'boolean' },
-            defaultValue: [false],
-            required: true,
-        },
     }
 } as Meta;
 
 interface CoverSliderStoryProps {
     elementDesign: string,
     isSlider: boolean,
-    gap: boolean,
 }
 
 const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => {
-    function addVariable() {
-        requestAnimationFrame(() => {
-            const coverSliderEl = document.querySelector('.cover-slider') as HTMLElement;
-            coverSliderEl!.style.setProperty('--cover-slider-card-gap', '16');
-        });
-        return ''
-    }
-
     return `
         <toujou-cover-slider class="cover-slider" aria-label="Toujou cover slider example">
             <div class="splide slider__slider">
@@ -90,9 +70,10 @@ const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => 
                         </li>
                         ${args.isSlider ? `
                             <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
+                                <a href="#" class="cover-slider__link">
+                                    <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                        <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                    </toujou-single-media>
                                 </a>
                             </li>
                         ` : ''}
@@ -144,8 +125,6 @@ const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => 
                 </div>      
             </div>
         </toujou-cover-slider>
-        
-        ${args.gap ? addVariable() : ''}
     `;
 };
 
@@ -154,7 +133,6 @@ export const CoverSlider = Template.bind({});
 CoverSlider.args = {
     elementDesign: 'default',
     isSlider: true,
-    gap: false,
 }
 
 

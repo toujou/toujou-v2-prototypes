@@ -304,6 +304,17 @@
     background-color: var(--collection-item-bottom-background-color);
 }
 
+.collection-item[item-type="product"][item-design="primary"] .collection-item__bottom {
+    background-color: var(--color-primary);
+}
+
+.collection-item[item-type="product"][item-design="secondary"] .collection-item__bottom {
+    background-color: var(--color-secondary);
+}
+.collection-item[item-type="product"][item-design="inverted"] .collection-item__bottom {
+    background-color: var(--color-font-dark);
+}
+
 .collection-item__title {
     font-size: var(--collection-item-title-font-size);
     color: var(--collection-item-title-color);

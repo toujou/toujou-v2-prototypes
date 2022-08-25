@@ -1,13 +1,5 @@
 /// <reference types="cypress" />
 
-const colorBg = Cypress.env('colorBg');
-const colorFont = Cypress.env('colorFont');
-const colorFontDark = Cypress.env('colorFontDark');
-const colorPrimary = Cypress.env('colorPrimary');
-const colorPrimaryDark = Cypress.env('colorPrimaryDark');
-const colorPrimaryLight = Cypress.env('colorPrimaryLight');
-const colorError = Cypress.env('colorError');
-
 describe('item collection', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-default');
