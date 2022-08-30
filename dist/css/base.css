@@ -1034,8 +1034,9 @@ figure {
 }
 
 @media (hover: hover) {
-    .checkbox:hover {
-        --checkbox-border-color: var(--color-font-dark);
+    .checkbox:hover,
+    .checkbox-group:hover .checkbox {
+        --checkbox-border-color: var(--color-primary);
 
         cursor: pointer;
     }
@@ -1286,7 +1287,8 @@ figure {
     justify-content: center;
     list-style:none;
     padding: 0;
-    margin: 0
+    margin: 0;
+    pointer-events: none;
 }
 
 .form-progress__headline {
@@ -1434,6 +1436,7 @@ input[type=number]::-webkit-outer-spin-button {
     --input-description-font-size: var(--font-size-s);
     --input-description-font-weight: var(--font-weight-text-normal);
     --input-description-column: 1 / -1;
+    --input-description-pointer-events: none;
 
     order: var(--input-description-order);
     margin: var(--input-description-margin);
@@ -1443,6 +1446,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: var(--input-description-font-size);
     font-weight: var(--input-description-font-weight);
     grid-column: var(--input-description-column);
+    pointer-events: var(--input-description-pointer-events);
 }
 
 .input-description--after-group {
@@ -1539,6 +1543,7 @@ input[type=number]::-webkit-outer-spin-button {
     --input-group-icon-right: var(--spacing-l);
 }
 
+.input-group--disabled,
 .input-group--disabled > * {
     pointer-events: none;
 }
@@ -1889,6 +1894,13 @@ input[type=number]::-webkit-outer-spin-button {
     --input-group-icon-right: var(--spacing-m);
 }
 
+@media (hover: hover) {
+    .multi-select:hover {
+        border: var(--form-input-hover-border);
+        outline: var(--form-input-hover-border);
+    }
+}
+
 .radio {
     --radio-appearance: none;
     --radio-display: block;
@@ -2138,7 +2150,7 @@ input[type=number]::-webkit-outer-spin-button {
     --toggle-thumb-size: var(--toggle-height);
     --toggle-thumb-default-color: var(--color-font);
     --toggle-thumb-checked-color: var(--color-primary);
-    --toggle-thumb-hover-color: var(--color-font-dark);
+    --toggle-thumb-hover-color: var(--color-primary);
     --toggle-thumb-checked-hover-color: var(--color-primary-dark);
     --toggle-thumb-border-radius: var(--border-radius-circle);
     --toggle-thumb-position: absolute;
@@ -3128,8 +3140,12 @@ hr[divider-type="grey"],
 }
 
 exit-warning {
-    --toujou-modal-header-border-bottom: var(--border-width-normal) solid var(--color-font-light);
     --toujou-modal-header-padding: var(--spacing-s);
+    --toujou-modal-header-position: sticky;
+    --toujou-modal-header-top: 0;
+    --toujou-modal-header-box-shadow: var(--shadow-s);
+    --toujou-modal-header-background: var(--color-bg);
+    --toujou-modal-header-border-bottom: none;
 
     --toujou-modal-title-font-family: var(--font-family-headline);
     --toujou-modal-title-color: var(--color-warning);
@@ -3140,6 +3156,7 @@ exit-warning {
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);
+    --toujou-modal-content-border-radius: var(--border-radius-normal);
 
     z-index: var(--toujou-modal-z-index);
 }
@@ -4153,8 +4170,12 @@ exit-warning {
 /* stylelint-enable property-no-vendor-prefix */
 
 toujou-modal {
-    --toujou-modal-header-border-bottom: var(--border-width-normal) solid var(--color-font-light);
     --toujou-modal-header-padding: var(--spacing-s);
+    --toujou-modal-header-position: sticky;
+    --toujou-modal-header-top: 0;
+    --toujou-modal-header-box-shadow: var(--shadow-s);
+    --toujou-modal-header-background: var(--color-bg);
+    --toujou-modal-header-border-bottom: none;
 
     --toujou-modal-title-font-family: var(--font-family-headline);
     --toujou-modal-title-color: var(--color-primary);
@@ -4165,6 +4186,7 @@ toujou-modal {
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);
+    --toujou-modal-content-border-radius: var(--border-radius-normal);
 
     z-index: var(--toujou-modal-z-index);
 }
@@ -4371,6 +4393,8 @@ toujou-modal {
     --single-media-margin: 0 auto;
     --single-media-display: block;
     --single-media-max-height: 100%;
+    --single-media-border-radius: unset;
+    --single-media-overflow: unset;
 
     --single-media-media-width: 100%;
     --single-media-media-height: auto;
@@ -4380,6 +4404,8 @@ toujou-modal {
     max-width: var(--single-media-max-width);
     margin: var(--single-media-margin);
     max-height: var(--single-media-max-height);
+    border-radius: var(--single-media-border-radius);
+    overflow: var(--single-media-overflow);
 }
 
 .header[header-type="slider"] .single-media {
@@ -4422,11 +4448,14 @@ toujou-modal {
     --toujou-snackbar-border-radius: var(--border-radius-normal);
     --toujou-snackbar-z-index: var(--z-index-notifications);
     --toujou-snackbar-transition: all var(--animation-duration-fast) var(--animation-easing-normal);
+    --toujou-snackbar-shadow: var(--shadow-normal);
 
     --toujou-snackbar-message-color: var(--color-bg);
 
     font-family: var(--toujou-snackbar-font-family);
     font-weight: var(--toujou-snackbar-font-weight);
+    box-shadow: var(--toujou-snackbar-shadow);
+    border: var(--toujou-snackbar-border) !important;
 }
 
 .snackbar[success] {
@@ -4889,7 +4918,6 @@ main > .table-container {
 
     --topbar-actions-text-display: none;
     --topbar-actions-text-z-index: 1;
-    --topbar-actions-text-color: var(--color-font);
     --topbar-actions-text-font-size: var(--font-size-s);
     --topbar-actions-text-line-height: 1;
 
@@ -4913,12 +4941,14 @@ main > .table-container {
     --topbar-icons-color: var(--color-primary);
     --topbar-icons-active-color: var(--color-primary-dark);
     --topbar-bg-color: var(--color-bg);
+    --topbar-actions-text-color: var(--color-font);
 }
 
 .topbar[navigation-theme="dark"] {
     --topbar-icons-color: var(--color-bg);
     --topbar-icons-active-color: var(--color-primary-light);
     --topbar-bg-color: var(--color-primary-dark);
+    --topbar-actions-text-color: var(--color-bg);
 }
 
 .topbar::before {
@@ -5006,7 +5036,7 @@ main > .table-container {
     }
 
     .topbar__actions-link:hover {
-        --topbar-actions-text-color: var(--color-primary-dark);
+        --topbar-actions-text-color: var(--topbar-icons-active-color);
     }
 }
 
