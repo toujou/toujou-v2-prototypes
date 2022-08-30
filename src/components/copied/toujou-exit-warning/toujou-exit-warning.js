@@ -61,9 +61,7 @@ class ToujouExitWarning extends LitElement {
     if (template) {
       this._messageTemplate = new Function('html', 'targetUrl', 'secondsRemaining', 'return html`' + template.innerHTML + '`');
     }
-    console.log('xxx', this._messageTemplate);
     super.connectedCallback();
-    this.addEventListener('opened-changed', (ev) => { console.log(ev) })
   }
 
   disconnectedCallback () {
