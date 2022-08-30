@@ -11,7 +11,7 @@ export const ToujouModalStyles = css`
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: 15;
+    z-index: var(--toujou-modal-z-index, 15);
     background: var(--toujou-modal-backdrop-color, rgba(0,0,0,.6));
     visibility: hidden;
   }
