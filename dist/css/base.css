@@ -132,6 +132,7 @@ figure {
     --border-width-l: 4px;
     --border-width-m: 2px;
     --border-width-normal: 1px;
+    --border-color-default: var(--color-font-light);
 }
 
 :root,
