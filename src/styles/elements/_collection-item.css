@@ -163,6 +163,7 @@
     --collection-item-bottom-padding: var(--spacing-m) 0;
     --collection-item-flex-direction: column;
     --collection-item-shadow: none;
+    --collection-item-figure-border-radius: var(--border-radius-normal);
 }
 
 .collection-item[item-design="primary"],
