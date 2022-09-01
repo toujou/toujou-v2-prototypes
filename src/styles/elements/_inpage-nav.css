@@ -98,9 +98,11 @@
 
     position: var(--inpage-nav-position);
     display: var(--inpage-nav-display);
+    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
     grid-template-columns: var(--inpage-nav-grid-template-columns);
     grid-template-rows: var(--inpage-nav-grid-template-rows);
     grid-template-areas: var(--inpage-nav-grid-template-areas);
+    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
     width: var(--inpage-nav-width);
     max-width: var(--inpage-nav-max-width);
     margin: var(--inpage-nav-margin);
@@ -119,8 +121,8 @@
     --inpage-nav-grid-template-columns: auto 1fr auto;
     --inpage-nav-grid-template-rows: var(--inpage-nav-height-closed) auto;
     --inpage-nav-grid-template-areas:
-            "toggle label cta"
-            ". nav .";
+        "toggle label cta"
+        ". nav .";
     --inpage-nav-list-visibility: hidden;
     --inpage-nav-list-margin: 0;
     --inpage-nav-list-flex-direction: column;
@@ -391,11 +393,11 @@ a.inpage-nav__link:hover {
         color: var(--color-primary);
     }
 
-    .inpage-nav:not([ismobile]):not([element-design="default"]) .inpage-nav__link:hover {
+    .inpage-nav:not([ismobile], [element-design="default"]) .inpage-nav__link:hover {
         --inpage-nav-link-after-opacity: 0;
     }
 
-    .inpage-nav:not([ismobile]):not([element-design="default"]) .inpage-nav__item[active] .inpage-nav__link:hover {
+    .inpage-nav:not([ismobile], [element-design="default"]) .inpage-nav__item[active] .inpage-nav__link:hover {
         color: var(--color-bg);
     }
 }

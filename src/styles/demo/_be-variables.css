@@ -55,8 +55,8 @@
     --color-error-l: 55%;
 
     /* FONT FAMILIES */
-    --font-family-headline: 'Ubuntu', sans-serif;
-    --font-family-text: 'Mulish', sans-serif;
+    --font-family-headline: "Ubuntu", sans-serif;
+    --font-family-text: "Mulish", sans-serif;
 
     /* FONT WEIGHTS */
     --font-weight-text-normal: 600;

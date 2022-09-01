@@ -313,6 +313,7 @@
 .collection-item[item-type="product"][item-design="secondary"] .collection-item__bottom {
     background-color: var(--color-secondary);
 }
+
 .collection-item[item-type="product"][item-design="inverted"] .collection-item__bottom {
     background-color: var(--color-font-dark);
 }
@@ -414,7 +415,7 @@
     a.collection-item__button:hover {
         --collection-item-button-text-decoration: underline;
 
-        color: var(--collection-item-button-text-color-hover)
+        color: var(--collection-item-button-text-color-hover);
     }
 
     .collection-item__button:hover .icon {
