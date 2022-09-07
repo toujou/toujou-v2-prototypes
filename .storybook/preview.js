@@ -15,6 +15,7 @@ import "../src/components/copied/toujou-snackbar/toujou-snackbar";
 import "../src/components/copied/toujou-modal/toujou-modal";
 import "../src/components/copied/toujou-exit-warning/toujou-exit-warning";
 import "../src/components/copied/toujou-inpage-nav/toujou-inpage-nav";
+import "../src/components/copied/toujou-spinner/toujou-spinner";
 
 import "../src/styles/StorybookStyles.css";
 
