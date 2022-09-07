@@ -14,12 +14,12 @@ export const ToujouSpinnerStyles = css`
     --toujou-spinner-dash-animation-duration: 1.4s;
     --toujou-spinner-display: inline-flex;
     --toujou-spinner-align-items: center;
-    --toujou-spiner-jusitfy-content: center;
+    --toujou-spinner-justify-content: center;
     --toujou-spinner-position: relative;
     --toujou-spinner-top: unset;
     --toujou-spinner-left: unset;
     --toujou-spinner-transform: unset;
-    --toujou-spinner-z-index: unset;
+    --toujou-spinner-z-index: auto;
     
     width: var(--toujou-spinner-size);
     height: var(--toujou-spinner-size);

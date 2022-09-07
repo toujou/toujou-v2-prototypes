@@ -32,7 +32,7 @@ interface SpinnerStoryProps {
 }
 
 const Template: Story<SpinnerStoryProps> = (args: SpinnerStoryProps) => {
-    return `<toujou-spinner ${args.isCenteredOnPage ? 'centered-on-page' : ''}></toujou-spinner>`
+    return `<toujou-spinner class="spinner" ${args.isCenteredOnPage ? 'centered-on-page' : ''}></toujou-spinner>`
 };
 
 export const Spinner = Template.bind({});
