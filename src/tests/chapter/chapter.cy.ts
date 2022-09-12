@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-const colors = Cypress.env('colors');
-
 describe('chapter', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter');

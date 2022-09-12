@@ -36,10 +36,6 @@
     --text-block-width: 100%;
 }
 
-.text-block + .text-block {
-    margin-top: var(--content-spacing-between-elements);
-}
-
 .text-block[text-block-column-count="2"],
 .text-block[text-block-column-count="3"],
 .text-block[text-block-column-count="4"] {

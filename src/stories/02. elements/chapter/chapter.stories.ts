@@ -35,7 +35,7 @@ interface ChapterStoryProps {
 
 const Template: Story<ChapterStoryProps> = (args: ChapterStoryProps) => {
     return `
-        <section class="chapter" chapter-variant="${args.variant}">
+        <section class="chapter chapter--${args.variant}">
             <toujou-text-block class="text-block" text-block-column-count="1">
                 <toujou-text-block-column class="text-block-column">
                     <div class="text-block__content">

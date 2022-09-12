@@ -82,8 +82,16 @@ h6,
     margin-top: var(--spacing-xl);
 }
 
+:is(p, ul, ol):last-child {
+    margin-bottom: 0;
+}
+
 p + :is(p, ul, ol) {
     margin-top: var(--spacing-normal);
+}
+
+:is(h1, h2, h3, h4, h5, h6, p, ul, ol, table)[text-align="center"] {
+    text-align: center;
 }
 
 .grid-column :is(p, ul, ol):first-child {
@@ -104,6 +112,10 @@ p + :is(p, ul, ol) {
 
 a {
     color: var(--color-primary);
+}
+
+p > a.button {
+    display: inline-block;
 }
 
 a:focus {

@@ -8,28 +8,30 @@
     padding: var(--chapter-padding)
 }
 
-.chapter[chapter-variant="primary"] {
+.chapter--primary {
     --chapter-background-color: var(--color-primary);
-    --color-font: var(--color-bg);
     --color-headline: var(--color-primary-dark);
 }
 
-.chapter[chapter-variant="secondary"] {
+.chapter--secondary {
     --chapter-background-color: var(--color-secondary);
-    --color-font: var(--color-bg);
     --color-headline: var(--color-secondary-dark);
 }
 
-.chapter[chapter-variant="inverted"] {
+.chapter--inverted {
     --chapter-background-color: var(--color-font);
     --color-headline: var(--color-primary-light);
 }
 
-/* We need to separate from the chapter inverted selector so the bg and cont color don't collide! */
-.chapter[chapter-variant="inverted"] * {
+/* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
+:is(.chapter--primary, .chapter--secondary, .chapter--inverted) :is(p, ul, ol, table) {
     --color-font: var(--color-bg);
 }
 
-.chapter[chapter-variant="white"] {
+:is(.chapter--primary, .chapter--secondary, .chapter--inverted) p a {
+    color: var(--color-font);
+}
+
+.chapter--white {
     --chapter-background-color: var(--color-white);
 }
