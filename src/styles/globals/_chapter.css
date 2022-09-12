@@ -1,0 +1,35 @@
+.chapter {
+    --chapter-background-color: transparent;
+    --chapter-margin: 0;
+    --chapter-padding: var(--spacing-between-elements-normal) 0;
+
+    background-color: var(--chapter-background-color);
+    margin: var(--chapter-margin);
+    padding: var(--chapter-padding)
+}
+
+.chapter[chapter-variant="primary"] {
+    --chapter-background-color: var(--color-primary);
+    --color-font: var(--color-bg);
+    --color-headline: var(--color-primary-dark);
+}
+
+.chapter[chapter-variant="secondary"] {
+    --chapter-background-color: var(--color-secondary);
+    --color-font: var(--color-bg);
+    --color-headline: var(--color-secondary-dark);
+}
+
+.chapter[chapter-variant="inverted"] {
+    --chapter-background-color: var(--color-font);
+    --color-headline: var(--color-primary-light);
+}
+
+/* We need to separate from the chapter inverted selector so the bg and cont color don't collide! */
+.chapter[chapter-variant="inverted"] * {
+    --color-font: var(--color-bg);
+}
+
+.chapter[chapter-variant="white"] {
+    --chapter-background-color: var(--color-white);
+}

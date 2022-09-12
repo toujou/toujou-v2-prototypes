@@ -3,24 +3,18 @@
 ::after {
     --color-primary: hsl(var(--color-primary-h) var(--color-primary-s) var(--color-primary-l));
     --color-primary-o-10: hsl(var(--color-primary-h) var(--color-primary-s) var(--color-primary-l) / 10%);
-
     --color-primary-light: hsl(var(--color-primary-light-h) var(--color-primary-light-s) var(--color-primary-light-l));
-
     --color-primary-dark: hsl(var(--color-primary-dark-h) var(--color-primary-dark-s) var(--color-primary-dark-l));
 
     --color-secondary: hsl(var(--color-secondary-h) var(--color-secondary-s) var(--color-secondary-l));
     --color-secondary-o-10: hsl(var(--color-secondary-h) var(--color-secondary-s) var(--color-secondary-l) / 10%);
-
     --color-secondary-light: hsl(var(--color-secondary-light-h) var(--color-secondary-light-s) var(--color-secondary-light-l));
-
     --color-secondary-dark: hsl(var(--color-secondary-dark-h) var(--color-secondary-dark-s) var(--color-secondary-dark-l));
 
     --color-font: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l));
     --color-font-o-10: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 10%);
     --color-font-o-20: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 20%);
-
     --color-font-light: hsl(var(--color-font-light-h) var(--color-font-light-s) var(--color-font-light-l));
-
     --color-font-dark: hsl(var(--color-font-dark-h) var(--color-font-dark-s) var(--color-font-dark-l));
 
     --color-bg: hsl(var(--color-bg-h) var(--color-bg-s) var(--color-bg-l));
@@ -47,4 +41,6 @@
 
     --color-white: hsl(0 100% 100% / 100%);
     --color-white-o-75: hsl(0 100% 100% / 75%);
+
+    --color-headline: var(--color-primary);
 }

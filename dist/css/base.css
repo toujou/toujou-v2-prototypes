@@ -408,7 +408,17 @@ figure {
     --spacing-1px: 1px;
     --spacing-2px: 2px;
 
-    --spacing-between-elements-normal: var(--spacing-xxxxl);
+    --spacing-between-elements-normal: var(--spacing-xxl);
+    --spacing-between-elements-s: var(--spacing-xxl);
+}
+
+@media screen and (min-width: 840px) {
+    :root,
+    ::before,
+    ::after {
+        --spacing-between-elements-normal: var(--spacing-xxxxl);
+        --spacing-between-elements-s: calc(var(--spacing-xxxxl) / 2);
+    }
 }
 
 :root,
@@ -1150,7 +1160,7 @@ figure {
     --form-font-size: var(--font-size-normal);
     --form-font-weight: var(--font-weight-text-normal);
     --form-line-height: var(--line-height-reset);
-    --form-margin: 0 auto;
+    --form-margin: 0 auto var(--spacing-between-elements-normal);
 
     width: var(--form-width);
     max-width: var(--form-max-width);
@@ -1159,6 +1169,10 @@ figure {
     font-size: var(--form-font-size);
     font-weight: var(--form-font-weight);
     line-height: var(--form-line-height);
+}
+
+.form:last-child {
+    --form-margin: 0 auto;
 }
 
 .form-progress + .form {
@@ -3110,7 +3124,7 @@ hr,
     --divider-height: var(--spacing-xs);
     --divider-width: var(--content-fullwidth);
     --divider-max-width: var(--spacing-xxxxl);
-    --divider-margin: var(--spacing-xl) auto;
+    --divider-margin: var(--spacing-between-elements-s) auto;
     --divider-border: none;
     --divider-border-radius: var(--border-radius-xs);
 
@@ -3326,7 +3340,7 @@ exit-warning {
     --grid-gap: var(--content-spacing-between-columns);
     --grid-width: var(--content-width-with-padding);
     --grid-max-width: var(--content-max-width);
-    --grid-margin: 0 auto;
+    --grid-margin: 0 auto var(--spacing-between-elements-normal);
     --grid-z-index: var(--z-index-content);
 
     display: var(--grid-display);
@@ -3336,6 +3350,10 @@ exit-warning {
     max-width: var(--grid-max-width);
     margin: var(--grid-margin);
     z-index: var(--grid-z-index);
+}
+
+.grid:last-child {
+    --grid-margin: 0 auto;
 }
 
 .grid[grid-type="wide"] {
@@ -4396,7 +4414,7 @@ toujou-modal {
 .single-media {
     --single-media-width: 100%;
     --single-media-max-width: 100%;
-    --single-media-margin: 0 auto;
+    --single-media-margin: 0 auto var(--spacing-between-elements-normal);
     --single-media-display: block;
     --single-media-max-height: 100%;
     --single-media-border-radius: unset;
@@ -4412,6 +4430,14 @@ toujou-modal {
     max-height: var(--single-media-max-height);
     border-radius: var(--single-media-border-radius);
     overflow: var(--single-media-overflow);
+}
+
+.single-media:last-child {
+    --single-media-margin: 0 auto;
+}
+
+.header .single-media {
+    --single-media-margin: 0 auto;
 }
 
 .header[header-type="slider"] .single-media {
@@ -4685,7 +4711,7 @@ main > .table-container {
 }
 
 .text-block:last-child {
-    margin-bottom: 0;
+    --text-block-margin: 0 auto;
 }
 
 .grid .text-block {

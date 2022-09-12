@@ -1,0 +1,34 @@
+# Chapter
+
+The chapter content element renders a `section`, which helps us separate the page's content, tell an effective story, and add custom styles to other content elements.
+
+## Markup example
+```html
+<section class="chapter" chapter-variant="primary">
+    ...
+</section>
+```
+
+
+## Close a chapter
+There is no "chapter end" content element. If we need to close a chapter, the easiest option is to create a new empty chapter. This will close the previous one, which might have had some custom classes, and create a new chapter, and thereby resetting all custom styles...
+
+
+## Options
+The chapter element by default has only the `Chapter ID` visible. To show the custom classes input we must add the following to the home page "Resources" tab: `TCEFORM.tt_content.chapter_custom_classes.disabled = 0`
+
+### Chapter id <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `Chapter ID` input field allows us to add a custom id to the chapter
+
+### Custom classes
+The `Chapter custom CSS classes` input allows us to add custom modifier classes to the chapter element.
+We can either choose from the standard classes or write our own custom modifier classes
+
+Example: `chapter--wide-columns chapter--red-background`
+
+> ℹ️ &nbsp; The `chapter` class will be added automatically, so we don't need to add it to the custom classes
+
+### Standard modifiers
+We can choose between the standard modifiers: `chapter--default`, `chapter--primary`, `chapter--secondary`, `chapter--inverted`, `chapter--white`,`chapter--background`.
+
+The "default", and "background" variant don't have any special styles applied to them, but can be used for customizing the page...

@@ -27,8 +27,9 @@
 
 @import './globals/_body.css';
 @import "./globals/_alert.css";
-@import "./globals/_button.css";
 @import "./globals/_burger-button.css";
+@import "./globals/_button.css";
+@import "./globals/_chapter.css";
 @import "./globals/_chip.css";
 @import "./globals/_divider.css";
 @import "./globals/_exit-warning.css";

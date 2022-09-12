@@ -74,7 +74,7 @@ h6,
     line-height: var(--text-tag-line-height);
     margin-bottom: var(--text-tag-margin-bottom);
     font-family: var(--font-family-headline);
-    color: var(--color-primary);
+    color: var(--color-headline);
     text-decoration: none;
 }
 
