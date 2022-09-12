@@ -2914,30 +2914,32 @@ p > .button {
     padding: var(--chapter-padding)
 }
 
-.chapter[chapter-variant="primary"] {
+.chapter--primary {
     --chapter-background-color: var(--color-primary);
-    --color-font: var(--color-bg);
     --color-headline: var(--color-primary-dark);
 }
 
-.chapter[chapter-variant="secondary"] {
+.chapter--secondary {
     --chapter-background-color: var(--color-secondary);
-    --color-font: var(--color-bg);
     --color-headline: var(--color-secondary-dark);
 }
 
-.chapter[chapter-variant="inverted"] {
+.chapter--inverted {
     --chapter-background-color: var(--color-font);
     --color-headline: var(--color-primary-light);
 }
 
-/* We need to separate from the chapter inverted selector so the bg and cont color don't collide! */
+/* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
 
-.chapter[chapter-variant="inverted"] * {
+:is(.chapter--primary, .chapter--secondary, .chapter--inverted) :is(p, ul, ol, table) {
     --color-font: var(--color-bg);
 }
 
-.chapter[chapter-variant="white"] {
+:is(.chapter--primary, .chapter--secondary, .chapter--inverted) p a {
+    color: var(--color-font);
+}
+
+.chapter--white {
     --chapter-background-color: var(--color-white);
 }
 
@@ -4760,10 +4762,6 @@ main > .table-container {
     --text-block-width: 100%;
 }
 
-.text-block + .text-block {
-    margin-top: var(--content-spacing-between-elements);
-}
-
 .text-block[text-block-column-count="2"],
 .text-block[text-block-column-count="3"],
 .text-block[text-block-column-count="4"] {
@@ -5283,8 +5281,16 @@ h6,
     margin-top: var(--spacing-xl);
 }
 
+:is(p, ul, ol):last-child {
+    margin-bottom: 0;
+}
+
 p + :is(p, ul, ol) {
     margin-top: var(--spacing-normal);
+}
+
+:is(h1, h2, h3, h4, h5, h6, p, ul, ol, table)[text-align="center"] {
+    text-align: center;
 }
 
 .grid-column :is(p, ul, ol):first-child {
@@ -5305,6 +5311,10 @@ p + :is(p, ul, ol) {
 
 a {
     color: var(--color-primary);
+}
+
+p > a.button {
+    display: inline-block;
 }
 
 a:focus {
