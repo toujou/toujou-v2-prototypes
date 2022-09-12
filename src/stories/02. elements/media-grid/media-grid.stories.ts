@@ -73,7 +73,7 @@ function createMediaElement(mediaType: string) {
 }
 
 const Template: Story<SingleMediaStoryProps> = (args: SingleMediaStoryProps) => {
-    const mediaGrid = document.createElement('div');
+    const mediaGrid = document.createElement('toujou-media-grid');
     mediaGrid.classList.add('media-grid');
     mediaGrid.setAttribute('media-grid-column-number', args.numberOfCols.toString());
 

@@ -4,7 +4,7 @@ import { withXD } from "storybook-addon-xd-designs";
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 export default {
-    title: 'PAGES/Media Elements',
+    title: 'TESTS/Media Elements',
     decorators: [withXD],
     parameters: {
         badges: [TOUJOU_BADGES.TESTING],

@@ -19,7 +19,7 @@ h3,
     --text-tag-font-size: var(--font-size-xl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
-    --text-tag-margin-bottom: var(--spacing-m);
+    --text-tag-margin-bottom: var(--spacing-ms);
 }
 
 h4,
@@ -27,7 +27,7 @@ h4,
     --text-tag-font-size: var(--font-size-l);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
-    --text-tag-margin-bottom: var(--spacing-m);
+    --text-tag-margin-bottom: var(--spacing-ms);
 }
 
 h5,
@@ -78,16 +78,16 @@ h6,
     text-decoration: none;
 }
 
+*:not(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: var(--spacing-xl);
+}
+
 p + :is(p, ul, ol) {
     margin-top: var(--spacing-normal);
 }
 
 .grid-column :is(p, ul, ol):first-child {
     margin-top: 0;
-}
-
-* + :is(h1, h2, h3, h4, h5, h6) {
-    margin-top: var(--spacing-xl);
 }
 
 .teasertext {

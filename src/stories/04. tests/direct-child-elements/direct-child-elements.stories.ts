@@ -3,7 +3,7 @@ import { Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 export default {
-    title: 'PAGES/Direct Child Elements',
+    title: 'TESTS/Direct Child Elements',
     parameters: {
         badges: [TOUJOU_BADGES.TESTING],
     },

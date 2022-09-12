@@ -5,7 +5,7 @@
     --media-grid-template-columns: repeat(var(--media-grid-number-of-columns), 1fr);
     --media-grid-width: var(--content-width-with-padding);
     --media-grid-max-width: var(--content-wide-max-width);
-    --media-grid-margin: 0 auto;
+    --media-grid-margin: 0 auto var(--spacing-between-elements-normal);
     --media-grid-z-index: var(--z-index-content);
 
     display: var(--media-grid-display);
@@ -15,6 +15,10 @@
     max-width: var(--media-grid-max-width);
     margin: var(--media-grid-margin);
     z-index: var(--media-grid-z-index);
+}
+
+.media-grid:last-child {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 640px) {
