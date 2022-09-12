@@ -3,7 +3,7 @@
     --form-font-size: var(--font-size-normal);
     --form-font-weight: var(--font-weight-text-normal);
     --form-line-height: var(--line-height-reset);
-    --form-margin: 0 auto;
+    --form-margin: 0 auto var(--spacing-between-elements-normal);
 
     width: var(--form-width);
     max-width: var(--form-max-width);
@@ -12,6 +12,10 @@
     font-size: var(--form-font-size);
     font-weight: var(--form-font-weight);
     line-height: var(--form-line-height);
+}
+
+.form:last-child {
+    --form-margin: 0 auto;
 }
 
 .form-progress + .form {

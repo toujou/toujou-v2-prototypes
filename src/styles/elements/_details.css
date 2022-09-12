@@ -2,7 +2,7 @@
     --details-display: block;
     --details-width: var(--content-width-with-padding);
     --details-max-width: var(--content-max-width);
-    --details-margin: 0 auto;
+    --details-margin: 0 auto var(--spacing-between-elements-normal);
     --details-title-color: var(--color-font-dark);
     --details-title-active-color: var(--color-primary);
     --details-title-margin: 0;
@@ -32,9 +32,14 @@
     z-index: var(--details-z-index);
 }
 
+.details:last-child {
+    --details-margin: 0 auto;
+}
+
 .details-accordion .details {
     --details-width: 100%;
     --details-max-width: 100%;
+    --details-margin: 0 auto;
 }
 
 .details__title {

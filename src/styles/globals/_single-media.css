@@ -1,7 +1,7 @@
 .single-media {
     --single-media-width: 100%;
     --single-media-max-width: 100%;
-    --single-media-margin: 0 auto;
+    --single-media-margin: 0 auto var(--spacing-between-elements-normal);
     --single-media-display: block;
     --single-media-max-height: 100%;
     --single-media-border-radius: unset;
@@ -17,6 +17,14 @@
     max-height: var(--single-media-max-height);
     border-radius: var(--single-media-border-radius);
     overflow: var(--single-media-overflow);
+}
+
+.single-media:last-child {
+    --single-media-margin: 0 auto;
+}
+
+.header .single-media {
+    --single-media-margin: 0 auto;
 }
 
 .header[header-type="slider"] .single-media {

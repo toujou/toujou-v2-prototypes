@@ -5,7 +5,7 @@
     --grid-gap: var(--content-spacing-between-columns);
     --grid-width: var(--content-width-with-padding);
     --grid-max-width: var(--content-max-width);
-    --grid-margin: 0 auto;
+    --grid-margin: 0 auto var(--spacing-between-elements-normal);
     --grid-z-index: var(--z-index-content);
 
     display: var(--grid-display);
@@ -15,6 +15,10 @@
     max-width: var(--grid-max-width);
     margin: var(--grid-margin);
     z-index: var(--grid-z-index);
+}
+
+.grid:last-child {
+    --grid-margin: 0 auto;
 }
 
 .grid[grid-type="wide"] {

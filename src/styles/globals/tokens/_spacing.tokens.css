@@ -17,5 +17,15 @@
     --spacing-1px: 1px;
     --spacing-2px: 2px;
 
-    --spacing-between-elements-normal: var(--spacing-xxxxl);
+    --spacing-between-elements-normal: var(--spacing-xxl);
+    --spacing-between-elements-s: var(--spacing-xxl);
+}
+
+@media screen and (min-width: 840px) {
+    :root,
+    ::before,
+    ::after {
+        --spacing-between-elements-normal: var(--spacing-xxxxl);
+        --spacing-between-elements-s: calc(var(--spacing-xxxxl) / 2);
+    }
 }

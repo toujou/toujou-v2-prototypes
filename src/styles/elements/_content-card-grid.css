@@ -6,7 +6,7 @@
     --content-card-grid-gap: var(--content-spacing-between-columns);
     --content-card-grid-width: var(--content-width-with-padding);
     --content-card-grid-max-width: var(--content-wide-max-width);
-    --content-card-grid-margin: 0 auto;
+    --content-card-grid-margin: 0 auto var(--spacing-between-elements-normal);
     --content-card-grid-z-index: var(--z-index-content);
 
     display: var(--content-card-grid-display);
@@ -18,4 +18,8 @@
     max-width: var(--content-card-grid-max-width);
     margin: var(--content-card-grid-margin);
     z-index: var(--content-card-grid-z-index);
+}
+
+.content-card-grid:last-child {
+    --content-card-grid-margin: 0 auto;
 }

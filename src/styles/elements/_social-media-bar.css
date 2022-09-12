@@ -6,7 +6,7 @@
     --social-media-bar-flex-direction: column;
     --social-media-bar-align-items: center;
     --social-media-bar-justify-content: center;
-    --social-media-bar-margin: 0 auto;
+    --social-media-bar-margin: 0 auto var(--spacing-between-elements-normal);
     --social-media-bar-width: var(--content-width-with-padding);
     --social-media-bar-max-width: var(--content-max-width);
     --social-media-bar-border-radius: var(--border-radius-normal);
@@ -37,6 +37,10 @@
     border-radius: var(--social-media-bar-border-radius);
     background-color: var(--social-media-bar-background-color);
     z-index: var(--social-media-bar-z-index);
+}
+
+.social-media-bar:last-child {
+    --social-media-bar-margin: 0 auto;
 }
 
 .social-media-bar[no-headline] {

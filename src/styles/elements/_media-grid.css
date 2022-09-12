@@ -18,7 +18,7 @@
 }
 
 .media-grid:last-child {
-    margin-bottom: 0;
+    --media-grid-margin: 0 auto;
 }
 
 @media screen and (min-width: 640px) {

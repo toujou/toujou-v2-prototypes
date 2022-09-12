@@ -4,7 +4,7 @@ hr,
     --divider-height: var(--spacing-xs);
     --divider-width: var(--content-fullwidth);
     --divider-max-width: var(--spacing-xxxxl);
-    --divider-margin: var(--spacing-xl) auto;
+    --divider-margin: var(--spacing-between-elements-s) auto;
     --divider-border: none;
     --divider-border-radius: var(--border-radius-xs);
 

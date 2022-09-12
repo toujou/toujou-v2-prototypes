@@ -24,7 +24,7 @@
 }
 
 .text-block:last-child {
-    margin-bottom: 0;
+    --text-block-margin: 0 auto;
 }
 
 .grid .text-block {

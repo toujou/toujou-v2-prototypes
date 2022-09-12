@@ -6,7 +6,7 @@
     --item-collection-gap: 0;
     --item-collection-width: var(--content-width-with-padding);
     --item-collection-max-width: var(--content-max-width);
-    --item-collection-margin: 0 auto;
+    --item-collection-margin: 0 auto var(--spacing-between-elements-normal);
     --item-collection-list-style: none;
     --item-collection-padding: 0;
     --item-collection-z-index: var(--z-index-content);
@@ -27,6 +27,10 @@
     list-style: var(--item-collection-list-style);
     padding: var(--item-collection-padding);
     z-index: var(--item-collection-z-index);
+}
+
+.item-collection:last-child {
+    --item-collection-margin: 0 auto;
 }
 
 .item-collection__item {

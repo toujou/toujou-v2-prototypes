@@ -3,13 +3,18 @@
     --blockquote-grid-gap: var(--spacing-l);
     --blockquote-grid-max-width: var(--content-max-width);
     --blockquote-grid-z-index: var(--z-index-content);
+    --blockquote-grid-margin: 0 auto var(--spacing-between-elements-normal);
 
     display: grid;
     grid-template-columns: repeat(var(--blockquote-grid-columns-count), 1fr);
     grid-gap: var(--blockquote-grid-gap);
     max-width: var(--blockquote-grid-max-width);
-    margin: 0 auto;
+    margin: var(--blockquote-grid-margin);
     z-index: var(--blockquote-grid-z-index);
+}
+
+.blockquote-grid:last-child {
+    --blockquote-grid-margin: 0 auto;
 }
 
 .blockquote-grid[blockquote-grid-count="2"],

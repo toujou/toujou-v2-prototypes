@@ -392,19 +392,23 @@ figure {
 :root,
 ::before,
 ::after {
-    --spacing-xxxxl: 7.5rem;    /* 120px */
-    --spacing-xxxl: 6rem;       /* 96px */
-    --spacing-xxl: 4rem;        /* 64px */
-    --spacing-xl: 3rem;         /* 48px */
-    --spacing-l: 2rem;          /* 32px */
-    --spacing-m: 1.5rem;        /* 24px */
-    --spacing-ms: 1.25rem;      /* 20px */
-    --spacing-normal: 1rem;     /* 16px */
-    --spacing-s: .5rem;         /* 8px */
-    --spacing-xs: .25rem;       /* 4px */
-    --spacing-xxs: .125rem;       /* 2px */
+    --spacing-base: 1rem;
+
+    --spacing-xxxxl: calc(var(--spacing-base) * 7.5);    /* 120px */
+    --spacing-xxxl: calc(var(--spacing-base) * 6);       /* 96px */
+    --spacing-xxl: calc(var(--spacing-base) * 4);        /* 64px */
+    --spacing-xl: calc(var(--spacing-base) * 3);         /* 48px */
+    --spacing-l: calc(var(--spacing-base) * 2);          /* 32px */
+    --spacing-m: calc(var(--spacing-base) * 1.5);        /* 24px */
+    --spacing-ms: calc(var(--spacing-base) * 1.25);      /* 20px */
+    --spacing-normal: var(--spacing-base);               /* 16px */
+    --spacing-s: calc(var(--spacing-base) * .5);         /* 8px */
+    --spacing-xs: calc(var(--spacing-base) * .25);       /* 4px */
+    --spacing-xxs: calc(var(--spacing-base) * .125);     /* 2px */
     --spacing-1px: 1px;
     --spacing-2px: 2px;
+
+    --spacing-between-elements-normal: var(--spacing-xxxxl);
 }
 
 :root,
@@ -4661,7 +4665,7 @@ main > .table-container {
     --text-block-grid-gap: var(--spacing-normal);
     --text-block-width: var(--content-width-with-padding);
     --text-block-max-width: var(--content-max-width);
-    --text-block-margin: 0 auto;
+    --text-block-margin: 0 auto var(--spacing-between-elements-normal);
     --text-block-image-aspect-ratio: var(--aspect-ratio-default);
     --text-block-image-object-fit: cover;
     --text-block-media-inside-image-width: 50%;
@@ -4678,6 +4682,10 @@ main > .table-container {
     max-width: var(--text-block-max-width);
     margin: var(--text-block-margin);
     z-index: var(--text-block-z-index);
+}
+
+.text-block:last-child {
+    margin-bottom: 0;
 }
 
 .grid .text-block {
@@ -5149,7 +5157,7 @@ h3,
     --text-tag-font-size: var(--font-size-xl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
-    --text-tag-margin-bottom: var(--spacing-m);
+    --text-tag-margin-bottom: var(--spacing-ms);
 }
 
 h4,
@@ -5157,7 +5165,7 @@ h4,
     --text-tag-font-size: var(--font-size-l);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
-    --text-tag-margin-bottom: var(--spacing-m);
+    --text-tag-margin-bottom: var(--spacing-ms);
 }
 
 h5,
@@ -5208,16 +5216,16 @@ h6,
     text-decoration: none;
 }
 
+*:not(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: var(--spacing-xl);
+}
+
 p + :is(p, ul, ol) {
     margin-top: var(--spacing-normal);
 }
 
 .grid-column :is(p, ul, ol):first-child {
     margin-top: 0;
-}
-
-* + :is(h1, h2, h3, h4, h5, h6) {
-    margin-top: var(--spacing-xl);
 }
 
 .teasertext {

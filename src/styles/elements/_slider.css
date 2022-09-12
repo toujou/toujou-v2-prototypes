@@ -2,7 +2,7 @@
     --slider-display: block;
     --slider-width: var(--content-width-with-padding);
     --slider-max-width: var(--content-max-width);
-    --slider-margin: 0 auto;
+    --slider-margin: 0 auto var(--spacing-between-elements-normal);
     --slider-aspect-ratio: var(--aspect-ratio-16-9);
     --slider-position: relative;
     --slider-z-index: var(--z-index-content);
@@ -34,6 +34,10 @@
     max-width: var(--slider-max-width);
     margin: var(--slider-margin);
     z-index: var(--slider-z-index);
+}
+
+.slider:last-child {
+    --slider-margin: 0 auto;
 }
 
 .slider[content-type="logos"] {

@@ -8,6 +8,7 @@
     --cover-slider-width: 100%;
     --cover-slider-height: fit-content;
     --cover-slider-padding: 0 0 0 var(--spacing-normal);
+    --cover-slider-margin: 0 auto var(--spacing-between-elements-normal);
 
     /* splide */
     --cover-slider-splide-max-width: 100%;
@@ -60,6 +61,11 @@
     width: var(--cover-slider-width);
     height: var(--cover-slider-height);
     padding: var(--cover-slider-padding);
+    margin: var(--cover-slider-margin);
+}
+
+.cover-slider:last-child {
+    --cover-slider-margin: 0 auto;
 }
 
 .cover-slider__item[element-design="primary"] {
