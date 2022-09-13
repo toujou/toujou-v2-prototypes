@@ -1,1 +1,54 @@
-# Maps
+# Map contact
+The "map contact" elements can be added in the backend.
+
+There are a couple of different elements, which render slightly different content:
+- Map with contact information
+- Map of address
+- Map image
+- Map of coordinates
+
+Each of these versions exists with
+- Map right or map left
+- Square or 16 / 9 map
+
+## Markup example
+```html
+<toujou-map-contact class="map-contact" direction="normal" map-aspect-ratio="1-1">
+    <div class="map-contact__map-container">
+        <img src="https://via.placeholder.com/600x600.png?text=Map" alt="beautiful image" class="map-contact__image">
+    </div>
+    <div class="map-contact__content">
+        <h2 class="map-contact__headline">Wildlife adventures</h2>
+        <address class="map-contact__address">
+            Gustav-Weißkopf-Straße 5<br>
+            90768 Fürth<br>
+            <span class="map-contact__label">Tel:</span> <a href="tel:0911 123456789">0911 123456789</a><br>
+            <span class="map-contact__label">E-Mail:</span> <a href="mailto:hello@dfau.de">hello@dfau.de</a>
+        </address>
+        <div class="map-contact__socials">
+            <a href="#" class="map-contact__social">
+                <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-facebook" icon-size="m"></toujou-icon>
+            </a>
+            <a href="#" class="map-contact__social">
+                <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-instagram" icon-size="m"></toujou-icon>
+            </a>
+            <a href="#" class="map-contact__social">
+                <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-youtube" icon-size="m"></toujou-icon>
+            </a>
+        </div>
+    </div>
+</toujou-map-contact>
+```
+
+## Attributes
+The `toujou-map-contact` element can take a couple of attributes which change how the element is rendered
+
+### `direction` <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `direction` attribute defines the order of the columns on desktop devices.
+
+Possible values are `normal` and `reverse`.
+
+### `map-aspect-ratio` <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `map-aspect-ratio` defines the aspect ratio of the map element (the container and the map itself).
+
+Possible values are `1-1` and `16-9`.

@@ -62,8 +62,8 @@ const Template: Story<mapStoryProps> = (args: mapStoryProps) => {
                 <address class="map-contact__address">
                     Gustav-Weißkopf-Straße 5<br>
                     90768 Fürth<br>
-                    <span class="map-contact__label">Tel:</span> <a href="tel:0911 23980870">0911 123456789</a><br>
-                    <span class="map-contact__label">E-Mail:</span> <a href="mailto:vkindlein@dfau.de">hello@dfau.de</a>                
+                    <span class="map-contact__label">Tel:</span> <a href="tel:0911 123456789">0911 123456789</a><br>
+                    <span class="map-contact__label">E-Mail:</span> <a href="mailto:hello@dfau.de">hello@dfau.de</a>                
                 </address>
                 <div class="map-contact__socials">
                     <a href="#" class="map-contact__social">
