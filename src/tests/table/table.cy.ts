@@ -57,7 +57,7 @@ describe('table - left aligned', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-table--table&args=tableAlignment:left');
     });
 
-    it.only('text has correct alignment', () => {
+    it('text has correct alignment', () => {
         cy.get('table.table').should('have.css', 'text-align', 'left');
         cy.get('table.table .table__caption').should('have.css', 'text-align', 'left');
     });
@@ -68,7 +68,7 @@ describe('table - right aligned', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-table--table&args=tableAlignment:right');
     });
 
-    it.only('text has correct alignment', () => {
+    it('text has correct alignment', () => {
         cy.get('table.table').should('have.css', 'text-align', 'right');
         cy.get('table.table .table__caption').should('have.css', 'text-align', 'right');
     });

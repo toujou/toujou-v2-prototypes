@@ -162,7 +162,7 @@ describe('inpage-nav mobile - inverted', () => {
         cy.get('body').resetRealHover();
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorFont);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__toggle .icon').should('have.css', 'background-color', colors.colorBg);

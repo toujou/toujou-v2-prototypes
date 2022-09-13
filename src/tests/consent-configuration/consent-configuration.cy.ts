@@ -49,7 +49,7 @@ describe('consent configuration with warning', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-consent--consent-configuration&args=showError:true');
     });
 
-    it.only('consent widget warning element has correct styles', () => {
+    it('consent widget warning element has correct styles', () => {
         cy.get('.consent-widget__warning').then((warning) => {
             expect(warning).to.have.css('display').equal('flex');
             expect(warning).to.have.css('align-items').equal('center');

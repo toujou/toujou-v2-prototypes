@@ -25,7 +25,7 @@ describe('Forms / form error - visible', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:error');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.input-group--text.input-group--has-error').should('exist');
         cy.get('.input-group--text .form__error').should('have.css', 'display', 'block');
     });

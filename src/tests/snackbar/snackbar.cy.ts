@@ -100,7 +100,7 @@ describe('toujou-snackbar auto info', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-snackbar--snackbar');
     });
 
-    it.only('has correct structure', () => {
+    it('has correct structure', () => {
         cy.get('#snackbarTriggerButton').click();
         cy.get('toujou-snackbar').invoke('attr', 'info').should('exist');
         cy.get('toujou-snackbar').invoke('attr', 'visible').should('exist');

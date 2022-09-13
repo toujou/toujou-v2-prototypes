@@ -257,7 +257,7 @@ describe('inpage-nav desktop - inverted', () => {
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
     });
 
-    it.only('has correct hover styles', () => {
+    it('has correct hover styles', () => {
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorFontDark);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '0');

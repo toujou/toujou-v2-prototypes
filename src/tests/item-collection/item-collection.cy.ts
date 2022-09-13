@@ -10,7 +10,7 @@ describe('item collection', () => {
         cy.get('.item-collection').children('.item-collection__item').should('have.length', 4);
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.item-collection').should('have.css', 'display', 'flex');
         cy.get('.item-collection').should('have.css', 'flex-wrap', 'wrap');
         cy.get('.item-collection').should('have.css', 'align-items', 'center');
