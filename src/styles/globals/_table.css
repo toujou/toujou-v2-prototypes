@@ -2,16 +2,18 @@
     --table-width: 100%;
     --table-margin: 0 auto;
     --table-text-align: left;
-    --table-bg-color-light: var(--color-bg);
-    --table-bg-color-dark: var(--color-font-o-10);
-    --table-border: var(--border-width-normal) solid var(--color-font-o-10);
+    --table-bg-color-light: transparent;
+    --table-bg-color-dark: var(--color-font-o-4);
+    --table-border: none;
 
     --table-caption-margin: 0 auto var(--spacing-s) auto;
 
     --table-summary-display: block;
     --table-summary-font-size: var(--font-size-s);
 
-    --table-head-color: var(--color-primary);
+    --table-head-color: var(--color-font);
+
+    --table-row-border: var(--border-width-normal) solid var(--border-color-default);
 
     --table-cell-padding: var(--spacing-s) var(--spacing-normal);
 
@@ -45,6 +47,14 @@
 
 thead {
     background-color: var(--table-bg-color-dark);
+}
+
+tr {
+    border-top: var(--table-row-border);
+}
+
+tr:last-child {
+    border-bottom: var(--table-row-border);
 }
 
 tr:nth-child(even) {
