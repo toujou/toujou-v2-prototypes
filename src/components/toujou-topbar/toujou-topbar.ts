@@ -9,6 +9,7 @@ export class ToujouTopbar extends LitElement {
     // Constants
     burgerButtonClickEvent = 'toujou-burger-button-click';
     mqlChangeEventName = 'toujou-topbar-breakpoint-change';
+    openNavBodyAttribute = 'nav-is-open';
 
     @property({ type: Boolean, reflect: true, attribute: 'open-nav' })
     _isOpen: boolean = false;
@@ -45,10 +46,14 @@ export class ToujouTopbar extends LitElement {
 
     /**
      * Set correct isOpen value according to state of burger button click event
+     * Add / remove attribute from the body element so we can prevent scroll in the background
      * @param event
      */
     _handleBurgerButtonClick(event: Event) {
         this._isOpen = (<CustomEvent>event).detail.state;
+        this._isOpen
+            ? document.body.setAttribute(this.openNavBodyAttribute, '')
+            : document.body.removeAttribute(this.openNavBodyAttribute);
     }
 
     /**

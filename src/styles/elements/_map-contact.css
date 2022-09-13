@@ -6,8 +6,8 @@
     --map-contact-grid-template-columns: 1fr;
     --map-contact-grid-gap: var(--spacing-normal);
     --map-contact-grid-template-areas:
-            "map"
-            "address";
+        "map"
+        "address";
 
     --map-contact-map-container-area: map;
     --map-contact-map-container-overflow: hidden;
@@ -39,11 +39,11 @@
     grid-template-areas: var(--map-contact-grid-template-areas);
 }
 
-.map-contact[map-aspect-ratio='1-1'] {
+.map-contact[map-aspect-ratio="1-1"] {
     --map-contact-map-container-aspect-ratio: 1 / 1;
 }
 
-.map-contact[map-aspect-ratio='16-9'] {
+.map-contact[map-aspect-ratio="16-9"] {
     --map-contact-map-container-aspect-ratio: 16 / 9;
 }
 

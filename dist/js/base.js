@@ -464,5 +464,5 @@ var Rt=Object.defineProperty;var zt=(u,e,r)=>e in u?Rt(u,e,{enumerable:!0,config
       <svg class="spinner__svg" viewBox="25 25 50 50">
         <circle class="spinner__circle" cx="50" cy="50" r="20" stroke-miterlimit="10"/>
       </svg>
-    `}}Ye(ft,"styles",[io]);customElements.define(ft.is,ft);
+    `}}Ye(ft,"styles",[io]);customElements.define(ft.is,ft);console.log("aaaaaa");
 //# sourceMappingURL=base.js.map

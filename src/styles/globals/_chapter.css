@@ -5,7 +5,7 @@
 
     background-color: var(--chapter-background-color);
     margin: var(--chapter-margin);
-    padding: var(--chapter-padding)
+    padding: var(--chapter-padding);
 }
 
 .chapter + .chapter {

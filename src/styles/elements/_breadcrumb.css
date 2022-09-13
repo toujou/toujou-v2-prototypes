@@ -4,6 +4,8 @@
     --breadcrumb-separator-size: var(--font-size-ms);
     --breadcrumb-separator-horizontal-gap: var(--spacing-xs);
     --breadcrumb-separator-top: var(--spacing-1px);
+
+    --breadcrumb-width: var(--content-width-with-padding);
     --breadcrumb-home-icon: var(--icon-home-smooth);
     --breadcrumb-home-icon-size: var(--font-size-ms);
     --breadcrumb-active-item-color: var(--color-primary);
@@ -28,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: var(--breadcrumb-width);
     max-width: var(--breadcrumb-max-width);
     margin: var(--breadcrumb-margin);
     position: relative;
