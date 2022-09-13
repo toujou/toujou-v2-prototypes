@@ -5,6 +5,7 @@ import { LitElement } from 'lit';
 export declare class ToujouTopbar extends LitElement {
     burgerButtonClickEvent: string;
     mqlChangeEventName: string;
+    openNavBodyAttribute: string;
     _isOpen: boolean;
     _mql: MediaQueryList;
     _isMobile: boolean;
@@ -19,6 +20,7 @@ export declare class ToujouTopbar extends LitElement {
     disconnectedCallback(): void;
     /**
      * Set correct isOpen value according to state of burger button click event
+     * Add / remove attribute from the body element so we can prevent scroll in the background
      * @param event
      */
     _handleBurgerButtonClick(event: Event): void;

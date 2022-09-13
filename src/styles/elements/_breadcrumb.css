@@ -78,6 +78,8 @@
     height: var(--breadcrumb-home-icon-size);
     width: var(--breadcrumb-home-icon-size);
     margin: 0 var(--breadcrumb-separator-horizontal-gap);
+    position: relative;
+    top: -1px;
     background-color: currentColor;
     mask-position: center;
     mask-size: contain;

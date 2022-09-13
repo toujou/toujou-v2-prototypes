@@ -2287,7 +2287,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-body[overlay-open] {
+body:is([overlay-open],[nav-is-open]) {
     overflow: hidden !important;
 }
 
@@ -2914,7 +2914,7 @@ p > .button {
 
     background-color: var(--chapter-background-color);
     margin: var(--chapter-margin);
-    padding: var(--chapter-padding)
+    padding: var(--chapter-padding);
 }
 
 .chapter + .chapter {
