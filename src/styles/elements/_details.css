@@ -2,7 +2,7 @@
     --details-display: block;
     --details-width: var(--content-width-with-padding);
     --details-max-width: var(--content-max-width);
-    --details-margin: 0 auto var(--spacing-between-elements-normal);
+    --details-margin: var(--spacing-between-elements-normal) auto 0;
     --details-title-color: var(--color-font-dark);
     --details-title-active-color: var(--color-primary);
     --details-title-margin: 0;
@@ -32,7 +32,7 @@
     z-index: var(--details-z-index);
 }
 
-.details:last-child {
+.details:first-child {
     --details-margin: 0 auto;
 }
 

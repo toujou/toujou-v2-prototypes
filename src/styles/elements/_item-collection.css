@@ -6,7 +6,7 @@
     --item-collection-gap: 0;
     --item-collection-width: var(--content-width-with-padding);
     --item-collection-max-width: var(--content-max-width);
-    --item-collection-margin: 0 auto var(--spacing-between-elements-normal);
+    --item-collection-margin: var(--spacing-between-elements-normal) auto 0;
     --item-collection-list-style: none;
     --item-collection-padding: 0;
     --item-collection-z-index: var(--z-index-content);
@@ -29,7 +29,7 @@
     z-index: var(--item-collection-z-index);
 }
 
-.item-collection:last-child {
+.item-collection:first-child {
     --item-collection-margin: 0 auto;
 }
 

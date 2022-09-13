@@ -4,7 +4,7 @@
     --hero-media-display: block;
     --hero-media-position: relative;
     --hero-media-padding: 0;
-    --hero-media-margin: 0 0 var(--spacing-between-elements-normal);
+    --hero-media-margin: var(--spacing-between-elements-normal) 0 0;
     --hero-media-z-index: var(--z-index-content);
 
     --hero-media-media-object-fit: cover;
@@ -29,7 +29,7 @@
     z-index: var(--hero-media-z-index);
 }
 
-.hero-media:last-child {
+.hero-media:first-child {
     --hero-media-margin: 0;
 }
 

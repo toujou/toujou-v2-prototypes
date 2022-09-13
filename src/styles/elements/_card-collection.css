@@ -6,7 +6,7 @@
     --card-collection-gap: var(--content-spacing-between-columns);
     --card-collection-width: var(--content-width-with-padding);
     --card-collection-max-width: var(--content-wide-max-width);
-    --card-collection-margin: 0 auto var(--spacing-between-elements-normal);
+    --card-collection-margin: var(--spacing-between-elements-normal) auto 0;
     --card-collection-list-style: none;
     --card-collection-padding: 0;
     --card-collection-z-index: var(--z-index-content);
@@ -24,7 +24,7 @@
     z-index: var(--card-collection-z-index);
 }
 
-.card-collection:last-child {
+.card-collection:first-child {
     --card-collection-margin: 0 auto;
 }
 

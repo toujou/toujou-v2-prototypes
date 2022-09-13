@@ -7,7 +7,7 @@
     --gallery-grid-gap: var(--spacing-s);
     --gallery-width: var(--content-width-with-padding);
     --gallery-max-width: var(--content-max-width);
-    --gallery-margin: 0 auto var(--spacing-between-elements-normal);
+    --gallery-margin: var(--spacing-between-elements-normal) auto 0;
 
     --gallery-item-aspect-ratio: var(--aspect-ratio-default);
 
@@ -31,7 +31,7 @@
     margin: var(--gallery-margin);
 }
 
-.gallery:last-child {
+.gallery:first-child {
     --gallery-margin: 0 auto;
 }
 

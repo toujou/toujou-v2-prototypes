@@ -1,7 +1,7 @@
 .single-media {
     --single-media-width: 100%;
     --single-media-max-width: 100%;
-    --single-media-margin: 0 auto var(--spacing-between-elements-normal);
+    --single-media-margin: var(--spacing-between-elements-normal) auto 0;
     --single-media-display: block;
     --single-media-max-height: 100%;
     --single-media-border-radius: unset;
@@ -19,7 +19,7 @@
     overflow: var(--single-media-overflow);
 }
 
-.single-media:last-child {
+.single-media:first-child {
     --single-media-margin: 0 auto;
 }
 

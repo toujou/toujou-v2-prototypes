@@ -2,7 +2,7 @@
     --details-accordion-display: block;
     --details-accordion-width: var(--content-width-with-padding);
     --details-accordion-max-width: var(--content-max-width);
-    --details-accordion-margin: 0 auto var(--spacing-between-elements-normal);
+    --details-accordion-margin: var(--spacing-between-elements-normal) auto 0;
     --details-accordion-z-index: var(--z-index-content);
 
     display: var(--details-accordion-display);

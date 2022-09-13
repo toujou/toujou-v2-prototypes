@@ -4,7 +4,7 @@
     --text-block-grid-gap: var(--spacing-normal);
     --text-block-width: var(--content-width-with-padding);
     --text-block-max-width: var(--content-max-width);
-    --text-block-margin: 0 auto var(--spacing-between-elements-normal);
+    --text-block-margin: var(--spacing-between-elements-normal) auto 0;
     --text-block-image-aspect-ratio: var(--aspect-ratio-default);
     --text-block-image-object-fit: cover;
     --text-block-media-inside-image-width: 50%;
@@ -23,8 +23,12 @@
     z-index: var(--text-block-z-index);
 }
 
-.text-block:last-child {
+.text-block:first-child {
     --text-block-margin: 0 auto;
+}
+
+.text-block + .text-block {
+    --text-block-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 }
 
 .grid .text-block {
