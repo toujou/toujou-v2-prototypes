@@ -1,7 +1,7 @@
 .blockquote {
     --blockquote-image-size: 112px;
     --blockquote-image-border-radius: 50%;
-    --blockquote-icon-size: var(--spacing-xxl);
+    --blockquote-icon-size: var(--spacing-xl);
     --blockquote-icon-image: var(--icon-blockquote-round);
     --blockquote-font-family: var(--font-family-text);
     --blockquote-font-size: var(--font-size-normal);
@@ -28,11 +28,6 @@
     min-width: 0;
     min-height: 0;
     z-index: var(--blockquote-z-index);
-}
-
-.blockquote-grid[blockquote-grid-count="2"] .blockquote[blockquote-direction="vertical"],
-.blockquote-grid[blockquote-grid-count="3"] .blockquote[blockquote-direction="vertical"] {
-    --blockquote-image-size: 132px;
 }
 
 .blockquote__image {
@@ -100,9 +95,10 @@
 
 /* HORIZONTAL BLOCKQUOTE */
 .blockquote[blockquote-direction="horizontal"] {
-    --blockquote-gap: 0 var(--spacing-m);
+    --blockquote-gap: var(--spacing-normal) var(--spacing-m);
     --blockquote-grid-template-columns: var(--blockquote-image-size) 1fr;
     --blockquote-grid-template-areas: "blockquoteImage blockquoteQuote" "blockquoteImage blockquoteAuthor";
+    --blockquote-image-size: 70px;
 
     grid-template-rows: auto auto;
 }
@@ -116,10 +112,11 @@
 
 @media screen and (min-width: 960px) {
     .blockquote {
-        --blockquote-image-size: 160px;
+        --blockquote-icon-size: var(--spacing-xxl);
     }
 
     .blockquote[blockquote-direction="horizontal"] {
-        --blockquote-gap: var(--spacing-normal) var(--spacing-xxl);
+        --blockquote-gap: var(--spacing-normal) var(--spacing-xl);
+        --blockquote-image-size: 112px;
     }
 }
