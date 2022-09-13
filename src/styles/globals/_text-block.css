@@ -27,7 +27,8 @@
     --text-block-margin: 0 auto;
 }
 
-.text-block + .text-block {
+.text-block + .text-block,
+.media-grid + .text-block {
     --text-block-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 }
 
