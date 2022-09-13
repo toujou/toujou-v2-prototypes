@@ -1,0 +1,110 @@
+.map-contact {
+    --map-contact-width: var(--content-width-with-padding);
+    --map-contact-max-width: var(--content-max-width);
+    --map-contact-margin: var(--spacing-between-elements-normal) auto 0;
+    --map-contact-display: grid;
+    --map-contact-grid-template-columns: 1fr;
+    --map-contact-grid-gap: var(--spacing-normal);
+    --map-contact-grid-template-areas:
+            "map"
+            "address";
+
+    --map-contact-map-container-area: map;
+    --map-contact-map-container-overflow: hidden;
+
+    --map-contact-image-object-fit: cover;
+
+    --map-contact-content-area: address;
+
+    --map-contact-headline-color: var(--color-font-dark);
+
+    --map-contact-address-font-family: var(--font-family-text);
+    --map-contact-address-font-size: var(--font-size-normal);
+    --map-contact-address-font-style: normal;
+    --map-contact-address-color: var(--color-font);
+    --map-contact-address-line-height: var(--line-height-normal);
+
+    --map-contact-socials-margin: var(--spacing-normal) 0 0;
+
+    --map-contact-social-margin: 0 var(--spacing-normal) 0 0;
+    --map-contact-social-color: transparent;
+    --map-contact-social-color-active: var(--color-primary);
+
+    width: var(--map-contact-width);
+    max-width: var(--map-contact-max-width);
+    margin: var(--map-contact-margin);
+    display: var(--map-contact-display);
+    grid-template-columns: var(--map-contact-grid-template-columns);
+    grid-gap: var(--map-contact-grid-gap);
+    grid-template-areas: var(--map-contact-grid-template-areas);
+}
+
+.map-contact[map-aspect-ratio='1-1'] {
+    --map-contact-map-container-aspect-ratio: 1 / 1;
+}
+
+.map-contact[map-aspect-ratio='16-9'] {
+    --map-contact-map-container-aspect-ratio: 16 / 9;
+}
+
+.map-contact:first-child {
+    --map-contact-margin: 0 auto;
+}
+
+.map-contact__map-container {
+    overflow: var(--map-contact-map-container-overflow);
+    grid-area: var(--map-contact-map-container-area);
+    aspect-ratio: var(--map-contact-map-container-aspect-ratio);
+}
+
+.map-contact__image {
+    object-fit: var(--map-contact-image-object-fit);
+    aspect-ratio: var(--map-contact-map-container-aspect-ratio);
+}
+
+.map-contact__content {
+    grid-area: var(--map-contact-content-area);
+}
+
+.map-contact__headline {
+    color: var(--map-contact-headline-color);
+}
+
+.map-contact__address {
+    font-family: var(--map-contact-address-font-family);
+    font-size: var(--map-contact-address-font-size);
+    font-style: var(--map-contact-address-font-style);
+    color: var(--map-contact-address-color);
+    line-height: var(--map-contact-address-line-height);
+}
+
+.map-contact__socials {
+    margin: var(--map-contact-socials-margin);
+}
+
+.map-contact__social {
+    margin: var(--map-contact-social-margin);
+    color: var(--map-contact-social-color) !important;
+}
+
+.map-contact__social:focus .map-contact__social-icon {
+    --icon-color: var(--map-contact-social-color-active);
+}
+
+@media (hover: hover) {
+    .map-contact__social:hover .map-contact__social-icon {
+        --icon-color: var(--map-contact-social-color-active);
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .map-contact {
+        --map-contact-grid-template-columns: 1fr 1fr;
+        --map-contact-grid-gap: var(--spacing-xl);
+        --map-contact-grid-template-areas: "map address";
+    }
+
+    .map-contact[direction="reverse"] {
+        --map-contact-grid-template-areas: "address map";
+    }
+}
