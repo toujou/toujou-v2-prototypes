@@ -2,7 +2,7 @@
 
 :root {
     /* TOPBAR */
-    --topbar-border-width: 2px;
+    --topbar-border-width: var(--border-width-m);
     --topbar-logo-size-small: 48px;
     --topbar-logo-size-medium: 64px;
     --topbar-logo-size-large: 80px;

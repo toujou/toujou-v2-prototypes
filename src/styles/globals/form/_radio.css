@@ -3,7 +3,7 @@
     --radio-display: block;
     --radio-size: var(--form-input-font-size);
     --radio-background-color: var(--form-input-background-color);
-    --radio-border-width: 2px;
+    --radio-border-width: var(--border-width-m);
     --radio-border-color: var(--color-font);
     --radio-border: var(--radio-border-width) solid var(--radio-border-color);
     --radio-border-radius: var(--border-radius-circle);

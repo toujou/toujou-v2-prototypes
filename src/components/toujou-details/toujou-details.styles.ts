@@ -2,7 +2,7 @@ import { css } from 'lit';
 
 export const ToujouDetailsStyles = css`
   :host {
-    --toujou-details-border: 2px solid var(--color-font-light);
+    --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
     
     --toujou-details-summary-padding: var(--spacing-normal);
     --toujou-details-summary-gap: 0;
