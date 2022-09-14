@@ -473,7 +473,7 @@ figure {
 
 :root {
     /* TOPBAR */
-    --topbar-border-width: 2px;
+    --topbar-border-width: var(--border-width-m);
     --topbar-logo-size-small: 48px;
     --topbar-logo-size-medium: 64px;
     --topbar-logo-size-large: 80px;
@@ -995,7 +995,7 @@ figure {
     --checkbox-display: block;
     --checkbox-size: var(--form-input-font-size);
     --checkbox-background-color: var(--form-input-background-color);
-    --checkbox-border-width: 2px;
+    --checkbox-border-width: var(--border-width-m);
     --checkbox-border-color: var(--color-font);
     --checkbox-border: var(--checkbox-border-width) solid var(--checkbox-border-color);
     --checkbox-border-radius: var(--border-radius-s);
@@ -1954,7 +1954,7 @@ input[type=number]::-webkit-outer-spin-button {
     --radio-display: block;
     --radio-size: var(--form-input-font-size);
     --radio-background-color: var(--form-input-background-color);
-    --radio-border-width: 2px;
+    --radio-border-width: var(--border-width-m);
     --radio-border-color: var(--color-font);
     --radio-border: var(--radio-border-width) solid var(--radio-border-color);
     --radio-border-radius: var(--border-radius-circle);
@@ -3429,6 +3429,10 @@ exit-warning {
 
 .grid:first-child {
     --grid-margin: 0 auto;
+}
+
+.toujou-breadcrumb + .grid {
+    margin-top: var(--spacing-between-consecutive-elements-normal);
 }
 
 .grid[grid-type="wide"] {
@@ -5336,7 +5340,11 @@ h6,
     margin-top: var(--spacing-xl);
 }
 
-:is(p, ul, ol):last-child {
+.grid-column > span:first-child + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0;
+}
+
+:is(p, ul, ol:not(.breadcrumb__list)):last-child {
     margin-bottom: 0;
 }
 

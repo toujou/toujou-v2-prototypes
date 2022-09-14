@@ -1,6 +1,6 @@
-import{r as u,s as c,$ as m}from"./lit-element-4f5b1f7c.js";import{n as p}from"./custom-element-fb5c5745.js";import{e as d}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";const h=u`
+import{r as u,s as m,$ as c}from"./lit-element-4f5b1f7c.js";import{n as p}from"./custom-element-fb5c5745.js";import{e as d}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";const h=u`
   :host {
-    --toujou-details-border: 2px solid var(--color-font-light);
+    --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
     
     --toujou-details-summary-padding: var(--spacing-normal);
     --toujou-details-summary-gap: 0;
@@ -48,7 +48,7 @@ import{r as u,s as c,$ as m}from"./lit-element-4f5b1f7c.js";import{n as p}from".
       cursor: pointer;
     }
   }
-`;var g=Object.defineProperty,v=Object.getOwnPropertyDescriptor,i=(t,s,r,a)=>{for(var e=a>1?void 0:a?v(s,r):s,l=t.length-1,n;l>=0;l--)(n=t[l])&&(e=(a?n(s,r,e):n(e))||e);return a&&e&&g(s,r,e),e};let o=class extends c{constructor(){super(),this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.detailsEl=null,this.isOpen=!1}connectedCallback(){super.connectedCallback(),this.isAccordionItem=!!this.closest(this.accordionParentTag),this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-connected",{bubbles:!0,composed:!0,detail:{detailsEl:this}}))}firstUpdated(){var t;this.detailsEl=this.shadowRoot.querySelector(".details"),this.isOpen=((t=this.detailsEl)==null?void 0:t.hasAttribute("open"))||!1}render(){return m`
+`;var g=Object.defineProperty,v=Object.getOwnPropertyDescriptor,i=(t,s,r,a)=>{for(var e=a>1?void 0:a?v(s,r):s,l=t.length-1,n;l>=0;l--)(n=t[l])&&(e=(a?n(s,r,e):n(e))||e);return a&&e&&g(s,r,e),e};let o=class extends m{constructor(){super(),this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.detailsEl=null,this.isOpen=!1}connectedCallback(){super.connectedCallback(),this.isAccordionItem=!!this.closest(this.accordionParentTag),this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-connected",{bubbles:!0,composed:!0,detail:{detailsEl:this}}))}firstUpdated(){var t;this.detailsEl=this.shadowRoot.querySelector(".details"),this.isOpen=((t=this.detailsEl)==null?void 0:t.hasAttribute("open"))||!1}render(){return c`
             <details class="details" ?open="${this.isOpen}" @toggle="${this._handleDetailsChange}">
                 <summary class="details__summary">
                     <slot name="summary"></slot>
