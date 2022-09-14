@@ -4812,6 +4812,11 @@ main > .table-container {
     --text-block-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 }
 
+.details .text-block {
+    margin: 0;
+    width: 100%;
+}
+
 .grid .text-block {
     --text-block-width: var(--content-fullwidth);
     --text-block-max-width: var(--content-fullwidth);
@@ -4871,6 +4876,10 @@ main > .table-container {
     flex-direction: column-reverse;
     gap: var(--text-block-column-gap);
     justify-content: flex-end;
+}
+
+.details .text-block__content > *:first-child {
+    margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -4992,6 +5001,10 @@ main > .table-container {
     .text-block[text-block-media-position="inside-right"] .text-block__content {
         padding-left: calc(var(--text-block-grid-gap) / 2);
     }
+}
+
+.details .text-block .text-block-column {
+    margin-top: 0;
 }
 
 .topbar {
@@ -5374,6 +5387,20 @@ p + :is(p, ul, ol) {
 
 a {
     color: var(--color-primary);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
 }
 
 p > a.button {
