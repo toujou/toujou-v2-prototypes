@@ -12,6 +12,10 @@
     z-index: var(--details-accordion-z-index);
 }
 
+.grid-column .details-accordion {
+    --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+}
+
 .details-accordion:first-child {
     --details-accordion-margin: 0 auto;
 }
