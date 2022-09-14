@@ -44,4 +44,6 @@
     --color-white-o-75: hsl(0 100% 100% / 75%);
 
     --color-headline: var(--color-primary);
+
+    --text-background-gradient: linear-gradient(0deg, rgb(0 0 0 / 75%) 0%, rgb(0 0 0 / 0%) 100%);
 }

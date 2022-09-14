@@ -68,7 +68,7 @@
     --collection-item-location-bottom: 0;
     --collection-item-location-left: 0;
     --collection-item-location-padding: var(--spacing-m);
-    --collection-item-location-gradient: linear-gradient(0deg, rgb(0 0 0 / 100%) 0%, rgb(0 0 0 / 0%) 100%);
+    --collection-item-location-gradient: var(--text-background-gradient);
     --collection-item-location-width: 100%;
     --collection-item-location-border-radius: 0;
     --collection-item-location-transform: none;

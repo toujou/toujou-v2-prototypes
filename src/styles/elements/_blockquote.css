@@ -47,7 +47,7 @@
     color: var(--blockquote-color);
     margin: var(--blockquote-quote-margin);
     line-height: var(--blockquote-line-height);
-    margin-top: var(--blockquote-icon-size);
+    margin-top: var(--spacing-m);
     grid-area: blockquoteQuote;
 }
 

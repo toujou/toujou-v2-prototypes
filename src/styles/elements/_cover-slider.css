@@ -35,15 +35,18 @@
     /* bullets */
     --cover-slider-bullets-display: none;
 
+    /* item */
+    --cover-slider-item-border-radius: var(--border-radius-normal);
+    --cover-slider-item-overflow: hidden;
+
     /* media */
     --cover-slider-media-aspect-ratio: 1 / 1.618;  /* vertical golden ratio */
-    --cover-slider-media-hover-filter: brightness(.75);
-    --cover-slider-media-border-radius: var(--border-radius-normal);
-    --cover-slider-media-overflow: hidden;
 
     /* image */
     --cover-slider-image-height: 100%;
     --cover-slider-image-width: 100%;
+    --cover-slider-image-transform: scale(1);
+    --cover-slider-image-transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
     --cover-slider-image-object-fit: cover;
 
     /* title */
@@ -59,13 +62,7 @@
     --cover-slider-title-z-index: 1;
 
     --cover-slider-title-before-z-index: -1;
-    --cover-slider-title-before-opacity: .5;
-    --cover-slider-title-before-gradient: linear-gradient(
-            0deg,
-            var(--color-font-dark) 0%,
-            rgb(0 0 0 / 0%) 100%,
-            rgb(0 0 0 / 0%) 100%
-    );
+    --cover-slider-title-before-gradient: var(--text-background-gradient);
 
     display: var(--cover-slider-display);
     width: var(--cover-slider-width);
@@ -76,6 +73,11 @@
 
 .cover-slider:first-child {
     --cover-slider-margin: 0 auto;
+}
+
+.cover-slider__item {
+    border-radius: var(--cover-slider-item-border-radius);
+    overflow: var(--cover-slider-item-overflow);
 }
 
 .cover-slider__item[element-design="primary"] {
@@ -114,28 +116,26 @@
 }
 
 .cover-slider__link:focus .cover-slider__media {
-    filter: var(--cover-slider-media-hover-filter);
     border: 2px solid var(--color-primary-light);
     outline: var(--focus-outline-width) solid var(--focus-outline-color) var(--focus-outline-offset);
 }
 
 .cover-slider__media {
     aspect-ratio: var(--cover-slider-media-aspect-ratio);
-    border-radius: var(--cover-slider-media-border-radius);
-    overflow: var(--cover-slider-media-overflow);
 }
 
 .cover-slider__image {
     height: var(--cover-slider-image-height);
     width: var(--cover-slider-image-width);
     object-fit: var(--cover-slider-image-object-fit);
+    transform: var(--cover-slider-image-transform);
+    transition: var(--cover-slider-image-transition);
 }
 
 .cover-slider__title {
     position: var(--cover-slider-title-position);
     bottom: var(--cover-slider-title-bottom);
     left: var(--cover-slider-title-left);
-    transform: var(--cover-slider-title-transform);
     width: var(--cover-slider-title-width);
     margin: var(--cover-slider-title-margin);
     padding: var(--cover-slider-title-padding);
@@ -153,8 +153,6 @@
     height: 100%;
     background: var(--cover-slider-title-before-gradient);
     z-index: var(--cover-slider-title-before-z-index);
-    opacity: var(--cover-slider-title-before-opacity);
-
 }
 
 /* not slider */
@@ -176,6 +174,6 @@
     }
 
     .cover-slider__link:hover .cover-slider__media {
-        filter: var(--cover-slider-media-hover-filter);
+        --cover-slider-image-transform: scale(1.1);
     }
 }

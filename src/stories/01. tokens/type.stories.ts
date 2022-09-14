@@ -141,7 +141,7 @@ const TextStylesTemplate = () => {
 
 const OldFontVariablesTemplate = () => {
     return `
-        <h1 class="tokens-demo__title">Old font vairables</h1>
+        <h1 class="tokens-demo__title">Old font variables</h1>
         
         <h2 class="tokens-demo__subtitle">Font families</h2>
         
@@ -150,7 +150,6 @@ const OldFontVariablesTemplate = () => {
         <br>
         <p class="old-font-family-text old-font-weight-text-normal">This is the regular text font family: Mulish | 600</p>
         <p class="old-font-family-text old-font-weight-text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        
         <br>
         <p class="old-font-family-text old-font-weight-text-bold">This is the bold text font family: Mulish | 800</p>
         <p class="old-font-family-text old-font-weight-text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
