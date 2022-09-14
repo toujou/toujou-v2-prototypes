@@ -1,0 +1,26 @@
+/*
+* We still use some old markup on the new theme, for example for the extensions.
+* This means that we still need the "old variables" because they are used on those templates / extensions
+*/
+
+:root {
+    --paragraph__family: var(--font-family-text);
+    --paragraph__normal: var(--font-weight-text-normal);
+    --paragraph__bold: var(--font-weight-text-bold);
+    --headline__family: var(--font-family-headline);
+    --headline__weight: var(--font-weight-headline);
+
+    --bg-color: var(--color-bg);
+    --font-color: var(--color-font);
+    --font-color--light: var(--color-font-light);
+    --font-color--dark: var(--color-font-dark);
+    --primary-color: var(--color-primary);
+    --primary-color--light: var(--color-primary-light);
+    --primary-color--dark: var(--color-primary-dark);
+    --secondary-color: var(--color-secondary);
+    --secondary-color--light: var(--color-secondary-light);
+    --secondary-color--dark: var(--color-secondary-dark);
+    --success-color: var(--color-success);
+    --warning-color: var(--color-warning);
+    --error-color: var(--color-error);
+}

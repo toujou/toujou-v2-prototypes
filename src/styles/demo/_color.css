@@ -94,4 +94,22 @@
 .custom-color-l-20 { --custom-color-l: 20%; }
 .custom-color-l-10 { --custom-color-l: 10%; }
 .custom-color-l-0 { --custom-color-l: 0%; }
+
+/* Old color vars */
+.bg-color-old-primary { background-color: var(--primary-color); }
+.bg-color-old-primary-light { background-color: var(--primary-color--light); }
+.bg-color-old-primary-dark { background-color: var(--primary-color--dark); }
+
+.bg-color-old-secondary { background-color: var(--secondary-color); }
+.bg-color-old-secondary-light { background-color: var(--secondary-color--light); }
+.bg-color-old-secondary-dark { background-color: var(--secondary-color--dark); }
+
+.bg-color-old-font { background-color: var(--font-color); }
+.bg-color-old-font-light { background-color: var(--font-color--light); }
+.bg-color-old-font-dark { background-color: var(--font-color--dark); }
+
+.bg-color-old-success { background-color: var(--success-color); }
+.bg-color-old-error { background-color: var(--error-color); }
+.bg-color-old-warning { background-color: var(--warning-color); }
+
 /* stylelint-enable max-line-length */

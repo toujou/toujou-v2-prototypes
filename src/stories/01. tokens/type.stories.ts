@@ -20,8 +20,7 @@ const FontFamiliesTemplate = () => {
         
         <br>
         <p class="font-family-text font-weight-text-bold">This is the bold text font family: Mulish | 800</p>
-        <p class="font-family-text font-weight-text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        
+        <p class="font-family-text font-weight-text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
     `;
 }
 
@@ -140,6 +139,24 @@ const TextStylesTemplate = () => {
     `;
 }
 
+const OldFontVariablesTemplate = () => {
+    return `
+        <h1 class="tokens-demo__title">Old font vairables</h1>
+        
+        <h2 class="tokens-demo__subtitle">Font families</h2>
+        
+        <p class="old-font-family-headline old-font-weight-headline">This is the headline font family: Ubuntu | 800</p>
+        <p class="old-font-family-headline old-font-weight-headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+        <p class="old-font-family-text old-font-weight-text-normal">This is the regular text font family: Mulish | 600</p>
+        <p class="old-font-family-text old-font-weight-text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <br>
+        <p class="old-font-family-text old-font-weight-text-bold">This is the bold text font family: Mulish | 800</p>
+        <p class="old-font-family-text old-font-weight-text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+    `;
+}
+
 export const FontFamilies = FontFamiliesTemplate.bind({});
 export const FontSizes = FontSizeTemplate.bind({});
 export const LineHeights = LineHeightTemplate.bind({});
@@ -147,3 +164,4 @@ export const LetterSpacing = LetterSpacingTemplate.bind({});
 export const FontStyles = FontStylesTemplate.bind({});
 export const Tags = TagsTemplate.bind({});
 export const TextStyles = TextStylesTemplate.bind({});
+export const OldFontVariables = OldFontVariablesTemplate.bind({});

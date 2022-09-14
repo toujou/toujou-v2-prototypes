@@ -126,3 +126,24 @@ code {
     background-color: rgb(0 0 0 / 10%);
     padding: var(--spacing-xs);
 }
+
+/* Old font vars */
+.old-font-family-headline {
+    font-family: var(--headline__family);
+}
+
+.old-font-family-text {
+    font-family: var(--paragraph__family);
+}
+
+.old-font-weight-headline {
+    font-weight: var(--headline__weight);
+}
+
+.old-font-weight-text-normal {
+    font-weight: var(--paragraph__normal);
+}
+
+.old-font-weight-text-bold {
+    font-weight: var(--paragraph__bold);
+}
