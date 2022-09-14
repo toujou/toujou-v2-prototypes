@@ -12,7 +12,7 @@
     z-index: var(--details-accordion-z-index);
 }
 
-.details-accordion:last-child {
+.details-accordion:first-child {
     --details-accordion-margin: 0 auto;
 }
 
