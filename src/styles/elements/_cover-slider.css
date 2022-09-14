@@ -48,14 +48,24 @@
 
     /* title */
     --cover-slider-title-position: absolute;
-    --cover-slider-title-top: 50%;
-    --cover-slider-title-left: 50%;
-    --cover-slider-title-transform: translate(-50%, -50%);
-    --cover-slider-title-max-height: calc(100% - var(--spacing-l));
-    --cover-slider-title-max-width: calc(100% - var(--spacing-l));
+    --cover-slider-title-bottom: 0;
+    --cover-slider-title-left: 0;
+    --cover-slider-title-width: 100%;
     --cover-slider-title-margin: 0;
+    --cover-slider-title-padding: var(--spacing-normal);
     --color-slider-title-color: var(--color-bg);
     --color-slider-title-color-hover: var(--color-primary-light);
+    --cover-slider-title-font-size: var(--font-size-m);
+    --cover-slider-title-z-index: 1;
+
+    --cover-slider-title-before-z-index: -1;
+    --cover-slider-title-before-opacity: .5;
+    --cover-slider-title-before-gradient: linear-gradient(
+            0deg,
+            var(--color-font-dark) 0%,
+            rgb(0 0 0 / 0%) 100%,
+            rgb(0 0 0 / 0%) 100%
+    );
 
     display: var(--cover-slider-display);
     width: var(--cover-slider-width);
@@ -123,13 +133,28 @@
 
 .cover-slider__title {
     position: var(--cover-slider-title-position);
-    top: var(--cover-slider-title-top);
+    bottom: var(--cover-slider-title-bottom);
     left: var(--cover-slider-title-left);
     transform: var(--cover-slider-title-transform);
-    max-width: var(--cover-slider-title-max-width);
-    max-height: var(--cover-slider-title-max-height);
+    width: var(--cover-slider-title-width);
     margin: var(--cover-slider-title-margin);
+    padding: var(--cover-slider-title-padding);
     color: var(--color-slider-title-color);
+    font-size: var(--cover-slider-title-font-size);
+    z-index: var(--cover-slider-title-z-index)
+}
+
+.cover-slider__title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--cover-slider-title-before-gradient);
+    z-index: var(--cover-slider-title-before-z-index);
+    opacity: var(--cover-slider-title-before-opacity);
+
 }
 
 /* not slider */
