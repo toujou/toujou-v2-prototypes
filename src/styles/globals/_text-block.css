@@ -32,6 +32,11 @@
     --text-block-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 }
 
+.details .text-block {
+    margin: 0;
+    width: 100%;
+}
+
 .grid .text-block {
     --text-block-width: var(--content-fullwidth);
     --text-block-max-width: var(--content-fullwidth);
@@ -89,6 +94,10 @@
     flex-direction: column-reverse;
     gap: var(--text-block-column-gap);
     justify-content: flex-end;
+}
+
+.details .text-block__content > *:first-child {
+    margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
