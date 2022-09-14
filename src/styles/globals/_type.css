@@ -82,7 +82,11 @@ h6,
     margin-top: var(--spacing-xl);
 }
 
-:is(p, ul, ol):last-child {
+.grid-column > span:first-child + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0;
+}
+
+:is(p, ul, ol:not(.breadcrumb__list)):last-child {
     margin-bottom: 0;
 }
 

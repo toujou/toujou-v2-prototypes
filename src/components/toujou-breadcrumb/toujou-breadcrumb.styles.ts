@@ -48,4 +48,14 @@ export const toujouBreadcrumbStyles = css`
     background-color: var(--breadcrumb-mobile-menu-bg-color);
     box-shadow: var(--breadcrumb-mobile-menu-shadow);
   }
+
+  .breadcrumb__fake-list .breadcrumb__link:focus {
+    color: var(--breadcrumb-link-color-active, var(--color-primary));
+  }
+  
+  @media (hover: hover) {
+    .breadcrumb__fake-list .breadcrumb__link:hover {
+      color: var(--breadcrumb-link-color-active, var(--color-primary));
+    }
+  }
 `;

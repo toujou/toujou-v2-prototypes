@@ -21,6 +21,10 @@
     --grid-margin: 0 auto;
 }
 
+.toujou-breadcrumb + .grid {
+    margin-top: var(--spacing-between-consecutive-elements-normal);
+}
+
 .grid[grid-type="wide"] {
     --grid-max-width: var(--content-wide-max-width);
 }
