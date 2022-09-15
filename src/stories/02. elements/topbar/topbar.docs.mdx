@@ -1,1 +1,175 @@
+import MainNavDocs from './main-nav.docs.mdx'
+import ServiceNavDocs from './service-nav.docs.mdx'
+import BurgerButtonDocs from './burger-button.docs.mdx'
+import TopbarMobileImage from './docs-images/topbar-mobile.jpg'
+import TopbarDesktopImage from './docs-images/topbar-desktop.jpg'
+
 # Topbar
+
+The topbar is a complex element, which render a topbar possibly with a main navigation, service navigation, logo and burger button.
+
+The topbar element is composed by different elements, which also have they own docs:
+- [main navigation](#main-navigation)
+- [service navigation](#service-navigation)
+- [burger button](#burger-button)
+
+## Markup example
+```html
+<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="medium">
+    <a href="#" class="topbar__logo-link">
+        <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
+    </a>
+
+    <ul class="topbar__actions">
+        <li class="topbar__actions-item">
+            <a href="#" class="topbar__actions-link">
+                <span class="topbar__actions-text">Suche</span>
+                <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+            </a>
+        </li>
+    </ul>
+
+    <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation" open-level="1">
+        <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
+            <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
+            Zurück
+        </button>
+
+        <p class="main-nav__subtitle"></p>
+
+        <ul class="main-nav__list" nav-list-level="1">
+            <li class="main-nav__list-item" nav-item-level="1">
+                <a href="#" class="main-nav__link">
+                    <span class="main-nav__text">Startseite</span>
+                </a>
+            </li>
+            <li class="main-nav__list-item" nav-item-level="1" has-subnav="">
+                <a href="#" class="main-nav__link">
+                    <span class="main-nav__text">Bürgerservice</span>
+                </a>
+                <span class="main-nav__chevron">
+                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                </span>
+                <ul class="main-nav__list" nav-list-level="2">
+                    <li class="main-nav__list-item" nav-item-level="2">
+                        <a href="#" class="main-nav__link">
+                            <span class="main-nav__text">Arbeit und Beruf</span>
+                        </a>
+                    </li>
+                    <li class="main-nav__list-item" nav-item-level="2">
+                        <a href="#" class="main-nav__link">
+                            <span class="main-nav__text">Ausweise und Dokumente</span>
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+            <li class="main-nav__list-item" nav-item-level="1">
+                <a href="#" class="main-nav__link">
+                    <span class="main-nav__text">Online-Terminvergabe</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <toujou-burger-button class="burger-button" role="button" aria-pressed="false" aria-haspopup="true" aria-controls="mainNavigation" aria-expanded="false" aria-label="Menu button" toggle-element-selector="#topbar">
+        <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
+        <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
+        <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
+    </toujou-burger-button>
+
+    <nav class="service-nav">
+        <a href="#" class="service-nav__link">Impressum</a>
+        <a href="#" class="service-nav__link">Datenschutz</a>
+    </nav>
+
+</toujou-topbar>
+```
+
+<br/>
+<br/>
+
+## Topbar layout
+On mobile devices the topbar shows the logo / site title, the burger button and the topbar actions:
+<img src={TopbarMobileImage}/>
+
+On desktop it shows the logo / site title, the main navigation and the topbar actions:
+<img src={TopbarDesktopImage}/>
+
+<br/>
+<br/>
+
+## Options
+The topbar isn't a content element. It is automatically generate according to the page's content and settings.
+
+There are some settings that change the way the topbar looks and behaves:
+
+### Navigation theme
+The navigation theme can be set on the "toujou theme" module, on the "Theme" tab. We can set the "Enable light navigation colors" option either to `dark navigation` or `light navigation`
+
+This will in turn set the correct attribute (`navigation-theme`) value on the topbar element, and therefore giving the topbar the correct styles.
+
+Example: `<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="medium">...<toujou-topbar>`
+
+### Page title type
+On the "toujou theme" module, on the "Theme" tab we can choose between `Site title` and `Top bar logo` on the "Mobile top bar content option.
+
+This will render either the logo or the site title on the topbar (not only on mobile, like the option name says)
+
+Example:
+```html
+<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="medium">
+    <a href="#" class="topbar__logo-link">
+        <span class="topbar__title">Nice title</span>
+    </a>
+    ...
+</toujou-topbar>
+```
+
+### Logo size
+The logo size can be defined on the "toujou theme" module "Logo" tab. For the "Logo size" we can choose between `small`, `medium` and `large`.
+
+This will affect the height of the whole topbar, not only the logo size.
+
+Example: `<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="small">...</toujou-topbar>`
+
+<br/>
+<br/>
+
+## Attributes
+
+### navigation-theme <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Change between light and dark theme. Valid values are `light` and `dark`
+
+Example: `<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="medium"></toujou-topbar>`
+
+### logo-size <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+Change between the different logo sizes, which affects the topbar's height. Valie values are `small`, `medium` and `large`
+
+Example: `<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="large"></toujou-topbar>`
+
+## Events
+The `<toujou-topbar>` element dispatches and reacts to some custom events.
+
+### toujou-topbar-breakpoint-change
+Whenever the window size changes and the breakpoint between mobile and desktop is crossed, the topbar dispatches a custom `toujou-topbar-breakpoint-change` event.
+
+### toujou-burger-button-click
+The topbar element reacts to the `toujou-burger-button-click` by setting / removing the open navigation attribute on itself according to the received state
+
+-------
+
+<a id="main-navigation" />
+<MainNavDocs />
+
+<br/>
+<br/>
+
+<a id="service-navigation" />
+<ServiceNavDocs />
+
+<br/>
+<br/>
+
+<a id="burger-button" />
+<BurgerButtonDocs />

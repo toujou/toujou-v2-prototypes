@@ -1,0 +1,61 @@
+## Burger button
+
+The burger button is an element that allows us to open / close the main navigation menu on click
+
+## Markup example:
+```html
+<toujou-burger-button
+    class="burger-button"
+    role="button"
+    aria-pressed="false"
+    aria-haspopup="true"
+    aria-controls="mainNavigation"
+    aria-expanded="false"
+    aria-label="Menu button"
+    toggle-element-selector="#topbar"
+>
+    <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
+    <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
+    <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
+</toujou-burger-button>
+```
+
+## Attributes
+
+### role <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The "role" attribute must be set to `button`. This greatly improves the element's accessibility.
+
+### aria-pressed <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The "aria-pressed" must be set to `false` to improve the element's accessibility. Will be updated by the webcomponent.
+
+### aria-haspopup <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The "aria-haspopup" must be set to `true` to improve the element's accessibility. Will be updated by the webcomponent.
+
+### aria-controls <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The "aria-controls" must be set to the same value as the main navigation's id, for instance `mainNavigation`.
+
+### aria-expanded <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The "aria-expanded" must be set to `false` to improve the element's accessibility. Will be updated by the webcomponent.
+
+### aria-label <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The "aria-label" must be set to a value to explains the user what the button is or does, like for instance `Menu button` or `Button to toggle the main navigation's visibility`.
+
+It should work with all different languages available on the website.
+
+### toggle-element-selector <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `toggle-element-selector` will be used by the webcomponent. This is the target element where the open navigation attribute will be added / removed.
+
+This element must be a valid css selector for an element on the page. As default we should use the `#topbar` selector.
+
+## Events
+The `<burger-button>` element dispatches and reacts to some custom events.
+
+### click event
+The `<burger-button>` dispatches a custom `toujou-burger-button-click` event each time it is clicked.
+
+The `toujou-burger-button-click` event also has the current state available under `event.detail.state`.
+
+### topbar breaking point
+The `<burger-button>` listens to the custom `toujou-topbar-breakpoint-change` event (dispatched by the topbar element) and reacts by setting its `state = false` whenever the window grows to desktop size.
+
+The `toujou-topbar-breakpoint-change` also carries the information if the new window is mobile on `event.detail.state`. `true` mean it is mobile

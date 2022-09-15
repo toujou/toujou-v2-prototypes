@@ -1,0 +1,73 @@
+import ServiceNavMobileImage from './docs-images/service-nav-mobile.jpg'
+import ServiceNavDesktopImage from './docs-images/service-nav-desktop.jpg'
+
+## Service nav
+The service navigation renders a `nav` element, which allows users to quickly navigate to the most important service pages on the website.
+
+It is automatically generated according to the pages added to the `Service-Navigation` folder on the BE.
+
+On mobile it is visible inside the menu, which can be opened / closed with a burger button click. It is also rendered on the default footer
+
+
+
+
+## Main nav
+The main navigation render a `<nav>` element which allows the users to navigate between the different pages on the website.
+
+It is automatically generated according to the pages that are created on the BE.
+
+On mobile it is visible by opening the navigation (click on the burger button), on desktop it is always visible.
+
+The main navigation can show up to 3 nested navigation levels.
+
+## Markup example:
+```html
+<nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation" open-level="1">
+    <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
+        <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
+        Zurück
+    </button>
+
+    <p class="main-nav__subtitle"></p>
+
+    <ul class="main-nav__list" nav-list-level="1">
+        <li class="main-nav__list-item" nav-item-level="1">
+            <a href="#" class="main-nav__link">
+                <span class="main-nav__text">Startseite</span>
+            </a>
+        </li>
+        <li class="main-nav__list-item" nav-item-level="1" has-subnav="">
+            <a href="#" class="main-nav__link">
+                <span class="main-nav__text">Bürgerservice</span>
+            </a>
+            <span class="main-nav__chevron">
+                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+            </span>
+            <ul class="main-nav__list" nav-list-level="2">
+                <li class="main-nav__list-item" nav-item-level="2">
+                    <a href="#" class="main-nav__link">
+                        <span class="main-nav__text">Arbeit und Beruf</span>
+                    </a>
+                </li>
+                <li class="main-nav__list-item" nav-item-level="2">
+                    <a href="#" class="main-nav__link">
+                        <span class="main-nav__text">Ausweise und Dokumente</span>
+                    </a>
+                </li>
+                </li>
+            </ul>
+        </li>
+        <li class="main-nav__list-item" nav-item-level="1">
+            <a href="#" class="main-nav__link">
+                <span class="main-nav__text">Online-Terminvergabe</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+```
+
+The mobile main navigation requires click to navigate between the different menu levels
+<img src={ServiceNavMobileImage}/>
+
+The desktop navigation open and closes on hover events
+<img src={ServiceNavDesktopImage}/>
