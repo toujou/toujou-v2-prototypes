@@ -59,6 +59,8 @@
 .text-block__image {
     aspect-ratio: var(--text-block-image-aspect-ratio);
     object-fit: var(--text-block-image-object-fit);
+    height: auto;
+    width: 100%;
 }
 
 .text-block__image--square {
