@@ -5270,7 +5270,8 @@ main {
 }
 
 h1,
-*[type-size="font--alpha"] {
+*[type-size="font--alpha"],
+.font--alpha {
     --text-tag-font-size: var(--font-size-xxxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5278,7 +5279,8 @@ h1,
 }
 
 h2,
-*[type-size="font--beta"] {
+*[type-size="font--beta"],
+.font--beta {
     --text-tag-font-size: var(--font-size-xxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5286,7 +5288,8 @@ h2,
 }
 
 h3,
-*[type-size="font--gamma"] {
+*[type-size="font--gamma"],
+.font--gamma {
     --text-tag-font-size: var(--font-size-xl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5294,7 +5297,8 @@ h3,
 }
 
 h4,
-*[type-size="font--delta"] {
+*[type-size="font--delta"],
+.font--delta {
     --text-tag-font-size: var(--font-size-l);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5302,7 +5306,8 @@ h4,
 }
 
 h5,
-*[type-size="font--epsilon"] {
+*[type-size="font--epsilon"],
+.font--epsilon {
     --text-tag-font-size: var(--font-size-m);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5310,7 +5315,8 @@ h5,
 }
 
 h6,
-*[type-size="font--omega"] {
+*[type-size="font--omega"],
+.font--omega {
     --text-tag-font-size: var(--font-size-ms);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5339,7 +5345,13 @@ h6,
 *[type-size="font--gamma"],
 *[type-size="font--delta"],
 *[type-size="font--epsilon"],
-*[type-size="font--omega"] {
+*[type-size="font--omega"],
+.font--alpha,
+.font--beta,
+.font--gamma,
+.font--delta,
+.font--epsilon,
+.font--omega {
     font-size: var(--text-tag-font-size);
     font-weight: var(--text-tag-font-weight);
     line-height: var(--text-tag-line-height);
@@ -5419,27 +5431,33 @@ main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
     margin-right: auto;
 }
 
-*[type-alignment="left"] {
+*[type-alignment="left"],
+.font--align-left {
     text-align: left;
 }
 
-*[type-alignment="center"] {
+*[type-alignment="center"],
+.font--align-center {
     text-align: center;
 }
 
-*[type-alignment="right"] {
+*[type-alignment="right"],
+.font--align-right {
     text-align: right;
 }
 
-*[type-color="font--primary"] {
+*[type-color="font--primary"],
+.font--primary {
     color: var(--color-primary);
 }
 
-*[type-color="font--secondary"] {
+*[type-color="font--secondary"],
+.font--secondary {
     color: var(--color-secondary);
 }
 
-*[type-color="font--grey"] {
+*[type-color="font--grey"],
+.font--grey {
     color: var(--color-font);
 }
 
