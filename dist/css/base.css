@@ -5270,7 +5270,7 @@ main {
 }
 
 h1,
-*[type-size="alpha"] {
+*[type-size="font--alpha"] {
     --text-tag-font-size: var(--font-size-xxxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5278,7 +5278,7 @@ h1,
 }
 
 h2,
-*[type-size="beta"] {
+*[type-size="font--beta"] {
     --text-tag-font-size: var(--font-size-xxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5286,7 +5286,7 @@ h2,
 }
 
 h3,
-*[type-size="gamma"] {
+*[type-size="font--gamma"] {
     --text-tag-font-size: var(--font-size-xl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5294,7 +5294,7 @@ h3,
 }
 
 h4,
-*[type-size="delta"] {
+*[type-size="font--delta"] {
     --text-tag-font-size: var(--font-size-l);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5302,7 +5302,7 @@ h4,
 }
 
 h5,
-*[type-size="epsilon"] {
+*[type-size="font--epsilon"] {
     --text-tag-font-size: var(--font-size-m);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5310,7 +5310,7 @@ h5,
 }
 
 h6,
-*[type-size="omega"] {
+*[type-size="font--omega"] {
     --text-tag-font-size: var(--font-size-ms);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5334,12 +5334,12 @@ h3,
 h4,
 h5,
 h6,
-*[type-size="alpha"],
-*[type-size="beta"],
-*[type-size="gamma"],
-*[type-size="delta"],
-*[type-size="epsilon"],
-*[type-size="omega"] {
+*[type-size="font--alpha"],
+*[type-size="font--beta"],
+*[type-size="font--gamma"],
+*[type-size="font--delta"],
+*[type-size="font--epsilon"],
+*[type-size="font--omega"] {
     font-size: var(--text-tag-font-size);
     font-weight: var(--text-tag-font-weight);
     line-height: var(--text-tag-line-height);
@@ -5431,15 +5431,15 @@ main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
     text-align: right;
 }
 
-*[type-color="primary"] {
+*[type-color="font--primary"] {
     color: var(--color-primary);
 }
 
-*[type-color="secondary"] {
+*[type-color="font--secondary"] {
     color: var(--color-secondary);
 }
 
-*[type-color="grey"] {
+*[type-color="font--grey"] {
     color: var(--color-font);
 }
 
