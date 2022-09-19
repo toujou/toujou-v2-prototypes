@@ -5270,7 +5270,7 @@ main {
 }
 
 h1,
-.font--alpha {
+*[type-size="alpha"] {
     --text-tag-font-size: var(--font-size-xxxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5278,7 +5278,7 @@ h1,
 }
 
 h2,
-.font--beta {
+*[type-size="beta"] {
     --text-tag-font-size: var(--font-size-xxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5286,7 +5286,7 @@ h2,
 }
 
 h3,
-.font--gamma {
+*[type-size="gamma"] {
     --text-tag-font-size: var(--font-size-xl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5294,7 +5294,7 @@ h3,
 }
 
 h4,
-.font--delta {
+*[type-size="delta"] {
     --text-tag-font-size: var(--font-size-l);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5302,7 +5302,7 @@ h4,
 }
 
 h5,
-.font--epsilon {
+*[type-size="epsilon"] {
     --text-tag-font-size: var(--font-size-m);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
@@ -5310,7 +5310,7 @@ h5,
 }
 
 h6,
-.font--omega {
+*[type-size="omega"] {
     --text-tag-font-size: var(--font-size-ms);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
@@ -5334,12 +5334,12 @@ h3,
 h4,
 h5,
 h6,
-.font--alpha,
-.font--beta,
-.font--gamma,
-.font--delta,
-.font--epsilon,
-.font--omega {
+*[type-size="alpha"],
+*[type-size="beta"],
+*[type-size="gamma"],
+*[type-size="delta"],
+*[type-size="epsilon"],
+*[type-size="omega"] {
     font-size: var(--text-tag-font-size);
     font-weight: var(--text-tag-font-weight);
     line-height: var(--text-tag-line-height);
@@ -5400,7 +5400,6 @@ a {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-
 }
 
 p > a.button {
@@ -5418,6 +5417,30 @@ main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
     max-width: var(--content-max-width);
     margin-left: auto;
     margin-right: auto;
+}
+
+*[type-alignment="left"] {
+    text-align: left;
+}
+
+*[type-alignment="center"] {
+    text-align: center;
+}
+
+*[type-alignment="right"] {
+    text-align: right;
+}
+
+*[type-color="primary"] {
+    color: var(--color-primary);
+}
+
+*[type-color="secondary"] {
+    color: var(--color-secondary);
+}
+
+*[type-color="grey"] {
+    color: var(--color-font);
 }
 
 @media screen and (max-width: 420px) {
