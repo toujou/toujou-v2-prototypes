@@ -35,11 +35,13 @@ p > .button {
     margin-top: var(--spacing-xs);
 }
 
-.button[button-variant="secondary"] {
+.button[button-variant="secondary"],
+.button.button--secondary {
     --button-color-bg: var(--color-secondary);
 }
 
-.button[button-variant="font"] {
+.button[button-variant="font"],
+.button.button--font{
     --button-color-bg: var(--color-font);
 }
 
@@ -52,12 +54,14 @@ p > .button {
     outline-offset: var(--focus-outline-offset);
 }
 
-.button[button-variant="secondary"]:focus-visible {
+.button[button-variant="secondary"]:focus-visible,
+.button.button--secondary:focus-visible {
     --button-color-bg: var(--color-secondary-light);
     --button-color-text: var(--color-secondary-dark);
 }
 
-.button[button-variant="font"]:focus-visible {
+.button[button-variant="font"]:focus-visible,
+.button.button--font:focus-visible {
     --button-color-bg: var(--color-font-light);
     --button-color-text: var(--color-font-dark);
 }
@@ -103,40 +107,47 @@ p > .button {
 }
 
 /* EXPANDED */
-.button[is-expanded] {
+.button[is-expanded],
+.button.button--expanded {
     --button-width: 100%;
 }
 
 /* BUTTON TYPE BORDER */
-.button[button-type="border"] {
+.button[button-type="border"],
+.button.button--shadow {
     --button-color-bg: transparent;
     --button-border-color: var(--color-primary);
     --button-color-text: var(--color-primary);
 }
 
-.button[button-type="border"]:focus-visible {
+.button[button-type="border"]:focus-visible,
+.button.button--shadow:focus-visible {
     --button-color-bg: var(--color-primary-o-10);
     --button-border-color: var(--color-primary);
     --button-color-text: var(--color-primary);
 }
 
-.button[button-variant="secondary"].button[button-type="border"] {
+.button[button-variant="secondary"].button[button-type="border"],
+.button:is(.button--secondary, [button-variant="secondary"]).button.button--shadow {
     --button-border-color: var(--color-secondary);
     --button-color-text: var(--color-secondary);
 }
 
-.button[button-variant="secondary"].button[button-type="border"]:focus-visible {
+.button[button-variant="secondary"].button[button-type="border"]:focus-visible,
+.button:is(.button--secondayr, [button-variant="secondary"]).button.button--shadow:focus-visible {
     --button-color-bg: var(--color-secondary-o-10);
     --button-border-color: var(--color-secondary);
     --button-color-text: var(--color-secondary);
 }
 
-.button[button-variant="font"].button[button-type="border"] {
+.button[button-variant="font"].button[button-type="border"],
+.button:is(.button--font, [button-variant="font"]).button.button--shadow {
     --button-border-color: var(--color-font);
     --button-color-text: var(--color-font);
 }
 
-.button[button-variant="font"].button[button-type="border"]:focus-visible {
+.button[button-variant="font"].button[button-type="border"]:focus-visible,
+.button:is(.button--font, [button-variant="font"]).button.button--shadow:focus-visible {
     --button-color-bg: var(--color-font-o-10);
     --button-border-color: var(--color-font);
     --button-color-text: var(--color-font);
@@ -181,7 +192,7 @@ p > .button {
     cursor: not-allowed !important;
 }
 
-.button[button-type="border"][disabled] {
+.button:is(button--shadow, [button-type="border"])[disabled] {
     --button-color-bg: transparent !important;
     --button-color-text: var(--color-font-light) !important;
     --button-border-color: var(--color-font-light) !important;
@@ -205,26 +216,26 @@ p > .button {
         --button-color-text: var(--color-bg) !important;
     }
 
-    .button[button-variant="secondary"]:hover {
+    .button:is(.button--secondary, [button-variant="secondary"]):hover {
         --button-color-bg: var(--color-secondary-dark);
     }
 
-    .button[button-variant="font"]:hover {
+    .button:is(.button--font, [button-variant="font"]):hover {
         --button-color-bg: var(--color-font-dark);
     }
 
     /* BUTTON TYPE BORDER */
-    .button[button-type="border"]:hover {
+    .button:is(.button--shadow, [button-type="border"]):hover {
         --button-border-color: var(--color-primary-dark);
         --button-color-text: var(--color-bg);
     }
 
-    .button[button-variant="secondary"].button[button-type="border"]:hover {
+    .button:is(.button--secondary, [button-variant="secondary"]).button:is(.button--shadow, [button-type="border"]):hover {
         --button-border-color: var(--color-secondary-dark);
         --button-color-text: var(--color-bg);
     }
 
-    .button[button-variant="font"].button[button-type="border"]:hover {
+    .button:is(.button--font, [button-variant="font"]).button:is(.button--shdaow, [button-type="border"]):hover {
         --button-border-color: var(--color-font-dark);
         --button-color-text: var(--color-bg);
     }
