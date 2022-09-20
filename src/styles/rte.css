@@ -1,0 +1,7 @@
+@import './globals/_variables.css';
+
+@import "./globals/_alert.css";
+@import "./globals/_button.css";
+@import "./globals/_icon.css";
+@import "./globals/_table.css";
+@import "./globals/_type.css";
