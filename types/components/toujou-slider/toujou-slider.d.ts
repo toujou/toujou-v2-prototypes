@@ -83,6 +83,10 @@ export declare class ToujouSlider extends LitElement {
      * https://splidejs.com/guides/options/#heightratio
      */
     sliderAspectRatio: string;
+    arrowPrevAriaLabel: string;
+    arrowNextAriaLabel: string;
+    arrowFirstAriaLabel: string;
+    arrowLastAriaLabel: string;
     constructor();
     /**
      * Disable shadow root
