@@ -123,6 +123,18 @@ export class ToujouSlider extends LitElement {
     @property({ reflect: true, attribute: 'slider-aspect-ratio' })
     sliderAspectRatio: string = '0.5625';
 
+    @property({ attribute: 'arrow-prev-aria-label' })
+    arrowPrevAriaLabel: string = '';
+
+    @property({ attribute: 'arrow-next-aria-label' })
+    arrowNextAriaLabel: string = '';
+
+    @property({ attribute: 'arrow-first-aria-label' })
+    arrowFirstAriaLabel: string = '';
+
+    @property({ attribute: 'arrow-last-aria-label' })
+    arrowLastAriaLabel: string = '';
+
     constructor() {
         super();
 
@@ -151,7 +163,7 @@ export class ToujouSlider extends LitElement {
      * Full list of options here: https://splidejs.com/guides/options/
      */
     private _initSlider() {
-        const sliderOptions = {
+        let sliderOptions = {
             classes: {
                 pagination: 'splide__pagination slider-bullets',
                 page: 'splide__pagination__page slider-bullets__bullet',
@@ -172,7 +184,12 @@ export class ToujouSlider extends LitElement {
                 autoplay: 'pause'
             },
             padding: this.sliderPadding,
-
+            i18n: {
+                prev: this.arrowPrevAriaLabel,
+                next: this.arrowNextAriaLabel,
+                first: this.arrowFirstAriaLabel,
+                last: this.arrowLastAriaLabel,
+            }
         }
 
         if (this.sliderFocusCenter === 'true') {

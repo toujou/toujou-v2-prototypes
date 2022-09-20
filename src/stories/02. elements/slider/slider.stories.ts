@@ -98,13 +98,18 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
             slides-to-show="1"
             slider-gap="0"
             slider-aspect-ratio="0.5625"
-            slider-type="loop">
+            slider-type="loop"
+            arrow-first-aria-label="Go to first slide"
+            arrow-last-aria-label="Go to last slide"
+            arrow-prev-aria-label="Go to previous slide"
+            arrow-next-aria-label="Go to next slide"
+        >
             <div class="splide slider__slider">
                 <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
+                    <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev">
                         <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
                     </button>
-                    <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
+                    <button class="splide__arrow splide__arrow--next slider-control slider-control--next">
                         <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                     </button>
                 </div>

@@ -59,7 +59,22 @@ The `<toujou-slider>` renders a slider on the page, using the [Splide](https://s
 
 ## 3. Markup example
 ```html
-<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary">
+<toujou-slider
+    class="slider"
+    aria-label="Toujou slider example"
+    slider-design="default"
+    showCount
+    auto-play
+    auto-play-interval="6000"
+    slides-to-show="1"
+    slider-gap="0"
+    slider-aspect-ratio="0.5625"
+    slider-type="loop"
+    arrow-first-aria-label="Go to first slide"
+    arrow-last-aria-label="Go to last slide"
+    arrow-prev-aria-label="Go to previous slide"
+    arrow-next-aria-label="Go to next slide"
+>
     <div class="splide slider__slider">
         <div class="splide__arrows">
             <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">

@@ -89,7 +89,11 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
             slider-type="loop"
             slider-gap="var(--spacing-normal)"
             slides-to-show="5"
-            slider-breakpoints='{"640":{"perPage":2},"768":{"perPage":3},"840":{"perPage":4},"1024":{"perPage":4}}'>
+            slider-breakpoints='{"640":{"perPage":2},"768":{"perPage":3},"840":{"perPage":4},"1024":{"perPage":4}}'
+            arrow-first-aria-label="Go to first logo"
+            arrow-last-aria-label="Go to last logo"
+            arrow-prev-aria-label="Go to previous logo"
+            arrow-next-aria-label="Go to next logo">
             <div class="splide slider__slider">
                 <div class="splide__arrows">
                     <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
