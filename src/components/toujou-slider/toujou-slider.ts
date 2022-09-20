@@ -178,11 +178,6 @@ export class ToujouSlider extends LitElement {
             perPage: parseInt(String(this.slidesToShow)),
             perMove: this.slidesPerMove,
             gap: this.sliderGap,
-            breakpoints: {
-                640: {
-                    perPage: 2,
-                },
-            },
             heightRatio: this.sliderAspectRatio,
             reducedMotion: {
                 speed: 0,
@@ -206,6 +201,7 @@ export class ToujouSlider extends LitElement {
         }
 
         if (this.sliderBreakpoints) {
+            // @ts-ignore
             sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
         }
         console.log('bbb', sliderOptions);
