@@ -1188,7 +1188,7 @@ figure {
     --form-font-size: var(--font-size-normal);
     --form-font-weight: var(--font-weight-text-normal);
     --form-line-height: var(--line-height-reset);
-    --form-margin: var(--spacing-between-elements-normal) 0 auto;
+    --form-margin: var(--spacing-between-elements-normal) auto 0;
 
     width: var(--form-width);
     max-width: var(--form-max-width);
