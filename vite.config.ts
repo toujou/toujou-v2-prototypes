@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import * as path from "path";
-// @ts-ignore
-import postcssLit from 'rollup-plugin-postcss-lit';
+import litcss from 'rollup-plugin-lit-css';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -41,6 +40,6 @@ export default defineConfig({
         },
     },
     plugins: [
-        postcssLit()
+        litcss()
     ]
 })

@@ -1,4 +1,4 @@
-import { LitElement, css, unsafeCSS } from 'lit'
+import { LitElement } from 'lit'
 import { customElement, property, state } from 'lit/decorators.js'
 // @ts-ignore
 import Splide from "@splidejs/splide";
@@ -8,7 +8,8 @@ import splideSliderStyles from "@splidejs/splide/dist/css/splide.min.css";
 @customElement('toujou-slider')
 export class ToujouSlider extends LitElement {
 
-    public static styles = css`${unsafeCSS(splideSliderStyles)}`
+
+    public static styles = [splideSliderStyles];
 
     /**
      * Reference to the node that where the slider will be initialized (".splide")

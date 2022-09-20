@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 export declare class ToujouSlider extends LitElement {
-    static styles: import("lit").CSSResult;
+    static styles: any[];
     /**
      * Reference to the node that where the slider will be initialized (".splide")
      */
