@@ -60,7 +60,6 @@
     "postcss-cli": "^10.0.0",
     "postcss-import": "^14.1.0",
     "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-lit-css": "^4.0.0",
     "rollup-plugin-postcss": "^4.0.2",
     "sinon": "^14.0.0",
     "storybook-addon-xd-designs": "^6.0.0",
