@@ -96,9 +96,8 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
             ${args.autoplay ? 'auto-play' : ''}
             auto-play-interval="${args.autoplayInterval}"
             slides-to-show="1"
-            slider-gap="0"
+            slider-gap="0px"
             slider-aspect-ratio="0.5625"
-            slider-type="loop"
             arrow-first-aria-label="Go to first slide"
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"

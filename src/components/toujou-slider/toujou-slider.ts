@@ -145,7 +145,9 @@ export class ToujouSlider extends LitElement {
     /**
      * Disable shadow root
      */
-    createRenderRoot() { return this;}
+    createRenderRoot() {
+        return this;
+    }
 
     firstUpdated() {
         this.splideContainer = this.querySelector('.splide') || null;
@@ -173,10 +175,14 @@ export class ToujouSlider extends LitElement {
             interval: this.autoplayInterval,
             pauseOnHover: this.autoplay,
             pauseOnFocus: this.autoplay,
-            perPage: this.slidesToShow,
+            perPage: parseInt(String(this.slidesToShow)),
             perMove: this.slidesPerMove,
             gap: this.sliderGap,
-            breakpoints: this.sliderBreakpoints,
+            breakpoints: {
+                640: {
+                    perPage: 2,
+                },
+            },
             heightRatio: this.sliderAspectRatio,
             reducedMotion: {
                 speed: 0,
@@ -202,14 +208,16 @@ export class ToujouSlider extends LitElement {
         if (this.sliderBreakpoints) {
             sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
         }
+        console.log('bbb', sliderOptions);
 
         // @ts-ignore
         this.splideSlider = new Splide(this.splideContainer, sliderOptions);
 
-        this.splideSlider!.on( 'mounted', this._handleSliderMount);
-        this.splideSlider!.on( 'moved', this._handlePaginationUpdate);
+        this.splideSlider!.on('mounted', this._handleSliderMount);
+        this.splideSlider!.on('moved', this._handlePaginationUpdate);
 
         this.splideSlider!.mount();
+        console.log('cccc', this.splideSlider);
     }
 
     /**
