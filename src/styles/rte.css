@@ -1,4 +1,6 @@
+@import './globals/tokens/index.css';
 @import './globals/_variables.css';
+@import './globals/_old-variables.css';
 
 @import "./globals/_alert.css";
 @import "./globals/_button.css";
