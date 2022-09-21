@@ -3246,19 +3246,30 @@ hr[divider-type="grey"],
 }
 
 exit-warning {
-    --toujou-modal-header-padding: var(--spacing-s);
+    --toujou-modal-header-padding: var(--spacing-normal) var(--spacing-s);
     --toujou-modal-header-position: sticky;
     --toujou-modal-header-top: 0;
     --toujou-modal-header-box-shadow: var(--shadow-s);
     --toujou-modal-header-background: var(--color-bg);
     --toujou-modal-header-border-bottom: none;
 
+
     --toujou-modal-title-font-family: var(--font-family-headline);
     --toujou-modal-title-color: var(--color-warning);
     --toujou-modal-title-font-size: var(--font-size-l);
+    --toujou-modal-title-padding: 0 var(--spacing-xl) 0 var(--spacing-s);
 
-    --toujou-modal-close-color: var(--color-warning);
-    --toujou-modal-close-hover-color: var(--color-warning-darken-15);
+    --toujou-modal-close-color: var(--color-font);
+    --toujou-modal-close-hover-color: var(--color-primary);
+    --toujou-modal-close-background: transparent;
+    --toujou-modal-close-hover-background: transparent;
+    --toujou-modal-close-border: none;
+    --toujou-modal-close-hover-border: none;
+    --toujou-modal-close-position: absolute;
+    --toujou-modal-close-right: var(--spacing-s);
+    --toujou-modal-close-left: auto;
+    --toujou-modal-close-top: var(--spacing-s);
+    --toujou-modal-close-bottom: auto;
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);

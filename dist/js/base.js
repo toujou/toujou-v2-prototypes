@@ -352,7 +352,7 @@ var Rt=Object.defineProperty;var zt=(u,e,r)=>e in u?Rt(u,e,{enumerable:!0,config
   .exit-warning__message {
     background-color: var(--bg-color);
     overflow: hidden;
-    padding: 1em 1em 0;
+    padding: var(--spacing-normal) var(--spacing-normal) var(--spacing-l);
   }
 `;class dt extends it{static get is(){return"exit-warning"}static get properties(){return{title:{type:String},targetUrl:{type:String},redirectDelay:{type:Number},secondsRemaining:{type:Number},opened:{type:Boolean},_messageTemplate:{type:Object}}}constructor(){super(),this.targetUrl="http://www.dfau.de",this.redirectDelay=50,this.onIntervalTick=this.onIntervalTick.bind(this),this.onModalOpenedChanged=this.onModalOpenedChanged.bind(this),this._secondsRemainingInterval=null,this._messageTemplate=null,this._modal=null,this._modalOpenedObserver=new MutationObserver(this.onModalOpenedChanged)}render(){return xe`
       <toujou-modal title="${this.title}" is-exit-warning>
