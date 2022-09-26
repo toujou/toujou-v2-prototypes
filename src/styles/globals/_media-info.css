@@ -10,7 +10,7 @@
     --media-info-flex-direction: column;
     --media-info-align-items: flex-start ;
     --media-info-justify-content: flex-start;
-    --media-info-gap: 0;
+    --media-info-gap: var(--spacing-xs);
 
     --media-info-copyright-font-family: var(--font-family-text);
     --media-info-copyright-font-size: var(--font-size-s);
