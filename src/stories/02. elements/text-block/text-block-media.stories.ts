@@ -43,6 +43,7 @@ const Template: Story<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStoryPr
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <figcaption class="text-block__figcaption">This is a figcaption for the image</figcaption>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>

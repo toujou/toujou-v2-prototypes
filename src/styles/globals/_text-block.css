@@ -79,6 +79,13 @@
     --text-block-image-aspect-ratio: var(--aspect-ratio-golden);
 }
 
+.text-block__figcaption {
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-s);
+    color: var(--color-font);
+    padding: var(--spacing-s) 0;
+}
+
 /* stylelint-disable-next-line max-line-length */
 :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
     margin-top: var(--text-block-grid-gap);
