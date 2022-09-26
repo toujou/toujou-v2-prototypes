@@ -69,6 +69,15 @@ function createMediaElement(mediaType: string) {
         singleMedia.appendChild(mediaVideo);
     }
 
+    const mediaInfo = `
+        <div class="media-info">
+            <small class="media-info__copyright">@Nice photographer</small>
+            <figpaction class="media-info__figcaption">This is a beautiful description</figpaction>
+        </div>
+    `;
+
+    singleMedia.innerHTML += mediaInfo;
+
     return singleMedia;
 }
 

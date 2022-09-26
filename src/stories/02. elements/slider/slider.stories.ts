@@ -118,9 +118,9 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
                         <li class="splide__slide slider-slide" data-splide-interval="${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
-                                <div class="slider__slide-info">
-                                    <small class="slider__slide-copyright">@Nice photographer</small>
-                                    <figpaction class="slider__slide-figcaption">This is a beautiful description</figpaction>
+                                <div class="media-info">
+                                    <small class="media-info__copyright">@Nice photographer</small>
+                                    <figpaction class="media-info__figcaption">This is a beautiful description</figpaction>
                                 </div>
                             </toujou-single-media>
                         </li>
