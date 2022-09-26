@@ -1,15 +1,11 @@
 .chapter {
     --chapter-background-color: transparent;
-    --chapter-margin: var(--spacing-between-elements-normal) 0 0;
+    --chapter-margin: 0;
     --chapter-padding: var(--spacing-between-elements-normal) 0;
 
     background-color: var(--chapter-background-color);
     margin: var(--chapter-margin);
     padding: var(--chapter-padding);
-}
-
-.chapter + .chapter {
-    --chapter-margin: 0;
 }
 
 .chapter--primary {

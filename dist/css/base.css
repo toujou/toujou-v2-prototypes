@@ -2949,16 +2949,12 @@ p > .button {
 
 .chapter {
     --chapter-background-color: transparent;
-    --chapter-margin: var(--spacing-between-elements-normal) 0 0;
+    --chapter-margin: 0;
     --chapter-padding: var(--spacing-between-elements-normal) 0;
 
     background-color: var(--chapter-background-color);
     margin: var(--chapter-margin);
     padding: var(--chapter-padding);
-}
-
-.chapter + .chapter {
-    --chapter-margin: 0;
 }
 
 .chapter--primary {
@@ -5455,7 +5451,7 @@ a:focus {
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */
 
-main > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
+:is(main, .chapter) > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
     margin-left: auto;
