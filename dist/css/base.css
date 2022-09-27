@@ -4566,6 +4566,7 @@ toujou-modal {
     --single-media-position: relative;
     --single-media-width: 100%;
     --single-media-max-width: 100%;
+    --single-media-height: fit-content;
     --single-media-margin: var(--spacing-between-elements-normal) auto 0;
     --single-media-display: block;
     --single-media-max-height: 100%;
@@ -4579,6 +4580,7 @@ toujou-modal {
     display: var(--single-media-display);
     width: var(--single-media-width);
     max-width: var(--single-media-max-width);
+    height: var(--single-media-height);
     margin: var(--single-media-margin);
     max-height: var(--single-media-max-height);
     border-radius: var(--single-media-border-radius);
