@@ -3529,6 +3529,10 @@ exit-warning {
     --header-height: calc(100 / 3 * 1vw);
 }
 
+.header--portfolio-gallery {
+    --header-height: auto;
+}
+
 .header__image {
     height: var(--header-image-height);
     width: var(--header-image-width);
