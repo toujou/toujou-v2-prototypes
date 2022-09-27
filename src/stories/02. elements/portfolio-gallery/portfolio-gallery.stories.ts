@@ -16,6 +16,7 @@ export default {
     },
 } as Meta;
 
+
 const Template = () => {
     return `
         <toujou-portfolio-gallery class="portfolio-gallery" id="test-portfolio" number-of-items="max">
@@ -51,19 +52,19 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/901" 
+                                <a href="https://picsum.photos/1600/900" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="901" 
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
-                                    title="This is another interesting caption">
+                                    title="Nice image">
                                     <toujou-single-media class="single-media" slot="slider-item">
                                         <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
                                     </toujou-single-media>
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/902" 
+                                <a href="https://picsum.photos/1600/900" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="902" 
                                     target="_blank"
@@ -74,38 +75,48 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/903" 
+                                <a href="https://picsum.photos/1600/900" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="903" 
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
-                                    title="This is a beautiful caption">
+                                    title="Bazinga!">
                                     <toujou-single-media class="single-media" slot="slider-item">
                                         <img class="single-media__image" src="https://picsum.photos/1600/903" alt="Nice image">
                                     </toujou-single-media>
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/904" 
+                                <a href="https://picsum.photos/1600/900" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="904" 
                                     target="_blank"
-                                    class="slider__item portfolio-gallery__link"
-                                    title="WOW! So nice...">
+                                    class="slider__item portfolio-gallery__link">
                                     <toujou-single-media class="single-media" slot="slider-item">
                                         <img class="single-media__image" src="https://picsum.photos/1600/904" alt="Nice image">
                                     </toujou-single-media>
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/904" 
+                                <a href="https://picsum.photos/1600/900" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="905" 
                                     target="_blank"
-                                    class="slider__item portfolio-gallery__link"
-                                    title="WOW! So nice...">
+                                    class="slider__item portfolio-gallery__link">
                                     <toujou-single-media class="single-media" slot="slider-item">
                                         <img class="single-media__image" src="https://picsum.photos/1600/905" alt="Nice image">
+                                    </toujou-single-media>
+                                </a>
+                            </li>
+                            <li class="splide__slide slider-slide">
+                                <a href="https://picsum.photos/1600/900" 
+                                    data-pswp-width="1600" 
+                                    data-pswp-height="906" 
+                                    target="_blank"
+                                    class="slider__item portfolio-gallery__link"
+                                    title="This is a realy well thought caption">
+                                    <toujou-single-media class="single-media" slot="slider-item">
+                                        <img class="single-media__image" src="https://picsum.photos/1600/906" alt="Nice image">
                                     </toujou-single-media>
                                 </a>
                             </li>
@@ -123,7 +134,7 @@ const Template = () => {
                 <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="flower"></toujou-icon>
                 <span class="portfolio-gallery__button-text">See all</span>
             </button>
-        </toujou-portfolio-gallery>
+        </toujou-portfolio-gallery>  
     `;
 };
 
