@@ -33,7 +33,7 @@
 }
 
 .portfolio-gallery ul.slider-bullets {
-    --slider-bullets-display: none;
+    display: none !important;
 }
 
 .portfolio-gallery .slider-count {
