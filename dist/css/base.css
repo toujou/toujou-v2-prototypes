@@ -4965,10 +4965,6 @@ main > .table-container {
     justify-content: flex-end;
 }
 
-.details .text-block__content > *:first-child {
-    margin-top: 0;
-}
-
 @media screen and (min-width: 768px) {
     /* stylelint-disable-next-line max-line-length */
     :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
@@ -5030,6 +5026,10 @@ main > .table-container {
     .text-block[text-block-media-position="inside-right"] .text-block__content {
         padding-right: var(--text-block-media-inside-offset);
         padding-left: var(--text-block-grid-gap);
+    }
+
+    .details .text-block__content > *:first-child {
+        margin-top: 0;
     }
 }
 
