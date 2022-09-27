@@ -31,36 +31,36 @@ const Template = () => {
                 class="gallery__item"
                 title="This is a beautiful caption">
                 <img class="gallery__image" src="https://picsum.photos/600" alt=""/>
-              </a>
-              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+            </a>
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
                 data-pswp-width="1669" 
                 data-pswp-height="2500" 
                 target="_blank"
                 class="gallery__item"
                 title="This is a another nice caption">
                 <img class="gallery__image" src="https://picsum.photos/601" alt="" />
-              </a>
-              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" 
+            </a>
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" 
                 data-pswp-width="1669" 
                 data-pswp-height="2500" 
                 target="_blank"
                 class="gallery__item">
                 <img class="gallery__image" src="https://picsum.photos/602" alt="" />
-              </a>
-              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg" 
+            </a>
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg" 
                 data-pswp-width="1669" 
                 data-pswp-height="2500" 
                 target="_blank"
                 class="gallery__item">
                 <img class="gallery__image" src="https://picsum.photos/603" alt="" />
-              </a>
-              <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg" 
+            </a>
+            <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg" 
                 data-pswp-width="1669" 
                 data-pswp-height="2500" 
                 target="_blank"
                 class="gallery__item">
                 <img class="gallery__image" src="https://picsum.photos/604" alt="" />
-              </a>
+            </a>
         </toujou-gallery>
     `;
 };

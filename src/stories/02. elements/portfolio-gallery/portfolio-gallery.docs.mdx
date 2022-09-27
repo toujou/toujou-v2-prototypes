@@ -1,0 +1,89 @@
+# Portfolio gallery
+
+- The portfolio gallery render a slider on mobile and an "image grid" on desktop devices.
+- On mobile it shows a "counter" element
+- On desktop the button is shown only if the maximum number of images is achieved
+
+## Markup example
+```html
+<toujou-portfolio-gallery class="portfolio-gallery" id="test-portfolio" number-of-items="2">
+    <toujou-slider
+        slot="slider"
+        class="slider"
+        show-count
+        aria-label="Toujou slider example"
+        slider-design="default"
+        slider-fullwidth
+        slides-to-show="1"
+        slider-gap="0px"
+        slider-aspect-ratio="0.5625"
+        slider-type="slider"
+        arrow-first-aria-label="Go to first slide"
+        arrow-last-aria-label="Go to last slide"
+        arrow-prev-aria-label="Go to previous slide"
+        arrow-next-aria-label="Go to next slide"
+    >
+        <div class="splide slider__slider">
+            <div class="splide__track slider__track">
+                <ul class="splide__list slider__list">
+                    <li class="splide__slide slider-slide">
+                        <a href="https://picsum.photos/1600/900"
+                            data-pswp-width="1600"
+                            data-pswp-height="900"
+                            target="_blank"
+                            class="slider__item portfolio-gallery__link"
+                            title="This is a beautiful caption">
+                            <toujou-single-media class="single-media" slot="slider-item">
+                                <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
+                            </toujou-single-media>
+                        </a>
+                    </li>
+                    <li class="splide__slide slider-slide">
+                        <a href="https://picsum.photos/1600/901"
+                            data-pswp-width="1600"
+                            data-pswp-height="901"
+                            target="_blank"
+                            class="slider__item portfolio-gallery__link"
+                            title="This is another interesting caption">
+                            <toujou-single-media class="single-media" slot="slider-item">
+                                <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
+                            </toujou-single-media>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <toujou-slider-count class="slider-count">
+            <span class="slider-count__current"></span>
+            <span class="slider-count__separator">of</span>
+            <span class="slider-count__total"></span>
+        </toujou-slider-count>
+    </toujou-slider>
+    <button class="button portfolio-gallery__button" button-variant="primary" button-size="normal" button-type="default" slot="button">
+        <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="flower"></toujou-icon>
+        <span class="portfolio-gallery__button-text">See all</span>
+    </button>
+</toujou-portfolio-gallery>
+```
+
+## The slots
+
+### slider slot <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The slider element must have the `slot="slider"` attribute
+
+### button slot <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The button element must have the `slot="button"` attribute
+
+## Attributes
+
+### number-of-items <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `number-of-items` defines how many images we will show on desktop devices and should reflect the number of images on the slider.
+
+Valid values are `1`, `2`, `3`, `4`, `5` and `max`. Max should be added when the number of images is greater than 5
+
+### slider-type <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The slider element inside the portfolio element must have the `slider-type="slider"` attribute
+
+### is-header <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `is-header` attribute must be added to the portfolio gallery when it is displayed inside the header section of the page.

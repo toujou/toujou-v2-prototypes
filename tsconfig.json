@@ -17,11 +17,12 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false,
     "skipLibCheck": true,
+    "target": "ES6",
   },
   "include": ["src/**/*.ts"],
   "exclude": [
     "src/**/*.stories.ts",
-    "src/**/*.cy.ts",
+    "src/**/*.cy.ts"
   ],
   "references": [{ "path": "./tsconfig.node.json" }],
   "paths": {

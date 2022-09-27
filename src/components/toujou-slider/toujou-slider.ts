@@ -220,6 +220,14 @@ export class ToujouSlider extends LitElement {
     private _handleSliderMount() {
         this._getCountInfo();
         this._initCount();
+
+        this.dispatchEvent(new CustomEvent('toujou-slider-mounted', {
+            bubbles: true,
+            composed: true,
+            detail: {
+                el: this.splideSlider
+            }
+        }));
     }
 
     /**
@@ -244,7 +252,16 @@ export class ToujouSlider extends LitElement {
      */
     private _handlePaginationUpdate(event: number) {
         this._activeSlideIndex = event + 1;
-        this._updateSliderCount()
+        this._updateSliderCount();
+
+        this.dispatchEvent(new CustomEvent('toujou-slider-moved', {
+            bubbles: true,
+            composed: true,
+            detail: {
+                el: this.splideSlider,
+                activeIndex: this._activeSlideIndex
+            }
+        }));
     }
 
     /**
