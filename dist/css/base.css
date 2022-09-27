@@ -3513,6 +3513,12 @@ exit-warning {
     z-index: var(--header-z-index);
 }
 
+.header:first-child {
+    --header-padding: var(--topbar-height) 0 0;
+
+    padding: var(--header-padding);
+}
+
 .header[image-height="full"] {
     --header-height: 100vh;
 }
@@ -4293,6 +4299,10 @@ exit-warning {
 }
 
 /* stylelint-enable property-no-vendor-prefix */
+
+main:first-child {
+    padding-top: var(--topbar-height);
+}
 
 .media-info {
     --media-info-position: absolute;
@@ -5309,10 +5319,6 @@ main > .table-container {
         justify-content: var(--topbar-actions-justify-content);
         align-self: var(--topbar-actions-align-self);
     }
-}
-
-main {
-    padding-top: var(--topbar-height);
 }
 
 .topbutton {
