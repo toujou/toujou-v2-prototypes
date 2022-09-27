@@ -19,7 +19,7 @@ export default {
 
 const Template = () => {
     return `
-        <toujou-portfolio-gallery class="portfolio-gallery" id="test-portfolio" number-of-items="max">
+        <toujou-portfolio-gallery class="portfolio-gallery" id="test-portfolio" number-of-items="max" is-header>
             <toujou-slider
                 slot="slider"
                 class="slider"

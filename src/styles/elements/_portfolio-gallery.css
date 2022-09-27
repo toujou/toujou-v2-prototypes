@@ -1,6 +1,9 @@
 .portfolio-gallery {
     --portfolio-gallery-position: relative;
+    --portfolio-gallery-display: block;
     --portfolio-gallery-z-index: var(--z-index-content);
+    --portfolio-gallery-width: var(--content-width-with-padding);
+    --portfolio-gallery-max-width: var(--content-max-width);
     --portfolio-gallery-margin: var(--spacing-between-elements-normal) auto 0;
     --toujou-portfolio-gallery-media-icon-size: var(--font-size-l);
     --toujou-portfolio-gallery-media-icon-opacity: 1;
@@ -20,11 +23,16 @@
     --portfolio-gallery-count-bottom: var(--spacing-normal);
 
     position: var(--portfolio-gallery-position);
+    display: var(--portfolio-gallery-display);
     z-index: var(--portfolio-gallery-z-index);
+    width: var(--portfolio-gallery-width);
+    max-width: var(--portfolio-gallery-max-width);
     margin: var(--portfolio-gallery-margin);
 }
 
 .portfolio-gallery[is-header] {
+    --portfolio-gallery-width: var(--content-fullwidth);
+    --portfolio-gallery-max-width: var(--content-fullwidth);
     --portfolio-gallery-margin: 0;
 }
 
