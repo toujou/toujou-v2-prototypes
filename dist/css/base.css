@@ -4997,7 +4997,7 @@ main > .table-container {
     /* TEXT BLOCK MEDIA INSIDE */
     .text-block[text-block-media-position*="inside"] .text-block__figure {
         width: var(--text-block-media-inside-image-width);
-        padding-bottom: calc(var(--text-block-grid-gap) / 2);
+        margin-bottom: calc(var(--text-block-grid-gap) / 2);
     }
 
     /* TEXT BLOCK MEDIA LEFT INSIDE */
@@ -5007,7 +5007,7 @@ main > .table-container {
 
     .text-block[text-block-media-position="inside-left"] .text-block__figure {
         float: left;
-        padding-right: calc(var(--text-block-grid-gap) / 2);
+        margin-right: calc(var(--text-block-grid-gap) / 2);
         transform: translateX(calc(var(--text-block-grid-gap) * -1));
     }
 
@@ -5023,7 +5023,7 @@ main > .table-container {
 
     .text-block[text-block-media-position="inside-right"] .text-block__figure {
         float: right;
-        padding-left: calc(var(--text-block-grid-gap) / 2);
+        margin-left: calc(var(--text-block-grid-gap) / 2);
         transform: translateX(var(--text-block-grid-gap));
     }
 
@@ -5074,7 +5074,7 @@ main > .table-container {
     }
 
     .text-block[text-block-media-position="inside-left"] .text-block__content {
-        padding-right: calc(var(--text-block-grid-gap) / 2);
+        margin-right: calc(var(--text-block-grid-gap) / 2);
     }
 
     .text-block[text-block-media-position="inside-right"] .text-block-column {
@@ -5086,7 +5086,7 @@ main > .table-container {
     }
 
     .text-block[text-block-media-position="inside-right"] .text-block__content {
-        padding-left: calc(var(--text-block-grid-gap) / 2);
+        margin-left: calc(var(--text-block-grid-gap) / 2);
     }
 }
 

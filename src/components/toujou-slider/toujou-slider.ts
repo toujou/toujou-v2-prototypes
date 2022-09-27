@@ -204,7 +204,6 @@ export class ToujouSlider extends LitElement {
             // @ts-ignore
             sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
         }
-        console.log('bbb', sliderOptions);
 
         // @ts-ignore
         this.splideSlider = new Splide(this.splideContainer, sliderOptions);
@@ -213,7 +212,6 @@ export class ToujouSlider extends LitElement {
         this.splideSlider!.on('moved', this._handlePaginationUpdate);
 
         this.splideSlider!.mount();
-        console.log('cccc', this.splideSlider);
     }
 
     /**
