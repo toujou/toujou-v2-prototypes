@@ -80,6 +80,7 @@
 
 @media screen and (min-width: 840px) {
     .portfolio-gallery {
+        --portfolio-gallery-grid-gap: var(--spacing-s);
         aspect-ratio: 2 / 1;
     }
 
@@ -97,6 +98,7 @@
         --slider-aspect-ratio: auto;
 
         display: grid;
+        grid-gap: var(--portfolio-gallery-grid-gap);
     }
 
     .portfolio-gallery .slider-count {
@@ -105,6 +107,10 @@
 
     .portfolio-gallery .single-media__image {
         object-fit: cover;
+    }
+
+    .portfolio-gallery :is(.portfolio-gallery__link, .single-media, .single-media__image) {
+        height: 100%;
     }
 
     .portfolio-gallery[number-of-items="1"] .single-media__image {
