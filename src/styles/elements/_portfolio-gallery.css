@@ -59,6 +59,7 @@
 
 .portfolio-gallery__link {
     background-color: var(--color-primary);
+    display: block;
 }
 
 .portfolio-gallery__link--audio::after,

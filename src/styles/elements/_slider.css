@@ -37,7 +37,7 @@
     z-index: var(--slider-z-index);
 }
 
-.header .slider,
+.header:not(.header--portfolio-gallery) .slider,
 .slider:first-child {
     --slider-margin: 0 auto;
 }
