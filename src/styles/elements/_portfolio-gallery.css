@@ -1,5 +1,3 @@
-@import "../../../node_modules/photoswipe/dist/photoswipe.css";
-
 .portfolio-gallery {
     --portfolio-gallery-position: relative;
     --portfolio-gallery-z-index: var(--z-index-content);
