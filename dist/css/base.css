@@ -3513,14 +3513,14 @@ exit-warning {
     z-index: var(--header-z-index);
 }
 
-.header:first-child {
-    --header-padding: var(--topbar-height) 0 0;
+.topbar ~ .wrap--content .header:first-child {
+    --header-margin-top: var(--topbar-height);
 
-    padding: var(--header-padding);
+    margin-top: var(--header-margin-top);
 }
 
 .header[image-height="full"] {
-    --header-height: 100vh;
+    --header-height: calc(100vh - var(--topbar-height));
 }
 
 .header[image-height="half"] {
