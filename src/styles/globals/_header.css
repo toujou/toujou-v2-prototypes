@@ -17,12 +17,6 @@
     z-index: var(--header-z-index);
 }
 
-.topbar ~ .wrap--content .header:first-child {
-    --header-margin-top: var(--topbar-height);
-
-    margin-top: var(--header-margin-top);
-}
-
 .header[image-height="full"] {
     --header-height: calc(100vh - var(--topbar-height));
 }
