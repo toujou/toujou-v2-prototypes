@@ -8,6 +8,10 @@
     height: fit-content !important;
 }
 
+.slider[content-type="logos"] .slider-slide {
+    align-self: center;
+}
+
 .slider[content-type="teaser"] .slider-slide {
     width: fit-content;
 }
