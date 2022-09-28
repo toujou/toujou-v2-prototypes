@@ -55,7 +55,7 @@ ul.slider-bullets {
     --slider-bullets-icon-hover-background-color: var(--color-secondary-light);
 }
 
-.slider[slider-design="light-grey"] .slider-bullets {
+.slider[slider-design="grey"] .slider-bullets {
     --slider-bullets-icon-default-background-color: var(--color-font-light);
     --slider-bullets-icon-active-background-color: var(--color-font);
     --slider-bullets-icon-hover-background-color: var(--color-font-dark);
