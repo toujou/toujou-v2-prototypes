@@ -25,7 +25,7 @@ export default {
             },
             name: 'Slider design',
             description: "Set the slider's design color",
-            options: ['default', 'primary', 'secondary', 'light-grey'],
+            options: ['default', 'primary', 'secondary', 'grey'],
             control: { type: 'radio' },
             defaultValue: ['default'],
             required: true,
