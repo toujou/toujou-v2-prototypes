@@ -4793,6 +4793,8 @@ main > .table-container {
 
     --teaser-image-aspect-ratio: var(--aspect-ratio-default);
     --teaser-image-object-fit: cover;
+    --teaser-image-width: 100%;
+    --teaser-image-height: auto;
 
     position: var(--teaser-position);
     display: var(--teaser-display);
@@ -4823,6 +4825,8 @@ main > .table-container {
     aspect-ratio: var(--teaser-image-aspect-ratio);
     -o-object-fit: var(--teaser-image-object-fit);
        object-fit: var(--teaser-image-object-fit);
+    width: var(--teaser-image-width);
+    height: var(--teaser-image-height);
 }
 
 .teaser__content > *:last-child {
