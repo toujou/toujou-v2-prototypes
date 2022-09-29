@@ -20,6 +20,8 @@
 
     --collection-item-image-ratio: var(--aspect-ratio-default);
     --collection-item-image-object-fit: cover;
+    --collection-item-image-width: 100%;
+    --collection-item-image-height: auto;
 
     --collection-item-categories-position: absolute;
     --collection-item-categories-top: var(--spacing-normal);
@@ -213,6 +215,8 @@
 .collection-item__image {
     aspect-ratio: var(--collection-item-image-ratio);
     object-fit: var(--collection-item-image-object-fit);
+    width: var(--collection-item-image-width);
+    height: var(--collection-item-image-height);
 }
 
 .collection-item__categories {
