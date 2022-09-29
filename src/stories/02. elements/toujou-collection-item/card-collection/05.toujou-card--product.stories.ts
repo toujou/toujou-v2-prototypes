@@ -53,9 +53,9 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             </span>
                         </div>
                     </div>
-                    <div class="collection-item__bottom">
+                    <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product A</h3>
-                    </div>
+                    </a>
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
@@ -71,9 +71,9 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             </span>
                         </div>
                     </div>
-                    <div class="collection-item__bottom">
+                    <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product B</h3>
-                    </div>
+                    </a>
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
@@ -83,9 +83,9 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                     </div>
-                    <div class="collection-item__bottom">
+                    <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product C</h3>
-                    </div>
+                    </a>
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
@@ -95,9 +95,9 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                     </div>
-                    <div class="collection-item__bottom">
+                    <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product D</h3>
-                    </div>
+                    </a>
                 </toujou-collection-item>
             </li>
         </ul>

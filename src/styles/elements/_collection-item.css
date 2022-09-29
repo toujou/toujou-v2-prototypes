@@ -93,12 +93,14 @@
     --collection-item-bottom-left: 0;
     --collection-item-bottom-width: 100%;
     --collection-item-bottom-background-color: var(--color-black-o-75);
+    --collection-item-bottom-text-decoration: none;
 
     --collection-item-title-font-size: var(--font-size-ms);
     --collection-item-title-color: var(--color-font-dark);
     --collection-item-title-margin: 0 0 var(--spacing-xs);
     --collection-item-title-font-family: var(--font-family-text);
     --collection-item-title-font-weight: var(--font-weight-text-bold);
+
 
     --collection-item-subtitles-margin: 0;
     --collection-item-subtitles-separator: "-";
@@ -309,6 +311,7 @@
     left: var(--collection-item-bottom-left);
     width: var(--collection-item-bottom-width);
     background-color: var(--collection-item-bottom-background-color);
+    text-decoration: var(--collection-item-bottom-text-decoration);
 }
 
 .collection-item[item-type="product"][item-design="primary"] .collection-item__bottom {
@@ -425,6 +428,22 @@
 
     .collection-item__button:hover .icon {
         --icon-color: var(--collection-item-button-text-color-hover);
+    }
+
+    .collection-item[item-type="product"] a.collection-item__bottom:hover {
+        background-color: var(--color-primary);
+    }
+
+    .collection-item[item-type="product"][item-design="primary"] a.collection-item__bottom:hover {
+        background-color: var(--color-primary-dark);
+    }
+
+    .collection-item[item-type="product"][item-design="secondary"] a.collection-item__bottom:hover {
+        background-color: var(--color-secondary-dark);
+    }
+
+    .collection-item[item-type="product"][item-design="inverted"] a.collection-item__bottom:hover {
+        background-color: var(--color-font);
     }
 }
 
