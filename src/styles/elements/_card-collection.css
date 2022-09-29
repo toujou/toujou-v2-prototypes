@@ -11,6 +11,8 @@
     --card-collection-padding: 0;
     --card-collection-z-index: var(--z-index-content);
 
+    --card-collection-item-align-self: start;
+
     display: var(--card-collection-display);
     grid-gap: var(--card-collection-gap);
     flex-wrap: var(--card-collection-flex-wrap);
@@ -31,6 +33,7 @@
 .card-collection__item {
     width: 100%;
     max-width: var(--card-collection-item-max-width);
+    align-self: var(--card-collection-item-align-self);
 }
 
 @media screen and (min-width: 640px) {
