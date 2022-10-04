@@ -4295,7 +4295,7 @@ exit-warning {
 /* stylelint-enable property-no-vendor-prefix */
 
 main {
-    padding-bottom: var(--topbar-height);
+    padding-bottom: var(--spacing-between-elements-normal);
 }
 
 main:first-child {
