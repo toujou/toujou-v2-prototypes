@@ -113,8 +113,14 @@
     color: var(--header-title-color);
 }
 
-.header-content__text {
+.header-content__text,
+.header-content > p {
     text-align: var(--header-text-alignment);
+}
+
+.header-content__text:first-child,
+.header-content > p:first-child {
+    margin-top: 0;
 }
 
 .header-content__cta {
