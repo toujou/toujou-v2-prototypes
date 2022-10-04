@@ -1,3 +1,7 @@
+main {
+    padding-bottom: var(--topbar-height);
+}
+
 main:first-child {
     padding-top: var(--topbar-height);
 }
