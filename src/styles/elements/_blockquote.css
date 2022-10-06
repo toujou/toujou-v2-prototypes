@@ -10,12 +10,18 @@
     --blockquote-quote-margin: 0;
     --blockquote-line-height: var(--line-height-normal);
     --blockquote-author-prefix: "—";
+    --blockquote-width: var(--content-width-with-padding);
     --blockquote-max-width: var(--content-max-width);
+    --blockquote-border-radius: var(--border-radius-normal);
+    --blockquote-padding: 0;
+    --blockquote-background-color: var(--color-bg);
 
     --blockquote-text-font-size: var(--font-size-normal);
     --blockquote-text-line-height: 1.5;
     --blockquote-text-margin: 0;
     --blockquote-z-index: var(--z-index-content);
+
+    --blockquote-icon-color: var(--color-font-dark);
 
     --blockquote-author-grid-column: 2;
 
@@ -24,10 +30,34 @@
     grid-template-columns: var(--blockquote-grid-template-columns);
     grid-template-areas: var(--blockquote-grid-template-areas);
     margin: 0 auto;
-    max-width: var(--blockquote-max-width);
+    padding: var(--blockquote-padding);
     min-width: 0;
+    width: var(--blockquote-width);
+    max-width: var(--blockquote-max-width);
     min-height: 0;
+    border-radius: var(--blockquote-border-radius);
+    background-color: var(--blockquote-background-color);
     z-index: var(--blockquote-z-index);
+}
+
+.blockquote:not([blockquote-design="default"]) {
+    --blockquote-padding: var(--spacing-normal);
+    --blockquote-color: var(--color-bg);
+}
+
+.blockquote[blockquote-design="primary"] {
+    --blockquote-icon-color: var(--color-primary-dark);
+    --blockquote-background-color: var(--color-primary);
+}
+
+.blockquote[blockquote-design="secondary"] {
+    --blockquote-icon-color: var(--color-secondary-dark);
+    --blockquote-background-color: var(--color-secondary);
+}
+
+.blockquote[blockquote-design="inverted"] {
+    --blockquote-icon-color: var(--color-font-dark);
+    --blockquote-background-color: var(--color-font);
 }
 
 .blockquote__image {
@@ -60,7 +90,7 @@
     height: var(--blockquote-icon-size);
     width: var(--blockquote-icon-size);
     transform: translateY(-100%);
-    background-color: var(--color-font-dark);
+    background-color: var(--blockquote-icon-color);
     mask-position: center;
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -77,6 +107,11 @@
     font-size: var(--blockquote-text-font-size);
     line-height: var(--blockquote-text-line-height);
     margin: var(--blockquote-text-margin);
+    color: var(--blockquote-color);
+}
+
+.blockquote__text a {
+    word-break: break-word;
 }
 
 .blockquote__author {
@@ -113,6 +148,10 @@
 @media screen and (min-width: 960px) {
     .blockquote {
         --blockquote-icon-size: var(--spacing-xxl);
+    }
+
+    .blockquote:not([blockquote-design="default"]) {
+        --blockquote-padding: var(--spacing-l);
     }
 
     .blockquote[blockquote-direction="horizontal"] {

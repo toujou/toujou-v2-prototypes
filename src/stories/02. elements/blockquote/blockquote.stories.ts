@@ -31,16 +31,29 @@ export default {
             defaultValue: ['vertical'],
             required: true,
         },
+        elementDesign: {
+            table: {
+                category: "Blockquote settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Element design',
+            description: "Set the blockquote's element design",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
     }
 } as Meta;
 
 interface BlockquoteStoryProps {
     direction: any;
+    elementDesign: string;
 }
 
 const Template: Story<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
     return `
-        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}">
+        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" blockquote-design="${args.elementDesign}">
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
             <blockquote slot="quote" class="blockquote__blockquote">
                 <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -53,6 +66,7 @@ const Template: Story<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
 export const Blockquote = Template.bind({});
 
 Blockquote.args = {
-    direction: 'vertical'
+    direction: 'vertical',
+    elementDesign: 'default',
 }
 
