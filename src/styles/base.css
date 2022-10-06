@@ -28,6 +28,7 @@
 
 @import './globals/_body.css';
 @import "./globals/_alert.css";
+@import "./globals/_blockquote-tag.css";
 @import "./globals/_burger-button.css";
 @import "./globals/_button.css";
 @import "./globals/_chapter.css";
