@@ -1,13 +1,15 @@
 .blockquote-grid {
     --blockquote-grid-columns-count: 100%;
     --blockquote-grid-gap: var(--spacing-l);
-    --blockquote-grid-max-width: var(--content-max-width);
     --blockquote-grid-z-index: var(--z-index-content);
     --blockquote-grid-margin: var(--spacing-between-elements-normal) auto 0;
+    --blockquote-grid-width: var(--content-width-with-padding);
+    --blockquote-grid-max-width: var(--content-wide-max-width);
 
     display: grid;
     grid-template-columns: repeat(var(--blockquote-grid-columns-count), 1fr);
     grid-gap: var(--blockquote-grid-gap);
+    width: var(--blockquote-grid-width);
     max-width: var(--blockquote-grid-max-width);
     margin: var(--blockquote-grid-margin);
     z-index: var(--blockquote-grid-z-index);

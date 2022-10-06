@@ -10,7 +10,6 @@
     --blockquote-quote-margin: 0;
     --blockquote-line-height: var(--line-height-normal);
     --blockquote-author-prefix: "—";
-    --blockquote-width: var(--content-width-with-padding);
     --blockquote-max-width: var(--content-max-width);
     --blockquote-border-radius: var(--border-radius-normal);
     --blockquote-padding: 0;
@@ -32,7 +31,6 @@
     margin: 0 auto;
     padding: var(--blockquote-padding);
     min-width: 0;
-    width: var(--blockquote-width);
     max-width: var(--blockquote-max-width);
     min-height: 0;
     border-radius: var(--blockquote-border-radius);
