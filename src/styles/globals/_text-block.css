@@ -55,6 +55,7 @@
 .text-block__figure {
     position: relative;
     margin: 0;
+    height: fit-content;
 }
 
 .text-block__image {

@@ -4995,6 +4995,9 @@ main > .table-container {
 .text-block__figure {
     position: relative;
     margin: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
 }
 
 .text-block__image {
