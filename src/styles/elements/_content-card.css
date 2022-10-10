@@ -3,7 +3,8 @@
     --content-card-display: flex;
     --content-card-flex-direction: column;
     --content-card-align-items: center;
-    --content-card-justify-content: center;
+    --content-card-justify-content: flex-start;
+    --content-card-align-self: stretch;
     --content-card-gap: 0;
     --content-card-width: 100%;
     --content-card-max-width: 100%;
@@ -15,7 +16,7 @@
     --content-card-text-decoration: none;
     --content-card-z-index: var(--z-index-content);
 
-    --content-card-figure-flex: 0 0 100%;
+    --content-card-figure-flex: 0 0 auto;
 
     --content-card-image-width: 100%;
     --content-card-image-height: 100%;
@@ -23,7 +24,7 @@
     --content-card-image-object-fit: cover;
 
     --content-card-content-padding: var(--spacing-normal);
-    --content-card-content-flex: 0 0 100%;
+    --content-card-content-flex: 0 0 auto;
 
     --content-card-title-font-family: var(--font-family-text);
     --content-card-title-font-size: var(--font-size-ms);
@@ -59,6 +60,7 @@
     padding: var(--content-card-padding);
     text-decoration: var(--content-card-text-decoration);
     z-index: var(--content-card-z-index);
+    align-self: var(--content-card-align-self);
 }
 
 .content-card__figure {
