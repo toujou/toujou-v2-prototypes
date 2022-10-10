@@ -5180,6 +5180,18 @@ main > .table-container {
     .text-block[text-block-media-position="inside-right"] .text-block__content {
         margin-left: calc(var(--text-block-grid-gap) / 2);
     }
+
+    .details .text-block[text-block-media-position="inside-right"] .text-block__figure + .text-block__content {
+        margin-left: 0;
+        padding-left: var(--spacing-normal);
+    }
+
+    .details .text-block[text-block-media-position="inside-right"] .text-block__content {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: var(--spacing-normal);
+        padding-right: var(--spacing-normal);
+    }
 }
 
 .details .text-block .text-block-column {
