@@ -20,6 +20,11 @@
     z-index: var(--content-card-grid-z-index);
 }
 
+.content-card-grid[fullwidth] {
+    --content-card-grid-width: 100%;
+    --content-card-grid-max-width: 100%;
+}
+
 .content-card-grid:first-child {
     --content-card-grid-margin: 0 auto;
 }

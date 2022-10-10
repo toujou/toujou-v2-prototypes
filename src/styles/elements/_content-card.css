@@ -159,6 +159,11 @@
         --content-card-content-flex: 0 0 calc(50% - var(--spacing-normal));
         --content-card-gap: var(--spacing-l);
     }
+
+    .content-card[fullwidth] {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 960px) {
