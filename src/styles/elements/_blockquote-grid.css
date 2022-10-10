@@ -15,6 +15,11 @@
     z-index: var(--blockquote-grid-z-index);
 }
 
+.blockquote-grid[fullwidth] {
+    --blockquote-grid-width: 100%;
+    --blockquote-grid-max-width: 100%;
+}
+
 .blockquote-grid:first-child {
     --blockquote-grid-margin: 0 auto;
 }
