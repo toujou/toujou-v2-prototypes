@@ -59,10 +59,10 @@ const Template: Story<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTextS
     return `
         <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}" fullwidth>
             <toujou-grid-column class="grid-column">
-                ${args.columnsLayout === 'third-right' ? renderBlockquote() : renderText()}
+                ${args.columnsLayout === 'third-left' ? renderBlockquote() : renderText()}
             </toujou-grid-column>
             <toujou-grid-column class="grid-column">
-                ${args.columnsLayout === 'third-right' ? renderText() : renderBlockquote()}
+                ${args.columnsLayout === 'third-left' ? renderText() : renderBlockquote()}
             </toujou-grid-column>
         </toujou-grid>
     `

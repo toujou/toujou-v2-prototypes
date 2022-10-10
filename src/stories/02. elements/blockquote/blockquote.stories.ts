@@ -11,7 +11,7 @@ export default {
     decorators: [withXD],
     parameters: {
         design: {
-            artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/16a665e8-5a1e-451f-ac52-717e48e2f4dd/Desktop',
+            artboardUrl: 'https://xd.adobe.com/view/0bd327cf-3d4a-42b8-b2a2-6e5f149165f8-5e80/screen/5e18e259-dce9-4e39-b5d0-7c0861d5cdcf/Desktop',
         },
         badges: [TOUJOU_BADGES.TESTING],
         docs: {

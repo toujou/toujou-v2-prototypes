@@ -64,7 +64,7 @@ function renderCardColumn() {
 
 const Template: Story<ImageCardWithTextStoryProps> = (args: ImageCardWithTextStoryProps) => {
     return `
-        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="default">
+        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.direction === 'left' ? 'third-right' : 'third-left'}">
              <toujou-grid-column class="grid-column">          
                 ${args.direction === 'left' ? renderTextColumn() : renderCardColumn()}
             </toujou-grid-column>
