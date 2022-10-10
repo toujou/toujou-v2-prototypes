@@ -79,20 +79,27 @@ const Template: Story<ContentCardStoryProps> = (args: ContentCardStoryProps) => 
         }
 
         contentCard.innerHTML = `
-            <figure class="content-card__figure">
-                <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
-            </figure>
-            <div class="content-card__content">
-                <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                
-                ${args.hasLink ? `
-                    <span class="content-card__button">
-                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </span>
-                `: ''}
-            </div>
+            <div class="cont">
+                <figure class="content-card__figure">
+                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
+                </figure>
+                <div class="content-card__content">
+                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                    ${i == 2 ? `
+                        <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    ` : `
+                        <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    `}
+                    
+                    ${args.hasLink ? `
+                        <span class="content-card__button">
+                            <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
+                            zur Beschreibung
+                        </span>
+                    `: ''}
+                </div>
+            
+</div>
         `
 
         contentCardGrid.appendChild(contentCard);

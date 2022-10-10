@@ -4749,6 +4749,12 @@ toujou-modal {
     --toujou-snackbar-info-button-color: var(--color-bg);
 }
 
+#navigation-state,
+#contact-state,
+#selector-state {
+    display: none;
+}
+
 .table {
     --table-width: 100%;
     --table-margin: 0 auto;
