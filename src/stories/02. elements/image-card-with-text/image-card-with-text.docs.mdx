@@ -1,0 +1,32 @@
+# Image card with text
+The `image card with text` (either right or left) can be added on the "Combined elements" tab
+
+This element is a combination of text elements and a `<toujou-image-card-grid>`
+
+For more information please check the documentation for the `toujou-grid`, `toujou-image-card-grid` and `.image-card` elements
+
+## Markup example
+```html
+<toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="default">
+     <toujou-grid-column class="grid-column">
+        <h1>Please insert your Heading here!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac habitasse. Integer quis auctor elit sed vulputate mi sit amet mauris. Dictum at tempor commodo ullamcorper. At auctor urna nunc id cursus metus. Non blandit massa enim nec dui nunc mattis enim ut. Placerat vestibulum lectus mauris ultrices eros in cursus. Id porta nibh venenatis cras sed. Est velit egestas dui id ornare arcu odio ut. Praesent semper feugiat nibh sed pulvinar proin gravida. Nec dui nunc mattis enim ut tellus elementum sagittis. Urna duis convallis convallis tellus. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Adipiscing enim eu turpis egestas pretium. At elementum eu facilisis sed odio morbi quis commodo odio. Diam quis enim lobortis scelerisque fermentum dui faucibus. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Sed faucibus turpis in eu mi bibendum neque egestas. Elementum eu facilisis sed odio morbi quis. Quisque id diam vel quam elementum pulvinar etiam non quam.</p>
+    </toujou-grid-column>
+    <toujou-grid-column class="grid-column">
+        <toujou-content-card-grid class="content-card-grid" fullwidth="">
+            <a href="/" class="image-card" image-format="16-9" card-variant="secondary">
+                <figure class="image-card__figure">
+                    <img class="image-card__image" src="https://picsum.photos/640/640">
+                </figure>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
+                    Title one secondary
+                </h3>
+            </a>
+        </toujou-content-card-grid>
+    </toujou-grid-column>
+</toujou-grid>
+```
+
+| ⚠ notice the `fullwidth` attribute both on the `toujou-image-card-grid` and `.image-card` elements |
+|-----------------------------------------------------------------------------------------------|

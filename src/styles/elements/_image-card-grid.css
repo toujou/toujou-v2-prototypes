@@ -19,6 +19,11 @@
     z-index: var(--image-card-grid-z-index);
 }
 
+.image-card-grid[fullwidth] {
+    --image-card-grid-width: 100%;
+    --image-card-grid-max-width: 100%;
+}
+
 .image-card-grid:first-child {
     --image-card-grid-margin: 0 auto;
 }
