@@ -38,9 +38,12 @@
     z-index: var(--blockquote-z-index);
 }
 
+.blockquote[is-column] {
+    padding: 0;
+}
+
 .blockquote:not([blockquote-design="default"]) {
     --blockquote-padding: var(--spacing-normal);
-    --blockquote-color: var(--color-bg);
 }
 
 .blockquote[blockquote-design="primary"] {

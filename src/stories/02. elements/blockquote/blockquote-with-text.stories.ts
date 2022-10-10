@@ -39,7 +39,7 @@ interface BlockquoteWithTextStoryProps {
 
 function renderBlockquote() {
     return `
-        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical">
+        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical" is-column>
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
             <blockquote slot="quote" class="blockquote__blockquote">
                 <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -57,7 +57,7 @@ function renderText() {
 
 const Template: Story<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTextStoryProps) => {
     return `
-        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}">
+        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}" fullwidth>
             <toujou-grid-column class="grid-column">
                 ${args.columnsLayout === 'third-right' ? renderBlockquote() : renderText()}
             </toujou-grid-column>
