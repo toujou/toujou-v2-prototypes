@@ -60,6 +60,8 @@
 .map-contact__image {
     object-fit: var(--map-contact-image-object-fit);
     aspect-ratio: var(--map-contact-map-container-aspect-ratio);
+    width: 100%;
+    height: auto;
 }
 
 .map-contact__content {
