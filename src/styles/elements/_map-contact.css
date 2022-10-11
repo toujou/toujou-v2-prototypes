@@ -116,6 +116,10 @@
     padding: var(--map-contact-content-padding);
 }
 
+.map-contact__content > p {
+    color: var(--map-contact-address-color);
+}
+
 .map-contact__headline {
     color: var(--map-contact-headline-color);
 }
@@ -128,7 +132,7 @@
     line-height: var(--map-contact-address-line-height);
 }
 
-.map-contact__socials {
+.map-contact__socials:not(:first-child) {
     margin: var(--map-contact-socials-margin);
 }
 
