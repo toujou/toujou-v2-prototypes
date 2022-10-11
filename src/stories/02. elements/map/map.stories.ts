@@ -43,17 +43,30 @@ export default {
             defaultValue: ['normal'],
             required: true,
         },
+        elementDesign: {
+            table: {
+                category: "Map Contact Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Element design',
+            description: "Set the design for the element",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
     }
 } as Meta;
 
 interface mapStoryProps {
     direction: any;
     mapAspectRatio: string;
+    elementDesign: string;
 }
 
 const Template: Story<mapStoryProps> = (args: mapStoryProps) => {
     return `
-        <toujou-map-contact class="map-contact" direction="${args.direction}" map-aspect-ratio="${args.mapAspectRatio}">
+        <toujou-map-contact class="map-contact" direction="${args.direction}" map-aspect-ratio="${args.mapAspectRatio}" element-design="${args.elementDesign}">
             <div class="map-contact__map-container">
                 <img src="https://via.placeholder.com/600x600.png?text=Map" alt="beautiful image" class="map-contact__image">
             </div>
@@ -86,5 +99,6 @@ export const Map = Template.bind({});
 Map.args = {
     direction: 'normal',
     mapAspectRatio: '1-1',
+    elementDesign: 'default'
 }
 

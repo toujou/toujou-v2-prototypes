@@ -5,16 +5,21 @@
     --map-contact-display: grid;
     --map-contact-grid-template-columns: 1fr;
     --map-contact-grid-gap: var(--spacing-normal);
+    --map-contact-background-color: transparent;
+    --map-contact-border-radius: var(--border-radius-0);
+    --map-contact-overflow: hidden;
     --map-contact-grid-template-areas:
         "map"
         "address";
 
     --map-contact-map-container-area: map;
     --map-contact-map-container-overflow: hidden;
+    --map-contact-map-container-border-radius: var(--border-radius-0);
 
     --map-contact-image-object-fit: cover;
 
     --map-contact-content-area: address;
+    --map-contact-content-padding: 0;
 
     --map-contact-headline-color: var(--color-font-dark);
 
@@ -29,6 +34,7 @@
     --map-contact-social-margin: 0 var(--spacing-normal) 0 0;
     --map-contact-social-color: transparent;
     --map-contact-social-color-active: var(--color-primary);
+    --map-contact-social-icon-color: var(--color-font);
 
     width: var(--map-contact-width);
     max-width: var(--map-contact-max-width);
@@ -37,6 +43,9 @@
     grid-template-columns: var(--map-contact-grid-template-columns);
     grid-gap: var(--map-contact-grid-gap);
     grid-template-areas: var(--map-contact-grid-template-areas);
+    background-color: var(--map-contact-background-color);
+    border-radius: var(--map-contact-border-radius);
+    overflow: var(--map-contact-overflow);
 }
 
 .map-contact[map-aspect-ratio="1-1"] {
@@ -47,6 +56,43 @@
     --map-contact-map-container-aspect-ratio: 16 / 9;
 }
 
+.map-contact[element-design="default"] {
+    --map-contact-map-container-border-radius: var(--border-radius-normal);
+}
+
+.map-contact[element-design="primary"],
+.map-contact[element-design="secondary"],
+.map-contact[element-design="inverted"] {
+    --map-contact-content-padding: var(--spacing-normal);
+    --map-contact-headline-color: var(--color-bg);
+    --map-contact-address-color: var(--color-bg);
+    --map-contact-social-icon-color: var(--color-bg);
+    --map-contact-border-radius: var(--border-radius-normal);
+}
+
+.map-contact[element-design="primary"] {
+    --map-contact-background-color: var(--color-primary);
+    --map-contact-social-color-active: var(--color-primary-light);
+}
+
+.map-contact[element-design="primary"] a {
+    color: var(--color-bg);
+}
+
+.map-contact[element-design="primary"] a:focus {
+    color: var(--color-primary-light);
+}
+
+.map-contact[element-design="secondary"] {
+    --map-contact-background-color: var(--color-secondary);
+    --map-contact-social-color-active: var(--color-secondary-light);
+}
+
+.map-contact[element-design="inverted"] {
+    --map-contact-background-color: var(--color-font);
+    --map-contact-social-color-active: var(--color-primary);
+}
+
 .map-contact:first-child {
     --map-contact-margin: 0 auto;
 }
@@ -55,6 +101,7 @@
     overflow: var(--map-contact-map-container-overflow);
     grid-area: var(--map-contact-map-container-area);
     aspect-ratio: var(--map-contact-map-container-aspect-ratio);
+    border-radius: var(--map-contact-map-container-border-radius);
 }
 
 .map-contact__image {
@@ -66,6 +113,7 @@
 
 .map-contact__content {
     grid-area: var(--map-contact-content-area);
+    padding: var(--map-contact-content-padding);
 }
 
 .map-contact__headline {
@@ -89,6 +137,10 @@
     color: var(--map-contact-social-color) !important;
 }
 
+.map-contact__social .icon {
+    --icon-color: var(--map-contact-social-icon-color);
+}
+
 .map-contact__social:focus .map-contact__social-icon {
     --icon-color: var(--map-contact-social-color-active);
 }
@@ -97,16 +149,50 @@
     .map-contact__social:hover .map-contact__social-icon {
         --icon-color: var(--map-contact-social-color-active);
     }
+
+    .map-contact[element-design="primary"] a:hover {
+        color: var(--color-primary-light);
+    }
 }
 
 @media screen and (min-width: 640px) {
     .map-contact {
         --map-contact-grid-template-columns: 1fr 1fr;
-        --map-contact-grid-gap: var(--spacing-xl);
+        --map-contact-grid-gap: var(--spacing-l);
         --map-contact-grid-template-areas: "map address";
     }
 
     .map-contact[direction="reverse"] {
         --map-contact-grid-template-areas: "address map";
+    }
+
+    .map-contact[element-design="primary"][direction="normal"],
+    .map-contact[element-design="secondary"][direction="normal"],
+    .map-contact[element-design="inverted"][direction="normal"] {
+        --map-contact-content-padding: var(--spacing-normal) var(--spacing-normal) var(--spacing-normal) 0;
+    }
+
+    .map-contact[element-design="primary"][direction="reverse"],
+    .map-contact[element-design="secondary"][direction="reverse"],
+    .map-contact[element-design="inverted"][direction="reverse"] {
+        --map-contact-content-padding: var(--spacing-normal) 0 var(--spacing-normal) var(--spacing-normal);
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .map-contact {
+        --map-contact-grid-gap: var(--spacing-xl);
+    }
+
+    .map-contact[element-design="primary"][direction="normal"],
+    .map-contact[element-design="secondary"][direction="normal"],
+    .map-contact[element-design="inverted"][direction="normal"] {
+        --map-contact-content-padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl) 0;
+    }
+
+    .map-contact[element-design="primary"][direction="reverse"],
+    .map-contact[element-design="secondary"][direction="reverse"],
+    .map-contact[element-design="inverted"][direction="reverse"] {
+        --map-contact-content-padding: var(--spacing-xl) 0 var(--spacing-xl) var(--spacing-xl);
     }
 }
