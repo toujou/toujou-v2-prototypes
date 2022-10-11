@@ -19,6 +19,7 @@
     --consent-widget-bottom-align-items: flex-end;
     --consent-widget-bottom-justify-content: flex-start;
     --consent-widget-bottom-gap: var(--spacing-normal);
+    --consent-widget-bottom-margin: var(--spacing-normal) 0 0;
 
     --consent-widget-summary-list-style: none;
 
@@ -30,8 +31,8 @@
     --consent-widget-elements-gap: var(--spacing-xs);
 
     --consent-widget-warning-color: var(--color-warning);
-    --consent-widget-warning-border: 1px solid var(--consent-widget-warning-color);
-    --consent-widget-warning-padding: var(--spacing-s);
+    --consent-widget-warning-border: var(--border-width-normal) solid var(--consent-widget-warning-color);
+    --consent-widget-warning-padding: var(--spacing-normal);
     --consent-widget-warning-border-radius: var(--border-radius-normal);
     --consent-widget-warning-display: flex;
     --consent-widget-warning-align-items: center;
@@ -39,6 +40,7 @@
     --consent-widget-warning-gap: var(--spacing-normal);
     --consent-widget-warning-width: 100%;
     --consent-widget-warning-margin: 0;
+    --consent-widget-warning-font-family: var(--font-family-text);
 
     display: var(--consent-widget-display);
     position: var(--consent-widget-position);
@@ -63,6 +65,10 @@
     --consent-widget-z-index: var(--z-index-content);
 }
 
+.consent-widget:not([in-page])[hidden] {
+    --consent-widget-display: none;
+}
+
 .consent-widget__title {
     color: var(--consent-widget-title-color);
     margin: var(--consent-widget-title-margin);
@@ -73,19 +79,19 @@
     align-items: var(--consent-widget-bottom-align-items);
     justify-content: var(--consent-widget-bottom-justify-content);
     gap: var(--consent-widget-bottom-gap);
+    margin: var(--consent-widget-bottom-margin);
 }
 
 .consent-widget__details-summary {
     list-style: var(--consent-widget-summary-list-style);
-    pointer-events: none;
 }
 
 .consent-widget__details-summary::-webkit-details-marker {
     display: var(--consent-widget-summary-marker-display);
 }
 
-.consent-widget[open] #consentSettingsButton,
-.consent-widget[open] #consentAcceptAllButton {
+.consent-widget__details[open] #consentSettingsButton,
+.consent-widget__details[open] #consentAcceptAllButton {
     display: none;
 }
 
@@ -111,11 +117,22 @@
     justify-content: var(--consent-widget-warning-jusity-content);
     gap: var(--consent-widget-warning-gap);
     color: var(--consent-widget-warning-color);
-    border: var(--consent-widget-warning-border);
     padding: var(--consent-widget-warning-padding);
+    border: var(--consent-widget-warning-border);
     border-radius: var(--consent-widget-warning-border-radius);
     width: var(--consent-widget-warning-width);
     margin: var(--consent-widget-warning-margin);
+    font-family: var(--consent-widget-warning-font-family);
+    background-color: var(--color-warning-o-25);
+}
+
+.consent-widget[warningvisible="true"] .consent-widget__description,
+.consent-widget[warningvisible="true"] .consent-widget__bottom {
+    display: none;
+}
+
+.consent-widget[warningvisible="false"] .consent-widget__warning {
+    display: none;
 }
 
 @media screen and (min-width: 840px) {

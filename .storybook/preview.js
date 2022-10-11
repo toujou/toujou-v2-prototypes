@@ -17,6 +17,9 @@ import "../src/components/copied/toujou-modal/toujou-modal";
 import "../src/components/copied/toujou-exit-warning/toujou-exit-warning";
 import "../src/components/copied/toujou-inpage-nav/toujou-inpage-nav";
 import "../src/components/copied/toujou-spinner/toujou-spinner";
+import "../src/components/copied/toujou-consent/toujou-consent";
+import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
+import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
 
 import "../src/styles/StorybookStyles.css";
 

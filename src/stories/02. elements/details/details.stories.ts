@@ -36,9 +36,7 @@ const Template = () => {
                 </toujou-text-block>
             </div>
         </toujou-details>
-                
-                
-                
+                          
         <toujou-details id="details-1" class="details">
             <h3 slot="summary" class="details__title">I am just another simple title</h3>
             <ul slot="summary" class="details__subtitle details__subtitle-list">
@@ -57,7 +55,7 @@ const Template = () => {
                     </toujou-text-block-column>
                 </toujou-text-block>
             </div>
-            </toujou-details>
+        </toujou-details>
     `
 };
 
