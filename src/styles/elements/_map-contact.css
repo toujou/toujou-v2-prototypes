@@ -70,17 +70,17 @@
     --map-contact-border-radius: var(--border-radius-normal);
 }
 
-.map-contact[element-design="primary"] {
-    --map-contact-background-color: var(--color-primary);
-    --map-contact-social-color-active: var(--color-primary-light);
-}
-
-.map-contact[element-design="primary"] a {
+.map-contact:not([element-design="default"]) a {
     color: var(--color-bg);
 }
 
-.map-contact[element-design="primary"] a:focus {
-    color: var(--color-primary-light);
+.map-contact:not([element-design="default"]) a:focus {
+    color: var(--map-contact-social-color-active);
+}
+
+.map-contact[element-design="primary"] {
+    --map-contact-background-color: var(--color-primary);
+    --map-contact-social-color-active: var(--color-primary-light);
 }
 
 .map-contact[element-design="secondary"] {
@@ -176,6 +176,10 @@
     .map-contact[element-design="secondary"][direction="reverse"],
     .map-contact[element-design="inverted"][direction="reverse"] {
         --map-contact-content-padding: var(--spacing-normal) 0 var(--spacing-normal) var(--spacing-normal);
+    }
+
+    .map-contact:not([element-design="default"]) a:hover {
+        color: var(--map-contact-social-color-active);
     }
 }
 
