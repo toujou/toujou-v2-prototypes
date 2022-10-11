@@ -39,8 +39,8 @@ const Template = () => {
                     Show once
                 </button>
                 <toujou-consent class="consent"
-                                consentType="html"
-                                consentLifetime="{settings.theme.trackingconsent_externals_lifetime}"
+                                consentType="maps"
+                                consentLifetime="0"
                                 listenTo="click"
                                 listenOn=".consent__button"
                                 snackbarMessage="3rd party content snackbar message">

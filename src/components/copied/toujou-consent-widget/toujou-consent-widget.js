@@ -298,7 +298,6 @@ class ToujouConsentWidget extends LitElement {
    */
   _getConsentTypeState(state, consentType, preChecked) {
     let consentTypeData = null;
-
     if (!state || !state.consents || !state.consents[consentType]) {
       consentTypeData = null;
     } else {
