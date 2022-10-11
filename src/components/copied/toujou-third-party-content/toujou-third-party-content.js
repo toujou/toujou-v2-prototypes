@@ -331,6 +331,7 @@ class ToujouThirdPartyContent extends LitElement {
       .assignedNodes({ flatten: true })
       .filter((el) => el.tagName === 'TEMPLATE');
 
+
     templates.forEach((template) => {
       if (this.contentType === 'html') {
         const uncommentedTemplateContent = this._uncommentTemplate(template);

@@ -1,0 +1,66 @@
+.third-party-content {
+    --third-party-content-position: relative;
+    --third-party-content-display: flex;
+    --third-party-content-flex-direction: column;
+    --third-party-content-align-items: center;
+    --third-party-content-justify-content: center;
+    --third-party-content-background-color: var(--color-warning-o-25);
+    --third-party-content-border: var(--border-width-normal) solid var(--color-warning);
+    --third-party-content-padding: var(--spacing-normal);
+    --third-party-content-border-radius: var(--border-radius-normal);
+    --third-party-content-height: fit-content;
+    --third-party-content-width: var(--content-width-with-padding);
+    --third-party-content-max-width: var(--content-wide-max-width);
+    --third-party-content-margin: var(--spacing-between-elements-normal) auto 0;
+
+    --third-party-content-buttons-display: flex;
+    --third-party-content-buttons-align-items: center;
+    --third-party-content-buttons-justify-content: center;
+    --third-party-content-buttons-flex-wrap: wrap;
+    --third-party-content-buttons-gap: var(--spacing-normal);
+
+    --third-party-content-message-margin: 0 0 var(--spacing-normal);
+    --third-party-content-message-text-align: center;
+
+    position: var(--third-party-content-position);
+    display: var(--third-party-content-display);
+    flex-direction: var(--third-party-content-flex-direction);
+    align-items: var(--third-party-content-align-items);
+    justify-content: var(--third-party-content-justify-content);
+    background-color: var(--third-party-content-background-color);
+    border: var(--third-party-content-border);
+    padding: var(--third-party-content-padding);
+    border-radius: var(--third-party-content-border-radius);
+    height: var(--third-party-content-height);
+    width: var(--third-party-content-width);
+    max-width: var(--third-party-content-max-width);
+    margin: var(--third-party-content-margin);
+}
+
+.third-party-content__buttons {
+    display: var(--third-party-content-buttons-display);
+    align-items: var(--third-party-content-buttons-align-items);
+    justify-content: var(--third-party-content-buttons-justify-content);
+    flex-wrap: var(--third-party-content-buttons-flex-wrap);
+    gap: var(--third-party-content-buttons-gap);
+}
+
+.third-party-content__message {
+    margin: var(--third-party-content-message-margin);
+    text-align: var(--third-party-content-message-text-align);
+}
+
+/* SHOWING CONTENT */
+.third-party-content[showingcontent] {
+    display: contents;
+}
+
+.third-party-content[showingcontent] .third-party-content__placeholder {
+    display: none;
+}
+
+.third-party-content[showingcontent] .toujou-third-party-content__templated-content {
+    display: block;
+    position: relative;
+    height: 100%;
+}
