@@ -15,8 +15,20 @@ export default {
     },
 } as Meta;
 
+window.addEventListener('click', (event: Event) => {
+    const clickTarget = event.target as HTMLElement;
+    if (clickTarget.getAttribute('id') === "clearConsentsButton") {
+        localStorage.removeItem('consentsState');
+        document.location.reload();
+    }
+})
+
 const Template = () => {
     return `
+
+        <p>With this button you can remove all consents from the local storage. For test purposes only</p>
+        <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
+        
         <toujou-third-party-content class="third-party-content" contentType="maps">
         <!--   The content of the template element must be inside html comments -->
         <template>
