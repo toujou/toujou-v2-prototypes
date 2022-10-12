@@ -1,5 +1,4 @@
 .map-contact {
-    --map-contact-min-height: 260px;
     --map-contact-width: var(--content-width-with-padding);
     --map-contact-max-width: 100%;
     --map-contact-margin: var(--spacing-between-elements-normal) auto 0;
@@ -17,6 +16,8 @@
     --map-contact-map-container-area: map;
     --map-contact-map-container-overflow: hidden;
     --map-contact-map-container-border-radius: var(--border-radius-0);
+    --map-contact-map-container-min-height: 260px;
+    --map-contact-map-container-max-width: 100%;
 
     --map-contact-image-object-fit: cover;
 
@@ -106,6 +107,8 @@
     grid-area: var(--map-contact-map-container-area);
     aspect-ratio: var(--map-contact-map-container-aspect-ratio);
     border-radius: var(--map-contact-map-container-border-radius);
+    min-height: var(--map-contact-map-container-min-height);
+    max-width: var(--map-contact-map-container-max-width);
 }
 
 .map-contact__image {
