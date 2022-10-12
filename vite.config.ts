@@ -27,6 +27,7 @@ export default defineConfig({
                 'toujou-map-marker': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-marker.js'),
                 'toujou-map-popup': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-popup.js'),
                 'toujou-map-static': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-static.js'),
+                'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
             },
