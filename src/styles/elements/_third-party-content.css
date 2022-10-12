@@ -5,11 +5,11 @@
     --third-party-content-align-items: center;
     --third-party-content-justify-content: center;
     --third-party-content-background-color: var(--color-warning-o-25);
-    --third-party-content-border: var(--border-width-normal) solid var(--color-warning);
+    --third-party-content-border: 0;
     --third-party-content-padding: var(--spacing-normal);
     --third-party-content-border-radius: var(--border-radius-normal);
-    --third-party-content-height: fit-content;
-    --third-party-content-width: var(--content-width-with-padding);
+    --third-party-content-height: 100%;
+    --third-party-content-width: 100%;
     --third-party-content-max-width: var(--content-wide-max-width);
     --third-party-content-margin: var(--spacing-between-elements-normal) auto 0;
 
