@@ -12,6 +12,7 @@
         "map"
         "address";
 
+    --map-contact-map-container-position: relative;
     --map-contact-map-container-area: map;
     --map-contact-map-container-overflow: hidden;
     --map-contact-map-container-border-radius: var(--border-radius-0);
@@ -98,6 +99,7 @@
 }
 
 .map-contact__map-container {
+    position: var(--map-contact-map-container-position);
     overflow: var(--map-contact-map-container-overflow);
     grid-area: var(--map-contact-map-container-area);
     aspect-ratio: var(--map-contact-map-container-aspect-ratio);
