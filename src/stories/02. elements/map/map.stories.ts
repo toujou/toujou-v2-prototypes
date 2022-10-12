@@ -80,13 +80,13 @@ const Template: Story<mapStoryProps> = (args: mapStoryProps) => {
                 </address>
                 <div class="map-contact__socials">
                     <a href="#" class="map-contact__social">
-                        <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-facebook" icon-size="m"></toujou-icon>
+                        <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-facebook" icon-size="l"></toujou-icon>
                     </a>
                     <a href="#" class="map-contact__social">
-                        <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-instagram" icon-size="m"></toujou-icon>
+                        <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-instagram" icon-size="l"></toujou-icon>
                     </a>
                     <a href="#" class="map-contact__social">
-                        <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-youtube" icon-size="m"></toujou-icon>
+                        <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-youtube" icon-size="l"></toujou-icon>
                     </a>
                 </div>
             </div>
