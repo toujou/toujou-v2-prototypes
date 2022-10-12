@@ -1,4 +1,4 @@
-import{s as u}from"./lit-element-ca41d87b.js";import{n as h}from"./custom-element-fb5c5745.js";import{e as i}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";import{S as c}from"./splide.esm-c5925f0b.js";/**
+import{s as u}from"./lit-element-f92abbea.js";import{n as h}from"./custom-element-fb5c5745.js";import{e as i}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";import{S as c}from"./splide.esm-c5925f0b.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause

@@ -1,0 +1,51 @@
+# Mapbox
+
+We have created a `toujou-map` element, which is a wrapper for a [mapbox](https://www.mapbox.com/) map. This element is used whenever we need to display a map, for instance on the "map with contact" content element
+
+| ⚠️ For the map element to work we need to enter a valid `access-token` (input on the BE's theme module) |
+|:--------------------------------------------------------------------------------------------------------|
+
+## Markup example
+```html
+    <toujou-map
+        class="map"
+        center="[11.0762549, 49.4579779]"
+        zoom="14"
+        map-style="mapbox://styles/mapbox/light-v10"
+        interactive
+        access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg">
+        <toujou-map-marker coordinates="[11.0762549, 49.4579779]" color="#0079A8"></toujou-map-marker>
+    </toujou-map>
+```
+
+
+## Mapbox parameters
+We can find the mapbox parameters documentation [here](https://docs.mapbox.com/mapbox-gl-js/api/map/#map-parameters)
+
+
+## Attributes
+
+### class <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+We must add the `class="map"` attribute, so the element gets the correct styles
+
+### center
+We can add a `center` attribute to define the map's initial geographical centerpoint. If not specified it will be `[0, 0]`
+
+| ℹ️ Mapbox GL uses longitude, latitude coordinate order (as opposed to latitude, longitude) to match GeoJSON |
+|:------------------------------------------------------------------------------------------------------------|
+
+### zoom
+Set the `zoom` attribute to define the map's initial zoom level. It must be a value between 0 and 22. If not set, it will default to 0.
+
+| ℹ️ On toujou the default is 14 |
+|:-------------------------------|
+
+### map-style <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+We must add the `map-style` attribute with a valid mapbox style link.
+
+We can add a link for the style on the theme module's "mapbox custom style" input ("Analytics" tab)
+
+### access-token <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+We must add an `access-token` attribute with a valid mapbox token value.
+
+More info about mapbox's access token [here](https://docs.mapbox.com/help/glossary/access-token/)

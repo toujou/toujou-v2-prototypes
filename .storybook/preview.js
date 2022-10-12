@@ -20,6 +20,12 @@ import "../src/components/copied/toujou-spinner/toujou-spinner";
 import "../src/components/copied/toujou-consent/toujou-consent";
 import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
 import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
+import "../src/components/copied/toujou-map/toujou-map";
+import "../src/components/copied/toujou-map/toujou-map-geojson";
+import "../src/components/copied/toujou-map/toujou-map-layer";
+import "../src/components/copied/toujou-map/toujou-map-marker";
+import "../src/components/copied/toujou-map/toujou-map-popup";
+import "../src/components/copied/toujou-map/toujou-map-static";
 
 import "../src/styles/StorybookStyles.css";
 

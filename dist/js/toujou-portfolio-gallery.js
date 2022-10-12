@@ -1,4 +1,4 @@
-import{r as b,s as x,$ as y}from"./lit-element-ca41d87b.js";import{n as v}from"./custom-element-fb5c5745.js";import{e as _}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";import{P as w,a as C}from"./photoswipe-lightbox.esm-38c17ed8.js";const S=b`
+import{r as b,s as x,$ as y}from"./lit-element-f92abbea.js";import{n as v}from"./custom-element-fb5c5745.js";import{e as _}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";import{P as w,a as C}from"./photoswipe-lightbox.esm-38c17ed8.js";const S=b`
   * {
     box-sizing: border-box;
   }
