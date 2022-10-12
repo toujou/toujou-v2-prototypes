@@ -13,6 +13,7 @@
 }
 
 .grid-column .details-accordion {
+    --details-accordion-width: 100%;
     --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 }
 
@@ -22,8 +23,4 @@
 
 .text-block + .details-accordion {
     --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
-}
-
-.grid-column .details-accordion {
-    --details-accordion-width: 100%;
 }

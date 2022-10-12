@@ -2379,7 +2379,6 @@ blockquote:not(.blockquote__blockquote) {
     --blockquote-tag-icon-size: var(--spacing-xl);
     --blockquote-tag-icon-image: var(--icon-blockquote-round);
 
-
     z-index: var(--blockquote-tag-z-index);
     margin: var(--blockquote-tag-margin);
     width: var(--blockquote-tag-width);
@@ -2785,7 +2784,7 @@ p > .button {
 }
 
 .button[button-variant="font"],
-.button.button--font{
+.button.button--font {
     --button-color-bg: var(--color-font);
 }
 
@@ -2981,6 +2980,7 @@ p > .button {
         --button-color-text: var(--color-bg);
     }
 
+    /* stylelint-disable-next-line max-line-length */
     .button:is(.button--secondary, [button-variant="secondary"]).button:is(.button--shadow, [button-type="border"]):hover {
         --button-border-color: var(--color-secondary-dark);
         --button-color-text: var(--color-bg);
@@ -3309,7 +3309,6 @@ exit-warning {
     --toujou-modal-header-box-shadow: var(--shadow-s);
     --toujou-modal-header-background: var(--color-bg);
     --toujou-modal-header-border-bottom: none;
-
 
     --toujou-modal-title-font-family: var(--font-family-headline);
     --toujou-modal-title-color: var(--color-warning);
@@ -4379,7 +4378,7 @@ main:first-child {
     --media-info-padding: var(--spacing-normal);
     --media-info-display: flex;
     --media-info-flex-direction: column;
-    --media-info-align-items: flex-start ;
+    --media-info-align-items: flex-start;
     --media-info-justify-content: flex-start;
     --media-info-gap: var(--spacing-xs);
 
@@ -4390,13 +4389,7 @@ main:first-child {
     --media-info-figcaption-font-family: var(--font-family-text);
     --media-info-figcaption-font-size: var(--font-size-normal);
     --media-info-figcaption-color: var(--color-bg);
-}
 
-.slider .media-info {
-    --media-info-padding: var(--spacing-normal) var(--spacing-normal) calc(var(--spacing-l) + var(--spacing-xs));
-}
-
-.media-info {
     position: var(--media-info-position);
     bottom: var(--media-info-bottom);
     left: var(--media-info-left);
@@ -4409,6 +4402,10 @@ main:first-child {
     align-items: var(--media-info-align-items);
     justify-content: var(--media-info-justify-content);
     gap: var(--media-info-gap);
+}
+
+.slider .media-info {
+    --media-info-padding: var(--spacing-normal) var(--spacing-normal) calc(var(--spacing-l) + var(--spacing-xs));
 }
 
 .media-info__copyright {
@@ -5588,17 +5585,12 @@ a {
     color: var(--color-primary);
     overflow-wrap: break-word;
     word-wrap: break-word;
-
     -ms-word-break: break-all;
-    /* This is the dangerous one in WebKit, as it breaks things wherever */
     word-break: break-all;
-    /* Instead use this non-standard one: */
     word-break: break-word;
-
-    /* Adds a hyphen where the word breaks, if supported (No Blink) */
-    -ms-hyphens: auto;
     -webkit-hyphens: auto;
-    hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
 }
 
 p > a.button {

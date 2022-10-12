@@ -41,7 +41,7 @@ p > .button {
 }
 
 .button[button-variant="font"],
-.button.button--font{
+.button.button--font {
     --button-color-bg: var(--color-font);
 }
 
@@ -230,6 +230,7 @@ p > .button {
         --button-color-text: var(--color-bg);
     }
 
+    /* stylelint-disable-next-line max-line-length */
     .button:is(.button--secondary, [button-variant="secondary"]).button:is(.button--shadow, [button-type="border"]):hover {
         --button-border-color: var(--color-secondary-dark);
         --button-color-text: var(--color-bg);

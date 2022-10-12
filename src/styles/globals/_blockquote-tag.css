@@ -9,7 +9,6 @@ blockquote:not(.blockquote__blockquote) {
     --blockquote-tag-icon-size: var(--spacing-xl);
     --blockquote-tag-icon-image: var(--icon-blockquote-round);
 
-
     z-index: var(--blockquote-tag-z-index);
     margin: var(--blockquote-tag-margin);
     width: var(--blockquote-tag-width);

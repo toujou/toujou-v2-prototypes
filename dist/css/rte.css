@@ -509,7 +509,7 @@ p > .button {
 }
 
 .button[button-variant="font"],
-.button.button--font{
+.button.button--font {
     --button-color-bg: var(--color-font);
 }
 
@@ -705,6 +705,7 @@ p > .button {
         --button-color-text: var(--color-bg);
     }
 
+    /* stylelint-disable-next-line max-line-length */
     .button:is(.button--secondary, [button-variant="secondary"]).button:is(.button--shadow, [button-type="border"]):hover {
         --button-border-color: var(--color-secondary-dark);
         --button-color-text: var(--color-bg);
@@ -1530,17 +1531,12 @@ a {
     color: var(--color-primary);
     overflow-wrap: break-word;
     word-wrap: break-word;
-
     -ms-word-break: break-all;
-    /* This is the dangerous one in WebKit, as it breaks things wherever */
     word-break: break-all;
-    /* Instead use this non-standard one: */
     word-break: break-word;
-
-    /* Adds a hyphen where the word breaks, if supported (No Blink) */
-    -ms-hyphens: auto;
     -webkit-hyphens: auto;
-    hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
 }
 
 p > a.button {

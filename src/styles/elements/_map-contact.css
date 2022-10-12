@@ -1,6 +1,6 @@
 .map-contact {
     --map-contact-width: var(--content-width-with-padding);
-    --map-contact-max-width: 100%;
+    --map-contact-max-width: var(--content-max-width);
     --map-contact-margin: var(--spacing-between-elements-normal) auto 0;
     --map-contact-display: grid;
     --map-contact-grid-template-columns: 1fr;
@@ -39,7 +39,6 @@
     --map-contact-social-color-active: var(--color-primary);
     --map-contact-social-icon-color: var(--color-font);
 
-    min-height: var(--map-contact-min-height);
     width: var(--map-contact-width);
     max-width: var(--map-contact-max-width);
     margin: var(--map-contact-margin);

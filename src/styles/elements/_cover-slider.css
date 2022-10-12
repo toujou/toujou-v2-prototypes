@@ -141,7 +141,7 @@
     padding: var(--cover-slider-title-padding);
     color: var(--color-slider-title-color);
     font-size: var(--cover-slider-title-font-size);
-    z-index: var(--cover-slider-title-z-index)
+    z-index: var(--cover-slider-title-z-index);
 }
 
 .cover-slider__title::before {

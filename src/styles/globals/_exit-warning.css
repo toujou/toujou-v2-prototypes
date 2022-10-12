@@ -6,7 +6,6 @@ exit-warning {
     --toujou-modal-header-background: var(--color-bg);
     --toujou-modal-header-border-bottom: none;
 
-
     --toujou-modal-title-font-family: var(--font-family-headline);
     --toujou-modal-title-color: var(--color-warning);
     --toujou-modal-title-font-size: var(--font-size-l);
