@@ -60,7 +60,7 @@
     --consent-widget-position: relative;
     --consent-widget-bottom: unset;
     --consent-widget-left: unset;
-    --consent-widget-max-width: var(--consent-widget-max-width);
+    --consent-widget-max-width: var(--content-max-width);
     --consent-widget-margin: 0 auto;
     --consent-widget-z-index: var(--z-index-content);
 }

@@ -57,7 +57,15 @@ const Template = () => {
                         >Einstellungen</span>
                     </summary>
                     <div class="consent-widget__consent-elements">                
-                        <toujou-consent class="consent" consenttype="tracking" consentlifetime="1" snackbarmessage="" listento="change" listenon="#trackingInput-box" prechecked="1">
+                        <toujou-consent
+                            class="consent"
+                            consenttype="tracking"
+                            consentlifetime="1"
+                            snackbarmessage=""
+                            listento="change"
+                            listenon="#trackingInput-box"
+                            prechecked="1"
+                        >
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="trackingInput-box" type="checkbox">
@@ -68,7 +76,15 @@ const Template = () => {
                             </toujou-input-group>
                         </toujou-consent>
                         
-                        <toujou-consent class="consent" consenttype="video" consentlifetime="30" snackbarmessage="" listento="change" listenon="#videoInput-box" prechecked="0">                        
+                        <toujou-consent
+                            class="consent"
+                            consenttype="video"
+                            consentlifetime="30"
+                            snackbarmessage=""
+                            listento="change"
+                            listenon="#videoInput-box"
+                            prechecked="0"
+                        >                        
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="videoInput-box" type="checkbox">
@@ -79,7 +95,15 @@ const Template = () => {
                             </toujou-input-group>
                         </toujou-consent>
         
-                        <toujou-consent class="consent" consenttype="maps" consentlifetime="30" snackbarmessage="" listento="change" listenon="#mapsInput-box" prechecked="0">
+                        <toujou-consent
+                            class="consent"
+                            consenttype="maps"
+                            consentlifetime="30"
+                            snackbarmessage=""
+                            listento="change"
+                            listenon="#mapsInput-box"
+                            prechecked="0"
+                        >
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="mapsInput-box" type="checkbox">
@@ -90,7 +114,15 @@ const Template = () => {
                             </toujou-input-group>
                         </toujou-consent>
         
-                        <toujou-consent class="consent" consenttype="html" consentlifetime="30" snackbarmessage="" listento="change" listenon="#htmlInput-box" prechecked="0">
+                        <toujou-consent
+                            class="consent"
+                            consenttype="html"
+                            consentlifetime="30"
+                            snackbarmessage=""
+                            listento="change"
+                            listenon="#htmlInput-box"
+                            prechecked="0"
+                        >
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="htmlInput-box" type="checkbox">
