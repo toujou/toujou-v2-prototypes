@@ -1,1 +1,46 @@
 # contact box
+
+The contact box is and element that displays the contact information and is shown automatically on most pages (pages with "default" rendering style).
+
+It can be open for instance by clicking the contact button on the topbar.
+
+It can be closed by either clicking the close button or the contact-box backdrop.
+
+## Markup example
+```html
+<toujou-contact-box class="contact-box">
+    <div class="contact-box__card">
+        <label class="contact-box__close" for="contact-state" aria-role="button">
+            <toujou-icon class="icon" icon-size="normal" icon-name="close" icon-color="font"></toujou-icon>
+        </label>
+
+        <div class="contact-box__content" slot="content">
+            <h3 class="contact-box__headline">Kontakt</h3>
+            <div class="contact-box__items">
+                <div class="contact-box__item">
+                    <toujou-icon class="icon" icon-size="normal" icon-color="font" icon-name="telephone"></toujou-icon>
+                    <a class="contact-box__link" href="#">0911 23980870</a>
+                </div>
+                <div class="contact-box__item">
+                    <toujou-icon class="icon" icon-size="normal" icon-color="font" icon-name="email"></toujou-icon>
+                    <a class="contact-box__link" href="#">info@dfau.de</a>
+                </div>
+                <div class="contact-box__item">
+                    <toujou-icon class="icon" icon-size="normal" icon-color="font" icon-name="calendar-day"></toujou-icon>
+                    <span class="contact-box__link">Mo. - Fr.: 9:00 - 18:00h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</toujou-contact-box>
+```
+
+## The contact state input
+For the contact box to work, the page also needs to have the corresponding contact state attribute
+
+```html
+<input type="checkbox" name="contact-state" id="contact-state" class="state-input" aria-hidden="true" autocomplete="off">
+```
+
+| ⚠️ The `for` attribute on the `.contact-box__close` must match the `id` on the input |
+|:-------------------------------------------------------------------------------------|
