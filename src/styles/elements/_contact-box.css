@@ -13,6 +13,7 @@
     --contact-box-pointer-events: none;
     --contact-box-visibility: hidden;
     --contact-box-z-index: var(--z-index-contact-box);
+    --contact-box-outline: none;
 
     --contact-box-card-background-color: var(--color-bg);
     --contact-box-card-padding: var(--spacing-l) var(--spacing-normal) var(--spacing-normal);
@@ -68,6 +69,7 @@
     pointer-events: var(--contact-box-pointer-events);
     visibility: var(--contact-box-visibility);
     z-index: var(--contact-box-z-index);
+    outline: var(--contact-box-outline);
 }
 
 #contact-state:checked ~ .wrap--master .contact-box {
