@@ -29,6 +29,8 @@ export default defineConfig({
                 'toujou-map-popup': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-popup.js'),
                 'toujou-map-static': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-static.js'),
                 'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
+                'toujou-consent': path.resolve(__dirname, 'src/components/copied/toujou-consent/toujou-consent'),
+                'toujou-consent-widget': path.resolve(__dirname, 'src/components/copied/toujou-consent-widget/toujou-consent-widget'),
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
             },
