@@ -32,6 +32,8 @@
     --contact-box-close-position: absolute;
     --contact-box-close-top: var(--spacing-s);
     --contact-box-close-right: var(--spacing-s);
+    --contact-box-close-background: transparent;
+    --contact-box-close-border: none;
 
     --contact-box-headline-text-align: center;
     --contact-box-headline-color: var(--color-font);
@@ -94,6 +96,12 @@
     position: var(--contact-box-close-position);
     top: var(--contact-box-close-top);
     right: var(--contact-box-close-right);
+    background: var(--contact-box-close-background);
+    border: var(--contact-box-close-border);
+}
+
+.contact-box__close:focus {
+    border: var(--focus-outline-width) solid var(--focus-outline-color);
 }
 
 .contact-box__close:focus .icon {

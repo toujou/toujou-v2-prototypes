@@ -11,22 +11,22 @@ It can be closed by either clicking the close button or the contact-box backdrop
 <toujou-contact-box class="contact-box">
     <div class="contact-box__card">
         <label class="contact-box__close" for="contact-state" aria-role="button">
-            <toujou-icon class="icon" icon-size="normal" icon-name="close" icon-color="font"></toujou-icon>
+            <toujou-icon class="icon" icon-size="ms" icon-name="close" icon-color="font"></toujou-icon>
         </label>
 
         <div class="contact-box__content" slot="content">
             <h3 class="contact-box__headline">Kontakt</h3>
             <div class="contact-box__items">
                 <div class="contact-box__item">
-                    <toujou-icon class="icon" icon-size="normal" icon-color="font" icon-name="telephone"></toujou-icon>
+                    <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
                     <a class="contact-box__link" href="#">0911 23980870</a>
                 </div>
                 <div class="contact-box__item">
-                    <toujou-icon class="icon" icon-size="normal" icon-color="font" icon-name="email"></toujou-icon>
+                    <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="email"></toujou-icon>
                     <a class="contact-box__link" href="#">info@dfau.de</a>
                 </div>
                 <div class="contact-box__item">
-                    <toujou-icon class="icon" icon-size="normal" icon-color="font" icon-name="calendar-day"></toujou-icon>
+                    <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="calendar-day"></toujou-icon>
                     <span class="contact-box__link">Mo. - Fr.: 9:00 - 18:00h</span>
                 </div>
             </div>
@@ -44,3 +44,9 @@ For the contact box to work, the page also needs to have the corresponding conta
 
 | ⚠️ The `for` attribute on the `.contact-box__close` must match the `id` on the input |
 |:-------------------------------------------------------------------------------------|
+
+## Focus trap
+We trap the focus inside the contact box, which means the users cannot focus on any background elements, they can only focus and cycle focus on the contact box focusable elements (close buttons and links)
+
+## Body scroll
+When the contact box open we add the `contact-box-is-open` attribute to the body tag, which prevents the body from scrolling

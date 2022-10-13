@@ -1,3 +1,3 @@
-body:is([overlay-open],[nav-is-open]) {
+body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     overflow: hidden !important;
 }
