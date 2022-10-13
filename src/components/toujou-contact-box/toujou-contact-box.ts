@@ -51,11 +51,13 @@ export class ToujouContactBox extends LitElement {
         this.state = value;
 
         if (this.state) {
+            this.setAttribute('tabindex', '0');
             document.body.setAttribute(this.openContactBoxBodyAttribute, '');
             window.addEventListener('keydown', this._handleKeyDown.bind(this));
             this._prevContentFocusEl = document.activeElement as HTMLElement;
             this.focus();
         } else {
+            this.removeAttribute('tabindex');
             this._contactStateInput!.checked = false;
             document.body.removeAttribute(this.openContactBoxBodyAttribute);
             window.removeEventListener('keydown', this._handleKeyDown);
@@ -107,6 +109,7 @@ export class ToujouContactBox extends LitElement {
      * When the state input changes we should set the corresponding state to the this._state variable
      */
     _handleStateInputStateChange() {
+        console.log('111');
         this._state = this._contactStateInput?.checked || false;
     }
 
