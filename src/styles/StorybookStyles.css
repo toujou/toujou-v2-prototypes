@@ -1,5 +1,6 @@
 /* DEMO */
 @import 'demo/_be-variables.css'; /* These are the variables that com from the theme settings in BE */
+@import 'demo/_contact-box.css';
 @import 'demo/_demo-variables.css';
 @import 'demo/_animation.css';
 @import 'demo/_aspect-ratio.css';
@@ -27,6 +28,7 @@
 @import './elements/_collection-item.css';
 @import './elements/_consent-widget.css';
 @import './elements/_content-card.css';
+@import './elements/_contact-box.css';
 @import './elements/_content-card-grid.css';
 @import './elements/_cover-slider.css';
 @import './elements/_details.css';

@@ -191,6 +191,7 @@ figure {
     --color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);
 
     --color-black-o-75: hsl(0 0% 0% / 75%);
+    --color-black-o-50: hsl(0 0% 0% / 50%);
     --color-black-o-10: hsl(0 0% 0% / 10%);
 
     --color-white: hsl(0 100% 100% / 100%);
@@ -466,6 +467,8 @@ figure {
     --z-index-topbar: 500;
     --z-index-nav: 1000;
     --z-index-notifications: 2000;
+    --z-index-backdrop: 3000;
+    --z-index-contact-box: 3500;
     --z-index-modal: 10000;
     --z-index-overlay: 50000;
     --z-index-important: 2147483647;

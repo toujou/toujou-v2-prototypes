@@ -1,0 +1,5 @@
+#contact-state:checked ~ .contact-box {
+    --contact-box-display: flex;
+    --contact-box-pointer-events: all;
+    --contact-box-visibility: visible;
+}
