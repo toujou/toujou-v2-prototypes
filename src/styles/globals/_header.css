@@ -33,6 +33,10 @@
     --header-height: calc(100 / 3 * 1vw);
 }
 
+.header[image-height="hero-media"] {
+    --header-height: auto;
+}
+
 .header--portfolio-gallery {
     --header-height: auto;
 }
