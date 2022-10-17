@@ -1,5 +1,6 @@
 .hero-media {
     --hero-media-width: 100%;
+    --hero-media-max-width: 100%;
     --hero-media-aspect-ratio: var(--aspect-ratio-3-1);
     --hero-media-display: block;
     --hero-media-position: relative;
@@ -26,7 +27,13 @@
     padding: var(--hero-media-padding);
     margin: var(--hero-media-margin);
     width: var(--hero-media-width);
+    max-width: var(--hero-media-max-width);
     z-index: var(--hero-media-z-index);
+}
+
+:is(main, .chapter) > .hero-media {
+    width: var(--hero-media-width);
+    max-width: var(--hero-media-max-width);
 }
 
 .hero-media:first-child {
