@@ -131,7 +131,7 @@ const Template = () => {
                 </toujou-slider-count>
             </toujou-slider>
             <button class="button portfolio-gallery__button" button-variant="primary" button-size="normal" button-type="default" slot="button">
-                <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="flower"></toujou-icon>
+                <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="image-collection"></toujou-icon>
                 <span class="portfolio-gallery__button-text">See all</span>
             </button>
         </toujou-portfolio-gallery>  
