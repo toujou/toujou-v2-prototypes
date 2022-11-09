@@ -15,4 +15,5 @@
 .icon-grid__title {
     font-size: var(--font-size-xs);
     color: var(--color-font-light);
+    text-align: center;
 }

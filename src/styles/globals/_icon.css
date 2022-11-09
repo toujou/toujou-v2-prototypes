@@ -157,6 +157,16 @@
     -webkit-mask-image: var(--icon-article);
 }
 
+.icon[icon-name="audiotrack"] {
+    mask-image: var(--icon-audiotrack);
+    -webkit-mask-image: var(--icon-audiotrack);
+}
+
+.icon[icon-name="audiotrack-circle-filled"] {
+    mask-image: var(--icon-audiotrack-circle-filled);
+    -webkit-mask-image: var(--icon-audiotrack-circle-filled);
+}
+
 .icon[icon-name="bell"] {
     mask-image: var(--icon-bell);
     -webkit-mask-image: var(--icon-bell);
@@ -307,6 +317,16 @@
     -webkit-mask-image: var(--icon-email);
 }
 
+.icon[icon-name="equalizer"] {
+    mask-image: var(--icon-equalizer);
+    -webkit-mask-image: var(--icon-equalizer);
+}
+
+.icon[icon-name="equalizer-circle-filled"] {
+    mask-image: var(--icon-equalizer-circle-filled);
+    -webkit-mask-image: var(--icon-equalizer-circle-filled);
+}
+
 .icon[icon-name="euro"] {
     mask-image: var(--icon-euro);
     -webkit-mask-image: var(--icon-euro);
@@ -342,6 +362,16 @@
     -webkit-mask-image: var(--icon-food);
 }
 
+.icon[icon-name="forward"] {
+    mask-image: var(--icon-forward);
+    -webkit-mask-image: var(--icon-forward);
+}
+
+.icon[icon-name="forward-circle-filled"] {
+    mask-image: var(--icon-forward-circle-filled);
+    -webkit-mask-image: var(--icon-forward-circle-filled);
+}
+
 .icon[icon-name="globe"] {
     mask-image: var(--icon-globe);
     -webkit-mask-image: var(--icon-globe);
@@ -370,6 +400,26 @@
 .icon[icon-name="hotel"] {
     mask-image: var(--icon-hotel);
     -webkit-mask-image: var(--icon-hotel);
+}
+
+.icon[icon-name="image"] {
+    mask-image: var(--icon-image);
+    -webkit-mask-image: var(--icon-image);
+}
+
+.icon[icon-name="image-circle-filled"] {
+    mask-image: var(--icon-image-circle-filled);
+    -webkit-mask-image: var(--icon-image-circle-filled);
+}
+
+.icon[icon-name="image-collection"] {
+    mask-image: var(--icon-image-collection);
+    -webkit-mask-image: var(--icon-image-collection);
+}
+
+.icon[icon-name="image-collection-circle-filled"] {
+    mask-image: var(--icon-image-collection-circle-filled);
+    -webkit-mask-image: var(--icon-image-collection-circle-filled);
 }
 
 .icon[icon-name="info"] {
@@ -412,9 +462,29 @@
     -webkit-mask-image: var(--icon-new);
 }
 
+.icon[icon-name="pause"] {
+    mask-image: var(--icon-pause);
+    -webkit-mask-image: var(--icon-pause);
+}
+
+.icon[icon-name="pause-circle-filled"] {
+    mask-image: var(--icon-pause-circle-filled);
+    -webkit-mask-image: var(--icon-pause-circle-filled);
+}
+
 .icon[icon-name="pending-circle-filled"] {
     mask-image: var(--icon-pending-circle-filled);
     -webkit-mask-image: var(--icon-pending-circle-filled);
+}
+
+.icon[icon-name="play"] {
+    mask-image: var(--icon-play);
+    -webkit-mask-image: var(--icon-play);
+}
+
+.icon[icon-name="play-circle-filled"] {
+    mask-image: var(--icon-play-circle-filled);
+    -webkit-mask-image: var(--icon-play-circle-filled);
 }
 
 .icon[icon-name="play-circle"] {
@@ -440,6 +510,16 @@
 .icon[icon-name="question"] {
     mask-image: var(--icon-question);
     -webkit-mask-image: var(--icon-question);
+}
+
+.icon[icon-name="rewind"] {
+    mask-image: var(--icon-rewind);
+    -webkit-mask-image: var(--icon-rewind);
+}
+
+.icon[icon-name="rewind-circle-filled"] {
+    mask-image: var(--icon-rewind-circle-filled);
+    -webkit-mask-image: var(--icon-rewind-circle-filled);
 }
 
 .icon[icon-name="school"] {
@@ -470,6 +550,26 @@
 .icon[icon-name="shopping-cart"] {
     mask-image: var(--icon-shopping-cart);
     -webkit-mask-image: var(--icon-shopping-cart);
+}
+
+.icon[icon-name="skip-back"] {
+    mask-image: var(--icon-skip-back);
+    -webkit-mask-image: var(--icon-skip-back);
+}
+
+.icon[icon-name="skip-back-circle-filled"] {
+    mask-image: var(--icon-skip-back-circle-filled);
+    -webkit-mask-image: var(--icon-skip-back-circle-filled);
+}
+
+.icon[icon-name="skip-next"] {
+    mask-image: var(--icon-skip-next);
+    -webkit-mask-image: var(--icon-skip-next);
+}
+
+.icon[icon-name="skip-next-circle-filled"] {
+    mask-image: var(--icon-skip-next-circle-filled);
+    -webkit-mask-image: var(--icon-skip-next-circle-filled);
 }
 
 .icon[icon-name="sm-facebook"] {
@@ -552,6 +652,16 @@
     -webkit-mask-image: var(--icon-star);
 }
 
+.icon[icon-name="stop"] {
+    mask-image: var(--icon-stop);
+    -webkit-mask-image: var(--icon-stop);
+}
+
+.icon[icon-name="stop-circle-filled"] {
+    mask-image: var(--icon-stop-circle-filled);
+    -webkit-mask-image: var(--icon-stop-circle-filled);
+}
+
 .icon[icon-name="stop-circle-filled"] {
     mask-image: var(--icon-stop-circle-filled);
     -webkit-mask-image: var(--icon-stop-circle-filled);
@@ -575,6 +685,66 @@
 .icon[icon-name="tools"] {
     mask-image: var(--icon-tools);
     -webkit-mask-image: var(--icon-tools);
+}
+
+.icon[icon-name="tune"] {
+    mask-image: var(--icon-tune);
+    -webkit-mask-image: var(--icon-tune);
+}
+
+.icon[icon-name="tune-circle-filled"] {
+    mask-image: var(--icon-tune-circle-filled);
+    -webkit-mask-image: var(--icon-tune-circle-filled);
+}
+
+.icon[icon-name="videocam"] {
+    mask-image: var(--icon-videocam);
+    -webkit-mask-image: var(--icon-videocam);
+}
+
+.icon[icon-name="videocam-circle-filled"] {
+    mask-image: var(--icon-videocam-circle-filled);
+    -webkit-mask-image: var(--icon-videocam-circle-filled);
+}
+
+.icon[icon-name="volume-down"] {
+    mask-image: var(--icon-volume-down);
+    -webkit-mask-image: var(--icon-volume-down);
+}
+
+.icon[icon-name="volume-down-circle-filled"] {
+    mask-image: var(--icon-volume-down-circle-filled);
+    -webkit-mask-image: var(--icon-volume-down-circle-filled);
+}
+
+.icon[icon-name="volume-mute"] {
+    mask-image: var(--icon-volume-mute);
+    -webkit-mask-image: var(--icon-volume-mute);
+}
+
+.icon[icon-name="volume-mute-circle-filled"] {
+    mask-image: var(--icon-volume-mute-circle-filled);
+    -webkit-mask-image: var(--icon-volume-mute-circle-filled);
+}
+
+.icon[icon-name="volume-off"] {
+    mask-image: var(--icon-volume-off);
+    -webkit-mask-image: var(--icon-volume-off);
+}
+
+.icon[icon-name="volume-off-circle-filled"] {
+    mask-image: var(--icon-volume-off-circle-filled);
+    -webkit-mask-image: var(--icon-volume-off-circle-filled);
+}
+
+.icon[icon-name="volume-up"] {
+    mask-image: var(--icon-volume-up);
+    -webkit-mask-image: var(--icon-volume-up);
+}
+
+.icon[icon-name="volume-up-circle-filled"] {
+    mask-image: var(--icon-volume-up-circle-filled);
+    -webkit-mask-image: var(--icon-volume-up-circle-filled);
 }
 
 .icon[icon-name="warning"] {
