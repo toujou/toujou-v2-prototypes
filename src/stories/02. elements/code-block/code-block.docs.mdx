@@ -1,0 +1,29 @@
+# Code block
+
+The code block is a content element that can be added to any page to display a syntax highlighted code example
+
+By default, it is not available to all installations, it must be installed extra.
+
+Users can add the code snippet and choose the language on the content element itself.
+
+## Markup example
+```html
+<toujou-code-block class="code-block">
+    <pre class="code-block__pre">
+        <code class="code-block__code hljs javascript">
+            ...code snippet...
+        </code>
+    </pre>
+    <span class="code-block__language-tag">Javascript</span>
+</toujou-code-block>
+```
+
+## Syntax highlighter
+The highlighting is done with [highlight.js](https://highlightjs.org/), by default using the Dracula theme.
+
+## Code Block extension
+There is documentation on how to install and configure it on the [Code Block extension repo](https://code.dfau.de/toujou/codeblock)
+
+## How to customize
+On the customizations the syntax highlighting should be changed via:
+`tt_content.codeblock.20.settings.pathToCssFile`

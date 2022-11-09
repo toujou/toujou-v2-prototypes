@@ -8,6 +8,7 @@
 @import 'demo/_border-radius.css';
 @import 'demo/_color.css';
 @import 'demo/_font.css';
+@import 'demo/_hljs-code-highlighting.css';
 @import 'demo/_padding.css';
 @import 'demo/_shadow.css';
 @import 'demo/_size.css';
@@ -25,6 +26,7 @@
 @import './elements/_blockquote-grid.css';
 @import './elements/_breadcrumb.css';
 @import './elements/_card-collection.css';
+@import './elements/_code-block.css';
 @import './elements/_collection-item.css';
 @import './elements/_consent-widget.css';
 @import './elements/_content-card.css';
