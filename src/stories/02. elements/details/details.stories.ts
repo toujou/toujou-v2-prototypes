@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Story, Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -17,11 +17,29 @@ export default {
             page: detailsDocs,
         },
     },
+    argTypes: {
+        elementDesign: {
+            table: {
+                category: "Details Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Accordion element design',
+            description: "Set the element design for the accordion element",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+interface DetailsStoryProps {
+    elementDesign: string,
+}
+
+const Template: Story<DetailsStoryProps> = (args: DetailsStoryProps) => {
     return `
-        <toujou-details id="details-0" class="details" is-open="">
+        <toujou-details id="details-0" class="details" is-open="" element-design="${args.elementDesign}">
             <h3 slot="summary" class="details__title">Warum gibt es nur Online-Termine? Gibt es auch eine andere Möglichkeit, einen Termin zu vereinbaren?</h3>
             <p slot="summary" class="details__subtitle"></p>
             <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
@@ -37,7 +55,7 @@ const Template = () => {
             </div>
         </toujou-details>
                           
-        <toujou-details id="details-1" class="details">
+        <toujou-details id="details-1" class="details" element-design="${args.elementDesign}">
             <h3 slot="summary" class="details__title">I am just another simple title</h3>
             <ul slot="summary" class="details__subtitle details__subtitle-list">
                 <li class="details__subtitle-list-item">Fruit</li>
@@ -60,4 +78,8 @@ const Template = () => {
 };
 
 export const Details = Template.bind({});
+
+Details.args = {
+    elementDesign: 'default',
+}
 

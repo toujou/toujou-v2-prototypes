@@ -1,17 +1,9 @@
 # &lt;toujou-details&gt;
 The `<toujou-details>` renders a default html `<details>` element.
 
-
-## Example
-<toujou-details id="details-1" class="toujou-details">
-    <h3 slot="summary" class="toujou-details__title">I am simple &lt;toujou-details&gt; element</h3>
-    <toujou-icon class="icon toujou-details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
-    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</toujou-details>
-
 ## Markup example
 ```html
-<toujou-details id="details-1" class="toujou-details">
+<toujou-details id="details-1" class="toujou-details" element-design="default">
     <h3 slot="summary" class="toujou-details__title">I am simple &lt;toujou-details&gt; element</h3>
     <toujou-icon class="icon toujou-details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
     <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -28,6 +20,18 @@ The `is-open` attribute allows us to define if the element is open or closed whe
 Example:
 ```html
 <toujou-details id="details-1" class="toujou-details" is-open>
+    ...
+</toujou-details>
+```
+
+### element-design
+The `element-design` attribute allows us to set the design for the details element. This is set by choosing the desired option on the BE.
+
+Possible values are: `default`, `primary`, `secondary` and `inverted`
+
+Example:
+```html
+<toujou-details id="details-1" class="toujou-details" element-design="primary">
     ...
 </toujou-details>
 ```

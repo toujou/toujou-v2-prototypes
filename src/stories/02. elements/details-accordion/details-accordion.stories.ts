@@ -41,18 +41,31 @@ export default {
             defaultValue: ['first'],
             required: true,
         },
+        elementDesign: {
+            table: {
+                category: "Details Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Accordion element design',
+            description: "Set the element design for the accordion element",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
     }
 } as Meta;
 
 interface DetailsAccordionStoryProps {
     singleExpandMode: any;
     expandedItem: string;
+    elementDesign: string;
 }
 
 const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStoryProps) => {
     return `
         <toujou-details-accordion class="details-accordion" ${args.singleExpandMode ? 'single-expand-mode' : ''}>
-            <toujou-details id="details-1" class="details" ${args.expandedItem === 'first' || args.expandedItem === 'all' ? 'is-open' : ''}>
+            <toujou-details id="details-1" class="details" ${args.expandedItem === 'first' || args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">This is the summary</h3>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
                 <div slot="content">
@@ -67,7 +80,7 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
                 </div>
             </toujou-details>
             
-            <toujou-details id="details-2" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''}>
+            <toujou-details id="details-2" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">Text with image</h3>
                 <p slot="summary" class="details__subtitle">I am a subtitle which complements the title</p>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
@@ -86,7 +99,7 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
                 </div>
             </toujou-details>
             
-            <toujou-details id="details-3" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''}>
+            <toujou-details id="details-3" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">I am just another simple title</h3>
                 <ul slot="summary" class="details__subtitle details__subtitle-list">
                     <li class="details__subtitle-list-item">Fruit</li>
@@ -106,7 +119,7 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
                 </div>
             </toujou-details>
             
-            <toujou-details id="details-4" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''}>
+            <toujou-details id="details-4" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">This is the summary</h3>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
                 <div slot="content">
@@ -129,4 +142,5 @@ export const DetailsAccordion = Template.bind({});
 DetailsAccordion.args = {
     singleExpandMode: false,
     expandedItem: 'first',
+    elementDesign: 'default',
 }

@@ -30,24 +30,37 @@ export default {
             defaultValue: ['third-right'],
             required: true,
         },
+        elementDesign: {
+            table: {
+                category: "Details Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Accordion element design',
+            description: "Set the element design for the accordion element",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
     }
 } as Meta;
 
 interface DetailsAccordionStoryProps {
     columnsLayout: string;
+    elementDesign: string;
 }
 
-function renderAccordion() {
+function renderAccordion(args: DetailsAccordionStoryProps) {
     return `
         <toujou-details-accordion class="details-accordion" single-expand-mode>
-            <toujou-details id="details-1" class="details" is-open>
+            <toujou-details id="details-1" class="details" is-open element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">This is the summary</h3>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
                 <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </toujou-details>
             
-            <toujou-details id="details-2" class="details">
+            <toujou-details id="details-2" class="details" element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">I am just another simple title</h3>
                 <p slot="summary" class="details__subtitle">I am a subtitle which complements the title</p>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
@@ -55,7 +68,7 @@ function renderAccordion() {
                 <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </toujou-details>
             
-            <toujou-details id="details-3" class="details">
+            <toujou-details id="details-3" class="details" element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">I am just another simple title</h3>
                 <ul slot="summary" class="details__subtitle details__subtitle-list">
                     <li class="details__subtitle-list-item">Fruit</li>
@@ -67,7 +80,7 @@ function renderAccordion() {
                 <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </toujou-details>
             
-            <toujou-details id="details-4" class="details">
+            <toujou-details id="details-4" class="details" element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">This is the summary</h3>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
                 <p slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -87,10 +100,10 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
     return `
         <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}">
             <toujou-grid-column class="grid-column">
-                ${args.columnsLayout === 'third-right' ? renderAccordion() : renderText()}
+                ${args.columnsLayout === 'third-right' ? renderAccordion(args) : renderText()}
             </toujou-grid-column>
             <toujou-grid-column class="grid-column">
-                ${args.columnsLayout === 'third-right' ? renderText() : renderAccordion()}
+                ${args.columnsLayout === 'third-right' ? renderText() : renderAccordion(args)}
             </toujou-grid-column>
         </toujou-grid>
     `
@@ -100,4 +113,5 @@ export const DetailsAccordionWithText = Template.bind({});
 
 DetailsAccordionWithText.args = {
     columnsLayout: 'third-right',
+    elementDesign: 'default',
 }

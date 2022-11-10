@@ -47,6 +47,9 @@ export const ToujouDetailsStyles = css`
   
   @media (hover: hover) {
     .details__summary:hover {
+      --details-title-color: var(--details-title-active-color);
+      --details-chevron-color: var(--details-chevron-active-color);
+      
       cursor: pointer;
     }
   }

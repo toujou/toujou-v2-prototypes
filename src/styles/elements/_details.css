@@ -3,15 +3,14 @@
     --details-width: var(--content-width-with-padding);
     --details-max-width: var(--content-max-width);
     --details-margin: var(--spacing-between-elements-normal) auto 0;
-    --details-title-color: var(--color-font-dark);
-    --details-title-active-color: var(--color-primary);
     --details-title-margin: 0;
     --details-title-font-size: var(--font-size-ms);
     --details-title-area: title;
+    --details-title-color: var(--details-highlight-color);
+    --details-title-active-color: var(--details-highlight-color-active);
     --details-z-index: var(--z-index-content);
 
     --details-subtitle-font-size: var(--font-size-s);
-    --details-subtitle-color: var(--color-primary);
     --details-subtitle-margin: 0;
     --details-subtitle-list-separator: ">";
     --details-subtitle-list-separator-margin: 0 var(--spacing-s);
@@ -19,17 +18,41 @@
     --details-subtitle-area: subtitle;
 
     --details-chevron-size: 1.5rem;
-    --details-chevron-color: var(--color-font-dark);
-    --details-chevron-active-color: var(--color-primary);
     --details-chevron-active-transform: rotate(180deg);
     --details-chevron-transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
     --details-chevron-area: chevron;
+    --details-chevron-color: var(--details-highlight-color);
+    --details-chevron-active-color: var(--details-highlight-color-active);
 
     display: var(--details-display);
     width: var(--details-width);
     max-width: var(--details-max-width);
     margin: var(--details-margin);
     z-index: var(--details-z-index);
+}
+
+.details[element-design="default"] {
+    --details-highlight-color: var(--color-font-dark);
+    --details-highlight-color-active: var(--color-primary);
+    --details-subtitle-color: var(--color-primary);
+}
+
+.details[element-design="primary"] {
+    --details-highlight-color: var(--color-primary);
+    --details-highlight-color-active: var(--color-primary-dark);
+    --details-subtitle-color: var(--color-font);
+}
+
+.details[element-design="secondary"] {
+    --details-highlight-color: var(--color-secondary);
+    --details-highlight-color-active: var(--color-secondary-dark);
+    --details-subtitle-color: var(--color-font);
+}
+
+.details[element-design="inverted"] {
+    --details-highlight-color: var(--color-font);
+    --details-highlight-color-active: var(--color-font-dark);
+    --details-subtitle-color: var(--color-font);
 }
 
 .details:first-child {
@@ -82,6 +105,11 @@
 }
 
 .details[is-open] .details__chevron {
-    background-color: var(--details-chevron-active-color);
     transform: var(--details-chevron-active-transform);
+}
+
+@media (hover: hover) {
+    .details__summary:hover .icon.details__chevron {
+        background-color: var(--details-chevron-active-color);
+    }
 }
