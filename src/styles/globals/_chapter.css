@@ -1,5 +1,5 @@
 .chapter {
-    --chapter-background-color: transparent;
+    --chapter-background-color: var(--color-bg);
     --chapter-margin: 0;
     --chapter-padding: var(--spacing-between-elements-normal) 0;
 
