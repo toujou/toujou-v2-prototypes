@@ -117,7 +117,8 @@
 
 .cover-slider__link:focus .cover-slider__media {
     border: var(--border-width-m) solid var(--color-primary-light);
-    outline: var(--focus-outline-width) solid var(--focus-outline-color) var(--focus-outline-offset);
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
 }
 
 .cover-slider__media {

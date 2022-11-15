@@ -9,9 +9,11 @@
     --topbutton-padding: var(--spacing-s);
     --topbutton-margin: 0;
     --topbutton-border-radius: var(--border-radius-normal);
-    --topbutton-border: 1px solid var(--color-primary);
+    --topbutton-border: var(--border-width-normal) solid var(--color-primary);
     --topbutton-transform: translateY(200%);
     --topbutton-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
+    --topbutton-focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    --topbutton-focus-outline-ffset: var(--focus-outline-offset);
 
     display: var(--topbutton-display);
     align-items: var(--topbutton-align-items);
@@ -32,10 +34,27 @@
     --topbutton-transform: translateY(0);
 }
 
+.topbutton:focus,
+.topbutton:focus-visible {
+    --topbutton-bg-color: var(--color-primary-dark);
+    --topbutton-border: var(--border-width-normal) solid var(--color-primary-dark);
+
+    cursor: pointer;
+    outline: var(--topbutton-focus-outline);
+    outline-offset: var(--topbutton-focus-outline-ffset);
+}
+
+.topbutton:focus .icon,
+.topbutton:focus-visible .icon {
+    --icon-color: var(--color-bg);
+}
+
 @media (hover: hover) {
     .topbutton:hover {
-        cursor: pointer;
         --topbutton-bg-color: var(--color-primary-dark);
+        --topbutton-border: var(--border-width-normal) solid var(--color-primary-dark);
+
+        cursor: pointer;
     }
 
     .topbutton:hover .icon {
