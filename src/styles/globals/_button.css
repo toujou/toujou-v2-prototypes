@@ -192,7 +192,7 @@ p > .button {
     cursor: not-allowed !important;
 }
 
-.button:is(button--shadow, [button-type="border"])[disabled] {
+.button:is(.button--shadow, [button-type="border"])[disabled] {
     --button-color-bg: transparent !important;
     --button-color-text: var(--color-font-light) !important;
     --button-border-color: var(--color-font-light) !important;
@@ -236,7 +236,7 @@ p > .button {
         --button-color-text: var(--color-bg);
     }
 
-    .button:is(.button--font, [button-variant="font"]).button:is(.button--shdaow, [button-type="border"]):hover {
+    .button:is(.button--font, [button-variant="font"]).button:is(.button--shadow, [button-type="border"]):hover {
         --button-border-color: var(--color-font-dark);
         --button-color-text: var(--color-bg);
     }
