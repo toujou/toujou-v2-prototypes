@@ -729,7 +729,7 @@ figure {
         --main-nav-opacity: 1;
         --main-nav-transition: none;
         --main-nav-bg-color: transparent;
-        --main-nav-z-index: var(--z-index-nav);
+        --main-nav-z-index: 1;
         --main-nav-overflow-y: visible;
 
         --main-nav-list-flex-direction: row;
@@ -912,6 +912,11 @@ figure {
     font-weight: var(--main-nav-link-font-weight);
     font-size: var(--main-nav-link-font-size);
     color: var(--main-nav-link-color);
+}
+
+.main-nav__link:focus {
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
 }
 
 @media (hover: hover) {
@@ -5334,6 +5339,7 @@ main > .table-container {
     --topbar-actions-height: fit-content;
     --topbar-actions-list-style: none;
     --topbar-actions-padding: 0;
+    --topbar-action-z-index: 2;
 
     --topbar-actions-link-display: flex;
     --topbar-actions-link-align-items: center;
@@ -5416,6 +5422,11 @@ main > .table-container {
     width: var(--topbar-logo-width);
 }
 
+.topbar__logo-link:focus {
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
 .topbar__title {
     font-family: var(--topbar-title-font-family);
     font-size: var(--topbar-title-font-size);
@@ -5429,6 +5440,7 @@ main > .table-container {
     height: var(--topbar-actions-height);
     list-style: var(--topbar-actions-list-style);
     padding: var(--topbar-actions-padding);
+    z-index: var(--topbar-action-z-index);
 }
 
 .topbar__actions-link {
@@ -5437,6 +5449,29 @@ main > .table-container {
     justify-content: var(--topbar-actions-link-justify-content);
     gap: var(--topbar-actions-link-gap);
     text-decoration: none;
+}
+
+.topbar__actions-link:focus {
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.topbar__actions-link:focus {
+    --topbar-actions-text-color: var(--topbar-icons-active-color);
+
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.topbar__actions-link:focus .icon {
+    --icon-color: var(--topbar-icons-active-color);
+
+    transition: var(--topbar-actions-link-icon-transition);
+}
+
+.topbar__actions-link:focus .topbar__actions{
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
 }
 
 .topbar__actions-link .icon {
