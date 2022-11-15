@@ -182,7 +182,7 @@
         --main-nav-opacity: 1;
         --main-nav-transition: none;
         --main-nav-bg-color: transparent;
-        --main-nav-z-index: var(--z-index-nav);
+        --main-nav-z-index: 1;
         --main-nav-overflow-y: visible;
 
         --main-nav-list-flex-direction: row;

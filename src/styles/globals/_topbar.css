@@ -41,6 +41,7 @@
     --topbar-actions-height: fit-content;
     --topbar-actions-list-style: none;
     --topbar-actions-padding: 0;
+    --topbar-action-z-index: 2;
 
     --topbar-actions-link-display: flex;
     --topbar-actions-link-align-items: center;
@@ -122,6 +123,11 @@
     width: var(--topbar-logo-width);
 }
 
+.topbar__logo-link:focus {
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
 .topbar__title {
     font-family: var(--topbar-title-font-family);
     font-size: var(--topbar-title-font-size);
@@ -135,6 +141,7 @@
     height: var(--topbar-actions-height);
     list-style: var(--topbar-actions-list-style);
     padding: var(--topbar-actions-padding);
+    z-index: var(--topbar-action-z-index);
 }
 
 .topbar__actions-link {
@@ -143,6 +150,29 @@
     justify-content: var(--topbar-actions-link-justify-content);
     gap: var(--topbar-actions-link-gap);
     text-decoration: none;
+}
+
+.topbar__actions-link:focus {
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.topbar__actions-link:focus {
+    --topbar-actions-text-color: var(--topbar-icons-active-color);
+
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.topbar__actions-link:focus .icon {
+    --icon-color: var(--topbar-icons-active-color);
+
+    transition: var(--topbar-actions-link-icon-transition);
+}
+
+.topbar__actions-link:focus .topbar__actions{
+    outline-color: var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
 }
 
 .topbar__actions-link .icon {
