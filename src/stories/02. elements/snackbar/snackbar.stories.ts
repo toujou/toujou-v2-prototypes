@@ -86,9 +86,8 @@ const Template: Story<SnackbarStoryProps> = (args: SnackbarStoryProps) => {
     })
     return `
         <button id="snackbarTriggerButton" class="button">Show snackbar</button>
-        <toujou-snackbar class="snackbar" visible></toujou-snackbar>        
+        <toujou-snackbar class="snackbar" visible aria-live="assertive" tabindex="-1"></toujou-snackbar>        
     `;
-
 };
 
 export const Snackbar = Template.bind({});
