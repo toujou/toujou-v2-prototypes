@@ -54,10 +54,10 @@ ul.slider-bullets {
     --slider-bullets-bullet-hover-background-color: var(--color-secondary);
 }
 
-.slider[slider-design="grey"] .slider-bullets {
-    --slider-bullets-bullet-default-background-color: var(--color-font);
-    --slider-bullets-bullet-active-background-color: var(--color-font);
-    --slider-bullets-bullet-hover-background-color: var(--color-font);
+.slider[slider-design="light-grey"] .slider-bullets {
+    --slider-bullets-bullet-default-background-color: var(--color-font-light);
+    --slider-bullets-bullet-active-background-color: var(--color-font-light);
+    --slider-bullets-bullet-hover-background-color: var(--color-font-light);
 }
 
 button.slider-bullets__bullet {

@@ -70,7 +70,7 @@
     --slider-control-icon-hover-color: var(--color-secondary-dark);
 }
 
-.slider[slider-design="grey"] {
+.slider[slider-design="light-grey"] {
     --slider-control-default-background-color: var(--color-font-light);
     --slider-control-hover-background-color: var(--color-primary-dark);
 
