@@ -1755,7 +1755,7 @@ a:focus {
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */
 
-:is(main, .chapter) > :is(p, ul, ol, h1, h2, h3, h4, h5, h6, a) {
+:is(main, .chapter) > :is(p, ul:not(.card-collection), ol, h1, h2, h3, h4, h5, h6, a) {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
     margin-left: auto;
