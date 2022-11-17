@@ -3,7 +3,7 @@
     --table-content-width: var(--content-width-with-padding);
     --table-content-max-width: var(--content-max-width);
     --table-container-x-overflow: auto;
-    --table-container-margin: var(--spacing-between-elements-normal) auto var(--spacing-normal);
+    --table-container-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 
     display: var(--table-content-display);
     width: var(--table-content-width);
