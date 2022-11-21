@@ -1178,8 +1178,9 @@ figure {
 }
 
 .input-group.checkbox-group::after,
-.input-group.multi-checkbox-group::after{
+.input-group.multi-checkbox-group::after {
     --input-group-icon-display: none;
+    --input-group-icon-top: 0;
 }
 
 .checkbox-group__label {
@@ -1369,8 +1370,9 @@ figure {
     --form-progress-item-border-color: var(--color-font-light);
     --form-progress-item-background-color: var(--color-white);
     --form-progress-item-font-color: var(--color-font);
+
     --form-progress-item-active-background-color: var(--color-primary);
-    --form-progress-item-active-font-color: var(--color-white);
+    --form-progress-item-active-font-color: var(--color-bg);
 
     --form-progress-item-completed-background-color: var(--color-primary-o-10);
     --form-progress-item-completed-font-color: var(--color-primary);
@@ -1426,15 +1428,15 @@ figure {
 .form-progress__item[completed] .form-progress__index {
     --form-progress-item-border-color: var(--color-primary);
 
-    background-color: var(--form-progress-item-active-background-color);
-    color: var(--form-progress-item-active-font-color);
+    background-color: var(--form-progress-item-completed-background-color);
+    color: var(--form-progress-item-completed-font-color);
 }
 
 .form-progress__item[active] .form-progress__index {
     --form-progress-item-border-color: var(--color-primary);
 
-    background-color: var(--form-progress-item-completed-background-color);
-    color: var(--form-progress-item-completed-font-color);
+    background-color: var(--form-progress-item-active-background-color);
+    color: var(--form-progress-item-active-font-color);
 }
 
 .form-progress__item:not(:first-child) {
@@ -2203,12 +2205,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .select__wrapper {
     --select-wrapper-width: 100%;
-    --select-chevron-size: var(--spacing-normal);
-    --select-chevron-image: var(--icon-chevron-filled-down);
+    --select-chevron-size: var(--font-size-m);
+    --select-chevron-image: var(--icon-chevron-down);
     --select-chevron-background-color: var(--form-input-color);
     --select-chevron-position: absolute;
     --select-chevron-right: var(--spacing-s);
-    --select-chevron-top: calc(var(--spacing-normal) + var(--spacing-xs));
+    --select-chevron-top: var(--spacing-normal);
     --select-chevron-transform: translateY(-50%);
 
     width: var(--select-wrapper-width);
@@ -2977,17 +2979,21 @@ p > .button {
 
 .chapter--primary {
     --chapter-background-color: var(--color-primary);
-    --color-headline: var(--color-primary-dark);
 }
 
 .chapter--secondary {
     --chapter-background-color: var(--color-secondary);
-    --color-headline: var(--color-secondary-dark);
 }
 
 .chapter--inverted {
     --chapter-background-color: var(--color-font);
-    --color-headline: var(--color-primary-light);
+}
+
+.chapter--primary,
+.chapter--secondary,
+.chapter--inverted {
+    --color-headline: var(--color-bg);
+
 }
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
@@ -4979,6 +4985,10 @@ td {
 
 main > .table-container {
     --table-container-width: var(--content-max-width);
+}
+
+.form > .table-container {
+    --table-content-width: var(--content-fullwidth);
 }
 
 .teaser {
