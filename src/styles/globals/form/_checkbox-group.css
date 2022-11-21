@@ -26,8 +26,9 @@
 }
 
 .input-group.checkbox-group::after,
-.input-group.multi-checkbox-group::after{
+.input-group.multi-checkbox-group::after {
     --input-group-icon-display: none;
+    --input-group-icon-top: 0;
 }
 
 .checkbox-group__label {
