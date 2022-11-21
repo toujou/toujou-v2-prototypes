@@ -15,8 +15,9 @@
     --form-progress-item-border-color: var(--color-font-light);
     --form-progress-item-background-color: var(--color-white);
     --form-progress-item-font-color: var(--color-font);
+
     --form-progress-item-active-background-color: var(--color-primary);
-    --form-progress-item-active-font-color: var(--color-white);
+    --form-progress-item-active-font-color: var(--color-bg);
 
     --form-progress-item-completed-background-color: var(--color-primary-o-10);
     --form-progress-item-completed-font-color: var(--color-primary);
@@ -72,15 +73,15 @@
 .form-progress__item[completed] .form-progress__index {
     --form-progress-item-border-color: var(--color-primary);
 
-    background-color: var(--form-progress-item-active-background-color);
-    color: var(--form-progress-item-active-font-color);
+    background-color: var(--form-progress-item-completed-background-color);
+    color: var(--form-progress-item-completed-font-color);
 }
 
 .form-progress__item[active] .form-progress__index {
     --form-progress-item-border-color: var(--color-primary);
 
-    background-color: var(--form-progress-item-completed-background-color);
-    color: var(--form-progress-item-completed-font-color);
+    background-color: var(--form-progress-item-active-background-color);
+    color: var(--form-progress-item-active-font-color);
 }
 
 .form-progress__item:not(:first-child) {
