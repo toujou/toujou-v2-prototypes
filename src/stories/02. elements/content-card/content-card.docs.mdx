@@ -9,7 +9,7 @@ The link on the content card is optional. If there is a link we render `<a class
 ## Markup example for content card withou link
 ```html
 <toujou-content-card-grid class="content-card-grid">
-    <toujou-content-card class="content-card" card-variant="primary" card-direction="vertical">
+    <toujou-content-card class="content-card" card-variant="primary" card-direction="vertical" role="article">
         <figure class="content-card__figure">
             <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
         </figure>
@@ -24,7 +24,7 @@ The link on the content card is optional. If there is a link we render `<a class
 ## Markup example for content card with link
 ```html
 <toujou-content-card-grid class="content-card-grid">
-    <a href="#" class="content-card" card-variant="primary" card-direction="vertical">
+    <a href="#" class="content-card" card-variant="primary" card-direction="vertical" role="article">
         <figure class="content-card__figure">
             <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
         </figure>
@@ -48,3 +48,6 @@ By setting the `card-variant` attribute we can choose between the default, prima
 
 ### card direction <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 By setting the `card-direction` attribute we can choose between the "vertical" or "horizontal" layout for the cards (set according to the chosen content element)
+
+### role <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+By setting the `role="article"` we define the cards as a section of a page that could easily stand on its own on a page, in a document.

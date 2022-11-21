@@ -13,7 +13,7 @@ Markup Example (as card collection):
 ```html
 <ul class="card-collection">
     <li class="card-collection__item">
-        <toujou-collection-item class="collection-item" item-type="default" item-design="primary" item-orientation="vertical">
+        <toujou-collection-item class="collection-item" item-type="default" item-design="primary" item-orientation="vertical" role="article">
             <div class="collection-item__top">
                 <figure class="collection-item__figure">
                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -39,7 +39,7 @@ Markup Example (as item collection):
 ```html
 <ol class="item-collection">
     <li class="item-collection__item">
-        <toujou-collection-item class="collection-item" item-type="default" item-design="default" item-orientation="horizontal">
+        <toujou-collection-item class="collection-item" item-type="default" item-design="default" item-orientation="horizontal" role="article">
             <div class="collection-item__top">
                 <figure class="collection-item__figure">
                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -82,3 +82,6 @@ Example: `item-design="primary"` or `item-design="inverted"`.
 The `item-orientation` defines if the image is rendered above the content or next to it. On mobile devices the image is always rendered above the text.
 
 Example: `item-orientation="vertical"` (for the "cards") or `item-orientation="horizontal"` (for the "list items")
+
+### role <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+By setting the `role="article"` we define the cards as a section of a page that could easily stand on its own on a page, in a document.

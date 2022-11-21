@@ -552,8 +552,8 @@ p > .button {
 /* FOCUS */
 
 .button:focus-visible {
-    --button-color-bg: var(--color-primary-light);
-    --button-color-text: var(--color-primary-dark);
+    --button-color-bg: var(--color-primary-dark);
+    --button-color-text: var(--color-bg);
 
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
@@ -561,14 +561,14 @@ p > .button {
 
 .button[button-variant="secondary"]:focus-visible,
 .button.button--secondary:focus-visible {
-    --button-color-bg: var(--color-secondary-light);
-    --button-color-text: var(--color-secondary-dark);
+    --button-color-bg: var(--color-secondary-dark);
+    --button-color-text: var(--color-bg);
 }
 
 .button[button-variant="font"]:focus-visible,
 .button.button--font:focus-visible {
-    --button-color-bg: var(--color-font-light);
-    --button-color-text: var(--color-font-dark);
+    --button-color-bg: var(--color-font-dark);
+    --button-color-text: var(--color-bg);
 }
 
 /* BUTTON SIZE */

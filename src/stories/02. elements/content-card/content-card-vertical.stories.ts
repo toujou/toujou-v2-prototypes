@@ -73,6 +73,7 @@ const Template: Story<ContentCardStoryProps> = (args: ContentCardStoryProps) => 
         contentCard.classList.add('content-card');
         contentCard.setAttribute('card-variant', args.cardVariant);
         contentCard.setAttribute('card-direction', 'vertical');
+        contentCard.setAttribute('role', 'article');
 
         if (args.hasLink) {
             contentCard.setAttribute('href', '#');

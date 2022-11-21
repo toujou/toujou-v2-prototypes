@@ -48,7 +48,7 @@ function renderTextColumn() {
 function renderCardColumn() {
     return `
         <toujou-content-card-grid class="content-card-grid" fullwidth>
-            <a href="/" class="content-card" card-direction="vertical" card-variant="default" fullwidth>
+            <a href="/" class="content-card" card-direction="vertical" card-variant="default" role="article" fullwidth>
                 <figure class="content-card__figure">
                     <img class="content-card__image" src="https://picsum.photos/640/640">
                 </figure>
