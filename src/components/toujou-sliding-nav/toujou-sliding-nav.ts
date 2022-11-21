@@ -13,7 +13,7 @@ export class ToujouSlidingNav extends HTMLElement {
     startingActiveLevel: number = 1;
     maximalLevel: number = 3;
     topbarMqlChangeEventName = 'toujou-topbar-breakpoint-change';
-    burgerButtonClickEvent = 'toujou-burger-button-click';
+    burgerButtonStateChangeEvent = 'toujou-burger-button-state-change';
 
     // Variables
     _backButtonEl: HTMLButtonElement | null = null;
@@ -47,7 +47,7 @@ export class ToujouSlidingNav extends HTMLElement {
             chevron.addEventListener('click', this._handleChevronClick.bind(this))
         });
         window.addEventListener(this.topbarMqlChangeEventName, this._handleMqlChange.bind(this));
-        window.addEventListener(this.burgerButtonClickEvent, this._handleBurgerButtonClick.bind(this));
+        window.addEventListener(this.burgerButtonStateChangeEvent, this._handleBurgerButtonClick.bind(this));
     }
 
     /**
@@ -59,7 +59,7 @@ export class ToujouSlidingNav extends HTMLElement {
             chevron.removeEventListener('click', this._handleChevronClick.bind(this))
         });
         window.removeEventListener(this.topbarMqlChangeEventName, this._handleMqlChange.bind(this));
-        window.removeEventListener(this.burgerButtonClickEvent, this._handleBurgerButtonClick.bind(this));
+        window.removeEventListener(this.burgerButtonStateChangeEvent, this._handleBurgerButtonClick.bind(this));
     }
 
     /**
@@ -136,6 +136,7 @@ export class ToujouSlidingNav extends HTMLElement {
      * @param event
      */
     _handleBurgerButtonClick(event: Event) {
+        console.log('eeee');
         if (!(<CustomEvent>event).detail.state) {
             this._stateReset();
         }

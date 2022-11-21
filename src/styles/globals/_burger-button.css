@@ -21,6 +21,17 @@
     display: var(--burger-button-display);
 }
 
+.burger-button:focus-visible {
+    --burger-button-line-color: var(--burger-button-line-color-active);
+
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.topbar[open-nav] .burger-button:focus-visible {
+    --focus-outline-color: var(--color-bg);
+}
+
 .burger-button__line[line-position="top"] {
     --burger-button-line-top: 3px;
     --burger-button-line-animation: line-top-deactivate var(--burger-button-line-animation-settings);

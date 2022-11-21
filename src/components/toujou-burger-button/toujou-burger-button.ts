@@ -13,7 +13,7 @@ export class ToujouBurgerButton extends LitElement {
     _state: boolean = false;
 
     // constants
-    clickEventName = 'toujou-burger-button-click';
+    stateChangeEventName = 'toujou-burger-button-state-change';
     targetToggleAttribute = 'open-nav';
     topbarMqlChangeEventName = 'toujou-topbar-breakpoint-change';
 
@@ -42,7 +42,8 @@ export class ToujouBurgerButton extends LitElement {
      */
     connectedCallback() {
         super.connectedCallback();
-        this.addEventListener('click', this._handleClickEvent.bind(this));
+        this.addEventListener('click', this._handleClickEvent);
+        this.addEventListener('keyup', this._handleKeyUp);
         window.addEventListener(this.topbarMqlChangeEventName, this._handleMqlChange.bind(this));
     }
 
@@ -52,17 +53,36 @@ export class ToujouBurgerButton extends LitElement {
     disconnectedCallback() {
         super.disconnectedCallback();
 
-        this.removeEventListener('click', this._handleClickEvent.bind(this));
+        this.removeEventListener('click', this._handleClickEvent);
+        this.removeEventListener('keyup', this._handleKeyUp);
+
         window.removeEventListener(this.topbarMqlChangeEventName, this._handleMqlChange.bind(this));
     }
 
     /**
-     * When the button is clicked: update the state, dispatch custom event
+     * toggle the button state when the button is clicked
      */
-    _handleClickEvent() {
+    _handleClickEvent = () => {
+        this._toggleState();
+    }
+
+    /**
+     * Toggle the button state on keyboard 'space' or 'enter' press
+     * @param event
+     */
+    _handleKeyUp = (event: KeyboardEvent) => {
+        if (event.key === 'Enter' || event.code === 'Enter' || event.code === 'Space' || event.key === ' ') {
+            this._toggleState();
+        }
+    }
+
+    /**
+     * Toggle the button state and dispatch custom event so other elements can react to it
+     */
+    _toggleState = () => {
         this.state = !this._state;
 
-        this.dispatchEvent(new CustomEvent(this.clickEventName, {
+        this.dispatchEvent(new CustomEvent(this.stateChangeEventName, {
             bubbles: true,
             composed: true,
             detail: { state: this.state }

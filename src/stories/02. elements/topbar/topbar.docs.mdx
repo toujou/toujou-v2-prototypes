@@ -29,6 +29,27 @@ The topbar element is composed by different elements, which also have they own d
         </li>
     </ul>
 
+    <toujou-burger-button
+            class="burger-button"
+            role="button"
+            aria-pressed="false"
+            aria-haspopup="true"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Menu button"
+            toggle-element-selector="#topbar"
+            tabindex="0"
+        >
+        <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
+        <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
+        <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
+    </toujou-burger-button>
+
+    <nav class="service-nav">
+        <a href="#" class="service-nav__link">Impressum</a>
+        <a href="#" class="service-nav__link">Datenschutz</a>
+    </nav>
+
     <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation" open-level="1">
         <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
             <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
@@ -71,18 +92,6 @@ The topbar element is composed by different elements, which also have they own d
             </li>
         </ul>
     </nav>
-
-    <toujou-burger-button class="burger-button" role="button" aria-pressed="false" aria-haspopup="true" aria-controls="mainNavigation" aria-expanded="false" aria-label="Menu button" toggle-element-selector="#topbar">
-        <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
-        <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
-        <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
-    </toujou-burger-button>
-
-    <nav class="service-nav">
-        <a href="#" class="service-nav__link">Impressum</a>
-        <a href="#" class="service-nav__link">Datenschutz</a>
-    </nav>
-
 </toujou-topbar>
 ```
 
@@ -154,8 +163,8 @@ The `<toujou-topbar>` element dispatches and reacts to some custom events.
 ### toujou-topbar-breakpoint-change
 Whenever the window size changes and the breakpoint between mobile and desktop is crossed, the topbar dispatches a custom `toujou-topbar-breakpoint-change` event.
 
-### toujou-burger-button-click
-The topbar element reacts to the `toujou-burger-button-click` by setting / removing the open navigation attribute on itself according to the received state
+### toujou-burger-button-state-change
+The topbar element reacts to the `toujou-burger-button-state-change` by setting / removing the open navigation attribute on itself according to the received state
 
 -------
 

@@ -7,7 +7,7 @@ import { customElement, property } from 'lit/decorators.js'
 @customElement('toujou-topbar')
 export class ToujouTopbar extends LitElement {
     // Constants
-    burgerButtonClickEvent = 'toujou-burger-button-click';
+    burgerButtonStateChangeEvent = 'toujou-burger-button-state-change';
     mqlChangeEventName = 'toujou-topbar-breakpoint-change';
     openNavBodyAttribute = 'nav-is-open';
 
@@ -30,7 +30,7 @@ export class ToujouTopbar extends LitElement {
     connectedCallback() {
         super.connectedCallback();
 
-        window.addEventListener(this.burgerButtonClickEvent, this._handleBurgerButtonClick.bind(this));
+        window.addEventListener(this.burgerButtonStateChangeEvent, this._handleBurgerButtonClick.bind(this));
         this._mql.addEventListener('change', this._handleMqlChange.bind(this));
     }
 
@@ -40,7 +40,7 @@ export class ToujouTopbar extends LitElement {
     disconnectedCallback() {
         super.disconnectedCallback();
 
-        window.removeEventListener(this.burgerButtonClickEvent, this._handleBurgerButtonClick.bind(this));
+        window.removeEventListener(this.burgerButtonStateChangeEvent, this._handleBurgerButtonClick.bind(this));
         this._mql.removeEventListener('change', this._handleMqlChange.bind(this));
     }
 

@@ -84,7 +84,28 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                         <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
-            </ul>            
+            </ul>    
+            
+            <toujou-burger-button
+                class="burger-button"
+                role="button"
+                aria-pressed="false"
+                aria-haspopup="true"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Menu button"
+                toggle-element-selector="#topbar"
+                tabindex="0"
+            >
+                <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
+                <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
+                <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
+            </toujou-burger-button>
+            
+            <nav class="service-nav">
+                <a href="#" class="service-nav__link">Impressum</a>
+                <a href="#" class="service-nav__link">Datenschutz</a>
+            </nav>        
             
             <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation">
                 <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
@@ -271,28 +292,9 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                     </li>
                 </ul>
             </nav>
-            
-            <toujou-burger-button
-                class="burger-button"
-                role="button"
-                aria-pressed="false"
-                aria-haspopup="true"
-                aria-controls="mainNavigation"
-                aria-expanded="false"
-                aria-label="Menu button"
-                toggle-element-selector="#topbar"
-            >
-                <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
-                <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
-                <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
-            </toujou-burger-button>
-            
-            <nav class="service-nav">
-                <a href="#" class="service-nav__link">Impressum</a>
-                <a href="#" class="service-nav__link">Datenschutz</a>
-            </nav>
 
         </toujou-topbar>   
+        
         <main>
             <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
