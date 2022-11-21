@@ -19,3 +19,7 @@
 main > .table-container {
     --table-container-width: var(--content-max-width);
 }
+
+.form > .table-container {
+    --table-content-width: var(--content-fullwidth);
+}
