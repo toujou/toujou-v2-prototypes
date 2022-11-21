@@ -10,17 +10,21 @@
 
 .chapter--primary {
     --chapter-background-color: var(--color-primary);
-    --color-headline: var(--color-primary-dark);
 }
 
 .chapter--secondary {
     --chapter-background-color: var(--color-secondary);
-    --color-headline: var(--color-secondary-dark);
 }
 
 .chapter--inverted {
     --chapter-background-color: var(--color-font);
-    --color-headline: var(--color-primary-light);
+}
+
+.chapter--primary,
+.chapter--secondary,
+.chapter--inverted {
+    --color-headline: var(--color-bg);
+
 }
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
