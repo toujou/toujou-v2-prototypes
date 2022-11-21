@@ -11,7 +11,7 @@ export declare class ToujouSlidingNav extends HTMLElement {
     startingActiveLevel: number;
     maximalLevel: number;
     topbarMqlChangeEventName: string;
-    burgerButtonClickEvent: string;
+    burgerButtonStateChangeEvent: string;
     _backButtonEl: HTMLButtonElement | null;
     _mainNavEl: HTMLUListElement | null;
     _subtitleEl: HTMLParagraphElement | null;

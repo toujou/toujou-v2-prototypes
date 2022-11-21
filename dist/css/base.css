@@ -905,6 +905,10 @@ figure {
     gap: var(--main-nav-list-item-text-gap);
 }
 
+.main-nav__list-item[nav-item-level="1"][active] > .main-nav__link {
+    color: var(--main-nav-link-color-hover) !important;
+}
+
 .main-nav__link {
     -webkit-text-decoration: var(--main-nav-link-text-decoration);
             text-decoration: var(--main-nav-link-text-decoration);
@@ -951,6 +955,16 @@ figure {
 
 .main-nav__list-item[nav-item-level="2"] .main-nav__text {
     font-size: var(--main-nav-level-2-list-item-font-size);
+}
+
+.main-nav__list-item[nav-item-level="2"][active] > .main-nav__link {
+    --main-nav-link-color: var(--main-nav-link-color-hover);
+}
+
+@media screen and (min-width: 840px) {
+    .main-nav__list-item[nav-item-level="2"][active] > .main-nav__link {
+        --main-nav-link-color: var(--color-primary);
+    }
 }
 
 .service-nav {
@@ -2494,6 +2508,17 @@ blockquote:not(.blockquote__blockquote) + .blockquote__author::before {
     height: var(--burger-button-size);
     width: var(--burger-button-size);
     display: var(--burger-button-display);
+}
+
+.burger-button:focus-visible {
+    --burger-button-line-color: var(--burger-button-line-color-active);
+
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.topbar[open-nav] .burger-button:focus-visible {
+    --focus-outline-color: var(--color-bg);
 }
 
 .burger-button__line[line-position="top"] {
@@ -5422,7 +5447,7 @@ main > .table-container {
     width: var(--topbar-logo-width);
 }
 
-.topbar__logo-link:focus {
+.topbar__logo-link:focus-visible {
     outline-color: var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
@@ -5451,12 +5476,12 @@ main > .table-container {
     text-decoration: none;
 }
 
-.topbar__actions-link:focus {
+.topbar__actions-link:focus-visible {
     outline-color: var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
 
-.topbar__actions-link:focus {
+.topbar__actions-link:focus-visible {
     --topbar-actions-text-color: var(--topbar-icons-active-color);
 
     outline-color: var(--focus-outline-color);
@@ -5788,6 +5813,15 @@ a:focus {
 *[type-color="font--grey"],
 .font--grey {
     color: var(--color-font);
+}
+
+a:-webkit-any-link:focus-visible {
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.topbar[open-nav] a:-webkit-any-link:focus-visible {
+    --focus-outline-color: var(--color-bg);
 }
 
 @media screen and (max-width: 420px) {

@@ -7,7 +7,7 @@ export declare class ToujouBurgerButton extends LitElement {
      * Internal state
      */
     _state: boolean;
-    clickEventName: string;
+    stateChangeEventName: string;
     targetToggleAttribute: string;
     topbarMqlChangeEventName: string;
     /**
@@ -26,9 +26,18 @@ export declare class ToujouBurgerButton extends LitElement {
      */
     disconnectedCallback(): void;
     /**
-     * When the button is clicked: update the state, dispatch custom event
+     * toggle the button state when the button is clicked
      */
-    _handleClickEvent(): void;
+    _handleClickEvent: () => void;
+    /**
+     * Toggle the button state on keyboard 'space' or 'enter' press
+     * @param event
+     */
+    _handleKeyUp: (event: KeyboardEvent) => void;
+    /**
+     * Toggle the button state and dispatch custom event so other elements can react to it
+     */
+    _toggleState: () => void;
     /**
      * Close the button when the window grows to desktop width
      * @param event

@@ -3,7 +3,7 @@ import { LitElement } from 'lit';
  * Topbar element
  */
 export declare class ToujouTopbar extends LitElement {
-    burgerButtonClickEvent: string;
+    burgerButtonStateChangeEvent: string;
     mqlChangeEventName: string;
     openNavBodyAttribute: string;
     _isOpen: boolean;
