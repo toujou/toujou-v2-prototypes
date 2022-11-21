@@ -27,6 +27,10 @@
     gap: var(--main-nav-list-item-text-gap);
 }
 
+.main-nav__list-item[nav-item-level="1"][active] > .main-nav__link {
+    color: var(--main-nav-link-color-hover) !important;
+}
+
 .main-nav__link {
     text-decoration: var(--main-nav-link-text-decoration);
     font-family: var(--main-nav-link-font-family);

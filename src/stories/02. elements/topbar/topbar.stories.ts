@@ -100,7 +100,7 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                             <span class="main-nav__text">Startseite</span>
                         </a>
                     </li>
-                    <li class="main-nav__list-item" nav-item-level="1" has-subnav>
+                    <li class="main-nav__list-item" nav-item-level="1" active has-subnav>
                         <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Bürgerservice</span>
                         </a>
@@ -113,7 +113,7 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                                     <span class="main-nav__text">Arbeit und Beruf</span>
                                 </a>
                             </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" active nav-item-level="2">
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Ausweise und Dokumente</span>
                                 </a>
