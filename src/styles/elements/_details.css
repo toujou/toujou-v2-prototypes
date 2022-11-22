@@ -108,6 +108,10 @@
     transform: var(--details-chevron-active-transform);
 }
 
+.details .text-block:first-child > .text-block-column:first-child > .text-block__content:first-child > p:first-child {
+    margin-top: 0;
+}
+
 @media (hover: hover) {
     .details__summary:hover .icon.details__chevron {
         background-color: var(--details-chevron-active-color);

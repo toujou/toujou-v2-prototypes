@@ -4,7 +4,7 @@ export const ToujouDetailsStyles = css`
   :host {
     --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
     
-    --toujou-details-summary-padding: var(--spacing-normal);
+    --toujou-details-summary-padding: var(--spacing-normal) var(--spacing-s);
     --toujou-details-summary-gap: 0;
     --toujou-details-summary-display: grid;
     --toujou-details-summary-grid-templte-columns: 1fr auto;
@@ -12,7 +12,7 @@ export const ToujouDetailsStyles = css`
             "title chevron" 
             "subtitle chevron";
 
-    --toujou-details-content-padding: 0 var(--spacing-normal) var(--spacing-m);
+    --toujou-details-content-padding: var(--spacing-normal) var(--spacing-s);
     
     display: block;
     border-bottom: var(--toujou-details-border);
