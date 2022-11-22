@@ -2841,7 +2841,7 @@ p > .button {
 }
 
 .button[button-variant="secondary"].button[button-type="border"]:focus-visible,
-.button:is(.button--secondayr, [button-variant="secondary"]).button.button--shadow:focus-visible {
+.button:is(.button--secondary, [button-variant="secondary"]).button.button--shadow:focus-visible {
     --button-color-bg: var(--color-secondary-o-10);
     --button-border-color: var(--color-secondary);
     --button-color-text: var(--color-secondary);
@@ -2869,7 +2869,7 @@ p > .button {
 }
 
 .button[button-type="ghost"]:focus-visible {
-    --button-border: none;
+    /*--button-border: none;*/
     --button-color-bg: var(--color-primary-o-10);
     --button-color-text: var(--color-primary);
 }
@@ -2920,8 +2920,7 @@ p > .button {
         text-decoration: none;
     }
 
-    .button[button-type="defult"]:hover,
-    .button[button-type="border"]:hover {
+    .button[button-type="defult"]:hover {
         --button-color-text: var(--color-bg) !important;
     }
 
@@ -2934,20 +2933,23 @@ p > .button {
     }
 
     /* BUTTON TYPE BORDER */
-    .button:is(.button--shadow, [button-type="border"]):hover {
-        --button-border-color: var(--color-primary-dark);
-        --button-color-text: var(--color-bg);
+    .button:is(.button--shadow,[button-type="border"]):hover {
+        --button-border-color: var(--color-primary);
+        --button-color-text: var(--color-primary);
+        --button-color-bg: var(--color-primary-o-10);
     }
 
     /* stylelint-disable-next-line max-line-length */
-    .button:is(.button--secondary, [button-variant="secondary"]).button:is(.button--shadow, [button-type="border"]):hover {
-        --button-border-color: var(--color-secondary-dark);
-        --button-color-text: var(--color-bg);
+    .button:is(.button--secondary,[button-variant="secondary"]).button:is(.button--shadow,[button-type="border"]):hover {
+        --button-border-color: var(--color-secondary);
+        --button-color-text: var(--color-secondary);
+        --button-color-bg: var(--color-secondary-o-10);
     }
 
-    .button:is(.button--font, [button-variant="font"]).button:is(.button--shadow, [button-type="border"]):hover {
-        --button-border-color: var(--color-font-dark);
-        --button-color-text: var(--color-bg);
+    .button:is(.button--font,[button-variant="font"]).button:is(.button--shadow,[button-type="border"]):hover {
+        --button-border-color: var(--color-font);
+        --button-color-text: var(--color-font);
+        --button-color-bg: var(--color-font-o-10);
     }
 
     .button[button-type="ghost"]:hover {
