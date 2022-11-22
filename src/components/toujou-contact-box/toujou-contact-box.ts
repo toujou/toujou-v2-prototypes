@@ -109,7 +109,6 @@ export class ToujouContactBox extends LitElement {
      * When the state input changes we should set the corresponding state to the this._state variable
      */
     _handleStateInputStateChange() {
-        console.log('111');
         this._state = this._contactStateInput?.checked || false;
     }
 

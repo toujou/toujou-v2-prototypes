@@ -665,6 +665,13 @@ figure {
     --icon-color: var(--color-primary-dark);
 }
 
+@media screen and (max-width: 839px) {
+    /* For accessibility we hide the content of the main-nav when not open */
+    .topbar:not([open-nav]) .main-nav > * {
+        display: none;
+    }
+}
+
 @media (hover: hover) {
     .main-nav__chevron:hover {
         cursor: pointer;
@@ -1035,6 +1042,13 @@ figure {
     --service-nav-transition:
             transform var(--animation-duration-normal) var(--animation-easing-normal),
             opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
+}
+
+@media screen and (max-width: 839px) {
+    /* For accessibility we hide the content of the service-nav when not open */
+    .topbar:not([open-nav]) .service-nav > * {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 840px) {

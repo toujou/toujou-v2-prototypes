@@ -77,7 +77,6 @@ interface OverlayStoryProps {
 function checkForExistingCookie() {
     const match = document.cookie.match(new RegExp('toujou-overlay-super-overlay'));
     if (!match) return;
-    console.log('TOUJOU OVERLAY: Deleting previous overlay cookie', match)
     document.cookie = 'toujou-overlay-super-overlay= ; expires = Thu, 01 Jan 1970 00:00:00 GMT';
 }
 

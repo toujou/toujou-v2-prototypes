@@ -118,6 +118,13 @@
     --icon-color: var(--color-primary-dark);
 }
 
+@media screen and (max-width: 839px) {
+    /* For accessibility we hide the content of the main-nav when not open */
+    .topbar:not([open-nav]) .main-nav > * {
+        display: none;
+    }
+}
+
 @media (hover: hover) {
     .main-nav__chevron:hover {
         cursor: pointer;

@@ -136,7 +136,6 @@ export class ToujouSlidingNav extends HTMLElement {
      * @param event
      */
     _handleBurgerButtonClick(event: Event) {
-        console.log('eeee');
         if (!(<CustomEvent>event).detail.state) {
             this._stateReset();
         }

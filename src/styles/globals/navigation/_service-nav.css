@@ -63,6 +63,13 @@
             opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
 }
 
+@media screen and (max-width: 839px) {
+    /* For accessibility we hide the content of the service-nav when not open */
+    .topbar:not([open-nav]) .service-nav > * {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 840px) {
     .service-nav {
         --service-nav-display: none;
