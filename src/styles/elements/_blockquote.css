@@ -3,6 +3,7 @@
     --blockquote-image-border-radius: 50%;
     --blockquote-icon-size: var(--spacing-xl);
     --blockquote-icon-image: var(--icon-blockquote-round);
+    --blockquote-image-margin-top: 0;
     --blockquote-font-family: var(--font-family-text);
     --blockquote-font-size: var(--font-size-normal);
     --blockquote-color: var(--color-font);
@@ -70,7 +71,7 @@
     object-fit: cover;
     border-radius: var(--blockquote-image-border-radius);
     display: block;
-    margin: 0 auto;
+    margin: var(--blockquote-image-margin-top) auto 0;
     grid-area: blockquoteImage;
 }
 
@@ -138,6 +139,7 @@
     --blockquote-grid-template-columns: var(--blockquote-image-size) 1fr;
     --blockquote-grid-template-areas: "blockquoteImage blockquoteQuote" "blockquoteImage blockquoteAuthor";
     --blockquote-image-size: 70px;
+    --blockquote-image-margin-top: var(--spacing-m);
 
     grid-template-rows: auto auto;
 }
