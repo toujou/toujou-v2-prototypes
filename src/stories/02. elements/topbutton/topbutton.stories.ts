@@ -16,7 +16,15 @@ export default {
 
 const Template: Story = () => {
     return `
-        <toujou-top-button title="Nach oben" aria-label="Nach oben" class="topbutton topbutton--visible" role="button" aria-hidden="false" visible="">
+        <toujou-top-button
+            title="Nach oben"
+            aria-label="Nach oben"
+            class="topbutton topbutton--visible"
+            role="button"
+            aria-hidden="false"
+            visible=""
+            tabindex="0"
+        >
             <toujou-icon class="icon" icon-name="arrow-up" icon-size="m" icon-color="primary"></toujou-icon>
         </toujou-top-button>
     `;
