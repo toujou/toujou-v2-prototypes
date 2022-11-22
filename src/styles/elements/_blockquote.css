@@ -44,7 +44,7 @@
 }
 
 .blockquote:not([blockquote-design="default"]) {
-    --blockquote-padding: var(--spacing-normal);
+    --blockquote-padding: var(--spacing-l);
 }
 
 .blockquote[blockquote-design="primary"] {
@@ -151,9 +151,15 @@
     --blockquote-author-grid-column: 1;
 }
 
+@media screen and (min-width: 640px) {
+    .blockquote:not([blockquote-design="default"]) {
+        --blockquote-padding: var(--spacing-xl);
+    }
+}
+
 @media screen and (min-width: 960px) {
     .blockquote:not([blockquote-design="default"]) {
-        --blockquote-padding: var(--spacing-l);
+        --blockquote-padding: var(--spacing-xxl);
     }
 
     .blockquote[blockquote-direction="horizontal"] {
