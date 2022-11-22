@@ -17,6 +17,8 @@
     --content-card-z-index: var(--z-index-content);
 
     --content-card-figure-flex: 0 0 auto;
+    --content-card-figure-border-radius: 0;
+    --content-card-figure-overflow: hidden;
 
     --content-card-image-width: 100%;
     --content-card-image-height: 100%;
@@ -65,6 +67,8 @@
 
 .content-card__figure {
     flex: var(--content-card-figure-flex);
+    border-radius: var(--content-card-figure-border-radius);
+    overflow: var(--content-card-figure-overflow);
 }
 
 .content-card__image {
@@ -108,6 +112,10 @@
     --icon-color: var(--content-card-button-color) !important;
 
     transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
+}
+
+.content-card[card-direction="horizontal"] {
+    --content-card-figure-border-radius: var(--border-radius-normal);
 }
 
 /* CARD VARIANTS */
