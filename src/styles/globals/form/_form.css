@@ -29,6 +29,7 @@
     --form-error-font-size: var(--font-size-s);
     --form-error-display: none;
     --form-error-column: 1 / -1;
+    --form-error-margin: var(--spacing-s) 0 0;
 
     display: var(--form-error-display);
     order: var(--form-error-order);
@@ -36,6 +37,11 @@
     padding: var(--form-error-padding);
     font-size: var(--form-error-font-size);
     grid-column: var(--form-error-column);
+    margin: var(--form-error-margin);
+}
+
+.input-description ~ .form__error {
+    --form-error-margin: 0;
 }
 
 .checkbox-group .form__error {
