@@ -45,23 +45,19 @@
 
 .blockquote:not([blockquote-design="default"]) {
     --blockquote-padding: var(--spacing-l);
+    --blockquote-icon-color: var(--color-bg);
+    --blockquote-color: var(--color-bg);
 }
 
 .blockquote[blockquote-design="primary"] {
-    --blockquote-color: var(--color-bg);
-    --blockquote-icon-color: var(--color-primary-dark);
     --blockquote-background-color: var(--color-primary);
 }
 
 .blockquote[blockquote-design="secondary"] {
-    --blockquote-color: var(--color-bg);
-    --blockquote-icon-color: var(--color-secondary-dark);
     --blockquote-background-color: var(--color-secondary);
 }
 
 .blockquote[blockquote-design="inverted"] {
-    --blockquote-color: var(--color-bg);
-    --blockquote-icon-color: var(--color-font-dark);
     --blockquote-background-color: var(--color-font);
 }
 
