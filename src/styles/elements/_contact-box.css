@@ -16,7 +16,7 @@
     --contact-box-outline: none;
 
     --contact-box-card-background-color: var(--color-bg);
-    --contact-box-card-padding: var(--spacing-l) var(--spacing-normal) var(--spacing-normal);
+    --contact-box-card-padding: var(--spacing-l);
     --contact-box-card-border-radius: var(--border-radius-normal);
     --contact-box-card-position: relative;
     --contact-box-card-width: 320px;
@@ -138,11 +138,5 @@
 @media (hover: hover) {
     .contact-box__close:hover .icon {
         --icon-color: var(--contact-box-close-color-active);
-    }
-}
-
-@media screen and (min-width: 840px) {
-    .contact-box {
-        --contact-box-card-padding: var(--spacing-l);
     }
 }
