@@ -140,7 +140,7 @@ p > a.button {
     display: inline-block;
 }
 
-a:focus {
+a:not(.button):focus {
     color: var(--color-primary-dark);
 }
 
