@@ -54,7 +54,7 @@ interface BlockquoteGridStoryProps {
 const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProps) => {
     return `
         <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="${args.gridCount}">
-            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}">
+            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" blockquote-design="default">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
                     <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -62,7 +62,7 @@ const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProp
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
             
-            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}">
+            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" blockquote-design="default">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
                     <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -70,7 +70,7 @@ const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProp
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
             
-            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}">
+            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" blockquote-design="default">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
                     <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
@@ -78,7 +78,7 @@ const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProp
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
             
-            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}">
+            <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" blockquote-design="default">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
                     <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>

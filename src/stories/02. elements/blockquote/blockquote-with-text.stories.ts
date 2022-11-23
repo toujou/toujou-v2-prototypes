@@ -39,7 +39,7 @@ interface BlockquoteWithTextStoryProps {
 
 function renderBlockquote() {
     return `
-        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical" is-column>
+        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical" blockquote-design="default" is-column>
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
             <blockquote slot="quote" class="blockquote__blockquote">
                 <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
