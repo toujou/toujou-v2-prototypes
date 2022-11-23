@@ -4859,6 +4859,28 @@ toujou-modal {
     height: var(--single-media-media-height);
 }
 
+:root {
+    /* Toujou smooth scroll docs: https://guide.dfau.de/doc/smooth-scroll-vuoCqfeMJP */
+    --toujou-scroll-padding-offset: var(--spacing-l);   /* Must be valid css distance value */
+    --toujou-scroll-behavior: smooth;                   /* Must be value smooth-scroll value */
+    /*--toujou-scroll-top-padding: var(--spacing-l);*/
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--toujou-scroll-padding-offset);
+    scroll-margin-top: var(--toujou-scroll-padding-offset);
+    scroll-snap-align: start;
+}
+
+/* Disable smooth scroll for user that want reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 /* These variables have the "toujou" prefix because they come from the webcomponent */
 
 .snackbar {

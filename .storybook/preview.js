@@ -1,3 +1,4 @@
+import '../src/js/elements';
 import "../src/components/toujou-blockquote/toujou-blockquote";
 import "../src/components/toujou-breadcrumb/toujou-breadcrumb";
 import "../src/components/toujou-button/toujou-button";
