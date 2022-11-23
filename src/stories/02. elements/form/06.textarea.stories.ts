@@ -63,8 +63,7 @@ const Template: Story<ToujouTextareaStoryProps> = (args: ToujouTextareaStoryProp
 		                  class="form-control input input--textarea"
 		                  id="testform-1000091-textarea-1"
 		                  name="tx_form_formframework[testform-1000091][textarea-1]"
-		                  ${disabledAttribute}>
-                </textarea>
+		                  ${disabledAttribute}></textarea>
                 <span class="pristine-error form__error">The given subject was empty.</span>
         	</toujou-input-group>
 	    
