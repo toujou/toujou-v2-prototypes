@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Meta, Story } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -19,9 +19,38 @@ export default {
         },
         layout: "fullscreen",
     },
+    argTypes: {
+        hideImage: {
+            table: {
+                category: "PN navigation settings",
+                    defaultValue: { summary: false },
+            },
+            name: 'Hide image',
+                description: "Hide the link image",
+                control: { type: 'boolean' },
+                defaultValue: [ false ],
+                required: true,
+        },
+        hideTitle: {
+            table: {
+                category: "PN navigation settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Hide title',
+            description: "Hide the link title",
+            control: { type: 'boolean' },
+            defaultValue: [ false ],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+interface PNNavStoryProps {
+    hideImage: boolean,
+    hideTitle: boolean,
+}
+
+const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
     return `
         <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
@@ -162,7 +191,12 @@ const Template = () => {
             </toujou-text-block-column>
         </toujou-text-block>  
         
-        <toujou-pn-nav class="pn-nav" aria="Page navigation buttons">
+        <toujou-pn-nav
+            class="pn-nav"
+            aria-label="Page navigation buttons"
+            ${args.hideImage === true ? 'image-hidden' : ''}
+            ${args.hideTitle === true ? 'title-hidden' : ''}
+        >
             <!-- We need to prefetch both the next and prev links -->
             <link rel="prefetch" href="#">
             <link rel="prefetch" href="#">
@@ -170,22 +204,40 @@ const Template = () => {
                 <span class="pn-nav__button">
                     <toujou-icon class="icon pn-nav__icon" icon-name="arrow-left" icon-size="m" icon-color="background"></toujou-icon>
                 </span>
-                <span class="pn-nav__content">
-                    <h5 class="pn-nav__title">Another Page</h5>
-                    <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
-                </span>
+                
+                ${args.hideImage === false || args.hideTitle === false ? `
+                    <span class="pn-nav__content">
+                        ${args.hideTitle === false ? `
+                            <h5 class="pn-nav__title">Another Page</h5>
+                        ` : ''}
+                        ${args.hideImage === false ? `
+                            <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
+                        ` : ''}
+                    </span>
+                ` : ''}
             </a>
             <a href="#" class="pn-nav__link" button-direction="next" title="Nächste Seite">
                 <span class="pn-nav__button">
                     <toujou-icon class="icon pn-nav__icon" icon-name="arrow-right" icon-size="m" icon-color="background"></toujou-icon>
                 </span>
-                <span class="pn-nav__content">
-                    <h5 class="pn-nav__title">Nice Page</h5>
-                    <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
-                </span>
+                ${args.hideImage === false || args.hideTitle === false ? `
+                    <span class="pn-nav__content">
+                        ${args.hideTitle === false ? `
+                            <h5 class="pn-nav__title">Nice Page</h5>
+                        ` : ''}
+                        ${args.hideImage === false ? `
+                            <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
+                        ` : ''}
+                    </span>
+                ` : ''}
             </a>
         </toujou-pn-nav>   
     `
 };
 
 export const PNNav = Template.bind({});
+
+PNNav.args = {
+    hideImage: false,
+    hideTitle: false,
+}

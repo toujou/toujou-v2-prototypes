@@ -131,6 +131,10 @@
     left: var(--pn-nav-link-prev-left);
 }
 
+.pn-nav[image-hidden] .pn-nav__link[button-direction="prev"] {
+    --pn-nav-content-padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) var(--pn-nav-button-width);
+}
+
 /* NEXT BUTTON */
 .pn-nav__link[button-direction="next"] {
     --pn-nav-link-flex-direction: row;
@@ -144,6 +148,10 @@
     --pn-nav-content-padding: var(--spacing-s) var(--pn-nav-button-width) var(--spacing-s) var(--spacing-s);
 
     right: var(--pn-nav-link-next-right);
+}
+
+.pn-nav[image-hidden] .pn-nav__link[button-direction="next"] {
+    --pn-nav-content-padding: var(--spacing-s) var(--pn-nav-button-width) var(--spacing-s) var(--spacing-m);
 }
 
 @media (hover: hover) {

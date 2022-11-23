@@ -8,7 +8,7 @@ The element is fixed in the middle of the screen and shows an arrow. On :hover i
 
 ## Markup example:
 ```html
-<toujou-pn-nav class="pn-nav" aria="Page navigation buttons">
+<toujou-pn-nav class="pn-nav" aria-label="Page navigation buttons">
     <link rel="prefetch" href="link1">
     <link rel="prefetch" href="link2">
     <a href="link1" class="pn-nav__link" button-direction="prev" title="Vorherige Seite">
@@ -34,3 +34,25 @@ The element is fixed in the middle of the screen and shows an arrow. On :hover i
 
 ## Toujou library
 The toujou library has a link with some information about this content element [here](https://www.toujou.de/service/elementbibliothek/widgets/previous/next-page-navigation/)
+
+## Attributes
+
+### image-hidden
+The `image-hidden` attribute is added to the element when the users set the `showImage` to `0` on the settings.
+
+Typoscript:
+```typo3_typoscript
+tt_content.prev_next_nav.20.settings {
+    showImage = 0
+}
+```
+
+### title-hidden
+The `image-hidden` attribute is added to the element when the users set the `showTitle` to `0` on the settings.
+
+Typoscript:
+```typo3_typoscript
+tt_content.prev_next_nav.20.settings {
+    showTitle = 0
+}
+```
