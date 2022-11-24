@@ -5,6 +5,8 @@ const colors = Cypress.env('colors');
 describe('toujou-breadcrumb - desktop', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-breadcrumb--breadcrumb');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
     });
 
     it('has correct role', () => {
@@ -28,8 +30,8 @@ describe('toujou-breadcrumb - desktop', () => {
     it('nav items have correct hover styles', () => {
         cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorFont);
         // @ts-ignore
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').realHover()
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorPrimaryDark);
+        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').realHover();
+        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorPrimary);
     });
 
     it('first item has "hover" icon', () => {
