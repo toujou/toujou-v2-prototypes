@@ -27,6 +27,7 @@ export default defineConfig({
       colorFontO10: 'rgba(42, 54, 60, 0.1)',
       colorFontO20: 'rgba(42, 54, 60, 0.2)',
       colorBg: 'rgb(255, 255, 255)',
+      colorBgO75: 'rgba(255, 255, 255, 0.75)',
       colorTransparent: `rgba(0, 0, 0, 0)`,
       colorSuccess: `rgb(0, 230, 119)`,
       colorSuccessO25: `rgba(0, 230, 119, 0.25)`,
