@@ -12,6 +12,10 @@
     z-index: var(--details-accordion-z-index);
 }
 
+.details-accordion .details:not(:first-child) {
+    --toujou-details-border-top: none;
+}
+
 .grid-column .details-accordion {
     --details-accordion-width: 100%;
     --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;

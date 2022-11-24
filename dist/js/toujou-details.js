@@ -1,6 +1,8 @@
-import{r as u,s as c,$ as m}from"./lit-element-f92abbea.js";import{n as p}from"./custom-element-fb5c5745.js";import{e as d}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";const h=u`
+import{r as u,s as c,$ as m}from"./lit-element-f92abbea.js";import{n as p}from"./custom-element-fb5c5745.js";import{e as n}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";const h=u`
   :host {
     --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
+    --toujou-details-border-top: var(--toujou-details-border);
+    --toujou-details-border-bottom: var(--toujou-details-border);
     
     --toujou-details-summary-padding: var(--spacing-normal) var(--spacing-s);
     --toujou-details-summary-gap: 0;
@@ -13,11 +15,8 @@ import{r as u,s as c,$ as m}from"./lit-element-f92abbea.js";import{n as p}from".
     --toujou-details-content-padding: var(--spacing-normal) var(--spacing-s);
     
     display: block;
-    border-bottom: var(--toujou-details-border);
-  }
-
-  :host(:first-child) {
-    border-top: var(--toujou-details-border);
+    border-bottom: var(--toujou-details-border-bottom);
+    border-top: var(--toujou-details-border-top);
   }
   
   .details__summary {
@@ -51,7 +50,7 @@ import{r as u,s as c,$ as m}from"./lit-element-f92abbea.js";import{n as p}from".
       cursor: pointer;
     }
   }
-`;var v=Object.defineProperty,g=Object.getOwnPropertyDescriptor,i=(t,s,r,a)=>{for(var e=a>1?void 0:a?g(s,r):s,l=t.length-1,n;l>=0;l--)(n=t[l])&&(e=(a?n(s,r,e):n(e))||e);return a&&e&&v(s,r,e),e};let o=class extends c{constructor(){super(),this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.detailsEl=null,this.isOpen=!1}connectedCallback(){super.connectedCallback(),this.isAccordionItem=!!this.closest(this.accordionParentTag),this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-connected",{bubbles:!0,composed:!0,detail:{detailsEl:this}}))}firstUpdated(){var t;this.detailsEl=this.shadowRoot.querySelector(".details"),this.isOpen=((t=this.detailsEl)==null?void 0:t.hasAttribute("open"))||!1}render(){return m`
+`;var v=Object.defineProperty,g=Object.getOwnPropertyDescriptor,i=(t,o,r,a)=>{for(var e=a>1?void 0:a?g(o,r):o,l=t.length-1,d;l>=0;l--)(d=t[l])&&(e=(a?d(o,r,e):d(e))||e);return a&&e&&v(o,r,e),e};let s=class extends c{constructor(){super(),this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.detailsEl=null,this.isOpen=!1}connectedCallback(){super.connectedCallback(),this.isAccordionItem=!!this.closest(this.accordionParentTag),this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-connected",{bubbles:!0,composed:!0,detail:{detailsEl:this}}))}firstUpdated(){var t;this.detailsEl=this.shadowRoot.querySelector(".details"),this.isOpen=((t=this.detailsEl)==null?void 0:t.hasAttribute("open"))||!1}render(){return m`
             <details class="details" ?open="${this.isOpen}" @toggle="${this._handleDetailsChange}">
                 <summary class="details__summary">
                     <slot name="summary"></slot>
@@ -61,5 +60,5 @@ import{r as u,s as c,$ as m}from"./lit-element-f92abbea.js";import{n as p}from".
                     <slot name="content"></slot>
                 </section>
             </details>
-        `}_handleDetailsChange(t){const s=t.target;this.isOpen=s.hasAttribute("open")||!1,this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-toggle",{bubbles:!0,composed:!0,detail:{detailsEl:this,state:this.isOpen}}))}};o.styles=[h];i([d({type:Boolean})],o.prototype,"isAccordionItem",2);i([d({type:HTMLDetailsElement})],o.prototype,"detailsEl",2);i([d({type:Boolean,reflect:!0,attribute:"is-open"})],o.prototype,"isOpen",2);o=i([p("toujou-details")],o);
+        `}_handleDetailsChange(t){const o=t.target;this.isOpen=o.hasAttribute("open")||!1,this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-toggle",{bubbles:!0,composed:!0,detail:{detailsEl:this,state:this.isOpen}}))}};s.styles=[h];i([n({type:Boolean})],s.prototype,"isAccordionItem",2);i([n({type:HTMLDetailsElement})],s.prototype,"detailsEl",2);i([n({type:Boolean,reflect:!0,attribute:"is-open"})],s.prototype,"isOpen",2);s=i([p("toujou-details")],s);
 //# sourceMappingURL=toujou-details.js.map

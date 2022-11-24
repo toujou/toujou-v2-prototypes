@@ -19,7 +19,7 @@
     --contact-box-card-padding: var(--spacing-l);
     --contact-box-card-border-radius: var(--border-radius-normal);
     --contact-box-card-position: relative;
-    --contact-box-card-width: 320px;
+    --contact-box-card-width: auto;
     --contact-box-card-max-width: 100%;
 
     --contact-box-close-margin-left: auto;

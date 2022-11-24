@@ -3,6 +3,8 @@ import { css } from 'lit';
 export const ToujouDetailsStyles = css`
   :host {
     --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
+    --toujou-details-border-top: var(--toujou-details-border);
+    --toujou-details-border-bottom: var(--toujou-details-border);
     
     --toujou-details-summary-padding: var(--spacing-normal) var(--spacing-s);
     --toujou-details-summary-gap: 0;
@@ -15,11 +17,8 @@ export const ToujouDetailsStyles = css`
     --toujou-details-content-padding: var(--spacing-normal) var(--spacing-s);
     
     display: block;
-    border-bottom: var(--toujou-details-border);
-  }
-
-  :host(:first-child) {
-    border-top: var(--toujou-details-border);
+    border-bottom: var(--toujou-details-border-bottom);
+    border-top: var(--toujou-details-border-top);
   }
   
   .details__summary {
