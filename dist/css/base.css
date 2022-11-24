@@ -3758,6 +3758,14 @@ exit-warning {
     .header[header-type="slider"] .header-content[content-size="full"] {
         --header-content-width: calc(100% - calc(var(--spacing-xxxl) * 3));
     }
+
+    .header[header-type="slider"] .header-content[horizontal-position="left"] {
+        --header-content-left: calc(var(--spacing-xxxl) + var(--spacing-normal));
+    }
+
+    .header[header-type="slider"] .header-content[horizontal-position="right"] {
+        --header-content-right: calc(var(--spacing-xxxl) + var(--spacing-normal));
+    }
 }
 
 /* stylelint-disable property-no-vendor-prefix */
