@@ -1,7 +1,7 @@
 .teaser {
     --teaser-position: relative;
     --teaser-width: var(--content-width-with-padding);
-    --teaser-max-width: var(--content-max-width);
+    --teaser-max-width: var(--content-wide-max-width);
     --teaser-margin: 0 auto;
     --teaser-display: grid;
     --teaser-grid-auto-flow: dense;
