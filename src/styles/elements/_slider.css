@@ -42,6 +42,10 @@
     --slider-margin: 0 auto;
 }
 
+.slider[content-type="teaser"] {
+    --slider-max-width: var(--content-wide-max-width);
+}
+
 .slider[content-type="logos"] {
     --slider-margin: 0 auto var(--spacing-normal);
 }
