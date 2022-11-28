@@ -31,8 +31,8 @@ describe('header - image-height', () => {
     it('has correct full height', () => {
         cy.get('.header').then((e) => {
             e[0].setAttribute('image-height', 'full');
+            cy.get('.header').should('have.css', 'height', `${desktopViewportHeight - 80}px`);
         });
-        cy.get('.header').should('have.css', 'height', `${desktopViewportHeight}px`);
     });
 
     it('has correct half height', () => {
@@ -221,7 +221,7 @@ describe('header - accent color', () => {
 
     it('has correct grey headline accent color', () => {
         cy.get('.header-content').then((e) => {
-            e[0].setAttribute('accent-color', 'grey');
+            e[0].setAttribute('accent-color', 'font');
         });
         cy.get('.header-content__title').should('have.css', 'color', colors.colorFontDark);
     });
@@ -229,6 +229,7 @@ describe('header - accent color', () => {
     it('has correct default button variant color', () => {
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.header-content__cta').realHover();
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
@@ -237,6 +238,7 @@ describe('header - accent color', () => {
     it('has correct primary button variant color', () => {
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.header-content__cta').realHover();
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
@@ -248,6 +250,7 @@ describe('header - accent color', () => {
         });
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.header-content__cta').realHover();
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorSecondaryDark);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
@@ -259,6 +262,7 @@ describe('header - accent color', () => {
         });
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorFont);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.header-content__cta').realHover();
         cy.get('.header-content__cta').should('have.css', 'background-color', colors.colorFontDark);
         cy.get('.header-content__cta').should('have.css', 'color', colors.colorBg);
