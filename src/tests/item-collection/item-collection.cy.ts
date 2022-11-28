@@ -15,7 +15,7 @@ describe('item collection', () => {
         cy.get('.item-collection').should('have.css', 'flex-wrap', 'wrap');
         cy.get('.item-collection').should('have.css', 'align-items', 'center');
         cy.get('.item-collection').should('have.css', 'justify-content', 'center');
-        cy.get('.item-collection').should('have.css', 'gap', '16px');
+        cy.get('.item-collection').should('have.css', 'gap', '0px');
         cy.get('.item-collection').should('have.css', 'margin-top', '0px');
         cy.get('.item-collection').should('have.css', 'margin-bottom', '0px');
         cy.get('.item-collection').should('have.css', 'list-style', 'outside none none');

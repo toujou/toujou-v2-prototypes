@@ -35,7 +35,7 @@ describe('list item - type default', () => {
     it('has correct top styles', () => {
         cy.get(`${firstCardSelector} > .collection-item__top`).then((itemTop) => {
             expect(itemTop).to.have.css('position').equal('relative')
-            expect(itemTop).to.have.css('margin').equal('16px')
+            expect(itemTop).to.have.css('margin').equal('24px 16px')
         });
         cy.get(`${firstCardSelector} .collection-item__image`).then((itemImage) => {
             expect(itemImage).to.have.css('object-fit').equal('cover')
@@ -68,7 +68,7 @@ describe('list item - type default', () => {
             expect(itemButton).to.have.css('text-decoration').equal(`none solid ${colors.colorPrimary}`);
             expect(itemButton).to.have.css('color').equal(colors.colorPrimary);
             expect(itemButton).to.have.css('display').equal('flex');
-            expect(itemButton).to.have.css('align-items').equal('end');
+            expect(itemButton).to.have.css('align-items').equal('center');
             expect(itemButton).to.have.css('justify-content').equal('center');
             expect(itemButton).to.have.css('gap').equal('8px');
         });
