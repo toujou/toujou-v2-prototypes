@@ -9,6 +9,7 @@
     --code-block-overflow: hidden;
     --code-block-z-index: var(--z-index-content);
 
+    --code-block-pre-display: grid;
     --code-block-pre-margin: 0;
 
     --code-block-code-padding: var(--spacing-l) var(--spacing-normal) var(--spacing-normal);
@@ -40,6 +41,7 @@
 }
 
 .code-block__pre {
+    display: var(--code-block-pre-display);
     margin: var(--code-block-pre-margin);
 }
 
