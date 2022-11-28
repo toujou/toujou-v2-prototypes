@@ -73,7 +73,7 @@
     --color-secondary-dark: hsl(var(--color-secondary-dark-h) var(--color-secondary-dark-s) var(--color-secondary-dark-l));
 
     --color-font: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l));
-    --color-font-o-4: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 4%);
+    --color-font-o-04: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 4%);
     --color-font-o-10: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 10%);
     --color-font-o-20: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 20%);
     --color-font-light: hsl(var(--color-font-light-h) var(--color-font-light-s) var(--color-font-light-l));
@@ -1536,7 +1536,7 @@ p > .button {
     --table-margin: 0 auto;
     --table-text-align: left;
     --table-bg-color-light: transparent;
-    --table-bg-color-dark: var(--color-font-o-4);
+    --table-bg-color-dark: var(--color-font-o-04);
     --table-border: none;
 
     --table-caption-margin: 0 auto var(--spacing-s) auto;
