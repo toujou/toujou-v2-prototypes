@@ -92,7 +92,7 @@ describe('inpage-nav desktop - default', () => {
             expect(link).to.have.css('color').eq(colors.colorPrimary);
             expect(link).to.have.css('display').eq('flex');
             expect(link).to.have.css('align-items').eq('center');
-            expect(link).to.have.css('padding').eq('0px 8px');
+            expect(link).to.have.css('padding').eq('0px 16px');
         })
     });
 
@@ -123,27 +123,37 @@ describe('inpage-nav desktop - default', () => {
     it('has correct hover styles', () => {
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorPrimary);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '1');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorPrimary);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '1');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorPrimary);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorPrimary);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '1');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').realHover();
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').resetRealHover();
     });
 });
@@ -168,27 +178,37 @@ describe('inpage-nav desktop - primary', () => {
     it('has correct hover styles', () => {
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorPrimaryDark);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').realHover();
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimaryLight);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorPrimaryDark);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').resetRealHover();
     });
 });
@@ -214,27 +234,37 @@ describe('inpage-nav desktop - secondary', () => {
     it('has correct hover styles', () => {
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorSecondaryDark);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorSecondaryDark);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorSecondaryDark);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorSecondaryDark);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').realHover();
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorSecondaryLight);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorSecondaryDark);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').resetRealHover();
     });
 });
@@ -260,27 +290,37 @@ describe('inpage-nav desktop - inverted', () => {
     it('has correct hover styles', () => {
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorFontDark);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'background-color', colors.colorFontDark);
         cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item[active] .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').realHover();
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorPrimaryLight);
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').resetRealHover();
 
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').realHover();
         cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimaryLight);
         cy.get('.inpage-nav__cta').should('have.css', 'color', colors.colorPrimaryDark);
+        // @ts-ignore
         cy.get('.inpage-nav__cta').resetRealHover();
     });
 });

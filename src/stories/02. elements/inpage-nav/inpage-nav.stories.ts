@@ -127,12 +127,7 @@ const Template: Story<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
                     <li class="inpage-nav__item">
                         <a class="inpage-nav__link" href="three">Link three</a>
                     </li>
-                    <li class="inpage-nav__item">
-                        <a class="inpage-nav__link" href="four">Link four</a>
-                    </li>
-                    <li class="inpage-nav__item">
-                        <a class="inpage-nav__link" href="five">Link five</a>
-                    </li>
+
                 </ul>
             </nav>
             
