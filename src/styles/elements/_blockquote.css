@@ -4,6 +4,7 @@
     --blockquote-icon-size: var(--spacing-xl);
     --blockquote-icon-image: var(--icon-blockquote-round);
     --blockquote-image-margin-top: 0;
+    --blockquote-image-justify-self: center;
     --blockquote-font-family: var(--font-family-text);
     --blockquote-font-size: var(--font-size-normal);
     --blockquote-color: var(--color-font);
@@ -67,8 +68,9 @@
     object-fit: cover;
     border-radius: var(--blockquote-image-border-radius);
     display: block;
-    margin: calc(var(--blockquote-image-margin-top) + var(--spacing-s)) auto 0;
+    margin: 0 auto;
     grid-area: blockquoteImage;
+    justify-self: var(--blockquote-image-justify-self);
 }
 
 .blockquote__blockquote {
@@ -78,7 +80,7 @@
     color: var(--blockquote-color);
     margin: var(--blockquote-quote-margin);
     line-height: var(--blockquote-line-height);
-    margin-top: var(--spacing-m);
+    margin-top: var(--blockquote-icon-size);
     grid-area: blockquoteQuote;
 }
 
