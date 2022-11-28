@@ -17,8 +17,8 @@ describe('divider', () => {
     });
 
     it('has correct margins', () => {
-        cy.get('.divider').should('have.css', 'margin-top', '48px');
-        cy.get('.divider').should('have.css', 'margin-bottom', '48px');
+        cy.get('.divider').should('have.css', 'margin-top', '60px');
+        cy.get('.divider').should('have.css', 'margin-bottom', '60px');
     });
 
     it('has correct primary color', () => {
