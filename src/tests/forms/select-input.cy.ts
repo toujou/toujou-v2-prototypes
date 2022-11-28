@@ -22,20 +22,21 @@ describe('Forms / select input', () => {
         // @ts-ignore
         cy.get('.input-group--single-select .select__wrapper').after('background-color').should('eq', colors.colorFont);
         // @ts-ignore
-        cy.get('.input-group--single-select .select__wrapper').after('height').should('eq', '16px');
+        cy.get('.input-group--single-select .select__wrapper').after('height').should('eq', '24px');
         // @ts-ignore
-        cy.get('.input-group--single-select .select__wrapper').after('width').should('eq', '16px');
+        cy.get('.input-group--single-select .select__wrapper').after('width').should('eq', '24px');
         // @ts-ignore
         cy.get('.input-group--single-select .select__wrapper').after('position').should('eq', 'absolute');
         // @ts-ignore
-        cy.get('.input-group--single-select .select__wrapper').after('top').should('eq', '20px');
+        cy.get('.input-group--single-select .select__wrapper').after('top').should('eq', '16px');
         // @ts-ignore
         cy.get('.input-group--single-select .select__wrapper').after('right').should('eq', '8px');
         // @ts-ignore
-        cy.get('.input-group--single-select .select__wrapper').after('-webkit-mask-image').should('contain', 'chevron-filled-down');
+        cy.get('.input-group--single-select .select__wrapper').after('-webkit-mask-image').should('contain', 'url("http://localhost:6006/assets/icons/icon-chevron-down.svg")');
     });
 
     it('select has correct hover styles', () => {
+        // @ts-ignore
         cy.get('.select__wrapper .select').realHover();
         cy.get('.select__wrapper .select').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
@@ -64,6 +65,7 @@ describe('Forms / select input - disabled', () => {
 
     it('select has correct hover styles when disabled', () => {
         cy.get('.input-group--single-select .select').invoke('attr', 'disabled').should('exist');
+        // @ts-ignore
         cy.get('.input-group--single-select .select').realHover();
         cy.get('.input-group--single-select .select').invoke('attr', 'disabled').should('exist');
         // @ts-ignore

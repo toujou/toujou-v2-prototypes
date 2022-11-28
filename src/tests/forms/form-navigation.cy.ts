@@ -26,7 +26,7 @@ describe('Forms / form navigation', () => {
         cy.get('.form-navigation').should('have.css', 'flex-direction', 'row-reverse');
         cy.get('.form-navigation').should('have.css', 'gap', '16px');
         cy.get('.form-navigation').should('have.css', 'margin', '24px 0px');
-        cy.get('.form-navigation').should('have.css', 'justify-content', 'flex-start');
+        cy.get('.form-navigation').should('have.css', 'justify-content', 'space-between');
     });
 });
 

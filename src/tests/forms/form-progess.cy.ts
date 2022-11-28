@@ -60,12 +60,12 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress__index').should('have.css', 'box-sizing', 'content-box');
         // completed
         cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
-        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'background-color', colors.colorPrimary);
-        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'color',colors. colorBg);
+        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'background-color', colors.colorPrimaryO10);
+        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'color',colors. colorPrimary);
         // active
         cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
-        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'background-color', colors.colorPrimaryO10);
-        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'color', colors.colorPrimary);
+        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'color', colors.colorBg);
         // active
         cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
         cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'color', colors.colorFont);

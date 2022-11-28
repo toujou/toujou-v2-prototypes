@@ -37,11 +37,13 @@ describe('Forms / single checkbox input', () => {
 
     it('select has correct hover styles', () => {
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFont}`);
+        // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox-group').realHover();
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox-group').resetRealHover();
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFont}`);
+        // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').realHover();
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
     });
@@ -56,6 +58,7 @@ describe('Forms / single checkbox input', () => {
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').after('-webkit-mask-image').should('contain', 'check');
         // // @ts-ignore
+        // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').realHover();
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorPrimaryLight}`);
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorPrimaryLight);
@@ -89,9 +92,11 @@ describe('Forms / checkbox input - disabled', () => {
     });
 
     it('checkbox has correct hover styles when disabled', () => {
+        // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox-group').realHover()
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
+        // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').realHover()
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
@@ -108,7 +113,7 @@ describe('Forms / checkbox - success', () => {
     it('radio group has correct success styles', () => {
         cy.get('.input-group--check:first-child').invoke('attr', 'class').should('contain', 'input-group--has-success');
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorSuccess}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorSuccessO25);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorSuccessO25Alpha);
         cy.get('.input-group--check:first-child .checkbox').click();
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorSuccess}`);
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorSuccess);
@@ -129,7 +134,7 @@ describe('Forms / checkbox - error', () => {
     it('radio group has correct success styles', () => {
         cy.get('.input-group--check:first-child').invoke('attr', 'class').should('contain', 'input-group--has-error');
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorError}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorErrorO25);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorErrorO25Alpha);
         cy.get('.input-group--check:first-child .checkbox').click();
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `2px solid ${colors.colorError}`);
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorError);

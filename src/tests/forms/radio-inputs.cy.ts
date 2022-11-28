@@ -39,9 +39,11 @@ describe('Forms / radio input', () => {
 
     it('select has correct hover styles', () => {
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
+        // @ts-ignore
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').realHover()
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorPrimaryLight}`);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorFont}`);
+        // @ts-ignore
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').realHover()
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
     });
@@ -74,9 +76,11 @@ describe('Forms / radio input - disabled', () => {
     });
 
     it('radio options have correct hover styles when disabled', () => {
+        // @ts-ignore
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label').realHover()
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label').should('have.css', 'color', colors.colorFont);
+        // @ts-ignore
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label').realHover()
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label').should('have.css', 'color', colors.colorFont);
@@ -111,7 +115,7 @@ describe('Forms / radio input - error', () => {
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorError}`);
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label').should('have.css', 'color', colors.colorFont);
         // @ts-ignore
-        cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').after('background-color').should('eq', colorError);
+        cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').after('background-color').should('eq', colors.colorError);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorError}`);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label').should('have.css', 'color', colors.colorFont);
         // @ts-ignore
