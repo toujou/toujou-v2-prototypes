@@ -24,6 +24,7 @@
     --code-block-language-tag-font-size: var(--font-size-xs);
     --code-block-language-tag-padding: var(--spacing-xs) var(--spacing-s);
     --code-block-language-tag-border-radius: 0 var(--border-radius-s) 0 0;
+    --code-block-language-tag-text-transform: capitalize;
 
     display: var(--code-block-display);
     width: var(--code-block-width);
@@ -60,6 +61,7 @@
     font-size: var(--code-block-language-tag-font-size);
     padding: var(--code-block-language-tag-padding);
     border-radius: var(--code-block-language-tag-border-radius);
+    text-transform: var(--code-block-language-tag-text-transform);
 }
 
 @media screen and (min-width: 640px) {
