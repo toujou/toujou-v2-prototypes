@@ -11,7 +11,7 @@ describe('consent configuration', () => {
         cy.get('toujou-consent-widget').invoke('attr', 'class').should('eq', 'consent-widget');
         cy.get('toujou-consent-widget').should('have.prop', 'tagName').should('eq', 'TOUJOU-CONSENT-WIDGET');
         cy.get('toujou-consent-widget').invoke('attr', 'in-page').should('exist');
-        cy.get('toujou-consent-widget').invoke('attr', 'warningvisible').should('eq', 'false');
+        cy.get('toujou-consent-widget').invoke('attr', 'warningvisible').should('eq', 'true');
         cy.get('toujou-consent-widget').invoke('attr', 'listento').should('eq', 'click');
         cy.get('toujou-consent-widget').invoke('attr', 'listenon').should('eq', '#consentSaveButton,#consentAcceptAllButton');
     });
@@ -58,7 +58,7 @@ describe('consent configuration with warning', () => {
             expect(warning).to.have.css('margin').equal('0px');
             expect(warning).to.have.css('color').equal(colors.colorWarning);
             expect(warning).to.have.css('border').equal(`1px solid ${colors.colorWarning}`);
-            expect(warning).to.have.css('padding').equal('8px');
+            expect(warning).to.have.css('padding').equal('16px');
             expect(warning).to.have.css('border-radius').equal('4px');
         });
         cy.get('.consent-widget__warning .icon').then((warningIcon) => {

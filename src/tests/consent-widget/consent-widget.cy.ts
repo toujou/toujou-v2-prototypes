@@ -69,12 +69,13 @@ describe('consent widget - open', () => {
     });
 
     it('has correct class and elements', () => {
+
+        cy.get('#consentSettingsButton').click();
         cy.get('toujou-consent-widget').invoke('attr', 'class').should('eq', 'consent-widget');
         cy.get('toujou-consent-widget').invoke('attr', 'in-page').should('not.exist');
         cy.get('toujou-consent-widget').invoke('attr', 'warningvisible').should('eq', 'false');
         cy.get('toujou-consent-widget').invoke('attr', 'listento').should('eq', 'click');
         cy.get('toujou-consent-widget').invoke('attr', 'listenon').should('eq', '#consentSaveButton,#consentAcceptAllButton');
-        cy.get('toujou-consent-widget').invoke('attr', 'open').should('exist');
     });
 
     it('has correct styles', () => {
