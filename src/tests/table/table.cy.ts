@@ -19,17 +19,17 @@ describe('table', () => {
     it('table container parent has correct styles', () => {
         cy.get('table.table').parent().should('have.css', 'display', 'block');
         cy.get('table.table').parent().should('have.css', 'overflow-x', 'auto');
-        cy.get('table.table').parent().should('have.css', 'margin-bottom', '32px');
+        cy.get('table.table').parent().should('have.css', 'margin-bottom', '0px');
     });
 
     it('table element has correct styles', () => {
-        cy.get('table.table tr:nth-child(1)').should('have.css', 'background-color', colors.colorFontO10);
-        cy.get('table.table tr:nth-child(2)').should('have.css', 'background-color', colors.colorBg);
-        cy.get('table.table tr:nth-child(3)').should('have.css', 'background-color', colors.colorFontO10);
-        cy.get('table.table tr:nth-child(4)').should('have.css', 'background-color', colors.colorBg);
+        cy.get('table.table tr:nth-child(1)').should('have.css', 'background-color', colors.colorFontO04);
+        cy.get('table.table tr:nth-child(2)').should('have.css', 'background-color', colors.colorTransparent);
+        cy.get('table.table tr:nth-child(3)').should('have.css', 'background-color', colors.colorFontO04);
+        cy.get('table.table tr:nth-child(4)').should('have.css', 'background-color', colors.colorTransparent);
 
         cy.get('table.table tr td').should('have.css', 'color', colors.colorFont);
-        cy.get('table.table tr th').should('have.css', 'color', colors.colorPrimary);
+        cy.get('table.table tr th').should('have.css', 'color', colors.colorFont);
     });
 
     it('table caption and summary have correct styles', () => {
