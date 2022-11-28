@@ -67,7 +67,7 @@
     object-fit: cover;
     border-radius: var(--blockquote-image-border-radius);
     display: block;
-    margin: var(--blockquote-image-margin-top) auto 0;
+    margin: calc(var(--blockquote-image-margin-top) + var(--spacing-s))auto 0;
     grid-area: blockquoteImage;
 }
 
