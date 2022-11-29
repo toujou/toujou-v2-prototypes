@@ -27,3 +27,12 @@ This element has a single attribute (`grid-type`) which defines how wide the gri
 Define the number of columns for the grid (may not be the same across all viewport widths).
 
 Possible values are: `1`, `2`, `3`, and `4`
+
+### column-layout
+The column layout defines the columns width for the grid with two columns.
+
+It uses the following CSS: `.grid[number-of-columns="2"][column-layout="third-left"]`
+| value         | description             | Example                                                                              |
+|---------------|-------------------------|:-------------------------------------------------------------------------------------|
+| `third-left`  | define a 33% - 66% grid | `<toujou-grid grid-type="default" number-of-columns="2" column-layout=third-left">`  |
+| `third-right` | define a 66% - 33% grid | `<toujou-grid grid-type="default" number-of-columns="2" column-layout=third-right">` |

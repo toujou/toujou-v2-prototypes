@@ -1,0 +1,24 @@
+# HTML with text
+
+The "HTML with text" elements allow the user to render custom html alongside with some text.
+
+It is the same as the HTML content element, but it is rendered inside a grid
+
+## Markup example
+```html
+<toujou-grid class="grid" grid-type="default" number-of-columns="2" column-layout="third-left">
+    <toujou-grid-column class="grid-column">
+        <toujou-html-container class="html-container" fullwidth="">
+            <!-- Here goes the custom html -->
+        </toujou-html-container>
+    </toujou-grid-column>
+    <toujou-grid-column class="grid-column">
+        <!-- Here goes the text content -->
+    </toujou-grid-column>
+</toujou-grid>
+```
+
+## Attributes
+
+### fullwidth  <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+When rendered inside a grid, the `toujou-html-container` must have the `fullwidth` attribute
