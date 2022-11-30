@@ -12,6 +12,7 @@
     --teaser-figure-column: 1;
     --teaser-figure-border-radius: var(--border-radius-normal);
     --teaser-figure-overflow: hidden;
+    --teaser-figure-position: relative;
 
     --teaser-image-aspect-ratio: var(--aspect-ratio-default);
     --teaser-image-object-fit: cover;
@@ -41,6 +42,7 @@
     grid-column: var(--teaser-figure-column);
     border-radius: var(--teaser-figure-border-radius);
     overflow: var(--teaser-figure-overflow);
+    position: var(--teaser-figure-position);
 }
 
 .teaser__image {

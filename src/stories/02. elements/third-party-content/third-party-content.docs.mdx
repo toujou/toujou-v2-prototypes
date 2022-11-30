@@ -1,1 +1,104 @@
 # &lt;toujou-third-party-content&gt;
+
+[Docs copied from the `toujou-third-party-content` webcomponent]
+
+This element was created as a wrapper for the different kinds of external content.
+
+Its function is to block or show the content, according the the user's consents:
+- If consent was given, the content may load
+- if not, the content should not load and in it's place there should be a placeholder
+with buttons to make it possible for the user to alter the consent settings
+
+At the moment we can use the consent with video, maps and external HTML elements (for which we also have separate consents).
+
+
+
+## `<toujou-third-party-content>` example
+```html
+<toujou-third-party-content contentType="video">
+    <template>
+        <f:render section="Video" arguments="{_all}"/>
+    </template>
+
+    <div class="third-party-content__placeholder" slot="placeholder">
+        <p class="third-party-content__message">
+            {f:translate(key:'LLL:EXT:toujou/Resources/Private/Language/Frontend.xlf:trackingconsent.placeholder.message')}</p>
+        <div class="third-party-content__button-container">
+            <button class="button button--primary third-party-content__button" ttpc-showcontentonce>{f:translate(key:'LLL:EXT:toujou/Resources/Private/Language/Frontend.xlf:trackingconsent.placeholder.button_once_text')}</button>
+            <toujou-consent class="consent"
+                            consentType="video"
+                            consentLifetime="{themeData.trackingconsent_externals_lifetime}"
+                            listenTo="click"
+                            listenOn=".consent__button"
+                            snackbarMessage="{videoSnackbarMessage}">
+                <button class="button button--primary third-party-content__button consent__button" allowcontenttype>{f:translate(key:'LLL:EXT:toujou/Resources/Private/Language/Frontend.xlf:trackingconsent.placeholder.button_all_text')}</button>
+            </toujou-consent>
+        </div>
+    </div>
+
+    <!--  This is a container for some elements that need to be rendered in the Light DOM  -->
+    <div class="toujou-third-party-content__templated-content"></div>
+
+</toujou-third-party-content>
+```
+
+
+
+## `<toujou-third-party-content>` types
+There are currently 3 types: 'video', 'maps' and 'html'
+
+We define it with the `contentType` attribute, like on the example above.
+
+The `contentType` attribute is `required`.
+
+
+
+## `<toujou-third-party-content>` structure
+
+The `<toujou-third-party-content>` has 3 distinct parts:
+- template
+- placeholder
+- templated-content
+
+#### `<toujou-third-party-content` template section
+This section holds the content that we want to block / show inside a `<template>` tag.
+This content will only load if there is the correct consent for it.
+
+#### `<toujou-third-party-content>` placeholder section
+The placeholder section is where we can define what is shown as placeholder.
+It may have any kind of content, like texts, images, buttons,...
+
+The placeholder section is only visible while there isn't the consent for the third-party content.
+
+It must have the `slot="placeholder"` attribute.
+
+#### `<toujou-third-party-content>` templated-content section
+The templated-content section is `required`, and should be left empty.
+
+It must have the class `toujou-third-party-content__templated-content`.
+
+Any content you place inside this section will be removed during render.
+
+
+
+## `<toujou-third-party-content>` styles
+Some elements, like the contents of the placeholder section, are on the Light DOM, so they can be styled with normal css.
+On the other hand, some elements can only be styled using CSS Custom Properties
+
+| Property | Description | Default |
+|----------|-------------|---------|
+| --toujou-third-party-content-display | Set `display` of the element | block |
+| --toujou-third-party-content-position | Set `position` of the element | relative |
+| --toujou-third-party-content-top | Set `top` of the element | 0 |
+| --toujou-third-party-content-left | Set `left` of the element | 0 |
+| --toujou-third-party-content-height | Set `height` of the element | 100% |
+| --toujou-third-party-content-width | Set `width` of the element | 100% |
+| --toujou-third-party-content-maps-position | Set `position` of the element with attribute [contenttype="maps"]| absolute |
+| --toujou-third-party-content-iframe-border | Set `border` of iframe inside the element | none |
+| --toujou-third-party-content-iframe-position | Set `position` of iframe inside the element | absolute |
+| --toujou-third-party-content-iframe-height | Set `height` of iframe inside the element | 100% |
+| --toujou-third-party-content-iframe-width | Set `width` of iframe inside the element | 100% |
+| --toujou-third-party-content-html-iframe-position | Set `position` of iframe inside the element with attribute [contenttype="html"]| relative |
+
+Please notice that some content elements need different properties according to the content type (because of the content's own styles and requirements).
+An example if the `iframe position` property for video, maps and for html elements.

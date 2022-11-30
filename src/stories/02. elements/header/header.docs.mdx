@@ -17,6 +17,17 @@ If there is just an image and title, the title will be shown directly on top of 
         <p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         <a href="#" class="button header-content__cta" button-variant="font">Let's go</a>
     </div>
+
+    <toujou-media-info class="media-info">
+        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+        </button>
+        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+        </button>
+        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+    </toujou-media-info>
 </header>
 ```
 

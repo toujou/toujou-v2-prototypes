@@ -13,6 +13,7 @@ import "../src/components/toujou-sliding-nav/toujou-sliding-nav";
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../src/components/toujou-contact-box/toujou-contact-box";
+import "../src/components/toujou-media-info/toujou-media-info";
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-snackbar/toujou-snackbar";
 import "../src/components/copied/toujou-modal/toujou-modal";
