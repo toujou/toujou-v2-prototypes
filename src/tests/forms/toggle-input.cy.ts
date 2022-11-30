@@ -62,6 +62,7 @@ describe('Forms / toggle input', () => {
         cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontLight);
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorFont);
+        // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').realHover();
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontLight);
@@ -79,6 +80,7 @@ describe('Forms / toggle input', () => {
         cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorPrimaryLight);
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorPrimary);
+        // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').realHover();
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorPrimaryLight);
@@ -108,6 +110,7 @@ describe('Forms / toggle - disabled', () => {
     });
 
     it('checkbox has correct hover styles when disabled', () => {
+        // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').realHover();
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').before('background-color').should('eq', colors.colorFontO20);
