@@ -165,7 +165,6 @@ const Template: Story<HeaderStoryProps> = (args: HeaderStoryProps) => {
                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
             </toujou-media-info>
-
         </header>
     `
 };
