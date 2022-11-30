@@ -51,7 +51,7 @@
 .media-info[open] {
     --media-info-scrim-display: block;
     --media-info-figcaption-display: block;
-    --media-info-copyright-display: var(--media-info-copyright-align-items, block);
+    --media-info-copyright-display: var(--toujou-media-copyright-display, block);
 }
 
 .media-info::before {
