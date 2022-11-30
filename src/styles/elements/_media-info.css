@@ -12,7 +12,7 @@
     --media-info-flex-direction: column;
 
     --media-info-scrim-display: none;
-    --media-info-scrim-background-color: var(--color-black-o-90);
+    --media-info-scrim-background-color: var(--color-black-o-75);
 
     --media-info-toggle-display: flex;
     --media-info-toggle-position: absolute;

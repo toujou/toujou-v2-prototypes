@@ -98,7 +98,6 @@
     --color-error-l-15: hsl(var(--color-error-h) var(--color-error-s) 15%);
     --color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);
 
-    --color-black-o-90: hsl(0 0% 0% / 90%);
     --color-black-o-75: hsl(0 0% 0% / 75%);
     --color-black-o-50: hsl(0 0% 0% / 50%);
     --color-black-o-10: hsl(0 0% 0% / 10%);
