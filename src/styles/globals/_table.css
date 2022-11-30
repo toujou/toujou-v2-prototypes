@@ -15,7 +15,7 @@
 
     --table-row-border: var(--border-width-normal) solid var(--border-color-default);
 
-    --table-cell-padding: var(--spacing-s) var(--spacing-normal);
+    --table-cell-padding: var(--spacing-normal);
 
     border: var(--table-border);
     width: var(--table-width);
