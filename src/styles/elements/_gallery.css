@@ -78,7 +78,7 @@
     transition: opacity var(--animation-duration-fast) var(--animation-easing-normal);
 }
 
-.gallery__item:focus {
+.gallery__item:focus-visible {
     --gallery-hover-overlay-opacity: 1;
     --gallery-hover-icon-opacity: 1;
 }
