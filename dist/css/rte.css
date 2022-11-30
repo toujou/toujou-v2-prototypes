@@ -671,7 +671,6 @@ p > .button {
 }
 
 .button[button-type="ghost"]:focus-visible {
-    /*--button-border: none;*/
     --button-color-bg: var(--color-primary-o-10);
     --button-color-text: var(--color-primary);
 }
@@ -1269,11 +1268,6 @@ p > .button {
     -webkit-mask-image: var(--icon-play-circle);
 }
 
-.icon[icon-name="play-circle-filled"] {
-    mask-image: var(--icon-play-circle-filled);
-    -webkit-mask-image: var(--icon-play-circle-filled);
-}
-
 .icon[icon-name="prize"] {
     mask-image: var(--icon-prize);
     -webkit-mask-image: var(--icon-prize);
@@ -1432,11 +1426,6 @@ p > .button {
 .icon[icon-name="stop"] {
     mask-image: var(--icon-stop);
     -webkit-mask-image: var(--icon-stop);
-}
-
-.icon[icon-name="stop-circle-filled"] {
-    mask-image: var(--icon-stop-circle-filled);
-    -webkit-mask-image: var(--icon-stop-circle-filled);
 }
 
 .icon[icon-name="stop-circle-filled"] {
@@ -1794,10 +1783,14 @@ a:not(.button):focus {
     color: var(--color-font);
 }
 
+/* stylelint-disable-next-line selector-no-vendor-prefix */
+
 a:-webkit-any-link:focus-visible {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
+
+/* stylelint-disable-next-line selector-no-vendor-prefix */
 
 .topbar[open-nav] a:-webkit-any-link:focus-visible {
     --focus-outline-color: var(--color-bg);

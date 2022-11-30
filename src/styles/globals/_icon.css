@@ -492,11 +492,6 @@
     -webkit-mask-image: var(--icon-play-circle);
 }
 
-.icon[icon-name="play-circle-filled"] {
-    mask-image: var(--icon-play-circle-filled);
-    -webkit-mask-image: var(--icon-play-circle-filled);
-}
-
 .icon[icon-name="prize"] {
     mask-image: var(--icon-prize);
     -webkit-mask-image: var(--icon-prize);
@@ -655,11 +650,6 @@
 .icon[icon-name="stop"] {
     mask-image: var(--icon-stop);
     -webkit-mask-image: var(--icon-stop);
-}
-
-.icon[icon-name="stop-circle-filled"] {
-    mask-image: var(--icon-stop-circle-filled);
-    -webkit-mask-image: var(--icon-stop-circle-filled);
 }
 
 .icon[icon-name="stop-circle-filled"] {

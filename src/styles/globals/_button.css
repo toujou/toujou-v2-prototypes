@@ -161,7 +161,6 @@ p > .button {
 }
 
 .button[button-type="ghost"]:focus-visible {
-    /*--button-border: none;*/
     --button-color-bg: var(--color-primary-o-10);
     --button-color-text: var(--color-primary);
 }

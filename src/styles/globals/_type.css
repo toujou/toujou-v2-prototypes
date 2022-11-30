@@ -182,15 +182,16 @@ a:not(.button):focus {
     color: var(--color-font);
 }
 
+/* stylelint-disable-next-line selector-no-vendor-prefix */
 a:-webkit-any-link:focus-visible {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
 
+/* stylelint-disable-next-line selector-no-vendor-prefix */
 .topbar[open-nav] a:-webkit-any-link:focus-visible {
     --focus-outline-color: var(--color-bg);
 }
-
 
 @media screen and (max-width: 420px) {
     h1,

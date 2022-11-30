@@ -24,7 +24,6 @@
 .chapter--secondary,
 .chapter--inverted {
     --color-headline: var(--color-bg);
-
 }
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */

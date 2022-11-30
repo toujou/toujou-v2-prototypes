@@ -2890,7 +2890,6 @@ p > .button {
 }
 
 .button[button-type="ghost"]:focus-visible {
-    /*--button-border: none;*/
     --button-color-bg: var(--color-primary-o-10);
     --button-color-text: var(--color-primary);
 }
@@ -3016,7 +3015,6 @@ p > .button {
 .chapter--secondary,
 .chapter--inverted {
     --color-headline: var(--color-bg);
-
 }
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
@@ -4266,11 +4264,6 @@ exit-warning {
     -webkit-mask-image: var(--icon-play-circle);
 }
 
-.icon[icon-name="play-circle-filled"] {
-    mask-image: var(--icon-play-circle-filled);
-    -webkit-mask-image: var(--icon-play-circle-filled);
-}
-
 .icon[icon-name="prize"] {
     mask-image: var(--icon-prize);
     -webkit-mask-image: var(--icon-prize);
@@ -4429,11 +4422,6 @@ exit-warning {
 .icon[icon-name="stop"] {
     mask-image: var(--icon-stop);
     -webkit-mask-image: var(--icon-stop);
-}
-
-.icon[icon-name="stop-circle-filled"] {
-    mask-image: var(--icon-stop-circle-filled);
-    -webkit-mask-image: var(--icon-stop-circle-filled);
 }
 
 .icon[icon-name="stop-circle-filled"] {
@@ -4648,7 +4636,8 @@ toujou-modal {
     /* Toujou smooth scroll docs: https://guide.dfau.de/doc/smooth-scroll-vuoCqfeMJP */
     --toujou-scroll-padding-offset: var(--spacing-l);   /* Must be valid css distance value */
     --toujou-scroll-behavior: smooth;                   /* Must be value smooth-scroll value */
-    /*--toujou-scroll-top-padding: var(--spacing-l);*/
+
+    /* --toujou-scroll-top-padding: var(--spacing-l); */
 }
 
 html {
@@ -5230,11 +5219,6 @@ main > .table-container {
 }
 
 .topbar__actions-link:focus-visible {
-    outline-color: var(--focus-outline-color);
-    outline-offset: var(--focus-outline-offset);
-}
-
-.topbar__actions-link:focus-visible {
     --topbar-actions-text-color: var(--topbar-icons-active-color);
 
     outline-color: var(--focus-outline-color);
@@ -5247,7 +5231,7 @@ main > .table-container {
     transition: var(--topbar-actions-link-icon-transition);
 }
 
-.topbar__actions-link:focus .topbar__actions{
+.topbar__actions-link:focus .topbar__actions {
     outline-color: var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
@@ -5568,10 +5552,14 @@ a:not(.button):focus {
     color: var(--color-font);
 }
 
+/* stylelint-disable-next-line selector-no-vendor-prefix */
+
 a:-webkit-any-link:focus-visible {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
+
+/* stylelint-disable-next-line selector-no-vendor-prefix */
 
 .topbar[open-nav] a:-webkit-any-link:focus-visible {
     --focus-outline-color: var(--color-bg);

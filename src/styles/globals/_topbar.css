@@ -153,11 +153,6 @@
 }
 
 .topbar__actions-link:focus-visible {
-    outline-color: var(--focus-outline-color);
-    outline-offset: var(--focus-outline-offset);
-}
-
-.topbar__actions-link:focus-visible {
     --topbar-actions-text-color: var(--topbar-icons-active-color);
 
     outline-color: var(--focus-outline-color);
@@ -170,7 +165,7 @@
     transition: var(--topbar-actions-link-icon-transition);
 }
 
-.topbar__actions-link:focus .topbar__actions{
+.topbar__actions-link:focus .topbar__actions {
     outline-color: var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }

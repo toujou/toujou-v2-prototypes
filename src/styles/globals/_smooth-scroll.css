@@ -2,7 +2,8 @@
     /* Toujou smooth scroll docs: https://guide.dfau.de/doc/smooth-scroll-vuoCqfeMJP */
     --toujou-scroll-padding-offset: var(--spacing-l);   /* Must be valid css distance value */
     --toujou-scroll-behavior: smooth;                   /* Must be value smooth-scroll value */
-    /*--toujou-scroll-top-padding: var(--spacing-l);*/
+
+    /* --toujou-scroll-top-padding: var(--spacing-l); */
 }
 
 html {

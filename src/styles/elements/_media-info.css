@@ -108,10 +108,3 @@
         --icon-color: var(--media-info-toggle-hover-color);
     }
 }
-
-/*@media screen and (min-width: 420px) {*/
-/*    .media-info {*/
-/*        --media-info-figcaption-font-size: var(--font-size-normal);*/
-/*        --media-info-copyright-font-size: var(--font-size-normal);*/
-/*    }*/
-/*}*/
