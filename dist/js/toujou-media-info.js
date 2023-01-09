@@ -1,4 +1,4 @@
-import{r as u,s as a,$ as c}from"./lit-element-f92abbea.js";import{n as f}from"./custom-element-fb5c5745.js";import{e as m}from"./property-19bdaa8a.js";import"./query-assigned-elements-39dd8e72.js";const b=u`
+import{r as u,s as a,$ as c}from"./lit-element-8ef55b20.js";import{n as f}from"./custom-element-25a61773.js";import{e as m}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const b=u`
   .open-button {
     display: flex;
   }

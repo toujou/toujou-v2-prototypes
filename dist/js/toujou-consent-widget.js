@@ -1,4 +1,4 @@
-var r=Object.defineProperty;var h=(i,t,e)=>t in i?r(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e;var c=(i,t,e)=>(h(i,typeof t!="symbol"?t+"":t,e),e);import{r as d,s as l,$ as u}from"./lit-element-f92abbea.js";import{c as p,d as C,u as _,a as g,b as m}from"./consentsStore-eaa8b07b.js";const b=d`
+var r=Object.defineProperty;var h=(i,t,e)=>t in i?r(i,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):i[t]=e;var c=(i,t,e)=>(h(i,typeof t!="symbol"?t+"":t,e),e);import{r as d,s as l,$ as u}from"./lit-element-8ef55b20.js";import{c as p,d as C,u as _,a as g,b as m}from"./consentsStore-4758162e.js";const b=d`
   :host {
     display: var(--toujou-consent-widget-display, block);
   }

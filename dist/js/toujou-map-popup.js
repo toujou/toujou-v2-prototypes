@@ -1,4 +1,4 @@
-var u=Object.defineProperty;var a=(e,t,o)=>t in e?u(e,t,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[t]=o;var i=(e,t,o)=>(a(e,typeof t!="symbol"?t+"":t,o),o);import{r,s as l,$ as h}from"./lit-element-f92abbea.js";import{m as c}from"./mapbox-gl-3c384f54.js";const d=r`
+var u=Object.defineProperty;var a=(e,t,o)=>t in e?u(e,t,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[t]=o;var i=(e,t,o)=>(a(e,typeof t!="symbol"?t+"":t,o),o);import{r,s as l,$ as h}from"./lit-element-8ef55b20.js";import{m as c}from"./mapbox-gl-1a935e36.js";const d=r`
   :host {
     display: block;
     max-width: 90vw;
