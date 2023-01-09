@@ -16,6 +16,7 @@ export default {
         docs: {
             page: gridDocs,
         },
+        layout: "fullscreen",
     },
     argTypes: {
         type: {
