@@ -14,7 +14,7 @@ export declare class ToujouBurgerButton extends LitElement {
      * When the state changes we need to update the UI attributes on the relevant elements
      * @param value
      */
-    set state(value: boolean);
+    set state(value: boolean): void;
     get state(): boolean;
     render(): import("lit-html").TemplateResult<1>;
     /**

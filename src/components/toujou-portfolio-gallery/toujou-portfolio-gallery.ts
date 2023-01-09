@@ -2,6 +2,7 @@ import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { ToujouPortfolioGalleryStyles } from "./toujou-portfolio-gallery.styles.js";
 import PhotoSwipe from 'photoswipe';
+// @ts-ignore
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
 @customElement('toujou-portfolio-gallery')

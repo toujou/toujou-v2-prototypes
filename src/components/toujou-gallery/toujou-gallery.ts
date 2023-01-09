@@ -1,6 +1,7 @@
 import { LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import PhotoSwipe from 'photoswipe';
+// @ts-ignore
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
 @customElement('toujou-gallery')

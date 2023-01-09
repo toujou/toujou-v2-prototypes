@@ -1537,10 +1537,6 @@ figure {
     color: var(--input-placeholder-color);
 }
 
-.input:-ms-input-placeholder {
-    color: var(--input-placeholder-color);
-}
-
 .input::placeholder {
     color: var(--input-placeholder-color);
 }
@@ -5497,7 +5493,6 @@ a {
     word-break: break-all;
     word-break: break-word;
     -webkit-hyphens: auto;
-        -ms-hyphens: auto;
             hyphens: auto;
 }
 
