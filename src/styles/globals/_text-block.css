@@ -1,7 +1,7 @@
 .text-block {
     --text-block-display: grid;
     --text-block-grid-template-columns: 1fr;
-    --text-block-grid-gap: var(--spacing-normal);
+    --text-block-grid-gap: var(--spacing-l);
     --text-block-width: var(--content-width-with-padding);
     --text-block-max-width: var(--content-max-width);
     --text-block-margin: var(--spacing-between-elements-normal) auto 0;
@@ -199,10 +199,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .text-block {
-        --text-block-grid-gap: var(--spacing-l);
-    }
-
     .text-block[text-block-column-count="4"] {
         --text-block-grid-template-columns: 1fr 1fr 1fr 1fr;
     }
