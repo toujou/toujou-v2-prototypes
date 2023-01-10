@@ -56,6 +56,10 @@
     margin-bottom: 0;
 }
 
+.teaser__content > *:first-child {
+    margin-top: 0;
+}
+
 @media screen and (min-width: 840px) {
     .teaser {
         --teaser-grid-gap: var(--spacing-l);
