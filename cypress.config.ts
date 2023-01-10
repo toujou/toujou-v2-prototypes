@@ -45,6 +45,7 @@ export default defineConfig({
       colorErrorDarken15: `rgb(204, 0, 41)`,
       colorErrorL15: `rgb(77, 0, 15)`,
       colorBlackO75: `rgba(0, 0, 0, 0.75)`,
+      colorBlackO50: `rgba(0, 0, 0, 0.5)`,
     },
     desktopViewportWidth: desktopViewportWidth,
     desktopViewportHeight: desktopViewportHeight,
