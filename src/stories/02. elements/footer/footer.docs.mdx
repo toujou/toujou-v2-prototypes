@@ -6,4 +6,52 @@ The default footer element render 4 columns:
 - Footer navigation
 - Contact
 
+## Markup example
+```html
+<footer class="footer">
+    <footer-content class="footer-content">
+        <footer-column class="footer-column" column-name="logo">
+            <img class="footer__logo" src="https://via.placeholder.com/240x80/cccccc/969696?text=Logo" alt="quote image" />
+        </footer-column>
+        <footer-column class="footer-column" column-name="service-nav">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Lösungen</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Preise</a>
+                </li>
+                </li>
+            </ul>
+        </footer-column>
+        <footer-column class="footer-column" column-name="footer-nav">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Blog | Jobs</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Events</a>
+                </li>
+                </li>
+            </ul>
+        </footer-column>
+        <footer-column class="footer-column" column-name="address">
+            <address class="footer__address">
+                <p class="footer__address-title">Ein Service der:</p>
+                <p class="footer__address-text footer__address-text--name">DFAU GmbH</p>
+                <p class="footer__address-text footer__address-text--street">Gustav-Weißkopf-Straße 5</p>
+            </address>
+            <div class="footer__socials">
+                <a href="#" class="footer__socials-link">
+                    <toujou-icon class="icon" icon-name="sm-facebook" icon-size="l"></toujou-icon>
+                </a>
+                <a href="#" class="footer__socials-link">
+                    <toujou-icon class="icon" icon-name="sm-twitter" icon-size="l"></toujou-icon>
+                </a>
+            </div>
+        </footer-column>
+    </footer-content>
+</footer>
+```
+
 It is possible to create a custom footer by adding a "Footer" Page to the "Storage Folder" Folder in the BE

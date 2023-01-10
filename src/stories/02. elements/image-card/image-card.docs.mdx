@@ -6,7 +6,8 @@ The `<toujou-image-card>` is a simple element that renders an image card on the 
 
 If there is a link available, the whole card will be linked. If no link is available, instead of an `<a>` it will be rendered as a `<toujou-image-card>` element.
 
-> The `toujou-image-card` are also used on the [Product Grid](/story/components-product-grid--product-grid)
+| ℹ️ The `toujou-image-card` are also used on the [Product Grid](/story/components-product-grid--product-grid) |
+|---------------------------------------------------------------------------------------------------|
 
 Markup Example:
 ```html
@@ -24,11 +25,21 @@ Markup Example:
 ```
 
 ## Attributes
-There are a couple of attribute that allow us to customize the `<toujou-image-card>` element
+There are a couple of attributes that allow us to customize the `<toujou-image-card>` element
 
 
 ### card variant <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
-By setting the `card-variant` attribute we can choose between the default, primary, secondary or inverted element designs (can be set on the BE by the users)
+By setting the `card-variant` attribute we can choose between the default, primary, secondary or inverted element designs (can be set on the BE by the users).
+
+Valid values are:
+- `default`
+- `primary`
+- `secondary`
+- `inverted`
 
 ### image format <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 By setting the `image-format` attribute we can choose between the "cinema" and "square" formats for the image cards image (depending on the BE element used)
+
+Valid values are:
+- `16-9`
+- `square`

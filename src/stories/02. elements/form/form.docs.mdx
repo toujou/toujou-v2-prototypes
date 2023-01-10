@@ -1,6 +1,30 @@
 # &lt;toujou-form&gt;
 The toujou form element (with the class `toujou-form`) render form and form elements on the page. It can be created in a couple different ways, but most probably it will be created using the "Forms" module on the BE and then placed on a page using the "Mail Form" plugin.
 
-> ⚠️ These are the form elements still using the old markup
+## Markup example
+```html
+<toujou-input-group class="input-group input-group--text input-group--required">
+    <label for="text-1" class="input-label">Nice label</label>
+    <span class="input-description">This is a description</span>
+    <input placeholder="This is a placeholder"
+           required="required"
+           data-pristine-required-message-de="The given subject was empty."
+           class="input input--text"
+           id="text-1"
+           type="text" name="text-1"
+           value="">
+    <span class="pristine-error form__error">This is an error message!</span>
+</toujou-input-group>
+```
 
-Until we have time to complete this documentation, please refer to the stories to see the correct markup for the form elements
+| ⚠️ This is an example of a simple text input markup. Please refer to the stories / code to see the markup for the other input types |
+|-------------------------------------------------------|
+
+## Structure
+
+Even though the input types differ slightly on their markup, the basics are:
+- toujou-input-group
+    - label
+    - description
+    - input
+    - error message

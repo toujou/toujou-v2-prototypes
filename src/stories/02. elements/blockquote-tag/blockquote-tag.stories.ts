@@ -9,6 +9,9 @@ export default {
     title: 'COMPONENTS/Blockquote',
     parameters: {
         badges: [TOUJOU_BADGES.TESTING],
+        docs: {
+            page: blockquoteTagDocs,
+        },
     },
 } as Meta;
 

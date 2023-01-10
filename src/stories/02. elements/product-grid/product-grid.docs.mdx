@@ -1,4 +1,49 @@
 # Product grid
-The "product grid" content element render a grid with image cards linking to product pages
+The "product grid" content element renders a grid with image cards linking to product pages
 
 For more information about the `toujou-image-card` element, please refer to the [Image Card Docs](/docs/components-image-card--image-card)
+
+## Example markup
+```html
+<toujou-image-card-grid class="image-card-grid">
+    <a class="image-card" href="#" image-format="16-9" card-variant="default">
+        <figure class="image-card__figure">
+            <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
+        </figure>
+        <h3 class="image-card__title">
+            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
+            Product name
+        </h3>
+    </a>
+
+    <a class="image-card" href="#" image-format="16-9" card-variant="default">
+        <figure class="image-card__figure">
+            <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
+        </figure>
+        <h3 class="image-card__title">
+            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
+            Product name
+        </h3>
+    </a>
+
+    <a class="image-card" href="#" image-format="16-9" card-variant="default">
+        <figure class="image-card__figure">
+            <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
+        </figure>
+        <h3 class="image-card__title">
+            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
+            Product name
+        </h3>
+    </a>
+
+    <a class="image-card" href="#" image-format="16-9" card-variant="default">
+        <figure class="image-card__figure">
+            <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
+        </figure>
+        <h3 class="image-card__title">
+            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
+            Product name
+        </h3>
+    </a>
+</toujou-image-card-grid>
+```

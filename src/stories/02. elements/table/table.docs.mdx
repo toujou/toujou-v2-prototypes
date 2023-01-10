@@ -1,1 +1,59 @@
 # table
+
+The table element renders a table on the page. To improve how it is rendered in smaller devices we must wrap it on a `toujou-table-wrapper` element
+
+## Markup example
+```html
+<toujou-table-container class="table-container">
+    <table text-alignment="${args.tableAlignment}" class="table">
+        <caption class="table__caption">
+            This is a caption
+            <span class="table__summary">This is a beautiful summary</span>
+        </caption>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Knocky</td>
+            <td>Flor</td>
+            <td>Ella</td>
+            <td>Juan</td>
+        </tr>
+        <tr>
+            <th>Breed</th>
+            <td>Jack Russell</td>
+            <td>Poodle</td>
+            <td>Streetdog</td>
+            <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Owner</th>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+        </tr>
+        <tr>
+            <th>Eating Habits</th>
+            <td>Eats everyone's leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explodes</td>
+        </tr>
+    </table>
+</toujou-table-container>
+```
+
+## Attributes
+The `table` element accepts a `text-alignment` attribute, which defines the text alignment for all elements inside the table (including caption, summary, ...)
+
+Accepted values are:
+- `none`
+- `center`
+- `left`
+- `right`

@@ -1,1 +1,33 @@
 # Overlay
+
+The overlay element allows ud to show a message or dialog on top of the content, for instance an age verification
+
+## Example markup
+```html
+<toujou-overlay id="super-overlay" class="overlay" overlay-theme="${args.overlayTheme}">
+    <section class="overlay__infos">
+
+        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
+
+        <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
+
+        <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
+
+<section class="overlay__buttons">
+            <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
+            <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
+        </section>
+
+    </section>
+</toujou-overlay>
+```
+
+## Attributes
+
+### Theme
+We can set the overlay's theme with the `overlay-theme` attribute. Possible values are:
+- `light`
+- `dark`
+
+### State
+The attribute `state="open"` is added automatically to the element

@@ -4,27 +4,27 @@ Header element in a 3 to 1 format
 
 ## Markup example
 ```html
-    <header class="header" image-height="3-1">
-        <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />
+<header class="header" image-height="3-1">
+    <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />
 
-        <div class="header-content"
-            accent-color="primary"
-            vertical-position="mid"
-            horizontal-position="center"
-            content-size="half"
-            text-alignment="default"
-            <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
-        </div>
+    <div class="header-content"
+        accent-color="primary"
+        vertical-position="mid"
+        horizontal-position="center"
+        content-size="half"
+        text-alignment="default"
+        <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
+    </div>
 
-        <toujou-media-info class="media-info">
-            <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
-            </button>
-            <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
-            </button>
-            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
-            <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
-        </toujou-media-info>
-    </header>
+    <toujou-media-info class="media-info">
+        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+        </button>
+        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+        </button>
+        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+    </toujou-media-info>
+</header>
 ```
