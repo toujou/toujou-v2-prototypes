@@ -57,17 +57,29 @@ describe('blockquote', () => {
     });
 
     it.only('blockquote quote icon has correct styles', () => {
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('position').should('eq', 'absolute');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('top').should('eq', '0px');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('left').should('eq', '0px');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('display').should('eq', 'block');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('height').should('eq', '48px');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('width').should('eq', '48px');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('transform').should('eq', 'matrix(1, 0, 0, 1, 0, -48)');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorFontDark);
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-blockquote-round.svg")');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('-webkit-mask-position').should('eq', '50% 50%');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('-webkit-mask-size').should('eq', 'contain');
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('-webkit-mask-repeat').should('eq', 'no-repeat');
 
     });
@@ -87,6 +99,56 @@ describe('blockquote', () => {
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'grid-column', 'blockquoteAuthor / blockquoteAuthor');
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'grid-area', 'blockquoteAuthor / blockquoteAuthor / blockquoteAuthor / blockquoteAuthor');
     });
-})
+});
+
+
+describe('blockquote - horizontal', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--blockquote&args=direction:horizontal');
+    });
+
+    it('has correct attributes', () => {
+        cy.get('toujou-blockquote').invoke('attr', 'blockquote-direction').should('eq', 'horizontal');
+    });
+});
+
+describe('blockquote - primary', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--blockquote&args=elementDesign:primary');
+    });
+
+    it('has correct styles', () => {
+        cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorBg);
+        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'color', colors.colorBg);
+        cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorBg);
+    });
+});
+
+describe('blockquote - secondary', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--blockquote&args=elementDesign:secondary');
+    });
+
+    it('has correct styles', () => {
+        cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorSecondary);
+        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorBg);
+        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'color', colors.colorBg);
+        cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorBg);
+    });
+});
+
+describe('blockquote - inverted', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--blockquote&args=elementDesign:inverted');
+    });
+
+    it('has correct styles', () => {
+        cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorFont);
+        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorBg);
+        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'color', colors.colorBg);
+        cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorBg);
+    });
+});
 
 export {}
