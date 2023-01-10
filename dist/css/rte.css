@@ -1768,16 +1768,19 @@ a:not(.button):focus {
 }
 
 *[type-color="font--primary"],
+*[type-color="primary"],
 .font--primary {
     color: var(--color-primary);
 }
 
 *[type-color="font--secondary"],
+*[type-color="secondary"],
 .font--secondary {
     color: var(--color-secondary);
 }
 
 *[type-color="font--grey"],
+*[type-color="font"],
 .font--grey {
     color: var(--color-font);
 }

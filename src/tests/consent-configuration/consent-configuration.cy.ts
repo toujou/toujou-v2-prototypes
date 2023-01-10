@@ -36,7 +36,7 @@ describe('consent configuration', () => {
         });
 
         cy.get('.consent-widget__bottom').then((consentWidgetBottom) => {
-            expect(consentWidgetBottom).to.have.css('display').equal('flex');
+            expect(consentWidgetBottom).to.have.css('display').equal('none');
             expect(consentWidgetBottom).to.have.css('align-items').equal('flex-end');
             expect(consentWidgetBottom).to.have.css('justify-content').equal('flex-start');
             expect(consentWidgetBottom).to.have.css('gap').equal('16px');

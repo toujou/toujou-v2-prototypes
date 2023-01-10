@@ -48,6 +48,10 @@
     flex-direction: var(--media-info-flex-direction);
 }
 
+.header .header-content + .media-info {
+    --media-info-z-index: 0;
+}
+
 .media-info[open] {
     --media-info-scrim-display: block;
     --media-info-figcaption-display: block;
