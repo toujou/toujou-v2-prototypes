@@ -121,6 +121,7 @@ describe('blockquote - primary', () => {
         cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorBg);
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorBg);
     });
 });
@@ -134,6 +135,7 @@ describe('blockquote - secondary', () => {
         cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorBg);
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorBg);
     });
 });
@@ -147,6 +149,7 @@ describe('blockquote - inverted', () => {
         cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorFont);
         cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorBg);
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'color', colors.colorBg);
+        // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorBg);
     });
 });

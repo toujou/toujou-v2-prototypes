@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-const colors = Cypress.env('colors');
-
 describe('blockquote grid', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid');

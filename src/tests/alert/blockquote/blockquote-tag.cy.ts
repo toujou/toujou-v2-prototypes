@@ -10,7 +10,9 @@ describe('blockquote tag', () => {
     it('has correct structure', () => {
         cy.get('blockquote').should('exist');
         cy.get('blockquote + p.blockquote__author').should('exist');
+        // @ts-ignore
         cy.get('blockquote').before().should('exist');
+        // @ts-ignore
         cy.get('blockquote').before('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-blockquote-round.svg")');
         cy.get('blockquote').should('have.class', '');
     });
