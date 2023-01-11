@@ -107,8 +107,8 @@
     justify-content: flex-end;
 }
 
-.text-block__content > *:first-child {
-    margin-top: 0;
+.text-block__content > :is(h1, h2, h3, h4, h5):first-child {
+    margin-top: var(--spacing-m);
 }
 
 @media screen and (min-width: 768px) {
@@ -174,7 +174,8 @@
         padding-left: var(--text-block-grid-gap);
     }
 
-    .text-block__content > *:first-child {
+    .text-block__content > *:first-child,
+    .text-block__content > :is(h1, h2, h3, h4, h5):first-child {
         margin-top: 0;
     }
 }
