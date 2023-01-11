@@ -52,6 +52,10 @@
     --media-info-z-index: 0;
 }
 
+.header .header-content + .media-info[open] {
+    --media-info-z-index: 1;
+}
+
 .media-info[open] {
     --media-info-scrim-display: block;
     --media-info-figcaption-display: block;
