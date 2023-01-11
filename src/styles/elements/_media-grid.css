@@ -4,7 +4,7 @@
     --media-grid-number-of-columns: 1;
     --media-grid-template-columns: repeat(var(--media-grid-number-of-columns), 1fr);
     --media-grid-width: var(--content-width-with-padding);
-    --media-grid-max-width: var(--content-wide-max-width);
+    --media-grid-max-width: var(--content-max-width);
     --media-grid-margin: var(--spacing-between-elements-normal) auto 0;
     --media-grid-z-index: var(--z-index-content);
 
