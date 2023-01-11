@@ -624,40 +624,46 @@ p > .button {
 /* BUTTON TYPE BORDER */
 
 .button[button-type="border"],
-.button.button--shadow {
+.button.button--shadow,
+.button.button--outline {
     --button-color-bg: transparent;
     --button-border-color: var(--color-primary);
     --button-color-text: var(--color-primary);
 }
 
 .button[button-type="border"]:focus-visible,
-.button.button--shadow:focus-visible {
+.button.button--shadow:focus-visible,
+.button.button--outline:focus-visible {
     --button-color-bg: var(--color-primary-o-10);
     --button-border-color: var(--color-primary);
     --button-color-text: var(--color-primary);
 }
 
 .button[button-variant="secondary"].button[button-type="border"],
-.button:is(.button--secondary, [button-variant="secondary"]).button.button--shadow {
+.button:is(.button--secondary, [button-variant="secondary"]).button.button--shadow,
+.button:is(.button--secondary, [button-variant="secondary"]).button.button--outline {
     --button-border-color: var(--color-secondary);
     --button-color-text: var(--color-secondary);
 }
 
 .button[button-variant="secondary"].button[button-type="border"]:focus-visible,
-.button:is(.button--secondary, [button-variant="secondary"]).button.button--shadow:focus-visible {
+.button:is(.button--secondary, [button-variant="secondary"]).button.button--shadow:focus-visible,
+.button:is(.button--secondary, [button-variant="secondary"]).button.button--outline:focus-visible{
     --button-color-bg: var(--color-secondary-o-10);
     --button-border-color: var(--color-secondary);
     --button-color-text: var(--color-secondary);
 }
 
 .button[button-variant="font"].button[button-type="border"],
-.button:is(.button--font, [button-variant="font"]).button.button--shadow {
+.button:is(.button--font, [button-variant="font"]).button.button--shadow,
+.button:is(.button--font, [button-variant="font"]).button.button--outline {
     --button-border-color: var(--color-font);
     --button-color-text: var(--color-font);
 }
 
 .button[button-variant="font"].button[button-type="border"]:focus-visible,
-.button:is(.button--font, [button-variant="font"]).button.button--shadow:focus-visible {
+.button:is(.button--font, [button-variant="font"]).button.button--shadow:focus-visible,
+.button:is(.button--font, [button-variant="font"]).button.button--outline:focus-visible{
     --button-color-bg: var(--color-font-o-10);
     --button-border-color: var(--color-font);
     --button-color-text: var(--color-font);
@@ -703,7 +709,7 @@ p > .button {
     cursor: not-allowed !important;
 }
 
-.button:is(.button--shadow, [button-type="border"])[disabled] {
+.button:is(.button--shadow, .button--outline, [button-type="border"])[disabled] {
     --button-color-bg: transparent !important;
     --button-color-text: var(--color-font-light) !important;
     --button-border-color: var(--color-font-light) !important;
@@ -735,20 +741,20 @@ p > .button {
     }
 
     /* BUTTON TYPE BORDER */
-    .button:is(.button--shadow,[button-type="border"]):hover {
+    .button:is(.button--shadow, .button--outline, [button-type="border"]):hover {
         --button-border-color: var(--color-primary);
         --button-color-text: var(--color-primary);
         --button-color-bg: var(--color-primary-o-10);
     }
 
     /* stylelint-disable-next-line max-line-length */
-    .button:is(.button--secondary,[button-variant="secondary"]).button:is(.button--shadow,[button-type="border"]):hover {
+    .button:is(.button--secondary, [button-variant="secondary"]).button:is(.button--shadow, .button--outline, [button-type="border"]):hover {
         --button-border-color: var(--color-secondary);
         --button-color-text: var(--color-secondary);
         --button-color-bg: var(--color-secondary-o-10);
     }
 
-    .button:is(.button--font,[button-variant="font"]).button:is(.button--shadow,[button-type="border"]):hover {
+    .button:is(.button--font, [button-variant="font"]).button:is(.button--shadow, .button--outline, [button-type="border"]):hover {
         --button-border-color: var(--color-font);
         --button-color-text: var(--color-font);
         --button-color-bg: var(--color-font-o-10);
