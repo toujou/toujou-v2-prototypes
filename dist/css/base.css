@@ -207,7 +207,8 @@ figure {
 ::after {
     --content-fullwidth: 100%;
     --content-width-with-padding: calc(100% - calc(var(--content-padding-to-border) * 2));
-    --content-max-width: 944px;
+    --content-max-width: 960px;
+    --content-medium-max-width: 1200px;
     --content-wide-max-width: 1440px;
     --content-padding-to-border: var(--spacing-normal);
     --content-spacing-between-elements: var(--spacing-xl);
@@ -4811,7 +4812,7 @@ main > .table-container {
     --text-block-grid-template-columns: 1fr;
     --text-block-grid-gap: var(--spacing-l);
     --text-block-width: var(--content-width-with-padding);
-    --text-block-max-width: var(--content-max-width);
+    --text-block-max-width: var(--content-medium-max-width);
     --text-block-margin: var(--spacing-between-elements-normal) auto 0;
     --text-block-image-aspect-ratio: var(--aspect-ratio-default);
     --text-block-image-object-fit: cover;
@@ -4819,7 +4820,7 @@ main > .table-container {
     --text-block-media-inside-offset: calc(100% / 8);
     --text-block-column-display: block;
     --text-block-column-grid-template-columns: unset;
-    --text-block-column-gap: var(--text-block-grid-gap);
+    --text-block-column-gap: var(--spacing-m);
     --text-block-z-index: var(--z-index-content);
 
     display: var(--text-block-display);
@@ -4918,8 +4919,8 @@ main > .table-container {
     justify-content: flex-end;
 }
 
-.text-block__content > *:first-child {
-    margin-top: 0;
+.text-block__content > :is(h1, h2, h3, h4, h5):first-child {
+    margin-top: var(--spacing-s);
 }
 
 @media screen and (min-width: 768px) {
@@ -4985,7 +4986,8 @@ main > .table-container {
         padding-left: var(--text-block-grid-gap);
     }
 
-    .text-block__content > *:first-child {
+    .text-block__content > *:first-child,
+    .text-block__content > :is(h1, h2, h3, h4, h5):first-child {
         margin-top: 0;
     }
 }
@@ -4993,6 +4995,7 @@ main > .table-container {
 @media screen and (min-width: 840px) {
     .text-block {
         --text-block-grid-gap: var(--spacing-xl);
+        /*--text-block-column-gap: var(--spacing-m);*/
     }
 
     .text-block[text-block-column-count="2"],

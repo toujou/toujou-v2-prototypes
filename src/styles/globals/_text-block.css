@@ -11,7 +11,7 @@
     --text-block-media-inside-offset: calc(100% / 8);
     --text-block-column-display: block;
     --text-block-column-grid-template-columns: unset;
-    --text-block-column-gap: var(--text-block-grid-gap);
+    --text-block-column-gap: var(--spacing-m);
     --text-block-z-index: var(--z-index-content);
 
     display: var(--text-block-display);
@@ -108,7 +108,7 @@
 }
 
 .text-block__content > :is(h1, h2, h3, h4, h5):first-child {
-    margin-top: var(--spacing-m);
+    margin-top: var(--spacing-s);
 }
 
 @media screen and (min-width: 768px) {
@@ -183,6 +183,7 @@
 @media screen and (min-width: 840px) {
     .text-block {
         --text-block-grid-gap: var(--spacing-xl);
+        /*--text-block-column-gap: var(--spacing-m);*/
     }
 
     .text-block[text-block-column-count="2"],
