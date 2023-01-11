@@ -5435,6 +5435,16 @@ table {
     color: var(--color-font);
 }
 
+ul,
+ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+:is(ul, ol) :is(ul, ol) {
+    padding-left: var(--spacing-m);
+}
+
 h1,
 h2,
 h3,
