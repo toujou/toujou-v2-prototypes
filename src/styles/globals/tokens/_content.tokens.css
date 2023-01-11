@@ -4,6 +4,7 @@
     --content-fullwidth: 100%;
     --content-width-with-padding: calc(100% - calc(var(--content-padding-to-border) * 2));
     --content-max-width: 960px;
+    --content-medium-max-width: 1200px;
     --content-wide-max-width: 1440px;
     --content-padding-to-border: var(--spacing-normal);
     --content-spacing-between-elements: var(--spacing-xl);
