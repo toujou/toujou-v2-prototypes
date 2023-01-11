@@ -17,7 +17,7 @@ describe('contact box', () => {
         cy.get('input.state-input').invoke('attr', 'aria-hidden').should('eq', 'true');
     });
 
-    it('is has correct styles when not visible', () => {
+    it('it has correct styles when not visible', () => {
         cy.get('.contact-box').should('have.css', 'display', 'none');
         cy.get('.contact-box').should('have.css', 'visibility', 'hidden');
         cy.get('.contact-box').should('have.css', 'position', 'fixed');
@@ -32,7 +32,7 @@ describe('contact box', () => {
         cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO50);
     });
 
-    it('is has correct styles when visible', () => {
+    it('it has correct styles when visible', () => {
         cy.get('.button').click();
         cy.get('.contact-box').should('have.css', 'display', 'flex');
         cy.get('.contact-box').should('have.css', 'visibility', 'visible');
@@ -48,7 +48,7 @@ describe('contact box', () => {
         cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO50);
     });
 
-    it.only('contact box card has correct styles', () => {
+    it('contact box card has correct styles', () => {
         cy.get('.button').click();
         cy.get('.contact-box__card').should('have.css', 'background-color', colors.colorBg);
         cy.get('.contact-box__card').should('have.css', 'display', 'block');
@@ -71,6 +71,51 @@ describe('contact box', () => {
         cy.get('.contact-box__close .icon').invoke('attr', 'icon-color').should('eq', 'font');
 
         cy.get('.contact-box__content').should('have.css', 'display', 'block');
+
+        cy.get('.contact-box__headline').should('have.css', 'text-align', 'center');
+        cy.get('.contact-box__headline').should('have.css', 'color', colors.colorFont);
+        cy.get('.contact-box__headline').should('have.css', 'font-family', 'Ubuntu, sans-serif');
+        cy.get('.contact-box__headline').should('have.css', 'font-size', '32px');
+        cy.get('.contact-box__headline').should('have.css', 'margin-bottom', '20px');
+
+        cy.get('.contact-box__items').should('have.css', 'display', 'flex');
+        cy.get('.contact-box__items').should('have.css', 'flex-direction', 'column');
+        cy.get('.contact-box__items').should('have.css', 'align-items', 'flex-start');
+        cy.get('.contact-box__items').should('have.css', 'justify-content', 'flex-start');
+        cy.get('.contact-box__items').should('have.css', 'gap', '8px');
+        cy.get('.contact-box__items').should('have.css', 'margin', '0px');
+        cy.get('.contact-box__items').should('have.css', 'width', '204.265625px');
+
+        cy.get('.contact-box__item:first-child').should('have.css', 'display', 'flex');
+        cy.get('.contact-box__item:first-child').should('have.css', 'align-items', 'center');
+        cy.get('.contact-box__item:first-child').should('have.css', 'justify-content', 'center');
+        cy.get('.contact-box__item:first-child').should('have.css', 'gap', '16px');
+        cy.get('.contact-box__item:first-child').should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get('.contact-box__item:first-child').should('have.css', 'font-size', '16px');
+
+        cy.get('.contact-box__item:first-child .icon').should('exist');
+        cy.get('.contact-box__item:first-child .icon').invoke('attr', 'icon-size').should('eq', 'ms');
+        cy.get('.contact-box__item:first-child .icon').invoke('attr', 'icon-color').should('eq', 'font');
+        cy.get('.contact-box__item:first-child .icon').invoke('attr', 'icon-name').should('eq', 'telephone');
+        cy.get('.contact-box__item:nth-child(2) .icon').invoke('attr', 'icon-name').should('eq', 'email');
+        cy.get('.contact-box__item:nth-child(3) .icon').invoke('attr', 'icon-name').should('eq', 'calendar-day');
+    });
+
+    it('it can toggle visibility', () => {
+        cy.get('.contact-box').should('have.css', 'display', 'none');
+        cy.get('.contact-box').should('have.css', 'visibility', 'hidden');
+        cy.get('.button').click();
+        cy.get('.contact-box').should('have.css', 'display', 'flex');
+        cy.get('.contact-box').should('have.css', 'visibility', 'visible');
+        cy.get('.contact-box__close').click();
+        cy.get('.contact-box').should('have.css', 'display', 'none');
+        cy.get('.contact-box').should('have.css', 'visibility', 'hidden');
+        cy.get('.button').click();
+        cy.get('.contact-box').should('have.css', 'display', 'flex');
+        cy.get('.contact-box').should('have.css', 'visibility', 'visible');
+        cy.get('.contact-box__close').click();
+        cy.get('.contact-box').should('have.css', 'display', 'none');
+        cy.get('.contact-box').should('have.css', 'visibility', 'hidden');
     });
 });
 
