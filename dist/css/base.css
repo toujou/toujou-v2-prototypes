@@ -2422,9 +2422,16 @@ body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     --alert-border: var(--alert-border-width) solid var(--alert-border-color);
     --alert-width: auto;
     --alert-text-decoration: none;
+    --alert-display: flex;
+    --alert-align-items: flex-start;
+    --alert-justify-content: flex-start;
+    --alert-flex-direction: column;
 
     width: var(--alert-width);
-    display: flex;
+    display: var(--alert-display);
+    flex-direction: var(--alert-flex-direction);
+    align-items: var(--alert-align-items);
+    justify-content: var(--alert-justify-content);
     border: var(--alert-border);
     outline: none;
     background-color: var(--alert-bg-color);
@@ -2435,7 +2442,6 @@ body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     border-radius: var(--alert-border-radius);
     -webkit-text-decoration: var(--alert-text-decoration);
             text-decoration: var(--alert-text-decoration);
-    align-items: center;
 }
 
 .alert[alert-variant="secondary"] {

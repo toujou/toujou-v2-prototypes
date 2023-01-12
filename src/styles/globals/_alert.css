@@ -10,9 +10,16 @@
     --alert-border: var(--alert-border-width) solid var(--alert-border-color);
     --alert-width: auto;
     --alert-text-decoration: none;
+    --alert-display: flex;
+    --alert-align-items: flex-start;
+    --alert-justify-content: flex-start;
+    --alert-flex-direction: column;
 
     width: var(--alert-width);
-    display: flex;
+    display: var(--alert-display);
+    flex-direction: var(--alert-flex-direction);
+    align-items: var(--alert-align-items);
+    justify-content: var(--alert-justify-content);
     border: var(--alert-border);
     outline: none;
     background-color: var(--alert-bg-color);
@@ -22,7 +29,6 @@
     padding: var(--alert-padding);
     border-radius: var(--alert-border-radius);
     text-decoration: var(--alert-text-decoration);
-    align-items: center;
 }
 
 .alert[alert-variant="secondary"] {
