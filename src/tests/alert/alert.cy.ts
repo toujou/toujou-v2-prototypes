@@ -80,10 +80,22 @@ describe('alert - success', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-alert--alert&args=alertVariant:success');
     });
 
-    it('has correct warning styles', () => {
+    it('has correct success styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'success');
         cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colors.colorSuccessDarken15}`);
         cy.get('toujou-alert').should('have.css', 'background-color', colors.colorSuccessO25Alpha);
+    });
+})
+
+describe('alert - info', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-alert--alert&args=alertVariant:info');
+    });
+
+    it('has correct info styles', () => {
+        cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'info');
+        cy.get('toujou-alert').should('have.css', 'border', `1px solid ${colors.colorInfoDarken15}`);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorInfoO25Alpha);
     });
 })
 

@@ -44,3 +44,8 @@
     --alert-bg-color: var(--color-success-o-25);
     --alert-border-color: var(--color-success-darken-15);
 }
+
+.alert[alert-variant="info"] {
+    --alert-bg-color: var(--color-info-o-25);
+    --alert-border-color: var(--color-info-darken-15);
+}

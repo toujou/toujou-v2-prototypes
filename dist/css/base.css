@@ -190,6 +190,13 @@ figure {
     --color-error-l-15: hsl(var(--color-error-h) var(--color-error-s) 15%);
     --color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);
 
+    --color-info-h: 199deg;
+    --color-info-s: 65%;
+    --color-info-l: 80%;
+    --color-info: hsl(var(--color-info-h) var(--color-info-s) var(--color-info-l));
+    --color-info-darken-15: hsl(var(--color-info-h) var(--color-info-s) calc(var(--color-info-l) - 15%));
+    --color-info-o-25: hsl(var(--color-info-h) var(--color-info-s) var(--color-info-l) / 25%);
+
     --color-black-o-75: hsl(0 0% 0% / 75%);
     --color-black-o-50: hsl(0 0% 0% / 50%);
     --color-black-o-10: hsl(0 0% 0% / 10%);
@@ -2449,6 +2456,11 @@ body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
 .alert[alert-variant="success"] {
     --alert-bg-color: var(--color-success-o-25);
     --alert-border-color: var(--color-success-darken-15);
+}
+
+.alert[alert-variant="info"] {
+    --alert-bg-color: var(--color-info-o-25);
+    --alert-border-color: var(--color-info-darken-15);
 }
 
 blockquote:not(.blockquote__blockquote) {
