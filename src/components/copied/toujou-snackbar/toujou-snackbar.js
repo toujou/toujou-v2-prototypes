@@ -43,7 +43,15 @@ class ToujouSnackbar extends LitElement {
 
   set showing(value) {
     // eslint-disable-next-line no-unused-expressions
-    value ? this.setAttribute('visible', '') : this.removeAttribute('visible');
+    if (value) {
+      this.setAttribute('visible', '');
+      this.setAttribute('tabindex', 0);
+      this.focus();
+    } else {
+      this.removeAttribute('visible');;
+      this.setAttribute('tabindex', -1);
+      this.blur();
+    }
   }
 
   set snackbarType(value) {
