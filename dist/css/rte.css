@@ -477,6 +477,7 @@
     --alert-align-items: flex-start;
     --alert-justify-content: flex-start;
     --alert-flex-direction: column;
+    --alert-line-height: var(--line-height-normal);
 
     width: var(--alert-width);
     display: var(--alert-display);
@@ -493,6 +494,7 @@
     border-radius: var(--alert-border-radius);
     -webkit-text-decoration: var(--alert-text-decoration);
             text-decoration: var(--alert-text-decoration);
+    line-height: var(--alert-line-height);
 }
 
 .alert[alert-variant="secondary"] {
