@@ -37,6 +37,10 @@
     z-index: var(--slider-z-index);
 }
 
+.text-block__figure .slider {
+    --slider-width: var(--content-fullwidth);
+}
+
 .header .slider,
 .slider:first-child {
     --slider-margin: 0 auto;
