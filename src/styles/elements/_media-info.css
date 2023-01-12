@@ -10,6 +10,7 @@
     --media-info-align-items: flex-start;
     --media-info-justify-content: flex-start;
     --media-info-flex-direction: column;
+    --media-info-pointer-events: none;
 
     --media-info-scrim-display: none;
     --media-info-scrim-background-color: var(--color-black-o-75);
@@ -23,6 +24,7 @@
     --media-info-toggle-background-color: transparent;
     --media-info-toggle-border: none;
     --media-info-toggle-hover-color: var(--color-primary);
+    --media-info-toggle-pointer-events: all;
 
     --media-info-figcaption-display: none;
     --media-info-figcaption-font-family: var(--font-family-text);
@@ -46,6 +48,7 @@
     align-items: var(--media-info-align-items);
     justify-content: var(--media-info-justify-content);
     flex-direction: var(--media-info-flex-direction);
+    pointer-events: var(--media-info-pointer-events);
 }
 
 .header .header-content + .media-info {
@@ -85,6 +88,7 @@
     background-color: var(--media-info-toggle-background-color);
     border: var(--media-info-toggle-border);
     cursor: pointer;
+    pointer-events: var(--media-info-toggle-pointer-events);
 }
 
 .media-info__toggle:focus-visible {
