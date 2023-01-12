@@ -43,6 +43,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
 <!--                    <h3>Left aligned H3 headline</h3>-->
@@ -52,6 +62,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -64,6 +84,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -73,6 +103,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -85,6 +125,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -94,6 +144,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -106,6 +166,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -115,6 +185,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -124,6 +204,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -136,6 +226,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -145,6 +245,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -154,6 +264,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -163,6 +283,16 @@ const Template: Story<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBelo
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
                     <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                            <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                        <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                    </toujou-media-info>
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
