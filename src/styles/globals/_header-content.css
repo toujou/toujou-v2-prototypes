@@ -36,7 +36,7 @@
     z-index: var(--header-content-z-index);
 }
 
-.header[header-type="slider"] .header-content[content-size="full"] {
+.header[header-type="slider"] .header-content {
     --header-content-width: calc(100% - calc(var(--spacing-xl) * 3));
 }
 
