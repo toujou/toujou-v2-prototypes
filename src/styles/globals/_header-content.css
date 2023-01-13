@@ -6,9 +6,11 @@
     --header-content-left: 50%;
     --header-content-translate-x: -50%;
     --header-content-translate-y: -50%;
+    --header-content-width: calc(100% - calc(var(--header-content-padding) * 2));
+    --header-content-max-width: var(--header-content-width);
     /* stylelint-disable-next-line max-line-length */
     --header-content-transform: translate(var(--header-content-translate-x), var(--header-content-translate-y)) !important;
-    --header-content-width: 50%;
+    /*--header-content-width: 50%;*/
     --header-content-padding: var(--spacing-normal);
     --header-content-background-color: var(--color-bg);
     --header-content-border-radius: var(--border-radius-normal);
@@ -27,10 +29,15 @@
     left: var(--header-content-left);
     transform: var(--header-content-transform);
     width: var(--header-content-width);
+    max-width: var(--header-content-max-width);
     padding: var(--header-content-padding);
     background-color: var(--header-content-background-color);
     border-radius: var(--header-content-border-radius);
     z-index: var(--header-content-z-index);
+}
+
+.header[header-type="slider"] .header-content[content-size="full"] {
+    --header-content-width: calc(100% - calc(var(--spacing-xl) * 3));
 }
 
 .header-content[is-title-only] {
@@ -85,26 +92,6 @@
     --header-content-left: unset;
     --header-content-right: var(--spacing-xxl);
     --header-content-translate-x: 0;
-}
-
-.header-content[content-size="full"] {
-    --header-content-width: calc(100% - calc(var(--header-content-padding) * 2));
-}
-
-.header[header-type="slider"] .header-content[content-size="full"] {
-    --header-content-width: calc(100% - calc(var(--spacing-xl) * 3));
-}
-
-.header-content[content-size="half"] {
-    --header-content-width: 50%;
-}
-
-.header-content[content-size="third"] {
-    --header-content-width: calc(100% / 3);
-}
-
-.header-content[content-size="quarter"] {
-    --header-content-width: 25%;
 }
 
 .header-content__title,
@@ -162,5 +149,17 @@
 
     .header[header-type="slider"] .header-content[horizontal-position="right"] {
         --header-content-right: calc(var(--spacing-xxxl) + var(--spacing-normal));
+    }
+
+    .header-content[content-size="half"] {
+        --header-content-max-width: 50%;
+    }
+
+    .header-content[content-size="third"] {
+        --header-content-max-width: calc(100% / 3);
+    }
+
+    .header-content[content-size="quarter"] {
+        --header-content-max-width: 25%;
     }
 }
