@@ -41,7 +41,8 @@
     --header-height: auto;
 }
 
-.header__image {
+.header__image,
+.header__video {
     height: var(--header-image-height);
     width: var(--header-image-width);
     position: var(--header-image-position);
