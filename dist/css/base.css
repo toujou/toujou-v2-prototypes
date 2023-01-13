@@ -3605,7 +3605,7 @@ exit-warning {
 }
 
 .header__image,
-.header__video {
+.header__figure .video {
     height: var(--header-image-height);
     width: var(--header-image-width);
     position: var(--header-image-position);

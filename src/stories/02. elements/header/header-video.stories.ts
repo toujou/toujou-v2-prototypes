@@ -54,7 +54,7 @@ const Template: Story<HeaderStoryProps> = (args: HeaderStoryProps) => {
                     playsinline
                     poster
                     loop
-                    class="header__video"
+                    class="video"
                     controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 ></video>
             </figure>
