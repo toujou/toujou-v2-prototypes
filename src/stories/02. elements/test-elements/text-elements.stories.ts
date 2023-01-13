@@ -6,7 +6,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 import TextElementsDocs from "./text-elements.docs.mdx";
 
 export default {
-    title: 'COMPONENTS/TextElements',
+    title: 'COMPONENTS/Text Elements',
     decorators: [withXD],
     parameters: {
         badges: [TOUJOU_BADGES.TESTING],
@@ -131,8 +131,8 @@ const Template: Story<TableStoryProps> = (args: TableStoryProps) => {
     `;
 };
 
-export const TextElements = Template.bind({});
+export const TextElementsExamples = Template.bind({});
 
-TextElements.args = {
+TextElementsExamples.args = {
     tableAlignment: 'none',
 }
