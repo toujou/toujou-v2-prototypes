@@ -30,12 +30,14 @@ class ToujouTopbutton extends LitElement {
         window.addEventListener('scroll', this._checkVisibility);
         window.addEventListener('resize', this._checkVisibility);
         this.addEventListener('click', this._handleClick);
+        this.addEventListener('keyup', this._handleKeyUp);
     }
 
     disconnectedCallback() {
         window.removeEventListener('scroll', this._checkVisibility);
         window.addEventListener('resize', this._checkVisibility);
         this.removeEventListener('click', this._handleClick);
+        this.removeEventListener('keyup', this._handleKeyUp);
 
         super.disconnectedCallback();
     }
@@ -71,6 +73,16 @@ class ToujouTopbutton extends LitElement {
             behavior: 'smooth',
         });
         this._resetFocus()
+    }
+
+    /**
+     * Detect "Enter" + "Space" keyboard event to trigger button activation and improve accessibility
+     * @param event
+     */
+    _handleKeyUp(event: KeyboardEvent): void {
+        if (event.key === 'Enter' || event.code === 'Enter' || event.code === 'Space' || event.key === ' ') {
+            this._handleClick();
+        }
     }
 
     /**

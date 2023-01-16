@@ -20,7 +20,7 @@ export declare class ToujouTopbar extends LitElement {
     disconnectedCallback(): void;
     /**
      * Set correct isOpen value according to state of burger button click event
-     * Add / remove attribute from the body element so we can prevent scroll in the background
+     * Add / remove attribute from the body element, so we can prevent scroll in the background
      * @param event
      */
     _handleBurgerButtonClick(event: Event): void;
