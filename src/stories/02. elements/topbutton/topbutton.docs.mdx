@@ -1,21 +1,23 @@
 # topbutton
 
-| ⚠️ Needs to import the toujou-top-button component |
+| ⚠️ Needs to import the toujou-topbutton component |
 |----------------------------------------------------|
 
 This is a simple element that allows the user to scroll back to the top of the page with a single click.
 
-The element is visible when the user has scrolled at least 1 viewport height
+The element is visible when the user has scrolled at least 1 viewport height.
+
+After the element is clicked, the focus is reset (set to the top of the page) to improve accessibility
 
 ## Markup example
 ```html
-<toujou-top-button title="Nach oben" aria-label="Nach oben" class="topbutton" role="button" aria-hidden="false" visible="" tabindex=0">
+<toujou-topbutton title="Nach oben" aria-label="Nach oben" class="topbutton" role="button" aria-hidden="false" tabindex=0">
     <toujou-icon class="icon" icon-name="arrow-up" icon-size="m" icon-color="primary"></toujou-icon>
-</toujou-top-button>
+</toujou-topbutton>
 ```
 
 | ⚠️ Needs several attributes to improve accessibility, like show on on markup example |
 |--------------------------------------------------------------------------------------|
 
-## modifier class
-A `topbutton--visible` modifier class is added to the element with JS when the element should be visible
+## attributes
+A `is-visible` attribute is added to the element with JS when the element should be visible

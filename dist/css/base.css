@@ -3524,6 +3524,10 @@ exit-warning {
     --grid-max-width: var(--content-wide-max-width);
 }
 
+.grid[grid-type="medium"] {
+    --grid-max-width: var(--content-medium-max-width);
+}
+
 .grid[grid-type="fullwidth"] {
     width: var(--content-fullwidth);
     max-width: var(--content-fullwidth);

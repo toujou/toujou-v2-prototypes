@@ -26,7 +26,7 @@ export default {
             },
             name: 'Grid type',
             description: "Set grid type",
-            options: ['default', 'wide', 'fullwidth', 'ignore'],
+            options: ['default', 'medium', 'wide', 'fullwidth', 'ignore'],
             control: { type: 'radio' },
             defaultValue: ['normal'],
             required: true,
