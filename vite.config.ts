@@ -22,6 +22,7 @@ export default defineConfig({
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-contact-box': path.resolve(__dirname, 'src/components/toujou-contact-box/toujou-contact-box.ts'),
                 'toujou-media-info': path.resolve(__dirname, 'src/components/toujou-media-info/toujou-media-info.ts'),
+                'toujou-topbutton': path.resolve(__dirname, 'src/components/toujou-topbutton/toujou-topbutton.ts'),
                 'toujou-inpage-nav': path.resolve(__dirname, 'src/components/copied/toujou-inpage-nav/toujou-inpage-nav.js'),
                 'toujou-map': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map.js'),
                 'toujou-map-geojson': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-geojson.js'),

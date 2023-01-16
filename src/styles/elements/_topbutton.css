@@ -30,7 +30,7 @@
     border: var(--topbutton-border);
 }
 
-.topbutton.topbutton--visible {
+.topbutton.topbutton[is-visible] {
     --topbutton-transform: translateY(0);
 }
 

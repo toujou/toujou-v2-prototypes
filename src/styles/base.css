@@ -54,7 +54,7 @@
 @import "./globals/_text-block.css";
 @import "./globals/_text-block-column.css";
 @import "./globals/_topbar.css";
-@import "./globals/_topbutton.css";
+@import "./elements/_topbutton.css";
 @import "./globals/_type.css";
 @import "./globals/_wrap--content.css";
 @import "./globals/_wrap--iframe.css";
