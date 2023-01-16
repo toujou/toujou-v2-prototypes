@@ -70,27 +70,23 @@ class ToujouTopbutton extends LitElement {
             left: 0,
             behavior: 'smooth',
         });
-        const firstElementOnPage = this._getFirstElementOnPage();
-        if (firstElementOnPage) {
-            firstElementOnPage.focus();
+        const firstFocusableElement = this._getFirstFocusableElementOnPage();
+        if (firstFocusableElement) {
+            firstFocusableElement.focus();
+            requestAnimationFrame(() => {
+                firstFocusableElement.focus();
+            })
         }
     }
 
     /**
      * Get first element on the page, so we can set focus once the button is clicked
      */
-    _getFirstElementOnPage = (): HTMLElement | undefined => {
-        const main = document.querySelector('main');
-        let firstElement = main
-            ? main.querySelector('main *:not(span)')
-            : document.querySelector('.wrap--content *:first-child:not(.header)');
+    _getFirstFocusableElementOnPage = (): HTMLElement | undefined => {
+        let firstFocusableElement = document.querySelector(':not(:is(.header, .navigation)) :is(a, input, select, textarea, button, [tabindex]:not([tabindex="-1"]))')
 
-        if (!firstElement) {
-            firstElement = document.querySelector('.wrap--master') || document.querySelector('*');
-        }
-
-        if (firstElement) {
-            return firstElement as HTMLElement;
+        if (firstFocusableElement) {
+            return firstFocusableElement as HTMLElement;
         } else {
             console.error('TOUJOU: Could not add focus to the first element on the page');
             return;
