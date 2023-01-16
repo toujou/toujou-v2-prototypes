@@ -62,7 +62,7 @@ class ToujouTopbutton extends LitElement {
     }
 
     /**
-     * When the button is clicked we scroll to the top of the page and set focus on the 1st element on the page
+     * When the button is clicked we scroll to the top of the page and reset focus
      */
     _handleClick(): void {
         window.scrollTo({
