@@ -67,7 +67,6 @@ ul,
 ol {
     padding-left: 0;
     margin: var(--spacing-normal) 0 var(--spacing-normal) calc(var(--spacing-normal) + var(--spacing-xs));
-    /*list-style-position: inside;*/
 }
 
 :is(ul, ol) :is(ul, ol) {
