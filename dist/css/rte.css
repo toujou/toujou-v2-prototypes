@@ -476,7 +476,7 @@
     --alert-display: flex;
     --alert-align-items: flex-start;
     --alert-justify-content: flex-start;
-    --alert-flex-direction: column;
+    --alert-flex-direction: row;
     --alert-line-height: var(--line-height-normal);
 
     width: var(--alert-width);
