@@ -1,5 +1,9 @@
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
+/**
+ * Create custom badges to the used on the stories
+ * @type {{blocked: {styles: {backgroundColor: string, borderColor: string, color: string}, title: string}, testing: {styles: {backgroundColor: string, borderColor: string, color: string}, title: string}, progress: {styles: {backgroundColor: string, borderColor: string, color: string}, title: string}, refinement: {styles: {backgroundColor: string, borderColor: string, color: string}, title: string}, done: {styles: {backgroundColor: string, borderColor: string, color: string}, title: string}}}
+ */
 export const badgeCustomConfig = {
     progress: {
         styles: {
@@ -43,6 +47,10 @@ export const badgeCustomConfig = {
     },
 }
 
+/**
+ * Export list of badges containing the new custom badges
+ * @type {*&{REFINEMENT: string, DONE: string, TESTING: string, PROGRESS: string, BLOCKED: string}}
+ */
 export const TOUJOU_BADGES = {
     ...BADGE,
     PROGRESS: 'progress',

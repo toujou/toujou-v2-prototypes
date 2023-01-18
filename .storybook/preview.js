@@ -15,12 +15,12 @@ import "../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../src/components/toujou-contact-box/toujou-contact-box";
 import "../src/components/toujou-media-info/toujou-media-info";
 import "../src/components/toujou-topbutton/toujou-topbutton";
+
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-snackbar/toujou-snackbar";
 import "../src/components/copied/toujou-modal/toujou-modal";
 import "../src/components/copied/toujou-exit-warning/toujou-exit-warning";
 import "../src/components/copied/toujou-inpage-nav/toujou-inpage-nav";
-// import "../src/components/copied/toujou-spinner/toujou-spinner";
 import "../src/components/copied/toujou-consent/toujou-consent";
 import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
 import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
@@ -31,8 +31,10 @@ import "../src/components/copied/toujou-map/toujou-map-marker";
 import "../src/components/copied/toujou-map/toujou-map-popup";
 import "../src/components/copied/toujou-map/toujou-map-static";
 
+// ELEMENTS FROM @TOUJOU/UI-COMPONENTS
 import "../node_modules/@toujou/toujou-spinner/dist/toujou-spinner"
 
+// custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
 
 import { badgeCustomConfig } from "./configUtils/badgeCustomConfig.js";

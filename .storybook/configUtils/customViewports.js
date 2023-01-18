@@ -1,3 +1,7 @@
+/**
+ * Create a list of custom viewports, so we can test for relevant device sizes
+ * @type {{Mobile2: {name: string, styles: {width: string, height: string}}, Tablet1: {name: string, styles: {width: string, height: string}}, Web1: {name: string, styles: {width: string, height: string}}, Tablet2: {name: string, styles: {width: string, height: string}}, Mobile1: {name: string, styles: {width: string, height: string}}}}
+ */
 export const customViewports = {
     Mobile1: {
         name: 'mobile - small',

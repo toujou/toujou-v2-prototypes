@@ -42,11 +42,14 @@ The problem are some relative / absolute paths that aren't correctly resolved du
 
 The current **solution** is after the `npm run build-sb` command to to add the missing `./` to the iframe links on the `storybook-static/iframe.html` file:
 
+
 ```html
     <!-- around line 370 on the current build -->
     <script type="module" crossorigin src="./assets/iframe.2998cd67.js"></script>
     <link rel="stylesheet" href="./assets/iframe.f0ce4956.css">
 ```
+
+> `npm run deploy::full` works well! It builds and deploys to github in 1 step!
 
 # Badges addon
 We use the [Badges Addon](https://storybook.js.org/addons/@geometricpanda/storybook-addon-badges) to help us track the state of each story
