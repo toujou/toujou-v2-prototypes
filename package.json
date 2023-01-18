@@ -74,6 +74,7 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
+    "@toujou/toujou-spinner": "^1.0.0",
     "skippy-links": "^1.0.4"
   }
 }
