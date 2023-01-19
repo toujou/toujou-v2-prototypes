@@ -101,13 +101,12 @@
 
 .form-progress__item:not(:first-child)::after {
     content: "";
-    /*background: var(--form-progress-bar-color);*/
     width: calc(var(--form-progress-space-between-items) * 2);
     height: 1px;
     position: absolute;
     right: 100%;
     top: 50%;
-    border: 2px dashed var(--form-progress-bar-color);
+    border: 1px solid var(--form-progress-bar-color);
 }
 
 .form-progress__item[completed] + .form-progress__item::after {
