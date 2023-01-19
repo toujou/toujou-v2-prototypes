@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-const colors = Cypress.env('colors');
+// const colors = Cypress.env('colors');
 
 describe('location finder', () => {
     beforeEach(() => {
