@@ -10,6 +10,25 @@
     --toujou-location-finder-grid-z-index: var(--z-index-content);
 
     /* webcomponent variables */
+    --toujou-location-finder-breakpoint: 840px;
+    --toujou-location-finder-image-size: 80px;
+    --toujou-location-finder-transition-settings: .25s ease-in-out;
+
+    --toujou-location-finder-map-point-color: var(--color-primary);
+    --toujou-location-finder-map-point-color-hover: var(--color-primary-dark);
+    --toujou-location-finder-map-polygon-color: var(--color-primary);
+    --toujou-location-finder-map-polygon-color-hover: var(--color-primary-dark);
+    --toujou-location-finder-map-line-color: var(--color-primary);
+    --toujou-location-finder-map-line-color-hover: var(--color-primary-dark);
+
+    --toujou-location-finder-cluster-background-color: var(--color-primary);
+    --toujou-location-finder-cluster-border-width: 2;
+    --toujou-location-finder-cluster-border-color: var(--color-primary);
+    --toujou-location-finder-cluster-text-color: var(--color-bg);
+    --toujou-location-finder-cluster-text-size: 16;
+    --toujou-location-finder-cluster-radius: 50;
+    /*--toujou-location-finder-cluster-max-zoom: 10;*/
+
     --toujou-location-finder-padding: var(--spacing-s);
 
     --toujou-location-finder-loading-bar-height: var(--spacing-xxs);
