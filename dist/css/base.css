@@ -1389,9 +1389,15 @@ figure {
     --form-progress-gap: var(--spacing-normal);
     --form-progress-justify-content: flex-start;
     --form-progress-align-items: flex-start;
-    --form-progress-margin: var(--spacing-m) auto;
+    --form-progress-margin: 0 auto;
+    --form-progress-padding: var(--spacing-m) 0;
     --form-progress-width: var(--form-width);
     --form-progress-max-width: var(--form-max-width);
+    --form-progress-space-between-items: var(--spacing-normal);
+    --form-progress-background-color: var(--color-bg);
+    --form-progress-background-position: sticky;
+    --form-progress-background-top: 0;
+    --form-progress-z-index: var(--z-index-pn-nav);
 
     --form-progress-item-size: var(--font-size-l);
     --form-progress-item-font-size: var(--font-size-normal);
@@ -1399,7 +1405,7 @@ figure {
     --form-progress-item-border-width: var(--border-width-m);
     --form-progress-item-border-color: var(--color-font-light);
     --form-progress-item-background-color: var(--color-white);
-    --form-progress-item-font-color: var(--color-font);
+    --form-progress-item-font-color: var(--color-font-light);
 
     --form-progress-item-active-background-color: var(--color-primary);
     --form-progress-item-active-font-color: var(--color-bg);
@@ -1416,12 +1422,17 @@ figure {
     flex-direction: var(--form-progress-display-direction);
     gap: var(--form-progress-gap);
     margin: var(--form-progress-margin);
+    padding: var(--form-progress-padding);
     justify-content: var(--form-progress-justify-content);
     align-items: var(--form-progress-align-items);
+    background-color: var(--form-progress-background-color);
+    position: var(--form-progress-background-position);
+    top: var(--form-progress-background-top);
+    z-index: var(--form-progress-z-index);
 }
 
 .form-progress-bar {
-    display: none;
+    display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     list-style:none;
@@ -1440,7 +1451,7 @@ figure {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin-right: var(--form-progress-item-size);
+    margin-right: var(--form-progress-space-between-items);
 }
 
 .form-progress__index {
@@ -1470,22 +1481,30 @@ figure {
 }
 
 .form-progress__item:not(:first-child) {
-    margin-left: var(--form-progress-item-size);
+    margin-left: var(--form-progress-space-between-items);
 }
 
-.form-progress__item:not(:first-child):after {
+.form-progress__item:not(:first-child)::after {
     content: "";
-    background: var(--form-progress-bar-color);
-    width: calc(var(--form-progress-item-size) * 2);
-    height: var(--form-progress-bar-width);
+    /*background: var(--form-progress-bar-color);*/
+    width: calc(var(--form-progress-space-between-items) * 2);
+    height: 1px;
     position: absolute;
     right: 100%;
     top: 50%;
+    border: 2px dashed var(--form-progress-bar-color);
 }
 
-@media screen and (min-width: 640px) {
-    .form-progress-bar {
-        display: flex;
+.form-progress__item[completed] + .form-progress__item::after {
+    --form-progress-bar-color: var(--color-primary);
+
+    background: var(--color-primary);
+}
+
+@media screen and (min-width: 840px) {
+    .form-progress {
+        --form-progress-space-between-items: var(--spacing-m);
+        --form-progress-background-position: relative;
     }
 }
 
