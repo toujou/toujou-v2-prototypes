@@ -35,6 +35,9 @@ export default defineConfig({
                 'toujou-consent-widget': path.resolve(__dirname, 'src/components/copied/toujou-consent-widget/toujou-consent-widget'),
                 // Skippy links must be exported, so we can import it on the skip-links partial
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
+                // components from the @toujou/ui-components
+                'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder'),
+                'toujou-location-finder-teaser': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder-teaser'),
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
             },
