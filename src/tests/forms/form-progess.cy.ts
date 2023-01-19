@@ -17,21 +17,23 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress .form-progress__index').should('exist');
     });
 
-    it('form-progress has correct structure', () => {
+    it('form-progress has correct styles', () => {
         cy.get('.form-progress').should('have.css', 'display', 'flex');
         cy.get('.form-progress').should('have.css', 'flex-direction', 'column');
         cy.get('.form-progress').should('have.css', 'align-items', 'flex-start');
         cy.get('.form-progress').should('have.css', 'justify-content', 'flex-start');
         cy.get('.form-progress').should('have.css', 'gap', '16px');
-        cy.get('.form-progress').should('have.css', 'margin-top', '24px');
-        cy.get('.form-progress').should('have.css', 'margin-bottom', '24px');
+        cy.get('.form-progress').should('have.css', 'margin-top', '0px');
+        cy.get('.form-progress').should('have.css', 'margin-bottom', '0px');
+        cy.get('.form-progress').should('have.css', 'padding-top', '24px');
+        cy.get('.form-progress').should('have.css', 'padding-bottom', '24px');
     });
 
-    it('form-progress headline has correct structure', () => {
+    it('form-progress headline has correct stlyes', () => {
         cy.get('.form-progress__headline').should('have.css', 'margin-bottom', '0px');
     });
 
-    it('form-progress-bar has correct structure', () => {
+    it('form-progress-bar has correct styles', () => {
         cy.get('.form-progress-bar').should('have.css', 'display', 'flex');
         cy.get('.form-progress-bar').should('have.css', 'flex-flow', 'row nowrap');
         cy.get('.form-progress-bar').should('have.css', 'justify-content', 'center');
@@ -41,16 +43,31 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress-bar').should('have.css', 'pointer-events', 'none');
     });
 
-    it('form-progress items have correct structure', () => {
+    it.only('form-progress items have correct styles', () => {
         cy.get('.form-progress__item').should('have.css', 'position', 'relative');
         cy.get('.form-progress__item').should('have.css', 'display', 'flex');
         cy.get('.form-progress__item').should('have.css', 'flex-flow', 'column nowrap');
         cy.get('.form-progress__item').should('have.css', 'justify-content', 'center');
         cy.get('.form-progress__item').should('have.css', 'align-items', 'center');
-        cy.get('.form-progress__item').should('have.css', 'margin-right', '28px');
+        cy.get('.form-progress__item').should('have.css', 'margin-right', '24px');
+
+        // @ts-ignore // "FUTURE"
+        cy.get('.form-progress__item:nth-child(4)').after('background-color').should('eq', `rgba(0, 0, 0, 0)`);
+        // @ts-ignore
+        cy.get('.form-progress__item:nth-child(4)').after('border').should('eq', `1px solid ${colors.colorFontLight}`);
+
+        // @ts-ignore // ACTIVE
+        cy.get('.form-progress__item:nth-child(3)').after('background-color').should('eq', colors.colorPrimary);
+        // @ts-ignore
+        cy.get('.form-progress__item:nth-child(3)').after('border').should('eq', `1px solid ${colors.colorPrimary}`);
+
+        // @ts-ignore // COMPLeTED
+        cy.get('.form-progress__item:nth-child(2)').after('background-color').should('eq', colors.colorPrimary);
+        // @ts-ignore
+        cy.get('.form-progress__item:nth-child(2)').after('border').should('eq', `1px solid ${colors.colorPrimary}`);
     });
 
-    it('form-progress index have correct structure', () => {
+    it('form-progress index have correct styles', () => {
         cy.get('.form-progress__index').should('have.css', 'width', '28px');
         cy.get('.form-progress__index').should('have.css', 'height', '28px');
         cy.get('.form-progress__index').should('have.css', 'font-size', '16px');
@@ -58,6 +75,7 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress__index').should('have.css', 'border-radius', '50%');
         cy.get('.form-progress__index').should('have.css', 'text-align', 'center');
         cy.get('.form-progress__index').should('have.css', 'box-sizing', 'content-box');
+
         // completed
         cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
         cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'background-color', colors.colorPrimaryO10);
@@ -66,9 +84,9 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
         cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'color', colors.colorBg);
-        // active
+        // "future"
         cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
-        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'color', colors.colorFont);
+        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'color', colors.colorFontLight);
     });
 });
 
