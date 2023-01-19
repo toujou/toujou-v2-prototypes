@@ -662,6 +662,11 @@
     -webkit-mask-image: var(--icon-support);
 }
 
+.icon[icon-name="target"] {
+    mask-image: var(--icon-target);
+    -webkit-mask-image: var(--icon-target);
+}
+
 .icon[icon-name="telephone"] {
     mask-image: var(--icon-telephone);
     -webkit-mask-image: var(--icon-telephone);

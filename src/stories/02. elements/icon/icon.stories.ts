@@ -156,6 +156,7 @@ const iconNames = [
     'stop',
     'stop-circle-filled',
     'support',
+    'target',
     'telephone',
     'thumb-up',
     'tools',
