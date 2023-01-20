@@ -115,7 +115,8 @@ const Template = () => {
                    zoom="8"
                    map-style="mapbox://styles/mapbox/light-v10"
                    interactive
-                   access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg">            
+                   access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
+                   map-position="relative">            
                 </toujou-map>
             </section>
        </div>

@@ -179,8 +179,206 @@ const Template = () => {
                         zoom="8"
                         map-style="mapbox://styles/mapbox/light-v10"
                         interactive
-                        access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg">
+                        access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
+                        map-position="relative">
                 </toujou-map>
+            </section>
+            <section class="chapter">
+                <h2>Mitarbeiter</h2>
+                <ul class="card-collection">
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="person" item-design="default" item-orientation="vertical" role="article">
+                            <div class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                                </figure>
+                            </div>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Team-Lead</span>
+                                </p>
+                                <address class="address collection-item__address">
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="telephone" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="globe" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            www.abcdef.com
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="email" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            max@abcdef.com
+                                        </a>
+                                    </p>
+                                </address>
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    Mehr erfahren
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="person" item-design="default" item-orientation="vertical" role="article">
+                            <div class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                                </figure>
+                            </div>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Team-Lead</span>
+                                </p>
+                                <address class="address collection-item__address">
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="telephone" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="globe" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            www.abcdef.com
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="email" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            max@abcdef.com
+                                        </a>
+                                    </p>
+                                </address>
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    Mehr erfahren
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="person" item-design="default" item-orientation="vertical" role="article">
+                            <div class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                                </figure>
+                            </div>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Team-Lead</span>
+                                </p>
+                                <address class="address collection-item__address">
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="telephone" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="globe" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            www.abcdef.com
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="email" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            max@abcdef.com
+                                        </a>
+                                    </p>
+                                </address>
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    Mehr erfahren
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="person" item-design="default" item-orientation="vertical" role="article">
+                            <div class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                                </figure>
+                            </div>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Team-Lead</span>
+                                </p>
+                                <address class="address collection-item__address">
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="telephone" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
+                                            0123 123456789
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="globe" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            www.abcdef.com
+                                        </a>
+                                    </p>
+                                    <p class="address__item">
+                                        <a href="#" class="address__link">
+                                            <toujou-icon class="icon" icon-name="email" icon-color="font"
+                                                         icon-size="m"></toujou-icon>
+                                            max@abcdef.com
+                                        </a>
+                                    </p>
+                                </address>
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    Mehr erfahren
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                </ul>
             </section>
         </div>
     `;
