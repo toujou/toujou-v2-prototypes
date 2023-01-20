@@ -8,6 +8,7 @@ import locationFinderDocs from './location-finder.docs.mdx';
 import '../../../../node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder.js'
 
 import { rest } from "msw";
+import { placesgeoMockUrl, placesgeoMockRes } from "./mocks/placesgeo.mock";
 
 export default {
     title: 'COMPONENTS/LocationFinder',
@@ -18,12 +19,19 @@ export default {
         },
         msw: {
             handlers: [
-                rest.get('/user', (req, res, ctx) => {
+                rest.get('/user', (_req, res, ctx) => {
+                    console.log('MOCK TEST')
                     return res(
                         ctx.json({
                             firstName: 'Neil',
                             lastName: 'Maverick',
                         })
+                    )
+                }),
+                rest.get(placesgeoMockUrl, (_req, res, ctx) => {
+                    console.log('MOCKING THE REQUEST TO /placesgeo...');
+                    return res(
+                        ctx.json(placesgeoMockRes)
                     )
                 }),
             ],
@@ -32,16 +40,15 @@ export default {
 } as Meta;
 
 const Template = () => {
-    console.log('111111111');
-    const test = fetch("/user")
-        .then((response) => {
-            console.log('AAAAA', response);
-            return response.json()
-        })
-        .then((data) => {
-            console.log('XXXXXXXXXXX', data)
-        })
-        .catch((error) => console.log('ERRORRRRRRRR', error));
+    // const test = fetch("/user")
+    //     .then((response) => {
+    //         console.log('AAAAA', response);
+    //         return response.json()
+    //     })
+    //     .then((data) => {
+    //         console.log('XXXXXXXXXXX', data)
+    //     })
+    //     .catch((error) => console.log('ERRORRRRRRRR', error));
 
     return `
         <toujou-location-finder 
