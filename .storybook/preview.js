@@ -43,6 +43,18 @@ import { customViewports } from "./configUtils/customViewports.js";
 
 import toujouTheme from "./toujouTheme";
 
+// Service worker for the mocks
+import { initialize, mswDecorator } from "msw-storybook-addon";
+let workerOptions = {
+  serviceWorker: {
+    url: "./mockServiceWorker.js",
+  },
+  onUnhandledRequest: 'bypass',
+};
+initialize(workerOptions);
+
+export const decorators = [mswDecorator];
+
 export const parameters = {
   docs: {
     theme: toujouTheme,
