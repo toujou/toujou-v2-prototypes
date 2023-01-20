@@ -89,16 +89,16 @@ const Template = () => {
                             <toujou-social-media-bar class="social-media-bar" element-design="default" inline no-headline>
                                 <div class="social-media-bar__links">
                                     <a href="#" class="social-media-bar__link" aria-label="Our facebook account">
-                                        <toujou-icon class="icon" icon-name="sm-facebook" icon-size="l" icon-color="primary" aria-hidden=""></toujou-icon>
+                                        <toujou-icon class="icon" icon-name="sm-facebook" icon-size="xl" icon-color="primary" aria-hidden=""></toujou-icon>
                                     </a>
                                     <a href="#" class="social-media-bar__link" aria-label="Our twitter account">
-                                        <toujou-icon class="icon" icon-name="sm-twitter" icon-size="l" icon-color="primary" aria-hidden=""></toujou-icon>
+                                        <toujou-icon class="icon" icon-name="sm-twitter" icon-size="xl" icon-color="primary" aria-hidden=""></toujou-icon>
                                     </a>
                                     <a href="#" class="social-media-bar__link" aria-label="Our instagram account">
-                                        <toujou-icon class="icon" icon-name="sm-instagram" icon-size="l" icon-color="primary" aria-hidden=""></toujou-icon>
+                                        <toujou-icon class="icon" icon-name="sm-instagram" icon-size="xl" icon-color="primary" aria-hidden=""></toujou-icon>
                                     </a>
                                     <a href="#" class="social-media-bar__link" aria-label="Our youtube account">
-                                        <toujou-icon class="icon" icon-name="sm-youtube" icon-size="l" icon-color="primary" aria-hidden=""></toujou-icon>
+                                        <toujou-icon class="icon" icon-name="sm-youtube" icon-size="xl" icon-color="primary" aria-hidden=""></toujou-icon>
                                     </a>
                                 </div>
                             </toujou-social-media-bar>

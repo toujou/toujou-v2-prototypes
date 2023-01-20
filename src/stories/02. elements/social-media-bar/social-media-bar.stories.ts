@@ -62,7 +62,7 @@ interface SliderStoryProps {
 }
 
 const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
-    const iconSize = args.isInline ? 'l' : 'xxl';
+    const iconSize = args.isInline ? 'xl' : 'xxl';
     return `       
         <toujou-social-media-bar class="social-media-bar" element-design="${args.elementDesign}" ${args.hideHeadline ? 'no-headline' : ''} ${args.isInline ? 'inline' : ''}>
             ${args.hideHeadline ? '' : `<h3 class="social-media-bar__headline">Get in touch</h3>`}

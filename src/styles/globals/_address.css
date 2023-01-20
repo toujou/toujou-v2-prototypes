@@ -10,7 +10,7 @@
     --address-link-display: flex;
     --address-link-align-items: center;
     --address-link-justify-content: flex-start;
-    --address-link-gap: var(--spacing-s);
+    --address-link-gap: var(--spacing-normal);
 
     font-family: var(--address-font-family);
     font-size: var(--address-font-size);

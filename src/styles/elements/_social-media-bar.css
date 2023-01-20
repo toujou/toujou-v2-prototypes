@@ -53,6 +53,7 @@
     --social-media-bar-padding: 0;
     --social-media-bar-margin: var(--spacing-m) 0;
     --social-media-bar-align-items: flex-start;
+    --social-media-bar-links-gap: var(--spacing-normal);
 }
 
 .social-media-bar[element-design="primary"],
