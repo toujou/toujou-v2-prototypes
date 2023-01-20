@@ -9,6 +9,7 @@ import '../../../../node_modules/@toujou/toujou-location-finder/dist/toujou-loca
 
 import { rest } from "msw";
 import { placesgeoMockUrl, placesgeoMockRes } from "./mocks/placesgeo.mock";
+import { placesteaserMockRes, placesteaserMockUrl } from "./mocks/placesteaser.mock";
 
 export default {
     title: 'COMPONENTS/LocationFinder',
@@ -19,19 +20,19 @@ export default {
         },
         msw: {
             handlers: [
-                rest.get('/user', (_req, res, ctx) => {
-                    console.log('MOCK TEST')
-                    return res(
-                        ctx.json({
-                            firstName: 'Neil',
-                            lastName: 'Maverick',
-                        })
-                    )
-                }),
                 rest.get(placesgeoMockUrl, (_req, res, ctx) => {
                     console.log('MOCKING THE REQUEST TO /placesgeo...');
                     return res(
+                        ctx.status(200),
                         ctx.json(placesgeoMockRes)
+                    )
+                }),
+                rest.get(placesteaserMockUrl, (_req, res, ctx) => {
+                    console.log('MOCKING THE REQUEST TO /placesteaser...');
+                    return res(
+                        ctx.status(200),
+                        ctx.set('Content-Type', 'text/html'),
+                        ctx.text(placesteaserMockRes)
                     )
                 }),
             ],
@@ -40,15 +41,14 @@ export default {
 } as Meta;
 
 const Template = () => {
-    // const test = fetch("/user")
-    //     .then((response) => {
-    //         console.log('AAAAA', response);
-    //         return response.json()
-    //     })
-    //     .then((data) => {
-    //         console.log('XXXXXXXXXXX', data)
-    //     })
-    //     .catch((error) => console.log('ERRORRRRRRRR', error));
+    fetch(placesteaserMockUrl)
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            console.log('XXXXXXXXXXX', data)
+        })
+        .catch((error) => console.log('ERRORRRRRRRR', error));
 
     return `
         <toujou-location-finder 
