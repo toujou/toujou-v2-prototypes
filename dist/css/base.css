@@ -2433,6 +2433,42 @@ body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     overflow: hidden !important;
 }
 
+.address {
+    --address-font-family: var(--font-family-text);
+    --address-font-size: var(--font-size-normal);
+    --address-color: var(--color-font);
+    --address-line-height: var(--line-height-normal);
+    --address-font-style: normal;
+
+    --address-item-margin: 0;
+
+    --address-link-display: flex;
+    --address-link-align-items: center;
+    --address-link-justify-content: flex-start;
+    --address-link-gap: var(--spacing-s);
+
+    font-family: var(--address-font-family);
+    font-size: var(--address-font-size);
+    color: var(--address-color);
+    line-height: var(--address-line-height);
+    font-style: var(--address-font-style);
+}
+
+.address__item {
+    margin: var(--address-item-margin);
+}
+
+.address__item + .address__item {
+    --address-item-margin: var(--spacing-s) 0 0;
+}
+
+.address__link {
+    display: var(--address-link-display);
+    align-items: var(--address-link-align-items);
+    justify-content: var(--address-link-justify-content);
+    gap: var(--address-link-gap);
+}
+
 .alert {
     --alert-bg-color: var(--color-primary-o-10);
     --alert-text-color: var(--color-font);
@@ -3036,10 +3072,12 @@ p > .button {
 }
 
 .chapter {
+    --chapter-position: relative;
     --chapter-background-color: var(--color-bg);
     --chapter-margin: 0;
     --chapter-padding: var(--spacing-between-elements-normal) 0;
 
+    position: relative;
     background-color: var(--chapter-background-color);
     margin: var(--chapter-margin);
     padding: var(--chapter-padding);
@@ -3057,10 +3095,18 @@ p > .button {
     --chapter-background-color: var(--color-font);
 }
 
+.chapter--background {
+    --chapter-background-color: var(--color-font-o-10);
+}
+
 .chapter--primary,
 .chapter--secondary,
 .chapter--inverted {
     --color-headline: var(--color-bg);
+}
+
+.chapter[no-padding] {
+    --chapter-padding: 0;
 }
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
@@ -5558,6 +5604,15 @@ p + :is(p, ul, ol) {
 
 .notes {
     font-size: var(--font-size-s);
+}
+
+[type-weight="normal"] {
+    font-weight: var(--font-weight-text-normal);
+}
+
+[type-weight="bold"],
+strong {
+    font-weight: var(--font-weight-text-bold);
 }
 
 a {

@@ -41,3 +41,22 @@ With the `element-design` element we can set element's colors. Accepted values a
 - `primary`
 - `secondary`
 - `inverted`
+
+### inline
+With the `inline` attribute we can place the social-media-bar inline with other elements, like for instance inside the address element.
+
+This attribute adds styles to remove padding, margins, and alignment.
+
+Works well combined with the `no-headline` attribute.
+
+> Icon inside the `inline` social-media-bar are only `l` in size, instead of `xxl` in the normal social-media-bar
+
+```html
+<toujou-social-media-bar class="social-media-bar" element-design="default" no-headline inline>
+    <div class="social-media-bar__links">
+        <a href="#" class="social-media-bar__link" aria-label="Our facebook account">
+            <toujou-icon class="icon" icon-name="sm-facebook" icon-size="l" icon-color="primary" aria-hidden></toujou-icon>
+        </a>
+    </div>
+</toujou-social-media-bar>
+```

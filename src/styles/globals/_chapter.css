@@ -1,8 +1,10 @@
 .chapter {
+    --chapter-position: relative;
     --chapter-background-color: var(--color-bg);
     --chapter-margin: 0;
     --chapter-padding: var(--spacing-between-elements-normal) 0;
 
+    position: relative;
     background-color: var(--chapter-background-color);
     margin: var(--chapter-margin);
     padding: var(--chapter-padding);
@@ -20,10 +22,18 @@
     --chapter-background-color: var(--color-font);
 }
 
+.chapter--background {
+    --chapter-background-color: var(--color-font-o-10);
+}
+
 .chapter--primary,
 .chapter--secondary,
 .chapter--inverted {
     --color-headline: var(--color-bg);
+}
+
+.chapter[no-padding] {
+    --chapter-padding: 0;
 }
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */

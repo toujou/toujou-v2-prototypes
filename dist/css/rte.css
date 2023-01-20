@@ -1767,6 +1767,15 @@ p + :is(p, ul, ol) {
     font-size: var(--font-size-s);
 }
 
+[type-weight="normal"] {
+    font-weight: var(--font-weight-text-normal);
+}
+
+[type-weight="bold"],
+strong {
+    font-weight: var(--font-weight-text-bold);
+}
+
 a {
     color: var(--color-primary);
     overflow-wrap: break-word;

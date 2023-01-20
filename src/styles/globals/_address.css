@@ -1,0 +1,35 @@
+.address {
+    --address-font-family: var(--font-family-text);
+    --address-font-size: var(--font-size-normal);
+    --address-color: var(--color-font);
+    --address-line-height: var(--line-height-normal);
+    --address-font-style: normal;
+
+    --address-item-margin: 0;
+
+    --address-link-display: flex;
+    --address-link-align-items: center;
+    --address-link-justify-content: flex-start;
+    --address-link-gap: var(--spacing-s);
+
+    font-family: var(--address-font-family);
+    font-size: var(--address-font-size);
+    color: var(--address-color);
+    line-height: var(--address-line-height);
+    font-style: var(--address-font-style);
+}
+
+.address__item {
+    margin: var(--address-item-margin);
+}
+
+.address__item + .address__item {
+    --address-item-margin: var(--spacing-s) 0 0;
+}
+
+.address__link {
+    display: var(--address-link-display);
+    align-items: var(--address-link-align-items);
+    justify-content: var(--address-link-justify-content);
+    gap: var(--address-link-gap);
+}

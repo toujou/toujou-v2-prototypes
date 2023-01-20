@@ -62,6 +62,7 @@
 @import './elements/_third-party-content.css';
 @import './elements/_skip-links.css';
 @import './elements/_location-finder.css';
+@import './elements/_schema.css';
 
 
 body {
