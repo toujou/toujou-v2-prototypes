@@ -1,14 +1,4 @@
-.location-finder {
-    /* element variables */
-    --toujou-location-finder-position: relative;
-    --toujou-location-finder-display: grid;
-    --toujou-location-finder-height: auto;
-    --toujou-location-finder-width: 100%;
-    --toujou-location-finder-max-width: var(--content-max-width);
-    --toujou-location-finder-aspect-ratio: var(--aspect-ratio-square);
-    --toujou-location-finder-margin: var(--spacing-between-elements-normal) auto 0;
-    --toujou-location-finder-grid-z-index: var(--z-index-content);
-
+:root {
     /* webcomponent variables */
     --toujou-location-finder-breakpoint: 840px;
     --toujou-location-finder-image-size: 80px;
@@ -56,6 +46,19 @@
     --toujou-location-finder-sidebar-locator-icon-height: var(--font-size-m);
     --toujou-location-finder-sidebar-locator-icon-width: var(--font-size-m);
     --toujou-location-finder-sidebar-locator-icon-image: var(--icon-target);
+}
+
+.location-finder {
+    /* element variables */
+    --toujou-location-finder-position: relative;
+    --toujou-location-finder-display: grid;
+    --toujou-location-finder-height: auto;
+    --toujou-location-finder-width: 100%;
+    --toujou-location-finder-max-width: var(--content-max-width);
+    --toujou-location-finder-aspect-ratio: var(--aspect-ratio-square);
+    --toujou-location-finder-margin: var(--spacing-between-elements-normal) auto 0;
+    --toujou-location-finder-grid-z-index: var(--z-index-content);
+
 
     display: var(--toujou-location-finder-display);
     height: var(--toujou-location-finder-height);
