@@ -26,16 +26,28 @@ export default {
             defaultValue: ['none'],
             required: true,
         },
+        hasNoPaddingAttr: {
+            table: {
+                category: "Chapter settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Chapter without padding',
+            description: "Set the 'no-padding' attribute, which remove the default chapter padding",
+            control: { type: 'boolean' },
+            defaultValue: ['false'],
+            required: true,
+        },
     }
 } as Meta;
 
 interface ChapterStoryProps {
     variant: string,
+    hasNoPaddingAttr: boolean,
 }
 
 const Template: Story<ChapterStoryProps> = (args: ChapterStoryProps) => {
     return `
-        <section class="chapter chapter--${args.variant}">
+        <section class="chapter chapter--${args.variant}" ${args.hasNoPaddingAttr ? 'no-padding' : ''}>
             <toujou-text-block class="text-block" text-block-column-count="1">
                 <toujou-text-block-column class="text-block-column">
                     <div class="text-block__content">
@@ -52,4 +64,5 @@ export const Chapter = Template.bind({});
 
 Chapter.args = {
     variant: 'none',
+    hasNoPaddingAttr: false,
 }

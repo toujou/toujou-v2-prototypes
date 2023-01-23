@@ -32,7 +32,8 @@
     --color-headline: var(--color-bg);
 }
 
-.chapter[no-padding] {
+.chapter[no-padding],
+.chapter--no-padding {
     --chapter-padding: 0;
 }
 
