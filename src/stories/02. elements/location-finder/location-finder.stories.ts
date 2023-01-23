@@ -5,7 +5,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 // @ts-ignore
 import locationFinderDocs from './location-finder.docs.mdx';
 
-import '../../../../node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder.js'
+import '@toujou/toujou-location-finder/dist/toujou-location-finder.js'
 
 import { rest } from "msw";
 import { placesgeoMockUrl, placesgeoMockRes } from "./mocks/placesgeo.mock";
