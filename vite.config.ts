@@ -24,20 +24,24 @@ export default defineConfig({
                 'toujou-media-info': path.resolve(__dirname, 'src/components/toujou-media-info/toujou-media-info.ts'),
                 'toujou-topbutton': path.resolve(__dirname, 'src/components/toujou-topbutton/toujou-topbutton.ts'),
                 'toujou-inpage-nav': path.resolve(__dirname, 'src/components/copied/toujou-inpage-nav/toujou-inpage-nav.js'),
-                'toujou-map': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map.js'),
-                'toujou-map-geojson': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-geojson.js'),
-                'toujou-map-layer': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-layer.js'),
-                'toujou-map-marker': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-marker.js'),
-                'toujou-map-popup': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-popup.js'),
-                'toujou-map-static': path.resolve(__dirname, 'src/components/copied/toujou-map/toujou-map-static.js'),
                 'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
                 'toujou-consent': path.resolve(__dirname, 'src/components/copied/toujou-consent/toujou-consent'),
                 'toujou-consent-widget': path.resolve(__dirname, 'src/components/copied/toujou-consent-widget/toujou-consent-widget'),
+
                 // Skippy links must be exported, so we can import it on the skip-links partial
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
+
                 // components from the @toujou/ui-components
-                'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder'),
-                'toujou-location-finder-teaser': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder-teaser'),
+                // 'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder'),
+                // 'toujou-location-finder-teaser': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder-teaser'),
+                'toujou-map': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map'),
+                'toujou-map-geojson': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-geojson'),
+                'toujou-map-layer': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-layer'),
+                'toujou-map-marker': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-marker'),
+                'toujou-map-popup': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-popup'),
+                'toujou-map-static': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-static'),
+                'toujou-map-spiderfy': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-spiderfy'),
+
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
             },

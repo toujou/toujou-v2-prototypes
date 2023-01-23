@@ -24,15 +24,16 @@ import "../src/components/copied/toujou-inpage-nav/toujou-inpage-nav";
 import "../src/components/copied/toujou-consent/toujou-consent";
 import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
 import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
-import "../src/components/copied/toujou-map/toujou-map";
-import "../src/components/copied/toujou-map/toujou-map-geojson";
-import "../src/components/copied/toujou-map/toujou-map-layer";
-import "../src/components/copied/toujou-map/toujou-map-marker";
-import "../src/components/copied/toujou-map/toujou-map-popup";
-import "../src/components/copied/toujou-map/toujou-map-static";
 
 // ELEMENTS FROM @TOUJOU/UI-COMPONENTS
-import "../node_modules/@toujou/toujou-spinner/dist/toujou-spinner"
+import "../node_modules/@toujou/toujou-spinner/dist/toujou-spinner";
+import "../node_modules/@toujou/toujou-map/dist/toujou-map";
+import "../node_modules/@toujou/toujou-map/dist/toujou-map-geojson";
+import "../node_modules/@toujou/toujou-map/dist/toujou-map-layer";
+import "../node_modules/@toujou/toujou-map/dist/toujou-map-marker";
+import "../node_modules/@toujou/toujou-map/dist/toujou-map-popup";
+import "../node_modules/@toujou/toujou-map/dist/toujou-map-spiderfy";
+import "../node_modules/@toujou/toujou-map/dist/toujou-map-static";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
@@ -45,9 +46,12 @@ import toujouTheme from "./toujouTheme";
 
 // Service worker for the mocks
 import { initialize, mswDecorator } from "msw-storybook-addon";
+const workerUrl = window.location.host === 'localhost:6060'
+    ? './mockServiceWorker.js'
+    : 'https://github.com/toujou/toujou-v2-prototypes/blob/1451aa1ea1e1e3d28bc0bc78096c02d774085958/mockServiceWorker.js';
 let workerOptions = {
   serviceWorker: {
-    url: "./mockServiceWorker.js",
+    url: workerUrl,
   },
   onUnhandledRequest: 'bypass',
 };
