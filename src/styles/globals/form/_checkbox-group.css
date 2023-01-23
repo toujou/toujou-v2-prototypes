@@ -7,6 +7,7 @@
     --checkbox-group-label-font-size: var(--form-input-font-size);
     --checkbox-group-label-font-weight: var(--form-input-font-weight);
     --checkbox-group-label-color: var(--form-input-color);
+    --checkbox-group-label-padding: 0 calc(var(--input-group-icon-size) + var(--spacing-normal)) 0 0;
 
     --checkbox-group-description-column: 2;
 
@@ -36,6 +37,7 @@
     font-size: var(--checkbox-group-label-font-size);
     font-weight: var(--checkbox-group-label-font-weight);
     color: var(--checkbox-group-label-color);
+    padding: var(--checkbox-group-label-padding);
 }
 
 .input-group--disabled .checkbox-group__label {
