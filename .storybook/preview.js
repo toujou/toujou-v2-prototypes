@@ -48,7 +48,7 @@ import toujouTheme from "./toujouTheme";
 import { initialize, mswDecorator } from "msw-storybook-addon";
 const workerUrl = window.location.host === 'localhost:6060'
     ? './mockServiceWorker.js'
-    : 'https://github.com/toujou/toujou-v2-prototypes/blob/1451aa1ea1e1e3d28bc0bc78096c02d774085958/mockServiceWorker.js';
+    : '/blob/1451aa1ea1e1e3d28bc0bc78096c02d774085958/mockServiceWorker.js';
 let workerOptions = {
   serviceWorker: {
     url: workerUrl,
@@ -87,3 +87,4 @@ export const parameters = {
 }
 
 console.clear();
+console.log('11111');
