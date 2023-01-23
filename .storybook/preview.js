@@ -45,20 +45,21 @@ import { customViewports } from "./configUtils/customViewports.js";
 import toujouTheme from "./toujouTheme";
 
 // Service worker for the mocks
-import { initialize, mswDecorator } from "msw-storybook-addon";
-const workerUrl = window.location.host === 'localhost:6060'
-    ? './mockServiceWorker.js'
-    : '/toujou-v2-prototypes/mockServiceWorker.js';
+// TODO: I think for this to work we will need to add it to the assets folder so it gets copied to the gh-page on deply
+// import { initialize, mswDecorator } from "msw-storybook-addon";
+// const workerUrl = window.location.host === 'localhost:6060'
+//     ? './mockServiceWorker.js'
+//     : '/toujou-v2-prototypes/mockServiceWorker.js';
+//
+// let workerOptions = {
+//   serviceWorker: {
+//     url: workerUrl,
+//   },
+//   onUnhandledRequest: 'bypass',
+// };
+// initialize(workerOptions);
 
-let workerOptions = {
-  serviceWorker: {
-    url: workerUrl,
-  },
-  onUnhandledRequest: 'bypass',
-};
-initialize(workerOptions);
-
-export const decorators = [mswDecorator];
+// export const decorators = [mswDecorator];
 
 export const parameters = {
   docs: {
@@ -88,4 +89,3 @@ export const parameters = {
 }
 
 console.clear();
-console.log('2222');
