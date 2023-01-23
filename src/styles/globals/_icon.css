@@ -617,6 +617,16 @@
     -webkit-mask-image: var(--icon-sm-twitter-circle);
 }
 
+.icon[icon-name="sm-tiktok"] {
+    mask-image: var(--icon-sm-tiktok);
+    -webkit-mask-image: var(--icon-sm-tiktok);
+}
+
+.icon[icon-name="sm-tiktok-circle"] {
+    mask-image: var(--icon-sm-tiktok-circle);
+    -webkit-mask-image: var(--icon-sm-tiktok-circle);
+}
+
 .icon[icon-name="sm-xing"] {
     mask-image: var(--icon-sm-xing);
     -webkit-mask-image: var(--icon-sm-xing);

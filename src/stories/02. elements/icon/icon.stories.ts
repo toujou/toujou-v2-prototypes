@@ -145,6 +145,8 @@ const iconNames = [
     'sm-linkedin-circle',
     'sm-pinterest',
     'sm-pinterest-circle',
+    'sm-tiktok-circle',
+    'sm-tiktok',
     'sm-twitter',
     'sm-twitter-circle',
     'sm-xing',

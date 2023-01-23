@@ -388,6 +388,8 @@ figure {
     --icon-sm-pinterest-circle: url('../assets/icons/icon-sm-pinterest-circle.svg');
     --icon-sm-twitter: url('../assets/icons/icon-sm-twitter.svg');
     --icon-sm-twitter-circle: url('../assets/icons/icon-sm-twitter-circle.svg');
+    --icon-sm-tiktok: url('../assets/icons/icon-sm-tiktok.svg');
+    --icon-sm-tiktok-circle: url('../assets/icons/icon-sm-tiktok-circle.svg');
     --icon-sm-xing: url('../assets/icons/icon-sm-xing.svg');
     --icon-sm-xing-circle: url('../assets/icons/icon-sm-xing-circle.svg');
     --icon-sm-youtube: url('../assets/icons/icon-sm-youtube.svg');
@@ -469,17 +471,18 @@ figure {
 ::before,
 ::after {
     /* FONT SIZE*/
-    --font-size-xxxxl: 3.875rem; /* 62px */
-    --font-size-xxxl: 3rem;      /* 48px */
-    --font-size-xxl: 2.5rem;     /* 40px */
-    --font-size-xl: 2rem;        /* 32px */
-    --font-size-l: 1.75rem;      /* 28px */
-    --font-size-m: 1.5rem;       /* 24px */
-    --font-size-ms: 1.25rem;     /* 20px */
-    --font-size-normal: 1rem;    /* 16px */
-    --font-size-s: .875rem;      /* 14px */
-    --font-size-xs: .75rem;      /* 12px */
-    --font-size-xxs: .625rem;    /* 10px */
+    --font-size-base: 1rem;                                    /* 16px */
+    --font-size-xxxxl: calc(var(--font-size-base) * 3.875);    /* 62px */
+    --font-size-xxxl: calc(var(--font-size-base) * 3);      /* 48px */
+    --font-size-xxl: calc(var(--font-size-base) * 2.5);     /* 40px */
+    --font-size-xl: calc(var(--font-size-base) * 2);        /* 32px */
+    --font-size-l: calc(var(--font-size-base) * 1.75);      /* 28px */
+    --font-size-m: calc(var(--font-size-base) * 1.5);       /* 24px */
+    --font-size-ms: calc(var(--font-size-base) * 1.25);     /* 20px */
+    --font-size-normal: calc(var(--font-size-base) * 1);    /* 16px */
+    --font-size-s: calc(var(--font-size-base) * .875);      /* 14px */
+    --font-size-xs: calc(var(--font-size-base) * .75);      /* 12px */
+    --font-size-xxs: calc(var(--font-size-base) * .625);    /* 10px */
 
     /* LINE HEIGHTS */
     --line-height-l: 2;
@@ -1182,6 +1185,7 @@ figure {
     --checkbox-group-label-font-size: var(--form-input-font-size);
     --checkbox-group-label-font-weight: var(--form-input-font-weight);
     --checkbox-group-label-color: var(--form-input-color);
+    --checkbox-group-label-padding: 0 calc(var(--input-group-icon-size) + var(--spacing-normal)) 0 0;
 
     --checkbox-group-description-column: 2;
 
@@ -1211,6 +1215,7 @@ figure {
     font-size: var(--checkbox-group-label-font-size);
     font-weight: var(--checkbox-group-label-font-weight);
     color: var(--checkbox-group-label-color);
+    padding: var(--checkbox-group-label-padding);
 }
 
 .input-group--disabled .checkbox-group__label {
@@ -3105,7 +3110,8 @@ p > .button {
     --color-headline: var(--color-bg);
 }
 
-.chapter[no-padding] {
+.chapter[no-padding],
+.chapter--no-padding {
     --chapter-padding: 0;
 }
 
@@ -4485,6 +4491,16 @@ exit-warning {
     -webkit-mask-image: var(--icon-sm-twitter-circle);
 }
 
+.icon[icon-name="sm-tiktok"] {
+    mask-image: var(--icon-sm-tiktok);
+    -webkit-mask-image: var(--icon-sm-tiktok);
+}
+
+.icon[icon-name="sm-tiktok-circle"] {
+    mask-image: var(--icon-sm-tiktok-circle);
+    -webkit-mask-image: var(--icon-sm-tiktok-circle);
+}
+
 .icon[icon-name="sm-xing"] {
     mask-image: var(--icon-sm-xing);
     -webkit-mask-image: var(--icon-sm-xing);
@@ -5537,6 +5553,10 @@ ul,
 ol {
     padding-left: 0;
     margin: var(--spacing-normal) 0 var(--spacing-normal) calc(var(--spacing-normal) + var(--spacing-xs));
+}
+
+main > :is(ul, ol) {
+    padding-left: var(--spacing-normal);
 }
 
 :is(ul, ol) :is(ul, ol) {
