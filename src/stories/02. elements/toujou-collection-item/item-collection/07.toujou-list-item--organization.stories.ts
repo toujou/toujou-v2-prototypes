@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { Meta } from '@storybook/web-components';
 import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -10,49 +10,36 @@ export default {
     decorators: [withXD],
     parameters: {
         design: {
-            artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/114c19f6-d8db-4c00-8f35-9b51de86f94c/Desktop',
+            artboardUrl: 'https://xd.adobe.com/view/0bd327cf-3d4a-42b8-b2a2-6e5f149165f8-5e80/screen/92a6d427-39e9-4fd3-841d-fd46681307a1/Desktop',
         },
         badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: toujouCollectionItemDocs,
         },
     },
-    argTypes: {
-        elementDesign: {
-            table: {
-                category: "Toujou card settings",
-                defaultValue: { summary: 'default' },
-            },
-            name: 'Element Design',
-            description: "Choose element design for the cards",
-            options: ['default', 'primary', 'secondary', 'inverted'],
-            control: { type: 'radio' },
-            defaultValue: ['default'],
-            required: true,
-        },
-    }
 } as Meta;
 
-interface ToujouCardStoryProps {
-    elementDesign: any;
-}
-
-const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
+const Template = () => {
     return `
-        <ul class="card-collection">
-            <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+        <ol class="item-collection">
+            <li class="item-collection__item">
+                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            <span class="collection-item__category">
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark" icon-size="normal" icon-color="primary-dark"></toujou-icon>
+                                New
+                            </span>
+                        </div>
                     </div>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
+                        <h3 class="collection-item__title">Adidas AG</h3>
+                        
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
 
                         <address class="address collection-item__address">
@@ -91,19 +78,24 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+            <li class="item-collection__item">
+                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            <span class="collection-item__category">
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark" icon-size="normal" icon-color="primary-dark"></toujou-icon>
+                                Rabatt
+                            </span>
+                        </div>
                     </div>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
+                        <h3 class="collection-item__title">Adidas AG</h3>
+                        
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
 
                         <address class="address collection-item__address">
@@ -142,19 +134,18 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+            <li class="item-collection__item">
+                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                     </div>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
+                        <h3 class="collection-item__title">Adidas AG</h3>
+                        
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
 
                         <address class="address collection-item__address">
@@ -193,19 +184,18 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+            <li class="item-collection__item">
+                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                     </div>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
+                        <h3 class="collection-item__title">Adidas AG</h3>
+                        
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
 
                         <address class="address collection-item__address">
@@ -244,12 +234,8 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                     </div>
                 </toujou-collection-item>
             </li>
-        </ul>
+        </ol>
     `
 };
 
-export const CardPerson = Template.bind({});
-
-CardPerson.args = {
-    elementDesign: 'default',
-}
+export const ListItemOrganization = Template.bind({});

@@ -69,6 +69,10 @@ ol {
     margin: var(--spacing-normal) 0 var(--spacing-normal) calc(var(--spacing-normal) + var(--spacing-xs));
 }
 
+main > > :is(ul, ol) {
+    padding-left: var(--spacing-normal);
+}
+
 :is(ul, ol) :is(ul, ol) {
     margin: 0 0 0 var(--spacing-l);
 }

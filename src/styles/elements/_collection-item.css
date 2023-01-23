@@ -148,6 +148,8 @@
 
     --collection-item-address-margin: var(--spacing-normal) 0;
 
+    --collection-item-logo-margin: 0 0 var(--spacing-normal);
+
     position: var(--collection-item-position);
     display: var(--collection-item-display);
     flex-direction: var(--collection-item-flex-direction);
@@ -434,6 +436,10 @@
 .collection-item[item-design="secondary"] .address__link .icon,
 .collection-item[item-design="inverted"] .address__link .icon {
     background-color: var(--color-bg);
+}
+
+.collection-item__logo {
+    margin: var(--collection-item-logo-margin);
 }
 
 @media (hover: hover) {

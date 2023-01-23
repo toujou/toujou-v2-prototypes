@@ -48,7 +48,9 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         </figure>
                     </div>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+                        
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
 
@@ -96,7 +98,9 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         </figure>
                     </div>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
 
@@ -144,6 +148,8 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         </figure>
                     </div>
                     <div class="collection-item__bottom">
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+
                         <h3 class="collection-item__title">Adidas AG</h3>
                         
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
@@ -192,7 +198,9 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         </figure>
                     </div>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
 
