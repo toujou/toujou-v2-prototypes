@@ -63,6 +63,7 @@
     --media-info-scrim-display: block;
     --media-info-figcaption-display: block;
     --media-info-copyright-display: var(--toujou-media-copyright-display, block);
+    --media-info-pointer-events: all;
 }
 
 .media-info::before {
