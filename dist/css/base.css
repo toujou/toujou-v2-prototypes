@@ -3487,6 +3487,17 @@ exit-warning {
     font-style: var(--footer-address-text-style);
 }
 
+:is(
+    .footer__adress-text--name,
+    .footer__address-text--city,
+    .footer__address-text--street) + :is(
+    .footer__address-text--phone,
+    .footer__address-text--fax,
+    .footer__address-text--mail
+    ) {
+    margin-top: var(--footer-address-margin-bottom);
+}
+
 .footer__address-text .icon {
     margin-right: var(--spacing-normal);
 }
