@@ -24,7 +24,7 @@
     --image-card-grid-max-width: 100%;
 }
 
-:is(h1, h2, h3, h4, h5, .chapter) + .image-card-grid,
+:is(h1, h2, h3, h4, h5) + .image-card-grid,
 .image-card-grid:first-child {
     --image-card-grid-margin: 0 auto;
 }
