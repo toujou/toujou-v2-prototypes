@@ -47,9 +47,3 @@ blockquote:not(.blockquote__blockquote) + .blockquote__author::before {
     content: "—";
     margin-right: var(--spacing-s);
 }
-
-@media screen and (min-width: 960px) {
-    blockquote:not(.blockquote__blockquote) {
-        --blockquote-tag-icon-size: var(--spacing-xxl);
-    }
-}
