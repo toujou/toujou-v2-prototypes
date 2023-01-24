@@ -2589,12 +2589,6 @@ blockquote:not(.blockquote__blockquote) + .blockquote__author::before {
     margin-right: var(--spacing-s);
 }
 
-@media screen and (min-width: 960px) {
-    blockquote:not(.blockquote__blockquote) {
-        --blockquote-tag-icon-size: var(--spacing-xxl);
-    }
-}
-
 .burger-button {
     --burger-button-position: relative;
     --burger-button-size: var(--spacing-m);
@@ -5019,47 +5013,12 @@ main > .table-container {
     padding: var(--spacing-s) 0;
 }
 
-/* stylelint-disable-next-line max-line-length */
-
-:is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
-    margin-top: var(--text-block-grid-gap);
-}
-
-.text-block[text-block-media-position*="above"] .text-block-column {
-    display: flex;
-    flex-direction: column;
-    gap: var(--text-block-column-gap);
-    justify-content: flex-start;
-}
-
-.text-block[text-block-media-position*="below"] .text-block-column {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: var(--text-block-column-gap);
-    justify-content: flex-end;
-}
-
+.text-block__content > *:first-child,
 .text-block__content > :is(h1, h2, h3, h4, h5):first-child {
-    margin-top: var(--spacing-s);
+    margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
-    /* stylelint-disable-next-line max-line-length */
-    :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
-        margin-top: 0;
-    }
-
-    /* TEXT BLOCK MEDIA BESIDE */
-    .text-block[text-block-media-position*="beside"] .text-block-column {
-        --text-block-column-display: grid;
-        --text-block-column-grid-template-columns: 1fr 1fr;
-
-        display: var(--text-block-column-display);
-        grid-template-columns: var(--text-block-column-grid-template-columns);
-        grid-gap: var(--text-block-column-gap);
-        grid-auto-flow: dense;
-    }
-
     .text-block[text-block-media-position="beside-right"] .text-block__figure {
         grid-column: 2;
     }
@@ -5074,11 +5033,6 @@ main > .table-container {
         margin-bottom: calc(var(--text-block-grid-gap) / 2);
     }
 
-    /* TEXT BLOCK MEDIA LEFT INSIDE */
-    .text-block[text-block-media-position="inside-left"] .text-block-column {
-        transform: translateX(var(--text-block-grid-gap));
-    }
-
     .text-block[text-block-media-position="inside-left"] .text-block__figure {
         float: left;
         margin-right: calc(var(--text-block-grid-gap) / 2);
@@ -5090,11 +5044,6 @@ main > .table-container {
         padding-right: var(--text-block-grid-gap);
     }
 
-    /* TEXT BLOCK MEDIA RIGHT INSIDE */
-    .text-block[text-block-media-position="inside-right"] .text-block-column {
-        transform: translateX(calc(var(--text-block-grid-gap) * -1));
-    }
-
     .text-block[text-block-media-position="inside-right"] .text-block__figure {
         float: right;
         margin-left: calc(var(--text-block-grid-gap) / 2);
@@ -5104,11 +5053,6 @@ main > .table-container {
     .text-block[text-block-media-position="inside-right"] .text-block__content {
         padding-right: var(--text-block-media-inside-offset);
         padding-left: var(--text-block-grid-gap);
-    }
-
-    .text-block__content > *:first-child,
-    .text-block__content > :is(h1, h2, h3, h4, h5):first-child {
-        margin-top: 0;
     }
 }
 
@@ -5141,20 +5085,12 @@ main > .table-container {
         --text-block-grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .text-block[text-block-media-position="inside-left"] .text-block-column {
-        transform: translateX(calc(var(--text-block-grid-gap) / 2));
-    }
-
     .text-block[text-block-media-position="inside-left"] .text-block__figure {
         transform: translateX(calc(var(--text-block-grid-gap) * -.5));
     }
 
     .text-block[text-block-media-position="inside-left"] .text-block__content {
         margin-right: calc(var(--text-block-grid-gap) / 2);
-    }
-
-    .text-block[text-block-media-position="inside-right"] .text-block-column {
-        transform: translateX(calc(var(--text-block-grid-gap) * -.5));
     }
 
     .text-block[text-block-media-position="inside-right"] .text-block__figure {
@@ -5167,19 +5103,99 @@ main > .table-container {
 
     .details .text-block[text-block-media-position="inside-right"] .text-block__figure + .text-block__content {
         margin-left: 0;
-        padding-left: var(--spacing-normal);
+        padding-left: var(--spacing-m);
     }
 
     .details .text-block[text-block-media-position="inside-right"] .text-block__content {
         margin-left: 0;
         margin-right: 0;
-        padding-left: var(--spacing-normal);
-        padding-right: var(--spacing-normal);
+        padding-left: var(--spacing-m);
+        padding-right: var(--spacing-m);
     }
 }
 
 .details .text-block .text-block-column {
     margin-top: 0;
+}
+
+/* stylelint-disable-next-line max-line-length */
+
+:is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
+    margin-top: var(--text-block-grid-gap);
+}
+
+.text-block[text-block-media-position*="below"] .text-block-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--text-block-column-gap);
+    justify-content: flex-start;
+}
+
+.text-block[text-block-media-position*="below"] .text-block-column {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--text-block-column-gap);
+    justify-content: flex-end;
+}
+
+:is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"]) .text-block__content {
+    margin-top: var(--text-block-column-gap);
+}
+
+@media screen and (min-width: 768px) {
+    .text-block[text-block-media-position="inside-left"],
+    .text-block[text-block-media-position="inside-right"],
+    .text-block[text-block-media-position="beside-left"],
+    .text-block[text-block-media-position="beside-right"] {
+        --text-block-column-gap: var(--spacing-xl);
+    }
+
+    /* stylelint-disable-next-line max-line-length */
+    :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
+        margin-top: 0;
+    }
+
+    .text-block[text-block-media-position*="above"] .text-block__content {
+        margin-top: var(--text-block-column-gap);
+    }
+
+    /* TEXT BLOCK MEDIA BESIDE */
+    .text-block[text-block-media-position*="beside"] .text-block-column {
+        --text-block-column-display: grid;
+        --text-block-column-grid-template-columns: 1fr 1fr;
+
+        display: var(--text-block-column-display);
+        grid-template-columns: var(--text-block-column-grid-template-columns);
+        grid-gap: var(--text-block-column-gap);
+        grid-auto-flow: dense;
+    }
+
+    /* TEXT BLOCK MEDIA LEFT INSIDE */
+    .text-block[text-block-media-position="inside-left"] .text-block-column {
+        transform: translateX(var(--text-block-grid-gap));
+    }
+
+    /* TEXT BLOCK MEDIA RIGHT INSIDE */
+    .text-block[text-block-media-position="inside-right"] .text-block-column {
+        transform: translateX(calc(var(--text-block-grid-gap) * -1));
+    }
+
+    .text-block[text-block-media-position="inside-left"] .text-block__content,
+    .text-block[text-block-media-position="inside-right"] .text-block__content,
+    .text-block[text-block-media-position="beside-left"] .text-block__content,
+    .text-block[text-block-media-position="beside-right"] .text-block__content {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .text-block[text-block-media-position="inside-left"] .text-block-column {
+        transform: translateX(calc(var(--text-block-grid-gap) / 2));
+    }
+
+    .text-block[text-block-media-position="inside-right"] .text-block-column {
+        transform: translateX(calc(var(--text-block-grid-gap) * -.5));
+    }
 }
 
 .topbar {
