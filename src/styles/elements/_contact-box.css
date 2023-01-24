@@ -4,8 +4,7 @@
     --contact-box-left: 0;
     --contact-box-height: 100vh;
     --contact-box-width: 100%;
-    --contact-box-background-color: var(--color-black-o-50);
-    --contact-box-backdrop-filter: blur(var(--font-size-xxs));
+    --contact-box-background-color: var(--color-black-o-75);
     --contact-box-display: none;
     --contact-box-align-items: center;
     --contact-box-justify-content: center;
@@ -61,7 +60,6 @@
     height: var(--contact-box-height);
     width: var(--contact-box-width);
     background-color: var(--contact-box-background-color);
-    backdrop-filter: var(--contact-box-backdrop-filter);
     display: var(--contact-box-display);
     align-items: var(--contact-box-align-items);
     justify-content: var(--contact-box-justify-content);
