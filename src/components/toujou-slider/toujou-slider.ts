@@ -91,7 +91,7 @@ export class ToujouSlider extends LitElement {
      * Duration between automatic moves when autoplay is active
      * Docs: https://splidejs.com/guides/options/#interval
      */
-    @property({ reflect: true, attribute: 'autoplay-interval' })
+    @property({ reflect: true, attribute: 'auto-play-interval' })
     autoplayInterval: string = '6000';
 
     /**
