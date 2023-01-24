@@ -231,13 +231,13 @@
 
     .details .text-block[text-block-media-position="inside-right"] .text-block__figure + .text-block__content {
         margin-left: 0;
-        padding-left: var(--spacing-normal);
+        padding-left: var(--spacing-m);
     }
 
     .details .text-block[text-block-media-position="inside-right"] .text-block__content {
         margin-left: 0;
         margin-right: 0;
-        padding-left: var(--spacing-normal);
-        padding-right: var(--spacing-normal);
+        padding-left: var(--spacing-m);
+        padding-right: var(--spacing-m);
     }
 }
