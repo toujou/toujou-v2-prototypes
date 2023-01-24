@@ -52,21 +52,23 @@ interface HeroMediaStoryProps {
 
 const Template: Story<HeroMediaStoryProps> = (args: HeroMediaStoryProps) => {
     return `
-        <a href="#" class="hero-media" headline-alignment="${args.headerAlignment}">
-            <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="hero-media__media">
-            <h3 class="hero-media__title font--${args.headerSize}">Hero Media</h3>
-            
-            <toujou-media-info class="media-info">
-                <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                    <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
-                </button>
-                <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                    <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
-                </button>
-                <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
-                <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
-            </toujou-media-info>
-        </a>
+        <main>
+            <a href="#" class="hero-media" headline-alignment="${args.headerAlignment}">
+                <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="hero-media__media">
+                <h3 class="hero-media__title font--${args.headerSize}">Hero Media</h3>
+                
+                <toujou-media-info class="media-info">
+                    <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                        <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                    </button>
+                    <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                        <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                    </button>
+                    <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                    <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                </toujou-media-info>
+            </a>
+        </main>
     `;
 };
 

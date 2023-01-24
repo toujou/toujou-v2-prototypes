@@ -33,7 +33,7 @@
 
 :is(main, .chapter) > .hero-media {
     width: var(--hero-media-width);
-    max-width: var(--hero-media-max-width);
+    max-width: var(--content-wide-max-width);
 }
 
 .hero-media:first-child {
