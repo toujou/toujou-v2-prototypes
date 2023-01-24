@@ -51,6 +51,10 @@
     pointer-events: var(--media-info-pointer-events);
 }
 
+*[media-info-child-is-open] {
+    pointer-events: none !important;
+}
+
 .header .header-content + .media-info {
     --media-info-z-index: 0;
 }
@@ -63,7 +67,7 @@
     --media-info-scrim-display: block;
     --media-info-figcaption-display: block;
     --media-info-copyright-display: var(--toujou-media-copyright-display, block);
-    --media-info-pointer-events: all;
+    /*--media-info-pointer-events: all;*/
 }
 
 .media-info::before {

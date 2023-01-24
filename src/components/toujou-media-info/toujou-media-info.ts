@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit'
+import { LitElement, html, PropertyValues } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { ToujouMediaInfoStyles } from "./toujou-media-info.styles";
 
@@ -6,6 +6,8 @@ import { ToujouMediaInfoStyles } from "./toujou-media-info.styles";
 export class ToujouMediaInfo extends LitElement {
     @property({ type: Boolean, reflect: true, attribute: 'open' })
     isOpen: boolean = false;
+
+    private readonly isOpenParentAttribute = 'media-info-child-is-open';
 
     static styles = [ToujouMediaInfoStyles];
 
@@ -22,6 +24,14 @@ export class ToujouMediaInfo extends LitElement {
         super();
 
         this.addEventListener('click', this._handleClick);
+    }
+
+    updated(changed: PropertyValues<this>) {
+        if (changed.has('isOpen')) {
+            this.isOpen
+                ? this.parentElement?.setAttribute(this.isOpenParentAttribute, '')
+                : this.parentElement?.removeAttribute(this.isOpenParentAttribute);
+        }
     }
 
     /**
