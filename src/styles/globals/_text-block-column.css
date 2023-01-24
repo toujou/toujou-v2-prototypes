@@ -1,3 +1,60 @@
 .details .text-block .text-block-column {
     margin-top: 0;
 }
+
+/* stylelint-disable-next-line max-line-length */
+:is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
+    margin-top: var(--text-block-grid-gap);
+}
+
+.text-block[text-block-media-position*="above"] .text-block-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--text-block-column-gap);
+    justify-content: flex-start;
+}
+
+.text-block[text-block-media-position*="below"] .text-block-column {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--text-block-column-gap);
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+    /* stylelint-disable-next-line max-line-length */
+    :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
+        margin-top: 0;
+    }
+
+    /* TEXT BLOCK MEDIA BESIDE */
+    .text-block[text-block-media-position*="beside"] .text-block-column {
+        --text-block-column-display: grid;
+        --text-block-column-grid-template-columns: 1fr 1fr;
+
+        display: var(--text-block-column-display);
+        grid-template-columns: var(--text-block-column-grid-template-columns);
+        grid-gap: var(--text-block-column-gap);
+        grid-auto-flow: dense;
+    }
+
+    /* TEXT BLOCK MEDIA LEFT INSIDE */
+    .text-block[text-block-media-position="inside-left"] .text-block-column {
+        transform: translateX(var(--text-block-grid-gap));
+    }
+
+    /* TEXT BLOCK MEDIA RIGHT INSIDE */
+    .text-block[text-block-media-position="inside-right"] .text-block-column {
+        transform: translateX(calc(var(--text-block-grid-gap) * -1));
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .text-block[text-block-media-position="inside-left"] .text-block-column {
+        transform: translateX(calc(var(--text-block-grid-gap) / 2));
+    }
+
+    .text-block[text-block-media-position="inside-right"] .text-block-column {
+        transform: translateX(calc(var(--text-block-grid-gap) * -.5));
+    }
+}
