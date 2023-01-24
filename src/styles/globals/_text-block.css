@@ -107,8 +107,9 @@
     justify-content: flex-end;
 }
 
+.text-block__content > *:first-child,
 .text-block__content > :is(h1, h2, h3, h4, h5):first-child {
-    margin-top: var(--spacing-s);
+    margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -172,11 +173,6 @@
     .text-block[text-block-media-position="inside-right"] .text-block__content {
         padding-right: var(--text-block-media-inside-offset);
         padding-left: var(--text-block-grid-gap);
-    }
-
-    .text-block__content > *:first-child,
-    .text-block__content > :is(h1, h2, h3, h4, h5):first-child {
-        margin-top: 0;
     }
 }
 
