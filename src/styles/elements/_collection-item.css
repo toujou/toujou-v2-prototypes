@@ -206,6 +206,12 @@
     --collection-item-title-color: var(--color-bg);
 }
 
+/* Being discussed here: https://app.clickup.com/t/863fwyg03 */
+/*.collection-item:focus-within {*/
+/*    outline: var(--focus-outline-width) solid var(--focus-outline-color);*/
+/*    outline-offset: var(--focus-outline-offset);*/
+/*}*/
+
 .collection-item__top {
     position: var(--collection-item-top-position);
     margin: var(--collection-item-top-margin);
@@ -440,6 +446,38 @@
 
 .collection-item__logo {
     margin: var(--collection-item-logo-margin);
+}
+
+.collection-item[item-type="product"] a.collection-item__bottom:focus-within {
+    outline: none !important;
+}
+
+.collection-item[item-type="product"] a.collection-item__bottom:focus-within {
+    background-color: var(--color-primary);
+}
+
+.collection-item[item-type="product"][item-design="primary"] a.collection-item__bottom:focus-within {
+    background-color: var(--color-primary-dark);
+}
+
+.collection-item[item-type="product"][item-design="secondary"] a.collection-item__bottom:focus-within {
+    background-color: var(--color-secondary-dark);
+}
+
+.collection-item[item-type="product"][item-design="inverted"] a.collection-item__bottom:focus-within {
+    background-color: var(--color-font);
+}
+
+.collection-item[item-design="primary"] .address__link:focus-within {
+    color: var(--color-primary-dark);
+}
+
+.collection-item[item-design="secondary"] .address__link:focus-within {
+    color: var(--color-secondary-dark);
+}
+
+.collection-item[item-design="inverted"] .address__link:focus-within {
+    color: var(--color-font-light);
 }
 
 @media (hover: hover) {
