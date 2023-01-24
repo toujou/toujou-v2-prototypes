@@ -11,7 +11,7 @@
     --third-party-content-height: 100%;
     --third-party-content-width: 100%;
     --third-party-content-max-width: var(--content-wide-max-width);
-    --third-party-content-margin: 0;
+    --third-party-content-margin: 0 auto;
 
     --third-party-content-buttons-display: flex;
     --third-party-content-buttons-align-items: center;
