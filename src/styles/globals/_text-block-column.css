@@ -21,7 +21,7 @@
     justify-content: flex-end;
 }
 
-:is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"]) .text-block__content {
+:is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position="above"]) .text-block__content {
     margin-top: var(--text-block-column-gap);
 }
 
