@@ -150,13 +150,13 @@
 }
 
 @media screen and (min-width: 640px) {
-    .blockquote:not([blockquote-design="default"]) {
+    :not(.grid[grid-type="wide"]) .blockquote:not([blockquote-design="default"]) {
         --blockquote-padding: var(--spacing-xl);
     }
 }
 
 @media screen and (min-width: 960px) {
-    .blockquote:not([blockquote-design="default"]) {
+    :not(.grid[grid-type="wide"]) .blockquote:not([blockquote-design="default"]) {
         --blockquote-padding: var(--spacing-xxl);
     }
 
