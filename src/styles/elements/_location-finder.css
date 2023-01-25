@@ -1,7 +1,6 @@
 :root {
     /* webcomponent variables */
     --toujou-location-finder-breakpoint: 840px;
-    --toujou-location-finder-image-size: var(--spacing-xl);
     --toujou-location-finder-transition-settings: .25s ease-in-out;
 
     --toujou-location-finder-map-point-color: var(--color-primary);

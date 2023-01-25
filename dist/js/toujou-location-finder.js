@@ -990,7 +990,7 @@ uniform `+P+" "+C+" u_"+z+`;
 .teaser {
     padding: var(--toujou-location-finder-teaser-padding, .5rem);
     display: var(--toujou-location-finder-teaser-display, grid);
-    grid-template-columns: var(--toujou-location-finder-teaser-grid-columns, 1fr var(--toujou-location-finder-image-size));
+    grid-template-columns: var(--toujou-location-finder-teaser-grid-columns, 1fr var(--toujou-location-finder-teaser-image-size));
     grid-gap: var(--toujou-location-finder-teaser-gap, .5rem);
     text-decoration: var(--toujou-location-finder-teaser-text-decoration, none);
     border: var(--toujou-location-finder-teaser-border, none);
@@ -1078,6 +1078,7 @@ uniform `+P+" "+C+" u_"+z+`;
     line-height: 1;
     font-size: var(--toujou-location-finder-teaser-times-font-size, .75rem);
     font-family: var(--toujou-location-finder-teaser-times-font-family, var(--paragraph__family));
+    color: var(--toujou-location-finder-teaser-times-color, var(--font-color));
 }
 .teaser__address-meta--country,
 .teaser__address-meta--region {
