@@ -50,6 +50,13 @@ import { initialize, mswDecorator } from "msw-storybook-addon";
 let workerOptions = {
   onUnhandledRequest: 'bypass',
 };
+
+if (location.hostname === "toujou.github.io") {
+  workerOptions.serviceWorker = {
+    url: "https://github.com/toujou/toujou-v2-prototypes/blob/ac1bc1fddd16cdd482a09bf3a17fc84efde1f027/mockServiceWorker.js"
+  }
+}
+
 initialize(workerOptions);
 
 export const decorators = [mswDecorator];
@@ -82,4 +89,4 @@ export const parameters = {
 }
 
 console.clear();
-console.log('111111111');
+console.log('33333');
