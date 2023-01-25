@@ -20,7 +20,7 @@
     :root,
     ::before,
     ::after {
-        --content-spacing-between-columns: var(--spacing-l);
+        --content-spacing-between-columns: var(--spacing-xl);
         --topbar-height-small: 64px;
         --topbar-height-medium: 80px;
         --topbar-height-large: 100px;
