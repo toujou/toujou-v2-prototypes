@@ -46,7 +46,7 @@
 
     --toujou-location-finder-sidebar-locator-icon-height: var(--font-size-m);
     --toujou-location-finder-sidebar-locator-icon-width: var(--font-size-m);
-    --toujou-location-finder-sidebar-locator-icon-image: var(--icon-target);
+    --toujou-location-finder-sidebar-locator-icon-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyIDhjLTIuMjEgMC00IDEuNzktNCA0czEuNzkgNCA0IDQgNC0xLjc5IDQtNC0xLjc5LTQtNC00em04Ljk0IDNjLS40Ni00LjE3LTMuNzctNy40OC03Ljk0LTcuOTRWMmMwLS41NS0uNDUtMS0xLTFzLTEgLjQ1LTEgMXYxLjA2QzYuODMgMy41MiAzLjUyIDYuODMgMy4wNiAxMUgyYy0uNTUgMC0xIC40NS0xIDFzLjQ1IDEgMSAxaDEuMDZjLjQ2IDQuMTcgMy43NyA3LjQ4IDcuOTQgNy45NFYyMmMwIC41NS40NSAxIDEgMXMxLS40NSAxLTF2LTEuMDZjNC4xNy0uNDYgNy40OC0zLjc3IDcuOTQtNy45NEgyMmMuNTUgMCAxLS40NSAxLTFzLS40NS0xLTEtMWgtMS4wNnpNMTIgMTljLTMuODcgMC03LTMuMTMtNy03czMuMTMtNyA3LTcgNyAzLjEzIDcgNy0zLjEzIDctNyA3eiIvPjwvc3ZnPg==");
 }
 
 .location-finder {
