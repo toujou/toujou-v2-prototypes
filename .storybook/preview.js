@@ -53,7 +53,8 @@ let workerOptions = {
 
 if (location.hostname === "toujou.github.io") {
   workerOptions.serviceWorker = {
-    url: "https://github.com/toujou/toujou-v2-prototypes/blob/ac1bc1fddd16cdd482a09bf3a17fc84efde1f027/mockServiceWorker.js"
+    // url: "https://github.com/toujou/toujou-v2-prototypes/blob/ac1bc1fddd16cdd482a09bf3a17fc84efde1f027/mockServiceWorker.js"
+    url: "/toujou-v2-prototypes/assets/mockServiceWorker.js"
   }
 }
 
@@ -89,4 +90,4 @@ export const parameters = {
 }
 
 console.clear();
-console.log('33333');
+console.log('44444');
