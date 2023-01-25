@@ -120,11 +120,11 @@ button.slider-control--next {
 
 @media screen and (min-width: 1000px) {
     .slider[content-type="teaser"] button.slider-control--prev {
-        --slider-control-inset: 14rem auto auto var(--slider-control-distance-to-margin);
+        --slider-control-inset: 14vw auto auto var(--slider-control-distance-to-margin);
     }
 
     .slider[content-type="teaser"] button.slider-control--next {
-        --slider-control-inset: 14rem var(--slider-control-distance-to-margin) auto auto;
+        --slider-control-inset: 14vw var(--slider-control-distance-to-margin) auto auto;
     }
 }
 
@@ -135,6 +135,16 @@ button.slider-control--next {
 
     .slider[content-type="teaser"] button.slider-control--next {
         --slider-control-inset: 15vw var(--slider-control-distance-to-margin) auto auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .slider[content-type="teaser"] button.slider-control--prev {
+        --slider-control-inset: calc(50% - 1rem) auto auto var(--slider-control-distance-to-margin);
+    }
+
+    .slider[content-type="teaser"] button.slider-control--next {
+        --slider-control-inset: calc(50% - 1rem) var(--slider-control-distance-to-margin) auto auto;
     }
 }
 
