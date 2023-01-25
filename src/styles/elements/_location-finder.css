@@ -1,4 +1,6 @@
-:root {
+:root,
+::before,
+::after {
     /* webcomponent variables */
     --toujou-location-finder-breakpoint: 840px;
     --toujou-location-finder-transition-settings: .25s ease-in-out;
@@ -36,7 +38,6 @@
     --toujou-location-finder-search-left: var(--toujou-location-finder-padding);
 
     --toujou-location-finder-sidebar-width: var(--toujou-location-finder-panel-width);
-    --toujou-location-finder-sidebar-locator-icon-image: var(--icon-target);
 
     --toujou-location-finder-panel-position: absolute;
     --toujou-location-finder-panel-width: 240px;
