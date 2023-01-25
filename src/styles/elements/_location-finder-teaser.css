@@ -1,4 +1,4 @@
-:host {
+:root {
     --toujou-location-finder-teaser-name-font-family: var(--font-family-text);
     --toujou-location-finder-teaser-name-font-size: var(--font-size-normal);
     --toujou-location-finder-teaser-name-color: var(--color-primary);
