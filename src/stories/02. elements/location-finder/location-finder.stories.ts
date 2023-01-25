@@ -21,14 +21,14 @@ export default {
         msw: {
             handlers: [
                 rest.get(placesgeoMockUrl, (_req, res, ctx) => {
-                    console.log('MOCKING THE REQUEST TO /placesgeo...');
+                    console.info('%c LOCATION FINDER: Mocking the request to /placesgeo...', 'color: #29B6F6;');
                     return res(
                         ctx.status(200),
                         ctx.json(placesgeoMockRes)
                     )
                 }),
                 rest.get(placesteaserMockUrl, (_req, res, ctx) => {
-                    console.log('MOCKING THE REQUEST TO /placesteaser...');
+                    console.info('%c LOCATION FINDER: Mocking the request to /placesteaser...', 'color: #29B6F6;');
                     return res(
                         ctx.status(200),
                         ctx.set('Content-Type', 'text/html'),
@@ -41,15 +41,6 @@ export default {
 } as Meta;
 
 const Template = () => {
-    fetch(placesteaserMockUrl)
-        .then((response) => {
-            return response.json()
-        })
-        .then((data) => {
-            console.log('XXXXXXXXXXX', data)
-        })
-        .catch((error) => console.log('ERRORRRRRRRR', error));
-
     return `
         <toujou-location-finder 
             class="location-finder"

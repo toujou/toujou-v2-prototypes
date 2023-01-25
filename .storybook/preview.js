@@ -45,7 +45,7 @@ import { customViewports } from "./configUtils/customViewports.js";
 import toujouTheme from "./toujouTheme";
 
 // Service worker for the mocks
-// TODO: I think for this to work we will need to add it to the assets folder so it gets copied to the gh-page on deply
+// TODO: I think for this to work we will need to add it to the assets folder so it gets copied to the gh-page on deploy
 import { initialize, mswDecorator } from "msw-storybook-addon";
 // const workerUrl = window.location.host === 'localhost:6060'
 //     ? './mockServiceWorker.js'

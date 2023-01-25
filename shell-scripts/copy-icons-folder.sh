@@ -8,7 +8,7 @@ NOCOLOR='\033[0m'
 ORIGINAL_LOCATION=assets/
 STORYBOOK_DESTINATION_LOCATION=storybook-static/assets
 DIST_DESTINATION_LOCATION=dist/assets
-echo "${PURPLE}Starting copying the icons folder...${NOCOLOR} 📸"
+echo "${PURPLE}Start copying the icons folder...${NOCOLOR} 📸"
 
 cp -R ${ORIGINAL_LOCATION} ${STORYBOOK_DESTINATION_LOCATION}
 cp -R ${ORIGINAL_LOCATION} ${DIST_DESTINATION_LOCATION}
