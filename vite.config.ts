@@ -32,8 +32,8 @@ export default defineConfig({
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
 
                 // components from the @toujou/ui-components
-                // 'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder'),
-                // 'toujou-location-finder-teaser': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder-teaser'),
+                'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder'),
+                'toujou-location-finder-teaser': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/dist/toujou-location-finder-teaser'),
                 'toujou-map': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map'),
                 'toujou-map-geojson': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-geojson'),
                 'toujou-map-layer': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/dist/toujou-map-layer'),

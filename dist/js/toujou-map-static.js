@@ -1,4 +1,4 @@
-import{s as r,i,y as a}from"./lit-element-cb72fc65.js";class o extends r{static get is(){return"toujou-map-static"}static get styles(){return i`
+import{s as r,i,y as a}from"./lit-element-9d8fde0b.js";class o extends r{static get is(){return"toujou-map-static"}static get styles(){return i`
       :host {
         display: inline-block;
         overflow: hidden;
