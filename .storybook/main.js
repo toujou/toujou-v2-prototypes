@@ -12,6 +12,9 @@ module.exports = {
         "@geometricpanda/storybook-addon-badges",
     ],
     "framework": "@storybook/web-components",
+    "staticDirs": [
+        "../assets"
+    ],
     "core": {
         "builder": "@storybook/builder-vite"
     },

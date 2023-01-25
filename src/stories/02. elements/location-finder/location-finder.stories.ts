@@ -51,8 +51,6 @@ const Template = () => {
             map-style="mapbox://styles/mapbox/light-v10"
             access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
         >
-</toujou-location-finder>
-            
         </toujou-location-finder>
     `;
 };

@@ -85,6 +85,6 @@
     "skippy-links": "^1.0.4"
   },
   "msw": {
-    "workerDirectory": ""
+    "workerDirectory": "assets"
   }
 }
