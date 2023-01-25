@@ -78,9 +78,9 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
-    "@toujou/toujou-location-finder": "^0.0.1",
-    "@toujou/toujou-map": "^1.0.0",
-    "@toujou/toujou-spinner": "^1.0.0",
+    "@toujou/toujou-location-finder": "^0.0.2",
+    "@toujou/toujou-map": "^1.0.1",
+    "@toujou/toujou-spinner": "^1.0.1",
     "skippy-links": "^1.0.4"
   },
   "msw": {

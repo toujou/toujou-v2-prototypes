@@ -1,4 +1,4 @@
-import{s as o,y as t}from"./lit-element-cb538606.js";class e extends o{constructor(){super()}render(){return t`
+import{s as o,y as t}from"./lit-element-cb72fc65.js";class e extends o{constructor(){super()}render(){return t`
             <slot name="image"></slot>
             <slot name="quote"></slot>
             <slot name="author"></slot>

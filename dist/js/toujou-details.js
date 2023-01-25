@@ -1,4 +1,4 @@
-import{i as u,s as c,y as m}from"./lit-element-cb538606.js";import{e as p}from"./custom-element-73470d87.js";import{e as n}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const h=u`
+import{i as u,s as c,y as m}from"./lit-element-cb72fc65.js";import{e as p}from"./custom-element-73470d87.js";import{e as n}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const h=u`
   :host {
     --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
     --toujou-details-border-top: var(--toujou-details-border);
