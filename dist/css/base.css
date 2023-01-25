@@ -3806,7 +3806,7 @@ exit-warning {
 .header-content__title,
 .header .slider :is(h1, h2, h3, h4, h5) {
     text-align: var(--header-text-alignment);
-    color: var(--header-title-color);
+    color: var(--header-title-color) !important;
 }
 
 .header-content__text,
