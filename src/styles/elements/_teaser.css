@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 840px) {
     .teaser {
-        --teaser-grid-gap: var(--spacing-l);
+        --teaser-grid-gap: var(--spacing-xl);
     }
 
     .teaser[image-width="50"] {
