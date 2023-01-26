@@ -1,6 +1,6 @@
 .media-grid {
     --media-grid-display: grid;
-    --media-grid-gap: var(--spacing-normal);
+    --media-grid-gap: var(--content-spacing-between-columns);
     --media-grid-number-of-columns: 1;
     --media-grid-template-columns: repeat(var(--media-grid-number-of-columns), 1fr);
     --media-grid-width: var(--content-width-with-padding);

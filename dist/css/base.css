@@ -4501,7 +4501,7 @@ main > .table-container {
 .text-block {
     --text-block-display: grid;
     --text-block-grid-template-columns: 1fr;
-    --text-block-grid-gap: var(--spacing-l);
+    --text-block-grid-gap: var(--content-spacing-between-columns);
     --text-block-width: var(--content-width-with-padding);
     --text-block-max-width: var(--content-medium-max-width);
     --text-block-margin: var(--spacing-between-elements-normal) auto 0;
@@ -4634,11 +4634,6 @@ main > .table-container {
 }
 
 @media screen and (min-width: 840px) {
-    .text-block {
-        --text-block-grid-gap: var(--spacing-xl);
-        /*--text-block-column-gap: var(--spacing-m);*/
-    }
-
     .text-block[text-block-column-count="2"],
     .text-block[text-block-column-count="4"] {
         --text-block-grid-template-columns: 1fr 1fr;
