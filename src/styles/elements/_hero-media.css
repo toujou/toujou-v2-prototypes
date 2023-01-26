@@ -5,7 +5,7 @@
     --hero-media-display: block;
     --hero-media-position: relative;
     --hero-media-padding: 0;
-    --hero-media-margin: var(--spacing-between-elements-normal) 0 0;
+    --hero-media-margin: var(--spacing-between-elements-normal) auto 0;
     --hero-media-z-index: var(--z-index-content);
 
     --hero-media-media-object-fit: cover;
@@ -32,8 +32,9 @@
 }
 
 :is(main, .chapter) > .hero-media {
-    width: var(--hero-media-width);
-    max-width: var(--content-wide-max-width);
+    width: var(--hero-media-width) !important;
+    max-width: var(--content-wide-max-width) !important;
+
 }
 
 .hero-media:first-child {
