@@ -6,6 +6,7 @@
     height: var(--slider-controls-height);
     aspect-ratio: var(--slider-controls-aspect-ratio);
     z-index: var(--slider-controls-z-index);
+    pointer-events: none;
 }
 
 .slider[content-type="logos"],
