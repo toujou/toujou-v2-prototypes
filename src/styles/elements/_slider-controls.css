@@ -1,6 +1,4 @@
 .slider-controls {
-    border: 2px solid red;
-
     position: var(--slider-controls-position);
     top: var(--slider-controls-top);
     left: var(--slider-controls-left);
