@@ -87,7 +87,7 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
             auto-play-interval="${args.autoplayInterval}"
             slides-per-move="1"
             slider-type="loop"
-            slider-gap="var(--spacing-normal)"
+            slider-gap="var(--spacing-xxl)"
             slides-to-show="5"
             slider-breakpoints='{"640":{"perPage":2},"768":{"perPage":3},"840":{"perPage":4},"1024":{"perPage":4}}'
             arrow-first-aria-label="Go to first logo"
