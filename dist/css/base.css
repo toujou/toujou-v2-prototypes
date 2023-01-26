@@ -3775,7 +3775,7 @@ exit-warning {
 }
 
 .header-content[accent-color="font"] {
-    --header-title-color: var(--color-font-dark);
+    --header-title-color: var(--color-font);
 }
 
 .header-content[vertical-position="top"] {
