@@ -8,14 +8,17 @@
     --toujou-location-finder-teaser-type-font-family: var(--font-family-text);
     --toujou-location-finder-teaser-type-font-size: var(--font-size-s);
     --toujou-location-finder-teaser-type-color: var(--color-font);
+    --toujou-location-finder-teaser-type-opacity: 1;
+    --toujou-location-finder-teaser-type-font-weight: normal;
 
-    --toujou-location-finder-description-type-font-family: var(--font-family-text);
-    --toujou-location-finder-description-type-font-size: var(--font-size-s);
-    --toujou-location-finder-description-type-color: var(--color-font);
+    --toujou-location-finder-description-font-family: var(--font-family-text);
+    --toujou-location-finder-description-font-size: var(--font-size-s);
+    --toujou-location-finder-description-color: var(--color-font);
 
     --toujou-location-finder-teaser-meta-font-family: var(--font-family-text);
     --toujou-location-finder-teaser-meta-font-size: var(--font-size-s);
     --toujou-location-finder-teaser-meta-color: var(--color-font);
+    --toujou-location-finder-teaser-meta-opacity: 1;
 
     --toujou-location-finder-teaser-times-font-family: var(--font-family-text);
     --toujou-location-finder-teaser-times-font-size: var(--font-size-s);

@@ -993,7 +993,7 @@ uniform `+P+" "+C+" u_"+z+`;
     grid-template-columns: var(--toujou-location-finder-teaser-grid-columns, 1fr var(--toujou-location-finder-teaser-image-size));
     grid-gap: var(--toujou-location-finder-teaser-gap, .5rem);
     text-decoration: var(--toujou-location-finder-teaser-text-decoration, none);
-    border: var(--toujou-location-finder-teaser-border, none);
+    border-bottom: var(--toujou-location-finder-teaser-border-bottom, none);
 }
 .teaser[teaserhasnoimage] {
     grid-template-columns: var(--toujou-location-finder-teaser-grid-columns-no-image, 1fr);
