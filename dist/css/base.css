@@ -3747,6 +3747,7 @@ exit-warning {
 
 .header[header-type="slider"] .header-content {
     --header-content-width: calc(100% - calc(var(--spacing-xl) * 3));
+    --header-content-z-index: 2;
 }
 
 .header-content[is-title-only] {
