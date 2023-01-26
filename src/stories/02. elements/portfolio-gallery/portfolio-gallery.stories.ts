@@ -44,7 +44,7 @@ const Template = () => {
                                     data-pswp-width="1600" 
                                     data-pswp-height="900" 
                                     target="_blank"
-                                    class="slider__item portfolio-gallery__link portfolio-gallery__link--video"
+                                    class="slider__item portfolio-gallery__link"
                                     title="This is a beautiful caption">
                                     <toujou-single-media class="single-media" slot="slider-item">
                                         <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
@@ -52,14 +52,16 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/901" 
+                                <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
                                     data-pswp-width="1600" 
-                                    data-pswp-height="901" 
+                                    data-pswp-height="901"
+                                    data-pswp-video-src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                    data-pswp-type="video" 
                                     target="_blank"
-                                    class="slider__item portfolio-gallery__link portfolio-gallery__link--audio"
+                                    class="slider__item portfolio-gallery__link portfolio-gallery__link--video"
                                     title="Nice image">
                                     <toujou-single-media class="single-media" slot="slider-item">
-                                        <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
+                                        <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice video">
                                     </toujou-single-media>
                                 </a>
                             </li>

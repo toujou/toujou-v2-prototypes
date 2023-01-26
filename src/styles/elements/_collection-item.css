@@ -206,12 +206,6 @@
     --collection-item-title-color: var(--color-bg);
 }
 
-/* Being discussed here: https://app.clickup.com/t/863fwyg03 */
-/*.collection-item:focus-within {*/
-/*    outline: var(--focus-outline-width) solid var(--focus-outline-color);*/
-/*    outline-offset: var(--focus-outline-offset);*/
-/*}*/
-
 .collection-item__top {
     position: var(--collection-item-top-position);
     margin: var(--collection-item-top-margin);

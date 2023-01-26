@@ -6,8 +6,9 @@
     --portfolio-gallery-max-width: var(--content-max-width);
     --portfolio-gallery-margin: var(--spacing-between-elements-normal) auto 0;
     --toujou-portfolio-gallery-media-icon-size: var(--font-size-l);
-    --toujou-portfolio-gallery-media-icon-opacity: 1;
-    --toujou-portfolio-gallery-media-icon-color: var(--color-primary);
+    --toujou-portfolio-gallery-media-icon-opacity: 0;
+    --toujou-portfolio-gallery-media-icon-color: var(--color-bg);
+    --toujou-portfolio-gallery-media-icon: var(--icon-image-circle-filled);
     --toujou-portfolio-gallery-media-icon-audio-icon: var(--icon-audiotrack-circle-filled);
     --toujou-portfolio-gallery-media-icon-video-icon: var(--icon-videocam-circle-filled);
 
@@ -64,8 +65,8 @@
     display: block;
 }
 
-.portfolio-gallery__link--audio::after,
-.portfolio-gallery__link--video::after {
+.portfolio-gallery__link::after,
+.portfolio-gallery__link::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -76,10 +77,11 @@
     mask-position: center;
     mask-size: contain;
     mask-repeat: no-repeat;
+    mask-image: var(--toujou-portfolio-gallery-media-icon);
     pointer-events: none;
     background-color: var(--toujou-portfolio-gallery-media-icon-color);
     opacity: var(--toujou-portfolio-gallery-media-icon-opacity);
-    transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
+    transition: opacity var(--animation-duration-fast) var(--animation-easing-normal);
 }
 
 .portfolio-gallery__link--audio::after {
@@ -110,6 +112,7 @@
 @media (hover: hover) {
     .portfolio-gallery__link:hover {
         --toujou-portfolio-gallery-media-icon-color: var(--color-bg);
+        --toujou-portfolio-gallery-media-icon-opacity: 1;
     }
 
     .portfolio-gallery__link:hover .single-media::after {

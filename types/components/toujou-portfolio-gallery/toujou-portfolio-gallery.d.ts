@@ -5,6 +5,7 @@ export declare class ToujouPortfolioGallery extends LitElement {
     _currentImageIndex: number;
     _imageCount: number | undefined;
     private lightbox;
+    protected videoPlugin: any;
     /**
      * Initialize the lightbox when the portfolio gallery element first loads
      */

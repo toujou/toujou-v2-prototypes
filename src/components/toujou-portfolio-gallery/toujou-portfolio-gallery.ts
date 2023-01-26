@@ -4,6 +4,8 @@ import { ToujouPortfolioGalleryStyles } from "./toujou-portfolio-gallery.styles.
 import PhotoSwipe from 'photoswipe';
 // @ts-ignore
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
+// @ts-ignore
+import PhotoSwipeVideoPlugin from 'photoswipe-video-plugin';
 
 @customElement('toujou-portfolio-gallery')
 export class ToujouPortfolioGallery extends LitElement {
@@ -12,6 +14,7 @@ export class ToujouPortfolioGallery extends LitElement {
     @property({ type: Number }) _currentImageIndex: number = 1;
     @property({ type: Number }) _imageCount: number | undefined = 0;
     private lightbox: any;
+    protected videoPlugin: any;
 
     /**
      * Get the child elements of the slider
@@ -73,6 +76,11 @@ export class ToujouPortfolioGallery extends LitElement {
         })
 
         this.lightbox.on('uiRegister', () => this._handleLightboxUiRegister());
+
+        this.videoPlugin = new PhotoSwipeVideoPlugin(this.lightbox, {
+            autoplay: false
+        });
+
         this.lightbox.init();
     }
 
