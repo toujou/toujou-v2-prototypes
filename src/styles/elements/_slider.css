@@ -11,6 +11,14 @@
 
     --slider-top-position: relative;
 
+    --slider-controls-position: absolute;
+    --slider-controls-top: 0;
+    --slider-controls-left: 0;
+    --slider-controls-width: 100%;
+    --slider-controls-height: auto;
+    --slider-controls-aspect-ratio: var(--slider-aspect-ratio);
+    --slider-controls-z-index: 1;
+
     --slider-control-position: absolute;
     --slider-control-top: calc(calc(100% - 2rem) / 2);
     --slider-control-transform: translateY(-50%);

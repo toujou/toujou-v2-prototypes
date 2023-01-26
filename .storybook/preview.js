@@ -57,7 +57,7 @@ if (location.hostname === "toujou.github.io") {
   }
 }
 
-initialize(workerOptions);
+// initialize(workerOptions);
 
 export const decorators = [mswDecorator];
 
@@ -89,4 +89,3 @@ export const parameters = {
 }
 
 console.clear();
-console.log('44444');

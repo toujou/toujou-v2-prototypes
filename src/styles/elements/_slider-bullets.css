@@ -42,6 +42,13 @@ ul.slider-bullets {
     --slider-bullets-bullet-hover-background-color: var(--color-bg);
 }
 
+.slider[slider-design="default"][content-type="logos"] .slider-bullets,
+.slider[slider-design="default"][content-type="teaser"] .slider-bullets {
+    --slider-bullets-bullet-default-background-color: var(--color-primary);
+    --slider-bullets-bullet-active-background-color: var(--color-primary);
+    --slider-bullets-bullet-hover-background-color: var(--color-primary);
+}
+
 .slider[slider-design="primary"] .slider-bullets {
     --slider-bullets-bullet-default-background-color: var(--color-primary);
     --slider-bullets-bullet-active-background-color: var(--color-primary);

@@ -52,6 +52,7 @@
 @import './elements/_portfolio-gallery.css';
 @import './elements/_slider.css';
 @import './elements/_slider-bullets.css';
+@import './elements/_slider-controls.css';
 @import './elements/_slider-control.css';
 @import './elements/_slider-count.css';
 @import './elements/_slider-progress.css';

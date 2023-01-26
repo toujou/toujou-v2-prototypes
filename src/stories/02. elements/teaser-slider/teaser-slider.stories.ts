@@ -35,7 +35,7 @@ const Template = () => {
             slider-type="loop"
             content-type="teaser">
             <div class="splide slider__slider">
-                <div class="splide__arrows">
+                <div class="splide__arrows slider-controls">
                     <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
                         <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
                     </button>

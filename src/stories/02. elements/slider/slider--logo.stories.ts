@@ -95,7 +95,7 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
             arrow-prev-aria-label="Go to previous logo"
             arrow-next-aria-label="Go to next logo">
             <div class="splide slider__slider">
-                <div class="splide__arrows">
+                <div class="splide__arrows slider-controls">
                     <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
                         <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
                     </button>
