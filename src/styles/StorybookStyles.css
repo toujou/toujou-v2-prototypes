@@ -67,7 +67,8 @@
 @import './elements/_schema.css';
 @import './elements/_opening-hours.css';
 @import "./elements/_burger-button.css";
-
+@import "./elements/_header.css";
+@import "./elements/_header-content.css";
 
 
 body {
