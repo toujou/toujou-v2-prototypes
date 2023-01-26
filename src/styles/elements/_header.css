@@ -41,6 +41,10 @@
     --header-height: auto;
 }
 
+.header__figure {
+    height: 100%;
+}
+
 .header__image,
 .header__figure .video {
     height: var(--header-image-height);
