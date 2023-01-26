@@ -44,6 +44,10 @@ object {
     vertical-align: middle;
 }
 
+iframe {
+    border: none;
+}
+
 /* stylelint-disable selector-no-vendor-prefix */
 ::-moz-selection {
     background-color: var(--color-primary);
