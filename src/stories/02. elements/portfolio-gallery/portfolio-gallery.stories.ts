@@ -44,7 +44,7 @@ const Template = () => {
                                     data-pswp-width="1600" 
                                     data-pswp-height="900" 
                                     target="_blank"
-                                    class="slider__item portfolio-gallery__link"
+                                    class="slider__item portfolio-gallery__link portfolio-gallery__link--video"
                                     title="This is a beautiful caption">
                                     <toujou-single-media class="single-media" slot="slider-item">
                                         <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
@@ -52,11 +52,11 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/900" 
+                                <a href="https://picsum.photos/1600/901" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="901" 
                                     target="_blank"
-                                    class="slider__item portfolio-gallery__link"
+                                    class="slider__item portfolio-gallery__link portfolio-gallery__link--audio"
                                     title="Nice image">
                                     <toujou-single-media class="single-media" slot="slider-item">
                                         <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
@@ -64,7 +64,7 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/900" 
+                                <a href="https://picsum.photos/1600/902" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="902" 
                                     target="_blank"
@@ -75,7 +75,7 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/900" 
+                                <a href="https://picsum.photos/1600/903" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="903" 
                                     target="_blank"
@@ -87,7 +87,7 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/900" 
+                                <a href="https://picsum.photos/1600/904" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="904" 
                                     target="_blank"
@@ -98,7 +98,7 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/900" 
+                                <a href="https://picsum.photos/1600/905" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="905" 
                                     target="_blank"
@@ -109,7 +109,7 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/900" 
+                                <a href="https://picsum.photos/1600/906" 
                                     data-pswp-width="1600" 
                                     data-pswp-height="906" 
                                     target="_blank"
