@@ -4297,6 +4297,17 @@ toujou-modal {
     --single-media-margin: 0 auto;
 }
 
+.header :is(.single-media__image, .single-media__video) {
+    --single-media-media-width: 100%;
+    --single-media-media-height: 100%;
+
+    -o-object-fit: cover;
+
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+}
+
 .header[header-type="slider"] .single-media {
     --single-media-width: 100vw;
     --single-media-height: 80vh;
