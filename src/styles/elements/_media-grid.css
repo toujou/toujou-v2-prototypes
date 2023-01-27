@@ -21,6 +21,11 @@
     --media-grid-margin: 0 auto;
 }
 
+.media-grid[media-grid-column-number="3"],
+.media-grid[media-grid-column-number="4"] {
+    --media-grid-max-width: var(--content-wide-max-width);
+}
+
 .text-block + .media-grid {
     --media-grid-margin: 0 auto var(--spacing-between-consecutive-elements-normal);
 }
