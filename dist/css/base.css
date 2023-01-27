@@ -4277,6 +4277,8 @@ toujou-modal {
     --single-media-media-width: 100%;
     --single-media-media-height: auto;
 
+    --single-media-youtube-videos-aspect-ratio: var(--aspect-ratio-16-9);
+
     position: var(--single-media-position);
     display: var(--single-media-display);
     width: var(--single-media-width);
@@ -4333,6 +4335,12 @@ toujou-modal {
 .single-media__video {
     width: var(--single-media-media-width);
     height: var(--single-media-media-height);
+}
+
+.single-media__video[video-extension="youtube"] {
+    --single-media-media-height: auto;
+
+    aspect-ratio: var(--single-media-youtube-videos-aspect-ratio);
 }
 
 :root {
