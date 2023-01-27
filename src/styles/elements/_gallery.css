@@ -18,7 +18,9 @@
 
     --gallery-hover-overlay-opacity: 0;
 
-    --gallery-hover-icon-image: var(--icon-image-circle-filled);
+    --gallery-hover-icon-icon: var(--icon-image-circle-filled);
+    --gallery-hover-icon-icon-audio: var(--icon-audiotrack-circle-filled);
+    --gallery-hover-icon-icon-video: var(--icon-videocam-circle-filled);
     --gallery-hover-icon-size: var(--font-size-l);
     --gallery-hover-icon-color: var(--color-white);
     --gallery-hover-icon-opacity: 0;
@@ -72,10 +74,18 @@
     mask-position: center;
     mask-size: contain;
     mask-repeat: no-repeat;
-    mask-image: var(--gallery-hover-icon-image);
+    mask-image: var(--gallery-hover-icon-icon);
     pointer-events: none;
     opacity: var(--gallery-hover-icon-opacity);
     transition: opacity var(--animation-duration-fast) var(--animation-easing-normal);
+}
+
+.gallery__item--audio::after {
+    mask-image: var(--gallery-hover-icon-icon-audio);
+}
+
+.gallery__item--video::after {
+    mask-image: var(--gallery-hover-icon-icon-video);
 }
 
 .gallery__item:focus-visible {
