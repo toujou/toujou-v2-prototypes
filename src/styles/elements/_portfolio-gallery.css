@@ -3,7 +3,7 @@
     --portfolio-gallery-display: block;
     --portfolio-gallery-z-index: var(--z-index-content);
     --portfolio-gallery-width: var(--content-width-with-padding);
-    --portfolio-gallery-max-width: var(--content-max-width);
+    --portfolio-gallery-max-width: var(--content-wide-max-width);
     --portfolio-gallery-margin: var(--spacing-between-elements-normal) auto 0;
     --toujou-portfolio-gallery-media-icon-size: var(--font-size-l);
     --toujou-portfolio-gallery-media-icon-opacity: 0;
