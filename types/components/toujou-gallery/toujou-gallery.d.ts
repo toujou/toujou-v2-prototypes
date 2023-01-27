@@ -1,6 +1,7 @@
 import { LitElement } from 'lit';
 export declare class ToujouGallery extends LitElement {
     private lightbox;
+    protected videoPlugin: any;
     private get galleryID();
     protected createRenderRoot(): Element | ShadowRoot;
     connectedCallback(): void;

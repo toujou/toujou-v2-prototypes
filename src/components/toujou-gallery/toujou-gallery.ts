@@ -3,11 +3,14 @@ import { customElement } from 'lit/decorators.js'
 import PhotoSwipe from 'photoswipe';
 // @ts-ignore
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
+// @ts-ignore
+import PhotoSwipeVideoPlugin from 'photoswipe-video-plugin';
 
 @customElement('toujou-gallery')
 export class ToujouGallery extends LitElement {
 
     private lightbox: any;
+    protected videoPlugin: any;
 
     // @ts-ignore
     private get galleryID(): string | undefined {
@@ -31,6 +34,11 @@ export class ToujouGallery extends LitElement {
         })
 
         this.lightbox.on('uiRegister', () => this._handleUiRegister());
+
+        this.videoPlugin = new PhotoSwipeVideoPlugin(this.lightbox, {
+            autoplay: false
+        });
+
         this.lightbox.init();
     }
 
