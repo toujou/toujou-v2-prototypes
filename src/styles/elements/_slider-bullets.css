@@ -43,9 +43,9 @@ ul.slider-bullets {
 
 .slider[slider-design="default"][content-type="logos"] .slider-bullets,
 .slider[slider-design="default"][content-type="teaser"] .slider-bullets {
-    --slider-bullets-bullet-default-background-color: var(--color-primary);
-    --slider-bullets-bullet-active-background-color: var(--color-primary);
-    --slider-bullets-bullet-hover-background-color: var(--color-primary);
+    --slider-bullets-bullet-default-background-color: var(--color-font);
+    --slider-bullets-bullet-active-background-color: var(--color-font);
+    --slider-bullets-bullet-hover-background-color: var(--color-font);
 }
 
 .slider[slider-design="primary"] .slider-bullets {
