@@ -106,7 +106,8 @@
     /* stylelint-enable property-no-vendor-prefix */
 }
 
-.blockquote__text {
+.blockquote__text,
+.blockquote__blockquote * {
     font-size: var(--blockquote-text-font-size);
     line-height: var(--blockquote-text-line-height);
     margin: var(--blockquote-text-margin);
