@@ -78,16 +78,3 @@ button.slider-control--next {
         cursor: pointer;
     }
 }
-
-/*@media screen and (min-width: 768px) {*/
-/*    .text-block[text-block-media-position*="inside"] .slider[content-type="teaser"] button.slider-control--prev,*/
-/*    .text-block[text-block-media-position*="beside"] .slider[content-type="teaser"] button.slider-control--prev {*/
-/*        --slider-control-inset: 50% auto auto var(--slider-control-distance-to-margin);*/
-/*    }*/
-
-/*    .text-block[text-block-media-position*="inside"] .slider[content-type="teaser"] button.slider-control--next,*/
-/*    .text-block[text-block-media-position*="beside"] .slider[content-type="teaser"] button.slider-control--next {*/
-/*        --slider-control-inset: 50% var(--slider-control-distance-to-margin) auto auto;*/
-/*    }*/
-/*}*/
-
