@@ -4212,8 +4212,11 @@ main {
     padding-bottom: var(--spacing-between-elements-normal);
 }
 
-main:first-child {
-    padding-top: var(--topbar-height);
+main:first-child,
+.topbar + main {
+    --main-padding-top: var(--topbar-height);
+
+    padding-top: var(--main-padding-top);
 }
 
 toujou-modal {
@@ -5101,16 +5104,10 @@ a:-webkit-any-link:focus-visible {
     }
 }
 
-.topbar ~ .wrap--content {
-    --wrap-content-padding-top: var(--topbar-height);
-
-    padding-top: var(--wrap-content-padding-top);
-}
-
-.wrap--iframe {
+.wrap-iframe {
     padding-bottom: var(--spacing-l);
 }
 
-.wrap--iframe main {
+.wrap-iframe main {
     padding-top: 0;
 }

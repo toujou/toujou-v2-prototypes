@@ -1,5 +1,0 @@
-.topbar ~ .wrap--content {
-    --wrap-content-padding-top: var(--topbar-height);
-
-    padding-top: var(--wrap-content-padding-top);
-}
