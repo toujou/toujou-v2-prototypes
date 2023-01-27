@@ -1,0 +1,7 @@
+.demo-media-placeholder-container {
+    width: 480px;
+    max-width: var(--content-max-width);
+    height: auto;
+    aspect-ratio: var(--aspect-ratio-16-9);
+    margin: 0 auto;
+}

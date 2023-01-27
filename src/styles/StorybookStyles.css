@@ -18,6 +18,7 @@
 @import 'demo/_demo-grid.css';
 @import 'demo/_fake-fav-icon.css';
 @import 'demo/_chapter.css';
+@import 'demo/_demo-media-placeholder-container.css';
 
 @import './base.css';
 
@@ -70,6 +71,7 @@
 @import "./elements/_header.css";
 @import "./elements/_header-content.css";
 @import "./elements/_topbar.css";
+@import "./elements/_media-placeholder.css";
 
 
 

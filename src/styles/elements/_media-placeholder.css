@@ -1,0 +1,46 @@
+.media-placeholder {
+    --media-placeholder-display: block;
+    --media-placeholder-height: 100%;
+    --media-placeholder-width: 100%;
+    --media-placeholder-background-color: var(--color-primary-light);
+    --media-placeholder-opacity: 1;
+    --media-placeholder-z-index: var(--z-index-content);
+
+    --media-placeholder-icon-size: calc(var(--font-size-normal) * 4);
+    --media-placeholder-icon-background-color: var(--color-primary-dark);
+    --media-placeholder-icon-opacity: 1;
+
+
+    display: var(--media-placeholder-display);
+    height: var(--media-placeholder-height);
+    width: var(--media-placeholder-width);
+    background-color: var(--media-placeholder-background-color);
+    opacity: var(--media-placeholder-opacity);
+    z-index: var(--media-placeholder-z-index);
+    position: relative;
+}
+
+.media-placeholder::after {
+    content: "";
+    display: block;
+    height: var(--media-placeholder-icon-size);
+    width: var(--media-placeholder-icon-size);
+    background-color: var(--media-placeholder-icon-background-color);
+    opacity: var(--media-placeholder-icon-opacity);
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-image: var(--icon-image-circle-filled);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.media-placeholder[media-type="video"]::after {
+    mask-image: var(--icon-videocam-circle-filled);
+}
+
+.media-placeholder[media-type="audio"]::after {
+    mask-image: var(--icon-audiotrack-circle-filled);
+}
