@@ -2,11 +2,11 @@
     --media-placeholder-display: block;
     --media-placeholder-height: 100%;
     --media-placeholder-width: 100%;
-    --media-placeholder-background-color: var(--color-primary-dark);
+    --media-placeholder-background-color: var(--color-font-light);
     --media-placeholder-opacity: 1;
 
     --media-placeholder-icon-size: calc(var(--font-size-normal) * 4);
-    --media-placeholder-icon-background-color: var(--color-primary);
+    --media-placeholder-icon-background-color: var(--color-font);
     --media-placeholder-icon-opacity: 1;
 
 
