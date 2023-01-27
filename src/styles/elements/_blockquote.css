@@ -148,6 +148,9 @@
     --blockquote-grid-template-columns: 1fr;
     --blockquote-grid-template-areas: "blockquoteImage" "blockquoteQuote" "blockquoteAuthor";
     --blockquote-author-grid-column: 1;
+    --blockquote-grid-template-rows: repeat(3, max-content);
+
+    grid-template-rows: var(--blockquote-grid-template-rows);
 }
 
 @media screen and (min-width: 640px) {
