@@ -4,7 +4,7 @@ The teaser element render an image and a text side by side (in a column on mobil
 
 ## Markup Example
 ```html
-<toujou-teaser class="teaser" teaser-type="cinema" image-width="50" image-side="left">
+<toujou-teaser class="teaser" teaser-type="cinema" image-width="50" image-side="left" element-design="primary">
     <div class="teaser__figure">
         <img class="teaser__image" src="https://picsum.photos/1024" alt="nice image" />
         <toujou-media-info class="media-info">
@@ -48,3 +48,8 @@ This attribute changes if the image is rendered on the right or left side of the
 Possible values are `left` and `right`.
 
 This attribute is set depending on the chosen content element.
+
+### element-design
+This attribute changes the design of the teaser element, by changing the background and text colors
+
+Possible values are `default`, `primary`, `secondary` and  `inverted`
