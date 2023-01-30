@@ -2,7 +2,7 @@
     --teaser-position: relative;
     --teaser-width: var(--content-width-with-padding);
     --teaser-max-width: var(--content-wide-max-width);
-    --teaser-margin: 0 auto;
+    --teaser-margin: var(--spacing-between-elements-normal) auto 0;
     --teaser-display: grid;
     --teaser-grid-auto-flow: dense;
     --teaser-grid-template-columns: 1fr;
@@ -28,6 +28,10 @@
     max-width: var(--teaser-max-width);
     margin: var(--teaser-margin);
     z-index: var(--teaser-grid-z-index);
+}
+
+.teaser:first-child {
+    --html-container-margin: 0 auto;
 }
 
 .slider .teaser {
