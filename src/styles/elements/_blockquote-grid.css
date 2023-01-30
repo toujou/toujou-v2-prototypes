@@ -37,7 +37,9 @@
     .blockquote-grid[blockquote-grid-count="2"] {
         --blockquote-grid-columns-count: 2;
     }
+}
 
+@media screen and (min-width: 840px) {
     .blockquote-grid[blockquote-grid-count="3"] {
         --blockquote-grid-columns-count: 3;
     }
