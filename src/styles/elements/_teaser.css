@@ -52,6 +52,12 @@
     height: var(--teaser-image-height);
 }
 
+.teaser__figure .video {
+    height: auto;
+    width: 100%;
+    aspect-ratio: var(--teaser-image-aspect-ratio);
+}
+
 .teaser__content > *:last-child {
     margin-bottom: 0;
 }
