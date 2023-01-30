@@ -15,13 +15,13 @@
     --slider-controls-aspect-ratio: auto;
 }
 
-.slider[content-type="teaser"] {
-    --slider-controls-aspect-ratio: var(--aspect-ratio-default);
-}
+/*.slider[content-type="teaser"] {*/
+/*    --slider-controls-aspect-ratio: var(--aspect-ratio-default);*/
+/*}*/
 
-@media screen and (min-width: 840px) {
-    .slider[content-type="teaser"] {
-        --slider-controls-height: calc(100% - var(--spacing-l));
-        --slider-controls-aspect-ratio: auto;
-    }
-}
+/*@media screen and (min-width: 840px) {*/
+/*    .slider[content-type="teaser"] {*/
+/*        --slider-controls-height: calc(100% - var(--spacing-l));*/
+/*        --slider-controls-aspect-ratio: auto;*/
+/*    }*/
+/*}*/
