@@ -34,8 +34,7 @@ const Template = () => {
             slider-aspect-ratio="0.5625"
             slider-type="loop"
             content-type="teaser"
-            auto-play
-            auto-play-interval="6000">
+        >
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
                     <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">

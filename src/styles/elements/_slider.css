@@ -58,6 +58,7 @@
 
 .slider[content-type="teaser"] {
     --slider-max-width: var(--content-wide-max-width);
+    --slider-aspect-ratio: var(--aspect-ratio-default);
 }
 
 .slider[content-type="logos"] {

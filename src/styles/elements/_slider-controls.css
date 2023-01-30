@@ -14,3 +14,7 @@
     --slider-controls-height: 100%;
     --slider-controls-aspect-ratio: auto;
 }
+
+.slider[content-type="teaser"] .slider-controls {
+    border: 2px solid red;
+}

@@ -38,8 +38,9 @@
     overflow: var(--teaser-overflow);
 }
 
-.teaser:first-child {
-    --html-container-margin: 0 auto;
+.teaser:first-child,
+.slider .teaser {
+    --teaser-margin: 0 auto;
 }
 
 .teaser:not([element-design="default"]) {
