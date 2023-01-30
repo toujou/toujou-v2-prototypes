@@ -15,6 +15,9 @@
     --slider-controls-aspect-ratio: auto;
 }
 
-.slider[content-type="teaser"] .slider-controls {
-    border: 2px solid red;
+@media screen and (min-width: 840px) {
+    .slider[content-type="teaser"] .slider-controls {
+        --slider-controls-aspect-ratio: auto;
+        --slider-controls-height: calc(100% - var(--spacing-l));
+    }
 }
