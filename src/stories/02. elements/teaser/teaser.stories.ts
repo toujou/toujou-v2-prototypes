@@ -55,19 +55,32 @@ export default {
             defaultValue: ['left'],
             required: true,
         },
+        elementDesign: {
+            table: {
+                category: "Teaser settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Element design',
+            description: "Choose the teaser's element design",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
     }
 } as Meta;
 
 
 interface ToujouImageCardStoryProps {
     teaserType: string;
-    imageWidth: string,
-    imageSide: string,
+    imageWidth: string;
+    imageSide: string;
+    elementDesign: string;
 }
 
 const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
     return `
-        <toujou-teaser class="teaser" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}">
+        <toujou-teaser class="teaser" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}" element-design="${args.elementDesign}">
             <div class="teaser__figure">
                 <img class="teaser__image" src="https://picsum.photos/1024" alt="nice image" />
                 <toujou-media-info class="media-info">
@@ -95,5 +108,6 @@ Teaser.args = {
     teaserType: 'cinema',
     imageWidth: '50',
     imageSide: 'left',
+    elementDesign: 'default'
 }
 
