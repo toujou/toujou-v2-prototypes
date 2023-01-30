@@ -17,6 +17,12 @@
     z-index: var(--header-z-index);
 }
 
+.topbar + .header {
+    --header-margin-top: var(--topbar-height);
+
+    margin-top: var(--header-margin-top);
+}
+
 .header[image-height="full"] {
     --header-height: calc(100vh - var(--topbar-height));
 }
