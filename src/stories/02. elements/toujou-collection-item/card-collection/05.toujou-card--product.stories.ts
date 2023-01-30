@@ -47,7 +47,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <span class="collection-item__category">
+                            <a href="#" class="collection-item__category">
                                 <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="primary-dark"></toujou-icon>
                                 New
                             </span>
@@ -65,7 +65,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <span class="collection-item__category">
+                            <a href="#" class="collection-item__category">
                                 <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="primary-dark"></toujou-icon>
                                 Rabatt
                             </span>
