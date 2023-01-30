@@ -74,6 +74,16 @@ a.hero-media:focus {
     --hero-media-title-color: var(--color-primary);
 }
 
+.hero-media .video,
+.hero-media .single-media__video[video-extension="youtube"],
+.hero-media .single-media__video[video-extension="vimeo"] {
+    height: auto;
+    width: 100%;
+    aspect-ratio: var(--aspect-ratio-3-1);
+}{
+
+}
+
 @media (hover: hover) {
     a.hero-media:hover {
         --hero-media-title-color: var(--color-primary);
