@@ -49,17 +49,12 @@
     position: var(--teaser-figure-position);
 }
 
-.teaser__image {
+.teaser__image,
+.teaser__figure .video{
     aspect-ratio: var(--teaser-image-aspect-ratio);
     object-fit: var(--teaser-image-object-fit);
     width: var(--teaser-image-width);
     height: var(--teaser-image-height);
-}
-
-.teaser__figure .video {
-    height: auto;
-    width: 100%;
-    aspect-ratio: var(--teaser-image-aspect-ratio);
 }
 
 .teaser__content > *:last-child {
