@@ -16,7 +16,7 @@
     --map-contact-map-container-position: relative;
     --map-contact-map-container-area: map;
     --map-contact-map-container-overflow: hidden;
-    --map-contact-map-container-border-radius: var(--border-radius-0);
+    --map-contact-map-container-border-radius: var(--border-radius-default);
     --map-contact-map-container-min-height: 260px;
     --map-contact-map-container-max-width: 100%;
 
@@ -61,14 +61,10 @@
     --map-contact-map-container-aspect-ratio: 16 / 9;
 }
 
-.map-contact[element-design="default"] {
-    --map-contact-map-container-border-radius: var(--border-radius-default);
-}
-
 .map-contact[element-design="primary"],
 .map-contact[element-design="secondary"],
 .map-contact[element-design="inverted"] {
-    --map-contact-content-padding: var(--spacing-normal);
+    --map-contact-content-padding: 0 var(--spacing-normal) var(--spacing-normal);
     --map-contact-headline-color: var(--color-bg);
     --map-contact-address-color: var(--color-bg);
     --map-contact-social-icon-color: var(--color-bg);
@@ -182,13 +178,13 @@
     .map-contact[element-design="primary"][direction="normal"],
     .map-contact[element-design="secondary"][direction="normal"],
     .map-contact[element-design="inverted"][direction="normal"] {
-        --map-contact-content-padding: var(--spacing-normal) var(--spacing-normal) var(--spacing-normal) 0;
+        --map-contact-content-padding: 0 var(--spacing-normal) var(--spacing-normal) 0;
     }
 
     .map-contact[element-design="primary"][direction="reverse"],
     .map-contact[element-design="secondary"][direction="reverse"],
     .map-contact[element-design="inverted"][direction="reverse"] {
-        --map-contact-content-padding: var(--spacing-normal) 0 var(--spacing-normal) var(--spacing-normal);
+        --map-contact-content-padding: 0 0 var(--spacing-normal) var(--spacing-normal);
     }
 
     .map-contact:not([element-design="default"]) a:hover {
@@ -204,12 +200,12 @@
     .map-contact[element-design="primary"][direction="normal"],
     .map-contact[element-design="secondary"][direction="normal"],
     .map-contact[element-design="inverted"][direction="normal"] {
-        --map-contact-content-padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl) 0;
+        --map-contact-content-padding: 0 var(--spacing-xl) var(--spacing-xl) 0;
     }
 
     .map-contact[element-design="primary"][direction="reverse"],
     .map-contact[element-design="secondary"][direction="reverse"],
     .map-contact[element-design="inverted"][direction="reverse"] {
-        --map-contact-content-padding: var(--spacing-xl) 0 var(--spacing-xl) var(--spacing-xl);
+        --map-contact-content-padding: 0 0 var(--spacing-xl) var(--spacing-xl);
     }
 }
