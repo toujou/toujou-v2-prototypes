@@ -185,20 +185,21 @@
     --collection-item-bg-color: var(--color-primary);
     --collection-item-date-background-color: var(--color-primary);
     --collection-item-info-icon-color: var(--color-white);
+    --collection-item-button-text-color-hover: var(--color-white);
 }
 
 .collection-item[item-design="secondary"] {
     --collection-item-bg-color: var(--color-secondary);
     --collection-item-date-background-color: var(--color-secondary);
     --collection-item-info-icon-color: var(--color-white);
-    --collection-item-button-text-color-hover: var(--color-secondary-dark);
+    --collection-item-button-text-color-hover: var(--color-white);
 }
 
 .collection-item[item-design="inverted"] {
     --collection-item-bg-color: var(--color-font-dark);
     --collection-item-date-background-color: var(--color-font-dark);
     --collection-item-info-icon-color: var(--color-white);
-    --collection-item-button-text-color-hover: var(--color-font-light);
+    --collection-item-button-text-color-hover: var(--color-white);
 }
 
 .collection-item[item-type="product"][item-orientation="vertical"] {
