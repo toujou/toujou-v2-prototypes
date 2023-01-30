@@ -29,7 +29,8 @@ ul.slider-bullets {
     z-index: var(--slider-bullets-z-index);
 }
 
-.slider[content-type="logos"] ul.slider-bullets {
+.slider[content-type="logos"] ul.slider-bullets,
+.slider[content-type="teaser"] ul.slider-bullets {
     --slider-bullets-position: relative;
     --slider-bullets-inset: unset;
     --slider-bullets-margin: var(--spacing-normal) 0;

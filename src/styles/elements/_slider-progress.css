@@ -2,12 +2,18 @@
     --slider-progress-display: none;
     --slider-progress-height: var(--spacing-xs);
     --slider-progress-bg-color: var(--color-font-dark);
+    --slider-progress-margin: 0;
 
     --slider-progress-bar-bg-color: var(--color-font-light);
 
     display: var(--slider-progress-display);
     height: var(--slider-progress-height) !important;
     background-color: var(--slider-progress-bar-bg-color);
+    margin: var(--slider-progress-margin);
+}
+
+.slider[content-type="teaser"] .slider-progress {
+    --slider-progress-margin: var(--spacing-normal) 0 0;
 }
 
 .slider[slider-design="primary"] .slider-progress {
@@ -27,4 +33,16 @@
 .slider-progress__bar {
     height: var(--slider-progress-height) !important;
     background-color: var(--slider-progress-bg-color) !important;
+}
+
+@media screen and (min-width: 840px) {
+    .slider[content-type="teaser"] .slider-progress {
+        --slider-progress-margin: calc(var(--slider-progress-height) * -1) 0 0;
+        --slider-progress-bar-bg-color: transparent;
+
+        width: calc(calc(100% - var(--spacing-xl)) / 2);
+        border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
+        position: relative;
+        overflow: hidden;
+    }
 }

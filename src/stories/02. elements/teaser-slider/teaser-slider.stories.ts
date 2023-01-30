@@ -33,7 +33,9 @@ const Template = () => {
             slider-gap="0"
             slider-aspect-ratio="0.5625"
             slider-type="loop"
-            content-type="teaser">
+            content-type="teaser"
+            auto-play
+            auto-play-interval="6000">
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
                     <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
@@ -47,7 +49,7 @@ const Template = () => {
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -58,7 +60,7 @@ const Template = () => {
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -69,7 +71,7 @@ const Template = () => {
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1026" alt="nice image" />
                                 </div>
@@ -80,7 +82,7 @@ const Template = () => {
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1027" alt="nice image" />
                                 </div>
