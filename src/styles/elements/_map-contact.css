@@ -208,4 +208,8 @@
     .map-contact[element-design="inverted"][direction="reverse"] {
         --map-contact-content-padding: 0 0 var(--spacing-xl) var(--spacing-xl);
     }
+
+    .map-contact__content > *:first-child {
+        margin-top: 0;
+    }
 }
