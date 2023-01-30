@@ -4340,7 +4340,8 @@ toujou-modal {
     height: var(--single-media-media-height);
 }
 
-.single-media__video[video-extension="youtube"] {
+.single-media__video[video-extension="youtube"],
+.single-media__video[video-extension="vimeo"] {
     --single-media-media-height: auto;
 
     aspect-ratio: var(--single-media-youtube-videos-aspect-ratio);
