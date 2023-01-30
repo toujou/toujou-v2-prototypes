@@ -7,7 +7,7 @@
     --toujou-snackbar-bottom: var(--spacing-normal);
     --toujou-snackbar-left: var(--spacing-normal);
     --toujou-snackbar-padding: var(--spacing-normal);
-    --toujou-snackbar-border-radius: var(--border-radius-normal);
+    --toujou-snackbar-border-radius: var(--border-radius-default);
     --toujou-snackbar-z-index: var(--z-index-notifications);
     --toujou-snackbar-transition: all var(--animation-duration-fast) var(--animation-easing-normal);
     --toujou-snackbar-shadow: var(--shadow-normal);

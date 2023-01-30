@@ -215,7 +215,7 @@
 .inpage-nav[element-design="secondary"]:not([ismobile]),
 .inpage-nav[element-design="inverted"]:not([ismobile]) {
     --inpage-nav-label-before-bg-color: var(--color-bg);
-    --inpage-nav-border-radius: var(--border-radius-normal);
+    --inpage-nav-border-radius: var(--border-radius-default);
 }
 
 .inpage-nav[element-design="primary"]:not([ismobile]) {

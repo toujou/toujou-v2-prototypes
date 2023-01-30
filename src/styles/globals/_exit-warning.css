@@ -25,7 +25,7 @@ exit-warning {
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);
-    --toujou-modal-content-border-radius: var(--border-radius-normal);
+    --toujou-modal-content-border-radius: var(--border-radius-default);
 
     z-index: var(--toujou-modal-z-index);
 }

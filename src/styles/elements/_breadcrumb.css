@@ -25,7 +25,7 @@
     --breadcrumb-mobile-menu-padding: var(--spacing-normal) var(--spacing-l);
     --breadcrumb-mobile-menu-list-gap: var(--spacing-s);
     --breadcrumb-fake-list-triangle-size: var(--spacing-s);
-    --breadcrumb-fake-list-border-radius: var(--border-radius-normal);
+    --breadcrumb-fake-list-border-radius: var(--border-radius-default);
     --breadcrumb-z-index: var(--z-index-content);
 
     display: flex;

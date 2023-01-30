@@ -12,4 +12,6 @@
     --border-radius-xs: 1px;
     --border-radius-circle: 50%;
     --border-radius-0: 0;
+
+    --border-radius-default: var(--border-radius-normal);
 }

@@ -36,6 +36,8 @@
     --slider-item-width: 100%;
     --slider-item-margin: 0;
     --slider-item-position: relative;
+    --slider-item-border-radius: var(--border-radius-default);
+    --slider-item-overflow: hidden;
 
     display: var(--slider-display);
     position: var(--slider-position);
@@ -104,6 +106,8 @@
     width: var(--slider-item-width);
     margin: var(--slider-item-margin);
     position: var(--slider-item-position);
+    border-radius: var(--slider-item-border-radius);
+    overflow: var(--slider-item-overflow);
 }
 
 /* Header slider height */

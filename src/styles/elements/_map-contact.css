@@ -60,7 +60,7 @@
 }
 
 .map-contact[element-design="default"] {
-    --map-contact-map-container-border-radius: var(--border-radius-normal);
+    --map-contact-map-container-border-radius: var(--border-radius-default);
 }
 
 .map-contact[element-design="primary"],
@@ -70,7 +70,7 @@
     --map-contact-headline-color: var(--color-bg);
     --map-contact-address-color: var(--color-bg);
     --map-contact-social-icon-color: var(--color-bg);
-    --map-contact-border-radius: var(--border-radius-normal);
+    --map-contact-border-radius: var(--border-radius-default);
 }
 
 .map-contact:not([element-design="default"]) a {

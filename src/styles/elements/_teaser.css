@@ -8,12 +8,12 @@
     --teaser-grid-template-columns: 1fr;
     --teaser-grid-gap: var(--spacing-normal);
     --teaser-grid-z-index: var(--z-index-content);
-    --teaser-border-radius: var(--border-radius-normal);
+    --teaser-border-radius: var(--border-radius-default);
     --teaser-background-color: var(--color-bg);
     --teaser-overflow: hidden;
 
     --teaser-figure-column: 1;
-    --teaser-figure-border-radius: var(--border-radius-normal);
+    --teaser-figure-border-radius: var(--border-radius-default);
     --teaser-figure-overflow: hidden;
     --teaser-figure-position: relative;
 

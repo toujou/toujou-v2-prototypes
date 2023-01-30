@@ -9,7 +9,7 @@
     --content-card-width: 100%;
     --content-card-max-width: 100%;
     --content-card-shadow: var(--shadow-normal);
-    --content-card-border-radius: var(--border-radius-normal);
+    --content-card-border-radius: var(--border-radius-default);
     --content-card-overflow: hidden;
     --content-card-bg-color: var(--color-bg);
     --content-card-padding: 0;
@@ -115,7 +115,7 @@
 }
 
 .content-card[card-direction="horizontal"] {
-    --content-card-figure-border-radius: var(--border-radius-normal);
+    --content-card-figure-border-radius: var(--border-radius-default);
 }
 
 /* CARD VARIANTS */

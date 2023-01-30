@@ -18,7 +18,7 @@
     --overlay-infos-gap: var(--spacing-l);
     --overlay-infos-padding: var(--spacing-l);
     --overlay-infos-shadow: var(--shadow-normal);
-    --overlay-infos-border-radius: var(--border-radius-normal);
+    --overlay-infos-border-radius: var(--border-radius-default);
     --overlay-infos-bg-color: var(--color-bg);
     --overlay-infos-max-width: min(calc(100% - var(--spacing-xl)), 640px);
 

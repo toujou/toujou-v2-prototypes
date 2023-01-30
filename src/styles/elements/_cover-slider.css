@@ -36,7 +36,7 @@
     --cover-slider-bullets-display: none;
 
     /* item */
-    --cover-slider-item-border-radius: var(--border-radius-normal);
+    --cover-slider-item-border-radius: var(--border-radius-default);
     --cover-slider-item-overflow: hidden;
 
     /* media */

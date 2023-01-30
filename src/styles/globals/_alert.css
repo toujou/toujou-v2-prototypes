@@ -5,7 +5,7 @@
     --alert-font-size: var(--font-size-normal);
     --alert-font-family: var(--font-family-text);
     --alert-padding: var(--spacing-s) var(--spacing-normal);
-    --alert-border-radius: var(--border-radius-normal);
+    --alert-border-radius: var(--border-radius-default);
     --alert-border-width: var(--spacing-1px);
     --alert-border: var(--alert-border-width) solid var(--alert-border-color);
     --alert-width: auto;

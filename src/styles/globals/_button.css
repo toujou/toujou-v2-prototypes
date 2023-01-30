@@ -4,7 +4,7 @@
     --button-font-size: var(--font-size-normal);
     --button-font-family: var(--font-family-text);
     --button-padding: var(--spacing-s) var(--spacing-m);
-    --button-border-radius: var(--border-radius-normal);
+    --button-border-radius: var(--border-radius-default);
     --button-border-width: var(--spacing-1px);
     --button-border-color: var(--button-color-bg);
     --button-border: var(--button-border-width) solid var(--button-border-color);

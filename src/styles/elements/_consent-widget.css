@@ -4,7 +4,7 @@
     --consent-widget-left: var(--spacing-normal);
     --consent-widget-border: 1px solid var(--color-font-light);
     --consent-widget-padding: var(--spacing-normal);
-    --consent-widget-border-radius: var(--border-radius-normal);
+    --consent-widget-border-radius: var(--border-radius-default);
     --consent-widget-width: var(--content-width-with-padding);
     --consent-widget-max-width: 560px;
     --consent-widget-background-color: var(--color-bg);
@@ -33,7 +33,7 @@
     --consent-widget-warning-color: var(--color-warning);
     --consent-widget-warning-border: var(--border-width-normal) solid var(--consent-widget-warning-color);
     --consent-widget-warning-padding: var(--spacing-normal);
-    --consent-widget-warning-border-radius: var(--border-radius-normal);
+    --consent-widget-warning-border-radius: var(--border-radius-default);
     --consent-widget-warning-display: flex;
     --consent-widget-warning-align-items: center;
     --consent-widget-warning-jusity-content: center;

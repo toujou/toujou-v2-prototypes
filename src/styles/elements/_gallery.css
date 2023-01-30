@@ -14,7 +14,7 @@
     --gallery-image-height: 100%;
     --gallery-image-width: 100%;
     --gallery-image-object-fit: cover;
-    --gallery-image-border-radius: var(--border-radius-s);
+    --gallery-image-border-radius: var(--border-radius-default);
 
     --gallery-hover-overlay-opacity: 0;
 

@@ -6,7 +6,7 @@
     --collection-item-width: 100%;
     --collection-item-max-width: 100%;
     --collection-item-shadow: var(--shadow-s);
-    --collection-item-border-radius: var(--border-radius-normal);
+    --collection-item-border-radius: var(--border-radius-default);
     --collection-item-overflow: hidden;
     --collection-item-bg-color: var(--color-bg);
     --collection-item-z-index: var(--z-index-content);
@@ -44,7 +44,7 @@
     --collection-item-date-top: var(--spacing-m);
     --collection-item-date-left: var(--spacing-m);
     --collection-item-date-background-color: var(--color-bg);
-    --collection-item-date-border-radius: var(--border-radius-normal);
+    --collection-item-date-border-radius: var(--border-radius-default);
     --collection-item-date-display: flex;
     --collection-item-date-align-items: center;
     --collection-item-date-justify-content: center;
@@ -124,7 +124,7 @@
     --collection-item-extension-padding: var(--spacing-xs) var(--spacing-s);
     --collection-item-extension-color: var(--color-bg);
     --collection-item-extension-font-size: var(--font-size-s);
-    --collection-item-extension-border-radius: var(--border-radius-normal);
+    --collection-item-extension-border-radius: var(--border-radius-default);
     --collection-item-extension-margin: var(--spacing-normal) 0;
 
     --collection-item-abstract-number-of-line: 3;
@@ -170,7 +170,7 @@
     --collection-item-bottom-padding: var(--spacing-m) 0;
     --collection-item-flex-direction: column;
     --collection-item-shadow: none;
-    --collection-item-figure-border-radius: var(--border-radius-normal);
+    --collection-item-figure-border-radius: var(--border-radius-default);
 }
 
 .collection-item[item-design="primary"],
@@ -518,7 +518,7 @@
     .collection-item[item-orientation="horizontal"] {
         --collection-item-flex-direction: row;
         --collection-item-top-margin: var(--spacing-m) var(--spacing-normal);
-        --collection-item-figure-border-radius: var(--border-radius-normal);
+        --collection-item-figure-border-radius: var(--border-radius-default);
         /* stylelint-disable-next-line max-line-length */
         --collection-item-location-border-radius: 0 0 var(--collection-item-figure-border-radius) var(--collection-item-figure-border-radius);
         --collection-item-bottom-padding: var(--spacing-m);

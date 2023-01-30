@@ -57,6 +57,8 @@
     --border-radius-xs: 1px;
     --border-radius-circle: 50%;
     --border-radius-0: 0;
+
+    --border-radius-default: var(--border-radius-normal);
 }
 
 :root,
@@ -172,7 +174,7 @@
     --form-input-error-border: var(--form-input-border-width) solid var(--form-input-error-border-color);
     --form-input-success-border: var(--form-input-border-width) solid var(--form-input-success-border-color);
 
-    --form-input-border-radius: var(--border-radius-normal);
+    --form-input-border-radius: var(--border-radius-default);
     --form-input-background-color: var(--color-bg);
     --form-input-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
     --form-input-color: var(--color-font);
@@ -472,7 +474,7 @@
     --alert-font-size: var(--font-size-normal);
     --alert-font-family: var(--font-family-text);
     --alert-padding: var(--spacing-s) var(--spacing-normal);
-    --alert-border-radius: var(--border-radius-normal);
+    --alert-border-radius: var(--border-radius-default);
     --alert-border-width: var(--spacing-1px);
     --alert-border: var(--alert-border-width) solid var(--alert-border-color);
     --alert-width: auto;
@@ -532,7 +534,7 @@
     --button-font-size: var(--font-size-normal);
     --button-font-family: var(--font-family-text);
     --button-padding: var(--spacing-s) var(--spacing-m);
-    --button-border-radius: var(--border-radius-normal);
+    --button-border-radius: var(--border-radius-default);
     --button-border-width: var(--spacing-1px);
     --button-border-color: var(--button-color-bg);
     --button-border: var(--button-border-width) solid var(--button-border-color);

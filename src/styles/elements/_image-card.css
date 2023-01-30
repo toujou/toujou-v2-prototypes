@@ -4,7 +4,7 @@
     --image-card-display: block;
     --image-card-position: relative;
     --image-card-overflow: hidden;
-    --image-card-border-radius: var(--border-radius-normal);
+    --image-card-border-radius: var(--border-radius-default);
     --image-card-text-decoration: none;
     --image-card-z-index: var(--z-index-content);
 

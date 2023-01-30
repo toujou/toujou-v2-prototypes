@@ -16,7 +16,7 @@
     --form-input-error-border: var(--form-input-border-width) solid var(--form-input-error-border-color);
     --form-input-success-border: var(--form-input-border-width) solid var(--form-input-success-border-color);
 
-    --form-input-border-radius: var(--border-radius-normal);
+    --form-input-border-radius: var(--border-radius-default);
     --form-input-background-color: var(--color-bg);
     --form-input-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
     --form-input-color: var(--color-font);

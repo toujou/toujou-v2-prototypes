@@ -13,7 +13,7 @@
     --blockquote-line-height: var(--line-height-normal);
     --blockquote-author-prefix: "—";
     --blockquote-max-width: var(--content-max-width);
-    --blockquote-border-radius: var(--border-radius-normal);
+    --blockquote-border-radius: var(--border-radius-default);
     --blockquote-padding: 0;
     --blockquote-background-color: var(--color-bg);
 

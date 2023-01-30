@@ -153,6 +153,8 @@ figure {
     --border-radius-xs: 1px;
     --border-radius-circle: 50%;
     --border-radius-0: 0;
+
+    --border-radius-default: var(--border-radius-normal);
 }
 
 :root,
@@ -268,7 +270,7 @@ figure {
     --form-input-error-border: var(--form-input-border-width) solid var(--form-input-error-border-color);
     --form-input-success-border: var(--form-input-border-width) solid var(--form-input-success-border-color);
 
-    --form-input-border-radius: var(--border-radius-normal);
+    --form-input-border-radius: var(--border-radius-default);
     --form-input-background-color: var(--color-bg);
     --form-input-padding: var(--spacing-m) var(--spacing-s) var(--spacing-s);
     --form-input-color: var(--color-font);
@@ -836,7 +838,7 @@ figure {
         --main-nav-list-padding: var(--spacing-normal) var(--spacing-xl);
         --main-nav-level-2-list-column-count: 2;
         --main-nav-level-2-list-gap: var(--spacing-l);
-        --main-nav-level-2-border-radius: 0 0 var(--border-radius-normal) var(--border-radius-normal);
+        --main-nav-level-2-border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
 
         --main-nav-link-color: var(--color-font);
 
@@ -2485,7 +2487,7 @@ body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     --alert-font-size: var(--font-size-normal);
     --alert-font-family: var(--font-family-text);
     --alert-padding: var(--spacing-s) var(--spacing-normal);
-    --alert-border-radius: var(--border-radius-normal);
+    --alert-border-radius: var(--border-radius-default);
     --alert-border-width: var(--spacing-1px);
     --alert-border: var(--alert-border-width) solid var(--alert-border-color);
     --alert-width: auto;
@@ -2599,7 +2601,7 @@ blockquote:not(.blockquote__blockquote) + .blockquote__author::before {
     --button-font-size: var(--font-size-normal);
     --button-font-family: var(--font-family-text);
     --button-padding: var(--spacing-s) var(--spacing-m);
-    --button-border-radius: var(--border-radius-normal);
+    --button-border-radius: var(--border-radius-default);
     --button-border-width: var(--spacing-1px);
     --button-border-color: var(--button-color-bg);
     --button-border: var(--button-border-width) solid var(--button-border-color);
@@ -3203,7 +3205,7 @@ exit-warning {
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);
-    --toujou-modal-content-border-radius: var(--border-radius-normal);
+    --toujou-modal-content-border-radius: var(--border-radius-default);
 
     z-index: var(--toujou-modal-z-index);
 }
@@ -4236,7 +4238,7 @@ toujou-modal {
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);
-    --toujou-modal-content-border-radius: var(--border-radius-normal);
+    --toujou-modal-content-border-radius: var(--border-radius-default);
 
     z-index: var(--toujou-modal-z-index);
 }
@@ -4380,7 +4382,7 @@ html {
     --toujou-snackbar-bottom: var(--spacing-normal);
     --toujou-snackbar-left: var(--spacing-normal);
     --toujou-snackbar-padding: var(--spacing-normal);
-    --toujou-snackbar-border-radius: var(--border-radius-normal);
+    --toujou-snackbar-border-radius: var(--border-radius-default);
     --toujou-snackbar-z-index: var(--z-index-notifications);
     --toujou-snackbar-transition: all var(--animation-duration-fast) var(--animation-easing-normal);
     --toujou-snackbar-shadow: var(--shadow-normal);
@@ -4807,7 +4809,7 @@ main > .table-container {
     --topbutton-right: var(--spacing-normal);
     --topbutton-padding: var(--spacing-s);
     --topbutton-margin: 0;
-    --topbutton-border-radius: var(--border-radius-normal);
+    --topbutton-border-radius: var(--border-radius-default);
     --topbutton-border: var(--border-width-normal) solid var(--color-primary);
     --topbutton-transform: translateY(200%);
     --topbutton-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);

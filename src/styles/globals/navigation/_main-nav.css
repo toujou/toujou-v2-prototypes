@@ -273,7 +273,7 @@
         --main-nav-list-padding: var(--spacing-normal) var(--spacing-xl);
         --main-nav-level-2-list-column-count: 2;
         --main-nav-level-2-list-gap: var(--spacing-l);
-        --main-nav-level-2-border-radius: 0 0 var(--border-radius-normal) var(--border-radius-normal);
+        --main-nav-level-2-border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
 
         --main-nav-link-color: var(--color-font);
 

@@ -13,7 +13,7 @@ skippy-links {
     --skip-links-font-weight: var(--font-weight-text-bold);
     --skip-links-width: fit-content;
     --skip-links-min-width: 100%;
-    --skip-links-border-radius: 0 0 var(--border-radius-normal) 0;
+    --skip-links-border-radius: 0 0 var(--border-radius-default) 0;
 
     background-color: var(--skip-links-background-color);
     border: var(--skip-links-border);

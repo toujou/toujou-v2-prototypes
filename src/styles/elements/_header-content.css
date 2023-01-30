@@ -13,7 +13,7 @@
     /*--header-content-width: 50%;*/
     --header-content-padding: var(--spacing-normal);
     --header-content-background-color: var(--color-bg);
-    --header-content-border-radius: var(--border-radius-normal);
+    --header-content-border-radius: var(--border-radius-default);
     --header-content-z-index: var(--z-index-content);
 
     --header-title-color: var(--color-primary);

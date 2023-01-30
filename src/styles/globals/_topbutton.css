@@ -8,7 +8,7 @@
     --topbutton-right: var(--spacing-normal);
     --topbutton-padding: var(--spacing-s);
     --topbutton-margin: 0;
-    --topbutton-border-radius: var(--border-radius-normal);
+    --topbutton-border-radius: var(--border-radius-default);
     --topbutton-border: var(--border-width-normal) solid var(--color-primary);
     --topbutton-transform: translateY(200%);
     --topbutton-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);

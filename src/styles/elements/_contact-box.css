@@ -16,7 +16,7 @@
 
     --contact-box-card-background-color: var(--color-bg);
     --contact-box-card-padding: var(--spacing-l);
-    --contact-box-card-border-radius: var(--border-radius-normal);
+    --contact-box-card-border-radius: var(--border-radius-default);
     --contact-box-card-position: relative;
     --contact-box-card-width: auto;
     --contact-box-card-max-width: 100%;
