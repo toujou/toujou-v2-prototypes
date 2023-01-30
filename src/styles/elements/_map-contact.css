@@ -2,6 +2,7 @@
     --map-contact-width: var(--content-width-with-padding);
     --map-contact-max-width: var(--content-max-width);
     --map-contact-margin: var(--spacing-between-elements-normal) auto 0;
+    --map-contact-padding: 0;
     --map-contact-display: grid;
     --map-contact-grid-template-columns: 1fr;
     --map-contact-grid-gap: var(--spacing-normal);
@@ -42,6 +43,7 @@
     width: var(--map-contact-width);
     max-width: var(--map-contact-max-width);
     margin: var(--map-contact-margin);
+    padding: var(--map-contact-padding);
     display: var(--map-contact-display);
     grid-template-columns: var(--map-contact-grid-template-columns);
     grid-gap: var(--map-contact-grid-gap);
@@ -71,6 +73,7 @@
     --map-contact-address-color: var(--color-bg);
     --map-contact-social-icon-color: var(--color-bg);
     --map-contact-border-radius: var(--border-radius-default);
+    --map-contact-padding: var(--spacing-xl);
 }
 
 .map-contact:not([element-design="default"]) a {
