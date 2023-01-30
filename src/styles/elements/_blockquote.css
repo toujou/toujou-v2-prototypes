@@ -19,7 +19,7 @@
 
     --blockquote-text-font-size: var(--font-size-normal);
     --blockquote-text-line-height: 1.5;
-    --blockquote-text-margin: 0;
+    --blockquote-text-margin: var(--spacing-s) 0 0;
     --blockquote-z-index: var(--z-index-content);
 
     --blockquote-icon-color: var(--color-font-dark);
