@@ -50,7 +50,9 @@
 }
 
 .teaser__image,
-.teaser__figure .video{
+.teaser__figure .video,
+.teaser__figure .single-media__video[video-extension="youtube"],
+.teaser__figure .single-media__video[video-extension="vimeo"] {
     aspect-ratio: var(--teaser-image-aspect-ratio);
     object-fit: var(--teaser-image-object-fit);
     width: var(--teaser-image-width);
