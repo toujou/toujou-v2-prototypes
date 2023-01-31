@@ -73,7 +73,9 @@
 @import "./elements/_topbar.css";
 @import "./elements/_media-placeholder.css";
 @import "./elements/_topbutton.css";
-@import "./elements/_blog-post.css";
+@import "./elements/_post-data.css";
+@import "./elements/_post-tags.css";
+@import "./elements/_post-comments.css";
 
 
 

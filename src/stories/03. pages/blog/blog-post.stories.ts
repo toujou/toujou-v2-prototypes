@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Meta, Story } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -13,106 +13,180 @@ export default {
             page: blogPostDocs,
         },
     },
+    argTypes: {
+        hasAvatar: {
+            table: {
+                category: "Blog post Settings",
+                defaultValue: { summary: 'true' },
+            },
+            name: 'Author has avatar',
+            description: "Toggle between a post page where author avatar is or isn't available",
+            control: { type: 'boolean' },
+            defaultValue: ['true'],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+interface BlogPostStoryProps {
+    hasAvatar: boolean
+}
+
+const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
+    console.log(args)
     return `
-        <section class="blog-post">
-            <div class="blog-post__data">
-                <time class="blog-post__date" datetime="T09:00P11H">
+        <div class="blog-post">
+            <section>
+                <toujou-text-block class="text-block" text-block-column-count="1">
+                    <toujou-text-block-column class="text-block-column">
+                        <div class="text-block__content">
+                            <h1>Teaser section</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </toujou-text-block-column>
+                </toujou-text-block>
+            </section>
+            
+            <div class="post-data">
+                <a href="#" class="post-data__author">
+                    ${args.hasAvatar
+                        ? `
+                        <figure class="post-data__author-figure">
+                            <img src="https://i.pravatar.cc/80?img=27" alt="Post author avatar" class="post-data__author-avatar">
+                        </figure>
+                        `
+                        : `<toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="account"></toujou-icon>`
+                    }
+                        
+                    <span class="post-data__author-name">Luke Skywalker</span>
+                </a>
+                <time class="post-data__date" datetime="T09:00P11H">
                     <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="calendar-day"></toujou-icon>
-                    <span class="blog-post__date-time">30.01.2023</span>
+                    <span class="post-data__date-time">30.01.2023</span>
                 </time>
-                <p class="blog-post__author">
-                    <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="account"></toujou-icon>
-                    <span class="blog-post__author-name">Luke Skywalker</span>
-                </p>
+                <ul class="post-data__categories">
+                    <li class="post-data__category">
+                        <a href="#" class="post-data__category-link">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="bookmark-filled"></toujou-icon>
+                            <span class="post-data__category-name">Category 1</span>
+                        </a>
+                    </li> 
+                    <li class="post-data__category">
+                        <a href="#" class="post-data__category-link">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="bookmark-filled"></toujou-icon>
+                            <span class="post-data__category-name">Category 2</span>
+                        </a>
+                    </li> 
+                </ul>
             </div> 
             
-            <toujou-text-block class="text-block" text-block-column-count="1">
-                <toujou-text-block-column class="text-block-column">
-                    <div class="text-block__content">
-                        <h1>Blog post content</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </toujou-text-block-column>
-            </toujou-text-block>
-            
-            <toujou-text-block class="text-block" text-block-column-count="2" text-block-media-position="above">
-                <toujou-text-block-column class="text-block-column">
-                    <figure class="text-block__figure">
-                        <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--16-9">
-                        <toujou-media-info class="media-info">
-                            <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                                <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
-                            </button>
-                            <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                                <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
-                            </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
-                            <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
-                        </toujou-media-info>
-                    </figure>
-                    <div class="text-block__content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </toujou-text-block-column>
-                <toujou-text-block-column class="text-block-column">
-                    <figure class="text-block__figure">
-                        <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--16-9">
-                        <toujou-media-info class="media-info">
-                            <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                                <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
-                            </button>
-                            <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
-                                <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
-                            </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
-                            <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
-                        </toujou-media-info>
-                    </figure>
-                    <div class="text-block__content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </toujou-text-block-column>
-            </toujou-text-block>
-            
-            <section class="blog-post__comments">
-                <h3 class="blog-post__categories-title">Comments</h3>
-                <ul class="blog-post__comments-list">
-                    <li class="blog-post__comments-item">
-                        <div class="blog-post__comments-data">
-                            <p class="blog-post__comments-author">Luke Skywalker</p>
-                            <time class="blog-post__comments-date" datetime="T09:00P11H">30.01.2023, 14:32</time>
+            <section>
+                <toujou-text-block class="text-block" text-block-column-count="1">
+                    <toujou-text-block-column class="text-block-column">
+                        <div class="text-block__content">
+                            <h1>Blog post content</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-                        <p class="blog-post__comments-comment">
+                    </toujou-text-block-column>
+                </toujou-text-block>
+                
+                <toujou-text-block class="text-block" text-block-column-count="2" text-block-media-position="above">
+                    <toujou-text-block-column class="text-block-column">
+                        <figure class="text-block__figure">
+                            <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--16-9">
+                            <toujou-media-info class="media-info">
+                                <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                                    <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                                </button>
+                                <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                                    <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                                </button>
+                                <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                                <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                            </toujou-media-info>
+                        </figure>
+                        <div class="text-block__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </toujou-text-block-column>
+                    <toujou-text-block-column class="text-block-column">
+                        <figure class="text-block__figure">
+                            <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--16-9">
+                            <toujou-media-info class="media-info">
+                                <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                                    <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                                </button>
+                                <button slot="close-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
+                                    <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                                </button>
+                                <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                                <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                            </toujou-media-info>
+                        </figure>
+                        <div class="text-block__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </toujou-text-block-column>
+                </toujou-text-block>
+            </section>
+            
+            <ul class="post-tags">
+                <li class="post-tags__item">
+                    <a href="#" class="post-tags__link">
+                        <toujou-icon class="icon" icon-name="bookmark" icon-color="font" icon-size="ms"></toujou-icon>
+                        <span class="post-tags__name">Tag 1</span>
+                    </a>
+                </li>
+                <li class="post-tags__item">
+                    <a href="#" class="post-tags__link">
+                        <toujou-icon class="icon" icon-name="bookmark" icon-color="font" icon-size="ms"></toujou-icon>
+                        <span class="post-tags__name">Tag 2</span>
+                    </a>
+                </li>
+                <li class="post-tags__item">
+                    <a href="#" class="post-tags__link">
+                        <toujou-icon class="icon" icon-name="bookmark" icon-color="font" icon-size="ms"></toujou-icon>
+                        <span class="post-tags__name">Tag 3</span>
+                    </a>
+                </li>
+            </ul>
+                
+            <section class="post-comments">
+                <h3 class="post-comments__title">Comments</h3>
+                <ul class="post-comments__list">
+                    <li class="post-comments__item">
+                        <div class="post-comments__data">
+                            <p class="post-comments__author">Luke Skywalker</p>
+                            <time class="post-comments__date" datetime="T09:00P11H">30.01.2023, 14:32</time>
+                        </div>
+                        <p class="post-comments__comment">
                             This is a comment made on the blog post
                         </p>
                     </li>
-                    <li class="blog-post__comments-item">
-                        <div class="blog-post__comments-data">
-                            <p class="blog-post__comments-author">Han Solo</p>
-                            <time class="blog-post__comments-date" datetime="T09:00P11H">22.12.2022, 08:23</time>
+                    <li class="post-comments__item">
+                        <div class="post-comments__data">
+                            <p class="post-comments__author">Han Solo</p>
+                            <time class="post-comments__date" datetime="T09:00P11H">22.12.2022, 08:23</time>
                         </div>
-                        <p class="blog-post__comments-comment">
+                        <p class="post-comments__comment">
                             Now that we are approaching Christmas we can leave comments on blog post
                         </p>
                     </li>
-                    <li class="blog-post__comments-item">
-                        <div class="blog-post__comments-data">
-                            <p class="blog-post__comments-author">Jabba the Hutt</p>
-                            <time class="blog-post__comments-date" datetime="T09:00P11H">14.11.2022, 20:17</time>
+                    <li class="post-comments__item">
+                        <div class="post-comments__data">
+                            <p class="post-comments__author">Jabba the Hutt</p>
+                            <time class="post-comments__date" datetime="T09:00P11H">14.11.2022, 20:17</time>
                         </div>
-                        <p class="blog-post__comments-comment">
+                        <p class="post-comments__comment">
                             Let us look up and enjoy the sun on our faces!
                         </p>
                     </li>
                 </ul>
                 
-                <form class="form blog-post__comments-form">
-                    <h4 class="blog-post__comments-title">Write comment</h4>
+                <form class="form post-comments__form">
+                    <h4 class="post-comments__title">Write comment</h4>
                     
                     <toujou-input-group class="input-group input-group--text input-group--required">
                         <label for="testform-1000091-text-1" class="input-label">Name</label>
@@ -162,32 +236,14 @@ const Template = () => {
                 </form>
                 
             </section>
-            
-            <section class="blog-post__categories">
-                <h3 class="blog-post__categories-title">Categories</h3>
-                <ul class="blog-post__categories-list">
-                    <li class="blog-post__categories-item">
-                        <a href="#" class="blog-post__categories-link">
-                            <toujou-icon class="icon" icon-name="bookmark-filled" icon-color="font" icon-size="ms"></toujou-icon>
-                            <span class="blog-post__categories-name">Category One</span>
-                        </a>
-                    </li>
-                    <li class="blog-post__categories-item">
-                        <a href="#" class="blog-post__categories-link">
-                            <toujou-icon class="icon" icon-name="bookmark-filled" icon-color="font" icon-size="ms"></toujou-icon>
-                            <span class="blog-post__categories-name">Category Two</span>
-                        </a>
-                    </li>
-                    <li class="blog-post__categories-item">
-                        <a href="#" class="blog-post__categories-link">
-                            <toujou-icon class="icon" icon-name="bookmark-filled" icon-color="font" icon-size="ms"></toujou-icon>
-                            <span class="blog-post__categories-name">Category Three</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                
         </div>
+        
     `;
 };
 
 export const BlogPost = Template.bind({});
+
+BlogPost.args = {
+    hasAvatar: true
+}

@@ -1,0 +1,71 @@
+.post-comments {
+    --post-comments-width: var(--content-width-with-padding);
+    --post-comments-max-width: var(--content-medium-max-width);
+    --post-comments-margin: var(--spacing-between-elements-normal) auto var(--spacing-between-elements-normal);
+
+    --post-comments-list-list-style: none;
+    --post-comments-list-list-margin: 0;
+    --post-comments-list-list-display: flex;
+    --post-comments-list-list-flex-direction: column;
+    --post-comments-list-list-align-items: flex-start;
+    --post-comments-list-list-justify-content: flex-start;
+    --post-comments-list-list-gap: var(--spacing-normal);
+
+    --post-comments-data-display: flex;
+    --post-comments-data-flex-direction: row;
+    --post-comments-data-align-items: center;
+    --post-comments-data-justify-content: flex-start;
+    --post-comments-data-gap: var(--spacing-normal);
+
+    --post-comments-author-margin: 0;
+    --post-comments-author-color: var(--color-font-light);
+
+    --post-comments-date-color: var(--color-font-light);
+
+    --post-comments-comment-margin: 0;
+
+    --post-comments-form-width: 100%;
+    --post-comments-form-max-width: 100%;
+    --post-comments-form-margin: var(--spacing-xl) 0 var(--spacing-between-elements-normal);
+
+    width: var(--post-comments-width);
+    max-width: var(--post-comments-max-width);
+    margin: var(--post-comments-margin);
+}
+
+.post-comments__list {
+    list-style: var(--post-comments-list-list-style);
+    margin: var(--post-comments-list-list-margin);
+    display: var(--post-comments-list-list-display);
+    flex-direction: var(--post-comments-list-list-flex-direction);
+    align-items: var(--post-comments-list-list-align-items);
+    justify-content: var(--post-comments-list-list-justify-content);
+    gap: var(--post-comments-list-list-gap);
+}
+
+.post-comments__data {
+    display: var(--post-comments-data-display);
+    flex-direction: var(--post-comments-data-flex-direction);
+    align-items: var(--post-comments-data-align-items);
+    justify-content: var(--post-comments-data-justify-content);
+    gap: var(--post-comments-data-gap);
+}
+
+.post-comments__author {
+    margin: var(--post-comments-author-margin);
+    color: var(--post-comments-author-color);
+}
+
+.post-comments__date {
+    color: var(--post-comments-date-color);
+}
+
+.post-comments__comment {
+    margin: var(--post-comments-comment-margin);
+}
+
+.post-comments__form {
+    width: var(--post-comments-form-width);
+    max-width: var(--post-comments-form-max-width);
+    margin: var(--post-comments-form-margin);
+}
