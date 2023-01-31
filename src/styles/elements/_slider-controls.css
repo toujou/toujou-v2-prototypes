@@ -9,6 +9,10 @@
     pointer-events: none;
 }
 
+.slider[slider-aspect-ratio="0.5625"] .slider-controls {
+    --slider-controls-aspect-ratio: var(--aspect-ratio-16-9);
+}
+
 .slider[content-type="logos"],
 .header .slider {
     --slider-controls-height: 100%;
