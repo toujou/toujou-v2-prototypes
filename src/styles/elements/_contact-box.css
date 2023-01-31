@@ -70,7 +70,7 @@
     outline: var(--contact-box-outline);
 }
 
-#contact-state:checked ~ .wrap--master .contact-box {
+#contact-state:checked ~ .contact-box {
     --contact-box-display: flex;
     --contact-box-pointer-events: all;
     --contact-box-visibility: visible;
