@@ -4275,8 +4275,8 @@ toujou-modal {
     --single-media-margin: var(--spacing-between-elements-normal) auto 0;
     --single-media-display: block;
     --single-media-max-height: 100%;
-    --single-media-border-radius: unset;
-    --single-media-overflow: unset;
+    --single-media-border-radius: var(--border-radius-default);
+    --single-media-overflow: hidden;
 
     --single-media-media-width: 100%;
     --single-media-media-height: auto;
@@ -4534,6 +4534,7 @@ main > .table-container {
     --text-block-max-width: var(--content-medium-max-width);
     --text-block-margin: var(--spacing-between-elements-normal) auto 0;
     --text-block-image-aspect-ratio: var(--aspect-ratio-default);
+    --text-block-image-border-radius: var(--border-radius-default);
     --text-block-image-object-fit: cover;
     --text-block-media-inside-image-width: 50%;
     --text-block-media-inside-offset: calc(100% / 8);
@@ -4593,6 +4594,7 @@ main > .table-container {
        object-fit: var(--text-block-image-object-fit);
     height: auto;
     width: 100%;
+    border-radius: var(--text-block-image-border-radius);
 }
 
 .text-block__image--square {

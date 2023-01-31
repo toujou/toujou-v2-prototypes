@@ -4,6 +4,7 @@
     --media-placeholder-width: 100%;
     --media-placeholder-background-color: var(--color-font-light);
     --media-placeholder-opacity: 1;
+    --media-placeholder-border-radius: var(--border-radius-default);
 
     --media-placeholder-icon-size: calc(var(--font-size-normal) * 4);
     --media-placeholder-icon-background-color: var(--color-font);
@@ -16,6 +17,7 @@
     background-color: var(--media-placeholder-background-color);
     opacity: var(--media-placeholder-opacity);
     position: relative;
+    border-radius: var(--media-placeholder-border-radius);
 }
 
 .media-placeholder::after {

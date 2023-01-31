@@ -7,6 +7,7 @@
     --hero-media-padding: 0;
     --hero-media-margin: var(--spacing-between-elements-normal) auto 0;
     --hero-media-z-index: var(--z-index-content);
+    --hero-media-border-radius: var(--border-radius-default);
 
     --hero-media-media-object-fit: cover;
     --hero-media-media-width: 100%;
@@ -34,7 +35,7 @@
 :is(main, .chapter) > .hero-media {
     width: var(--hero-media-width) !important;
     max-width: var(--content-wide-max-width) !important;
-
+    border-radius: var(--hero-media-border-radius);
 }
 
 .hero-media:first-child {
