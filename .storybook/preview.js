@@ -59,7 +59,7 @@ if (location.hostname === "toujou.github.io") {
 
 // When the msw is working, some stories don't work correctly (for instance slider) when the inspector is open
 // Somehow the msw trigger a page refresh when the inspector is open
-initialize(workerOptions);
+// initialize(workerOptions);
 
 export const decorators = [mswDecorator];
 

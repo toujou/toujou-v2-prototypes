@@ -84,8 +84,8 @@ const Template = () => {
                 <ul class="blog-post__comments-list">
                     <li class="blog-post__comments-item">
                         <div class="blog-post__comments-data">
-                            <time class="blog-post__comments-date" datetime="T09:00P11H">30.01.2023, 14:32</time>
                             <p class="blog-post__comments-author">Luke Skywalker</p>
+                            <time class="blog-post__comments-date" datetime="T09:00P11H">30.01.2023, 14:32</time>
                         </div>
                         <p class="blog-post__comments-comment">
                             This is a comment made on the blog post
@@ -93,8 +93,8 @@ const Template = () => {
                     </li>
                     <li class="blog-post__comments-item">
                         <div class="blog-post__comments-data">
-                            <time class="blog-post__comments-date" datetime="T09:00P11H">22.12.2022, 08:23</time>
                             <p class="blog-post__comments-author">Han Solo</p>
+                            <time class="blog-post__comments-date" datetime="T09:00P11H">22.12.2022, 08:23</time>
                         </div>
                         <p class="blog-post__comments-comment">
                             Now that we are approaching Christmas we can leave comments on blog post
@@ -102,8 +102,8 @@ const Template = () => {
                     </li>
                     <li class="blog-post__comments-item">
                         <div class="blog-post__comments-data">
-                            <time class="blog-post__comments-date" datetime="T09:00P11H">14.11.2022, 20:17</time>
                             <p class="blog-post__comments-author">Jabba the Hutt</p>
+                            <time class="blog-post__comments-date" datetime="T09:00P11H">14.11.2022, 20:17</time>
                         </div>
                         <p class="blog-post__comments-comment">
                             Let us look up and enjoy the sun on our faces!
