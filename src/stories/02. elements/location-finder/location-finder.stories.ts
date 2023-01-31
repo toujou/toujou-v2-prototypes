@@ -18,6 +18,7 @@ export default {
         docs: {
             page: locationFinderDocs,
         },
+        layout: "fullscreen",
         msw: {
             handlers: [
                 rest.get(placesgeoMockUrl, (_req, res, ctx) => {
