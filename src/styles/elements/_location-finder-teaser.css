@@ -27,4 +27,6 @@
     --toujou-location-finder-teaser-times-color: var(--color-font);
 
     --toujou-location-finder-teaser-image-size: var(--spacing-xl);
+
+    --toujou-location-finder-teaser-border-bottom: var(--border-width-normal) solid var(--color-font-o-20);
 }
