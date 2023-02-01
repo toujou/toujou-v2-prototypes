@@ -40,9 +40,10 @@
     --toujou-location-finder-sidebar-width: var(--toujou-location-finder-panel-width);
 
     --toujou-location-finder-panel-position: absolute;
-    --toujou-location-finder-panel-width: 240px;
+    --toujou-location-finder-panel-width: 100%;
     --toujou-location-finder-panel-height: 240px;
     --toujou-location-finder-panel-left: var(--toujou-location-finder-padding);
+    --toujou-location-finder-panel-overflow: initial;
 
     --toujou-location-finder-sidebar-locator-icon-height: var(--font-size-m);
     --toujou-location-finder-sidebar-locator-icon-width: var(--font-size-m);
@@ -91,5 +92,8 @@
         --toujou-location-finder-map-height: 100%;
         --toujou-location-finder-map-max-height: 100%;
         --toujou-location-finder-map-width: 100%;
+
+        --toujou-location-finder-panel-width: 240px;
+        --toujou-location-finder-panel-overflow: hidden;
     }
 }
