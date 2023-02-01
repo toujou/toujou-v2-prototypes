@@ -93,6 +93,8 @@
         --toujou-location-finder-map-max-height: 100%;
         --toujou-location-finder-map-width: 100%;
 
+        --toujou-location-finder-search-width: var(--toujou-location-finder-panel-width);
+
         --toujou-location-finder-panel-width: 240px;
         --toujou-location-finder-panel-overflow: hidden;
     }
