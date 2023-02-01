@@ -134,7 +134,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
             <ul class="post-tags">
                 <li class="post-tags__item">
                     <a href="#" class="post-tags__link">
-                        <toujou-icon class="icon" icon-name="bookmark" icon-color="font" icon-size="ms"></toujou-icon>
+                        <toujou-icon class="icon" icon-name="tag-filled" icon-color="font" icon-size="ms"></toujou-icon>
                         <span class="post-tags__name">Tag 1</span>
                     </a>
                 </li>

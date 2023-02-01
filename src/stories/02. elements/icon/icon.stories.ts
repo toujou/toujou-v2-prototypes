@@ -158,6 +158,8 @@ const iconNames = [
     'stop',
     'stop-circle-filled',
     'support',
+    'tag',
+    'tag-filled',
     'target',
     'telephone',
     'thumb-up',

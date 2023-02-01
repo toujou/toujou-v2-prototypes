@@ -19,7 +19,7 @@
     --post-tags-link-display: flex;
     --post-tags-link-align-items: center;
     --post-tags-link-justify-content: center;
-    --post-tags-link-gap: 0;
+    --post-tags-link-gap: var(--spacing-s);
     --post-tags-link-text-decoration: none;
     --post-tags-link-color: var(--color-font);
 

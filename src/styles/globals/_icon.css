@@ -672,6 +672,16 @@
     -webkit-mask-image: var(--icon-support);
 }
 
+.icon[icon-name="tag"] {
+    mask-image: var(--icon-tag);
+    -webkit-mask-image: var(--icon-tag);
+}
+
+.icon[icon-name="tag-filled"] {
+    mask-image: var(--icon-tag-filled);
+    -webkit-mask-image: var(--icon-tag-filled);
+}
+
 .icon[icon-name="target"] {
     mask-image: var(--icon-target);
     -webkit-mask-image: var(--icon-target);
