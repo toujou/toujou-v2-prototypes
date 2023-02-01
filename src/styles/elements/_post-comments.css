@@ -26,7 +26,7 @@
 
     --post-comments-form-width: 100%;
     --post-comments-form-max-width: 100%;
-    --post-comments-form-margin: var(--spacing-xl) 0 var(--spacing-between-elements-normal);
+    --post-comments-form-margin: var(--spacing-l) 0 var(--spacing-between-elements-normal);
 
     width: var(--post-comments-width);
     max-width: var(--post-comments-max-width);
