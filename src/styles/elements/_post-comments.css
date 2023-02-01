@@ -64,7 +64,8 @@
     margin: var(--post-comments-comment-margin);
 }
 
-.post-comments__form {
+.post-comments__form,
+.post-comments .form {
     width: var(--post-comments-form-width);
     max-width: var(--post-comments-form-max-width);
     margin: var(--post-comments-form-margin);
