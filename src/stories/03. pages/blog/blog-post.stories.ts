@@ -73,7 +73,6 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                     </li> 
                     <li class="post-data__category">
                         <a href="#" class="post-data__category-link">
-                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="bookmark-filled"></toujou-icon>
                             <span class="post-data__category-name">Category 2</span>
                         </a>
                     </li> 
