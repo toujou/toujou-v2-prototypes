@@ -1,6 +1,6 @@
 .post-comments {
     --post-comments-width: var(--content-width-with-padding);
-    --post-comments-max-width: var(--content-medium-max-width);
+    --post-comments-max-width: var(--content-max-width);
     --post-comments-margin: var(--spacing-between-elements-normal) auto var(--spacing-between-elements-normal);
 
     --post-comments-list-list-style: none;
