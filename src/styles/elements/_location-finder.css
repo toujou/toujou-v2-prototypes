@@ -97,5 +97,7 @@
 
         --toujou-location-finder-panel-width: 240px;
         --toujou-location-finder-panel-overflow: hidden;
+
+        --toujou-location-finder-sidebar-width: 240px;
     }
 }
