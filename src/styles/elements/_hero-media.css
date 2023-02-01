@@ -36,6 +36,7 @@
     width: var(--hero-media-width) !important;
     max-width: var(--content-wide-max-width) !important;
     border-radius: var(--hero-media-border-radius);
+    overflow: hidden;
 }
 
 .hero-media:first-child {
