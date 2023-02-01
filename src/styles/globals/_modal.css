@@ -10,12 +10,13 @@ toujou-modal {
     --toujou-modal-title-color: var(--color-primary);
     --toujou-modal-title-font-size: var(--font-size-l);
 
-    --toujou-modal-close-color: var(--color-primary);
-    --toujou-modal-close-hover-color: var(--color-primary-dark);
+    --toujou-modal-close-color: var(--color-bg);
+    --toujou-modal-close-hover-color: var(--color-bg);
 
     --toujou-modal-progressbar-color: var(--color-secondary);
     --toujou-modal-z-index: var(--z-index-modal);
     --toujou-modal-content-border-radius: var(--border-radius-default);
+
 
     z-index: var(--toujou-modal-z-index);
 }

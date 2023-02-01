@@ -20,7 +20,7 @@
 .topbar + .header {
     --header-margin-top: var(--topbar-height);
 
-    margin-top: var(--header-margin-top);
+    margin-top: var(--header-margin-top) !important;
 }
 
 .header[image-height="full"] {
