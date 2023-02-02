@@ -15,6 +15,7 @@ import "../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../src/components/toujou-contact-box/toujou-contact-box";
 import "../src/components/toujou-media-info/toujou-media-info";
 import "../src/components/toujou-topbutton/toujou-topbutton";
+import "../src/components/toujou-photoswipe-lightbox/toujou-photoswipe-lightbox";
 
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-snackbar/toujou-snackbar";
