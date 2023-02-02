@@ -4,6 +4,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 // @ts-ignore
 import lightboxDocs from './lightbox.docs.mdx';
 
+import '../../../js/elements/photoswipe-lightbox-creator';
 
 export default {
     title: 'COMPONENTS/Lightbox',
@@ -14,7 +15,6 @@ export default {
         },
     },
 } as Meta;
-
 
 const Template = () => {
     return `
