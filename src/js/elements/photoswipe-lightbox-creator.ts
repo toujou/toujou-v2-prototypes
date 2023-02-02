@@ -1,9 +1,10 @@
 import PhotoSwipe from 'photoswipe';
-// @ts-ignore
+// @ts-expect-error
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-// @ts-ignore
+// @ts-expect-error
 import PhotoSwipeVideoPlugin from 'photoswipe-video-plugin';
 
+// Create a global object to hold the element's variables and config
 const pswpLightboxCreator = {
     items: [] as HTMLElement[],
     parents: new Set<HTMLElement>(),
@@ -12,6 +13,9 @@ const pswpLightboxCreator = {
     itemIdAttribute: 'lightbox-item-id',
 }
 
+/**
+ * Initialize the element by getting add lightbox items from the page
+ */
 function initPhotoswipeLightboxCreator() {
     pswpLightboxCreator.items = Array.from(document.querySelectorAll(`[${pswpLightboxCreator.itemIdAttribute}]`));
 
@@ -24,7 +28,7 @@ function initPhotoswipeLightboxCreator() {
 }
 
 /**
- * Initialize a lightbox element for each of the lightbox parents
+ * Initialize a lightbox element for each of the lightbox parent element
  */
 function _initParents() {
     pswpLightboxCreator.parents.forEach((parent) => {
@@ -33,7 +37,7 @@ function _initParents() {
 }
 
 /**
- * Initialize  single instance of a PhotoSwipe lightbox and save it to the lightboxParents set
+ * Initialize  single instance of a PhotoSwipe lightbox
  * @param {HTMLElement} parent
  */
 function _initLightbox(parent: HTMLElement) {
@@ -56,6 +60,10 @@ function _initLightbox(parent: HTMLElement) {
     pswpLightboxCreator.lightboxes.add(lightbox);
 }
 
+/**
+ * Set up the lightbox to show the required elements
+ * @param {PhotoSwipeLightbox} lightbox
+ */
 function _handleUiRegister(lightbox: PhotoSwipeLightbox): void {
     lightbox.pswp.ui.registerElement({
         name: 'caption',
@@ -68,6 +76,11 @@ function _handleUiRegister(lightbox: PhotoSwipeLightbox): void {
     });
 }
 
+/**
+ * Replace the lightbox caption with the image's title text
+ * @param {HTMLElement} el
+ * @param {PhotoSwipeLightbox} lightbox
+ */
 function _handleChange(el: HTMLElement, lightbox: PhotoSwipeLightbox): void {
     let captionText = '';
     const currSlideElement = lightbox.pswp.currSlide.data.element;
@@ -79,6 +92,9 @@ function _handleChange(el: HTMLElement, lightbox: PhotoSwipeLightbox): void {
     el.textContent = captionText ? captionText : '';
 }
 
+/**
+ * Wait for the page to completely load before initializing the photoswipe-lightbox-creator script
+ */
 if (document.readyState === "complete" || document.readyState === "interactive") {
     setTimeout(() => {
         initPhotoswipeLightboxCreator();
@@ -88,5 +104,3 @@ if (document.readyState === "complete" || document.readyState === "interactive")
         initPhotoswipeLightboxCreator();
     });
 }
-
-console.log('HELLO')
