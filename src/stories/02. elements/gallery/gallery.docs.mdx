@@ -5,20 +5,24 @@ We use the [PhotoSwipe](https://photoswipe.com/)
 
 ## Markup Example
 ```html
-<toujou-gallery id="test-gallery" class="gallery">
+<toujou-gallery id="test-gallery" class="gallery" lightbox-parent-id="123">
     <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
         data-pswp-width="1669"
         data-pswp-height="2500"
         target="_blank"
         class="gallery__item"
-        title="This is a beautiful caption">
+        title="This is a beautiful caption"
+        lightbox-item-id="1"
+    >
         <img class="gallery__image" src="https://picsum.photos/600" alt=""/>
     </a>
     <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"
         data-pswp-width="1669"
         data-pswp-height="2500"
         target="_blank"
-        class="gallery__item">
+        class="gallery__item"
+        lightbox-item-id="2"
+    >
         <img class="gallery__image" src="https://picsum.photos/601" alt="" />
     </a>
 </toujou-gallery>
@@ -30,11 +34,15 @@ We use the [PhotoSwipe](https://photoswipe.com/)
 The `toujou-gallery` element must have a unique `id` attribute
 
 ### photoswipe attributes
+The Gallery element must have `lightbox-parent-id="..."` attribute
+
 The gallery items (the `a` elements inside the `toujou-gallery`) must have:
 - `class="gallery__item"`
 - `target="_blank"`
 - `data-pswp-width="..."` (width of the target image)
 - `data-pswp-height="..."` (height of the target image)
+- `lightbox-item-id="..."`
 
 They may also have:
 - `title="..."` (this is the caption that will be shown on the lightbox)
+
