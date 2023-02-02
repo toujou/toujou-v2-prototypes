@@ -88,13 +88,13 @@
     mask-image: var(--gallery-hover-icon-icon-video);
 }
 
-.gallery__item:focus-visible {
+a.gallery__item:focus-visible {
     --gallery-hover-overlay-opacity: 1;
     --gallery-hover-icon-opacity: 1;
 }
 
 @media (hover: hover) {
-    .gallery__item:hover {
+    a.gallery__item:hover {
         --gallery-hover-overlay-opacity: 1;
         --gallery-hover-icon-opacity: 1;
     }
