@@ -33,6 +33,7 @@ export class ToujouPhotoswipeLightbox extends LitElement {
         super.connectedCallback();
 
         this.lightboxItems = Array.from(document.querySelectorAll('.lightbox-item'));
+        console.log('PHOTOSWIPE_LIGHTBOX connected');
     }
 
     /**

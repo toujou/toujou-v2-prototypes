@@ -23,7 +23,7 @@ export default defineConfig({
                 'toujou-contact-box': path.resolve(__dirname, 'src/components/toujou-contact-box/toujou-contact-box.ts'),
                 'toujou-media-info': path.resolve(__dirname, 'src/components/toujou-media-info/toujou-media-info.ts'),
                 'toujou-topbutton': path.resolve(__dirname, 'src/components/toujou-topbutton/toujou-topbutton.ts'),
-                'toujou-lightbox': path.resolve(__dirname, 'src/components/toujou-photoswipe-lightbox/toujou-photoswipe-lightbox'),
+                'toujou-photoswipe-lightbox': path.resolve(__dirname, 'src/components/toujou-photoswipe-lightbox/toujou-photoswipe-lightbox'),
                 'toujou-inpage-nav': path.resolve(__dirname, 'src/components/copied/toujou-inpage-nav/toujou-inpage-nav.js'),
                 'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
                 'toujou-consent': path.resolve(__dirname, 'src/components/copied/toujou-consent/toujou-consent'),
