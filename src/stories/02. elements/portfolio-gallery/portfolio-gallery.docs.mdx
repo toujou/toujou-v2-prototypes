@@ -6,7 +6,7 @@
 
 ## Markup example
 ```html
-<toujou-portfolio-gallery class="portfolio-gallery" id="test-portfolio" number-of-items="2">
+<toujou-portfolio-gallery class="portfolio-gallery" id="test-portfolio" number-of-items="2" lightbox-parent-id="123">
     <toujou-slider
         slot="slider"
         class="slider"
@@ -32,7 +32,9 @@
                             data-pswp-height="900"
                             target="_blank"
                             class="slider__item portfolio-gallery__link"
-                            title="This is a beautiful caption">
+                            title="This is a beautiful caption"
+                            lightbox-item-id="1"
+                        >
                             <toujou-single-media class="single-media" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
                             </toujou-single-media>
@@ -44,7 +46,9 @@
                             data-pswp-height="901"
                             target="_blank"
                             class="slider__item portfolio-gallery__link"
-                            title="This is another interesting caption">
+                            title="This is another interesting caption"
+                            lightbox-item-id="2"
+                        >
                             <toujou-single-media class="single-media" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
                             </toujou-single-media>
@@ -76,6 +80,11 @@ The slider element must have the `slot="slider"` attribute
 The button element must have the `slot="button"` attribute
 
 ## Attributes
+
+### lightbox-parent-id
+For the portflio-gallery lightbox to work:
+- `<portfolio-gallery>` element  needs to have the `lightbox-parent-id`
+- All `portfolio-gallery__link` elements must have the `lightbox-item-id` attribute
 
 ### number-of-items <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 The `number-of-items` attribute on the portfolio element defines how many images we will show on desktop devices and should reflect the number of images on the slider.
