@@ -3,7 +3,8 @@ export declare class ToujouPhotoswipeLightbox extends LitElement {
     lightboxItems: HTMLElement[];
     lightboxParents: Set<HTMLElement>;
     lightboxes: Set<PhotoSwipeLightbox>;
-    private readonly parentIdAttribute;
+    private readonly lightboxParentIdAttribute;
+    private readonly lightboxItemIdAttribute;
     protected createRenderRoot(): Element | ShadowRoot;
     updated(changed: PropertyValues<this>): void;
     connectedCallback(): void;

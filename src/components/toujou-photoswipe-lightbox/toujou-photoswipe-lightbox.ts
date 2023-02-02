@@ -17,7 +17,8 @@ export class ToujouPhotoswipeLightbox extends LitElement {
     @property({ type: Set })
     lightboxes = new Set<PhotoSwipeLightbox>();
 
-    private readonly parentIdAttribute = 'lightbox-parent-id';
+    private readonly lightboxParentIdAttribute = 'lightbox-parent-id';
+    private readonly lightboxItemIdAttribute = 'lightbox-item-id';
 
     protected createRenderRoot(): Element | ShadowRoot {
         return this;
@@ -32,8 +33,7 @@ export class ToujouPhotoswipeLightbox extends LitElement {
     connectedCallback() {
         super.connectedCallback();
 
-        this.lightboxItems = Array.from(document.querySelectorAll('.lightbox-item'));
-        console.log('PHOTOSWIPE_LIGHTBOX connected');
+        this.lightboxItems = Array.from(document.querySelectorAll(`[${this,this.lightboxItemIdAttribute}]`));
     }
 
     /**
@@ -73,7 +73,7 @@ export class ToujouPhotoswipeLightbox extends LitElement {
      */
     _handleLightboxItemsChange = () => {
         this.lightboxItems.forEach((item) => {
-            const itemLightboxParent = item.closest(`[${this.parentIdAttribute}]`) as HTMLElement;
+            const itemLightboxParent = item.closest(`[${this.lightboxParentIdAttribute}]`) as HTMLElement;
             this.lightboxParents.add(itemLightboxParent);
         });
 
@@ -96,7 +96,7 @@ export class ToujouPhotoswipeLightbox extends LitElement {
     _initLightbox = (lightboxParent: HTMLElement) => {
         const lightbox: PhotoSwipeLightbox = new PhotoSwipeLightbox({
             gallery: lightboxParent,
-            children: '[lightbox-item-id]',
+            children: `[${this.lightboxItemIdAttribute}]`,
             pswpModule: PhotoSwipe,
             allowPanToNext: true,
             preloaderDelay: 0,
