@@ -11,16 +11,23 @@
     --post-comments-list-list-justify-content: flex-start;
     --post-comments-list-list-gap: var(--spacing-normal);
 
+    --post-comment-item-width: 100%;
+    --post-comment-item-border-bottom: var(--border-width-normal) solid var(--border-color-default);
+    --post-comment-item-padding: 0 0 var(--post-comments-list-list-gap);
+
     --post-comments-data-display: flex;
     --post-comments-data-flex-direction: row;
-    --post-comments-data-align-items: center;
+    --post-comments-data-align-items: baseline;
     --post-comments-data-justify-content: flex-start;
-    --post-comments-data-gap: var(--spacing-normal);
+    --post-comments-data-gap: var(--spacing-s);
 
     --post-comments-author-margin: 0;
-    --post-comments-author-color: var(--color-font-light);
+    --post-comments-author-color: var(--color-font);
+    --post-comments-author-font-weight: var(--font-weight-text-bold);
+    --post-comments-author-font-size: var(--font-size-s);
 
     --post-comments-date-color: var(--color-font-light);
+    --post-comments-date-font-size: var(--font-size-s);
 
     --post-comments-comment-margin: 0;
 
@@ -43,6 +50,15 @@
     gap: var(--post-comments-list-list-gap);
 }
 
+.post-comments__item {
+    width: var(--post-comment-item-width);
+}
+
+.post-comments__item:not(:last-child) {
+    border-bottom: var(--post-comment-item-border-bottom);
+    padding: var(--post-comment-item-padding);
+}
+
 .post-comments__data {
     display: var(--post-comments-data-display);
     flex-direction: var(--post-comments-data-flex-direction);
@@ -54,15 +70,19 @@
 .post-comments__author {
     margin: var(--post-comments-author-margin);
     color: var(--post-comments-author-color);
+    font-weight: var(--post-comments-author-font-weight);
+    font-size: var(--post-comments-author-font-size);
 }
 
 .post-comments__date {
     color: var(--post-comments-date-color);
+    font-size: var(--post-comments-date-font-size);
 }
 
 .post-comments__comment {
     margin: var(--post-comments-comment-margin);
 }
+
 
 .post-comments__form,
 .post-comments .form {
