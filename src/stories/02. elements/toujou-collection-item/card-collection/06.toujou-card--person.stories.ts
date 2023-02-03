@@ -41,7 +41,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
     return `
         <ul class="card-collection">
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
@@ -92,7 +92,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
@@ -143,7 +143,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
@@ -194,7 +194,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="person" item-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">

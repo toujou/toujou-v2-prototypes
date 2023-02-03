@@ -107,7 +107,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
-            slider-design="default"
+            element-design="default"
             auto-play-interval="6000"
             slides-to-show="1"
             slider-gap="0"

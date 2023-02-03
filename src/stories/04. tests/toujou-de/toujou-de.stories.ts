@@ -54,7 +54,7 @@ const Template = () => {
                 <toujou-slider
                     class="slider"
                     aria-label="Toujou slider example"
-                    slider-design="default"
+                    element-design="default"
                     slides-to-show="1"
                     slider-gap="0"
                     slider-aspect-ratio="0.5625"
@@ -329,7 +329,7 @@ const Template = () => {
             <section class="chapter">
                 <ul class="card-collection">
                     <li class="card-collection__item">
-                        <toujou-collection-item class="collection-item" item-type="blog" item-design="default" item-orientation="vertical">
+                        <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
                             <div class="collection-item__top">
                                 <figure class="collection-item__figure">
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -356,7 +356,7 @@ const Template = () => {
                         </toujou-collection-item>
                     </li>
                     <li class="card-collection__item">
-                        <toujou-collection-item class="collection-item" item-type="blog" item-design="default" item-orientation="vertical">
+                        <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
                             <div class="collection-item__top">
                                 <figure class="collection-item__figure">
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -383,7 +383,7 @@ const Template = () => {
                         </toujou-collection-item>
                     </li>
                     <li class="card-collection__item">
-                        <toujou-collection-item class="collection-item" item-type="blog" item-design="default" item-orientation="vertical">
+                        <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
                             <div class="collection-item__top">
                                 <figure class="collection-item__figure">
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">

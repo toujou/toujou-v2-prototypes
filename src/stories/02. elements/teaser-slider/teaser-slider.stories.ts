@@ -28,7 +28,7 @@ const Template = () => {
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
-            slider-design="primary"
+            element-design="primary"
             slides-to-show="1"
             slider-gap="0"
             slider-aspect-ratio="0.5625"

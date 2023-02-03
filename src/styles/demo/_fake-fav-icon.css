@@ -43,27 +43,27 @@
         background-color: var(--color-bg);
     }
 
-    .collection-item[item-design="primary"] .fake-fav-item:hover {
+    .collection-item[element-design="primary"] .fake-fav-item:hover {
         background-color: var(--color-primary-light);
     }
 
-    .collection-item[item-design="primary"] .fake-fav-item:hover::after {
+    .collection-item[element-design="primary"] .fake-fav-item:hover::after {
         background-color: var(--color-primary-dark);
     }
 
-    .collection-item[item-design="secondary"] .fake-fav-item:hover {
+    .collection-item[element-design="secondary"] .fake-fav-item:hover {
         background-color: var(--color-secondary-light);
     }
 
-    .collection-item[item-design="secondary"] .fake-fav-item:hover::after {
+    .collection-item[element-design="secondary"] .fake-fav-item:hover::after {
         background-color: var(--color-secondary-dark);
     }
 
-    .collection-item[item-design="inverted"] .fake-fav-item:hover {
+    .collection-item[element-design="inverted"] .fake-fav-item:hover {
         background-color: var(--color-font-light);
     }
 
-    .collection-item[item-design="inverted"] .fake-fav-item:hover::after {
+    .collection-item[element-design="inverted"] .fake-fav-item:hover::after {
         background-color: var(--color-font-dark);
     }
 }

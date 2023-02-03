@@ -27,7 +27,7 @@ const Template = () => {
                 class="slider"
                 show-count
                 aria-label="Toujou slider example"
-                slider-design="default"
+                element-design="default"
                 slider-fullwidth
                 slides-to-show="1"
                 slider-gap="0px"

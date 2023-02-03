@@ -25,7 +25,7 @@ const Template = () => {
         
         <ul class="card-collection">
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="blog" item-design="default" item-orientation="vertical">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -52,7 +52,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="blog" item-design="default" item-orientation="vertical">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -79,7 +79,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="blog" item-design="default" item-orientation="vertical">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -106,7 +106,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="blog" item-design="default" item-orientation="vertical">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
