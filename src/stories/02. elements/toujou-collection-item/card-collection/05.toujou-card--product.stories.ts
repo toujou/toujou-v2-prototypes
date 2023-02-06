@@ -50,7 +50,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <a href="#" class="collection-item__category">
                                 <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="primary-dark"></toujou-icon>
                                 New
-                            </span>
+                            </a>
                         </div>
                     </div>
                     <a href="#" class="collection-item__bottom">
@@ -68,7 +68,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <a href="#" class="collection-item__category">
                                 <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="primary-dark"></toujou-icon>
                                 Rabatt
-                            </span>
+                            </a>
                         </div>
                     </div>
                     <a href="#" class="collection-item__bottom">
