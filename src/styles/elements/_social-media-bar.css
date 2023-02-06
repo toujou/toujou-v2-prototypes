@@ -47,6 +47,10 @@
     --social-media-bar-padding: var(--spacing-normal);
 }
 
+.social-media-bar[no-margins] {
+    --social-media-bar-margin: 0 !important;
+}
+
 .social-media-bar[inline] {
     --social-media-bar-border-color: transparent;
     --social-media-bar-background-color: transparent;
