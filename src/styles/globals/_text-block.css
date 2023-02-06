@@ -59,7 +59,8 @@
     height: fit-content;
 }
 
-.text-block__image {
+.text-block__image,
+.text-block__figure .video {
     aspect-ratio: var(--text-block-image-aspect-ratio);
     object-fit: var(--text-block-image-object-fit);
     height: auto;

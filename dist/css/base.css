@@ -4602,7 +4602,8 @@ main > .table-container {
     height: fit-content;
 }
 
-.text-block__image {
+.text-block__image,
+.text-block__figure .video {
     aspect-ratio: var(--text-block-image-aspect-ratio);
     -o-object-fit: var(--text-block-image-object-fit);
        object-fit: var(--text-block-image-object-fit);
