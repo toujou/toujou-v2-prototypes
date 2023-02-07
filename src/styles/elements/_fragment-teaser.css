@@ -122,6 +122,10 @@
     display: var(--fragment-teaser-column-content-display);
 }
 
+.fragment-teaser__column-content > *:first-child {
+    margin-top: 0;
+}
+
 .fragment-teaser__info {
     font-family: var(--fragment-teaser-info-font-family);
     font-size: var(--fragment-teaser-info-font-size);
