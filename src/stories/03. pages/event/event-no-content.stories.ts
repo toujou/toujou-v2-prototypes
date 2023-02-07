@@ -105,7 +105,7 @@ const Template = () => {
                         
                         <div class="fragment-teaser__block" number-of-columns="2">
                             <div class="fragment-teaser__column">
-                                <toujou-icon class="icon" icon-name="star" icon-color="font" icon-size="m"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="company" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
                                         Veranstalter GmbH <br>

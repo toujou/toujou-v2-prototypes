@@ -83,6 +83,7 @@ const iconNames = [
     'close',
     'cloud',
     'coffee',
+    'company',
     'coronavirus',
     'dashboard',
     'drink',
