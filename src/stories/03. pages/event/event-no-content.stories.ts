@@ -94,10 +94,10 @@ const Template = () => {
                                 <toujou-icon class="icon" icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        Firmenname GmbH <br>
-                                        Michael-Schumacher-Straße 132 <br>
-                                        Nordhein-Westfalen <br>
-                                        Deutschland
+                                        <span class="fragment-teaser__address-line">Firmenname GmbH</span>
+                                        <span class="fragment-teaser__address-line">Michael-Schumacher-Straße 132</span>
+                                        <span class="fragment-teaser__address-line">Nordhein-Westfalen</span>
+                                        <span class="fragment-teaser__address-line">Deutschland</span>
                                     </address>
                                 </div>
                             </div>
@@ -108,9 +108,9 @@ const Template = () => {
                                 <toujou-icon class="icon" icon-name="company" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        Veranstalter GmbH <br>
-                                        Gustav-Weißkopf-Straße 5<br>
-                                        90768 Fürth
+                                        <span class="fragment-teaser__address-line">Veranstalter GmbH</span>
+                                        <span class="fragment-teaser__address-line">Gustav-Weißkopf-Straße 5</span>
+                                        <span class="fragment-teaser__address-line">90768 Fürth</span>
                                     </address>
                                 </div>
                             </div>

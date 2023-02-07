@@ -41,7 +41,9 @@ const Template = () => {
                                 <toujou-icon class="icon" icon-name="telephone" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="fragment-teaser__link">1234456789</a>
+                                        <span class="fragment-teaser__address-line">
+                                            <a href="#" class="fragment-teaser__link">1234456789</a>
+                                        </span>
                                     </address>
                                 </div>
                             </div>
@@ -49,7 +51,9 @@ const Template = () => {
                                 <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="fragment-teaser__link">987654321</a>
+                                        <span class="fragment-teaser__address-line">
+                                            <a href="#" class="fragment-teaser__link">987654321</a>
+                                        </span>
                                     </address>
                                 </div>
                             </div>
@@ -57,7 +61,9 @@ const Template = () => {
                                 <toujou-icon class="icon" icon-name="email" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="fragment-teaser__link">info@mustermann.de</a>
+                                        <span class="fragment-teaser__address-line">
+                                            <a href="#" class="fragment-teaser__link">info@mustermann.de</a>
+                                        </span>
                                     </address>
                                 </div>
                             </div>
@@ -65,7 +71,9 @@ const Template = () => {
                                 <toujou-icon class="icon" icon-name="globe" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="fragment-teaser__link">987654321</a>
+                                        <span class="fragment-teaser__address-line">
+                                            <a href="#" class="fragment-teaser__link">987654321</a>
+                                        </span>
                                     </address>
                                 </div>
                             </div>
@@ -75,10 +83,10 @@ const Template = () => {
                                 <toujou-icon class="icon" icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        Firmenname GmbH <br>
-                                        Michael-Schumacher-Straße 132 <br>
-                                        Nordhein-Westfalen <br>
-                                        Deutschland
+                                        <span class="fragment-teaser__address-line">Firmenname GmbH</span>
+                                        <span class="fragment-teaser__address-line">Michael-Schumacher-Straße 132</span>
+                                        <span class="fragment-teaser__address-line">Nordhein-Westfalen</span>
+                                        <span class="fragment-teaser__address-line">Deutschland</span>
                                     </address>
                                 </div>
                             </div>

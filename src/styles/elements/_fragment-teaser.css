@@ -65,6 +65,8 @@
     --fragment-teaser-image-month-color: var(--color-font);
     --fragment-teaser-image-month-text-transform: uppercase;
 
+    --fragment-teaser-address-line-display: block;
+
     display: var(--fragment-teaser-display);
     grid-template-columns: var(--fragment-teaser-grid-template-columns);
     gap: var(--fragment-teaser-grid-gap);
@@ -158,6 +160,10 @@
     font-size: var(--fragment-teaser-image-month-font-size);
     color: var(--fragment-teaser-image-month-color);
     text-transform: var(--fragment-teaser-image-month-text-transform);
+}
+
+.fragment-teaser__address-block {
+    display: var(--fragment-teaser-address-line-display);
 }
 
 @media screen and (min-width: 840px) {
