@@ -15,6 +15,7 @@
     --fragment-teaser-image-height: auto;
     --fragment-teaser-image-width: 100%;
     --fragment-teaser-image-aspect-ratio: var(--aspect-ratio-default);
+    --fragment-teaser-image-object-fit: cover;
 
     --fragment-teaser-content-width: 100%;
 
@@ -87,6 +88,7 @@
     height: var(--fragment-teaser-image-height);
     width: var(--fragment-teaser-image-width);
     aspect-ratio: var(--fragment-teaser-image-aspect-ratio);
+    object-fit: var(--fragment-teaser-image-object-fit);
 }
 
 .fragment-teaser__content {
