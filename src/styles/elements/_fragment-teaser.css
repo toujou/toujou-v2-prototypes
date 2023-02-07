@@ -162,7 +162,7 @@
     text-transform: var(--fragment-teaser-image-month-text-transform);
 }
 
-.fragment-teaser__address-block {
+.fragment-teaser__address-line {
     display: var(--fragment-teaser-address-line-display);
 }
 
