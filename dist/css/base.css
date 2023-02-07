@@ -5027,6 +5027,10 @@ a:not(.button):focus {
     color: var(--color-font);
 }
 
+*[type-color="font-light"] {
+    color: var(--color-font-light);
+}
+
 /* stylelint-disable-next-line selector-no-vendor-prefix */
 
 a:-webkit-any-link:focus-visible {
