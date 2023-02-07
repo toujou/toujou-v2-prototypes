@@ -26,14 +26,8 @@ import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
 import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
 
 // ELEMENTS FROM @TOUJOU/UI-COMPONENTS
-import "../node_modules/@toujou/toujou-spinner/dist/toujou-spinner";
-import "../node_modules/@toujou/toujou-map/dist/toujou-map";
-import "../node_modules/@toujou/toujou-map/dist/toujou-map-geojson";
-import "../node_modules/@toujou/toujou-map/dist/toujou-map-layer";
-import "../node_modules/@toujou/toujou-map/dist/toujou-map-marker";
-import "../node_modules/@toujou/toujou-map/dist/toujou-map-popup";
-import "../node_modules/@toujou/toujou-map/dist/toujou-map-spiderfy";
-import "../node_modules/@toujou/toujou-map/dist/toujou-map-static";
+import "@toujou/toujou-spinner/lib";
+import "@toujou/toujou-map/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
@@ -59,7 +53,7 @@ if (location.hostname === "toujou.github.io") {
 
 // When the msw is working, some stories don't work correctly (for instance slider) when the inspector is open
 // Somehow the msw trigger a page refresh when the inspector is open
-// initialize(workerOptions);
+initialize(workerOptions);
 
 export const decorators = [mswDecorator];
 
