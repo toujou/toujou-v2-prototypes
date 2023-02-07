@@ -4,15 +4,18 @@
     --schema-intro-description-margin: var(--spacing-l) auto 0;
     --schema-intro-description-max-width: var(--content-max-width);
     --schema-intro-logo-display: block;
-    --schema-intro-logo-size: 6rem;
+    --schema-intro-logo-height: auto;
+    --schema-intro-logo-width: 4rem;
     --schema-intro-logo-margin: 0 auto;
+    --schema-intro-logo-object-fit: contain;
 }
 
 .schema__intro-logo {
     display: var(--schema-intro-logo-display);
-    height: var(--schema-intro-logo-size);
-    width: var(--schema-intro-logo-size);
+    height: var(--schema-intro-logo-height);
+    width: var(--schema-intro-logo-width);
     margin: var(--schema-intro-logo-margin);
+    object-fit: var(--schema-intro-logo-object-fit);
 }
 
 .schema__intro-title {
@@ -36,6 +39,6 @@
 
 @media screen and (min-width: 840px) {
     .schema {
-        --schema-intro-logo-size: 8rem;
+        --schema-intro-logo-size: 6rem;
     }
 }
