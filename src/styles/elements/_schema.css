@@ -39,6 +39,6 @@
 
 @media screen and (min-width: 840px) {
     .schema {
-        --schema-intro-logo-size: 6rem;
+        --schema-intro-logo-width: 6rem;
     }
 }
