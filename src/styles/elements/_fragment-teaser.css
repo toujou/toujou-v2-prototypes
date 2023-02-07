@@ -9,8 +9,9 @@
     --fragment-teaser-figure-border-radius: var(--border-radius-default);
     --fragment-teaser-figure-overflow: hidden;
     --fragment-teaser-figure-position: relative;
-    --fragment-teaser-figure-width: fit-content;
-    --fragment-teaser-figure-height: fit-content;
+    --fragment-teaser-figure-height: auto;
+    --fragment-teaser-figure-width: 100%;
+    --fragment-teaser-figure-aspect-ratio: var(--aspect-ratio-default);
 
     --fragment-teaser-image-height: auto;
     --fragment-teaser-image-width: 100%;
@@ -82,6 +83,7 @@
     position: var(--fragment-teaser-figure-position);
     height: var(--fragment-teaser-figure-height);
     width: var(--fragment-teaser-figure-width);
+    aspect-ratio: var(--fragment-teaser-figure-aspect-ratio);
 }
 
 .fragment-teaser__image {
