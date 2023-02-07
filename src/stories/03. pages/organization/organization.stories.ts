@@ -18,14 +18,14 @@ export default {
 
 const Template = () => {
     return `
-        <div class="schema">
-            <section class="chapter chapter--background schema__section">
+        <div class="fragment">
+            <section class="chapter chapter--background fragment__section">
                 <toujou-text-block class="text-block" text-block-column-count="1">
                     <toujou-text-block-column class="text-block-column">
                         <div class="text-block__content">
-                            <img class="schema__intro-logo" src="https://picsum.photos/360" alt="Nice image">
-                            <h1 class="schema__intro-title" type-alignment="center">Adidas</h1>
-                            <div class="schema__intro-description">
+                            <img class="fragment__intro-logo" src="https://picsum.photos/360" alt="Nice image">
+                            <h1 class="fragment__intro-title" type-alignment="center">Adidas</h1>
+                            <div class="fragment__intro-description">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div> 
                         </div>
@@ -33,47 +33,47 @@ const Template = () => {
                 </toujou-text-block>
             </section>
             
-            <section class="chapter chapter--default schema__section">
-                <toujou-schema-teaser role="article" class="schema-teaser">
-                    <div class="schema-teaser__content">
-                        <div class="schema-teaser__block" number-of-columns="2">
-                            <div class="schema-teaser__column">
+            <section class="chapter chapter--default fragment__section">
+                <toujou-fragment-teaser role="article" class="fragment-teaser">
+                    <div class="fragment-teaser__content">
+                        <div class="fragment-teaser__block" number-of-columns="2">
+                            <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="telephone" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="schema-teaser__column-content">
+                                <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="schema-teaser__link">1234456789</a>
+                                        <a href="#" class="fragment-teaser__link">1234456789</a>
                                     </address>
                                 </div>
                             </div>
-                            <div class="schema-teaser__column">
+                            <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="schema-teaser__column-content">
+                                <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="schema-teaser__link">987654321</a>
+                                        <a href="#" class="fragment-teaser__link">987654321</a>
                                     </address>
                                 </div>
                             </div>
-                            <div class="schema-teaser__column">
+                            <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="email" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="schema-teaser__column-content">
+                                <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="schema-teaser__link">info@mustermann.de</a>
+                                        <a href="#" class="fragment-teaser__link">info@mustermann.de</a>
                                     </address>
                                 </div>
                             </div>
-                            <div class="schema-teaser__column">
+                            <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="globe" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="schema-teaser__column-content">
+                                <div class="fragment-teaser__column-content">
                                     <address class="address">
-                                        <a href="#" class="schema-teaser__link">987654321</a>
+                                        <a href="#" class="fragment-teaser__link">987654321</a>
                                     </address>
                                 </div>
                             </div>
                         </div>
-                        <div class="schema-teaser__block" number-of-columns="1">
-                            <div class="schema-teaser__column">
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="schema-teaser__column-content">
+                                <div class="fragment-teaser__column-content">
                                     <address class="address">
                                         Firmenname GmbH <br>
                                         Michael-Schumacher-Straße 132 <br>
@@ -83,10 +83,10 @@ const Template = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="schema-teaser__block" number-of-columns="1">
-                            <div class="schema-teaser__column">
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="clock-circle-filled" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="schema-teaser__column-content">
+                                <div class="fragment-teaser__column-content">
                                     <toujou-opening-hours class="opening-hours">
                                         <time class="opening-hours__row" datetime="T09:00P11H">
                                             <span class="opening-hours__day">Montag</span>
@@ -116,8 +116,8 @@ const Template = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="schema-teaser__block" number-of-columns="1">
-                            <div class="schema-teaser__column" no-icon>
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column" no-icon>
                                 <toujou-social-media-bar class="social-media-bar" element-design="default" no-headline inline no-margins>
                                     <div class="social-media-bar__links">
                                         <a href="#" class="social-media-bar__link" aria-label="Our facebook account">
@@ -137,10 +137,10 @@ const Template = () => {
                             </div>
                         </div>
                     </div>
-                    <figure class="schema-teaser__figure">
-                        <img src="https://picsum.photos/1200/1200" alt="beau" class="schema-teaser__image">
+                    <figure class="fragment-teaser__figure">
+                        <img src="https://picsum.photos/1200/1200" alt="beau" class="fragment-teaser__image">
                     </figure>
-                </toujou-schema-teaser>
+                </toujou-fragment-teaser>
             </section>
         </div>
     `;
