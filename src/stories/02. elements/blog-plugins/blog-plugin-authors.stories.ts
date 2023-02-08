@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Meta, Story } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -13,15 +13,35 @@ export default {
             page: blogPluginAuthorsDocs,
         },
     },
+    argTypes: {
+        hasAvatar: {
+            table: {
+                category: "Author Settings",
+                defaultValue: { summary: 'true' },
+            },
+            name: 'Has avatar',
+            description: "Toggle between view with and without user avatar",
+            control: { type: 'boolean' },
+            defaultValue: ['true'],
+            required: true,
+        },
+    }
 } as Meta;
 
-const Template = () => {
+interface BlogPluginAuthorsStoryProps {
+    hasAvatar: boolean
+}
+
+const Template: Story<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsStoryProps) => {
     return `
         <div class="post-authors">
-            <div class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                <figure class="post-author__figure">
-                    <img src="https://i.pravatar.cc/80?img=27" alt="author avatar" class="post-author__avatar">
-                </figure>
+            <div class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person" ${args.hasAvatar ? '' : 'no-avatar'}>
+                ${args.hasAvatar ? `
+                    <figure class="post-author__figure">
+                        <img src="https://i.pravatar.cc/80?img=27" alt="author avatar" class="post-author__avatar">
+                    </figure>
+                ` : ''}
+                
                 <div class="post-author__meta">
                     <span class="post-author__name" itemprop="name">Han Solo</span>
                     <span class="post-author__title" itemprop="jobTitle">Pilot</span>
@@ -46,10 +66,12 @@ const Template = () => {
                 </toujou-social-media-bar>
             </div>
             
-            <div class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                <figure class="post-author__figure">
-                    <img src="https://i.pravatar.cc/80?img=26" alt="author avatar" class="post-author__avatar">
-                </figure>
+            <div class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person" ${args.hasAvatar ? '' : 'no-avatar'}>
+                ${args.hasAvatar ? `
+                    <figure class="post-author__figure">
+                        <img src="https://i.pravatar.cc/80?img=27" alt="author avatar" class="post-author__avatar">
+                    </figure>
+                ` : ''}
                 <div class="post-author__meta">
                     <span class="post-author__name" itemprop="name">Han Solo</span>
                     <span class="post-author__title" itemprop="jobTitle">Pilot</span>
@@ -78,3 +100,7 @@ const Template = () => {
 };
 
 export const Authors = Template.bind({});
+
+Authors.args = {
+    hasAvatar: true,
+}
