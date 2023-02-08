@@ -32,8 +32,8 @@ export default defineConfig({
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
 
                 // components from the @toujou/ui-components
-                'toujou-location-finder': path.resolve(__dirname, '@toujou/toujou-location-finder/lib'),
-                'toujou-map': path.resolve(__dirname, '@toujou/toujou-map/lib'),
+                'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/lib'),
+                'toujou-map': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/lib'),
 
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
