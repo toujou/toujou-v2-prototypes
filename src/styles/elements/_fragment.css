@@ -8,6 +8,11 @@
     --fragment-intro-logo-width: 4rem;
     --fragment-intro-logo-margin: 0 auto;
     --fragment-intro-logo-object-fit: contain;
+
+    --fragment-map-width: 100%;
+    --fragment-map-height: auto;
+    --fragment-map-aspect-ratio: var(--aspect-ratio-default);
+    --fragment-map-position: relative;
 }
 
 .fragment__intro-logo {
@@ -35,6 +40,13 @@
 .fragment__intro-description {
     margin: var(--fragment-intro-description-margin);
     max-width: var(--fragment-intro-description-max-width);
+}
+
+.fragment__map {
+    width: var(--fragment-map-width);
+    height: var(--fragment-map-height);
+    aspect-ratio: var(--fragment-map-aspect-ratio);
+    position: var(--fragment-map-position);
 }
 
 @media screen and (min-width: 840px) {
