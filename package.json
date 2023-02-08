@@ -44,6 +44,7 @@
     "@storybook/builder-vite": "^0.2.7",
     "@storybook/theming": "^6.5.15",
     "@storybook/web-components": "^6.5.15",
+    "@types/photoswipe": "^4.1.2",
     "@web/dev-server-esbuild": "^0.3.3",
     "@web/test-runner": "^0.15.0",
     "autoprefixer": "^10.4.13",

@@ -23,7 +23,7 @@ const Template = () => {
     return `
         <ol class="item-collection">
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -79,7 +79,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -135,7 +135,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -185,7 +185,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" item-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
                     <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">

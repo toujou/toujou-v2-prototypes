@@ -78,7 +78,7 @@ const Template = () => {
             </toujou-text-block-column>
         </toujou-text-block>
         
-        <toujou-slider class="slider slider" slider-design="primary">
+        <toujou-slider class="slider slider" element-design="primary">
             <div class="slider__top">
                 <div class="slider__frame glider draggable" data-autoslide="0" data-slideinterval="6">
                     <div class="glider-track slider__track">
@@ -94,7 +94,7 @@ const Template = () => {
                     <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                 </button>
             </div>
-	        <toujou-bullets class="bullets slider__bullets glider-dots" bullets-design="primary">
+	        <toujou-bullets class="bullets slider__bullets glider-dots" element-design="primary">
 	            <button data-index="0" aria-label="Page 1" role="tab" class="bullets__bullet slider__bullet glider-dot active" aria-current="true">
 	                <span class="bullets__circle"></span>
                 </button>

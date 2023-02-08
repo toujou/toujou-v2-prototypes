@@ -53,7 +53,7 @@ interface BlockquoteStoryProps {
 
 const Template: Story<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
     return `
-        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" blockquote-design="${args.elementDesign}">
+        <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="${args.elementDesign}">
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
             <blockquote slot="quote" class="blockquote__blockquote">
                 <p class="blockquote__text">Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>

@@ -3,7 +3,7 @@
     --opening-hours-font-size: var(--font-size-normal);
     --opening-hours-line-height: var(--line-height-normal);
     --opening-hours-color: var(--color-font);
-    --opening-hours-space-between-rows: var(--spacing-s);
+    --opening-hours-space-between-rows: var(--spacing-xxs);
 
     --opening-hours-row-display: grid;
     --opening-hours-row-grid-template-columns: 1fr 1fr;

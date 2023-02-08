@@ -2,7 +2,7 @@
 
 const colors = Cypress.env('colors');
 
-describe('table', () => {
+describe('alert', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-alert--alert');
     });
@@ -27,7 +27,7 @@ describe('table', () => {
     });
 })
 
-describe('table - primary', () => {
+describe('alert - primary', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-alert--alert');
     });

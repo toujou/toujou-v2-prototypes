@@ -62,7 +62,7 @@ The `<toujou-slider>` renders a slider on the page, using the [Splide](https://s
 <toujou-slider
     class="slider"
     aria-label="Toujou slider example"
-    slider-design="default"
+    element-design="default"
     showCount
     auto-play
     auto-play-interval="6000"
@@ -126,14 +126,14 @@ There are some attributes that allow us to customize the slider
 
 <a name="toujou-slider-attributes-design"></a>
 
-### 4.1. Slider design <toujou-chip class="chip" chip-bg-color="warning" is-uppercase>required</toujou-chip>
-The `slider-design` attribute allows us to change the slider element's styles. It is set by the user on the BE with the "Color" option.
+### 4.1. Element design <toujou-chip class="chip" chip-bg-color="warning" is-uppercase>required</toujou-chip>
+The `element-design` attribute allows us to change the slider element's styles. It is set by the user on the BE with the "Color" option.
 
 Possible values are: `default`, `primary`, `secondary` and `light-grey`
 
 Example:
 ```html
-<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary">
+<toujou-slider class="slider" aria-label="Toujou slider example" element-design="primary">
 ...
 </toujou-slider>
 ```
@@ -148,7 +148,7 @@ The `slider-fullwidth` attribute also has an impact in some visual elements of t
 
 Example:
 ```html
-<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary" slider-fullwidth>
+<toujou-slider class="slider" aria-label="Toujou slider example" element-design="primary" slider-fullwidth>
 ...
 </toujou-slider>
 ```
@@ -163,7 +163,7 @@ When the `auto-play` is set the "auto-play progress bar" will also be shown.
 
 Example:
 ```html
-<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary" auto-play>
+<toujou-slider class="slider" aria-label="Toujou slider example" element-design="primary" auto-play>
 ...
 </toujou-slider>
 ```
@@ -189,7 +189,7 @@ We can show a "count" element after the slider by adding the `show-count` attrib
 
 Example:
 ```html
-<toujou-slider class="slider" aria-label="Toujou slider example" slider-design="primary" show-count>
+<toujou-slider class="slider" aria-label="Toujou slider example" element-design="primary" show-count>
 ...
 </toujou-slider>
 ```
@@ -201,7 +201,7 @@ We can define how many slides to show per page with the `slides-to-show` attribu
 
 Example:
 ```html
-<toujou-slider class="toujou-slider" slider-design="primary" slides-to-show="3">
+<toujou-slider class="toujou-slider" element-design="primary" slides-to-show="3">
 ...
 </toujou-slider>
 ```
@@ -213,7 +213,7 @@ We can define how many slides to advance on each move with the `slides-per-move`
 
 Example:
 ```html
-<toujou-slider class="toujou-slider" slider-design="primary" slides-to-show="2" slides-per-move="2">
+<toujou-slider class="toujou-slider" element-design="primary" slides-to-show="2" slides-per-move="2">
 ...
 </toujou-slider>
 ```
@@ -229,7 +229,7 @@ We can choose between 3 different slider types: "loop", "slide" and "fade". Defa
 
 Example:
 ```html
-<toujou-slider class="toujou-slider" slider-design="primary" slider-type="slide">
+<toujou-slider class="toujou-slider" element-design="primary" slider-type="slide">
 ...
 </toujou-slider>
 ```
@@ -241,7 +241,7 @@ Define a gap between the slides. Any valid css gap value is also valid here. Def
 
 Example:
 ```html
-<toujou-slider class="toujou-slider" slider-design="primary" slider-gap="1rem">
+<toujou-slider class="toujou-slider" element-design="primary" slider-gap="1rem">
 ...
 </toujou-slider>
 ```
@@ -257,7 +257,7 @@ Example:
 ```html
 <toujou-slider
     class="toujou-slider"
-    slider-design="primary"
+    element-design="primary"
     slider-breakpoints='{"640":{"perPage":1},"768":{"perPage":2},"1024":{"perPage":3},"1440":{"perPage":4}}'>
 ...
 </toujou-slider>
@@ -274,7 +274,7 @@ Example:
 ```html
 <toujou-slider
     class="toujou-slider"
-    slider-design="primary"
+    element-design="primary"
     slider-padding="1rem">
 ...
 </toujou-slider>
@@ -293,7 +293,7 @@ Example:
 ```html
 <toujou-slider
     class="toujou-slider"
-    slider-design="primary"
+    element-design="primary"
     slider-focus-center="false">
 ...
 </toujou-slider>

@@ -90,7 +90,7 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
-            slider-design="${args.designColor}"
+            element-design="${args.designColor}"
             ${args.isFullwidth ? 'slider-fullwidth' : ''}
             ${args.showCount ? 'show-count' : ''}
             ${args.autoplay ? 'auto-play' : ''}

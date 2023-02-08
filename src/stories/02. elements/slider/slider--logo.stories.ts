@@ -79,9 +79,8 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
         <toujou-slider
             class="slider"
             content-type="logos"
-            slider-design=${args.designColor}
             aria-label="Toujou slider example"
-            slider-design="${args.designColor}"
+            element-design="${args.designColor}"
             ${args.isFullwidth ? 'slider-fullwidth' : ''}
             ${args.autoplay ? 'auto-play' : ''}
             auto-play-interval="${args.autoplayInterval}"

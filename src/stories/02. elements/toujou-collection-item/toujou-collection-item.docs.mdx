@@ -13,7 +13,7 @@ Markup Example (as card collection):
 ```html
 <ul class="card-collection">
     <li class="card-collection__item">
-        <toujou-collection-item class="collection-item" item-type="default" item-design="primary" item-orientation="vertical" role="article">
+        <toujou-collection-item class="collection-item" item-type="default" element-design="primary" item-orientation="vertical" role="article">
             <div class="collection-item__top">
                 <figure class="collection-item__figure">
                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -39,7 +39,7 @@ Markup Example (as item collection):
 ```html
 <ol class="item-collection">
     <li class="item-collection__item">
-        <toujou-collection-item class="collection-item" item-type="default" item-design="default" item-orientation="horizontal" role="article">
+        <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
             <div class="collection-item__top">
                 <figure class="collection-item__figure">
                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -70,11 +70,11 @@ The `item-type` attribute tells us what kind of page the item is rendering. It m
 
 Example: `item-type="default"` or `item-type="trip"`
 
-### item design <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
-The `item-design` attribute reflects the "Element design" option chosen in the backend.
+### Element design <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+The `element-design` attribute reflects the "Element design" option chosen in the backend.
 It is used to change the style of the items, so we can make an item standout, for instance by giving it a "primary" design
 
-Example: `item-design="primary"` or `item-design="inverted"`.
+Example: `element-design="primary"` or `element-design="inverted"`.
 
 | ℹ️ Currently the "Element design" isn't available on the "Selected pages as list" element! |
 |----------------------------------------------------------------------------------------------|

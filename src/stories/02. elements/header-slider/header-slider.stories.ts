@@ -111,7 +111,7 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
             <toujou-slider
                 class="slider"
                 aria-label="Toujou slider example"
-                slider-design="primary"
+                element-design="primary"
                 slides-to-show="1"
                 slider-type="loop">
                 <div class="splide slider__slider">

@@ -174,29 +174,29 @@
     --collection-item-figure-border-radius: var(--border-radius-default);
 }
 
-.collection-item[item-design="primary"],
-.collection-item[item-design="secondary"],
-.collection-item[item-design="inverted"] {
+.collection-item[element-design="primary"],
+.collection-item[element-design="secondary"],
+.collection-item[element-design="inverted"] {
     --collection-item-text-color: var(--color-bg);
     --collection-item-title-color: var(--color-bg);
     --collection-item-button-text-color: var(--color-bg);
 }
 
-.collection-item[item-design="primary"] {
+.collection-item[element-design="primary"] {
     --collection-item-bg-color: var(--color-primary);
     --collection-item-date-background-color: var(--color-primary);
     --collection-item-info-icon-color: var(--color-white);
     --collection-item-button-text-color-hover: var(--color-white);
 }
 
-.collection-item[item-design="secondary"] {
+.collection-item[element-design="secondary"] {
     --collection-item-bg-color: var(--color-secondary);
     --collection-item-date-background-color: var(--color-secondary);
     --collection-item-info-icon-color: var(--color-white);
     --collection-item-button-text-color-hover: var(--color-white);
 }
 
-.collection-item[item-design="inverted"] {
+.collection-item[element-design="inverted"] {
     --collection-item-bg-color: var(--color-font-dark);
     --collection-item-date-background-color: var(--color-font-dark);
     --collection-item-info-icon-color: var(--color-white);
@@ -324,15 +324,15 @@ a.collection-item__category:focus-visible {
     text-decoration: var(--collection-item-bottom-text-decoration);
 }
 
-.collection-item[item-type="product"][item-design="primary"] .collection-item__bottom {
+.collection-item[item-type="product"][element-design="primary"] .collection-item__bottom {
     background-color: var(--color-primary);
 }
 
-.collection-item[item-type="product"][item-design="secondary"] .collection-item__bottom {
+.collection-item[item-type="product"][element-design="secondary"] .collection-item__bottom {
     background-color: var(--color-secondary);
 }
 
-.collection-item[item-type="product"][item-design="inverted"] .collection-item__bottom {
+.collection-item[item-type="product"][element-design="inverted"] .collection-item__bottom {
     background-color: var(--color-font-dark);
 }
 
@@ -440,15 +440,15 @@ a.collection-item__button:focus-visible {
     margin: var(--collection-item-address-margin);
 }
 
-.collection-item[item-design="primary"] .address__link,
-.collection-item[item-design="secondary"] .address__link,
-.collection-item[item-design="inverted"] .address__link {
+.collection-item[element-design="primary"] .address__link,
+.collection-item[element-design="secondary"] .address__link,
+.collection-item[element-design="inverted"] .address__link {
     color: var(--color-bg);
 }
 
-.collection-item[item-design="primary"] .address__link .icon,
-.collection-item[item-design="secondary"] .address__link .icon,
-.collection-item[item-design="inverted"] .address__link .icon {
+.collection-item[element-design="primary"] .address__link .icon,
+.collection-item[element-design="secondary"] .address__link .icon,
+.collection-item[element-design="inverted"] .address__link .icon {
     background-color: var(--color-bg);
 }
 
@@ -464,27 +464,27 @@ a.collection-item__button:focus-visible {
     background-color: var(--color-primary);
 }
 
-.collection-item[item-type="product"][item-design="primary"] a.collection-item__bottom:focus-within {
+.collection-item[item-type="product"][element-design="primary"] a.collection-item__bottom:focus-within {
     background-color: var(--color-primary-dark);
 }
 
-.collection-item[item-type="product"][item-design="secondary"] a.collection-item__bottom:focus-within {
+.collection-item[item-type="product"][element-design="secondary"] a.collection-item__bottom:focus-within {
     background-color: var(--color-secondary-dark);
 }
 
-.collection-item[item-type="product"][item-design="inverted"] a.collection-item__bottom:focus-within {
+.collection-item[item-type="product"][element-design="inverted"] a.collection-item__bottom:focus-within {
     background-color: var(--color-font);
 }
 
-.collection-item[item-design="primary"] .address__link:focus-within {
+.collection-item[element-design="primary"] .address__link:focus-within {
     color: var(--color-primary-dark);
 }
 
-.collection-item[item-design="secondary"] .address__link:focus-within {
+.collection-item[element-design="secondary"] .address__link:focus-within {
     color: var(--color-secondary-dark);
 }
 
-.collection-item[item-design="inverted"] .address__link:focus-within {
+.collection-item[element-design="inverted"] .address__link:focus-within {
     color: var(--color-font-light);
 }
 
@@ -503,27 +503,27 @@ a.collection-item__button:focus-visible {
         background-color: var(--color-primary);
     }
 
-    .collection-item[item-type="product"][item-design="primary"] a.collection-item__bottom:hover {
+    .collection-item[item-type="product"][element-design="primary"] a.collection-item__bottom:hover {
         background-color: var(--color-primary-dark);
     }
 
-    .collection-item[item-type="product"][item-design="secondary"] a.collection-item__bottom:hover {
+    .collection-item[item-type="product"][element-design="secondary"] a.collection-item__bottom:hover {
         background-color: var(--color-secondary-dark);
     }
 
-    .collection-item[item-type="product"][item-design="inverted"] a.collection-item__bottom:hover {
+    .collection-item[item-type="product"][element-design="inverted"] a.collection-item__bottom:hover {
         background-color: var(--color-font);
     }
 
-    .collection-item[item-design="primary"] .address__link:hover {
+    .collection-item[element-design="primary"] .address__link:hover {
         color: var(--color-primary-dark);
     }
 
-    .collection-item[item-design="secondary"] .address__link:hover {
+    .collection-item[element-design="secondary"] .address__link:hover {
         color: var(--color-secondary-dark);
     }
 
-    .collection-item[item-design="inverted"] .address__link:hover {
+    .collection-item[element-design="inverted"] .address__link:hover {
         color: var(--color-font-light);
     }
 

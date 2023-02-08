@@ -297,6 +297,11 @@
     -webkit-mask-image: var(--icon-coffee);
 }
 
+.icon[icon-name="company"] {
+    mask-image: var(--icon-company);
+    -webkit-mask-image: var(--icon-company);
+}
+
 .icon[icon-name="coronavirus"] {
     mask-image: var(--icon-coronavirus);
     -webkit-mask-image: var(--icon-coronavirus);
