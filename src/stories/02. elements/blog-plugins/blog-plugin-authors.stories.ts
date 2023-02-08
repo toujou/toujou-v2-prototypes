@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -13,27 +13,9 @@ export default {
             page: blogPluginAuthorsDocs,
         },
     },
-    argTypes: {
-        alertVariant: {
-            table: {
-                category: "Alert Settings",
-                defaultValue: { summary: 'primary' },
-            },
-            name: 'Alert variant',
-            description: "Set the alert variant",
-            options: ['primary', 'secondary', 'warning', 'error', 'success', 'info'],
-            control: { type: 'radio' },
-            defaultValue: ['primary'],
-            required: true,
-        },
-    }
 } as Meta;
 
-interface alertStoryProps {
-    alertVariant: any;
-}
-
-const Template: Story<alertStoryProps> = (args: alertStoryProps) => {
+const Template = () => {
     return `
         <div class="post-authors">
             <div class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -96,8 +78,3 @@ const Template: Story<alertStoryProps> = (args: alertStoryProps) => {
 };
 
 export const Authors = Template.bind({});
-
-Authors.args = {
-    alertVariant: 'primary'
-}
-
