@@ -151,67 +151,6 @@
     color: inherit;
 }
 
-.chip[chip-bg-color="transparent"][is-clickable]:focus-visible {
-    --toujou-chip-text-color: var(--color-font-dark);
-}
-
-.chip[chip-bg-color="primary"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-primary-dark);
-}
-
-.chip[chip-bg-color="primary-light"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-primary);
-    --toujou-chip-text-color: var(--color-bg);
-}
-
-.chip[chip-bg-color="primary-very-light"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-primary-light);
-    --toujou-chip-text-color: var(--color-font-dark);
-}
-
-.chip[chip-bg-color="secondary"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-secondary-dark);
-}
-
-.chip[chip-bg-color="secondary-light"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-secondary);
-    --toujou-chip-text-color: var(--color-bg);
-}
-
-.chip[chip-bg-color="secondary-very-light"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-secondary-light);
-    --toujou-chip-text-color: var(--color-font-dark);
-}
-
-.chip[chip-bg-color="font"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-font-dark);
-}
-
-.chip[chip-bg-color="font-light"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-font);
-    --toujou-chip-text-color: var(--color-bg);
-}
-
-.chip[chip-bg-color="font-very-light"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-font-light);
-}
-
-.chip[chip-bg-color="success"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-success-darken-15);
-}
-
-.chip[chip-bg-color="warning"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-warning-darken-15);
-}
-
-.chip[chip-bg-color="error"][is-clickable]:focus-visible {
-    --toujou-chip-color-bg: var(--color-error-darken-15);
-}
-
-.chip:focus-visible .icon {
-    background-color: var(--toujou-chip-text-color);
-}
-
 @media (hover: hover) {
     .chip[is-clickable] {
         cursor: pointer;
