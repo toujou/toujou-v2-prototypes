@@ -3,14 +3,14 @@ import { Meta, Story } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 // @ts-ignore
-import blogPluginAuthorsDocs from './blog-plugin-authors.docs.mdx';
+import blogPluginsDocs from './blog-plugins.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Blog Plugin',
     parameters: {
         badges: [TOUJOU_BADGES.TESTING],
         docs: {
-            page: blogPluginAuthorsDocs,
+            page: blogPluginsDocs,
         },
     },
     argTypes: {
