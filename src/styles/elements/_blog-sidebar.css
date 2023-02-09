@@ -13,6 +13,7 @@
     --blog-sidebar-grid-gap: var(--content-spacing-between-columns);
     --blog-sidebar-font-family: var(--font-family-text);
     --blog-sidebar-font-size: var(--font-size-normal);
+    --blog-sidebar-color: var(--color-font);
 
     --blog-sidebar-column-posts-grid-area: posts;
 
@@ -71,6 +72,7 @@
     grid-gap: var(--blog-sidebar-grid-gap);
     font-family: var(--blog-sidebar-font-family);
     font-size: var(--blog-sidebar-font-size);
+    color: var(--blog-sidebar-color);
 }
 
 .blog-sidebar__column[column-type="posts"] {
