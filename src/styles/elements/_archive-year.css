@@ -1,0 +1,21 @@
+.archive-year {
+    --archive-year-display: block;
+
+    --archive-year-list-style: none;
+    --archive-year-list-margin: 0;
+    --archive-year-list-padding: 0;
+
+    display: var(--archive-year-display);
+}
+
+.archive-year + .archive-year {
+    --archive-year-margin: var(--spacing-normal) 0 0;
+
+    margin: var(--archive-year-margin);
+}
+
+.archive-year__list {
+    list-style: var(--archive-year-list-style);
+    margin: var(--archive-year-margin);
+    padding: var(--archive-year-list-padding);
+}

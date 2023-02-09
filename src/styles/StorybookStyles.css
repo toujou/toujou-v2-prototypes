@@ -84,6 +84,8 @@
 @import "./elements/_chip.css";
 @import "./elements/_post-meta.css";
 @import "./elements/_post-list.css";
+@import "./elements/_blog-sidebar.css";
+@import "./elements/_archive-year.css";
 
 body {
     background-color: var(--demo-color-grey-light);
