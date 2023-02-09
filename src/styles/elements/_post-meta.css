@@ -22,10 +22,9 @@
     --post-meta-author-avatar-border-radius: var(--border-radius-circle);
     --post-meta-author-avatar-object-fit: cover;
 
-    --post-meta-author-name-font-family: var(--font-family-text);
-    --post-meta-author-name-font-size: var(--font-size-normal);
-    --post-meta-author-name-color: var(--color-font);
-
+    --post-meta-text-font-family: var(--font-family-text);
+    --post-meta-text-font-size: var(--font-size-normal);
+    --post-meta-text-color: var(--color-font);
     --post-meta-text-margin: 0;
 
     background-color: var(--post-meta-background-color);
@@ -59,11 +58,8 @@
 }
 
 .post-meta__text {
-    margin: var(--post-meta-text-margin)
-}
-
-.post-meta__author-name {
-    font-family: var(--post-meta-author-name-font-family);
-    font-size: var(--post-meta-author-name-font-size);
-    color: var(--post-meta-author-name-color);
+    margin: var(--post-meta-text-margin);
+    font-family: var(--post-meta-text-font-family);
+    font-size: var(--post-meta-text-font-size);
+    color: var(--post-meta-text-color);
 }
