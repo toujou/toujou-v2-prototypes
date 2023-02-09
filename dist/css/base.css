@@ -3169,7 +3169,7 @@ exit-warning {
     --grid-gap: var(--content-spacing-between-columns);
     --grid-width: var(--content-width-with-padding);
     --grid-max-width: var(--content-max-width);
-    --grid-margin: var(--spacing-between-elements-normal) auto 0;
+    --grid-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     --grid-z-index: var(--z-index-content);
 
     display: var(--grid-display);
