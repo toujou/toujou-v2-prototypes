@@ -162,7 +162,7 @@
 
 @media screen and (min-width: 840px) {
     .blog-sidebar {
-        --blog-sidebar-grid-template-columns: auto auto auto auto;
+        --blog-sidebar-grid-template-columns: repeat(4, minmax(20%, auto));
         --blog-sidebar-grid-template-areas:
             "posts categories comments archive"
             "posts tags comments archive";
