@@ -2937,6 +2937,7 @@ p > .button {
     --toujou-chip-gap: var(--spacing-s);
     --toujou-chip-width: fit-content;
     --toujou-chip-text-transform: none;
+    --toujou-chip-text-decoration: none;
 
     width: var(--toujou-chip-width);
     background-color: var(--toujou-chip-color-bg);
@@ -2951,6 +2952,8 @@ p > .button {
     justify-content: center;
     gap: var(--toujou-chip-gap);
     text-transform: var(--toujou-chip-text-transform);
+    -webkit-text-decoration: var(--toujou-chip-text-decoration);
+            text-decoration: var(--toujou-chip-text-decoration);
 }
 
 /* BACKGROUND COLOR */
@@ -3075,6 +3078,12 @@ p > .button {
 .chip[chip-icon-position="right"] {
     --toujou-chip-flex-direction: row-reverse;
     --toujou-chip-padding: var(--spacing-xs) var(--spacing-normal) var(--spacing-xs) var(--spacing-normal);
+}
+
+.chip a {
+    -webkit-text-decoration: var(--toujou-chip-text-decoration);
+            text-decoration: var(--toujou-chip-text-decoration);
+    color: inherit;
 }
 
 @media (hover: hover) {

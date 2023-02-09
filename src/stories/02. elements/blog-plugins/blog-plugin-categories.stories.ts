@@ -30,7 +30,7 @@ export default {
 
 const Template = () => {
     return `
-        <div class="chips-list">
+        <div class="chips-list categories-list">
             <h3 class="chips-list__title">Categories</h3>
             <ul class="chips-list__list">
                 <li class="chips-list__item">
