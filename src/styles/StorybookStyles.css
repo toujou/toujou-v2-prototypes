@@ -87,6 +87,7 @@
 @import "./elements/_blog-sidebar.css";
 @import "./elements/_archive-year.css";
 @import "./elements/_blog-archive.css";
+@import "./elements/_blog-footer.css";
 @import "./elements/_rating-stars.css";
 
 body {
