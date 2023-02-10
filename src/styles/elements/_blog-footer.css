@@ -30,6 +30,11 @@
     color: var(--blog-footer-headline-color);
 }
 
+.blog-footer .categories-list,
+.blog-footer .tags-list {
+    margin-top: 0;
+}
+
 @media screen and (min-width: 840px) {
     .blog-footer {
         --blog-footer-content-grid-template-columns: 1fr 1fr;
