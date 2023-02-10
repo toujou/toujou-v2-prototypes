@@ -66,7 +66,11 @@ export class ToujouEstimatedReadingTime extends LitElement {
     }
 
     #getWordsInElement(el: HTMLElement): number {
-        return el.textContent?.split(" ").length || 0;
+        const textContent = el.textContent;
+        const cleanedUpText = textContent?.replace(/[\n\r]+|[\s]{2,}/g, ' ');
+        const trimmedText = cleanedUpText?.trim();
+        const textWithoutSpaces = trimmedText?.split(" ");
+        return textWithoutSpaces?.length || 0;
     }
 }
 
