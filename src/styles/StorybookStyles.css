@@ -89,6 +89,7 @@
 @import "./elements/_blog-archive.css";
 @import "./elements/_blog-footer.css";
 @import "./elements/_blog-header.css";
+@import "./elements/_estimated-reading-time.css";
 @import "./elements/_rating-stars.css";
 
 body {

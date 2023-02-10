@@ -15,6 +15,7 @@ import "../src/components/toujou-contact-box/toujou-contact-box";
 import "../src/components/toujou-media-info/toujou-media-info";
 import "../src/components/toujou-topbutton/toujou-topbutton";
 import "../src/components/toujou-rating-stars/toujou-rating-stars";
+import "../src/components/toujou-estimated-reading-time/toujou-estimated-reading-time";
 
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-snackbar/toujou-snackbar";
