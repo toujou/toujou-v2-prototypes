@@ -10,10 +10,10 @@ export class ToujouRatingStars extends LitElement {
     entities: string[] = [];
 
     @property({ type: String, attribute: 'rating-entity' })
-    ratingEntity: string = '';
+    ratingEntity: string = '★';
 
     @property({ type: Number, attribute: 'rating-total' })
-    ratingTotal: number = 0;
+    ratingTotal: number = 5;
 
     @property({ type: Number, attribute: 'rating-value' })
     ratingValue: number = 0;
@@ -21,8 +21,9 @@ export class ToujouRatingStars extends LitElement {
     @property({ type: Number })
     percentage: number = 0;
 
+    private readonly percentageCssVariable = `--rating-stars-percentage`;
+
     render() {
-        console.log('this', this.ratingEntity, this.ratingTotal, this.ratingValue, this.entities);
         return html`
            ${this.entities.map((entity: string) => {
                return html`
@@ -33,6 +34,10 @@ export class ToujouRatingStars extends LitElement {
         `
     }
 
+    /**
+     * Update the percentage when the relevant attributes change
+     * @param changed
+     */
     updated(changed: PropertyValues<this>) {
         if (changed.has('ratingTotal')) {
             this.entities = Array(this.ratingTotal).fill(this.ratingEntity);
@@ -44,10 +49,13 @@ export class ToujouRatingStars extends LitElement {
         }
     }
 
+    /**
+     * Calculate the "rest percentage" depending on the ratingValue and ratingTotal values.
+     * Set the correct value to the --rating-stars-percentage variable
+     */
     updatePercentage() {
         this.percentage = (this.ratingValue / this.ratingTotal) * 100;
-        console.log('per', this.percentage);
-        document.documentElement.style.setProperty('--rating-stars-percentage', `${100 - this.percentage}%`);
+        document.documentElement.style.setProperty(this.percentageCssVariable, `${100 - this.percentage}%`);
     }
 }
 

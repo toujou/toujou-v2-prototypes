@@ -8,22 +8,22 @@
     color: var(--rating-stars-color)
 }
 
-.rating-stars[rating-stars-size="s"] {
+.rating-stars[rating-entity-size="s"] {
     --rating-stars-font-size: var(--font-size-s);
 }
 
-.rating-stars[rating-stars-size="m"] {
+.rating-stars[rating-entity-size="m"] {
     --rating-stars-font-size: var(--font-size-m);
 }
 
-.rating-stars[rating-stars-size="l"] {
+.rating-stars[rating-entity-size="l"] {
     --rating-stars-font-size: var(--font-size-l);
 }
 
-.rating-stars[rating-stars-size="xl"] {
+.rating-stars[rating-entity-size="xl"] {
     --rating-stars-font-size: var(--font-size-xl);
 }
 
-.rating-stars[rating-stars-size="xxl"] {
+.rating-stars[rating-entity-size="xxl"] {
     --rating-stars-font-size: var(--font-size-xxl);
 }

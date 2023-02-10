@@ -3,21 +3,21 @@ import { Meta, Story } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 // @ts-ignore
-import reviewStarsDocs from './review-stars.docs.mdx';
+import ratingStarsDocs from './rating-stars.docs.mdx';
 
 export default {
-    title: 'COMPONENTS/ReviewStars',
+    title: 'COMPONENTS/RatingStars',
     parameters: {
         badges: [TOUJOU_BADGES.TESTING],
         docs: {
-            page: reviewStarsDocs,
+            page: ratingStarsDocs,
         },
     },
     argTypes: {
         rating: {
             table: {
                 category: "Rating stars",
-                defaultValue: { summary: '4.7' },
+                defaultValue: { summary: '4.4' },
             },
             name: 'Rating value',
             description: "Set a value for the rating",
@@ -57,15 +57,15 @@ const Template: Story<RatingStarsStoryProps> = (args: RatingStarsStoryProps) => 
             rating-entity="★"
             rating-total="5"
             rating-value="${args.rating}"
-            rating-stars-size="${args.size}"
+            rating-entity-size="${args.size}"
         >
         </toujou-rating-stars>
     `;
 };
 
-export const ReviewStars = Template.bind({});
+export const RatingStars = Template.bind({});
 
-ReviewStars.args = {
-    rating: 4.7,
+RatingStars.args = {
+    rating: 4.4,
     size: 'xl'
 }
