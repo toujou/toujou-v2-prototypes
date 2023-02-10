@@ -20,6 +20,7 @@ const Template: Story = () => {
           <toujou-search class="search">
             <input class="input input--search" type="search" placeholder="Search...">
             <button is="toujou-button" class="button button--search" button-variant="primary" button-type="default" button-size="normal">
+                <span class="search__button-text">Suchen</span>
                 <toujou-icon class="icon" icon-name="search" icon-size="l" icon-color="white"></toujou-icon>
             </button>
           </toujou-search>

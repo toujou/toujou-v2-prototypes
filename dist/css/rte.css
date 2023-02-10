@@ -117,6 +117,11 @@
 
     --color-headline: var(--color-primary);
 
+    --color-gold-h: 44deg;
+    --color-gold-s: 100%;
+    --color-gold-l: 50%;
+    --color-gold: hsl(var(--color-gold-h) var(--color-gold-s) var(--color-gold-l) / 100%);
+
     --text-background-gradient: linear-gradient(0deg, rgb(0 0 0 / 75%) 0%, rgb(0 0 0 / 0%) 100%);
 }
 
