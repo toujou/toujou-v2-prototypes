@@ -76,7 +76,7 @@ const Template = () => {
                             <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="tag-filled" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
-                                    <data class="fragment-teaser__price fragment-teaser__info" value="53.00">53,00€ <span type-color="font-light">(inkl. Vorverkaufsgebühr)</span></data>
+                                    <data class="fragment-teaser__price fragment-teaser__info" value="53.00">53,00 € <span type-color="font-light">(inkl. Vorverkaufsgebühr)</span></data>
                                 </div>
                             </div>
                         </div>
