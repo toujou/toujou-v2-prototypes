@@ -1,6 +1,6 @@
 .blog-sidebar {
     --blog-sidebar-width: var(--content-width-with-padding);
-    --blog-sidebar-max-width: var(--content-medium-max-width);
+    --blog-sidebar-max-width: var(--content-wide-max-width);
     --blog-sidebar-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     --blog-sidebar-display: grid;
     --blog-sidebar-grid-template-columns: 1fr;

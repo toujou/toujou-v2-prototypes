@@ -40,32 +40,32 @@ const Template = () => {
                 <h5 class="blog-sidebar__title">Kategorien</h5>
                 <div class="blog-sidebar__categories">
                     <a href="#" class="blog-sidebar__category-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled" icon-size="ms"></toujou-icon>
                             Tutorials
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__category-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled" icon-size="ms"></toujou-icon>
                             Content Management
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__category-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled" icon-size="ms"></toujou-icon>
                             Features
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__category-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled" icon-size="ms"></toujou-icon>
                             Online training
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__category-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="bookmark-filled" icon-size="ms"></toujou-icon>
                             TYPO3
                         </toujou-chip>
                     </a>
@@ -76,32 +76,32 @@ const Template = () => {
                 <h5 class="blog-sidebar__title">Tags</h5>
                 <div class="blog-sidebar__tags">
                     <a href="#" class="blog-sidebar__tag-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="tag-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="tag-filled" icon-size="ms"></toujou-icon>
                             Tutorials
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__tag-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="tag-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="tag-filled" icon-size="ms"></toujou-icon>
                             Content Management
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__tag-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="tag-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="tag-filled" icon-size="ms"></toujou-icon>
                             Features
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__tag-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="tag-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="tag-filled" icon-size="ms"></toujou-icon>
                             Online training
                         </toujou-chip>
                     </a>
                     <a href="#" class="blog-sidebar__tag-link">
-                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="small" is-clickable>
-                            <toujou-icon class="icon chip__icon" icon-name="tag-filled"></toujou-icon>
+                        <toujou-chip chip-icon-position="left" class="chip" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
+                            <toujou-icon class="icon chip__icon" icon-name="tag-filled" icon-size="ms"></toujou-icon>
                             TYPO3
                         </toujou-chip>
                     </a>

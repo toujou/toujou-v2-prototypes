@@ -1,6 +1,6 @@
 .post-meta {
     --post-meta-background-color: var(--color-black-o-05);
-    --post-meta-padding: var(--spacing-normal);
+    --post-meta-padding: var(--spacing-m);
     --post-meta-width: var(--content-width-with-padding);
     --post-meta-max-width: var(--content-max-width);
     --post-meta-border-radius: var(--border-radius-default);
