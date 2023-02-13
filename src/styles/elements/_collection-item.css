@@ -436,7 +436,7 @@ a.collection-item__button:focus-visible {
     color: var(--collection-item-button-text-color-hover);
 }
 
-.collection-card__subtitles + .collection-item__button {
+.collection-item__subtitles + .collection-item__button {
     --collection-item-button-margin-top: var(--spacing-normal);
 
     margin-top: var(--collection-item-button-margin-top);
