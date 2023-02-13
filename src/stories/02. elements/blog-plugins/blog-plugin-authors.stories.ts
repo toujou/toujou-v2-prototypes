@@ -82,7 +82,7 @@ const Template: Story<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsSto
                     <span class="post-author__info">
                         <span class="post-author__meta-parentesis">(</span>
                         <span class="post-author__title" itemprop="jobTitle">Pilot</span>
-                        <span class="post-author__meta-separator">/</span>
+                        <span class="post-author__meta-separator">/ </span>
                         <span class="post-author__location" itemprop="homeLocation">Tatooine</span>
                         <span class="post-author__meta-parentesis">)</span>
                     </span>

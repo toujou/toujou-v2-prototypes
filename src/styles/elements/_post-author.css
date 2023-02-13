@@ -30,9 +30,12 @@
     --post-author-name-font-weight: var(--font-weight-text-bold);
 
     --post-author-description-grid-area: description;
-    --post-author-description-margin-top: 0;
 
     --post-author-socials-grid-area: socials;
+
+    --post-author-info-word-spacing: -4px;
+
+    --post-author-separator-margin: 0 var(--spacing-xs);
 
     width: var(--post-author-width);
     background-color: var(--post-author-background-color);
@@ -73,17 +76,24 @@
     grid-area: var(--post-author-meta-grid-area);
 }
 
+.post-author__info {
+    word-spacing: var(--post-author-info-word-spacing);
+}
+
 .post-author__name {
     font-weight: var(--post-author-name-font-weight);
 }
 
 .post-author__description {
     grid-area: var(--post-author-description-grid-area);
-    margin-top: var(--post-author-description-margin-top);
 }
 
 .post-author__socials {
     grid-area: var(--post-author-socials-grid-area);
+}
+
+.post-author__meta-separator {
+    margin: var(--post-author-separator-margin);
 }
 
 @media screen and (min-width: 540px) {
