@@ -1,0 +1,107 @@
+.media-date {
+    --media-date-position: absolute;
+    --media-date-top: var(--spacing-normal);
+    --media-date-left: var(--spacing-normal);
+    --media-date-background-color: var(--color-bg);
+    --media-date-border-radius: var(--border-radius-default);
+    --media-date-padding: var(--spacing-s);
+    --media-date-display: flex;
+    --media-date-flex-direction: column;
+    --media-date-align-items: space-around;
+    --media-date-justify-content: center;
+    --media-date-gap: var(--spacing-xs);
+
+    --media-date-months-display: flex;
+    --media-date-months-align-items: center;
+    --media-date-months-justify-content: space-around;
+    --media-date-months-line-height: 1;
+
+    --media-date-month-font-family: var(--font-family-text);
+    --media-date-month-font-size: var(--font-size-xxs);
+    --media-date-month-color: var(--color-font);
+    --media-date-month-text-transform: uppercase;
+
+    --media-date-days-display: flex;
+    --media-date-days-align-items: center;
+    --media-date-days-justify-content: space-around;
+    --media-date-days-line-height: 1;
+
+    --media-date-day-font-family: var(--font-family-text);
+    --media-date-day-font-size: var(--font-size-ms);
+    --media-date-day-font-weight: var(--font-weight-text-bold);
+    --media-date-day-color: var(--color-font);
+
+    --media-date-day-separator-margin: 0 var(--spacing-xxs);
+
+    --media-date-years-display: flex;
+    --media-date-years-align-items: center;
+    --media-date-years-justify-content: space-around;
+    --media-date-years-line-height: 1;
+
+    --media-date-year-font-family: var(--font-family-text);
+    --media-date-year-font-size: var(--font-size-xxs);
+    --media-date-year-color: var(--color-font);
+    --media-date-year-text-transform: uppercase;
+
+    position: var(--media-date-position);
+    top: var(--media-date-top);
+    left: var(--media-date-left);
+    background-color: var(--media-date-background-color);
+    border-radius: var(--media-date-border-radius);
+    padding: var(--media-date-padding);
+    display: var(--media-date-display);
+    flex-direction: var(--media-date-flex-direction);
+    align-items: var(--media-date-align-items);
+    justify-content: var(--media-date-justify-content);
+    gap: var(--media-date-gap);
+}
+
+.media-date__months {
+    display: var(--media-date-months-display);
+    align-items: var(--media-date-months-align-items);
+    justify-content: var(--media-date-months-justify-content);
+    line-height: var(--media-date-months-line-height);
+}
+
+.media-date__month {
+    font-family: var(--media-date-year-font-family);
+    font-size: var(--media-date-year-font-size);
+    color: var(--media-date-year-color);
+    text-transform: var(--media-date-year-text-transform);
+}
+
+.media-date__days {
+    display: var(--media-date-days-display);
+    align-items: var(--media-date-days-align-items);
+    justify-content: var(--media-date-days-justify-content);
+    line-height: var(--media-date-days-line-height);
+}
+
+.media-date__day {
+    font-family: var(--media-date-day-font-family);
+    font-size: var(--media-date-day-font-size);
+    font-weight: var(--media-date-day-font-weight);
+    color: var(--media-date-day-color);
+}
+
+.media-date__day-separator {
+    font-family: var(--media-date-day-font-family);
+    font-size: var(--media-date-day-font-size);
+    font-weight: var(--media-date-day-font-weight);
+    color: var(--media-date-day-color);
+    margin: var(--media-date-day-separator-margin);
+}
+
+.media-date__years {
+    display: var(--media-date-years-display);
+    align-items: var(--media-date-years-align-items);
+    justify-content: var(--media-date-years-justify-content);
+    line-height: var(--media-date-years-line-height);
+}
+
+.media-date__year {
+    font-family: var(--media-date-year-font-family);
+    font-size: var(--media-date-year-font-size);
+    color: var(--media-date-year-color);
+    text-transform: var(--media-date-year-text-transform);
+}
