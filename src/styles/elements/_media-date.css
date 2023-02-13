@@ -1,7 +1,7 @@
 .media-date {
     --media-date-position: absolute;
     --media-date-top: var(--spacing-normal);
-    --media-date-left: var(--spacing-normal);
+    --media-date-right: var(--spacing-normal);
     --media-date-background-color: var(--color-bg);
     --media-date-border-radius: var(--border-radius-default);
     --media-date-padding: var(--spacing-s);
@@ -45,7 +45,7 @@
 
     position: var(--media-date-position);
     top: var(--media-date-top);
-    left: var(--media-date-left);
+    right: var(--media-date-right);
     background-color: var(--media-date-background-color);
     border-radius: var(--media-date-border-radius);
     padding: var(--media-date-padding);
