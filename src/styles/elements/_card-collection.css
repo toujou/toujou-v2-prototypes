@@ -46,7 +46,7 @@
     }
 
     .card-collection__item[is-single-column] {
-        --card-collection-item-max-width: 100%;
+        --card-collection-item-max-width: 100% !important;
     }
 }
 
@@ -60,6 +60,6 @@
     }
 
     .card-collection__item[is-single-column] {
-        --card-collection-item-max-width: 100%;
+        --card-collection-item-max-width: 100% !important;
     }
 }
