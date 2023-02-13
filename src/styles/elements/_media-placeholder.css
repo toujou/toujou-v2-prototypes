@@ -44,3 +44,7 @@
 .media-placeholder[media-type="audio"]::after {
     mask-image: var(--icon-audiotrack-circle-filled);
 }
+
+.card-collection__item .media-placeholder {
+    border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
+}
