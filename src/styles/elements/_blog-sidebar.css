@@ -38,14 +38,14 @@
     --blog-sidebar-categories-display: flex;
     --blog-sidebar-categories-flex-wrap: wrap;
     --blog-sidebar-categories-flex-direction: row;
-    --blog-sidebar-categories-gap: var(--spacing-s);
+    --blog-sidebar-categories-gap: var(--spacing-normal);
 
     --blog-sidebar-category-link-text-decoration: none;
 
     --blog-sidebar-tags-display: flex;
     --blog-sidebar-tags-flex-wrap: wrap;
     --blog-sidebar-tags-flex-direction: row;
-    --blog-sidebar-tags-gap: var(--spacing-s);
+    --blog-sidebar-tags-gap: var(--spacing-normal);
 
     --blog-sidebar-tag-link-text-decoration: none;
 
