@@ -44,6 +44,10 @@
     .grid[number-of-columns="2"] .card-collection__item {
         --card-collection-item-max-width: 100%;
     }
+
+    .card-collection__item[is-single-column] {
+        --card-collection-item-max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 960px) {
@@ -53,5 +57,9 @@
 
     .grid[number-of-columns="2"] .card-collection__item {
         --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
+    }
+
+    .card-collection__item[is-single-column] {
+        --card-collection-item-max-width: 100%;
     }
 }
