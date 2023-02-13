@@ -2,7 +2,7 @@
     --post-author-width: 100%;
     --post-author-background-color: var(--color-black-o-05);
     --post-author-border-radius: var(--border-radius-default);
-    --post-author-padding: var(--spacing-normal);
+    --post-author-padding: var(--spacing-m);
     --post-author-margin: 0;
     --post-author-display: grid;
     --post-author-grid-template-columns: var(--post-author-avatar-size) 1fr;
@@ -24,12 +24,13 @@
     --post-author-meta-align-self: center;
     --post-author-meta-display: flex;
     --post-author-meta-flex-wrap: wrap;
-    --post-author-meta-gap: var(--spacing-xxs) var(--spacing-normal);
+    --post-author-meta-gap: var(--spacing-xxs) var(--spacing-s);
     --post-author-meta-grid-area: meta;
 
     --post-author-name-font-weight: var(--font-weight-text-bold);
 
     --post-author-description-grid-area: description;
+    --post-author-description-margin-top: 0;
 
     --post-author-socials-grid-area: socials;
 
@@ -78,6 +79,7 @@
 
 .post-author__description {
     grid-area: var(--post-author-description-grid-area);
+    margin-top: var(--post-author-description-margin-top);
 }
 
 .post-author__socials {
