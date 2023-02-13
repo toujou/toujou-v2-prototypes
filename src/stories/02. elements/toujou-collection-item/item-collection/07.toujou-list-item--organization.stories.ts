@@ -30,7 +30,7 @@ const Template = () => {
                         </figure>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="primary-dark"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
                                 New
                             </a>
                         </div>
@@ -86,7 +86,7 @@ const Template = () => {
                         </figure>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="primary-dark"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
                                 Rabatt
                             </a>
                         </div>
