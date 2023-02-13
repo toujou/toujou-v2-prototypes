@@ -99,14 +99,6 @@
     --collection-item-info-icon-color: var(--color-primary);
     --collection-item-info-text-color: var(--collection-item-text-color);
 
-    --collection-item-extension-background-color: var(--color-error);
-    --collection-item-extension-width: fit-content;
-    --collection-item-extension-padding: var(--spacing-xs) var(--spacing-s);
-    --collection-item-extension-color: var(--color-bg);
-    --collection-item-extension-font-size: var(--font-size-s);
-    --collection-item-extension-border-radius: var(--border-radius-default);
-    --collection-item-extension-margin: var(--spacing-normal) 0;
-
     --collection-item-abstract-number-of-line: 3;
     --collection-item-abstract-color: var(--collection-item-text-color);
 
@@ -327,16 +319,6 @@ a.collection-item__category:focus-visible {
 .collection-item__info-text {
     margin: var(--collection-item-info-text-margin);
     color: var(--collection-item-info-text-color);
-}
-
-.collection-item__extension {
-    background-color: var(--collection-item-extension-background-color);
-    color: var(--collection-item-extension-color);
-    width: var(--collection-item-extension-width);
-    padding: var(--collection-item-extension-padding);
-    font-size: var(--collection-item-extension-font-size);
-    border-radius: var(--collection-item-extension-border-radius);
-    margin: var(--collection-item-extension-margin);
 }
 
 .collection-item__abstract {
