@@ -6,8 +6,10 @@
     --chips-list-list-style: none;
     --chips-list-list-display: flex;
     --chips-list-list-flex-wrap: wrap;
-    --chips-list-list-gap: var(--spacing-s) var(--spacing-normal);
+    --chips-list-list-gap: var(--spacing-normal);
     --chips-list-list-margin: 0;
+
+    --chips-list-title-margin-bottom: var(--spacing-m);
 
     --chips-list-link-text-decoration: none;
 
@@ -26,4 +28,8 @@
 
 .chips-list__link {
     text-decoration: var(--chips-list-link-text-decoration);
+}
+
+.chips-list__title {
+    margin-bottom: var(--chips-list-title-margin-bottom);
 }
