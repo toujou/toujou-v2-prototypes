@@ -44,9 +44,13 @@ const Template: Story<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsSto
                 
                 <div class="post-author__meta">
                     <span class="post-author__name" itemprop="name">Han Solo</span>
-                    <span class="post-author__title" itemprop="jobTitle">Pilot</span>
-                    <span class="post-author__meta-separator">/</span>
-                    <span class="post-author__location" itemprop="homeLocation">Tatooine</span>
+                    <span class="post-author__info">
+                        <span class="post-author__meta-parentesis">(</span>
+                        <span class="post-author__title" itemprop="jobTitle">Pilot</span>
+                        <span class="post-author__meta-separator">/</span>
+                        <span class="post-author__location" itemprop="homeLocation">Tatooine</span>
+                        <span class="post-author__meta-parentesis">)</span>
+                    </span>
                 </div>
                 <p class="post-author__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
                 <toujou-social-media-bar class="social-media-bar post-author__socials" element-design="default" no-headline inline no-margins>
@@ -75,9 +79,13 @@ const Template: Story<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsSto
                 ` : ''}
                 <div class="post-author__meta">
                     <span class="post-author__name" itemprop="name">Han Solo</span>
-                    <span class="post-author__title" itemprop="jobTitle">Pilot</span>
-                    <span class="post-author__meta-separator">/</span>
-                    <span class="post-author__location" itemprop="homeLocation">Tatooine</span>
+                    <span class="post-author__info">
+                        <span class="post-author__meta-parentesis">(</span>
+                        <span class="post-author__title" itemprop="jobTitle">Pilot</span>
+                        <span class="post-author__meta-separator">/</span>
+                        <span class="post-author__location" itemprop="homeLocation">Tatooine</span>
+                        <span class="post-author__meta-parentesis">)</span>
+                    </span>
                 </div>
                 <p class="post-author__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
                 <toujou-social-media-bar class="social-media-bar post-author__socials" element-design="default" no-headline inline no-margins>
