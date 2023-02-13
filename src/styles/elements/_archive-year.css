@@ -5,6 +5,9 @@
     --archive-year-list-margin: 0;
     --archive-year-list-padding: 0;
 
+    --archive-year-title-font-size: var(--font-size-normal);
+    --archive-year-title-margin-bottom: var(--spacing-s);
+
     display: var(--archive-year-display);
 }
 
@@ -16,6 +19,11 @@
 
 .archive-year__list {
     list-style: var(--archive-year-list-style);
-    margin: var(--archive-year-margin);
+    margin: var(--archive-year-list-margin);
     padding: var(--archive-year-list-padding);
+}
+
+.archive-year__title {
+    font-size: var(--archive-year-title-font-size);
+    margin-bottom: var(--archive-year-title-margin-bottom);
 }
