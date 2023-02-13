@@ -41,6 +41,10 @@
         --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
     }
 
+    .grid .card-collection__item {
+        --card-collection-item-width: 100%;
+    }
+
     .grid[number-of-columns="2"] .card-collection__item {
         --card-collection-item-max-width: 100%;
     }
