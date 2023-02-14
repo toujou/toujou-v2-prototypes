@@ -43,9 +43,9 @@
     --review-image-aspect-ratio: var(--aspect-ratio-default);
     --review-object-fit: cover;
 
-    --review-comment-border-left: 4px solid var(--color-primary);
-    --review-comment-color: var(--color-primary);
-    --review-comment-padding: 0 0 0 var(--spacing-normal);
+    --review-footer-border-left: 4px solid var(--color-primary);
+    --review-footer-color: var(--color-primary);
+    --review-footer-padding: 0 0 0 var(--spacing-normal);
 
     padding: var(--review-padding);
     border-bottom: var(--review-border-bottom);
@@ -131,10 +131,10 @@
     margin-bottom: 0;
 }
 
-.review__comment {
-    border-left: var(--review-comment-border-left);
-    color: var(--review-comment-color);
-    padding: var(--review-comment-padding);
+.review__footer {
+    border-left: var(--review-footer-border-left);
+    color: var(--review-footer-color);
+    padding: var(--review-footer-padding);
 }
 
 @media screen and (min-width: 640px) {
