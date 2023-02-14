@@ -38,9 +38,10 @@
     --review-figure-border-radius: var(--border-radius-default);
     --review-figure-overflow: hidden;
 
-    --review-content-image-height: auto;
-    --review-content-image-width: 100%;
-    --review-content-image-aspect-ratio: var(--aspect-ratio-default);
+    --review-image-height: auto;
+    --review-image-width: 100%;
+    --review-image-aspect-ratio: var(--aspect-ratio-default);
+    --review-object-fit: cover;
 
     --review-comment-border-left: 4px solid var(--color-primary);
     --review-comment-color: var(--color-primary);
@@ -116,9 +117,10 @@
 }
 
 .review__image {
-    height: var(--review-content-image-height);
-    width: var(--review-content-image-width);
-    aspect-ratio: var(--review-content-image-aspect-ratio);
+    height: var(--review-image-height);
+    width: var(--review-image-width);
+    aspect-ratio: var(--review-image-aspect-ratio);
+    object-fit: var(--review-object-fit);
 }
 
 .review__review > *:first-child {
