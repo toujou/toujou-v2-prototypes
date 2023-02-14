@@ -43,7 +43,8 @@ ul.slider-bullets {
 }
 
 .slider[element-design="default"][content-type="logos"] .slider-bullets,
-.slider[element-design="default"][content-type="teaser"] .slider-bullets {
+.slider[element-design="default"][content-type="teaser"] .slider-bullets,
+.slider[element-design="default"][content-type="review"] .slider-bullets {
     --slider-bullets-bullet-default-background-color: var(--color-font);
     --slider-bullets-bullet-active-background-color: var(--color-font);
     --slider-bullets-bullet-hover-background-color: var(--color-font);

@@ -53,9 +53,9 @@ export class ToujouRatingStars extends LitElement {
      * Calculate the "rest percentage" depending on the ratingValue and ratingTotal values.
      * Set the correct value to the --rating-stars-percentage variable
      */
-    updatePercentage() {
+    updatePercentage = () => {
         this.percentage = (this.ratingValue / this.ratingTotal) * 100;
-        document.documentElement.style.setProperty(this.percentageCssVariable, `${100 - this.percentage}%`);
+        this.style.setProperty(this.percentageCssVariable, `${100 - this.percentage}%`);
     }
 }
 

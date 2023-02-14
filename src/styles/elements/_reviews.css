@@ -1,0 +1,9 @@
+.reviews {
+    --reviews-width: var(--content-width-with-padding);
+    --reviews-max-width: var(--content-max-width);
+    --reviews-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+
+    width: var(--reviews-width);
+    max-width: var(--reviews-max-width);
+    margin: var(--reviews-margin);
+}

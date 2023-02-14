@@ -42,7 +42,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -52,7 +52,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                                 New
                             </a>
                         </div>
-                    </div>
+                    </header>
                     <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product A</h3>
                     </a>
@@ -60,7 +60,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
             </li>
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -70,7 +70,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                                 Rabatt
                             </a>
                         </div>
-                    </div>
+                    </header>
                     <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product B</h3>
                     </a>
@@ -78,11 +78,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
             </li>
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product C</h3>
                     </a>
@@ -90,11 +90,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
             </li>
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <a href="#" class="collection-item__bottom">
                         <h3 class="collection-item__title">Product D</h3>
                     </a>

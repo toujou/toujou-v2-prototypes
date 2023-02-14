@@ -17,7 +17,7 @@ export declare class ToujouRatingStars extends LitElement {
      * Calculate the "rest percentage" depending on the ratingValue and ratingTotal values.
      * Set the correct value to the --rating-stars-percentage variable
      */
-    updatePercentage(): void;
+    updatePercentage: () => void;
 }
 declare global {
     interface HTMLElementTagNameMap {

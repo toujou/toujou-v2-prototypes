@@ -24,7 +24,7 @@ const Template = () => {
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -47,7 +47,7 @@ const Template = () => {
                             </h5>
                         </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
                         <p class="collection-item__subtitles">
@@ -76,7 +76,7 @@ const Template = () => {
             </li>
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -99,7 +99,7 @@ const Template = () => {
                             </h5>
                         </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
                         <p class="collection-item__subtitles">
@@ -128,7 +128,7 @@ const Template = () => {
             </li>
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -151,7 +151,7 @@ const Template = () => {
                             </h5>
                         </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
                         <p class="collection-item__subtitles">
@@ -180,7 +180,7 @@ const Template = () => {
             </li>
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -203,7 +203,7 @@ const Template = () => {
                             </h5>
                         </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
                         <p class="collection-item__subtitles">

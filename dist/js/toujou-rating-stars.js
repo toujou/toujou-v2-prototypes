@@ -1,4 +1,4 @@
-import{i as y,s as u,y as p}from"./lit-element-9d8fde0b.js";import{e as h}from"./custom-element-73470d87.js";import{e as i}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const v=y`
+import{i as y,s as h,y as l}from"./lit-element-9d8fde0b.js";import{e as u}from"./custom-element-73470d87.js";import{e as i}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const v=y`
   :host {
     --rating-stars-entity-position: relative;
     --rating-stars-entity-left: -.1em;
@@ -28,10 +28,10 @@ import{i as y,s as u,y as p}from"./lit-element-9d8fde0b.js";import{e as h}from".
     backdrop-filter: var(--rating-stars-overlay-backdrop-filter);
     display: block;
   }
-`;var c=Object.defineProperty,b=Object.getOwnPropertyDescriptor,e=(r,s,o,n)=>{for(var a=n>1?void 0:n?b(s,o):s,g=r.length-1,l;g>=0;g--)(l=r[g])&&(a=(n?l(s,o,a):l(a))||a);return n&&a&&c(s,o,a),a};let t=class extends u{constructor(){super(...arguments),this.entities=[],this.ratingEntity="★",this.ratingTotal=5,this.ratingValue=0,this.percentage=0,this.percentageCssVariable="--rating-stars-percentage"}render(){return p`
-           ${this.entities.map(r=>p`
+`;var c=Object.defineProperty,b=Object.getOwnPropertyDescriptor,e=(r,s,o,n)=>{for(var a=n>1?void 0:n?b(s,o):s,g=r.length-1,p;g>=0;g--)(p=r[g])&&(a=(n?p(s,o,a):p(a))||a);return n&&a&&c(s,o,a),a};let t=class extends h{constructor(){super(...arguments),this.entities=[],this.ratingEntity="★",this.ratingTotal=5,this.ratingValue=0,this.percentage=0,this.percentageCssVariable="--rating-stars-percentage",this.updatePercentage=()=>{this.percentage=this.ratingValue/this.ratingTotal*100,this.style.setProperty(this.percentageCssVariable,`${100-this.percentage}%`)}}render(){return l`
+           ${this.entities.map(r=>l`
                    <span class="entity">${r}</span>
                `)}
            <span class="overlay"></span>
-        `}updated(r){r.has("ratingTotal")&&(this.entities=Array(this.ratingTotal).fill(this.ratingEntity),this.updatePercentage()),r.has("ratingValue")&&(this.entities=Array(this.ratingTotal).fill(this.ratingEntity),this.updatePercentage())}updatePercentage(){this.percentage=this.ratingValue/this.ratingTotal*100,document.documentElement.style.setProperty(this.percentageCssVariable,`${100-this.percentage}%`)}};t.styles=[v];e([i({type:Array})],t.prototype,"entities",2);e([i({type:String,attribute:"rating-entity"})],t.prototype,"ratingEntity",2);e([i({type:Number,attribute:"rating-total"})],t.prototype,"ratingTotal",2);e([i({type:Number,attribute:"rating-value"})],t.prototype,"ratingValue",2);e([i({type:Number})],t.prototype,"percentage",2);t=e([h("toujou-rating-stars")],t);
+        `}updated(r){r.has("ratingTotal")&&(this.entities=Array(this.ratingTotal).fill(this.ratingEntity),this.updatePercentage()),r.has("ratingValue")&&(this.entities=Array(this.ratingTotal).fill(this.ratingEntity),this.updatePercentage())}};t.styles=[v];e([i({type:Array})],t.prototype,"entities",2);e([i({type:String,attribute:"rating-entity"})],t.prototype,"ratingEntity",2);e([i({type:Number,attribute:"rating-total"})],t.prototype,"ratingTotal",2);e([i({type:Number,attribute:"rating-value"})],t.prototype,"ratingValue",2);e([i({type:Number})],t.prototype,"percentage",2);t=e([u("toujou-rating-stars")],t);
 //# sourceMappingURL=toujou-rating-stars.js.map

@@ -24,7 +24,7 @@ const Template = () => {
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -34,7 +34,7 @@ const Template = () => {
                                 New
                             </a>
                         </div>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
@@ -80,7 +80,7 @@ const Template = () => {
             </li>
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
@@ -90,7 +90,7 @@ const Template = () => {
                                 Rabatt
                             </a>
                         </div>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
@@ -136,11 +136,11 @@ const Template = () => {
             </li>
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
@@ -186,11 +186,11 @@ const Template = () => {
             </li>
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 

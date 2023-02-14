@@ -42,11 +42,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Dr. Max Mustermann</h3>
                         <p class="collection-item__subtitles">
@@ -93,11 +93,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
             </li>
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Dr. Max Mustermann</h3>
                         <p class="collection-item__subtitles">
@@ -144,11 +144,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
             </li>
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Dr. Max Mustermann</h3>
                         <p class="collection-item__subtitles">
@@ -195,11 +195,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
             </li>
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="person" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                    <div class="collection-item__top">
+                    <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
-                    </div>
+                    </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Dr. Max Mustermann</h3>
                         <p class="collection-item__subtitles">

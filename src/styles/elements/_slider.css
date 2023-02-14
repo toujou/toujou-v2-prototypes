@@ -65,6 +65,12 @@
     --slider-margin: 0 auto var(--spacing-normal);
 }
 
+.slider[content-type="review"] {
+    --slider-width: 100%;
+    --slider-max-width: var(--content-wide-max-width);
+    --slider-aspect-ratio: var(--aspect-ratio-default);
+}
+
 .slider[element-design="default"] {
     --slider-control-default-background-color: var(--color-font);
     --slider-control-hover-background-color: var(--color-font-light);

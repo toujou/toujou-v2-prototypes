@@ -91,7 +91,9 @@
 @import "./elements/_blog-header.css";
 @import "./elements/_estimated-reading-time.css";
 @import "./elements/_rating-stars.css";
-@import "./elements/_media-date";
+@import "./elements/_media-date.css";
+@import "./elements/_reviews.css";
+@import "./elements/_review.css";
 
 body {
     background-color: var(--demo-color-grey-light);
