@@ -59,9 +59,11 @@ const Template = () => {
                     </toujou-clamped-content>
                 </div>
                 <footer class="review__footer">
+                    <h6 class="review__footer-title">Comment</h6>
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
+            
             <article class="review" no-media>
                 <header class="review__header">
                     <h3 class="review__title">Amazing sightseeing trip</h3>
@@ -100,6 +102,7 @@ const Template = () => {
                     </toujou-clamped-content>
                 </div>
                 <footer class="review__footer">
+                    <h6 class="review__footer-title">Comment</h6>
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
@@ -195,6 +198,7 @@ const Template = () => {
                     </toujou-clamped-content>
                 </div>
                 <footer class="review__footer">
+                    <h6 class="review__footer-title">Comment</h6>
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>

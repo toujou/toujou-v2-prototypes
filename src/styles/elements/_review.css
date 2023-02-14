@@ -43,9 +43,16 @@
     --review-image-aspect-ratio: var(--aspect-ratio-default);
     --review-object-fit: cover;
 
-    --review-footer-border-left: 4px solid var(--color-primary);
     --review-footer-color: var(--color-primary);
-    --review-footer-padding: 0 0 0 var(--spacing-normal);
+    --review-footer-padding: var(--spacing-m);
+    --review-footer-backgorund-color: var(--color-primary-o-10);
+    --review-footer-margin: var(--spacing-m) 0 0;
+
+    --review-footer-title-font-family: var(--font-family-text);
+    --review-footer-title-font-size: var(--font-size-normal);
+    --review-footer-title-font-weight: var(--font-weight-text-bold);
+    --review-footer-title-color: var(--color-primary);
+    --review-footer-title-margin: 0 0 var(--spacing-s);
 
     padding: var(--review-padding);
     border-bottom: var(--review-border-bottom);
@@ -132,9 +139,26 @@
 }
 
 .review__footer {
-    border-left: var(--review-footer-border-left);
     color: var(--review-footer-color);
     padding: var(--review-footer-padding);
+    background-color: var(--review-footer-backgorund-color);
+    margin: var(--review-footer-margin);
+}
+
+.review__footer > *:nth-child(2) {
+    margin-top: 0;
+}
+
+.review__footer > *:last-child {
+    margin-bottom: 0;
+}
+
+.review__footer-title {
+    font-family: var(--review-footer-title-font-family);
+    font-size: var(--review-footer-title-font-size);
+    font-weight: var(--review-footer-title-font-weight);
+    color: var(--review-footer-title-color);
+    margin: var(--review-footer-title-margin);
 }
 
 @media screen and (min-width: 640px) {
