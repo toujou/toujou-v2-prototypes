@@ -149,13 +149,14 @@ strong {
     font-weight: var(--font-weight-text-bold);
 }
 
+
+
 a {
     color: var(--color-primary);
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
+}
+
+h1, h2, h3, h4, h5, p, ul, ol, span, a {
+    overflow-wrap: anywhere;
     hyphens: auto;
 }
 
@@ -221,19 +222,6 @@ a:-webkit-any-link:focus-visible {
 /* stylelint-disable-next-line selector-no-vendor-prefix */
 .topbar[open-nav] a:-webkit-any-link:focus-visible {
     --focus-outline-color: var(--color-bg);
-}
-
-@media screen and (max-width: 420px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p,
-    ol,
-    ul {
-        word-break: break-word;
-    }
 }
 
 @media (hover: hover) {
