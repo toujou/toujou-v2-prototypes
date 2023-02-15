@@ -1,4 +1,4 @@
-import{i as c,s as d,y as m}from"./lit-element-9d8fde0b.js";import{e as h}from"./custom-element-73470d87.js";import{e as v}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const b=c`
+import{i as v,s as f,y}from"./lit-element-9d8fde0b.js";import{e as j}from"./custom-element-73470d87.js";import{e as m}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const _=v`
   :host {
     --toujou-clamped-content-number-of-lines: 3;
     --toujou-clamped-content-word-break: 'none';
@@ -10,6 +10,11 @@ import{i as c,s as d,y as m}from"./lit-element-9d8fde0b.js";import{e as h}from".
 
   :host([is-open]) {
     --toujou-clamped-content-number-of-lines: 9999;
+  }
+
+  :host([clamp-disabled]) {
+    --toujou-clamped-content-number-of-lines: 9999;
+    --toujou-clamped-content-button-visible-display: none;
   }
 
   .clamped-content {
@@ -42,11 +47,11 @@ import{i as c,s as d,y as m}from"./lit-element-9d8fde0b.js";import{e as h}from".
     display: var(--toujou-clamped-content-button-slot-display);
     justify-content: var(--toujou-clamped-content-button-slot-justify-content);
   }
-`;var f=Object.defineProperty,y=Object.getOwnPropertyDescriptor,r=(o,t,e,s)=>{for(var n=s>1?void 0:s?y(t,e):t,i=o.length-1,u;i>=0;i--)(u=o[i])&&(n=(s?u(t,e,n):u(n))||n);return s&&n&&f(t,e,n),n},j=(o,t,e)=>{if(!t.has(o))throw TypeError("Cannot "+e)},p=(o,t,e)=>(j(o,t,"read from private field"),e?e.call(o):t.get(o)),w=(o,t,e)=>{if(t.has(o))throw TypeError("Cannot add the same private member more than once");t instanceof WeakSet?t.add(o):t.set(o,e)},a;let l=class extends d{constructor(){super(...arguments),this.isOpen=!1,w(this,a,()=>{this.isOpen=!this.isOpen})}render(){return m`
+`;var w=Object.defineProperty,C=Object.getOwnPropertyDescriptor,r=(t,e,o,l)=>{for(var n=l>1?void 0:l?C(e,o):e,i=t.length-1,c;i>=0;i--)(c=t[i])&&(n=(l?c(e,o,n):c(n))||n);return l&&n&&w(e,o,n),n},h=(t,e,o)=>{if(!e.has(t))throw TypeError("Cannot "+o)},u=(t,e,o)=>(h(t,e,"read from private field"),o?o.call(t):e.get(t)),d=(t,e,o)=>{if(e.has(t))throw TypeError("Cannot add the same private member more than once");e instanceof WeakSet?e.add(t):e.set(t,o)},k=(t,e,o)=>(h(t,e,"access private method"),o),s,p,b;let a=class extends f{constructor(){super(...arguments),d(this,p),this.isOpen=!1,this.clampDisabled=!1,d(this,s,()=>{this.isOpen=!this.isOpen})}render(){return y`
             <div class="clamped-content">
                 <slot name="clamped-content"></slot>
             </div>
-            <slot name="show-button" class="button-slot" @click="${p(this,a)}"></slot>
-            <slot name="hide-button" class="button-slot" @click="${p(this,a)}"></slot>
-        `}};a=new WeakMap;l.styles=[b];r([v({type:Boolean,attribute:"is-open",reflect:!0})],l.prototype,"isOpen",2);l=r([h("toujou-clamped-content")],l);
+            <slot name="show-button" class="button-slot" @click="${u(this,s)}"></slot>
+            <slot name="hide-button" class="button-slot" @click="${u(this,s)}"></slot>
+        `}connectedCallback(){super.connectedCallback(),k(this,p,b).call(this)}};s=new WeakMap;p=new WeakSet;b=function(){requestAnimationFrame(()=>{const t=this.querySelector(".review__review");t?this.clampDisabled=t.scrollHeight<=t.clientHeight:this.clampDisabled=!0})};a.styles=[_];r([m({type:Boolean,attribute:"is-open",reflect:!0})],a.prototype,"isOpen",2);r([m({type:Boolean,attribute:"clamp-disabled",reflect:!0})],a.prototype,"clampDisabled",2);a=r([j("toujou-clamped-content")],a);
 //# sourceMappingURL=toujou-clamped-content.js.map

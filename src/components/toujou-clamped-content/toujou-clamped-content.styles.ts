@@ -14,6 +14,11 @@ export const ToujouClampedContentStyles = css`
     --toujou-clamped-content-number-of-lines: 9999;
   }
 
+  :host([clamp-disabled]) {
+    --toujou-clamped-content-number-of-lines: 9999;
+    --toujou-clamped-content-button-visible-display: none;
+  }
+
   .clamped-content {
     display: -webkit-box;
     -webkit-line-clamp: var(--toujou-clamped-content-number-of-lines);

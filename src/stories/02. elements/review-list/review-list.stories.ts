@@ -202,6 +202,49 @@ const Template = () => {
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
+            
+            <article class="review" no-media>
+                <header class="review__header">
+                    <h3 class="review__title">Amazing sightseeing trip</h3>
+                    <div class="review__infos">
+                        <p class="review__info review__info--name">
+                            <span class="review__info-label">Name:</span>
+                            Max Mustermann
+                        </p>
+                        <time datetime="03-02-2023" class="review__info review__info--date">
+                            <span class="review__info-label">Datum:</span>
+                            03.02.2023
+                        </time>
+                        <p class="review__info review__info--link">
+                            <span class="review__info-label">Seite:</span>
+                            <a href="#" class="review__info-link">Trip A</a>
+                        </p>
+                        <span class="review__rating">
+                            <toujou-rating-stars
+                                class="rating-stars"
+                                rating-entity="★"
+                                rating-total="5"
+                                rating-value="4.8"
+                                rating-entity-size="m"
+                            >
+                            </toujou-rating-stars>
+                        </span>
+                    </div>
+                </header>
+                <div class="review__content">
+                    <toujou-clamped-content>
+                        <div class="review__review" slot="clamped-content">
+                            <p>Short review text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <button class="button" slot="show-button" button-variant="primary" button-size="tiny" button-type="border">Show content</button>
+                        <button class="button" slot="hide-button" button-variant="primary" button-size="tiny" button-type="border">Hide content</button>
+                    </toujou-clamped-content>
+                </div>
+                <footer class="review__footer">
+                    <h6 class="review__footer-title">Comment</h6>
+                    <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </footer>
+            </article>
         </div>
     `;
 };
