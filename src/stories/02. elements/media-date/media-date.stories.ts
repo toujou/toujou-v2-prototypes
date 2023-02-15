@@ -68,6 +68,7 @@ const Template: Story<MediaDateStoryProps> = (args: MediaDateStoryProps) => {
             <div class="media-date__months" aria-hidden="true">
                 <span class="media-date__month">Jun</span>
                 ${args.singleMonth || args.singleDay ? `` : `
+                    <span class="media-date__month-separator">-</span>
                     <span class="media-date__month">Jul</span>
                 `}
             </div>
@@ -81,6 +82,7 @@ const Template: Story<MediaDateStoryProps> = (args: MediaDateStoryProps) => {
             <div class="media-date__years" aria-hidden="true">
                 <span class="media-date__year">2023</span>
                 ${args.singleYear || args.singleDay ? `` : `
+                    <span class="media-date__year-separator">-</span>
                     <span class="media-date__year">2023</span>
                 `}
             </div>
