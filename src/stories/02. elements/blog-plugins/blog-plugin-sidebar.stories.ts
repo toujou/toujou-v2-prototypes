@@ -133,6 +133,28 @@ const Template = () => {
                             </div>
                         </div>
                     </div>
+                    <div class="blog-sidebar__comment">
+                        <toujou-icon class="icon" icon-name="message-bubble" icon-size="ms"></toujou-icon>
+                        <div class="blog-sidebar__comment-content">
+                            <p class="blog-sidebar__comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <div class="blog-sidebar__comment-data">
+                                <time class="blog-sidebar__comment-date" datetime="2022.01.24">2022.02.24</time>
+                                -
+                                <a href="#" class="blog-sidebar__comment-link">Blog post A</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-sidebar__comment">
+                        <toujou-icon class="icon" icon-name="message-bubble" icon-size="ms"></toujou-icon>
+                        <div class="blog-sidebar__comment-content">
+                            <p class="blog-sidebar__comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <div class="blog-sidebar__comment-data">
+                                <time class="blog-sidebar__comment-date" datetime="2022.01.24">2022.02.24</time>
+                                -
+                                <a href="#" class="blog-sidebar__comment-link">Blog post A</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
