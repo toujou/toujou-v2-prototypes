@@ -1822,7 +1822,16 @@ a {
     color: var(--color-primary);
 }
 
-h1, h2, h3, h4, h5, p, ul, ol, span, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+span,
+a {
     overflow-wrap: anywhere;
     -webkit-hyphens: auto;
             hyphens: auto;

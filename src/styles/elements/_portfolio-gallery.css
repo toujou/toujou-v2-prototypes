@@ -142,6 +142,8 @@
 
         display: grid;
         grid-gap: var(--portfolio-gallery-grid-gap);
+        width: 100%;
+        max-width: 100%;
     }
 
     .portfolio-gallery .slider-count {
