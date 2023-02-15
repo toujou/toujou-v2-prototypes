@@ -65,6 +65,13 @@
     gap: var(--media-date-gap);
 }
 
+.media-date[inline] {
+    --media-date-position: relative;
+    --media-date-top: unset;
+    --media-date-right: set;
+    --media-date-background-color: var(--color-font-o-10);
+}
+
 .media-date__months {
     display: var(--media-date-months-display);
     align-items: var(--media-date-months-align-items);

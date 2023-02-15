@@ -94,6 +94,7 @@
 @import "./elements/_media-date.css";
 @import "./elements/_reviews.css";
 @import "./elements/_review.css";
+@import "./elements/_event-schedule.css";
 
 body {
     background-color: var(--demo-color-grey-light);
