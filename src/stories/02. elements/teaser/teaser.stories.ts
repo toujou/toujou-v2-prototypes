@@ -82,7 +82,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
     return `
         <toujou-teaser class="teaser" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}" element-design="${args.elementDesign}">
             <div class="teaser__figure">
-                <img class="teaser__image" src="https://picsum.photos/1024" alt="nice image" />
+                <img class="teaser__image" src="https://picsum.photos/1024/1480" alt="nice image" />
                 <toujou-media-info class="media-info">
                     <button slot="open-button" class="media-info__toggle" aria-description="Toggle the image caption and / or copyright">
                         <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>

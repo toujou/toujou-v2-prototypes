@@ -63,9 +63,9 @@
     --teaser-width: 100%;
 }
 
-/*.teaser[teaser-type="media"] {*/
-/*    --teaser-image-aspect-ratio: auto;*/
-/*}*/
+.teaser[teaser-type="media"] {
+    --teaser-image-aspect-ratio: auto;
+}
 
 .teaser__figure {
     grid-column: var(--teaser-figure-column);
