@@ -10,6 +10,7 @@
     --toujou-chip-width: fit-content;
     --toujou-chip-text-transform: none;
     --toujou-chip-text-decoration: none;
+    --toujou-chip-height: fit-content;
 
     width: var(--toujou-chip-width);
     background-color: var(--toujou-chip-color-bg);
@@ -25,6 +26,7 @@
     gap: var(--toujou-chip-gap);
     text-transform: var(--toujou-chip-text-transform);
     text-decoration: var(--toujou-chip-text-decoration);
+    height: var(--toujou-chip-height);
 }
 
 /* BACKGROUND COLOR */
