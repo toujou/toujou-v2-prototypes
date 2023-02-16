@@ -9,6 +9,7 @@
     --event-table-card-grid-gap: 0 var(--spacing-normal);
     --event-table-card-padding: var(--spacing-m) 0;
     --event-table-card-margin: 0;
+    --event-table-card-width: 100%;
 
     --event-table-card-title-font-size: var(--font-size-ms);
     --event-table-card-title-color: var(--color-font-dark);
@@ -42,6 +43,7 @@
     grid-gap: var(--event-table-card-grid-gap);
     padding: var(--event-table-card-padding);
     margin: var(--event-table-card-margin);
+    width: var(--event-table-card-width);
 }
 
 .event-table-card__media-date {
