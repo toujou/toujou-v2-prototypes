@@ -24,6 +24,8 @@
     --teaser-image-width: 100%;
     --teaser-image-height: auto;
 
+    --teaser-video-aspect-ratio: var(--aspect-ratio-default);
+
     position: var(--teaser-position);
     display: var(--teaser-display);
     grid-template-columns: var(--teaser-grid-template-columns);
@@ -82,7 +84,7 @@
 .teaser__figure .video,
 .teaser__figure .single-media__video[video-extension="youtube"],
 .teaser__figure .single-media__video[video-extension="vimeo"] {
-    aspect-ratio: var(--teaser-image-aspect-ratio);
+    aspect-ratio: var(--teaser-video-aspect-ratio);
     object-fit: var(--teaser-image-object-fit);
     width: var(--teaser-image-width);
     height: var(--teaser-image-height);
