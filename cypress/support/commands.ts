@@ -94,4 +94,17 @@ Cypress.Commands.add('isInViewport', element => {
     });
 })
 
+/**
+ * Check equality of trimmed text (otherwise we always get errors because of empty spaces)
+ * From here: https://github.com/cypress-io/cypress/issues/3887
+ */
+// @ts-ignore
+Cypress.Commands.add("shouldHaveTrimmedText", { prevSubject: true },
+    (subject, equalTo) => {
+        // @ts-ignore
+        expect(subject.text().trim()).to.eq(equalTo);
+        return subject;
+    },
+);
+
 export {}
