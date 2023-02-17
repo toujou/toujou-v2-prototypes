@@ -14,8 +14,8 @@ describe('chapter', () => {
 
     it('has correct styles', () => {
         cy.get('.chapter').then((chapter) => {
-            expect(chapter).to.have.css('padding-top').equal('120px');
-            expect(chapter).to.have.css('padding-bottom').equal('120px');
+            expect(chapter).to.have.css('padding-top').equal('96px');
+            expect(chapter).to.have.css('padding-bottom').equal('96px');
             expect(chapter).to.have.css('margin').equal('0px');
         });
     });
@@ -148,7 +148,7 @@ describe('chapter background', () => {
 
     it('has correct primary styles', () => {
         cy.get('.chapter').then((chapter) => {
-            expect(chapter).to.have.css('background-color').equal(colors.colorBg);
+            expect(chapter).to.have.css('background-color').equal(colors.colorFontO10);
         });
 
         cy.get('.chapter h1').then((h1) => {
@@ -157,6 +157,22 @@ describe('chapter background', () => {
 
         cy.get('.chapter p').then((text) => {
             expect(text).to.have.css('color').equal(colors.colorFont);
+        });
+    });
+});
+
+describe('chapter - no padding', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=hasNoPaddingAttr:true');
+    });
+
+    it('has correct attributes', () => {
+        cy.get('.chapter').invoke('attr', 'no-padding').should('exist');
+    });
+
+    it('has correct primary styles', () => {
+        cy.get('.chapter').then((chapter) => {
+            expect(chapter).to.have.css('padding').equal('0px');
         });
     });
 });
