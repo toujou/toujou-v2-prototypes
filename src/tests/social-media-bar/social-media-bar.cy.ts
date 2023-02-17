@@ -133,7 +133,7 @@ describe('social-media-bar - no headline', () => {
         cy.get('.social-media-bar').invoke('attr', 'no-headline').should('eq', 'inverted');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.social-media-bar__headline').should('not.exist');
         cy.get('.social-media-bar').should('have.css', 'padding', '16px');
     });

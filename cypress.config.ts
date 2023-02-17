@@ -49,6 +49,7 @@ export default defineConfig({
       colorInfo: `rgb(107, 216, 237)`,
       colorInfoDarken15: `rgb(108, 187, 224)`,
       colorInfoO25Alpha: `rgba(171, 216, 237, 0.25)`,
+      colorGold: `rgb(255, 187, 0)`,
     },
     desktopViewportWidth: desktopViewportWidth,
     desktopViewportHeight: desktopViewportHeight,
