@@ -56,7 +56,7 @@ describe('blockquote', () => {
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'grid-area', 'blockquoteQuote / blockquoteQuote / blockquoteQuote / blockquoteQuote');
     });
 
-    it.only('blockquote quote icon has correct styles', () => {
+    it('blockquote quote icon has correct styles', () => {
         // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('position').should('eq', 'absolute');
         // @ts-ignore

@@ -22,7 +22,7 @@ describe('table', () => {
         cy.get('table.table').parent().should('have.css', 'margin-bottom', '0px');
     });
 
-    it.only('table rows have correct styles', () => {
+    it('table rows have correct styles', () => {
         cy.get('table.table tr:nth-child(1) td').should('have.css', 'padding', '16px');
         cy.get('table.table tr:nth-child(1)').should('have.css', 'background-color', colors.colorFontO04);
         cy.get('table.table tr:nth-child(2)').should('have.css', 'background-color', colors.colorTransparent);

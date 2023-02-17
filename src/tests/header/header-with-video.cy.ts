@@ -36,7 +36,7 @@ describe('header', () => {
         cy.get('.header .video').should('have.css', 'vertical-align', 'middle');
     });
 
-    it.only('can play video', () => {
+    it('can play video', () => {
         cy.get('.header .video')
             .should('have.prop', 'paused', true)
             .and('have.prop', 'ended', false)

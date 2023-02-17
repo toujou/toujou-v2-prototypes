@@ -196,7 +196,7 @@ describe('teaser - media', () => {
         cy.get('.teaser').invoke('attr', 'teaser-type').should('eq', 'media');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.teaser .teaser__figure').should('have.css', 'width', '696px');
         cy.get('.teaser .teaser__image').should('have.css', 'width', '696px');
         cy.get('.teaser .teaser__image').should('have.css', 'height', '1005.9375px');

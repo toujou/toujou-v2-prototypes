@@ -7,12 +7,12 @@ describe('location finder', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-locationfinder--location-finder');
     });
 
-    it.only('has correct class and tag name', () => {
+    it('has correct class and tag name', () => {
         cy.get('toujou-location-finder').should('have.prop', 'tagName').should('eq', 'TOUJOU-LOCATION-FINDER');
         cy.get('toujou-location-finder').invoke('attr', 'class').should('eq', 'location-finder');
     });
 
-    it.only('has correct attributes', () => {
+    it('has correct attributes', () => {
         cy.get('toujou-location-finder').invoke('attr', 'bounds').should('eq', '[[7.22852, 46.321555], [11.573955, 50.898213]]');
         cy.get('toujou-location-finder').invoke('attr', 'teaserurl').should('eq', '{teaserUrl}');
         cy.get('toujou-location-finder').invoke('attr', 'geojsonurl').should('eq', '{geoJsonUrl}');

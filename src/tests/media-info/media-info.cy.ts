@@ -44,7 +44,7 @@ describe('media-info', () => {
         cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'display', 'none');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.single-media:first-child .media-info__toggle[slot="open-button"]').click();
 
         cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'display', 'block');

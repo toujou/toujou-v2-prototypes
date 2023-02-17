@@ -43,7 +43,7 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress-bar').should('have.css', 'pointer-events', 'none');
     });
 
-    it.only('form-progress items have correct styles', () => {
+    it('form-progress items have correct styles', () => {
         cy.get('.form-progress__item').should('have.css', 'position', 'relative');
         cy.get('.form-progress__item').should('have.css', 'display', 'flex');
         cy.get('.form-progress__item').should('have.css', 'flex-flow', 'column nowrap');
