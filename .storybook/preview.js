@@ -61,7 +61,7 @@ export const decorators = [mswDecorator];
 
 export const parameters = {
   docs: {
-    theme: toujouTheme
+    theme: toujouTheme,
   },
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
