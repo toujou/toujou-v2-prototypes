@@ -10,6 +10,7 @@ export default defineConfig({
     specPattern: ['src/tests/**/*.cy.ts'],
     viewportWidth: desktopViewportWidth,
     viewportHeight: desktopViewportHeight,
+    modifyObstructiveCode: false,
   },
   env: {
     colors: {

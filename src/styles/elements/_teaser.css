@@ -80,7 +80,13 @@
     --teaser-figure-border-radius: 0;
 }
 
-.teaser__image,
+.teaser__image {
+    aspect-ratio: var(--teaser-image-aspect-ratio);
+    object-fit: var(--teaser-image-object-fit);
+    width: var(--teaser-image-width);
+    height: var(--teaser-image-height);
+}
+
 .teaser__figure .video,
 .teaser__figure .single-media__video[video-extension="youtube"],
 .teaser__figure .single-media__video[video-extension="vimeo"] {
