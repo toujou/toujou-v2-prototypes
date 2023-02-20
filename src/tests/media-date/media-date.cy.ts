@@ -2,237 +2,124 @@
 
 const colors = Cypress.env('colors');
 
-describe('rating-stars', () => {
+describe('media-date', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
+        cy.visit('/iframe.html?viewMode=story&id=components-mediadate--media-date');
     });
 
     it('has correct class and tag name', () => {
-        cy.get('.rating-stars').should('have.prop', 'tagName').should('eq', 'TOUJOU-RATING-STARS');
-        cy.get('.rating-stars').invoke('attr', 'class').should('eq', 'rating-stars');
+        cy.get('.media-date').should('have.prop', 'tagName').should('eq', 'TIME');
+        cy.get('.media-date').invoke('attr', 'class').should('eq', 'media-date');
     });
 
     it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-entity').should('eq', '★');
-        cy.get('.rating-stars').invoke('attr', 'rating-total').should('eq', '5');
-        cy.get('.rating-stars').invoke('attr', 'rating-value').should('eq', '4.4');
-        cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 'xl');
-        cy.get('.rating-stars').invoke('attr', 'style').should('eq', '--rating-stars-percentage:12%;');
+        cy.get('.media-date').invoke('attr', 'datetime').should('eq', '2023-06-14');
+        cy.get('.media-date').invoke('attr', 'aria-label').should('eq', '2023-06-14');
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '32px');
-        cy.get('.rating-stars').should('have.css', 'letter-spacing', '-6.4px');
-        cy.get('.rating-stars').should('have.css', 'color', colors.colorGold);
-        cy.get('.rating-stars').shadow().children('.entity').should('have.length', 5);
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'position', 'relative');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'left', '-3.2px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '32px');
-        cy.get('.rating-stars').shadow().get('.overlay').should('exist');
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'position', 'absolute');
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'top', '0px');
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'height', '37px');
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'width', '16.125px');
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'display', 'block');
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'background-color', 'rgba(0, 0, 0, 0)');
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'backdrop-filter', 'grayscale(1)');
-        // @ts-ignore
-        cy.get('.rating-stars').shadow().get('.entity:first-child').shouldHaveTrimmedText('★');
+        cy.get('.media-date').should('have.css', 'position', 'absolute');
+        cy.get('.media-date').should('have.css', 'top', '16px');
+        cy.get('.media-date').should('have.css', 'right', '16px');
+        cy.get('.media-date').should('have.css', 'background-color', colors.colorBg);
+        cy.get('.media-date').should('have.css', 'border-radius', '4px');
+        cy.get('.media-date').should('have.css', 'padding', '8px');
+
+        cy.get('.media-date__months').invoke('attr', 'aria-hidden').should('eq', 'true');
+        cy.get('.media-date__months').children("*").should('have.length', '3');
+        cy.get('.media-date__months').should('have.css', 'display', 'flex');
+        cy.get('.media-date__months').should('have.css', 'flex-direction', 'row');
+        cy.get('.media-date__months').should('have.css', 'align-items', 'center');
+        cy.get('.media-date__months').should('have.css', 'justify-content', 'space-around');
+        cy.get('.media-date__months').should('have.css', 'height', '16px');
+        cy.get('.media-date__months').should('have.css', 'line-height', '16px');
+
+        cy.get('.media-date__months .media-date__month:first-child').should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get('.media-date__months .media-date__month:first-child').should('have.css', 'font-size', '12px');
+        cy.get('.media-date__months .media-date__month:first-child').should('have.css', 'color', colors.colorFont);
+        cy.get('.media-date__months .media-date__month:first-child').should('have.css', 'text-transform', 'uppercase');
+
+        cy.get('.media-date__months .media-date__month-separator').should('have.css', 'opacity', '0');
+
+        cy.get('.media-date__years').invoke('attr', 'aria-hidden').should('eq', 'true');
+        cy.get('.media-date__years').children("*").should('have.length', '3');
+        cy.get('.media-date__years').should('have.css', 'display', 'flex');
+        cy.get('.media-date__years').should('have.css', 'flex-direction', 'row');
+        cy.get('.media-date__years').should('have.css', 'align-items', 'center');
+        cy.get('.media-date__years').should('have.css', 'justify-content', 'space-around');
+        cy.get('.media-date__years').should('have.css', 'height', '16px');
+        cy.get('.media-date__years').should('have.css', 'line-height', '16px');
+
+        cy.get('.media-date__years .media-date__year:first-child').should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get('.media-date__years .media-date__year:first-child').should('have.css', 'font-size', '12px');
+        cy.get('.media-date__years .media-date__year:first-child').should('have.css', 'color', colors.colorFont);
+        cy.get('.media-date__years .media-date__year:first-child').should('have.css', 'text-transform', 'uppercase');
+
+        cy.get('.media-date__years .media-date__year-separator').should('have.css', 'opacity', '0');
+
+        cy.get('.media-date__days').invoke('attr', 'aria-hidden').should('eq', 'true');
+        cy.get('.media-date__days').children("*").should('have.length', '3');
+        cy.get('.media-date__days').should('have.css', 'display', 'flex');
+        cy.get('.media-date__days').should('have.css', 'flex-direction', 'row');
+        cy.get('.media-date__days').should('have.css', 'align-items', 'center');
+        cy.get('.media-date__days').should('have.css', 'justify-content', 'space-around');
+        cy.get('.media-date__days').should('have.css', 'height', '24px');
+        cy.get('.media-date__days').should('have.css', 'line-height', '16px');
+
+        cy.get('.media-date__days .media-date__day:first-child').should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get('.media-date__days .media-date__day:first-child').should('have.css', 'font-size', '24px');
+        cy.get('.media-date__days .media-date__day:first-child').should('have.css', 'color', colors.colorFont);
+        cy.get('.media-date__days .media-date__day:first-child').should('have.css', 'text-transform', 'none');
+
+        cy.get('.media-date__days .media-date__day-separator').should('have.css', 'opacity', '1');
     });
 })
 
-describe('rating-stars - s', () => {
+describe('media-date - single month', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:s');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 's');
+        cy.visit('/iframe.html?viewMode=story&id=components-mediadate--media-date&args=singleMonth:true');
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '14px');
-        cy.get('.rating-stars').should('have.css', 'letter-spacing', '-2.8px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '14px');
+        cy.get('.media-date__months').children("*").should('have.length', '1');
+        cy.get('.media-date__years').children("*").should('have.length', '3');
+        cy.get('.media-date__days').children("*").should('have.length', '3');
     });
 })
 
-describe('rating-stars - normal', () => {
+describe('media-date - single year', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:normal');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 'normal');
+        cy.visit('/iframe.html?viewMode=story&id=components-mediadate--media-date&args=singleYear:true');
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '16px');
-        cy.get('.rating-stars').should('have.css', 'letter-spacing', '-3.2px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '16px');
+        cy.get('.media-date__months').children("*").should('have.length', '3');
+        cy.get('.media-date__years').children("*").should('have.length', '1');
+        cy.get('.media-date__days').children("*").should('have.length', '3');
     });
 })
 
-describe('rating-stars - m', () => {
+describe('media-date - single month and single year', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:m');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 'm');
+        cy.visit('/iframe.html?viewMode=story&id=components-mediadate--media-date&args=singleMonth:true;singleYear:true');
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '24px');
-        cy.get('.rating-stars').should('have.css', 'letter-spacing', '-4.8px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '24px');
+        cy.get('.media-date__months').children("*").should('have.length', '1');
+        cy.get('.media-date__years').children("*").should('have.length', '1');
+        cy.get('.media-date__days').children("*").should('have.length', '3');
     });
 })
 
-describe('rating-stars - l', () => {
+describe('media-date - single day', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:l');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 'l');
+        cy.visit('/iframe.html?viewMode=story&id=components-mediadate--media-date&args=singleDay:true');
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '28px');
-        cy.get('.rating-stars').should('have.css', 'letter-spacing', '-5.6px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '28px');
-    });
-})
-
-describe('rating-stars - xl', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:xl');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 'xl');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '32px');
-        cy.get('.rating-stars').should('have.css', 'letter-spacing', '-6.4px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '32px');
-    });
-})
-
-describe('rating-stars - xxl', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:xxl');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 'xxl');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '40px');
-        cy.get('.rating-stars').should('have.css', 'letter-spacing', '-8px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '40px');
-    });
-})
-
-describe('rating-stars - can set rating 3.5', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=rating:3.5');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-value').should('eq', '3.5');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'width', '40.3203125px');
-    });
-})
-
-describe('rating-stars - can set rating 1.2', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=rating:1.2');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-value').should('eq', '1.2');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'width', '102.1484375px');
-    });
-})
-
-describe('rating-stars - can set rating 5', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=rating:5');
-    });
-
-    it('has correct attributes', () => {
-        cy.get('.rating-stars').invoke('attr', 'rating-value').should('eq', '5');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'width', '0px');
-    });
-})
-
-describe('rating-stars - can set rating total 8 with rating 6', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').then((e) => {
-            e[0].setAttribute('rating-total', '8');
-            e[0].setAttribute('rating-value', '6');
-        });
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'width', '54px');
-    });
-})
-
-describe('rating-stars - can set rating total 3 with rating 2.4', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').then((e) => {
-            e[0].setAttribute('rating-total', '3');
-            e[0].setAttribute('rating-value', '2.4');
-        });
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'width', '16px');
-    });
-})
-
-describe('rating-stars - can set rating total 10 with rating 7.6', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').then((e) => {
-            e[0].setAttribute('rating-total', '10');
-            e[0].setAttribute('rating-value', '7.6');
-        });
-        cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'width', '64.8984375px');
-    });
-})
-
-describe.only('rating-stars - can set entity ', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
-    });
-
-    it('has correct styles', () => {
-        cy.get('.rating-stars').then((e) => {
-            e[0].setAttribute('rating-entity', '♥');
-            e[0].setAttribute('rating-value', '4.5');
-        });
-        // @ts-ignore
-        cy.get('.rating-stars').shadow().get('.entity:first-child').shouldHaveTrimmedText('♥');
+        cy.get('.media-date__months').children("*").should('have.length', '1');
+        cy.get('.media-date__years').children("*").should('have.length', '1');
+        cy.get('.media-date__days').children("*").should('have.length', '1');
     });
 })
 
