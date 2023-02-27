@@ -1,0 +1,99 @@
+/// <reference types="cypress" />
+
+const colors = Cypress.env('colors');
+
+describe('blog plugin: authors', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-blog-plugin--authors');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct class and tag name', () => {
+        cy.get('.post-authors').should('have.prop', 'tagName').should('eq', 'DIV');
+    });
+
+    it('has correct structure', () => {
+        cy.get('.post-authors').should('have.prop', 'tagName').should('eq', 'DIV');
+        cy.get('.post-authors').children('.post-author').should('have.length', 2);
+        cy.get('.post-author:first-child').invoke('attr', 'itemprop').should('eq', 'author');
+        cy.get('.post-author:first-child').invoke('attr', 'itemscope').should('exist');
+        cy.get('.post-author:first-child').invoke('attr', 'itemtype').should('eq', 'http://schema.org/Person');
+
+        cy.get('.post-author:first-child .post-author__figure').should('exist');
+        cy.get('.post-author:first-child .post-author__avatar').should('exist');
+        cy.get('.post-author:first-child .post-author__meta').should('exist');
+        cy.get('.post-author:first-child .post-author__name').should('exist');
+        cy.get('.post-author:first-child .post-author__info').should('exist');
+        cy.get('.post-author:first-child .post-author__description').should('exist');
+        cy.get('.post-author:first-child .post-author__socials').should('exist');
+        cy.get('.post-author:first-child .post-author__socials').invoke('attr', 'inline').should('exist');
+        cy.get('.post-author:first-child .post-author__socials').invoke('attr', 'no-headline').should('exist');
+        cy.get('.post-author:first-child .post-author__socials').invoke('attr', 'no-margins').should('exist');
+    });
+
+    it('has correct styles', () => {
+        cy.get('.post-authors').should('have.css', 'display', 'flex');
+        cy.get('.post-authors').should('have.css', 'flex-direction', 'column');
+        cy.get('.post-authors').should('have.css', 'gap', '16px');
+        cy.get('.post-authors').should('have.css', 'margin', '32px 464px 0px');
+        cy.get('.post-authors').should('have.css', 'width', '960px');
+        cy.get('.post-authors').should('have.css', 'max-width', '960px');
+
+        cy.get('.post-author:first-child').should('have.css', 'width', '960px');
+        cy.get('.post-author:first-child').should('have.css', 'background-color', colors.colorBlackO05);
+        cy.get('.post-author:first-child').should('have.css', 'border-radius', '4px');
+        cy.get('.post-author:first-child').should('have.css', 'padding', '24px');
+        cy.get('.post-author:first-child').should('have.css', 'margin', '0px');
+        cy.get('.post-author:first-child').should('have.css', 'display', 'grid');
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '48px 848px');
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-areas', '"avatar meta" ". description" ". socials"');
+        cy.get('.post-author:first-child').should('have.css', 'grid-gap', '0px 16px');
+
+        cy.get('.post-author:first-child .post-author__figure').should('have.css', 'height', '48px');
+        cy.get('.post-author:first-child .post-author__figure').should('have.css', 'width', '48px');
+
+        cy.get('.post-author:first-child .post-author__avatar').should('have.css', 'height', '48px');
+        cy.get('.post-author:first-child .post-author__avatar').should('have.css', 'width', '48px');
+        cy.get('.post-author:first-child .post-author__avatar').should('have.css', 'border-radius', '50%');
+        cy.get('.post-author:first-child .post-author__avatar').should('have.css', 'object-fit', 'cover');
+
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'font-size', '16px');
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'color', colors.colorFont);
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'align-self', 'center');
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'flex-wrap', 'wrap');
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'gap', '2px 8px');
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'grid-area', 'meta / meta / meta / meta');
+
+        cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-size', '16px');
+        cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-weight', '800');
+        cy.get('.post-author:first-child .post-author__name').should('have.css', 'color', colors.colorFont);
+
+        cy.get('.post-author:first-child .post-author__info').should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get('.post-author:first-child .post-author__info').should('have.css', 'font-size', '16px');
+        cy.get('.post-author:first-child .post-author__info').should('have.css', 'color', colors.colorFont);
+
+        cy.get('.post-author:first-child .post-author__description').should('have.css', 'grid-area', 'description / description / description / description');
+    });
+})
+
+describe('blog plugin: authors - no avatar', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-blog-plugin--authors&args=hasAvatar:false');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct structure', () => {
+        cy.get('.post-author:first-child .post-author__figure').should('not.exist');
+    });
+
+    it.only('has correct styles', () => {
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '912px');
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-areas', '"meta" "description" "socials"');
+    });
+});
+
+export {}

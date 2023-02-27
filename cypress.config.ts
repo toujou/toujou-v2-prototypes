@@ -47,6 +47,7 @@ export default defineConfig({
       colorErrorL15: `rgb(77, 0, 15)`,
       colorBlackO75: `rgba(0, 0, 0, 0.75)`,
       colorBlackO50: `rgba(0, 0, 0, 0.5)`,
+      colorBlackO05: `rgba(0, 0, 0, 0.05)`,
       colorInfo: `rgb(107, 216, 237)`,
       colorInfoDarken15: `rgb(108, 187, 224)`,
       colorInfoO25Alpha: `rgba(171, 216, 237, 0.25)`,

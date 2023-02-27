@@ -5,6 +5,7 @@ const colors = Cypress.env('colors');
 describe('blog plugin: archive', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-blog-plugin--archive');
+        // @ts-ignore
         cy.get('body').resetRealHover();
     });
 
@@ -54,8 +55,10 @@ describe('blog plugin: archive', () => {
 
     it.only('has correct hover styles', () => {
         cy.get('.archive-year:first-child .archive-year__item:first-child .archive-year__link').should('have.css', 'color', colors.colorPrimary);
+        // @ts-ignore
         cy.get('.archive-year__link').realHover();
         cy.get('.archive-year:first-child .archive-year__item:first-child .archive-year__link').should('have.css', 'color', colors.colorPrimaryDark);
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.archive-year:first-child .archive-year__item:first-child .archive-year__link').should('have.css', 'color', colors.colorPrimary);
     });
