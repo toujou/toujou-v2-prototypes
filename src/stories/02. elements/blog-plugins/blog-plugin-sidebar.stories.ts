@@ -165,10 +165,10 @@ const Template = () => {
                         <h6 class="archive-year__title">2022</h6>
                         <ul class="archive-year__list">
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">Februar (2)</a>
+                                <a href="#" class="archive-year__link">Februar (2)</a>
                             </li>
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">Januar (5)</a>
+                                <a href="#" class="archive-year__link">Januar (5)</a>
                             </li>
                         </ul>
                     </div>
@@ -176,25 +176,25 @@ const Template = () => {
                         <h6 class="archive-year__title">2021</h6>
                         <ul class="archive-year__list">
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">Dezember (2)</a>
+                                <a href="#" class="archive-year__link">Dezember (2)</a>
                             </li>
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">November (11)</a>
+                                <a href="#" class="archive-year__link">November (11)</a>
                             </li>
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">Oktober (4)</a>
+                                <a href="#" class="archive-year__link">Oktober (4)</a>
                             </li>
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">September (17)</a>
+                                <a href="#" class="archive-year__link">September (17)</a>
                             </li>
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">August (3)</a>
+                                <a href="#" class="archive-year__link">August (3)</a>
                             </li>
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">Juli (8)</a>
+                                <a href="#" class="archive-year__link">Juli (8)</a>
                             </li>
                             <li class="archive-year__item">
-                                <a href="#" class="archive_year__link">Juni (12)</a>
+                                <a href="#" class="archive-year__link">Juni (12)</a>
                             </li>
                         </ul>
                     </div>
