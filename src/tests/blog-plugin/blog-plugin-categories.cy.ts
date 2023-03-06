@@ -14,7 +14,7 @@ describe('blog plugin: categories', () => {
         cy.get('.chips-list.categories-list .chips-list__list').children('.chips-list__item').should('have.length', 4);
     });
 
-    it.only('has correct list styles', () => {
+    it('has correct list styles', () => {
         cy.get('.chips-list__list').should('have.css', 'list-style', 'outside none none');
         cy.get('.chips-list__list').should('have.css', 'display', 'flex');
         cy.get('.chips-list__list').should('have.css', 'flex-wrap', 'wrap');
