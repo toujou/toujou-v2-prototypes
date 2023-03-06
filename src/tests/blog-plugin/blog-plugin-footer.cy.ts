@@ -2,7 +2,7 @@
 
 const colors = Cypress.env('colors');
 
-describe('blog plugin: categories', () => {
+describe('blog plugin: footer', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-blog-plugin--footer');
         // @ts-ignore
