@@ -22,7 +22,7 @@ describe('blog plugin: post meta', () => {
         cy.get('.post-meta .post-meta__group:nth-child(5) .post-meta__text').should('exist');
     });
 
-    it.only('has correct header styles', () => {
+    it('has correct header styles', () => {
         cy.get('.post-meta').should('have.css', 'background-color', colors.colorBlackO05);
         cy.get('.post-meta').should('have.css', 'padding', '24px');
         cy.get('.post-meta').should('have.css', 'width', '960px');
