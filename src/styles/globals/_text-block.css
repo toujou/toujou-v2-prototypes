@@ -24,7 +24,8 @@
     z-index: var(--text-block-z-index);
 }
 
-.text-block:first-child {
+.text-block:first-child,
+span:first-child + .text-block {
     --text-block-margin: 0 auto;
 }
 

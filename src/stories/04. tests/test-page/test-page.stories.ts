@@ -147,6 +147,21 @@ const Template = () => {
             </toujou-text-block-column>
         </toujou-text-block>
 
+        <section class="chapter chapter--inverted" id="default-02c8a67c29">
+            <span id="c2380"></span>
+            <toujou-text-block class="text-block" text-block-column-count="2" text-block-media-position="">
+                <toujou-text-block-column class="text-block-column">
+                    <div class="text-block__content">
+                        <h2>First child text blocks shouldn't have a margin-top</h2>
+                    </div>
+                </toujou-text-block-column>
+                <toujou-text-block-column class="text-block-column">
+                    <div class="text-block__content">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </toujou-text-block-column>
+            </toujou-text-block>
+        </section>
     `;
 };
 
