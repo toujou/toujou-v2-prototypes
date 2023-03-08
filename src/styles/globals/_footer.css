@@ -21,6 +21,11 @@
     --footer-address-text-style: normal;
     --footer-address-text-margin: 0;
     --footer-address-text-align: left;
+    --footer-address-text-display: flex;
+    --footer-address-text-flex-direction: row;
+    --footer-address-text-align-items: center;
+    --footer-address-text-justify-content: flex-start;
+    --footer-address-text-gap: var(--spacing-normal);
 
     --footer-socials-display: flex;
     --footer-socials-align-items: center;
@@ -74,6 +79,14 @@
     font-style: var(--footer-address-text-style);
 }
 
+.footer__address-text {
+    display: var(--footer-address-text-display);
+    flex-direction: var(--footer-address-text-flex-direction);
+    align-items: var(--footer-address-text-align-items);
+    justify-content: var(--footer-address-text-justify-content);
+    gap: var(--footer-address-text-gap);
+}
+
 :is(
     .footer__adress-text--name,
     .footer__address-text--city,
@@ -85,8 +98,15 @@
     margin-top: var(--footer-address-margin-bottom);
 }
 
-.footer__address-text .icon {
-    margin-right: var(--spacing-normal);
+:is(
+    .footer__address-text--phone,
+    .footer__address-text--fax,
+    .footer__address-text--mail) + :is(
+    .footer__address-text--phone,
+    .footer__address-text--fax,
+    .footer__address-text--mail
+    ) {
+    margin-top: var(--spacing-s);
 }
 
 .footer__socials {
