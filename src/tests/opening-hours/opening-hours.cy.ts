@@ -12,7 +12,7 @@ describe('opening hours', () => {
         cy.get('toujou-opening-hours').invoke('attr', 'class').should('eq', 'opening-hours');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.opening-hours').should('have.css', 'font-family', 'Mulish, sans-serif');
         cy.get('.opening-hours').should('have.css', 'font-size', '16px');
         cy.get('.opening-hours').should('have.css', 'line-height', '24px');

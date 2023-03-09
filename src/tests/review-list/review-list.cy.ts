@@ -111,7 +111,7 @@ describe('review-list', () => {
         cy.get('.review:first-child').should('have.css', 'height', '491.3828125px');
     })
 
-    it.only('has correct "no media" styles', () => {
+    it('has correct "no media" styles', () => {
         cy.get('.review:nth-child(2)').invoke('attr', 'no-media').should('exist');
         cy.get('.review:nth-child(2) .review__content').should('have.css', 'grid-template-columns', '960px');
     })

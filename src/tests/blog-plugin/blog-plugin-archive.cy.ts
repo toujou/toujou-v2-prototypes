@@ -53,7 +53,7 @@ describe('blog plugin: archive', () => {
         cy.get('.archive-year__link').should('have.css', 'text-decoration', 'underline');
     });
 
-    it.only('has correct hover styles', () => {
+    it('has correct hover styles', () => {
         cy.get('.archive-year:first-child .archive-year__item:first-child .archive-year__link').should('have.css', 'color', colors.colorPrimary);
         // @ts-ignore
         cy.get('.archive-year__link').realHover();

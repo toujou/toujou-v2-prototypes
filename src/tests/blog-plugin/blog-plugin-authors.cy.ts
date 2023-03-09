@@ -90,7 +90,7 @@ describe('blog plugin: authors - no avatar', () => {
         cy.get('.post-author:first-child .post-author__figure').should('not.exist');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '912px');
         cy.get('.post-author:first-child').should('have.css', 'grid-template-areas', '"meta" "description" "socials"');
     });
