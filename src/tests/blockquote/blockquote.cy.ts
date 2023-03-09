@@ -15,7 +15,7 @@ describe('blockquote', () => {
     it('has correct attributes', () => {
         cy.get('toujou-blockquote').invoke('attr', 'role').should('eq', 'figure');
         cy.get('toujou-blockquote').invoke('attr', 'blockquote-direction').should('eq', 'vertical');
-        cy.get('toujou-blockquote').invoke('attr', 'blockquote-design').should('eq', 'default');
+        cy.get('toujou-blockquote').invoke('attr', 'element-design').should('eq', 'default');
     });
 
     it('has correct children', () => {
@@ -28,7 +28,7 @@ describe('blockquote', () => {
     it('has correct styles', () => {
         cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorBg);
         cy.get('toujou-blockquote').should('have.css', 'display', 'grid');
-        cy.get('toujou-blockquote').should('have.css', 'grid-template-columns', '944px');
+        cy.get('toujou-blockquote').should('have.css', 'grid-template-columns', '960px');
         cy.get('toujou-blockquote').should('have.css', 'z-index', '1');
         cy.get('toujou-blockquote').should('have.css', 'grid-template-areas', '"blockquoteImage" "blockquoteQuote" "blockquoteAuthor"');
 
@@ -87,7 +87,7 @@ describe('blockquote', () => {
     it('blockquote text has correct styles', () => {
         cy.get('toujou-blockquote .blockquote__text').should('have.css', 'font-size', '16px');
         cy.get('toujou-blockquote .blockquote__text').should('have.css', 'line-height', '24px');
-        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'margin', '0px');
+        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'margin', '8px 0px 0px');
         cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorFont);
     });
 
