@@ -405,4 +405,35 @@ describe('collection item - type product - design inverted', () => {
     });
 });
 
+describe('collection item - type person', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-person');
+        // @ts-ignore
+        cy.get(`${firstCardSelector}`).resetRealHover();
+    });
+
+    it('has correct attributes and elements', () => {
+        cy.get(`${firstCardSelector}`).invoke('attr', 'item-type').should('eq', 'person');
+        cy.get(`${firstCardSelector} .collection-item__top`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__top .collection-item__figure`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__top .collection-item__figure .collection-item__image`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__bottom`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__title`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__subtitles`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__abstract`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__address`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__button`).should('exist');
+    });
+
+    it.only('has correct address section styles', () => {
+        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-family', 'Mulish, sans-serif');
+        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-size', '16px');
+        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'color', colors.colorFont);
+        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'line-height', '24px');
+        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-style', 'normal');
+
+        cy.get(`${firstCardSelector} .collection-item__address`).children('.address__item').should('have.length', 4);
+    });
+});
+
 export {}
