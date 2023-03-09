@@ -1,7 +1,7 @@
 .map-contact {
     --map-contact-width: var(--content-width-with-padding);
     --map-contact-max-width: var(--content-max-width);
-    --map-contact-margin: var(--spacing-between-elements-normal) auto 0;
+    --map-contact-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     --map-contact-padding: 0;
     --map-contact-display: grid;
     --map-contact-grid-template-columns: 1fr;
@@ -51,6 +51,11 @@
     background-color: var(--map-contact-background-color);
     border-radius: var(--map-contact-border-radius);
     overflow: var(--map-contact-overflow);
+}
+
+.chapter > .map-contact:first-child,
+.chapter > span:first-child + .map-contact {
+    --map-contact-margin: 0 auto;
 }
 
 .map-contact[map-aspect-ratio="1-1"] {

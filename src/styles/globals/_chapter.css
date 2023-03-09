@@ -10,6 +10,10 @@
     padding: var(--chapter-padding);
 }
 
+main > .chapter:last-child {
+    --chapter-padding: var(--spacing-between-elements-normal) 0 0;
+}
+
 .chapter--primary {
     --chapter-background-color: var(--color-primary);
 }

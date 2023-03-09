@@ -13,6 +13,7 @@
     --text-block-column-display: block;
     --text-block-column-grid-template-columns: unset;
     --text-block-column-gap: var(--spacing-m);
+    --text-block-overflow: hidden;
     --text-block-z-index: var(--z-index-content);
 
     display: var(--text-block-display);
@@ -21,6 +22,7 @@
     width: var(--text-block-width);
     max-width: var(--text-block-max-width);
     margin: var(--text-block-margin);
+    overflow: var(--text-block-overflow);
     z-index: var(--text-block-z-index);
 }
 

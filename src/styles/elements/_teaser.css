@@ -2,7 +2,7 @@
     --teaser-position: relative;
     --teaser-width: var(--content-width-with-padding);
     --teaser-max-width: var(--content-wide-max-width);
-    --teaser-margin: var(--spacing-between-elements-normal) auto 0;
+    --teaser-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     --teaser-display: grid;
     --teaser-grid-auto-flow: dense;
     --teaser-grid-template-columns: 1fr;

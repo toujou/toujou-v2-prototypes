@@ -3,6 +3,10 @@
     --slider-progress-height: var(--spacing-xs);
     --slider-progress-bg-color: var(--color-font-dark);
     --slider-progress-margin: 0;
+    --slider-progress-position: relative;
+    --slider-progress-bottom: calc(var(--slider-progress-height) / 2);
+    --slider-progress-border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
+    --slider-progress-overflow: hidden;
 
     --slider-progress-bar-bg-color: var(--color-font-light);
 
@@ -10,11 +14,11 @@
     height: var(--slider-progress-height) !important;
     background-color: var(--slider-progress-bar-bg-color);
     margin: var(--slider-progress-margin);
+    position: var(--slider-progress-position);
+    bottom: var(--slider-progress-bottom);
+    border-radius: var(--slider-progress-border-radius);
+    overflow: var(--slider-progress-overflow)
 }
-
-/*.slider[content-type="teaser"] .slider-progress {*/
-/*    --slider-progress-margin: var(--spacing-normal) 0 0;*/
-/*}*/
 
 .slider[element-design="primary"] .slider-progress {
     --slider-progress-bg-color: var(--color-primary-light);
