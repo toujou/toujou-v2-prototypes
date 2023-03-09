@@ -30,7 +30,7 @@ const Template = () => {
                 element-design="default"
                 slider-fullwidth
                 slides-to-show="1"
-                slider-gap="0px"
+                slider-gap="var(--slider-slides-gap)"
                 slider-aspect-ratio="0.5625"
                 slider-type="slider"
                 arrow-first-aria-label="Go to first slide"

@@ -56,7 +56,7 @@ const Template = () => {
                     aria-label="Toujou slider example"
                     element-design="default"
                     slides-to-show="1"
-                    slider-gap="0"
+                    slider-gap="var(--slider-slides-gap)"
                     slider-aspect-ratio="0.5625"
                     slider-type="loop"
                     content-type="teaser"

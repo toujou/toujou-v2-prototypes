@@ -7,6 +7,8 @@
     --slider-position: relative;
     --slider-z-index: var(--z-index-content);
 
+    --slider-slides-gap: 0px;
+
     --slider-image-object-fit: cover;
 
     --slider-top-position: relative;
@@ -63,6 +65,7 @@
 
 .slider[content-type="logos"] {
     --slider-margin: 0 auto var(--spacing-normal);
+    --slider-slides-gap: var(--spacing-l);
 }
 
 .slider[content-type="review"] {
@@ -127,6 +130,10 @@
 }
 
 @media screen and (min-width: 840px) {
+    .slider[content-type="logos"] {
+        --slider-slides-gap: var(--spacing-xxl);
+    }
+
     .header .slider {
         --slider-control-distance-to-margin: var(--spacing-xl);
     }

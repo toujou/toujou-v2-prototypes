@@ -110,7 +110,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
             element-design="default"
             auto-play-interval="6000"
             slides-to-show="1"
-            slider-gap="0"
+            slider-gap="var(--slider-slides-gap)"
             slider-aspect-ratio="0.5625"
             slider-type="loop">
             <div class="splide slider__slider">

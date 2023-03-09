@@ -142,7 +142,7 @@ const Template = () => {
                         aria-label="Toujou slider example"
                         element-design="primary"
                         slides-to-show="1"
-                        slider-gap="0px"
+                        slider-gap="var(--slider-slides-gap)"
                         slider-aspect-ratio="0.5625"
                         arrow-first-aria-label="Go to first slide"
                         arrow-last-aria-label="Go to last slide"
