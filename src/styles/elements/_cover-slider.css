@@ -8,7 +8,7 @@
     --cover-slider-width: 100%;
     --cover-slider-height: fit-content;
     --cover-slider-padding: 0 0 0 var(--spacing-normal);
-    --cover-slider-margin: var(--spacing-between-elements-normal) auto 0;
+    --cover-slider-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 
     /* splide */
     --cover-slider-splide-max-width: 100%;

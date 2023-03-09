@@ -19,7 +19,7 @@
 
     --spacing-between-elements-normal: var(--spacing-xl);
     --spacing-between-elements-s: calc(var(--spacing-between-elements-normal) / 2);
-    --spacing-between-consecutive-elements-normal: var(--spacing-m);
+    --spacing-between-consecutive-elements-normal: var(--spacing-l);
 }
 
 @media screen and (min-width: 840px) {
@@ -27,6 +27,5 @@
     ::before,
     ::after {
         --spacing-between-elements-normal: var(--spacing-xxxl);
-        --spacing-between-consecutive-elements-normal: var(--spacing-l);
     }
 }

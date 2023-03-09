@@ -469,7 +469,7 @@ figure {
 
     --spacing-between-elements-normal: var(--spacing-xl);
     --spacing-between-elements-s: calc(var(--spacing-between-elements-normal) / 2);
-    --spacing-between-consecutive-elements-normal: var(--spacing-m);
+    --spacing-between-consecutive-elements-normal: var(--spacing-l);
 }
 
 @media screen and (min-width: 840px) {
@@ -477,7 +477,6 @@ figure {
     ::before,
     ::after {
         --spacing-between-elements-normal: var(--spacing-xxxl);
-        --spacing-between-consecutive-elements-normal: var(--spacing-l);
     }
 }
 
@@ -2890,6 +2889,10 @@ p > .button {
     padding: var(--chapter-padding);
 }
 
+main > .chapter:last-child {
+    --chapter-padding: var(--spacing-between-elements-normal) 0 0;
+}
+
 .chapter--primary {
     --chapter-background-color: var(--color-primary);
 }
@@ -3592,6 +3595,7 @@ main > .table-container {
     --text-block-column-display: block;
     --text-block-column-grid-template-columns: unset;
     --text-block-column-gap: var(--spacing-m);
+    --text-block-overflow: hidden;
     --text-block-z-index: var(--z-index-content);
 
     display: var(--text-block-display);
@@ -3600,6 +3604,7 @@ main > .table-container {
     width: var(--text-block-width);
     max-width: var(--text-block-max-width);
     margin: var(--text-block-margin);
+    overflow: var(--text-block-overflow);
     z-index: var(--text-block-z-index);
 }
 
