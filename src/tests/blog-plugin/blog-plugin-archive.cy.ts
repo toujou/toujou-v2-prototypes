@@ -50,7 +50,7 @@ describe('blog plugin: archive', () => {
         cy.get('.archive-year__list').should('have.css', 'padding', '0px');
 
         cy.get('.archive-year__link').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.archive-year__link').should('have.css', 'text-decoration', 'underline');
+        cy.get('.archive-year__link').should('have.css', 'text-decoration', `underline solid ${colors.colorPrimary}`);
     });
 
     it('has correct hover styles', () => {

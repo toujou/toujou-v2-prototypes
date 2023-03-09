@@ -120,7 +120,7 @@ describe('toujou-button default', () => {
             const win = cy.state('window');
             const styles = win.getComputedStyle(el[0]);
             const buttonFontSize = styles.getPropertyValue('--button-font-size');
-            expect(buttonFontSize.trim()).to.eq('1rem');
+            expect(buttonFontSize.trim()).to.eq('calc( 1rem * 1)');
         })
     });
 
@@ -133,7 +133,7 @@ describe('toujou-button default', () => {
             const win = cy.state('window');
             const styles = win.getComputedStyle(el[0]);
             const buttonFontSize = styles.getPropertyValue('--button-font-size');
-            expect(buttonFontSize.trim()).to.eq('0.75rem');
+            expect(buttonFontSize.trim()).to.eq('calc( 1rem * 0.75)');
         })
     });
 
@@ -146,7 +146,7 @@ describe('toujou-button default', () => {
             const win = cy.state('window');
             const styles = win.getComputedStyle(el[0]);
             const buttonFontSize = styles.getPropertyValue('--button-font-size');
-            expect(buttonFontSize.trim()).to.eq('0.875rem');
+            expect(buttonFontSize.trim()).to.eq('calc( 1rem * 0.875)');
         })
     });
 
@@ -159,7 +159,7 @@ describe('toujou-button default', () => {
             const win = cy.state('window');
             const styles = win.getComputedStyle(el[0]);
             const buttonFontSize = styles.getPropertyValue('--button-font-size');
-            expect(buttonFontSize.trim()).to.eq('1.25rem');
+            expect(buttonFontSize.trim()).to.eq('calc( 1rem * 1.25)');
         })
     });
 })
