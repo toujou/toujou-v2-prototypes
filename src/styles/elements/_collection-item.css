@@ -155,20 +155,20 @@
 
 .collection-item[element-design="primary"] {
     --collection-item-bg-color: var(--color-primary);
-    --collection-item-info-icon-color: var(--color-white);
-    --collection-item-button-text-color-hover: var(--color-white);
+    --collection-item-info-icon-color: var(--color-bg);
+    --collection-item-button-text-color-hover: var(--color-bg);
 }
 
 .collection-item[element-design="secondary"] {
     --collection-item-bg-color: var(--color-secondary);
-    --collection-item-info-icon-color: var(--color-white);
-    --collection-item-button-text-color-hover: var(--color-white);
+    --collection-item-info-icon-color: var(--color-bg);
+    --collection-item-button-text-color-hover: var(--color-bg);
 }
 
 .collection-item[element-design="inverted"] {
     --collection-item-bg-color: var(--color-font-dark);
-    --collection-item-info-icon-color: var(--color-white);
-    --collection-item-button-text-color-hover: var(--color-white);
+    --collection-item-info-icon-color: var(--color-bg);
+    --collection-item-button-text-color-hover: var(--color-bg);
 }
 
 .collection-item[item-type="product"][item-orientation="vertical"] {

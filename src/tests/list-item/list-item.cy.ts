@@ -15,7 +15,7 @@ describe('list item - type default', () => {
             expect(collectionItem).to.have.attr('class').equal('collection-item');
             expect(collectionItem).to.have.attr('item-orientation').equal('horizontal');
             expect(collectionItem).to.have.attr('item-type').equal('default');
-            expect(collectionItem).to.have.attr('item-design').equal('default');
+            expect(collectionItem).to.have.attr('element-design').equal('default');
         })
     });
 
