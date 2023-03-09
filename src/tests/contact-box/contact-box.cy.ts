@@ -28,8 +28,8 @@ describe('contact box', () => {
         cy.get('.contact-box').should('have.css', 'justify-content', 'center');
         cy.get('.contact-box').should('have.css', 'pointer-events', 'none');
         cy.get('.contact-box').should('have.css', 'z-index', '3500');
-        cy.get('.contact-box').should('have.css', 'backdrop-filter', 'blur(10px)');
-        cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO50);
+        cy.get('.contact-box').should('have.css', 'backdrop-filter', 'none');
+        cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO75);
     });
 
     it('it has correct styles when visible', () => {
@@ -44,8 +44,8 @@ describe('contact box', () => {
         cy.get('.contact-box').should('have.css', 'justify-content', 'center');
         cy.get('.contact-box').should('have.css', 'pointer-events', 'all');
         cy.get('.contact-box').should('have.css', 'z-index', '3500');
-        cy.get('.contact-box').should('have.css', 'backdrop-filter', 'blur(10px)');
-        cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO50);
+        cy.get('.contact-box').should('have.css', 'backdrop-filter', 'none');
+        cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO75);
     });
 
     it('contact box card has correct styles', () => {

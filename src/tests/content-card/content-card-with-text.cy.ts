@@ -23,10 +23,10 @@ describe('content card with text', () => {
     it('has correct grid styles', () => {
         cy.get('toujou-grid.grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid.grid').should('have.css', 'grid-template-columns', '608px 304px');
-        cy.get('toujou-grid.grid').should('have.css', 'grid-gap', '32px 32px');
-        cy.get('toujou-grid.grid').should('have.css', 'margin', '0px 472px');
-        cy.get('toujou-grid.grid').should('have.css', 'width', '944px');
-        cy.get('toujou-grid.grid').should('have.css', 'max-width', '944px');
+        cy.get('toujou-grid.grid').should('have.css', 'grid-gap', '48px 48px');
+        cy.get('toujou-grid.grid').should('have.css', 'margin', '0px 464px');
+        cy.get('toujou-grid.grid').should('have.css', 'width', '960px');
+        cy.get('toujou-grid.grid').should('have.css', 'max-width', '960px');
     });
 });
 
