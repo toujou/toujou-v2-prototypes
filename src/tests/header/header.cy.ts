@@ -194,7 +194,7 @@ describe('header - content alignment', () => {
     });
 });
 
-describe.only('header - accent color', () => {
+describe('header - accent color', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-header--header');
         // @ts-ignore

@@ -425,7 +425,7 @@ describe('collection item - type person', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).should('exist');
     });
 
-    it.only('has correct address section styles', () => {
+    it('has correct address section styles', () => {
         cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-family', 'Mulish, sans-serif');
         cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-size', '16px');
         cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'color', colors.colorFont);

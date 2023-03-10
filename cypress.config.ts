@@ -53,6 +53,25 @@ export default defineConfig({
       colorInfoO25Alpha: `rgba(171, 216, 237, 0.25)`,
       colorGold: `rgb(255, 187, 0)`,
     },
+    tokens: {
+      animation: {
+        durationSlow: '1s',
+        durationNormal: '0.5s',
+        durationFast: '0.25s',
+        durationVeryFast: '0.125s',
+        easingNormal: 'ease-in-out',
+        easingEaseIn: 'ease-in',
+        easingEaseOut: 'ease-out'
+      },
+      aspectRatio: {
+        auto: 'auto',
+        square: '1 / 1',
+        fourByThree: '4 / 3',
+        sixteenToNine: '16 / 9',
+        golden: '1.618 / 1',
+        threeToOne: '3 / 1',
+      }
+    },
     desktopViewportWidth: desktopViewportWidth,
     desktopViewportHeight: desktopViewportHeight,
   },
