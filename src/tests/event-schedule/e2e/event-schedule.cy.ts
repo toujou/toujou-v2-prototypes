@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 const cardSelector = '.collection-item:first-child'
 
@@ -32,6 +33,49 @@ describe('alert', () => {
         cy.get(`${cardSelector}`).should('have.css', 'overflow', 'hidden');
         cy.get(`${cardSelector}`).should('have.css', 'background-color', colors.colorBg);
         cy.get(`${cardSelector}`).should('have.css', 'z-index', '1');
+    });
+
+    it('has correct media date styles', () => {
+        cy.get(`${cardSelector} .media-date`).should('exist');
+        cy.get(`${cardSelector} .media-date`).should('have.css', 'position', 'relative');
+        cy.get(`${cardSelector} .media-date`).should('have.css', 'top', '0px');
+        cy.get(`${cardSelector} .media-date`).should('have.css', 'right', '0px');
+        cy.get(`${cardSelector} .media-date`).should('have.css', 'background-color', colors.colorFontO10);
+    });
+
+    it('has correct chip styles', () => {
+        cy.get(`${cardSelector} .chip`).invoke('attr', 'chip-size').should('eq', 'small');
+        cy.get(`${cardSelector} .chip`).invoke('attr', 'chip-bg-color').should('eq', 'error');
+    });
+
+    it('has correct content styles', () => {
+        cy.get(`${cardSelector} .event-schedule-card__content`).should('exist');
+
+        cy.get(`${cardSelector} .event-schedule-card__title`).should('have.css', 'font-size', '20px');
+        cy.get(`${cardSelector} .event-schedule-card__title`).should('have.css', 'color', colors.colorFontDark);
+        cy.get(`${cardSelector} .event-schedule-card__title`).should('have.css', 'margin', '0px 0px 4px');
+        cy.get(`${cardSelector} .event-schedule-card__title`).should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get(`${cardSelector} .event-schedule-card__title`).should('have.css', 'font-weight', '800');
+
+        cy.get(`${cardSelector} .event-schedule-card__info`).should('have.css', 'display', 'flex');
+        cy.get(`${cardSelector} .event-schedule-card__info`).should('have.css', 'flex-direction', 'row');
+        cy.get(`${cardSelector} .event-schedule-card__info`).should('have.css', 'gap', '8px');
+
+        cy.get(`${cardSelector} .event-schedule-card__info .icon`).invoke('attr', 'icon-name').should('eq', 'info');
+        cy.get(`${cardSelector} .event-schedule-card__info .icon`).invoke('attr', 'icon-color').should('eq', 'primary');
+        cy.get(`${cardSelector} .event-schedule-card__info .icon`).invoke('attr', 'icon-size').should('eq', 'ms');
+    });
+
+    it('has correct button styles', () => {
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('exist');
+
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('have.css', 'color', colors.colorPrimary);
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('have.css', 'display', 'flex');
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('have.css', 'align-items', 'center');
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('have.css', 'justify-content', 'center');
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('have.css', 'width', '175.6484375px');
+        cy.get(`${cardSelector} .event-schedule-card__button`).should('have.css', 'gap', '8px');
     });
 })
 
