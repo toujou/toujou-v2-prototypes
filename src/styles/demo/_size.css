@@ -3,6 +3,16 @@
     height: var(--spacing-1px);
 }
 
+.size-2px {
+    width: var(--spacing-2px);
+    height: var(--spacing-2px);
+}
+
+.size-xxs {
+    width: var(--spacing-xxs);
+    height: var(--spacing-xxs);
+}
+
 .size-xs {
     width: var(--spacing-xs);
     height: var(--spacing-xs);

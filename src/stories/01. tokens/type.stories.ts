@@ -12,7 +12,7 @@ const FontFamiliesTemplate = () => {
         
         <h2 class="tokens-demo__subtitle">Font families</h2>
         
-        <p class="font-family-headline font-weight-headline">This is the headline font family: Ubuntu | 800</p>
+        <p class="font-family-headline font-weight-headline">This is the headline font family: Ubuntu | 600</p>
         <p class="font-family-headline font-weight-headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <br>
         <p class="font-family-text font-weight-text-normal">This is the regular text font family: Mulish | 600</p>
@@ -108,6 +108,16 @@ const TagsTemplate = () => {
             <h5>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h5>
             <h6>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</h6>
             <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>
+            <ul class="list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+            <ol class="list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
         </div>
     `;
 }

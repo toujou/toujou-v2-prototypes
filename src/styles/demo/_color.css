@@ -55,8 +55,16 @@
     background-color: var(--color-black-o-75);
 }
 
+.bg-color-black-o-50 {
+    background-color: var(--color-black-o-50);
+}
+
 .bg-color-black-o-10 {
     background-color: var(--color-black-o-10);
+}
+
+.bg-color-black-o-05 {
+    background-color: var(--color-black-o-05);
 }
 
 .custom-color-o-100 { --custom-color-o: 100%; }

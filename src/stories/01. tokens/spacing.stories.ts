@@ -22,6 +22,8 @@ const SpacingTemplate = () => {
             <div class="tokens-demo__spacing-square-box size-normal"></div>
             <div class="tokens-demo__spacing-square-box size-s"></div>
             <div class="tokens-demo__spacing-square-box size-xs"></div>
+            <div class="tokens-demo__spacing-square-box size-xxs"></div>
+            <div class="tokens-demo__spacing-square-box size-2px"></div>
             <div class="tokens-demo__spacing-square-box size-1px"></div>
         </div>  
         

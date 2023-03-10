@@ -173,7 +173,7 @@
 
 .tokens-demo__spacing-square-container {
     display: grid;
-    grid-template-columns: repeat(10, min-content);
+    grid-template-columns: repeat(12, min-content);
     grid-gap: var(--spacing-l);
     place-items: center center;
     margin-bottom: var(--spacing-xxl);
