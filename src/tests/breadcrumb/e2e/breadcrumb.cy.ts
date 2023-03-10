@@ -10,7 +10,7 @@ describe('toujou-breadcrumb - desktop', () => {
     });
 
     it('has correct role', () => {
-        cy.get('toujou-breadcrumb').invoke('attr', 'role').should('eq', 'nav');
+        cy.get('toujou-breadcrumb').invoke('attr', 'role').should('eq', 'navigation');
     });
 
     it('has correct aria-label', () => {

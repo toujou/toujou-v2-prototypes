@@ -52,7 +52,7 @@ interface PNNavStoryProps {
 
 const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
     return `
-        <toujou-breadcrumb role="nav" aria-label="Breadcrumb" class="breadcrumb">
+        <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
