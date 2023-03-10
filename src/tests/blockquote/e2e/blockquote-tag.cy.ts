@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('blockquote tag', () => {
     beforeEach(() => {
@@ -18,17 +19,17 @@ describe('blockquote tag', () => {
     });
 
     it('blockquote text has correct styles', () => {
-        cy.get('blockquote p').should('have.css', 'font-size', '16px');
-        cy.get('blockquote p').should('have.css', 'line-height', '24px');
-        cy.get('blockquote p').should('have.css', 'margin', '16px 0px 0px');
+        cy.get('blockquote p').should('have.css', 'font-size', tokens.type.size.normal);
+        cy.get('blockquote p').should('have.css', 'line-height', tokens.type.lineHeight.normal);
+        cy.get('blockquote p').should('have.css', 'margin', `${tokens.spacing.normal} 0px 0px`);
         cy.get('blockquote p').should('have.css', 'color', colors.colorFont);
     });
 
     it('blockquote author has correct styles', () => {
-        cy.get('blockquote + .blockquote__author').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('blockquote + .blockquote__author').should('have.css', 'font-size', '16px');
+        cy.get('blockquote + .blockquote__author').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('blockquote + .blockquote__author').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('blockquote + .blockquote__author').should('have.css', 'color', colors.colorFont);
-        cy.get('blockquote + .blockquote__author').should('have.css', 'line-height', '24px');
+        cy.get('blockquote + .blockquote__author').should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get('blockquote + .blockquote__author').should('have.css', 'grid-column', 'blockquoteAuthor / blockquoteAuthor');
         cy.get('blockquote + .blockquote__author').should('have.css', 'grid-area', 'blockquoteAuthor / blockquoteAuthor / blockquoteAuthor / blockquoteAuthor');
     });

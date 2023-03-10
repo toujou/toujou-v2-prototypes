@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('blog plugin: archive', () => {
     beforeEach(() => {
@@ -28,20 +29,20 @@ describe('blog plugin: archive', () => {
     it('has correct styles', () => {
         cy.get('.blog-archive').should('have.css', 'width', '960px');
         cy.get('.blog-archive').should('have.css', 'max-width', '960px');
-        cy.get('.blog-archive').should('have.css', 'border-radius', '4px');
+        cy.get('.blog-archive').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('.blog-archive').should('have.css', 'margin', '32px 464px');
 
-        cy.get('.blog-archive__title').should('have.css', 'font-family', 'Ubuntu, sans-serif');
-        cy.get('.blog-archive__title').should('have.css', 'font-size', '32px');
+        cy.get('.blog-archive__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
+        cy.get('.blog-archive__title').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.blog-archive__title').should('have.css', 'font-weight', '600');
         cy.get('.blog-archive__title').should('have.css', 'line-height', '40px');
         cy.get('.blog-archive__title').should('have.css', 'color', colors.colorPrimary);
         cy.get('.blog-archive__title').should('have.css', 'margin-bottom', '20px');
         cy.get('.blog-archive__title').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
 
-        cy.get('.archive-year__title').should('have.css', 'font-family', 'Ubuntu, sans-serif');
+        cy.get('.archive-year__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.archive-year__title').should('have.css', 'font-weight', '600');
-        cy.get('.archive-year__title').should('have.css', 'font-size', '16px');
+        cy.get('.archive-year__title').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.archive-year__title').should('have.css', 'color', colors.colorPrimary);
         cy.get('.archive-year__title').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
 

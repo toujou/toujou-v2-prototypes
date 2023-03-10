@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('blog plugin: footer', () => {
     beforeEach(() => {
@@ -16,7 +17,7 @@ describe('blog plugin: footer', () => {
     });
 
     it('has correct footer styles', () => {
-        cy.get('.blog-footer').should('have.css', 'padding', '32px 0px');
+        cy.get('.blog-footer').should('have.css', 'padding', `${tokens.spacing.l} 0px`);
         cy.get('.blog-footer').should('have.css', 'background-color', colors.colorPrimary);
 
         cy.get('.blog-footer .chips-list__title').should('have.css', 'color', colors.colorBg);

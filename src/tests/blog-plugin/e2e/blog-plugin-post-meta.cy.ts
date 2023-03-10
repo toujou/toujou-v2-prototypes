@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('blog plugin: post meta', () => {
     beforeEach(() => {
@@ -24,33 +25,33 @@ describe('blog plugin: post meta', () => {
 
     it('has correct header styles', () => {
         cy.get('.post-meta').should('have.css', 'background-color', colors.colorBlackO05);
-        cy.get('.post-meta').should('have.css', 'padding', '24px');
+        cy.get('.post-meta').should('have.css', 'padding', tokens.spacing.m);
         cy.get('.post-meta').should('have.css', 'width', '960px');
         cy.get('.post-meta').should('have.css', 'max-width', '960px');
-        cy.get('.post-meta').should('have.css', 'border-radius', '4px');
+        cy.get('.post-meta').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('.post-meta').should('have.css', 'margin', '32px 464px');
         cy.get('.post-meta').should('have.css', 'display', 'flex');
         cy.get('.post-meta').should('have.css', 'flex-direction', 'row');
         cy.get('.post-meta').should('have.css', 'align-items', 'center');
         cy.get('.post-meta').should('have.css', 'justify-content', 'flex-start');
         cy.get('.post-meta').should('have.css', 'flex-wrap', 'wrap');
-        cy.get('.post-meta').should('have.css', 'gap', '16px 32px');
+        cy.get('.post-meta').should('have.css', 'gap', `${tokens.spacing.normal} ${tokens.spacing.l}`);
 
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'display', 'flex');
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'flex-direction', 'row');
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'align-items', 'center');
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'justify-content', 'flex-start');
-        cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'gap', '8px');
+        cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'gap', tokens.spacing.s);
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'text-decoration', 'none solid rgb(0, 0, 0)');
 
-        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'height', '48px');
-        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'width', '48px');
-        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'border-radius', '50%');
+        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'height', tokens.spacing.xl);
+        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'width', tokens.spacing.xl);
+        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'border-radius', tokens.borderRadius.circle);
         cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'object-fit', 'cover');
 
         cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__text').should('have.css', 'margin', '0px');
-        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__text').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__text').should('have.css', 'font-size', '16px');
+        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__text').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__text').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__text').should('have.css', 'color', colors.colorFont);
 
         cy.get('.post-meta .post-meta__group:nth-child(4) .icon').should('have.css', 'background-color', colors.colorFont);

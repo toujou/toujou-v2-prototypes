@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('blog plugin: posts lists', () => {
     beforeEach(() => {
@@ -17,7 +18,7 @@ describe('blog plugin: posts lists', () => {
 
     it('has correct header styles', () => {
         cy.get('.post-list-title').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.post-list-title').should('have.css', 'font-size', '32px');
+        cy.get('.post-list-title').should('have.css', 'font-size', tokens.type.size.xl);
     });
 });
 

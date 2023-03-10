@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+const tokens = Cypress.env('tokens');
+
 describe('blog plugin: tags', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-blog-plugin--tags');
@@ -18,7 +20,7 @@ describe('blog plugin: tags', () => {
         cy.get('.chips-list__list').should('have.css', 'list-style', 'outside none none');
         cy.get('.chips-list__list').should('have.css', 'display', 'flex');
         cy.get('.chips-list__list').should('have.css', 'flex-wrap', 'wrap');
-        cy.get('.chips-list__list').should('have.css', 'gap', '16px');
+        cy.get('.chips-list__list').should('have.css', 'gap', tokens.spacing.normal);
         cy.get('.chips-list__list').should('have.css', 'margin', '0px');
         cy.get('.chips-list__list').should('have.css', 'hyphens', 'auto');
     });

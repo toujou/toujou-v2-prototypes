@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('blockquote', () => {
     beforeEach(() => {
@@ -29,7 +30,7 @@ describe('blockquote', () => {
         cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorBg);
         cy.get('toujou-blockquote').should('have.css', 'display', 'grid');
         cy.get('toujou-blockquote').should('have.css', 'grid-template-columns', '960px');
-        cy.get('toujou-blockquote').should('have.css', 'z-index', '1');
+        cy.get('toujou-blockquote').should('have.css', 'z-index', tokens.zIndex.content);
         cy.get('toujou-blockquote').should('have.css', 'grid-template-areas', '"blockquoteImage" "blockquoteQuote" "blockquoteAuthor"');
 
     });
@@ -48,11 +49,11 @@ describe('blockquote', () => {
 
     it('blockquote quote has correct styles', () => {
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'position', 'relative');
-        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'font-size', '16px');
+        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'color', colors.colorFont);
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'margin', '48px 0px 0px');
-        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'line-height', '24px');
+        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'grid-area', 'blockquoteQuote / blockquoteQuote / blockquoteQuote / blockquoteQuote');
     });
 
@@ -85,17 +86,17 @@ describe('blockquote', () => {
     });
 
     it('blockquote text has correct styles', () => {
-        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'font-size', '16px');
-        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'line-height', '24px');
-        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'margin', '8px 0px 0px');
+        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'font-size', tokens.type.size.normal);
+        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'line-height', tokens.type.lineHeight.normal);
+        cy.get('toujou-blockquote .blockquote__text').should('have.css', 'margin', `${tokens.spacing.s} 0px 0px`);
         cy.get('toujou-blockquote .blockquote__text').should('have.css', 'color', colors.colorFont);
     });
 
     it('blockquote author has correct styles', () => {
-        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'font-size', '16px');
+        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'color', colors.colorFont);
-        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'line-height', '24px');
+        cy.get('toujou-blockquote .blockquote__author').should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'grid-column', 'blockquoteAuthor / blockquoteAuthor');
         cy.get('toujou-blockquote .blockquote__author').should('have.css', 'grid-area', 'blockquoteAuthor / blockquoteAuthor / blockquoteAuthor / blockquoteAuthor');
     });

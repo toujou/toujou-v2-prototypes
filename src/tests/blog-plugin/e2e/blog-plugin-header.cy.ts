@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('blog plugin: header', () => {
     beforeEach(() => {
@@ -20,7 +21,7 @@ describe('blog plugin: header', () => {
         cy.get('.blog-header').should('have.css', 'position', 'relative');
         cy.get('.blog-header').should('have.css', 'height', '864px');
         cy.get('.blog-header').should('have.css', 'width', '1920px');
-        cy.get('.blog-header').should('have.css', 'z-index', '1');
+        cy.get('.blog-header').should('have.css', 'z-index', tokens.zIndex.content);
 
         cy.get('.blog-header .header__image').should('have.css', 'height', '864px');
         cy.get('.blog-header .header__image').should('have.css', 'width', '1920px');
@@ -40,10 +41,10 @@ describe('blog plugin: header', () => {
         cy.get('.blog-header .blog-header__content').should('have.css', 'align-items', 'center');
         cy.get('.blog-header .blog-header__content').should('have.css', 'justify-content', 'center');
 
-        cy.get('.blog-header .blog-header__content-title').should('have.css', 'padding', '16px 32px');
+        cy.get('.blog-header .blog-header__content-title').should('have.css', 'padding', `${tokens.spacing.normal} ${tokens.spacing.l}`);
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'background-color', colors.colorBg);
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-header .blog-header__content-title').should('have.css', 'border-radius', '4px');
+        cy.get('.blog-header .blog-header__content-title').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'width', '521.25px');
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'text-align', 'center');
     });
