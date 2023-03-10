@@ -28,18 +28,18 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" aria-label="2023-06-14" inline>
-                                <div class="media-date__months" aria-hidden="true">
+                            <time datetime="2023-06-14" class="media-date" inline>
+                                <div class="media-date__months">
                                     <span class="media-date__month">Jun</span>
-                                        <span class="media-date__month-separator">-</span>
-                                        <span class="media-date__month">Jul</span> 
+                                    <span class="media-date__month-separator">-</span>
+                                    <span class="media-date__month">Jul</span> 
                                 </div>
-                                <div class="media-date__days" aria-hidden="true">
+                                <div class="media-date__days">
                                     <span class="media-date__day">14</span>
-                                        <span class="media-date__day-separator">-</span>
-                                        <span class="media-date__day">16</span>
+                                    <span class="media-date__day-separator">-</span>
+                                    <span class="media-date__day">16</span>
                                 </div>
-                                <div class="media-date__years" aria-hidden="true">
+                                <div class="media-date__years">
                                     <span class="media-date__year">2023</span>                                
                                 </div>
                             </time>
@@ -71,18 +71,18 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" aria-label="2023-06-14" inline>
-                                <div class="media-date__months" aria-hidden="true">
+                            <time datetime="2023-06-14" class="media-date" inline>
+                                <div class="media-date__months">
                                     <span class="media-date__month">Jun</span>
                                         <span class="media-date__month-separator">-</span>
                                         <span class="media-date__month">Jul</span> 
                                 </div>
-                                <div class="media-date__days" aria-hidden="true">
+                                <div class="media-date__days">
                                     <span class="media-date__day">14</span>
                                         <span class="media-date__day-separator">-</span>
                                         <span class="media-date__day">16</span>
                                 </div>
-                                <div class="media-date__years" aria-hidden="true">
+                                <div class="media-date__years">
                                     <span class="media-date__year">2023</span>                                
                                 </div>
                             </time>
@@ -114,18 +114,18 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" aria-label="2023-06-14" inline>
-                                <div class="media-date__months" aria-hidden="true">
+                            <time datetime="2023-06-14" class="media-date" inline>
+                                <div class="media-date__months">
                                     <span class="media-date__month">Jun</span>
                                         <span class="media-date__month-separator">-</span>
                                         <span class="media-date__month">Jul</span> 
                                 </div>
-                                <div class="media-date__days" aria-hidden="true">
+                                <div class="media-date__days">
                                     <span class="media-date__day">14</span>
                                         <span class="media-date__day-separator">-</span>
                                         <span class="media-date__day">16</span>
                                 </div>
-                                <div class="media-date__years" aria-hidden="true">
+                                <div class="media-date__years">
                                     <span class="media-date__year">2023</span>                                
                                 </div>
                             </time>
@@ -157,18 +157,18 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" aria-label="2023-06-14" inline>
-                                <div class="media-date__months" aria-hidden="true">
+                            <time datetime="2023-06-14" class="media-date" inline>
+                                <div class="media-date__months">
                                     <span class="media-date__month">Jun</span>
                                         <span class="media-date__month-separator">-</span>
                                         <span class="media-date__month">Jul</span> 
                                 </div>
-                                <div class="media-date__days" aria-hidden="true">
+                                <div class="media-date__days">
                                     <span class="media-date__day">14</span>
                                         <span class="media-date__day-separator">-</span>
                                         <span class="media-date__day">16</span>
                                 </div>
-                                <div class="media-date__years" aria-hidden="true">
+                                <div class="media-date__years">
                                     <span class="media-date__year">2023</span>                                
                                 </div>
                             </time>
