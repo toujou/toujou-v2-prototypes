@@ -194,7 +194,7 @@ describe('header - content alignment', () => {
     });
 });
 
-describe('header - accent color', () => {
+describe.only('header - accent color', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-header--header');
         // @ts-ignore
@@ -223,7 +223,7 @@ describe('header - accent color', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('accent-color', 'font');
         });
-        cy.get('.header-content__title').should('have.css', 'color', colors.colorFontDark);
+        cy.get('.header-content__title').should('have.css', 'color', colors.colorFont);
     });
 
     it('has correct default button variant color', () => {

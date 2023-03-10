@@ -23,8 +23,8 @@ describe('html multicolumn text - left', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
-        cy.get('toujou-grid').should('have.css', 'grid-template-columns', '293.328px 293.336px 293.336px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-template-columns', '288px 288px 288px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
 
     });
 })
@@ -52,8 +52,8 @@ describe('html multicolumn text - right', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
-        cy.get('toujou-grid').should('have.css', 'grid-template-columns', '293.328px 293.336px 293.336px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-template-columns', '288px 288px 288px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
 
     });
 })

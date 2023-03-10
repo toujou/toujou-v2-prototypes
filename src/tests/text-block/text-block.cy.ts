@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('alert', () => {
+describe('text block', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=tests-text-blocks--text-blocks');
     });

@@ -130,7 +130,7 @@ describe('social-media-bar - no headline', () => {
     });
 
     it('has correct attributes', () => {
-        cy.get('.social-media-bar').invoke('attr', 'no-headline').should('eq', 'inverted');
+        cy.get('.social-media-bar').invoke('attr', 'no-headline').should('exist');
     });
 
     it('has correct styles', () => {

@@ -8,8 +8,8 @@ describe('toujou-spinner', () => {
     it('has correct structure', () => {
         cy.get('toujou-spinner').invoke('attr', 'class').should('eq', 'spinner');
         cy.get('toujou-spinner').invoke('prop', 'tagName').should('eq', 'TOUJOU-SPINNER');
-        cy.get('toujou-spinner').shadow().find('.spinner__svg').should('exist');
-        cy.get('toujou-spinner').shadow().find('.spinner__svg .spinner__circle').should('exist');
+        cy.get('toujou-spinner').shadow().find('.toujou-spinner__svg').should('exist');
+        cy.get('toujou-spinner').shadow().find('.toujou-spinner__circle').should('exist');
     });
 
     it('has correct styles', () => {
@@ -24,14 +24,14 @@ describe('toujou-spinner', () => {
             expect(spinner).to.have.css('z-index').eq('auto');
         });
 
-        cy.get('.spinner').shadow().find('.spinner__svg').then((spinnerSVG) => {
+        cy.get('.spinner').shadow().find('.toujou-spinner__svg').then((spinnerSVG) => {
             expect(spinnerSVG).to.have.css('transform-origin').eq('40px 40px');
             expect(spinnerSVG).to.have.css('position').eq('absolute');
             expect(spinnerSVG).to.have.css('inset').eq('0px');
             expect(spinnerSVG).to.have.css('animation').eq('2s linear 0s infinite normal none running rotationAnimation');
         });
 
-        cy.get('.spinner').shadow().find('.spinner__circle').then((spinnerCircle) => {
+        cy.get('.spinner').shadow().find('.toujou-spinner__circle').then((spinnerCircle) => {
             expect(spinnerCircle).to.have.css('stroke-linecap').eq('round');
             expect(spinnerCircle).to.have.css('stroke-width').eq('4px');
             expect(spinnerCircle).to.have.css('fill').eq('none');
@@ -50,7 +50,7 @@ describe('toujou-spinner centered-on-page', () => {
 
     it('has correct styles', () => {
         cy.get('.spinner').then((spinner) => {
-            expect(spinner).to.have.css('z-index').eq('75');
+            expect(spinner).to.have.css('z-index').eq('100');
             expect(spinner).to.have.css('position').eq('fixed');
         });
     });

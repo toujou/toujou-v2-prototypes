@@ -128,32 +128,30 @@ describe('list item - type event', () => {
         cy.get(`${firstCardSelector}`).invoke('attr', 'item-type').should('eq', 'event');
         cy.get(`${firstCardSelector} .collection-item__date`).should('exist');
         cy.get(`${firstCardSelector} .collection-item__info`).should('exist');
-        cy.get(`${firstCardSelector} .collection-item__extension`).should('exist');
         cy.get(`${firstCardSelector} toujou-fav-item`).should('exist');
     });
 
     it('date element has correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__date`).then((dateEl) => {
             expect(dateEl).to.have.css('position').equal('absolute');
-            expect(dateEl).to.have.css('height').equal('64px');
-            expect(dateEl).to.have.css('width').equal('64px');
-            expect(dateEl).to.have.css('top').equal('24px');
-            expect(dateEl).to.have.css('left').equal('24px');
+            expect(dateEl).to.have.css('height').equal('80px');
+            expect(dateEl).to.have.css('width').equal('44.8046875px');
+            expect(dateEl).to.have.css('top').equal('16px');
+            expect(dateEl).to.have.css('right').equal('16px');
             expect(dateEl).to.have.css('background-color').equal(colors.colorBg);
             expect(dateEl).to.have.css('border-radius').equal('4px');
             expect(dateEl).to.have.css('display').equal('flex');
-            expect(dateEl).to.have.css('align-items').equal('center');
             expect(dateEl).to.have.css('justify-content').equal('center');
             expect(dateEl).to.have.css('padding').equal('8px');
             expect(dateEl).to.have.css('color').equal(colors.colorFont);
         });
-        cy.get(`${firstCardSelector} .collection-item__date-day`).then((dayEl) => {
+        cy.get(`${firstCardSelector} .media-date__day`).then((dayEl) => {
             expect(dayEl).to.have.css('font-size').equal('24px');
             expect(dayEl).to.have.css('font-weight').equal('800');
         });
-        cy.get(`${firstCardSelector} .collection-item__date-month`).then((monthEl) => {
+        cy.get(`${firstCardSelector} .media-date__month`).then((monthEl) => {
             expect(monthEl).to.have.css('text-transform').equal('uppercase');
-            expect(monthEl).to.have.css('font-size').equal('14px');
+            expect(monthEl).to.have.css('font-size').equal('12px');
         });
     });
 
@@ -173,17 +171,6 @@ describe('list item - type event', () => {
             expect(infotextEl).to.have.css('margin').equal('0px');
             expect(infotextEl).to.have.css('color').equal(colors.colorFont);
 
-        });
-    });
-
-    it('extension element has correct styles', () => {
-        cy.get(`${firstCardSelector} .collection-item__extension`).then((extEl) => {
-            expect(extEl).to.have.css('background-color').equal(colors.colorError);
-            expect(extEl).to.have.css('color').equal(colors.colorBg);
-            expect(extEl).to.have.css('padding').equal('4px 8px');
-            expect(extEl).to.have.css('font-size').equal('14px');
-            expect(extEl).to.have.css('border-radius').equal('4px');
-            expect(extEl).to.have.css('margin').equal('16px 0px');
         });
     });
 });

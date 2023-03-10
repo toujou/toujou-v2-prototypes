@@ -21,10 +21,10 @@ describe('html with text', () => {
         cy.get('toujou-grid .grid-column:first-child .html-container').should('exist');
         cy.get('toujou-grid .grid-column:last-child .html-container').should('not.exist');
         cy.get('toujou-grid .grid-column:first-child .html-container').should('have.css', 'width', '304px');
-        cy.get('toujou-grid').should('have.css', 'width', '944px');
+        cy.get('toujou-grid').should('have.css', 'width', '960px');
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '304px 608px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
     });
 })
 
@@ -40,10 +40,10 @@ describe('html with text - 33-left', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid .grid-column:first-child .html-container').should('have.css', 'width', '304px');
-        cy.get('toujou-grid').should('have.css', 'width', '944px');
+        cy.get('toujou-grid').should('have.css', 'width', '960px');
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '304px 608px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
     });
 })
 
@@ -59,10 +59,10 @@ describe('html with text - 33-right', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid .grid-column:last-child .html-container').should('have.css', 'width', '304px');
-        cy.get('toujou-grid').should('have.css', 'width', '944px');
+        cy.get('toujou-grid').should('have.css', 'width', '960px');
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '608px 304px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
     });
 })
 
@@ -78,10 +78,10 @@ describe('html with text - 50-left', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid .grid-column:first-child .html-container').should('have.css', 'width', '456px');
-        cy.get('toujou-grid').should('have.css', 'width', '944px');
+        cy.get('toujou-grid').should('have.css', 'width', '960px');
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '456px 456px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
     });
 })
 
@@ -97,10 +97,10 @@ describe('html with text - 50-right', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid .grid-column:last-child .html-container').should('have.css', 'width', '456px');
-        cy.get('toujou-grid').should('have.css', 'width', '944px');
+        cy.get('toujou-grid').should('have.css', 'width', '960px');
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '456px 456px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
     });
 })
 
@@ -116,10 +116,10 @@ describe('html with text - 66-left', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid .grid-column:first-child .html-container').should('have.css', 'width', '608px');
-        cy.get('toujou-grid').should('have.css', 'width', '944px');
+        cy.get('toujou-grid').should('have.css', 'width', '960px');
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '608px 304px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
     });
 })
 
@@ -135,10 +135,10 @@ describe('html with text - 66-right', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-grid .grid-column:last-child .html-container').should('have.css', 'width', '608px');
-        cy.get('toujou-grid').should('have.css', 'width', '944px');
+        cy.get('toujou-grid').should('have.css', 'width', '960px');
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '304px 608px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '32px 32px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
     });
 })
 

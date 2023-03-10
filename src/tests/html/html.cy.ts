@@ -14,9 +14,9 @@ describe('toujou-html-container', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-html-container').then((container) => {
-            expect(container).to.have.css('width').eq('944px');
-            expect(container).to.have.css('max-width').eq('944px');
-            expect(container).to.have.css('margin').eq('0px 488px');
+            expect(container).to.have.css('width').eq('1200px');
+            expect(container).to.have.css('max-width').eq('1200px');
+            expect(container).to.have.css('margin').eq('0px 360px');
             expect(container).to.have.css('display').eq('block');
         })
     });

@@ -123,7 +123,7 @@ describe('teaser - image 66% right', () => {
     it('has correct attributes', () => {
         cy.get('.teaser').invoke('attr', 'teaser-type').should('eq', 'cinema');
         cy.get('.teaser').invoke('attr', 'image-width').should('eq', '66');
-        cy.get('.teaser').invoke('attr', 'image-side').should('eq', 'left');
+        cy.get('.teaser').invoke('attr', 'image-side').should('eq', 'right');
     });
 
     it('has correct styles', () => {

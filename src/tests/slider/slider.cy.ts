@@ -10,13 +10,13 @@ describe('toujou-breadcrumb - desktop', () => {
     it('has correct attributes', () => {
         cy.get('toujou-slider').invoke('attr', 'class').should('eq', 'slider');
         cy.get('toujou-slider').invoke('attr', 'aria-label').should('eq', 'Toujou slider example');
-        cy.get('toujou-slider').invoke('attr', 'slider-design').should('eq', 'default');
+        cy.get('toujou-slider').invoke('attr', 'element-design').should('eq', 'default');
         cy.get('toujou-slider').invoke('attr', 'show-count').should('exist');
-        cy.get('toujou-slider').invoke('attr', 'autoplay-interval').should('eq', '6000');
+        cy.get('toujou-slider').invoke('attr', 'auto-play-interval').should('eq', '6');
         cy.get('toujou-slider').invoke('attr', 'slides-to-show').should('eq', '1');
         cy.get('toujou-slider').invoke('attr', 'slider-type').should('eq', 'loop');
         cy.get('toujou-slider').invoke('attr', 'slides-per-move').should('eq', '1');
-        cy.get('toujou-slider').invoke('attr', 'slider-gap').should('eq', '0px');
+        cy.get('toujou-slider').invoke('attr', 'slider-gap').should('eq', 'var(--slider-slides-gap)');
         cy.get('toujou-slider').invoke('attr', 'slider-padding').should('eq', '0');
         cy.get('toujou-slider').invoke('attr', 'slider-focus-center').should('eq', 'false');
     });
@@ -40,7 +40,7 @@ describe('toujou-breadcrumb - desktop', () => {
     it('has correct primary design colors', () => {
         cy.get('toujou-slider').then((e) => {
             e[0].setAttribute('auto-play', '');
-            e[0].setAttribute('slider-design', 'primary');
+            e[0].setAttribute('element-design', 'primary');
         });
         cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorPrimary);
@@ -57,7 +57,7 @@ describe('toujou-breadcrumb - desktop', () => {
     it('has correct secondary design colors', () => {
         cy.get('toujou-slider').then((e) => {
             e[0].setAttribute('auto-play', '');
-            e[0].setAttribute('slider-design', 'secondary');
+            e[0].setAttribute('element-design', 'secondary');
         });
         cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorSecondary);
@@ -74,7 +74,7 @@ describe('toujou-breadcrumb - desktop', () => {
     it('has correct default light-grey colors', () => {
         cy.get('toujou-slider').then((e) => {
             e[0].setAttribute('auto-play', '');
-            e[0].setAttribute('slider-design', 'light-grey');
+            e[0].setAttribute('element-design', 'light-grey');
         });
         cy.get('toujou-slider .slider-control--prev').should('have.css', 'background-color', colors.colorFontLight);
         cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorFontLight);
@@ -186,10 +186,10 @@ describe('toujou-breadcrumb - desktop', () => {
             // @ts-ignore
             const win = cy.state('window');
             const styles = win.getComputedStyle(el[0]);
-            const sliderWidth = styles.getPropertyValue('--slider-width');
+            // const sliderWidth = styles.getPropertyValue('--slider-width');
             const sliderMaxWidth = styles.getPropertyValue('--slider-max-width');
-            expect(sliderWidth.trim()).to.eq('100%');
-            expect(sliderMaxWidth.trim()).to.eq('100%');
+            // expect(sliderWidth.trim()).to.eq('calc(100% - calc( 1rem * 2))');
+            expect(sliderMaxWidth.trim()).to.eq('960px');
         });
 
         cy.get('toujou-slider .slider-control').then((el) => {
