@@ -1,4 +1,5 @@
 .topbutton {
+    --topbutton-visibility: hidden;
     --topbutton-display: flex;
     --topbutton-align-items: center;
     --topbutton-justify-content: center;
@@ -16,6 +17,7 @@
     --topbutton-focus-outline-ffset: var(--focus-outline-offset);
     --topbutton-z-index: var(--z-index-top-button);
 
+    visibility: var(--topbutton-visibility);
     display: var(--topbutton-display);
     align-items: var(--topbutton-align-items);
     justify-content: var(--topbutton-justify-content);
@@ -34,6 +36,7 @@
 
 .topbutton.topbutton[is-visible] {
     --topbutton-transform: translateY(0);
+    --topbutton-visibility: visibile;
 }
 
 .topbutton:focus,

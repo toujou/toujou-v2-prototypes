@@ -18,6 +18,7 @@
     "useDefineForClassFields": false,
     "skipLibCheck": true,
     "target": "ES6",
+    "types": ["cypress", "cypress-axe"]
   },
   "include": ["src/**/*.ts"],
   "exclude": [
