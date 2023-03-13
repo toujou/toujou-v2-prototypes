@@ -64,22 +64,22 @@ const Template: Story<MediaDateStoryProps> = (args: MediaDateStoryProps) => {
                 background-color: var(--color-primary-dark);
             }
         </style>
-        <time datetime="2023-06-14" class="media-date" aria-label="2023-06-14">
-            <div class="media-date__months" aria-hidden="true">
+        <time datetime="2023-06-14" class="media-date">
+            <div class="media-date__months">
                 <span class="media-date__month">Jun</span>
                 ${args.singleMonth || args.singleDay ? `` : `
                     <span class="media-date__month-separator">-</span>
                     <span class="media-date__month">Jul</span>
                 `}
             </div>
-            <div class="media-date__days" aria-hidden="true">
+            <div class="media-date__days">
                 <span class="media-date__day">14</span>
                 ${args.singleDay ? `` : `
                     <span class="media-date__day-separator">-</span>
                     <span class="media-date__day">16</span>
                 `}
             </div>
-            <div class="media-date__years" aria-hidden="true">
+            <div class="media-date__years">
                 <span class="media-date__year">2023</span>
                 ${args.singleYear || args.singleDay ? `` : `
                     <span class="media-date__year-separator">-</span>
