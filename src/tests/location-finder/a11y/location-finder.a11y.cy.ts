@@ -1,14 +1,14 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('html with text a11y', () => {
+describe('location-finder a11y', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-html-with-text--html-with-text-story-props');
+        cy.visit('/iframe.html?viewMode=story&id=components-locationfinder--location-finder');
         cy.injectAxe();
     });
 
     it('has no detectable a11y violation on load', () => {
-        cy.checkA11y('.html-container');
+        cy.checkA11y('.location-finder');
     });
 })
 
