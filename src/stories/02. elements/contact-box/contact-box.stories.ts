@@ -36,7 +36,7 @@ const Template = () => {
               
         <toujou-contact-box class="contact-box">        
             <div class="contact-box__card">
-                <button class="contact-box__close">
+                <button class="contact-box__close" aria-label="Close contact box">
                     <toujou-icon class="icon" icon-size="ms" icon-name="close" icon-color="font"></toujou-icon>
                 </button>
                 
