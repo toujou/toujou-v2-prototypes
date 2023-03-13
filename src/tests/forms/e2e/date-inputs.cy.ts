@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+/// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
 
@@ -58,13 +59,11 @@ describe('Forms / date inputs', () => {
     });
 
     it('input date has correct hover styles', () => {
-        // @ts-ignore
         cy.get('.input-group--date .input--date').realHover();
         cy.get('.input-group--date .input--date').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
 
     it('input jquery date has correct hover styles', () => {
-        // @ts-ignore
         cy.get('.input-group--date-jquery .input--date').realHover();
         cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });

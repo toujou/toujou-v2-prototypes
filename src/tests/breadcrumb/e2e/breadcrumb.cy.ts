@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+/// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
 
@@ -29,7 +30,6 @@ describe('toujou-breadcrumb - desktop', () => {
 
     it('nav items have correct hover styles', () => {
         cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorFont);
-        // @ts-ignore
         cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').realHover();
         cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorPrimary);
     });

@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+/// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
 
@@ -88,7 +89,6 @@ describe('collection item - type default', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorPrimary);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
-        // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).realHover();
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorPrimaryDark);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `underline solid ${colors.colorPrimaryDark}`);
@@ -111,7 +111,6 @@ describe('collection item - type default, style primary', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorBg);
 
-        // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).realHover();
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `underline solid ${colors.colorBg}`);
@@ -141,7 +140,6 @@ describe('collection item - type default, style secondary', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorBg);
 
-        // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).realHover();
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `underline solid ${colors.colorBg}`);
@@ -171,7 +169,6 @@ describe('collection item - type default, style inverted', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorBg);
 
-        // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).realHover();
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `underline solid ${colors.colorBg}`);

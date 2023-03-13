@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+/// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
@@ -56,7 +57,6 @@ describe('blog plugin: archive', () => {
 
     it('has correct hover styles', () => {
         cy.get('.archive-year:first-child .archive-year__item:first-child .archive-year__link').should('have.css', 'color', colors.colorPrimary);
-        // @ts-ignore
         cy.get('.archive-year__link').realHover();
         cy.get('.archive-year:first-child .archive-year__item:first-child .archive-year__link').should('have.css', 'color', colors.colorPrimaryDark);
         // @ts-ignore

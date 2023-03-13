@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+/// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
 
@@ -118,7 +119,6 @@ describe('Map hover', () => {
         cy.get('.map-contact .map-contact__social:first-child .icon').then((mapSocialIcon) => {
             expect(mapSocialIcon).to.have.css('background-color').equal(colors.colorFont);
         });
-        // @ts-ignore
         cy.get('.map-contact .map-contact__social:first-child').realHover();
         cy.get('.map-contact .map-contact__social:first-child').then((mapSocial) => {
             expect(mapSocial).to.have.css('color').equal('rgba(0, 0, 0, 0)');
