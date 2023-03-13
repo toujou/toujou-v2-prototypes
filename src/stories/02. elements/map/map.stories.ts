@@ -79,13 +79,13 @@ const Template: Story<mapStoryProps> = (args: mapStoryProps) => {
                     <span class="map-contact__label">E-Mail:</span> <a href="mailto:hello@dfau.de">hello@dfau.de</a>                
                 </address>
                 <div class="map-contact__socials">
-                    <a href="#" class="map-contact__social">
+                    <a href="#" class="map-contact__social" aria-label="Facebook account">
                         <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-facebook" icon-size="l"></toujou-icon>
                     </a>
-                    <a href="#" class="map-contact__social">
+                    <a href="#" class="map-contact__social" aria-label="Instagram account">
                         <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-instagram" icon-size="l"></toujou-icon>
                     </a>
-                    <a href="#" class="map-contact__social">
+                    <a href="#" class="map-contact__social" aria-label="Youtube account">
                         <toujou-icon class="icon map-contact__social-icon" icon-color="font" icon-name="sm-youtube" icon-size="l"></toujou-icon>
                     </a>
                 </div>
