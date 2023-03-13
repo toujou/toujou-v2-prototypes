@@ -111,9 +111,11 @@ describe('Forms / radio input - error', () => {
         cy.get('.input-group--radio').invoke('attr', 'class').should('contain', 'input-group--has-error');
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorError}`);
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label').should('have.css', 'color', colors.colorFont);
+        // @ts-ignore
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').after('background-color').should('eq', colors.colorError);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').should('have.css', 'border', `2px solid ${colors.colorError}`);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label').should('have.css', 'color', colors.colorFont);
+        // @ts-ignore
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').after('background-color').should('eq', 'rgba(0, 0, 0, 0)');
         cy.get('.radio-group.input-group--has-error .form__error').should('have.css', 'display', 'block');
     });
