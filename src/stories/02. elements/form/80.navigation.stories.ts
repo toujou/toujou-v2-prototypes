@@ -49,7 +49,7 @@ const Template = () => {
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
             
-            <nav class="form-navigation" role="toolbar">
+            <div class="form-navigation" role="toolbar">
                 <span class="form-navigation__submit">
                     <button is="toujou-button" class="button form-navigation__button" button-variant="primary" type="submit"  name="tx_form_formframework[kontaktformular-8][__currentPage]" value="2">
                         Submit
@@ -58,7 +58,7 @@ const Template = () => {
                 <span class="form-navigation__previous">
                     <button is="toujou-button" formnovalidate="formnovalidate" class="button form-navigation__button" button-variant="primary" button-type="border" type="submit" name="tx_form_formframework[kontaktformular-8][__currentPage]" value="0">Cancel</button>
                 </span>
-            </nav>	
+            </div>	
         </form>
     `;
 };

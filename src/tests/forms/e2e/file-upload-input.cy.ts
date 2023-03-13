@@ -35,6 +35,7 @@ describe('Forms / file upload', () => {
     });
 
     it('file upload input has correct hover styles', () => {
+        // @ts-ignore
         cy.get('.input-group--file-upload .input').realHover();
         cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorFont}`)
     });
@@ -61,6 +62,7 @@ describe('Forms / file upload input - disabled', () => {
 
     it('input--text group has correct hover styles when disabled', () => {
         cy.get('.input-group--file-upload .input').invoke('attr', 'disabled').should('exist');
+        // @ts-ignore
         cy.get('.input-group--file-upload .input').realHover();
         cy.get('.input-group--file-upload .input').invoke('attr', 'disabled').should('exist');
     });
