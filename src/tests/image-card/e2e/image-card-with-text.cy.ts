@@ -1,8 +1,5 @@
 /// <reference types="cypress" />
 
-const colors = Cypress.env('colors');
-const tokens = Cypress.env('tokens');
-
 describe('image-card with text', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-image-card--image-card-with-text');
