@@ -116,10 +116,10 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                 slider-type="loop">
                 <div class="splide slider__slider">
                     <div class="splide__arrows slider-controls">
-                        <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
+                        <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev">
                             <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
                         </button>
-                        <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
+                        <button class="splide__arrow splide__arrow--next slider-control slider-control--next">
                             <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                         </button>
                     </div>
