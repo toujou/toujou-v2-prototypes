@@ -18,7 +18,7 @@ describe('media-info open a11y', () => {
         cy.injectAxe();
     });
 
-    it.only('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', () => {
         cy.get('.single-media:first-child .media-info__toggle:first-child').click();
         cy.checkA11y('.media-grid');
     });

@@ -45,7 +45,7 @@ describe('footer', () => {
         cy.get('footer .footer-column:nth-child(4) .footer__socials .icon').should('exist');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.footer').should('have.css', 'background-color', colors.colorFontDark);
         cy.get('.footer').should('have.css', 'padding', `${tokens.spacing.xl} ${tokens.spacing.normal}`);
 
