@@ -50,7 +50,7 @@ function renderCardColumn() {
         <toujou-content-card-grid class="content-card-grid" fullwidth="">
             <a href="/" class="image-card" image-format="16-9" card-variant="secondary">
                 <figure class="image-card__figure">
-                    <img class="image-card__image" src="https://picsum.photos/640/640">
+                    <img class="image-card__image" src="https://picsum.photos/640/640" alt="Nice image">
                 </figure>
     
                 <h3 class="image-card__title">

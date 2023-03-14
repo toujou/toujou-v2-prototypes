@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('html a11y', () => {
+describe('headlines a11y', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=tests-type-tests--single-headlines');
         cy.injectAxe();
