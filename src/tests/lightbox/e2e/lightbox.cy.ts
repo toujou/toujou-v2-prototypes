@@ -4,250 +4,66 @@ const tokens = Cypress.env('tokens');
 
 describe('grid 1 column', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid');
+        cy.visit('/iframe.html?viewMode=story&id=components-lightbox--lightbox');
+        cy.get('.media-grid[lightbox-parent-id="1"] .single-media:first-child .lightbox-item').click();
+        cy.wait(10);
     });
 
     it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'class').should('contain', 'grid');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '1');
-        cy.get('toujou-grid').invoke('attr', 'grid-type').should('eq', 'default');
+        cy.get('.pswp').should('have.prop', 'tagName').should('eq', 'DIV');
+        cy.get('.pswp').invoke('attr', 'tabindex').should('eq', '-1');
+        cy.get('.pswp').invoke('attr', 'role').should('eq', 'dialog');
+        cy.get('.pswp').invoke('attr', 'aria-label').should('eq', 'Lightbox');
     });
 
     it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 1);
+        cy.get('.pswp').should('exist');
+        cy.get('.pswp .pswp__bg').should('exist');
+        cy.get('.pswp .pswp__scroll-wrap').should('exist');
+        cy.get('.pswp .pswp__scroll-wrap .pswp__container').should('exist');
+        cy.get('.pswp .pswp__scroll-wrap .pswp__container').children('.pswp__item').should('have.length', 3);
+        cy.get('.pswp .pswp__scroll-wrap .pswp__top-bar').should('exist');
+        cy.get('.pswp .pswp__scroll-wrap .pswp__button--arrow--prev').should('exist');
+        cy.get('.pswp .pswp__scroll-wrap .pswp__button--arrow--next').should('exist');
+        cy.get('.pswp .pswp__caption').should('exist');
     });
 
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'display', 'grid');
-        cy.get('.grid').should('have.css', 'grid-template-columns', '960px');
-        cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
-        cy.get('.grid').should('have.css', 'width', '960px');
-        cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 480px');
-    });
-})
+    it.only('has correct styles', () => {
+        cy.get('.pswp').should('have.css', 'position', 'fixed');
+        cy.get('.pswp').should('have.css', 'top', '0px');
+        cy.get('.pswp').should('have.css', 'left', '0px');
+        cy.get('.pswp').should('have.css', 'width', '1920px');
+        cy.get('.pswp').should('have.css', 'height', '1080px');
+        cy.get('.pswp').should('have.css', 'z-index', '100000');
+        cy.get('.pswp').should('have.css', 'overflow', 'hidden');
 
-describe('grid 2 columns', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=numberOfColumns:2');
-    });
+        cy.get('.pswp .pswp__bg').should('have.css', 'position', 'absolute');
+        cy.get('.pswp .pswp__bg').should('have.css', 'top', '0px');
+        cy.get('.pswp .pswp__bg').should('have.css', 'bottom', '0px');
+        cy.get('.pswp .pswp__bg').should('have.css', 'left', '0px');
+        cy.get('.pswp .pswp__bg').should('have.css', 'width', '1920px');
+        cy.get('.pswp .pswp__bg').should('have.css', 'height', '1080px');
+        cy.get('.pswp .pswp__bg').should('have.css', 'opacity', '0.8');
+        cy.get('.pswp .pswp__bg').should('have.css', 'background-color', 'rgb(0, 0, 0)');
 
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '2');
-    });
+        cy.get('.pswp .pswp__scroll-wrap').should('have.css', 'position', 'absolute');
+        cy.get('.pswp .pswp__scroll-wrap').should('have.css', 'top', '0px');
+        cy.get('.pswp .pswp__scroll-wrap').should('have.css', 'bottom', '0px');
+        cy.get('.pswp .pswp__scroll-wrap').should('have.css', 'left', '0px');
 
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 2);
-    });
+        cy.get('.pswp .pswp__container').should('have.css', 'position', 'absolute');
+        cy.get('.pswp .pswp__container').should('have.css', 'top', '0px');
+        cy.get('.pswp .pswp__container').should('have.css', 'bottom', '0px');
+        cy.get('.pswp .pswp__container').should('have.css', 'left', '0px');
 
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'display', 'grid');
-        cy.get('.grid').should('have.css', 'grid-template-columns', '456px 456px');
-        cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
-        cy.get('.grid').should('have.css', 'width', '960px');
-        cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 480px');
-    });
-})
+        cy.get('.pswp .pswp__item').should('have.css', 'position', 'absolute');
+        cy.get('.pswp .pswp__item').should('have.css', 'top', '0px');
+        cy.get('.pswp .pswp__item').should('have.css', 'bottom', '0px');
+        cy.get('.pswp .pswp__item').should('have.css', 'left', '0px');
+        cy.get('.pswp .pswp__item').should('have.css', 'overflow', 'hidden');
+        cy.get('.pswp .pswp__item').should('have.css', 'z-index', '1');
 
-describe('grid 2 columns third right', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=numberOfColumns:2;columnsLayout:third-right');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '2');
-        cy.get('toujou-grid').invoke('attr', 'column-layout').should('eq', 'third-right');
-        cy.get('toujou-grid').invoke('attr', 'grid-type').should('eq', 'default');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 2);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'display', 'grid');
-        cy.get('.grid').should('have.css', 'grid-template-columns', '608px 304px');
-        cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
-        cy.get('.grid').should('have.css', 'width', '960px');
-        cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 480px');
-    });
-})
-
-describe('grid 2 columns third left', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=numberOfColumns:2;columnsLayout:third-left');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '2');
-        cy.get('toujou-grid').invoke('attr', 'column-layout').should('eq', 'third-left');
-        cy.get('toujou-grid').invoke('attr', 'grid-type').should('eq', 'default');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 2);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'display', 'grid');
-        cy.get('.grid').should('have.css', 'grid-template-columns', '304px 608px');
-        cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
-        cy.get('.grid').should('have.css', 'width', '960px');
-        cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 480px');
-    });
-})
-
-describe('grid 3 columns', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=numberOfColumns:3');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '3');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 3);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'display', 'grid');
-        cy.get('.grid').should('have.css', 'grid-template-columns', '288px 288px 288px');
-        cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
-        cy.get('.grid').should('have.css', 'width', '960px');
-        cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 480px');
-    });
-})
-
-describe('grid 4 columns', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=numberOfColumns:4');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '4');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 4);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'display', 'grid');
-        cy.get('.grid').should('have.css', 'grid-template-columns', '204px 204px 204px 204px');
-        cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
-        cy.get('.grid').should('have.css', 'width', '960px');
-        cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 480px');
-    });
-})
-
-describe('grid medium', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=type:medium');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '1');
-        cy.get('toujou-grid').invoke('attr', 'grid-type').should('eq', 'medium');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 1);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'width', '1200px');
-        cy.get('.grid').should('have.css', 'max-width', '1200px');
-        cy.get('.grid').should('have.css', 'margin', '0px 360px');
-    });
-})
-
-describe('grid wide', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=type:wide');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '1');
-        cy.get('toujou-grid').invoke('attr', 'grid-type').should('eq', 'wide');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 1);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'width', '1440px');
-        cy.get('.grid').should('have.css', 'max-width', '1440px');
-        cy.get('.grid').should('have.css', 'margin', '0px 240px');
-    });
-})
-
-describe('grid fullwidth', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=type:fullwidth');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '1');
-        cy.get('toujou-grid').invoke('attr', 'grid-type').should('eq', 'fullwidth');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 1);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'width', '1920px');
-        cy.get('.grid').should('have.css', 'max-width', '100%');
-        cy.get('.grid').should('have.css', 'margin', '0px');
-    });
-})
-
-describe('grid ignore', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-grid--grid&args=type:ignore');
-    });
-
-    it('has correct class and tag name', () => {
-        cy.get('toujou-grid').should('have.prop', 'tagName').should('eq', 'TOUJOU-GRID');
-        cy.get('toujou-grid').invoke('attr', 'number-of-columns').should('eq', '1');
-        cy.get('toujou-grid').invoke('attr', 'grid-type').should('eq', 'ignore');
-    });
-
-    it('has correct structure', () => {
-        cy.get('.grid').should('exist');
-        cy.get('.grid').children('.grid-column').should('have.length', 1);
-    });
-
-    it('has correct styles', () => {
-        cy.get('.grid').should('have.css', 'width', '0px');
-        cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px auto');
-        cy.get('.grid').should('have.css', 'display', 'contents');
+        cy.get('.pswp .pswp__item .pswp__img').should('have.css', 'padding', tokens.spacing.xl);
     });
 })
 

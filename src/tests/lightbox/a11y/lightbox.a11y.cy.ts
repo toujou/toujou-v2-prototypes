@@ -9,7 +9,7 @@ describe('grid a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.media-grid[lightbox-parent-id="1"] .single-media:first-child .lightbox-item').click();
-        cy.wait(500);
+        cy.wait(10);
         cy.checkA11y('.pswp');
     });
 })
