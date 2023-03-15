@@ -50,6 +50,7 @@ const Template = () => {
                 data-pswp-height="2500" 
                 target="_blank"
                 class="gallery__item"
+                title="This is a another nice caption"
                 lightbox-item-id="3"
             >
                 <img class="gallery__image" src="https://picsum.photos/602" alt="" />
@@ -59,6 +60,7 @@ const Template = () => {
                 data-pswp-height="2500" 
                 target="_blank"
                 class="gallery__item"
+                title="This is a another nice caption"
                 lightbox-item-id="4"
             >
                 <img class="gallery__image" src="https://picsum.photos/603" alt="" />
@@ -68,6 +70,7 @@ const Template = () => {
                 data-pswp-height="2500" 
                 target="_blank"
                 class="gallery__item"
+                title="This is a another nice caption"
                 lightbox-item-id="5"
             >
                 <img class="gallery__image" src="https://picsum.photos/604" alt="" />
