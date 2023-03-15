@@ -71,6 +71,7 @@ function _handleUiRegister(lightbox: PhotoSwipeLightbox): void {
         isButton: false,
         appendTo: 'root',
         onInit: (el: HTMLElement) => {
+            lightbox.pswp.element.setAttribute('aria-label', 'Lightbox');
             lightbox.pswp.on('change', () => _handleChange(el, lightbox));
         },
     });
