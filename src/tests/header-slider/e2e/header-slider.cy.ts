@@ -3,8 +3,6 @@
 const desktopViewportHeight = Cypress.env('desktopViewportHeight');
 const desktopViewportWidth = Cypress.env('desktopViewportWidth');
 
-const colors = Cypress.env('colors');
-
 describe('header', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-header--header-slider');
