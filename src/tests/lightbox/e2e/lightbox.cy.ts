@@ -2,7 +2,7 @@
 
 const tokens = Cypress.env('tokens');
 
-describe('grid 1 column', () => {
+describe('lightbox', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-lightbox--lightbox');
         cy.get('.media-grid[lightbox-parent-id="1"] .single-media:first-child .lightbox-item').click();
@@ -28,7 +28,7 @@ describe('grid 1 column', () => {
         cy.get('.pswp .pswp__caption').should('exist');
     });
 
-    it.only('has correct styles', () => {
+    it('has correct styles', () => {
         cy.get('.pswp').should('have.css', 'position', 'fixed');
         cy.get('.pswp').should('have.css', 'top', '0px');
         cy.get('.pswp').should('have.css', 'left', '0px');
@@ -64,6 +64,20 @@ describe('grid 1 column', () => {
         cy.get('.pswp .pswp__item').should('have.css', 'z-index', '1');
 
         cy.get('.pswp .pswp__item .pswp__img').should('have.css', 'padding', tokens.spacing.xl);
+    });
+})
+
+describe('lightbox', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-lightbox--lightbox');
+
+    });
+
+    it.only('can open', () => {
+        cy.get('.pswp').should('not.exist');
+        cy.get('.media-grid[lightbox-parent-id="1"] .single-media:first-child .lightbox-item').click();
+        cy.wait(10);
+        cy.get('.pswp').should('exist');
     });
 })
 
