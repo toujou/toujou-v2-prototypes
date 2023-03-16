@@ -159,7 +159,7 @@ export default defineConfig({
                 contactBox: '3500',
                 modal: '10000',
                 overlay: '50000',
-                important: '2147483647'
+                important: '2147483641'
             }
         },
         desktopViewportWidth: desktopViewportWidth,
