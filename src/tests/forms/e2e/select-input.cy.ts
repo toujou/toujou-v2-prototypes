@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Forms / select input', () => {
     beforeEach(() => {
@@ -28,9 +29,9 @@ describe('Forms / select input', () => {
         // @ts-ignore
         cy.get('.input-group--single-select .select__wrapper').after('position').should('eq', 'absolute');
         // @ts-ignore
-        cy.get('.input-group--single-select .select__wrapper').after('top').should('eq', '16px');
+        cy.get('.input-group--single-select .select__wrapper').after('top').should('eq', tokens.spacing.normal);
         // @ts-ignore
-        cy.get('.input-group--single-select .select__wrapper').after('right').should('eq', '8px');
+        cy.get('.input-group--single-select .select__wrapper').after('right').should('eq', tokens.spacing.s);
         // @ts-ignore
         cy.get('.input-group--single-select .select__wrapper').after('-webkit-mask-image').should('contain', 'url("http://localhost:6006/assets/icons/icon-chevron-down.svg")');
     });
@@ -38,12 +39,12 @@ describe('Forms / select input', () => {
     it('select has correct hover styles', () => {
         // @ts-ignore
         cy.get('.select__wrapper .select').realHover();
-        cy.get('.select__wrapper .select').should('have.css', 'border', `1px solid ${colors.colorFont}`)
+        cy.get('.select__wrapper .select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`)
     });
 
     it('select has correct focus styles', () => {
         cy.get('.select__wrapper .select').focus();
-        cy.get('.select__wrapper .select').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
+        cy.get('.select__wrapper .select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`)
     });
 });
 
@@ -57,7 +58,7 @@ describe('Forms / select input - disabled', () => {
     it('select has correct disabled styles', () => {
         cy.get('.input-group--single-select').invoke('attr', 'class').should('contain', 'input-group--disabled');
         cy.get('.input-group--single-select .select').should('have.css', 'color', colors.colorFontLight)
-        cy.get('.input-group--single-select .select').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.input-group--single-select .select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.input-group--single-select .select').should('have.css', 'pointer-events', 'none');
         // @ts-ignore
         cy.get('.input-group--single-select .select__wrapper').after('background-color').should('eq', colors.colorFontLight);
@@ -82,7 +83,7 @@ describe('Forms / select input - success', () => {
 
     it('input--text group has correct success styles', () => {
         cy.get('.input-group--single-select .select').should('have.css', 'color', colors.colorFont)
-        cy.get('.input-group--single-select .select').should('have.css', 'border', `1px solid ${colors.colorSuccess}`);
+        cy.get('.input-group--single-select .select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSuccess}`);
         cy.get('.input-group--single-select .select').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
     });
 });
@@ -96,7 +97,7 @@ describe('Forms / select input - error', () => {
 
     it('input--text group has correct success styles', () => {
         cy.get('.input-group--single-select .select').should('have.css', 'color', colors.colorFont)
-        cy.get('.input-group--single-select .select').should('have.css', 'border', `1px solid ${colors.colorError}`);
+        cy.get('.input-group--single-select .select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorError}`);
         cy.get('.input-group--single-select .select').should('have.css', 'outline', `${colors.colorError} solid 1px`);
     });
 });

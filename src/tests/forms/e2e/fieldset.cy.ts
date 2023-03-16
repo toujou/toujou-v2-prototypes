@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Forms / fieldset', () => {
     beforeEach(() => {
@@ -18,17 +19,17 @@ describe('Forms / fieldset', () => {
     it('fieldset has correct styles', () => {
         cy.get('.fieldset').then((fieldset) => {
             expect(fieldset).to.exist;
-            expect(fieldset).to.have.css('padding').equal('16px');
-            expect(fieldset).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
-            expect(fieldset).to.have.css('border-radius').equal('4px');
+            expect(fieldset).to.have.css('padding').equal(tokens.spacing.normal);
+            expect(fieldset).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorFontLight}`);
+            expect(fieldset).to.have.css('border-radius').equal(tokens.borderRadius.normal);
             expect(fieldset).to.have.css('margin-top').equal('0px');
         });
         cy.get('.fieldset .fieldset__legend').then((fieldsetLegend) => {
             expect(fieldsetLegend).to.exist;
             expect(fieldsetLegend).to.have.css('color').equal(colors.colorFont);
-            expect(fieldsetLegend).to.have.css('font-size').equal('16px');
-            expect(fieldsetLegend).to.have.css('font-weight').equal('600');
-            expect(fieldsetLegend).to.have.css('padding').equal('0px 8px');
+            expect(fieldsetLegend).to.have.css('font-size').equal(tokens.type.size.normal);
+            expect(fieldsetLegend).to.have.css('font-weight').equal(tokens.type.fontWeight.normal);
+            expect(fieldsetLegend).to.have.css('padding').equal(`0px ${tokens.spacing.s}`);
         });
     });
 
@@ -53,7 +54,7 @@ describe('Forms / fieldset - disabled', () => {
     });
 
     it('fieldset has correct hover styles when disabled', () => {
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFontLight);
     });
 });
@@ -66,7 +67,7 @@ describe('Forms / fieldset - success', () => {
     });
 
     it('fieldset has correct success styles', () => {
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFont);
     });
 });
@@ -79,7 +80,7 @@ describe('Forms / fieldset - error', () => {
     });
 
     it('fieldset has correct error styles', () => {
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFont);
     });
 });

@@ -38,7 +38,7 @@ describe('Toujou search grid', () => {
         cy.get('.search .input--search').should('have.css', 'color', colors.colorFont);
         cy.get('.search .input--search').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.search .input--search').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.search .input--search').should('have.css', 'font-weight', '600');
+        cy.get('.search .input--search').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
 
         cy.get('.search .button--search').should('have.css', 'width', '141.21875px');
         cy.get('.search .button--search').should('have.css', 'height', '46px');

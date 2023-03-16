@@ -57,7 +57,7 @@ ul,
 ol,
 table {
     font-size: var(--font-size-normal);
-    font-weight: var(--line-height-normal);
+    font-weight: var(--font-weight-text-normal);
     line-height: var(--line-height-normal);
     font-family: var(--font-family-text);
     color: var(--color-font);

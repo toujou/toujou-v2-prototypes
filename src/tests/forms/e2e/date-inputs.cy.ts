@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Forms / date inputs', () => {
     beforeEach(() => {
@@ -36,12 +37,12 @@ describe('Forms / date inputs', () => {
         cy.get('.input-group--date .input--date').then((inputDate) => {
             expect(inputDate).to.exist;
             expect(inputDate).to.have.css('position').equal('relative');
-            expect(inputDate).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
+            expect(inputDate).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorFontLight}`);
             expect(inputDate).to.have.css('background-color').equal(colors.colorBg);
-            expect(inputDate).to.have.css('padding').equal('24px 8px 8px');
+            expect(inputDate).to.have.css('padding').equal(`${tokens.spacing.m} ${tokens.spacing.s} ${tokens.spacing.s}`);
             expect(inputDate).to.have.css('color').equal(colors.colorFont);
-            expect(inputDate).to.have.css('font-size').equal('16px');
-            expect(inputDate).to.have.css('font-weight').equal('600');
+            expect(inputDate).to.have.css('font-size').equal(tokens.type.size.normal);
+            expect(inputDate).to.have.css('font-weight').equal(tokens.type.fontWeight.normal);
         });
     });
 
@@ -49,33 +50,33 @@ describe('Forms / date inputs', () => {
         cy.get('.input-group--date-jquery .input--date').then((inputDateJQuery) => {
             expect(inputDateJQuery).to.exist;
             expect(inputDateJQuery).to.have.css('position').equal('relative');
-            expect(inputDateJQuery).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
+            expect(inputDateJQuery).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorFontLight}`);
             expect(inputDateJQuery).to.have.css('background-color').equal(colors.colorBg);
-            expect(inputDateJQuery).to.have.css('padding').equal('24px 8px 8px');
+            expect(inputDateJQuery).to.have.css('padding').equal(`${tokens.spacing.m} ${tokens.spacing.s} ${tokens.spacing.s}`);
             expect(inputDateJQuery).to.have.css('color').equal(colors.colorFont);
-            expect(inputDateJQuery).to.have.css('font-size').equal('16px');
-            expect(inputDateJQuery).to.have.css('font-weight').equal('600');
+            expect(inputDateJQuery).to.have.css('font-size').equal(tokens.type.size.normal);
+            expect(inputDateJQuery).to.have.css('font-weight').equal(tokens.type.fontWeight.normal);
         });
     });
 
     it('input date has correct hover styles', () => {
         cy.get('.input-group--date .input--date').realHover();
-        cy.get('.input-group--date .input--date').should('have.css', 'border', `1px solid ${colors.colorFont}`)
+        cy.get('.input-group--date .input--date').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`)
     });
 
     it('input jquery date has correct hover styles', () => {
         cy.get('.input-group--date-jquery .input--date').realHover();
-        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `1px solid ${colors.colorFont}`)
+        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`)
     });
 
     it('input date has correct focus styles', () => {
         cy.get('.input-group--date .input--date').focus();
-        cy.get('.input-group--date .input--date').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
+        cy.get('.input-group--date .input--date').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`)
     });
 
     it('input date jquery has correct focus styles', () => {
         cy.get('.input-group--date-jquery .input--date').focus();
-        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
+        cy.get('.input-group--date-jquery .input--date').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`)
     });
 });
 

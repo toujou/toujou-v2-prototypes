@@ -103,6 +103,7 @@ export default defineConfig({
                 xl: '48px',
                 l: '32px',
                 m: '24px',
+                ms: '20px',
                 normal: '16px',
                 s: '8px',
                 xs: '4px',
@@ -143,6 +144,11 @@ export default defineConfig({
                 fontFamily: {
                     headline: 'Ubuntu, sans-serif',
                     text: 'Mulish, sans-serif',
+                },
+                fontWeight: {
+                    normal: '600',
+                    bold: '800',
+                    headline: '600'
                 }
             },
             zIndex: {
