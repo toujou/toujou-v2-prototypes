@@ -112,39 +112,66 @@ describe('PN Nav', () => {
     });
 
     it.only('has correct image hover styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
 
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('content').should('eq', '');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('position').should('eq', 'absolute');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('left').should('eq', '476px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('top').should('eq', '480px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('transform').should('eq', 'matrix(1, 0, 0, 1, -14, -14)');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('height').should('eq', '28px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('width').should('eq', '28px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('-webkit-mask-position').should('eq', '50% 50%');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('-webkit-mask-size').should('eq', 'contain');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('-webkit-mask-repeat').should('eq', 'no-repeat');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-image-circle-filled.svg")');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('pointer-events').should('eq', 'none');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('transition').should('eq', `opacity ${tokens.animation.durationFast} ${tokens.animation.easingNormal} 0s`);
 
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('content').should('eq', '');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('position').should('eq', 'absolute');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('top').should('eq', '0px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('left').should('eq', '0px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('height').should('eq', '960px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('width').should('eq', '952px');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('background-color').should('eq', colors.colorBlackO50);
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('pointer-events').should('eq', 'none');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('opacity').should('eq', '0');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('transition').should('eq', `opacity ${tokens.animation.durationFast} ${tokens.animation.easingNormal} 0s`);
 
         cy.get('.portfolio-gallery .slider-slide:nth-child(2) .portfolio-gallery__link').realHover();
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').realHover();
         cy.wait(300);
 
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('opacity').should('eq', '1');
+        // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('opacity').should('eq', '1');
 
     });
