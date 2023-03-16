@@ -73,7 +73,7 @@ describe('lightbox', () => {
 
     });
 
-    it.only('can open', () => {
+    it('can open', () => {
         cy.get('.pswp').should('not.exist');
         cy.get('.media-grid[lightbox-parent-id="1"] .single-media:first-child .lightbox-item').click();
         cy.wait(10);

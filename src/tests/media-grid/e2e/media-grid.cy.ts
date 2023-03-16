@@ -67,7 +67,7 @@ describe('media grid - 4 columns', () => {
         cy.get('body').resetRealHover();
     });
 
-    it.only('has correct 4 columns styles', () => {
+    it('has correct 4 columns styles', () => {
         cy.get('toujou-media-grid').invoke('attr', 'media-grid-column-number').should('eq', '4');
         cy.get('.media-grid').should('have.css', 'grid-template-columns', '324px 324px 324px 324px');
     });

@@ -111,7 +111,7 @@ describe('PN Nav', () => {
         cy.get('.portfolio-gallery .slider-slide:nth-child(5)').should('have.css', 'grid-column', '3 / auto');
     });
 
-    it.only('has correct image hover styles', () => {
+    it('has correct image hover styles', () => {
         // @ts-ignore
         cy.get('body').resetRealHover();
 

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('Product grid a11y', () => {
+describe('Toujou search a11y', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-search--search');
         cy.injectAxe();

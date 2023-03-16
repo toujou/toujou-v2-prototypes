@@ -89,7 +89,7 @@ describe('overlay theme dark', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-overlay--overlay&args=overlayTheme:dark');
     });
 
-    it.only('has correct dark theme styles', () => {
+    it('has correct dark theme styles', () => {
         cy.get('.overlay').should('have.css', 'background-color', colors.colorBlackO75);
 
     });

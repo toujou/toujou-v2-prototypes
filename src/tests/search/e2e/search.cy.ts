@@ -4,7 +4,7 @@
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
-describe('product grid', () => {
+describe('Toujou search grid', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-search--search');
         // @ts-ignore
@@ -76,7 +76,7 @@ describe('product grid', () => {
         cy.get('.search .input--search').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`);
     });
 
-    it.only('has correct input hover styles', () => {
+    it('has correct input hover styles', () => {
         cy.get('.search .input--search').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.search .input--search').realHover();
         cy.get('.search .input--search').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`);

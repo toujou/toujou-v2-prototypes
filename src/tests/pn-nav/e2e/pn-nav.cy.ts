@@ -80,7 +80,7 @@ describe('PN Nav', () => {
         cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__image').should('have.css', 'object-fit', 'cover');
     });
 
-    it.only('has correct hover styles', () => {
+    it('has correct hover styles', () => {
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').realHover();
         cy.wait(300)
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"] .pn-nav__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -48, 0)');
