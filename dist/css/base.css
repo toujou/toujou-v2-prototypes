@@ -529,7 +529,7 @@ figure {
     --z-index-contact-box: 3500;
     --z-index-modal: 10000;
     --z-index-overlay: 50000;
-    --z-index-important: 2147483647;
+    --z-index-important: 2147483641;
 }
 
 :root {
