@@ -42,7 +42,8 @@
         background-color var(--animation-duration-normal) var(--animation-easing-normal);
 
     --pn-nav-title-color: var(--color-primary-dark);
-    --pn-nav-title-cont-size: var(--font-size-normal);
+    --pn-nav-title-font-family: var(--font-family-headline);
+    --pn-nav-title-font-size: var(--font-size-normal);
     --pn-nav-title-margin: 0;
 
     --pn-nav-image-size: calc(var(--pn-nav-height) - var(--spacing-normal));
@@ -106,7 +107,8 @@
 
 .pn-nav__title {
     color: var(--pn-nav-title-color);
-    font-size: var(--pn-nav-title-cont-size);
+    font-family: var(--pn-nav-title-font-family);
+    font-size: var(--pn-nav-title-font-size);
     margin: var(--pn-nav-title-margin);
 }
 

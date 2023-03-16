@@ -208,7 +208,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 ${args.hideImage === false || args.hideTitle === false ? `
                     <span class="pn-nav__content">
                         ${args.hideTitle === false ? `
-                            <h5 class="pn-nav__title">Another Page</h5>
+                            <span class="pn-nav__title">Another Page</span>
                         ` : ''}
                         ${args.hideImage === false ? `
                             <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
@@ -223,7 +223,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 ${args.hideImage === false || args.hideTitle === false ? `
                     <span class="pn-nav__content">
                         ${args.hideTitle === false ? `
-                            <h5 class="pn-nav__title">Nice Page</h5>
+                            <span class="pn-nav__title">Nice Page</span>
                         ` : ''}
                         ${args.hideImage === false ? `
                             <img src="https://picsum.photos/72" alt="beautiful image" class="pn-nav__image">
