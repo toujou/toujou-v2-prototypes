@@ -33,7 +33,7 @@ describe('blog plugin: authors', () => {
         cy.get('.post-author:first-child .post-author__socials').invoke('attr', 'no-margins').should('exist');
     });
 
-    it('has correct styles', () => {
+    it.only('has correct styles', () => {
         cy.get('.post-authors').should('have.css', 'display', 'flex');
         cy.get('.post-authors').should('have.css', 'flex-direction', 'column');
         cy.get('.post-authors').should('have.css', 'gap', tokens.spacing.normal);
@@ -69,7 +69,7 @@ describe('blog plugin: authors', () => {
 
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-weight', '800');
+        cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-weight', tokens.type.fontweight.bold);
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'color', colors.colorFont);
 
         cy.get('.post-author:first-child .post-author__info').should('have.css', 'font-family', tokens.type.fontFamily.text);

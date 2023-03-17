@@ -76,7 +76,7 @@ describe('image-card', () => {
         cy.get(`${imageCard} .image-card__title`).should('have.css', 'background-color', colors.colorFontDark);
         cy.get(`${imageCard} .image-card__title`).should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get(`${imageCard} .image-card__title`).should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get(`${imageCard} .image-card__title`).should('have.css', 'font-weight', '600');
+        cy.get(`${imageCard} .image-card__title`).should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get(`${imageCard} .image-card__title`).should('have.css', 'padding', `${tokens.spacing.s}`);
         cy.get(`${imageCard} .image-card__title`).should('have.css', 'margin', '0px');
     });

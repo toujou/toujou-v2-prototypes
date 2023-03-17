@@ -34,7 +34,7 @@ describe('lightbox', () => {
         cy.get('.pswp').should('have.css', 'left', '0px');
         cy.get('.pswp').should('have.css', 'width', '1920px');
         cy.get('.pswp').should('have.css', 'height', '1080px');
-        cy.get('.pswp').should('have.css', 'z-index', '100000');
+        cy.get('.pswp').should('have.css', 'z-index', tokens.zIndex.modal);
         cy.get('.pswp').should('have.css', 'overflow', 'hidden');
 
         cy.get('.pswp .pswp__bg').should('have.css', 'position', 'absolute');

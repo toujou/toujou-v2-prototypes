@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Forms / form progress', () => {
     beforeEach(() => {
@@ -22,11 +23,11 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress').should('have.css', 'flex-direction', 'column');
         cy.get('.form-progress').should('have.css', 'align-items', 'flex-start');
         cy.get('.form-progress').should('have.css', 'justify-content', 'flex-start');
-        cy.get('.form-progress').should('have.css', 'gap', '16px');
+        cy.get('.form-progress').should('have.css', 'gap', tokens.spacing.normal);
         cy.get('.form-progress').should('have.css', 'margin-top', '0px');
         cy.get('.form-progress').should('have.css', 'margin-bottom', '0px');
-        cy.get('.form-progress').should('have.css', 'padding-top', '24px');
-        cy.get('.form-progress').should('have.css', 'padding-bottom', '24px');
+        cy.get('.form-progress').should('have.css', 'padding-top', tokens.spacing.m);
+        cy.get('.form-progress').should('have.css', 'padding-bottom', tokens.spacing.m);
     });
 
     it('form-progress headline has correct stlyes', () => {
@@ -49,7 +50,7 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress__item').should('have.css', 'flex-flow', 'column nowrap');
         cy.get('.form-progress__item').should('have.css', 'justify-content', 'center');
         cy.get('.form-progress__item').should('have.css', 'align-items', 'center');
-        cy.get('.form-progress__item').should('have.css', 'margin-right', '24px');
+        cy.get('.form-progress__item').should('have.css', 'margin-right', tokens.spacing.m);
 
         // @ts-ignore // "FUTURE"
         cy.get('.form-progress__item:nth-child(4)').after('background-color').should('eq', `rgba(0, 0, 0, 0)`);
@@ -59,33 +60,33 @@ describe('Forms / form progress', () => {
         // @ts-ignore // ACTIVE
         cy.get('.form-progress__item:nth-child(3)').after('background-color').should('eq', colors.colorPrimary);
         // @ts-ignore
-        cy.get('.form-progress__item:nth-child(3)').after('border').should('eq', `1px solid ${colors.colorPrimary}`);
+        cy.get('.form-progress__item:nth-child(3)').after('border').should('eq', `${tokens.border.normal} solid ${colors.colorPrimary}`);
 
         // @ts-ignore // COMPLeTED
         cy.get('.form-progress__item:nth-child(2)').after('background-color').should('eq', colors.colorPrimary);
         // @ts-ignore
-        cy.get('.form-progress__item:nth-child(2)').after('border').should('eq', `1px solid ${colors.colorPrimary}`);
+        cy.get('.form-progress__item:nth-child(2)').after('border').should('eq', `${tokens.border.normal} solid ${colors.colorPrimary}`);
     });
 
     it('form-progress index have correct styles', () => {
         cy.get('.form-progress__index').should('have.css', 'width', '28px');
         cy.get('.form-progress__index').should('have.css', 'height', '28px');
-        cy.get('.form-progress__index').should('have.css', 'font-size', '16px');
-        cy.get('.form-progress__index').should('have.css', 'line-height', '28px');
-        cy.get('.form-progress__index').should('have.css', 'border-radius', '50%');
+        cy.get('.form-progress__index').should('have.css', 'font-size', tokens.type.size.normal);
+        cy.get('.form-progress__index').should('have.css', 'line-height', tokens.type.lineHeight.m);
+        cy.get('.form-progress__index').should('have.css', 'border-radius', tokens.borderRadius.circle);
         cy.get('.form-progress__index').should('have.css', 'text-align', 'center');
         cy.get('.form-progress__index').should('have.css', 'box-sizing', 'content-box');
 
         // completed
-        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
+        cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
         cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'background-color', colors.colorPrimaryO10);
         cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'color',colors. colorPrimary);
         // active
-        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorPrimary}`);
+        cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
         cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.form-progress__item[active] .form-progress__index').should('have.css', 'color', colors.colorBg);
         // "future"
-        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
+        cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorFontLight}`);
         cy.get('.form-progress__item:last-child .form-progress__index').should('have.css', 'color', colors.colorFontLight);
     });
 });

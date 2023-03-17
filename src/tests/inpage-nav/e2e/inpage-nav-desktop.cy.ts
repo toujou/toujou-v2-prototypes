@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('inpage-nav desktop - default', () => {
     beforeEach(() => {
@@ -30,11 +31,11 @@ describe('inpage-nav desktop - default', () => {
     it('nav has correct styles', () => {
         cy.get('.inpage-nav').then((nav) => {
             expect(nav).to.have.css('display').eq('grid');
-            expect(nav).to.have.css('margin-top').eq('32px');
-            expect(nav).to.have.css('margin-bottom').eq('32px');
-            expect(nav).to.have.css('padding').eq('0px 8px');
+            expect(nav).to.have.css('margin-top').eq(tokens.spacing.l);
+            expect(nav).to.have.css('margin-bottom').eq(tokens.spacing.l);
+            expect(nav).to.have.css('padding').eq(`0px ${tokens.spacing.s}`);
             expect(nav).to.have.css('position').eq('relative');
-            expect(nav).to.have.css('border-bottom').eq(`1px solid rgba(0, 0, 0, 0)`);
+            expect(nav).to.have.css('border-bottom').eq(`${tokens.borer.normal} solid rgba(0, 0, 0, 0)`);
             expect(nav).to.have.css('z-index').eq('1');
             expect(nav).to.have.css('opacity').eq('1');
             expect(nav).to.have.css('border-radius').eq('0px');
@@ -56,7 +57,7 @@ describe('inpage-nav desktop - default', () => {
     it('label has correct styles', () => {
         cy.get('.inpage-nav__label').then((label) => {
             expect(label).to.have.css('grid-area').eq('label / label / label / label');
-            expect(label).to.have.css('font-weight').eq('600');
+            expect(label).to.have.css('font-weight').eq(tokens.type.fontWeight.headline);
             expect(label).to.have.css('color').eq(colors.colorFont);
             expect(label).to.have.css('display').eq('flex');
             expect(label).to.have.css('align-items').eq('center');
@@ -88,11 +89,11 @@ describe('inpage-nav desktop - default', () => {
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').then((link) => {
             expect(link).to.have.css('position').eq('relative');
             expect(link).to.have.css('text-decoration').eq(`none solid ${colors.colorPrimary}`);
-            expect(link).to.have.css('font-weight').eq('800');
+            expect(link).to.have.css('font-weight').eq(tokens.type.fontWeight.bold);
             expect(link).to.have.css('color').eq(colors.colorPrimary);
             expect(link).to.have.css('display').eq('flex');
             expect(link).to.have.css('align-items').eq('center');
-            expect(link).to.have.css('padding').eq('0px 16px');
+            expect(link).to.have.css('padding').eq(`0px ${tokens.spacing.normal}`);
         })
     });
 

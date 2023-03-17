@@ -35,7 +35,7 @@ describe('Forms / fieldset', () => {
 
     it('fieldset has correct focus styles', () => {
         cy.get('.fieldset .input-group:last-child .input').focus();
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
+        cy.get('.fieldset').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`)
         cy.get('.fieldset__legend').should('have.css', 'color', colors.colorPrimary)
     });
 });
@@ -49,7 +49,7 @@ describe('Forms / fieldset - disabled', () => {
 
     it('fieldset has correct disabled styles', () => {
         cy.get('.fieldset').invoke('attr', 'class').should('contain', 'fieldset--disabled');
-        cy.get('.fieldset').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.fieldset').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.fieldset__legend').should('have.css', 'color', colors.colorFontLight);
     });
 

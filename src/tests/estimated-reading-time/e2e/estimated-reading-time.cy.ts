@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('estimated-reading-time', () => {
     beforeEach(() => {
@@ -25,8 +26,8 @@ describe('estimated-reading-time', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.estimated-reading-time').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.estimated-reading-time').should('have.css', 'font-size', '16px');
+        cy.get('.estimated-reading-time').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.estimated-reading-time').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.estimated-reading-time').should('have.css', 'color', colors.colorFont);
         cy.get('.estimated-reading-time').should('have.css', 'display', 'inline-flex');
         cy.get('.estimated-reading-time').should('have.css', 'align-items', 'center');

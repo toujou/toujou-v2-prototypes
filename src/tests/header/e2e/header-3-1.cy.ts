@@ -3,6 +3,7 @@
 const desktopViewportWidth = Cypress.env('desktopViewportWidth');
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('header', () => {
     beforeEach(() => {
@@ -85,14 +86,14 @@ describe('header - vertical position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('vertical-position', 'top');
         });
-        cy.get('.header-content').should('have.css', 'top', '64px');
+        cy.get('.header-content').should('have.css', 'top', tokens.spacing.xxl);
     });
 
     it('has correct "bottom" vertical position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('vertical-position', 'bottom');
         });
-        cy.get('.header-content').should('have.css', 'bottom', '64px');
+        cy.get('.header-content').should('have.css', 'bottom', tokens.spacing.xxl);
     });
 });
 
@@ -116,14 +117,14 @@ describe('header - horizontal position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'left');
         });
-        cy.get('.header-content').should('have.css', 'left', '64px');
+        cy.get('.header-content').should('have.css', 'left', tokens.spacing.xxl);
     });
 
     it('has correct "right" horizontal position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'right');
         });
-        cy.get('.header-content').should('have.css', 'right', '64px');
+        cy.get('.header-content').should('have.css', 'right', tokens.spacing.xxl);
     });
 });
 

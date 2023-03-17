@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('contact box', () => {
     beforeEach(() => {
@@ -27,7 +28,7 @@ describe('contact box', () => {
         cy.get('.contact-box').should('have.css', 'width', '1905px');
         cy.get('.contact-box').should('have.css', 'justify-content', 'center');
         cy.get('.contact-box').should('have.css', 'pointer-events', 'none');
-        cy.get('.contact-box').should('have.css', 'z-index', '3500');
+        cy.get('.contact-box').should('have.css', 'z-index', tokens.zIndex.contactBox);
         cy.get('.contact-box').should('have.css', 'backdrop-filter', 'none');
         cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO75);
     });
@@ -43,7 +44,7 @@ describe('contact box', () => {
         cy.get('.contact-box').should('have.css', 'width', '1920px');
         cy.get('.contact-box').should('have.css', 'justify-content', 'center');
         cy.get('.contact-box').should('have.css', 'pointer-events', 'all');
-        cy.get('.contact-box').should('have.css', 'z-index', '3500');
+        cy.get('.contact-box').should('have.css', 'z-index', tokens.zIndex.contactBox);
         cy.get('.contact-box').should('have.css', 'backdrop-filter', 'none');
         cy.get('.contact-box').should('have.css', 'background-color', colors.colorBlackO75);
     });
@@ -58,8 +59,8 @@ describe('contact box', () => {
         cy.get('.contact-box__card').should('have.css', 'visibility', 'visible');
 
         cy.get('.contact-box__close').should('have.css', 'position', 'absolute');
-        cy.get('.contact-box__close').should('have.css', 'top', '8px');
-        cy.get('.contact-box__close').should('have.css', 'right', '8px');
+        cy.get('.contact-box__close').should('have.css', 'top', tokens.spacing.s);
+        cy.get('.contact-box__close').should('have.css', 'right', tokens.spacing.s);
         cy.get('.contact-box__close').should('have.css', 'display', 'flex');
         cy.get('.contact-box__close').should('have.css', 'align-items', 'center');
         cy.get('.contact-box__close').should('have.css', 'justify-content', 'center');
@@ -74,24 +75,24 @@ describe('contact box', () => {
 
         cy.get('.contact-box__headline').should('have.css', 'text-align', 'center');
         cy.get('.contact-box__headline').should('have.css', 'color', colors.colorFont);
-        cy.get('.contact-box__headline').should('have.css', 'font-family', 'Ubuntu, sans-serif');
-        cy.get('.contact-box__headline').should('have.css', 'font-size', '32px');
-        cy.get('.contact-box__headline').should('have.css', 'margin-bottom', '20px');
+        cy.get('.contact-box__headline').should('have.css', 'font-family', tokens.type.fontFamily.headline);
+        cy.get('.contact-box__headline').should('have.css', 'font-size', tokens.type.size.xl);
+        cy.get('.contact-box__headline').should('have.css', 'margin-bottom', tokens.spacing.ms);
 
         cy.get('.contact-box__items').should('have.css', 'display', 'flex');
         cy.get('.contact-box__items').should('have.css', 'flex-direction', 'column');
         cy.get('.contact-box__items').should('have.css', 'align-items', 'flex-start');
         cy.get('.contact-box__items').should('have.css', 'justify-content', 'flex-start');
-        cy.get('.contact-box__items').should('have.css', 'gap', '8px');
+        cy.get('.contact-box__items').should('have.css', 'gap', tokens.spacing.s);
         cy.get('.contact-box__items').should('have.css', 'margin', '0px');
         cy.get('.contact-box__items').should('have.css', 'width', '204.265625px');
 
         cy.get('.contact-box__item:first-child').should('have.css', 'display', 'flex');
         cy.get('.contact-box__item:first-child').should('have.css', 'align-items', 'center');
         cy.get('.contact-box__item:first-child').should('have.css', 'justify-content', 'center');
-        cy.get('.contact-box__item:first-child').should('have.css', 'gap', '16px');
-        cy.get('.contact-box__item:first-child').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.contact-box__item:first-child').should('have.css', 'font-size', '16px');
+        cy.get('.contact-box__item:first-child').should('have.css', 'gap', tokens.spacing.normal);
+        cy.get('.contact-box__item:first-child').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.contact-box__item:first-child').should('have.css', 'font-size', tokens.type.size.normal);
 
         cy.get('.contact-box__item:first-child .icon').should('exist');
         cy.get('.contact-box__item:first-child .icon').invoke('attr', 'icon-size').should('eq', 'ms');

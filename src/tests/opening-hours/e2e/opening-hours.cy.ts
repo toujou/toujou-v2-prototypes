@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('opening hours', () => {
     beforeEach(() => {
@@ -13,8 +14,8 @@ describe('opening hours', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.opening-hours').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.opening-hours').should('have.css', 'font-size', '16px');
+        cy.get('.opening-hours').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.opening-hours').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.opening-hours').should('have.css', 'line-height', '24px');
         cy.get('.opening-hours').should('have.css', 'color', colors.colorFont);
 
@@ -22,7 +23,7 @@ describe('opening hours', () => {
 
         cy.get('.opening-hours__row').should('have.css', 'display', 'grid');
         cy.get('.opening-hours__row').should('have.css', 'grid-template-columns', '260px 260px');
-        cy.get('.opening-hours__row').should('have.css', 'grid-gap', '16px 16px');
+        cy.get('.opening-hours__row').should('have.css', 'grid-gap', `${tokens.spacing.normal} ${tokens.spacing.normal}`);
 
         cy.get('.opening-hours__day').should('have.css', 'overflow-wrap', 'anywhere');
         cy.get('.opening-hours__day').should('have.css', 'hyphens', 'auto');

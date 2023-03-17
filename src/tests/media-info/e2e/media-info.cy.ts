@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('media-info', () => {
     beforeEach(() => {
@@ -49,13 +50,13 @@ describe('media-info', () => {
 
         cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'display', 'block');
         cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'color', colors.colorBg);
-        cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'font-size', '14px');
+        cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'font-size', tokens.type.size.s);
         cy.get('.single-media:first-child .media-info__figcaption').should('have.css', 'flex-grow', '1');
         cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'display', 'block');
         cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'color', colors.colorBg);
-        cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'font-size', '14px');
+        cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'font-size', tokens.type.size.s);
         cy.get('.single-media:first-child .media-info__copyright').should('have.css', 'flex-grow', '0');
         cy.get('.single-media:first-child .media-info__toggle[slot="open-button"]').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.single-media:first-child .media-info__toggle[slot="close-button"]').should('have.css', 'background-color', colors.colorTransparent);

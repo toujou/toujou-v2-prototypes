@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('code-block', () => {
     beforeEach(() => {
@@ -44,9 +45,9 @@ describe('code-block', () => {
             expect(codeBlockLangTag).to.have.css('top').equal('0px');
             expect(codeBlockLangTag).to.have.css('background-color').equal(colors.colorBgO75);
             expect(codeBlockLangTag).to.have.css('color').equal(colors.colorFont);
-            expect(codeBlockLangTag).to.have.css('padding').equal('4px 8px');
-            expect(codeBlockLangTag).to.have.css('border-radius').equal('0px 0px 0px 2px');
-            expect(codeBlockLangTag).to.have.css('font-size').equal('12px');
+            expect(codeBlockLangTag).to.have.css('padding').equal(`${tokens.spacing.xs} ${tokens.spacing.s}`);
+            expect(codeBlockLangTag).to.have.css('border-radius').equal(`0px 0px 0px ${tokens.borderRadius.s}`);
+            expect(codeBlockLangTag).to.have.css('font-size').equal(tokens.type.size.xs);
         });
     });
 })

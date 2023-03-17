@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('rating-placeholder', () => {
     beforeEach(() => {
@@ -23,7 +24,7 @@ describe('rating-placeholder', () => {
         cy.get('.media-placeholder').should('have.css', 'background-color', colors.colorFontLight);
         cy.get('.media-placeholder').should('have.css', 'opacity', '1');
         cy.get('.media-placeholder').should('have.css', 'position', 'relative');
-        cy.get('.media-placeholder').should('have.css', 'border-radius', '4px');
+        cy.get('.media-placeholder').should('have.css', 'border-radius', tokens.borderRadius.normal);
         // @ts-ignore
         cy.get('.media-placeholder').after('position').should('eq', 'absolute');
         // @ts-ignore

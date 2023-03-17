@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Forms / toggle input', () => {
     beforeEach(() => {
@@ -22,18 +23,18 @@ describe('Forms / toggle input', () => {
     it('has correct styles', () => {
         cy.get('.input-group--toggle .toggle-group').then((toggleGroup) => {
             expect(toggleGroup).to.have.css('display').equal('grid');
-            expect(toggleGroup).to.have.css('grid-gap').equal('0px 8px');
+            expect(toggleGroup).to.have.css('grid-gap').equal(`0px ${tokens.spacing.s}`);
         });
         cy.get('.input-group--toggle .toggle-group .toggle').then((toggle) => {
             expect(toggle).to.have.css('appearance').equal('none');
-            expect(toggle).to.have.css('height').equal('16px');
+            expect(toggle).to.have.css('height').equal(tokens.spacing.normal);
             expect(toggle).to.have.css('width').equal('28px');
             expect(toggle).to.have.css('position').equal('relative');
         });
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').before('position').should('eq', 'absolute');
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').before('top').should('eq', '8px');
+        cy.get('.input-group--toggle .toggle-group .toggle').before('top').should('eq', tokens.spacing.s);
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').before('display').should('eq', 'block');
         // @ts-ignore
@@ -49,11 +50,11 @@ describe('Forms / toggle input', () => {
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').after('position').should('eq', 'absolute');
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('width').should('eq', '16px');
+        cy.get('.input-group--toggle .toggle-group .toggle').after('width').should('eq', tokens.spacing.normal);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('height').should('eq', '16px');
+        cy.get('.input-group--toggle .toggle-group .toggle').after('height').should('eq', tokens.spacing.normal);
         // @ts-ignore
-        cy.get('.input-group--toggle .toggle-group .toggle').after('border-radius').should('eq', '50%');
+        cy.get('.input-group--toggle .toggle-group .toggle').after('border-radius').should('eq', tokens.borderRadius.circle);
         // @ts-ignore
         cy.get('.input-group--toggle .toggle-group .toggle').after('background-color').should('eq', colors.colorFont);
     });

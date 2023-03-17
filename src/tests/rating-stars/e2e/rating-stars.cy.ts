@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('rating-stars', () => {
     beforeEach(() => {
@@ -27,7 +28,7 @@ describe('rating-stars', () => {
         cy.get('.rating-stars').shadow().children('.entity').should('have.length', 5);
         cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'position', 'relative');
         cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'left', '-3.2px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '32px');
+        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.xl);
         cy.get('.rating-stars').shadow().get('.overlay').should('exist');
         cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'position', 'absolute');
         cy.get('.rating-stars').shadow().get('.overlay').should('have.have.css', 'top', '0px');
@@ -51,9 +52,9 @@ describe('rating-stars - s', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '14px');
+        cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.s);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-2.8px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '14px');
+        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.s);
     });
 })
 
@@ -67,9 +68,9 @@ describe('rating-stars - normal', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '16px');
+        cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-3.2px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '16px');
+        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.normal);
     });
 })
 
@@ -83,9 +84,9 @@ describe('rating-stars - m', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '24px');
+        cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.m);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-4.8px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '24px');
+        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.m);
     });
 })
 
@@ -99,9 +100,9 @@ describe('rating-stars - l', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '28px');
+        cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.l);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-5.6px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '28px');
+        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.l);
     });
 })
 
@@ -115,9 +116,9 @@ describe('rating-stars - xl', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '32px');
+        cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-6.4px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '32px');
+        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.xl);
     });
 })
 
@@ -131,9 +132,9 @@ describe('rating-stars - xxl', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '40px');
+        cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.xxl);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-8px');
-        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', '40px');
+        cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.xxl);
     });
 })
 

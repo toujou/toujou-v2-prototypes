@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('content card - horizontal', () => {
     beforeEach(() => {
@@ -50,7 +51,7 @@ describe('content card - horizontal', () => {
         cy.get('.content-card:first-child .content-card__figure').should('have.css', 'display', 'block');
         cy.get('.content-card:first-child .content-card__figure').should('have.css', 'margin', '0px');
 
-        cy.get('.content-card:first-child .content-card__image').should('have.css', 'aspect-ratio', '1.618 / 1');
+        cy.get('.content-card:first-child .content-card__image').should('have.css', 'aspect-ratio', tokens.aspectRatio.golden);
         cy.get('.content-card:first-child .content-card__image').should('have.css', 'display', 'block');
         cy.get('.content-card:first-child .content-card__image').should('have.css', 'object-fit', 'cover');
         cy.get('.content-card:first-child .content-card__image').should('have.css', 'vertical-align', 'middle');
@@ -59,14 +60,14 @@ describe('content card - horizontal', () => {
         cy.get('.content-card:first-child .content-card__content').should('have.css', 'flex', '0 0 calc(50% - 16px)');
         cy.get('.content-card:first-child .content-card__content').should('have.css', 'padding', '0px');
 
-        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-size', '20px');
+        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-size', tokens.type.size.ms);
         cy.get('.content-card:first-child .content-card__title').should('have.css', 'color', colors.colorFontDark);
-        cy.get('.content-card:first-child .content-card__title').should('have.css', 'margin', '0px 0px 16px');
+        cy.get('.content-card:first-child .content-card__title').should('have.css', 'margin', `0px 0px ${tokens.spacing.normal}`);
 
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'margin', '16px 0px 0px');
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-size', '16px');
+        cy.get('.content-card:first-child .content-card__text').should('have.css', 'margin', `${tokens.spacing.normal} 0px 0px`);
+        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.content-card:first-child .content-card__text').should('have.css', 'color', colors.colorFont);
     });
 });

@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('divider', () => {
     beforeEach(() => {
@@ -17,8 +18,8 @@ describe('divider', () => {
     });
 
     it('has correct margins', () => {
-        cy.get('.divider').should('have.css', 'margin-top', '48px');
-        cy.get('.divider').should('have.css', 'margin-bottom', '48px');
+        cy.get('.divider').should('have.css', 'margin-top', tokens.spacing.xl);
+        cy.get('.divider').should('have.css', 'margin-bottom', tokens.spacing.xl);
     });
 
     it('has correct primary color', () => {

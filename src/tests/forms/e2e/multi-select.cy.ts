@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Forms / multi-select input', () => {
     beforeEach(() => {
@@ -22,21 +23,21 @@ describe('Forms / multi-select input', () => {
 
     it('multi-select select input has correct styles', () => {
         cy.get('.multi-select').should('have.css', 'background-color', colors.colorBg);
-        cy.get('.multi-select').should('have.css', 'border-radius', '4px');
-        cy.get('.multi-select').should('have.css', 'padding', '24px 8px 8px');
-        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.multi-select').should('have.css', 'border-radius', tokens.borderRadius.normal);
+        cy.get('.multi-select').should('have.css', 'padding', `${tokens.spacing.m} ${tokens.spacing.s} ${tokens.spacing.s}`);
+        cy.get('.multi-select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
     });
 
     it('select has correct hover styles', () => {
         cy.get('.multi-select').realHover();
-        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colors.colorFont}`);
-        cy.get('.multi-select').should('have.css', 'outline', `${colors.colorFont} solid 1px`);
+        cy.get('.multi-select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`);
+        cy.get('.multi-select').should('have.css', 'outline', `${colors.colorFont} solid ${tokens.border.normal}`);
     });
 
     it('select has correct focus styles', () => {
         cy.get('.multi-select').focus();
-        cy.get('.multi-select').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
-        cy.get('.multi-select').should('have.css', 'outline', `${colors.colorPrimary} solid 1px`);
+        cy.get('.multi-select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`);
+        cy.get('.multi-select').should('have.css', 'outline', `${colors.colorPrimary} solid ${tokens.border.normal}`);
     });
 });
 
@@ -49,7 +50,7 @@ describe('Forms / multi-select input - disabled', () => {
 
     it('multi-select has correct disabled styles', () => {
         cy.get('.input-group--multi-select').invoke('attr', 'class').should('contain', 'input-group--disabled');
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.input-group--multi-select .multi-select').should('have.css', 'pointer-events', 'none');
         // @ts-ignore
     });
@@ -70,8 +71,8 @@ describe('Forms / multi-select - success', () => {
     });
 
     it('multi-select has correct success styles', () => {
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colors.colorSuccess}`);
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSuccess}`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colors.colorSuccess} solid ${tokens.border.normal}`);
     });
 });
 
@@ -83,8 +84,8 @@ describe('Forms / multi-select - error', () => {
     });
 
     it('multi-select has correct error styles', () => {
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `1px solid ${colors.colorError}`);
-        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colors.colorError} solid 1px`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorError}`);
+        cy.get('.input-group--multi-select .multi-select').should('have.css', 'outline', `${colors.colorError} solid ${tokens.border.normal}`);
     });
 });
 

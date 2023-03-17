@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('inpage-nav mobile - default', () => {
     beforeEach(() => {
@@ -31,10 +32,10 @@ describe('inpage-nav mobile - default', () => {
     it('nav has correct styles', () => {
         cy.get('.inpage-nav').then((nav) => {
             expect(nav).to.have.css('display').eq('grid');
-            expect(nav).to.have.css('margin').eq('32px 16px');
-            expect(nav).to.have.css('padding').eq('0px 8px');
+            expect(nav).to.have.css('margin').eq(`${tokens.spacing.l} ${tokens.spacing.normal}`);
+            expect(nav).to.have.css('padding').eq(`0px ${tokens.spacing.s}`);
             expect(nav).to.have.css('position').eq('relative');
-            expect(nav).to.have.css('border-bottom').eq(`1px solid ${colors.colorFont}`);
+            expect(nav).to.have.css('border-bottom').eq(`${tokens.border.normal} solid ${colors.colorFont}`);
             expect(nav).to.have.css('z-index').eq('1');
             expect(nav).to.have.css('opacity').eq('1');
             expect(nav).to.have.css('border-radius').eq('0px');
@@ -56,7 +57,7 @@ describe('inpage-nav mobile - default', () => {
     it('label has correct styles', () => {
         cy.get('.inpage-nav__label').then((label) => {
             expect(label).to.have.css('grid-area').eq('label / label / label / label');
-            expect(label).to.have.css('font-weight').eq('600');
+            expect(label).to.have.css('font-weight').eq(tokens.type.fontWeight.normal);
             expect(label).to.have.css('color').eq(colors.colorFont);
             expect(label).to.have.css('display').eq('flex');
             expect(label).to.have.css('align-items').eq('center');
@@ -69,11 +70,11 @@ describe('inpage-nav mobile - default', () => {
             expect(list).to.have.css('visibility').eq('hidden');
             expect(list).to.have.css('list-style').eq('outside none none');
             expect(list).to.have.css('margin').eq('0px');
-            expect(list).to.have.css('padding').eq('8px 0px 16px');
+            expect(list).to.have.css('padding').eq(`${tokens.spacing.s} 0px ${tokens.spacing.normal}`);
             expect(list).to.have.css('display').eq('flex');
             expect(list).to.have.css('align-items').eq('flex-start');
             expect(list).to.have.css('justify-content').eq('flex-start');
-            expect(list).to.have.css('gap').eq('8px');
+            expect(list).to.have.css('gap').eq(tokens.spacing.s);
         })
     });
 
@@ -88,11 +89,11 @@ describe('inpage-nav mobile - default', () => {
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').then((link) => {
             expect(link).to.have.css('position').eq('relative');
             expect(link).to.have.css('text-decoration').eq(`none solid ${colors.colorPrimary}`);
-            expect(link).to.have.css('font-weight').eq('800');
+            expect(link).to.have.css('font-weight').eq(tokens.type.fontWeight.bold);
             expect(link).to.have.css('color').eq(colors.colorPrimary);
             expect(link).to.have.css('display').eq('flex');
             expect(link).to.have.css('align-items').eq('center');
-            expect(link).to.have.css('padding').eq('0px 8px 0px 0px');
+            expect(link).to.have.css('padding').eq(`0px ${tokens.spacing.s} 0px 0px`);
         })
     });
 
@@ -104,7 +105,7 @@ describe('inpage-nav mobile - default', () => {
 
     it('cta button has correct styles', () => {
         cy.get('.inpage-nav__cta').then((cta) => {
-            expect(cta).to.have.css('margin').eq('8px 0px');
+            expect(cta).to.have.css('margin').eq(`${tokens.spacing.s} 0px`);
             expect(cta).to.have.css('grid-area').eq('cta / cta / cta / cta');
         })
     });

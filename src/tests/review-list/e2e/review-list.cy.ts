@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('review-list', () => {
     beforeEach(() => {
@@ -43,9 +44,9 @@ describe('review-list', () => {
         cy.get('.reviews').should('have.css', 'width', '960px');
         cy.get('.reviews').should('have.css', 'max-width', '960px');
 
-        cy.get('.review:first-child').should('have.css', 'border-top', `1px solid ${colors.colorFontLight}`);
-        cy.get('.review:first-child').should('have.css', 'border-bottom', `1px solid ${colors.colorFontLight}`);
-        cy.get('.review:first-child').should('have.css', 'padding', '24px 0px');
+        cy.get('.review:first-child').should('have.css', 'border-top', `${tokens.border.normal} solid ${colors.colorFontLight}`);
+        cy.get('.review:first-child').should('have.css', 'border-bottom', `${tokens.border.normal} solid ${colors.colorFontLight}`);
+        cy.get('.review:first-child').should('have.css', 'padding', `${tokens.spacing.m} 0px`);
 
         cy.get('.review:first-child .review__header').should('have.css', 'display', 'flex');
         cy.get('.review:first-child .review__header').should('have.css', 'flex-direction', 'column');

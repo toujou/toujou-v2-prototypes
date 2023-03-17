@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-real-events" />
 
+const tokens = Cypress.env('tokens');
 const colors = Cypress.env('colors');
 
 describe('Forms / file upload', () => {
@@ -26,23 +27,23 @@ describe('Forms / file upload', () => {
             expect(fileUploadInput).to.exist;
             expect(fileUploadInput).to.have.attr('type').equal('file');
             expect(fileUploadInput).to.have.css('position').equal('relative');
-            expect(fileUploadInput).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
+            expect(fileUploadInput).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorFontLight}`);
             expect(fileUploadInput).to.have.css('background-color').equal(colors.colorBg);
-            expect(fileUploadInput).to.have.css('padding').equal('24px 8px 8px');
+            expect(fileUploadInput).to.have.css('padding').equal(`${tokens.spacing.m} ${tokens.spacing.s} ${tokens.spacing.s}`);
             expect(fileUploadInput).to.have.css('color').equal(colors.colorFont);
-            expect(fileUploadInput).to.have.css('font-size').equal('16px');
-            expect(fileUploadInput).to.have.css('font-weight').equal('600');
+            expect(fileUploadInput).to.have.css('font-size').equal(tokens.type.size.normal);
+            expect(fileUploadInput).to.have.css('font-weight').equal(tokens.type.fontWeight.normal);
         });
     });
 
     it('file upload input has correct hover styles', () => {
         cy.get('.input-group--file-upload .input').realHover();
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorFont}`)
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`)
     });
 
     it('file upload input has correct focus styles', () => {
         cy.get('.input-group--file-upload .input').focus();
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorPrimary}`)
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`)
     });
 });
 
@@ -56,7 +57,7 @@ describe('Forms / file upload input - disabled', () => {
     it('input--text group has correct disabled styles', () => {
         cy.get('.input-group--file-upload .input').invoke('attr', 'disabled').should('exist');
         cy.get('.input-group--file-upload .input').should('have.css', 'color', colors.colorFontLight)
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.input-group--file-upload .input').should('have.css', 'pointer-events', 'none');
     });
 
@@ -76,8 +77,8 @@ describe('Forms / file upload input - success', () => {
 
     it('input--text group has correct success styles', () => {
         cy.get('.input-group--file-upload .input').should('have.css', 'color', colors.colorFont)
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorSuccess}`);
-        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSuccess}`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colors.colorSuccess} solid ${tokens.border.normal}`);
     });
 });
 
@@ -90,8 +91,8 @@ describe('Forms / file upload input - error', () => {
 
     it('input--text group has correct success styles', () => {
         cy.get('.input-group--file-upload .input').should('have.css', 'color', colors.colorFont)
-        cy.get('.input-group--file-upload .input').should('have.css', 'border', `1px solid ${colors.colorError}`);
-        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colors.colorError} solid 1px`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorError}`);
+        cy.get('.input-group--file-upload .input').should('have.css', 'outline', `${colors.colorError} solid ${tokens.border.normal}`);
     });
 });
 

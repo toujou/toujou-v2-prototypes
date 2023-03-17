@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('toujou-button default', () => {
     beforeEach(() => {
@@ -21,18 +22,18 @@ describe('toujou-button default', () => {
     it('has correct default primary styles', () => {
         cy.get('.button').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimary}`);
         cy.get('.button').realHover();
         cy.get('.button').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorPrimaryDark}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimaryDark}`);
     });
 
     it('has correct default primary focus styles', () => {
         cy.get('.button').focus();
         cy.get('.button').should('have.css', 'background-color', colors.colorPrimaryDark);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorPrimaryDark}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorPrimaryDark}`);
         cy.get('.button').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 
@@ -42,11 +43,11 @@ describe('toujou-button default', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorSecondary}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSecondary}`);
         cy.get('.button').realHover();
         cy.get('.button').should('have.css', 'background-color', colors.colorSecondaryDark);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorSecondaryDark}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSecondaryDark}`);
     });
 
     it('has correct default secondary focus styles', () => {
@@ -56,7 +57,7 @@ describe('toujou-button default', () => {
         cy.get('.button').focus();
         cy.get('.button').should('have.css', 'background-color', colors.colorSecondaryDark);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorSecondaryDark}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSecondaryDark}`);
         cy.get('.button').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 
@@ -66,11 +67,11 @@ describe('toujou-button default', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorFont);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFont}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`);
         cy.get('.button').realHover();
         cy.get('.button').should('have.css', 'background-color', colors.colorFontDark);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontDark}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontDark}`);
     });
 
     it('has correct default font focus styles', () => {
@@ -80,7 +81,7 @@ describe('toujou-button default', () => {
         cy.get('.button').focus();
         cy.get('.button').should('have.css', 'background-color', colors.colorFontDark);
         cy.get('.button').should('have.css', 'color', colors.colorBg);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontDark}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontDark}`);
         cy.get('.button').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 
@@ -91,7 +92,7 @@ describe('toujou-button default', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
         cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
     });
 
     it('has correct default disabled secondary styles', () => {
@@ -101,7 +102,7 @@ describe('toujou-button default', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
         cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
     });
 
     it('has correct disabled font styles', () => {
@@ -111,7 +112,7 @@ describe('toujou-button default', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
         cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorFontLight}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
     });
 
     it('has correct default font size', () => {

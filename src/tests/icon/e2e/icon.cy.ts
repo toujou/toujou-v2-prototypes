@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('toujou-icon', () => {
     beforeEach(() => {
@@ -21,80 +22,80 @@ describe('toujou-icon - sizes', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'xxxl');
         });
-        cy.get('.icon').should('have.css', 'height', '48px');
-        cy.get('.icon').should('have.css', 'width', '48px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.xxxl);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.xxxl);
     });
 
     it('has correct xxl size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'xxl');
         });
-        cy.get('.icon').should('have.css', 'height', '40px');
-        cy.get('.icon').should('have.css', 'width', '40px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.xxl);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.xxl);
     });
 
     it('has correct xl size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'xl');
         });
-        cy.get('.icon').should('have.css', 'height', '32px');
-        cy.get('.icon').should('have.css', 'width', '32px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.xl);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.xl);
     });
 
     it('has correct l size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'l');
         });
-        cy.get('.icon').should('have.css', 'height', '28px');
-        cy.get('.icon').should('have.css', 'width', '28px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.l);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.l);
     });
 
     it('has correct m size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'm');
         });
-        cy.get('.icon').should('have.css', 'height', '24px');
-        cy.get('.icon').should('have.css', 'width', '24px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.m);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.m);
     });
 
     it('has correct ms size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'ms');
         });
-        cy.get('.icon').should('have.css', 'height', '20px');
-        cy.get('.icon').should('have.css', 'width', '20px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.ms);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.ms);
     });
 
     it('has correct normal size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'normal');
         });
-        cy.get('.icon').should('have.css', 'height', '16px');
-        cy.get('.icon').should('have.css', 'width', '16px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.normal);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.normal);
     });
 
     it('has correct s size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 's');
         });
-        cy.get('.icon').should('have.css', 'height', '14px');
-        cy.get('.icon').should('have.css', 'width', '14px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.s);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.s);
     });
 
     it('has correct xs size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'xs');
         });
-        cy.get('.icon').should('have.css', 'height', '12px');
-        cy.get('.icon').should('have.css', 'width', '12px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.xs);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.xs);
     });
 
     it('has correct xxs size', () => {
         cy.get('.icon').then((e) => {
             e[0].setAttribute('icon-size', 'xxs');
         });
-        cy.get('.icon').should('have.css', 'height', '10px');
-        cy.get('.icon').should('have.css', 'width', '10px');
+        cy.get('.icon').should('have.css', 'height', tokens.type.size.xxs);
+        cy.get('.icon').should('have.css', 'width', tokens.type.size.xxs);
     });
 });
 

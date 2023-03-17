@@ -10,14 +10,14 @@ describe('Tokens - type font-families', () => {
 
     it('has correct values for the headline font family variables', () => {
         cy.get('.font-family-headline.font-weight-headline').should('have.css', 'font-family', tokens.type.fontFamily.headline);
-        cy.get('.font-family-headline.font-weight-headline').should('have.css', 'font-weight', '600');
+        cy.get('.font-family-headline.font-weight-headline').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
     });
 
     it('has correct values for the text font-family variables', () => {
         cy.get('.font-family-text.font-weight-text-normal').should('have.css', 'font-family', tokens.type.fontFamily.text);
-        cy.get('.font-family-text.font-weight-text-normal').should('have.css', 'font-weight', '600');
+        cy.get('.font-family-text.font-weight-text-normal').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get('.font-family-text.font-weight-text-bold').should('have.css', 'font-family', tokens.type.fontFamily.text);
-        cy.get('.font-family-text.font-weight-text-bold').should('have.css', 'font-weight', '800');
+        cy.get('.font-family-text.font-weight-text-bold').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
     });
 })
 
@@ -74,9 +74,9 @@ describe('Tokens - type font-styles', () => {
 
     it('has correct values for the headline font styles variables', () => {
         cy.get('.font-style-normal').should('have.css', 'font-style', 'normal');
-        cy.get('.font-style-bold').should('have.css', 'font-weight', '800');
+        cy.get('.font-style-bold').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
         cy.get('.font-style-italic').should('have.css', 'font-style', 'italic');
-        cy.get('.font-style-bold.font-style-italic').should('have.css', 'font-weight', '800');
+        cy.get('.font-style-bold.font-style-italic').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
         cy.get('.font-style-bold.font-style-italic').should('have.css', 'font-style', 'italic');
         cy.get('.font-style-strikethrough').should('have.css', 'text-decoration', 'line-through solid rgb(42, 54, 60)');
         cy.get('.font-style-underline').should('have.css', 'text-decoration', 'underline solid rgb(42, 54, 60)');
@@ -91,47 +91,47 @@ describe('Tokens - type tags', () => {
     it('has correct styles for the different tags', () => {
         cy.get('.demo-font-tags h1').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.demo-font-tags h1').should('have.css', 'font-size', tokens.type.size.xxxl);
-        cy.get('.demo-font-tags h1').should('have.css', 'font-weight', '600');
+        cy.get('.demo-font-tags h1').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.demo-font-tags h1').should('have.css', 'color', colors.colorPrimary);
 
         cy.get('.demo-font-tags h2').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.demo-font-tags h2').should('have.css', 'font-size', tokens.type.size.xxl);
-        cy.get('.demo-font-tags h2').should('have.css', 'font-weight', '600');
+        cy.get('.demo-font-tags h2').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.demo-font-tags h2').should('have.css', 'color', colors.colorPrimary);
 
         cy.get('.demo-font-tags h3').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.demo-font-tags h3').should('have.css', 'font-size', tokens.type.size.xl);
-        cy.get('.demo-font-tags h3').should('have.css', 'font-weight', '600');
+        cy.get('.demo-font-tags h3').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.demo-font-tags h3').should('have.css', 'color', colors.colorPrimary);
 
         cy.get('.demo-font-tags h4').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.demo-font-tags h4').should('have.css', 'font-size', tokens.type.size.l);
-        cy.get('.demo-font-tags h4').should('have.css', 'font-weight', '600');
+        cy.get('.demo-font-tags h4').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.demo-font-tags h4').should('have.css', 'color', colors.colorPrimary);
 
         cy.get('.demo-font-tags h5').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.demo-font-tags h5').should('have.css', 'font-size', tokens.type.size.m);
-        cy.get('.demo-font-tags h5').should('have.css', 'font-weight', '600');
+        cy.get('.demo-font-tags h5').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.demo-font-tags h5').should('have.css', 'color', colors.colorPrimary);
 
         cy.get('.demo-font-tags h6').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.demo-font-tags h6').should('have.css', 'font-size', tokens.type.size.ms);
-        cy.get('.demo-font-tags h6').should('have.css', 'font-weight', '600');
+        cy.get('.demo-font-tags h6').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.demo-font-tags h6').should('have.css', 'color', colors.colorPrimary);
 
         cy.get('.demo-font-tags p').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.demo-font-tags p').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.demo-font-tags p').should('have.css', 'font-weight', '1.5');
+        cy.get('.demo-font-tags p').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get('.demo-font-tags p').should('have.css', 'color', colors.colorFont);
 
         cy.get('.demo-font-tags ul li').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.demo-font-tags ul li').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.demo-font-tags ul li').should('have.css', 'font-weight', '1.5');
+        cy.get('.demo-font-tags ul li').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get('.demo-font-tags ul li').should('have.css', 'color', colors.colorFont);
 
         cy.get('.demo-font-tags ol li').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.demo-font-tags ol li').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.demo-font-tags ol li').should('have.css', 'font-weight', '1.5');
+        cy.get('.demo-font-tags ol li').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get('.demo-font-tags ol li').should('have.css', 'color', colors.colorFont);
     });
 })
@@ -144,22 +144,22 @@ describe('Tokens - type text styles', () => {
     it('has correct values for the different text styles', () => {
         cy.get('#root h1 + p').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('#root h1 + p').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('#root h1 + p').should('have.css', 'font-weight', '1.5');
+        cy.get('#root h1 + p').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get('#root h1 + p').should('have.css', 'line-height', tokens.type.lineHeight.normal);
 
         cy.get('#root p.teasertext').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('#root p.teasertext').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('#root p.teasertext').should('have.css', 'font-weight', '800');
+        cy.get('#root p.teasertext').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
         cy.get('#root p.teasertext').should('have.css', 'line-height', tokens.type.lineHeight.normal);
 
         cy.get('#root p.infotext').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('#root p.infotext').should('have.css', 'font-size', tokens.type.size.ms);
-        cy.get('#root p.infotext').should('have.css', 'font-weight', '1.5');
+        cy.get('#root p.infotext').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get('#root p.infotext').should('have.css', 'line-height', '30px');
 
         cy.get('#root p.notes').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('#root p.notes').should('have.css', 'font-size', tokens.type.size.s);
-        cy.get('#root p.notes').should('have.css', 'font-weight', '1.5');
+        cy.get('#root p.notes').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
         cy.get('#root p.notes').should('have.css', 'line-height', '21px');
     });
 })

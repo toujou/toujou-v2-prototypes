@@ -2,6 +2,7 @@
 
 const desktopViewportHeight = Cypress.env('desktopViewportHeight');
 const desktopViewportWidth = Cypress.env('desktopViewportWidth');
+const tokens = Cypress.env('tokens');
 
 describe('header', () => {
     beforeEach(() => {
@@ -124,14 +125,14 @@ describe('header - vertical position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('vertical-position', 'top');
         });
-        cy.get('.header-content').should('have.css', 'top', '64px');
+        cy.get('.header-content').should('have.css', 'top', tokens.spacing.xxl);
     });
 
     it('has correct "bottom" vertical position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('vertical-position', 'bottom');
         });
-        cy.get('.header-content').should('have.css', 'bottom', '48px');
+        cy.get('.header-content').should('have.css', 'bottom', tokens.spacing.xl);
     });
 });
 

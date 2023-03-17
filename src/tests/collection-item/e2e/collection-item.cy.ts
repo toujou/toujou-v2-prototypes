@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 const firstCardSelector = '.card-collection__item:first-child .collection-item';
 
@@ -42,26 +43,26 @@ describe('collection item - type default', () => {
         });
         cy.get(`${firstCardSelector} .collection-item__image`).then((itemImage) => {
             expect(itemImage).to.have.css('object-fit').equal('cover')
-            expect(itemImage).to.have.css('aspect-ratio').equal('1.618 / 1')
+            expect(itemImage).to.have.css('aspect-ratio').equal(tokens.aspectRatio.golden)
             expect(itemImage).to.have.css('vertical-align').equal('middle')
         });
     });
 
     it('has correct bottom styles', () => {
-        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', '24px');
+        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', tokens.spacing.m);
         cy.get(`${firstCardSelector} .collection-item__title`).then((itemTitle) => {
-            expect(itemTitle).to.have.css('font-size').equal('20px');
+            expect(itemTitle).to.have.css('font-size').equal(tokens.type.size.ms);
             expect(itemTitle).to.have.css('color').equal(colors.colorFontDark);
-            expect(itemTitle).to.have.css('margin').equal('0px 0px 4px');
+            expect(itemTitle).to.have.css('margin').equal(`0px 0px ${tokens.spacing.xs}`);
         });
         cy.get(`${firstCardSelector} .collection-item__subtitles`).should('have.css', 'margin', '0px');
         cy.get(`${firstCardSelector} .collection-item__subtitle`).then((itemSubtitles) => {
             expect(itemSubtitles).to.have.css('color').equal(colors.colorFont);
-            expect(itemSubtitles).to.have.css('font-size').equal('16px');
+            expect(itemSubtitles).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(itemSubtitles).to.have.css('font-style').equal('italic');
         });
         cy.get(`${firstCardSelector} .collection-item__abstract`).then((itemAbstract) => {
-            expect(itemAbstract).to.have.css('font-size').equal('16px');
+            expect(itemAbstract).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(itemAbstract).to.have.css('color').equal(colors.colorFont);
             expect(itemAbstract).to.have.css('text-overflow').equal('ellipsis');
             expect(itemAbstract).to.have.css('-webkit-line-clamp').equal('3');
@@ -73,7 +74,7 @@ describe('collection item - type default', () => {
             expect(itemButton).to.have.css('display').equal('flex');
             expect(itemButton).to.have.css('align-items').equal('center');
             expect(itemButton).to.have.css('justify-content').equal('center');
-            expect(itemButton).to.have.css('gap').equal('8px');
+            expect(itemButton).to.have.css('gap').equal(tokens.spacing.s);
         });
         cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorPrimary);
     });
@@ -195,20 +196,20 @@ describe('collection item - type blog', () => {
         cy.get(`${firstCardSelector} .collection-item__category`).should('exist');
     });
 
-    it('Categories have correct styles', () => {
+    it ('Categories have correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'position', 'absolute');
-        cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'top', '16px');
+        cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'top', tokens.spacing.normal);
         cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'left', '0px');
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'background-color', colors.colorPrimaryLight);
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'color', colors.colorPrimaryDark);
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'display', 'flex');
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'align-items', 'center');
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'justify-content', 'flex-start');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'gap', '4px');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'padding', '4px 16px 4px 8px');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'border-radius', '0px 32px 32px 0px');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'font-size', '14px');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'margin', '0px 0px 4px');
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'gap', tokens.spacing.xs);
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'padding', `${tokens.spacing.xs} ${tokens.spacing.normal} ${tokens.spacing.xs} ${tokens.spacing.s}`);
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'border-radius', `0px ${tokens.borderRadius.xxxl} ${tokens.borderRadius.xxxl} 0px`);
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'font-size', tokens.type.size.s);
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'margin', `0px 0px ${tokens.spacing.xs}`);
     });
 });
 

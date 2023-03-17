@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+const tokens = Cypress.env('tokens');
+
 describe('html multicolumn text - left', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-html-with-text--html-with-text-story-props&args=layout:multicolumn-left');
@@ -24,7 +26,7 @@ describe('html multicolumn text - left', () => {
     it('has correct styles', () => {
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '288px 288px 288px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
 
     });
 })
@@ -53,7 +55,7 @@ describe('html multicolumn text - right', () => {
     it('has correct styles', () => {
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '288px 288px 288px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', '48px 48px');
+        cy.get('toujou-grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
 
     });
 })

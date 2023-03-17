@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('toujou-chip', () => {
     beforeEach(() => {
@@ -258,14 +259,14 @@ describe('toujou-chip - border-radius', () => {
         cy.get('.chip').then((e) => {
             e[0].setAttribute('chip-border-radius', 'small');
         });
-        cy.get('.chip').should('have.css', 'border-radius', '4px');
+        cy.get('.chip').should('have.css', 'border-radius', tokens.borderRadius.normal);
     });
 
     it('has correct medium border-radius', () => {
         cy.get('.chip').then((e) => {
             e[0].setAttribute('chip-border-radius', 'medium');
         });
-        cy.get('.chip').should('have.css', 'border-radius', '8px');
+        cy.get('.chip').should('have.css', 'border-radius', tokens.borderRadius.m);
     });
 
     it('has correct round border-radius', () => {
@@ -285,21 +286,21 @@ describe('toujou-chip - size', () => {
         cy.get('.chip').then((e) => {
             e[0].setAttribute('chip-size', 'extra-small');
         });
-        cy.get('.chip').should('have.css', 'font-size', '12px');
+        cy.get('.chip').should('have.css', 'font-size', tokens.type.size.xs);
     });
 
     it('has correct "small" size', () => {
         cy.get('.chip').then((e) => {
             e[0].setAttribute('chip-size', 'small');
         });
-        cy.get('.chip').should('have.css', 'font-size', '14px');
+        cy.get('.chip').should('have.css', 'font-size', tokens.type.size.s);
     });
 
     it('has correct "small" size', () => {
         cy.get('.chip').then((e) => {
             e[0].setAttribute('chip-size', 'normal');
         });
-        cy.get('.chip').should('have.css', 'font-size', '16px');
+        cy.get('.chip').should('have.css', 'font-size', tokens.type.size.normal);
     });
 });
 

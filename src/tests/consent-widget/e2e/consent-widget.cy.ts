@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('consent widget', () => {
     beforeEach(() => {
@@ -19,27 +20,27 @@ describe('consent widget', () => {
     it('has correct correct styles', () => {
         cy.get('.consent-widget').then((consentWidget) => {
             expect(consentWidget).to.have.css('position').equal('absolute');
-            expect(consentWidget).to.have.css('bottom').equal('16px');
-            expect(consentWidget).to.have.css('left').equal('16px');
+            expect(consentWidget).to.have.css('bottom').equal(tokens.spacing.normal);
+            expect(consentWidget).to.have.css('left').equal(tokens.spacing.normal);
             expect(consentWidget).to.have.css('margin-top').equal('0px');
             expect(consentWidget).to.have.css('margin-bottom').equal('0px');
             expect(consentWidget).to.have.css('z-index').equal('100');
-            expect(consentWidget).to.have.css('padding').equal('24px');
-            expect(consentWidget).to.have.css('border').equal(`1px solid ${colors.colorFontLight}`);
-            expect(consentWidget).to.have.css('border-radius').equal('4px');
+            expect(consentWidget).to.have.css('padding').equal(tokens.spacing.m);
+            expect(consentWidget).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorFontLight}`);
+            expect(consentWidget).to.have.css('border-radius').equal(tokens.borderRadius.normal);
             expect(consentWidget).to.have.css('background-color').equal(colors.colorBg);
         });
 
         cy.get('.consent-widget__title').then((consentWidgetTitle) => {
             expect(consentWidgetTitle).to.have.css('color').equal(colors.colorFont);
-            expect(consentWidgetTitle).to.have.css('margin').equal('0px 0px 16px');
+            expect(consentWidgetTitle).to.have.css('margin').equal(`0px 0px ${tokens.spacing.normal}`);
         });
 
         cy.get('.consent-widget__bottom').then((consentWidgetBottom) => {
             expect(consentWidgetBottom).to.have.css('display').equal('flex');
             expect(consentWidgetBottom).to.have.css('align-items').equal('flex-end');
             expect(consentWidgetBottom).to.have.css('justify-content').equal('flex-start');
-            expect(consentWidgetBottom).to.have.css('gap').equal('16px');
+            expect(consentWidgetBottom).to.have.css('gap').equal(tokens.spacing.normal);
         });
 
         cy.get('#consentAcceptAllButton').then((acceptAllButton) => {

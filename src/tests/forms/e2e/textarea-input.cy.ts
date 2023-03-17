@@ -68,7 +68,7 @@ describe('Forms / textarea - success', () => {
     it('textarea has correct success styles', () => {
         cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colors.colorFont)
         cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSuccess}`);
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colors.colorSuccess} solid ${tokens.border.normal}`);
     });
 });
 
@@ -82,7 +82,7 @@ describe('Forms / textarea - error', () => {
     it('textarea has correct success styles', () => {
         cy.get('.input-group--textarea .input--textarea').should('have.css', 'color', colors.colorFont)
         cy.get('.input-group--textarea .input--textarea').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorError}`);
-        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colors.colorError} solid 1px`);
+        cy.get('.input-group--textarea .input--textarea').should('have.css', 'outline', `${colors.colorError} solid ${tokens.border.normal}`);
     });
 });
 

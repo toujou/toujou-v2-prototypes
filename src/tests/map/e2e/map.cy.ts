@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Map', () => {
     beforeEach(() => {
@@ -27,7 +28,7 @@ describe('Map', () => {
             expect(mapEl).to.have.css('display').equal('grid');
             expect(mapEl).to.have.css('margin-top').equal('0px');
             expect(mapEl).to.have.css('margin-bottom').equal('0px');
-            expect(mapEl).to.have.css('grid-gap').equal('48px 48px');
+            expect(mapEl).to.have.css('grid-gap').equal(`${tokens.spacing.xl} ${tokens.spacing.xl}`);
             expect(mapEl).to.have.css('grid-template-areas').equal('"map address"');
         });
         cy.get('.map-contact .map-contact__map-container').then((mapContainer) => {
@@ -47,15 +48,15 @@ describe('Map', () => {
         });
         cy.get('.map-contact .map-contact__address').then((mapAddress) => {
             expect(mapAddress).to.have.css('color').equal(colors.colorFont);
-            expect(mapAddress).to.have.css('font-size').equal('16px');
+            expect(mapAddress).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(mapAddress).to.have.css('font-style').equal('normal');
             expect(mapAddress).to.have.css('line-height').equal('24px');
         });
         cy.get('.map-contact .map-contact__socials').then((mapSocials) => {
-            expect(mapSocials).to.have.css('margin').equal('16px 0px 0px');
+            expect(mapSocials).to.have.css('margin').equal(`${tokens.spacing.normal} 0px 0px`);
         });
         cy.get('.map-contact .map-contact__social').then((mapSocial) => {
-            expect(mapSocial).to.have.css('margin').equal('0px 16px 0px 0px');
+            expect(mapSocial).to.have.css('margin').equal(`0px ${tokens.spacing.normal} 0px 0px`);
             expect(mapSocial).to.have.css('color').equal('rgba(0, 0, 0, 0)');
         });
     });
@@ -80,10 +81,10 @@ describe('Map aspect ratio 1:1', () => {
 
     it('has correct ratios', () => {
         cy.get('.map-contact .map-contact__map-container').then((mapContainer) => {
-            expect(mapContainer).to.have.css('aspect-ratio').equal('1 / 1');
+            expect(mapContainer).to.have.css('aspect-ratio').equal(tokens.aspectRatio.square);
         });
         cy.get('.map-contact .map-contact__image').then((mapImage) => {
-            expect(mapImage).to.have.css('aspect-ratio').equal('1 / 1');
+            expect(mapImage).to.have.css('aspect-ratio').equal(tokens.aspectRatio.square);
             expect(mapImage).to.have.css('object-fit').equal('cover');
         });
     });
@@ -96,10 +97,10 @@ describe('Map aspect ratio 16:9', () => {
 
     it('has correct ratios', () => {
         cy.get('.map-contact .map-contact__map-container').then((mapContainer) => {
-            expect(mapContainer).to.have.css('aspect-ratio').equal('16 / 9');
+            expect(mapContainer).to.have.css('aspect-ratio').equal(tokens.aspectRatio.sixteenToNine);
         });
         cy.get('.map-contact .map-contact__image').then((mapImage) => {
-            expect(mapImage).to.have.css('aspect-ratio').equal('16 / 9');
+            expect(mapImage).to.have.css('aspect-ratio').equal(tokens.aspectRatio.sixteenToNine);
             expect(mapImage).to.have.css('object-fit').equal('cover');
         });
     });

@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('Forms / input label', () => {
     beforeEach(() => {
@@ -11,9 +12,9 @@ describe('Forms / input label', () => {
         cy.get('.input-group--text .input-label').then((label) => {
            expect(label).to.have.prop('tagName').equal('LABEL');
            expect(label).to.have.css('position').equal('absolute');
-           expect(label).to.have.css('top').equal('8px');
-           expect(label).to.have.css('left').equal('8px');
-           expect(label).to.have.css('font-size').equal('12px');
+           expect(label).to.have.css('top').equal(tokens.spacing.s);
+           expect(label).to.have.css('left').equal(tokens.spacing.s);
+           expect(label).to.have.css('font-size').equal(tokens.type.size.xs);
            expect(label).to.have.css('color').equal(colors.colorFont);
            expect(label).to.have.css('z-index').equal('1');
         });

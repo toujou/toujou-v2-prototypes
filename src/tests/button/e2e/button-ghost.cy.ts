@@ -2,6 +2,7 @@
 /// <reference types="cypress-real-events" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('toujou-button ghost', () => {
     beforeEach(() => {
@@ -21,18 +22,18 @@ describe('toujou-button ghost', () => {
     it('has correct ghost primary styles', () => {
         cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.button').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
         cy.get('.button').realHover();
         cy.get('.button').should('have.css', 'background-color', colors.colorPrimaryO10);
         cy.get('.button').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
     });
 
     it('has correct ghost primary focus styles', () => {
         cy.get('.button').focus();
         cy.get('.button').should('have.css', 'background-color', colors.colorPrimaryO10);
         cy.get('.button').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
         cy.get('.button').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 
@@ -42,11 +43,11 @@ describe('toujou-button ghost', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.button').should('have.css', 'color', colors.colorSecondary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
         cy.get('.button').realHover();
         cy.get('.button').should('have.css', 'background-color', colors.colorSecondaryO10);
         cy.get('.button').should('have.css', 'color', colors.colorSecondary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
     });
 
     it('has correct ghost secondary focus styles', () => {
@@ -56,7 +57,7 @@ describe('toujou-button ghost', () => {
         cy.get('.button').focus();
         cy.get('.button').should('have.css', 'background-color', colors.colorSecondaryO10);
         cy.get('.button').should('have.css', 'color', colors.colorSecondary);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
         cy.get('.button').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 
@@ -66,11 +67,11 @@ describe('toujou-button ghost', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
         cy.get('.button').realHover();
         cy.get('.button').should('have.css', 'background-color', colors.colorFontO10);
         cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
     });
 
     it('has correct ghost font focus styles', () => {
@@ -80,7 +81,7 @@ describe('toujou-button ghost', () => {
         cy.get('.button').focus();
         cy.get('.button').should('have.css', 'background-color', colors.colorFontO10);
         cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
         cy.get('.button').should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 
@@ -91,7 +92,7 @@ describe('toujou-button ghost', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.button').should('have.css', 'color', colors.colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
     });
 
     it('has correct ghost disabled secondary ghost styles', () => {
@@ -101,7 +102,7 @@ describe('toujou-button ghost', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.button').should('have.css', 'color', colors.colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
     });
 
     it('has correct ghost disabled font ghost styles', () => {
@@ -111,7 +112,7 @@ describe('toujou-button ghost', () => {
         });
         cy.get('.button').should('have.css', 'background-color', colors.colorTransparent);
         cy.get('.button').should('have.css', 'color', colors.colorFontLight);
-        cy.get('.button').should('have.css', 'border', `1px solid ${colors.colorTransparent}`);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorTransparent}`);
     });
 });
 

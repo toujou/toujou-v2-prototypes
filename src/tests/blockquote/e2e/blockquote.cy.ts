@@ -42,7 +42,7 @@ describe('blockquote', () => {
         cy.get('toujou-blockquote .blockquote__image').should('have.css', 'justify-self', 'center');
         cy.get('toujou-blockquote .blockquote__image').should('have.css', 'object-fit', 'cover');
         cy.get('toujou-blockquote .blockquote__image').should('have.css', 'vertical-align', 'middle');
-        cy.get('toujou-blockquote .blockquote__image').should('have.css', 'border-radius', '50%');
+        cy.get('toujou-blockquote .blockquote__image').should('have.css', 'border-radius', tokens.borderRadius.circle);
         cy.get('toujou-blockquote .blockquote__image').should('have.css', 'margin', '0px');
         cy.get('toujou-blockquote .blockquote__image').should('have.css', 'grid-area', 'blockquoteImage / blockquoteImage / blockquoteImage / blockquoteImage');
     });
@@ -52,7 +52,7 @@ describe('blockquote', () => {
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'color', colors.colorFont);
-        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'margin', '48px 0px 0px');
+        cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'margin', `${tokens.spacing.xl} 0px 0px`);
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get('toujou-blockquote .blockquote__blockquote').should('have.css', 'grid-area', 'blockquoteQuote / blockquoteQuote / blockquoteQuote / blockquoteQuote');
     });
@@ -67,9 +67,9 @@ describe('blockquote', () => {
         // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('display').should('eq', 'block');
         // @ts-ignore
-        cy.get('toujou-blockquote .blockquote__blockquote').before('height').should('eq', '48px');
+        cy.get('toujou-blockquote .blockquote__blockquote').before('height').should('eq', tokens.spacing.xl);
         // @ts-ignore
-        cy.get('toujou-blockquote .blockquote__blockquote').before('width').should('eq', '48px');
+        cy.get('toujou-blockquote .blockquote__blockquote').before('width').should('eq', tokens.spacing.xl);
         // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('transform').should('eq', 'matrix(1, 0, 0, 1, 0, -48)');
         // @ts-ignore
