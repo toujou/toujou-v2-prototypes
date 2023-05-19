@@ -34,6 +34,7 @@ export const ToujouSnackbarStyles = css`
     border: var(--toujou-snackbar-button-border, none);
     background: var(--toujou-snackbar-button-bg, none);
     font-size: var(--toujou-snackbar-button-font-size, .875rem);
+    font-family: var(--toujou-snackbar-button-font-family, var(--paragraph__family));
     text-transform: var(--toujou-snackbar-button--text-transform, uppercase);
     color: var(--toujou-snackbar-button-color, var(--primary-color));
     margin: var(--toujou-snackbar-button-margin, 0);
