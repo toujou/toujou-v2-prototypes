@@ -3443,7 +3443,13 @@ html {
     --toujou-snackbar-transition: all var(--animation-duration-fast) var(--animation-easing-normal);
     --toujou-snackbar-shadow: var(--shadow-normal);
 
+    --toujou-snackbar-focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    --toujou-snackbar-focus-outline-offset: var(--focus-outline-offset);
+
     --toujou-snackbar-message-color: var(--color-bg);
+
+    --toujou-snackbar-button-font-family: var(--toujou-snackbar-font-family);
+    --toujou-snackbar-button-font-weight: var(--toujou-snackbar-font-weight);
 
     font-family: var(--toujou-snackbar-font-family);
     font-weight: var(--toujou-snackbar-font-weight);
@@ -3902,7 +3908,7 @@ h5,
 .font--epsilon {
     --text-tag-font-size: var(--font-size-m);
     --text-tag-font-weight: var(--font-weight-headline);
-    --text-tag-line-height: var(--line-height-xs);
+    --text-tag-line-height: var(--line-height-s);
     --text-tag-margin-bottom: var(--spacing-normal);
 }
 

@@ -1708,7 +1708,7 @@ h5,
 .font--epsilon {
     --text-tag-font-size: var(--font-size-m);
     --text-tag-font-weight: var(--font-weight-headline);
-    --text-tag-line-height: var(--line-height-xs);
+    --text-tag-line-height: var(--line-height-s);
     --text-tag-margin-bottom: var(--spacing-normal);
 }
 
