@@ -51,7 +51,7 @@
     --review-footer-title-font-family: var(--font-family-text);
     --review-footer-title-font-size: var(--font-size-normal);
     --review-footer-title-font-weight: var(--font-weight-text-bold);
-    --review-footer-title-color: var(--color-primary);
+    --review-footer-title-color: var(--color-font);
     --review-footer-title-margin: 0 0 var(--spacing-s);
 
     padding: var(--review-padding);
