@@ -2,7 +2,7 @@
     --input-description-order: 10;
     --input-description-margin: var(--spacing-s) 0 0;
     --input-description-padding: 0 var(--spacing-xs);
-    --input-description-color: var(--color-font-light);
+    --input-description-color: var(--color-font);
     --input-description-font-family: var(--font-family-text);
     --input-description-font-size: var(--font-size-s);
     --input-description-font-weight: var(--font-weight-text-normal);
