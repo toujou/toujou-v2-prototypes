@@ -2,8 +2,12 @@ import { LitElement, html } from 'lit';
 
 import { ToujouSnackbarStyles } from "./toujou-snackbar.styles.js";
 
-
 class ToujouSnackbar extends LitElement {
+  keyCodes = {
+    escape: 27,
+    enter: 13
+  }
+
   static get is() {
     return 'toujou-snackbar';
   }
@@ -81,6 +85,9 @@ class ToujouSnackbar extends LitElement {
 
     this.showing = false;
     this._timer = this._timer.bind(this);
+
+    this.addEventListener('keydown', this._handleKeyDown.bind(this));
+
   }
 
   /**
@@ -218,6 +225,25 @@ class ToujouSnackbar extends LitElement {
 
     this.buttonText = element.buttonText || 'OK';
     this._duration = element.duration || 2500;
+  }
+
+  /**
+   * Dismiss the snackbar on Esc or Enter key presses
+   * @param event
+   * @private
+   */
+  _handleKeyDown(event) {
+    if (this.getAttribute('snackbartype') === 'auto') return;
+
+    if (
+        event.key === 'Escape' ||
+        event.keyCode === this.keyCodes.escape ||
+        event.key === 'Enter'
+        || event.keyCode === this.keyCodes.enter
+    ) {
+      this._hideSnackbar();
+      this._afterHide();
+    }
   }
 }
 

@@ -22,6 +22,11 @@ export const ToujouSnackbarStyles = css`
     transform: var(--toujou-snackbar-visible-transform, translateY(0));
     opacity: var(--toujou-snackbar-visible-opacity, 1);
   }
+  
+  :host(:focus-visible) {
+    outline: var(--toujou-snackbar-focus-outline);
+    outline-offset: var(--toujou-snackbar-focus-outline-offset);
+  }
 
   .snackbar__message {
     flex-grow: var(--toujou-snackbar-message-grow, 1);

@@ -12,6 +12,9 @@
     --toujou-snackbar-transition: all var(--animation-duration-fast) var(--animation-easing-normal);
     --toujou-snackbar-shadow: var(--shadow-normal);
 
+    --toujou-snackbar-focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    --toujou-snackbar-focus-outline-offset: var(--focus-outline-offset);
+
     --toujou-snackbar-message-color: var(--color-bg);
 
     --toujou-snackbar-button-font-family: var(--toujou-snackbar-font-family);
