@@ -30,8 +30,8 @@
     --consent-widget-elements-flex-direction: column;
     --consent-widget-elements-gap: var(--spacing-xs);
 
-    --consent-widget-warning-color: var(--color-warning);
-    --consent-widget-warning-border: var(--border-width-normal) solid var(--consent-widget-warning-color);
+    --consent-widget-warning-color: var(--color-font-dark);
+    --consent-widget-warning-border: var(--border-width-normal) solid var(--color-warning);
     --consent-widget-warning-padding: var(--spacing-normal);
     --consent-widget-warning-border-radius: var(--border-radius-default);
     --consent-widget-warning-display: flex;
