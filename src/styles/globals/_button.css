@@ -52,6 +52,7 @@ p > .button {
 
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
+    color: var(--button-color-text);
 }
 
 .button[button-variant="secondary"]:focus-visible,
