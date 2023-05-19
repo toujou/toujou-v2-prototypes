@@ -1602,7 +1602,7 @@ input[type=number]::-webkit-outer-spin-button {
     --input-description-order: 10;
     --input-description-margin: var(--spacing-s) 0 0;
     --input-description-padding: 0 var(--spacing-xs);
-    --input-description-color: var(--color-font-light);
+    --input-description-color: var(--color-font);
     --input-description-font-family: var(--font-family-text);
     --input-description-font-size: var(--font-size-s);
     --input-description-font-weight: var(--font-weight-text-normal);
@@ -2658,6 +2658,7 @@ p > .button {
 
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
+    color: var(--button-color-text);
 }
 
 .button[button-variant="secondary"]:focus-visible,
@@ -3319,6 +3320,8 @@ toujou-modal {
 .button--search {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+
+    white-space: nowrap;
 }
 
 .single-media {
@@ -3917,7 +3920,7 @@ ul,
 ol,
 table {
     font-size: var(--font-size-normal);
-    font-weight: var(--line-height-normal);
+    font-weight: var(--font-weight-text-normal);
     line-height: var(--line-height-normal);
     font-family: var(--font-family-text);
     color: var(--color-font);
