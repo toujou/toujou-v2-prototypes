@@ -1673,7 +1673,7 @@ h1,
     --text-tag-font-size: var(--font-size-xxxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
-    --text-tag-margin-bottom: var(--spacing-l);
+    --text-tag-margin-bottom: var(--spacing-normal);
 }
 
 h2,
@@ -1682,7 +1682,7 @@ h2,
     --text-tag-font-size: var(--font-size-xxl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-xs);
-    --text-tag-margin-bottom: var(--spacing-m);
+    --text-tag-margin-bottom: var(--spacing-normal);
 }
 
 h3,
@@ -1691,7 +1691,7 @@ h3,
     --text-tag-font-size: var(--font-size-xl);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
-    --text-tag-margin-bottom: var(--spacing-ms);
+    --text-tag-margin-bottom: var(--spacing-normal);
 }
 
 h4,
@@ -1700,7 +1700,7 @@ h4,
     --text-tag-font-size: var(--font-size-l);
     --text-tag-font-weight: var(--font-weight-headline);
     --text-tag-line-height: var(--line-height-s);
-    --text-tag-margin-bottom: var(--spacing-ms);
+    --text-tag-margin-bottom: var(--spacing-normal);
 }
 
 h5,
