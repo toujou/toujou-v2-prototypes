@@ -98,7 +98,7 @@
 @import "./elements/_event-table-card.css";
 
 /* print css for testing purposes */
-/* @import "./print.css"; */
+@import "./print.css";
 
 body {
     background-color: var(--demo-color-grey-light);

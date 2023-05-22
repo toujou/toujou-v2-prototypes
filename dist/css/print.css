@@ -104,6 +104,11 @@
     }
 }
 @media print {
+    .topbutton {
+        display: none !important;
+    }
+}
+@media print {
     a:link,
     a:visited,
     a {
