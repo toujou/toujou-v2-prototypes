@@ -50,11 +50,11 @@ export class ToujouDetailsAccordion extends LitElement {
 
     /**
      * If we are on single-expand-mode, we must close all other <toujou-details> when a new one opens
-     *
+     * For printing we must allow all accordion items to be open
      * @param event
      */
     _handleDetailsToggle(event: Event) {
-        if (!this.singleExpandMode || !((<any>event).detail.state)) return;
+        if (!this.singleExpandMode || window.matchMedia('print').matches || !((<any>event).detail.state)) return;
 
         const currentDetailsId = (<any>event).detail.detailsEl.id;
         this.toujouDetailsElements.forEach((detailsEl) => {

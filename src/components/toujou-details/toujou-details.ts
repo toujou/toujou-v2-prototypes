@@ -53,6 +53,11 @@ export class ToujouDetails extends LitElement {
                 }
             }));
         }
+
+        // Open for printing
+        if (window.matchMedia('print').matches) {
+            this.isOpen = true;
+        }
     }
 
     firstUpdated() {

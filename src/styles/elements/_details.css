@@ -17,6 +17,7 @@
     --details-subtitle-padding: var(--spacing-s) 0 0;
     --details-subtitle-area: subtitle;
 
+    --details-chevron-display: block;
     --details-chevron-size: 1.5rem;
     --details-chevron-active-transform: rotate(180deg);
     --details-chevron-transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
@@ -93,6 +94,7 @@
 }
 
 .icon.details__chevron {
+    display: var(--details-chevron-display);
     height: var(--details-chevron-size);
     width: var(--details-chevron-size);
     transition: var(--details-chevron-transition);

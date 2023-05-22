@@ -65,6 +65,11 @@
     }
 }
 @media print {
+    .details {
+        --details-chevron-display: none;
+    }
+}
+@media print {
     .footer {
         display: none;
     }

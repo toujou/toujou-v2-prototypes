@@ -15,7 +15,7 @@ export declare class ToujouDetailsAccordion extends LitElement {
     _handleDetailsConnected(event: Event): void;
     /**
      * If we are on single-expand-mode, we must close all other <toujou-details> when a new one opens
-     *
+     * For printing we must allow all accordion items to be open
      * @param event
      */
     _handleDetailsToggle(event: Event): void;
