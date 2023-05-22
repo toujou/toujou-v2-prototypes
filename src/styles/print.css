@@ -2,6 +2,7 @@
 @import "./print/_base.css";
 
 @import "./print/elements/_blockquote.css";
+@import "./print/elements/_chip.css";
 @import "./print/elements/_details.css";
 @import "./print/elements/_footer.css";
 @import "./print/elements/_images.css";

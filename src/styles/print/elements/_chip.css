@@ -1,0 +1,12 @@
+@media print {
+    .chip[chip-bg-color] {
+        --toujou-chip-color-bg: transparent;
+        --toujou-chip-text-color: black;
+
+        border: 1px solid black;
+    }
+
+    .chip .icon {
+        background-color: black !important;
+    }
+}
