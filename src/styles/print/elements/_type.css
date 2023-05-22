@@ -2,9 +2,12 @@
     a:link,
     a:visited,
     a {
-        /*text-decoration: underline;*/
         page-break-inside: avoid;
-        /*color: var(--color-font) !important;*/
+    }
+
+    p > a::after {
+        content: "["attr(href)"]";
+        word-break: break-all;
     }
 
     ul,

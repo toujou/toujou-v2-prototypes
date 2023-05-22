@@ -46,7 +46,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        margin-top: var(--spacing-l);
+        margin-top: var(--spacing-xl);
         margin-bottom: var(--spacing-normal);
         font-family: var(--font-family-headline);
         font-size: var(--font-size-normal);
@@ -136,9 +136,12 @@
     a:link,
     a:visited,
     a {
-        /*text-decoration: underline;*/
         page-break-inside: avoid;
-        /*color: var(--color-font) !important;*/
+    }
+
+    p > a::after {
+        content: "["attr(href)"]";
+        word-break: break-all;
     }
 
     ul,

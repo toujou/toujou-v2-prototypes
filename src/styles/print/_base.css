@@ -5,7 +5,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        margin-top: var(--spacing-l);
+        margin-top: var(--spacing-xl);
         margin-bottom: var(--spacing-normal);
         font-family: var(--font-family-headline);
         font-size: var(--font-size-normal);
