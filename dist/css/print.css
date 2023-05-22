@@ -54,8 +54,8 @@
 
     /* Styles to apply to all elements */
     * {
-        background-color: transparent;
         box-shadow: none;
+        background-color: transparent;
     }
 }
 @media print {
@@ -89,8 +89,20 @@
     }
 }
 @media print {
+    .post-author {
+        --post-author-background-color: transparent;
+        --post-author-padding: 0;
+    }
+}
+@media print {
     pre {
         page-break-inside: avoid;
+    }
+}
+@media print {
+    .social-media-bar {
+        /* using the --color-primary doesn't work for some reason */
+        --social-media-bar-link-color: black;
     }
 }
 @media print {
@@ -114,7 +126,7 @@
     a {
         /*text-decoration: underline;*/
         page-break-inside: avoid;
-        color: var(--color-font) !important;
+        /*color: var(--color-font) !important;*/
     }
 
     ul,

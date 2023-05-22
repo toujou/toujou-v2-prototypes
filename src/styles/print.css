@@ -6,7 +6,9 @@
 @import "./print/elements/_footer.css";
 @import "./print/elements/_images.css";
 @import "./print/elements/_main.css";
+@import "./print/elements/_post-author.css";
 @import "./print/elements/_pre.css";
+@import "./print/elements/_social-media-bar.css";
 @import "./print/elements/_table.css";
 @import "./print/elements/_topbar.css";
 @import "./print/elements/_topbutton.css";

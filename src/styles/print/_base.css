@@ -13,7 +13,7 @@
 
     /* Styles to apply to all elements */
     * {
-        background-color: transparent;
         box-shadow: none;
+        background-color: transparent;
     }
 }

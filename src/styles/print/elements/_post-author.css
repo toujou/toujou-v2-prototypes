@@ -1,0 +1,6 @@
+@media print {
+    .post-author {
+        --post-author-background-color: transparent;
+        --post-author-padding: 0;
+    }
+}

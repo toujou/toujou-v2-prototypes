@@ -4,7 +4,7 @@
     a {
         /*text-decoration: underline;*/
         page-break-inside: avoid;
-        color: var(--color-font) !important;
+        /*color: var(--color-font) !important;*/
     }
 
     ul,
