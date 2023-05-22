@@ -1,3 +1,11 @@
 @import "./print/_print-tokens.css";
 @import "./print/_base.css";
 
+@import "./print/elements/_blockquote.css";
+@import "./print/elements/_footer.css";
+@import "./print/elements/_images.css";
+@import "./print/elements/_main.css";
+@import "./print/elements/_pre.css";
+@import "./print/elements/_table.css";
+@import "./print/elements/_topbar.css";
+@import "./print/elements/_type.css";

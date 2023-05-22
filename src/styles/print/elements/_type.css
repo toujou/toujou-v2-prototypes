@@ -1,0 +1,15 @@
+@media print {
+    a:link,
+    a:visited,
+    a {
+        /*text-decoration: underline;*/
+        page-break-inside: avoid;
+        color: var(--color-font) !important;
+    }
+
+    ul,
+    ol,
+    dl {
+        page-break-before: avoid;
+    }
+}

@@ -1,0 +1,5 @@
+@media print {
+    .table {
+        page-break-inside: avoid;
+    }
+}

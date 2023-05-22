@@ -58,4 +58,58 @@
         box-shadow: none;
     }
 }
+@media print {
+    blockquote,
+    .blockquote {
+        page-break-inside: avoid;
+    }
+}
+@media print {
+    .footer {
+        display: none;
+    }
+}
+@media print {
+    img,
+    figure {
+        page-break-inside: avoid;
+        page-break-after: auto;
+        page-break-before: auto;
+    }
+}
+@media print {
+    main:first-child,
+    .topbar + main {
+        --main-padding-top: 0;
+    }
+}
+@media print {
+    pre {
+        page-break-inside: avoid;
+    }
+}
+@media print {
+    .table {
+        page-break-inside: avoid;
+    }
+}
+@media print {
+    .topbar {
+        display: none;
+    }
+}
+@media print {
+    a:link,
+    a:visited,
+    a {
+        /*text-decoration: underline;*/
+        page-break-inside: avoid;
+        color: var(--color-font) !important;
+    }
 
+    ul,
+    ol,
+    dl {
+        page-break-before: avoid;
+    }
+}

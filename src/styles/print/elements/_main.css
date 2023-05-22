@@ -1,0 +1,6 @@
+@media print {
+    main:first-child,
+    .topbar + main {
+        --main-padding-top: 0;
+    }
+}

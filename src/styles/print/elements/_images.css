@@ -1,0 +1,8 @@
+@media print {
+    img,
+    figure {
+        page-break-inside: avoid;
+        page-break-after: auto;
+        page-break-before: auto;
+    }
+}

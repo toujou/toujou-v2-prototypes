@@ -1,0 +1,6 @@
+@media print {
+    blockquote,
+    .blockquote {
+        page-break-inside: avoid;
+    }
+}

@@ -1,0 +1,5 @@
+@media print {
+    pre {
+        page-break-inside: avoid;
+    }
+}
