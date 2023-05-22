@@ -68,23 +68,3 @@
         /*--text-background-gradient: linear-gradient(0deg, rgb(0 0 0 / 75%) 0%, rgb(0 0 0 / 0%) 100%);*/
     }
 }
-@media print {
-    /* Add custom message to the end of the print */
-    body::after {
-        content: 'Diese Website wurde mit toujou gebaut | www.toujou.de';
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-top: var(--spacing-l);
-        margin-bottom: var(--spacing-normal);
-        font-family: var(--font-family-headline);
-        font-size: var(--font-size-normal);
-    }
-
-    /* Styles to apply to all elements */
-    * {
-        background-color: transparent;
-        box-shadow: none;
-    }
-}
-
