@@ -221,6 +221,78 @@ figure {
     --text-background-gradient: linear-gradient(0deg, rgb(0 0 0 / 75%) 0%, rgb(0 0 0 / 0%) 100%);
 }
 
+@media print {
+    :root,
+    ::before,
+    ::after {
+        --color-primary-h: 0;
+        --color-primary-s: 0;
+        --color-primary-l: 0;
+
+
+
+        /*--color-primary: hsl(var(--color-primary-h) var(--color-primary-s) var(--color-primary-l));*/
+        /*--color-primary-o-10: hsl(var(--color-primary-h) var(--color-primary-s) var(--color-primary-l) / 10%);*/
+        /*--color-primary-light: hsl(var(--color-primary-light-h) var(--color-primary-light-s) var(--color-primary-light-l));*/
+        /*--color-primary-dark: hsl(var(--color-primary-dark-h) var(--color-primary-dark-s) var(--color-primary-dark-l));*/
+
+        /*--color-secondary: hsl(var(--color-secondary-h) var(--color-secondary-s) var(--color-secondary-l));*/
+        /*--color-secondary-o-10: hsl(var(--color-secondary-h) var(--color-secondary-s) var(--color-secondary-l) / 10%);*/
+        /*--color-secondary-light: hsl(var(--color-secondary-light-h) var(--color-secondary-light-s) var(--color-secondary-light-l));*/
+        /*--color-secondary-dark: hsl(var(--color-secondary-dark-h) var(--color-secondary-dark-s) var(--color-secondary-dark-l));*/
+
+        /*--color-font: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l));*/
+        /*--color-font-o-04: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 4%);*/
+        /*--color-font-o-10: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 10%);*/
+        /*--color-font-o-20: hsl(var(--color-font-h) var(--color-font-s) var(--color-font-l) / 20%);*/
+        /*--color-font-light: hsl(var(--color-font-light-h) var(--color-font-light-s) var(--color-font-light-l));*/
+        /*--color-font-dark: hsl(var(--color-font-dark-h) var(--color-font-dark-s) var(--color-font-dark-l));*/
+
+        /*--color-bg: hsl(var(--color-bg-h) var(--color-bg-s) var(--color-bg-l));*/
+        /*--color-bg-o-10: hsl(var(--color-bg-h) var(--color-bg-s) var(--color-bg-l) / 10%);*/
+        /*--color-bg-o-75: hsl(var(--color-bg-h) var(--color-bg-s) var(--color-bg-l) / 75%);*/
+
+        /*--color-success: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l));*/
+        /*--color-success-darken-15: hsl(var(--color-success-h) var(--color-success-s) calc(var(--color-success-l) - 15%));*/
+        /*--color-success-l-15: hsl(var(--color-success-h) var(--color-success-s) 15%);*/
+        /*--color-success-o-25: hsl(var(--color-success-h) var(--color-success-s) var(--color-success-l) / 25%);*/
+
+        /*--color-warning: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l));*/
+        /*--color-warning-darken-15: hsl(var(--color-warning-h) var(--color-warning-s) calc(var(--color-warning-l) - 15%));*/
+        /*--color-warning-l-15: hsl(var(--color-warning-h) var(--color-warning-s) 15%);*/
+        /*--color-warning-o-25: hsl(var(--color-warning-h) var(--color-warning-s) var(--color-warning-l) / 25%);*/
+
+        /*--color-error: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l));*/
+        /*--color-error-darken-15: hsl(var(--color-error-h) var(--color-error-s) calc(var(--color-error-l) - 15%));*/
+        /*--color-error-l-15: hsl(var(--color-error-h) var(--color-error-s) 15%);*/
+        /*--color-error-o-25: hsl(var(--color-error-h) var(--color-error-s) var(--color-error-l) / 25%);*/
+
+        /*--color-info-h: 199deg;*/
+        /*--color-info-s: 65%;*/
+        /*--color-info-l: 80%;*/
+        /*--color-info: hsl(var(--color-info-h) var(--color-info-s) var(--color-info-l));*/
+        /*--color-info-darken-15: hsl(var(--color-info-h) var(--color-info-s) calc(var(--color-info-l) - 15%));*/
+        /*--color-info-o-25: hsl(var(--color-info-h) var(--color-info-s) var(--color-info-l) / 25%);*/
+
+        /*--color-black-o-75: hsl(0 0% 0% / 75%);*/
+        /*--color-black-o-50: hsl(0 0% 0% / 50%);*/
+        /*--color-black-o-10: hsl(0 0% 0% / 10%);*/
+        /*--color-black-o-05: hsl(0 0% 0% / 5%);*/
+
+        /*--color-white: hsl(0 100% 100% / 100%);*/
+        /*--color-white-o-75: hsl(0 100% 100% / 75%);*/
+
+        /*--color-headline: var(--color-primary);*/
+
+        /*--color-gold-h: 44deg;*/
+        /*--color-gold-s: 100%;*/
+        /*--color-gold-l: 50%;*/
+        /*--color-gold: hsl(var(--color-gold-h) var(--color-gold-s) var(--color-gold-l) / 100%);*/
+
+        /*--text-background-gradient: linear-gradient(0deg, rgb(0 0 0 / 75%) 0%, rgb(0 0 0 / 0%) 100%);*/
+    }
+}
+
 :root,
 ::before,
 ::after {
