@@ -1,0 +1,9 @@
+@media print {
+    .contact-box {
+        --contact-box-card-background-color: white;
+    }
+
+    .contact-box__item .icon {
+        background-color: black;
+    }
+}

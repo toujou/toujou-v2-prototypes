@@ -1,0 +1,9 @@
+@media print {
+    .content-card {
+        max-width: 540px;
+    }
+
+    .content-card__button .icon {
+        background-color: black;
+    }
+}

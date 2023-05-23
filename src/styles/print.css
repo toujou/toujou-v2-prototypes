@@ -8,6 +8,10 @@
 @import "./print/elements/_chip.css";
 @import "./print/elements/_codeblock.css";
 @import "./print/elements/_collection-item.css";
+@import "./print/elements/_contact-box.css";
+@import "./print/elements/_content-card.css";
+@import "./print/elements/_cover-slider.css";
+@import "./print/elements/_consent-widget.css";
 @import "./print/elements/_details.css";
 @import "./print/elements/_footer.css";
 @import "./print/elements/_images.css";
