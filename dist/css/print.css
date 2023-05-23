@@ -59,9 +59,37 @@
     }
 }
 @media print {
+    .address .icon {
+        background-color: black;
+    }
+
+    a.address__link::after {
+        display: none;
+    }
+}
+@media print {
     blockquote,
     .blockquote {
         page-break-inside: avoid;
+    }
+}
+@media print {
+    .breadcrumb {
+        display: none !important;
+    }
+}
+@media print {
+    .button,
+    .button[button-type],
+    .button[button-variant],
+    .button[button-size] {
+        --button-color-bg: transparent;
+        --button-color-text: black;
+        --button-border-color: black;
+    }
+
+    a.button::after {
+        display: none;
     }
 }
 @media print {
@@ -77,13 +105,114 @@
     }
 }
 @media print {
+    .code-block {
+        border: 1px solid black;
+    }
+
+    .code-block__code {
+        background: transparent;
+        color: black !important;
+    }
+
+    .code-block__code * {
+        color: black !important;
+        opacity: 1;
+    }
+}
+@media print {
+    .collection-item {
+        --collection-item-category-background-color: white;
+        --collection-item-category-color: black;
+        --collection-item-info-icon-color: black;
+        --collection-item-city-color: white;
+        --collection-item-country-color: white;
+    }
+
+    .collection-item[item-type="product"] {
+        color: white !important;
+    }
+
+    .collection-item__category .icon {
+        background-color: black;
+    }
+
+    .fake-fav-item {
+        display: none;
+    }
+}
+@media print {
+    .contact-box {
+        --contact-box-card-background-color: white;
+    }
+
+    .contact-box__item .icon {
+        background-color: black;
+    }
+}
+@media print {
+    .content-card {
+        max-width: 540px;
+    }
+
+    .content-card__button .icon {
+        background-color: black;
+    }
+}
+@media print {
+    .cover-slider__title {
+        color: white;
+    }
+}
+@media print {
+    .consent-widget {
+        display: none !important;
+    }
+}
+@media print {
     .details {
         --details-chevron-display: none;
     }
 }
 @media print {
+    hr,
+    .divider {
+        background-color: black;
+    }
+}
+@media print {
+    .estimated-reading-time .icon {
+        background-color: black;
+    }
+}
+@media print {
     .footer {
         display: none;
+    }
+}
+@media print {
+    .gallery {
+        --gallery-grid-column-count: 3;
+    }
+}
+@media print {
+    .header-content {
+        --header-content-background-color: white;
+    }
+}
+@media print {
+    .hero-media {
+        --hero-media-title-color: white;
+    }
+}
+@media print {
+    .icon[icon-color] {
+        background-color: black;
+    }
+}
+@media print {
+    .image-card__title {
+        background-color: transparent;
+        color: black;
     }
 }
 @media print {
@@ -95,15 +224,60 @@
     }
 }
 @media print {
+    .inpage-nav {
+        display: none !important;
+    }
+}
+@media print {
     main:first-child,
     .topbar + main {
         --main-padding-top: 0;
     }
 }
 @media print {
+    .media-date {
+        --media-date-background-color: white;
+    }
+}
+@media print {
+    .media-grid[media-grid-column-number="2"] {
+        --media-grid-number-of-columns: 2;
+    }
+
+    .media-grid[media-grid-column-number="3"] {
+        --media-grid-number-of-columns: 3;
+    }
+
+    .media-grid[media-grid-column-number="4"] {
+        --media-grid-number-of-columns: 4;
+    }
+}
+@media print {
+    .media-info {
+        display: none !important;
+    }
+}
+@media print {
+    .media-placeholder {
+        background: transparent;
+        border: 1px solid black;
+    }
+}
+@media print {
+    .overlay {
+        --overlay-infos-bg-color: white;
+    }
+}
+@media print {
     .post-author {
         --post-author-background-color: transparent;
         --post-author-padding: 0;
+    }
+}
+@media print {
+    .post-meta {
+        --post-meta-background-color: transparent;
+        --post-meta-padding: 0;
     }
 }
 @media print {
