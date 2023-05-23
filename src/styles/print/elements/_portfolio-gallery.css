@@ -1,0 +1,9 @@
+@media print {
+    .portfolio-gallery__button {
+        display: none;
+    }
+
+    .portfolio-gallery .slider-count {
+        display: none;
+    }
+}

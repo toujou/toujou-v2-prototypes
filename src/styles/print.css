@@ -21,6 +21,7 @@
 @import "./print/elements/_hero-media.css";
 @import "./print/elements/_icon.css";
 @import "./print/elements/_image-card.css";
+@import "./print/elements/_image-card-grid.css";
 @import "./print/elements/_images.css";
 @import "./print/elements/_inpage-nav.css";
 @import "./print/elements/_main.css";
@@ -28,10 +29,16 @@
 @import "./print/elements/_media-grid.css";
 @import "./print/elements/_media-info.css";
 @import "./print/elements/_media-placeholder.css";
-@import "./print/elements/_overlay";
+@import "./print/elements/_overlay.css";
+@import "./print/elements/_pn-nav.css";
+@import "./print/elements/_portfolio-gallery.css";
 @import "./print/elements/_post-author.css";
 @import "./print/elements/_post-meta.css";
 @import "./print/elements/_pre.css";
+@import "./print/elements/_rating-stars.css";
+@import "./print/elements/_review.css";
+@import "./print/elements/_skippy-links.css";
+@import "./print/elements/_snackbar.css";
 @import "./print/elements/_social-media-bar.css";
 @import "./print/elements/_table.css";
 @import "./print/elements/_topbar.css";

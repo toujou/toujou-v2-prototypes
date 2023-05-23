@@ -1,0 +1,5 @@
+@media print {
+    .image-card-grid .image-card {
+        --image-card-max-width: calc(calc(100% - var(--image-card-grid-gap)) / 2);
+    }
+}

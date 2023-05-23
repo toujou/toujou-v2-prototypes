@@ -1,0 +1,5 @@
+@media print {
+    .snackbar {
+        display: none !important;
+    }
+}

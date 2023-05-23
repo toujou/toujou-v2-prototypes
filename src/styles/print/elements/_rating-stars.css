@@ -1,0 +1,21 @@
+@media print {
+    .rating-stars {
+        color: transparent;
+    }
+
+    .rating-stars::after {
+        content: "★ " attr(rating-value);
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: calc(100% + 2px);
+        height: 100%;
+        background-color: transparent;
+        font-family: var(--font-family-text);
+        font-size: var(--font-size-ms);
+        letter-spacing: normal;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+}
