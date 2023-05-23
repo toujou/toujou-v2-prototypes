@@ -1,0 +1,6 @@
+@media print {
+    .post-meta {
+        --post-meta-background-color: transparent;
+        --post-meta-padding: 0;
+    }
+}

@@ -1,0 +1,6 @@
+@media print {
+    .collection-item {
+        --collection-item-category-background-color: white;
+        --collection-item-category-color: black;
+    }
+}
