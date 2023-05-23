@@ -27,6 +27,8 @@
 @import "./print/elements/_media-date.css";
 @import "./print/elements/_media-grid.css";
 @import "./print/elements/_media-info.css";
+@import "./print/elements/_media-placeholder.css";
+@import "./print/elements/_overlay";
 @import "./print/elements/_post-author.css";
 @import "./print/elements/_post-meta.css";
 @import "./print/elements/_pre.css";

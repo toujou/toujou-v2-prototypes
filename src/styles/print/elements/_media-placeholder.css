@@ -1,0 +1,6 @@
+@media print {
+    .media-placeholder {
+        background: transparent;
+        border: 1px solid black;
+    }
+}
