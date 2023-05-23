@@ -1,0 +1,14 @@
+@media print {
+    .button,
+    .button[button-type],
+    .button[button-variant],
+    .button[button-size] {
+        --button-color-bg: transparent;
+        --button-color-text: black;
+        --button-border-color: black;
+    }
+
+    a.button::after {
+        display: none;
+    }
+}

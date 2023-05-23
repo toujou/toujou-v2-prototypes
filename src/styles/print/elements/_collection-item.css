@@ -2,5 +2,20 @@
     .collection-item {
         --collection-item-category-background-color: white;
         --collection-item-category-color: black;
+        --collection-item-info-icon-color: black;
+        --collection-item-city-color: white;
+        --collection-item-country-color: white;
+    }
+
+    .collection-item[item-type="product"] {
+        color: white !important;
+    }
+
+    .collection-item__category .icon {
+        background-color: black;
+    }
+
+    .fake-fav-item {
+        display: none;
     }
 }

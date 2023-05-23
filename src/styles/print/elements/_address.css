@@ -1,0 +1,9 @@
+@media print {
+    .address .icon {
+        background-color: black;
+    }
+
+    a.address__link::after {
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+@media print {
+    .code-block {
+        border: 1px solid black;
+    }
+
+    .code-block__code {
+        background: transparent;
+        color: black !important;
+    }
+
+    .code-block__code * {
+        color: black !important;
+        opacity: 1;
+    }
+}

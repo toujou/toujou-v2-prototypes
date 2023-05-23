@@ -1,0 +1,5 @@
+@media print {
+    .media-date {
+        --media-date-background-color: white;
+    }
+}
