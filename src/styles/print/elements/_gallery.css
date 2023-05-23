@@ -1,0 +1,5 @@
+@media print {
+    .gallery {
+        --gallery-grid-column-count: 3;
+    }
+}

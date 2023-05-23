@@ -1,0 +1,5 @@
+@media print {
+    .header-content {
+        --header-content-background-color: white;
+    }
+}

@@ -1,0 +1,5 @@
+@media print {
+    .icon[icon-color] {
+        background-color: black;
+    }
+}

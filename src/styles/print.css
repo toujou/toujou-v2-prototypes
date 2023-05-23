@@ -13,8 +13,15 @@
 @import "./print/elements/_cover-slider.css";
 @import "./print/elements/_consent-widget.css";
 @import "./print/elements/_details.css";
+@import "./print/elements/_divider.css";
+@import "./print/elements/_estimated-reading-time.css";
 @import "./print/elements/_footer.css";
+@import "./print/elements/_gallery.css";
+@import "./print/elements/_header-content.css";
+@import "./print/elements/_icon.css";
+@import "./print/elements/_image-card.css";
 @import "./print/elements/_images.css";
+@import "./print/elements/_inpage-nav.css";
 @import "./print/elements/_main.css";
 @import "./print/elements/_media-date.css";
 @import "./print/elements/_post-author.css";

@@ -1,0 +1,5 @@
+@media print {
+    .estimated-reading-time .icon {
+        background-color: black;
+    }
+}

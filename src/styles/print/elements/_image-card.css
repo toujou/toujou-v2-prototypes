@@ -1,0 +1,6 @@
+@media print {
+    .image-card__title {
+        background-color: transparent;
+        color: black;
+    }
+}
