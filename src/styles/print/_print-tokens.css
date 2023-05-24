@@ -37,5 +37,10 @@
         --color-gold-h: 0;
         --color-gold-s: 0;
         --color-gold-l: 0;
+
+        --animation-duration-slow: 0s;
+        --animation-duration-normal: 0s;
+        --animation-duration-fast: 0s;
+        --animation-duration-very-fast: 0s;
     }
 }

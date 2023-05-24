@@ -1,0 +1,5 @@
+@media print {
+    .teaser:not([element-design="default"]) .teaser__content {
+        --teaser-content-padding: ;
+    }
+}

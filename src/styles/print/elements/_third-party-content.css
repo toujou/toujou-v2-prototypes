@@ -1,0 +1,5 @@
+@media print {
+    .third-party-content {
+        border: 1px solid black;
+    }
+}

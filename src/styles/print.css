@@ -40,7 +40,10 @@
 @import "./print/elements/_skippy-links.css";
 @import "./print/elements/_snackbar.css";
 @import "./print/elements/_social-media-bar.css";
+@import "./print/elements/_spinner.css";
 @import "./print/elements/_table.css";
+@import "./print/elements/_teaser.css";
+@import "./print/elements/_third-party-content.css";
 @import "./print/elements/_topbar.css";
 @import "./print/elements/_topbutton.css";
 @import "./print/elements/_type.css";
