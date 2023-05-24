@@ -37,6 +37,11 @@
         --color-gold-h: 0;
         --color-gold-s: 0;
         --color-gold-l: 0;
+
+        --animation-duration-slow: 0s;
+        --animation-duration-normal: 0s;
+        --animation-duration-fast: 0s;
+        --animation-duration-very-fast: 0s;
     }
 }
 @media print {
@@ -216,6 +221,11 @@
     }
 }
 @media print {
+    .image-card-grid .image-card {
+        --image-card-max-width: calc(calc(100% - var(--image-card-grid-gap)) / 2);
+    }
+}
+@media print {
     img,
     figure {
         page-break-inside: avoid;
@@ -269,6 +279,20 @@
     }
 }
 @media print {
+    .pn-nav {
+        display: none;
+    }
+}
+@media print {
+    .portfolio-gallery__button {
+        display: none;
+    }
+
+    .portfolio-gallery .slider-count {
+        display: none;
+    }
+}
+@media print {
     .post-author {
         --post-author-background-color: transparent;
         --post-author-padding: 0;
@@ -286,14 +310,78 @@
     }
 }
 @media print {
+    .rating-stars {
+        color: transparent;
+    }
+
+    .rating-stars::after {
+        content: "★ " attr(rating-value);
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: calc(100% + 2px);
+        height: 100%;
+        background-color: transparent;
+        font-family: var(--font-family-text);
+        font-size: var(--font-size-ms);
+        letter-spacing: normal;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+}
+@media print {
+    .review {
+        --review-content-grid-template-columns: 1fr 2fr;
+        --review-footer-padding: 0;
+    }
+
+    .review__info-link::after {
+        display: none;
+    }
+
+    .review toujou-clamped-content {
+        --toujou-clamped-content-number-of-lines: 999;
+    }
+
+    .review toujou-clamped-content .button {
+        display: none;
+    }
+}
+@media print {
+    skippy-links {
+        display: none;
+    }
+}
+@media print {
+    .snackbar {
+        display: none !important;
+    }
+}
+@media print {
     .social-media-bar {
         /* using the --color-primary doesn't work for some reason */
         --social-media-bar-link-color: black;
     }
 }
 @media print {
+    .spinner {
+        display: none !important;
+    }
+}
+@media print {
     .table {
         page-break-inside: avoid;
+    }
+}
+@media print {
+    .teaser:not([element-design="default"]) .teaser__content {
+        --teaser-content-padding: ;
+    }
+}
+@media print {
+    .third-party-content {
+        border: 1px solid black;
     }
 }
 @media print {
