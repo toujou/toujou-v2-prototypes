@@ -53,6 +53,7 @@
     --review-footer-title-font-weight: var(--font-weight-text-bold);
     --review-footer-title-color: var(--color-font);
     --review-footer-title-margin: 0 0 var(--spacing-s);
+    --review-footer-border-radius: var(--border-radius-normal);
 
     padding: var(--review-padding);
     border-bottom: var(--review-border-bottom);
@@ -143,6 +144,7 @@
     padding: var(--review-footer-padding);
     background-color: var(--review-footer-backgorund-color);
     margin: var(--review-footer-margin);
+    border-radius: var(--review-footer-border-radius);
 }
 
 .review__footer > *:nth-child(2) {
