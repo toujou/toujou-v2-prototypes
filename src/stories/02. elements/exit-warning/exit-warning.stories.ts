@@ -7,7 +7,7 @@ import exitWarningDocs from './exit-warning.docs.mdx';
 export default {
     title: 'COMPONENTS/Exit Warning',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: exitWarningDocs,
         },

@@ -7,7 +7,7 @@ export default {
     title: 'TESTS/Text Blocks',
     decorators: [withXD],
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
     },
 } as Meta;
 

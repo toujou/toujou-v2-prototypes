@@ -8,7 +8,7 @@ import mediaDateDocs from './media-date.docs.mdx';
 export default {
     title: 'COMPONENTS/MediaDate',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: mediaDateDocs,
         },

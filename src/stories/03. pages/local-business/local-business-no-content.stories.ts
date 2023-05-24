@@ -8,7 +8,7 @@ import localBusinessDocs from './local-business.docs.mdx';
 export default {
     title: 'PAGES/LocalBusiness',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: localBusinessDocs,
         },

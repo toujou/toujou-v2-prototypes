@@ -7,7 +7,7 @@ export default {
     title: 'TESTS/toujou.de',
     decorators: [withXD],
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         layout: 'fullscreen',
     },
 } as Meta;

@@ -8,7 +8,7 @@ import reviewListDocs from './review-list.docs.mdx';
 export default {
     title: 'COMPONENTS/ReviewList',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: reviewListDocs,
         },

@@ -8,7 +8,7 @@ import mapboxDocs from './mapbox.docs.mdx';
 export default {
     title: 'COMPONENTS/Mapbox',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: mapboxDocs,
         },

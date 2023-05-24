@@ -1,5 +1,4 @@
 import { Story, Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -8,12 +7,8 @@ import blockquoteDocs from './blockquote.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Blockquote',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://xd.adobe.com/view/0bd327cf-3d4a-42b8-b2a2-6e5f149165f8-5e80/screen/5e18e259-dce9-4e39-b5d0-7c0861d5cdcf/Desktop',
-        },
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blockquoteDocs,
         },

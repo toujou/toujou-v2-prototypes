@@ -8,7 +8,7 @@ import InpageNavDocs from './inpage-nav.docs.mdx';
 export default {
     title: 'COMPONENTS/Inpage Nav',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: InpageNavDocs,
         }

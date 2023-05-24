@@ -8,7 +8,7 @@ import accommodationDocs from './accommodation.docs.mdx';
 export default {
     title: 'PAGES/Accommodation',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: accommodationDocs,
         },

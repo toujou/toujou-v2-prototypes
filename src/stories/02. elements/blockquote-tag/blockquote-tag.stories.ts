@@ -8,7 +8,7 @@ import blockquoteTagDocs from './blockquote-tag.docs.mdx';
 export default {
     title: 'COMPONENTS/Blockquote',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blockquoteTagDocs,
         },

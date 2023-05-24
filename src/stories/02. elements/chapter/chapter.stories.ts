@@ -7,7 +7,7 @@ import chapterDocs from "./chapter.docs.mdx";
 export default {
     title: 'COMPONENTS/Chapter',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: chapterDocs,
         },

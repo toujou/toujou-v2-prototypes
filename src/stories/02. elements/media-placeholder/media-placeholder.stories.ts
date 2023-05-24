@@ -8,7 +8,7 @@ import mediaPlaceholderDocs from './media-placeholder.docs.mdx';
 export default {
     title: 'COMPONENTS/MediaPlaceholder',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: mediaPlaceholderDocs,
         },

@@ -8,7 +8,7 @@ import thirdPartyContentDocs from './third-party-content.docs.mdx';
 export default {
     title: 'COMPONENTS/Third Party Content',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: thirdPartyContentDocs,
         },

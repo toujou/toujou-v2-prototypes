@@ -7,7 +7,7 @@ export default {
     title: 'TESTS/Image Cards',
     decorators: [withXD],
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
     },
 } as Meta;
 

@@ -7,7 +7,7 @@ import searchDocs from './search.docs.mdx';
 export default {
     title: 'COMPONENTS/Search',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: searchDocs,
         },

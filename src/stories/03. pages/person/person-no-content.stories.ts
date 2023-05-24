@@ -8,7 +8,7 @@ import personDocs from './person.docs.mdx';
 export default {
     title: 'PAGES/Person',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: personDocs,
         },

@@ -1,5 +1,4 @@
 import { Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -8,12 +7,8 @@ import contactBoxDocs from './contact-box.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Contact Box',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://https://xd.adobe.com/view/0bd327cf-3d4a-42b8-b2a2-6e5f149165f8-5e80/screen/3edbd260-09a0-4b35-ad8a-73b46782965e/Desktop',
-        },
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: contactBoxDocs,
         },

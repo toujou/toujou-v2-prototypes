@@ -8,7 +8,7 @@ import organizationDocs from './organization.docs.mdx';
 export default {
     title: 'PAGES/Organization',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: organizationDocs,
         },

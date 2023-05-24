@@ -1,5 +1,4 @@
 import { Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -7,11 +6,7 @@ import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Collections',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://xd.adobe.com/view/0bd327cf-3d4a-42b8-b2a2-6e5f149165f8-5e80/screen/92a6d427-39e9-4fd3-841d-fd46681307a1/Desktop',
-        },
         badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: toujouCollectionItemDocs,

@@ -7,7 +7,7 @@ import spinnerDocs from './spinner.docs.mdx';
 export default {
     title: 'COMPONENTS/Spinner',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: spinnerDocs,
         },
