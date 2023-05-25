@@ -16,6 +16,6 @@ module.exports = {
     },
     "staticDirs": ["../assets"],
     docs: {
-        autodocs: true
+        autodocs: 'tag',
     }
 };

@@ -26,7 +26,8 @@ export default {
             defaultValue: [2],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface MediaPlaceholdderStoryProps {

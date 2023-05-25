@@ -48,7 +48,8 @@ export default {
             defaultValue: [true],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface mapboxStoryProps {

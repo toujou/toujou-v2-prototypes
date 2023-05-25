@@ -39,6 +39,7 @@ export default {
             ],
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

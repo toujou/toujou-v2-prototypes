@@ -61,7 +61,8 @@ export default {
             defaultValue: ['default'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 function createImageCardLink(imageFormat: string, cardVariant: string): string {

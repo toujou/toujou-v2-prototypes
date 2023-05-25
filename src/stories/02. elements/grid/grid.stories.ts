@@ -51,7 +51,8 @@ export default {
             required: true,
             if: { arg: 'numberOfColumns', eq: 2 }
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface GridStoryProps {

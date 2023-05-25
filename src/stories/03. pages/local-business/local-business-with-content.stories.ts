@@ -13,6 +13,7 @@ export default {
             page: localBusinessDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

@@ -50,7 +50,8 @@ export default {
             defaultValue: ['medium'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface TopbarStoryProps {

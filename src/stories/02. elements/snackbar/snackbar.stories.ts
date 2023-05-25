@@ -49,7 +49,8 @@ export default {
             defaultValue: 4000,
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface SnackbarStoryProps {

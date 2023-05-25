@@ -13,6 +13,7 @@ export default {
             page: modalDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

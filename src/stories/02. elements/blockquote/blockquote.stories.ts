@@ -38,7 +38,8 @@ export default {
             defaultValue: ['default'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface BlockquoteStoryProps {

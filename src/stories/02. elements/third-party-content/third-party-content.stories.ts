@@ -13,6 +13,7 @@ export default {
             page: thirdPartyContentDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 window.addEventListener('click', (event: Event) => {

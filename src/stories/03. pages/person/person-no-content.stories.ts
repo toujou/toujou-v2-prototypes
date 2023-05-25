@@ -14,6 +14,7 @@ export default {
         },
         layout: "fullwidth"
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

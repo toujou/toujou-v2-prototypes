@@ -59,7 +59,8 @@ export default {
             defaultValue: [false],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface OverlayStoryProps {

@@ -12,6 +12,7 @@ export default {
             page: buttonDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 

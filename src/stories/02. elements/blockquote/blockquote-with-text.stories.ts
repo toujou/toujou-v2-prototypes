@@ -25,7 +25,8 @@ export default {
             defaultValue: ['third-right'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface BlockquoteWithTextStoryProps {

@@ -26,7 +26,8 @@ export default {
             defaultValue: ['left'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface ImageCardWithTextStoryProps {

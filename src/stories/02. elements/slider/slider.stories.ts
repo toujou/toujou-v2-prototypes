@@ -69,7 +69,8 @@ export default {
             defaultValue: 6,
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface SliderStoryProps {

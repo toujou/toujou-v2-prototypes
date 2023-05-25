@@ -37,7 +37,8 @@ export default {
             defaultValue: ['ms'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 const iconNames = [

@@ -25,7 +25,8 @@ export default {
             defaultValue: ['none'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface TableStoryProps {

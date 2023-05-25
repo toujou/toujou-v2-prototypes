@@ -12,6 +12,7 @@ export default {
             page: consentDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

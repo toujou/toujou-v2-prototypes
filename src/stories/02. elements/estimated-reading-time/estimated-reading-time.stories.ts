@@ -13,6 +13,7 @@ export default {
             page: estimatedReadingTimeDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

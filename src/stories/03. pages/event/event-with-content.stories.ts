@@ -13,6 +13,7 @@ export default {
             page: eventDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

@@ -25,7 +25,8 @@ export default {
             defaultValue: ['golden'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface TextBlocksMediaStoryProps {

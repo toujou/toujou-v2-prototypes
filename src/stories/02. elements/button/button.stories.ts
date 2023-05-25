@@ -93,7 +93,8 @@ export default {
             control: { type: 'boolean' },
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface ButtonStoryProps {

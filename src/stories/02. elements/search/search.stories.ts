@@ -12,6 +12,7 @@ export default {
             page: searchDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template: Story = () => {

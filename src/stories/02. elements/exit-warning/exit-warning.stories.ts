@@ -12,6 +12,7 @@ export default {
             page: exitWarningDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const secondsRemainingVar = "${secondsRemaining}";

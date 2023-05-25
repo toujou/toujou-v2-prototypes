@@ -26,7 +26,8 @@ export default {
             defaultValue: ['primary'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface alertStoryProps {

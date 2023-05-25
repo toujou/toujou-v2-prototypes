@@ -13,6 +13,7 @@ export default {
             page: blogPluginsDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

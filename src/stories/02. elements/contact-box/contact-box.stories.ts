@@ -13,6 +13,7 @@ export default {
             page: contactBoxDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

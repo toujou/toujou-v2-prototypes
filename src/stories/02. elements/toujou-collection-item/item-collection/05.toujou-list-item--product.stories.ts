@@ -12,6 +12,7 @@ export default {
             page: toujouCollectionItemDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

@@ -37,7 +37,8 @@ export default {
             defaultValue: ['image'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface SingleMediaStoryProps {

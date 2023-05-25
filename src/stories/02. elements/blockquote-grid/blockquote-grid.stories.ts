@@ -38,7 +38,8 @@ export default {
             defaultValue: ['1'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface BlockquoteGridStoryProps {

@@ -44,13 +44,13 @@ import toujouTheme from "./toujouTheme";
 import { initialize, mswDecorator } from "msw-storybook-addon";
 
 let workerOptions = {
-  onUnhandledRequest: 'bypass',
+    onUnhandledRequest: 'bypass',
 };
 
 if (location.hostname === "toujou.github.io") {
-  workerOptions.serviceWorker = {
-    url: "/toujou-v2-prototypes/assets/mockServiceWorker.js"
-  }
+    workerOptions.serviceWorker = {
+        url: "/toujou-v2-prototypes/assets/mockServiceWorker.js"
+    }
 }
 
 // When the msw is working, some stories don't work correctly (for instance slider) when the inspector is open
@@ -60,30 +60,37 @@ if (location.hostname === "toujou.github.io") {
 export const decorators = [mswDecorator];
 
 export const parameters = {
-  docs: {
-    theme: toujouTheme,
-  },
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+    docs: {
+        theme: toujouTheme,
     },
-    expanded: true,
-  },
-  badgesConfig: badgeCustomConfig,
-  viewport: {
-    viewports: {
-      ...customViewports,
-      ...INITIAL_VIEWPORTS,
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+        matchers: {
+            color: /(background|color)$/i,
+            date: /Date$/,
+        },
+        expanded: true,
+    },
+    badgesConfig: badgeCustomConfig,
+    viewport: {
+        viewports: {
+            ...customViewports,
+            ...INITIAL_VIEWPORTS,
+        }
+    },
+    /* Sort stories in correct order. Components children are sorted so "Docs" is always the last element */
+    options: {
+        storySort: {
+            method: 'configure',
+            includeNames: true,
+            order: [
+                'COMPONENTS',
+                ["*", ["*", "Docs"]],
+                'TOKENS',
+                'PAGES',
+            ]
+        }
     }
-  },
-  options: {
-    storySort: {
-      method: 'alphabetical',
-      order: ['COMPONENTS', 'TOKENS', 'PAGES']
-    }
-  }
 }
 
 console.clear();

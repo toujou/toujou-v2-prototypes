@@ -25,7 +25,8 @@ export default {
             defaultValue: ['4-3'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface TextBlockMediaAboveStoryProps {

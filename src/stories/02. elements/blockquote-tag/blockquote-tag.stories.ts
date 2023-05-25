@@ -13,6 +13,7 @@ export default {
             page: blockquoteTagDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

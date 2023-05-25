@@ -13,7 +13,8 @@ export default {
             page: TeaserSliderDocs,
         }
     },
-    argTypes: {}
+    argTypes: {},
+    tags: ['autodocs']
 } as Meta;
 
 

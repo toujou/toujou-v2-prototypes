@@ -42,7 +42,8 @@ export default {
             defaultValue: ['normal'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface RatingStarsStoryProps {

@@ -12,7 +12,8 @@ export default {
             page: formDocs,
         }
     },
-    argTypes: {}
+    argTypes: {},
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {
