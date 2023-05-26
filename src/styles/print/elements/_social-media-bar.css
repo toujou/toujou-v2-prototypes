@@ -2,5 +2,7 @@
     .social-media-bar {
         /* using the --color-primary doesn't work for some reason */
         --social-media-bar-link-color: black;
+
+        border: 1px solid black;
     }
 }
