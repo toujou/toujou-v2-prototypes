@@ -5,6 +5,11 @@
         --collection-item-info-icon-color: black;
         --collection-item-city-color: white;
         --collection-item-country-color: white;
+        --collection-item-abstract-color: black;
+    }
+
+    .collection-item[element-design="inverted"] {
+        --collection-item-bg-color: transparent;
     }
 
     .collection-item[item-type="product"] {
@@ -16,6 +21,14 @@
     }
 
     .fake-fav-item {
+        display: none;
+    }
+
+    .collection-item a {
+        color: black;
+    }
+
+    .collection-item__button {
         display: none;
     }
 }
