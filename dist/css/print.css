@@ -131,6 +131,11 @@
         --collection-item-info-icon-color: black;
         --collection-item-city-color: white;
         --collection-item-country-color: white;
+        --collection-item-abstract-color: black;
+    }
+
+    .collection-item[element-design="inverted"] {
+        --collection-item-bg-color: transparent;
     }
 
     .collection-item[item-type="product"] {
@@ -142,6 +147,14 @@
     }
 
     .fake-fav-item {
+        display: none;
+    }
+
+    .collection-item a {
+        color: black;
+    }
+
+    .collection-item__button {
         display: none;
     }
 }
@@ -362,6 +375,8 @@
     .social-media-bar {
         /* using the --color-primary doesn't work for some reason */
         --social-media-bar-link-color: black;
+
+        border: 1px solid black;
     }
 }
 @media print {
@@ -371,6 +386,8 @@
 }
 @media print {
     .table {
+        --table-row-border: var(--border-width-normal) solid black;
+
         page-break-inside: avoid;
     }
 }
