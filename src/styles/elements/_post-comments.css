@@ -20,6 +20,7 @@
     --post-comments-data-align-items: baseline;
     --post-comments-data-justify-content: flex-start;
     --post-comments-data-gap: var(--spacing-s);
+    --post-comments-data-margin: 0 0 var(--spacing-s);
 
     --post-comments-author-margin: 0;
     --post-comments-author-color: var(--color-font);
@@ -65,6 +66,7 @@
     align-items: var(--post-comments-data-align-items);
     justify-content: var(--post-comments-data-justify-content);
     gap: var(--post-comments-data-gap);
+    margin: var(--post-comments-data-margin);
 }
 
 .post-comments__author {
