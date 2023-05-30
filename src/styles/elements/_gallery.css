@@ -60,6 +60,7 @@
     pointer-events: none;
     opacity: var(--gallery-hover-overlay-opacity);
     transition: opacity var(--animation-duration-fast) var(--animation-easing-normal);
+    border-radius: var(--gallery-image-border-radius);
 }
 
 .gallery__item::after {
