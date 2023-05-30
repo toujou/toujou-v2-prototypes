@@ -1,6 +1,6 @@
 .map-contact {
     --map-contact-width: var(--content-width-with-padding);
-    --map-contact-max-width: var(--content-max-width);
+    --map-contact-max-width: var(--content-wide-max-width);
     --map-contact-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     --map-contact-padding: 0;
     --map-contact-display: grid;
