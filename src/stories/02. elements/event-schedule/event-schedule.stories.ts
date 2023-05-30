@@ -8,11 +8,12 @@ import eventScheduleDocs from './event-schedule.docs.mdx';
 export default {
     title: 'COMPONENTS/EventSchedule',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: eventScheduleDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

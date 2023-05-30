@@ -14,7 +14,7 @@ import { placesteaserMockRes, placesteaserMockUrl } from "./mocks/placesteaser.m
 export default {
     title: 'COMPONENTS/LocationFinder',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: locationFinderDocs,
         },
@@ -39,6 +39,7 @@ export default {
             ],
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

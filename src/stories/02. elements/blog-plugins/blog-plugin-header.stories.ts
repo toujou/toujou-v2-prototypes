@@ -8,12 +8,13 @@ import blogPluginsDocs from './blog-plugins.docs.mdx';
 export default {
     title: 'COMPONENTS/Blog Plugin',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blogPluginsDocs,
         },
         layout: 'fullwidth'
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

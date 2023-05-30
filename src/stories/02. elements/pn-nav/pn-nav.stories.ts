@@ -1,5 +1,4 @@
 import { Meta, Story } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -8,12 +7,8 @@ import PNNavDocs from './pn-nav.docs.mdx';
 
 export default {
     title: 'COMPONENTS/P N Nav',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/3edbd260-09a0-4b35-ad8a-73b46782965e/Desktop',
-        },
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: PNNavDocs,
         },
@@ -42,7 +37,8 @@ export default {
             defaultValue: [ false ],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface PNNavStoryProps {

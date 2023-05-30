@@ -8,7 +8,7 @@ import blogPluginsDocs from './blog-plugins.docs.mdx';
 export default {
     title: 'COMPONENTS/Blog Plugin',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blogPluginsDocs,
         },
@@ -25,7 +25,8 @@ export default {
             defaultValue: ['true'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface BlogPluginAuthorsStoryProps {

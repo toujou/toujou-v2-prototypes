@@ -7,11 +7,12 @@ import headlinesDocs from "./headlines.docs.mdx";
 export default {
     title: 'COMPONENTS/Headlines',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: headlinesDocs,
         }
     },
+    tags: ['autodocs']
 } as Meta;
 
 const HeadlineH1Template = () => {

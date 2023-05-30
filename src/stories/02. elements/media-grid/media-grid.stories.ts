@@ -1,5 +1,4 @@
 import { Story, Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -7,11 +6,7 @@ import mediaGridDocs from "./media-grid.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Media',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://xd.adobe.com/view/3d1d0926-79e2-4ae4-aa1c-162dcd451a3a-684e/screen/61e6af1e-563f-4ce8-92ba-ac3b191c5f0c/Desktop',
-        },
         badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: mediaGridDocs,
@@ -42,7 +37,8 @@ export default {
             defaultValue: ['image'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface SingleMediaStoryProps {

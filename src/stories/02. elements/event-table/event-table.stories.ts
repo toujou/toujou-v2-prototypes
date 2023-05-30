@@ -8,11 +8,12 @@ import eventTableDocs from './event-table.docs.mdx';
 export default {
     title: 'COMPONENTS/EventTable',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: eventTableDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

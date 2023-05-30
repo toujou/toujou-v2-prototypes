@@ -5,7 +5,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 export default {
     title: 'TESTS/Direct Child Elements',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
     },
 } as Meta;
 

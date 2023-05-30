@@ -54,8 +54,14 @@
 }
 
 .header .slider,
-.slider:first-child {
+.slider:first-child  {
     --slider-margin: 0 auto;
+}
+
+.portfolio-gallery .slider {
+    --slider-margin: 0 auto;
+
+    width: 100%;
 }
 
 .slider[content-type="teaser"] {

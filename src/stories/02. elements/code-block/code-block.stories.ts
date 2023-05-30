@@ -8,7 +8,7 @@ import codeBlockDocs from './code-block.docs.mdx';
 export default {
     title: 'COMPONENTS/Code Block',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: codeBlockDocs,
         },
@@ -25,7 +25,8 @@ export default {
             defaultValue: ['true'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface CodeBlockStoryProps {

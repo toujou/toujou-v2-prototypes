@@ -13,7 +13,7 @@
     --inpage-nav-border-color: var(--color-font);
     --inpage-nav-border-bottom: var(--border-width-normal) solid var(--inpage-nav-border-color);
     --inpage-nav-bg-color: var(--color-bg);
-    --inpage-nav-z-index: var(--z-index-content);
+    --inpage-nav-z-index: var(--z-index-inpage-nav);
     --inpage-nav-opacity: 1;
     --inpage-nav-transition: opacity var(--animation-duration-normal) var(--animation-easing-normal);
     --inpage-nav-border-radius: var(--border-radius-0);

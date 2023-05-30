@@ -8,7 +8,7 @@ import blogPostDocs from './blog-post.docs.mdx';
 export default {
     title: 'PAGES/BlogPost',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blogPostDocs,
         },
@@ -25,7 +25,8 @@ export default {
             defaultValue: ['true'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface BlogPostStoryProps {

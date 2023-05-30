@@ -7,7 +7,7 @@ import dividerDocs from './divider.docs.mdx';
 export default {
     title: 'COMPONENTS/Divider',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: dividerDocs,
         },
@@ -25,7 +25,8 @@ export default {
             defaultValue: ['false'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface DividerStoryProps {

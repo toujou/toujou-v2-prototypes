@@ -1,6 +1,5 @@
 module.exports = {
     "stories": [
-        "../src/**/*.stories.mdx",
         "../src/**/*.stories.@(js|jsx|ts|tsx)"
     ],
     "addons": [
@@ -9,14 +8,14 @@ module.exports = {
         "@storybook/addon-docs",
         "@storybook/addon-essentials",
         "@storybook/addon-a11y",
-        "storybook-addon-xd-designs/register",
-        "@geometricpanda/storybook-addon-badges",
+        "@geometricpanda/storybook-addon-badges"
     ],
-    "framework": "@storybook/web-components",
-    "staticDirs": [
-        "../assets"
-    ],
-    "core": {
-        "builder": "@storybook/builder-vite"
+    "framework": {
+        name: "@storybook/web-components-vite",
+        options: {}
     },
+    "staticDirs": ["../assets"],
+    docs: {
+        autodocs: 'tag',
+    }
 };

@@ -9,11 +9,12 @@ import '../../../js/elements/photoswipe-lightbox-creator';
 export default {
     title: 'COMPONENTS/Lightbox',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: lightboxDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

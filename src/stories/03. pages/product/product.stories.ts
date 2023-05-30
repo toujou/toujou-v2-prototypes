@@ -8,11 +8,12 @@ import productDocs from './product.docs.mdx';
 export default {
     title: 'PAGES/Product',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: productDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

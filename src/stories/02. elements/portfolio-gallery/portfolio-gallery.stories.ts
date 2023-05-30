@@ -10,12 +10,13 @@ import "../../../js/elements/photoswipe-lightbox-creator";
 export default {
     title: 'COMPONENTS/Portfolio Gallery',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: portfolioGalleryDocs,
         },
         layout: 'fullscreen',
     },
+    tags: ['autodocs']
 } as Meta;
 
 

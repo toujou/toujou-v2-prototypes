@@ -1,5 +1,4 @@
 import { Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -8,17 +7,14 @@ import TeaserSliderDocs from './teaser-slider.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Teaser',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/c8c36584-5431-4952-abe8-787d0b5d5776/Desktop',
-        },
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: TeaserSliderDocs,
         }
     },
-    argTypes: {}
+    argTypes: {},
+    tags: ['autodocs']
 } as Meta;
 
 

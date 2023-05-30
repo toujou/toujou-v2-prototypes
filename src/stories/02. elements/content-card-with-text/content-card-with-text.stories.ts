@@ -1,5 +1,4 @@
 import { Story, Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -8,11 +7,7 @@ import contentCardWithTextDocs from '../content-card-with-text/content-card-with
 
 export default {
     title: 'COMPONENTS/Content Card',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://xd.adobe.com/view/3d1d0926-79e2-4ae4-aa1c-162dcd451a3a-684e/screen/f783e300-5752-4a6a-8ed9-05047ec22750/Desktop',
-        },
         badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: contentCardWithTextDocs,
@@ -31,7 +26,8 @@ export default {
             defaultValue: ['left'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface ContentCardWithTextStoryProps {

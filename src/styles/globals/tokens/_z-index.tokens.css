@@ -5,7 +5,7 @@
     --z-index-pn-nav: 30;
     --z-index-top-button: 50;
     --z-index-spinner: 75;
-    --z-index-consent: 100;
+    --z-index-inpage-nav: 150;
     --z-index-sticky-nav: 200;
     --z-index-topbar: 500;
     --z-index-nav: 1000;
@@ -13,6 +13,7 @@
     --z-index-backdrop: 3000;
     --z-index-contact-box: 3500;
     --z-index-modal: 10000;
+    --z-index-consent: 15000;
     --z-index-overlay: 50000;
     --z-index-important: 2147483641;
 }

@@ -8,11 +8,12 @@ import tripDocs from './trip.docs.mdx';
 export default {
     title: 'PAGES/Trip',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: tripDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

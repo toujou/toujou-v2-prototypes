@@ -25,7 +25,8 @@ export default {
             defaultValue: ['33-left'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface HtmlWithTextStoryProps {

@@ -8,11 +8,12 @@ import eventDocs from './event.docs.mdx';
 export default {
     title: 'PAGES/Event',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: eventDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

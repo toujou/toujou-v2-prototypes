@@ -8,7 +8,7 @@ import ratingStarsDocs from './rating-stars.docs.mdx';
 export default {
     title: 'COMPONENTS/RatingStars',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: ratingStarsDocs,
         },
@@ -42,7 +42,8 @@ export default {
             defaultValue: ['normal'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface RatingStarsStoryProps {

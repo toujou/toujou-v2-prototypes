@@ -9,12 +9,13 @@ import '../../../../node_modules/skippy-links/dist/skippy-links'
 export default {
     title: 'COMPONENTS/SkipLinks',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: skipLinksDocs,
         },
         layout: "fullscreen",
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template: Story = () => {

@@ -8,7 +8,7 @@ import alertDocs from './alert.docs.mdx';
 export default {
     title: 'COMPONENTS/Alert',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: alertDocs,
         },
@@ -26,7 +26,8 @@ export default {
             defaultValue: ['primary'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface alertStoryProps {

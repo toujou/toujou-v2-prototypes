@@ -8,11 +8,12 @@ import estimatedReadingTimeDocs from './estimated-reading-time.docs.mdx';
 export default {
     title: 'COMPONENTS/EstimatedReadingTime',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: estimatedReadingTimeDocs,
         },
     },
+    tags: ['autodocs']
 } as Meta;
 
 const Template = () => {

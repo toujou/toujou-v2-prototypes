@@ -1,5 +1,4 @@
 import { Story, Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -7,11 +6,7 @@ import textBlockDocs from './text-block.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Text Elements',
-    decorators: [withXD],
     parameters: {
-        design: {
-            artboardUrl: 'https://xd.adobe.com/view/57945f95-9455-4031-a7b6-76e6a7ec74a6-02c7/screen/edaf3b92-9a40-4082-9504-de34d306f6cf/Desktop',
-        },
         badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: textBlockDocs,
@@ -30,7 +25,8 @@ export default {
             defaultValue: ['4-3'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface TextBlockMediaBelowStoryProps {

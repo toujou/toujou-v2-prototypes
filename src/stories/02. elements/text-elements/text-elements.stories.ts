@@ -1,5 +1,4 @@
 import { Story, Meta } from '@storybook/web-components';
-import { withXD } from "storybook-addon-xd-designs";
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -7,9 +6,8 @@ import TextElementsDocs from "./text-elements.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Text Elements',
-    decorators: [withXD],
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
+        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: TextElementsDocs,
         }
@@ -27,7 +25,8 @@ export default {
             defaultValue: ['none'],
             required: true,
         },
-    }
+    },
+    tags: ['autodocs']
 } as Meta;
 
 interface TableStoryProps {
