@@ -81,16 +81,16 @@ export const parameters = {
     /* Sort stories in correct order. Components children are sorted so "Docs" is always the last element */
     options: {
         storySort: {
-            method: 'configure',
+            method: 'alphabetic',
             includeNames: true,
             order: [
                 'COMPONENTS',
                 ["*", ["*", "Docs"]],
                 'TOKENS',
                 'PAGES',
-            ]
+            ],
         }
-    }
+    },
 }
 
 console.clear();
