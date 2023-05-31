@@ -14,7 +14,7 @@ describe('estimated-reading-time', () => {
     });
 
     it('has correct attributes', () => {
-        cy.get('.estimated-reading-time').invoke('attr', 'target-selector').should('eq', '#root');
+        cy.get('.estimated-reading-time').invoke('attr', 'target-selector').should('eq', 'body');
     });
 
     it('has correct text content', () => {

@@ -53,7 +53,7 @@ describe('contact box', () => {
         cy.get('.button').click();
         cy.get('.contact-box__card').should('have.css', 'background-color', colors.colorBg);
         cy.get('.contact-box__card').should('have.css', 'display', 'block');
-        cy.get('.contact-box__card').should('have.css', 'height', '200px');
+        cy.get('.contact-box__card').should('have.css', 'height', '196px');
         cy.get('.contact-box__card').should('have.css', 'width', '268.265625px');
         cy.get('.contact-box__card').should('have.css', 'position', 'relative');
         cy.get('.contact-box__card').should('have.css', 'visibility', 'visible');
@@ -77,7 +77,7 @@ describe('contact box', () => {
         cy.get('.contact-box__headline').should('have.css', 'color', colors.colorFont);
         cy.get('.contact-box__headline').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.contact-box__headline').should('have.css', 'font-size', tokens.type.size.xl);
-        cy.get('.contact-box__headline').should('have.css', 'margin-bottom', tokens.spacing.ms);
+        cy.get('.contact-box__headline').should('have.css', 'margin-bottom', tokens.spacing.normal);
 
         cy.get('.contact-box__items').should('have.css', 'display', 'flex');
         cy.get('.contact-box__items').should('have.css', 'flex-direction', 'column');
