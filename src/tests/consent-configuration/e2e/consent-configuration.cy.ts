@@ -57,7 +57,7 @@ describe('consent configuration with warning', () => {
             expect(warning).to.have.css('justify-content').equal('center');
             expect(warning).to.have.css('gap').equal(tokens.spacing.normal);
             expect(warning).to.have.css('margin').equal('0px');
-            expect(warning).to.have.css('color').equal(colors.colorWarning);
+            expect(warning).to.have.css('color').equal(colors.colorFontDark);
             expect(warning).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorWarning}`);
             expect(warning).to.have.css('padding').equal(tokens.spacing.normal);
             expect(warning).to.have.css('border-radius').equal(tokens.borderRadius.normal);

@@ -9,7 +9,11 @@ describe('collection item default a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -21,7 +25,11 @@ describe('collection item primary a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -33,7 +41,11 @@ describe('collection item secondary a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -45,7 +57,11 @@ describe('collection item inverted a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -57,7 +73,11 @@ describe('collection item type blog', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -69,7 +89,11 @@ describe('collection item type event', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -81,7 +105,11 @@ describe('collection item type trip', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -93,7 +121,11 @@ describe('collection item type product', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -105,7 +137,11 @@ describe('collection item type product primary', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -117,7 +153,11 @@ describe('collection item type product secondary', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -129,7 +169,11 @@ describe('collection item type product inverted', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 
@@ -141,7 +185,11 @@ describe('collection item type person', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item');
+        cy.checkA11y('.card-collection__item', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 

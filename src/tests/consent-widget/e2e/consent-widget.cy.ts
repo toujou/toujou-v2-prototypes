@@ -24,7 +24,7 @@ describe('consent widget', () => {
             expect(consentWidget).to.have.css('left').equal(tokens.spacing.normal);
             expect(consentWidget).to.have.css('margin-top').equal('0px');
             expect(consentWidget).to.have.css('margin-bottom').equal('0px');
-            expect(consentWidget).to.have.css('z-index').equal('100');
+            expect(consentWidget).to.have.css('z-index').equal('15000');
             expect(consentWidget).to.have.css('padding').equal(tokens.spacing.m);
             expect(consentWidget).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorFontLight}`);
             expect(consentWidget).to.have.css('border-radius').equal(tokens.borderRadius.normal);

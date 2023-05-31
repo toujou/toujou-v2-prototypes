@@ -3,7 +3,7 @@
 
 describe('code block a11y', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-code-block--code-block');
+        cy.visit('/iframe.html?viewMode=story&id=components-code-block--code-block&args=showLanguageTag:!true');
         cy.injectAxe();
     });
 

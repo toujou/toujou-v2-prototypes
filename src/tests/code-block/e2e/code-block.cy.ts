@@ -5,7 +5,7 @@ const tokens = Cypress.env('tokens');
 
 describe('code-block', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-code-block--code-block');
+        cy.visit('/iframe.html?viewMode=story&id=components-code-block--code-block&args=showLanguageTag:!true');
     });
 
     it('has correct structure', () => {
