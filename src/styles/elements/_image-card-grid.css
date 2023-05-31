@@ -19,6 +19,10 @@
     z-index: var(--image-card-grid-z-index);
 }
 
+.image-card-grid + .image-card-grid {
+    --image-card-grid-margin: var(--spacing-xl) auto 0;
+}
+
 .image-card-grid[fullwidth] {
     --image-card-grid-width: 100%;
     --image-card-grid-max-width: 100%;
