@@ -35,8 +35,8 @@ describe('inpage-nav desktop - default', () => {
             expect(nav).to.have.css('margin-bottom').eq(tokens.spacing.l);
             expect(nav).to.have.css('padding').eq(`0px ${tokens.spacing.s}`);
             expect(nav).to.have.css('position').eq('relative');
-            expect(nav).to.have.css('border-bottom').eq(`${tokens.borer.normal} solid rgba(0, 0, 0, 0)`);
-            expect(nav).to.have.css('z-index').eq('1');
+            expect(nav).to.have.css('border-bottom').eq(`${tokens.border.normal} solid rgba(0, 0, 0, 0)`);
+            expect(nav).to.have.css('z-index').eq('150');
             expect(nav).to.have.css('opacity').eq('1');
             expect(nav).to.have.css('border-radius').eq('0px');
         })

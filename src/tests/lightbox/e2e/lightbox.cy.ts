@@ -70,7 +70,6 @@ describe('lightbox', () => {
 describe('lightbox', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-lightbox--lightbox');
-
     });
 
     it('can open', () => {

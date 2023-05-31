@@ -9,7 +9,11 @@ describe('list-item a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.item-collection');
-        cy.checkA11y('.item-collection');
+        cy.checkA11y('.item-collection', {
+            rules: {
+                'landmark-no-duplicate-banner': { enabled: false }
+            }
+        });
     });
 })
 

@@ -163,7 +163,7 @@ export default defineConfig({
                 notifications: '2000',
                 backdrop: '3000',
                 contactBox: '3500',
-                modal: '10000',
+                modal: '100000',
                 overlay: '50000',
                 important: '2147483641'
             }
