@@ -142,25 +142,25 @@ describe('Tokens - type text styles', () => {
     });
 
     it('has correct values for the different text styles', () => {
-        cy.get('#root h1 + p').should('have.css', 'font-family', tokens.type.fontFamily.text);
-        cy.get('#root h1 + p').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('#root h1 + p').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
-        cy.get('#root h1 + p').should('have.css', 'line-height', tokens.type.lineHeight.normal);
+        cy.get('body h1 + p').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('body h1 + p').should('have.css', 'font-size', tokens.type.size.normal);
+        cy.get('body h1 + p').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
+        cy.get('body h1 + p').should('have.css', 'line-height', tokens.type.lineHeight.normal);
 
-        cy.get('#root p.teasertext').should('have.css', 'font-family', tokens.type.fontFamily.text);
-        cy.get('#root p.teasertext').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('#root p.teasertext').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
-        cy.get('#root p.teasertext').should('have.css', 'line-height', tokens.type.lineHeight.normal);
+        cy.get('body p.teasertext').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('body p.teasertext').should('have.css', 'font-size', tokens.type.size.normal);
+        cy.get('body p.teasertext').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
+        cy.get('body p.teasertext').should('have.css', 'line-height', tokens.type.lineHeight.normal);
 
-        cy.get('#root p.infotext').should('have.css', 'font-family', tokens.type.fontFamily.text);
-        cy.get('#root p.infotext').should('have.css', 'font-size', tokens.type.size.ms);
-        cy.get('#root p.infotext').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
-        cy.get('#root p.infotext').should('have.css', 'line-height', '30px');
+        cy.get('body p.infotext').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('body p.infotext').should('have.css', 'font-size', tokens.type.size.ms);
+        cy.get('body p.infotext').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
+        cy.get('body p.infotext').should('have.css', 'line-height', '30px');
 
-        cy.get('#root p.notes').should('have.css', 'font-family', tokens.type.fontFamily.text);
-        cy.get('#root p.notes').should('have.css', 'font-size', tokens.type.size.s);
-        cy.get('#root p.notes').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
-        cy.get('#root p.notes').should('have.css', 'line-height', '21px');
+        cy.get('body p.notes').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('body p.notes').should('have.css', 'font-size', tokens.type.size.s);
+        cy.get('body p.notes').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
+        cy.get('body p.notes').should('have.css', 'line-height', '21px');
     });
 })
 

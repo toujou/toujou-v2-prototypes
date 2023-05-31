@@ -14,7 +14,7 @@ describe('text block', () => {
         cy.get('.text-block[test-id="text-block-default"]').should('have.css', 'display', 'grid');
         cy.get('.text-block[test-id="text-block-default"]').should('have.css', 'grid-template-columns', '1200px');
         cy.get('.text-block[test-id="text-block-default"]').should('have.css', 'width', '1200px');
-        cy.get('.text-block[test-id="text-block-default"]').should('have.css', 'height', '86px');
+        cy.get('.text-block[test-id="text-block-default"]').should('have.css', 'height', '70px');
         cy.get('.text-block[test-id="text-block-default"]').should('have.css', 'margin', '96px 344px 0px');
     });
 

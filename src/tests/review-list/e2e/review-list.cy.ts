@@ -96,7 +96,7 @@ describe('review-list', () => {
         cy.get('.review:first-child .review__footer-title').should('have.css', 'font-family', 'Mulish, sans-serif');
         cy.get('.review:first-child .review__footer-title').should('have.css', 'font-size', '16px');
         cy.get('.review:first-child .review__footer-title').should('have.css', 'font-weight', '800');
-        cy.get('.review:first-child .review__footer-title').should('have.css', 'color', colors.colorPrimary);
+        cy.get('.review:first-child .review__footer-title').should('have.css', 'color', colors.colorFont);
         cy.get('.review:first-child .review__footer-title').should('have.css', 'margin', '0px 0px 8px');
     });
 

@@ -156,14 +156,15 @@ export default defineConfig({
                 pnNav: '30',
                 topButton: '50',
                 spinner: '75',
-                consent: '100',
+                inpageNav: '150',
                 stickyNav: '200',
                 topbar: '500',
                 nav: '1000',
                 notifications: '2000',
                 backdrop: '3000',
                 contactBox: '3500',
-                modal: '100000',
+                modal: '10000',
+                consent: '15000',
                 overlay: '50000',
                 important: '2147483641'
             }

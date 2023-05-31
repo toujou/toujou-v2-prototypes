@@ -17,7 +17,7 @@ const ZIndexTemplate = () => {
             <li><code style="z-index: var(--z-index-pn-nav);">--z-index-pn-nav: 30;</code></li>
             <li><code style="z-index: var(--z-index-top-button);">--z-index-top-button: 50;</code></li>
             <li><code style="z-index: var(--z-index-spinner);">--z-index-spinner: 75;</code></li>
-            <li><code style="z-index: var(--z-index-consent);">--z-index-consent: 100;</code></li>
+            <li><code style="z-index: var(--z-index-inpage-nav);">--z-index-inpage-nav: 150;</code></li>
             <li><code style="z-index: var(--z-index-sticky-nav);">--z-index-sticky-nav: 200;</code></li>
             <li><code style="z-index: var(--z-index-topbar);">--z-index-topbar: 500;</code></li>
             <li><code style="z-index: var(--z-index-nav);">--z-index-nav: 1000;</code></li>
@@ -25,6 +25,7 @@ const ZIndexTemplate = () => {
             <li><code style="z-index: var(--z-index-backdrop);">--z-index-backdrop: 3000;</code></li>
             <li><code style="z-index: var(--z-index-contact-box);">--z-index-contact-box: 3500;</code></li>
             <li><code style="z-index: var(--z-index-modal);">--z-index-modal: 10000;</code></li>
+            <li><code style="z-index: var(--z-index-consent);">--z-index-consent: 15000;</code></li>
             <li><code style="z-index: var(--z-index-overlay);">--z-index-overlay: 50000;</code></li>
             <li><code style="z-index: var(--z-index-important);">--z-index-important: 2147483647;</code> (use only if really necessary)</li>
         </ul>             

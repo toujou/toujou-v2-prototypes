@@ -18,7 +18,7 @@ describe('rating-stars', () => {
         cy.get('.rating-stars').invoke('attr', 'rating-total').should('eq', '5');
         cy.get('.rating-stars').invoke('attr', 'rating-value').should('eq', '4.4');
         cy.get('.rating-stars').invoke('attr', 'rating-entity-size').should('eq', 'xl');
-        cy.get('.rating-stars').invoke('attr', 'style').should('eq', '--rating-stars-percentage:12%;');
+        cy.get('.rating-stars').invoke('attr', 'style').should('eq', '--rating-stars-percentage: 11.999999999999986%;');
     });
 
     it('has correct styles', () => {

@@ -8,7 +8,7 @@ describe('modal a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
-        cy.get('#root p a').click();
+        cy.get('body p a').click();
         cy.checkA11y('toujou-modal');
     });
 })

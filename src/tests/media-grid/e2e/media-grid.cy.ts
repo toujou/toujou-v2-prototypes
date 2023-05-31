@@ -30,7 +30,6 @@ describe('media grid', () => {
         cy.get('.media-grid').should('have.css', 'width', '960px');
         cy.get('.media-grid').should('have.css', 'max-width', '960px');
         cy.get('.media-grid').should('have.css', 'margin', '0px 464px');
-        cy.get('.media-grid').should('have.css', '', '');
     });
 })
 

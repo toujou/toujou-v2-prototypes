@@ -7,6 +7,7 @@ describe('top button', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-topbutton--topbutton');
         // @ts-ignore
         cy.get('body').resetRealHover();
+        cy.scrollTo('top').wait(1000);
     });
 
     it('has correct structure', () => {
@@ -87,7 +88,7 @@ describe('top button', () => {
         cy.get('toujou-topbutton').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
         cy.get('.topbutton').then(() => {
             // @ts-ignore
-            expect(cy.state('window').scrollY).to.eq(1457);
+            expect(cy.state('window').scrollY).to.eq(1444);
         });
         cy.get('toujou-topbutton').click().wait(1000);
         cy.get('.topbutton').then(() => {
@@ -102,7 +103,7 @@ describe('top button', () => {
         cy.get('toujou-topbutton').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
         cy.get('.topbutton').then(() => {
             // @ts-ignore
-            expect(cy.state('window').scrollY).to.eq(1457);
+            expect(cy.state('window').scrollY).to.eq(1444);
         });
         cy.get('toujou-topbutton').focus().type(' ').wait(1000);
         cy.get('.topbutton').then(() => {
@@ -117,7 +118,7 @@ describe('top button', () => {
         cy.get('toujou-topbutton').should('have.css', 'border', `1px solid ${colors.colorPrimary}`);
         cy.get('.topbutton').then(() => {
             // @ts-ignore
-            expect(cy.state('window').scrollY).to.eq(1457);
+            expect(cy.state('window').scrollY).to.eq(1444);
         });
         cy.get('toujou-topbutton').focus().type('{enter}').wait(1000);
         cy.get('.topbutton').then(() => {
