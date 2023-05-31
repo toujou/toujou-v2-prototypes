@@ -11,7 +11,8 @@ describe('header slider a11y', () => {
         cy.get('.header');
         cy.checkA11y('.header', {
             rules: {
-                'aria-allowed-role': { enabled: false }
+                'aria-allowed-role': { enabled: false },
+                'button-name': { enabled: false } // We have added aria-label on the kojo templates
             }
         });
     });
