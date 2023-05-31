@@ -8,6 +8,7 @@ describe('cover slider a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
                 'aria-allowed-role': { enabled: false }
@@ -23,6 +24,7 @@ describe('cover slider primary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
                 'aria-allowed-role': { enabled: false }
@@ -38,6 +40,7 @@ describe('cover slider secondary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
                 'aria-allowed-role': { enabled: false }
@@ -53,6 +56,7 @@ describe('cover slider inverted a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
                 'aria-allowed-role': { enabled: false }

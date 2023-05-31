@@ -8,6 +8,7 @@ describe('blog-plugin: categories a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.categories-list');
         cy.checkA11y('.categories-list');
     });
 })

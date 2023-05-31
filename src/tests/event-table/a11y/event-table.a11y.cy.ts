@@ -8,6 +8,7 @@ describe('event table a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.item-collection');
         cy.checkA11y('.item-collection');
     });
 })

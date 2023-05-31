@@ -8,6 +8,7 @@ describe('html fullwidth a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.html-container');
         cy.checkA11y('.html-container');
     });
 })

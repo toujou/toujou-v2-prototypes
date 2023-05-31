@@ -8,6 +8,7 @@ describe('toujou-chip a11y', () => {
     });
 
     it('default: has no detectable a11y violation on load', () => {
+        cy.get('.chip');
         cy.checkA11y('.chip');
     });
 
@@ -52,7 +53,6 @@ describe('toujou-chip a11y', () => {
         });
         cy.checkA11y('.chip');
     });
-
 
     it('secondary-very-light: has no detectable a11y violation on load', () => {
         cy.get('.chip').then((e) => {

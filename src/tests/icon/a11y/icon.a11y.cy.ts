@@ -8,6 +8,7 @@ describe('icon a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -19,6 +20,7 @@ describe('icon font-color dark a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -30,6 +32,7 @@ describe('icon font-color light a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -41,6 +44,7 @@ describe('icon primary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -52,6 +56,7 @@ describe('icon primary dark a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -63,6 +68,7 @@ describe('icon primary light a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -74,6 +80,7 @@ describe('icon secondary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -85,6 +92,7 @@ describe('icon secondary dark a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -96,6 +104,7 @@ describe('icon secondary light a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -107,6 +116,7 @@ describe('icon background a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -118,6 +128,7 @@ describe('icon success a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -129,6 +140,7 @@ describe('icon warning a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })
@@ -140,6 +152,7 @@ describe('icon error a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.icon');
         cy.checkA11y('.icon');
     });
 })

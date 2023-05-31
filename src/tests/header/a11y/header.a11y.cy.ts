@@ -8,6 +8,7 @@ describe('header a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.header');
         cy.checkA11y('.header');
     });
 })
@@ -19,6 +20,7 @@ describe('header primary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.header');
         cy.checkA11y('.header');
     });
 })
@@ -30,6 +32,7 @@ describe('header secondary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.header');
         cy.checkA11y('.header');
     });
 })
@@ -41,6 +44,7 @@ describe('header font a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.header');
         cy.checkA11y('.header');
     });
 })

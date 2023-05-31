@@ -8,6 +8,7 @@ describe('table a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.table-container');
         cy.checkA11y('.table-container');
     });
 })

@@ -8,6 +8,7 @@ describe('blog-plugin: authors a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.post-author:first-child');
         cy.checkA11y('.post-author:first-child');
     });
 })

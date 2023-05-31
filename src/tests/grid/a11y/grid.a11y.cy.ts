@@ -8,6 +8,7 @@ describe('grid a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.grid');
         cy.checkA11y('.grid', {
             rules: {
                 'color-contrast': { enabled: false }

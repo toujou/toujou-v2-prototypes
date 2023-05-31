@@ -8,6 +8,7 @@ describe('hero-media a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.hero-media');
         cy.checkA11y('.hero-media');
     });
 })

@@ -8,6 +8,7 @@ describe('header with video a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.header');
         cy.checkA11y('.header');
     });
 })

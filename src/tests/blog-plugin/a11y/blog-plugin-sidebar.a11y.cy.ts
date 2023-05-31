@@ -8,6 +8,7 @@ describe('blog-plugin: sidebar a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.blog-sidebar');
         cy.checkA11y('.blog-sidebar');
     });
 })

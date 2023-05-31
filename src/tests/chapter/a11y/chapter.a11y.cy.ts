@@ -8,6 +8,7 @@ describe('chapter default a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })
@@ -19,6 +20,7 @@ describe('chapter primary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })
@@ -30,6 +32,7 @@ describe('chapter secondary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })
@@ -41,6 +44,7 @@ describe('chapter inverted a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })
@@ -52,6 +56,7 @@ describe('chapter none a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })
@@ -63,6 +68,7 @@ describe('chapter none a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })
@@ -74,6 +80,7 @@ describe('chapter background a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })
@@ -85,6 +92,7 @@ describe('chapter no padding a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.chapter');
         cy.checkA11y('.chapter');
     });
 })

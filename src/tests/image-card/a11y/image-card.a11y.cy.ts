@@ -8,6 +8,7 @@ describe('image card a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.image-card-grid');
         cy.checkA11y('.image-card-grid');
     });
 })

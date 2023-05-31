@@ -8,6 +8,7 @@ describe('header slider a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.header');
         cy.checkA11y('.header', {
             rules: {
                 'aria-allowed-role': { enabled: false }

@@ -8,6 +8,7 @@ describe('input label a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 })
@@ -19,6 +20,7 @@ describe('input label disabled a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 })
@@ -30,6 +32,7 @@ describe('input label success a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 })
@@ -41,6 +44,7 @@ describe('input label error a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 })

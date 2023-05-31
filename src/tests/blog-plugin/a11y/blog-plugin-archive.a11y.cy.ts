@@ -8,6 +8,7 @@ describe('blog-plugin: archive a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.blog-archive');
         cy.checkA11y('.blog-archive');
     });
 })

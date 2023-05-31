@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["cypress", "cypress-real-events"]
-  }
+    "types": ["cypress", "cypress-axe", ,"cypress-real-events"],
+  },
+  "include": ["."]
 }

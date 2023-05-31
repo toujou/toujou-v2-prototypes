@@ -8,6 +8,7 @@ describe('footer a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.footer');
         cy.checkA11y('.footer');
     });
 })

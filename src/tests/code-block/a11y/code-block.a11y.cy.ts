@@ -8,6 +8,7 @@ describe('code block a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.code-block');
         cy.checkA11y('.code-block');
     });
 })

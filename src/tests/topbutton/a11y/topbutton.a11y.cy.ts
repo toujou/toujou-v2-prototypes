@@ -8,6 +8,7 @@ describe('topbutton a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.topbutton');
         cy.checkA11y('.topbutton');
     });
 })

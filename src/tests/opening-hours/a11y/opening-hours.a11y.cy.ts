@@ -8,6 +8,7 @@ describe('opening-hours a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.opening-hours');
         cy.checkA11y('.opening-hours');
     });
 })

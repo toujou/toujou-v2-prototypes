@@ -8,6 +8,7 @@ describe('spinner a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.spinner');
         cy.checkA11y('.spinner');
     });
 })
@@ -19,6 +20,7 @@ describe('spinner centered on page a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.spinner');
         cy.checkA11y('.spinner');
     });
 })

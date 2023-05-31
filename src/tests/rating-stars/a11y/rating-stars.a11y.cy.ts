@@ -8,6 +8,7 @@ describe('rating-stars a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.rating-stars');
         cy.checkA11y('.rating-stars');
     });
 })

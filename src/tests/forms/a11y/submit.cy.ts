@@ -8,6 +8,7 @@ describe('select input a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.button[type="submit"');
         cy.checkA11y('.button[type="submit"');
     });
 })

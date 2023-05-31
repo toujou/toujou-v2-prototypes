@@ -8,6 +8,7 @@ describe('teaser a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -19,6 +20,7 @@ describe('teaser image 33% right a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -30,6 +32,7 @@ describe('teaser image 33% left a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -41,6 +44,7 @@ describe('teaser image 66% left a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -52,6 +56,7 @@ describe('teaser image 66% right a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -63,6 +68,7 @@ describe('teaser primary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -74,6 +80,7 @@ describe('teaser secondary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -85,6 +92,7 @@ describe('teaser inverted a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })
@@ -96,6 +104,7 @@ describe('teaser media a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.teaser');
         cy.checkA11y('.teaser');
     });
 })

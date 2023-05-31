@@ -8,6 +8,7 @@ describe('details a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.details');
         cy.checkA11y('.details');
     });
 })

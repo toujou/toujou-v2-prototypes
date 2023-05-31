@@ -8,6 +8,7 @@ describe('social media bar a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.social-media-bar');
         cy.checkA11y('.social-media-bar');
     });
 })
@@ -19,6 +20,7 @@ describe('social media bar inline a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.social-media-bar');
         cy.checkA11y('.social-media-bar');
     });
 })
@@ -30,6 +32,7 @@ describe('social media bar primary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.social-media-bar');
         cy.checkA11y('.social-media-bar');
     });
 })
@@ -41,6 +44,7 @@ describe('social media bar secondary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.social-media-bar');
         cy.checkA11y('.social-media-bar');
     });
 })
@@ -52,6 +56,7 @@ describe('social media bar inverted a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.social-media-bar');
         cy.checkA11y('.social-media-bar');
     });
 })
@@ -63,6 +68,7 @@ describe('social media bar no headline a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.social-media-bar');
         cy.checkA11y('.social-media-bar');
     });
 })

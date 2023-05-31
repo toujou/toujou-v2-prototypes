@@ -8,6 +8,7 @@ describe('alert a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.card-collection');
         cy.checkA11y('.card-collection');
     });
 })

@@ -10,6 +10,7 @@ describe('blockquote grid a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.blockquote-grid');
         cy.checkA11y('.blockquote-grid');
     });
 });
@@ -21,6 +22,7 @@ describe('blockquote grid - 2 cols a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.blockquote-grid');
         cy.checkA11y('.blockquote-grid');
     });
 });
@@ -32,6 +34,7 @@ describe('blockquote grid - 3 cols a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.blockquote-grid');
         cy.checkA11y('.blockquote-grid');
     });
 });
@@ -43,6 +46,7 @@ describe('blockquote grid - horizontal a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.blockquote-grid');
         cy.checkA11y('.blockquote-grid');
     });
 });

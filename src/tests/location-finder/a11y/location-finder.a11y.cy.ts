@@ -8,6 +8,7 @@ describe('location-finder a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.location-finder');
         cy.checkA11y('.location-finder');
     });
 })

@@ -8,6 +8,7 @@ describe('blog-plugin: header a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.blog-header');
         cy.checkA11y('.blog-header');
     });
 })

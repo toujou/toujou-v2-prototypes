@@ -8,6 +8,7 @@ describe('blockquote tag a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('blockquote');
         cy.checkA11y('blockquote');
     });
 })

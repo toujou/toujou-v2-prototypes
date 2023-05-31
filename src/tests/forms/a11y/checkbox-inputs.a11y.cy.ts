@@ -8,6 +8,7 @@ describe('checkbox a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 
@@ -24,6 +25,7 @@ describe('checkbox disabled a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 })
@@ -35,6 +37,7 @@ describe('checkbox success a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 })
@@ -46,6 +49,7 @@ describe('checkbox error a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.form');
         cy.checkA11y('.form');
     });
 })

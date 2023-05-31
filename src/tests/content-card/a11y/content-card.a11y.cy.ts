@@ -8,6 +8,7 @@ describe('content card horizontal a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.content-card');
         cy.checkA11y('.content-card');
     });
 })
@@ -19,6 +20,7 @@ describe('content card vertical a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.content-card');
         cy.checkA11y('.content-card');
     });
 })
@@ -30,6 +32,7 @@ describe('content card with text a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.content-card');
         cy.checkA11y('.content-card');
     });
 })

@@ -8,6 +8,7 @@ describe('estimated reading time a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.estimated-reading-time');
         cy.checkA11y('.estimated-reading-time');
     });
 })

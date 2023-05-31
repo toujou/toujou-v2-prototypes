@@ -9,10 +9,8 @@ describe('button expanded - a11y', () => {
         cy.injectAxe();
     });
 
-    beforeEach(() => {
-    });
-
     it('has no detectable a11y violation on load', () => {
+        cy.get('.button');
         cy.checkA11y('.button');
     });
 })

@@ -7,10 +7,8 @@ describe('button - a11y', () => {
         cy.injectAxe();
     });
 
-    beforeEach(() => {
-    });
-
     it('has no detectable a11y violation on load', () => {
+        cy.get('.card-collection');
         cy.checkA11y('.card-collection');
     });
 })

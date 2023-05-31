@@ -8,6 +8,7 @@ describe('divider a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.divider');
         cy.checkA11y('.divider');
     });
 })
@@ -19,6 +20,7 @@ describe('divider background a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.divider');
         cy.checkA11y('.divider');
     });
 })
@@ -30,6 +32,7 @@ describe('divider primary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.divider');
         cy.checkA11y('.divider');
     });
 })
@@ -41,6 +44,7 @@ describe('divider secondary a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.divider');
         cy.checkA11y('.divider');
     });
 })
@@ -52,6 +56,7 @@ describe('divider grey a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('.divider');
         cy.checkA11y('.divider');
     });
 })
