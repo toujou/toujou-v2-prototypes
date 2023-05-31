@@ -14,7 +14,7 @@ describe('Forms / input description', () => {
             expect(description).to.have.css('order').equal('10');
             expect(description).to.have.css('margin').equal(`${tokens.spacing.s} 0px 0px`);
             expect(description).to.have.css('padding').equal(`0px ${tokens.spacing.xs}`);
-            expect(description).to.have.css('color').equal(colors.colorFontLight);
+            expect(description).to.have.css('color').equal(colors.colorFont);
             expect(description).to.have.css('font-size').equal(tokens.type.size.s);
             expect(description).to.have.css('font-weight').equal(tokens.type.fontWeight.normal);
             expect(description).to.have.css('grid-column').equal('1 / -1');
