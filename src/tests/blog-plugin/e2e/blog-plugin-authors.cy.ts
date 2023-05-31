@@ -69,7 +69,7 @@ describe('blog plugin: authors', () => {
 
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-weight', tokens.type.fontweight.bold);
+        cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'color', colors.colorFont);
 
         cy.get('.post-author:first-child .post-author__info').should('have.css', 'font-family', tokens.type.fontFamily.text);

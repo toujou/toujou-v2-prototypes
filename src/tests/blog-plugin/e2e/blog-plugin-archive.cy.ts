@@ -38,7 +38,7 @@ describe('blog plugin: archive', () => {
         cy.get('.blog-archive__title').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.blog-archive__title').should('have.css', 'line-height', '40px');
         cy.get('.blog-archive__title').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-archive__title').should('have.css', 'margin-bottom', '20px');
+        cy.get('.blog-archive__title').should('have.css', 'margin-bottom', tokens.type.size.normal);
         cy.get('.blog-archive__title').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
 
         cy.get('.archive-year__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
