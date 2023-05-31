@@ -1,0 +1,3 @@
+/* Import the Photoswipe styles from the node module */
+
+@import "photoswipe/dist/photoswipe.css";
