@@ -2,6 +2,8 @@ import { defineConfig } from "cypress";
 
 const desktopViewportWidth = 1920;
 const desktopViewportHeight = 1080;
+const mobileViewportWidth = 375;
+const mobileViewportHeight = 667;
 
 export default defineConfig({
     e2e: {
@@ -171,5 +173,7 @@ export default defineConfig({
         },
         desktopViewportWidth: desktopViewportWidth,
         desktopViewportHeight: desktopViewportHeight,
+        mobileViewportHeight: mobileViewportHeight,
+        mobileViewportWidth: mobileViewportWidth
     },
 });
