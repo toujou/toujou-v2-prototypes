@@ -3,8 +3,9 @@
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
-describe('headlines', () => {
+describe('headlines [mobile]', () => {
     beforeEach(() => {
+        cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=tests-type-tests--single-headlines');
     });
 
