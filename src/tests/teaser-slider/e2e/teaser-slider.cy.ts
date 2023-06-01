@@ -116,7 +116,7 @@ describe('teaser-slider', () => {
         });
     });
 
-    it.only('slider of type "loop" can "wrap around"', () => {
+    it('slider of type "loop" can "wrap around"', () => {
         cy.get('toujou-slider').then((e) => {
             e[0].setAttribute('slider-type', 'loop');
         });

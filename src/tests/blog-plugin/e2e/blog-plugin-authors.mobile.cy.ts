@@ -3,8 +3,9 @@
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
-describe('blog plugin: authors', () => {
+describe('blog plugin: authors [mobile]', () => {
     beforeEach(() => {
+        cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-blog-plugin--authors');
         // @ts-ignore
         cy.get('body').resetRealHover();
@@ -37,18 +38,18 @@ describe('blog plugin: authors', () => {
         cy.get('.post-authors').should('have.css', 'display', 'flex');
         cy.get('.post-authors').should('have.css', 'flex-direction', 'column');
         cy.get('.post-authors').should('have.css', 'gap', tokens.spacing.normal);
-        cy.get('.post-authors').should('have.css', 'margin', '32px 464px 0px');
-        cy.get('.post-authors').should('have.css', 'width', '960px');
+        cy.get('.post-authors').should('have.css', 'margin', '32px 16px 0px');
+        cy.get('.post-authors').should('have.css', 'width', '296px');
         cy.get('.post-authors').should('have.css', 'max-width', '960px');
 
-        cy.get('.post-author:first-child').should('have.css', 'width', '960px');
+        cy.get('.post-author:first-child').should('have.css', 'width', '296px');
         cy.get('.post-author:first-child').should('have.css', 'background-color', colors.colorBlackO05);
         cy.get('.post-author:first-child').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('.post-author:first-child').should('have.css', 'padding', tokens.spacing.m);
         cy.get('.post-author:first-child').should('have.css', 'margin', '0px');
         cy.get('.post-author:first-child').should('have.css', 'display', 'grid');
-        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '48px 848px');
-        cy.get('.post-author:first-child').should('have.css', 'grid-template-areas', '"avatar meta" ". description" ". socials"');
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '48px 184px');
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-areas', '"avatar meta" "description description" "socials socials"');
         cy.get('.post-author:first-child').should('have.css', 'grid-gap', `0px ${tokens.spacing.normal}`);
 
         cy.get('.post-author:first-child .post-author__figure').should('have.css', 'height', '48px');
@@ -80,8 +81,9 @@ describe('blog plugin: authors', () => {
     });
 })
 
-describe('blog plugin: authors - no avatar', () => {
+describe('blog plugin: authors - no avatar [mobile]', () => {
     beforeEach(() => {
+        cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-blog-plugin--authors&args=hasAvatar:false');
         // @ts-ignore
         cy.get('body').resetRealHover();
@@ -92,7 +94,7 @@ describe('blog plugin: authors - no avatar', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '912px');
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '248px');
         cy.get('.post-author:first-child').should('have.css', 'grid-template-areas', '"meta" "description" "socials"');
     });
 });

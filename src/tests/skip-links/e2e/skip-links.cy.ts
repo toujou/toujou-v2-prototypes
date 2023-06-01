@@ -34,7 +34,7 @@ describe('product grid', () => {
         cy.get('skippy-links').shadow().find('.skippy-links__link').should('have.css', 'font-size', tokens.type.size.normal);
     });
 
-    it.only('has correct focus styles', () => {
+    it('has correct focus styles', () => {
         cy.get('skippy-links').should('have.css', 'transform', 'matrix(1, 0, 0, 1, 0, 0)');
         cy.get('body').realClick();
         cy.realPress("Tab");
