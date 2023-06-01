@@ -5,8 +5,9 @@ const tokens = Cypress.env('tokens');
 
 const cardSelector = '.collection-item:first-child'
 
-describe('event schedule', () => {
+describe('event schedule [mobile]', () => {
     beforeEach(() => {
+        cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-eventschedule--event-schedule');
     });
 
@@ -26,7 +27,7 @@ describe('event schedule', () => {
         cy.get(`${cardSelector}`).should('have.css', 'position', 'relative');
         cy.get(`${cardSelector}`).should('have.css', 'display', 'flex');
         cy.get(`${cardSelector}`).should('have.css', 'flex-direction', 'column');
-        cy.get(`${cardSelector}`).should('have.css', 'width', '324px');
+        cy.get(`${cardSelector}`).should('have.css', 'width', '296px');
         cy.get(`${cardSelector}`).should('have.css', 'max-width', '100%');
         cy.get(`${cardSelector}`).should('have.css', 'box-shadow', 'rgba(0, 0, 0, 0.05) 0px 4px 5px 0px, rgba(0, 0, 0, 0.06) 0px 1px 10px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px -1px');
         cy.get(`${cardSelector}`).should('have.css', 'border-radius', tokens.borderRadius.normal);

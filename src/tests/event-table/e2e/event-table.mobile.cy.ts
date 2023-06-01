@@ -5,8 +5,9 @@ const tokens = Cypress.env('tokens');
 
 const cardSelector = '.item-collection__item:first-child'
 
-describe('event-table', () => {
+describe('event-table [mobile]', () => {
     beforeEach(() => {
+        cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-eventtable--event-table');
     });
 
@@ -17,8 +18,8 @@ describe('event-table', () => {
 
     it('has correct card styles', () => {
         cy.get(`${cardSelector} .event-table-card`).should('have.css', 'display', 'grid');
-        cy.get(`${cardSelector} .event-table-card`).should('have.css', 'grid-template-columns', '96px 697.234px 134.766px');
-        cy.get(`${cardSelector} .event-table-card`).should('have.css', 'width', '960px');
+        cy.get(`${cardSelector} .event-table-card`).should('have.css', 'grid-template-columns', '96px 184px');
+        cy.get(`${cardSelector} .event-table-card`).should('have.css', 'width', '296px');
         cy.get(`${cardSelector} .event-table-card`).should('have.css', 'max-width', 'none');
         cy.get(`${cardSelector} .event-table-card`).should('have.css', 'border-radius', '0px');
         cy.get(`${cardSelector} .event-table-card`).should('have.css', 'z-index', 'auto');
