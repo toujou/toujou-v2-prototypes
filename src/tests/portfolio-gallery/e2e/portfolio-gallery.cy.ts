@@ -4,7 +4,7 @@
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
-describe('PN Nav', () => {
+describe('Portfolio gallery', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-portfolio-gallery--portfolio-gallery');
         // @ts-ignore
