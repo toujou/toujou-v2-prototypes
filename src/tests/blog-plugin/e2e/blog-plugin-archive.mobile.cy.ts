@@ -32,7 +32,7 @@ describe('blog plugin: archive [mobile]', () => {
         cy.get('.blog-archive').should('have.css', 'width', '311px');
         cy.get('.blog-archive').should('have.css', 'max-width', '960px');
         cy.get('.blog-archive').should('have.css', 'border-radius', tokens.borderRadius.normal);
-        cy.get('.blog-archive').should('have.css', 'margin', '32px 16px');
+        cy.get('.blog-archive').should('have.css', 'margin', `${tokens.spacing.l} ${tokens.spacing.normal}`);
 
         cy.get('.blog-archive__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.blog-archive__title').should('have.css', 'font-size', tokens.type.size.xl);

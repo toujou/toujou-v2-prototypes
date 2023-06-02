@@ -232,14 +232,14 @@ describe('collection item - type event', () => {
             expect(dateEl).to.have.css('position').equal('absolute');
             expect(dateEl).to.have.css('height').equal('80px');
             expect(dateEl).to.have.css('width').equal('44.8046875px');
-            expect(dateEl).to.have.css('top').equal('16px');
+            expect(dateEl).to.have.css('top').equal(tokens.spacing.normal);
             expect(dateEl).to.have.css('left').equal('263.195px');
             expect(dateEl).to.have.css('background-color').equal(colors.colorBg);
             expect(dateEl).to.have.css('border-radius').equal('4px');
             expect(dateEl).to.have.css('display').equal('flex');
             expect(dateEl).to.have.css('align-items').equal('normal');
             expect(dateEl).to.have.css('justify-content').equal('center');
-            expect(dateEl).to.have.css('padding').equal('8px');
+            expect(dateEl).to.have.css('padding').equal(tokens.spacing.s);
             expect(dateEl).to.have.css('color').equal(colors.colorFont);
         });
     });
@@ -247,8 +247,8 @@ describe('collection item - type event', () => {
     it('Info element has correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__info`).then((infoEl) => {
             expect(infoEl).to.have.css('display').equal('grid');
-            expect(infoEl).to.have.css('grid-gap').equal('8px 8px');
-            expect(infoEl).to.have.css('margin').equal('16px 0px 0px');
+            expect(infoEl).to.have.css('grid-gap').equal(`${tokens.spacing.s} ${tokens.spacing.s}`);
+            expect(infoEl).to.have.css('margin').equal(`${tokens.spacing.normal} 0px 0px`);
         });
         cy.get(`${firstCardSelector} .collection-item__info .icon`).then((infoIcon) => {
            expect(infoIcon).to.exist;
@@ -289,7 +289,7 @@ describe('collection item - type trip', () => {
             expect(locationEl).to.have.css('position').equal('absolute');
             expect(locationEl).to.have.css('bottom').equal('0px');
             expect(locationEl).to.have.css('left').equal('0px');
-            expect(locationEl).to.have.css('padding').equal('24px');
+            expect(locationEl).to.have.css('padding').equal(tokens.spacing.m);
         });
         cy.get(`${firstCardSelector} .collection-item__location-city`).then((cityEl) => {
             expect(cityEl).to.have.css('font-size').equal('20px');
@@ -298,7 +298,7 @@ describe('collection item - type trip', () => {
             expect(cityEl).to.have.css('margin').equal('0px');
         });
         cy.get(`${firstCardSelector} .collection-item__location-country`).then((countryEl) => {
-            expect(countryEl).to.have.css('font-size').equal('16px');
+            expect(countryEl).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(countryEl).to.have.css('font-weight').equal('600');
             expect(countryEl).to.have.css('color').equal(colors.colorBg);
             expect(countryEl).to.have.css('margin').equal('0px');
@@ -315,16 +315,16 @@ describe('collection item - type trip', () => {
     it('trip price element has correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__trip-price-prefix`).then((tripPricePrefixEl) => {
             expect(tripPricePrefixEl).to.have.css('color').equal(colors.colorFont);
-            expect(tripPricePrefixEl).to.have.css('font-size').equal('16px');
+            expect(tripPricePrefixEl).to.have.css('font-size').equal(tokens.type.size.normal);
         });
         cy.get(`${firstCardSelector} .collection-item__trip-price-amount`).then((tripPriceAmountEl) => {
             expect(tripPriceAmountEl).to.have.css('color').equal(colors.colorFont);
-            expect(tripPriceAmountEl).to.have.css('font-size').equal('20px');
-            expect(tripPriceAmountEl).to.have.css('font-weight').equal('800');
+            expect(tripPriceAmountEl).to.have.css('font-size').equal(tokens.type.size.ms);
+            expect(tripPriceAmountEl).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
         });
         cy.get(`${firstCardSelector} .collection-item__trip-price-suffix`).then((tripPriceSuffixEl) => {
             expect(tripPriceSuffixEl).to.have.css('color').equal(colors.colorFont);
-            expect(tripPriceSuffixEl).to.have.css('font-size').equal('12px');
+            expect(tripPriceSuffixEl).to.have.css('font-size').equal(tokens.type.size.xs);
         });
     });
 });
@@ -354,9 +354,9 @@ describe('collection item - type product', () => {
     it('product title has correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__title`).then((titleEl) => {
             expect(titleEl).to.have.css('color').equal(colors.colorBg);
-            expect(titleEl).to.have.css('font-size').equal('20px');
-            expect(titleEl).to.have.css('margin').equal('0px 0px 4px');
-            expect(titleEl).to.have.css('font-weight').equal('800');
+            expect(titleEl).to.have.css('font-size').equal(tokens.type.size.ms);
+            expect(titleEl).to.have.css('margin').equal(`0px 0px ${tokens.spacing.xs}`);
+            expect(titleEl).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
         });
     });
 });
@@ -425,9 +425,9 @@ describe('collection item - type person', () => {
 
     it('has correct address section styles', () => {
         cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-size', '16px');
+        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-size', tokens.type.size.normal);
         cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'color', colors.colorFont);
-        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'line-height', '24px');
+        cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get(`${firstCardSelector} .collection-item__address`).should('have.css', 'font-style', 'normal');
 
         cy.get(`${firstCardSelector} .collection-item__address`).children('.address__item').should('have.length', 4);

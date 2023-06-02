@@ -30,7 +30,7 @@ describe('blog plugin: post meta [mobile]', () => {
         cy.get('.post-meta').should('have.css', 'width', '311px');
         cy.get('.post-meta').should('have.css', 'max-width', '960px');
         cy.get('.post-meta').should('have.css', 'border-radius', tokens.borderRadius.normal);
-        cy.get('.post-meta').should('have.css', 'margin', '32px 16px');
+        cy.get('.post-meta').should('have.css', 'margin', `${tokens.spacing.l} ${tokens.spacing.normal}`);
         cy.get('.post-meta').should('have.css', 'display', 'flex');
         cy.get('.post-meta').should('have.css', 'flex-direction', 'row');
         cy.get('.post-meta').should('have.css', 'align-items', 'center');

@@ -23,7 +23,7 @@ describe('blog plugin: sidebar [mobile]', () => {
     it('has correct styles', () => {
         cy.get('.blog-sidebar').should('have.css', 'width', '296px');
         cy.get('.blog-sidebar').should('have.css', 'max-width', '1440px');
-        cy.get('.blog-sidebar').should('have.css', 'margin', '32px 16px 0px');
+        cy.get('.blog-sidebar').should('have.css', 'margin', `${tokens.spacing.l} ${tokens.spacing.normal} 0px`);
         cy.get('.blog-sidebar').should('have.css', 'display', 'grid');
         cy.get('.blog-sidebar').should('have.css', 'grid-template-columns', '296px');
         cy.get('.blog-sidebar').should('have.css', 'grid-template-areas', '"posts" "categories" "tags" "comments" "archive"');

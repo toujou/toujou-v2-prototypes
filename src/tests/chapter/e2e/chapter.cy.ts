@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
+const tokens = Cypress.env('tokens');
 
 describe('chapter', () => {
     beforeEach(() => {
@@ -14,8 +15,8 @@ describe('chapter', () => {
 
     it('has correct styles', () => {
         cy.get('.chapter').then((chapter) => {
-            expect(chapter).to.have.css('padding-top').equal('96px');
-            expect(chapter).to.have.css('padding-bottom').equal('96px');
+            expect(chapter).to.have.css('padding-top').equal(tokens.spacing.xxxl);
+            expect(chapter).to.have.css('padding-bottom').equal(tokens.spacing.xxxl);
             expect(chapter).to.have.css('margin').equal('0px');
         });
     });

@@ -22,7 +22,7 @@ describe('blog plugin: sidebar', () => {
     it('has correct styles', () => {
         cy.get('.blog-sidebar').should('have.css', 'width', '1440px');
         cy.get('.blog-sidebar').should('have.css', 'max-width', '1440px');
-        cy.get('.blog-sidebar').should('have.css', 'margin', '32px 224px 0px');
+        cy.get('.blog-sidebar').should('have.css', 'margin', `${tokens.spacing.l} 224px 0px`);
         cy.get('.blog-sidebar').should('have.css', 'display', 'grid');
         cy.get('.blog-sidebar').should('have.css', 'grid-template-columns', '336px 336px 336px 288px');
         cy.get('.blog-sidebar').should('have.css', 'grid-template-areas', '"posts categories comments archive" "posts tags comments archive"');

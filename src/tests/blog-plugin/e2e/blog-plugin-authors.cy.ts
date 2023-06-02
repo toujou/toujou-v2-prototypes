@@ -47,7 +47,7 @@ describe('blog plugin: authors', () => {
         cy.get('.post-author:first-child').should('have.css', 'padding', tokens.spacing.m);
         cy.get('.post-author:first-child').should('have.css', 'margin', '0px');
         cy.get('.post-author:first-child').should('have.css', 'display', 'grid');
-        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', '48px 848px');
+        cy.get('.post-author:first-child').should('have.css', 'grid-template-columns', `${tokens.spacing.xl} 848px`);
         cy.get('.post-author:first-child').should('have.css', 'grid-template-areas', '"avatar meta" ". description" ". socials"');
         cy.get('.post-author:first-child').should('have.css', 'grid-gap', `0px ${tokens.spacing.normal}`);
 
