@@ -4,7 +4,7 @@
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
-describe('product grid', () => {
+describe('Skip links', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-skiplinks--skip-links');
         // @ts-ignore

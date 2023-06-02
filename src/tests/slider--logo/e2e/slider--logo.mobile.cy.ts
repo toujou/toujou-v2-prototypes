@@ -2,23 +2,29 @@
 
 const colors = Cypress.env('colors');
 
-describe('Slider - desktop', () => {
+describe('slider--logo [mobile]', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-media--slider');
+        cy.viewport('iphone-6');
+        cy.visit('/iframe.html?viewMode=story&id=components-media--slider-logo');
     });
 
     it('has correct attributes', () => {
         cy.get('toujou-slider').invoke('attr', 'class').should('eq', 'slider');
+        cy.get('toujou-slider').invoke('attr', 'content-type').should('eq', 'logos');
         cy.get('toujou-slider').invoke('attr', 'aria-label').should('eq', 'Toujou slider example');
         cy.get('toujou-slider').invoke('attr', 'element-design').should('eq', 'default');
-        cy.get('toujou-slider').invoke('attr', 'show-count').should('exist');
         cy.get('toujou-slider').invoke('attr', 'auto-play-interval').should('eq', '6');
-        cy.get('toujou-slider').invoke('attr', 'slides-to-show').should('eq', '1');
-        cy.get('toujou-slider').invoke('attr', 'slider-type').should('eq', 'loop');
         cy.get('toujou-slider').invoke('attr', 'slides-per-move').should('eq', '1');
+        cy.get('toujou-slider').invoke('attr', 'slider-type').should('eq', 'loop');
         cy.get('toujou-slider').invoke('attr', 'slider-gap').should('eq', 'var(--slider-slides-gap)');
+        cy.get('toujou-slider').invoke('attr', 'slides-to-show').should('eq', '5');
+        cy.get('toujou-slider').invoke('attr', 'arrow-first-aria-label').should('eq', 'Go to first logo');
+        cy.get('toujou-slider').invoke('attr', 'arrow-last-aria-label').should('eq', 'Go to last logo');
+        cy.get('toujou-slider').invoke('attr', 'arrow-next-aria-label').should('eq', 'Go to next logo');
+        cy.get('toujou-slider').invoke('attr', 'arrow-prev-aria-label').should('eq', 'Go to previous logo');
         cy.get('toujou-slider').invoke('attr', 'slider-padding').should('eq', '0');
         cy.get('toujou-slider').invoke('attr', 'slider-focus-center').should('eq', 'false');
+        cy.get('toujou-slider').invoke('attr', 'slider-aspect-ratio').should('eq', '0.5625');
     });
 
     it('has correct default design colors', () => {
@@ -29,10 +35,10 @@ describe('Slider - desktop', () => {
         cy.get('toujou-slider .slider-control--next').should('have.css', 'background-color', colors.colorFont);
         cy.get('toujou-slider .slider-control--prev toujou-icon').should('have.css', 'background-color', colors.colorBg);
         cy.get('toujou-slider .slider-control--next toujou-icon').should('have.css', 'background-color', colors.colorBg);
-        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colors.colorBg);
-        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'border', `2px solid ${colors.colorBg}`);
+        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'background-color', colors.colorFont);
+        cy.get('toujou-slider .slider-bullets__bullet.is-active').should('have.css', 'border', `2px solid ${colors.colorFont}`);
         cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'background-color', colors.colorTransparent);
-        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'border', `2px solid ${colors.colorBg}`);
+        cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'border', `2px solid ${colors.colorFont}`);
         cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colors.colorFontLight);
         cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colors.colorFontDark);
     });
@@ -86,30 +92,6 @@ describe('Slider - desktop', () => {
         cy.get('toujou-slider .slider-bullets__bullet:not(.is-active)').should('have.css', 'border', `2px solid ${colors.colorFontLight}`);
         cy.get('toujou-slider .slider-progress').should('have.css', 'background-color', colors.colorFontLight);
         cy.get('toujou-slider .slider-progress__bar').should('have.css', 'background-color', colors.colorFontDark);
-    });
-
-    it('has can hide the counter', () => {
-        cy.get('toujou-slider .slider-count').should('have.css', 'display', 'block');
-        cy.get('toujou-slider').then((e) => {
-            e[0].removeAttribute('show-count');
-        });
-        cy.get('toujou-slider .slider-count').should('have.css', 'display', 'none');
-    });
-
-    it('counter has correct total number', () => {
-        cy.get('toujou-slider .slider-count__total').should('have.text', '5');
-    });
-
-    it('counter shows correct active index', () => {
-        cy.get('toujou-slider .slider-count__current').should('have.text', '1');
-        cy.get('toujou-slider li[role="presentation"]:nth-child(3)').click();
-        cy.get('toujou-slider .slider-count__current').should('have.text', '3');
-        cy.get('toujou-slider li[role="presentation"]:nth-child(5)').click();
-        cy.get('toujou-slider .slider-count__current').should('have.text', '5');
-        cy.get('toujou-slider li[role="presentation"]:nth-child(2)').click();
-        cy.get('toujou-slider .slider-count__current').should('have.text', '2');
-        cy.get('toujou-slider li[role="presentation"]:nth-child(4)').click();
-        cy.get('toujou-slider .slider-count__current').should('have.text', '4');
     });
 
     it('control clicks go to next / previous slide', () => {
@@ -166,7 +148,7 @@ describe('Slider - desktop', () => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
-            expect(activeIndex).to.eq(4);
+            expect(activeIndex).to.eq(6);
         });
         cy.get('toujou-slider .slider-control--next').click();
         cy.get('toujou-slider').then((el) => {

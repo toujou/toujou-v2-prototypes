@@ -2,8 +2,9 @@
 
 const colors = Cypress.env('colors');
 
-describe('Slider - desktop', () => {
+describe('Slider - mobile', () => {
     beforeEach(() => {
+        cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-media--slider');
     });
 
