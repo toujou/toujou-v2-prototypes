@@ -3,8 +3,9 @@
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
-describe('text elements', () => {
+describe('text elements [mobile]', () => {
     beforeEach(() => {
+        cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-text-elements--text-elements-examples');
     });
 
