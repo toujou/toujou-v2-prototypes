@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+const tokens = Cypress.env('tokens');
+
 describe('Forms / required inputs', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-forms--required&args=isRequired:true');
@@ -11,7 +13,7 @@ describe('Forms / required inputs', () => {
         // @ts-ignore
         cy.get('.input-group:first-child .input-label').after('content').should('eq', '*');
         // @ts-ignore
-        cy.get('.input-group:first-child .input-label').after('margin').should('eq', '0px 0px 0px 2px');
+        cy.get('.input-group:first-child .input-label').after('margin').should('eq', `0px 0px 0px ${tokens.spacing.xxs}`);
     });
 });
 

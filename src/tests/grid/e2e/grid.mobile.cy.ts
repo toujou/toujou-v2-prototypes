@@ -26,7 +26,7 @@ describe('grid 1 column [mobile]', () => {
         cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 
@@ -52,7 +52,7 @@ describe('grid 2 columns [mobile]', () => {
         cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 
@@ -80,7 +80,7 @@ describe('grid 2 columns third right [mobile]', () => {
         cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 
@@ -108,7 +108,7 @@ describe('grid 2 columns third left [mobile]', () => {
         cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 
@@ -134,7 +134,7 @@ describe('grid 3 columns [mobile]', () => {
         cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 
@@ -160,7 +160,7 @@ describe('grid 4 columns [mobile]', () => {
         cy.get('.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '960px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 
@@ -184,7 +184,7 @@ describe('grid medium [mobile]', () => {
     it('has correct styles', () => {
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '1200px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 
@@ -208,7 +208,7 @@ describe('grid wide [mobile]', () => {
     it('has correct styles', () => {
         cy.get('.grid').should('have.css', 'width', '343px');
         cy.get('.grid').should('have.css', 'max-width', '1440px');
-        cy.get('.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 

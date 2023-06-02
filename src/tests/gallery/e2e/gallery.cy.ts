@@ -100,7 +100,6 @@ describe('gallery', () => {
         cy.get('.gallery .gallery__item:first-child').click();
         cy.wait(500);
         cy.get('.pswp').should('exist');
-
     });
 })
 

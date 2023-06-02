@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+const tokens = Cypress.env('tokens');
+
 describe('toujou-html-container [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
@@ -17,7 +19,7 @@ describe('toujou-html-container [mobile]', () => {
         cy.get('toujou-html-container').then((container) => {
             expect(container).to.have.css('width').eq('343px');
             expect(container).to.have.css('max-width').eq('1200px');
-            expect(container).to.have.css('margin').eq('0px 16px');
+            expect(container).to.have.css('margin').eq(`0px ${tokens.spacing.normal}`);
             expect(container).to.have.css('display').eq('block');
         })
     });

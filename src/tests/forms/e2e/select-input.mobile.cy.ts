@@ -87,7 +87,7 @@ describe('Forms / select input - success [mobile]', () => {
     it('input--text group has correct success styles', () => {
         cy.get('.input-group--single-select .select').should('have.css', 'color', colors.colorFont)
         cy.get('.input-group--single-select .select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSuccess}`);
-        cy.get('.input-group--single-select .select').should('have.css', 'outline', `${colors.colorSuccess} solid 1px`);
+        cy.get('.input-group--single-select .select').should('have.css', 'outline', `${colors.colorSuccess} solid ${tokens.border.normal}`);
     });
 });
 
@@ -102,7 +102,7 @@ describe('Forms / select input - error [mobile]', () => {
     it('input--text group has correct success styles', () => {
         cy.get('.input-group--single-select .select').should('have.css', 'color', colors.colorFont)
         cy.get('.input-group--single-select .select').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorError}`);
-        cy.get('.input-group--single-select .select').should('have.css', 'outline', `${colors.colorError} solid 1px`);
+        cy.get('.input-group--single-select .select').should('have.css', 'outline', `${colors.colorError} solid ${tokens.border.normal}`);
     });
 });
 

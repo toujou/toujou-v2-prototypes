@@ -69,7 +69,7 @@ describe('inpage-nav desktop - default', () => {
         cy.get('.inpage-nav__list').then((list) => {
             expect(list).to.have.css('visibility').eq('visible');
             expect(list).to.have.css('list-style').eq('outside none none');
-            expect(list).to.have.css('margin').eq('0px 0px 0px 24px');
+            expect(list).to.have.css('margin').eq(`0px 0px 0px ${tokens.spacing.m}`);
             expect(list).to.have.css('padding').eq('0px');
             expect(list).to.have.css('display').eq('flex');
             expect(list).to.have.css('align-items').eq('center');

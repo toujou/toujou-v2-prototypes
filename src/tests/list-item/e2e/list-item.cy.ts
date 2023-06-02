@@ -46,11 +46,11 @@ describe('list item - type default', () => {
     });
 
     it('has correct bottom styles', () => {
-        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', '24px');
+        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', tokens.spacing.m);
         cy.get(`${firstCardSelector} .collection-item__title`).then((itemTitle) => {
-            expect(itemTitle).to.have.css('font-size').equal('20px');
+            expect(itemTitle).to.have.css('font-size').equal(tokens.type.size.ms);
             expect(itemTitle).to.have.css('color').equal(colors.colorFontDark);
-            expect(itemTitle).to.have.css('margin').equal('0px 0px 4px');
+            expect(itemTitle).to.have.css('margin').equal(`0px 0px ${tokens.spacing.xs}`);
         });
         cy.get(`${firstCardSelector} .collection-item__subtitles`).should('have.css', 'margin', '0px');
         cy.get(`${firstCardSelector} .collection-item__subtitle`).then((itemSubtitles) => {
@@ -112,7 +112,7 @@ describe('list item - type blog', () => {
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'justify-content', 'flex-start');
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'gap', tokens.spacing.xs);
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'padding', `${tokens.spacing.xs} ${tokens.spacing.normal} ${tokens.spacing.xs} ${tokens.spacing.s}`);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'border-radius', '0px 32px 32px 0px');
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'border-radius', `0px ${tokens.borderRadius.xxxl} ${tokens.borderRadius.xxxl} 0px`);
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'font-size', tokens.type.size.s);
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'margin', `0px 0px ${tokens.spacing.xs}`);
     });
