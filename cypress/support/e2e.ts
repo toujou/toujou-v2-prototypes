@@ -18,5 +18,18 @@ import './commands'
 import 'cypress-real-events/support'
 import 'cypress-axe'
 
+// Fix the "Error: ResizeObserver loop limit exceeded" error
+Cypress.setMaxListeners(40);
+Cypress.on('uncaught:exception', (err, runnable) => {
+    console.log(`----------- 1 uncaught:exception: ${err}`);
+    const resizeObserverLoopLimitExcedError = 'ResizeObserver loop limit exceeded';
+    const resizeObserverLoopNotificationError =
+        'ResizeObserver loop completed with undelivered notifications';
+    if (
+        err.message.indexOf(resizeObserverLoopLimitExcedError) !== -1 ||
+        err.message.indexOf(resizeObserverLoopNotificationError) !== -1
+    )  return false;
+});
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

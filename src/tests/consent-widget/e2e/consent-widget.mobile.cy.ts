@@ -25,7 +25,7 @@ describe('consent widget [mobile]', () => {
             expect(consentWidget).to.have.css('left').equal(tokens.spacing.normal);
             expect(consentWidget).to.have.css('margin-top').equal('0px');
             expect(consentWidget).to.have.css('margin-bottom').equal('0px');
-            expect(consentWidget).to.have.css('z-index').equal('15000');
+            expect(consentWidget).to.have.css('z-index').equal(tokens.zIndex.consent);
             expect(consentWidget).to.have.css('padding').equal(tokens.spacing.normal);
             expect(consentWidget).to.have.css('border').equal(`${tokens.border.normal} solid ${colors.colorFontLight}`);
             expect(consentWidget).to.have.css('border-radius').equal(tokens.borderRadius.normal);
@@ -86,7 +86,7 @@ describe('consent widget - open [mobile]', () => {
             expect(consentElements).to.have.css('display').equal('flex');
             expect(consentElements).to.have.css('flex-direction').equal('column');
             expect(consentElements).to.have.css('flex-grow').equal('1');
-            expect(consentElements).to.have.css('gap').equal('4px');
+            expect(consentElements).to.have.css('gap').equal(tokens.spacing.xs);
         });
         cy.get('.consent-widget__consent-elements').children('toujou-consent').should('have.length', 4);
         cy.get('#consentSaveButton').then((consentSaveButton) => {

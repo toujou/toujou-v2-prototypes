@@ -61,14 +61,14 @@ describe('content card - vertical [mobile]', () => {
         cy.get('.content-card:first-child .content-card__content').should('have.css', 'flex', '0 0 auto');
         cy.get('.content-card:first-child .content-card__content').should('have.css', 'padding', tokens.spacing.normal);
 
-        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-size', '20px');
+        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.content-card:first-child .content-card__title').should('have.css', 'font-size', tokens.type.size.ms);
         cy.get('.content-card:first-child .content-card__title').should('have.css', 'color', colors.colorFontDark);
-        cy.get('.content-card:first-child .content-card__title').should('have.css', 'margin', '0px 0px 16px');
+        cy.get('.content-card:first-child .content-card__title').should('have.css', 'margin', `0px 0px ${tokens.spacing.normal}`);
 
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'margin', '16px 0px 0px');
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-family', 'Mulish, sans-serif');
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-size', '16px');
+        cy.get('.content-card:first-child .content-card__text').should('have.css', 'margin', `${tokens.spacing.normal} 0px 0px`);
+        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.content-card:first-child .content-card__text').should('have.css', 'color', colors.colorFont);
     });
 });

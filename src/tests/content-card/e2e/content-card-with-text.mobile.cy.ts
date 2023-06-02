@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+const tokens = Cypress.env('tokens');
+
 describe('content card with text [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
@@ -24,8 +26,8 @@ describe('content card with text [mobile]', () => {
     it('has correct grid styles', () => {
         cy.get('toujou-grid.grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid.grid').should('have.css', 'grid-template-columns', '296px');
-        cy.get('toujou-grid.grid').should('have.css', 'grid-gap', '32px 32px');
-        cy.get('toujou-grid.grid').should('have.css', 'margin', '0px 16px');
+        cy.get('toujou-grid.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
+        cy.get('toujou-grid.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
         cy.get('toujou-grid.grid').should('have.css', 'width', '296px');
         cy.get('toujou-grid.grid').should('have.css', 'max-width', '960px');
     });
