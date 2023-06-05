@@ -44,7 +44,7 @@ renders: "Estimated reading time: 2 Minutos"
 
 renders: "Estimated reading time: Menos de 1 minuto"
 `})})]})}function c(t={}){const{wrapper:i}=Object.assign({},l(),t.components);return i?e.jsx(i,Object.assign({},t,{children:e.jsx(a,t)})):a(t)}const b={title:"COMPONENTS/EstimatedReadingTime",parameters:{badges:[r.DONE],docs:{page:c}},tags:["autodocs"]},d=()=>`
-        <toujou-estimated-reading-time class="estimated-reading-time" target-selector="#root">
+        <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
             <span slot="label" class="estimated-reading-time__label">
                 <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
             Estimated reading time:
@@ -94,7 +94,7 @@ renders: "Estimated reading time: Menos de 1 minuto"
         </toujou-text-block>
     `,s=d.bind({});var n,u,o;s.parameters={...s.parameters,docs:{...(n=s.parameters)==null?void 0:n.docs,source:{originalSource:`() => {
   return \`
-        <toujou-estimated-reading-time class="estimated-reading-time" target-selector="#root">
+        <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
             <span slot="label" class="estimated-reading-time__label">
                 <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
             Estimated reading time:
@@ -144,4 +144,4 @@ renders: "Estimated reading time: Menos de 1 minuto"
         </toujou-text-block>
     \`;
 }`,...(o=(u=s.parameters)==null?void 0:u.docs)==null?void 0:o.source}}};const j=["EstimatedReadingTime"];export{s as EstimatedReadingTime,j as __namedExportsOrder,b as default};
-//# sourceMappingURL=estimated-reading-time.stories-3bf93baa.js.map
+//# sourceMappingURL=estimated-reading-time.stories-073e2bd1.js.map

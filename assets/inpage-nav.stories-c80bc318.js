@@ -1,7 +1,7 @@
-import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-runtime-ac05983f.js";import{u as r}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function t(a){const n=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code",h4:"h4",h3:"h3",ul:"ul",li:"li"},r(),a.components);return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{id:"inpage-nav",children:"Inpage nav"}),`
+import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-runtime-ac05983f.js";import{u as r}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function t(i){const n=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code",h4:"h4",h3:"h3",ul:"ul",li:"li"},r(),i.components);return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{id:"inpage-nav",children:"Inpage nav"}),`
 `,e.jsx(n.p,{children:"Display a inpage navigation bar on the page. There are different options that the users can set on the BE"}),`
 `,e.jsx(n.h2,{id:"markup-example",children:"Markup example"}),`
-`,e.jsx(n.pre,{children:e.jsx(n.code,{className:"language-html",children:`<toujou-inpage-nav class="inpage-nav" element-design="default">
+`,e.jsx(n.pre,{children:e.jsx(n.code,{className:"language-html",children:`<toujou-inpage-nav class="inpage-nav" element-design="default" element-width="wide">
     <button class="inpage-nav__toggle" aria-label="Toggle the inpage navigation" aria-expanded="false" aria-hidden="false" aria-controls="nav-uid">
         <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>
     </button>
@@ -62,13 +62,21 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 `,e.jsx(n.h3,{id:"mobileopen",children:"mobileopen"}),`
 `,e.jsxs(n.p,{children:["The ",e.jsx(n.code,{children:"mobileopen"})," attribute is added with JS when the mobile menu is open"]}),`
 `,e.jsx(n.h3,{id:"active",children:"active"}),`
-`,e.jsxs(n.p,{children:["The ",e.jsx(n.code,{children:"active"})," attribute is added to the list item that corresponds to the current active section on the page"]})]})}function d(a={}){const{wrapper:n}=Object.assign({},r(),a.components);return n?e.jsx(n,Object.assign({},a,{children:e.jsx(t,a)})):t(a)}const b={title:"COMPONENTS/Inpage Nav",parameters:{badges:[c.DONE],docs:{page:d}},argTypes:{isFullwidth:{table:{category:"Inpage nav settings",defaultValue:{summary:!1}},name:"Fullwidth",description:"Set the Inpage nav to fullwidth",control:{type:"boolean"},defaultValue:[!1],required:!0},alignment:{table:{category:"Inpage nav settings",defaultValue:{summary:"left"}},name:"Alignment",description:"Set the Inpage nav alignment",options:["left","center"],control:{type:"radio"},defaultValue:["left"],required:!0},showLabel:{table:{category:"Inpage nav settings",defaultValue:{summary:!0}},name:"Show label",description:"Toggle the label's visibility",control:{type:"boolean"},defaultValue:[!0],required:!0},showCTA:{table:{category:"Inpage nav settings",defaultValue:{summary:!0}},name:"Show CTA",description:"Toggle the CTA button visibility",control:{type:"boolean"},defaultValue:[!0],required:!0},isSticky:{table:{category:"Inpage nav settings",defaultValue:{summary:!1}},name:"Is sticky",description:"Should the inpage nav scroll with the content or stay sticky. PLease test on a page with a topbar and content",control:{type:"boolean"},defaultValue:[!1],required:!0},elementDesign:{table:{category:"Inpage nav settings",defaultValue:{summary:"default"}},name:"Element design",description:"set the element design",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},h=a=>`
+`,e.jsxs(n.p,{children:["The ",e.jsx(n.code,{children:"active"})," attribute is added to the list item that corresponds to the current active section on the page"]}),`
+`,e.jsx(n.h3,{id:"element-width-1",children:"element-width"}),`
+`,e.jsx(n.p,{children:"Set the inpage nav element's width"}),`
+`,e.jsx(n.p,{children:"Possible values are:"}),`
+`,e.jsxs(n.ul,{children:[`
+`,e.jsx(n.li,{children:"text (as wide as the normal text elements)"}),`
+`,e.jsx(n.li,{children:"wide (as wide as the wide layout elements, like the teaser with text right)"}),`
+`,e.jsx(n.li,{children:"fullwidth (fullwidth of the page)"}),`
+`]})]})}function c(i={}){const{wrapper:n}=Object.assign({},r(),i.components);return n?e.jsx(n,Object.assign({},i,{children:e.jsx(t,i)})):t(i)}const x={title:"COMPONENTS/Inpage Nav",parameters:{badges:[d.DONE],docs:{page:c}},argTypes:{width:{table:{category:"Inpage nav width",defaultValue:{summary:"text"}},name:"Width",description:"Set the element's width",options:["text","wide","fullwidth"],control:{type:"radio"},defaultValue:["text"],required:!0},alignment:{table:{category:"Inpage nav settings",defaultValue:{summary:"left"}},name:"Alignment",description:"Set the Inpage nav alignment",options:["left","center"],control:{type:"radio"},defaultValue:["left"],required:!0},showLabel:{table:{category:"Inpage nav settings",defaultValue:{summary:!0}},name:"Show label",description:"Toggle the label's visibility",control:{type:"boolean"},defaultValue:[!0],required:!0},showCTA:{table:{category:"Inpage nav settings",defaultValue:{summary:!0}},name:"Show CTA",description:"Toggle the CTA button visibility",control:{type:"boolean"},defaultValue:[!0],required:!0},isSticky:{table:{category:"Inpage nav settings",defaultValue:{summary:!1}},name:"Is sticky",description:"Should the inpage nav scroll with the content or stay sticky. PLease test on a page with a topbar and content",control:{type:"boolean"},defaultValue:[!1],required:!0},elementDesign:{table:{category:"Inpage nav settings",defaultValue:{summary:"default"}},name:"Element design",description:"set the element design",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},h=i=>`
         <toujou-inpage-nav
             class="inpage-nav"
-            ${a.isFullwidth?"fullwidth":""}
-            alignment="${a.alignment}"
-            ${a.isSticky?"is-sticky":""}
-            element-design="${a.elementDesign}"
+            element-width="${i.width}"
+            alignment="${i.alignment}"
+            ${i.isSticky?"is-sticky":""}
+            element-design="${i.elementDesign}"
         >
             <button class="inpage-nav__toggle"
                     aria-label="Toggle the inpage navigation"
@@ -78,7 +86,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>        
             </button>
     
-            ${a.showLabel?'<span class="inpage-nav__label">Auf dieser Seite</span>':'<span class="inpage-nav__label">Default label</span>'}
+            ${i.showLabel?'<span class="inpage-nav__label">Auf dieser Seite</span>':'<span class="inpage-nav__label">Default label</span>'}
     
             <nav id="nav-uid" class="inpage-nav__nav">
                 <ul class="inpage-nav__list">
@@ -95,7 +103,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 </ul>
             </nav>
             
-            ${a.showCTA?`
+            ${i.showCTA?`
                 <a href="#" slot="cta" class="button inpage-nav__cta">Buy now</a>
             `:""}
 
@@ -108,11 +116,11 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             <p id="four"></p>
             <p id="five"></p>
         </section>
-    `,i=h.bind({});i.args={isFullwidth:!1,alignment:"left",showLabel:!0,showCTA:!0,isSticky:!1,elementDesign:"default"};var s,l,o;i.parameters={...i.parameters,docs:{...(s=i.parameters)==null?void 0:s.docs,source:{originalSource:`(args: InpageNavStoryProps) => {
+    `,a=h.bind({});a.args={width:"text",alignment:"left",showLabel:!0,showCTA:!0,isSticky:!1,elementDesign:"default"};var s,l,o;a.parameters={...a.parameters,docs:{...(s=a.parameters)==null?void 0:s.docs,source:{originalSource:`(args: InpageNavStoryProps) => {
   return \`
         <toujou-inpage-nav
             class="inpage-nav"
-            \${args.isFullwidth ? 'fullwidth' : ''}
+            element-width="\${args.width}"
             alignment="\${args.alignment}"
             \${args.isSticky ? 'is-sticky' : ''}
             element-design="\${args.elementDesign}"
@@ -156,5 +164,5 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             <p id="five"></p>
         </section>
     \`;
-}`,...(o=(l=i.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const j=["InpageNav"];export{i as InpageNav,j as __namedExportsOrder,b as default};
-//# sourceMappingURL=inpage-nav.stories-8680c22c.js.map
+}`,...(o=(l=a.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const j=["InpageNav"];export{a as InpageNav,j as __namedExportsOrder,x as default};
+//# sourceMappingURL=inpage-nav.stories-c80bc318.js.map

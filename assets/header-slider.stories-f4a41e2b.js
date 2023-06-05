@@ -101,10 +101,10 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 slider-type="loop">
                 <div class="splide slider__slider">
                     <div class="splide__arrows slider-controls">
-                        <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev">
+                        <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
                             <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
                         </button>
-                        <button class="splide__arrow splide__arrow--next slider-control slider-control--next">
+                        <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
                             <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                         </button>
                     </div>
@@ -187,10 +187,10 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 slider-type="loop">
                 <div class="splide slider__slider">
                     <div class="splide__arrows slider-controls">
-                        <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev">
+                        <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
                             <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
                         </button>
-                        <button class="splide__arrow splide__arrow--next slider-control slider-control--next">
+                        <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
                             <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                         </button>
                     </div>
@@ -263,4 +263,4 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
         </header>
     \`;
 }`,...(r=(l=s.parameters)==null?void 0:l.docs)==null?void 0:r.source}}};const v=["HeaderSlider"];export{s as HeaderSlider,v as __namedExportsOrder,j as default};
-//# sourceMappingURL=header-slider.stories-436dab3b.js.map
+//# sourceMappingURL=header-slider.stories-f4a41e2b.js.map
