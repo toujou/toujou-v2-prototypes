@@ -70,7 +70,7 @@ export default defineConfig({
                 auto: 'auto',
                 square: '1 / 1',
                 fourByThree: '4 / 3',
-                sixteenToNine: '16 / 9',
+                sixteenToNine: '16-9',
                 golden: '1.618 / 1',
                 threeToOne: '3 / 1',
             },

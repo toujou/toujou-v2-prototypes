@@ -52,11 +52,11 @@ describe('review-list', () => {
         cy.get('.review:first-child .review__header').should('have.css', 'flex-direction', 'column');
         cy.get('.review:first-child .review__header').should('have.css', 'align-items', 'flex-start');
         cy.get('.review:first-child .review__header').should('have.css', 'justify-content', 'center');
-        cy.get('.review:first-child .review__header').should('have.css', 'gap', '16px');
+        cy.get('.review:first-child .review__header').should('have.css', 'gap', tokens.spacing.normal);
         cy.get('.review:first-child .review__header').should('have.css', 'width', '960px');
 
-        cy.get('.review:first-child .review__title').should('have.css', 'font-family', 'Ubuntu, sans-serif');
-        cy.get('.review:first-child .review__title').should('have.css', 'font-size', '32px');
+        cy.get('.review:first-child .review__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
+        cy.get('.review:first-child .review__title').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.review:first-child .review__title').should('have.css', 'color', colors.colorPrimary);
         cy.get('.review:first-child .review__title').should('have.css', 'margin', '0px');
 

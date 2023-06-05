@@ -23,7 +23,7 @@ describe('rating-stars [mobile]', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.rating-stars').should('have.css', 'font-size', '32px');
+        cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-6.4px');
         cy.get('.rating-stars').should('have.css', 'color', colors.colorGold);
         cy.get('.rating-stars').shadow().children('.entity').should('have.length', 5);

@@ -17,7 +17,7 @@ describe('opening hours [mobile]', () => {
     it('has correct styles', () => {
         cy.get('.opening-hours').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.opening-hours').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.opening-hours').should('have.css', 'line-height', '24px');
+        cy.get('.opening-hours').should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get('.opening-hours').should('have.css', 'color', colors.colorFont);
 
         cy.get('.opening-hours').children('.opening-hours__row').should('have.length', 6);

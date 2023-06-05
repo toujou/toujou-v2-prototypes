@@ -30,7 +30,7 @@ describe('media grid [mobile]', () => {
         cy.get('.media-grid').should('have.css', 'grid-template-columns', '311px');
         cy.get('.media-grid').should('have.css', 'width', '311px');
         cy.get('.media-grid').should('have.css', 'max-width', '960px');
-        cy.get('.media-grid').should('have.css', 'margin', '0px 16px');
+        cy.get('.media-grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
     });
 })
 

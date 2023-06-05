@@ -51,7 +51,7 @@ describe('Map [mobile]', () => {
             expect(mapAddress).to.have.css('color').equal(colors.colorFont);
             expect(mapAddress).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(mapAddress).to.have.css('font-style').equal('normal');
-            expect(mapAddress).to.have.css('line-height').equal('24px');
+            expect(mapAddress).to.have.css('line-height').equal(tokens.type.lineHeight.normal);
         });
         cy.get('.map-contact .map-contact__socials').then((mapSocials) => {
             expect(mapSocials).to.have.css('margin').equal(`${tokens.spacing.normal} 0px 0px`);
