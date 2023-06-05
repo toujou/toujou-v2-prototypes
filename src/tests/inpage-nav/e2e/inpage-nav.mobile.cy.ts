@@ -172,4 +172,58 @@ describe('inpage-nav mobile - inverted', () => {
     });
 });
 
+describe('inpage-nav mobile - text width', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6')
+        cy.visit('/iframe.html?viewMode=story&id=components-inpage-nav--inpage-nav&args=width:text');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct attributes', () => {
+        cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'text');
+    });
+
+    it('has correct wide styles', () => {
+        cy.get('.inpage-nav').should('have.css', 'width', '311px');
+
+    });
+});
+
+describe('inpage-nav mobile - wide', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6')
+        cy.visit('/iframe.html?viewMode=story&id=components-inpage-nav--inpage-nav&args=width:wide');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct attributes', () => {
+        cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'wide');
+    });
+
+    it('has correct wide styles', () => {
+        cy.get('.inpage-nav').should('have.css', 'width', '311px');
+
+    });
+});
+
+describe('inpage-nav mobile - fullwidth', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6')
+        cy.visit('/iframe.html?viewMode=story&id=components-inpage-nav--inpage-nav&args=width:fullwidth');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct attributes', () => {
+        cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'fullwidth');
+    });
+
+    it('has correct wide styles', () => {
+        cy.get('.inpage-nav').should('have.css', 'width', '343px');
+
+    });
+});
+
 export {}

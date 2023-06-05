@@ -14,15 +14,16 @@ export default {
         }
     },
     argTypes: {
-        isFullwidth: {
+        width: {
             table: {
-                category: "Inpage nav settings",
-                defaultValue: { summary: false },
+                category: "Inpage nav width",
+                defaultValue: { summary: 'text' },
             },
-            name: 'Fullwidth',
-            description: "Set the Inpage nav to fullwidth",
-            control: { type: 'boolean' },
-            defaultValue: [false],
+            name: 'Width',
+            description: "Set the element's width",
+            options: ['text', 'wide', 'fullwidth'],
+            control: { type: 'radio' },
+            defaultValue: ['text'],
             required: true,
         },
         alignment: {
@@ -87,7 +88,7 @@ export default {
 } as Meta;
 
 interface InpageNavStoryProps {
-    isFullwidth: boolean,
+    width: string,
     alignment: string,
     showLabel: boolean,
     showCTA: boolean,
@@ -99,7 +100,7 @@ const Template: Story<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
     return `
         <toujou-inpage-nav
             class="inpage-nav"
-            ${args.isFullwidth ? 'fullwidth' : ''}
+            element-width="${args.width}"
             alignment="${args.alignment}"
             ${args.isSticky ? 'is-sticky' : ''}
             element-design="${args.elementDesign}"
@@ -151,7 +152,7 @@ const Template: Story<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
 export const InpageNav = Template.bind({});
 
 InpageNav.args = {
-    isFullwidth: false,
+    width: 'text',
     alignment: 'left',
     showLabel: true,
     showCTA: true,

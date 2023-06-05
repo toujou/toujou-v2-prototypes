@@ -326,4 +326,55 @@ describe('inpage-nav desktop - inverted', () => {
     });
 });
 
+describe('inpage-nav desktop - text width', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-inpage-nav--inpage-nav&args=width:text');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct attributes', () => {
+        cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'text');
+    });
+
+    it('has correct wide styles', () => {
+        cy.get('.inpage-nav').should('have.css', 'width', '960px');
+
+    });
+});
+
+describe('inpage-nav desktop - wide', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-inpage-nav--inpage-nav&args=width:wide');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct attributes', () => {
+        cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'wide');
+    });
+
+    it('has correct wide styles', () => {
+        cy.get('.inpage-nav').should('have.css', 'width', '1440px');
+
+    });
+});
+
+describe('inpage-nav desktop - fullwidth', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-inpage-nav--inpage-nav&args=width:fullwidth');
+        // @ts-ignore
+        cy.get('body').resetRealHover();
+    });
+
+    it('has correct attributes', () => {
+        cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'fullwidth');
+    });
+
+    it('has correct wide styles', () => {
+        cy.get('.inpage-nav').should('have.css', 'width', '1888px');
+
+    });
+});
+
 export {}

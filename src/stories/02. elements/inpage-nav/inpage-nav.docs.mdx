@@ -4,7 +4,7 @@ Display a inpage navigation bar on the page. There are different options that th
 
 ## Markup example
 ```html
-<toujou-inpage-nav class="inpage-nav" element-design="default">
+<toujou-inpage-nav class="inpage-nav" element-design="default" element-width="wide">
     <button class="inpage-nav__toggle" aria-label="Toggle the inpage navigation" aria-expanded="false" aria-hidden="false" aria-controls="nav-uid">
         <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>
     </button>
@@ -78,3 +78,11 @@ The `mobileopen` attribute is added with JS when the mobile menu is open
 
 ### active
 The `active` attribute is added to the list item that corresponds to the current active section on the page
+
+### element-width
+Set the inpage nav element's width
+
+Possible values are:
+- text (as wide as the normal text elements)
+- wide (as wide as the wide layout elements, like the teaser with text right)
+- fullwidth (fullwidth of the page)

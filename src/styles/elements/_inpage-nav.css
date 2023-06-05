@@ -142,7 +142,11 @@
     --inpage-nav-list-visibility: visible;
 }
 
-.inpage-nav[ismobile][fullwidth] {
+.inpage-nav[ismobile][element-width="wide"] {
+    --inpage-nav-max-width: var(--content-wide-max-width);
+}
+
+.inpage-nav[ismobile][element-width="fullwidth"] {
     --inpage-nav-width: var(--content-fullwidth);
     --inpage-nav-max-width: var(--content-fullwidth);
 }
@@ -153,7 +157,11 @@
     --inpage-nav-list-justify-content: center;
 }
 
-.inpage-nav[fullwidth] {
+.inpage-nav[element-width="wide"] {
+    --inpage-nav-max-width: var(--content-wide-max-width);
+}
+
+.inpage-nav[element-width="fullwidth"] {
     --inpage-nav-width: var(--content-fullwidth);
     --inpage-nav-max-width: var(--content-fullwidth);
 }
