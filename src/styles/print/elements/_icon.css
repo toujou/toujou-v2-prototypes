@@ -1,5 +1,5 @@
 @media print {
     .icon[icon-color] {
-        background-color: black;
+        background-color: black !important;
     }
 }

@@ -31,4 +31,12 @@
     .collection-item__button {
         display: none;
     }
+
+    .collection-item[item-type="product"] .collection-item__bottom {
+        background-color: black !important;
+    }
+
+    .collection-item[item-type="product"] .collection-item__title {
+        color: white !important;
+    }
 }
