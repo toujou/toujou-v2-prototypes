@@ -157,6 +157,14 @@
     .collection-item__button {
         display: none;
     }
+
+    .collection-item[item-type="product"] .collection-item__bottom {
+        background-color: black !important;
+    }
+
+    .collection-item[item-type="product"] .collection-item__title {
+        color: white !important;
+    }
 }
 @media print {
     .contact-box {
@@ -224,7 +232,7 @@
 }
 @media print {
     .icon[icon-color] {
-        background-color: black;
+        background-color: black !important;
     }
 }
 @media print {

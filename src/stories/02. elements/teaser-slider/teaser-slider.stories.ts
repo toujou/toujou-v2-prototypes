@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { Meta, Story } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -13,14 +13,30 @@ export default {
             page: TeaserSliderDocs,
         }
     },
-    argTypes: {},
+    argTypes: {
+        teaserDirection: {
+            table: {
+                category: "Teaser slider settings",
+                defaultValue: { summary: 'right' },
+            },
+            name: 'Teaser direction',
+            description: "Choose the teaser direction",
+            options: ['right', 'left'],
+            control: { type: 'radio' },
+            defaultValue: ['right'],
+            required: true,
+        }
+    },
     tags: ['autodocs']
 } as Meta;
 
+interface ToujouTeaserSliderProps {
+    teaserDirection: string;
+}
 
-const Template = () => {
+const Template: Story<ToujouTeaserSliderProps> = (args: ToujouTeaserSliderProps) => {
+    const teaserImageSide = args.teaserDirection === 'right' ? 'left' : 'right';
     return `
-
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
@@ -44,7 +60,7 @@ const Template = () => {
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -55,7 +71,7 @@ const Template = () => {
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -66,7 +82,7 @@ const Template = () => {
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1026" alt="nice image" />
                                 </div>
@@ -77,7 +93,7 @@ const Template = () => {
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1027" alt="nice image" />
                                 </div>
@@ -105,3 +121,6 @@ const Template = () => {
 
 export const TeaserSlider = Template.bind({});
 
+TeaserSlider.args = {
+    teaserDirection: 'right'
+}
