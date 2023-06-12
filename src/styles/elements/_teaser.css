@@ -155,11 +155,11 @@
         --teaser-grid-template-columns: 1fr 2fr;
     }
 
-    .slider .teaser[image-side="right"] .teaser__content {
+    .slider .teaser[image-side="left"] .teaser__content {
         padding-right: var(--spacing-xxl);
     }
 
-    .slider .teaser[image-side="left"] .teaser__content {
+    .slider .teaser[image-side="right"] .teaser__content {
         padding-left: var(--spacing-xxl);
     }
 }
