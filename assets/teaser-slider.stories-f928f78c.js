@@ -1,7 +1,7 @@
-import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-runtime-ac05983f.js";import{u as o}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function r(i){const s=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code",a:"a"},o(),i.components);return e.jsxs(e.Fragment,{children:[e.jsx(s.h1,{id:"teaser-slider",children:"teaser slider"}),`
-`,e.jsx(s.p,{children:"The teaser slider renders multiple teaser elements inside a slider"}),`
-`,e.jsx(s.h2,{id:"markup-example",children:"Markup example"}),`
-`,e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-html",children:`<toujou-slider
+import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as s}from"./jsx-runtime-ac05983f.js";import{u as l}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function r(i){const e=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code",a:"a"},l(),i.components);return s.jsxs(s.Fragment,{children:[s.jsx(e.h1,{id:"teaser-slider",children:"teaser slider"}),`
+`,s.jsx(e.p,{children:"The teaser slider renders multiple teaser elements inside a slider"}),`
+`,s.jsx(e.h2,{id:"markup-example",children:"Markup example"}),`
+`,s.jsx(e.pre,{children:s.jsx(e.code,{className:"language-html",children:`<toujou-slider
     class="slider"
     aria-label="Toujou slider example"
     element-design="primary"
@@ -58,8 +58,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
     </toujou-slider-count>
 </toujou-slider>
 `})}),`
-`,e.jsxs(s.p,{children:["| For more information about the slider element, please refer to the ",e.jsx(s.a,{href:"/docs/components-media--slider",children:"Slider docs"})]})]})}function c(i={}){const{wrapper:s}=Object.assign({},o(),i.components);return s?e.jsx(s,Object.assign({},i,{children:e.jsx(r,i)})):r(i)}const v={title:"COMPONENTS/Teaser",parameters:{badges:[d.DONE],docs:{page:c}},argTypes:{},tags:["autodocs"]},u=()=>`
-
+`,s.jsxs(e.p,{children:["| For more information about the slider element, please refer to the ",s.jsx(e.a,{href:"/docs/components-media--slider",children:"Slider docs"})]})]})}function c(i={}){const{wrapper:e}=Object.assign({},l(),i.components);return e?s.jsx(e,Object.assign({},i,{children:s.jsx(r,i)})):r(i)}const v={title:"COMPONENTS/Teaser",parameters:{badges:[d.DONE],docs:{page:c}},argTypes:{teaserDirection:{table:{category:"Teaser slider settings",defaultValue:{summary:"right"}},name:"Teaser direction",description:"Choose the teaser direction",options:["right","left"],control:{type:"radio"},defaultValue:["right"],required:!0}},tags:["autodocs"]},u=i=>{const e=i.teaserDirection==="right"?"left":"right";return`
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
@@ -83,7 +82,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${e}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -94,7 +93,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${e}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -105,7 +104,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${e}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1026" alt="nice image" />
                                 </div>
@@ -116,7 +115,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="${e}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1027" alt="nice image" />
                                 </div>
@@ -139,9 +138,9 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 <span class="slider-count__total"></span>
             </toujou-slider-count>
         </toujou-slider>
-    `,t=u.bind({});var a,n,l;t.parameters={...t.parameters,docs:{...(a=t.parameters)==null?void 0:a.docs,source:{originalSource:`() => {
+    `},t=u.bind({});t.args={teaserDirection:"right"};var a,n,o;t.parameters={...t.parameters,docs:{...(a=t.parameters)==null?void 0:a.docs,source:{originalSource:`(args: ToujouTeaserSliderProps) => {
+  const teaserImageSide = args.teaserDirection === 'right' ? 'left' : 'right';
   return \`
-
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
@@ -165,7 +164,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="\${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -176,7 +175,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="\${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1025" alt="nice image" />
                                 </div>
@@ -187,7 +186,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="\${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1026" alt="nice image" />
                                 </div>
@@ -198,7 +197,7 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             </toujou-teaser>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="1000">
-                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="left" element-design="default">
+                            <toujou-teaser class="teaser slider__item" slot="slider-item" teaser-type="cinema" image-width="50" image-side="\${teaserImageSide}" element-design="default">
                                 <div class="teaser__figure">
                                     <img class="teaser__image" src="https://picsum.photos/1027" alt="nice image" />
                                 </div>
@@ -222,5 +221,5 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             </toujou-slider-count>
         </toujou-slider>
     \`;
-}`,...(l=(n=t.parameters)==null?void 0:n.docs)==null?void 0:l.source}}};const f=["TeaserSlider"];export{t as TeaserSlider,f as __namedExportsOrder,v as default};
-//# sourceMappingURL=teaser-slider.stories-d5e2499d.js.map
+}`,...(o=(n=t.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const f=["TeaserSlider"];export{t as TeaserSlider,f as __namedExportsOrder,v as default};
+//# sourceMappingURL=teaser-slider.stories-f928f78c.js.map
