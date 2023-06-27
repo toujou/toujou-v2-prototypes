@@ -106,15 +106,15 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
             <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">                                
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
-                        <a href="#" class="main-nav__link">
+                        <a href="#" class="main-nav__link" aria-current="page">
                             <span class="main-nav__text">Startseite</span>
                         </a>
                     </li>
                     <li class="main-nav__list-item" nav-item-level="1" has-subnav>
-                        <a href="#" class="main-nav__link" aria-current="page">
+                        <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Bürgerservice</span>
                         </a>
-                        <span class="main-nav__chevron">
+                        <span class="main-nav__chevron" tabindex="0">
                             <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                         </span>
                         <ul class="main-nav__list" nav-list-level="2">
@@ -127,7 +127,7 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                                 </span>
                                 <ul class="main-nav__list" nav-list-level="3">
                                     <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link" aria-current="page">
+                                        <a href="#" class="main-nav__link">
                                             <span class="main-nav__text">Item one</span>
                                         </a>
                                     </li>
@@ -144,7 +144,7 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                                 </ul>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link" aria-current="page">
+                                <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Ausweise und Dokumente</span>
                                 </a>
                             </li>
@@ -294,10 +294,65 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                             <span class="main-nav__text">Online-Terminvergabe</span>
                         </a>
                     </li>
-                    <li class="main-nav__list-item" nav-item-level="1">
+                    <li class="main-nav__list-item" nav-item-level="1"  has-subnav>
                         <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Häufige Fragen</span>
                         </a>
+                        <span class="main-nav__chevron" tabindex="0">
+                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                        </span>
+                        <ul class="main-nav__list" nav-list-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Arbeit und Beruf</span>
+                                </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Ausweise und Dokumente</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Bauen</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Berufsausbildung</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Erbschaft und Testament</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Familie und Partnerschaften</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
