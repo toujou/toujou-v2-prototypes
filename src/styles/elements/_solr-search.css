@@ -1,0 +1,15 @@
+.solr-search {
+    padding: var(--spacing-normal) 0;
+}
+
+.solr-search__form {
+    width: 100%;
+}
+
+.solr-search__submit-group {
+    display: none;
+}
+
+.solr-search__search-input {
+    padding: var(--spacing-s) var(--spacing-normal);
+}

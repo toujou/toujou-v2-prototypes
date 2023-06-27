@@ -1,0 +1,9 @@
+.solr {
+    --solr-width: var(--content-width-with-padding);
+    --solr-max-width: var(--content-max-width);
+    --solr-margin: var(--spacing-between-elements-normal) auto 0;
+
+    width: var(--solr-width);
+    max-width: var(--solr-max-width);
+    margin: var(--solr-margin);
+}

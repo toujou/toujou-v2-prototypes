@@ -1,0 +1,9 @@
+.solr-chips--search {
+    display: none;
+}
+
+@media screen and (min-width: 480px) {
+    .solr-chips--search {
+        display: block;
+    }
+}

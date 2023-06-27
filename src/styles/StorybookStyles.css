@@ -18,6 +18,7 @@
 @import 'demo/_demo-grid.css';
 @import 'demo/_fake-fav-icon.css';
 @import 'demo/_chapter.css';
+@import 'demo/_toujou-solr-styles.css';
 @import 'demo/_demo-media-placeholder-container.css';
 @import 'elements/_sliderFAKESplidestyles.css';
 
@@ -98,6 +99,11 @@
 @import "./elements/_review.css";
 @import "./elements/_event-schedule-card.css";
 @import "./elements/_event-table-card.css";
+
+@import "./elements/_solr.css";
+@import "./elements/_solr-chips.css";
+@import "./elements/_solr-header.css";
+@import "./elements/_solr-search.css";
 
 /* print css for testing purposes */
 @import "./print.css";
