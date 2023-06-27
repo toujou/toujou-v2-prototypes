@@ -1,10 +1,10 @@
-import{T as v}from"./badgeCustomConfig-e7a687d5.js";import{j as n}from"./jsx-runtime-ac05983f.js";import{u as i}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";const p=""+new URL("main-nav-mobile-5a3b5603.jpg",import.meta.url).href,_=""+new URL("main-nav-desktop-b7f50ad6.jpg",import.meta.url).href;function s(e){const a=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre"},i(),e.components);return n.jsxs(n.Fragment,{children:[n.jsx(a.h2,{id:"main-nav",children:"Main nav"}),`
+import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as n}from"./jsx-runtime-ac05983f.js";import{u as i}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";const _=""+new URL("main-nav-mobile-5a3b5603.jpg",import.meta.url).href,p=""+new URL("main-nav-desktop-b7f50ad6.jpg",import.meta.url).href;function t(e){const a=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre"},i(),e.components);return n.jsxs(n.Fragment,{children:[n.jsx(a.h2,{id:"main-nav",children:"Main nav"}),`
 `,n.jsxs(a.p,{children:["The main navigation render a ",n.jsx(a.code,{children:"<nav>"})," element which allows the users to navigate between the different pages on the website."]}),`
 `,n.jsx(a.p,{children:"It is automatically generated according to the pages that are created on the BE."}),`
 `,n.jsx(a.p,{children:"On mobile it is visible by opening the navigation (click on the burger button), on desktop it is always visible."}),`
 `,n.jsx(a.p,{children:"The main navigation can show up to 3 nested navigation levels."}),`
 `,n.jsx(a.h2,{id:"markup-example",children:"Markup example:"}),`
-`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation" open-level="1">
+`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<nav id="mainNavigation" class="main-nav" aria-label="Main navigation" open-level="1">
     <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
         <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
         Zurück
@@ -48,12 +48,12 @@ import{T as v}from"./badgeCustomConfig-e7a687d5.js";import{j as n}from"./jsx-run
 </nav>
 `})}),`
 `,n.jsx(a.p,{children:"The mobile main navigation requires click to navigate between the different menu levels"}),`
-`,n.jsx("img",{src:p}),`
-`,n.jsx(a.p,{children:"The desktop navigation open and closes on hover events"}),`
 `,n.jsx("img",{src:_}),`
+`,n.jsx(a.p,{children:"The desktop navigation open and closes on hover events"}),`
+`,n.jsx("img",{src:p}),`
 `,n.jsx(a.h2,{id:"active-menu-items",children:"Active menu items"}),`
 `,n.jsxs(a.p,{children:["The active menu items get an extra ",n.jsx(a.code,{children:"active"}),` attribute, which we use to style them accordingly
-Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1" has-subnav="" active>'})]})]})}function h(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(s,e)})):s(e)}const d=""+new URL("service-nav-mobile-d2c9f653.jpg",import.meta.url).href,b=""+new URL("service-nav-desktop-4ccc9992.jpg",import.meta.url).href;function l(e){const a=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre"},i(),e.components);return n.jsxs(n.Fragment,{children:[n.jsx(a.h2,{id:"service-nav",children:"Service nav"}),`
+Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1" has-subnav="" active>'})]})]})}function h(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(t,e)})):t(e)}const d=""+new URL("service-nav-mobile-d2c9f653.jpg",import.meta.url).href,b=""+new URL("service-nav-desktop-4ccc9992.jpg",import.meta.url).href;function l(e){const a=Object.assign({h2:"h2",p:"p",code:"code",pre:"pre"},i(),e.components);return n.jsxs(n.Fragment,{children:[n.jsx(a.h2,{id:"service-nav",children:"Service nav"}),`
 `,n.jsxs(a.p,{children:["The service navigation renders a ",n.jsx(a.code,{children:"nav"})," element, which allows users to quickly navigate to the most important service pages on the website."]}),`
 `,n.jsxs(a.p,{children:["It is automatically generated according to the pages added to the ",n.jsx(a.code,{children:"Service-Navigation"})," folder on the BE."]}),`
 `,n.jsx(a.p,{children:"On mobile it is visible inside the menu, which can be opened / closed with a burger button click. It is also rendered on the default footer"}),`
@@ -63,7 +63,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 `,n.jsx(a.p,{children:"On mobile it is visible by opening the navigation (click on the burger button), on desktop it is always visible."}),`
 `,n.jsx(a.p,{children:"The main navigation can show up to 3 nested navigation levels."}),`
 `,n.jsx(a.h2,{id:"markup-example",children:"Markup example:"}),`
-`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation" open-level="1">
+`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<nav id="mainNavigation" class="main-nav" aria-label="Main navigation" open-level="1">
     <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
         <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
         Zurück
@@ -195,7 +195,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
         <a href="#" class="service-nav__link">Datenschutz</a>
     </nav>
 
-    <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation" open-level="1">
+    <nav id="mainNavigation" class="main-nav" aria-label="Main navigation" open-level="1">
         <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
             <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
             Zurück
@@ -295,7 +295,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 `,n.jsx("br",{}),`
 `,n.jsx("br",{}),`
 `,n.jsx("a",{id:"burger-button"}),`
-`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(c,e)})):c(e)}const S={title:"COMPONENTS/Topbar",parameters:{badges:[v.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Page title type",description:"Toggle between logo or text for the topbar page title",options:["logo","text"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0}},tags:["autodocs"]},w=e=>(document.documentElement.style.setProperty("--topbar-height",`var(--topbar-height-${e.logoSize})`),`       
+`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(c,e)})):c(e)}const M={title:"COMPONENTS/Topbar",parameters:{badges:[u.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Page title type",description:"Toggle between logo or text for the topbar page title",options:["logo","text"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0}},tags:["autodocs"]},w=e=>(document.documentElement.style.setProperty("--topbar-height",`var(--topbar-height-${e.logoSize})`),`       
         <toujou-topbar id="topbar" class="topbar" navigation-theme="${e.navigationTheme}" logo-size="${e.logoSize}">
             <a href="#" class="topbar__logo-link">
                 ${e.titleType==="logo"?`
@@ -335,42 +335,95 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 <a href="#" class="service-nav__link">Datenschutz</a>
             </nav>        
             
-            <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation">
-                <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
-                    <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
-                    Zurück
-                </button>
-                
-                <p class="main-nav__subtitle">this is a test</p>
-                
+            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">                                
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
-                        <a href="#" class="main-nav__link">
+                        <a href="#" class="main-nav__link" aria-current="page">
                             <span class="main-nav__text">Startseite</span>
                         </a>
                     </li>
-                    <li class="main-nav__list-item" nav-item-level="1" active has-subnav>
+                    <li class="main-nav__list-item" nav-item-level="1" has-subnav>
                         <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Bürgerservice</span>
                         </a>
-                        <span class="main-nav__chevron">
-                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                        <span class="main-nav__chevron" tabindex="0">
+                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                         </span>
                         <ul class="main-nav__list" nav-list-level="2">
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Arbeit und Beruf</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="main-nav__list-item" active nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Ausweise und Dokumente</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Bauen</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
@@ -513,10 +566,65 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             <span class="main-nav__text">Online-Terminvergabe</span>
                         </a>
                     </li>
-                    <li class="main-nav__list-item" nav-item-level="1">
+                    <li class="main-nav__list-item" nav-item-level="1"  has-subnav>
                         <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Häufige Fragen</span>
                         </a>
+                        <span class="main-nav__chevron" tabindex="0">
+                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                        </span>
+                        <ul class="main-nav__list" nav-list-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Arbeit und Beruf</span>
+                                </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Ausweise und Dokumente</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Bauen</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Berufsausbildung</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Erbschaft und Testament</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Familie und Partnerschaften</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -557,7 +665,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </toujou-text-block-column>
             </toujou-text-block>
         </main>
-    `),t=w.bind({});t.args={navigationTheme:"light",titleType:"logo",logoSize:"medium"};var r,m,u;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
+    `),s=w.bind({});s.args={navigationTheme:"light",titleType:"logo",logoSize:"medium"};var r,m,v;s.parameters={...s.parameters,docs:{...(r=s.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
   document.documentElement.style.setProperty('--topbar-height', \`var(--topbar-height-\${args.logoSize})\`);
   return \`       
         <toujou-topbar id="topbar" class="topbar" navigation-theme="\${args.navigationTheme}" logo-size="\${args.logoSize}">
@@ -599,42 +707,95 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 <a href="#" class="service-nav__link">Datenschutz</a>
             </nav>        
             
-            <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation">
-                <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
-                    <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
-                    Zurück
-                </button>
-                
-                <p class="main-nav__subtitle">this is a test</p>
-                
+            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">                                
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
-                        <a href="#" class="main-nav__link">
+                        <a href="#" class="main-nav__link" aria-current="page">
                             <span class="main-nav__text">Startseite</span>
                         </a>
                     </li>
-                    <li class="main-nav__list-item" nav-item-level="1" active has-subnav>
+                    <li class="main-nav__list-item" nav-item-level="1" has-subnav>
                         <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Bürgerservice</span>
                         </a>
-                        <span class="main-nav__chevron">
-                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                        <span class="main-nav__chevron" tabindex="0">
+                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                         </span>
                         <ul class="main-nav__list" nav-list-level="2">
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Arbeit und Beruf</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="main-nav__list-item" active nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Ausweise und Dokumente</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Bauen</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
@@ -777,10 +938,65 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             <span class="main-nav__text">Online-Terminvergabe</span>
                         </a>
                     </li>
-                    <li class="main-nav__list-item" nav-item-level="1">
+                    <li class="main-nav__list-item" nav-item-level="1"  has-subnav>
                         <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Häufige Fragen</span>
                         </a>
+                        <span class="main-nav__chevron" tabindex="0">
+                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                        </span>
+                        <ul class="main-nav__list" nav-list-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Arbeit und Beruf</span>
+                                </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Ausweise und Dokumente</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Bauen</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Berufsausbildung</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Erbschaft und Testament</span>
+                                </a>
+                            </li>
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link">
+                                    <span class="main-nav__text">Familie und Partnerschaften</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -822,5 +1038,5 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             </toujou-text-block>
         </main>
     \`;
-}`,...(u=(m=t.parameters)==null?void 0:m.docs)==null?void 0:u.source}}};const O=["Topbar"];export{t as Topbar,O as __namedExportsOrder,S as default};
-//# sourceMappingURL=topbar.stories-a657aa31.js.map
+}`,...(v=(m=s.parameters)==null?void 0:m.docs)==null?void 0:v.source}}};const S=["Topbar"];export{s as Topbar,S as __namedExportsOrder,M as default};
+//# sourceMappingURL=topbar.stories-8d647aab.js.map
