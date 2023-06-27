@@ -103,35 +103,48 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 <a href="#" class="service-nav__link">Datenschutz</a>
             </nav>        
             
-            <nav id="mainNavigation" is="toujou-sliding-nav" class="main-nav" aria-label="Main navigation">
-                <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
-                    <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
-                    Zurück
-                </button>
-                
-                <p class="main-nav__subtitle">this is a test</p>
-                
+            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">                                
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
                         <a href="#" class="main-nav__link">
                             <span class="main-nav__text">Startseite</span>
                         </a>
                     </li>
-                    <li class="main-nav__list-item" nav-item-level="1" active has-subnav>
-                        <a href="#" class="main-nav__link">
+                    <li class="main-nav__list-item" nav-item-level="1" has-subnav>
+                        <a href="#" class="main-nav__link" aria-current="page">
                             <span class="main-nav__text">Bürgerservice</span>
                         </a>
                         <span class="main-nav__chevron">
-                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                         </span>
                         <ul class="main-nav__list" nav-list-level="2">
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Arbeit und Beruf</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link" aria-current="page">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="main-nav__list-item" active nav-item-level="2">
-                                <a href="#" class="main-nav__link">
+                            <li class="main-nav__list-item" nav-item-level="2">
+                                <a href="#" class="main-nav__link" aria-current="page">
                                     <span class="main-nav__text">Ausweise und Dokumente</span>
                                 </a>
                             </li>

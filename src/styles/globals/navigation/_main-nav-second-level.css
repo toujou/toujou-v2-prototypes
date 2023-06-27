@@ -1,37 +1,27 @@
 .main-nav__list[nav-list-level="2"] {
-    --main-nav-level-2-display: none;
-    --main-nav-level-2-visibility: invisible;
     --main-nav-level-2-list-margin: 0;
+    --main-nav-level-2-list-padding: 0 0 var(--spacing-m) var(--spacing-m);
 
-    --main-nav-level-2-list-item-font-size: var(--font-size-ms);
+    --main-nav-level-2-list-item-display: none;
+    --main-nav-level-2-list-item-grid-column: 1 / -1;
+    --main-nav-level-2-list-item-grid-template-columns: 1fr auto;
+    --main-nav-level-2-list-item-font-size: var(--font-size-m);
 
-    display: var(--main-nav-level-2-display);
-    visibility: var(--main-nav-level-2-visibility);
 
-    flex-direction: var(--main-nav-list-flex-direction);
-    align-items: var(--main-nav-list-align-items);
-    justify-content: var(--main-nav-list-justify-content);
-    gap: var(--main-nav-list-gap);
+    display: var(--main-nav-level-2-list-item-display);
+    grid-column: var(--main-nav-level-2-list-item-grid-column);
+    /*gap: var(--main-nav-list-gap);*/
     list-style: var(--main-nav-list-list-style);
     margin: var(--main-nav-level-2-list-margin);
-    padding: var(--main-nav-list-padding);
+    padding: var(--main-nav-level-2-list-padding);
+    width: 100%;
 }
 
-.main-nav__list-item[is-open] .main-nav__list[nav-list-level="2"] {
-    --main-nav-level-2-display: block;
-    --main-nav-level-2-visibility: visible;
+.main-nav__list-item[is-open] > .main-nav__list[nav-list-level="2"] {
+    --main-nav-level-2-list-item-display: grid;
+    /*grid-template-columns: var(--main-nav-level-2-list-item-grid-template-columns);*/
 }
 
 .main-nav__list-item[nav-item-level="2"] .main-nav__text {
     font-size: var(--main-nav-level-2-list-item-font-size);
-}
-
-.main-nav__list-item[nav-item-level="2"][active] > .main-nav__link {
-    --main-nav-link-color: var(--main-nav-link-color-hover);
-}
-
-@media screen and (min-width: 840px) {
-    .main-nav__list-item[nav-item-level="2"][active] > .main-nav__link {
-        --main-nav-link-color: var(--color-primary);
-    }
 }

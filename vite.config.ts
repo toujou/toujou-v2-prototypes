@@ -16,7 +16,6 @@ export default defineConfig({
                 'toujou-portfolio-gallery': path.resolve(__dirname, 'src/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
                 'toujou-overlay': path.resolve(__dirname, 'src/components/toujou-overlay/toujou-overlay.ts'),
                 'toujou-burger-button': path.resolve(__dirname, 'src/components/toujou-burger-button/toujou-burger-button.ts'),
-                'toujou-sliding-nav': path.resolve(__dirname, 'src/components/toujou-sliding-nav/toujou-sliding-nav.ts'),
                 'toujou-topbar': path.resolve(__dirname, 'src/components/toujou-topbar/toujou-topbar.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-contact-box': path.resolve(__dirname, 'src/components/toujou-contact-box/toujou-contact-box.ts'),
@@ -29,6 +28,7 @@ export default defineConfig({
                 'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
                 'toujou-consent': path.resolve(__dirname, 'src/components/copied/toujou-consent/toujou-consent'),
                 'toujou-consent-widget': path.resolve(__dirname, 'src/components/copied/toujou-consent-widget/toujou-consent-widget'),
+                'toujou-main-nav': path.resolve(__dirname, 'src/components/toujou-main-nav/toujou-main-nav'),
                 'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/js/elements/photoswipe-lightbox-creator'),
 
                 // Skippy links must be exported, so we can import it on the skip-links partial
