@@ -1,7 +1,7 @@
 .main-nav__list[nav-list-level="2"] {
     --main-nav-level-2-list-margin: 0;
     --main-nav-level-2-list-padding: 0 0 var(--spacing-m) var(--spacing-m);
-    --main-nav-level-2-list-width: fit-content;
+    --main-nav-level-2-list-width: 100%;
 
     --main-nav-level-2-list-item-display: none;
     --main-nav-level-2-list-item-grid-column: 1 / -1;
@@ -36,8 +36,9 @@
         --main-nav-level-2-position: absolute;
         --main-nav-level-2-list-item-grid-template-columns: 1fr var(--main-nav-chevron-icon-desktop-size);
 
-        --main-nav-level-2-list-left: 50%;
-        --main-nav-level-2-list-transform: translate(-50%, 100%);
+        --main-nav-level-2-list-width: fit-content;
+        --main-nav-level-2-list-left: 0;
+        --main-nav-level-2-list-transform: translate(-1.5rem, 100%);
 
         --main-nav-link-color: var(--color-primary);
 

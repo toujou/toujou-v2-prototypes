@@ -143,15 +143,55 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Ausweise und Dokumente</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
+                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                                 <a href="#" class="main-nav__link">
                                     <span class="main-nav__text">Bauen</span>
                                 </a>
+                                <span class="main-nav__chevron">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                                </span>
+                                <ul class="main-nav__list" nav-list-level="3">
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item one</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item two</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item three</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
