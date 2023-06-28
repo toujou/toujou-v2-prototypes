@@ -253,6 +253,7 @@
     --icon-equalizer-circle-filled: url('../assets/icons/icon-equalizer-circle-filled.svg');
     --icon-fax: url('../assets/icons/icon-fax.svg');
     --icon-file-download: url('../assets/icons/icon-file-download.svg');
+    --icon-filter: url('../assets/icons/icon-filter.svg');
     --icon-flag: url('../assets/icons/icon-flag.svg');
     --icon-flower: url('../assets/icons/icon-flower.svg');
     --icon-folder: url('../assets/icons/icon-folder.svg');
@@ -260,6 +261,7 @@
     --icon-forward: url('../assets/icons/icon-forward.svg');
     --icon-forward-circle-filled: url('../assets/icons/icon-forward-circle-filled.svg');
     --icon-globe: url('../assets/icons/icon-globe.svg');
+    --icon-grid: url('../assets/icons/icon-grid.svg');
     --icon-heart: url('../assets/icons/icon-heart.svg');
     --icon-heart-stroke: url('../assets/icons/icon-heart-stroke.svg');
     --icon-home: url('../assets/icons/icon-home.svg');
@@ -1169,6 +1171,11 @@ p > .button {
     -webkit-mask-image: var(--icon-file-download);
 }
 
+.icon[icon-name="filter"] {
+    mask-image: var(--icon-filter);
+    -webkit-mask-image: var(--icon-filter);
+}
+
 .icon[icon-name="flag"] {
     mask-image: var(--icon-flag);
     -webkit-mask-image: var(--icon-flag);
@@ -1202,6 +1209,11 @@ p > .button {
 .icon[icon-name="globe"] {
     mask-image: var(--icon-globe);
     -webkit-mask-image: var(--icon-globe);
+}
+
+.icon[icon-name="grid"] {
+    mask-image: var(--icon-grid);
+    -webkit-mask-image: var(--icon-grid);
 }
 
 .icon[icon-name="heart"] {
