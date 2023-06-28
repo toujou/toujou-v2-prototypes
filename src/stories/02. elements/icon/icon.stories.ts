@@ -96,6 +96,7 @@ const iconNames = [
     'forward',
     'forward-circle-filled',
     'globe',
+    'grid',
     'heart',
     'heart-stroke',
     'home',

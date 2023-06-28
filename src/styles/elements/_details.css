@@ -102,11 +102,11 @@
     grid-area: var(--details-chevron-area);
 }
 
-.details[is-open] .details__title {
+.details[is-open] > .details__title {
     color: var(--details-title-active-color);
 }
 
-.details[is-open] .details__chevron {
+.details[is-open] > .details__chevron {
     transform: var(--details-chevron-active-transform);
 }
 

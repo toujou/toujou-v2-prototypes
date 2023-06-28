@@ -100,10 +100,18 @@
 @import "./elements/_event-schedule-card.css";
 @import "./elements/_event-table-card.css";
 
-@import "./elements/_solr.css";
-@import "./elements/_solr-chips.css";
-@import "./elements/_solr-header.css";
-@import "./elements/_solr-search.css";
+@import "./elements/solr/_facet-details.css";
+@import "./elements/solr/_panel-title.css";
+@import "./elements/solr/_solr.css";
+@import "./elements/solr/_solr-chips.css";
+@import "./elements/solr/_solr-facets-in-use.css";
+@import "./elements/solr/_solr-filter-button.css";
+@import "./elements/solr/_solr-filters.css";
+@import "./elements/solr/_solr-header.css";
+@import "./elements/solr/_solr-pagination.css";
+@import "./elements/solr/_solr-results.css";
+@import "./elements/solr/_solr-search.css";
+@import "./elements/solr/_solr-view-mode.css";
 
 /* print css for testing purposes */
 @import "./print.css";

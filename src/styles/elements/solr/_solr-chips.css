@@ -1,0 +1,17 @@
+.solr-chips--search {
+    --solr-chips-search-display: none;
+
+    display: var(--solr-chips-search-display);
+}
+
+@media screen and (min-width: 480px) {
+    .solr-chips--search {
+        --solr-chips-search-display: block;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .solr-chips--search {
+        --solr-chips-search-display: none;
+    }
+}

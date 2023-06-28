@@ -1,0 +1,5 @@
+.solr-facets-in-use {
+    --solr-facet-in-use-border-bottom: var(--toujou-solr-margin-between-search-panels) solid transparent;
+
+    border-bottom: var(--solr-facet-in-use-border-bottom);
+}

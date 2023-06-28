@@ -382,6 +382,11 @@
     -webkit-mask-image: var(--icon-globe);
 }
 
+.icon[icon-name="grid"] {
+    mask-image: var(--icon-grid);
+    -webkit-mask-image: var(--icon-grid);
+}
+
 .icon[icon-name="heart"] {
     mask-image: var(--icon-heart);
     -webkit-mask-image: var(--icon-heart);

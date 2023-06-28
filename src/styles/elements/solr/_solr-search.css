@@ -1,0 +1,26 @@
+.solr-search {
+    --solr-search-padding: var(--spacing-normal) 0 0;
+    --solr-search-form-width: 100%;
+    --solr-search-submit-group-display: none;
+    --solr-search-search-group-padding: var(--spacing-s) var(--spacing-normal);
+
+    padding: var(--solr-search-padding);
+}
+
+.solr-search__form {
+    width: var(--solr-search-form-width);
+}
+
+.solr-search__submit-group {
+    display: var(--solr-search-submit-group-display);
+}
+
+.solr-search__search-input {
+    padding: var(--solr-search-search-group-padding);
+}
+
+@media screen and (min-width: 840px) {
+    .solr-search {
+        --solr-search-padding: 0;
+    }
+}

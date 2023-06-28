@@ -1,0 +1,5 @@
+.solr-filters {
+    --solr-filters-bg-colr: transparent;
+
+    background-color: var(--solr-filters-bg-colr);
+}

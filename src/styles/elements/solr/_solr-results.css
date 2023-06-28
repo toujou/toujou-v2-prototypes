@@ -1,0 +1,22 @@
+.solr-results .card-collection {
+    --card-collection-gap: var(--spacing-normal);
+    --card-collection-width: 100%;
+}
+
+@media screen and (min-width: 840px) {
+    .solr-results .card-collection {
+        --card-collection-margin: 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .solr-results .card-collection__item {
+        --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .solr-results .card-collection__item {
+        --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap) * 2) / 3);
+    }
+}

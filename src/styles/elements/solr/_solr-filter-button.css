@@ -1,0 +1,7 @@
+@media screen and (min-width: 840px) {
+    .solr-filter-button {
+        --solr-filter-button-display: none;
+
+        display: var(--solr-filter-button-display);
+    }
+}
