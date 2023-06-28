@@ -1,0 +1,1800 @@
+import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-ac05983f.js";import{u as n}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function a(t){const i=Object.assign({h1:"h1"},n(),t.components);return o.jsx(i.h1,{id:"solr-search",children:"SOLR search"})}function p(t={}){const{wrapper:i}=Object.assign({},n(),t.components);return i?o.jsx(i,Object.assign({},t,{children:o.jsx(a,t)})):a(t)}const h={title:"COMPONENTS/solr",parameters:{badges:[r.TESTING],docs:{page:p}},argTypes:{showMobileFilters:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show mobile filters",description:"Toggle visibility of the mobile filters",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},u=t=>`
+        <toujou-solr-search class="solr" view-mode="grid">
+            <div id="solr-filters" class="solr-filters" ${t.showMobileFilters?"is-visible":""}>
+                <div class="solr-filters__mobile-header">
+                    <h4 class="solr-filters__mobile-headline">Filtern</h4>
+                    <div class="solr-filters__mobile-buttons">
+                        <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-filters__mobile-button solr-filters__mobile-button--reset solr-filters__mobile-button--hidden">
+                        alle löschen
+                        </a>
+                        <button class="solr-filters__mobile-button solr-filters__mobile-button--close"></button>
+                    </div>
+                </div>
+                <div class="solr-facets-in-use solr-chips solr-chips--filters">
+                    <div class="panel panel--no-bg-mobile">
+                        <p class="solr-facets-in-use__no-filters">
+                            Noch keine Filter ausgewählt
+                        </p>
+                    </div>
+                </div>
+                <div class="solr-facets">
+                    <div class="solr-facets__facet facet facet-type facet-type-options" id="facet-accordion-destination">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordiondestination" href="#facetdestination">Typ</a>
+                                </h3>
+                            </div>
+                            <div
+                                class="facet-option-list facet-type-options fluidfacet list-group panel-collapse collapse"
+                                data-facet-name="destination"
+                                data-facet-label="Land"
+                                id="facetdestination"
+                            >
+                                <div class="facet-option list-group-item" data-facet-item-value="1">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-1"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:1"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-1">Sehenswertes & Freizeit&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="2"> 
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-2"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:2"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-2">Unterkünfte&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="3">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-3"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:3"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-3">Gastronomie&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="4">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-4"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:4"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-4">Inhaltsseiten&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="5">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-5"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:5"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-5">Veranstaltungen&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="6">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-6"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:6"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-6">Touren&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="7">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-7"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:7"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-7">Blogbeiträge&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="solr-facets__facet facet facet-type facet-type-options" id="facet-accordion-accommodation">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordionaccommodation" href="#facetaccommodation">Art der Unterkunft</a>
+                                </h3>
+                            </div>
+                            <div
+                                class="facet-option-list facet-type-options fluidfacet list-group panel-collapse collapse"
+                                data-facet-name="accommodation"
+                                data-facet-label="Art der Unterkunft"
+                                id="facetaccommodation"
+                            >
+                                <div class="facet-option list-group-item" data-facet-item-value="12">                      
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-1"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:12"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-12">Hotel&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="13"> 
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-13"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:2"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-13">Ferienhaus&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="3">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-14"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:14"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-14">Gästehaus&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="4">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-15"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:15"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-15">Appartment&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="5">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-16"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:16"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-16">B&B&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solr-facets__facet facet facet-type facet-type-hierarchy" id="facet-accordion-destination">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordiondestination" href="#facetdestination">Reiseziel</a>
+                                </h3>
+                            </div>
+                            <div class="facet-option-list facet-type-hierarchy fluidfacet list-group panel-collapse collapse" data-facet-name="destination" data-facet-label="Reiseziel" id="facetdestination">
+                                <toujou-details id="details-0" class="details facet-details" element-design="default">
+                                    <div class="facet-option list-group-item" data-facet-item-value="/358/" slot="summary">
+                                        <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                            <div class="checkbox-group">
+                                                <input
+                                                    data-pristine-required-message-de="The given subject was empty."
+                                                    class="checkbox facet-item solr-ajaxified"
+                                                    id="facet-destination-option-/358/"
+                                                    type="checkbox"
+                                                    name="tx_solr[filter][]"
+                                                    value="destination:/358/"
+                                                    data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                >
+                                                <label class="checkbox-group__label" for="facet-destination-option-/358/">Afrika&nbsp;<span class="facet-result-count badge">11</span></label>
+                                            </div>
+                                        </toujou-input-group>                                   
+                                    </div>
+                                
+                                    <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+                                
+                                    <div class="list-group-item list-group solr-details__item-group" slot="content">
+                                        <toujou-details class="facet facet--aggregated facet-option list-group-item details facet-details" data-facet-item-value="/358/455/">
+                                            <div class="facet-option list-group-item" data-facet-item-value="/358/455/" slot="summary">
+                                                <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                    <div class="checkbox-group">
+                                                        <input
+                                                            data-pristine-required-message-de="The given subject was empty."
+                                                            class="checkbox facet-item solr-ajaxified"
+                                                            id="facet-destination-option-/358/455/"
+                                                            type="checkbox"
+                                                            name="tx_solr[filter][]"
+                                                            value="facet-destination-option-/358/455/"
+                                                            data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                        >
+                                                        <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Kapverden&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                    </div>
+                                                </toujou-input-group>  
+                                            </div>
+                                            <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+                                            <div class="list-group-item list-group solr-details__item-group" slot="content">
+                                                <div class="facet-option list-group-item" data-facet-item-value="/358/455/12">
+                                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                        <div class="checkbox-group">
+                                                            <input
+                                                                data-pristine-required-message-de="The given subject was empty."
+                                                                class="checkbox facet-item solr-ajaxified"
+                                                                id="facet-destination-option-/358/455/1255"
+                                                                type="checkbox"
+                                                                name="tx_solr[filter][]"
+                                                                value="facet-destination-option-/358/455/1255"
+                                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                            >
+                                                            <label class="checkbox-group__label" for="facet-destination-option-/358/455/1255">Insel&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                        </div>
+                                                    </toujou-input-group>  
+                                                </div>
+                                                <div class="facet-option list-group-item" data-facet-item-value="/358/455/121">
+                                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                        <div class="checkbox-group">
+                                                            <input
+                                                                data-pristine-required-message-de="The given subject was empty."
+                                                                class="checkbox facet-item solr-ajaxified"
+                                                                id="facet-destination-option-/358/455/121"
+                                                                type="checkbox"
+                                                                name="tx_solr[filter][]"
+                                                                value="facet-destination-option-/358/455/121"
+                                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                            >
+                                                            <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Küste&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                        </div>
+                                                    </toujou-input-group>  
+                                                </div>
+                                            </div>
+                                        </toujou-details>
+                                        <div class="facet-option list-group-item" data-facet-item-value="/358/455/34">
+                                            <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                <div class="checkbox-group">
+                                                    <input
+                                                        data-pristine-required-message-de="The given subject was empty."
+                                                        class="checkbox facet-item solr-ajaxified"
+                                                        id="facet-destination-option-/358/455/34"
+                                                        type="checkbox"
+                                                        name="tx_solr[filter][]"
+                                                        value="facet-destination-option-/358/455/34"
+                                                        data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                    >
+                                                    <label class="checkbox-group__label" for="facet-destination-option-/358/455/34">Sahara&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                </div>
+                                            </toujou-input-group>  
+                                        </div>
+                                        <div class="facet-option list-group-item" data-facet-item-value="/358/455/45">
+                                            <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                <div class="checkbox-group">
+                                                    <input
+                                                        data-pristine-required-message-de="The given subject was empty."
+                                                        class="checkbox facet-item solr-ajaxified"
+                                                        id="facet-destination-option-/358/455/45"
+                                                        type="checkbox"
+                                                        name="tx_solr[filter][]"
+                                                        value="facet-destination-option-/358/455/45"
+                                                        data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                    >
+                                                    <label class="checkbox-group__label" for="facet-destination-option-/358/455/45">Marokko&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                </div>
+                                            </toujou-input-group>  
+                                        </div>            
+                                    </div>
+                                </toujou-details>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO: test and style these elements -->
+            </div>
+            <div class="solr-header">
+                <h2 class="solr-header__headline">
+                    Suchergebnisse
+                    <span id="solrHeaderCount" class="solr-header__count">
+                    <span class="solr-header__count-number">446</span>
+                    </span>
+                </h2>
+                <div class="solr-header__infos">
+                    <p class="solr-header__range">
+                        Zeige Ergebnisse 1 bis 12 von 446.
+                    </p>
+                    <div id="results-per-page" class="solr-results__per-page">
+                        <form method="post" action="/suche/?tx_solr%5Bq%5D=" class="solr-results__per-page-form">
+                            Ergebnisse pro Seite:
+                            
+                            <toujou-input-group class="input-group input-group--single-select input-group--solr-per-page-select">
+                                <div class="select__wrapper select__wrapper--solr-per-page-select">
+                                    <select name="tx_solr[resultsPerPage]" id="" class="form-controls input select solr-header__per-page-select" onchange="this.form.submit()">
+                                        <option value="12" class="select__option" selected="selected">12</option>
+                                        <option value="24" class="select__option">24</option>
+                                        <option value="36" class="select__option">36</option>
+                                    </select>
+                                </div>
+                            </toujou-input-group>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="solr-search">
+                <form method="get" class="form solr-search__form" id="tx-solr-search-form-pi-results" action="/suche/" data-suggest="/suche?type=7384" data-suggest-header="Top Treffer" accept-charset="utf-8">
+                    <toujou-input-group class="input-group solr-search__search-input-group">
+                        <input id="tx_solr[q]" type="text" class="input input--text solr-search__search-input tx-solr-q js-solr-q tx-solr-suggest tx-solr-suggest-focus" name="tx_solr[q]" value="" placeholder="Search...">
+                        <span class="solr-search__input-cancel-button"></span>
+                    </toujou-input-group>
+
+                     <toujou-input-group class="input-group solr-search__submit-group">
+                       <button class="button" type="submit" button-size="normal" button-variant="primary">Suchen</button>
+                    </toujou-input-group>
+                </form>
+                <button class="button solr-filter-button" is="toujou-button" button-icon-position="left" button-type="normal" button-variant="primary" is-expanded>
+                    <toujou-icon class="icon" icon-size="normal" icon-color="bg" icon-name="filter"></toujou-icon>
+                    Filtern
+                </button>
+                <div class="solr-facets-in-use solr-chips solr-chips--search">
+                    <div class="panel panel--no-bg-mobile">
+                        <p class="solr-facets-in-use__no-filters">
+                            Noch keine Filter ausgewählt
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="solr-results" class="solr-results">
+                <div class="solr-results__topbar">
+                    <div class="solr-results__topbar-left"></div>
+                    <div class="solr-results__topbar-right solr-view-mode" role="radiogroup" aria-label="Ansicht">
+                        <button
+                            is="toujou-button"
+                            class="button solr-view-mode__button solr-view-mode__button--grid"
+                            button-variant="primary"
+                            button-type="ghost"
+                            button-size="normal"
+                            button-icon-position="left"
+                            data-view-mode="grid"
+                            role="radio"
+                            aria-checked="true"
+                            tabindex="0"
+                        >
+                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                             Raster
+                         </button>
+                          <button
+                            is="toujou-button"
+                            class="button solr-view-mode__button solr-view-mode__button--map"
+                            button-variant="primary"
+                            button-type="ghost"
+                            button-size="normal"
+                            button-icon-position="left"
+                            data-view-mode="map"
+                            role="radio"
+                            aria-checked="false"
+                            tabindex="0"
+                        >
+                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                             Karte
+                         </button>
+                    </div>
+                </div>
+                <div class="solr-results__map-container">
+                    <toujou-lazy-render>
+                        <template>
+                            <toujou-solr-search-map teaser-url="/teaser.html" geojsonurl="mapsResult.json" feature-geojson-url="geometryDetail.json" map-style="mapbox://styles/seabreeze/ck163tjmi3bkq1cpaf0g3pflt" access-token="pk.eyJ1Ijoic2VhYnJlZXplIiwiYSI6ImNqdWUxMWJtMDA4ZTEzeW56Mmc5M2tyOWkifQ.De9OBbERLFD-k5QyQGG5IA"></toujou-solr-search-map>
+                        </template>
+                    </toujou-lazy-render>
+                </div>
+                <ul class="solr-pagination solr-pagination--above">
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <button aria-hidden="true" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <span class="solr-pagination__icon solr-pagination__icon--prev"></span>
+                        </button>
+                    </li>
+                    <li class="solr-pagination__pages-container">
+                        <div class="solr-pagination__pages solr-pagination__pages--mobile">
+                            <div class="select__wrapper solr-pagination__select-wrapper">
+                                <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
+                                    <select class="form-control input select solr-pagination__select" name="tx_solr[page]" onchange="this.form.submit()">
+                                        <option value="1" selected="">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <span class="solr-pagination__select-postfix">
+                            von
+                            </span>
+                        </div>
+                        <ul class="solr-pagination__pages solr-pagination__pages--desktop">
+                            <li class="solr-pagination__item solr-pagination__item--active">
+                                <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
+                            </li>
+                            <li class="solr-pagination__item solr-pagination__item--ellipsis">
+                                <a class="solr-pagination__link">...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--next">
+                        <span class="solr-pagination__icon solr-pagination__icon--next"></span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="card-collection">
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                </ul>
+                
+                <ul class="solr-pagination solr-pagination--below">
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                            <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
+                        </button>
+                    </li>
+                    <li class="solr-pagination__pages-container">
+                        <div class="solr-pagination__pages solr-pagination__pages--mobile">
+                            <div class="select__wrapper solr-pagination__select-wrapper">
+                                <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
+                                    <toujou-input-group class="input-group input-group--single-select   ">
+                                        <div class="select__wrapper solr-pagination__select-wrapper">
+                                            <select data-pristine-required-message-de="The given subject was empty." class="form-control input select solr-pagination__select" id="testform-1000091-singleselect-1" name="tx_form_formframework[testform-1000091][singleselect-1]" name="tx_solr[page]" onchange="this.form.submit()">
+                                                <option class="seclect__option" value="">1</option>
+                                                <option class="seclect__option" value="2">2</option>
+                                                <option class="seclect__option" value="3">3</option>
+                                                <option class="seclect__option" value="4">4</option>
+                                                <option class="seclect__option" value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <span class="pristine-error form__error">This is an error message!</span>
+                                    </toujou-input-group>
+                                </form>
+                            </div>
+                            <span class="solr-pagination__select-postfix">von</span>
+                        </div>
+                        <ul class="solr-pagination__pages solr-pagination__pages--desktop">
+                            <li class="solr-pagination__item solr-pagination__item--active">
+                                <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
+                            </li>
+                            <li class="solr-pagination__item solr-pagination__item--ellipsis">
+                                <a class="solr-pagination__link">...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                            <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+        </toujou-solr-search>
+     `,e=u.bind({});e.args={showMobileFilters:!1};var s,l,c;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SolrSearchStoryProps) => {
+  return \`
+        <toujou-solr-search class="solr" view-mode="grid">
+            <div id="solr-filters" class="solr-filters" \${args.showMobileFilters ? 'is-visible' : ''}>
+                <div class="solr-filters__mobile-header">
+                    <h4 class="solr-filters__mobile-headline">Filtern</h4>
+                    <div class="solr-filters__mobile-buttons">
+                        <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-filters__mobile-button solr-filters__mobile-button--reset solr-filters__mobile-button--hidden">
+                        alle löschen
+                        </a>
+                        <button class="solr-filters__mobile-button solr-filters__mobile-button--close"></button>
+                    </div>
+                </div>
+                <div class="solr-facets-in-use solr-chips solr-chips--filters">
+                    <div class="panel panel--no-bg-mobile">
+                        <p class="solr-facets-in-use__no-filters">
+                            Noch keine Filter ausgewählt
+                        </p>
+                    </div>
+                </div>
+                <div class="solr-facets">
+                    <div class="solr-facets__facet facet facet-type facet-type-options" id="facet-accordion-destination">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordiondestination" href="#facetdestination">Typ</a>
+                                </h3>
+                            </div>
+                            <div
+                                class="facet-option-list facet-type-options fluidfacet list-group panel-collapse collapse"
+                                data-facet-name="destination"
+                                data-facet-label="Land"
+                                id="facetdestination"
+                            >
+                                <div class="facet-option list-group-item" data-facet-item-value="1">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-1"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:1"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-1">Sehenswertes & Freizeit&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="2"> 
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-2"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:2"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-2">Unterkünfte&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="3">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-3"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:3"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-3">Gastronomie&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="4">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-4"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:4"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-4">Inhaltsseiten&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="5">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-5"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:5"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-5">Veranstaltungen&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="6">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-6"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:6"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-6">Touren&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="7">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-7"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:7"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-7">Blogbeiträge&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="solr-facets__facet facet facet-type facet-type-options" id="facet-accordion-accommodation">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordionaccommodation" href="#facetaccommodation">Art der Unterkunft</a>
+                                </h3>
+                            </div>
+                            <div
+                                class="facet-option-list facet-type-options fluidfacet list-group panel-collapse collapse"
+                                data-facet-name="accommodation"
+                                data-facet-label="Art der Unterkunft"
+                                id="facetaccommodation"
+                            >
+                                <div class="facet-option list-group-item" data-facet-item-value="12">                      
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-1"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:12"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-12">Hotel&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="13"> 
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-13"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:2"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-13">Ferienhaus&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="3">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-14"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:14"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-14">Gästehaus&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="4">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-15"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:15"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-15">Appartment&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                                <div class="facet-option list-group-item" data-facet-item-value="5">
+                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                        <div class="checkbox-group">
+                                            <input
+                                                data-pristine-required-message-de="The given subject was empty."
+                                                class="checkbox facet-item solr-ajaxified"
+                                                id="facet-destination-option-16"
+                                                type="checkbox"
+                                                name="tx_solr[filter][]"
+                                                value="destination:16"
+                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                            >
+                                            <label class="checkbox-group__label" for="facet-destination-option-16">B&B&nbsp;<span class="facet-result-count badge">228</span></label>
+                                        </div>
+                                    </toujou-input-group>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solr-facets__facet facet facet-type facet-type-hierarchy" id="facet-accordion-destination">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordiondestination" href="#facetdestination">Reiseziel</a>
+                                </h3>
+                            </div>
+                            <div class="facet-option-list facet-type-hierarchy fluidfacet list-group panel-collapse collapse" data-facet-name="destination" data-facet-label="Reiseziel" id="facetdestination">
+                                <toujou-details id="details-0" class="details facet-details" element-design="default">
+                                    <div class="facet-option list-group-item" data-facet-item-value="/358/" slot="summary">
+                                        <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                            <div class="checkbox-group">
+                                                <input
+                                                    data-pristine-required-message-de="The given subject was empty."
+                                                    class="checkbox facet-item solr-ajaxified"
+                                                    id="facet-destination-option-/358/"
+                                                    type="checkbox"
+                                                    name="tx_solr[filter][]"
+                                                    value="destination:/358/"
+                                                    data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                >
+                                                <label class="checkbox-group__label" for="facet-destination-option-/358/">Afrika&nbsp;<span class="facet-result-count badge">11</span></label>
+                                            </div>
+                                        </toujou-input-group>                                   
+                                    </div>
+                                
+                                    <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+                                
+                                    <div class="list-group-item list-group solr-details__item-group" slot="content">
+                                        <toujou-details class="facet facet--aggregated facet-option list-group-item details facet-details" data-facet-item-value="/358/455/">
+                                            <div class="facet-option list-group-item" data-facet-item-value="/358/455/" slot="summary">
+                                                <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                    <div class="checkbox-group">
+                                                        <input
+                                                            data-pristine-required-message-de="The given subject was empty."
+                                                            class="checkbox facet-item solr-ajaxified"
+                                                            id="facet-destination-option-/358/455/"
+                                                            type="checkbox"
+                                                            name="tx_solr[filter][]"
+                                                            value="facet-destination-option-/358/455/"
+                                                            data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                        >
+                                                        <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Kapverden&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                    </div>
+                                                </toujou-input-group>  
+                                            </div>
+                                            <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+                                            <div class="list-group-item list-group solr-details__item-group" slot="content">
+                                                <div class="facet-option list-group-item" data-facet-item-value="/358/455/12">
+                                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                        <div class="checkbox-group">
+                                                            <input
+                                                                data-pristine-required-message-de="The given subject was empty."
+                                                                class="checkbox facet-item solr-ajaxified"
+                                                                id="facet-destination-option-/358/455/1255"
+                                                                type="checkbox"
+                                                                name="tx_solr[filter][]"
+                                                                value="facet-destination-option-/358/455/1255"
+                                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                            >
+                                                            <label class="checkbox-group__label" for="facet-destination-option-/358/455/1255">Insel&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                        </div>
+                                                    </toujou-input-group>  
+                                                </div>
+                                                <div class="facet-option list-group-item" data-facet-item-value="/358/455/121">
+                                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                        <div class="checkbox-group">
+                                                            <input
+                                                                data-pristine-required-message-de="The given subject was empty."
+                                                                class="checkbox facet-item solr-ajaxified"
+                                                                id="facet-destination-option-/358/455/121"
+                                                                type="checkbox"
+                                                                name="tx_solr[filter][]"
+                                                                value="facet-destination-option-/358/455/121"
+                                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                            >
+                                                            <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Küste&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                        </div>
+                                                    </toujou-input-group>  
+                                                </div>
+                                            </div>
+                                        </toujou-details>
+                                        <div class="facet-option list-group-item" data-facet-item-value="/358/455/34">
+                                            <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                <div class="checkbox-group">
+                                                    <input
+                                                        data-pristine-required-message-de="The given subject was empty."
+                                                        class="checkbox facet-item solr-ajaxified"
+                                                        id="facet-destination-option-/358/455/34"
+                                                        type="checkbox"
+                                                        name="tx_solr[filter][]"
+                                                        value="facet-destination-option-/358/455/34"
+                                                        data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                    >
+                                                    <label class="checkbox-group__label" for="facet-destination-option-/358/455/34">Sahara&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                </div>
+                                            </toujou-input-group>  
+                                        </div>
+                                        <div class="facet-option list-group-item" data-facet-item-value="/358/455/45">
+                                            <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                <div class="checkbox-group">
+                                                    <input
+                                                        data-pristine-required-message-de="The given subject was empty."
+                                                        class="checkbox facet-item solr-ajaxified"
+                                                        id="facet-destination-option-/358/455/45"
+                                                        type="checkbox"
+                                                        name="tx_solr[filter][]"
+                                                        value="facet-destination-option-/358/455/45"
+                                                        data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                    >
+                                                    <label class="checkbox-group__label" for="facet-destination-option-/358/455/45">Marokko&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                </div>
+                                            </toujou-input-group>  
+                                        </div>            
+                                    </div>
+                                </toujou-details>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO: test and style these elements -->
+            </div>
+            <div class="solr-header">
+                <h2 class="solr-header__headline">
+                    Suchergebnisse
+                    <span id="solrHeaderCount" class="solr-header__count">
+                    <span class="solr-header__count-number">446</span>
+                    </span>
+                </h2>
+                <div class="solr-header__infos">
+                    <p class="solr-header__range">
+                        Zeige Ergebnisse 1 bis 12 von 446.
+                    </p>
+                    <div id="results-per-page" class="solr-results__per-page">
+                        <form method="post" action="/suche/?tx_solr%5Bq%5D=" class="solr-results__per-page-form">
+                            Ergebnisse pro Seite:
+                            
+                            <toujou-input-group class="input-group input-group--single-select input-group--solr-per-page-select">
+                                <div class="select__wrapper select__wrapper--solr-per-page-select">
+                                    <select name="tx_solr[resultsPerPage]" id="" class="form-controls input select solr-header__per-page-select" onchange="this.form.submit()">
+                                        <option value="12" class="select__option" selected="selected">12</option>
+                                        <option value="24" class="select__option">24</option>
+                                        <option value="36" class="select__option">36</option>
+                                    </select>
+                                </div>
+                            </toujou-input-group>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="solr-search">
+                <form method="get" class="form solr-search__form" id="tx-solr-search-form-pi-results" action="/suche/" data-suggest="/suche?type=7384" data-suggest-header="Top Treffer" accept-charset="utf-8">
+                    <toujou-input-group class="input-group solr-search__search-input-group">
+                        <input id="tx_solr[q]" type="text" class="input input--text solr-search__search-input tx-solr-q js-solr-q tx-solr-suggest tx-solr-suggest-focus" name="tx_solr[q]" value="" placeholder="Search...">
+                        <span class="solr-search__input-cancel-button"></span>
+                    </toujou-input-group>
+
+                     <toujou-input-group class="input-group solr-search__submit-group">
+                       <button class="button" type="submit" button-size="normal" button-variant="primary">Suchen</button>
+                    </toujou-input-group>
+                </form>
+                <button class="button solr-filter-button" is="toujou-button" button-icon-position="left" button-type="normal" button-variant="primary" is-expanded>
+                    <toujou-icon class="icon" icon-size="normal" icon-color="bg" icon-name="filter"></toujou-icon>
+                    Filtern
+                </button>
+                <div class="solr-facets-in-use solr-chips solr-chips--search">
+                    <div class="panel panel--no-bg-mobile">
+                        <p class="solr-facets-in-use__no-filters">
+                            Noch keine Filter ausgewählt
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="solr-results" class="solr-results">
+                <div class="solr-results__topbar">
+                    <div class="solr-results__topbar-left"></div>
+                    <div class="solr-results__topbar-right solr-view-mode" role="radiogroup" aria-label="Ansicht">
+                        <button
+                            is="toujou-button"
+                            class="button solr-view-mode__button solr-view-mode__button--grid"
+                            button-variant="primary"
+                            button-type="ghost"
+                            button-size="normal"
+                            button-icon-position="left"
+                            data-view-mode="grid"
+                            role="radio"
+                            aria-checked="true"
+                            tabindex="0"
+                        >
+                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                             Raster
+                         </button>
+                          <button
+                            is="toujou-button"
+                            class="button solr-view-mode__button solr-view-mode__button--map"
+                            button-variant="primary"
+                            button-type="ghost"
+                            button-size="normal"
+                            button-icon-position="left"
+                            data-view-mode="map"
+                            role="radio"
+                            aria-checked="false"
+                            tabindex="0"
+                        >
+                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                             Karte
+                         </button>
+                    </div>
+                </div>
+                <div class="solr-results__map-container">
+                    <toujou-lazy-render>
+                        <template>
+                            <toujou-solr-search-map teaser-url="/teaser.html" geojsonurl="mapsResult.json" feature-geojson-url="geometryDetail.json" map-style="mapbox://styles/seabreeze/ck163tjmi3bkq1cpaf0g3pflt" access-token="pk.eyJ1Ijoic2VhYnJlZXplIiwiYSI6ImNqdWUxMWJtMDA4ZTEzeW56Mmc5M2tyOWkifQ.De9OBbERLFD-k5QyQGG5IA"></toujou-solr-search-map>
+                        </template>
+                    </toujou-lazy-render>
+                </div>
+                <ul class="solr-pagination solr-pagination--above">
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <button aria-hidden="true" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <span class="solr-pagination__icon solr-pagination__icon--prev"></span>
+                        </button>
+                    </li>
+                    <li class="solr-pagination__pages-container">
+                        <div class="solr-pagination__pages solr-pagination__pages--mobile">
+                            <div class="select__wrapper solr-pagination__select-wrapper">
+                                <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
+                                    <select class="form-control input select solr-pagination__select" name="tx_solr[page]" onchange="this.form.submit()">
+                                        <option value="1" selected="">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <span class="solr-pagination__select-postfix">
+                            von
+                            </span>
+                        </div>
+                        <ul class="solr-pagination__pages solr-pagination__pages--desktop">
+                            <li class="solr-pagination__item solr-pagination__item--active">
+                                <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
+                            </li>
+                            <li class="solr-pagination__item solr-pagination__item--ellipsis">
+                                <a class="solr-pagination__link">...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--next">
+                        <span class="solr-pagination__icon solr-pagination__icon--next"></span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="card-collection">
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                    <li class="card-collection__item">
+                        <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
+                            <header class="collection-item__top">
+                                <figure class="collection-item__figure">
+                                    <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                                </figure>
+                                <div class="collection-item__categories">
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Neu
+                                    </a>
+                                    <a href="#" class="collection-item__category">
+                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                        Jetzt 30% Rabatt
+                                    </a>
+                                </div>
+                                <div class="collection-item__location">
+                                    <h4 class="collection-item__location-city">
+                                        Marbella
+                                    </h4>
+                                    <h5 class="collection-item__location-country">
+                                        Spanien
+                                    </h5>
+                                </div>
+                                <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            </header>
+                            <div class="collection-item__bottom">
+                                <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                                <p class="collection-item__subtitles">
+                                    <span class="collection-item__subtitle">Hotel name</span>
+                                </p>
+                                
+                                <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                
+                                <div class="collection-item__trip-infos">
+                                    <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                    <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                                </div>
+                                
+                                <p class="collection-item__trip-price">
+                                    <span class="collection-item__trip-price-prefix">ab</span>
+                                    <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                    <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                                </p>
+                                
+                                <a href="#" class="collection-item__button">
+                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    zur Beschreibung
+                                </a>
+                            </div>
+                        </toujou-collection-item>
+                    </li>
+                </ul>
+                
+                <ul class="solr-pagination solr-pagination--below">
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                            <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
+                        </button>
+                    </li>
+                    <li class="solr-pagination__pages-container">
+                        <div class="solr-pagination__pages solr-pagination__pages--mobile">
+                            <div class="select__wrapper solr-pagination__select-wrapper">
+                                <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
+                                    <toujou-input-group class="input-group input-group--single-select   ">
+                                        <div class="select__wrapper solr-pagination__select-wrapper">
+                                            <select data-pristine-required-message-de="The given subject was empty." class="form-control input select solr-pagination__select" id="testform-1000091-singleselect-1" name="tx_form_formframework[testform-1000091][singleselect-1]" name="tx_solr[page]" onchange="this.form.submit()">
+                                                <option class="seclect__option" value="">1</option>
+                                                <option class="seclect__option" value="2">2</option>
+                                                <option class="seclect__option" value="3">3</option>
+                                                <option class="seclect__option" value="4">4</option>
+                                                <option class="seclect__option" value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <span class="pristine-error form__error">This is an error message!</span>
+                                    </toujou-input-group>
+                                </form>
+                            </div>
+                            <span class="solr-pagination__select-postfix">von</span>
+                        </div>
+                        <ul class="solr-pagination__pages solr-pagination__pages--desktop">
+                            <li class="solr-pagination__item solr-pagination__item--active">
+                                <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
+                            </li>
+                            <li class="solr-pagination__item">
+                                <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
+                            </li>
+                            <li class="solr-pagination__item solr-pagination__item--ellipsis">
+                                <a class="solr-pagination__link">...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                            <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+        </toujou-solr-search>
+     \`;
+}`,...(c=(l=e.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const b=["SolrSearch"];export{e as SolrSearch,b as __namedExportsOrder,h as default};
+//# sourceMappingURL=solr-search.stories-9dcff52f.js.map
