@@ -1,17 +1,19 @@
 .main-nav__list[nav-list-level="2"] {
-    --main-nav-level-2-list-margin: 0;
+    --main-nav-level-2-list-margin: var(--spacing-normal) 0 0;
     --main-nav-level-2-list-padding: 0 0 var(--spacing-m) var(--spacing-m);
     --main-nav-level-2-list-width: 100%;
+    --main-nav-level-2-list-gap: var(--spacing-m);
 
     --main-nav-level-2-list-item-display: none;
     --main-nav-level-2-list-item-grid-column: 1 / -1;
     --main-nav-level-2-list-item-grid-template-columns: 1fr auto;
     --main-nav-level-2-list-item-font-size: var(--font-size-m);
 
+    --main-nav-level-2-link-line-height: .875;
 
     display: var(--main-nav-level-2-list-item-display);
     grid-column: var(--main-nav-level-2-list-item-grid-column);
-    /*gap: var(--main-nav-list-gap);*/
+    gap: var(--main-nav-level-2-list-gap);
     list-style: var(--main-nav-list-list-style);
     margin: var(--main-nav-level-2-list-margin);
     padding: var(--main-nav-level-2-list-padding);
@@ -21,6 +23,10 @@
 .main-nav__list-item[is-open] > .main-nav__list[nav-list-level="2"] {
     --main-nav-level-2-list-item-display: grid;
     /*grid-template-columns: var(--main-nav-level-2-list-item-grid-template-columns);*/
+}
+
+.main-nav__list-item[nav-item-level="2"] .main-nav__link {
+    line-height: var(--main-nav-level-2-link-line-height);
 }
 
 .main-nav__list-item[nav-item-level="2"] .main-nav__text {

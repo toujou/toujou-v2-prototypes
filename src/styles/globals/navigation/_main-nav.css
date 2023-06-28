@@ -16,7 +16,7 @@
     --main-nav-list-flex-direction: column;
     --main-nav-list-align-items: flex-start;
     --main-nav-list-justify-content: center;
-    --main-nav-list-gap: var(--spacing-normal);
+    --main-nav-list-gap: var(--spacing-l);
     --main-nav-list-list-style: none;
     --main-nav-list-margin: var(--spacing-normal) 0 0;
     --main-nav-list-padding: 0;

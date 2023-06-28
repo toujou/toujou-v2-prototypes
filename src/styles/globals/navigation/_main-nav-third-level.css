@@ -1,6 +1,7 @@
 .main-nav__list[nav-list-level="3"] {
-    --main-nav-level-3-list-margin: 0;
+    --main-nav-level-3-list-margin: var(--spacing-normal) 0 0;
     --main-nav-level-3-list-padding: 0 0 var(--spacing-m) var(--spacing-m);
+    --main-nav-level-3-list-gap: var(--spacing-normal);
 
     --main-nav-level-3-list-item-display: none;
     --main-nav-level-3-list-item-grid-column: 1 / -1;
@@ -9,6 +10,7 @@
     display: var(--main-nav-level-3-list-item-display);
     grid-column: var(--main-nav-level-3-list-item-grid-column);
     list-style: var(--main-nav-list-list-style);
+    gap: var(--main-nav-level-3-list-gap);
     margin: var(--main-nav-level-3-list-margin);
     padding: var(--main-nav-level-3-list-padding);
     width: 100%;

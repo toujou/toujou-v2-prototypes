@@ -19,7 +19,7 @@
     --solr-header-per-page-form-gap: var(--spacing-s);
 
     border-bottom: var(--solr-header-border-bottom);
-    padding-bottom: var(--solr-header-padding);
+    padding: var(--solr-header-padding);
     margin-bottom: var(--solr-header-margin);
 }
 

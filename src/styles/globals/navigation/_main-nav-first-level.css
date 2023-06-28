@@ -1,6 +1,8 @@
 .main-nav__list[nav-list-level="1"] {
-    --main-nav-level-2-list-item-display: grid;
-    --main-nav-level-2-list-item-grid-template-columns: 1fr auto;
+    --main-nav-level-1-list-item-display: grid;
+    --main-nav-level-1-list-item-grid-template-columns: 1fr auto;
+
+    --main-nav-level-1-link-line-height: 1.25;
 
     display: var(--main-nav-list-display);
     flex-direction: var(--main-nav-list-flex-direction);
@@ -14,8 +16,8 @@
 
 .main-nav__list-item {
     width: var(--main-nav-list-item-text-width);
-    display: var(--main-nav-level-2-list-item-display);
-    grid-template-columns: var(--main-nav-level-2-list-item-grid-template-columns);
+    display: var(--main-nav-level-1-list-item-display);
+    grid-template-columns: var(--main-nav-level-1-list-item-grid-template-columns);
     align-items: var(--main-nav-list-item-text-align-items);
     justify-content: var(--main-nav-list-item-text-justify-content);
     gap: var(--main-nav-list-item-text-gap);
@@ -30,7 +32,7 @@
     font-family: var(--main-nav-link-font-family);
     font-weight: var(--main-nav-link-font-weight);
     font-size: var(--main-nav-link-font-size);
-    line-height: var(--main-nav-link-line-height);
+    line-height: var(--main-nav-level-1-link-line-height);
     color: var(--main-nav-link-color);
 }
 

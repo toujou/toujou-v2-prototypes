@@ -483,7 +483,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             aria-checked="false"
                             tabindex="0"
                         >
-                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                            <toujou-icon class="icon button__icon" icon-name="map"></toujou-icon>
                              Karte
                          </button>
                     </div>
