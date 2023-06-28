@@ -30,6 +30,7 @@
     font-family: var(--main-nav-link-font-family);
     font-weight: var(--main-nav-link-font-weight);
     font-size: var(--main-nav-link-font-size);
+    line-height: var(--main-nav-link-line-height);
     color: var(--main-nav-link-color);
 }
 

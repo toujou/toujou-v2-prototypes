@@ -605,12 +605,13 @@ figure {
     --main-nav-list-item-text-display: flex;
     --main-nav-list-item-text-align-items: center;
     --main-nav-list-item-text-justify-content: space-between;
-    --main-nav-list-item-text-gap: var(--spacing-normal);
+    --main-nav-list-item-text-gap: var(--spacing-xs);
 
     --main-nav-link-text-decoration: none;
     --main-nav-link-font-family: var(--font-family-text);
     --main-nav-link-font-weight: var(--font-weight-text-bold);
     --main-nav-link-font-size: var(--font-size-l);
+    --main-nav-link-line-height: var(--line-height-s);
     --main-nav-link-color: var(--color-bg);
 
     --main-nav-back-button-display: flex;
@@ -777,7 +778,7 @@ figure {
 
         --main-nav-list-item-height: 100%;
         --main-nav-list-item-position: relative;
-        --main-nav-list-item-text-gap: var(--spacing-s);
+        --main-nav-list-item-text-gap: var(--spacing-xs);
 
         --main-nav-link-font-size: var(--font-size-normal);
         --main-nav-link-font-weight: var(--font-weight-text-normal);
@@ -902,6 +903,7 @@ figure {
     font-family: var(--main-nav-link-font-family);
     font-weight: var(--main-nav-link-font-weight);
     font-size: var(--main-nav-link-font-size);
+    line-height: var(--main-nav-link-line-height);
     color: var(--main-nav-link-color);
 }
 
