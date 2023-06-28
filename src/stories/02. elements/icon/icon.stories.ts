@@ -89,6 +89,7 @@ const iconNames = [
     'euro',
     'fax',
     'file-download',
+    'filter',
     'flag',
     'flower',
     'folder',

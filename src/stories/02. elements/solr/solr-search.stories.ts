@@ -12,17 +12,30 @@ export default {
             page: solrSearchDocs,
         }
     },
-    argTypes: {},
+    argTypes: {
+        showMobileFilters: {
+            table: {
+                category: "Solr search settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Show mobile filters',
+            description: "Toggle visibility of the mobile filters",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
+    },
     tags: ['autodocs']
 } as Meta;
 
 interface SolrSearchStoryProps {
+    showMobileFilters: boolean
 }
 
 const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
     return `
         <toujou-solr-search class="solr" view-mode="grid">
-            <div id="solr-filters" class="solr-filters">
+            <div id="solr-filters" class="solr-filters" ${args.showMobileFilters ? 'is-visible' : ''}>
                 <div class="solr-filters__mobile-header">
                     <h4 class="solr-filters__mobile-headline">Filtern</h4>
                     <div class="solr-filters__mobile-buttons">
@@ -427,9 +440,9 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                        <button class="button" type="submit" button-size="normal" button-variant="primary">Suchen</button>
                     </toujou-input-group>
                 </form>
-                <button class="button button--primary solr-filter-button">
-                <span class="solr-filter-button__icon"></span>
-                Filtern
+                <button class="button solr-filter-button" is="toujou-button" button-icon-position="left" button-type="normal" button-variant="primary" is-expanded>
+                    <toujou-icon class="icon" icon-size="normal" icon-color="bg" icon-name="filter"></toujou-icon>
+                    Filtern
                 </button>
                 <div class="solr-facets-in-use solr-chips solr-chips--search">
                     <div class="panel panel--no-bg-mobile">
@@ -923,5 +936,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
 
 export const SolrSearch = Template.bind({});
 
-SolrSearch.args = {}
+SolrSearch.args = {
+    showMobileFilters: false,
+}
 

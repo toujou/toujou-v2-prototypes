@@ -347,6 +347,11 @@
     -webkit-mask-image: var(--icon-file-download);
 }
 
+.icon[icon-name="filter"] {
+    mask-image: var(--icon-filter);
+    -webkit-mask-image: var(--icon-filter);
+}
+
 .icon[icon-name="flag"] {
     mask-image: var(--icon-flag);
     -webkit-mask-image: var(--icon-flag);
