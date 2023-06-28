@@ -448,7 +448,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             aria-checked="false"
                             tabindex="0"
                         >
-                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                            <toujou-icon class="icon button__icon" icon-name="map"></toujou-icon>
                              Karte
                          </button>
                     </div>
@@ -1347,7 +1347,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             aria-checked="false"
                             tabindex="0"
                         >
-                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                            <toujou-icon class="icon button__icon" icon-name="map"></toujou-icon>
                              Karte
                          </button>
                     </div>
@@ -1797,4 +1797,4 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
         </toujou-solr-search>
      \`;
 }`,...(c=(l=e.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const b=["SolrSearch"];export{e as SolrSearch,b as __namedExportsOrder,h as default};
-//# sourceMappingURL=solr-search.stories-9dcff52f.js.map
+//# sourceMappingURL=solr-search.stories-0c712553.js.map
