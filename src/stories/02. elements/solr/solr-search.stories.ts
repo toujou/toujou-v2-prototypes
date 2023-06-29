@@ -279,6 +279,53 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                         </div>
                     </div>
                     
+                    <div class="solr-facets__facet facet facet-type facet-type-dateRange" id="facet-accordion-departureDate">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordiondepartureDate" href="#facetdepartureDate">Abreise</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="facetdepartureDate">
+                                <toujou-solr-date-range-facet
+                                    class="facet-date-range"
+                                    data-facet-name="departureDate"
+                                    data-facet-label="Abreise"
+                                    data-range-min="2022-06-29T00:00:00+0000"
+                                    data-range-max="2024-06-29T00:00:00+0000"
+                                    data-range-min-selected=""
+                                    data-range-max-selected=""
+                                    data-range-gap="1"
+                                    data-facet-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=departureDate%3A___FROM___-___TO___"
+                                    data-facet-reset-url="/suche/"
+                                    data-format="d.m.Y"
+                                    >
+
+                                    <toujou-datepicker date-format="d.m.Y" mindate="today">
+                                        <toujou-input-group class="input-group solr-search__search-input-group">
+                                            <input
+                                                type="text"
+                                                class="input input--text solr-facet__date-range solr-facet__date-range--date-from"
+                                                name="dateFrom"
+                                                value=""
+                                                placeholder="von">
+                                        </toujou-input-group>
+                                    </toujou-datepicker>
+                                    <toujou-datepicker date-format="d.m.Y" mindate="today">
+                                        <toujou-input-group class="input-group solr-search__search-input-group">
+                                            <input
+                                                type="text"
+                                                class="input input--text solr-facet__date-range solr-facet__date-range--date-from"
+                                                name="dateUntil"
+                                                value=""
+                                                placeholder="bis">
+                                        </toujou-input-group>
+                                    </toujou-datepicker>
+                                </toujou-solr-date-range-facet>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="solr-facets__facet facet facet-type facet-type-hierarchy" id="facet-accordion-destination">
                         <div class="panel">
                             <div class="panel-heading">

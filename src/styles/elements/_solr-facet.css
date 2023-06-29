@@ -1,0 +1,5 @@
+.solr-facet__date-range {
+    --solr-facet-date-range-padding: var(--spacing-s) var(--spacing-normal);
+
+    padding: var(--solr-facet-date-range-padding);
+}

@@ -104,6 +104,7 @@
 @import "elements/_panel-title.css";
 @import "elements/_solr.css";
 @import "elements/_solr-chips.css";
+@import "elements/_solr-facet.css";
 @import "elements/_solr-facets-in-use.css";
 @import "elements/_solr-filter-button.css";
 @import "elements/_solr-filters.css";
