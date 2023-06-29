@@ -1,6 +1,6 @@
-import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-ac05983f.js";import{u as n}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function a(t){const i=Object.assign({h1:"h1"},n(),t.components);return o.jsx(i.h1,{id:"solr-search",children:"SOLR search"})}function p(t={}){const{wrapper:i}=Object.assign({},n(),t.components);return i?o.jsx(i,Object.assign({},t,{children:o.jsx(a,t)})):a(t)}const h={title:"COMPONENTS/solr",parameters:{badges:[r.TESTING],docs:{page:p}},argTypes:{showMobileFilters:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show mobile filters",description:"Toggle visibility of the mobile filters",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},u=t=>`
+import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-ac05983f.js";import{u as n}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function a(e){const i=Object.assign({h1:"h1"},n(),e.components);return o.jsx(i.h1,{id:"solr-search",children:"SOLR search"})}function p(e={}){const{wrapper:i}=Object.assign({},n(),e.components);return i?o.jsx(i,Object.assign({},e,{children:o.jsx(a,e)})):a(e)}const h={title:"COMPONENTS/solr",parameters:{badges:[r.TESTING],docs:{page:p}},argTypes:{showMobileFilters:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show mobile filters",description:"Toggle visibility of the mobile filters",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},u=e=>`
         <toujou-solr-search class="solr" view-mode="grid">
-            <div id="solr-filters" class="solr-filters" ${t.showMobileFilters?"is-visible":""}>
+            <div id="solr-filters" class="solr-filters" ${e.showMobileFilters?"is-visible":""}>
                 <div class="solr-filters__mobile-header">
                     <h4 class="solr-filters__mobile-headline">Filtern</h4>
                     <div class="solr-filters__mobile-buttons">
@@ -836,9 +836,9 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                 
                 <ul class="solr-pagination solr-pagination--below">
                     <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
                             <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
-                        </button>
+                        </a>
                     </li>
                     <li class="solr-pagination__pages-container">
                         <div class="solr-pagination__pages solr-pagination__pages--mobile">
@@ -888,15 +888,15 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                         </ul>
                     </li>
                     <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
                             <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
             <!---->
         </toujou-solr-search>
-     `,e=u.bind({});e.args={showMobileFilters:!1};var s,l,c;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SolrSearchStoryProps) => {
+     `,t=u.bind({});t.args={showMobileFilters:!1};var s,l,c;t.parameters={...t.parameters,docs:{...(s=t.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SolrSearchStoryProps) => {
   return \`
         <toujou-solr-search class="solr" view-mode="grid">
             <div id="solr-filters" class="solr-filters" \${args.showMobileFilters ? 'is-visible' : ''}>
@@ -1735,9 +1735,9 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                 
                 <ul class="solr-pagination solr-pagination--below">
                     <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
                             <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
-                        </button>
+                        </a>
                     </li>
                     <li class="solr-pagination__pages-container">
                         <div class="solr-pagination__pages solr-pagination__pages--mobile">
@@ -1787,14 +1787,14 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                         </ul>
                     </li>
                     <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
                             <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
             <!---->
         </toujou-solr-search>
      \`;
-}`,...(c=(l=e.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const b=["SolrSearch"];export{e as SolrSearch,b as __namedExportsOrder,h as default};
-//# sourceMappingURL=solr-search.stories-0c712553.js.map
+}`,...(c=(l=t.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const b=["SolrSearch"];export{t as SolrSearch,b as __namedExportsOrder,h as default};
+//# sourceMappingURL=solr-search.stories-11bddd2e.js.map
