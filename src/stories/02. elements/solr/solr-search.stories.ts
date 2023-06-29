@@ -326,6 +326,33 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                         </div>
                     </div>
                     
+                    <div class="solr-facets__facet facet facet-type facet-type-options" id="facet-accordion-doktype">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="facet-label panel-title">
+                                    <a class="panel-title__link" data-toggle="collapse" data-parent="#facet-accordiondepartureDate" href="#facetdoktype">Seitentyp</a>
+                                </h3>
+                            </div>
+                            <ul class="list list-group facet-option-list facet-type-options fluidfacet" data-facet-name="doktype" data-facet-label="Seitentyp" id="facetdoktype">
+                                <li class="list-group-item facet-option " data-facet-item-value="50">
+                                    <div class="d-flex justify-content-between">
+                                        <a class="facet solr-ajaxified" href="/suche/?tx_solr%5Bfilter%5D%5B0%5D=doktype%3A50">50</a> <span class="facet-result-count badge bg-info">123</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item facet-option " data-facet-item-value="20">
+                                    <div class="d-flex justify-content-between">
+                                        <a class="facet solr-ajaxified" href="/suche/?tx_solr%5Bfilter%5D%5B0%5D=doktype%3A20">Inhaltsseiten</a> <span class="facet-result-count badge bg-info">43</span>
+                                    </div>
+                                </li>
+                                <li class="list-group-item facet-option " data-facet-item-value="137">
+                                    <div class="d-flex justify-content-between">
+                                        <a class="facet solr-ajaxified" href="/suche/?tx_solr%5Bfilter%5D%5B0%5D=doktype%3A137">Blogbeiträge</a> <span class="facet-result-count badge bg-info">4</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
                     <div class="solr-facets__facet facet facet-type facet-type-hierarchy" id="facet-accordion-destination">
                         <div class="panel">
                             <div class="panel-heading">
@@ -334,6 +361,82 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 </h3>
                             </div>
                             <div class="facet-option-list facet-type-hierarchy fluidfacet list-group panel-collapse collapse" data-facet-name="destination" data-facet-label="Reiseziel" id="facetdestination">
+                                <toujou-details id="details-0" class="details facet-details" element-design="default">
+                                    <div class="facet-option list-group-item" data-facet-item-value="/358/" slot="summary">
+                                        <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                            <div class="checkbox-group">
+                                                <input
+                                                    data-pristine-required-message-de="The given subject was empty."
+                                                    class="checkbox facet-item solr-ajaxified"
+                                                    id="facet-destination-option-/358/"
+                                                    type="checkbox"
+                                                    name="tx_solr[filter][]"
+                                                    value="destination:/358/"
+                                                    data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                >
+                                                <label class="checkbox-group__label" for="facet-destination-option-/358/">Europa&nbsp;<span class="facet-result-count badge">11</span></label>
+                                            </div>
+                                        </toujou-input-group>                                   
+                                    </div>
+                                
+                                    <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+                                
+                                    <div class="list-group-item list-group solr-details__item-group" slot="content">
+                                        <toujou-details class="facet facet--aggregated facet-option list-group-item details facet-details" data-facet-item-value="/358/455/">
+                                            <div class="facet-option list-group-item" data-facet-item-value="/358/455/" slot="summary">
+                                                <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                    <div class="checkbox-group">
+                                                        <input
+                                                            data-pristine-required-message-de="The given subject was empty."
+                                                            class="checkbox facet-item solr-ajaxified"
+                                                            id="facet-destination-option-/358/455/"
+                                                            type="checkbox"
+                                                            name="tx_solr[filter][]"
+                                                            value="facet-destination-option-/358/455/"
+                                                            data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                        >
+                                                        <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Portugal&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                    </div>
+                                                </toujou-input-group>  
+                                            </div>
+                                            <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
+                                            <div class="list-group-item list-group solr-details__item-group" slot="content">
+                                                <div class="facet-option list-group-item" data-facet-item-value="/358/455/12">
+                                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                        <div class="checkbox-group">
+                                                            <input
+                                                                data-pristine-required-message-de="The given subject was empty."
+                                                                class="checkbox facet-item solr-ajaxified"
+                                                                id="facet-destination-option-/358/455/1255"
+                                                                type="checkbox"
+                                                                name="tx_solr[filter][]"
+                                                                value="facet-destination-option-/358/455/1255"
+                                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                            >
+                                                            <label class="checkbox-group__label" for="facet-destination-option-/358/455/1255">Algarve&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                        </div>
+                                                    </toujou-input-group>  
+                                                </div>
+                                                <div class="facet-option list-group-item" data-facet-item-value="/358/455/121">
+                                                    <toujou-input-group class="input-group input-group--check checkbox-group   ">
+                                                        <div class="checkbox-group">
+                                                            <input
+                                                                data-pristine-required-message-de="The given subject was empty."
+                                                                class="checkbox facet-item solr-ajaxified"
+                                                                id="facet-destination-option-/358/455/121"
+                                                                type="checkbox"
+                                                                name="tx_solr[filter][]"
+                                                                value="facet-destination-option-/358/455/121"
+                                                                data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
+                                                            >
+                                                            <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Lisboa&nbsp;<span class="facet-result-count badge">1</span></label>
+                                                        </div>
+                                                    </toujou-input-group>  
+                                                </div>
+                                            </div>
+                                        </toujou-details>         
+                                    </div>
+                                </toujou-details>
                                 <toujou-details id="details-0" class="details facet-details" element-design="default">
                                     <div class="facet-option list-group-item" data-facet-item-value="/358/" slot="summary">
                                         <toujou-input-group class="input-group input-group--check checkbox-group   ">
@@ -407,39 +510,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                     </toujou-input-group>  
                                                 </div>
                                             </div>
-                                        </toujou-details>
-                                        <div class="facet-option list-group-item" data-facet-item-value="/358/455/34">
-                                            <toujou-input-group class="input-group input-group--check checkbox-group   ">
-                                                <div class="checkbox-group">
-                                                    <input
-                                                        data-pristine-required-message-de="The given subject was empty."
-                                                        class="checkbox facet-item solr-ajaxified"
-                                                        id="facet-destination-option-/358/455/34"
-                                                        type="checkbox"
-                                                        name="tx_solr[filter][]"
-                                                        value="facet-destination-option-/358/455/34"
-                                                        data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
-                                                    >
-                                                    <label class="checkbox-group__label" for="facet-destination-option-/358/455/34">Sahara&nbsp;<span class="facet-result-count badge">1</span></label>
-                                                </div>
-                                            </toujou-input-group>  
-                                        </div>
-                                        <div class="facet-option list-group-item" data-facet-item-value="/358/455/45">
-                                            <toujou-input-group class="input-group input-group--check checkbox-group   ">
-                                                <div class="checkbox-group">
-                                                    <input
-                                                        data-pristine-required-message-de="The given subject was empty."
-                                                        class="checkbox facet-item solr-ajaxified"
-                                                        id="facet-destination-option-/358/455/45"
-                                                        type="checkbox"
-                                                        name="tx_solr[filter][]"
-                                                        value="facet-destination-option-/358/455/45"
-                                                        data-url="/suche/?tx_solr%5Bfilter%5D%5B0%5D=destination%3A1&amp;tx_solr%5Bq%5D="
-                                                    >
-                                                    <label class="checkbox-group__label" for="facet-destination-option-/358/455/45">Marokko&nbsp;<span class="facet-result-count badge">1</span></label>
-                                                </div>
-                                            </toujou-input-group>  
-                                        </div>            
+                                        </toujou-details>         
                                     </div>
                                 </toujou-details>                         
                             </div>
