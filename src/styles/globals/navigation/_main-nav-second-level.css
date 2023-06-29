@@ -37,7 +37,7 @@
     .main-nav__list[nav-list-level="2"] {
         --main-nav-level-2-list-padding: var(--spacing-normal) var(--spacing-normal) var(--spacing-normal) var(--spacing-m);
         --main-nav-level-2-list-column-count: 2;
-        --main-nav-level-2-list-gap: var(--spacing-l);
+        --main-nav-level-2-list-gap: var(--spacing-normal);
         --main-nav-level-2-border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
         --main-nav-level-2-position: absolute;
         --main-nav-level-2-list-item-grid-template-columns: 1fr var(--main-nav-chevron-icon-desktop-size);
