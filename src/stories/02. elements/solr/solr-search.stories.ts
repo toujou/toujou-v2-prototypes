@@ -871,9 +871,9 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                 
                 <ul class="solr-pagination solr-pagination--below">
                     <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
                             <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
-                        </button>
+                        </a>
                     </li>
                     <li class="solr-pagination__pages-container">
                         <div class="solr-pagination__pages solr-pagination__pages--mobile">
@@ -923,9 +923,9 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                         </ul>
                     </li>
                     <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                        <button is="toujou-button" button-variant="primary" button-type="border" button-icon-position="left" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                        <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
                             <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>

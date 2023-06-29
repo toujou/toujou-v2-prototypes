@@ -11,6 +11,8 @@
     --solr-pagination-link-border-radius: var(--border-radius-s);
     --solr-pagination-link-transition: all var(--animation-duration-normal) var(--animation-easing-normal);
 
+    --solr-pagination-link-lisabled-opacity: 0;
+
     --solr-pagination-select-padding: var(--spacing-s) var(--spacing-xl) var(--spacing-s) var(--spacing-normal);
     --solr-pagination-select-width: auto;
 
@@ -42,6 +44,12 @@
     text-decoration: var(--solr-pagination-link-text-decoration);
     border-radius: var(--solr-pagination-link-border-radius);
     transition: var(--solr-pagination-link-transition);
+}
+
+.solr-pagination__link[disabled] {
+    opacity: var(--solr-pagination-link-lisabled-opacity);
+    pointer-events: none;
+    user-select: none;
 }
 
 .solr-pagination__link:is(:hover, :focus-visible) {
