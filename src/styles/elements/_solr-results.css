@@ -3,6 +3,10 @@
     --card-collection-width: 100%;
 }
 
+.solr[view-mode="map"] .solr-results__card-collection {
+    display: none;
+}
+
 @media screen and (min-width: 840px) {
     .solr-results .card-collection {
         --card-collection-margin: 0;

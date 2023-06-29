@@ -24,17 +24,29 @@ export default {
             defaultValue: [false],
             required: true,
         },
+        showMap: {
+            table: {
+                category: "Solr search settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Show map',
+            description: "Toggle visibility of the search map",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
     },
     tags: ['autodocs']
 } as Meta;
 
 interface SolrSearchStoryProps {
-    showMobileFilters: boolean
+    showMobileFilters: boolean,
+    showMap: boolean,
 }
 
 const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
     return `
-        <toujou-solr-search class="solr" view-mode="grid">
+        <toujou-solr-search class="solr" view-mode="${args.showMap ? 'map' : 'grid'}">
             <div id="solr-filters" class="solr-filters" ${args.showMobileFilters ? 'is-visible' : ''}>
                 <div class="solr-filters__mobile-header">
                     <h4 class="solr-filters__mobile-headline">Filtern</h4>
@@ -583,7 +595,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             button-icon-position="left"
                             data-view-mode="grid"
                             role="radio"
-                            aria-checked="true"
+                            aria-checked="${!args.showMap}"
                             tabindex="0"
                         >
                             <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
@@ -598,7 +610,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             button-icon-position="left"
                             data-view-mode="map"
                             role="radio"
-                            aria-checked="false"
+                            aria-checked="${args.showMap}"
                             tabindex="0"
                         >
                             <toujou-icon class="icon button__icon" icon-name="map"></toujou-icon>
@@ -672,7 +684,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                     </li>
                 </ul>
                 
-                <ul class="card-collection">
+                <ul class="card-collection solr-results__card-collection">
                     <li class="card-collection__item">
                         <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
                             <header class="collection-item__top">
@@ -1056,5 +1068,6 @@ export const SolrSearch = Template.bind({});
 
 SolrSearch.args = {
     showMobileFilters: false,
+    showMap: false,
 }
 
