@@ -12,6 +12,7 @@
     --solr-pagination-link-transition: all var(--animation-duration-normal) var(--animation-easing-normal);
 
     --solr-pagination-select-padding: var(--spacing-s) var(--spacing-xl) var(--spacing-s) var(--spacing-normal);
+    --solr-pagination-select-width: auto;
 
     --solr-pagination-select-postfix-display: none;
 
@@ -57,6 +58,7 @@
 
 .solr-pagination__select {
     padding: var(--solr-pagination-select-padding);
+    width: var(--solr-pagination-select-width);
 }
 
 .solr-pagination__select-postfix {
