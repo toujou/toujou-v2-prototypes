@@ -7,7 +7,7 @@
     --facet-details-border: none;
     --facet-details-summary-justify-content: space-between;
 
-    border-top: var(--facet-details-border);
+    border: var(--facet-details-border);
     padding-bottom: 0;
 }
 
