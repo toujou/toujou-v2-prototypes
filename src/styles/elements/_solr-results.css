@@ -3,8 +3,11 @@
     --card-collection-width: 100%;
 }
 
-.solr[view-mode="map"] .solr-results__card-collection {
+.solr-results__card-collection {
     --card-collection-justify-content: flex-start;
+}
+
+.solr[view-mode="map"] .solr-results__card-collection {
     --card-collection-display: none;
 }
 
