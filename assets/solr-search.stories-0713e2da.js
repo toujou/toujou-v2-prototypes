@@ -1,5 +1,5 @@
-import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-ac05983f.js";import{u as n}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function a(e){const i=Object.assign({h1:"h1"},n(),e.components);return o.jsx(i.h1,{id:"solr-search",children:"SOLR search"})}function p(e={}){const{wrapper:i}=Object.assign({},n(),e.components);return i?o.jsx(i,Object.assign({},e,{children:o.jsx(a,e)})):a(e)}const h={title:"COMPONENTS/solr",parameters:{badges:[r.TESTING],docs:{page:p}},argTypes:{showMobileFilters:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show mobile filters",description:"Toggle visibility of the mobile filters",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},u=e=>`
-        <toujou-solr-search class="solr" view-mode="grid">
+import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-ac05983f.js";import{u as n}from"./index-a9a8c754.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";function a(e){const i=Object.assign({h1:"h1"},n(),e.components);return o.jsx(i.h1,{id:"solr-search",children:"SOLR search"})}function p(e={}){const{wrapper:i}=Object.assign({},n(),e.components);return i?o.jsx(i,Object.assign({},e,{children:o.jsx(a,e)})):a(e)}const h={title:"COMPONENTS/solr",parameters:{badges:[r.TESTING],docs:{page:p}},argTypes:{showMobileFilters:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show mobile filters",description:"Toggle visibility of the mobile filters",control:{type:"boolean"},defaultValue:[!1],required:!0},showMap:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show map",description:"Toggle visibility of the search map",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},u=e=>`
+        <toujou-solr-search class="solr" view-mode="${e.showMap?"map":"grid"}">
             <div id="solr-filters" class="solr-filters" ${e.showMobileFilters?"is-visible":""}>
                 <div class="solr-filters__mobile-header">
                     <h4 class="solr-filters__mobile-headline">Filtern</h4>
@@ -548,7 +548,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             button-icon-position="left"
                             data-view-mode="grid"
                             role="radio"
-                            aria-checked="true"
+                            aria-checked="${!e.showMap}"
                             tabindex="0"
                         >
                             <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
@@ -563,7 +563,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             button-icon-position="left"
                             data-view-mode="map"
                             role="radio"
-                            aria-checked="false"
+                            aria-checked="${e.showMap}"
                             tabindex="0"
                         >
                             <toujou-icon class="icon button__icon" icon-name="map"></toujou-icon>
@@ -637,7 +637,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                     </li>
                 </ul>
                 
-                <ul class="card-collection">
+                <ul class="card-collection solr-results__card-collection">
                     <li class="card-collection__item">
                         <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
                             <header class="collection-item__top">
@@ -1014,9 +1014,9 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
             </div>
             <!---->
         </toujou-solr-search>
-     `,t=u.bind({});t.args={showMobileFilters:!1};var s,l,c;t.parameters={...t.parameters,docs:{...(s=t.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SolrSearchStoryProps) => {
+     `,t=u.bind({});t.args={showMobileFilters:!1,showMap:!1};var s,l,c;t.parameters={...t.parameters,docs:{...(s=t.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SolrSearchStoryProps) => {
   return \`
-        <toujou-solr-search class="solr" view-mode="grid">
+        <toujou-solr-search class="solr" view-mode="\${args.showMap ? 'map' : 'grid'}">
             <div id="solr-filters" class="solr-filters" \${args.showMobileFilters ? 'is-visible' : ''}>
                 <div class="solr-filters__mobile-header">
                     <h4 class="solr-filters__mobile-headline">Filtern</h4>
@@ -1565,7 +1565,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             button-icon-position="left"
                             data-view-mode="grid"
                             role="radio"
-                            aria-checked="true"
+                            aria-checked="\${!args.showMap}"
                             tabindex="0"
                         >
                             <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
@@ -1580,7 +1580,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             button-icon-position="left"
                             data-view-mode="map"
                             role="radio"
-                            aria-checked="false"
+                            aria-checked="\${args.showMap}"
                             tabindex="0"
                         >
                             <toujou-icon class="icon button__icon" icon-name="map"></toujou-icon>
@@ -1654,7 +1654,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                     </li>
                 </ul>
                 
-                <ul class="card-collection">
+                <ul class="card-collection solr-results__card-collection">
                     <li class="card-collection__item">
                         <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
                             <header class="collection-item__top">
@@ -2033,4 +2033,4 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
         </toujou-solr-search>
      \`;
 }`,...(c=(l=t.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const b=["SolrSearch"];export{t as SolrSearch,b as __namedExportsOrder,h as default};
-//# sourceMappingURL=solr-search.stories-f9a49c8b.js.map
+//# sourceMappingURL=solr-search.stories-0713e2da.js.map
