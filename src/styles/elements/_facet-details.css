@@ -11,7 +11,7 @@
     padding-bottom: 0;
 }
 
-.facet-details + .facet-details {
+:is(.facet-details, .facet-option) + .facet-details {
     --details-margin: 0;
 
     border-top: none;
