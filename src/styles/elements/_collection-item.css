@@ -145,6 +145,10 @@
     --collection-item-figure-border-radius: var(--border-radius-default);
 }
 
+.slider[content-type="card-collection"] .collection-item {
+    margin-bottom: var(--spacing-s);
+}
+
 .collection-item[element-design="primary"],
 .collection-item[element-design="secondary"],
 .collection-item[element-design="inverted"] {

@@ -26,6 +26,10 @@
     z-index: var(--card-collection-z-index);
 }
 
+.card-collection[is-slider] {
+    --card-collection-flex-wrap: nowrap;
+}
+
 .card-collection:first-child {
     --card-collection-margin: 0 auto;
 }

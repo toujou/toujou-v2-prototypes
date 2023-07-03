@@ -29,3 +29,17 @@
 .slider[show-count] .slider-count {
     --slider-count-display: block;
 }
+
+.slider[content-type="card-collection"] .slider-count {
+    --slider-count-display: block;
+
+    display: var(--slider-count-display);
+}
+
+@media screen and (min-width: 840px) {
+    .slider[content-type="card-collection"] .slider-count {
+        --slider-count-display: none;
+
+        display: var(--slider-count-display);
+    }
+}
