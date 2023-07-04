@@ -204,7 +204,7 @@
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1024px) {
     .topbar {
         --topbar-padding: 0 max(var(--spacing-normal), calc(calc(100% - var(--content-wide-max-width)) / 2));
         --topbar-grid-template-columns: auto 1fr;
