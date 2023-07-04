@@ -10,8 +10,6 @@ import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as n}from"./jsx-run
         Zurück
     </button>
 
-    <p class="main-nav__subtitle"></p>
-
     <ul class="main-nav__list" nav-list-level="1">
         <li class="main-nav__list-item" nav-item-level="1">
             <a href="#" class="main-nav__link">
@@ -68,8 +66,6 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
         <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
         Zurück
     </button>
-
-    <p class="main-nav__subtitle"></p>
 
     <ul class="main-nav__list" nav-list-level="1">
         <li class="main-nav__list-item" nav-item-level="1">
@@ -200,8 +196,6 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
             Zurück
         </button>
-
-        <p class="main-nav__subtitle"></p>
 
         <ul class="main-nav__list" nav-list-level="1">
             <li class="main-nav__list-item" nav-item-level="1">
@@ -1039,4 +1033,4 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
         </main>
     \`;
 }`,...(v=(m=s.parameters)==null?void 0:m.docs)==null?void 0:v.source}}};const S=["Topbar"];export{s as Topbar,S as __namedExportsOrder,M as default};
-//# sourceMappingURL=topbar.stories-8d647aab.js.map
+//# sourceMappingURL=topbar.stories-c080a01a.js.map
