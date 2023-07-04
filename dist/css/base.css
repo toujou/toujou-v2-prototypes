@@ -1243,6 +1243,7 @@ figure {
     --checkbox-group-label-font-weight: var(--form-input-font-weight);
     --checkbox-group-label-color: var(--form-input-color);
     --checkbox-group-label-padding: 0 calc(var(--input-group-icon-size) + var(--spacing-normal)) 0 0;
+    --checkbox-group-label-word-break: break-word;
 
     --checkbox-group-description-column: 2;
 
@@ -1273,6 +1274,7 @@ figure {
     font-weight: var(--checkbox-group-label-font-weight);
     color: var(--checkbox-group-label-color);
     padding: var(--checkbox-group-label-padding);
+    word-break: var(--checkbox-group-label-word-break);
 }
 
 .input-group--disabled .checkbox-group__label {
