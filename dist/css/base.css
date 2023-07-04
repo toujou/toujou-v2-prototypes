@@ -620,13 +620,6 @@ figure {
     --main-nav-back-button-bg-color: transparent;
     --main-nav-back-button-border: none;
 
-    --main-nav-subtitle-display: block;
-    --main-nav-subtitle-font-family: var(--font-family-text);
-    --main-nav-subtitle-font-weight: var(--font-weight-text-bold);
-    --main-nav-subtitle-font-size: var(--font-size-l);
-    --main-nav-subtitle-color: var(--color-bg);
-    --main-nav-subtitle-margin-bottom: 0;
-
     --main-nav-chevron-color: var(--color-bg);
     --main-nav-chevron-icon-desktop-size: var(--font-size-ms);
 
@@ -667,15 +660,6 @@ figure {
     margin: var(--main-nav-back-button-margin);
     background-color: var(--main-nav-back-button-bg-color);
     border: var(--main-nav-back-button-border);
-}
-
-.main-nav__subtitle {
-    display: var(--main-nav-subtitle-display);
-    font-family: var(--main-nav-subtitle-font-family);
-    font-weight: var(--main-nav-subtitle-font-weight);
-    font-size: var(--main-nav-subtitle-font-size);
-    color: var(--main-nav-subtitle-color);
-    margin-bottom: var(--main-nav-subtitle-margin-bottom);
 }
 
 .main-nav__chevron {
@@ -744,7 +728,7 @@ figure {
     }
 }
 
-@media (hover: hover) and (min-width: 840px) {
+@media (hover: hover) and (min-width: 1024px) {
     .main-nav__link:hover {
         color: var(--color-primary-dark);
     }
@@ -754,7 +738,7 @@ figure {
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1024px) {
     .main-nav {
         --main-nav-position: absolute;
         --main-nav-top: unset;
@@ -953,7 +937,6 @@ figure {
 
 .main-nav__list-item[is-open] > .main-nav__list[nav-list-level="2"] {
     --main-nav-level-2-list-item-display: grid;
-    /*grid-template-columns: var(--main-nav-level-2-list-item-grid-template-columns);*/
 }
 
 .main-nav__list-item[nav-item-level="2"] .main-nav__link {
@@ -964,7 +947,7 @@ figure {
     font-size: var(--main-nav-level-2-list-item-font-size);
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1024px) {
     .main-nav__list[nav-list-level="2"] {
         --main-nav-level-2-list-padding: var(--spacing-normal) var(--spacing-normal) var(--spacing-normal) var(--spacing-m);
         --main-nav-level-2-list-column-count: 2;
@@ -1038,7 +1021,7 @@ figure {
     font-size: var(--main-nav-level-3-list-item-font-size);
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1024px) {
     .main-nav__list[nav-list-level="3"] {
         --main-nav-level-3-list-item-font-size: var(--font-size-s);
         --main-nav-level-3-list-padding: 0 0 var(--spacing-s) var(--spacing-normal);
@@ -1113,14 +1096,14 @@ figure {
             opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
 }
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 1023px) {
     /* For accessibility we hide the content of the service-nav when not open */
     .topbar:not([open-nav]) .service-nav > * {
         display: none;
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1024px) {
     .service-nav {
         --service-nav-display: none;
     }

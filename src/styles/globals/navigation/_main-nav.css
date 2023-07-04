@@ -41,13 +41,6 @@
     --main-nav-back-button-bg-color: transparent;
     --main-nav-back-button-border: none;
 
-    --main-nav-subtitle-display: block;
-    --main-nav-subtitle-font-family: var(--font-family-text);
-    --main-nav-subtitle-font-weight: var(--font-weight-text-bold);
-    --main-nav-subtitle-font-size: var(--font-size-l);
-    --main-nav-subtitle-color: var(--color-bg);
-    --main-nav-subtitle-margin-bottom: 0;
-
     --main-nav-chevron-color: var(--color-bg);
     --main-nav-chevron-icon-desktop-size: var(--font-size-ms);
 
@@ -88,15 +81,6 @@
     margin: var(--main-nav-back-button-margin);
     background-color: var(--main-nav-back-button-bg-color);
     border: var(--main-nav-back-button-border);
-}
-
-.main-nav__subtitle {
-    display: var(--main-nav-subtitle-display);
-    font-family: var(--main-nav-subtitle-font-family);
-    font-weight: var(--main-nav-subtitle-font-weight);
-    font-size: var(--main-nav-subtitle-font-size);
-    color: var(--main-nav-subtitle-color);
-    margin-bottom: var(--main-nav-subtitle-margin-bottom);
 }
 
 .main-nav__chevron {
@@ -165,7 +149,7 @@
     }
 }
 
-@media (hover: hover) and (min-width: 840px) {
+@media (hover: hover) and (min-width: 1024px) {
     .main-nav__link:hover {
         color: var(--color-primary-dark);
     }
@@ -175,7 +159,7 @@
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1024px) {
     .main-nav {
         --main-nav-position: absolute;
         --main-nav-top: unset;

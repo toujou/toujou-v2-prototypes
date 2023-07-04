@@ -22,7 +22,6 @@
 
 .main-nav__list-item[is-open] > .main-nav__list[nav-list-level="2"] {
     --main-nav-level-2-list-item-display: grid;
-    /*grid-template-columns: var(--main-nav-level-2-list-item-grid-template-columns);*/
 }
 
 .main-nav__list-item[nav-item-level="2"] .main-nav__link {
@@ -33,7 +32,7 @@
     font-size: var(--main-nav-level-2-list-item-font-size);
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 1024px) {
     .main-nav__list[nav-list-level="2"] {
         --main-nav-level-2-list-padding: var(--spacing-normal) var(--spacing-normal) var(--spacing-normal) var(--spacing-m);
         --main-nav-level-2-list-column-count: 2;
