@@ -1,0 +1,30 @@
+.fav-count {
+    --toujou-fav-count-background-color: var(--color-primary);
+    --toujou-fav-count-font-color: var(--color-bg);
+
+    --fav-el-display: block;
+    --fav-el-position: relative;
+    --fav-el-height: var(--font-size-l);
+    --fav-el-width: var(--font-size-l);
+
+    --fav-el-icon-z-index: -1;
+    --fav-el-icon-position: absolute;
+    --fav-el-icon-top: 0;
+    --fav-el-icon-left: 0;
+
+    display: var(--fav-el-display);
+    position: var(--fav-el-position);
+    height: var(--fav-el-height);
+    width: var(--fav-el-width);
+}
+
+.fav-count[fav-count="0"] {
+    --toujou-fav-count-background-color: var(--color-font-light);
+}
+
+.fav-count .icon {
+    z-index: var(--fav-el-icon-z-index);
+    position: var(--fav-el-icon-position);
+    top: var(--fav-el-icon-top);
+    left: var(--fav-el-icon-left);
+}
