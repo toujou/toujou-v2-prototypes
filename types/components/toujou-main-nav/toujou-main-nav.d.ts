@@ -5,6 +5,7 @@ export declare class ToujouMainNav extends LitElement {
     protected readonly hasSubNavAttribute = "has-subnav";
     protected readonly isOpenAttribute = "is-open";
     protected readonly listItemLevelAttribute = "nav-item-level";
+    protected readonly listItemChevronSelector = "main-nav__chevron";
     constructor();
     connectedCallback(): void;
     protected createRenderRoot(): Element | ShadowRoot;
@@ -12,22 +13,33 @@ export declare class ToujouMainNav extends LitElement {
      * Get list of all the main navigation list items and start listening for click events
      */
     _getNavListItems: () => void;
+    /**
+     * - On Enter or Space click on a main nav chevron we toggle the nav item open / closed
+     * - On Esc press close the open main navigation
+     * @param   event
+     * @param   listItem
+     */
     _handleKeyUp: (event: KeyboardEvent, listItem: MainNavListItem) => void;
     /**
      * Toggle the list item isOpen state and add / remove the isOpenAttribute accordingly
-     * @param listItem
+     * @param   listItem
      */
-    _toggleListItemState(listItem: MainNavListItem): void;
+    _toggleListItemState: (listItem: MainNavListItem) => void;
     /**
      * Close other open list items so there aren't multiple lists open at the same time
      * (only sibling or child lists will be closed)
-     * @param listItem
+     * @param   listItem
      */
-    _closeOtherOpenListItems(listItem: MainNavListItem): void;
+    _closeOtherOpenListItems: (listItem: MainNavListItem) => void;
     /**
      * Close all open navigation items
      */
-    _closeAllNavListItems(): void;
+    _closeAllNavListItems: () => void;
+    /**
+     * Close the main nav on click outside
+     * @param   event
+     */
+    _onWindowClick: (event: MouseEvent) => void;
 }
 declare global {
     interface HTMLElementTagNameMap {
