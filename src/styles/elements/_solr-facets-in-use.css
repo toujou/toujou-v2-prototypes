@@ -3,3 +3,13 @@
 
     border-bottom: var(--solr-facet-in-use-border-bottom);
 }
+
+.solr-facets-in-use__chips {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--spacing-s);
+}
+
+.solr-facets-in-use__chip-link {
+    display: contents;
+}

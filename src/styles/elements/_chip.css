@@ -140,12 +140,12 @@
 
 /* ICON POSITION */
 .chip[chip-icon-position="left"] {
-    --toujou-chip-padding: var(--spacing-xs) var(--spacing-normal) var(--spacing-xs) var(--spacing-normal);
+    --toujou-chip-padding: var(--spacing-xs) var(--spacing-normal) var(--spacing-xs) var(--spacing-s);
 }
 
 .chip[chip-icon-position="right"] {
     --toujou-chip-flex-direction: row-reverse;
-    --toujou-chip-padding: var(--spacing-xs) var(--spacing-normal) var(--spacing-xs) var(--spacing-normal);
+    --toujou-chip-padding: var(--spacing-xs) var(--spacing-s) var(--spacing-xs) var(--spacing-normal);
 }
 
 .chip a {

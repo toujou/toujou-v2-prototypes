@@ -59,9 +59,67 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                 </div>
                 <div class="solr-facets-in-use solr-chips solr-chips--filters">
                     <div class="panel panel--no-bg-mobile">
+                    <!--
                         <p class="solr-facets-in-use__no-filters">
-                            Noch keine Filter ausgewählt
+                            Noch keine Filter ausgewählt!!!
                         </p>
+                    -->
+                        
+                        
+                        <div class="solr-facets-in-use__chips" id="tx-solr-facets-in-use">
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                        <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                        Ausflüge
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Architektur
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Touren
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Gastronomie
+                                </toujou-chip>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="solr-facets">
