@@ -12,9 +12,67 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                 </div>
                 <div class="solr-facets-in-use solr-chips solr-chips--filters">
                     <div class="panel panel--no-bg-mobile">
+                    <!--
                         <p class="solr-facets-in-use__no-filters">
-                            Noch keine Filter ausgewählt
+                            Noch keine Filter ausgewählt!!!
                         </p>
+                    -->
+                        
+                        
+                        <div class="solr-facets-in-use__chips" id="tx-solr-facets-in-use">
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                        <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                        Ausflüge
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Architektur
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Touren
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Gastronomie
+                                </toujou-chip>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="solr-facets">
@@ -1029,9 +1087,67 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                 </div>
                 <div class="solr-facets-in-use solr-chips solr-chips--filters">
                     <div class="panel panel--no-bg-mobile">
+                    <!--
                         <p class="solr-facets-in-use__no-filters">
-                            Noch keine Filter ausgewählt
+                            Noch keine Filter ausgewählt!!!
                         </p>
+                    -->
+                        
+                        
+                        <div class="solr-facets-in-use__chips" id="tx-solr-facets-in-use">
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                        <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                        Ausflüge
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Architektur
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Touren
+                                </toujou-chip>
+                            </a>
+                            <a href="#" class="solr-facets-in-use__link">
+                                <toujou-chip
+                                    chip-icon-position="right"
+                                    class="chip"
+                                    chip-bg-color="primary"
+                                    chip-border-radius="small"
+                                    chip-size="extra-small"
+                                    is-clickable=""
+                                    >
+                                    <toujou-icon class="icon chip__icon" icon-name="close" icon-size="extra-small"></toujou-icon>
+                                    Gastronomie
+                                </toujou-chip>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="solr-facets">
@@ -2033,4 +2149,4 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
         </toujou-solr-search>
      \`;
 }`,...(c=(l=t.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const b=["SolrSearch"];export{t as SolrSearch,b as __namedExportsOrder,h as default};
-//# sourceMappingURL=solr-search.stories-0713e2da.js.map
+//# sourceMappingURL=solr-search.stories-36c123a4.js.map
