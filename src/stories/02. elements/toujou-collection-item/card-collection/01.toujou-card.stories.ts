@@ -120,11 +120,6 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
-                        <p class="collection-item__abstract">
-                            <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
-                            </span>
-                        </p>
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung

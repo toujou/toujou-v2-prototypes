@@ -119,8 +119,9 @@
     --collection-item-button-text-color: var(--color-primary);
     --collection-item-button-text-color-hover: var(--color-primary-dark);
     --collection-item-button-display: flex;
-    --collection-item-button-align-items: center;
-    --collection-item-button-justify-content: center;
+    --collection-item-button-flex-grow: 1;
+    --collection-item-button-align-items: flex-end;
+    --collection-item-button-justify-content: flex-start;
     --collection-item-button-width: fit-content;
     --collection-item-button-gap: var(--spacing-s);
 
@@ -379,6 +380,7 @@ a.collection-item__category:focus-visible {
     text-decoration: var(--collection-item-button-text-decoration);
     color: var(--collection-item-button-text-color);
     display: var(--collection-item-button-display);
+    flex-grow: var(--collection-item-button-flex-grow);
     align-items: var(--collection-item-button-align-items);
     justify-content: var(--collection-item-button-justify-content);
     width: var(--collection-item-button-width);
