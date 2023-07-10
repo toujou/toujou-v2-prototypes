@@ -144,6 +144,10 @@
     z-index: var(--collection-item-z-index);
 }
 
+.collection-item[item-type="product"] {
+    height: fit-content;
+}
+
 .collection-item[item-orientation="vertical"] {
     --collection-item-flex-direction: column;
 }
@@ -419,7 +423,6 @@ a.collection-item__button:focus-visible {
 
 .collection-item[item-type="product"] a.collection-item__bottom:focus-within {
     outline: none !important;
-    height: fit-content;
 }
 
 .collection-item[item-type="product"] a.collection-item__bottom:focus-within {
