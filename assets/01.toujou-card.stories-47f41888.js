@@ -84,11 +84,6 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
-                        <p class="collection-item__abstract">
-                            <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
-                            </span>
-                        </p>
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -184,11 +179,6 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
-                        <p class="collection-item__abstract">
-                            <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
-                            </span>
-                        </p>
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -199,4 +189,4 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
         </ul>
     \`;
 }`,...(o=(l=e.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const g=["CardDefault"];export{e as CardDefault,g as __namedExportsOrder,d as default};
-//# sourceMappingURL=01.toujou-card.stories-2755e998.js.map
+//# sourceMappingURL=01.toujou-card.stories-47f41888.js.map
