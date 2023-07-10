@@ -41,7 +41,9 @@
     --topbar-actions-height: fit-content;
     --topbar-actions-list-style: none;
     --topbar-actions-padding: 0;
-    --topbar-action-z-index: 2;
+    --topbar-actions-display: flex;
+    --topbar-actions-gap: var(--spacing-normal);
+    --topbar-actions-z-index: 2;
 
     --topbar-actions-link-display: flex;
     --topbar-actions-link-align-items: center;
@@ -141,7 +143,9 @@
     height: var(--topbar-actions-height);
     list-style: var(--topbar-actions-list-style);
     padding: var(--topbar-actions-padding);
-    z-index: var(--topbar-action-z-index);
+    display: var(--topbar-actions-display);
+    gap: var(--topbar-actions-gap);
+    z-index: var(--topbar-actions-z-index);
 }
 
 .topbar__actions-link {
