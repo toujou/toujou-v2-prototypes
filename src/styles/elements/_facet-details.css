@@ -30,9 +30,12 @@
     padding-top: 0;
 }
 
+.facet-details > .solr-details__item-group {
+    padding-left: var(--toujou-solr-filter-sub-level-indentation);
+}
+
 .facet-details .facet-details {
     margin-left: 0;
-    padding-left: var(--toujou-solr-filter-sub-level-indentation);
     width: 100%
 }
 
