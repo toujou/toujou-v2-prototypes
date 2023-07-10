@@ -83,6 +83,7 @@
 
 .slider[content-type="card-collection"] {
     --slider-aspect-ratio: auto;
+    --slider-max-width: var(--content-wide-max-width);
 }
 
 .slider[element-design="default"] {
