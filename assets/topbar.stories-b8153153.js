@@ -302,6 +302,12 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
                     <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Like</span>
+                        <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
                         <span class="topbar__actions-text">Suche</span>
                         <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
@@ -674,6 +680,12 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
                     <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Like</span>
+                        <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
                         <span class="topbar__actions-text">Suche</span>
                         <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
@@ -1033,4 +1045,4 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
         </main>
     \`;
 }`,...(v=(m=s.parameters)==null?void 0:m.docs)==null?void 0:v.source}}};const S=["Topbar"];export{s as Topbar,S as __namedExportsOrder,M as default};
-//# sourceMappingURL=topbar.stories-c080a01a.js.map
+//# sourceMappingURL=topbar.stories-b8153153.js.map

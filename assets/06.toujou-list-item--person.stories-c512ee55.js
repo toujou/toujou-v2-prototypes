@@ -1,7 +1,7 @@
 import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-collection-item.docs-12476081.js";import"./jsx-runtime-ac05983f.js";import"./index-e0ddb630.js";import"./_commonjsHelpers-87174ba5.js";import"./index-a9a8c754.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[t.DONE],docs:{page:c}},tags:["autodocs"]},s=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -62,7 +62,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -123,7 +123,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -164,7 +164,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -191,7 +191,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -252,7 +252,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -313,7 +313,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -354,7 +354,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="product" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -379,4 +379,4 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
         </ol>
     \`;
 }`,...(i=(n=o.parameters)==null?void 0:n.docs)==null?void 0:i.source}}};const p=["ListItemPerson"];export{o as ListItemPerson,p as __namedExportsOrder,d as default};
-//# sourceMappingURL=06.toujou-list-item--person.stories-164c20bb.js.map
+//# sourceMappingURL=06.toujou-list-item--person.stories-c512ee55.js.map
