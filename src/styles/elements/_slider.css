@@ -81,6 +81,10 @@
     --slider-aspect-ratio: var(--aspect-ratio-default);
 }
 
+.slider[content-type="card-collection"] {
+    --slider-aspect-ratio: auto;
+}
+
 .slider[element-design="default"] {
     --slider-control-default-background-color: var(--color-font);
     --slider-control-hover-background-color: var(--color-font-light);
@@ -117,6 +121,10 @@
 .header .slider {
     --slider-width: var(--content-fullwidth);
     --slider-max-width: var(--content-fullwidth);
+}
+
+.slider[content-type="card-collection"] .slider__track {
+    padding: .5rem .25rem !important;
 }
 
 .slider__item {

@@ -52,11 +52,15 @@ const Template = () => {
                                     </figure>
                                 </header>
                                 <div class="collection-item__bottom">
-                                    <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                                    <h3 class="collection-item__title">Headline</h3>
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">
+                                            Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
+                                        </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung
@@ -76,7 +80,11 @@ const Template = () => {
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">
+                                            Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                                        </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung
@@ -92,11 +100,15 @@ const Template = () => {
                                     </figure>
                                 </header>
                                 <div class="collection-item__bottom">
-                                    <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                                    <h3 class="collection-item__title">Headline</h3>
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">
+                                            Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
+                                        </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung
@@ -112,11 +124,15 @@ const Template = () => {
                                     </figure>
                                 </header>
                                 <div class="collection-item__bottom">
-                                    <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                                    <h3 class="collection-item__title">Headline</h3>
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">
+                                            Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
+                                        </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung
@@ -136,7 +152,11 @@ const Template = () => {
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">
+                                            Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                                        </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung
@@ -156,7 +176,11 @@ const Template = () => {
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">
+                                            Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
+                                        </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung
@@ -172,11 +196,15 @@ const Template = () => {
                                     </figure>
                                 </header>
                                 <div class="collection-item__bottom">
-                                    <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                                    <h3 class="collection-item__title">Headline</h3>
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">
+                                            Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                                        </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung
@@ -196,7 +224,11 @@ const Template = () => {
                                     <p class="collection-item__subtitles">
                                         <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                                     </p>
-                                    <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                                    <p class="collection-item__abstract">
+                                    <span class="collection-item__abstract-text">
+                                        Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
+                                    </span>
+                                    </p>
                                     <a href="#" class="collection-item__button">
                                         <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                         zur Beschreibung

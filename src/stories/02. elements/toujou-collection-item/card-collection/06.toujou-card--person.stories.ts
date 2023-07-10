@@ -49,7 +49,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Team-Lead</span>
                         </p>
 
-                        <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
+                            </span>
+                        </p>
 
                         <address class="address collection-item__address">
                             <p class="address__item">
@@ -100,7 +104,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Team-Lead</span>
                         </p>
 
-                        <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                            </span>
+                        </p>
 
                         <address class="address collection-item__address">
                             <p class="address__item">
@@ -151,7 +159,11 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Team-Lead</span>
                         </p>
 
-                        <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                            </span>
+                        </p>
 
                         <address class="address collection-item__address">
                             <p class="address__item">
@@ -165,20 +177,6 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                                 <a href="#" class="address__link">
                                     <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
                                     0123 123456789
-                                </a>
-                            </p>
-                            <p class="address__item">
-                                <a href="#" class="address__link">
-                                    <toujou-icon class="icon" icon-name="globe" icon-color="font"
-                                                 icon-size="m"></toujou-icon>
-                                    www.abcdef.com
-                                </a>
-                            </p>
-                            <p class="address__item">
-                                <a href="#" class="address__link">
-                                    <toujou-icon class="icon" icon-name="email" icon-color="font"
-                                                 icon-size="m"></toujou-icon>
-                                    max@abcdef.com
                                 </a>
                             </p>
                         </address>
@@ -202,37 +200,12 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                             <span class="collection-item__subtitle">Team-Lead</span>
                         </p>
 
-                        <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                            </span>
+                        </p>
 
-                        <address class="address collection-item__address">
-                            <p class="address__item">
-                                <a href="#" class="address__link">
-                                    <toujou-icon class="icon" icon-name="telephone" icon-color="font"
-                                                 icon-size="m"></toujou-icon>
-                                    0123 123456789
-                                </a>
-                            </p>
-                            <p class="address__item">
-                                <a href="#" class="address__link">
-                                    <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
-                                    0123 123456789
-                                </a>
-                            </p>
-                            <p class="address__item">
-                                <a href="#" class="address__link">
-                                    <toujou-icon class="icon" icon-name="globe" icon-color="font"
-                                                 icon-size="m"></toujou-icon>
-                                    www.abcdef.com
-                                </a>
-                            </p>
-                            <p class="address__item">
-                                <a href="#" class="address__link">
-                                    <toujou-icon class="icon" icon-name="email" icon-color="font"
-                                                 icon-size="m"></toujou-icon>
-                                    max@abcdef.com
-                                </a>
-                            </p>
-                        </address>
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             Mehr erfahren

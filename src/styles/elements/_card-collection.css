@@ -11,7 +11,7 @@
     --card-collection-padding: 0;
     --card-collection-z-index: var(--z-index-content);
 
-    --card-collection-item-align-self: start;
+    --card-collection-item-align-self: stretch;
 
     display: var(--card-collection-display);
     grid-gap: var(--card-collection-gap);
