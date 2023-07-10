@@ -20,8 +20,15 @@ const Template: Story = () => {
         <form class="form" action="#">
           <toujou-search class="search">
             <input class="input input--search" type="search" placeholder="Search...">
-            <button is="toujou-button" class="button button--search" button-variant="primary" button-type="default" button-size="normal">
-                <span class="search__button-text">Suchen</span>
+            <button
+                is="toujou-button"
+                class="button button--search"
+                button-variant="primary"
+                button-type="default"
+                button-size="normal"
+                aria-label="Search"
+                >
+                <span class="search__button-text">Search</span>
                 <toujou-icon class="icon" icon-name="search" icon-size="l" icon-color="white"></toujou-icon>
             </button>
           </toujou-search>
