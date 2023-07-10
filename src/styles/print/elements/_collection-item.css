@@ -32,11 +32,21 @@
         display: none;
     }
 
-    .collection-item[item-type="product"] .collection-item__bottom {
+    .collection-item[item-type="product"][item-orientation="vertical"] .collection-item__bottom {
         background-color: black !important;
     }
 
-    .collection-item[item-type="product"] .collection-item__title {
+    .collection-item[item-type="product"][item-orientation="vertical"] .collection-item__title {
         color: white !important;
     }
+
+    .collection-item[item-type="product"][item-orientation="horizontal"] .collection-item__bottom {
+        color: black !important;
+    }
+
+    .collection-item[item-type="product"][item-orientation="horizontal"] .collection-item__title {
+        color: black !important;
+    }
+
+
 }
