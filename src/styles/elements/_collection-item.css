@@ -419,6 +419,7 @@ a.collection-item__button:focus-visible {
 
 .collection-item[item-type="product"] a.collection-item__bottom:focus-within {
     outline: none !important;
+    height: fit-content;
 }
 
 .collection-item[item-type="product"] a.collection-item__bottom:focus-within {
