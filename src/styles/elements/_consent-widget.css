@@ -1,5 +1,5 @@
 .consent-widget {
-    --consent-widget-position: absolute;
+    --consent-widget-position: fixed;
     --consent-widget-bottom: var(--spacing-normal);
     --consent-widget-left: var(--spacing-normal);
     --consent-widget-border: 1px solid var(--color-font-light);

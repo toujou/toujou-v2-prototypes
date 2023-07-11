@@ -24,6 +24,17 @@ const Template = () => {
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+                        
+                        <toujou-media-info class="media-info">
+                            <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                                <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                            </button>
+                            <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                                <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                            </button>
+                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                        </toujou-media-info>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
