@@ -371,12 +371,11 @@ a.inpage-nav__link:hover {
 .inpage-nav[ismobile] .inpage-nav__nav {
     pointer-events: none;
     opacity: 0;
-    border: 10px solid red;
 }
 
 .inpage-nav[ismobile][mobileopen] .inpage-nav__nav {
     pointer-events: all;
-    border: 10px solid blue;
+    opacity: 1;
 }
 
 @media (hover: hover) {
