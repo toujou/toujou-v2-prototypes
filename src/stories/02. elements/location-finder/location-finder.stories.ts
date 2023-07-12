@@ -53,6 +53,18 @@ const Template = () => {
             map-style="mapbox://styles/mapbox/light-v10"
             access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
         >
+        
+        <button
+            is="toujou-button"
+            class="button location-finder__map-toggle"
+            button-variant="primary"
+            button-type="border"
+            button-size="small"
+            slot="location-finder-map-toggle"
+        >
+            <span class="location-finder__map-toggle-show-text">Show map</span>
+            <span class="location-finder__map-toggle-hide-text">Hide map</span>
+        </button>
         </toujou-location-finder>
     `;
 };
