@@ -1,4 +1,4 @@
-import{i as y,s as h,y as l}from"./lit-element-9d8fde0b.js";import{e as u}from"./custom-element-73470d87.js";import{e as i}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const v=y`
+import{i as y,s as h,y as l}from"./lit-element-6fe74b4f.js";import{e as u}from"./custom-element-73470d87.js";import{e as i}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const v=y`
   :host {
     --rating-stars-entity-position: relative;
     --rating-stars-entity-left: -.1em;

@@ -13,7 +13,7 @@ class ToujouConsent extends LitElement {
     `;
   }
 
-  static styles = [ ToujouConsentStyles ];
+  static styles = [ToujouConsentStyles];
 
   static get styles() {
     return styles;
