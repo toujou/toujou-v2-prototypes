@@ -86,7 +86,7 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
-    "@toujou/toujou-location-finder": "^2.0.13",
+    "@toujou/toujou-location-finder": "^2.0.14",
     "@toujou/toujou-map": "^2.0.6",
     "@toujou/toujou-spinner": "^2.0.6",
     "photoswipe-video-plugin": "^1.0.2",

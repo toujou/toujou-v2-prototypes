@@ -879,14 +879,16 @@ toujou-location-finder-teaser:not(:last-child) .teaser {
     opacity: var(--toujou-location-finder-teaser-branch-opacity, .75);
 }
 .teaser__type {
+    font-family: var(--toujou-location-finder-teaser-name-font-family, var(--paragraph__family));
     font-size: var(--toujou-location-finder-teaser-type-font-size, .75rem);
+    font-weight: var(--toujou-location-finder-teaser-type-font-weight, var(--paragraph__bold));
     text-transform: var(--toujou-location-finder-teaser-type-text-transform, uppercase);
     opacity: var(--toujou-location-finder-teaser-type-opacity, .5);
     margin: var(--toujou-location-finder-teaser-type-margin, .5rem 0 0);
-    font-weight: var(--toujou-location-finder-teaser-type-font-weight, var(--paragraph__bold));
     color: var(--toujou-location-finder-teaser-type-color, var(--font-color));
 }
 .teaser__description {
+    font-family: var(--toujou-location-finder-teaser-description-font-family, var(--paragraph__family));
     font-size: var(--toujou-location-finder-teaser-description-font-size, .875rem);
     margin: var(--toujou-location-finder-teaser-description-margin, .5rem 0 0);
     overflow: var(--toujou-location-finder-teaser-description-overflow, hidden);
@@ -913,6 +915,8 @@ toujou-location-finder-teaser:not(:last-child) .teaser {
     line-height: var(--toujou-location-finder-teaser-meta-line-height, 1.2);
 }
 .teaser__times {
+    font-family: var(--toujou-location-finder-teaser-times-font-family, var(--paragraph__family));
+    font-size: var(--toujou-location-finder-teaser-times-font-size, 1rem);
     line-height:  var(--toujou-location-finder-teaser-times-line-height, 1);
 }
 .teaser__address-meta--country,
