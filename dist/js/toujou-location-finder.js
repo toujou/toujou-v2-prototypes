@@ -758,26 +758,6 @@ uniform `+z+" "+L+" u_"+D+`;
     font-size: var(--toujou-location-finder-pagination-text-size, .875rem);
 }
 
-/* MAP TOGGLE BUTTON */
-
-/*.location-finder__map-toggle {*/
-
-/*    background-color: var(--toujou-location-finder-map-toggle-background-color, var(--primary-color));*/
-
-/*    color: var(--toujou-location-finder-map-toggle-color, var(--bg-color));*/
-
-/*    padding: var(--toujou-location-finder-map-toggle-padding, .5rem 1rem);*/
-
-/*    font-size: var(--toujou-location-finder-map-toggle-font-size, 1rem);*/
-
-/*    width: var(--toujou-location-finder-map-toggle-width, fit-content);*/
-
-/*    margin: var(--toujou-location-finder-map-toggle-margin, .5rem auto);*/
-
-/*    border: var(--toujou-location-finder-map-toggle-border, none);*/
-
-/*}*/
-
 @media (hover: hover) {
     .pagination__button:hover {
         background-color: var(--toujou-location-finder-pagination-button-bg-color-hover, var(--primary-color));
@@ -799,8 +779,8 @@ uniform `+z+" "+L+" u_"+D+`;
     }
 
     .sidebar__ui-button--locator {
-        left: calc(var(--toujou-location-finder-sidebar-width) + calc(var(--toujou-location-finder-padding) * 2) );
-        top: var(--toujou-location-finder-padding);
+        left: var(--toujou-location-finder-locator-left, calc(var(--toujou-location-finder-sidebar-width) + calc(var(--toujou-location-finder-padding) * 2) ));
+        top: var(--toujou-location-finder-locator-top, var(--toujou-location-finder-padding));
     }
 
     .sidebar__panel {

@@ -91,6 +91,12 @@
     --toujou-location-finder-panel-position: relative;
 }
 
+.location-finder:not([ismobile]) {
+    --toujou-location-finder-panel-width: min(320px, 50%);
+    --toujou-location-finder-sidebar-width: 100%;
+    --toujou-location-finder-locator-left: calc(var(--toujou-location-finder-panel-width) + var(--spacing-normal));
+}
+
 .location-finder:first-child {
     --toujou-location-finder-margin: 0 auto;
 }
