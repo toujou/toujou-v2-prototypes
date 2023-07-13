@@ -41,7 +41,7 @@
     --toujou-location-finder-map-max-height: var(--toujou-location-finder-map-height);
     --toujou-location-finder-map-width: 100%;
 
-    --toujou-location-finder-search-height: auto;
+    --toujou-location-finder-search-height: 2.5rem;
     --toujou-location-finder-search-left: var(--toujou-location-finder-padding);
     --toujou-location-finder-search-input-border-radius: var(--border-radius-normal);
     --toujou-location-finder-search-input-border: none;
@@ -74,6 +74,7 @@
     --toujou-location-finder-aspect-ratio: var(--aspect-ratio-square);
     --toujou-location-finder-margin: var(--spacing-between-elements-normal) auto 0;
     --toujou-location-finder-grid-z-index: var(--z-index-content);
+    --toujou-location-finder-sidebar-button-bg: var(--color-bg);
 
 
     display: var(--toujou-location-finder-display);
@@ -84,6 +85,11 @@
     position: var(--toujou-location-finder-position);
     margin: var(--toujou-location-finder-margin);
     z-index: var(--toujou-location-finder-grid-z-index)
+}
+
+.location-finder[ismobile] {
+    --toujou-location-finder-panel-position: relative;
+    --toujou-location-finder-locator-top: 5rem;
 }
 
 .location-finder:first-child {
