@@ -16,6 +16,7 @@
     --teaser-figure-border-radius: var(--border-radius-default);
     --teaser-figure-overflow: hidden;
     --teaser-figure-position: relative;
+    --teaser-figure-height: fit-content;
 
     --teaser-content-padding: 0;
 
@@ -74,6 +75,7 @@
     border-radius: var(--teaser-figure-border-radius);
     overflow: var(--teaser-figure-overflow);
     position: var(--teaser-figure-position);
+    height: var(--teaser-figure-height);
 }
 
 .teaser:not([element-design="default"]) .teaser__figure {
