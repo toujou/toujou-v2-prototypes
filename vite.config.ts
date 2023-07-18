@@ -19,7 +19,6 @@ export default defineConfig({
                 'toujou-topbar': path.resolve(__dirname, 'src/components/toujou-topbar/toujou-topbar.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-contact-box': path.resolve(__dirname, 'src/components/toujou-contact-box/toujou-contact-box.ts'),
-                'toujou-media-info': path.resolve(__dirname, 'src/components/toujou-media-info/toujou-media-info.ts'),
                 'toujou-topbutton': path.resolve(__dirname, 'src/components/toujou-topbutton/toujou-topbutton.ts'),
                 'toujou-rating-stars': path.resolve(__dirname, 'src/components/toujou-rating-stars/toujou-rating-stars'),
                 'toujou-clamped-content': path.resolve(__dirname, 'src/components/toujou-clamped-content/toujou-clamped-content'),
@@ -37,6 +36,7 @@ export default defineConfig({
                 // components from the @toujou/ui-components
                 'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/lib'),
                 'toujou-map': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/lib'),
+                'toujou-media-info': path.resolve(__dirname, 'node_modules/@toujou/toujou-media-info/lib'),
 
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
