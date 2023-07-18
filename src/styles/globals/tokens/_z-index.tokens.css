@@ -4,8 +4,8 @@
     --z-index-content: 1;
     --z-index-pn-nav: 30;
     --z-index-top-button: 50;
+    --z-index-inpage-nav: 60;
     --z-index-spinner: 75;
-    --z-index-inpage-nav: 150;
     --z-index-sticky-nav: 200;
     --z-index-topbar: 500;
     --z-index-nav: 1000;
