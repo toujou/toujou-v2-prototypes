@@ -1790,6 +1790,52 @@ h6,
     text-decoration: none;
 }
 
+:is(main, .chapter) > :is(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    *[type-size="font--alpha"],
+    *[type-size="font--beta"],
+    *[type-size="font--gamma"],
+    *[type-size="font--delta"],
+    *[type-size="font--epsilon"],
+    *[type-size="font--omega"],
+    .font--alpha,
+    .font--beta,
+    .font--gamma,
+    .font--delta,
+    .font--epsilon,
+    .font--omega
+):not(:first-child)  {
+    margin-top: var(--spacing-between-elements-normal);
+}
+
+:is(main, .chapter) > :is(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    *[type-size="font--alpha"],
+    *[type-size="font--beta"],
+    *[type-size="font--gamma"],
+    *[type-size="font--delta"],
+    *[type-size="font--epsilon"],
+    *[type-size="font--omega"],
+    .font--alpha,
+    .font--beta,
+    .font--gamma,
+    .font--delta,
+    .font--epsilon,
+    .font--omega
+):not(:first-child) + * {
+    margin-top: 0;
+}
+
 *:not(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
     margin-top: var(--spacing-xl);
 }
