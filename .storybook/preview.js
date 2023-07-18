@@ -11,7 +11,6 @@ import "../src/components/toujou-burger-button/toujou-burger-button";
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../src/components/toujou-contact-box/toujou-contact-box";
-import "../src/components/toujou-media-info/toujou-media-info";
 import "../src/components/toujou-topbutton/toujou-topbutton";
 import "../src/components/toujou-rating-stars/toujou-rating-stars";
 import "../src/components/toujou-estimated-reading-time/toujou-estimated-reading-time";
@@ -30,6 +29,7 @@ import "../src/components/copied/toujou-third-party-content/toujou-third-party-c
 import "@toujou/toujou-spinner/lib";
 import "@toujou/toujou-map/lib";
 import "@toujou/toujou-snackbar/lib";
+import "@toujou/toujou-media-info/lib"
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
