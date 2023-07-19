@@ -2919,9 +2919,11 @@ p > .button {
     padding: var(--chapter-padding);
 }
 
-main > .chapter:last-child {
-    --chapter-padding: var(--spacing-between-elements-normal) 0 0;
-}
+/*main > .chapter:last-child {*/
+
+/*    --chapter-padding: var(--spacing-between-elements-normal) 0 0;*/
+
+/*}*/
 
 .chapter--primary {
     --chapter-background-color: var(--color-primary);
@@ -2962,6 +2964,11 @@ main > .chapter:last-child {
 
 .chapter--white {
     --chapter-background-color: var(--color-white);
+}
+
+.chapter > *,
+.chapter > span:first-child + * {
+    margin-top: 0 !important;
 }
 
 hr,
