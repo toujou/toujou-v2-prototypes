@@ -110,14 +110,14 @@ const Template: Story<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
                     aria-expanded="false"
                     aria-hidden="false"
                     aria-controls="nav-uid">
-                <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>        
+                <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>
             </button>
-    
+
             ${args.showLabel
                 ? `<span class="inpage-nav__label">Auf dieser Seite</span>`
                 : `<span class="inpage-nav__label">Default label</span>`
             }
-    
+
             <nav id="nav-uid" class="inpage-nav__nav">
                 <ul class="inpage-nav__list">
                     <li class="inpage-nav__item" active>
@@ -132,13 +132,13 @@ const Template: Story<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
 
                 </ul>
             </nav>
-            
+
             ${args.showCTA ? `
                 <a href="#" slot="cta" class="button inpage-nav__cta">Buy now</a>
             ` : ''}
 
         </toujou-inpage-nav>
-    
+
         <section style="opacity: 0; pointer-events: none;">
             <p id="one"></p>
             <p id="two"></p>
