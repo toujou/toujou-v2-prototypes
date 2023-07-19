@@ -83,11 +83,11 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     aria-expanded="false"
                     aria-hidden="false"
                     aria-controls="nav-uid">
-                <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>        
+                <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>
             </button>
-    
+
             ${i.showLabel?'<span class="inpage-nav__label">Auf dieser Seite</span>':'<span class="inpage-nav__label">Default label</span>'}
-    
+
             <nav id="nav-uid" class="inpage-nav__nav">
                 <ul class="inpage-nav__list">
                     <li class="inpage-nav__item" active>
@@ -102,13 +102,13 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 
                 </ul>
             </nav>
-            
+
             ${i.showCTA?`
                 <a href="#" slot="cta" class="button inpage-nav__cta">Buy now</a>
             `:""}
 
         </toujou-inpage-nav>
-    
+
         <section style="opacity: 0; pointer-events: none;">
             <p id="one"></p>
             <p id="two"></p>
@@ -130,11 +130,11 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     aria-expanded="false"
                     aria-hidden="false"
                     aria-controls="nav-uid">
-                <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>        
+                <toujou-icon class="icon" icon-size="m" icon-color="primary" icon-name="chevron-down"></toujou-icon>
             </button>
-    
+
             \${args.showLabel ? \`<span class="inpage-nav__label">Auf dieser Seite</span>\` : \`<span class="inpage-nav__label">Default label</span>\`}
-    
+
             <nav id="nav-uid" class="inpage-nav__nav">
                 <ul class="inpage-nav__list">
                     <li class="inpage-nav__item" active>
@@ -149,13 +149,13 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 
                 </ul>
             </nav>
-            
+
             \${args.showCTA ? \`
                 <a href="#" slot="cta" class="button inpage-nav__cta">Buy now</a>
             \` : ''}
 
         </toujou-inpage-nav>
-    
+
         <section style="opacity: 0; pointer-events: none;">
             <p id="one"></p>
             <p id="two"></p>
@@ -165,4 +165,4 @@ import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
         </section>
     \`;
 }`,...(o=(l=a.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const j=["InpageNav"];export{a as InpageNav,j as __namedExportsOrder,x as default};
-//# sourceMappingURL=inpage-nav.stories-c80bc318.js.map
+//# sourceMappingURL=inpage-nav.stories-9a9d6fad.js.map
