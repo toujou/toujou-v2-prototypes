@@ -22,7 +22,6 @@ export default defineConfig({
                 'toujou-rating-stars': path.resolve(__dirname, 'src/components/toujou-rating-stars/toujou-rating-stars'),
                 'toujou-clamped-content': path.resolve(__dirname, 'src/components/toujou-clamped-content/toujou-clamped-content'),
                 'toujou-estimated-reading-time': path.resolve(__dirname, 'src/components/toujou-estimated-reading-time/toujou-estimated-reading-time'),
-                'toujou-inpage-nav': path.resolve(__dirname, 'src/components/copied/toujou-inpage-nav/toujou-inpage-nav.js'),
                 'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
                 'toujou-consent': path.resolve(__dirname, 'src/components/copied/toujou-consent/toujou-consent'),
                 'toujou-consent-widget': path.resolve(__dirname, 'src/components/copied/toujou-consent-widget/toujou-consent-widget'),
@@ -37,6 +36,7 @@ export default defineConfig({
                 'toujou-map': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/lib'),
                 'toujou-media-info': path.resolve(__dirname, 'node_modules/@toujou/toujou-media-info/lib'),
                 'toujou-topbutton': path.resolve(__dirname, 'node_modules/@toujou/toujou-topbutton/lib'),
+                'toujou-inpage-nav': path.resolve(__dirname, 'node_modules/@toujou/toujou-inpage-nav/lib'),
 
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
