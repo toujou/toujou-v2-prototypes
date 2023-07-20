@@ -18,7 +18,6 @@ import "../src/components/toujou-main-nav/toujou-main-nav";
 
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-modal/toujou-modal";
-import "../src/components/copied/toujou-exit-warning/toujou-exit-warning";
 import "../src/components/copied/toujou-consent/toujou-consent";
 import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
 import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
@@ -27,9 +26,10 @@ import "../src/components/copied/toujou-third-party-content/toujou-third-party-c
 import "@toujou/toujou-spinner/lib";
 import "@toujou/toujou-map/lib";
 import "@toujou/toujou-snackbar/lib";
-import "@toujou/toujou-media-info/lib"
-import "@toujou/toujou-topbutton/lib"
-import "@toujou/toujou-inpage-nav/lib"
+import "@toujou/toujou-media-info/lib";
+import "@toujou/toujou-topbutton/lib";
+import "@toujou/toujou-inpage-nav/lib";
+import "@toujou/toujou-exit-warning/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
@@ -93,4 +93,4 @@ export const parameters = {
     },
 }
 
-console.clear();
+// console.clear();
