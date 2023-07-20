@@ -93,4 +93,4 @@ export const parameters = {
     },
 }
 
-// console.clear();
+console.clear();
