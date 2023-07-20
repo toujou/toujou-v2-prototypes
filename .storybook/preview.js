@@ -10,7 +10,6 @@ import "../src/components/toujou-overlay/toujou-overlay";
 import "../src/components/toujou-burger-button/toujou-burger-button";
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-cover-slider/toujou-cover-slider";
-import "../src/components/toujou-contact-box/toujou-contact-box";
 import "../src/components/toujou-rating-stars/toujou-rating-stars";
 import "../src/components/toujou-estimated-reading-time/toujou-estimated-reading-time";
 import "../src/components/toujou-clamped-content/toujou-clamped-content";
@@ -23,13 +22,14 @@ import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
 import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
 
 // ELEMENTS FROM @TOUJOU/UI-COMPONENTS
-import "@toujou/toujou-spinner/lib";
-import "@toujou/toujou-map/lib";
-import "@toujou/toujou-snackbar/lib";
-import "@toujou/toujou-media-info/lib";
-import "@toujou/toujou-topbutton/lib";
-import "@toujou/toujou-inpage-nav/lib";
+import "@toujou/toujou-contact-box/lib";
 import "@toujou/toujou-exit-warning/lib";
+import "@toujou/toujou-inpage-nav/lib";
+import "@toujou/toujou-map/lib";
+import "@toujou/toujou-media-info/lib";
+import "@toujou/toujou-snackbar/lib";
+import "@toujou/toujou-spinner/lib";
+import "@toujou/toujou-topbutton/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
