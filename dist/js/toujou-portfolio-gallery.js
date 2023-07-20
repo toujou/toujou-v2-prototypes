@@ -1,4 +1,4 @@
-import{i as h,s as v,y as g}from"./lit-element-6fe74b4f.js";import{e as y}from"./custom-element-73470d87.js";import{e as p}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";const C=h`
+import{i as h,s as v,y as g}from"./lit-element-80867ff0.js";import{e as y}from"./custom-element-73470d87.js";import{e as p}from"./query-assigned-elements-bd4ea1f7.js";const C=h`
   * {
     box-sizing: border-box;
   }

@@ -86,6 +86,7 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
+    "@toujou/toujou-exit-warning": "^2.0.20",
     "@toujou/toujou-inpage-nav": "^2.0.19",
     "@toujou/toujou-location-finder": "^2.0.15",
     "@toujou/toujou-map": "^2.0.6",
