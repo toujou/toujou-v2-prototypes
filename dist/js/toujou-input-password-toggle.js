@@ -1,0 +1,5 @@
+import{s as n,y as o}from"./lit-element-6fe74b4f.js";class l extends n{static get is(){return"toujou-input-password-toggle"}static get properties(){return{passwordVisible:{type:Boolean,attribute:!1}}}constructor(){super(),this.passwordVisible=!1}render(){return o`
+      <slot name="input"></slot>
+      ${this.passwordVisible?o`<slot name="hide-password-button" @click="${this.handleToggleClick}"></slot>`:o`<slot name="show-password-button" @click="${this.handleToggleClick}"></slot>`}
+    `}handleToggleClick(s){s.preventDefault(),s.stopPropagation();const t=this.inputElement,e=(t==null?void 0:t.getAttribute("type"))==="password"?"text":"password";t==null||t.setAttribute("type",e),this.passwordVisible=e==="text"}get inputElement(){var s,t;const e=(s=this.shadowRoot)===null||s===void 0?void 0:s.querySelector("slot");return e===null?null:(t=e==null?void 0:e.assignedNodes({flatten:!0}).find(i=>i.tagName==="INPUT"))!==null&&t!==void 0?t:null}}customElements.define(l.is,l);
+//# sourceMappingURL=toujou-input-password-toggle.js.map

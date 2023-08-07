@@ -30,6 +30,7 @@ import "@toujou/toujou-rating-stars/lib";
 import "@toujou/toujou-snackbar/lib";
 import "@toujou/toujou-spinner/lib";
 import "@toujou/toujou-topbutton/lib";
+import "@toujou/toujou-input-password-toggle/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";

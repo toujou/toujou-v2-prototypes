@@ -337,6 +337,16 @@
     -webkit-mask-image: var(--icon-euro);
 }
 
+.icon[icon-name="eye"] {
+    mask-image: var(--icon-eye);
+    -webkit-mask-image: var(--icon-eye);
+}
+
+.icon[icon-name="eye-off"] {
+    mask-image: var(--icon-eye-off);
+    -webkit-mask-image: var(--icon-eye-off);
+}
+
 .icon[icon-name="fax"] {
     mask-image: var(--icon-fax);
     -webkit-mask-image: var(--icon-fax);

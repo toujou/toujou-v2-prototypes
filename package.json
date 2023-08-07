@@ -89,6 +89,7 @@
     "@toujou/toujou-contact-box": "^2.0.21",
     "@toujou/toujou-exit-warning": "^2.0.20",
     "@toujou/toujou-inpage-nav": "^2.0.19",
+    "@toujou/toujou-input-password-toggle": "^2.0.23",
     "@toujou/toujou-location-finder": "^2.0.15",
     "@toujou/toujou-map": "^2.0.6",
     "@toujou/toujou-media-info": "^2.0.6",
