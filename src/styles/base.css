@@ -18,6 +18,7 @@
 @import "./globals/form/_input.css";
 @import "./globals/form/_input-description.css";
 @import "./globals/form/_input-group.css";
+@import "./globals/form/_input-group-advanced-password.css";
 @import "./globals/form/_input-label.css";
 @import "./globals/form/_multi-checkbox-group.css";
 @import "./globals/form/_multi-select.css";
