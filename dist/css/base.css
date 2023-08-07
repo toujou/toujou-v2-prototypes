@@ -1957,13 +1957,16 @@ input[type=number]::-webkit-outer-spin-button {
 .input-group-advanced-password {
     display: grid;
     justify-content: initial;
-    grid-gap: var(--input-group-margin-between);
 }
 
 .input-group-advanced-password__group {
     width: 100%;
     display: grid;
     position: relative;
+}
+
+.input-group-advanced-password__group + .input-group-advanced-password__group {
+    margin-top: var(--input-group-margin-between);
 }
 
 .input-group-advanced-password .input-group-advanced-password__group:nth-child(2)::after {
