@@ -1,6 +1,6 @@
 .solr {
     --toujou-solr-panel-bg-color: var(--color-primary-o-10);
-    
+
     --solr-width: var(--content-width-with-padding);
     --solr-max-width: var(--content-wide-max-width);
     --solr-margin: var(--spacing-between-elements-normal) auto var(--spacing-xl);
@@ -8,4 +8,8 @@
     width: var(--solr-width);
     max-width: var(--solr-max-width);
     margin: var(--solr-margin);
+}
+
+.solr[solr-results-only-slider] {
+    display: contents;
 }
