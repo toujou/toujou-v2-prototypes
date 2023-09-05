@@ -95,6 +95,10 @@
     color: var(--content-card-text-color);
 }
 
+.content-card__text:first-child {
+    margin-top: 0;
+}
+
 .content-card__button {
     width: var(--content-card-button-width);
     display: var(--content-card-button-display);
