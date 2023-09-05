@@ -22,6 +22,9 @@
     --footer-content-grid-gap: unset;
     --footer-content-align-items: unset;
     --footer-content-justify-content: unset;
+
+    /* make content inside the custom footer have same width as page content */
+    --content-padding-to-border: 0;
 }
 
 @media screen and (min-width: 640px) {
