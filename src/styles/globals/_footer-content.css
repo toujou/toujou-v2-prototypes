@@ -16,6 +16,14 @@
     margin: var(--footer-content-margin);
 }
 
+.footer-content--custom {
+    --footer-content-display: block;
+    --footer-content-grid-template-columns: unset;
+    --footer-content-grid-gap: unset;
+    --footer-content-align-items: unset;
+    --footer-content-justify-content: unset;
+}
+
 @media screen and (min-width: 640px) {
     .footer-content {
         --footer-content-grid-template-columns: 1fr 1fr auto;
