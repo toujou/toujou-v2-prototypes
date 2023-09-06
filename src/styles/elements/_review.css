@@ -75,7 +75,7 @@
     align-items: var(--review-header-infos-align-items);
     justify-content: var(--review-header-infos-justify-content);
     gap: var(--review-header-infos-gap);
-    width: var(--review-header-width)
+    width: var(--review-header-width);
 }
 
 .review__title {
@@ -84,8 +84,7 @@
 
 .review__infos {
     display: var(--review-infos-display);
-    flex-direction: var(--review-infos-flex-direction);
-    flex-wrap: var(--review-infos-flex-wrap);
+    flex-flow: var(--review-infos-flex-direction) var(--review-infos-flex-wrap);
     align-items: var(--review-infos-align-items);
     justify-content: var(--review-infos-justify-content);
     gap: var(--review-infos-gap);

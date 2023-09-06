@@ -236,7 +236,7 @@
 }
 
 a.collection-item__category:focus-visible {
-    --collection-item-category-text-decoration: underline
+    --collection-item-category-text-decoration: underline;
 }
 
 .collection-item__location {
@@ -425,9 +425,6 @@ a.collection-item__button:focus-visible {
 
 .collection-item[item-type="product"] a.collection-item__bottom:focus-within {
     outline: none !important;
-}
-
-.collection-item[item-type="product"] a.collection-item__bottom:focus-within {
     background-color: var(--color-primary);
 }
 
@@ -495,7 +492,7 @@ a.collection-item__button:focus-visible {
     }
 
     a.collection-item__category:hover {
-        --collection-item-category-text-decoration: underline
+        --collection-item-category-text-decoration: underline;
     }
 }
 

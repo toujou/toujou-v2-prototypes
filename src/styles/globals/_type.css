@@ -104,6 +104,7 @@ h6,
     text-decoration: none;
 }
 
+/* stylelint-disable indentation */
 :is(main, .chapter) > :is(
     h1,
     h2,
@@ -123,7 +124,7 @@ h6,
     .font--delta,
     .font--epsilon,
     .font--omega
-):not(:first-child)  {
+):not(:first-child) {
     margin-top: var(--spacing-between-elements-normal);
 }
 
@@ -150,6 +151,7 @@ h6,
     margin-top: 0;
 }
 
+/* stylelint-enable indentation */
 *:not(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
     margin-top: var(--spacing-xl);
 }

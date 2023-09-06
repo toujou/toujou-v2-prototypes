@@ -10,7 +10,6 @@
     --header-content-max-width: var(--header-content-width);
     /* stylelint-disable-next-line max-line-length */
     --header-content-transform: translate(var(--header-content-translate-x), var(--header-content-translate-y)) !important;
-    /*--header-content-width: 50%;*/
     --header-content-padding: var(--spacing-normal);
     --header-content-background-color: var(--color-bg);
     --header-content-border-radius: var(--border-radius-default);

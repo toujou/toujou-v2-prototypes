@@ -5,7 +5,7 @@
 
     font-size: var(--rating-stars-font-size);
     letter-spacing: var(--rating-stars-letter-spacing);
-    color: var(--rating-stars-color)
+    color: var(--rating-stars-color);
 }
 
 .rating-stars[rating-entity-size="s"] {

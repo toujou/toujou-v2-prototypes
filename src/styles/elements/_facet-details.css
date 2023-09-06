@@ -36,7 +36,7 @@
 
 .facet-details .facet-details {
     margin-left: 0;
-    width: 100%
+    width: 100%;
 }
 
 .facet-details .facet-details .facet-details__summary {
@@ -44,7 +44,7 @@
 }
 
 .facet-details .facet-details .solr-details__item-group {
-    padding-left: var(--toujou-solr-filter-sub-level-indentation)
+    padding-left: var(--toujou-solr-filter-sub-level-indentation);
 }
 
 .facet-details > .list-group-item > .facet-details + .list-group-item {

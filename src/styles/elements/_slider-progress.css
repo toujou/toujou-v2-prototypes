@@ -17,7 +17,7 @@
     position: var(--slider-progress-position);
     bottom: var(--slider-progress-bottom);
     border-radius: var(--slider-progress-border-radius);
-    overflow: var(--slider-progress-overflow)
+    overflow: var(--slider-progress-overflow);
 }
 
 .slider[element-design="primary"] .slider-progress {

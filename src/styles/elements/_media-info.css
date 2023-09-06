@@ -110,7 +110,7 @@
     --media-info-toggle-top: unset;
     --media-info-toggle-bottom: var(--spacing-normal);
     --media-info-toggle-right: unset;
-    --media-info-toggle-left: var(--spacing-normal)
+    --media-info-toggle-left: var(--spacing-normal);
 }
 
 .media-info__toggle:focus-visible {

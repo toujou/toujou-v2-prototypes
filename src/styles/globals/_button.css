@@ -139,7 +139,7 @@ p > .button {
 
 .button[button-variant="secondary"].button[button-type="border"]:focus-visible,
 .button:is(.button--secondary, [button-variant="secondary"]).button.button--shadow:focus-visible,
-.button:is(.button--secondary, [button-variant="secondary"]).button.button--outline:focus-visible{
+.button:is(.button--secondary, [button-variant="secondary"]).button.button--outline:focus-visible {
     --button-color-bg: var(--color-secondary-o-10);
     --button-border-color: var(--color-secondary);
     --button-color-text: var(--color-secondary);
@@ -154,7 +154,7 @@ p > .button {
 
 .button[button-variant="font"].button[button-type="border"]:focus-visible,
 .button:is(.button--font, [button-variant="font"]).button.button--shadow:focus-visible,
-.button:is(.button--font, [button-variant="font"]).button.button--outline:focus-visible{
+.button:is(.button--font, [button-variant="font"]).button.button--outline:focus-visible {
     --button-color-bg: var(--color-font-o-10);
     --button-border-color: var(--color-font);
     --button-color-text: var(--color-font);
@@ -243,6 +243,7 @@ p > .button {
         --button-color-bg: var(--color-secondary-o-10);
     }
 
+    /* stylelint-disable-next-line max-line-length */
     .button:is(.button--font, [button-variant="font"]).button:is(.button--shadow, .button--outline, [button-type="border"]):hover {
         --button-border-color: var(--color-font);
         --button-color-text: var(--color-font);

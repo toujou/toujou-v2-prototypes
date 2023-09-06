@@ -1,6 +1,6 @@
-@import './globals/_reset.css';
-@import './globals/_variables.css';
-@import './globals/_old-variables.css';
+@import "./globals/_reset.css";
+@import "./globals/_variables.css";
+@import "./globals/_old-variables.css";
 
 @import "./globals/navigation/_main-nav.css";
 @import "./globals/navigation/_main-nav-first-level.css";

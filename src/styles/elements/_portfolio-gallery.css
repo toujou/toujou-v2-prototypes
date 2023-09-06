@@ -65,7 +65,6 @@
     display: block;
 }
 
-.portfolio-gallery__link::after,
 .portfolio-gallery__link::after {
     content: "";
     position: absolute;

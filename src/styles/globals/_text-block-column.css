@@ -9,18 +9,12 @@
 
 .text-block[text-block-media-position*="below"] .text-block-column {
     display: flex;
-    flex-direction: column;
-    gap: var(--text-block-column-gap);
-    justify-content: flex-start;
-}
-
-.text-block[text-block-media-position*="below"] .text-block-column {
-    display: flex;
     flex-direction: column-reverse;
     gap: var(--text-block-column-gap);
     justify-content: flex-end;
 }
 
+/* stylelint-disable-next-line max-line-length */
 :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position="above"]) .text-block__content {
     margin-top: var(--text-block-column-gap);
 }

@@ -25,11 +25,11 @@
 .button--search {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-
     white-space: nowrap;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-appearance: none;
     height: var(--search-cancel-button-size);
     width: var(--search-cancel-button-size);

@@ -40,8 +40,7 @@
 
 .event-schedule-card__top {
     display: var(--event-schedule-card-top-display);
-    flex-direction: var(--event-schedule-card-top-flex-direction);
-    flex-wrap: var(--event-schedule-card-top-flex-wrap);
+    flex-flow: var(--event-schedule-card-top-flex-direction) var(--event-schedule-card-top-flex-wrap);
     gap: var(--event-schedule-card-top-gap);
     align-items: var(--event-schedule-card-top-align-items);
     justify-content: var(--event-schedule-card-top-justify-content);

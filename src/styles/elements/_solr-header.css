@@ -12,6 +12,7 @@
 
     --solr-header-per-page-select-group-width: fit-content;
 
+    /* stylelint-disable-next-line max-line-length */
     --solr-header-per-page-select-padding: var(--spacing-s) calc(var(--spacing-normal) * 2.5) var(--spacing-s) var(--spacing-normal);
     --solr-header-per-page-select-after-top: 50%;
     --solr-header-per-page-select-after-transform: translateY(-50%);

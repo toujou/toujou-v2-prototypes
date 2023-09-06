@@ -7,9 +7,9 @@
     --post-author-display: grid;
     --post-author-grid-template-columns: var(--post-author-avatar-size) 1fr;
     --post-author-grid-template-areas:
-            "avatar meta"
-            "description description"
-            "socials socials";
+        "avatar meta"
+        "description description"
+        "socials socials";
     --post-author-grid-gap: 0 var(--spacing-normal);
 
     --post-author-figure-size: var(--post-author-avatar-size);

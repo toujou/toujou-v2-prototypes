@@ -10,7 +10,6 @@
     --media-placeholder-icon-background-color: var(--color-font);
     --media-placeholder-icon-opacity: 1;
 
-
     display: var(--media-placeholder-display);
     height: var(--media-placeholder-height);
     width: var(--media-placeholder-width);

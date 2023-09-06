@@ -49,7 +49,6 @@
 
     --blog-sidebar-tag-link-text-decoration: none;
 
-
     --blog-sidebar-comment-display: grid;
     --blog-sidebar-comment-grid-template-columns: auto 1fr;
     --blog-sidebar-comment-grid-gap: var(--spacing-normal);
@@ -115,8 +114,7 @@
 
 .blog-sidebar__categories {
     display: var(--blog-sidebar-categories-display);
-    flex-wrap: var(--blog-sidebar-categories-flex-wrap);
-    flex-direction: var(--blog-sidebar-categories-flex-direction);
+    flex-flow: var(--blog-sidebar-categories-flex-direction) var(--blog-sidebar-categories-flex-wrap);
     gap: var(--blog-sidebar-categories-gap);
 }
 
@@ -126,8 +124,7 @@
 
 .blog-sidebar__tags {
     display: var(--blog-sidebar-tags-display);
-    flex-wrap: var(--blog-sidebar-tags-flex-wrap);
-    flex-direction: var(--blog-sidebar-tags-flex-direction);
+    flex-flow: var(--blog-sidebar-tags-flex-direction) var(--blog-sidebar-tags-flex-wrap);
     gap: var(--blog-sidebar-tags-gap);
 }
 

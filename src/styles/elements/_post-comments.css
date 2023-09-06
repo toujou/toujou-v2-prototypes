@@ -1,6 +1,8 @@
 .post-comments {
     --post-comments-width: var(--content-width-with-padding);
     --post-comments-max-width: var(--content-max-width);
+
+    /* stylelint-disable-next-line max-line-length */
     --post-comments-margin: var(--spacing-between-consecutive-elements-normal) auto var(--spacing-between-consecutive-elements-normal);
 
     --post-comments-list-list-style: none;
@@ -84,7 +86,6 @@
 .post-comments__comment {
     margin: var(--post-comments-comment-margin);
 }
-
 
 .post-comments__form,
 .post-comments .form {

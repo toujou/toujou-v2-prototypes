@@ -87,25 +87,13 @@
     gap: var(--footer-address-text-gap);
 }
 
-:is(
-    .footer__adress-text--name,
-    .footer__address-text--city,
-    .footer__address-text--street) + :is(
-    .footer__address-text--phone,
-    .footer__address-text--fax,
-    .footer__address-text--mail
-    ) {
+/* stylelint-disable-next-line max-line-length */
+:is(.footer__address-text--name, .footer__address-text--city, .footer__address-text--street) + :is(.footer__address-text--phone, .footer__address-text--fax, .footer__address-text--mail) {
     margin-top: var(--footer-address-margin-bottom);
 }
 
-:is(
-    .footer__address-text--phone,
-    .footer__address-text--fax,
-    .footer__address-text--mail) + :is(
-    .footer__address-text--phone,
-    .footer__address-text--fax,
-    .footer__address-text--mail
-    ) {
+/* stylelint-disable-next-line max-line-length */
+:is(.footer__address-text--phone, .footer__address-text--fax, .footer__address-text--mail) + :is(.footer__address-text--phone, .footer__address-text--fax, .footer__address-text--mail) {
     margin-top: var(--spacing-s);
 }
 

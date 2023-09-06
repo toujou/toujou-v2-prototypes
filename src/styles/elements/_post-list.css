@@ -1,6 +1,8 @@
 .post-list {
     --post-list-width: var(--content-width-with-padding);
     --post-list-max-width: var(--content-max-width);
+
+    /* stylelint-disable-next-line max-line-length */
     --post-list-margin: var(--spacing-between-consecutive-elements-normal) auto var(--spacing-between-consecutive-elements-normal);
 
     width: var(--post-list-width);

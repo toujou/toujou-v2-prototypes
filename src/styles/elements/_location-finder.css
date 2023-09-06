@@ -23,11 +23,11 @@
     --toujou-location-finder-search-border-radius: var(--border-radius-normal);
     --toujou-location-finder-search-shadow: none;
     --toujou-location-finder-search-padding: var(--input-padding);
-    /*--toujou-location-finder-search-border: var(--border-width-normal) solid var(--border-color-default);*/
 
+    /* --toujou-location-finder-search-border: var(--border-width-normal) solid var(--border-color-default); */
     --toujou-location-finder-loading-bar-bg-color: var(--color-primary);
-    /*--toujou-location-finder-cluster-max-zoom: 10;*/
 
+    /* --toujou-location-finder-cluster-max-zoom: 10; */
     --toujou-location-finder-padding: var(--spacing-s);
 
     --toujou-location-finder-loading-bar-height: var(--spacing-xxs);
@@ -76,7 +76,6 @@
     --toujou-location-finder-grid-z-index: var(--z-index-content);
     --toujou-location-finder-sidebar-button-bg: var(--color-bg);
 
-
     display: var(--toujou-location-finder-display);
     height: var(--toujou-location-finder-height);
     width: var(--toujou-location-finder-width);
@@ -84,7 +83,7 @@
     aspect-ratio: var(--toujou-location-finder-aspect-ratio);
     position: var(--toujou-location-finder-position);
     margin: var(--toujou-location-finder-margin);
-    z-index: var(--toujou-location-finder-grid-z-index)
+    z-index: var(--toujou-location-finder-grid-z-index);
 }
 
 .location-finder[ismobile] {

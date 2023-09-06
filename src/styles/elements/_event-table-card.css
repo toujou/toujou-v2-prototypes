@@ -41,6 +41,7 @@
     display: var(--event-table-card-display);
     grid-template-columns: var(--event-table-card-grid-template-columns);
     grid-template-rows: var(--event-table-card-grid-template-rows);
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     grid-template-areas: var(--event-table-card-grid-template-areas);
     grid-gap: var(--event-table-card-grid-gap);
     padding: var(--event-table-card-padding);
@@ -58,7 +59,6 @@
 
 .event-table-card__chip {
     grid-area: eventChip;
-
     align-self: var(--event-table-card-chip-align-self);
     margin-bottom: var(--event-table-card-chip-margin-bottom);
 }
