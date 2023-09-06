@@ -47,7 +47,7 @@
 @media print {
     /* Add custom message to the end of the print */
     body::after {
-        content: 'Diese Website wurde mit toujou gebaut | www.toujou.de';
+        content: "Diese Website wurde mit toujou gebaut | www.toujou.de";
         display: block;
         width: 100%;
         text-align: center;

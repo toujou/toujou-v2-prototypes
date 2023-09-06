@@ -1,10 +1,5 @@
 # TOUJOU 2.0 STORYBOOK
-
-This project uses:
-- [VITEJS](https://vitejs.dev/).
-- [Storybook](https://storybook.js.org/)
-- [Storybook-deployer](https://github.com/storybookjs/storybook-deployer)
-- [web test runner](https://modern-web.dev/docs/test-runner/overview/)
+Components and styles for the kojo theme
 
 ## Scripts
 
@@ -19,7 +14,7 @@ This project uses:
 - `npm run deploy:full` build and deploy to github
 - `npm run test` run the js tests
 
-## How to create a new webcomponent
+## How to create a new webcomponent [DEPRECATED: we should use the ui-components package!!!]
 1. Create a new component folder inside `src`, like `toujou-example`
 2. Create the `.ts` file for your component, like `toujou-example.ts`
 3. Create the component
@@ -30,7 +25,7 @@ This project uses:
 8. run `npm run build` and `npm run build-storybook`
 
 ## How to create stories for plain html elements
-1. Create a new story files on `src/stories`, like `src/stories/button.stories.ts`
+1. Create a new story file on `src/stories`, like `src/stories/button.stories.ts`
 
 ## Github page
 We can deploy storybook to a [github page](https://toujou.github.io/toujou-v2-prototypes/). Followed [this tutorial](https://medium.com/swlh/how-to-deploy-storybook-to-github-pages-4894097d49ab)
@@ -57,4 +52,4 @@ We use the [Badges Addon](https://storybook.js.org/addons/@geometricpanda/storyb
 # Troubleshooting
 1. `node: --openssl-legacy-provider is not allowed in NODE_OPTIONS` error when running the `npm run sb` command or `npm run deploy:full`
 
-Please try `npm install` and `nvm use` before running the `npm run sb` command again
+Please try `nvm use` and `npm install` before running the `npm run sb` command again
