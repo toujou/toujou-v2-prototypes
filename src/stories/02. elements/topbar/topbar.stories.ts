@@ -61,9 +61,10 @@ interface TopbarStoryProps {
 }
 
 const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
+    // @ts-ignore
     document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
 
-    return `       
+    return `
         <toujou-topbar id="topbar" class="topbar" navigation-theme="${args.navigationTheme}" logo-size="${args.logoSize}">
             <a href="#" class="topbar__logo-link">
                 ${args.titleType === 'logo' ? `
@@ -86,8 +87,8 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                         <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
-            </ul>    
-            
+            </ul>
+
             <toujou-burger-button
                 class="burger-button"
                 role="button"
@@ -103,13 +104,13 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
                 <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
             </toujou-burger-button>
-            
+
             <nav class="service-nav">
                 <a href="#" class="service-nav__link">Impressum</a>
                 <a href="#" class="service-nav__link">Datenschutz</a>
-            </nav>        
-            
-            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">                                
+            </nav>
+
+            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
                         <a href="#" class="main-nav__link" aria-current="page">
@@ -403,18 +404,18 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 </ul>
             </nav>
 
-        </toujou-topbar>   
-        
+        </toujou-topbar>
+
         <main>
             <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
                 </button>
-                
+
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
                 </button>
-    
+
                 <ol class="breadcrumb__list" slot="list">
                     <li class="breadcrumb__item">
                         <a href="#" class="breadcrumb__link">Home</a>
@@ -429,7 +430,7 @@ const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
                     </div>
                 </toujou-text-block-column>
             </toujou-text-block>
-            
+
             <toujou-text-block class="text-block" text-block-column-count="1">
                 <toujou-text-block-column class="text-block-column">
                     <div class="text-block__content">

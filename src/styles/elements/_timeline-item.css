@@ -1,0 +1,81 @@
+.timeline-item {
+    --timeline-item-position: relative;
+    --timeline-item-width: 100%;
+    --timeline-item-max-width: 420px;
+    --timeline-item-display: flex;
+    --timeline-item-flex-direction: column;
+    --timeline-item-gap: var(--spacing-normal);
+
+    --timeline-item-year-before-position: absolute;
+    --timeline-item-year-before-top: 50%;
+    --timeline-item-year-before-left: 0;
+    --timeline-item-year-before-transform: translate(calc(calc(var(--timeline-distance-from-line) + calc(var(--timeline-bullet-size) / 2)) * -1 + 1px), -50%);
+    --timeline-item-year-before-size: var(--timeline-bullet-size);
+    --timeline-item-year-before-border-radius: 50%;
+    --timeline-item-year-before-background-color: var(--timeline-accent-color);
+    --timeline-item-year-before-border: var(--timeline-line-width) solid var(--color-bg);
+
+    --timeline-item-year-position: relative;
+    --timeline-item-year-color: var(--timeline-accent-color);
+    --timeline-item-year-font-size: var(--font-size-l);
+
+    position: var(--timeline-item-position);
+    width: var(--timeline-item-width);
+    max-width: var(--timeline-item-max-width);
+    display: var(--timeline-item-display);
+    flex-direction: var(--timeline-item-flex-direction);
+    gap: var(--timeline-item-gap);
+}
+
+.timeline-item__year {
+    position: var(--timeline-item-year-position);
+    color: var(--timeline-item-year-color);
+    font-size: var(--timeline-item-year-font-size);
+}
+
+.timeline-item:not(:first-child) .timeline-item__year {
+    margin-top: var(--spacing-normal);
+}
+
+.timeline-item__year::before {
+    content: "";
+    position: var(--timeline-item-year-before-position);
+    top: var(--timeline-item-year-before-top);
+    left: var(--timeline-item-year-before-left);
+    transform: var(--timeline-item-year-before-transform);
+    height: var(--timeline-item-year-before-size);
+    width: var(--timeline-item-year-before-size);
+    border-radius: var(--timeline-item-year-before-border-radius);
+    background-color: var(--timeline-item-year-before-background-color);
+    border: var(--timeline-item-year-before-border);
+}
+
+@media screen and (min-width: 840px) {
+    .timeline-item {
+        --timeline-item-max-width: var(--content-max-width);
+        --timeline-item-display: grid;
+        --timeline-item-grid-template-columns: 1fr calc(var(--timeline-distance-from-line) * 2) 1fr;
+        --timeline-item-grid-tempalte-areas: "timelineLeft timelineYear timelineRight";
+
+        --timeline-item-year-font-size: var(--font-size-xxl);
+
+        grid-template-columns: var(--timeline-item-grid-template-columns);
+        grid-template-areas: var(--timeline-item-grid-tempalte-areas);
+    }
+
+    .timeline-item__year {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        width: fit-content;
+        margin: 0 auto var(--spacing-m);
+        text-align: center;
+        color: var(--color-bg);
+        background-color: var(--timeline-accent-color);
+        padding: var(--spacing-xs) var(--spacing-s);
+        border-radius: var(--spacing-2px);
+    }
+
+    .timeline-item__year::before {
+        display: none;
+    }
+}

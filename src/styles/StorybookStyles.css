@@ -103,6 +103,10 @@
 @import "./elements/_review.css";
 @import "./elements/_event-schedule-card.css";
 @import "./elements/_event-table-card.css";
+@import "./elements/_timeline.css";
+@import "./elements/_timeline-card.css";
+@import "./elements/_timeline-item.css";
+@import "./elements/_timeline-legend.css";
 
 @import "elements/_facet-details.css";
 @import "elements/_panel-title.css";
