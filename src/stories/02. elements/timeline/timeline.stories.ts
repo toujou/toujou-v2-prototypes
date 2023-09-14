@@ -13,6 +13,18 @@ export default {
         },
     },
     argTypes: {
+        direction: {
+            table: {
+                category: "Timeline Settings",
+                defaultValue: { summary: 'vertical' },
+            },
+            name: 'Timeline direction',
+            description: "Choose between a vertical or horizontal timeline",
+            options: ['vertical', 'horizontal'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
         elementDesign: {
             table: {
                 category: "Timeline Settings",
@@ -41,6 +53,7 @@ export default {
 } as Meta;
 
 interface TimelineStoryProps {
+    direction: string;
     elementDesign: string;
     showLegend: boolean;
 }
@@ -49,7 +62,7 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
     return `
         <toujou-timeline
             class="timeline"
-            timeline-direction="vertical"
+            timeline-direction="${args.direction}"
             element-design="${args.elementDesign}"
             ${args.showLegend ? 'timeline-show-legend' : ''}
             aria-label="Toujou milestones timeline"
@@ -199,6 +212,7 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
 export const Timeline = Template.bind({});
 
 Timeline.args = {
+    direction: 'horizontal',
     elementDesign: 'default',
-    showLegend: true,
+    showLegend: false,
 }

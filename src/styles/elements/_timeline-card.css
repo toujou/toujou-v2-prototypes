@@ -4,16 +4,12 @@
     --timeline-card-flex-direction: column;
     --timeline-card-width: 100%;
     --timeline-card-max-width: 100%;
-    --timeline-card-height: 100%;
     --timeline-card-shadow: var(--shadow-s);
     --timeline-card-border-radius: var(--border-radius-default);
     --timeline-card-bg-color: var(--color-bg);
     --timeline-card-z-index: var(--z-index-content);
 
     --timeline-card-before-position: absolute;
-    --timeline-card-before-top: 50%;
-    --timeline-card-before-left: 0;
-    --timeline-card-before-transform: translate(calc(calc(var(--timeline-distance-from-line) + calc(var(--timeline-bullet-size) / 2)) * -1 + 1px), -50%);
     --timeline-card-before-size: var(--timeline-bullet-size);
     --timeline-card-before-border-radius: 50%;
     --timeline-card-before-background-color: var(--timeline-accent-color);
@@ -68,6 +64,25 @@
     border-radius: var(--timeline-card-border-radius);
     background-color: var(--timeline-card-bg-color);
     z-index: var(--timeline-card-z-index);
+}
+
+.timeline[timeline-direction="vertical"] .timeline-card {
+    --timeline-card-before-top: 50%;
+    --timeline-card-before-left: 0;
+    --timeline-card-before-transform: translate(calc(calc(var(--timeline-distance-from-line) + calc(var(--timeline-bullet-size) / 2)) * -1 + 1px), -50%);
+    --timeline-card-height: 100%;
+}
+
+.timeline[timeline-direction="horizontal"] .timeline-card {
+    --timeline-card-width: 320px;
+    --timeline-card-max-width: 320px;
+    --timeline-card-height: fit-content;
+
+    --timeline-card-before-top: 0;
+    --timeline-card-before-left: 50%;
+    --timeline-card-before-transform: translate(-50%, calc(-100% - var(--spacing-normal) + 1px));
+
+    max-width: var(--timeline-card-max-width);
 }
 
 .timeline-card::before {

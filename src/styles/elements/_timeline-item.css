@@ -3,13 +3,9 @@
     --timeline-item-width: 100%;
     --timeline-item-max-width: 420px;
     --timeline-item-display: flex;
-    --timeline-item-flex-direction: column;
-    --timeline-item-gap: var(--spacing-normal);
+    --timeline-item-flex-shrink: 0;
 
     --timeline-item-year-before-position: absolute;
-    --timeline-item-year-before-top: 50%;
-    --timeline-item-year-before-left: 0;
-    --timeline-item-year-before-transform: translate(calc(calc(var(--timeline-distance-from-line) + calc(var(--timeline-bullet-size) / 2)) * -1 + 1px), -50%);
     --timeline-item-year-before-size: var(--timeline-bullet-size);
     --timeline-item-year-before-border-radius: 50%;
     --timeline-item-year-before-background-color: var(--timeline-accent-color);
@@ -25,12 +21,32 @@
     display: var(--timeline-item-display);
     flex-direction: var(--timeline-item-flex-direction);
     gap: var(--timeline-item-gap);
+    flex-shrink: var(--timeline-item-flex-shrink);
+}
+
+.timeline[timeline-direction="vertical"] .timeline-item {
+    --timeline-item-gap: var(--spacing-normal);
+    --timeline-item-flex-direction: column;
+
+    --timeline-item-year-before-top: 50%;
+    --timeline-item-year-before-left: 0;
+    --timeline-item-year-before-transform: translate(calc(calc(var(--timeline-distance-from-line) + calc(var(--timeline-bullet-size) / 2)) * -1 + 1px), -50%);
+}
+
+.timeline[timeline-direction="horizontal"] .timeline-item {
+    --timeline-item-gap: var(--spacing-l);
+    --timeline-item-flex-direction: row;
+
+    --timeline-item-year-before-top: 0;
+    --timeline-item-year-before-left: 50%;
+    --timeline-item-year-before-transform: translate(-50%, calc(-100% - var(--spacing-normal) + 1px));
 }
 
 .timeline-item__year {
     position: var(--timeline-item-year-position);
     color: var(--timeline-item-year-color);
     font-size: var(--timeline-item-year-font-size);
+    flex-shrink: 0;
 }
 
 .timeline-item:not(:first-child) .timeline-item__year {
@@ -79,7 +95,11 @@
         border-radius: var(--spacing-2px);
     }
 
-    .timeline-item__year::before {
+    .timeline-item:not(:first-child) .timeline-item__year {
+        margin-top: 0;
+    }
+
+    .timeline[timeline-direction="vertical"] .timeline-item__year::before {
         display: none;
     }
 }
