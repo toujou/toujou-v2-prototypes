@@ -83,6 +83,11 @@ export declare class ToujouSlider extends LitElement {
      * https://splidejs.com/guides/options/#heightratio
      */
     sliderAspectRatio: string;
+    /**
+     * Number of clones to be created on each side of the carousel
+     * Docs: https://splidejs.com/guides/options/#clones
+     */
+    sliderClonesAmount: number | null;
     arrowPrevAriaLabel: string;
     arrowNextAriaLabel: string;
     arrowFirstAriaLabel: string;

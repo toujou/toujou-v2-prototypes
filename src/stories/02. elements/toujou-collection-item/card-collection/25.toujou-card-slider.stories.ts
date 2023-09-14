@@ -31,7 +31,7 @@ const Template = () => {
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"
             arrow-next-aria-label="Go to next slide"
-            slides-count="1"
+            slides-count="8"
         >
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">

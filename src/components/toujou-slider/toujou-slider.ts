@@ -123,6 +123,13 @@ export class ToujouSlider extends LitElement {
     @property({ reflect: true, attribute: 'slider-aspect-ratio' })
     sliderAspectRatio: string = '0.5625';
 
+    /**
+     * Number of clones to be created on each side of the carousel
+     * Docs: https://splidejs.com/guides/options/#clones
+     */
+    @property({ reflect: true, attribute: 'slider-clones-amount' })
+    sliderClonesAmount: number | null = null;
+
     @property({ attribute: 'arrow-prev-aria-label' })
     arrowPrevAriaLabel: string = '';
 
@@ -203,6 +210,11 @@ export class ToujouSlider extends LitElement {
         if (this.sliderBreakpoints) {
             // @ts-ignore
             sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
+        }
+
+        if (this.sliderClonesAmount) {
+            // @ts-ignore
+            sliderOptions.clones = this.sliderClonesAmount;
         }
 
         // @ts-ignore
