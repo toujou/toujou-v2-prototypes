@@ -25,17 +25,35 @@ export default {
             defaultValue: ['default'],
             required: true,
         },
+        showLegend: {
+            table: {
+                category: "Timeline settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Show legend',
+            description: "Show the legend element",
+            control: { type: 'boolean' },
+            defaultValue: 'false',
+            required: true,
+        },
     },
     tags: ['autodocs']
 } as Meta;
 
 interface TimelineStoryProps {
-    elementDesign: string,
+    elementDesign: string;
+    showLegend: boolean;
 }
 
 const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
     return `
-        <toujou-timeline class="timeline" timeline-direction="horizontal" element-design="${args.elementDesign}" timeline-show-legend="" aria-label="Toujou milestones timeline">
+        <toujou-timeline
+            class="timeline"
+            timeline-direction="vertical"
+            element-design="${args.elementDesign}"
+            ${args.showLegend ? 'timeline-show-legend' : ''}
+            aria-label="Toujou milestones timeline"
+        >
             <div class="timeline__container" role="list">
 
                 <toujou-timeline-item class="timeline-item" role="listitem">
@@ -149,7 +167,7 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
             <toujou-timeline-legend class="timeline-legend">
                 <ul class="timeline-legend__list">
                     <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2023" class="timeline-legend__link">2023</a>
+                        <a href="#timeline-3321-year-2023" class="timeline-legend__link" is-active>2023</a>
                     </li>
 
                     <li class="timeline-legend__item">
@@ -161,11 +179,11 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
                     </li>
 
                     <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2026" class="timeline-legend__link" is-active="">2026</a>
+                        <a href="#timeline-3321-year-2026" class="timeline-legend__link"="">2026</a>
                     </li>
 
                     <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2027" class="timeline-legend__link" is-active="">2027</a>
+                        <a href="#timeline-3321-year-2027" class="timeline-legend__link"="">2027</a>
                     </li>
 
                     <li class="timeline-legend__item">
@@ -180,5 +198,6 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
 export const Timeline = Template.bind({});
 
 Timeline.args = {
-    elementDesign: 'default'
+    elementDesign: 'default',
+    showLegend: true,
 }

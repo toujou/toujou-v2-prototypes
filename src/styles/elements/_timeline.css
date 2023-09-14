@@ -68,7 +68,7 @@
 }
 
 @media screen and (min-width: 840px) {
-    .timeline {
+    .timeline[timeline-direction="vertical"] {
         --timeline-before-top: 0;
         --timeline-before-left: 50%;
     }

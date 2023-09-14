@@ -51,7 +51,7 @@
 }
 
 @media screen and (min-width: 840px) {
-    .timeline-item {
+    .timeline[timeline-direction="vertical"] .timeline-item {
         --timeline-item-max-width: var(--content-max-width);
         --timeline-item-display: grid;
         --timeline-item-grid-template-columns: 1fr calc(var(--timeline-distance-from-line) * 2) 1fr;
@@ -63,7 +63,7 @@
         grid-template-areas: var(--timeline-item-grid-tempalte-areas);
     }
 
-    .timeline-item__year {
+    .timeline[timeline-direction="vertical"] .timeline-item__year {
         grid-column: 1 / -1;
         grid-row: 1;
         width: fit-content;
