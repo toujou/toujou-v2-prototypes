@@ -30,6 +30,21 @@
     display: flex;
 }
 
+.timeline[element-design="primary"] {
+    --timeline-accent-color: var(--color-primary);
+    --timeline-accent-color-hover: var(--color-primary-dark);
+}
+
+.timeline[element-design="secondary"] {
+    --timeline-accent-color: var(--color-secondary);
+    --timeline-accent-color-hover: var(--color-secondary-dark);
+}
+
+.timeline[element-design="inverted"] {
+    --timeline-accent-color: var(--color-font);
+    --timeline-accent-color-hover: var(--color-font-dark);
+}
+
 .timeline::before {
     content: "";
     position: var(--timeline-before-position);

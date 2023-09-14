@@ -124,10 +124,10 @@
     color: var(--timeline-card-text-color);
 }
 
-.timeline-card__button {
+a.timeline-card__button {
     font-family: var(--timeline-card-button-font-family);
     text-decoration: var(--timeline-card-button-text-decoration);
-    color: var(--timeline-card-button-text-color);
+    color: var(--timeline-card-button-text-color) !important;
     display: var(--timeline-card-button-display);
     flex-grow: var(--timeline-card-button-flex-grow);
     align-items: var(--timeline-card-button-align-items);
@@ -136,11 +136,11 @@
     gap: var(--timeline-card-button-gap);
 }
 
-a.timeline-card__button:focus,
+a.timeline-card__button:hover,
 a.timeline-card__button:focus-visible {
     --timeline-card-button-text-decoration: underline;
 
-    color: var(--timeline-card-button-text-color-hover);
+    color: var(--timeline-card-button-text-color-hover) !important;
 }
 
 @media screen and (min-width: 840px) {
