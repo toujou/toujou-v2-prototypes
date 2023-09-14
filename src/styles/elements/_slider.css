@@ -144,6 +144,11 @@
     height: var(--header-height) !important;
 }
 
+/* hide the clone that gets generated on some occasions, even of the clones are set to 0 */
+.slider[slider-clones-amount="0"] li.splide__slide--clone {
+    display: none !important;
+}
+
 @media screen and (min-width: 840px) {
     .slider[content-type="logos"] {
         --slider-slides-gap: var(--spacing-xxl);
