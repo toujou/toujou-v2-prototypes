@@ -289,7 +289,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 `,n.jsx("br",{}),`
 `,n.jsx("br",{}),`
 `,n.jsx("a",{id:"burger-button"}),`
-`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(c,e)})):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Page title type",description:"Toggle between logo or text for the topbar page title",options:["logo","text"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0}},tags:["autodocs"]},q=e=>(document.documentElement.style.setProperty("--topbar-height",`var(--topbar-height-${e.logoSize})`),`       
+`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(c,e)})):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Page title type",description:"Toggle between logo or text for the topbar page title",options:["logo","text"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0}},tags:["autodocs"]},q=e=>(document.documentElement.style.setProperty("--topbar-height",`var(--topbar-height-${e.logoSize})`),`
         <toujou-topbar id="topbar" class="topbar" navigation-theme="${e.navigationTheme}" logo-size="${e.logoSize}">
             <a href="#" class="topbar__logo-link">
                 ${e.titleType==="logo"?`
@@ -312,8 +312,8 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                         <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
-            </ul>    
-            
+            </ul>
+
             <toujou-burger-button
                 class="burger-button"
                 role="button"
@@ -329,13 +329,13 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
                 <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
             </toujou-burger-button>
-            
+
             <nav class="service-nav">
                 <a href="#" class="service-nav__link">Impressum</a>
                 <a href="#" class="service-nav__link">Datenschutz</a>
-            </nav>        
-            
-            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">                                
+            </nav>
+
+            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
                         <a href="#" class="main-nav__link" aria-current="page">
@@ -629,18 +629,18 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </ul>
             </nav>
 
-        </toujou-topbar>   
-        
+        </toujou-topbar>
+
         <main>
             <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
                 </button>
-                
+
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
                 </button>
-    
+
                 <ol class="breadcrumb__list" slot="list">
                     <li class="breadcrumb__item">
                         <a href="#" class="breadcrumb__link">Home</a>
@@ -655,7 +655,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                     </div>
                 </toujou-text-block-column>
             </toujou-text-block>
-            
+
             <toujou-text-block class="text-block" text-block-column-count="1">
                 <toujou-text-block-column class="text-block-column">
                     <div class="text-block__content">
@@ -681,8 +681,9 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             </toujou-text-block>
         </main>
     `),t=q.bind({});t.args={navigationTheme:"light",titleType:"logo",logoSize:"medium"};var r,u,m;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
+  // @ts-ignore
   document.documentElement.style.setProperty('--topbar-height', \`var(--topbar-height-\${args.logoSize})\`);
-  return \`       
+  return \`
         <toujou-topbar id="topbar" class="topbar" navigation-theme="\${args.navigationTheme}" logo-size="\${args.logoSize}">
             <a href="#" class="topbar__logo-link">
                 \${args.titleType === 'logo' ? \`
@@ -705,8 +706,8 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                         <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
-            </ul>    
-            
+            </ul>
+
             <toujou-burger-button
                 class="burger-button"
                 role="button"
@@ -722,13 +723,13 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
                 <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
             </toujou-burger-button>
-            
+
             <nav class="service-nav">
                 <a href="#" class="service-nav__link">Impressum</a>
                 <a href="#" class="service-nav__link">Datenschutz</a>
-            </nav>        
-            
-            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">                                
+            </nav>
+
+            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
                         <a href="#" class="main-nav__link" aria-current="page">
@@ -1022,18 +1023,18 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </ul>
             </nav>
 
-        </toujou-topbar>   
-        
+        </toujou-topbar>
+
         <main>
             <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
                 </button>
-                
+
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                     <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
                 </button>
-    
+
                 <ol class="breadcrumb__list" slot="list">
                     <li class="breadcrumb__item">
                         <a href="#" class="breadcrumb__link">Home</a>
@@ -1048,7 +1049,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                     </div>
                 </toujou-text-block-column>
             </toujou-text-block>
-            
+
             <toujou-text-block class="text-block" text-block-column-count="1">
                 <toujou-text-block-column class="text-block-column">
                     <div class="text-block__content">
@@ -1075,4 +1076,4 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
         </main>
     \`;
 }`,...(m=(u=t.parameters)==null?void 0:u.docs)==null?void 0:m.source}}};const E=["Topbar"];export{t as Topbar,E as __namedExportsOrder,D as default};
-//# sourceMappingURL=topbar.stories-d9f5e42f.js.map
+//# sourceMappingURL=topbar.stories-22b8803e.js.map

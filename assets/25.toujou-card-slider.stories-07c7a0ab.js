@@ -13,6 +13,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"
             arrow-next-aria-label="Go to next slide"
+            slides-count="1"
         >
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
@@ -23,7 +24,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                     </button>
                 </div>
-                
+
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide card-collection__item" data-splide-interval="6000">
@@ -229,12 +230,12 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             </toujou-collection-item>
                         </li>
                     </ul>
-                </div>      
+                </div>
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>
             </div>
-            
+
             <toujou-slider-count class="slider-count">
                 <span class="slider-count__current"></span>
                 <span class="slider-count__separator">of</span>
@@ -257,6 +258,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"
             arrow-next-aria-label="Go to next slide"
+            slides-count="1"
         >
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
@@ -267,7 +269,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                     </button>
                 </div>
-                
+
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide card-collection__item" data-splide-interval="6000">
@@ -473,12 +475,12 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             </toujou-collection-item>
                         </li>
                     </ul>
-                </div>      
+                </div>
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>
             </div>
-            
+
             <toujou-slider-count class="slider-count">
                 <span class="slider-count__current"></span>
                 <span class="slider-count__separator">of</span>
@@ -487,4 +489,4 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
         </toujou-slider>
     \`;
 }`,...(l=(t=e.parameters)==null?void 0:t.docs)==null?void 0:l.source}}};const p=["CollectionSlider"];export{e as CollectionSlider,p as __namedExportsOrder,d as default};
-//# sourceMappingURL=25.toujou-card-slider.stories-946fa599.js.map
+//# sourceMappingURL=25.toujou-card-slider.stories-07c7a0ab.js.map
