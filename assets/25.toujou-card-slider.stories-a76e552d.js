@@ -13,7 +13,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"
             arrow-next-aria-label="Go to next slide"
-            slides-count="1"
+            slides-count="8"
         >
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
@@ -258,7 +258,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"
             arrow-next-aria-label="Go to next slide"
-            slides-count="1"
+            slides-count="8"
         >
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
@@ -489,4 +489,4 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
         </toujou-slider>
     \`;
 }`,...(l=(t=e.parameters)==null?void 0:t.docs)==null?void 0:l.source}}};const p=["CollectionSlider"];export{e as CollectionSlider,p as __namedExportsOrder,d as default};
-//# sourceMappingURL=25.toujou-card-slider.stories-07c7a0ab.js.map
+//# sourceMappingURL=25.toujou-card-slider.stories-a76e552d.js.map

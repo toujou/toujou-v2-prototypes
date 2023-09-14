@@ -24,6 +24,7 @@ import{j as e}from"./jsx-runtime-ac05983f.js";import{u as n}from"./index-a9a8c75
 `,e.jsxs(s.p,{children:["4.9. ",e.jsx(s.a,{href:"#toujou-slider-attributes-slider-breakpoints",children:" Slider breakpoints "})]}),`
 `,e.jsxs(s.p,{children:["4.10. ",e.jsx(s.a,{href:"#toujou-slider-attributes-slider-padding",children:" Slider padding "})]}),`
 `,e.jsxs(s.p,{children:["4.11. ",e.jsx(s.a,{href:"#toujou-slider-attributes-slider-focus-center",children:" Slider focus center "})]}),`
+`,e.jsxs(s.p,{children:["4.12. ",e.jsx(s.a,{href:"#toujou-slider-attributes-slider-slides-count",children:" Slider slides count "})]}),`
 `]}),`
 `,e.jsxs(s.li,{children:[`
 `,e.jsx(s.p,{children:e.jsx(s.a,{href:"#toujou-slider-default-options",children:" Default options "})}),`
@@ -224,6 +225,11 @@ import{j as e}from"./jsx-runtime-ac05983f.js";import{u as n}from"./index-a9a8c75
 ...
 </toujou-slider>
 `})}),`
+`,e.jsx("a",{name:"toujou-slider-attributes-slider-slides-count"}),`
+`,e.jsx(s.h3,{id:"411-slider-slides-count",children:"4.11 slider slides-count"}),`
+`,e.jsxs(s.p,{children:[`This attribute is optional.
+The `,e.jsx(s.code,{children:"slides-count"})," should reflect the number of slides inside the slider, for instance ",e.jsx(s.code,{children:'slides-count="12"'}),`.
+There are custom slides styles that hide the slider controls if there aren't enough slides on the different viewports (1 on mobile, 2 on tablet, 3 on small desktop, 4 on desktop)`]}),`
 `,e.jsx("a",{name:"toujou-slider-default-options"}),`
 `,e.jsx(s.h3,{id:"5-default-options",children:"5. Default options"}),`
 `,e.jsx(s.p,{children:"These are the default options for the toujou slider"}),`
@@ -257,5 +263,5 @@ if (this.sliderFocusCenter === 'true') {
 if (this.sliderBreakpoints) {
     sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
 }
-`})})]})}function o(i={}){const{wrapper:s}=Object.assign({},n(),i.components);return s?e.jsx(s,Object.assign({},i,{children:e.jsx(l,i)})):l(i)}export{o as M};
-//# sourceMappingURL=slider.docs-f41f7a04.js.map
+`})})]})}function d(i={}){const{wrapper:s}=Object.assign({},n(),i.components);return s?e.jsx(s,Object.assign({},i,{children:e.jsx(l,i)})):l(i)}export{d as M};
+//# sourceMappingURL=slider.docs-cb7af64c.js.map
