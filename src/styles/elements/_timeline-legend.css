@@ -2,9 +2,14 @@
     --timeline-legend-display: none;
     --timeline-legend-height: fit-content;
     --timeline-legend-flex-direction: column;
+    --timeline-flex-shrink: 0;
     --timeline-legend-border: var(--timeline-line-width) solid var(--timeline-accent-color);
     --timeline-legend-background-color: var(--color-bg);
     --timeline-legend-padding: var(--spacing-normal);
+    --timeline-legend-position: sticky;
+    --timeline-legend-top: var(--topbar-height);
+
+    --timeline-legend-border-radius: var(--border-radius-default);
 
     --timeline-legend-list-style: none;
     --timeline-legend-list-margin: 0;
@@ -19,13 +24,13 @@
     display: var(--timeline-legend-display);
     height: var(--timeline-legend-height);
     flex-direction: var(--timeline-legend-flex-direction);
+    flex-shrink: var(--timeline-flex-shrink);
     border: var(--timeline-legend-border);
     background-color: var(--timeline-legend-background-color);
     padding: var(--timeline-legend-padding);
-}
-
-.timeline[timeline-show-legend] .timeline-legend {
-    --timeline-legend-display: flex;
+    border-radius: var(--timeline-legend-border-radius);
+    position: var(--timeline-legend-position);
+    top: var(--timeline-legend-top);
 }
 
 .timeline-legend__list {
@@ -49,4 +54,10 @@
 
 .timeline-legend__link[is-active] {
     color: var(--timeline-accent-color-hover);
+}
+
+@media screen and (min-width: 840px) {
+    .timeline[timeline-show-legend] .timeline-legend {
+        --timeline-legend-display: flex;
+    }
 }

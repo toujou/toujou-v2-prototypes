@@ -51,6 +51,10 @@
 }
 
 @media screen and (min-width: 840px) {
+    .timeline[timeline-show-legend] {
+        --timeline-legend-display: flex;
+    }
+
     .timeline[timeline-direction="vertical"] .timeline-item {
         --timeline-item-max-width: var(--content-max-width);
         --timeline-item-display: grid;

@@ -54,6 +54,35 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
             ${args.showLegend ? 'timeline-show-legend' : ''}
             aria-label="Toujou milestones timeline"
         >
+
+            <toujou-timeline-legend class="timeline-legend">
+                <ul class="timeline-legend__list">
+                    <li class="timeline-legend__item">
+                        <a href="#timeline-3321-year-2023" class="timeline-legend__link" is-active>2023</a>
+                    </li>
+
+                    <li class="timeline-legend__item">
+                        <a href="#timeline-3321-year-2024" class="timeline-legend__link">2024</a>
+                    </li>
+
+                    <li class="timeline-legend__item">
+                        <a href="#timeline-3321-year-2025" class="timeline-legend__link">2025</a>
+                    </li>
+
+                    <li class="timeline-legend__item">
+                        <a href="#timeline-3321-year-2026" class="timeline-legend__link"="">2026</a>
+                    </li>
+
+                    <li class="timeline-legend__item">
+                        <a href="#timeline-3321-year-2027" class="timeline-legend__link"="">2027</a>
+                    </li>
+
+                    <li class="timeline-legend__item">
+                        <a href="#timeline-3321-year-2028" class="timeline-legend__link">2028</a>
+                    </li>
+                </ul>
+            </toujou-timeline-legend>
+
             <div class="timeline__container" role="list">
 
                 <toujou-timeline-item class="timeline-item" role="listitem">
@@ -163,34 +192,6 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
                 </toujou-timeline-item>
 
             </div>
-
-            <toujou-timeline-legend class="timeline-legend">
-                <ul class="timeline-legend__list">
-                    <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2023" class="timeline-legend__link" is-active>2023</a>
-                    </li>
-
-                    <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2024" class="timeline-legend__link">2024</a>
-                    </li>
-
-                    <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2025" class="timeline-legend__link">2025</a>
-                    </li>
-
-                    <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2026" class="timeline-legend__link"="">2026</a>
-                    </li>
-
-                    <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2027" class="timeline-legend__link"="">2027</a>
-                    </li>
-
-                    <li class="timeline-legend__item">
-                        <a href="#timeline-3321-year-2028" class="timeline-legend__link">2028</a>
-                    </li>
-                </ul>
-            </toujou-timeline-legend>
         </toujou-timeline>
     `;
 };
