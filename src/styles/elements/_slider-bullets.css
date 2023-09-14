@@ -108,4 +108,12 @@ button.slider-bullets__bullet.is-active {
 
         display: var(--slider-bullets-display);
     }
+
+    .slider[content-type="card-collection"][slides-count="0"] ul.slider-bullets,
+    .slider[content-type="card-collection"][slides-count="1"] ul.slider-bullets,
+    .slider[content-type="card-collection"][slides-count="2"] ul.slider-bullets,
+    .slider[content-type="card-collection"][slides-count="3"] ul.slider-bullets,
+    .slider[content-type="card-collection"][slides-count="4"] ul.slider-bullets {
+        --slider-bullets-display: none;
+    }
 }

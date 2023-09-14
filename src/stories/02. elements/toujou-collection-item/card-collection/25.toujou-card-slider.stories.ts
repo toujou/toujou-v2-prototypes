@@ -31,6 +31,7 @@ const Template = () => {
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"
             arrow-next-aria-label="Go to next slide"
+            slides-count="1"
         >
             <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
@@ -41,7 +42,7 @@ const Template = () => {
                         <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                     </button>
                 </div>
-                
+
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide card-collection__item" data-splide-interval="6000">
@@ -247,12 +248,12 @@ const Template = () => {
                             </toujou-collection-item>
                         </li>
                     </ul>
-                </div>      
+                </div>
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>
             </div>
-            
+
             <toujou-slider-count class="slider-count">
                 <span class="slider-count__current"></span>
                 <span class="slider-count__separator">of</span>
