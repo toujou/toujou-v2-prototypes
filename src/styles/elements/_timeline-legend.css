@@ -61,15 +61,15 @@
 @media screen and (min-width: 840px) {
     .timeline[timeline-show-legend] .timeline-legend {
         --timeline-legend-display: flex;
+
+        width: var(--timeline-legend-width);
     }
 
     .timeline[timeline-direction="horizontal"][timeline-show-legend] .timeline-legend {
         --timeline-legend-display: flex;
-        --timeline-legend-width: fit-content;
         --timeline-legend-margin: 0 auto;
         --timeline-legend-list-flex-direction: row;
 
-        width: var(--timeline-legend-width);
         margin: var(--timeline-legend-margin);
     }
 }
