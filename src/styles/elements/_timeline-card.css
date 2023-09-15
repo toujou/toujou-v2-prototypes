@@ -17,6 +17,9 @@
 
     --timeline-card-figure-border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
     --timeline-card-figure-overflow: hidden;
+    --timeline-card-figure-aspect-ratio: var(--aspect-ratio-default);
+    --timeline-card-figure-height: auto;
+    --timeline-card-figure-width: 100%;
 
     --timeline-card-image-ratio: var(--aspect-ratio-default);
     --timeline-card-image-object-fit: cover;
@@ -101,6 +104,9 @@
 .timeline-card__figure {
     border-radius: var(--timeline-card-figure-border-radius);
     overflow: var(--timeline-card-figure-overflow);
+    aspect-ratio: var(--timeline-card-figure-aspect-ratio);
+    height: var(--timeline-card-figure-height);
+    width: var(--timeline-card-figure-width);
 }
 
 .timeline-card__image {
