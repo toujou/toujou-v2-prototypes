@@ -7,11 +7,12 @@
 
     /*--timeline-width: var(--content-width-with-padding);*/
     --timeline-position: relative;
-    --timeline-width: fit-content;
+    --timeline-width: var(--content-width-with-padding);
     --timeline-display: block;
     --timeline-gap: var(--spacing-normal);
     --timeline-max-width: var(--content-wide-max-width);
-    --timeline-margin: var(--spacing-between-elements-normal) auto var(--spacing-xl) var(--spacing-m);
+    --timeline-margin: var(--spacing-between-elements-normal) auto var(--spacing-xl) auto;
+    --timeline-padding: 0 0 0 var(--spacing-l);
 
     --timeline-before-position: absolute;
     --timeline-before-top: 0;
@@ -25,6 +26,7 @@
     display: var(--timeline-display);
     max-width: var(--timeline-max-width);
     margin: var(--timeline-margin);
+    padding: var(--timeline-padding);
 }
 
 .timeline[timeline-direction="vertical"] {
@@ -32,7 +34,7 @@
 
     --timeline-before-width: 1px;
     --timeline-before-height: 100%;
-    --timeline-before-left: calc(var(--timeline-distance-from-line) * -1);
+    --timeline-before-left: calc(var(--timeline-bullet-size) / 2);
     --timeline-before-border-left: var(--timeline-line-width) solid var(--timeline-accent-color);
 }
 
