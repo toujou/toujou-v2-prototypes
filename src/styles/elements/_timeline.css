@@ -108,7 +108,7 @@
 
 @media screen and (min-width: 840px) {
     .timeline {
-        --timeline-max-width: var(--content-wide-max-width);
+        --timeline-max-width: min(var(--content-width-with-padding) ,var(--content-wide-max-width));
         --timeline-width: fit-content;
         --timeline-padding: 0;
     }
