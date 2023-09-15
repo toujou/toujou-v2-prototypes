@@ -10,7 +10,7 @@
     --timeline-width: var(--content-width-with-padding);
     --timeline-display: block;
     --timeline-gap: var(--spacing-normal);
-    --timeline-max-width: var(--content-wide-max-width);
+    --timeline-max-width: fit-content;
     --timeline-margin: var(--spacing-between-elements-normal) auto var(--spacing-xl) auto;
     --timeline-padding: 0 0 0 var(--spacing-l);
 
@@ -107,6 +107,12 @@
 }
 
 @media screen and (min-width: 840px) {
+    .timeline {
+        --timeline-max-width: var(--content-wide-max-width);
+        --timeline-width: fit-content;
+        --timeline-padding: 0;
+    }
+
     .timeline[timeline-show-legend] {
         --timeline-legend-display: flex;
     }
