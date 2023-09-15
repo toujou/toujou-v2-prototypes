@@ -204,7 +204,7 @@
     right: 1em;
 }
 
-.splide.is-focus-in .splide__arrow:focus {
+.splide.is-focus-in .splide__arrow:focus-visible {
     outline: 3px solid #0bf;
     outline-offset: 3px;
 }
@@ -239,12 +239,12 @@
     outline-offset: 3px;
 }
 
-.splide.is-focus-in .splide__pagination__page:focus {
+.splide.is-focus-in .splide__pagination__page:focus-visible {
     outline: 3px solid #0bf;
     outline-offset: 3px;
 }
 
-.splide__slide:focus {
+.splide__slide:focus-visible {
     outline: 0;
 }
 
@@ -262,18 +262,18 @@
 }
 
 @supports (outline-offset:-3px) {
-    .splide.is-focus-in .splide__slide:focus {
+    .splide.is-focus-in .splide__slide:focus-visible {
         outline: 3px solid #0bf;
         outline-offset: -3px;
     }
 }
 
 @media screen and (-ms-high-contrast: none) {
-    .splide.is-focus-in .splide__slide:focus {
+    .splide.is-focus-in .splide__slide:focus-visible {
         border: 3px solid #0bf;
     }
 
-    .splide.is-focus-in .splide__track > .splide__list > .splide__slide:focus {
+    .splide.is-focus-in .splide__track > .splide__list > .splide__slide:focus-visible {
         border-color: #0bf;
     }
 }
@@ -287,7 +287,7 @@
     outline-offset: 3px;
 }
 
-.splide.is-focus-in .splide__toggle:focus {
+.splide.is-focus-in .splide__toggle:focus-visible {
     outline: 3px solid #0bf;
     outline-offset: 3px;
 }

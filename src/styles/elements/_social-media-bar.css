@@ -103,7 +103,7 @@
     --icon-color: var(--social-media-bar-link-color);
 }
 
-.social-media-bar__link:focus .icon {
+.social-media-bar__link:focus-visible .icon {
     --icon-color: var(--social-media-bar-link-hover-color);
 }
 

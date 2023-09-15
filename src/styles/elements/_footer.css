@@ -57,9 +57,9 @@
     color: var(--footer-link-color);
 }
 
-.footer__list-item > a.footer__list-link:focus,
-.footer__address-text > a.footer__address-link:focus,
-.footer__socials > a.footer__socials-link:focus {
+.footer__list-item > a.footer__list-link:focus-visible,
+.footer__address-text > a.footer__address-link:focus-visible,
+.footer__socials > a.footer__socials-link:focus-visible {
     color: var(--footer-link-focus-color);
 }
 

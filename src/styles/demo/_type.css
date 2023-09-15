@@ -1,4 +1,4 @@
-a:focus {
+a:focus-visible  {
     color: var(--color-primary);
 }
 

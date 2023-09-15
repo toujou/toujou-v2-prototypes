@@ -111,11 +111,11 @@
     --slider-bullets-display: var(--cover-slider-bullets-display);
 }
 
-.cover-slider__link:focus .cover-slider__title {
+.cover-slider__link:focus-visible .cover-slider__title {
     color: var(--color-slider-title-color-hover);
 }
 
-.cover-slider__link:focus .cover-slider__media {
+.cover-slider__link:focus-visible .cover-slider__media {
     border: var(--border-width-m) solid var(--color-primary-light);
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);

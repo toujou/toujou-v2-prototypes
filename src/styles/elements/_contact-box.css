@@ -100,11 +100,11 @@
     border: var(--contact-box-close-border);
 }
 
-.contact-box__close:focus {
+.contact-box__close:focus-visible {
     border: var(--focus-outline-width) solid var(--focus-outline-color);
 }
 
-.contact-box__close:focus .icon {
+.contact-box__close:focus-visible .icon {
     --icon-color: var(--contact-box-close-color-active);
 }
 

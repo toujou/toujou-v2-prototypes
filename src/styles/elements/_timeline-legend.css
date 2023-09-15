@@ -8,6 +8,7 @@
     --timeline-legend-padding: var(--spacing-normal);
     --timeline-legend-position: sticky;
     --timeline-legend-top: var(--topbar-height);
+    --timeline-legend-z-index: 2;
 
     --timeline-legend-border-radius: var(--border-radius-default);
 
@@ -31,6 +32,7 @@
     border-radius: var(--timeline-legend-border-radius);
     position: var(--timeline-legend-position);
     top: var(--timeline-legend-top);
+    z-index: var(--timeline-legend-z-index);
 }
 
 .timeline-legend__list {
@@ -61,7 +63,7 @@
         --timeline-legend-display: flex;
     }
 
-    .timeline[timeline-direction="horizontal"] .timeline-legend {
+    .timeline[timeline-direction="horizontal"][timeline-show-legend] .timeline-legend {
         --timeline-legend-display: flex;
         --timeline-legend-width: fit-content;
         --timeline-legend-margin: 0 auto;

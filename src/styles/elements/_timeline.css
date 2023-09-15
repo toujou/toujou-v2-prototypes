@@ -107,7 +107,6 @@
 @media screen and (min-width: 840px) {
     .timeline[timeline-show-legend] {
         --timeline-legend-display: flex;
-        --timeline-before-top: 84px;
     }
 
     .timeline[timeline-direction="vertical"] {
@@ -125,6 +124,10 @@
 
         flex-direction: var(--timeline-flex-direction);
         gap: var(--timeline-gap);
+    }
+
+    .timeline[timeline-direction="horizontal"][timeline-show-legend] {
+        --timeline-before-top: 84px;
     }
 }
 

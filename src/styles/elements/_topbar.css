@@ -163,13 +163,13 @@
     outline-offset: var(--focus-outline-offset);
 }
 
-.topbar__actions-link:focus .icon {
+.topbar__actions-link:focus-visible .icon {
     --icon-color: var(--topbar-icons-active-color);
 
     transition: var(--topbar-actions-link-icon-transition);
 }
 
-.topbar__actions-link:focus .topbar__actions {
+.topbar__actions-link:focus-visible .topbar__actions {
     outline-color: var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }

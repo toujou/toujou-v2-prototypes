@@ -81,7 +81,7 @@
     color: var(--color-bg);
 }
 
-.map-contact:not([element-design="default"]) a:focus {
+.map-contact:not([element-design="default"]) a:focus-visible {
     color: var(--map-contact-social-color-active);
 }
 
@@ -155,7 +155,7 @@
     --icon-color: var(--map-contact-social-icon-color);
 }
 
-.map-contact__social:focus .map-contact__social-icon {
+.map-contact__social:focus-visible .map-contact__social-icon {
     --icon-color: var(--map-contact-social-color-active);
 }
 

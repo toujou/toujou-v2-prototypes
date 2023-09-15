@@ -101,7 +101,7 @@
     text-decoration: var(--breadcrumb-link-text-decoration);
 }
 
-a.breadcrumb__link:focus {
+a.breadcrumb__link:focus-visible {
     color: var(--breadcrumb-link-color-active);
 }
 
@@ -131,7 +131,7 @@ a.breadcrumb__link:focus {
     background-color: var(--breadcrumb-toggle-icon-color);
 }
 
-.breadcrumb__toggle:focus .icon {
+.breadcrumb__toggle:focus-visible .icon {
     --breadcrumb-toggle-icon-color: var(--color-primary);
 }
 

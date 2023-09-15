@@ -72,7 +72,7 @@
     padding: var(--hero-media-title-padding);
 }
 
-a.hero-media:focus {
+a.hero-media:focus-visible {
     --hero-media-title-color: var(--color-primary);
 }
 

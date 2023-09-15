@@ -219,7 +219,7 @@ p > a.button {
     display: inline-block;
 }
 
-a:not(.button):focus {
+a:not(.button):focus-visible {
     color: var(--color-primary-dark);
 }
 

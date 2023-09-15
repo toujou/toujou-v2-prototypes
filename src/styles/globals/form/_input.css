@@ -26,7 +26,7 @@
     font-weight: var(--input-font-weight);
 }
 
-.input:focus {
+.input:focus-visible {
     border: var(--form-input-focus-border);
     outline: var(--form-input-focus-border);
     caret-color: var(--input-focus-caret-color);

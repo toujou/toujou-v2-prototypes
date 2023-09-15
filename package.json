@@ -96,6 +96,7 @@
     "@toujou/toujou-rating-stars": "^2.0.22",
     "@toujou/toujou-snackbar": "^2.0.16",
     "@toujou/toujou-spinner": "^2.0.6",
+    "@toujou/toujou-timeline": "^2.0.24",
     "@toujou/toujou-topbutton": "^2.0.17",
     "photoswipe-video-plugin": "^1.0.2",
     "skippy-links": "^1.0.4"

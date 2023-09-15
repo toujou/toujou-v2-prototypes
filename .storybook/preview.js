@@ -29,6 +29,7 @@ import "@toujou/toujou-media-info/lib";
 import "@toujou/toujou-rating-stars/lib";
 import "@toujou/toujou-snackbar/lib";
 import "@toujou/toujou-spinner/lib";
+import "@toujou/toujou-timeline/lib";
 import "@toujou/toujou-topbutton/lib";
 import "@toujou/toujou-input-password-toggle/lib";
 

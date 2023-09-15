@@ -289,7 +289,7 @@
     margin: var(--inpage-nav-cta-margin);
 }
 
-.button.inpage-nav__cta:focus {
+.button.inpage-nav__cta:focus-visible {
     background-color: var(--inpage-nav-cta-bg-color-hover);
     color: var(--inpage-nav-cta-color-hover);
 }
