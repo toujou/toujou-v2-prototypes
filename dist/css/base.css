@@ -902,12 +902,12 @@ figure {
     color: var(--main-nav-link-color);
 }
 
-.main-nav__link:focus {
+.main-nav__link:focus-visible {
     outline-color: var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
 
-.topbar[navigation-theme="dark"] .main-nav__link:focus {
+.topbar[navigation-theme="dark"] .main-nav__link:focus-visible {
     color: var(--main-nav-link-color-hover);
 }
 
@@ -1586,7 +1586,7 @@ figure {
     font-weight: var(--input-font-weight);
 }
 
-.input:focus {
+.input:focus-visible {
     border: var(--form-input-focus-border);
     outline: var(--form-input-focus-border);
     caret-color: var(--input-focus-caret-color);
@@ -4040,7 +4040,7 @@ p > a.button {
     display: inline-block;
 }
 
-a:not(.button):focus {
+a:not(.button):focus-visible {
     color: var(--color-primary-dark);
 }
 
