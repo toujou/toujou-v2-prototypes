@@ -105,6 +105,11 @@
 }
 
 @media screen and (min-width: 840px) {
+    .timeline[timeline-show-legend] {
+        --timeline-legend-display: flex;
+        --timeline-before-top: 84px;
+    }
+
     .timeline[timeline-direction="vertical"] {
         --timeline-display: flex;
         --timeline-before-top: 0;
@@ -114,7 +119,12 @@
     }
 
     .timeline[timeline-direction="horizontal"] {
+        --timeline-display: flex;
+        --timeline-flex-direction: column;
         --timeline-container-max-width: calc(100vw - 2rem);
+
+        flex-direction: var(--timeline-flex-direction);
+        gap: var(--timeline-gap);
     }
 }
 

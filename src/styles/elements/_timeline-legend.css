@@ -60,4 +60,14 @@
     .timeline[timeline-show-legend] .timeline-legend {
         --timeline-legend-display: flex;
     }
+
+    .timeline[timeline-direction="horizontal"] .timeline-legend {
+        --timeline-legend-display: flex;
+        --timeline-legend-width: fit-content;
+        --timeline-legend-margin: 0 auto;
+        --timeline-legend-list-flex-direction: row;
+
+        width: var(--timeline-legend-width);
+        margin: var(--timeline-legend-margin);
+    }
 }

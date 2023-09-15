@@ -36,10 +36,13 @@
 .timeline[timeline-direction="horizontal"] .timeline-item {
     --timeline-item-gap: var(--spacing-l);
     --timeline-item-flex-direction: row;
+    --timeline-item-padding: 0 0 var(--spacing-s);
 
     --timeline-item-year-before-top: 0;
     --timeline-item-year-before-left: 50%;
     --timeline-item-year-before-transform: translate(-50%, calc(-100% - var(--spacing-normal) + 1px));
+
+    padding: var(--timeline-item-padding);
 }
 
 .timeline-item__year {
@@ -67,10 +70,6 @@
 }
 
 @media screen and (min-width: 840px) {
-    .timeline[timeline-show-legend] {
-        --timeline-legend-display: flex;
-    }
-
     .timeline[timeline-direction="vertical"] .timeline-item {
         --timeline-item-max-width: var(--content-max-width);
         --timeline-item-display: grid;
