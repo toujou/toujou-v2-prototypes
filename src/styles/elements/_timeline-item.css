@@ -101,4 +101,8 @@
     .timeline[timeline-direction="vertical"] .timeline-item__year::before {
         display: none;
     }
+
+    .timeline[timeline-direction="horizontal"] .timeline-item {
+        --timeline-item-width: fit-content;
+    }
 }
