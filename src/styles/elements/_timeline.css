@@ -131,6 +131,10 @@
         --timeline-width: calc(var(--content-max-width) + var(--timeline-legend-width) + var(--timeline-gap));
     }
 
+    .timeline[timeline-direction="vertical"][timeline-show-legend]::before {
+        transform: translateX(calc(calc(var(--timeline-legend-width) / 2) + calc(var(--timeline-gap) / 2)));
+    }
+
     .timeline[timeline-direction="horizontal"] {
         --timeline-display: flex;
         --timeline-flex-direction: column;
