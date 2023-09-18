@@ -121,7 +121,6 @@
         --timeline-display: flex;
         --timeline-before-top: 0;
         --timeline-before-left: 50%;
-        --timeline-width: fit-content;
 
         gap: var(--timeline-gap);
     }
@@ -140,6 +139,7 @@
         --timeline-display: flex;
         --timeline-flex-direction: column;
         --timeline-container-max-width: calc(100vw - 2rem);
+        --timeline-width: fit-content;
 
         flex-direction: var(--timeline-flex-direction);
         gap: var(--timeline-gap);
