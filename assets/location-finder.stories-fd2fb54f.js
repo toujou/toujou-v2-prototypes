@@ -1,4 +1,4 @@
-import{T as Sm}from"./badgeCustomConfig-e7a687d5.js";import{j as Zo}from"./jsx-runtime-ac05983f.js";import{u as Qh}from"./index-a9a8c754.js";import{b as kh,x as Tm,i as Qu,s as Im,y as Ma}from"./lit-element-6fe74b4f.js";import{c as pn}from"./_commonjsHelpers-87174ba5.js";import{b as Am,d as Pm,c as km,e as Cm,a as zm,r as Mm}from"./index-f7f131ee.js";import"./index-e0ddb630.js";function Ch(v){const b=Object.assign({h1:"h1",h2:"h2",pre:"pre",code:"code"},Qh(),v.components);return Zo.jsxs(Zo.Fragment,{children:[Zo.jsx(b.h1,{id:"location-finder",children:"Location finder"}),`
+import{T as Sm}from"./badgeCustomConfig-e7a687d5.js";import{j as Zo}from"./jsx-runtime-ac05983f.js";import{u as Qh}from"./index-a9a8c754.js";import{b as kh,x as Tm,i as Qu,s as Im,y as Ma}from"./lit-element-6fe74b4f.js";import{c as pn}from"./_commonjsHelpers-87174ba5.js";import{b as Am,d as Pm,c as km,e as Cm,a as zm,r as Mm}from"./index-d25fa745.js";import"./index-e0ddb630.js";function Ch(v){const b=Object.assign({h1:"h1",h2:"h2",pre:"pre",code:"code"},Qh(),v.components);return Zo.jsxs(Zo.Fragment,{children:[Zo.jsx(b.h1,{id:"location-finder",children:"Location finder"}),`
 `,Zo.jsx(b.h2,{id:"example-from-toujou",children:"Example from TOUJOU"}),`
 `,Zo.jsx(b.pre,{children:Zo.jsx(b.code,{className:"language-html",children:`<toujou-location-finder
     class="location-finder"
@@ -1439,4 +1439,4 @@ toujou-location-finder-teaser[highlighted] .teaser .teaser__title {
         </toujou-location-finder>
     \`;
 }`,...(Yh=($h=Wu.parameters)==null?void 0:$h.docs)==null?void 0:Yh.source}}};const Av=["LocationFinder"];export{Wu as LocationFinder,Av as __namedExportsOrder,Iv as default};
-//# sourceMappingURL=location-finder.stories-ad0cd77e.js.map
+//# sourceMappingURL=location-finder.stories-fd2fb54f.js.map
