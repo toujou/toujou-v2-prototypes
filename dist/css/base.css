@@ -2641,7 +2641,7 @@ blockquote:not(.blockquote__blockquote) {
     --blockquote-tag-icon-image: var(--icon-blockquote-round);
 
     z-index: var(--blockquote-tag-z-index);
-    margin: var(--blockquote-tag-margin);
+    margin: var(--blockquote-tag-margin) !important;
     width: var(--blockquote-tag-width);
     max-width: var(--blockquote-tag-max-width);
     position: var(--blockquote-tag-position);
@@ -2676,6 +2676,7 @@ blockquote:not(.blockquote__blockquote) + .blockquote__author {
     max-width: var(--content-max-width);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: var(--spacing-between-elements-normal);
 }
 
 blockquote:not(.blockquote__blockquote) + .blockquote__author::before {
@@ -3013,7 +3014,7 @@ p > .button {
     --chapter-background-color: var(--color-white);
 }
 
-.chapter > *:not(hr, .divider),
+.chapter > *:not(hr, .divider, blockquote),
 .chapter > span:first-child + * {
     margin-top: 0 !important;
 }

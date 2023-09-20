@@ -15,7 +15,7 @@ const Template = () => {
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
-            
+
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
@@ -44,7 +44,7 @@ const Template = () => {
                 </li>
             </ol>
         </toujou-breadcrumb>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -53,7 +53,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-content-card-grid class="content-card-grid">
             <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
@@ -67,8 +67,8 @@ const Template = () => {
                         zur Beschreibung
                     </a>
                 </div>
-            </toujou-content-card>   
-        
+            </toujou-content-card>
+
             <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
                     <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
@@ -81,9 +81,9 @@ const Template = () => {
                         zur Beschreibung
                     </a>
                 </div>
-            </toujou-content-card>   
+            </toujou-content-card>
         </toujou-content-card-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -91,7 +91,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-content-card-grid class="content-card-grid">
             <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
@@ -105,9 +105,9 @@ const Template = () => {
                         zur Beschreibung
                     </a>
                 </div>
-            </toujou-content-card>   
+            </toujou-content-card>
         </toujou-content-card-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">

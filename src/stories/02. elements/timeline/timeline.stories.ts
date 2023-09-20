@@ -212,7 +212,7 @@ const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
 export const Timeline = Template.bind({});
 
 Timeline.args = {
-    direction: 'horizontal',
+    direction: 'vertical',
     elementDesign: 'default',
     showLegend: false,
 }

@@ -50,7 +50,7 @@
     --chapter-background-color: var(--color-white);
 }
 
-.chapter > *:not(hr, .divider),
+.chapter > *:not(hr, .divider, blockquote),
 .chapter > span:first-child + * {
     margin-top: 0 !important;
 }
