@@ -106,7 +106,7 @@
     /* stylelint-enable property-no-vendor-prefix */
 }
 
-.blockquote__text,
+.blockquote__content *,
 .blockquote__blockquote * {
     font-size: var(--blockquote-text-font-size);
     line-height: var(--blockquote-text-line-height);
@@ -114,7 +114,7 @@
     color: var(--blockquote-color);
 }
 
-.blockquote__text a {
+.blockquote__content a {
     word-break: break-word;
 }
 
