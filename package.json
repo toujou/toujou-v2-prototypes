@@ -98,6 +98,7 @@
     "@toujou/toujou-spinner": "^2.0.6",
     "@toujou/toujou-timeline": "^2.0.25",
     "@toujou/toujou-topbutton": "^2.0.17",
+    "@types/web": "^0.0.119",
     "photoswipe-video-plugin": "^1.0.2",
     "skippy-links": "^1.0.4"
   },
