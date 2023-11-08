@@ -215,6 +215,80 @@ const Template = () => {
 
 	        </toujou-form-row>
 
+	        <toujou-form-row class="row form__row">
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-2" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-2"
+                           type="text" name="tx_form_formframework[testform-1000091][text-2]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-3" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-3"
+                           type="text" name="tx_form_formframework[testform-1000091][text-3]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+	        </toujou-form-row>
+
+	        <toujou-input-group class="input-group input-group--text">
+                <label class="input-label" for="formgridtest-3341-text-1">This is an input</label>
+                <span class="input-description">This input is NOT inside a form row</span>
+                <input data-element-type="Text" data-pristine-required-message-de="Der angegebene Wert ist leer." class=" input input--text" id="formgridtest-3341-text-1" type="text" name="tx_form_formframework[formgridtest-3341][text-1]" value="">
+            </toujou-input-group>
+
+	        <toujou-form-row class="row form__row">
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-2" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-2"
+                           type="text" name="tx_form_formframework[testform-1000091][text-2]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-3" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-3"
+                           type="text" name="tx_form_formframework[testform-1000091][text-3]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+	        </toujou-form-row>
+
         </form>
     `;
 };

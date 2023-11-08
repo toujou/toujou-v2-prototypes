@@ -11,3 +11,11 @@
     padding-top: var(--form-row-padding-top);
     align-items: var(--form-row-align-items);
 }
+
+.input-group + .form__row {
+    margin-top: var(--spacing-normal);
+}
+
+.form__row + .form__row {
+    margin-top: var(--spacing-m);
+}

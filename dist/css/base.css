@@ -1434,6 +1434,14 @@ figure {
     align-items: var(--form-row-align-items);
 }
 
+.input-group + .form__row {
+    margin-top: var(--spacing-normal);
+}
+
+.form__row + .form__row {
+    margin-top: var(--spacing-m);
+}
+
 .form-progress {
     --form-progress-display: flex;
     --form-progress-display-direction: column;
@@ -1697,12 +1705,12 @@ input[type=number]::-webkit-outer-spin-button {
     grid-column: span 12;
 }
 
-:is(.input-group, .form-row, input[hidden], .fieldset) + .input-group {
+:is(.input-group, .form__row, input[hidden], .fieldset) + .input-group {
     margin-top: var(--input-group-margin-between);
 }
 
-.form-row .input-group,
-.form-row :is(.input-group, .form-row, input[hidden], .fieldset) + .input-group {
+.form__row .input-group,
+.form__row :is(.input-group, .form__row, input[hidden], .fieldset) + .input-group {
     margin-top: 0;
 }
 
