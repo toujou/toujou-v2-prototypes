@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -32,7 +32,7 @@ interface SpinnerStoryProps {
     isCenteredOnPage: boolean;
 }
 
-const Template: Story<SpinnerStoryProps> = (args: SpinnerStoryProps) => {
+const Template: StoryFn<SpinnerStoryProps> = (args: SpinnerStoryProps) => {
     return `<toujou-spinner class="spinner" ${args.isCenteredOnPage ? 'centered-on-page' : ''}></toujou-spinner>`
 };
 

@@ -1,9 +1,8 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import headerSliderDocs from './header-slider.docs.mdx';
-
 
 export default {
     title: 'COMPONENTS/Header',
@@ -100,10 +99,10 @@ interface HeaderSliderStoryProps {
     contentAlignment: string,
 }
 
-const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) => {
+const Template: StoryFn<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) => {
     return `
         <header class="header" image-height="${args.imageHeight}" header-type="slider">
-        
+
             <toujou-slider
                 class="slider"
                 aria-label="Toujou slider example"
@@ -119,7 +118,7 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                             <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                         </button>
                     </div>
-                    
+
                     <div class="splide__track slider__track">
                         <ul class="splide__list slider__list">
                             <li class="splide__slide slider__slide" data-splide-interval="1000">
@@ -138,7 +137,7 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                                         <button is="toujou-button" class="button" button-variant="${args.accentColor}" button-type="default" button-size="normal">Hello world</button>
                                     </div>
                                 </div>
-                            </li>  
+                            </li>
                             <li class="splide__slide slider__slide" data-splide-interval="1000">
                                 <div class="slider__item" slot="slider-item">
                                     <toujou-single-media class="single-media">
@@ -154,7 +153,7 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     </div>
                                 </div>
-                            </li>  
+                            </li>
                             <li class="splide__slide slider__slide" data-splide-interval="1000">
                                 <div class="slider__item" slot="slider-item">
                                     <toujou-single-media class="single-media">
@@ -170,21 +169,21 @@ const Template: Story<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps) =
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     </div>
                                 </div>
-                            </li>                         
+                            </li>
                         </ul>
-                    </div>    
+                    </div>
                     <div class="splide__progress slider-progress">
                         <div class="splide__progress__bar slider-progress__bar"></div>
-                    </div>  
+                    </div>
                 </div>
-                
+
                 <toujou-slider-count class="slider-count">
                     <span class="slider-count__current"></span>
                     <span class="slider-count__separator">of</span>
                     <span class="slider-count__total"></span>
                 </toujou-slider-count>
             </toujou-slider>
-        
+
         </header>
     `
 };

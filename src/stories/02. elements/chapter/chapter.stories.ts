@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -46,7 +46,7 @@ interface ChapterStoryProps {
     hasNoPaddingAttr: boolean,
 }
 
-const Template: Story<ChapterStoryProps> = (args: ChapterStoryProps) => {
+const Template: StoryFn<ChapterStoryProps> = (args: ChapterStoryProps) => {
     return `
         <section class="chapter chapter--${args.variant}" ${args.hasNoPaddingAttr ? 'no-padding' : ''}>
             <toujou-text-block class="text-block" text-block-column-count="1">

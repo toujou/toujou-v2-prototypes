@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface TableStoryProps {
     tableAlignment: string
 }
 
-const Template: Story<TableStoryProps> = (args: TableStoryProps) => {
+const Template: StoryFn<TableStoryProps> = (args: TableStoryProps) => {
     return `
         <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
@@ -43,7 +43,7 @@ const Template: Story<TableStoryProps> = (args: TableStoryProps) => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-table-container class="table-container">
             <table text-alignment="${args.tableAlignment}" class="table">
                 <caption class="table__caption">
@@ -87,7 +87,7 @@ const Template: Story<TableStoryProps> = (args: TableStoryProps) => {
                 </tr>
             </table>
         </toujou-table-container>
-        
+
         <toujou-table-container class="table-container">
             <table text-alignment="${args.tableAlignment}" class="table">
                 <tr>

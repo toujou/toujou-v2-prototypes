@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -58,7 +58,7 @@ interface MediaDateStoryProps {
     singleYear: boolean;
 }
 
-const Template: Story<MediaDateStoryProps> = (args: MediaDateStoryProps) => {
+const Template: StoryFn<MediaDateStoryProps> = (args: MediaDateStoryProps) => {
     return `
         <style>
             body {

@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -46,7 +46,7 @@ interface CoverSliderStoryProps {
     isSlider: boolean,
 }
 
-const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => {
+const Template: StoryFn<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => {
     return `
         <toujou-cover-slider class="cover-slider" aria-label="Toujou cover slider example">
             <div class="splide slider__slider">
@@ -58,7 +58,7 @@ const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => 
                         <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                     </button>
                 </div>
-                
+
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide cover-slider__item" element-design="${args.elementDesign}">
@@ -123,7 +123,7 @@ const Template: Story<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => 
                         ` : ''}
 
                     </ul>
-                </div>      
+                </div>
             </div>
         </toujou-cover-slider>
     `;

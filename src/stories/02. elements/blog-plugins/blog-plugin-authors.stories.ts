@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -33,7 +33,7 @@ interface BlogPluginAuthorsStoryProps {
     hasAvatar: boolean
 }
 
-const Template: Story<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsStoryProps) => {
+const Template: StoryFn<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsStoryProps) => {
     return `
         <div class="post-authors">
             <div class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person" ${args.hasAvatar ? '' : 'no-avatar'}>
@@ -42,7 +42,7 @@ const Template: Story<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsSto
                         <img src="https://i.pravatar.cc/80?img=27" alt="author avatar" class="post-author__avatar">
                     </figure>
                 ` : ''}
-                
+
                 <div class="post-author__meta">
                     <span class="post-author__name" itemprop="name">Han Solo</span>
                     <span class="post-author__info">
@@ -71,7 +71,7 @@ const Template: Story<BlogPluginAuthorsStoryProps> = (args: BlogPluginAuthorsSto
                     </div>
                 </toujou-social-media-bar>
             </div>
-            
+
             <div class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person" ${args.hasAvatar ? '' : 'no-avatar'}>
                 ${args.hasAvatar ? `
                     <figure class="post-author__figure">

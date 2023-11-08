@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
 // @ts-ignore
@@ -32,7 +32,7 @@ interface ToujouRequireInputStoryProps {
     isRequired: any;
 }
 
-const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputStoryProps) => {
+const Template: StoryFn<ToujouRequireInputStoryProps> = (args: ToujouRequireInputStoryProps) => {
     return `
         <style>
             body {
@@ -41,12 +41,12 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-            
+
             <toujou-input-group class="input-group ${args.isRequired ? 'input-group--required' : ''}">
                 <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                 <span class="input-description">This is a description</span>
@@ -71,7 +71,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                        value="">
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--telephone ${args.isRequired ? 'input-group--required' : ''}">
                 <label for="testform-1000091-email-1" class="input-label">Telephone number</label>
                 <span class="input-description">This is a description</span>
@@ -85,7 +85,7 @@ const Template: Story<ToujouRequireInputStoryProps> = (args: ToujouRequireInputS
                        value="">
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-	
+
         </form>
     `;
 };

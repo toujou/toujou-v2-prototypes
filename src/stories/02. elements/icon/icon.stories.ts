@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -182,7 +182,7 @@ const iconNames = [
 
 interface IconStoryProps { iconSize: string; iconColor: string; }
 
-const Template: Story<IconStoryProps> = (args: IconStoryProps) => {
+const Template: StoryFn<IconStoryProps> = (args: IconStoryProps) => {
 
     const iconGrid = document.createElement('div');
     iconGrid.classList.add('icon-grid');

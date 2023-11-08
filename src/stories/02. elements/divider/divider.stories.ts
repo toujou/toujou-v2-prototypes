@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface DividerStoryProps {
     dividerType: string,
 }
 
-const Template: Story<DividerStoryProps> = (args: DividerStoryProps) => {
+const Template: StoryFn<DividerStoryProps> = (args: DividerStoryProps) => {
     return `
         <hr class="divider" divider-type="${args.dividerType}">
     `

@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -47,7 +47,7 @@ interface BlockquoteGridStoryProps {
     direction: string;
 }
 
-const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProps) => {
+const Template: StoryFn<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProps) => {
     return `
         <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="${args.gridCount}">
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="default">
@@ -57,7 +57,7 @@ const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProp
                 </blockquote>
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
-            
+
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="default">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
@@ -65,7 +65,7 @@ const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProp
                 </blockquote>
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
-            
+
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="default">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
@@ -73,7 +73,7 @@ const Template: Story<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProp
                 </blockquote>
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
-            
+
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="default">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">

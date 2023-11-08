@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -51,7 +51,7 @@ function renderText() {
     `
 }
 
-const Template: Story<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTextStoryProps) => {
+const Template: StoryFn<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTextStoryProps) => {
     return `
         <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}" fullwidth>
             <toujou-grid-column class="grid-column">

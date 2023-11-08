@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
 // @ts-ignore
@@ -18,7 +18,7 @@ export default {
 
 interface ToujouRequireInputStoryProps {}
 
-const Template: Story<ToujouRequireInputStoryProps> = () => {
+const Template: StoryFn<ToujouRequireInputStoryProps> = () => {
     return `
         <style>
             body {
@@ -27,9 +27,9 @@ const Template: Story<ToujouRequireInputStoryProps> = () => {
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
 
@@ -45,11 +45,11 @@ const Template: Story<ToujouRequireInputStoryProps> = () => {
                        value="">
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-	        
-	        <toujou-input-group class="input-group" input-group-type="submit">			
+
+	        <toujou-input-group class="input-group" input-group-type="submit">
         		<button is="toujou-button" class="button" button-variant="primary" type="submit" name="tx_form_formframework[selectWithChips-1000064][__currentPage]" value="1">Submit</button>
 	        </toujou-input-group>
-	
+
         </form>
     `;
 };

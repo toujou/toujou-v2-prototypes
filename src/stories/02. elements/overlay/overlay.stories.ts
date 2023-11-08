@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -76,7 +76,7 @@ function checkForExistingCookie() {
     document.cookie = 'toujou-overlay-super-overlay= ; expires = Thu, 01 Jan 1970 00:00:00 GMT';
 }
 
-const Template: Story<OverlayStoryProps> = (args: OverlayStoryProps) => {
+const Template: StoryFn<OverlayStoryProps> = (args: OverlayStoryProps) => {
     checkForExistingCookie()
 
     return `
@@ -103,23 +103,23 @@ const Template: Story<OverlayStoryProps> = (args: OverlayStoryProps) => {
 
         <toujou-overlay id="super-overlay" class="overlay" overlay-theme="${args.overlayTheme}">
             <section class="overlay__infos">
-            
+
                 ${args.showLogo ? `
                     <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
                 ` : ``}
-                
+
                 <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
-                
+
                 <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
                 <section class="overlay__buttons">
                     <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
                     <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
                 </section>
-                
+
                 ${args.showConclusionText ? `
                     <p class="overlay__conclusion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 ` : ``}
-                
+
                 ${args.showCloseButton ? `
                     <button class="button overlay__close-button">
                         <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m"></toujou-icon>

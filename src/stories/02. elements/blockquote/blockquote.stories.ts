@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -47,7 +47,7 @@ interface BlockquoteStoryProps {
     elementDesign: string;
 }
 
-const Template: Story<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
+const Template: StoryFn<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
     return `
         <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="${args.elementDesign}">
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />

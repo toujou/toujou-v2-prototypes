@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -83,7 +83,7 @@ function createMediaElement(mediaType: string) {
     return singleMedia;
 }
 
-const Template: Story<SingleMediaStoryProps> = (args: SingleMediaStoryProps) => {
+const Template: StoryFn<SingleMediaStoryProps> = (args: SingleMediaStoryProps) => {
     const mediaGrid = document.createElement('toujou-media-grid');
     mediaGrid.classList.add('media-grid');
     mediaGrid.setAttribute('media-grid-column-number', args.numberOfCols.toString());

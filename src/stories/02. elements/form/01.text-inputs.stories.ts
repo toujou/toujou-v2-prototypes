@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouTextInputsStoryProps {
     state: string;
 }
 
-const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStoryProps) => {
+const Template: StoryFn<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStoryProps) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
 
     return `
@@ -44,12 +44,12 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-            
+
             <toujou-input-group class="input-group input-group--text input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                 <span class="input-description">This is a description</span>
@@ -63,7 +63,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        ${disabledAttribute}>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--email input-group--email input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-email-1" class="input-label">Email address</label>
                 <span class="input-description">This is a description</span>
@@ -78,7 +78,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        ${disabledAttribute}>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--telephone input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-telephone-1" class="input-label">Telephone number</label>
                 <span class="input-description">This is a description</span>
@@ -108,7 +108,7 @@ const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStory
                        ${disabledAttribute}>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--number input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-number-1" class="input-label">Number</label>
                 <span class="input-description">This is a description</span>

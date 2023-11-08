@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -74,7 +74,7 @@ interface ToujouImageCardStoryProps {
     elementDesign: string;
 }
 
-const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
+const Template: StoryFn<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
     return `
         <toujou-teaser class="teaser" teaser-type="${args.teaserType}" image-width="${args.imageWidth}" image-side="${args.imageSide}" element-design="${args.elementDesign}">
             <div class="teaser__figure">
@@ -93,7 +93,7 @@ const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryPr
             <div class="teaser__content">
                 <h3>Nice headline</h3>
                 <p>This is a simple element containing a headline and this text. There are no restrictions for the amount of content. So feel free to add as much information as long as it helps your story or your customer.</p>
-            </div> 
+            </div>
         </toujou-teaser>
     `;
 };

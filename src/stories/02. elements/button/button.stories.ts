@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -107,7 +107,8 @@ interface ButtonStoryProps {
     iconPosition: string;
 }
 
-const Template: Story<ButtonStoryProps> = (args: ButtonStoryProps) => {
+const Template: StoryFn<ButtonStoryProps> = (args: ButtonStoryProps) => {
+    // @ts-ignore
     let buttonEl = document.createElement('button', { is: 'toujou-button' });
 
     // CSS CLASSES

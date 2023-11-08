@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -58,7 +58,7 @@ interface DetailsAccordionStoryProps {
     elementDesign: string;
 }
 
-const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStoryProps) => {
+const Template: StoryFn<DetailsAccordionStoryProps> = (args: DetailsAccordionStoryProps) => {
     return `
         <toujou-details-accordion class="details-accordion" ${args.singleExpandMode ? 'single-expand-mode' : ''}>
             <toujou-details id="details-1" class="details" ${args.expandedItem === 'first' || args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
@@ -75,12 +75,12 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
                     </toujou-text-block>
                 </div>
             </toujou-details>
-            
+
             <toujou-details id="details-2" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">Text with image</h3>
                 <p slot="summary" class="details__subtitle">I am a subtitle which complements the title</p>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
-                
+
                 <div slot="content">
                     <toujou-text-block class="text-block" text-block-media-position="inside-right">
                         <toujou-text-block-column class="text-block-column">
@@ -94,7 +94,7 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
                     </toujou-text-block>
                 </div>
             </toujou-details>
-            
+
             <toujou-details id="details-3" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">I am just another simple title</h3>
                 <ul slot="summary" class="details__subtitle details__subtitle-list">
@@ -114,7 +114,7 @@ const Template: Story<DetailsAccordionStoryProps> = (args: DetailsAccordionStory
                     </toujou-text-block>
                 </div>
             </toujou-details>
-            
+
             <toujou-details id="details-4" class="details" ${args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                 <h3 slot="summary" class="details__title">This is the summary</h3>
                 <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>

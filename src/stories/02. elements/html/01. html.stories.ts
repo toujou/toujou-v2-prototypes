@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface HtmlStoryProps {
     isFullwidth: boolean,
 }
 
-const Template: Story<HtmlStoryProps> = (args: HtmlStoryProps) => {
+const Template: StoryFn<HtmlStoryProps> = (args: HtmlStoryProps) => {
     return `
         <toujou-html-container class="html-container" ${args.isFullwidth ? 'fullwidth' : ''}>
             <div style="border: 3px dashed lightcoral; padding: 2rem;">

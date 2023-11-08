@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -70,7 +70,7 @@ function renderThreeColumns(htmlOnTheLeft: boolean) {
     `
 }
 
-const Template: Story<HtmlWithTextStoryProps> = (args: HtmlWithTextStoryProps) => {
+const Template: StoryFn<HtmlWithTextStoryProps> = (args: HtmlWithTextStoryProps) => {
     let columnLayout = '33-left';
     let htmlOnTheLeft = true;
     let numberOfColumns = 2;

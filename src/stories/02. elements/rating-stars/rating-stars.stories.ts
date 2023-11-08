@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -51,7 +51,7 @@ interface RatingStarsStoryProps {
     size: string
 }
 
-const Template: Story<RatingStarsStoryProps> = (args: RatingStarsStoryProps) => {
+const Template: StoryFn<RatingStarsStoryProps> = (args: RatingStarsStoryProps) => {
     return `
         <toujou-rating-stars
             class="rating-stars"

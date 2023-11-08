@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -73,7 +73,7 @@ function createEvent(snackbarVariant: string, snackbarType: string, snackbarDura
     });
 }
 
-const Template: Story<SnackbarStoryProps> = (args: SnackbarStoryProps) => {
+const Template: StoryFn<SnackbarStoryProps> = (args: SnackbarStoryProps) => {
     window.addEventListener('click', (event: Event) => {
         const clickTarget = event.target as HTMLElement;
         if (clickTarget.getAttribute('id') === "snackbarTriggerButton") {
@@ -82,7 +82,7 @@ const Template: Story<SnackbarStoryProps> = (args: SnackbarStoryProps) => {
     })
     return `
         <button id="snackbarTriggerButton" class="button">Show snackbar</button>
-        <toujou-snackbar class="snackbar" visible aria-live="assertive" tabindex="-1"></toujou-snackbar>        
+        <toujou-snackbar class="snackbar" visible aria-live="assertive" tabindex="-1"></toujou-snackbar>
     `;
 };
 

@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -18,7 +18,7 @@ export default {
     tags: ['autodocs']
 } as Meta;
 
-const Template: Story = () => {
+const Template: StoryFn = () => {
     return `
         <skippy-links></skippy-links>
         <section id="section-one" class="chapter chapter--default" skippy-links-label="Section One">
@@ -77,7 +77,7 @@ const Template: Story = () => {
                 </toujou-text-block-column>
             </toujou-text-block>
         </section>
-        
+
     `;
 };
 

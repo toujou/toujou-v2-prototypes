@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
 // @ts-ignore
@@ -32,7 +32,7 @@ interface ToujouToggleStoryProps {
     isDisabled: any;
 }
 
-const Template: Story<ToujouToggleStoryProps> = (args: ToujouToggleStoryProps) => {
+const Template: StoryFn<ToujouToggleStoryProps> = (args: ToujouToggleStoryProps) => {
     return `
         <style>
             body {
@@ -41,12 +41,12 @@ const Template: Story<ToujouToggleStoryProps> = (args: ToujouToggleStoryProps) =
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-            
+
             <toujou-input-group class="input-group input-group--toggle ${args.isDisabled ? 'input-group--disabled' : ''}">
                 <div class="toggle-group">
                     <input data-pristine-required-message-de="The given subject was empty."
@@ -59,10 +59,10 @@ const Template: Story<ToujouToggleStoryProps> = (args: ToujouToggleStoryProps) =
                            ${args.isDisabled ? 'disabled' : ''}>
                     <label class="toggle-group__label" for="testform-1000091-multicheckbox-1_1">Toggle beautiful label</label>
                     <span class="input-description input-description--toggle-group">This is a description</span>
-                    <span class="pristine-error form__error form-error--toggle-group">The given subject was empty.</span>			
+                    <span class="pristine-error form__error form-error--toggle-group">The given subject was empty.</span>
                 </div>
             </toujou-input-group>
-	
+
         </form>
     `;
 };

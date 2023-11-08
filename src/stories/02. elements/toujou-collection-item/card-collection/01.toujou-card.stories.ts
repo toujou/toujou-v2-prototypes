@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouCardStoryProps {
     elementDesign: any;
 }
 
-const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
+const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
     return `
         <ul class="card-collection">
             <li class="card-collection__item">
@@ -42,7 +42,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>

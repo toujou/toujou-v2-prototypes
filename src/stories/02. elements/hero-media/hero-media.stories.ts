@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -46,13 +46,13 @@ interface HeroMediaStoryProps {
     headerAlignment: string,
 }
 
-const Template: Story<HeroMediaStoryProps> = (args: HeroMediaStoryProps) => {
+const Template: StoryFn<HeroMediaStoryProps> = (args: HeroMediaStoryProps) => {
     return `
         <main>
             <a href="#" class="hero-media" headline-alignment="${args.headerAlignment}">
                 <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="hero-media__media">
                 <h3 class="hero-media__title font--${args.headerSize}">Hero Media</h3>
-                
+
                 <toujou-media-info class="media-info">
                     <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                         <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>

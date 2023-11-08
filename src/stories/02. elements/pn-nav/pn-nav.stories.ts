@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -46,13 +46,13 @@ interface PNNavStoryProps {
     hideTitle: boolean,
 }
 
-const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
+const Template: StoryFn<PNNavStoryProps> = (args: PNNavStoryProps) => {
     return `
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
-            
+
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
@@ -69,7 +69,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 </li>
             </ol>
         </toujou-breadcrumb>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -78,7 +78,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="3">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -99,7 +99,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
@@ -118,7 +118,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                         <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                     </button>
                 </div>
-                
+
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide" data-splide-interval="6000">
@@ -137,19 +137,19 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                             </toujou-single-media>
                         </li>
                     </ul>
-                </div>      
+                </div>
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>
             </div>
-            
+
             <toujou-slider-count class="slider-count">
                 <span class="slider-count__current"></span>
                 <span class="slider-count__separator">of</span>
                 <span class="slider-count__total"></span>
             </toujou-slider-count>
         </toujou-slider>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -158,7 +158,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="2">
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
@@ -167,7 +167,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 </blockquote>
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
-            
+
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
@@ -177,7 +177,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
             </toujou-blockquote>
 
         </toujou-blockquote-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -185,8 +185,8 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>
-        </toujou-text-block>  
-        
+        </toujou-text-block>
+
         <toujou-pn-nav
             class="pn-nav"
             aria-label="Page navigation buttons"
@@ -200,7 +200,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                 <span class="pn-nav__button">
                     <toujou-icon class="icon pn-nav__icon" icon-name="arrow-left" icon-size="m" icon-color="background"></toujou-icon>
                 </span>
-                
+
                 ${args.hideImage === false || args.hideTitle === false ? `
                     <span class="pn-nav__content">
                         ${args.hideTitle === false ? `
@@ -227,7 +227,7 @@ const Template: Story<PNNavStoryProps> = (args: PNNavStoryProps) => {
                     </span>
                 ` : ''}
             </a>
-        </toujou-pn-nav>   
+        </toujou-pn-nav>
     `
 };
 

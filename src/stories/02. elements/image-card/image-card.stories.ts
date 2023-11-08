@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -100,7 +100,7 @@ interface ToujouImageCardStoryProps {
     cardVariant: string
 }
 
-const Template: Story<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
+const Template: StoryFn<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
 
     const toujouImageCardGrid = document.createElement('toujou-image-card-grid');
     toujouImageCardGrid.classList.add('image-card-grid');

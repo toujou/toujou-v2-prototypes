@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -59,7 +59,7 @@ interface ContentCardStoryProps {
     hasLink: boolean;
 }
 
-const Template: Story<ContentCardStoryProps> = (args: ContentCardStoryProps) => {
+const Template: StoryFn<ContentCardStoryProps> = (args: ContentCardStoryProps) => {
 
     const contentCardGrid = document.createElement('toujou-content-card-grid');
     contentCardGrid.classList.add('content-card-grid');
@@ -82,7 +82,7 @@ const Template: Story<ContentCardStoryProps> = (args: ContentCardStoryProps) => 
             <div class="content-card__content">
                 <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
                 <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                
+
                 ${args.hasLink ? `
                     <span class="content-card__button">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>

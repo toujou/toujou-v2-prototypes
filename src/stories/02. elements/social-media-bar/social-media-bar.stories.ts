@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -57,9 +57,9 @@ interface SliderStoryProps {
     isInline: boolean;
 }
 
-const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
+const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
     const iconSize = args.isInline ? 'xl' : 'xxl';
-    return `       
+    return `
         <toujou-social-media-bar class="social-media-bar" element-design="${args.elementDesign}" ${args.hideHeadline ? 'no-headline' : ''} ${args.isInline ? 'inline' : ''}>
             ${args.hideHeadline ? '' : `<h3 class="social-media-bar__headline">Get in touch</h3>`}
             <div class="social-media-bar__links">

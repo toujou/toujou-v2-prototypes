@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -58,7 +58,7 @@ interface TimelineStoryProps {
     showLegend: boolean;
 }
 
-const Template: Story<TimelineStoryProps> = (args: TimelineStoryProps) => {
+const Template: StoryFn<TimelineStoryProps> = (args: TimelineStoryProps) => {
     return `
         <toujou-timeline
             class="timeline"

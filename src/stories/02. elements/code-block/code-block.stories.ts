@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -33,11 +33,11 @@ interface CodeBlockStoryProps {
     showLanguageTag: boolean,
 }
 
-const Template: Story<CodeBlockStoryProps> = (args: CodeBlockStoryProps) => {
+const Template: StoryFn<CodeBlockStoryProps> = (args: CodeBlockStoryProps) => {
     return `
         <toujou-code-block class="code-block">
             <pre class="code-block__pre"><code class="code-block__code hljs javascript"><span class="hljs-keyword">const</span> test = <span class="hljs-string">"This is a variable"</span>;<span class="hljs-function">
-    
+
 <span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">a, b</span>) </span>{
     <span class="hljs-keyword">return</span> a + b;
 }</code></pre>

@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,8 +33,8 @@ interface TextBlockMediaAboveStoryProps {
     imageAspectRatio: string;
 }
 
-const Template: Story<TextBlockMediaAboveStoryProps> = (args: TextBlockMediaAboveStoryProps) => {
-    return `       
+const Template: StoryFn<TextBlockMediaAboveStoryProps> = (args: TextBlockMediaAboveStoryProps) => {
+    return `
         <toujou-text-block class="text-block" text-block-column-count="2" text-block-media-position="above">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
@@ -75,7 +75,7 @@ const Template: Story<TextBlockMediaAboveStoryProps> = (args: TextBlockMediaAbov
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-column-count="2" text-block-third-direction="left" " text-block-media-position="above">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
@@ -116,7 +116,7 @@ const Template: Story<TextBlockMediaAboveStoryProps> = (args: TextBlockMediaAbov
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-column-count="2" text-block-third-direction="right" text-block-media-position="above">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
@@ -157,7 +157,7 @@ const Template: Story<TextBlockMediaAboveStoryProps> = (args: TextBlockMediaAbov
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-column-count="3" text-block-media-position="above">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
@@ -217,7 +217,7 @@ const Template: Story<TextBlockMediaAboveStoryProps> = (args: TextBlockMediaAbov
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-column-count="4" text-block-media-position="above">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">

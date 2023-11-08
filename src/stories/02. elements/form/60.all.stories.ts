@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouAllInputsStoryProps {
     state: string;
 }
 
-const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryProps) => {
+const Template: StoryFn<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryProps) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
 
     return `
@@ -44,9 +44,9 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
 
@@ -63,7 +63,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                        ${disabledAttribute}>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--email input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-email-1" class="input-label">Email address</label>
                 <span class="input-description">This is a description</span>
@@ -78,7 +78,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                        ${disabledAttribute}>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--telephone input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-email-1" class="input-label">Telephone number</label>
                 <span class="input-description">This is a description</span>
@@ -108,7 +108,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                        ${disabledAttribute}>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--number input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label for="testform-1000091-number-1" class="input-label">Number</label>
                 <span class="input-description">This is a description</span>
@@ -124,7 +124,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                        ${disabledAttribute}>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--single-select ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
 				<label class="input-label" for="testform-1000091-singleselect-1">Single select</label>
 				<span class="input-description">This is a description</span>
@@ -142,7 +142,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
 				</div>
                 <span class="pristine-error form__error">This is an error message!</span>
         	</toujou-input-group>
-        	
+
         	<toujou-input-group class="input-group input-group--radio radio-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}"
                  ${args.state === 'disabled' ? 'is-disabled' : ''}>
 				<label class="radio-group__label" for="testform-1000091-radiobutton-1">Radio button</label>
@@ -159,7 +159,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                         aaaaa
                     </label>
                 </div>
-            
+
                 <div class="radio-group__option">
                     <label class="radio-group__option-label">
                         <input data-pristine-required-message-de="The given subject was empty."
@@ -171,7 +171,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                         bbbb
                     </label>
                 </div>
-            
+
                 <div class="radio-group__option">
                     <label class="radio-group__option-label">
                         <input data-pristine-required-message-de="The given subject was empty."
@@ -183,7 +183,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                         ccccc
                     </label>
                 </div>
-            
+
                 <div class="radio-group__option">
                     <label class="radio-group__option-label">
                         <input data-pristine-required-message-de="The given subject was empty."
@@ -195,7 +195,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                         ddddd
                     </label>
                 </div>
-            
+
                 <div class="radio-group__option">
                     <label class="radio-group__option-label">
                         <input data-pristine-required-message-de="The given subject was empty."
@@ -207,10 +207,10 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                         eeeee
                     </label>
                 </div>
-                
+
                 <span class="pristine-error form__error">This is an error message!</span>
         	</toujou-input-group>
-        	
+
         	<toujou-input-group class="input-group input-group--check checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
@@ -222,10 +222,10 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Checkbox beautiful label</label>
                     <span class="input-description input-description--checkbox-group">This is a description</span>
-                    <span class="pristine-error form__error">The given subject was empty.</span>			
+                    <span class="pristine-error form__error">The given subject was empty.</span>
                 </div>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--multi-check multi-checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
                 <label class="multi-checkbox-group__label" for="testform-1000091-multicheckbox-1">This is the group label</label>
 
@@ -239,7 +239,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Option one</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -250,7 +250,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_2">Option two</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -261,7 +261,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_3">Option three</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -272,7 +272,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_4">Option four</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -283,11 +283,11 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_5">Option five</label>
                 </div>
-                
+
                  <span class="input-description input-description--after-group">This is a description</span>
-                <span class="pristine-error form__error form-error--after-group">The given subject was empty.</span>			
+                <span class="pristine-error form__error form-error--after-group">The given subject was empty.</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--toggle ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
                 <div class="toggle-group">
                     <input data-pristine-required-message-de="The given subject was empty."
@@ -300,10 +300,10 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <label class="toggle-group__label" for="testform-1000091-multicheckbox-1_1">Checkbox beautiful label</label>
                     <span class="input-description input-description--toggle-group">This is a description</span>
-                    <span class="pristine-error form__error form-error--toggle-group">The given subject was empty.</span>			
+                    <span class="pristine-error form__error form-error--toggle-group">The given subject was empty.</span>
                 </div>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--textarea ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
 				<label class="input-label" for="testform-1000091-textarea-1">Textarea</label>
 				<span class="input-description">This is a description</span>
@@ -317,7 +317,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                 </textarea>
                 <span class="pristine-error form__error">The given subject was empty.</span>
         	</toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--date ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
 				<label class="input-label" for="testform-1000091-date-1">Date</label>
 				<span class="input-description">This is a description</span>
@@ -334,7 +334,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                     value="">
                 <span class="pristine-error form__error">This is an error message!</span>
         	</toujou-input-group>
-	
+
             <toujou-input-group class="input-group input-group--date-jquery ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''} data-format="Y-m-d">
 				<label class="input-label" for="testform-1000091-datepicker-2">Date picker (jQuery)</label>
 				<span class="input-description">This is a description</span>
@@ -351,10 +351,10 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                    <input type="hidden" name="tx_form_formframework[testform-1000091][datepicker-2][dateFormat]" value="Y-m-d">
                    <span class="pristine-error form__error">This is an error message!</span>
 	        </toujou-input-group>
-	        
+
 	        <fieldset id="testform-1000091-fieldset-1" class="fieldset" ${args.state === 'disabled' ? 'is-disabled' : ''}>
                 <legend class="fieldset__legend">Fieldset super name</legend>
-    
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -368,7 +368,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-2" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -382,7 +382,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-3" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -396,7 +396,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                            ${disabledAttribute}>
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-4" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -411,7 +411,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
             </fieldset>
-            
+
             <toujou-input-group class="input-group input-group--file-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
 				<label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
 				<span class="input-description">This is a description</span>
@@ -424,7 +424,7 @@ const Template: Story<ToujouAllInputsStoryProps> = (args: ToujouAllInputsStoryPr
 		               ${disabledAttribute}>
                    <span class="pristine-error form__error">The given subject was empty.</span>
         	</toujou-input-group>
-        	
+
         	<toujou-input-group class="input-group inout-group--image-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''}" ${args.state === 'disabled' ? 'is-disabled' : ''}>
 				<label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
 				<span class="input-description">This is a description</span>

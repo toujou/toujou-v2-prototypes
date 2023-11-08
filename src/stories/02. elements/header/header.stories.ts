@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -135,7 +135,7 @@ function getHeaderContentText(accentColor: string) {
     `
 }
 
-const Template: Story<HeaderStoryProps> = (args: HeaderStoryProps) => {
+const Template: StoryFn<HeaderStoryProps> = (args: HeaderStoryProps) => {
     return `
         <header class="header" image-height="${args.imageHeight}">
             <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />
@@ -150,7 +150,7 @@ const Template: Story<HeaderStoryProps> = (args: HeaderStoryProps) => {
                 <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
                 ${args.isTitleOnly ? '' : getHeaderContentText(args.accentColor)}
             </div>
-            
+
             <toujou-media-info class="media-info">
                 <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                     <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>

@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -48,7 +48,7 @@ function renderCardColumn() {
                 <figure class="content-card__figure">
                     <img class="content-card__image" src="https://picsum.photos/640/640" alt="nice image">
                 </figure>
-    
+
                 <div class="content-card__content">
                     <h3 class="content-card__title">Lorem Ipsum</h3>
                     <p class=" content-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -62,10 +62,10 @@ function renderCardColumn() {
     `;
 }
 
-const Template: Story<ContentCardWithTextStoryProps> = (args: ContentCardWithTextStoryProps) => {
+const Template: StoryFn<ContentCardWithTextStoryProps> = (args: ContentCardWithTextStoryProps) => {
     return `
         <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.direction === 'left' ? 'third-right' : 'third-left'}">
-             <toujou-grid-column class="grid-column">          
+             <toujou-grid-column class="grid-column">
                 ${args.direction === 'left' ? renderTextColumn() : renderCardColumn()}
             </toujou-grid-column>
             <toujou-grid-column class="grid-column">

@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -42,9 +42,9 @@ interface HeaderStoryProps {
     accentColor: string,
 }
 
-const Template: Story<HeaderStoryProps> = (args: HeaderStoryProps) => {
+const Template: StoryFn<HeaderStoryProps> = (args: HeaderStoryProps) => {
     return `
-        <header class="header" image-height="${args.imageHeight}">            
+        <header class="header" image-height="${args.imageHeight}">
             <figure class="header__figure">
                 <video
                     playsinline

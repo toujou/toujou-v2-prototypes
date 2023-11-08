@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouCardStoryProps {
     elementDesign: any;
 }
 
-const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
+const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
     return `
         <ul class="card-collection">
             <li class="card-collection__item">
@@ -77,24 +77,24 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
-                        
+
                         <div class="collection-item__trip-infos">
                             <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                             <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                         </div>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -133,24 +133,24 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
-                        
+
                         <div class="collection-item__trip-infos">
                             <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                             <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                         </div>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -189,19 +189,19 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
                             </span>
                         </p>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -240,19 +240,19 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -261,7 +261,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-collection-item>
             </li>
         </ul>
-        
+
     `
 };
 

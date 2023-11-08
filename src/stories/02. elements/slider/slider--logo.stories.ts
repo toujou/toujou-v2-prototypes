@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -70,8 +70,8 @@ interface SliderStoryProps {
     autoplayInterval: number;
 }
 
-const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
-    return `       
+const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
+    return `
         <toujou-slider
             class="slider"
             content-type="logos"
@@ -98,7 +98,7 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
                         <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                     </button>
                 </div>
-                
+
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide" data-splide-interval="${args.autoplayInterval * 1000}">
@@ -137,12 +137,12 @@ const Template: Story<SliderStoryProps> = (args: SliderStoryProps) => {
                             </toujou-single-media>
                         </li>
                     </ul>
-                </div>      
+                </div>
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>
             </div>
-            
+
             <toujou-slider-count class="slider-count">
                 <span class="slider-count__current"></span>
                 <span class="slider-count__separator">of</span>

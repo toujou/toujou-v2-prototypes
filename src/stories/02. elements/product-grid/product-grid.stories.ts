@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -60,7 +60,7 @@ function createImageCardLink(imageFormat: string, cardVariant: string): string {
     `;
 }
 
-const Template: Story<ProductGridStoryProps> = (args: ProductGridStoryProps) => {
+const Template: StoryFn<ProductGridStoryProps> = (args: ProductGridStoryProps) => {
     const colNumber = 4;
         const toujouImageCardGrid = document.createElement('toujou-image-card-grid');
         toujouImageCardGrid.classList.add('image-card-grid');

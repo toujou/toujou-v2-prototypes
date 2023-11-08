@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -122,7 +122,7 @@ function getHeaderContentText(accentColor: string) {
     `
 }
 
-const Template: Story<HeaderThreeToOneStoryProps> = (args: HeaderThreeToOneStoryProps) => {
+const Template: StoryFn<HeaderThreeToOneStoryProps> = (args: HeaderThreeToOneStoryProps) => {
     return `
         <header class="header" image-height="3-1">
             <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />

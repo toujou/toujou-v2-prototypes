@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -58,7 +58,7 @@ interface mapboxStoryProps {
     showMarker: boolean;
 }
 
-const Template: Story<mapboxStoryProps> = (args: mapboxStoryProps ) => {
+const Template: StoryFn<mapboxStoryProps> = (args: mapboxStoryProps ) => {
     return `
         <toujou-map class="map"
             center="[11.0762549, 49.4579779]"
@@ -66,7 +66,7 @@ const Template: Story<mapboxStoryProps> = (args: mapboxStoryProps ) => {
             map-style="mapbox://styles/mapbox/${args.style}"
             interactive
             access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg">
-            
+
             ${args.showMarker ? `<toujou-map-marker coordinates="[11.0762549, 49.4579779]" color="#0079A8"></toujou-map-marker>` : ''}
         </toujou-map>
     `;

@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouCardStoryProps {
     elementDesign: any;
 }
 
-const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
+const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
     return `
         <ul class="card-collection">
             <li class="card-collection__item">
@@ -76,7 +76,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                         </div>
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="success" chip-border-radius="normal" chip-size="normal">Event geplannt</toujou-chip>
-                        </p>  
+                        </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
@@ -224,7 +224,7 @@ const Template: Story<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => {
                 </toujou-collection-item>
             </li>
         </ul>
-        
+
     `
 };
 

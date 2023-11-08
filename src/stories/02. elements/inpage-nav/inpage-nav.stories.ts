@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -96,7 +96,7 @@ interface InpageNavStoryProps {
     elementDesign: string,
 }
 
-const Template: Story<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
+const Template: StoryFn<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
     return `
         <toujou-inpage-nav
             class="inpage-nav"

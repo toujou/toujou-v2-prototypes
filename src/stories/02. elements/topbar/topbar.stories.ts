@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -60,7 +60,7 @@ interface TopbarStoryProps {
     logoSize: string
 }
 
-const Template: Story<TopbarStoryProps> = (args: TopbarStoryProps) => {
+const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
     // @ts-ignore
     document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
 

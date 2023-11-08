@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouOtherInputStoryProps {
     state: string;
 }
 
-const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStoryProps) => {
+const Template: StoryFn<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStoryProps) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
 
     return `
@@ -44,12 +44,12 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-            
+
             <toujou-input-group class="input-group input-group--file-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
 				<label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
 				<span class="input-description">This is a description</span>
@@ -62,7 +62,7 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
 		               ${disabledAttribute}>
                    <span class="pristine-error form__error">The given subject was empty.</span>
         	</toujou-input-group>
-        	
+
         	<toujou-input-group class="input-group input-group--image-upload ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
 				<label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
 				<span class="input-description">This is a description</span>
@@ -94,13 +94,13 @@ const Template: Story<ToujouOtherInputStoryProps> = (args: ToujouOtherInputStory
                 </select>
                <span class="pristine-error form__error">The given subject was empty.</span>
 	        </toujou-input-group>
-	        
+
 	        <toujou-input-group class="input-group inout-group--static-text">
 	            <div class="form-static-text">
 	                <p class="form-static-text__text">This is static text! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-input-group>
-    
+
         </form>
     `
 };

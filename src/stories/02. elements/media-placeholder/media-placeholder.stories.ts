@@ -1,4 +1,4 @@
-import {  Meta, Story } from '@storybook/web-components';
+import {  Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -34,7 +34,7 @@ interface MediaPlaceholdderStoryProps {
     mediaType: string,
 }
 
-const Template: Story<MediaPlaceholdderStoryProps> = (args: MediaPlaceholdderStoryProps) => {
+const Template: StoryFn<MediaPlaceholdderStoryProps> = (args: MediaPlaceholdderStoryProps) => {
     return `
         <div class="demo-media-placeholder-container">
             <toujou-media-placeholder media-type="${args.mediaType}" class="media-placeholder"></toujou-media-placeholder>

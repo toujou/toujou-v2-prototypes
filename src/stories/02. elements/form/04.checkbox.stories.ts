@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouCheckboxStoryProps {
     state: string;
 }
 
-const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProps) => {
+const Template: StoryFn<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProps) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
 
     return `
@@ -44,12 +44,12 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-            
+
             <toujou-input-group class="input-group input-group--check checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
@@ -61,10 +61,10 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_0">Checkbox beautiful label</label>
                     <span class="input-description input-description--checkbox-group">This is a description</span>
-                    <span class="pristine-error form__error">The given subject was empty.</span>			
+                    <span class="pristine-error form__error">The given subject was empty.</span>
                 </div>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--check checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
@@ -76,10 +76,10 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-100009111-multicheckbox-1_0">Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label Checkbox beautiful label</label>
                     <span class="input-description input-description--checkbox-group">This is a description</span>
-                    <span class="pristine-error form__error">The given subject was empty.</span>			
+                    <span class="pristine-error form__error">The given subject was empty.</span>
                 </div>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--multi-check multi-checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label class="multi-checkbox-group__label" for="testform-1000091-multicheckbox-1">This is the group label</label>
 
@@ -93,7 +93,7 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_1">Option one</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -104,7 +104,7 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_2">Option two</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -115,7 +115,7 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_3">Option three</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -126,7 +126,7 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_4">Option four</label>
                 </div>
-                
+
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
                            class="checkbox"
@@ -137,11 +137,11 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_5">Option five</label>
                 </div>
-                
+
                  <span class="input-description input-description--after-group">This is a description</span>
-                <span class="pristine-error form__error form-error--after-group">The given subject was empty.</span>			
+                <span class="pristine-error form__error form-error--after-group">The given subject was empty.</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--check checkbox-group ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <div class="checkbox-group">
                     <input data-pristine-required-message-de="The given subject was empty."
@@ -152,10 +152,10 @@ const Template: Story<ToujouCheckboxStoryProps> = (args: ToujouCheckboxStoryProp
                            value="aaaaa"
                            ${disabledAttribute}>
                     <label class="checkbox-group__label" for="testform-1000091-multicheckbox-1_9">This a linked ckeckbox element with a <a href="#">nice link</a></label>
-                    <span class="pristine-error form__error">The given subject was empty.</span>			
+                    <span class="pristine-error form__error">The given subject was empty.</span>
                 </div>
             </toujou-input-group>
-	
+
         </form>
     `;
 };

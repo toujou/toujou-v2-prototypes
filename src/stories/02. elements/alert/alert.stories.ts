@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -34,7 +34,7 @@ interface alertStoryProps {
     alertVariant: any;
 }
 
-const Template: Story<alertStoryProps> = (args: alertStoryProps) => {
+const Template: StoryFn<alertStoryProps> = (args: alertStoryProps) => {
     return `
         <toujou-alert class="alert" role="alert" alert-variant="${args.alertVariant}">
             This is an alert

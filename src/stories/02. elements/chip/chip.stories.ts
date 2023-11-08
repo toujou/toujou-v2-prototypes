@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -110,7 +110,8 @@ interface ChipStoryProps {
     isUppercase: string | boolean;
 }
 
-const Template: Story<ChipStoryProps> = (args: ChipStoryProps) => {
+const Template: StoryFn<ChipStoryProps> = (args: ChipStoryProps) => {
+    // @ts-ignore
     const toujouChip = document.createElement('toujou-chip');
 
     // ICON

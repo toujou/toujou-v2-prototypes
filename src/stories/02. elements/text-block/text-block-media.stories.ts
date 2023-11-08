@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,8 +33,8 @@ interface TextBlocksMediaStoryProps {
     imageAspectRatio: string;
 }
 
-const Template: Story<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStoryProps) => {
-    return `       
+const Template: StoryFn<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStoryProps) => {
+    return `
         <toujou-text-block class="text-block" text-block-media-position="beside-left">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
@@ -56,7 +56,7 @@ const Template: Story<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStoryPr
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-media-position="beside-right">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
@@ -78,7 +78,7 @@ const Template: Story<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStoryPr
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-media-position="inside-left">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
@@ -90,7 +90,7 @@ const Template: Story<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStoryPr
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-media-position="inside-right">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">

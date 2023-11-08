@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -44,7 +44,7 @@ interface SolrSearchStoryProps {
     showMap: boolean,
 }
 
-const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
+const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
     return `
         <toujou-solr-search class="solr" view-mode="${args.showMap ? 'map' : 'grid'}">
             <div id="solr-filters" class="solr-filters" ${args.showMobileFilters ? 'is-visible' : ''}>
@@ -64,8 +64,8 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             Noch keine Filter ausgewählt!!!
                         </p>
                     -->
-                        
-                        
+
+
                         <div class="solr-facets-in-use__chips" id="tx-solr-facets-in-use">
                             <a href="#" class="solr-facets-in-use__link">
                                 <toujou-chip
@@ -152,7 +152,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                         </div>
                                     </toujou-input-group>
                                 </div>
-                                <div class="facet-option list-group-item" data-facet-item-value="2"> 
+                                <div class="facet-option list-group-item" data-facet-item-value="2">
                                     <toujou-input-group class="input-group input-group--check checkbox-group   ">
                                         <div class="checkbox-group">
                                             <input
@@ -251,7 +251,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             </div>
                         </div>
                     </div>
-                                        
+
                     <div class="solr-facets__facet facet facet-type facet-type-options" id="facet-accordion-accommodation">
                         <div class="panel">
                             <div class="panel-heading">
@@ -265,7 +265,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 data-facet-label="Art der Unterkunft"
                                 id="facetaccommodation"
                             >
-                                <div class="facet-option list-group-item" data-facet-item-value="12">                      
+                                <div class="facet-option list-group-item" data-facet-item-value="12">
                                     <toujou-input-group class="input-group input-group--check checkbox-group   ">
                                         <div class="checkbox-group">
                                             <input
@@ -281,7 +281,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                         </div>
                                     </toujou-input-group>
                                 </div>
-                                <div class="facet-option list-group-item" data-facet-item-value="13"> 
+                                <div class="facet-option list-group-item" data-facet-item-value="13">
                                     <toujou-input-group class="input-group input-group--check checkbox-group   ">
                                         <div class="checkbox-group">
                                             <input
@@ -348,7 +348,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="solr-facets__facet facet facet-type facet-type-dateRange" id="facet-accordion-departureDate">
                         <div class="panel">
                             <div class="panel-heading">
@@ -395,7 +395,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="solr-facets__facet facet facet-type facet-type-options" id="facet-accordion-doktype">
                         <div class="panel">
                             <div class="panel-heading">
@@ -422,7 +422,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                             </ul>
                         </div>
                     </div>
-                
+
                     <div class="solr-facets__facet facet facet-type facet-type-hierarchy" id="facet-accordion-destination">
                         <div class="panel">
                             <div class="panel-heading">
@@ -446,11 +446,11 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                 >
                                                 <label class="checkbox-group__label" for="facet-destination-option-/358/">Europa&nbsp;<span class="facet-result-count badge">11</span></label>
                                             </div>
-                                        </toujou-input-group>                                   
+                                        </toujou-input-group>
                                     </div>
-                                
+
                                     <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
-                                
+
                                     <div class="list-group-item list-group solr-details__item-group" slot="content">
                                         <toujou-details class="facet facet--aggregated facet-option list-group-item details facet-details" data-facet-item-value="/358/455/">
                                             <div class="facet-option list-group-item" data-facet-item-value="/358/455/" slot="summary">
@@ -467,7 +467,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                         >
                                                         <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Portugal&nbsp;<span class="facet-result-count badge">1</span></label>
                                                     </div>
-                                                </toujou-input-group>  
+                                                </toujou-input-group>
                                             </div>
                                             <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
                                             <div class="list-group-item list-group solr-details__item-group" slot="content">
@@ -485,7 +485,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                             >
                                                             <label class="checkbox-group__label" for="facet-destination-option-/358/455/1255">Algarve&nbsp;<span class="facet-result-count badge">1</span></label>
                                                         </div>
-                                                    </toujou-input-group>  
+                                                    </toujou-input-group>
                                                 </div>
                                                 <div class="facet-option list-group-item" data-facet-item-value="/358/455/121">
                                                     <toujou-input-group class="input-group input-group--check checkbox-group   ">
@@ -501,10 +501,10 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                             >
                                                             <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Lisboa&nbsp;<span class="facet-result-count badge">1</span></label>
                                                         </div>
-                                                    </toujou-input-group>  
+                                                    </toujou-input-group>
                                                 </div>
                                             </div>
-                                        </toujou-details>         
+                                        </toujou-details>
                                     </div>
                                 </toujou-details>
                                 <toujou-details id="details-0" class="details facet-details" element-design="default">
@@ -522,11 +522,11 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                 >
                                                 <label class="checkbox-group__label" for="facet-destination-option-/358/">Afrika&nbsp;<span class="facet-result-count badge">11</span></label>
                                             </div>
-                                        </toujou-input-group>                                   
+                                        </toujou-input-group>
                                     </div>
-                                
+
                                     <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
-                                
+
                                     <div class="list-group-item list-group solr-details__item-group" slot="content">
                                         <toujou-details class="facet facet--aggregated facet-option list-group-item details facet-details" data-facet-item-value="/358/455/">
                                             <div class="facet-option list-group-item" data-facet-item-value="/358/455/" slot="summary">
@@ -543,7 +543,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                         >
                                                         <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Kapverden&nbsp;<span class="facet-result-count badge">1</span></label>
                                                     </div>
-                                                </toujou-input-group>  
+                                                </toujou-input-group>
                                             </div>
                                             <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
                                             <div class="list-group-item list-group solr-details__item-group" slot="content">
@@ -561,7 +561,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                             >
                                                             <label class="checkbox-group__label" for="facet-destination-option-/358/455/1255">Insel&nbsp;<span class="facet-result-count badge">1</span></label>
                                                         </div>
-                                                    </toujou-input-group>  
+                                                    </toujou-input-group>
                                                 </div>
                                                 <div class="facet-option list-group-item" data-facet-item-value="/358/455/121">
                                                     <toujou-input-group class="input-group input-group--check checkbox-group   ">
@@ -577,15 +577,15 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                             >
                                                             <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Küste&nbsp;<span class="facet-result-count badge">1</span></label>
                                                         </div>
-                                                    </toujou-input-group>  
+                                                    </toujou-input-group>
                                                 </div>
                                             </div>
-                                        </toujou-details>         
+                                        </toujou-details>
                                     </div>
-                                </toujou-details>      
-                                
-                                
-                                
+                                </toujou-details>
+
+
+
                                 <toujou-details id="details-0" class="details facet-details" element-design="default">
                                     <div class="facet-option list-group-item" data-facet-item-value="/358/" slot="summary">
                                         <toujou-input-group class="input-group input-group--check checkbox-group   ">
@@ -601,11 +601,11 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                 >
                                                 <label class="checkbox-group__label" for="facet-destination-option-/358/">Only 1 level&nbsp;<span class="facet-result-count badge">11</span></label>
                                             </div>
-                                        </toujou-input-group>                                   
+                                        </toujou-input-group>
                                     </div>
-                                
+
                                     <toujou-icon class="icon details__chevron" icon-name="chevron-down" slot="chevron"></toujou-icon>
-                                
+
                                     <div class="list-group-item list-group solr-details__item-group" slot="content">
                                         <div class="facet-option list-group-item" data-facet-item-value="/358/455/12">
                                             <toujou-input-group class="input-group input-group--check checkbox-group">
@@ -621,7 +621,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                     >
                                                     <label class="checkbox-group__label" for="facet-destination-option-/358/455/1255">Algarve&nbsp;<span class="facet-result-count badge">1</span></label>
                                                 </div>
-                                            </toujou-input-group>  
+                                            </toujou-input-group>
                                         </div>
                                         <div class="facet-option list-group-item" data-facet-item-value="/358/455/121">
                                             <toujou-input-group class="input-group input-group--check checkbox-group   ">
@@ -637,27 +637,27 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                                     >
                                                     <label class="checkbox-group__label" for="facet-destination-option-/358/455/">Lisboa&nbsp;<span class="facet-result-count badge">1</span></label>
                                                 </div>
-                                            </toujou-input-group>  
+                                            </toujou-input-group>
                                         </div>
                                     </div>
-                                </toujou-details>                   
+                                </toujou-details>
                             </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -677,7 +677,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                     <div id="results-per-page" class="solr-results__per-page">
                         <form method="post" action="/suche/?tx_solr%5Bq%5D=" class="solr-results__per-page-form">
                             Ergebnisse pro Seite:
-                            
+
                             <toujou-input-group class="input-group input-group--single-select input-group--solr-per-page-select">
                                 <div class="select__wrapper select__wrapper--solr-per-page-select">
                                     <select name="tx_solr[resultsPerPage]" id="" class="form-controls input select solr-header__per-page-select" onchange="this.form.submit()">
@@ -815,7 +815,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                         </a>
                     </li>
                 </ul>
-                
+
                 <ul class="card-collection solr-results__card-collection">
                     <li class="card-collection__item">
                         <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="vertical" role="article">
@@ -848,20 +848,20 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 <p class="collection-item__subtitles">
                                     <span class="collection-item__subtitle">Hotel name</span>
                                 </p>
-                                
+
                                 <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                                
+
                                 <div class="collection-item__trip-infos">
                                     <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                                     <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                                 </div>
-                                
+
                                 <p class="collection-item__trip-price">
                                     <span class="collection-item__trip-price-prefix">ab</span>
                                     <span class="collection-item__trip-price-amount">1.500,00 €</span>
                                     <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                                 </p>
-                                
+
                                 <a href="#" class="collection-item__button">
                                     <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
@@ -900,20 +900,20 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 <p class="collection-item__subtitles">
                                     <span class="collection-item__subtitle">Hotel name</span>
                                 </p>
-                                
+
                                 <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                                
+
                                 <div class="collection-item__trip-infos">
                                     <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                                     <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                                 </div>
-                                
+
                                 <p class="collection-item__trip-price">
                                     <span class="collection-item__trip-price-prefix">ab</span>
                                     <span class="collection-item__trip-price-amount">1.500,00 €</span>
                                     <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                                 </p>
-                                
+
                                 <a href="#" class="collection-item__button">
                                     <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
@@ -952,20 +952,20 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 <p class="collection-item__subtitles">
                                     <span class="collection-item__subtitle">Hotel name</span>
                                 </p>
-                                
+
                                 <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                                
+
                                 <div class="collection-item__trip-infos">
                                     <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                                     <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                                 </div>
-                                
+
                                 <p class="collection-item__trip-price">
                                     <span class="collection-item__trip-price-prefix">ab</span>
                                     <span class="collection-item__trip-price-amount">1.500,00 €</span>
                                     <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                                 </p>
-                                
+
                                 <a href="#" class="collection-item__button">
                                     <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
@@ -1004,20 +1004,20 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 <p class="collection-item__subtitles">
                                     <span class="collection-item__subtitle">Hotel name</span>
                                 </p>
-                                
+
                                 <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                                
+
                                 <div class="collection-item__trip-infos">
                                     <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                                     <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                                 </div>
-                                
+
                                 <p class="collection-item__trip-price">
                                     <span class="collection-item__trip-price-prefix">ab</span>
                                     <span class="collection-item__trip-price-amount">1.500,00 €</span>
                                     <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                                 </p>
-                                
+
                                 <a href="#" class="collection-item__button">
                                     <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
@@ -1056,20 +1056,20 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 <p class="collection-item__subtitles">
                                     <span class="collection-item__subtitle">Hotel name</span>
                                 </p>
-                                
+
                                 <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                                
+
                                 <div class="collection-item__trip-infos">
                                     <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                                     <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                                 </div>
-                                
+
                                 <p class="collection-item__trip-price">
                                     <span class="collection-item__trip-price-prefix">ab</span>
                                     <span class="collection-item__trip-price-amount">1.500,00 €</span>
                                     <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                                 </p>
-                                
+
                                 <a href="#" class="collection-item__button">
                                     <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
@@ -1108,20 +1108,20 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                                 <p class="collection-item__subtitles">
                                     <span class="collection-item__subtitle">Hotel name</span>
                                 </p>
-                                
+
                                 <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
-                                
+
                                 <div class="collection-item__trip-infos">
                                     <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                                     <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                                 </div>
-                                
+
                                 <p class="collection-item__trip-price">
                                     <span class="collection-item__trip-price-prefix">ab</span>
                                     <span class="collection-item__trip-price-amount">1.500,00 €</span>
                                     <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                                 </p>
-                                
+
                                 <a href="#" class="collection-item__button">
                                     <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
@@ -1130,7 +1130,7 @@ const Template: Story<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => {
                         </toujou-collection-item>
                     </li>
                 </ul>
-                
+
                 <ul class="solr-pagination solr-pagination--below">
                     <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
                         <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">

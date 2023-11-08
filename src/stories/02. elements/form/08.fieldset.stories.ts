@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouFieldsetStoryProps {
     state: string;
 }
 
-const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProps) => {
+const Template: StoryFn<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProps) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : ''
 
     return `
@@ -44,15 +44,15 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-    
+
             <fieldset id="testform-1000091-fieldset-1" class="fieldset ${args.state === 'disabled' ? 'fieldset--disabled' : ''}">
                 <legend class="fieldset__legend">Fieldset super name</legend>
-    
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -66,7 +66,7 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                            ${disabledAttribute}>
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-2" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -80,7 +80,7 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                            ${disabledAttribute}>
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-3" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -94,7 +94,7 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                            ${disabledAttribute}>
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group class="input-group input-group--required ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                     <label for="testform-1000091-text-4" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
@@ -108,7 +108,7 @@ const Template: Story<ToujouFieldsetStoryProps> = (args: ToujouFieldsetStoryProp
                            ${disabledAttribute}>
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-            
+
             </fieldset>
         </form>
     `;

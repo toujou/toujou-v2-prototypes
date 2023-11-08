@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface DetailsStoryProps {
     elementDesign: string,
 }
 
-const Template: Story<DetailsStoryProps> = (args: DetailsStoryProps) => {
+const Template: StoryFn<DetailsStoryProps> = (args: DetailsStoryProps) => {
     return `
         <toujou-details id="details-0" class="details" is-open="" element-design="${args.elementDesign}">
             <h3 slot="summary" class="details__title">Warum gibt es nur Online-Termine? Gibt es auch eine andere Möglichkeit, einen Termin zu vereinbaren?</h3>
@@ -50,7 +50,7 @@ const Template: Story<DetailsStoryProps> = (args: DetailsStoryProps) => {
                 </toujou-text-block>
             </div>
         </toujou-details>
-                          
+
         <toujou-details id="details-1" class="details" element-design="${args.elementDesign}">
             <h3 slot="summary" class="details__title">I am just another simple title</h3>
             <ul slot="summary" class="details__subtitle details__subtitle-list">

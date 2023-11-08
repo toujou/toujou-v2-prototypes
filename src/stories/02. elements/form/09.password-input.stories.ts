@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -33,7 +33,7 @@ interface ToujouTextInputsStoryProps {
     state: string;
 }
 
-const Template: Story<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStoryProps) => {
+const Template: StoryFn<ToujouTextInputsStoryProps> = (args: ToujouTextInputsStoryProps) => {
     const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
 
     return `

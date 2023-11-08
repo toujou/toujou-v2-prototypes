@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -60,7 +60,7 @@ interface mapStoryProps {
     elementDesign: string;
 }
 
-const Template: Story<mapStoryProps> = (args: mapStoryProps) => {
+const Template: StoryFn<mapStoryProps> = (args: mapStoryProps) => {
     return `
         <toujou-map-contact class="map-contact" direction="${args.direction}" map-aspect-ratio="${args.mapAspectRatio}" element-design="${args.elementDesign}">
             <div class="map-contact__map-container">
@@ -72,7 +72,7 @@ const Template: Story<mapStoryProps> = (args: mapStoryProps) => {
                     Gustav-Weißkopf-Straße 5<br>
                     90768 Fürth<br>
                     <span class="map-contact__label">Tel:</span> <a href="tel:0911 123456789">0911 123456789</a><br>
-                    <span class="map-contact__label">E-Mail:</span> <a href="mailto:hello@dfau.de">hello@dfau.de</a>                
+                    <span class="map-contact__label">E-Mail:</span> <a href="mailto:hello@dfau.de">hello@dfau.de</a>
                 </address>
                 <div class="map-contact__socials">
                     <a href="#" class="map-contact__social" aria-label="Facebook account">

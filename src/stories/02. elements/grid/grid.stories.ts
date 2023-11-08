@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -61,7 +61,7 @@ interface GridStoryProps {
     columnsLayout: string;
 }
 
-const Template: Story<GridStoryProps> = (args: GridStoryProps) => {
+const Template: StoryFn<GridStoryProps> = (args: GridStoryProps) => {
     const gridEl = document.createElement('toujou-grid');
     gridEl.classList.add('grid', 'demo-grid');
     gridEl.setAttribute('number-of-columns', String(args.numberOfColumns));
