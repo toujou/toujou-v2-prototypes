@@ -25,20 +25,17 @@ const Template = () => {
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
 
-        	<toujou-form-row class="form-row">
+        	<toujou-form-row class="row form__row">
 
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="12"
-                    input-group-span-md="12"
-                    input-group-span-lg="12">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-12 input-group--lg-12 input-group--xl-12 input-group--xxl-12"
+                >
                     <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -50,13 +47,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="12"
-                    input-group-span-md="6"
-                    input-group-span-lg="6">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
                     <label for="testform-1000091-text-2" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -68,13 +62,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="6"
-                    input-group-span-md="6"
-                    input-group-span-lg="6">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
                     <label for="testform-1000091-text-3" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -86,13 +77,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="6"
-                    input-group-span-md="4"
-                    input-group-span-lg="4">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-4 input-group--xl-4 input-group--xxl-4"
+                >
                     <label for="testform-1000091-text-4" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -104,13 +92,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="12"
-                    input-group-span-md="8"
-                    input-group-span-lg="8">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-4 input-group--xl-4 input-group--xxl-4"
+                >
                     <label for="testform-1000091-text-5" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -122,13 +107,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="8"
-                    input-group-span-md="8"
-                    input-group-span-lg="8">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-4 input-group--xl-4 input-group--xxl-4"
+                >
                     <label for="testform-1000091-text-6" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -140,13 +122,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-            
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="4"
-                    input-group-span-md="4"
-                    input-group-span-lg="4">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-8 input-group--xl-8 input-group--xxl-8"
+                >
                     <label for="testform-1000091-text-7" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -158,13 +137,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-            
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="6"
-                    input-group-span-md="3"
-                    input-group-span-lg="3">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-4 input-group--xl-4 input-group--xxl-4"
+                >
                     <label for="testform-1000091-text-8" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -176,13 +152,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="6"
-                    input-group-span-md="3"
-                    input-group-span-lg="3">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-3 input-group--xl-3 input-group--xxl-3"
+                >
                     <label for="testform-1000091-text-9" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -194,13 +167,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-            
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="6"
-                    input-group-span-md="3"
-                    input-group-span-lg="3">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-3 input-group--xl-3 input-group--xxl-3"
+                >
                     <label for="testform-1000091-text-10" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -212,13 +182,10 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-            
+
                 <toujou-input-group
-                    class="input-group input-group--text"
-                    input-group-span-xs="12"
-                    input-group-span-sm="6"
-                    input-group-span-md="3"
-                    input-group-span-lg="3">
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-3 input-group--xl-3 input-group--xxl-3"
+                >
                     <label for="testform-1000091-text-11" class="input-label">Nice label</label>
                     <span class="input-description">This is a description</span>
                     <input placeholder="This is a placeholder"
@@ -230,9 +197,24 @@ const Template = () => {
                            value="">
                     <span class="pristine-error form__error">This is an error message!</span>
                 </toujou-input-group>
-                
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-6 input-group--md-6 input-group--lg-3 input-group--xl-3 input-group--xxl-3"
+                >
+                    <label for="testform-1000091-text-12" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-12"
+                           type="text" name="tx_form_formframework[testform-1000091][text-12]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
 	        </toujou-form-row>
-        	
+
         </form>
     `;
 };

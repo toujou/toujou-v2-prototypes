@@ -1,4 +1,4 @@
-.form-row {
+.form__row {
     --form-row-display: grid;
     --form-row-grid-template-columns: repeat(var(--form-row-columns-count), 1fr);
     --form-row-gap: var(--form-successive-groups-distance) var(--spacing-normal);
