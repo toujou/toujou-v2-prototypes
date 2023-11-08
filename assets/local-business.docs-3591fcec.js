@@ -1,0 +1,2 @@
+import{j as t}from"./jsx-runtime-ccada58e.js";import{u as o}from"./index-4fb8b842.js";function e(n){const s=Object.assign({h1:"h1"},o(),n.components);return t.jsx(s.h1,{id:"local-business-page",children:"Local Business page"})}function i(n={}){const{wrapper:s}=Object.assign({},o(),n.components);return s?t.jsx(s,Object.assign({},n,{children:t.jsx(e,n)})):e(n)}export{i as M};
+//# sourceMappingURL=local-business.docs-3591fcec.js.map

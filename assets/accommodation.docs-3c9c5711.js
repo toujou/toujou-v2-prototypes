@@ -1,2 +1,0 @@
-import{j as o}from"./jsx-runtime-ac05983f.js";import{u as s}from"./index-a9a8c754.js";function e(n){const t=Object.assign({h1:"h1"},s(),n.components);return o.jsx(t.h1,{id:"accommodation-page",children:"Accommodation page"})}function i(n={}){const{wrapper:t}=Object.assign({},s(),n.components);return t?o.jsx(t,Object.assign({},n,{children:o.jsx(e,n)})):e(n)}export{i as M};
-//# sourceMappingURL=accommodation.docs-3c9c5711.js.map
