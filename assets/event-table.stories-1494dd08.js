@@ -4,21 +4,15 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
 `,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<ol class="item-collection">
     <li class="item-collection__item">
         <div class="event-table-card">
-            <time datetime="2023-06-14" class="media-date event-table-card__media-date" inline="">
-                <div class="media-date__months">
-                    <span class="media-date__month">Jun</span>
-                        <span class="media-date__month-separator">-</span>
-                        <span class="media-date__month">Jul</span>
-                </div>
-                <div class="media-date__days">
-                    <span class="media-date__day">14</span>
-                        <span class="media-date__day-separator">-</span>
-                        <span class="media-date__day">16</span>
-                </div>
-                <div class="media-date__years">
-                    <span class="media-date__year">2023</span>
-                </div>
-            </time>
+            <div class="calendar-pages event-table-card__calendar-pages" aria-label="calendar page with date / time information">
+                <time class="calendar-page" datetime="2025-11-14">
+                    <div class="calendar-page__date">
+                        <p class="calendar-page__month">Nov</p>
+                        <p class="calendar-page__day">14</p>
+                        <p class="calendar-page__year">2025</p>
+                    </div>
+                </time>
+            </div>
 
             <div class="event-table-card__content">
                 <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
@@ -37,14 +31,13 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
         </div>
     </li>
 </ol>
-`})})]})}function d(n={}){const{wrapper:e}=Object.assign({},l(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(t,n)})):t(n)}const g={title:"COMPONENTS/EventTable",parameters:{badges:[r.DONE],docs:{page:d}},tags:["autodocs"]},_=()=>`
+`})})]})}function d(n={}){const{wrapper:e}=Object.assign({},l(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(t,n)})):t(n)}const h={title:"COMPONENTS/EventTable",parameters:{badges:[r.DONE],docs:{page:d}},tags:["autodocs"]},p=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <div class="event-table-card">
                     <div
-                        class="calendar-pages event-table-card__media-date"
+                        class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
-                        as-group
                     >
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -66,7 +59,6 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             </div>
                         </time>
                     </div>
-
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -86,11 +78,9 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
 
             <li class="item-collection__item">
                 <div class="event-table-card">
-
                     <div
-                        class="calendar-pages event-table-card__media-date"
+                        class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
-                        as-group
                     >
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -100,7 +90,6 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             </div>
                         </time>
                     </div>
-
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -118,9 +107,8 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
             <li class="item-collection__item">
                 <div class="event-table-card">
                     <div
-                        class="calendar-pages event-table-card__media-date"
+                        class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
-                        on-light-background
                     >
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -142,7 +130,6 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             </div>
                         </time>
                     </div>
-
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -162,22 +149,18 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
 
             <li class="item-collection__item">
                 <div class="event-table-card">
-                    <time datetime="2023-06-14" class="media-date event-table-card__media-date" inline>
-                        <div class="media-date__months">
-                            <span class="media-date__month">Jun</span>
-                                <span class="media-date__month-separator">-</span>
-                                <span class="media-date__month">Jul</span>
-                        </div>
-                        <div class="media-date__days">
-                            <span class="media-date__day">14</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">16</span>
-                        </div>
-                        <div class="media-date__years">
-                            <span class="media-date__year">2023</span>
-                        </div>
-                    </time>
-
+                    <div
+                        class="calendar-pages event-table-card__calendar-pages"
+                        aria-label="calendar page with date / time information"
+                    >
+                        <time class="calendar-page" datetime="2025-11-14">
+                            <div class="calendar-page__date">
+                                <p class="calendar-page__month">Nov</p>
+                                <p class="calendar-page__day">14</p>
+                                <p class="calendar-page__year">2025</p>
+                            </div>
+                        </time>
+                    </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -192,15 +175,14 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                 </div>
             </li>
         </ol>
-    `,s=_.bind({});var i,c,o;s.parameters={...s.parameters,docs:{...(i=s.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,c=p.bind({});var i,s,o;c.parameters={...c.parameters,docs:{...(i=c.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <div class="event-table-card">
                     <div
-                        class="calendar-pages event-table-card__media-date"
+                        class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
-                        as-group
                     >
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -222,7 +204,6 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             </div>
                         </time>
                     </div>
-
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -242,11 +223,9 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
 
             <li class="item-collection__item">
                 <div class="event-table-card">
-
                     <div
-                        class="calendar-pages event-table-card__media-date"
+                        class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
-                        as-group
                     >
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -256,7 +235,6 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             </div>
                         </time>
                     </div>
-
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -274,9 +252,8 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
             <li class="item-collection__item">
                 <div class="event-table-card">
                     <div
-                        class="calendar-pages event-table-card__media-date"
+                        class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
-                        on-light-background
                     >
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -298,7 +275,6 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             </div>
                         </time>
                     </div>
-
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -318,22 +294,18 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
 
             <li class="item-collection__item">
                 <div class="event-table-card">
-                    <time datetime="2023-06-14" class="media-date event-table-card__media-date" inline>
-                        <div class="media-date__months">
-                            <span class="media-date__month">Jun</span>
-                                <span class="media-date__month-separator">-</span>
-                                <span class="media-date__month">Jul</span>
-                        </div>
-                        <div class="media-date__days">
-                            <span class="media-date__day">14</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">16</span>
-                        </div>
-                        <div class="media-date__years">
-                            <span class="media-date__year">2023</span>
-                        </div>
-                    </time>
-
+                    <div
+                        class="calendar-pages event-table-card__calendar-pages"
+                        aria-label="calendar page with date / time information"
+                    >
+                        <time class="calendar-page" datetime="2025-11-14">
+                            <div class="calendar-page__date">
+                                <p class="calendar-page__month">Nov</p>
+                                <p class="calendar-page__day">14</p>
+                                <p class="calendar-page__year">2025</p>
+                            </div>
+                        </time>
+                    </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
                         <p class="event-table-card__info">
@@ -349,5 +321,5 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
             </li>
         </ol>
     \`;
-}`,...(o=(c=s.parameters)==null?void 0:c.docs)==null?void 0:o.source}}};const b=["EventTable"];export{s as EventTable,b as __namedExportsOrder,g as default};
-//# sourceMappingURL=event-table.stories-efd15ed8.js.map
+}`,...(o=(s=c.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};const b=["EventTable"];export{c as EventTable,b as __namedExportsOrder,h as default};
+//# sourceMappingURL=event-table.stories-1494dd08.js.map
