@@ -41,21 +41,13 @@ We can find [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tim
 
 ## Attributes
 
-### `on-light-background`
-Makes the element visible when place on light background by adding a border to each of the "pages" and style the separator in font-color.
-```html
-<div class="calendar-pages" aria-label="calendar page with date / time information" on-light-background>
-    ...
-</div>
-```
-
 ### `as-group`
-Render the whole element as group to be used for instance when placed on top of images (to improve visibility and accessibility)
+Render the whole element as group to be used for instance when placed on top of images (to improve visibility and accessibility).
+
+The `as-group` variant is used on all element where the `calendar-pages` is placed on top of an image, like the toujou-card.
+
 ```html
 <div class="calendar-pages" aria-label="calendar page with date / time information" as-group>
     ...
 </div>
 ```
-
-## Possible problems / worries
-The time element isn't read by all screen readers, so th
