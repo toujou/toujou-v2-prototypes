@@ -24,14 +24,6 @@ describe('event-table', () => {
         cy.get(`${cardSelector} .event-table-card`).should('have.css', 'z-index', 'auto');
     });
 
-    it('has correct media date styles', () => {
-        cy.get(`${cardSelector} .media-date`).should('exist');
-        cy.get(`${cardSelector} .media-date`).should('have.css', 'position', 'relative');
-        cy.get(`${cardSelector} .media-date`).should('have.css', 'top', '0px');
-        cy.get(`${cardSelector} .media-date`).should('have.css', 'right', '0px');
-        cy.get(`${cardSelector} .media-date`).should('have.css', 'background-color', colors.colorFontO10);
-    });
-
     it('has correct chip styles', () => {
         cy.get(`${cardSelector} .chip`).invoke('attr', 'chip-size').should('eq', 'small');
         cy.get(`${cardSelector} .chip`).invoke('attr', 'chip-bg-color').should('eq', 'error');

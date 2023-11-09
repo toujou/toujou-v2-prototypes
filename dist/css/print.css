@@ -276,11 +276,6 @@
     }
 }
 @media print {
-    .media-date {
-        --media-date-background-color: white;
-    }
-}
-@media print {
     .media-grid[media-grid-column-number="2"] {
         --media-grid-number-of-columns: 2;
     }

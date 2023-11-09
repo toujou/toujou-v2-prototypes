@@ -149,14 +149,6 @@ describe('list item - type event [mobile]', () => {
             expect(dateEl).to.have.css('padding').equal(tokens.spacing.s);
             expect(dateEl).to.have.css('color').equal(colors.colorFont);
         });
-        cy.get(`${firstCardSelector} .media-date__day`).then((dayEl) => {
-            expect(dayEl).to.have.css('font-size').equal(tokens.type.size.m);
-            expect(dayEl).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
-        });
-        cy.get(`${firstCardSelector} .media-date__month`).then((monthEl) => {
-            expect(monthEl).to.have.css('text-transform').equal('uppercase');
-            expect(monthEl).to.have.css('font-size').equal(tokens.type.size.xs);
-        });
     });
 
     it('Info element has correct styles', () => {
