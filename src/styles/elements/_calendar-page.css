@@ -4,6 +4,10 @@
     --calendar-page-border-radius: var(--border-radius-normal);
     --calendar-page-border: var(--border-width-normal) solid transparent;
     --calendar-page-min-width: fit-content;
+    --calendar-page-display: flex;
+    --calendar-page-flex-direction: row;
+    --calendar-page-align-items: center;
+    --calendar-page-justify-content: center;
 
     --calendar-page-date-text-align: center;
     --calendar-page-date-display: flex;
@@ -36,9 +40,9 @@
     --calendar-page-times-align-items: center;
     --calendar-page-times-justify-content: center;
     --calendar-page-times-gap: var(--spacing-xxs);
-    --calendar-page-times-margin: var(--spacing-s) 0 0;
-    --calendar-page-times-padding: var(--spacing-s) 0 0;
-    --calendar-page-times-border-top: 1px solid var(--border-color-default);
+    --calendar-page-times-margin: 0 0 0 var(--spacing-s);
+    --calendar-page-times-padding: 0 0 0 var(--spacing-s);
+    --calendar-page-times-border-left: 1px solid var(--border-color-default);
 
     --calendar-page-time-separator-line-height: var(--spacing-xs);
 
@@ -47,6 +51,10 @@
     border-radius: var(--calendar-page-border-radius);
     border: var(--calendar-page-border);
     min-width: var(--calendar-page-min-width);
+    display: var(--calendar-page-display);
+    flex-direction: var(--calendar-page-flex-direction);
+    align-items: var(--calendar-page-align-items);
+    justify-content: var(--calendar-page-justify-content);
 }
 
 .calendar-pages[as-group] .calendar-page {
@@ -100,7 +108,7 @@
     gap: var(--calendar-page-times-gap);
     margin: var(--calendar-page-times-margin);
     padding: var(--calendar-page-times-padding);
-    border-top: var(--calendar-page-times-border-top);
+    border-left: var(--calendar-page-times-border-left);
 }
 
 .calendar-page__time-separator {

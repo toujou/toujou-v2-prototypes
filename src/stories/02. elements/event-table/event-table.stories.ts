@@ -74,6 +74,11 @@ const Template = () => {
                                 <p class="calendar-page__day">14</p>
                                 <p class="calendar-page__year">2025</p>
                             </div>
+                            <div class="calendar-page__times">
+                                <p class="calendar-page__time calendar-page__time--start">12:30</p>
+                                <p class="calendar-page__time-separator" aria-label="until">-</p>
+                                <p class="calendar-page__time calendar-page__time--end">22:00</p>
+                            </div>
                         </time>
                     </div>
                     <div class="event-table-card__content">
