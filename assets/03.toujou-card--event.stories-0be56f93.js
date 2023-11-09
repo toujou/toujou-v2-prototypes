@@ -1,4 +1,4 @@
-import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:c}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=i=>`
+import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:c}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=i=>`
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="event" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
@@ -86,6 +86,11 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                                     <p class="calendar-page__month">Nov</p>
                                     <p class="calendar-page__day">14</p>
                                     <p class="calendar-page__year">2025</p>
+                                </div>
+                                <div class="calendar-page__times">
+                                    <p class="calendar-page__time calendar-page__time--start">12:30</p>
+                                    <p class="calendar-page__time-separator" aria-label="until">-</p>
+                                    <p class="calendar-page__time calendar-page__time--end">22:00</p>
                                 </div>
                             </time>
                         </div>
@@ -218,7 +223,7 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
             </li>
         </ul>
 
-    `,e=l.bind({});e.args={elementDesign:"default"};var a,o,t;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
+    `,e=l.bind({});e.args={elementDesign:"default"};var a,n,t;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
         <ul class="card-collection">
             <li class="card-collection__item">
@@ -307,6 +312,11 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                                     <p class="calendar-page__month">Nov</p>
                                     <p class="calendar-page__day">14</p>
                                     <p class="calendar-page__year">2025</p>
+                                </div>
+                                <div class="calendar-page__times">
+                                    <p class="calendar-page__time calendar-page__time--start">12:30</p>
+                                    <p class="calendar-page__time-separator" aria-label="until">-</p>
+                                    <p class="calendar-page__time calendar-page__time--end">22:00</p>
                                 </div>
                             </time>
                         </div>
@@ -440,5 +450,5 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
         </ul>
 
     \`;
-}`,...(t=(o=e.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const g=["CardEvent"];export{e as CardEvent,g as __namedExportsOrder,d as default};
-//# sourceMappingURL=03.toujou-card--event.stories-b729eb68.js.map
+}`,...(t=(n=e.parameters)==null?void 0:n.docs)==null?void 0:t.source}}};const g=["CardEvent"];export{e as CardEvent,g as __namedExportsOrder,d as default};
+//# sourceMappingURL=03.toujou-card--event.stories-0be56f93.js.map

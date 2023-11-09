@@ -1,4 +1,4 @@
-import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-runtime-ccada58e.js";import{u as l}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function t(n){const e=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code"},l(),n.components);return a.jsxs(a.Fragment,{children:[a.jsx(e.h1,{id:"event-table",children:"Event table"}),`
+import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-runtime-ccada58e.js";import{u as o}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function t(n){const e=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code"},o(),n.components);return a.jsxs(a.Fragment,{children:[a.jsx(e.h1,{id:"event-table",children:"Event table"}),`
 `,a.jsx(e.p,{children:"The event table element renders a simple list of events showing a list item with just the most relevant information for each event"}),`
 `,a.jsx(e.h2,{id:"markup-example",children:"Markup example"}),`
 `,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<ol class="item-collection">
@@ -31,7 +31,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
         </div>
     </li>
 </ol>
-`})})]})}function d(n={}){const{wrapper:e}=Object.assign({},l(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(t,n)})):t(n)}const h={title:"COMPONENTS/EventTable",parameters:{badges:[r.DONE],docs:{page:d}},tags:["autodocs"]},p=()=>`
+`})})]})}function d(n={}){const{wrapper:e}=Object.assign({},o(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(t,n)})):t(n)}const h={title:"COMPONENTS/EventTable",parameters:{badges:[r.DONE],docs:{page:d}},tags:["autodocs"]},p=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <div class="event-table-card">
@@ -87,6 +87,11 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
                                 <p class="calendar-page__year">2025</p>
+                            </div>
+                            <div class="calendar-page__times">
+                                <p class="calendar-page__time calendar-page__time--start">12:30</p>
+                                <p class="calendar-page__time-separator" aria-label="until">-</p>
+                                <p class="calendar-page__time calendar-page__time--end">22:00</p>
                             </div>
                         </time>
                     </div>
@@ -175,7 +180,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                 </div>
             </li>
         </ol>
-    `,c=p.bind({});var i,s,o;c.parameters={...c.parameters,docs:{...(i=c.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,c=p.bind({});var i,s,l;c.parameters={...c.parameters,docs:{...(i=c.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
@@ -232,6 +237,11 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
                                 <p class="calendar-page__year">2025</p>
+                            </div>
+                            <div class="calendar-page__times">
+                                <p class="calendar-page__time calendar-page__time--start">12:30</p>
+                                <p class="calendar-page__time-separator" aria-label="until">-</p>
+                                <p class="calendar-page__time calendar-page__time--end">22:00</p>
                             </div>
                         </time>
                     </div>
@@ -321,5 +331,5 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
             </li>
         </ol>
     \`;
-}`,...(o=(s=c.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};const b=["EventTable"];export{c as EventTable,b as __namedExportsOrder,h as default};
-//# sourceMappingURL=event-table.stories-1494dd08.js.map
+}`,...(l=(s=c.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};const b=["EventTable"];export{c as EventTable,b as __namedExportsOrder,h as default};
+//# sourceMappingURL=event-table.stories-bc1be078.js.map

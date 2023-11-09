@@ -1,4 +1,4 @@
-import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const _={title:"COMPONENTS/Collections",parameters:{badges:[t.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
+import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const u={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
@@ -85,6 +85,11 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                                     <p class="calendar-page__month">Nov</p>
                                     <p class="calendar-page__day">14</p>
                                     <p class="calendar-page__year">2025</p>
+                                </div>
+                                <div class="calendar-page__times">
+                                    <p class="calendar-page__time calendar-page__time--start">12:30</p>
+                                    <p class="calendar-page__time-separator" aria-label="until">-</p>
+                                    <p class="calendar-page__time calendar-page__time--end">22:00</p>
                                 </div>
                             </time>
                         </div>
@@ -206,7 +211,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ol>
-    `,e=c.bind({});var i,a,o;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,e=c.bind({});var a,i,t;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
@@ -294,6 +299,11 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                                     <p class="calendar-page__month">Nov</p>
                                     <p class="calendar-page__day">14</p>
                                     <p class="calendar-page__year">2025</p>
+                                </div>
+                                <div class="calendar-page__times">
+                                    <p class="calendar-page__time calendar-page__time--start">12:30</p>
+                                    <p class="calendar-page__time-separator" aria-label="until">-</p>
+                                    <p class="calendar-page__time calendar-page__time--end">22:00</p>
                                 </div>
                             </time>
                         </div>
@@ -416,5 +426,5 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             </li>
         </ol>
     \`;
-}`,...(o=(a=e.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};const d=["ListItemEvent"];export{e as ListItemEvent,d as __namedExportsOrder,_ as default};
-//# sourceMappingURL=03.toujou-list-item--event.stories-8ab7bf35.js.map
+}`,...(t=(i=e.parameters)==null?void 0:i.docs)==null?void 0:t.source}}};const d=["ListItemEvent"];export{e as ListItemEvent,d as __namedExportsOrder,u as default};
+//# sourceMappingURL=03.toujou-list-item--event.stories-dd29deb6.js.map
