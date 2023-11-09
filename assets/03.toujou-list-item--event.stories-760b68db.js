@@ -1,4 +1,4 @@
-import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const u={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},s=()=>`
+import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
@@ -16,16 +16,31 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Jun</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">24</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
+
+                            <span class="calendar-pages__until" aria-hidden="true">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            </span>
+
+                            <time class="calendar-page" datetime="2025-11-16">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">16</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
@@ -59,19 +74,21 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Jun</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">12</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
+
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -104,20 +121,33 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Jun</span>
-                                <span class="media-date__month">Sep</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">12</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            on-light-background
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
+
+                            <span class="calendar-pages__until" aria-hidden="true">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            </span>
+
+                            <time class="calendar-page" datetime="2025-11-16">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">16</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
+
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -178,7 +208,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ol>
-    `,e=s.bind({});var i,t,a;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,e=c.bind({});var i,a,t;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
@@ -197,16 +227,31 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Jun</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">24</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
+
+                            <span class="calendar-pages__until" aria-hidden="true">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            </span>
+
+                            <time class="calendar-page" datetime="2025-11-16">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">16</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
@@ -240,19 +285,21 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Jun</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">12</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
+
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -285,20 +332,33 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Jun</span>
-                                <span class="media-date__month">Sep</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">12</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            on-light-background
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
+
+                            <span class="calendar-pages__until" aria-hidden="true">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            </span>
+
+                            <time class="calendar-page" datetime="2025-11-16">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">16</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
+
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -360,5 +420,5 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             </li>
         </ol>
     \`;
-}`,...(a=(t=e.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};const p=["ListItemEvent"];export{e as ListItemEvent,p as __namedExportsOrder,u as default};
-//# sourceMappingURL=03.toujou-list-item--event.stories-964a3a92.js.map
+}`,...(t=(a=e.parameters)==null?void 0:a.docs)==null?void 0:t.source}}};const d=["ListItemEvent"];export{e as ListItemEvent,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=03.toujou-list-item--event.stories-760b68db.js.map
