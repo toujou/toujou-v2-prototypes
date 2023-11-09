@@ -29,21 +29,30 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" inline>
-                                <div class="media-date__months">
-                                    <span class="media-date__month">Jun</span>
-                                    <span class="media-date__month-separator">-</span>
-                                    <span class="media-date__month">Jul</span> 
-                                </div>
-                                <div class="media-date__days">
-                                    <span class="media-date__day">14</span>
-                                    <span class="media-date__day-separator">-</span>
-                                    <span class="media-date__day">16</span>
-                                </div>
-                                <div class="media-date__years">
-                                    <span class="media-date__year">2023</span>                                
-                                </div>
-                            </time>
+                            <div
+                                class="calendar-pages"
+                                aria-label="calendar page with date / time information"
+                            >
+                                <time class="calendar-page" datetime="2025-11-14">
+                                    <div class="calendar-page__date">
+                                        <p class="calendar-page__month">Nov</p>
+                                        <p class="calendar-page__day">14</p>
+                                        <p class="calendar-page__year">2025</p>
+                                    </div>
+                                </time>
+
+                                <span class="calendar-pages__until" aria-hidden="true">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                                </span>
+
+                                <time class="calendar-page" datetime="2025-11-16">
+                                    <div class="calendar-page__date">
+                                        <p class="calendar-page__month">Nov</p>
+                                        <p class="calendar-page__day">16</p>
+                                        <p class="calendar-page__year">2025</p>
+                                    </div>
+                                </time>
+                            </div>
                             <toujou-chip class="chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
                         </div>
                         <div class="event-schedule-card__content">
@@ -61,7 +70,7 @@ const Template = () => {
 
                 </toujou-collection-item>
             </li>
-            
+
             <li class="card-collection__item">
                 <toujou-collection-item
                     class="collection-item"
@@ -72,21 +81,18 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" inline>
-                                <div class="media-date__months">
-                                    <span class="media-date__month">Jun</span>
-                                        <span class="media-date__month-separator">-</span>
-                                        <span class="media-date__month">Jul</span> 
-                                </div>
-                                <div class="media-date__days">
-                                    <span class="media-date__day">14</span>
-                                        <span class="media-date__day-separator">-</span>
-                                        <span class="media-date__day">16</span>
-                                </div>
-                                <div class="media-date__years">
-                                    <span class="media-date__year">2023</span>                                
-                                </div>
-                            </time>
+                            <div
+                                class="calendar-pages"
+                                aria-label="calendar page with date / time information"
+                            >
+                                <time class="calendar-page" datetime="2025-11-14">
+                                    <div class="calendar-page__date">
+                                        <p class="calendar-page__month">Nov</p>
+                                        <p class="calendar-page__day">14</p>
+                                        <p class="calendar-page__year">2025</p>
+                                    </div>
+                                </time>
+                            </div>
                             <toujou-chip class="chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
                         </div>
                         <div class="event-schedule-card__content">
@@ -104,7 +110,7 @@ const Template = () => {
 
                 </toujou-collection-item>
             </li>
-            
+
             <li class="card-collection__item">
                 <toujou-collection-item
                     class="collection-item"
@@ -115,21 +121,30 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" inline>
-                                <div class="media-date__months">
-                                    <span class="media-date__month">Jun</span>
-                                        <span class="media-date__month-separator">-</span>
-                                        <span class="media-date__month">Jul</span> 
-                                </div>
-                                <div class="media-date__days">
-                                    <span class="media-date__day">14</span>
-                                        <span class="media-date__day-separator">-</span>
-                                        <span class="media-date__day">16</span>
-                                </div>
-                                <div class="media-date__years">
-                                    <span class="media-date__year">2023</span>                                
-                                </div>
-                            </time>
+                            <div
+                                class="calendar-pages"
+                                aria-label="calendar page with date / time information"
+                            >
+                                <time class="calendar-page" datetime="2025-11-14">
+                                    <div class="calendar-page__date">
+                                        <p class="calendar-page__month">Nov</p>
+                                        <p class="calendar-page__day">14</p>
+                                        <p class="calendar-page__year">2025</p>
+                                    </div>
+                                </time>
+
+                                <span class="calendar-pages__until" aria-hidden="true">
+                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                                </span>
+
+                                <time class="calendar-page" datetime="2025-11-16">
+                                    <div class="calendar-page__date">
+                                        <p class="calendar-page__month">Nov</p>
+                                        <p class="calendar-page__day">16</p>
+                                        <p class="calendar-page__year">2025</p>
+                                    </div>
+                                </time>
+                            </div>
                             <toujou-chip class="chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
                         </div>
                         <div class="event-schedule-card__content">
@@ -147,7 +162,7 @@ const Template = () => {
 
                 </toujou-collection-item>
             </li>
-            
+
             <li class="card-collection__item">
                 <toujou-collection-item
                     class="collection-item"
@@ -158,21 +173,18 @@ const Template = () => {
                 >
                     <div class="event-schedule-card">
                         <div class="event-schedule-card__top">
-                            <time datetime="2023-06-14" class="media-date" inline>
-                                <div class="media-date__months">
-                                    <span class="media-date__month">Jun</span>
-                                        <span class="media-date__month-separator">-</span>
-                                        <span class="media-date__month">Jul</span> 
-                                </div>
-                                <div class="media-date__days">
-                                    <span class="media-date__day">14</span>
-                                        <span class="media-date__day-separator">-</span>
-                                        <span class="media-date__day">16</span>
-                                </div>
-                                <div class="media-date__years">
-                                    <span class="media-date__year">2023</span>                                
-                                </div>
-                            </time>
+                            <div
+                                class="calendar-pages"
+                                aria-label="calendar page with date / time information"
+                            >
+                                <time class="calendar-page" datetime="2025-11-14">
+                                    <div class="calendar-page__date">
+                                        <p class="calendar-page__month">Nov</p>
+                                        <p class="calendar-page__day">14</p>
+                                        <p class="calendar-page__year">2025</p>
+                                    </div>
+                                </time>
+                            </div>
                             <toujou-chip class="chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
                         </div>
                         <div class="event-schedule-card__content">
@@ -190,7 +202,7 @@ const Template = () => {
 
                 </toujou-collection-item>
             </li>
-        </ul> 
+        </ul>
     `
 };
 

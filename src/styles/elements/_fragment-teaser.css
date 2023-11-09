@@ -95,6 +95,10 @@
     gap: var(--fragment-teaser-column-gap);
 }
 
+.fragment-teaser__column[align-items="bottom"] {
+    --fragment-teaser-column-align-items: flex-end;
+}
+
 .fragment-teaser__column-content {
     width: var(--fragment-teaser-column-content-width);
     display: var(--fragment-teaser-column-content-display);

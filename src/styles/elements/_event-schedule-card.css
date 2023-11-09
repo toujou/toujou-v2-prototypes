@@ -9,7 +9,7 @@
     --event-schedule-card-top-flex-wrap: wrap;
     --event-schedule-card-top-gap: var(--spacing-s);
     --event-schedule-card-top-align-items: flex-end;
-    --event-schedule-card-top-justify-content: flex-start;
+    --event-schedule-card-top-justify-content: space-between;
 
     --event-schedule-card-title-font-size: var(--font-size-ms);
     --event-schedule-card-title-color: var(--color-font-dark);

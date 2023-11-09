@@ -24,6 +24,10 @@
     --collection-item-image-width: 100%;
     --collection-item-image-height: auto;
 
+    --collection-item-date-position: absolute;
+    --collection-item-date-right: var(--spacing-normal);
+    --collection-item-date-top: var(--spacing-normal);
+
     --collection-item-categories-position: absolute;
     --collection-item-categories-top: var(--spacing-normal);
     --collection-item-categories-left: 0;
@@ -211,6 +215,12 @@
     object-fit: var(--collection-item-image-object-fit);
     width: var(--collection-item-image-width);
     height: var(--collection-item-image-height);
+}
+
+.collection-item__date {
+    position: var(--collection-item-date-position);
+    right: var(--collection-item-date-right);
+    top: var(--collection-item-date-top);
 }
 
 .collection-item__categories {

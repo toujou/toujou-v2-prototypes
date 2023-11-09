@@ -3,10 +3,17 @@
     --calendar-pages-flex-direction: row;
     --calendar-pages-align-items: center;
     --calendar-pages-justify-content: center;
-    --calendar-pages-gap: var(--spacing-xs);
+    --calendar-pages-gap: 0;
     --calendar-pages-border-radius: var(--border-radius-normal);
     --calendar-pages-background-color: transparent;
     --calendar-pages-border: var(--border-width-normal) solid transparent;
+    --calendar-pages-padding: 0;
+    --calendar-pages-width: fit-content;
+    --calendar-pages-min-width: fit-content;
+    --calendar-pages-height: fit-content;
+
+    --calendar-pages-until-height: fit-content;
+    --calendar-pages-until-display: flex;
 
     display: var(--calendar-pages-display);
     flex-direction: var(--calendar-pages-flex-direction);
@@ -16,15 +23,24 @@
     border-radius: var(--calendar-pages-border-radius);
     background-color: var(--calendar-pages-background-color);
     border: var(--calendar-pages-border);
+    padding: var(--calendar-pages-padding);
+    width: var(--calendar-pages-min-width);
+    min-width: var(--calendar-pages-min-width);
+    height: var(--calendar-pages-min-width);
 }
 
 .calendar-pages[as-group] {
     --calendar-pages-gap: 0;
-    --calendar-pages-background-color: var(--bg-color);
+    --calendar-pages-background-color: var(--color-bg);
     --calendar-pages-border: var(--border-width-normal) solid var(--border-color-default);
+    --calendar-pages-padding: var(--spacing-s);
 }
 
-.calendar-pages[on-light-background] .calendar-pages__until .icon,
-.calendar-pages[as-group] .calendar-pages__until .icon{
+.calendar-pages .calendar-pages__until .icon {
     --icon-color: var(--color-font);
+}
+
+.calendar-pages__until {
+    height: var(--calendar-pages-until-height);
+    display: var(--calendar-pages-until-display);
 }

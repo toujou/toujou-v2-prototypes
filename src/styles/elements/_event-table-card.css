@@ -1,11 +1,11 @@
 .event-table-card {
-    --event-table-date-width: 6rem;
+    --event-table-date-width: 8rem;
     --event-table-card-display: grid;
     --event-table-card-grid-template-columns: var(--event-table-date-width) 1fr;
     --event-table-card-grid-template-rows: auto auto;
     --event-table-card-grid-template-areas:
-        "eventDate eventChip"
-        "eventDate eventContent";
+        "calendarPages eventChip"
+        "calendarPages eventContent";
     --event-table-card-grid-gap: 0 var(--spacing-normal);
     --event-table-card-padding: var(--spacing-m) 0;
     --event-table-card-margin: 0;
@@ -49,8 +49,8 @@
     width: var(--event-table-card-width);
 }
 
-.event-table-card__media-date {
-    grid-area: eventDate;
+.event-table-card__calendar-pages {
+    grid-area: calendarPages;
 }
 
 .event-table-card__content {
@@ -103,7 +103,7 @@
     .event-table-card {
         --event-table-card-grid-template-columns: var(--event-table-date-width) 1fr auto;
         --event-table-card-grid-template-rows: auto;
-        --event-table-card-grid-template-areas: "eventDate eventContent eventChip";
+        --event-table-card-grid-template-areas: "calendarPages eventContent eventChip";
         --event-table-card-chip-margin-bottom: 0;
     }
 }

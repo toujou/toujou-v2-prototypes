@@ -44,16 +44,6 @@ export default {
             control: { type: 'boolean' },
             required: true,
         },
-        lightBackground: {
-            table: {
-                category: "Calendar pages Settings",
-                defaultValue: { summary: 'normal' },
-            },
-            name: 'On light background',
-            description: "Show the element on a light background",
-            control: { type: 'boolean' },
-            required: true,
-        },
     },
     tags: ['autodocs']
 } as Meta;
@@ -62,23 +52,16 @@ interface CalendarPagesStoryProps {
     asGroup: boolean;
     showTimes: boolean;
     singleDate: boolean;
-    lightBackground: boolean;
 }
 
 const Template: StoryFn<CalendarPagesStoryProps> = (args: CalendarPagesStoryProps) => {
     return `
-        <style>
-            body {
-                background-color: ${args.lightBackground ? 'var(--color-bg' : 'var(--color-primary-dark)'};
-            }
-        </style>
-
-        <time
+        <div
             class="calendar-pages"
-            ${args.lightBackground ? 'on-light-background' : ''}
             ${args.asGroup ? 'as-group' : ''}
+            aria-label="calendar page with date / time information"
         >
-            <div class="calendar-page">
+            <time class="calendar-page" datetime="2025-11-14">
                 <div class="calendar-page__date">
                     <p class="calendar-page__month">Nov</p>
                     <p class="calendar-page__day">14</p>
@@ -87,16 +70,16 @@ const Template: StoryFn<CalendarPagesStoryProps> = (args: CalendarPagesStoryProp
                 ${args.showTimes ? `
                     <div class="calendar-page__times">
                         <p class="calendar-page__time calendar-page__time--start">12:30</p>
-                        <p class="calendar-page__time-separator">-</p>
+                        <p class="calendar-page__time-separator" aria-label="until">-</p>
                         <p class="calendar-page__time calendar-page__time--end">22:00</p>
                     </div>
                 ` : ''}
-            </div>
+            </time>
             ${args.singleDate ? '' : `
-                <span class="calendar-pages__until">
+                <span class="calendar-pages__until" aria-hidden="true">
                     <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
                 </span>
-                <div class="calendar-page">
+                <time class="calendar-page" datetime="2025-11-16">
                     <div class="calendar-page__date">
                         <p class="calendar-page__month">Nov</p>
                         <p class="calendar-page__day">16</p>
@@ -105,13 +88,13 @@ const Template: StoryFn<CalendarPagesStoryProps> = (args: CalendarPagesStoryProp
                     ${args.showTimes ? `
                         <div class="calendar-page__times">
                             <p class="calendar-page__time calendar-page__time--start">12:30</p>
-                            <p class="calendar-page__time-separator">-</p>
+                            <p class="calendar-page__time-separator" aria-label="until">-</p>
                             <p class="calendar-page__time calendar-page__time--end">22:00</p>
                         </div>
                     ` : ''}
-                </div>
+                </time>
             `}
-        </time>
+        </div>
     `
 };
 
@@ -121,5 +104,4 @@ CalendarPages.args = {
     asGroup: false,
     showTimes: true,
     singleDate: false,
-    lightBackground: false,
 }

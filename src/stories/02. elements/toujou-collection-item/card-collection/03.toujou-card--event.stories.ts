@@ -52,17 +52,33 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Apr</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
+
+                            <span class="calendar-pages__until" aria-hidden="true">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            </span>
+
+                            <time class="calendar-page" datetime="2025-11-16">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">16</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
+
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -95,19 +111,21 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Apr</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">28</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
+
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -140,20 +158,33 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Apr</span>
-                                <span class="media-date__month">Mai</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">12</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                            </div>
+
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
+
+                            <span class="calendar-pages__until" aria-hidden="true">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
+                            </span>
+
+                            <time class="calendar-page" datetime="2025-11-16">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">16</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
+
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -186,20 +217,18 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__date media-date">
-                            <div class="media-date__months">
-                                <span class="media-date__month">Jun</span>
-                                <span class="media-date__month">Sep</span>
-                            </div>
-                            <div class="media-date__days">
-                                <span class="media-date__day">25</span>
-                                <span class="media-date__day-separator">-</span>
-                                <span class="media-date__day">12</span>
-                            </div>
-                            <div class="media-date__years">
-                                <span class="media-date__year">2023</span>
-                                <span class="media-date__year">2025</span>
-                            </div>
+                        <div
+                            class="calendar-pages collection-item__date"
+                            aria-label="calendar page with date / time information"
+                            as-group
+                        >
+                            <time class="calendar-page" datetime="2025-11-14">
+                                <div class="calendar-page__date">
+                                    <p class="calendar-page__month">Nov</p>
+                                    <p class="calendar-page__day">14</p>
+                                    <p class="calendar-page__year">2025</p>
+                                </div>
+                            </time>
                         </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
