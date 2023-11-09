@@ -47,6 +47,7 @@
     "@storybook/web-components": "^7.5.3",
     "@storybook/web-components-vite": "^7.5.3",
     "@types/photoswipe": "^4.1.2",
+    "@types/web": "^0.0.119",
     "@web/dev-server-esbuild": "^0.3.3",
     "@web/test-runner": "^0.15.0",
     "autoprefixer": "^10.4.13",
@@ -98,7 +99,6 @@
     "@toujou/toujou-spinner": "^2.0.6",
     "@toujou/toujou-timeline": "^2.0.25",
     "@toujou/toujou-topbutton": "^2.0.17",
-    "@types/web": "^0.0.119",
     "photoswipe-video-plugin": "^1.0.2",
     "skippy-links": "^1.0.4"
   },

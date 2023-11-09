@@ -1,3 +1,6 @@
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 import { Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
@@ -29,14 +32,14 @@ const Template = () => {
 
         <p>With this button you can remove all consents from the local storage. For test purposes only</p>
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
-        
+
         <toujou-third-party-content class="third-party-content" contentType="maps">
         <!--   The content of the template element must be inside html comments -->
         <template>
             <!--{htmlElements.html.content -> f:format.raw()}-->
             <h1>This is the content inside the template</h1>
         </template>
-        
+
         <div class="third-party-content__placeholder" slot="placeholder">
             <p class="third-party-content__message">
                 This is the placeholder message. Privacy policy message <a class="third-party__privacy-policy-link" href="#">Datenschutz</a>
@@ -72,13 +75,13 @@ const Template = () => {
         <!--  This is a container for some elements that need to be rendered in the Light DOM  -->
         <div class="toujou-third-party-content__templated-content"></div>
     </toujou-third-party-content>
-    
+
     <toujou-consent-widget
             class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
             warningvisible="false">
-    
+
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
                 <p class="consent-widget__description">
@@ -97,7 +100,7 @@ const Template = () => {
                             button-variant="font"
                         >Einstellungen</span>
                     </summary>
-                    <div class="consent-widget__consent-elements">                
+                    <div class="consent-widget__consent-elements">
                         <toujou-consent class="consent" consenttype="tracking" consentlifetime="1" snackbarmessage="" listento="change" listenon="#trackingInput-box" prechecked="1">
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
@@ -108,47 +111,47 @@ const Template = () => {
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-                        
-                        <toujou-consent class="consent" consenttype="video" consentlifetime="30" snackbarmessage="" listento="change" listenon="#videoInput-box" prechecked="0">                        
+
+                        <toujou-consent class="consent" consenttype="video" consentlifetime="30" snackbarmessage="" listento="change" listenon="#videoInput-box" prechecked="0">
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="videoInput-box" type="checkbox">
                                     <label class="checkbox-group__label" for="videoInput-box">
-                                        <span class="consent__span">Externe Videos erlauben <span class="consent__duration">(30 Tage)</span></span>                                    
+                                        <span class="consent__span">Externe Videos erlauben <span class="consent__duration">(30 Tage)</span></span>
                                     </label>
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-        
+
                         <toujou-consent class="consent" consenttype="maps" consentlifetime="30" snackbarmessage="" listento="change" listenon="#mapsInput-box" prechecked="0">
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="mapsInput-box" type="checkbox">
                                     <label class="checkbox-group__label" for="mapsInput-box">
-                                        <span class="consent__span">Externe Karten erlauben <span class="consent__duration">(30 Tage)</span></span>                                    
+                                        <span class="consent__span">Externe Karten erlauben <span class="consent__duration">(30 Tage)</span></span>
                                     </label>
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-        
+
                         <toujou-consent class="consent" consenttype="html" consentlifetime="30" snackbarmessage="" listento="change" listenon="#htmlInput-box" prechecked="0">
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="htmlInput-box" type="checkbox">
                                     <label class="checkbox-group__label" for="htmlInput-box">
-                                       <span class="consent__span">Externe HTML-Inhalte erlauben <span class="consent__duration">(30 Tage)</span></span>                                    
+                                       <span class="consent__span">Externe HTML-Inhalte erlauben <span class="consent__duration">(30 Tage)</span></span>
                                     </label>
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-    
+
                     </div>
                 </details>
-        
+
                 <button id="consentAcceptAllButton" accept-all="" class="button consent-widget__button" button-type="default" button-size="small" button-variant="primary">Alles akzeptieren</button>
                 <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">OK</button>
             </div>
-        </toujou-consent-widget> 
+        </toujou-consent-widget>
     `;
 };
 

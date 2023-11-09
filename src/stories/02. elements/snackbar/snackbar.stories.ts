@@ -1,3 +1,6 @@
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 import { StoryFn, Meta } from '@storybook/web-components';
 
 // @ts-ignore

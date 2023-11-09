@@ -1,32 +1,47 @@
 {
-  "compilerOptions": {
-    "module": "esnext",
-    "lib": ["es2017", "dom", "dom.iterable"],
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "./types",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": false,
-    "skipLibCheck": true,
-    "target": "ES6",
-    "types": ["cypress", "cypress-axe"]
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": [
-    "src/**/*.stories.ts",
-    "src/**/*.cy.ts"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "paths": {
-    "@/utils/*": ["utils/*"]
-  }
+    "compilerOptions": {
+        "module": "esnext",
+        "lib": [
+            "es2017",
+            "dom",
+            "dom.iterable"
+        ],
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "./types",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": false,
+        "skipLibCheck": true,
+        "target": "ES6",
+        "types": [
+            "cypress",
+            "cypress-axe"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "src/**/*.stories.ts",
+        "src/**/*.cy.ts"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ],
+    "paths": {
+        "@/utils/*": [
+            "utils/*"
+        ]
+    }
 }
