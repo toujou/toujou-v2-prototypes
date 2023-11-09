@@ -46,6 +46,7 @@
 
     --calendar-page-time-separator-line-height: var(--spacing-xs);
     --calendar-page-time-separator-word-margin-bottom: var(--spacing-xs);
+    --calendar-page-time-separator-word-text-trandform: none;
 
     background-color: var(--calendar-page-background-color);
     padding: var(--calendar-page-padding);
@@ -118,6 +119,7 @@
 
 .calendar-page__time-separator--word {
     margin-bottom: var(--calendar-page-time-separator-word-margin-bottom);
+    text-transform: var(--calendar-page-time-separator-word-text-trandform);
 }
 
 
