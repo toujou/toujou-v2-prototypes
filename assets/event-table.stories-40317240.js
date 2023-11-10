@@ -31,7 +31,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
         </div>
     </li>
 </ol>
-`})})]})}function d(n={}){const{wrapper:e}=Object.assign({},o(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(t,n)})):t(n)}const h={title:"COMPONENTS/EventTable",parameters:{badges:[r.DONE],docs:{page:d}},tags:["autodocs"]},p=()=>`
+`})})]})}function d(n={}){const{wrapper:e}=Object.assign({},o(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(t,n)})):t(n)}const h={title:"COMPONENTS/EventTable",parameters:{badges:[r.DONE],docs:{page:d}},tags:["autodocs"]},_=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <div class="event-table-card">
@@ -43,19 +43,21 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
-                                <p class="calendar-page__year">2025</p>
+                            </div>
+                            <div class="calendar-page__times">
+                                <p class="calendar-page__time calendar-page__time--start">12:30</p>
                             </div>
                         </time>
-
                         <span class="calendar-pages__until" aria-hidden="true">
                             <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
                         </span>
-
                         <time class="calendar-page" datetime="2025-11-16">
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">16</p>
-                                <p class="calendar-page__year">2025</p>
+                            </div>
+                            <div class="calendar-page__times">
+                                <p class="calendar-page__time calendar-page__time--start">12:30</p>
                             </div>
                         </time>
                     </div>
@@ -82,16 +84,14 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
                     >
-                        <time class="calendar-page" datetime="2025-11-14">
+                        <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
-                                <p class="calendar-page__year">2025</p>
                             </div>
                             <div class="calendar-page__times">
+                                <p class="calendar-page__time-separator calendar-page__time-separator--word" aria-label="from">from</p>
                                 <p class="calendar-page__time calendar-page__time--start">12:30</p>
-                                <p class="calendar-page__time-separator" aria-label="until">-</p>
-                                <p class="calendar-page__time calendar-page__time--end">22:00</p>
                             </div>
                         </time>
                     </div>
@@ -111,27 +111,20 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
 
             <li class="item-collection__item">
                 <div class="event-table-card">
-                    <div
-                        class="calendar-pages event-table-card__calendar-pages"
-                        aria-label="calendar page with date / time information"
-                    >
+                    <div class="calendar-pages event-table-card__calendar-pages" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
-                                <p class="calendar-page__year">2025</p>
                             </div>
                         </time>
-
                         <span class="calendar-pages__until" aria-hidden="true">
                             <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
                         </span>
-
                         <time class="calendar-page" datetime="2025-11-16">
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">16</p>
-                                <p class="calendar-page__year">2025</p>
                             </div>
                         </time>
                     </div>
@@ -180,7 +173,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                 </div>
             </li>
         </ol>
-    `,c=p.bind({});var i,s,l;c.parameters={...c.parameters,docs:{...(i=c.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,c=_.bind({});var i,s,l;c.parameters={...c.parameters,docs:{...(i=c.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
@@ -193,19 +186,21 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
-                                <p class="calendar-page__year">2025</p>
+                            </div>
+                            <div class="calendar-page__times">
+                                <p class="calendar-page__time calendar-page__time--start">12:30</p>
                             </div>
                         </time>
-
                         <span class="calendar-pages__until" aria-hidden="true">
                             <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
                         </span>
-
                         <time class="calendar-page" datetime="2025-11-16">
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">16</p>
-                                <p class="calendar-page__year">2025</p>
+                            </div>
+                            <div class="calendar-page__times">
+                                <p class="calendar-page__time calendar-page__time--start">12:30</p>
                             </div>
                         </time>
                     </div>
@@ -232,16 +227,14 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
                     >
-                        <time class="calendar-page" datetime="2025-11-14">
+                        <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
-                                <p class="calendar-page__year">2025</p>
                             </div>
                             <div class="calendar-page__times">
+                                <p class="calendar-page__time-separator calendar-page__time-separator--word" aria-label="from">from</p>
                                 <p class="calendar-page__time calendar-page__time--start">12:30</p>
-                                <p class="calendar-page__time-separator" aria-label="until">-</p>
-                                <p class="calendar-page__time calendar-page__time--end">22:00</p>
                             </div>
                         </time>
                     </div>
@@ -261,27 +254,20 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
 
             <li class="item-collection__item">
                 <div class="event-table-card">
-                    <div
-                        class="calendar-pages event-table-card__calendar-pages"
-                        aria-label="calendar page with date / time information"
-                    >
+                    <div class="calendar-pages event-table-card__calendar-pages" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">14</p>
-                                <p class="calendar-page__year">2025</p>
                             </div>
                         </time>
-
                         <span class="calendar-pages__until" aria-hidden="true">
                             <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
                         </span>
-
                         <time class="calendar-page" datetime="2025-11-16">
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">16</p>
-                                <p class="calendar-page__year">2025</p>
                             </div>
                         </time>
                     </div>
@@ -332,4 +318,4 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
         </ol>
     \`;
 }`,...(l=(s=c.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};const b=["EventTable"];export{c as EventTable,b as __namedExportsOrder,h as default};
-//# sourceMappingURL=event-table.stories-bc1be078.js.map
+//# sourceMappingURL=event-table.stories-40317240.js.map

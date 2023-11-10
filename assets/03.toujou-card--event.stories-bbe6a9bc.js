@@ -76,8 +76,11 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
 
-                        <div
-                            class="calendar-pages collection-item__date"
+                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                    </header>
+                    <div class="collection-item__bottom">
+                     <div
+                            class="calendar-pages"
                             aria-label="calendar page with date / time information"
                             as-group
                         >
@@ -95,9 +98,6 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             </time>
                         </div>
 
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </header>
-                    <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
@@ -302,8 +302,11 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
 
-                        <div
-                            class="calendar-pages collection-item__date"
+                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                    </header>
+                    <div class="collection-item__bottom">
+                     <div
+                            class="calendar-pages"
                             aria-label="calendar page with date / time information"
                             as-group
                         >
@@ -321,9 +324,6 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             </time>
                         </div>
 
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </header>
-                    <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
@@ -451,4 +451,4 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
 
     \`;
 }`,...(t=(n=e.parameters)==null?void 0:n.docs)==null?void 0:t.source}}};const g=["CardEvent"];export{e as CardEvent,g as __namedExportsOrder,d as default};
-//# sourceMappingURL=03.toujou-card--event.stories-0be56f93.js.map
+//# sourceMappingURL=03.toujou-card--event.stories-bbe6a9bc.js.map
