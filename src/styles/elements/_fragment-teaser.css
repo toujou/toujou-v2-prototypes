@@ -3,7 +3,7 @@
     --fragment-teaser-grid-template-columns: 1fr;
     --fragment-teaser-grid-gap: var(--content-spacing-between-columns);
     --fragment-teaser-width: var(--content-width-with-padding);
-    --fragment-teaser-max-width: var(--content-max-width);
+    --fragment-teaser-max-width: var(--content-medium-max-width);
     --fragment-teaser-margin: 0 auto;
 
     --fragment-teaser-figure-border-radius: var(--border-radius-default);
@@ -150,5 +150,6 @@
 
     .fragment-teaser[single-column] {
         --fragment-teaser-grid-template-columns: 1fr;
+        --fragment-teaser-max-width: var(--content-medium-max-width);
     }
 }

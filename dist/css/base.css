@@ -3680,6 +3680,10 @@ main > .table-container {
     z-index: var(--text-block-z-index);
 }
 
+.text-block[column-count="1"] {
+    --text-block-max-width: var(--content-max-width);
+}
+
 .text-block:first-child,
 span:first-child + .text-block {
     --text-block-margin: 0 auto;
