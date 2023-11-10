@@ -150,6 +150,6 @@
 
     .fragment-teaser[single-column] {
         --fragment-teaser-grid-template-columns: 1fr;
-        --fragment-teaser-max-width: var(--content-medium-max-width);
+        --fragment-teaser-max-width: var(--content-max-width);
     }
 }

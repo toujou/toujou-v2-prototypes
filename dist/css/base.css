@@ -3680,7 +3680,7 @@ main > .table-container {
     z-index: var(--text-block-z-index);
 }
 
-.text-block[column-count="1"] {
+.text-block[text-block-column-count="1"] {
     --text-block-max-width: var(--content-max-width);
 }
 
