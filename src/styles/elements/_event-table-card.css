@@ -99,6 +99,19 @@
     }
 }
 
+@media screen and (max-width: 539px) {
+    .event-table-card {
+        --event-table-card-grid-template-columns: auto 1fr;
+        --event-table-card-grid-template-rows: auto;
+        --event-table-card-grid-template-areas:
+            "calendarPages eventChip"
+            "eventContent eventContent";
+        --event-table-card-chip-margin-bottom: 0;
+        --event-table-card-grid-gap: var(--spacing-normal);
+        --event-table-card-chip-align-self: flex-end;
+    }
+}
+
 @media screen and (min-width: 640px) {
     .event-table-card {
         --event-table-card-grid-template-columns: var(--event-table-date-width) 1fr auto;

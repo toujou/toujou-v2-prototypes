@@ -5,7 +5,7 @@
     --calendar-page-border: var(--border-width-normal) solid transparent;
     --calendar-page-min-width: fit-content;
     --calendar-page-display: flex;
-    --calendar-page-flex-direction: row;
+    --calendar-page-flex-direction: column;
     --calendar-page-align-items: center;
     --calendar-page-justify-content: center;
 
@@ -40,9 +40,10 @@
     --calendar-page-times-align-items: center;
     --calendar-page-times-justify-content: center;
     --calendar-page-times-gap: var(--spacing-xxs);
-    --calendar-page-times-margin: 0 0 0 var(--spacing-s);
-    --calendar-page-times-padding: 0 0 0 var(--spacing-s);
-    --calendar-page-times-border-left: 1px solid var(--border-color-default);
+    --calendar-page-times-margin: var(--spacing-s) 0 0;
+    --calendar-page-times-padding: var(--spacing-s) 0 0;
+    --calendar-page-times-border-top: 1px solid var(--border-color-default);
+    --calendar-page-times-border-left: none;
 
     --calendar-page-time-separator-line-height: var(--spacing-xs);
     --calendar-page-time-separator-word-margin-bottom: var(--spacing-xs);
@@ -59,12 +60,26 @@
     justify-content: var(--calendar-page-justify-content);
 }
 
-.calendar-pages[as-group] .calendar-page {
-    --calendar-page-padding: 0;
+.calendar-pages:not([as-group]) .calendar-page:not([inline]) {
+    --calendar-page-border: var(--border-width-normal) solid var(--border-color-default);
 }
 
-.calendar-pages:not([as-group]) .calendar-page {
-    --calendar-page-border: var(--border-width-normal) solid var(--border-color-default);
+.calendar-page[inline] {
+    --calendar-page-background-color: transparent;
+    --calendar-page-padding: 0;
+    --calendar-page-border: var(--border-width-normal) solid transparent;
+}
+
+.calendar-page[single-day] {
+    --calendar-page-flex-direction: row;
+    --calendar-page-times-margin: 0 0 0 var(--spacing-s);
+    --calendar-page-times-padding: 0 0 0 var(--spacing-s);
+    --calendar-page-times-border-top: none;
+    --calendar-page-times-border-left: 1px solid var(--border-color-default);
+}
+
+.calendar-pages[as-group] .calendar-page {
+    --calendar-page-padding: 0;
 }
 
 .calendar-page__date {
@@ -110,6 +125,7 @@
     gap: var(--calendar-page-times-gap);
     margin: var(--calendar-page-times-margin);
     padding: var(--calendar-page-times-padding);
+    border-top: var(--calendar-page-times-border-top);
     border-left: var(--calendar-page-times-border-left);
 }
 

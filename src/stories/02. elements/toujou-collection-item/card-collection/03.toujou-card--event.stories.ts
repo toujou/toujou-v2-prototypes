@@ -112,8 +112,11 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
 
-                        <div
-                            class="calendar-pages collection-item__date"
+                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                    </header>
+                    <div class="collection-item__bottom">
+                     <div
+                            class="calendar-pages"
                             aria-label="calendar page with date / time information"
                             as-group
                         >
@@ -131,9 +134,6 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             </time>
                         </div>
 
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </header>
-                    <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
