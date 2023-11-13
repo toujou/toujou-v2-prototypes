@@ -1,4 +1,4 @@
-import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:c}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=i=>`
+import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-collection-item.docs-70b39a13.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:l}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},s=i=>`
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="event" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
@@ -17,43 +17,20 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
 
-                        <div
-                            class="calendar-pages collection-item__date"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-
-                            <span class="calendar-pages__until" aria-hidden="true">
-                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
-                            </span>
-
-                            <time class="calendar-page" datetime="2025-11-16">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">16</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-                        </div>
-
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
+
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
-                        <div class="collection-item__info">
-                            <toujou-icon icon-size="ms" icon-color="primary" icon-name="info" class="icon collection-item__info-icon"></toujou-icon>
-                            <p class="collection-item__info-text">Meistersingerhalle - Nürnberg 19.30 - 23.00 Uhr, ab 50,00 €</p>
-                        </div>
+
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025</span>
+                        </time>
+
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="success" chip-border-radius="normal" chip-size="normal">Event geplannt</toujou-chip>
                         </p>
@@ -79,33 +56,14 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                     <div
-                            class="calendar-pages"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                                <div class="calendar-page__times">
-                                    <p class="calendar-page__time calendar-page__time--start">12:30</p>
-                                    <p class="calendar-page__time-separator" aria-label="until">-</p>
-                                    <p class="calendar-page__time calendar-page__time--end">22:00</p>
-                                </div>
-                            </time>
-                        </div>
-
                         <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
-                        <div class="collection-item__info">
-                            <toujou-icon icon-size="ms" icon-color="primary" icon-name="info" class="icon collection-item__info-icon"></toujou-icon>
-                            <p class="collection-item__info-text">Meistersingerhalle - Nürnberg 19.30 - 23.00 Uhr, ab 50,00 €</p>
-                        </div>
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025, 10:30 - 18:30</span>
+                        </time>
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="normal">Event abgesagt</toujou-chip>
                         </p>
@@ -127,33 +85,6 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
-                        <div
-                            class="calendar-pages collection-item__date"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-
-                            <span class="calendar-pages__until" aria-hidden="true">
-                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
-                            </span>
-
-                            <time class="calendar-page" datetime="2025-11-16">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">16</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-                        </div>
-
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -161,10 +92,12 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
-                        <div class="collection-item__info">
-                            <toujou-icon icon-size="ms" icon-color="primary" icon-name="info" class="icon collection-item__info-icon"></toujou-icon>
-                            <p class="collection-item__info-text">Meistersingerhalle - Nürnberg 19.30 - 23.00 Uhr, ab 50,00 €</p>
-                        </div>
+
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025 - 30.12.2025</span>
+                        </time>
+
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="normal">Event abgesagt</toujou-chip>
                         </p>
@@ -186,26 +119,19 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div
-                            class="calendar-pages collection-item__date"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-                        </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Headline</h3>
+                        <h3 class="collection-item__title">Nice headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
+
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025, 08:30 - 30.12.2025, 22:00</span>
+                        </time>
+
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="normal">Event abgesagt</toujou-chip>
                         </p>
@@ -223,7 +149,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
             </li>
         </ul>
 
-    `,e=l.bind({});e.args={elementDesign:"default"};var a,n,t;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
+    `,e=s.bind({});e.args={elementDesign:"default"};var t,o,n;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
         <ul class="card-collection">
             <li class="card-collection__item">
@@ -243,43 +169,20 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
 
-                        <div
-                            class="calendar-pages collection-item__date"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-
-                            <span class="calendar-pages__until" aria-hidden="true">
-                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
-                            </span>
-
-                            <time class="calendar-page" datetime="2025-11-16">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">16</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-                        </div>
-
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
+
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
-                        <div class="collection-item__info">
-                            <toujou-icon icon-size="ms" icon-color="primary" icon-name="info" class="icon collection-item__info-icon"></toujou-icon>
-                            <p class="collection-item__info-text">Meistersingerhalle - Nürnberg 19.30 - 23.00 Uhr, ab 50,00 €</p>
-                        </div>
+
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025</span>
+                        </time>
+
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="success" chip-border-radius="normal" chip-size="normal">Event geplannt</toujou-chip>
                         </p>
@@ -305,33 +208,14 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                     <div
-                            class="calendar-pages"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                                <div class="calendar-page__times">
-                                    <p class="calendar-page__time calendar-page__time--start">12:30</p>
-                                    <p class="calendar-page__time-separator" aria-label="until">-</p>
-                                    <p class="calendar-page__time calendar-page__time--end">22:00</p>
-                                </div>
-                            </time>
-                        </div>
-
                         <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
-                        <div class="collection-item__info">
-                            <toujou-icon icon-size="ms" icon-color="primary" icon-name="info" class="icon collection-item__info-icon"></toujou-icon>
-                            <p class="collection-item__info-text">Meistersingerhalle - Nürnberg 19.30 - 23.00 Uhr, ab 50,00 €</p>
-                        </div>
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025, 10:30 - 18:30</span>
+                        </time>
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="normal">Event abgesagt</toujou-chip>
                         </p>
@@ -353,33 +237,6 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
-                        <div
-                            class="calendar-pages collection-item__date"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-
-                            <span class="calendar-pages__until" aria-hidden="true">
-                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-right" icon-color="background"></toujou-icon>
-                            </span>
-
-                            <time class="calendar-page" datetime="2025-11-16">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">16</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-                        </div>
-
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
@@ -387,10 +244,12 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
-                        <div class="collection-item__info">
-                            <toujou-icon icon-size="ms" icon-color="primary" icon-name="info" class="icon collection-item__info-icon"></toujou-icon>
-                            <p class="collection-item__info-text">Meistersingerhalle - Nürnberg 19.30 - 23.00 Uhr, ab 50,00 €</p>
-                        </div>
+
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025 - 30.12.2025</span>
+                        </time>
+
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="normal">Event abgesagt</toujou-chip>
                         </p>
@@ -412,26 +271,19 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div
-                            class="calendar-pages collection-item__date"
-                            aria-label="calendar page with date / time information"
-                            as-group
-                        >
-                            <time class="calendar-page" datetime="2025-11-14">
-                                <div class="calendar-page__date">
-                                    <p class="calendar-page__month">Nov</p>
-                                    <p class="calendar-page__day">14</p>
-                                    <p class="calendar-page__year">2025</p>
-                                </div>
-                            </time>
-                        </div>
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Headline</h3>
+                        <h3 class="collection-item__title">Nice headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">FourEver Tournee</span>
                         </p>
+
+                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
+                            <span class="collection-item__date-text">24.12.2025, 08:30 - 30.12.2025, 22:00</span>
+                        </time>
+
                         <p class="collection-item__status">
                             <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="normal">Event abgesagt</toujou-chip>
                         </p>
@@ -450,5 +302,5 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
         </ul>
 
     \`;
-}`,...(t=(n=e.parameters)==null?void 0:n.docs)==null?void 0:t.source}}};const g=["CardEvent"];export{e as CardEvent,g as __namedExportsOrder,d as default};
-//# sourceMappingURL=03.toujou-card--event.stories-bbe6a9bc.js.map
+}`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const g=["CardEvent"];export{e as CardEvent,g as __namedExportsOrder,d as default};
+//# sourceMappingURL=03.toujou-card--event.stories-10adcd10.js.map
