@@ -24,9 +24,12 @@
     --collection-item-image-width: 100%;
     --collection-item-image-height: auto;
 
-    --collection-item-date-position: absolute;
-    --collection-item-date-right: var(--spacing-normal);
-    --collection-item-date-top: var(--spacing-normal);
+    --collection-item-date-position: relative;
+    --collection-item-date-display: flex;
+    --collection-item-date-align-items: center;
+    --colleciton-item-date-justify-content: flex-start;
+    --collection-item-date-gap: var(--spacing-s);
+    --collection-item-date-margin: var(--spacing-s) 0 0;
 
     --collection-item-categories-position: absolute;
     --collection-item-categories-top: var(--spacing-normal);
@@ -219,8 +222,11 @@
 
 .collection-item__date {
     position: var(--collection-item-date-position);
-    right: var(--collection-item-date-right);
-    top: var(--collection-item-date-top);
+    display: var(--collection-item-date-display);
+    align-items: var(--collection-item-date-align-items);
+    justify-content: var(--colleciton-item-date-justify-content);
+    gap: var(--collection-item-date-gap);
+    margin: var(--collection-item-date-margin);
 }
 
 .collection-item__categories {
@@ -461,6 +467,7 @@ a.collection-item__button:focus-visible {
 .collection-item[element-design="inverted"] .address__link:focus-within {
     color: var(--color-font-light);
 }
+
 
 @media (hover: hover) {
     a.collection-item__button:hover {
