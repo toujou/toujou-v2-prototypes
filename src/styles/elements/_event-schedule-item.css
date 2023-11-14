@@ -1,0 +1,54 @@
+.event-schedule-item {
+    --event-schedule-item-display: grid;
+    --event-schedule-item-grid-template-columns: 7rem 1fr auto;
+    --event-schedule-item-grid-template-areas: "time title status";
+    --event-schedule-item-grid-gap: var(--spacing-normal);
+    --event-schedule-item-align-items: center;
+    --event-schedule-item-margin: 0;
+    --event-schedule-item-padding: var(--spacing-s) var(--spacing-xs);
+    --event-schedule-item-text-decoration: none;
+    --event-schedule-item-background-color: transparent;
+
+    --event-schedule-item-time-margin: 0;
+    --event-schedule-item-time-font-numeric-variant: tabular-nums;
+
+    --event-schedule-item-title-margin: 0;
+    --event-schedule-item-title-font-size: var(--font-size-ms);
+    --event-schedule-item-title-color: var(--color-font-dark);
+    --event-schedule-item-title-font-family: var(--font-family-text);
+    --event-schedule-item-title-font-weight: var(--font-weight-text-bold);
+
+    --event-schedule-item-title-step-color: var(--color-font-light);
+
+    display: var(--event-schedule-item-display);
+    grid-template-columns: var(--event-schedule-item-grid-template-columns);
+    grid-template-areas: var(--event-schedule-item-grid-template-areas);
+    grid-gap: var(--event-schedule-item-grid-gap);
+    align-items: var(--event-schedule-item-align-items);
+    margin: var(--event-schedule-item-margin);
+    padding: var(--event-schedule-item-padding);
+    text-decoration: var(--event-schedule-item-text-decoration);
+    background-color: var(--event-schedule-item-background-color);
+}
+
+a.event-schedule-item:is(:hover, :focus-visible) {
+    --event-schedule-item-background-color: var(--color-font-o-04);
+}
+
+.event-schedule-item__time {
+    margin: var(--event-schedule-item-time-margin);
+    font-variant-numeric: var(--event-schedule-item-time-font-numeric-variant);
+
+}
+
+.event-schedule-item__title {
+    margin: var(--event-schedule-item-title-margin);
+    font-size: var(--event-schedule-item-title-font-size);
+    color: var(--event-schedule-item-title-color);
+    font-family: var(--event-schedule-item-title-font-family);
+    font-weight: var(--event-schedule-item-title-font-weight);
+}
+
+.event-schedule-item__title-step {
+    color: var(--event-schedule-item-title-step-color);
+}

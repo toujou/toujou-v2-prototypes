@@ -1,0 +1,11 @@
+.event-schedule-year {
+    --event-schedule-year-margin: 0;
+    --event-schedule-year-display: block;
+
+    margin: var(--event-schedule-year-margin);
+    display: var(--event-schedule-year-display);
+}
+
+.event-schedule-year + .event-schedule-year {
+    --event-schedule-year-margin: var(--spacing-l) 0 0;
+}

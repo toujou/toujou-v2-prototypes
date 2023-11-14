@@ -102,7 +102,10 @@
 @import "./elements/_rating-stars.css";
 @import "./elements/_reviews.css";
 @import "./elements/_review.css";
-@import "./elements/_event-schedule-card.css";
+@import "./elements/_event-schedule.css";
+@import "./elements/_event-schedule-day.css";
+@import "./elements/_event-schedule-item.css";
+@import "./elements/_event-schedule-year.css";
 @import "./elements/_event-table-card.css";
 @import "./elements/_timeline.css";
 @import "./elements/_timeline-card.css";
