@@ -1,40 +1,30 @@
-import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-runtime-ccada58e.js";import{u as o}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function t(n){const e=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code"},o(),n.components);return a.jsxs(a.Fragment,{children:[a.jsx(e.h1,{id:"event-table",children:"Event table"}),`
-`,a.jsx(e.p,{children:"The event table element renders a simple list of events showing a list item with just the most relevant information for each event"}),`
+import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-runtime-ccada58e.js";import{u as r}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function c(n){const e=Object.assign({h1:"h1",p:"p",h2:"h2",pre:"pre",code:"code"},r(),n.components);return a.jsxs(a.Fragment,{children:[a.jsx(e.h1,{id:"event-table",children:"Event table"}),`
+`,a.jsx(e.p,{children:"The event table element renders a simple list of events showing a list item with just the most relevant information for each event."}),`
+`,a.jsx(e.p,{children:"Event are shown just once and are not grouped in any way."}),`
 `,a.jsx(e.h2,{id:"markup-example",children:"Markup example"}),`
 `,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<ol class="item-collection">
     <li class="item-collection__item">
-        <div class="event-table-card">
+        <a href="#" class="event-table-card">
             <div class="calendar-pages event-table-card__calendar-pages" aria-label="calendar page with date / time information">
                 <time class="calendar-page" datetime="2025-11-14">
                     <div class="calendar-page__date">
                         <p class="calendar-page__month">Nov</p>
                         <p class="calendar-page__day">14</p>
-                        <p class="calendar-page__year">2025</p>
                     </div>
                 </time>
             </div>
-
             <div class="event-table-card__content">
                 <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                <p class="event-table-card__info">
-                    <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                    <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                </p>
-                <a href="#" class="event-table-card__button">
-                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                    Mehr Informationen
-                </a>
             </div>
 
-            <toujou-chip class="chip event-table-card__chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
-
-        </div>
+            <toujou-chip class="chip event-table-card__chip" chip-size="extra-small" chip-bg-color="error">Abgesagt</toujou-chip>
+        </a>
     </li>
 </ol>
-`})})]})}function d(n={}){const{wrapper:e}=Object.assign({},o(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(t,n)})):t(n)}const h={title:"COMPONENTS/EventTable",parameters:{badges:[r.DONE],docs:{page:d}},tags:["autodocs"]},_=()=>`
+`})})]})}function o(n={}){const{wrapper:e}=Object.assign({},r(),n.components);return e?a.jsx(e,Object.assign({},n,{children:a.jsx(c,n)})):c(n)}const b={title:"COMPONENTS/EventTable",parameters:{badges:[d.DONE],docs:{page:o}},tags:["autodocs"]},p=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -63,23 +53,14 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                     </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
                     </div>
 
-                    <toujou-chip class="chip event-table-card__chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
-
-                </div>
+                    <toujou-chip class="chip event-table-card__chip" chip-size="extra-small" chip-bg-color="error">Abgesagt</toujou-chip>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -96,21 +77,13 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                         </time>
                     </div>
                     <div class="event-table-card__content">
-                        <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
+                        <h3 class="event-table-card__title">The artist formerly known as Prince with a nice long description with a nice long description with a nice long description</h3>
                     </div>
-                </div>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div class="calendar-pages event-table-card__calendar-pages" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -129,24 +102,15 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                         </time>
                     </div>
                     <div class="event-table-card__content">
-                        <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
+                        <h3 class="event-table-card__title">Nice title</h3>
                     </div>
 
-                    <toujou-chip class="chip event-table-card__chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
-
-                </div>
+                    <toujou-chip class="chip event-table-card__chip" chip-size="extra-small" chip-bg-color="error">Abgesagt</toujou-chip>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -161,23 +125,15 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                     </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
                     </div>
-                </div>
+                </a>
             </li>
         </ol>
-    `,c=_.bind({});var i,s,l;c.parameters={...c.parameters,docs:{...(i=c.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,t=p.bind({});var l,s,i;t.parameters={...t.parameters,docs:{...(l=t.parameters)==null?void 0:l.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -206,23 +162,14 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                     </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
                     </div>
 
-                    <toujou-chip class="chip event-table-card__chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
-
-                </div>
+                    <toujou-chip class="chip event-table-card__chip" chip-size="extra-small" chip-bg-color="error">Abgesagt</toujou-chip>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -239,21 +186,13 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                         </time>
                     </div>
                     <div class="event-table-card__content">
-                        <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
+                        <h3 class="event-table-card__title">The artist formerly known as Prince with a nice long description with a nice long description with a nice long description</h3>
                     </div>
-                </div>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div class="calendar-pages event-table-card__calendar-pages" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -272,24 +211,15 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                         </time>
                     </div>
                     <div class="event-table-card__content">
-                        <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
+                        <h3 class="event-table-card__title">Nice title</h3>
                     </div>
 
-                    <toujou-chip class="chip event-table-card__chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
-
-                </div>
+                    <toujou-chip class="chip event-table-card__chip" chip-size="extra-small" chip-bg-color="error">Abgesagt</toujou-chip>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -304,18 +234,10 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                     </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
                     </div>
-                </div>
+                </a>
             </li>
         </ol>
     \`;
-}`,...(l=(s=c.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};const b=["EventTable"];export{c as EventTable,b as __namedExportsOrder,h as default};
-//# sourceMappingURL=event-table.stories-40317240.js.map
+}`,...(i=(s=t.parameters)==null?void 0:s.docs)==null?void 0:i.source}}};const u=["EventTable"];export{t as EventTable,u as __namedExportsOrder,b as default};
+//# sourceMappingURL=event-table.stories-d3e80920.js.map
