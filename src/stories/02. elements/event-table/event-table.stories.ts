@@ -20,7 +20,7 @@ const Template = () => {
     return `
         <ol class="item-collection">
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -49,23 +49,14 @@ const Template = () => {
                     </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
                     </div>
 
-                    <toujou-chip class="chip event-table-card__chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
-
-                </div>
+                    <toujou-chip class="chip event-table-card__chip" chip-size="extra-small" chip-bg-color="error">Abgesagt</toujou-chip>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -82,21 +73,13 @@ const Template = () => {
                         </time>
                     </div>
                     <div class="event-table-card__content">
-                        <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
+                        <h3 class="event-table-card__title">The artist formerly known as Prince with a nice long description with a nice long description with a nice long description</h3>
                     </div>
-                </div>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div class="calendar-pages event-table-card__calendar-pages" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14">
                             <div class="calendar-page__date">
@@ -115,24 +98,15 @@ const Template = () => {
                         </time>
                     </div>
                     <div class="event-table-card__content">
-                        <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
+                        <h3 class="event-table-card__title">Nice title</h3>
                     </div>
 
-                    <toujou-chip class="chip event-table-card__chip" chip-size="small" chip-bg-color="error">Event abgesagt</toujou-chip>
-
-                </div>
+                    <toujou-chip class="chip event-table-card__chip" chip-size="extra-small" chip-bg-color="error">Abgesagt</toujou-chip>
+                </a>
             </li>
 
             <li class="item-collection__item">
-                <div class="event-table-card">
+                <a href="#" class="event-table-card">
                     <div
                         class="calendar-pages event-table-card__calendar-pages"
                         aria-label="calendar page with date / time information"
@@ -147,16 +121,8 @@ const Template = () => {
                     </div>
                     <div class="event-table-card__content">
                         <h3 class="event-table-card__title">The artist formerly known as Prince</h3>
-                        <p class="event-table-card__info">
-                            <toujou-icon class="icon" icon-name="info" icon-color="primary" icon-size="ms"></toujou-icon>
-                            <span class="event-table-card__info-text">Meistersingerhalle - Nürnberg</span>
-                        </p>
-                        <a href="#" class="event-table-card__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            Mehr Informationen
-                        </a>
                     </div>
-                </div>
+                </a>
             </li>
         </ol>
     `

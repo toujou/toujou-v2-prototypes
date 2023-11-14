@@ -6,10 +6,13 @@
     --event-table-card-grid-template-areas:
         "calendarPages eventChip"
         "calendarPages eventContent";
+    --event-table-card-align-items: center;
     --event-table-card-grid-gap: 0 var(--spacing-normal);
-    --event-table-card-padding: var(--spacing-m) 0;
+    --event-table-card-padding: var(--spacing-normal) var(--spacing-s);
     --event-table-card-margin: 0;
     --event-table-card-width: 100%;
+    --event-table-card-text-decoration: none;
+    --event-table-card-background-color: transparent;
 
     --event-table-card-date-grid-row: 1 / 3;
 
@@ -26,15 +29,6 @@
 
     --event-table-card-icon-top: 2px;
 
-    --event-table-card-button-text-decoration: none;
-    --event-table-card-button-text-color: var(--color-primary);
-    --event-table-card-button-text-color-hover: var(--color-primary-dark);
-    --event-table-card-button-display: flex;
-    --event-table-card-button-align-items: center;
-    --event-table-card-button-justify-content: center;
-    --event-table-card-button-width: fit-content;
-    --event-table-card-button-gap: var(--spacing-s);
-
     --event-table-card-chip-align-self: center;
     --event-table-card-chip-margin-bottom: var(--spacing-normal);
 
@@ -44,9 +38,16 @@
     /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     grid-template-areas: var(--event-table-card-grid-template-areas);
     grid-gap: var(--event-table-card-grid-gap);
+    align-items: var(--event-table-card-align-items);
     padding: var(--event-table-card-padding);
     margin: var(--event-table-card-margin);
     width: var(--event-table-card-width);
+    text-decoration: var(--event-table-card-text-decoration);
+    background-color: var(--event-table-card-background-color);
+}
+
+a.event-table-card:is(:hover, :focus-visible) {
+    background-color: var(--color-font-o-04);
 }
 
 .event-table-card__calendar-pages {
@@ -81,22 +82,6 @@
 .event-table-card__info .icon {
     position: relative;
     top: var(--event-table-card-icon-top);
-}
-
-.event-table-card__button {
-    text-decoration: var(--event-table-card-button-text-decoration);
-    color: var(--event-table-card-button-text-color);
-    display: var(--event-table-card-button-display);
-    align-items: var(--event-table-card-button-align-items);
-    justify-content: var(--event-table-card-button-justify-content);
-    width: var(--event-table-card-button-width);
-    gap: var(--event-table-card-button-gap);
-}
-
-@media (hover: hover) {
-    .event-table-card__button:hover {
-        color: var(--event-table-card-button-text-color-hover);
-    }
 }
 
 @media screen and (max-width: 539px) {
