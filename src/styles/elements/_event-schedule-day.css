@@ -2,8 +2,8 @@
     --event-schedule-day-border-top: none;
     --event-schedule-day-border-bottom: var(--border-width-normal) solid var(--border-color-default);
     --event-schedule-day-display: grid;
-    --event-schedule-day-grid-template-columns: 4rem 1fr;
-    --event-schedule-day-grid-gap: var(--spacing-normal);
+    --event-schedule-day-grid-template-columns: 1fr;
+    --event-schedule-day-grid-gap: var(--spacing-xs);
     --event-schedule-day-padding: var(--spacing-s);
 
     --event-schedule-day-list-list-style: none;
@@ -32,5 +32,12 @@
 
 .event-schedule-day__calendar-page {
     margin: var(--event-schedule-day-calendar-page-margin);
+}
+
+@media screen and (min-width: 540px) {
+    .event-schedule-day {
+        --event-schedule-day-grid-template-columns: 3.5rem 1fr;
+        --event-schedule-day-grid-gap: var(--spacing-normal);
+    }
 }
 
