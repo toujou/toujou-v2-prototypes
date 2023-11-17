@@ -1,5 +1,5 @@
 .overlay {
-    --overlay-bg-color: var(--color-black-o-75);
+    --overlay-background-color: var(--color-black-o-75);
     --overlay-position: fixed;
     --overlay-top: 0;
     --overlay-left: 0;
@@ -55,7 +55,7 @@
     --overlay-background-image-width: 100%;
     --overlay-background-image-object-fit: cover;
 
-    background-color: var(--overlay-bg-color);
+    background-color: var(--overlay-background-color);
     position: var(--overlay-position);
     top: var(--overlay-top);
     left: var(--overlay-left);
@@ -77,7 +77,7 @@
 }
 
 .overlay[overlay-theme="light"] {
-    --overlay-bg-color: var(--color-white-o-75);
+    --overlay-background-color: var(--color-white-o-75);
 }
 
 .overlay__infos {
@@ -90,7 +90,7 @@
     padding: var(--overlay-infos-padding);
     box-shadow: var(--overlay-infos-shadow);
     border-radius: var(--overlay-infos-border-radius);
-    background-color: var(--overlay-bg-color, var(--color-bg)); /* "overlay-bg-color" set from the theme module */
+    background-color: var(--overlay-background-color, var(--color-bg)); /* "overlay-bg-color" set from the theme module */
     max-width: var(--overlay-infos-max-width);
 }
 
