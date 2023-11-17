@@ -26,7 +26,7 @@ import{T as s}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 `,e.jsx(i.li,{children:e.jsx(i.code,{children:"dark"})}),`
 `]}),`
 `,e.jsx(i.h3,{id:"state",children:"State"}),`
-`,e.jsxs(i.p,{children:["The attribute ",e.jsx(i.code,{children:'state="open"'})," is added automatically to the element"]})]})}function c(t={}){const{wrapper:i}=Object.assign({},l(),t.components);return i?e.jsx(i,Object.assign({},t,{children:e.jsx(a,t)})):a(t)}const h={title:"COMPONENTS/Overlay",parameters:{badges:[s.DONE],docs:{page:c},layout:"fullscreen"},argTypes:{overlayTheme:{table:{category:"Overlay settings",defaultValue:{summary:"light"}},name:"Overlay theme",description:"Choose theme for the overlay",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},showLogo:{table:{category:"Overlay settings",defaultValue:{summary:!1}},name:"Show logo",description:"Toggle the logo visibility",control:{type:"boolean"},defaultValue:[!1],required:!0},showCloseButton:{table:{category:"Overlay settings",defaultValue:{summary:!1}},name:"Show close button",description:"Toggle close button visibility",control:{type:"boolean"},defaultValue:[!1],required:!0},showConclusionText:{table:{category:"Overlay settings",defaultValue:{summary:!1}},name:"Show conclusion text",description:"Toggle conclusion text visibility",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]};function d(){document.cookie.match(new RegExp("toujou-overlay-super-overlay"))&&(document.cookie="toujou-overlay-super-overlay= ; expires = Thu, 01 Jan 1970 00:00:00 GMT")}const m=t=>(d(),`
+`,e.jsxs(i.p,{children:["The attribute ",e.jsx(i.code,{children:'state="open"'})," is added automatically to the element"]})]})}function c(t={}){const{wrapper:i}=Object.assign({},l(),t.components);return i?e.jsx(i,Object.assign({},t,{children:e.jsx(a,t)})):a(t)}const h={title:"COMPONENTS/Overlay",parameters:{badges:[s.DONE],docs:{page:c},layout:"fullscreen"},argTypes:{overlayTheme:{table:{category:"Overlay settings",defaultValue:{summary:"light"}},name:"Overlay theme",description:"Choose theme for the overlay",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},showLogo:{table:{category:"Overlay settings",defaultValue:{summary:!1}},name:"Show logo",description:"Toggle the logo visibility",control:{type:"boolean"},defaultValue:[!1],required:!0},showCloseButton:{table:{category:"Overlay settings",defaultValue:{summary:!1}},name:"Show close button",description:"Toggle close button visibility",control:{type:"boolean"},defaultValue:[!1],required:!0},showConclusionText:{table:{category:"Overlay settings",defaultValue:{summary:!1}},name:"Show conclusion text",description:"Toggle conclusion text visibility",control:{type:"boolean"},defaultValue:[!1],required:!0},showBackgroundImage:{table:{category:"Overlay settings",defaultValue:{summary:!1}},name:"Show background image",description:"Toggle background image visibility",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]};function d(){document.cookie.match(new RegExp("toujou-overlay-super-overlay"))&&(document.cookie="toujou-overlay-super-overlay= ; expires = Thu, 01 Jan 1970 00:00:00 GMT")}const m=t=>(d(),`
         <section>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -49,6 +49,10 @@ import{T as s}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 
 
         <toujou-overlay id="super-overlay" class="overlay" overlay-theme="${t.overlayTheme}">
+            ${t.showBackgroundImage?`
+                <img src="https://picsum.photos/2400/2400" class="overlay__background"/>
+            `:""}
+
             <section class="overlay__infos">
 
                 ${t.showLogo?`
@@ -74,7 +78,7 @@ import{T as s}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 `:""}
             </section>
         </toujou-overlay>
-    `),o=m.bind({});o.args={overlayTheme:"light",showLogo:!1,showCloseButton:!1,showConclusionText:!1};var n,u,r;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:`(args: OverlayStoryProps) => {
+    `),o=m.bind({});o.args={overlayTheme:"light",showLogo:!1,showCloseButton:!1,showConclusionText:!1,showBackgroundImage:!1};var n,u,r;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:`(args: OverlayStoryProps) => {
   checkForExistingCookie();
   return \`
         <section>
@@ -99,6 +103,10 @@ import{T as s}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 
 
         <toujou-overlay id="super-overlay" class="overlay" overlay-theme="\${args.overlayTheme}">
+            \${args.showBackgroundImage ? \`
+                <img src="https://picsum.photos/2400/2400" class="overlay__background"/>
+            \` : ''}
+
             <section class="overlay__infos">
 
                 \${args.showLogo ? \`
@@ -126,4 +134,4 @@ import{T as s}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
         </toujou-overlay>
     \`;
 }`,...(r=(u=o.parameters)==null?void 0:u.docs)==null?void 0:r.source}}};const f=["Overlay"];export{o as Overlay,f as __namedExportsOrder,h as default};
-//# sourceMappingURL=overlay.stories-884b2edb.js.map
+//# sourceMappingURL=overlay.stories-1ab8901f.js.map
