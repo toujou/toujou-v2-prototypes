@@ -104,7 +104,7 @@
     margin: var(--overlay-title-margin);
 }
 
-.overlay__text *:not(h1, h2, h3, h4, h5) {
+.overlay__text *:not(h1, h2, h3, h4, h5, .button) {
     color: var(--overlay-font-color, var(--color-font)); /* "overlay-font-color" set from the theme module */
 }
 
