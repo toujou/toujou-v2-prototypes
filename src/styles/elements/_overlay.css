@@ -10,6 +10,8 @@
     --overlay-justify-content: center;
     --overlay-z-index: 2147483641;
 
+    --overlay-text-headline-margin-top: 0;
+
     --overlay-infos-position: relative;
     --overlay-infos-display: flex;
     --overlay-infos-flex-direction: column;
@@ -93,6 +95,11 @@
 
 .overlay__title {
     margin: var(--overlay-title-margin);
+}
+
+.overlay__text > :is(h1, h2, h3, h4, h5):first-child,
+.overlay__text > span:first-child + :is(h1, h2, h3, h4, h5) {
+    margin-top: var(--overlay-text-headline-margin-top);
 }
 
 .overlay__buttons {
