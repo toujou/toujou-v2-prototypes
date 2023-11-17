@@ -104,6 +104,10 @@
     margin: var(--overlay-title-margin);
 }
 
+.overlay__text *:not(h1, h2, h3, h4, h5) {
+    color: var(--overlay-font-color, var(--color-font)); /* "overlay-font-color" set from the theme module */
+}
+
 .overlay__text > :is(h1, h2, h3, h4, h5):first-child,
 .overlay__text > span:first-child + :is(h1, h2, h3, h4, h5) {
     margin-top: var(--overlay-text-headline-margin-top);
