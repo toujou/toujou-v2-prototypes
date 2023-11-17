@@ -21,7 +21,7 @@
     --overlay-infos-padding: var(--spacing-l);
     --overlay-infos-shadow: var(--shadow-normal);
     --overlay-infos-border-radius: var(--border-radius-default);
-    --overlay-infos-bg-color: var(--color-bg);
+    --overlay-infos-bg-color: var(--overlay-bg-color), var(--color-bg); /* the "--overlay-bg-color" is set by the theme module */
     --overlay-infos-max-width: min(calc(100% - var(--spacing-xl)), 640px);
 
     --overlay-logo-height: var(--spacing-xxl);
