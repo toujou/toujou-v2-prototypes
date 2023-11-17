@@ -48,6 +48,13 @@
 
     --overlay-conclusion-margin: 0;
 
+    --overlay-background-image-position: absolute;
+    --overlay-background-image-top: 0;
+    --overlay-background-image-left: 0;
+    --overlay-background-image-height: 100%;
+    --overlay-background-image-width: 100%;
+    --overlay-background-image-object-fit: cover;
+
     background-color: var(--overlay-bg-color);
     position: var(--overlay-position);
     top: var(--overlay-top);
@@ -125,6 +132,15 @@
 
 .overlay__conclusion {
     margin: var(--overlay-conclusion-margin);
+}
+
+.overlay__background {
+    position: var(--overlay-background-image-position);
+    top: var(--overlay-background-image-top);
+    left: var(--overlay-background-image-left);
+    height: var(--overlay-background-image-height);
+    width: var(--overlay-background-image-width);
+    object-fit: var(--overlay-background-image-object-fit);
 }
 
 @media (hover: hover) {

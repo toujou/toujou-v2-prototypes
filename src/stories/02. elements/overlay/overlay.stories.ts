@@ -62,15 +62,27 @@ export default {
             defaultValue: [false],
             required: true,
         },
+        showBackgroundImage: {
+            table: {
+                category: "Overlay settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Show background image',
+            description: "Toggle background image visibility",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
     },
     tags: ['autodocs']
 } as Meta;
 
 interface OverlayStoryProps {
-    overlayTheme: string
-    showLogo: boolean
-    showCloseButton: boolean
-    showConclusionText: boolean
+    overlayTheme: string;
+    showLogo: boolean;
+    showCloseButton: boolean;
+    showConclusionText: boolean;
+    showBackgroundImage: boolean;
 }
 
 function checkForExistingCookie() {
@@ -105,6 +117,10 @@ const Template: StoryFn<OverlayStoryProps> = (args: OverlayStoryProps) => {
 
 
         <toujou-overlay id="super-overlay" class="overlay" overlay-theme="${args.overlayTheme}">
+            ${args.showBackgroundImage ? `
+                <img src="https://picsum.photos/2400/2400" class="overlay__background"/>
+            ` : ''}
+
             <section class="overlay__infos">
 
                 ${args.showLogo ? `
@@ -140,4 +156,5 @@ Overlay.args = {
     showLogo: false,
     showCloseButton: false,
     showConclusionText: false,
+    showBackgroundImage: false
 }
