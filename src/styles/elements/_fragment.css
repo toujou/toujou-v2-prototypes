@@ -15,6 +15,14 @@
     --fragment-map-position: relative;
 }
 
+.fragment[map-aspect-ratio="default"] {
+    --fragment-map-aspect-ratio: var(--aspect-ratio-default);
+}
+
+.fragment[map-aspect-ratio="3-1"] {
+    --fragment-map-aspect-ratio: var(--aspect-ratio-3-1);
+}
+
 .fragment__intro-logo {
     display: var(--fragment-intro-logo-display);
     height: var(--fragment-intro-logo-height);
