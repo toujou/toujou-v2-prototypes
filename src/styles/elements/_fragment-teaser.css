@@ -136,6 +136,14 @@
         --fragment-teaser-block-grid-template-columns: 1fr auto;
     }
 
+    .fragment-teaser__block[number-of-columns="3"] {
+        --fragment-teaser-block-grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .fragment-teaser__block[number-of-columns="3"][expand-first] {
+        --fragment-teaser-block-grid-template-columns: 1fr auto auto;
+    }
+
     .fragment-teaser__column-content[number-of-columns="3"] {
         --fragment-teaser-column-content-grid-template-columns: 1fr 1fr 1fr;
 
