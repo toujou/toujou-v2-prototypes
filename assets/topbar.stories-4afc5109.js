@@ -289,8 +289,14 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 `,n.jsx("br",{}),`
 `,n.jsx("br",{}),`
 `,n.jsx("a",{id:"burger-button"}),`
-`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(c,e)})):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Page title type",description:"Toggle between logo or text for the topbar page title",options:["logo","text"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0}},tags:["autodocs"]},q=e=>(document.documentElement.style.setProperty("--topbar-height",`var(--topbar-height-${e.logoSize})`),`
-        <toujou-topbar id="topbar" class="topbar" navigation-theme="${e.navigationTheme}" logo-size="${e.logoSize}">
+`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}=Object.assign({},i(),e.components);return a?n.jsx(a,Object.assign({},e,{children:n.jsx(c,e)})):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Page title type",description:"Toggle between logo or text for the topbar page title",options:["logo","text"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},q=e=>(document.documentElement.style.setProperty("--topbar-height",`var(--topbar-height-${e.logoSize})`),`
+        <toujou-topbar
+            id="topbar"
+            class="topbar"
+            navigation-theme="${e.navigationTheme}"
+            logo-size="${e.logoSize}"
+            ${e.noTransitions?"no-transitions":""}
+        >
             <a href="#" class="topbar__logo-link">
                 ${e.titleType==="logo"?`
                     <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
@@ -680,11 +686,17 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </toujou-text-block-column>
             </toujou-text-block>
         </main>
-    `),t=q.bind({});t.args={navigationTheme:"light",titleType:"logo",logoSize:"medium"};var r,u,m;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
+    `),t=q.bind({});t.args={navigationTheme:"light",titleType:"logo",logoSize:"medium",noTransitions:!1};var r,u,m;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
   // @ts-ignore
   document.documentElement.style.setProperty('--topbar-height', \`var(--topbar-height-\${args.logoSize})\`);
   return \`
-        <toujou-topbar id="topbar" class="topbar" navigation-theme="\${args.navigationTheme}" logo-size="\${args.logoSize}">
+        <toujou-topbar
+            id="topbar"
+            class="topbar"
+            navigation-theme="\${args.navigationTheme}"
+            logo-size="\${args.logoSize}"
+            \${args.noTransitions ? 'no-transitions' : ''}
+        >
             <a href="#" class="topbar__logo-link">
                 \${args.titleType === 'logo' ? \`
                     <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
@@ -1076,4 +1088,4 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
         </main>
     \`;
 }`,...(m=(u=t.parameters)==null?void 0:u.docs)==null?void 0:m.source}}};const E=["Topbar"];export{t as Topbar,E as __namedExportsOrder,D as default};
-//# sourceMappingURL=topbar.stories-fc8e4be9.js.map
+//# sourceMappingURL=topbar.stories-4afc5109.js.map
