@@ -50,6 +50,17 @@ export default {
             defaultValue: ['medium'],
             required: true,
         },
+        noTransitions: {
+            table: {
+                category: "Topbar settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'No transitions',
+            description: "Remove the transition from the topbar elements",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
     },
     tags: ['autodocs']
 } as Meta;
@@ -58,6 +69,7 @@ interface TopbarStoryProps {
     navigationTheme: string
     titleType: string
     logoSize: string
+    noTransitions: boolean
 }
 
 const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
@@ -65,7 +77,13 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
     document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
 
     return `
-        <toujou-topbar id="topbar" class="topbar" navigation-theme="${args.navigationTheme}" logo-size="${args.logoSize}">
+        <toujou-topbar
+            id="topbar"
+            class="topbar"
+            navigation-theme="${args.navigationTheme}"
+            logo-size="${args.logoSize}"
+            ${args.noTransitions ? 'no-transitions' : ''}
+        >
             <a href="#" class="topbar__logo-link">
                 ${args.titleType === 'logo' ? `
                     <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
@@ -464,4 +482,5 @@ Topbar.args = {
     navigationTheme: 'light',
     titleType: 'logo',
     logoSize: 'medium',
+    noTransitions: false,
 }

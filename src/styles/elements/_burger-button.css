@@ -21,6 +21,11 @@
     display: var(--burger-button-display);
 }
 
+.topbar[no-transitions] .burger-button {
+    --animation-duration-normal: 0s;
+    --burger-button-line-transition: none !important;
+}
+
 .burger-button:focus-visible {
     --burger-button-line-color: var(--burger-button-line-color-active);
 

@@ -626,6 +626,7 @@ figure {
 
     --main-nav-chevron-color: var(--color-bg);
     --main-nav-chevron-icon-desktop-size: var(--font-size-ms);
+    --main-nav-chevron-transition: rotate var(--animation-duration-fast) var(--animation-easing-normal);
 
     display: var(--main-nav-display);
     position: var(--main-nav-position);
@@ -658,6 +659,11 @@ figure {
     --main-nav-opacity: 1;
 }
 
+.topbar[no-transitions] .main-nav {
+    --main-nav-transition: none !important;
+    --main-nav-chevron-transition: none;
+}
+
 .button.main-nav__back-button {
     display: var(--main-nav-back-button-display);
     padding: var(--main-nav-back-button-padding);
@@ -678,7 +684,7 @@ figure {
 .main-nav__chevron .icon {
     --icon-color: var(--main-nav-chevron-color);
 
-    transition: rotate var(--animation-duration-fast) var(--animation-easing-normal);
+    transition: var(--main-nav-chevron-transition);
 }
 
 .main-nav__chevron:focus-visible .icon {
@@ -1038,6 +1044,7 @@ figure {
     --service-nav-opacity: 0;
     --service-nav-position: fixed;
     --service-nav-bottom: 0;
+    --service-nav-left: var(--spacing-normal);
     --service-nav-padding: 0;
     --service-nav-border-top: 1px solid var(--color-white-o-75);
     --service-nav-width: calc(100% - var(--spacing-l));
@@ -1059,6 +1066,7 @@ figure {
     position: var(--service-nav-position);
     height: var(--service-nav-height);
     bottom: var(--service-nav-bottom);
+    left: var(--service-nav-left);
     padding: var(--service-nav-padding);
     border-top: var(--service-nav-border-top);
     background: var(--service-nav-background-color);
@@ -1081,6 +1089,10 @@ figure {
 .topbar[navigation-theme="dark"] .service-nav {
     --service-nav-background-color: var(--color-primary-dark);
     --service-nav-link-color-active: var(--color-primary-light);
+}
+
+.topbar[no-transitions] .service-nav {
+    --service-nav-transition: none !important;
 }
 
 .service-nav__link {

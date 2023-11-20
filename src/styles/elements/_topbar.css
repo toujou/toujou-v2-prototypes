@@ -74,6 +74,11 @@
     z-index: var(--topbar-z-index);
 }
 
+.topbar[no-transitions] {
+    --topbar-transition: none !important;
+    --topbar-actions-link-icon-transition: none;
+}
+
 .topbar[navigation-theme="light"] {
     --topbar-icons-color: var(--color-primary);
     --topbar-icons-active-color: var(--color-primary-dark);

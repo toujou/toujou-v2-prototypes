@@ -43,6 +43,7 @@
 
     --main-nav-chevron-color: var(--color-bg);
     --main-nav-chevron-icon-desktop-size: var(--font-size-ms);
+    --main-nav-chevron-transition: rotate var(--animation-duration-fast) var(--animation-easing-normal);
 
     display: var(--main-nav-display);
     position: var(--main-nav-position);
@@ -75,6 +76,11 @@
     --main-nav-opacity: 1;
 }
 
+.topbar[no-transitions] .main-nav {
+    --main-nav-transition: none !important;
+    --main-nav-chevron-transition: none;
+}
+
 .button.main-nav__back-button {
     display: var(--main-nav-back-button-display);
     padding: var(--main-nav-back-button-padding);
@@ -95,7 +101,7 @@
 .main-nav__chevron .icon {
     --icon-color: var(--main-nav-chevron-color);
 
-    transition: rotate var(--animation-duration-fast) var(--animation-easing-normal);
+    transition: var(--main-nav-chevron-transition);
 }
 
 .main-nav__chevron:focus-visible .icon {

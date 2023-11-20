@@ -2,6 +2,7 @@
     --service-nav-opacity: 0;
     --service-nav-position: fixed;
     --service-nav-bottom: 0;
+    --service-nav-left: var(--spacing-normal);
     --service-nav-padding: 0;
     --service-nav-border-top: 1px solid var(--color-white-o-75);
     --service-nav-width: calc(100% - var(--spacing-l));
@@ -23,6 +24,7 @@
     position: var(--service-nav-position);
     height: var(--service-nav-height);
     bottom: var(--service-nav-bottom);
+    left: var(--service-nav-left);
     padding: var(--service-nav-padding);
     border-top: var(--service-nav-border-top);
     background: var(--service-nav-background-color);
@@ -45,6 +47,10 @@
 .topbar[navigation-theme="dark"] .service-nav {
     --service-nav-background-color: var(--color-primary-dark);
     --service-nav-link-color-active: var(--color-primary-light);
+}
+
+.topbar[no-transitions] .service-nav {
+    --service-nav-transition: none !important;
 }
 
 .service-nav__link {
