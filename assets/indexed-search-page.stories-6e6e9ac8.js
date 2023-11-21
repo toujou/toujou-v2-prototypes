@@ -43,9 +43,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
             <ul class="indexedsearch-results">
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -70,9 +70,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -94,9 +94,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -121,9 +121,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -196,9 +196,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
             <ul class="indexedsearch-results">
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -223,9 +223,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -247,9 +247,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -274,9 +274,9 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -305,4 +305,4 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
         </div>
     \`;
 }`,...(n=(a=e.parameters)==null?void 0:a.docs)==null?void 0:n.source}}};const m=["IndexedSearchPage"];export{e as IndexedSearchPage,m as __namedExportsOrder,_ as default};
-//# sourceMappingURL=indexed-search-page.stories-fe0a2591.js.map
+//# sourceMappingURL=indexed-search-page.stories-6e6e9ac8.js.map
