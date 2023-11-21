@@ -1,0 +1,7 @@
+.indexedsearch-results {
+    --indexedsearch-results-margin: 0;
+    --indexedsearch-results-list-style: none;
+
+    margin: var(--indexedsearch-results-margin);
+    list-style: var(--indexedsearch-results-list-style);
+}

@@ -50,8 +50,3 @@ const Template = () => {
 };
 
 export const IndexedSearchInput = Template.bind({});
-
-IndexedSearchInput.args = {
-    alertVariant: 'primary'
-}
-

@@ -1,0 +1,17 @@
+.indexedsearch-page {
+    --indexedsearch-page-position: relative;
+    --indexedsearch-page-width: var(--content-width-with-padding);
+    --indexedsearch-page-max-width: var(--content-max-width);
+    --indexedsearch-page-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+    --indexedsearch-page-z-index: var(--z-index-content);
+    --indexedsearch-page-display: grid;
+    --indexedsearch-page-grid-gap: var(--spacing-l);
+
+    position: var(--indexedsearch-page-position);
+    width: var(--indexedsearch-page-width);
+    max-width: var(--indexedsearch-page-max-width);
+    margin: var(--indexedsearch-page-margin);
+    z-index: var(--indexedsearch-page-z-index);
+    display: var(--indexedsearch-page-display);
+    grid-gap: var(--indexedsearch-page-grid-gap);
+}
