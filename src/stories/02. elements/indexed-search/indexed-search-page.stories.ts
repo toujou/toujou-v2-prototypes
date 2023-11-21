@@ -62,9 +62,9 @@ const Template = () => {
             <ul class="indexedsearch-results">
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -89,9 +89,9 @@ const Template = () => {
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -113,9 +113,9 @@ const Template = () => {
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>
@@ -140,9 +140,9 @@ const Template = () => {
 
                 <li class="indexedsearch-result">
                     <div class="indexedsearch-result__infos">
-                        <h4 class="indexedsearch-result__title">
+                        <h3 class="indexedsearch-result__title">
                             <a href="#" class="indexedsearch-result__title-link">toujou-Workshop für Partner</a>
-                        </h4>
+                        </h3>
                         <div class="indexedsearch-result__metas">
                             <p class="indexedsearch-result__meta">
                                 <span class="indexedsearch-result__meta-name">Seite:</span>

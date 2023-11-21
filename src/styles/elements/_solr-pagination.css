@@ -9,7 +9,7 @@
     --solr-pagination-link-size: var(--font-size-xl);
     --solr-pagination-link-text-decoration: none;
     --solr-pagination-link-border-radius: var(--border-radius-s);
-    --solr-pagination-link-transition: all var(--animation-duration-normal) var(--animation-easing-normal);
+    --solr-pagination-link-transition: all 0 var(--animation-easing-normal);
 
     --solr-pagination-link-lisabled-opacity: 0;
 

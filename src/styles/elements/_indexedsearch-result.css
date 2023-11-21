@@ -22,6 +22,7 @@
     --indexedsearch-result-image-object-fit: cover;
 
     --indexedsearch-result-title-margin: 0;
+    --indexedsearch-result-title-font-size: var(--font-size-ms);
 
     --indexedsearch-result-metas-display: flex;
     --indexedsearch-result-metas-flex-flow: column wrap;
@@ -74,6 +75,7 @@
 
 .indexedsearch-result__title {
     margin: var(--indexedsearch-result-title-margin);
+    font-size: var(--indexedsearch-result-title-font-size);
 }
 
 .indexedsearch-result__metas {

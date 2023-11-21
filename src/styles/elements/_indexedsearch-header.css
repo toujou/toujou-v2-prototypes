@@ -1,7 +1,9 @@
 .indexedsearch-header {
     --indexedsearch-header-width: 100%;
     --indexedsearch-header-display: flex;
-    --indexedsearch-header-flex-direction: colunm;
+    --indexedsearch-header-flex-flow: column wrap;
+    --indexedsearch-header-align-items: flex-start;
+    --indexedsearch-header-justify-content: flex-start;
     --indexedsearch-header-gap: 0;
 
     --indexedsearch-header-headline-margin: 0;
@@ -16,8 +18,10 @@
     --indexedsearch-header-amount-count-font-weight: var(--font-weight-text-bold);
 
     width: var(--indexedsearch-header-width);
-    display: flex;
-    flex-direction: column;
+    display: var(--indexedsearch-header-display);
+    flex-flow: var(--indexedsearch-header-flex-flow);
+    align-items: var(--indexedsearch-header-align-items);
+    justify-content: var(--indexedsearch-header-justify-content);
     gap: var(--indexedsearch-header-gap);
 }
 
@@ -38,4 +42,13 @@
 
 .indexedsearch-header__amount-count {
     font-weight: var(--indexedsearch-header-amount-count-font-weight);
+}
+
+@media screen and (min-width: 640px) {
+    .indexedsearch-header {
+        --indexedsearch-header-flex-flow: row wrap;
+        --indexedsearch-header-gap: 0 var(--spacing-l);
+        --indexedsearch-header-align-items: center;
+        --indexedsearch-header-justify-content: space-between;
+    }
 }
