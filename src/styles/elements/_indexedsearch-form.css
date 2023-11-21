@@ -1,0 +1,11 @@
+.indexedsearch-form {
+    --indexedsearch-form-width: var(--content-width-with-padding);
+    --indexedsearch-form-max-width: var(--content-medium-max-width);
+    --indexedsearch-form-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+    --indexedsearch-form-z-index: var(--z-index-content);
+
+    width: var(--indexedsearch-form-width);
+    max-width: var(--indexedsearch-form-max-width);
+    margin: var(--indexedsearch-form-margin);
+    z-index: var(--indexedsearch-form-z-index);
+}
