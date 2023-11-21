@@ -1,4 +1,4 @@
-import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-runtime-ccada58e.js";import{u as i}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function o(e){const t=Object.assign({h1:"h1"},i(),e.components);return a.jsx(t.h1,{id:"indexed-search",children:"<indexed-search>"})}function d(e={}){const{wrapper:t}=Object.assign({},i(),e.components);return t?a.jsx(t,Object.assign({},e,{children:a.jsx(o,e)})):o(e)}const b={title:"COMPONENTS/Indexed Search",parameters:{badges:[u.DONE],docs:{page:d}},tags:["autodocs"]},h=()=>`
+import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as r}from"./indexed-search.docs-95dd3fee.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const m={title:"COMPONENTS/Indexed Search",parameters:{badges:[o.DONE],docs:{page:r}},tags:["autodocs"]},s=()=>`
         <form
             method="post"
             id="tx_indexedsearch_panel"
@@ -27,7 +27,7 @@ import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
                 </button>
             </toujou-search>
         </form>
-    `,n=h.bind({});n.args={alertVariant:"primary"};var s,r,c;n.parameters={...n.parameters,docs:{...(s=n.parameters)==null?void 0:s.docs,source:{originalSource:`() => {
+    `,e=s.bind({});var n,t,a;e.parameters={...e.parameters,docs:{...(n=e.parameters)==null?void 0:n.docs,source:{originalSource:`() => {
   return \`
         <form
             method="post"
@@ -58,5 +58,5 @@ import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-run
             </toujou-search>
         </form>
     \`;
-}`,...(c=(r=n.parameters)==null?void 0:r.docs)==null?void 0:c.source}}};const f=["IndexedSearchInput"];export{n as IndexedSearchInput,f as __namedExportsOrder,b as default};
-//# sourceMappingURL=indexed-search-input.stories-37e8168e.js.map
+}`,...(a=(t=e.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};const l=["IndexedSearchInput"];export{e as IndexedSearchInput,l as __namedExportsOrder,m as default};
+//# sourceMappingURL=indexed-search-input.stories-062f0e7f.js.map
