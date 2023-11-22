@@ -68,4 +68,5 @@
 
 a.indexedsearch-pagination__item-link:is(:hover, :focus-visible) {
     --indexedsearch-pagination-item-link-background-color: var(--color-primary-light);
+    --indexedsearch-pagination-item-link-color: var(--color-bg);
 }
