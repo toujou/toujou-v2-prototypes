@@ -27,7 +27,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
         Mehr Informationen
     </a>
 </div>
-`})})]})}function _(s={}){const{wrapper:a}=Object.assign({},i(),s.components);return a?e.jsx(a,Object.assign({},s,{children:e.jsx(n,s)})):n(s)}const g={title:"COMPONENTS/EventSchedule",parameters:{badges:[h.DONE],docs:{page:_}},tags:["autodocs"]},r=()=>`
+`})})]})}function _(s={}){const{wrapper:a}=Object.assign({},i(),s.components);return a?e.jsx(a,Object.assign({},s,{children:e.jsx(n,s)})):n(s)}const g={title:"COMPONENTS/EventSchedule",parameters:{badges:[h.DONE],docs:{page:_}},tags:["autodocs"]},p=()=>`
         <event-schedule class="event-schedule">
 
             <event-schedule-year class="event-schedule-year">
@@ -72,6 +72,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">15</p>
+                                <p class="calendar-page__year">2025</p>
                             </div>
                         </time>
                     </div>
@@ -231,7 +232,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             </event-schedule-year>
 
         </event-schedule>
-    `,l=r.bind({});var t,c,d;l.parameters={...l.parameters,docs:{...(t=l.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
+    `,l=p.bind({});var t,c,d;l.parameters={...l.parameters,docs:{...(t=l.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
         <event-schedule class="event-schedule">
 
@@ -277,6 +278,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">15</p>
+                                <p class="calendar-page__year">2025</p>
                             </div>
                         </time>
                     </div>
@@ -438,4 +440,4 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
         </event-schedule>
     \`;
 }`,...(d=(c=l.parameters)==null?void 0:c.docs)==null?void 0:d.source}}};const y=["EventSchedule"];export{l as EventSchedule,y as __namedExportsOrder,g as default};
-//# sourceMappingURL=event-schedule.stories-fe489a6c.js.map
+//# sourceMappingURL=event-schedule.stories-ff40b700.js.map
