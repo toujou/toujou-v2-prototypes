@@ -1,4 +1,4 @@
-import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed-search.docs-95dd3fee.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const _={title:"COMPONENTS/Indexed Search",parameters:{badges:[i.DONE],docs:{page:t}},tags:["autodocs"]},r=()=>`
+import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./indexed-search.docs-95dd3fee.js";import"./jsx-runtime-ccada58e.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./index-4fb8b842.js";const _={title:"COMPONENTS/Indexed Search",parameters:{badges:[t.DONE],docs:{page:n}},tags:["autodocs"]},r=()=>`
 
         <div class="indexedsearch-page">
             <form
@@ -142,15 +142,55 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
                         </p>
                     </div>
                 </li>
-
             </ul>
 
-            <ul class="pagination indexedsearch-page__pagination">
-            PAGINATION
-            </ul>
+            <div class="indexedsearch-pagination">
+                <ul class="indexedsearch-pagination__list">
+                    <li class="indexedsearch-pagination__item indexedsearch-pagination__item--current">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='0';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            1
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            2
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            3
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            4
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item indexedsearch-pagination__item--next">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            Nächste &gt;
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
-    `,e=r.bind({});var s,a,n;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`() => {
+    `,e=r.bind({});var s,a,i;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`() => {
   return \`
 
         <div class="indexedsearch-page">
@@ -295,14 +335,54 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./indexed
                         </p>
                     </div>
                 </li>
-
             </ul>
 
-            <ul class="pagination indexedsearch-page__pagination">
-            PAGINATION
-            </ul>
+            <div class="indexedsearch-pagination">
+                <ul class="indexedsearch-pagination__list">
+                    <li class="indexedsearch-pagination__item indexedsearch-pagination__item--current">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='0';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            1
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            2
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            3
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            4
+                        </a>
+                    </li>
+                    <li class="indexedsearch-pagination__item indexedsearch-pagination__item--next">
+                        <a
+                            href="#"
+                            onclick="document.getElementById('tx_indexedsearch_pointer').value='1';document.getElementById('tx_indexedsearch').submit();return false;"
+                            class="indexedsearch-pagination__item-link">
+                            Nächste &gt;
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     \`;
-}`,...(n=(a=e.parameters)==null?void 0:a.docs)==null?void 0:n.source}}};const m=["IndexedSearchPage"];export{e as IndexedSearchPage,m as __namedExportsOrder,_ as default};
-//# sourceMappingURL=indexed-search-page.stories-6e6e9ac8.js.map
+}`,...(i=(a=e.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};const m=["IndexedSearchPage"];export{e as IndexedSearchPage,m as __namedExportsOrder,_ as default};
+//# sourceMappingURL=indexed-search-page.stories-beb3ab9f.js.map
