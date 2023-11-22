@@ -54,8 +54,10 @@
 
 .solr-pagination__link:is(:hover, :focus-visible) {
     --solr-pagination-link-bg-color-active: var(--color-primary-light);
+    --solr-pagination-link-color-active: var(--color-bg);
 
     background-color: var(--solr-pagination-link-bg-color-active);
+    color: var(--solr-pagination-link-color-active) !important;
 }
 
 .solr-pagination__link:is(:hover, :focus-visible) .icon {

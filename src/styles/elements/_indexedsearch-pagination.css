@@ -61,7 +61,7 @@
     align-items: var(--indexedsearch-pagination-item-link-align-items);
     justify-content: var(--indexedsearch-pagination-item-link-justify-content);
     text-decoration: var(--indexedsearch-pagination-item-link-text-decoration);
-    color: var(--indexedsearch-pagination-item-link-color);
+    color: var(--indexedsearch-pagination-item-link-color) !important;
     background-color: var(--indexedsearch-pagination-item-link-background-color);
     border-radius: var(--indexedsearch-pagination-item-link-border-radius);
 }
