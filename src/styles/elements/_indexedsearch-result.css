@@ -96,7 +96,8 @@
     margin: var(--indexedsearch-result-description-margin);
 }
 
-.indexedsearch-result__description-word {
+.indexedsearch-result__description-word,
+.tx-indexedsearch-redMarkup {
     color: var(--indexedsearch-result-description-word-color);
     font-weight: var(--indexedsearch-result-description-word-font-weight);
     background-color: var(--indexedsearch-result-description-word-background-color);
