@@ -36,7 +36,7 @@
 }
 
 a.event-schedule-item:is(:hover, :focus-visible) {
-    --event-schedule-item-background-color: var(--color-font-o-04);
+    --event-schedule-item-background-color: var(--color-font-o-10);
 }
 
 .event-schedule-item__time {

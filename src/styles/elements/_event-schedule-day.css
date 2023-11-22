@@ -10,7 +10,7 @@
     --event-schedule-day-list-margin: 0;
     --event-schedule-day-list-padding: 0;
 
-    --event-schedule-day-calendar-page-margin: var(--spacing-s) 0 0;
+    --event-schedule-day-calendar-page-margin: var(--spacing-s) 0;
 
     display: var(--event-schedule-day-display);
     grid-template-columns: var(--event-schedule-day-grid-template-columns);

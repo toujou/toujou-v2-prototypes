@@ -104,6 +104,10 @@
     color: var(--calendar-page-text-color);
 }
 
+.event-schedule-day .calendar-page__year {
+    display: none;
+}
+
 .calendar-page__day {
     margin: var(--calendar-page-day-margin);
     padding: var(--calendar-page-day-padding);

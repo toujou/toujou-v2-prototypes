@@ -62,6 +62,7 @@ const Template = () => {
                             <div class="calendar-page__date">
                                 <p class="calendar-page__month">Nov</p>
                                 <p class="calendar-page__day">15</p>
+                                <p class="calendar-page__year">2025</p>
                             </div>
                         </time>
                     </div>
