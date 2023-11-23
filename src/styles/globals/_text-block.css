@@ -103,6 +103,10 @@ span:first-child + .text-block {
     margin-top: 0;
 }
 
+.details .text-block__content:first-child {
+    --text-block-column-gap: 0;
+}
+
 @media screen and (min-width: 768px) {
     .text-block[text-block-media-position="beside-right"] .text-block__figure {
         grid-column: 2;

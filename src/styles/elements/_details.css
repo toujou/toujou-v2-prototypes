@@ -81,6 +81,10 @@
     grid-area: var(--details-subtitle-area);
 }
 
+.details__subtitle:empty {
+    display: none;
+}
+
 .details__subtitle-list {
     list-style: none;
     padding: var(--details-subtitle-padding);
