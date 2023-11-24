@@ -15,7 +15,7 @@
 
 .slider[content-type="teaser"] .slider-slide,
 .slider[content-type="review"] .slider-slide {
-    width: fit-content;
+    width: fit-content !important;
 }
 
 .slider-slide__media--image {
