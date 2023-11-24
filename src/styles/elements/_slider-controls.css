@@ -13,7 +13,7 @@
     display: var(--slider-controls-display);
 }
 
-.slider[slider-aspect-ratio="0.5625"] .slider-controls {
+.slider[slider-aspect-ratio="0.5625"]:not([content-type="teaser"]) .slider-controls {
     --slider-controls-aspect-ratio: var(--aspect-ratio-16-9);
 }
 
@@ -29,10 +29,15 @@
     --slider-controls-bottom: calc(var(--spacing-l) * -1);
 }
 
+.slider[content-type="teaser"] {
+    --slider-controls-aspect-ratio: auto;
+    --slider-controls-top: unset;
+    --slider-controls-bottom: calc(var(--spacing-l) * -1);
+}
+
 .slider[content-type="card-collection"][slides-count="0"] .slider-controls,
 .slider[content-type="card-collection"][slides-count="1"] .slider-controls {
     --slider-controls-display: none;
-
 }
 
 @media screen and (min-width: 540px) {
@@ -48,12 +53,8 @@
 }
 
 @media screen and (min-width: 840px) {
-    .slider[content-type="teaser"] .slider-controls {
-        --slider-controls-aspect-ratio: auto;
-        --slider-controls-height: calc(100% - var(--spacing-l));
-    }
-
-    .slider[content-type="card-collection"] {
+    .slider[content-type="card-collection"],
+    .slider[content-type="teaser"] {
         --slider-controls-bottom: var(--spacing-s);
     }
 
