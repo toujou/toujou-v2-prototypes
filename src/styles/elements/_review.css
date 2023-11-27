@@ -35,6 +35,7 @@
     --review-content-grid-gap: var(--content-spacing-between-columns);
 
     --review-figure-width: 100%;
+    --review-figure-height: fit-content;
     --review-figure-border-radius: var(--border-radius-default);
     --review-figure-overflow: hidden;
 
@@ -119,6 +120,7 @@
 
 .review__figure {
     width: var(--review-figure-width);
+    height: var(--review-figure-height);
     border-radius: var(--review-figure-border-radius);
     overflow: var(--review-figure-overflow);
 }
