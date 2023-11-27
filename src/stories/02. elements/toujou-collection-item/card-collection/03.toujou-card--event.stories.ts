@@ -169,7 +169,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                         </time>
 
                         <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <toujou-chip class="chip" chip-bg-color="warning" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -184,7 +184,6 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                 </toujou-collection-item>
             </li>
         </ul>
-
     `
 };
 

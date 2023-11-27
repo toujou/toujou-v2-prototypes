@@ -30,6 +30,9 @@
     --colleciton-item-date-justify-content: flex-start;
     --collection-item-date-gap: var(--spacing-s);
     --collection-item-date-margin: var(--spacing-s) 0 0;
+    --collection-item-date-color: var(--collection-item-text-color);
+
+    --collection-item-date-icon-color: var(--collection-item-text-color);
 
     --collection-item-categories-position: absolute;
     --collection-item-categories-top: var(--spacing-normal);
@@ -227,6 +230,11 @@
     justify-content: var(--colleciton-item-date-justify-content);
     gap: var(--collection-item-date-gap);
     margin: var(--collection-item-date-margin);
+    color: var(--collection-item-date-color);
+}
+
+.collection-item__date .icon[icon-color="font"] {
+    --icon-color: var(--collection-item-date-icon-color);
 }
 
 .collection-item__categories {
