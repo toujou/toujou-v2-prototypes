@@ -1,3 +1,7 @@
+.slider[slider-fullwidth] button.slider-control {
+    --slider-control-top: 50%;
+}
+
 button.slider-control {
     position: var(--slider-control-position);
     display: block;

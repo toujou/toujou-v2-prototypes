@@ -22,7 +22,7 @@
     --slider-controls-z-index: 1;
 
     --slider-control-position: absolute;
-    --slider-control-top: calc(calc(100% - 2rem) / 2);
+    --slider-control-top: calc(calc(100% - var(--slider-control-size)) / 2);
     --slider-control-transform: translateY(-50%);
     --slider-control-size: calc(var(--spacing-l) + var(--spacing-s));
     --slider-control-border-radius: var(--border-radius-circle);
