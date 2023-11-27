@@ -133,7 +133,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                         </time>
 
                         <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <toujou-chip class="chip" chip-bg-color="warning" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -148,7 +148,6 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ul>
-
     `,e=s.bind({});e.args={elementDesign:"default"};var t,o,n;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
         <ul class="card-collection">
@@ -285,7 +284,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                         </time>
 
                         <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <toujou-chip class="chip" chip-bg-color="warning" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -300,7 +299,6 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ul>
-
     \`;
 }`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const g=["CardEvent"];export{e as CardEvent,g as __namedExportsOrder,d as default};
-//# sourceMappingURL=03.toujou-card--event.stories-087d18ba.js.map
+//# sourceMappingURL=03.toujou-card--event.stories-6975e320.js.map
