@@ -3,7 +3,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as n}from"./jsx-run
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
                     <h1>Left aligned H1 headline</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <a href="#">incididunt ut labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
@@ -137,13 +137,13 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as n}from"./jsx-run
                 </tr>
             </table>
         </toujou-table-container>
-    `,e=c.bind({});e.args={tableAlignment:"none"};var l,a,u;e.parameters={...e.parameters,docs:{...(l=e.parameters)==null?void 0:l.docs,source:{originalSource:`(args: TableStoryProps) => {
+    `,e=c.bind({});e.args={tableAlignment:"none"};var a,l,u;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`(args: TableStoryProps) => {
   return \`
         <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
                     <h1>Left aligned H1 headline</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <a href="#">incididunt ut labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
@@ -278,5 +278,5 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as n}from"./jsx-run
             </table>
         </toujou-table-container>
     \`;
-}`,...(u=(a=e.parameters)==null?void 0:a.docs)==null?void 0:u.source}}};const x=["TextElementsExamples"];export{e as TextElementsExamples,x as __namedExportsOrder,h as default};
-//# sourceMappingURL=text-elements.stories-0d17b2a0.js.map
+}`,...(u=(l=e.parameters)==null?void 0:l.docs)==null?void 0:u.source}}};const x=["TextElementsExamples"];export{e as TextElementsExamples,x as __namedExportsOrder,h as default};
+//# sourceMappingURL=text-elements.stories-261e1248.js.map
