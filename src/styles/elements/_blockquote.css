@@ -7,7 +7,9 @@
     --blockquote-image-justify-self: center;
     --blockquote-font-family: var(--font-family-text);
     --blockquote-font-size: var(--font-size-normal);
-    --blockquote-color: var(--color-font);
+    --blockquote-text-color: var(--color-font);
+    --blockquote-text-link-color: var(--color-primary);
+    --blockquote-text-link-color-hover: var(--color-primary-dark);
     --blockquote-gap: var(--spacing-normal);
     --blockquote-quote-margin: 0;
     --blockquote-line-height: var(--line-height-normal);
@@ -47,7 +49,9 @@
 .blockquote:not([element-design="default"]) {
     --blockquote-padding: var(--spacing-l);
     --blockquote-icon-color: var(--color-bg);
-    --blockquote-color: var(--color-bg);
+    --blockquote-text-color: var(--color-bg);
+    --blockquote-text-link-color: var(--color-bg);
+    --blockquote-text-link-color-hover: var(--color-bg-o-75);
 }
 
 .blockquote[element-design="primary"] {
@@ -77,7 +81,7 @@
     position: relative;
     font-family: var(--blockquote-font-family);
     font-size: var(--blockquote-font-size);
-    color: var(--blockquote-color);
+    color: var(--blockquote-text-color);
     margin: var(--blockquote-quote-margin);
     line-height: var(--blockquote-line-height);
     margin-top: var(--blockquote-icon-size);
@@ -111,17 +115,27 @@
     font-size: var(--blockquote-text-font-size);
     line-height: var(--blockquote-text-line-height);
     margin: var(--blockquote-text-margin);
-    color: var(--blockquote-color);
+    color: var(--blockquote-text-color);
 }
 
 .blockquote__content a {
     word-break: break-word;
+    color: var(--blockquote-text-link-color);
+}
+
+.blockquote__content a:is(:hover, :focus-visible) {
+    color: var(--blockquote-text-link-color-hover);
+}
+
+.blockquote__content a:focus-visible {
+    outline: var(--focus-outline-width) solid var(--blockquote-text-link-color);
+    outline-offset: var(--focus-outline-offset);
 }
 
 .blockquote__author {
     font-family: var(--blockquote-font-family);
     font-size: var(--blockquote-font-size);
-    color: var(--blockquote-color);
+    color: var(--blockquote-text-color);
     line-height: var(--blockquote-line-height);
     grid-column: var(--blockquote-author-grid-column);
     grid-area: blockquoteAuthor;

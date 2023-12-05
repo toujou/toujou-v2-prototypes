@@ -53,7 +53,7 @@ const Template: StoryFn<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => 
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
             <blockquote slot="quote" class="blockquote__blockquote">
                 <div class="blockquote__content">
-                    <p>Before you criticize someone, you should walk a mile in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
+                    <p>Before you criticize someone, <a href="#">you should walk a mile</a> in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
                 </div>
             </blockquote>
             <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>

@@ -3126,7 +3126,16 @@ p > .button {
 }
 
 :is(.chapter--primary, .chapter--secondary, .chapter--inverted) p a {
-    color: var(--color-font);
+    color: var(--color-bg);
+}
+
+:is(.chapter--primary, .chapter--secondary, .chapter--inverted) p a:is(:hover, :focus-visible) {
+    color: var(--color-bg-o-75);
+}
+
+:is(.chapter--primary, .chapter--secondary, .chapter--inverted) p a:focus-visible {
+    outline: var(--focus-outline-width) solid var(--color-bg);
+    outline-offset: var(--focus-outline-offset);
 }
 
 .chapter--white {
