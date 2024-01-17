@@ -1,0 +1,28 @@
+.separated-list {
+    --separated-list-list-style: none;
+    --separated-list-display: flex;
+    --separated-list-flex-flow: row wrap;
+    --separated-list-gap: 0;
+    --separated-list-margin: 0;
+    --separated-list-padding: 0;
+
+    --separated-list-separator: "•";
+    --separated-list-separator-gap: var(--spacing-s);
+
+    list-style: var(--separated-list-list-style);
+    display: var(--separated-list-display);
+    flex-flow: var(--separated-list-flex-flow);
+    gap: var(--separated-list-gap);
+    margin: var(--separated-list-margin);
+    padding: var(--separated-list-padding);
+}
+
+.separated-list[list-separator="comma"] {
+    --separated-list-separator: ",";
+    --separated-list-separator-gap: 0 var(--spacing-s);
+}
+
+.separated-list__item:not(:last-child)::after {
+    content: var(--separated-list-separator);
+    margin-inline: var(--separated-list-separator-gap);
+}
