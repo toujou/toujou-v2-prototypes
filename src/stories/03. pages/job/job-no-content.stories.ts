@@ -180,6 +180,17 @@ const Template: StoryFn<jobNoContentProps> = (args: jobNoContentProps) => {
                             </div>
                         </div>
 
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
+                                <div class="fragment-teaser__column-content">
+                                    <div class="fragment-teaser__ctas">
+                                        <button class="button" button-type="normal" button-variant="primary">Link one</button>
+                                        <button class="button" button-type="normal" button-variant="primary">Link two</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     ${args.hideImage ? '' : `

@@ -52,6 +52,10 @@
     --fragment-teaser-address-link-color-hover: var(--color-primary-dark);
     --fragment-teaser-address-link-font-weight: var(--font-weight-text-bold);
 
+    --fragment-teaser-ctas-display: flex;
+    --fragment-teaser-ctas-flex-flow: row wrap;
+    --fragment-teaser-ctas-gap: var(--spacing-s) var(--spacing-normal);
+
     display: var(--fragment-teaser-display);
     grid-template-columns: var(--fragment-teaser-grid-template-columns);
     gap: var(--fragment-teaser-grid-gap);
@@ -140,6 +144,12 @@
 
 .fragment-teaser__address-link:is(:hover, :focus-visible) {
     color: var(--fragment-teaser-address-link-color-hover);
+}
+
+.fragment-teaser__ctas {
+    display: var(--fragment-teaser-ctas-display);
+    flex-flow: var(--fragment-teaser-ctas-flex-flow);
+    gap: var(--fragment-teaser-ctas-gap);
 }
 
 @media screen and (min-width: 480px) {
