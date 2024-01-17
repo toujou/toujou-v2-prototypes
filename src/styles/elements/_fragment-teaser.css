@@ -46,6 +46,7 @@
     --fragment-teaser-headline-margin: 0;
 
     --fragment-teaser-address-line-display: block;
+    --fragment-teaser-address-line-font-weight: var(--font-weight-text-normal);
 
     display: var(--fragment-teaser-display);
     grid-template-columns: var(--fragment-teaser-grid-template-columns);
@@ -125,6 +126,7 @@
 
 .fragment-teaser__address-line {
     display: var(--fragment-teaser-address-line-display);
+    font-weight: var(--fragment-teaser-address-line-font-weight);
 }
 
 @media screen and (min-width: 480px) {
