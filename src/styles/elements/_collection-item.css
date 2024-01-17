@@ -38,8 +38,8 @@
     --collection-item-categories-top: var(--spacing-normal);
     --collection-item-categories-left: 0;
 
-    --collection-item-category-background-color: var(--color-primary-light);
-    --collection-item-category-color: var(--color-primary-dark);
+    --collection-item-category-background-color: var(--color-primary);
+    --collection-item-category-color: var(--color-bg);
     --collection-item-category-display: flex;
     --collection-item-category-align-items: center;
     --collection-item-category-justify-content: flex-start;

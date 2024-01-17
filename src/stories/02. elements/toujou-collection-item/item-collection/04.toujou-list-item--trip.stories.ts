@@ -36,11 +36,11 @@ const Template = () => {
                         </toujou-media-info>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Neu
                             </a>
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Jetzt 30% Rabatt
                             </a>
                         </div>
@@ -59,24 +59,24 @@ const Template = () => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
                             </span>
                         </p>
-                        
+
                         <div class="collection-item__trip-infos">
                             <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                             <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                         </div>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -92,11 +92,11 @@ const Template = () => {
                         </figure>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Neu
                             </a>
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Jetzt 30% Rabatt
                             </a>
                         </div>
@@ -115,24 +115,24 @@ const Template = () => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
-                        
+
                         <div class="collection-item__trip-infos">
                             <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
                             <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
                         </div>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -148,11 +148,11 @@ const Template = () => {
                         </figure>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Neu
                             </a>
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Jetzt 30% Rabatt
                             </a>
                         </div>
@@ -171,19 +171,19 @@ const Template = () => {
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
@@ -199,11 +199,11 @@ const Template = () => {
                         </figure>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Neu
                             </a>
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Jetzt 30% Rabatt
                             </a>
                         </div>
@@ -219,19 +219,19 @@ const Template = () => {
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
-                        
+
                         <p class="collection-item__trip-price">
                             <span class="collection-item__trip-price-prefix">ab</span>
                             <span class="collection-item__trip-price-amount">1.500,00 €</span>
                             <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
                         </p>
-                        
+
                         <a href="#" class="collection-item__button">
                             <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung

@@ -36,7 +36,7 @@ const Template = () => {
                         </toujou-media-info>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 New
                             </a>
                         </div>
@@ -45,7 +45,7 @@ const Template = () => {
                         <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
                         <h3 class="collection-item__title">Adidas AG</h3>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
@@ -96,14 +96,14 @@ const Template = () => {
                         </figure>
                         <div class="collection-item__categories">
                             <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
+                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
                                 Rabatt
                             </a>
                         </div>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Adidas AG</h3>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
@@ -157,7 +157,7 @@ const Template = () => {
                         <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
                         <h3 class="collection-item__title">Adidas AG</h3>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
@@ -195,7 +195,7 @@ const Template = () => {
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Adidas AG</h3>
-                        
+
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.

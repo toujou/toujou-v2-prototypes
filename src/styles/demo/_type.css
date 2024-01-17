@@ -106,22 +106,6 @@ a:focus-visible  {
     font-style: normal;
 }
 
-.font-style-bold {
-    font-weight: var(--font-weight-text-bold);
-}
-
-.font-style-italic {
-    font-style: italic;
-}
-
-.font-style-strikethrough {
-    text-decoration: line-through;
-}
-
-.font-style-underline {
-    text-decoration: underline;
-}
-
 code {
     background-color: rgb(0 0 0 / 10%);
     padding: var(--spacing-xs);
