@@ -3424,6 +3424,8 @@ input[type="search"]::-webkit-search-cancel-button:is(:hover, :focus-visible) {
     --separated-list-list-style: none;
     --separated-list-display: flex;
     --separated-list-flex-flow: row wrap;
+    --separated-list-align-items: center;
+    --separated-list-justify-content: flex-start;
     --separated-list-gap: 0;
     --separated-list-margin: 0;
     --separated-list-padding: 0;
@@ -3434,6 +3436,8 @@ input[type="search"]::-webkit-search-cancel-button:is(:hover, :focus-visible) {
     list-style: var(--separated-list-list-style);
     display: var(--separated-list-display);
     flex-flow: var(--separated-list-flex-flow);
+    align-items: var(--separated-list-align-items);
+    justify-content: var(--separated-list-justify-content);
     gap: var(--separated-list-gap);
     margin: var(--separated-list-margin);
     padding: var(--separated-list-padding);
@@ -3442,6 +3446,14 @@ input[type="search"]::-webkit-search-cancel-button:is(:hover, :focus-visible) {
 .separated-list[list-separator="comma"] {
     --separated-list-separator: ",";
     --separated-list-separator-gap: 0 var(--spacing-s);
+}
+
+.separated-list[list-separator="pipe"] {
+    --separated-list-separator: "|";
+}
+
+.separated-list[list-alignment="center"] {
+    --separated-list-justify-content: center;
 }
 
 .separated-list__item:not(:last-child)::after {

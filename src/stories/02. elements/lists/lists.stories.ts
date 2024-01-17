@@ -37,6 +37,20 @@ const Template = () => {
             <li class="separated-list__item">List item two</li>
             <li class="separated-list__item">List item three</li>
         </ul>
+
+        <h3>Separated list - pipe</h3>
+        <ul class="separated-list" list-separator="pipe">
+            <li class="separated-list__item">List item one</li>
+            <li class="separated-list__item">List item two</li>
+            <li class="separated-list__item">List item three</li>
+        </ul>
+
+        <h3>Separated list - centered</h3>
+        <ul class="separated-list" list-separator="pipe" list-alignment="center">
+            <li class="separated-list__item">List item one</li>
+            <li class="separated-list__item">List item two</li>
+            <li class="separated-list__item">List item three</li>
+        </ul>
     `;
 };
 
