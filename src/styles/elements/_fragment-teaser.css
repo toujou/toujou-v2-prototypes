@@ -48,6 +48,10 @@
     --fragment-teaser-address-line-display: block;
     --fragment-teaser-address-line-font-weight: var(--font-weight-text-normal);
 
+    --fragment-teaser-address-link-color: var(--color-primary);
+    --fragment-teaser-address-link-color-hover: var(--color-primary-dark);
+    --fragment-teaser-address-link-font-weight: var(--font-weight-text-bold);
+
     display: var(--fragment-teaser-display);
     grid-template-columns: var(--fragment-teaser-grid-template-columns);
     gap: var(--fragment-teaser-grid-gap);
@@ -127,6 +131,15 @@
 .fragment-teaser__address-line {
     display: var(--fragment-teaser-address-line-display);
     font-weight: var(--fragment-teaser-address-line-font-weight);
+}
+
+.fragment-teaser__address-link {
+    color: var(--fragment-teaser-address-link-color);
+    font-weight: var(--fragment-teaser-address-link-font-weight);
+}
+
+.fragment-teaser__address-link:is(:hover, :focus-visible) {
+    color: var(--fragment-teaser-address-link-color-hover);
 }
 
 @media screen and (min-width: 480px) {
