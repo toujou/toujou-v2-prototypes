@@ -1,4 +1,4 @@
-import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-ccada58e.js";import{u as r}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function t(e){const a=Object.assign({h1:"h1"},r(),e.components);return o.jsx(a.h1,{id:"job-page",children:"Job page"})}function m(e={}){const{wrapper:a}=Object.assign({},r(),e.components);return a?o.jsx(a,Object.assign({},e,{children:o.jsx(t,e)})):t(e)}const v={title:"PAGES/Job",parameters:{badges:[l.DONE],docs:{page:m},layout:"fullscreen"},argTypes:{hideImage:{table:{category:"Event page settings",defaultValue:{summary:"false"}},name:"Hide image",description:"Hide the event image",control:{type:"boolean"},defaultValue:"false",required:!0}},tags:["autodocs"]},u=e=>`
+import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{j as a}from"./jsx-runtime-ccada58e.js";import{u as r}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function o(n){const t=Object.assign({h1:"h1"},r(),n.components);return a.jsx(t.h1,{id:"job-page",children:"Job page"})}function m(n={}){const{wrapper:t}=Object.assign({},r(),n.components);return t?a.jsx(t,Object.assign({},n,{children:a.jsx(o,n)})):o(n)}const v={title:"PAGES/Job",parameters:{badges:[l.DONE],docs:{page:m},layout:"fullscreen"},argTypes:{hideImage:{table:{category:"Event page settings",defaultValue:{summary:"false"}},name:"Hide image",description:"Hide the event image",control:{type:"boolean"},defaultValue:"false",required:!0}},tags:["autodocs"]},u=n=>`
        <div class="fragment">
             <section class="chapter chapter--background fragment__section">
                 <toujou-text-block class="text-block" text-block-column-count="1">
@@ -15,7 +15,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
             </section>
 
             <section class="chapter chapter--default fragment__section">
-                <toujou-fragment-teaser role="article" class="fragment-teaser" ${e.hideImage?"single-column":""}>
+                <toujou-fragment-teaser role="article" class="fragment-teaser" ${n.hideImage?"single-column":""}>
                     <div class="fragment-teaser__content">
                         <div class="fragment-teaser__block" number-of-columns="3">
                             <div class="fragment-teaser__column">
@@ -143,9 +143,20 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             </div>
                         </div>
 
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
+                                <div class="fragment-teaser__column-content">
+                                    <div class="fragment-teaser__ctas">
+                                        <button class="button" button-type="normal" button-variant="primary">Link one</button>
+                                        <button class="button" button-type="normal" button-variant="primary">Link two</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    ${e.hideImage?"":`
+                    ${n.hideImage?"":`
                         <figure class="fragment-teaser__figure">
                             <img src="https://picsum.photos/1200/1200" alt="beau" class="fragment-teaser__image">
                             <time class="fragment-teaser__image-date" datetime="T09:00P11H">
@@ -158,7 +169,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
             </section>
 
         </div>
-    `,n=u.bind({});n.args={hideImage:!1};var s,i,c;n.parameters={...n.parameters,docs:{...(s=n.parameters)==null?void 0:s.docs,source:{originalSource:`(args: jobNoContentProps) => {
+    `,e=u.bind({});e.args={hideImage:!1};var s,i,c;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`(args: jobNoContentProps) => {
   return \`
        <div class="fragment">
             <section class="chapter chapter--background fragment__section">
@@ -304,6 +315,17 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                             </div>
                         </div>
 
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
+                                <div class="fragment-teaser__column-content">
+                                    <div class="fragment-teaser__ctas">
+                                        <button class="button" button-type="normal" button-variant="primary">Link one</button>
+                                        <button class="button" button-type="normal" button-variant="primary">Link two</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     \${args.hideImage ? '' : \`
@@ -320,5 +342,5 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
 
         </div>
     \`;
-}`,...(c=(i=n.parameters)==null?void 0:i.docs)==null?void 0:c.source}}};const b=["JobNoContent"];export{n as JobNoContent,b as __namedExportsOrder,v as default};
-//# sourceMappingURL=job-no-content.stories-cb43de2d.js.map
+}`,...(c=(i=e.parameters)==null?void 0:i.docs)==null?void 0:c.source}}};const b=["JobNoContent"];export{e as JobNoContent,b as __namedExportsOrder,v as default};
+//# sourceMappingURL=job-no-content.stories-9b74b55e.js.map
