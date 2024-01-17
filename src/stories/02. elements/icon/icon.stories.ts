@@ -60,6 +60,7 @@ const iconNames = [
     'blockquote-round',
     'bookmark',
     'bookmark-filled',
+    'briefcase',
     'calendar-check',
     'calendar-day',
     'calendar-empty',

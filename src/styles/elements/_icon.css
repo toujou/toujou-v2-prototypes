@@ -187,6 +187,11 @@
     -webkit-mask-image: var(--icon-bookmark-filled);
 }
 
+.icon[icon-name="briefcase"] {
+    mask-image: var(--icon-briefcase);
+    -webkit-mask-image: var(--icon-briefcase);
+}
+
 .icon[icon-name="calendar-check"] {
     mask-image: var(--icon-calendar-check);
     -webkit-mask-image: var(--icon-calendar-check);

@@ -220,6 +220,7 @@
     --icon-blockquote-round: url('../assets/icons/icon-blockquote-round.svg');
     --icon-bookmark: url('../assets/icons/icon-bookmark.svg');
     --icon-bookmark-filled: url('../assets/icons/icon-bookmark-filled.svg');
+    --icon-briefcase: url('../assets/icons/icon-briefcase.svg');
     --icon-calendar-check: url('../assets/icons/icon-calendar-check.svg');
     --icon-calendar-day: url('../assets/icons/icon-calendar-day.svg');
     --icon-calendar-empty: url('../assets/icons/icon-calendar-empty.svg');
@@ -1013,6 +1014,11 @@ p > .button {
 .icon[icon-name="bookmark-filled"] {
     mask-image: var(--icon-bookmark-filled);
     -webkit-mask-image: var(--icon-bookmark-filled);
+}
+
+.icon[icon-name="briefcase"] {
+    mask-image: var(--icon-briefcase);
+    -webkit-mask-image: var(--icon-briefcase);
 }
 
 .icon[icon-name="calendar-check"] {
