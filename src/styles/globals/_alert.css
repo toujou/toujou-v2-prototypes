@@ -39,7 +39,7 @@
 }
 
 .alert[alert-variant="warning"] {
-    --alert-bg-color: var(--color-warning-o-25);
+    --alert-bg-color: var(--color-warning-o-15);
     --alert-border-color: var(--color-warning-darken-15);
 }
 
