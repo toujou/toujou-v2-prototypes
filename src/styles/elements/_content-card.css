@@ -27,6 +27,7 @@
 
     --content-card-content-padding: var(--spacing-normal);
     --content-card-content-flex: 0 0 auto;
+    --content-card-content-width: 100%;
 
     --content-card-title-font-family: var(--font-family-text);
     --content-card-title-font-size: var(--font-size-ms);
@@ -81,6 +82,7 @@
 .content-card__content {
     padding: var(--content-card-content-padding);
     flex: var(--content-card-content-flex);
+    width: var(--content-card-content-width);
 }
 
 .content-card__title {
