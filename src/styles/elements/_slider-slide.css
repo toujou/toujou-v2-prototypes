@@ -6,10 +6,13 @@
 
 .slider[content-type="logos"] .slider-slide,
 .slider[content-type="teaser"] .slider-slide,
-.slider[content-type="review"] .slider-slide,
-.header .slider[content-type="media"] .slider-slide {
+.slider[content-type="review"] .slider-slide {
     aspect-ratio: auto;
     height: fit-content !important;
+}
+
+.header .slider[content-type="media"] .slider-slide {
+    width: 100% !important;
 }
 
 .slider[content-type="logos"] .slider-slide {
