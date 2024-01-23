@@ -1,5 +1,6 @@
 .slider-slide {
     aspect-ratio: var(--slider-aspect-ratio);
+    max-width: 100%;
 }
 
 .slider[content-type="logos"] .slider-slide,
