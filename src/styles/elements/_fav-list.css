@@ -15,6 +15,8 @@
 
     --fav-list-empty-message-margin: var(--spacing-l) 0;
 
+    --card-collection-gap: var(--content-spacing-between-columns);
+
     display: var(--fav-list-display);
     grid-gap: var(--fav-list-gap);
     flex-wrap: var(--fav-list-flex-wrap);
@@ -40,14 +42,20 @@
     margin: var(--fav-list-empty-message-margin);
 }
 
+.fav-list .collection-item {
+    width: 100%;
+    max-width: var(--card-collection-item-max-width);
+    align-self: var(--card-collection-item-align-self);
+}
+
 @media screen and (min-width: 640px) {
-    .collection-item {
-        --fav-list-item-max-width: calc(calc(100% - var(--fav-list-gap)) / 2);
+    .fav-list .collection-item {
+        --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
     }
 }
 
 @media screen and (min-width: 960px) {
-    .collection-item {
-        --fav-list-item-max-width: calc(calc(100% - var(--fav-list-gap) * 3) / 4);
+    .fav-list .collection-item {
+        --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap) * 3) / 4);
     }
 }

@@ -17,7 +17,7 @@ export default {
 
 const Template = () => {
     return `
-        <toujou-fav-list class="fav-list card-collection" teaser-url="/teaser.html" empty-list-message="Es befinden sich keine Objekte auf Ihrem Merkzettel">
+        <toujou-fav-list class="fav-list" teaser-url="/teaser.html" empty-list-message="Es befinden sich keine Objekte auf Ihrem Merkzettel">
             <div class="fav-list__content">
                 <toujou-collection-item class="collection-item" item-type="poi" element-design="default" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
