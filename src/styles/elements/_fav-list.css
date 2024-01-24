@@ -13,6 +13,8 @@
 
     --fav-list-item-align-self: stretch;
 
+    --fav-list-empty-message-margin: var(--spacing-l) 0;
+
     display: var(--fav-list-display);
     grid-gap: var(--fav-list-gap);
     flex-wrap: var(--fav-list-flex-wrap);
@@ -34,10 +36,8 @@
     display: contents;
 }
 
-.collection-item {
-    width: 100%;
-    max-width: var(--fav-list-item-max-width);
-    align-self: var(--fav-list-item-align-self);
+.fav-list__empty-message {
+    margin: var(--fav-list-empty-message-margin);
 }
 
 @media screen and (min-width: 640px) {
