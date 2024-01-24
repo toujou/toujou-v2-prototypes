@@ -8,7 +8,7 @@
     --fav-list-max-width: var(--content-wide-max-width);
     --fav-list-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     --fav-list-list-style: none;
-    --fav-list-padding: 0;
+    --fav-list-padding: var(--spacing-between-consecutive-elements-normal) 0;
     --fav-list-z-index: var(--z-index-content);
 
     --fav-list-item-align-self: stretch;
