@@ -4309,14 +4309,14 @@ a:-webkit-any-link:focus-visible {
     padding-top: 0;
 }
 
-.wrap-plugin-page:first-child,
-.topbar + .wrap-plugin-page {
+.wrap--plugin-page:first-child,
+.topbar + .wrap--plugin-page {
     --main-padding-top: var(--topbar-height);
 
     padding-top: var(--main-padding-top);
 }
 
-:is(.wrap-plugin-page) > :is(p, ul:not(.card-collection), ol, h1, h2, h3, h4, h5, h6, a) {
+:is(.wrap--plugin-page) > :is(p, ul:not(.card-collection), ol, h1, h2, h3, h4, h5, h6, a) {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
     margin-left: auto;
