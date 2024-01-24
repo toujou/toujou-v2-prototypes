@@ -1,7 +1,7 @@
 .fav-list {
     --fav-list-display: flex;
     --fav-list-flex-wrap: wrap;
-    --fav-list-align-items: center;
+    --fav-list-align-items: flex-start;
     --fav-list-justify-content: center;
     --fav-list-gap: var(--content-spacing-between-columns);
     --fav-list-width: var(--content-width-with-padding);
