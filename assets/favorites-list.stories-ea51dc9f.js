@@ -1,5 +1,5 @@
 import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-ccada58e.js";import{u as s}from"./index-4fb8b842.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";function c(e){const t=Object.assign({h1:"h1"},s(),e.components);return o.jsx(t.h1,{id:"favorites-list",children:"Favorites-list"})}function m(e={}){const{wrapper:t}=Object.assign({},s(),e.components);return t?o.jsx(t,Object.assign({},e,{children:o.jsx(c,e)})):c(e)}const v={title:"COMPONENTS/Favorites List",parameters:{badges:[r.DONE],docs:{page:m}},tags:["autodocs"]},p=()=>`
-        <toujou-fav-list class="fav-list card-collection" teaser-url="/teaser.html" empty-list-message="Es befinden sich keine Objekte auf Ihrem Merkzettel">
+        <toujou-fav-list class="fav-list" teaser-url="/teaser.html" empty-list-message="Es befinden sich keine Objekte auf Ihrem Merkzettel">
             <div class="fav-list__content">
                 <toujou-collection-item class="collection-item" item-type="poi" element-design="default" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
@@ -148,7 +148,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
         </toujou-fav-list>
     `,i=p.bind({});var l,n,a;i.parameters={...i.parameters,docs:{...(l=i.parameters)==null?void 0:l.docs,source:{originalSource:`() => {
   return \`
-        <toujou-fav-list class="fav-list card-collection" teaser-url="/teaser.html" empty-list-message="Es befinden sich keine Objekte auf Ihrem Merkzettel">
+        <toujou-fav-list class="fav-list" teaser-url="/teaser.html" empty-list-message="Es befinden sich keine Objekte auf Ihrem Merkzettel">
             <div class="fav-list__content">
                 <toujou-collection-item class="collection-item" item-type="poi" element-design="default" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
@@ -297,4 +297,4 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
         </toujou-fav-list>
     \`;
 }`,...(a=(n=i.parameters)==null?void 0:n.docs)==null?void 0:a.source}}};const g=["FavoritesList"];export{i as FavoritesList,g as __namedExportsOrder,v as default};
-//# sourceMappingURL=favorites-list.stories-0cdae4eb.js.map
+//# sourceMappingURL=favorites-list.stories-ea51dc9f.js.map
