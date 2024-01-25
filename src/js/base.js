@@ -5,5 +5,6 @@ import '../components/copied/toujou-modal/toujou-modal';
 import '@toujou/toujou-spinner/lib/index';
 import '@toujou/toujou-snackbar/lib/index';
 import '@toujou/toujou-exit-warning/lib/index';
+import '@toujou/toujou-lazy-render/lib/index';
 
 

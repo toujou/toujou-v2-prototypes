@@ -32,6 +32,7 @@ import "@toujou/toujou-spinner/lib";
 import "@toujou/toujou-timeline/lib";
 import "@toujou/toujou-topbutton/lib";
 import "@toujou/toujou-input-password-toggle/lib";
+import "@toujou/toujou-lazy-render/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";

@@ -1,4 +1,4 @@
-import{_ as r}from"./tslib.es6-4b7d5947.js";import{i as g,s as l,y as s}from"./lit-element-6fe74b4f.js";import{e as p}from"./custom-element-73470d87.js";import{e as a}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";var o,i,n,y=g(o||(i=[`:host {
+import{_ as r}from"./tslib.es6-d64b32d8.js";import{i as g,s as l,y as s}from"./lit-element-6fe74b4f.js";import{e as p}from"./custom-element-73470d87.js";import{e as a}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";var o,i,n,y=g(o||(i=[`:host {
     --rating-stars-entity-position: relative;
     --rating-stars-entity-left: -.1em;
 
