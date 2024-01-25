@@ -93,7 +93,7 @@
     "@toujou/toujou-input-password-toggle": "^2.0.23",
     "@toujou/toujou-lazy-render": "^3.5.0",
     "@toujou/toujou-location-finder": "^2.0.15",
-    "@toujou/toujou-map": "^2.0.6",
+    "@toujou/toujou-map": "^3.3.2",
     "@toujou/toujou-media-info": "^2.0.6",
     "@toujou/toujou-rating-stars": "^2.0.22",
     "@toujou/toujou-snackbar": "^2.0.16",
