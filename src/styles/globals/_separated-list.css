@@ -23,7 +23,7 @@
 
 .separated-list[list-separator="comma"] {
     --separated-list-separator: ",";
-    --separated-list-separator-gap: 0 var(--spacing-s);
+    --separated-list-separator-gap: 0 var(--spacing-xs);
 }
 
 .separated-list[list-separator="pipe"] {
