@@ -71,6 +71,14 @@
     --media-info-copyright-display: var(--toujou-media-copyright-display, block);
 }
 
+.collection-item .media-info {
+    --media-info-border-radius: var(--border-radius-default);
+    --media-info-overflow: hidden;
+
+    border-radius: var(--media-info-border-radius);
+    overflow: var(--media-info-overflow);
+}
+
 .media-info::before {
     content: "";
     position: absolute;
