@@ -1,3 +1,7 @@
+@layer variables, base, components, customization;
+
+@layer variables{
+
 /*
     Inspiration:
     - https://tailwindcss.com/docs/preflight
@@ -49,7 +53,6 @@ iframe {
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
-
 ::-moz-selection {
     background-color: var(--color-primary);
     color: var(--color-bg);
@@ -63,38 +66,41 @@ iframe {
 }
 
 /* For images to not be able to exceed their container */
-
 img {
     max-width: 100%;
 }
 
 /* Removes spacing between cells in tables */
-
 table {
     border-collapse: collapse;
 }
 
 /* Revert the 'white-space' property for textarea elements on Safari */
-
 textarea {
     white-space: revert;
 }
 
 /* remove margin on figure element */
-
 figure {
     margin: 0;
 }
 
 /* Remove smooth scroll for people that prefer not to see them */
+}
 
+@layer variables{
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
     }
 }
+}
 
+@layer variables{
 /* stylelint-disable-next-line import-notation */
+}
+
+@layer variables{
 
 :root,
 ::before,
@@ -108,6 +114,9 @@ figure {
     --animation-easing-ease-in: ease-in;
     --animation-easing-ease-out: ease-out;
 }
+}
+
+@layer variables{
 
 @media (prefers-reduced-motion: reduce) {
     :root,
@@ -119,7 +128,9 @@ figure {
         --animation-duration-very-fast: 0s;
     }
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -131,7 +142,9 @@ figure {
     --aspect-ratio-3-1: 3 / 1;
     --aspect-ratio-default: var(--aspect-ratio-golden);
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -140,7 +153,9 @@ figure {
     --border-width-normal: 1px;
     --border-color-default: var(--color-font-light);
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -158,7 +173,9 @@ figure {
 
     --border-radius-default: var(--border-radius-normal);
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -226,6 +243,9 @@ figure {
             rgb(0 0 0 / 0%) 100%
     );
 }
+}
+
+@layer variables{
 
 :root,
 ::before,
@@ -244,6 +264,9 @@ figure {
     --topbar-height: var(--topbar-height-medium);
     --service-nav-height: var(--spacing-xl);
 }
+}
+
+@layer variables{
 
 @media screen and (min-width: 840px) {
     :root,
@@ -255,7 +278,9 @@ figure {
         --topbar-height-large: 100px;
     }
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -263,7 +288,9 @@ figure {
     --focus-outline-offset: var(--spacing-2px);
     --focus-outline-color: var(--color-primary);
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -297,7 +324,9 @@ figure {
     --form-input-caret-color: var(--color-primary);
     --form-row-columns-count: 12;
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -443,7 +472,9 @@ figure {
     --icon-volume-up-circle-filled: url('../assets/icons/icon-volume-up-circle-filled.svg');
     --icon-warning: url('../assets/icons/icon-warning.svg');
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -458,6 +489,9 @@ figure {
     --shadow-xl: 0 16px 24px 2px var(--shadow-color-1), 0 6px 30px 6px var(--shadow-color-2), 0 12px 12px -5px var(--shadow-color-3);
 ;
 }
+}
+
+@layer variables{
 
 :root,
 ::before,
@@ -482,6 +516,9 @@ figure {
     --spacing-between-elements-s: calc(var(--spacing-between-elements-normal) / 2);
     --spacing-between-consecutive-elements-normal: var(--spacing-l);
 }
+}
+
+@layer variables{
 
 @media screen and (min-width: 840px) {
     :root,
@@ -490,7 +527,9 @@ figure {
         --spacing-between-elements-normal: var(--spacing-xxxl);
     }
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -523,7 +562,9 @@ figure {
     --letter-spacing-normal: normal;
     --letter-spacing-s: -.025em;
 }
+}
 
+@layer variables{
 :root,
 ::before,
 ::after {
@@ -543,6 +584,9 @@ figure {
     --z-index-overlay: 50000;
     --z-index-important: 2147483641;
 }
+}
+
+@layer variables{
 
 :root {
     /* TOPBAR */
@@ -554,6 +598,9 @@ figure {
     --topbar-main-navbar-chevron-size: 1.25rem;
     --topbar-box-shadow: var(--shadow-l);
 }
+}
+
+@layer variables{
 
 /*
 * We still use some old markup on the new theme, for example for the extensions.
@@ -581,6 +628,9 @@ figure {
     --warning-color: var(--color-warning);
     --error-color: var(--color-error);
 }
+}
+
+@layer base{
 
 .main-nav {
     --main-nav-position: fixed;
@@ -699,6 +749,9 @@ figure {
 .main-nav__list-item[is-open] > .main-nav__chevron .icon {
     rotate: -180deg;
 }
+}
+
+@layer base{
 
 @media screen and (max-width: 839px) {
     /* For accessibility we hide the content of the main-nav when not open */
@@ -706,6 +759,9 @@ figure {
         display: none;
     }
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .main-nav__chevron:hover {
@@ -738,6 +794,9 @@ figure {
         --icon-color: var(--color-primary-light);
     }
 }
+}
+
+@layer base{
 
 @media (hover: hover) and (min-width: 1024px) {
     .main-nav__link:hover {
@@ -748,6 +807,9 @@ figure {
         --main-nav-chevron-color: var(--color-primary-dark);
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1024px) {
     .main-nav {
@@ -869,6 +931,9 @@ figure {
         padding: var(--main-nav-text-padding);
     }
 }
+}
+
+@layer base{
 
 .main-nav__list[nav-list-level="1"] {
     --main-nav-level-1-list-item-display: grid;
@@ -917,12 +982,18 @@ figure {
 .topbar[navigation-theme="dark"] .main-nav__link:focus-visible {
     color: var(--main-nav-link-color-hover);
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     a.main-nav__link:hover {
         color: var(--main-nav-link-color-hover) !important;
     }
 }
+}
+
+@layer base{
 
 .main-nav__list[nav-list-level="2"] {
     --main-nav-level-2-list-margin: var(--spacing-normal) 0 0;
@@ -957,6 +1028,9 @@ figure {
 .main-nav__list-item[nav-item-level="2"] .main-nav__text {
     font-size: var(--main-nav-level-2-list-item-font-size);
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1024px) {
     .main-nav__list[nav-list-level="2"] {
@@ -1005,6 +1079,9 @@ figure {
         right: var(--main-nav-level-2-list-right);
     }
 }
+}
+
+@layer base{
 
 .main-nav__list[nav-list-level="3"] {
     --main-nav-level-3-list-margin: var(--spacing-normal) 0 0;
@@ -1031,6 +1108,9 @@ figure {
 .main-nav__list-item[nav-item-level="3"] .main-nav__text {
     font-size: var(--main-nav-level-3-list-item-font-size);
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1024px) {
     .main-nav__list[nav-list-level="3"] {
@@ -1040,6 +1120,9 @@ figure {
         --main-nav-level-3-list-gap: var(--spacing-normal);
     }
 }
+}
+
+@layer base{
 
 .service-nav {
     --service-nav-opacity: 0;
@@ -1112,6 +1195,9 @@ figure {
             transform var(--animation-duration-normal) var(--animation-easing-normal),
             opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
 }
+}
+
+@layer base{
 
 @media screen and (max-width: 1023px) {
     /* For accessibility we hide the content of the service-nav when not open */
@@ -1119,18 +1205,27 @@ figure {
         display: none;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1024px) {
     .service-nav {
         --service-nav-display: none;
     }
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     a.service-nav__link:hover {
         color: var(--service-nav-link-color-active) !important;
     }
 }
+}
+
+@layer base{
 
 .checkbox {
     --checkbox-appearance: none;
@@ -1218,6 +1313,9 @@ figure {
     --checkbox-border-color: var(--color-success);
     --checkbox-background-color: var(--color-success);
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .checkbox:hover,
@@ -1232,6 +1330,9 @@ figure {
         --checkbox-background-color: var(--color-primary-light);
     }
 }
+}
+
+@layer base{
 
 .checkbox-group {
     --checkbox-group-display: grid;
@@ -1282,12 +1383,18 @@ figure {
 
     pointer-events: none;
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .checkbox-group__label:hover {
         cursor: pointer;
     }
 }
+}
+
+@layer base{
 
 .fieldset {
     --fieldset-padding: var(--spacing-normal);
@@ -1329,6 +1436,9 @@ figure {
     font-weight: var(--fieldset-legend-font-weight);
     padding: var(--fieldset-legend-padding);
 }
+}
+
+@layer base{
 
 .form {
     --form-font-family: var(--font-family-text);
@@ -1403,6 +1513,9 @@ figure {
 
     grid-column: var(--toggle-group-error-column);
 }
+}
+
+@layer base{
 
 .form-navigation {
    --form-navigation-display: flex;
@@ -1421,6 +1534,9 @@ figure {
 .button.form-navigation__button {
    width: 100%;
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 480px) {
    .form-navigation {
@@ -1432,6 +1548,9 @@ figure {
       width: inherit;
    }
 }
+}
+
+@layer base{
 
 .form__row {
     --form-row-display: grid;
@@ -1454,6 +1573,9 @@ figure {
 .form__row + .form__row {
     margin-top: var(--spacing-m);
 }
+}
+
+@layer base{
 
 .form-progress {
     --form-progress-display: flex;
@@ -1571,6 +1693,9 @@ figure {
 
     background: var(--color-primary);
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 840px) {
     .form-progress {
@@ -1578,6 +1703,9 @@ figure {
         --form-progress-background-position: relative;
     }
 }
+}
+
+@layer base{
 
 .input {
     --input-position: relative;
@@ -1644,6 +1772,9 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .input:not(:focus):hover {
@@ -1651,6 +1782,9 @@ input[type=number]::-webkit-outer-spin-button {
         outline: var(--form-input-hover-border);
     }
 }
+}
+
+@layer base{
 
 .input-description {
     --input-description-order: 10;
@@ -1690,6 +1824,9 @@ input[type=number]::-webkit-outer-spin-button {
 
     grid-column: var(--toggle-group-description-column);
 }
+}
+
+@layer base{
 
 .input-group {
     --input-group-position: relative;
@@ -1820,6 +1957,9 @@ input[type=number]::-webkit-outer-spin-button {
 .input-group--xs-12 {
     grid-column: span 12;
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 480px) {
     .input-group--sm-1 {
@@ -1870,6 +2010,9 @@ input[type=number]::-webkit-outer-spin-button {
         grid-column: span 12;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 640px) {
     .input-group--md-1 {
@@ -1920,6 +2063,9 @@ input[type=number]::-webkit-outer-spin-button {
         grid-column: span 12;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 840px) {
     .input-group--lg-1 {
@@ -1970,6 +2116,9 @@ input[type=number]::-webkit-outer-spin-button {
         grid-column: span 12;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1024px) {
     .input-group--xl-1 {
@@ -2020,6 +2169,9 @@ input[type=number]::-webkit-outer-spin-button {
         grid-column: span 12;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1200px) {
     .input-group--xxl-1 {
@@ -2070,12 +2222,19 @@ input[type=number]::-webkit-outer-spin-button {
         grid-column: span 12;
     }
 }
+}
+
+@layer base{
+
 
 @media (hover: hover) {
     .input-group--disabled:hover {
         cursor: not-allowed;
     }
 }
+}
+
+@layer base{
 
 .input-group-advanced-password {
     display: grid;
@@ -2124,6 +2283,9 @@ input[type=number]::-webkit-outer-spin-button {
     --input-group-icon-background-color: var(--color-error);
     --input-group-icon-image: var(--icon-info);
 }
+}
+
+@layer base{
 
 .input-label {
     --input-label-position: absolute;
@@ -2168,6 +2330,9 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: var(--color-bg);
     width: calc(100% - var(--spacing-l))
 }
+}
+
+@layer base{
 
 .input-group.multi-checkbox-group {
     --multi-checkbox-group-display: grid;
@@ -2192,6 +2357,9 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--multi-checkbox-group-label-color);
     grid-column: var(--multi-checkbox-group-label-column);
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 640px) {
     .input-group.multi-checkbox-group {
@@ -2199,12 +2367,18 @@ input[type=number]::-webkit-outer-spin-button {
         --multi-checkbox-group-grid-gap: 0 var(--spacing-normal);
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 960px) {
     .input-group.multi-checkbox-group {
         --multi-checkbox-group-grid-column-count: 3;
     }
 }
+}
+
+@layer base{
 
 .multi-select {
     --multi-select-width: 100%;
@@ -2266,6 +2440,9 @@ input[type=number]::-webkit-outer-spin-button {
 .input-group.input-group--multi-select {
     --input-group-icon-right: var(--spacing-m);
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .multi-select:hover {
@@ -2273,6 +2450,9 @@ input[type=number]::-webkit-outer-spin-button {
         outline: var(--form-input-hover-border);
     }
 }
+}
+
+@layer base{
 
 .radio {
     --radio-appearance: none;
@@ -2359,6 +2539,9 @@ input[type=number]::-webkit-outer-spin-button {
     --radio-background-color: var(--color-bg);
     --radio-check-background-color: var(--color-success);
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .radio:hover {
@@ -2375,6 +2558,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 }
+}
+
+@layer base{
 
 .radio-group {
     --radio-group-display: grid;
@@ -2438,18 +2624,27 @@ input[type=number]::-webkit-outer-spin-button {
     grid-gap: var(--radio-group-option-label-grid-gap);
     width: var(--radio-group-option-label-width);
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 640px) {
     .radio-group {
         --radio-group-grid-column-count: 2;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 960px) {
     .radio-group {
         --radio-group-grid-column-count: 3;
     }
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .radio-group__option-label:hover {
@@ -2460,6 +2655,9 @@ input[type=number]::-webkit-outer-spin-button {
         --radio-border-color: var(--color-primary);
     }
 }
+}
+
+@layer base{
 
 .select {
     appearance: none;
@@ -2503,10 +2701,15 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-mask-image: var(--select-chevron-image);
     pointer-events: none;
 }
+}
 
+@layer base{
 .form-static-text > *:first-child {
     margin-top: 0;
 }
+}
+
+@layer base{
 
 .toggle {
     --toggle-position: relative;
@@ -2582,6 +2785,9 @@ input[type=number]::-webkit-outer-spin-button {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .toggle:hover {
@@ -2596,6 +2802,9 @@ input[type=number]::-webkit-outer-spin-button {
         --toggle-thumb-default-color: var(--toggle-thumb-checked-hover-color);
     }
 }
+}
+
+@layer base{
 
 .toggle-group {
     --toggle-group-display: grid;
@@ -2638,12 +2847,18 @@ input[type=number]::-webkit-outer-spin-button {
 
     pointer-events: none;
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .toggle-group__label:hover {
         cursor: pointer;
     }
 }
+}
+
+@layer base{
 
 body {
     background-color: var(--color-bg);
@@ -2652,6 +2867,9 @@ body {
 body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     overflow: hidden !important;
 }
+}
+
+@layer base{
 
 .address {
     --address-font-family: var(--font-family-text);
@@ -2688,6 +2906,9 @@ body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     justify-content: var(--address-link-justify-content);
     gap: var(--address-link-gap);
 }
+}
+
+@layer base{
 
 .alert {
     --alert-bg-color: var(--color-primary-o-10);
@@ -2749,6 +2970,9 @@ body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
     --alert-bg-color: var(--color-info-o-25);
     --alert-border-color: var(--color-info-darken-15);
 }
+}
+
+@layer base{
 
 blockquote:not(.blockquote__blockquote) {
     --blockquote-tag-z-index: var(--z-index-content);
@@ -2804,6 +3028,9 @@ blockquote:not(.blockquote__blockquote) + .blockquote__author::before {
     content: "—";
     margin-right: var(--spacing-s);
 }
+}
+
+@layer base{
 
 .button {
     --button-color-bg: var(--color-primary);
@@ -2854,7 +3081,6 @@ p > .button {
 }
 
 /* FOCUS */
-
 .button:focus-visible {
     --button-color-bg: var(--color-primary-dark);
     --button-color-text: var(--color-bg);
@@ -2877,7 +3103,6 @@ p > .button {
 }
 
 /* BUTTON SIZE */
-
 .button[button-size="tiny"] {
     --button-font-size: var(--font-size-xs);
 }
@@ -2891,7 +3116,6 @@ p > .button {
 }
 
 /* BUTTON ICON */
-
 .button[button-icon-position="left"] {
     --button-flex-direction: row;
     --button-padding: var(--spacing-s) var(--spacing-m) var(--spacing-s) var(--spacing-normal);
@@ -2919,14 +3143,12 @@ p > .button {
 }
 
 /* EXPANDED */
-
 .button[is-expanded],
 .button.button--expanded {
     --button-width: 100%;
 }
 
 /* BUTTON TYPE BORDER */
-
 .button[button-type="border"],
 .button.button--shadow,
 .button.button--outline {
@@ -2974,7 +3196,6 @@ p > .button {
 }
 
 /* BUTTON TYPE GHOST */
-
 .button[button-type="ghost"] {
     --button-border-color: transparent;
     --button-color-bg: transparent;
@@ -3005,7 +3226,6 @@ p > .button {
 }
 
 /* BUTTON DISABLED */
-
 .button[disabled] {
     --button-color-bg: var(--color-font-light) !important;
     --button-color-text: var(--color-font) !important;
@@ -3024,6 +3244,9 @@ p > .button {
     --button-color-text: var(--color-font-light) !important;
     --button-border-color: transparent !important;
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     .button:hover {
@@ -3081,6 +3304,9 @@ p > .button {
         --button-color-text: var(--color-font);
     }
 }
+}
+
+@layer base{
 
 .chapter {
     --chapter-position: relative;
@@ -3122,7 +3348,6 @@ p > .button {
 }
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
-
 :is(.chapter--primary, .chapter--secondary, .chapter--inverted) :is(p, ul, ol, table) {
     --color-font: var(--color-bg);
 }
@@ -3148,6 +3373,9 @@ p > .button {
 .chapter > span:first-child + * {
     margin-top: 0 !important;
 }
+}
+
+@layer base{
 
 hr,
 .divider {
@@ -3189,7 +3417,9 @@ hr[divider-type="grey"],
 .divider[divider-type="grey"] {
     --divider-bg-color: var(--color-font-light);
 }
+}
 
+@layer base{
 exit-warning {
     --toujou-modal-header-padding: var(--spacing-normal) var(--spacing-s);
     --toujou-modal-header-position: sticky;
@@ -3221,6 +3451,9 @@ exit-warning {
 
     z-index: var(--toujou-modal-z-index);
 }
+}
+
+@layer base{
 
 .fav-count {
     --toujou-fav-count-background-color: var(--color-primary);
@@ -3252,6 +3485,9 @@ exit-warning {
     top: var(--fav-el-icon-top);
     left: var(--fav-el-icon-left);
 }
+}
+
+@layer base{
 
 .grid {
     --grid-display: grid;
@@ -3296,6 +3532,9 @@ exit-warning {
 .grid[grid-type="ignore"] {
     display: contents;
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 840px) {
     .grid[number-of-columns="2"] {
@@ -3318,12 +3557,18 @@ exit-warning {
         --grid-number-of-columns: 2;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1024px) {
     .grid[number-of-columns="4"] {
         --grid-number-of-columns: 4;
     }
 }
+}
+
+@layer base{
 
 main {
     padding-bottom: var(--spacing-between-elements-normal);
@@ -3335,7 +3580,9 @@ main:first-child,
 
     padding-top: var(--main-padding-top);
 }
+}
 
+@layer base{
 toujou-modal {
     --toujou-modal-header-padding: var(--spacing-s);
     --toujou-modal-header-position: sticky;
@@ -3357,6 +3604,9 @@ toujou-modal {
 
     z-index: var(--toujou-modal-z-index);
 }
+}
+
+@layer base{
 
 .search {
     --search-display: flex;
@@ -3414,12 +3664,18 @@ input[type="search"]::-webkit-search-cancel-button {
 input[type="search"]::-webkit-search-cancel-button:is(:hover, :focus-visible) {
     background-color: var(--search-cancel-button-color-hover);
 }
+}
+
+@layer base{
 
 @media screen and (max-width: 639px) {
     .search {
         --search-button-text-display: none;
     }
 }
+}
+
+@layer base{
 
 .separated-list {
     --separated-list-list-style: none;
@@ -3461,6 +3717,9 @@ input[type="search"]::-webkit-search-cancel-button:is(:hover, :focus-visible) {
     content: var(--separated-list-separator);
     margin-inline: var(--separated-list-separator-gap);
 }
+}
+
+@layer base{
 
 .single-media {
     --single-media-position: relative;
@@ -3542,6 +3801,9 @@ main .single-media__video[video-extension="vimeo"] {
 
     aspect-ratio: var(--single-media-youtube-videos-aspect-ratio);
 }
+}
+
+@layer base{
 
 :root {
     /* Toujou smooth scroll docs: https://guide.dfau.de/doc/smooth-scroll-vuoCqfeMJP */
@@ -3559,15 +3821,18 @@ html {
 }
 
 /* Disable smooth scroll for user that want reduced motion */
+}
 
+@layer base{
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
     }
 }
+}
 
+@layer base{
 /* These variables have the "toujou" prefix because they come from the webcomponent */
-
 .snackbar {
     --toujou-snackbar-font-family: var(--font-family-text);
     --toujou-snackbar-font-weight: var(--font-weight-text-normal);
@@ -3618,12 +3883,17 @@ html {
     --toujou-snackbar-info-message-color: var(--color-bg);
     --toujou-snackbar-info-button-color: var(--color-bg);
 }
+}
 
+@layer base{
 #navigation-state,
 #contact-state,
 #selector-state {
     display: none;
 }
+}
+
+@layer base{
 
 .table {
     --table-width: 100%;
@@ -3700,6 +3970,9 @@ th {
 td {
     padding: var(--table-cell-padding);
 }
+}
+
+@layer base{
 
 .table-container {
     --table-content-display: block;
@@ -3726,6 +3999,9 @@ main > .table-container {
 .form > .table-container {
     --table-content-width: var(--content-fullwidth);
 }
+}
+
+@layer base{
 
 .text-block {
     --text-block-display: grid;
@@ -3837,6 +4113,9 @@ span:first-child + .text-block {
 .details .text-block__content:first-child {
     --text-block-column-gap: 0;
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 768px) {
     .text-block[text-block-media-position="beside-right"] .text-block__figure {
@@ -3875,6 +4154,9 @@ span:first-child + .text-block {
         padding-left: var(--text-block-grid-gap);
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 840px) {
     .text-block[text-block-column-count="2"],
@@ -3894,6 +4176,9 @@ span:first-child + .text-block {
         --text-block-grid-template-columns: 1fr 1fr 1fr;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1200px) {
     .text-block[text-block-column-count="4"] {
@@ -3928,13 +4213,15 @@ span:first-child + .text-block {
         padding-right: var(--spacing-m);
     }
 }
+}
+
+@layer base{
 
 .details .text-block .text-block-column {
     margin-top: 0 !important;
 }
 
 /* stylelint-disable-next-line max-line-length */
-
 :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position*="above"]) .text-block-column {
     margin-top: var(--text-block-grid-gap);
 }
@@ -3947,10 +4234,12 @@ span:first-child + .text-block {
 }
 
 /* stylelint-disable-next-line max-line-length */
-
 :is(.text-block[text-block-media-position*="beside"], .text-block[text-block-media-position*="inside"], .text-block[text-block-media-position="above"]) .text-block__content {
     margin-top: var(--text-block-column-gap);
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 768px) {
     .text-block[text-block-media-position="inside-left"],
@@ -3997,6 +4286,9 @@ span:first-child + .text-block {
         margin-top: 0;
     }
 }
+}
+
+@layer base{
 
 @media screen and (min-width: 1200px) {
     .text-block[text-block-media-position="inside-left"] .text-block-column {
@@ -4007,6 +4299,9 @@ span:first-child + .text-block {
         transform: translateX(calc(var(--text-block-grid-gap) * -.5));
     }
 }
+}
+
+@layer base{
 
 h1,
 *[type-size="font--alpha"],
@@ -4115,7 +4410,6 @@ h6,
 }
 
 /* stylelint-disable indentation */
-
 :is(main, .chapter) > :is(
     h1,
     h2,
@@ -4163,7 +4457,6 @@ h6,
 }
 
 /* stylelint-enable indentation */
-
 *:not(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
     margin-top: var(--spacing-xl);
 }
@@ -4237,7 +4530,6 @@ a:not(.button):focus-visible {
 }
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */
-
 :is(main, .chapter) > :is(p, ul:not(.card-collection), ol, h1, h2, h3, h4, h5, h6, a) {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
@@ -4283,23 +4575,27 @@ a:not(.button):focus-visible {
 }
 
 /* stylelint-disable-next-line selector-no-vendor-prefix */
-
 a:-webkit-any-link:focus-visible {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
 
 /* stylelint-disable-next-line selector-no-vendor-prefix */
-
 .topbar[open-nav] a:-webkit-any-link:focus-visible {
     --focus-outline-color: var(--color-bg);
 }
+}
+
+@layer base{
 
 @media (hover: hover) {
     a:not(.button):hover {
         color: var(--color-primary-dark);
     }
 }
+}
+
+@layer base{
 
 .wrap-iframe {
     padding-bottom: var(--spacing-l);
@@ -4308,6 +4604,9 @@ a:-webkit-any-link:focus-visible {
 .wrap-iframe main {
     padding-top: 0;
 }
+}
+
+@layer base{
 
 .wrap-plugin-page:first-child,
 .topbar + .wrap-plugin-page,
@@ -4322,4 +4621,5 @@ a:-webkit-any-link:focus-visible {
     max-width: var(--content-max-width);
     margin-left: auto;
     margin-right: auto;
+}
 }

@@ -1,69 +1,71 @@
-.header {
-    --header-position: relative;
-    --header-height: 80vh;
-    --header-width: 100%;
-    --header-z-index: var(--z-index-content);
+@layer components {
+    .header {
+        --header-position: relative;
+        --header-height: 80vh;
+        --header-width: 100%;
+        --header-z-index: var(--z-index-content);
 
-    --header-image-height: 100%;
-    --header-image-width: 100%;
-    --header-image-position: absolute;
-    --header-image-top: 0;
-    --header-image-left: 0;
-    --header-image-width-object-fit: cover;
+        --header-image-height: 100%;
+        --header-image-width: 100%;
+        --header-image-position: absolute;
+        --header-image-top: 0;
+        --header-image-left: 0;
+        --header-image-width-object-fit: cover;
 
-    position: var(--header-position);
-    height: var(--header-height);
-    width: var(--header-width);
-    z-index: var(--header-z-index);
-}
+        position: var(--header-position);
+        height: var(--header-height);
+        width: var(--header-width);
+        z-index: var(--header-z-index);
+    }
 
-.topbar + .header {
-    --header-margin-top: var(--topbar-height);
+    .topbar + .header {
+        --header-margin-top: var(--topbar-height);
 
-    margin-top: var(--header-margin-top) !important;
-}
+        margin-top: var(--header-margin-top) !important;
+    }
 
-.header[image-height="full"] {
-    --header-height: calc(100vh - var(--topbar-height));
-}
+    .header[image-height="full"] {
+        --header-height: calc(100vh - var(--topbar-height));
+    }
 
-.header[image-height="half"] {
-    --header-height: 50vh;
-}
+    .header[image-height="half"] {
+        --header-height: 50vh;
+    }
 
-.header[image-height="quarter"] {
-    --header-height: 25vh;
-}
+    .header[image-height="quarter"] {
+        --header-height: 25vh;
+    }
 
-.header[image-height="3-1"] {
-    --header-height: calc(100 / 3 * 1vw);
-}
+    .header[image-height="3-1"] {
+        --header-height: calc(100 / 3 * 1vw);
+    }
 
-.header[image-height="hero-media"] {
-    --header-height: auto;
-}
+    .header[image-height="hero-media"] {
+        --header-height: auto;
+    }
 
-.header--portfolio-gallery {
-    --header-height: auto;
-}
+    .header--portfolio-gallery {
+        --header-height: auto;
+    }
 
-.header__figure {
-    height: 100%;
-}
+    .header__figure {
+        height: 100%;
+    }
 
-.header__image,
-.header__figure .video {
-    height: var(--header-image-height);
-    width: var(--header-image-width);
-    position: var(--header-image-position);
-    top: var(--header-image-top);
-    left: var(--header-image-left);
-    object-fit: var(--header-image-width-object-fit);
-}
+    .header__image,
+    .header__figure .video {
+        height: var(--header-image-height);
+        width: var(--header-image-width);
+        position: var(--header-image-position);
+        top: var(--header-image-top);
+        left: var(--header-image-left);
+        object-fit: var(--header-image-width-object-fit);
+    }
 
-.header .slider .single-media,
-.header .slider .single-media img {
-    height: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    .header .slider .single-media,
+    .header .slider .single-media img {
+        height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
 }

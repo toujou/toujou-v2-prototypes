@@ -1,15 +1,17 @@
-.solr-facets-in-use {
-    --solr-facet-in-use-border-bottom: var(--toujou-solr-margin-between-search-panels) solid transparent;
+@layer components {
+    .solr-facets-in-use {
+        --solr-facet-in-use-border-bottom: var(--toujou-solr-margin-between-search-panels) solid transparent;
 
-    border-bottom: var(--solr-facet-in-use-border-bottom);
-}
+        border-bottom: var(--solr-facet-in-use-border-bottom);
+    }
 
-.solr-facets-in-use__chips {
-    display: flex;
-    flex-flow: row wrap;
-    gap: var(--spacing-s);
-}
+    .solr-facets-in-use__chips {
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--spacing-s);
+    }
 
-.solr-facets-in-use__chip-link {
-    display: contents;
+    .solr-facets-in-use__chip-link {
+        display: contents;
+    }
 }

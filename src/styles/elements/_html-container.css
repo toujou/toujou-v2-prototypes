@@ -1,20 +1,22 @@
-.html-container {
-    --html-container-width: var(--content-width-with-padding);
-    --html-container-max-width: var(--content-medium-max-width);
-    --html-container-margin: var(--spacing-between-elements-normal) auto 0;
-    --html-container-display: block;
+@layer components {
+    .html-container {
+        --html-container-width: var(--content-width-with-padding);
+        --html-container-max-width: var(--content-medium-max-width);
+        --html-container-margin: var(--spacing-between-elements-normal) auto 0;
+        --html-container-display: block;
 
-    width: var(--html-container-width);
-    max-width: var(--html-container-max-width);
-    margin: var(--html-container-margin);
-    display: var(--html-container-display);
-}
+        width: var(--html-container-width);
+        max-width: var(--html-container-max-width);
+        margin: var(--html-container-margin);
+        display: var(--html-container-display);
+    }
 
-.html-container:first-child {
-    --html-container-margin: 0 auto;
-}
+    .html-container:first-child {
+        --html-container-margin: 0 auto;
+    }
 
-.html-container[fullwidth] {
-    --html-container-width: var(--content-fullwidth);
-    --html-container-max-width: var(--content-fullwidth);
+    .html-container[fullwidth] {
+        --html-container-width: var(--content-fullwidth);
+        --html-container-max-width: var(--content-fullwidth);
+    }
 }

@@ -1,30 +1,32 @@
-.details-accordion {
-    --details-accordion-display: block;
-    --details-accordion-width: var(--content-width-with-padding);
-    --details-accordion-max-width: var(--content-max-width);
-    --details-accordion-margin: var(--spacing-between-elements-normal) auto 0;
-    --details-accordion-z-index: var(--z-index-content);
+@layer components {
+    .details-accordion {
+        --details-accordion-display: block;
+        --details-accordion-width: var(--content-width-with-padding);
+        --details-accordion-max-width: var(--content-max-width);
+        --details-accordion-margin: var(--spacing-between-elements-normal) auto 0;
+        --details-accordion-z-index: var(--z-index-content);
 
-    display: var(--details-accordion-display);
-    width: var(--details-accordion-width);
-    max-width: var(--details-accordion-max-width);
-    margin: var(--details-accordion-margin);
-    z-index: var(--details-accordion-z-index);
-}
+        display: var(--details-accordion-display);
+        width: var(--details-accordion-width);
+        max-width: var(--details-accordion-max-width);
+        margin: var(--details-accordion-margin);
+        z-index: var(--details-accordion-z-index);
+    }
 
-.details-accordion .details:not(:first-child) {
-    --toujou-details-border-top: none;
-}
+    .details-accordion .details:not(:first-child) {
+        --toujou-details-border-top: none;
+    }
 
-.grid-column .details-accordion {
-    --details-accordion-width: 100%;
-    --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
-}
+    .grid-column .details-accordion {
+        --details-accordion-width: 100%;
+        --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+    }
 
-.details-accordion:first-child {
-    --details-accordion-margin: 0 auto;
-}
+    .details-accordion:first-child {
+        --details-accordion-margin: 0 auto;
+    }
 
-.text-block + .details-accordion {
-    --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+    .text-block + .details-accordion {
+        --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+    }
 }

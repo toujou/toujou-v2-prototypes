@@ -1,81 +1,78 @@
-.event-schedule-item {
-    --event-schedule-item-display: grid;
-    --event-schedule-item-grid-template-columns: 1fr;
-    --event-schedule-item-grid-template-areas:
-        "time"
-        "status"
-        "title";
-    --event-schedule-item-grid-gap: var(--spacing-xs);
-    --event-schedule-item-align-items: flex-start;
-    --event-schedule-item-margin: 0;
-    --event-schedule-item-padding: var(--spacing-s) var(--spacing-xs);
-    --event-schedule-item-text-decoration: none;
-    --event-schedule-item-background-color: transparent;
-
-    --event-schedule-item-time-margin: 0;
-    --event-schedule-item-time-font-numeric-variant: tabular-nums;
-
-    --event-schedule-item-title-margin: 0;
-    --event-schedule-item-title-font-size: var(--font-size-normal);
-    --event-schedule-item-title-color: var(--color-font-dark);
-    --event-schedule-item-title-font-family: var(--font-family-text);
-    --event-schedule-item-title-font-weight: var(--font-weight-text-bold);
-
-    --event-schedule-item-title-step-color: var(--color-font-light);
-    --event-schedule-item-title-step-font-weight: var(--font-weight-text-normal);
-
-    display: var(--event-schedule-item-display);
-    grid-template-columns: var(--event-schedule-item-grid-template-columns);
-    grid-template-areas: var(--event-schedule-item-grid-template-areas);
-    grid-gap: var(--event-schedule-item-grid-gap);
-    align-items: var(--event-schedule-item-align-items);
-    margin: var(--event-schedule-item-margin);
-    padding: var(--event-schedule-item-padding);
-    text-decoration: var(--event-schedule-item-text-decoration);
-    background-color: var(--event-schedule-item-background-color);
-}
-
-a.event-schedule-item:is(:hover, :focus-visible) {
-    --event-schedule-item-background-color: var(--color-font-o-10);
-}
-
-.event-schedule-item__time {
-    margin: var(--event-schedule-item-time-margin);
-    font-variant-numeric: var(--event-schedule-item-time-font-numeric-variant);
-    grid-area: time;
-}
-
-.event-schedule-item__title {
-    margin: var(--event-schedule-item-title-margin);
-    font-size: var(--event-schedule-item-title-font-size);
-    color: var(--event-schedule-item-title-color);
-    font-family: var(--event-schedule-item-title-font-family);
-    font-weight: var(--event-schedule-item-title-font-weight);
-    grid-area: title;
-}
-
-.event-schedule-item__title-step {
-    /*color: var(--event-schedule-item-title-step-color);*/
-    font-weight: var(--event-schedule-item-title-step-font-weight);
-}
-
-.event-schedule-item__chip {
-    grid-area: status;
-}
-
-@media screen and (min-width: 480px) {
+@layer components {
     .event-schedule-item {
-        --event-schedule-item-grid-template-columns: auto 1fr;
-        --event-schedule-item-grid-template-areas:
-            "time status"
-            "title title";
-        --event-schedule-item-grid-gap: var(--spacing-xs) var(--spacing-normal);
+        --event-schedule-item-display: grid;
+        --event-schedule-item-grid-template-columns: 1fr;
+        --event-schedule-item-grid-template-areas: "time" "status" "title";
+        --event-schedule-item-grid-gap: var(--spacing-xs);
+        --event-schedule-item-align-items: flex-start;
+        --event-schedule-item-margin: 0;
+        --event-schedule-item-padding: var(--spacing-s) var(--spacing-xs);
+        --event-schedule-item-text-decoration: none;
+        --event-schedule-item-background-color: transparent;
+
+        --event-schedule-item-time-margin: 0;
+        --event-schedule-item-time-font-numeric-variant: tabular-nums;
+
+        --event-schedule-item-title-margin: 0;
+        --event-schedule-item-title-font-size: var(--font-size-normal);
+        --event-schedule-item-title-color: var(--color-font-dark);
+        --event-schedule-item-title-font-family: var(--font-family-text);
+        --event-schedule-item-title-font-weight: var(--font-weight-text-bold);
+
+        --event-schedule-item-title-step-color: var(--color-font-light);
+        --event-schedule-item-title-step-font-weight: var(--font-weight-text-normal);
+
+        display: var(--event-schedule-item-display);
+        grid-template-columns: var(--event-schedule-item-grid-template-columns);
+        grid-template-areas: var(--event-schedule-item-grid-template-areas);
+        grid-gap: var(--event-schedule-item-grid-gap);
+        align-items: var(--event-schedule-item-align-items);
+        margin: var(--event-schedule-item-margin);
+        padding: var(--event-schedule-item-padding);
+        text-decoration: var(--event-schedule-item-text-decoration);
+        background-color: var(--event-schedule-item-background-color);
     }
-}
 
-@media screen and (min-width: 640px) {
-    .event-schedule-item {
-        --event-schedule-item-grid-template-columns: 7rem 1fr auto;
-        --event-schedule-item-grid-template-areas: "time title status";
+    a.event-schedule-item:is(:hover, :focus-visible) {
+        --event-schedule-item-background-color: var(--color-font-o-10);
+    }
+
+    .event-schedule-item__time {
+        margin: var(--event-schedule-item-time-margin);
+        font-variant-numeric: var(--event-schedule-item-time-font-numeric-variant);
+        grid-area: time;
+    }
+
+    .event-schedule-item__title {
+        margin: var(--event-schedule-item-title-margin);
+        font-size: var(--event-schedule-item-title-font-size);
+        color: var(--event-schedule-item-title-color);
+        font-family: var(--event-schedule-item-title-font-family);
+        font-weight: var(--event-schedule-item-title-font-weight);
+        grid-area: title;
+    }
+
+    .event-schedule-item__title-step {
+        /*color: var(--event-schedule-item-title-step-color);*/
+        font-weight: var(--event-schedule-item-title-step-font-weight);
+    }
+
+    .event-schedule-item__chip {
+        grid-area: status;
+    }
+
+    @media screen and (min-width: 480px) {
+        .event-schedule-item {
+            --event-schedule-item-grid-template-columns: auto 1fr;
+            --event-schedule-item-grid-template-areas: "time status" "title title";
+            --event-schedule-item-grid-gap: var(--spacing-xs) var(--spacing-normal);
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        .event-schedule-item {
+            --event-schedule-item-grid-template-columns: 7rem 1fr auto;
+            --event-schedule-item-grid-template-areas: "time title status";
+        }
     }
 }

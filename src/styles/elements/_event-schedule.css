@@ -1,17 +1,19 @@
-.event-schedule {
-    --event-schedule-display: block;
-    --event-schedule-width: var(--content-width-with-padding);
-    --event-schedule-max-width: var(--content-max-width);
-    --event-schedule-margin: var(--spacing-between-elements-normal) auto 0;
-    --event-schedule-z-index: var(--z-index-content);
+@layer components {
+    .event-schedule {
+        --event-schedule-display: block;
+        --event-schedule-width: var(--content-width-with-padding);
+        --event-schedule-max-width: var(--content-max-width);
+        --event-schedule-margin: var(--spacing-between-elements-normal) auto 0;
+        --event-schedule-z-index: var(--z-index-content);
 
-    display: var(--event-schedule-display);
-    width: var(--event-schedule-width);
-    max-width: var(--event-schedule-max-width);
-    margin: var(--event-schedule-margin);
-    z-index: var(--event-schedule-z-index);
-}
+        display: var(--event-schedule-display);
+        width: var(--event-schedule-width);
+        max-width: var(--event-schedule-max-width);
+        margin: var(--event-schedule-margin);
+        z-index: var(--event-schedule-z-index);
+    }
 
-.event-schedule .details:not(:first-child) {
-    --toujou-details-border-top: none;
+    .event-schedule .details:not(:first-child) {
+        --toujou-details-border-top: none;
+    }
 }

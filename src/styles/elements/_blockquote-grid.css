@@ -1,68 +1,70 @@
-.blockquote-grid {
-    --blockquote-grid-columns-count: 100%;
-    --blockquote-grid-gap: var(--spacing-normal);
-    --blockquote-grid-z-index: var(--z-index-content);
-    --blockquote-grid-margin: var(--spacing-between-elements-normal) auto;
-    --blockquote-grid-width: var(--content-width-with-padding);
-    --blockquote-grid-max-width: var(--content-wide-max-width);
-
-    display: grid;
-    grid-template-columns: repeat(var(--blockquote-grid-columns-count), 1fr);
-    grid-gap: var(--blockquote-grid-gap);
-    width: var(--blockquote-grid-width);
-    max-width: var(--blockquote-grid-max-width);
-    margin: var(--blockquote-grid-margin);
-    z-index: var(--blockquote-grid-z-index);
-}
-
-.blockquote-grid[fullwidth] {
-    --blockquote-grid-width: 100%;
-    --blockquote-grid-max-width: 100%;
-}
-
-.blockquote-grid:first-child {
-    --blockquote-grid-margin: 0 auto;
-}
-
-.blockquote-grid[blockquote-grid-count="2"],
-.blockquote-grid[blockquote-grid-count="3"] {
-    --blockquote-grid-max-width: var(--content-wide-max-width);
-}
-
-@media screen and (min-width: 640px) {
+@layer components {
     .blockquote-grid {
-        --blockquote-grid-gap: var(--content-spacing-between-columns);
+        --blockquote-grid-columns-count: 100%;
+        --blockquote-grid-gap: var(--spacing-normal);
+        --blockquote-grid-z-index: var(--z-index-content);
+        --blockquote-grid-margin: var(--spacing-between-elements-normal) auto;
+        --blockquote-grid-width: var(--content-width-with-padding);
+        --blockquote-grid-max-width: var(--content-wide-max-width);
+
+        display: grid;
+        grid-template-columns: repeat(var(--blockquote-grid-columns-count), 1fr);
+        grid-gap: var(--blockquote-grid-gap);
+        width: var(--blockquote-grid-width);
+        max-width: var(--blockquote-grid-max-width);
+        margin: var(--blockquote-grid-margin);
+        z-index: var(--blockquote-grid-z-index);
     }
 
-    .blockquote-grid[blockquote-grid-count="2"] {
-        --blockquote-grid-columns-count: 2;
+    .blockquote-grid[fullwidth] {
+        --blockquote-grid-width: 100%;
+        --blockquote-grid-max-width: 100%;
     }
-}
 
-@media screen and (min-width: 840px) {
+    .blockquote-grid:first-child {
+        --blockquote-grid-margin: 0 auto;
+    }
+
+    .blockquote-grid[blockquote-grid-count="2"],
     .blockquote-grid[blockquote-grid-count="3"] {
-        --blockquote-grid-columns-count: 4;
+        --blockquote-grid-max-width: var(--content-wide-max-width);
     }
 
-    .blockquote-grid[blockquote-grid-count="3"] .blockquote {
-        grid-column: span 2;
+    @media screen and (min-width: 640px) {
+        .blockquote-grid {
+            --blockquote-grid-gap: var(--content-spacing-between-columns);
+        }
+
+        .blockquote-grid[blockquote-grid-count="2"] {
+            --blockquote-grid-columns-count: 2;
+        }
     }
 
-    .blockquote-grid[blockquote-grid-count="3"] .blockquote:nth-child(3) {
-        grid-column: 2 / span 2;
-    }
-}
+    @media screen and (min-width: 840px) {
+        .blockquote-grid[blockquote-grid-count="3"] {
+            --blockquote-grid-columns-count: 4;
+        }
 
-@media screen and (min-width: 1240px) {
-    .blockquote-grid[blockquote-grid-count="3"] {
-        --blockquote-grid-columns-count: 3;
+        .blockquote-grid[blockquote-grid-count="3"] .blockquote {
+            grid-column: span 2;
+        }
+
+        .blockquote-grid[blockquote-grid-count="3"] .blockquote:nth-child(3) {
+            grid-column: 2 / span 2;
+        }
     }
 
-    .blockquote-grid[blockquote-grid-count="3"] .blockquote {
-        grid-column: span 1;
-    }
+    @media screen and (min-width: 1240px) {
+        .blockquote-grid[blockquote-grid-count="3"] {
+            --blockquote-grid-columns-count: 3;
+        }
 
-    .blockquote-grid[blockquote-grid-count="3"] .blockquote:nth-child(3) {
-        grid-column: auto / span 1;
+        .blockquote-grid[blockquote-grid-count="3"] .blockquote {
+            grid-column: span 1;
+        }
+
+        .blockquote-grid[blockquote-grid-count="3"] .blockquote:nth-child(3) {
+            grid-column: auto / span 1;
+        }
     }
 }

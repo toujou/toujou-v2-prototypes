@@ -1,71 +1,73 @@
-.indexedsearch-pagination {
-    --indexedsearch-pagination-display: block;
-    --indexedsearch-pagination-width: 100%;
+@layer components {
+    .indexedsearch-pagination {
+        --indexedsearch-pagination-display: block;
+        --indexedsearch-pagination-width: 100%;
 
-    --indexedsearch-pagination-list-list-style: none;
-    --indexedsearch-pagination-list-display: flex;
-    --indexedsearch-pagination-list-flex-flow: row wrap;
-    --indexedsearch-pagination-list-align-items: center;
-    --indexedsearch-pagination-list-justify-content: center;
-    --indexedsearch-pagination-list-gap: 0;
-    --indexedsearch-pagination-list-margin: 0 auto;
+        --indexedsearch-pagination-list-list-style: none;
+        --indexedsearch-pagination-list-display: flex;
+        --indexedsearch-pagination-list-flex-flow: row wrap;
+        --indexedsearch-pagination-list-align-items: center;
+        --indexedsearch-pagination-list-justify-content: center;
+        --indexedsearch-pagination-list-gap: 0;
+        --indexedsearch-pagination-list-margin: 0 auto;
 
-    --indexedsearch-pagination-item-display: block;
-    --indexedsearch-pagination-item-size: var(--spacing-l);
-    --indexedsearch-pagination-item-font-size: var(--font-size-normal);
+        --indexedsearch-pagination-item-display: block;
+        --indexedsearch-pagination-item-size: var(--spacing-l);
+        --indexedsearch-pagination-item-font-size: var(--font-size-normal);
 
-    --indexedsearch-pagination-item-link-size: var(--indexedsearch-pagination-item-size);
-    --indexedsearch-pagination-item-link-display: flex;
-    --indexedsearch-pagination-item-link-align-items: center;
-    --indexedsearch-pagination-item-link-justify-content: center;
-    --indexedsearch-pagination-item-link-text-decoration: none;
-    --indexedsearch-pagination-item-link-padding: var(--spacing-s);
-    --indexedsearch-pagination-item-link-color: var(--color-font);
-    --indexedsearch-pagination-item-link-background-color: transparent;
-    --indexedsearch-pagination-item-link-border-radius: var(--border-radius-s);
+        --indexedsearch-pagination-item-link-size: var(--indexedsearch-pagination-item-size);
+        --indexedsearch-pagination-item-link-display: flex;
+        --indexedsearch-pagination-item-link-align-items: center;
+        --indexedsearch-pagination-item-link-justify-content: center;
+        --indexedsearch-pagination-item-link-text-decoration: none;
+        --indexedsearch-pagination-item-link-padding: var(--spacing-s);
+        --indexedsearch-pagination-item-link-color: var(--color-font);
+        --indexedsearch-pagination-item-link-background-color: transparent;
+        --indexedsearch-pagination-item-link-border-radius: var(--border-radius-s);
 
-    display: var(--indexedsearch-pagination-display);
-    width: var(--indexedsearch-pagination-width);
-}
+        display: var(--indexedsearch-pagination-display);
+        width: var(--indexedsearch-pagination-width);
+    }
 
-.indexedsearch-pagination__list {
-    list-style: var(--indexedsearch-pagination-list-list-style);
-    display: var(--indexedsearch-pagination-list-display);
-    flex-flow: var(--indexedsearch-pagination-list-flex-flow);
-    align-items: var(--indexedsearch-pagination-list-align-items);
-    justify-content: var(--indexedsearch-pagination-list-justify-content);
-    gap: var(--indexedsearch-pagination-list-gap);
-    margin: var(--indexedsearch-pagination-list-margin);
-}
+    .indexedsearch-pagination__list {
+        list-style: var(--indexedsearch-pagination-list-list-style);
+        display: var(--indexedsearch-pagination-list-display);
+        flex-flow: var(--indexedsearch-pagination-list-flex-flow);
+        align-items: var(--indexedsearch-pagination-list-align-items);
+        justify-content: var(--indexedsearch-pagination-list-justify-content);
+        gap: var(--indexedsearch-pagination-list-gap);
+        margin: var(--indexedsearch-pagination-list-margin);
+    }
 
-.indexedsearch-pagination__item {
-    display: var(--indexedsearch-pagination-item-display);
-    height: var(--indexedsearch-pagination-item-size);
-    min-width: var(--indexedsearch-pagination-item-size);
-    font-size: var(--indexedsearch-pagination-item-font-size);
-}
+    .indexedsearch-pagination__item {
+        display: var(--indexedsearch-pagination-item-display);
+        height: var(--indexedsearch-pagination-item-size);
+        min-width: var(--indexedsearch-pagination-item-size);
+        font-size: var(--indexedsearch-pagination-item-font-size);
+    }
 
-.indexedsearch-pagination__item--current {
-    --indexedsearch-pagination-item-link-color: var(--color-bg);
-    --indexedsearch-pagination-item-link-background-color: var(--color-primary);
+    .indexedsearch-pagination__item--current {
+        --indexedsearch-pagination-item-link-color: var(--color-bg);
+        --indexedsearch-pagination-item-link-background-color: var(--color-primary);
 
-    pointer-events: none;
-}
+        pointer-events: none;
+    }
 
-.indexedsearch-pagination__item-link {
-    height: var(--indexedsearch-pagination-item-link-size);
-    min-width: var(--indexedsearch-pagination-item-link-size);
-    padding: var(--indexedsearch-pagination-item-link-padding);
-    display: var(--indexedsearch-pagination-item-link-display);
-    align-items: var(--indexedsearch-pagination-item-link-align-items);
-    justify-content: var(--indexedsearch-pagination-item-link-justify-content);
-    text-decoration: var(--indexedsearch-pagination-item-link-text-decoration);
-    color: var(--indexedsearch-pagination-item-link-color) !important;
-    background-color: var(--indexedsearch-pagination-item-link-background-color);
-    border-radius: var(--indexedsearch-pagination-item-link-border-radius);
-}
+    .indexedsearch-pagination__item-link {
+        height: var(--indexedsearch-pagination-item-link-size);
+        min-width: var(--indexedsearch-pagination-item-link-size);
+        padding: var(--indexedsearch-pagination-item-link-padding);
+        display: var(--indexedsearch-pagination-item-link-display);
+        align-items: var(--indexedsearch-pagination-item-link-align-items);
+        justify-content: var(--indexedsearch-pagination-item-link-justify-content);
+        text-decoration: var(--indexedsearch-pagination-item-link-text-decoration);
+        color: var(--indexedsearch-pagination-item-link-color) !important;
+        background-color: var(--indexedsearch-pagination-item-link-background-color);
+        border-radius: var(--indexedsearch-pagination-item-link-border-radius);
+    }
 
-a.indexedsearch-pagination__item-link:is(:hover, :focus-visible) {
-    --indexedsearch-pagination-item-link-background-color: var(--color-primary-light);
-    --indexedsearch-pagination-item-link-color: var(--color-bg);
+    a.indexedsearch-pagination__item-link:is(:hover, :focus-visible) {
+        --indexedsearch-pagination-item-link-background-color: var(--color-primary-light);
+        --indexedsearch-pagination-item-link-color: var(--color-bg);
+    }
 }
