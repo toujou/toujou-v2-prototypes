@@ -1,154 +1,156 @@
-.overlay {
-    --overlay-scrimm-background-color: var(--color-black-o-75);
-    --overlay-position: fixed;
-    --overlay-top: 0;
-    --overlay-left: 0;
-    --overlay-height: 100%;
-    --overlay-width: 100%;
-    --overlay-display: flex;
-    --overlay-align-items: center;
-    --overlay-justify-content: center;
-    --overlay-z-index: 2147483641;
+@layer components {
+    .overlay {
+        --overlay-scrimm-background-color: var(--color-black-o-75);
+        --overlay-position: fixed;
+        --overlay-top: 0;
+        --overlay-left: 0;
+        --overlay-height: 100%;
+        --overlay-width: 100%;
+        --overlay-display: flex;
+        --overlay-align-items: center;
+        --overlay-justify-content: center;
+        --overlay-z-index: 2147483641;
 
-    --overlay-text-headline-margin-top: 0;
+        --overlay-text-headline-margin-top: 0;
 
-    --overlay-infos-position: relative;
-    --overlay-infos-display: flex;
-    --overlay-infos-flex-direction: column;
-    --overlay-infos-align-items: center;
-    --overlay-infos-justify-content: center;
-    --overlay-infos-gap: var(--spacing-l);
-    --overlay-infos-padding: var(--spacing-l);
-    --overlay-infos-shadow: var(--shadow-normal);
-    --overlay-infos-border-radius: var(--border-radius-default);
-    --overlay-infos-bg-color: var(--color-bg);
-    --overlay-infos-max-width: min(calc(100% - var(--spacing-xl)), 640px);
+        --overlay-infos-position: relative;
+        --overlay-infos-display: flex;
+        --overlay-infos-flex-direction: column;
+        --overlay-infos-align-items: center;
+        --overlay-infos-justify-content: center;
+        --overlay-infos-gap: var(--spacing-l);
+        --overlay-infos-padding: var(--spacing-l);
+        --overlay-infos-shadow: var(--shadow-normal);
+        --overlay-infos-border-radius: var(--border-radius-default);
+        --overlay-infos-bg-color: var(--color-bg);
+        --overlay-infos-max-width: min(calc(100% - var(--spacing-xl)), 640px);
 
-    --overlay-logo-height: var(--spacing-xxl);
-    --overlay-logo-width: auto;
-    --overlay-logo-object-fit: contain;
+        --overlay-logo-height: var(--spacing-xxl);
+        --overlay-logo-width: auto;
+        --overlay-logo-object-fit: contain;
 
-    --overlay-title-margin: 0;
+        --overlay-title-margin: 0;
 
-    --overlay-buttons-display: flex;
-    --overlay-buttons-align-items: center;
-    --overlay-buttons-justify-content: center;
-    --overlay-flex-direction: row;
-    --overlay-button-flex-wrap: wrap;
-    --overlay-buttons-gap: var(--spacing-normal);
+        --overlay-buttons-display: flex;
+        --overlay-buttons-align-items: center;
+        --overlay-buttons-justify-content: center;
+        --overlay-flex-direction: row;
+        --overlay-button-flex-wrap: wrap;
+        --overlay-buttons-gap: var(--spacing-normal);
 
-    --overlay-warning-display: none;
-    --overlay-warning-color: var(--color-warning);
+        --overlay-warning-display: none;
+        --overlay-warning-color: var(--color-warning);
 
-    --overlay-close-button-position: absolute;
-    --overlay-close-button-top: var(--spacing-s);
-    --overlay-close-button-right: calc(var(--spacing-s) * -1);
-    --overlay-close-button-bg-color: transparent;
-    --overlay-close-button-border: none;
+        --overlay-close-button-position: absolute;
+        --overlay-close-button-top: var(--spacing-s);
+        --overlay-close-button-right: calc(var(--spacing-s) * -1);
+        --overlay-close-button-bg-color: transparent;
+        --overlay-close-button-border: none;
 
-    --overlay-conclusion-margin: 0;
+        --overlay-conclusion-margin: 0;
 
-    --overlay-background-image-position: absolute;
-    --overlay-background-image-top: 0;
-    --overlay-background-image-left: 0;
-    --overlay-background-image-height: 100%;
-    --overlay-background-image-width: 100%;
-    --overlay-background-image-object-fit: cover;
+        --overlay-background-image-position: absolute;
+        --overlay-background-image-top: 0;
+        --overlay-background-image-left: 0;
+        --overlay-background-image-height: 100%;
+        --overlay-background-image-width: 100%;
+        --overlay-background-image-object-fit: cover;
 
-    background-color: var(--overlay-scrimm-background-color);
-    position: var(--overlay-position);
-    top: var(--overlay-top);
-    left: var(--overlay-left);
-    height: var(--overlay-height);
-    width: var(--overlay-width);
-    align-items: var(--overlay-align-items);
-    justify-content: var(--overlay-justify-content);
-    z-index: var(--overlay-z-index);
-    display: none;
-}
+        background-color: var(--overlay-scrimm-background-color);
+        position: var(--overlay-position);
+        top: var(--overlay-top);
+        left: var(--overlay-left);
+        height: var(--overlay-height);
+        width: var(--overlay-width);
+        align-items: var(--overlay-align-items);
+        justify-content: var(--overlay-justify-content);
+        z-index: var(--overlay-z-index);
+        display: none;
+    }
 
-.overlay[state="open"] {
-    display: var(--overlay-display);
-}
+    .overlay[state="open"] {
+        display: var(--overlay-display);
+    }
 
-.overlay[warning-visible] {
-    --overlay-buttons-display: none;
-    --overlay-warning-display: block;
-}
+    .overlay[warning-visible] {
+        --overlay-buttons-display: none;
+        --overlay-warning-display: block;
+    }
 
-.overlay[overlay-theme="light"] {
-    --overlay-background-color: var(--color-white-o-75);
-}
+    .overlay[overlay-theme="light"] {
+        --overlay-background-color: var(--color-white-o-75);
+    }
 
-.overlay__infos {
-    position: var(--overlay-infos-position);
-    display: var(--overlay-infos-display);
-    flex-direction: var(--overlay-infos-flex-direction);
-    align-items: var(--overlay-infos-align-items);
-    justify-content: var(--overlay-infos-justify-content);
-    gap: var(--overlay-infos-gap);
-    padding: var(--overlay-infos-padding);
-    box-shadow: var(--overlay-infos-shadow);
-    border-radius: var(--overlay-infos-border-radius);
-    background-color: var(--overlay-bg-color, var(--color-bg)); /* "overlay-bg-color" set from the theme module */
-    max-width: var(--overlay-infos-max-width);
-}
+    .overlay__infos {
+        position: var(--overlay-infos-position);
+        display: var(--overlay-infos-display);
+        flex-direction: var(--overlay-infos-flex-direction);
+        align-items: var(--overlay-infos-align-items);
+        justify-content: var(--overlay-infos-justify-content);
+        gap: var(--overlay-infos-gap);
+        padding: var(--overlay-infos-padding);
+        box-shadow: var(--overlay-infos-shadow);
+        border-radius: var(--overlay-infos-border-radius);
+        background-color: var(--overlay-bg-color, var(--color-bg)); /* "overlay-bg-color" set from the theme module */
+        max-width: var(--overlay-infos-max-width);
+    }
 
-.overlay__logo {
-    height: var(--overlay-logo-height);
-    width: var(--overlay-logo-width);
-    object-fit: var(--overlay-logo-object-fit);
-}
+    .overlay__logo {
+        height: var(--overlay-logo-height);
+        width: var(--overlay-logo-width);
+        object-fit: var(--overlay-logo-object-fit);
+    }
 
-.overlay__title {
-    margin: var(--overlay-title-margin);
-}
+    .overlay__title {
+        margin: var(--overlay-title-margin);
+    }
 
-.overlay__text *:not(h1, h2, h3, h4, h5, .button) {
-    color: var(--overlay-font-color, var(--color-font)); /* "overlay-font-color" set from the theme module */
-}
+    .overlay__text *:not(h1, h2, h3, h4, h5, .button) {
+        color: var(--overlay-font-color, var(--color-font)); /* "overlay-font-color" set from the theme module */
+    }
 
-.overlay__text > :is(h1, h2, h3, h4, h5):first-child,
-.overlay__text > span:first-child + :is(h1, h2, h3, h4, h5) {
-    margin-top: var(--overlay-text-headline-margin-top);
-}
+    .overlay__text > :is(h1, h2, h3, h4, h5):first-child,
+    .overlay__text > span:first-child + :is(h1, h2, h3, h4, h5) {
+        margin-top: var(--overlay-text-headline-margin-top);
+    }
 
-.overlay__buttons {
-    display: var(--overlay-buttons-display);
-    align-items: var(--overlay-buttons-align-items);
-    justify-content: var(--overlay-buttons-justify-content);
-    flex-flow: var(--overlay-flex-direction) var(--overlay-button-flex-wrap);
-    gap: var(--overlay-buttons-gap);
-}
+    .overlay__buttons {
+        display: var(--overlay-buttons-display);
+        align-items: var(--overlay-buttons-align-items);
+        justify-content: var(--overlay-buttons-justify-content);
+        flex-flow: var(--overlay-flex-direction) var(--overlay-button-flex-wrap);
+        gap: var(--overlay-buttons-gap);
+    }
 
-.overlay__warning {
-    display: var(--overlay-warning-display);
-    color: var(--overlay-warning-color);
-}
+    .overlay__warning {
+        display: var(--overlay-warning-display);
+        color: var(--overlay-warning-color);
+    }
 
-.overlay__close-button {
-    position: var(--overlay-close-button-position);
-    top: var(--overlay-close-button-top);
-    right: var(--overlay-close-button-right);
-    background-color: var(--overlay-close-button-bg-color);
-    border: var(--overlay-close-button-border);
-}
+    .overlay__close-button {
+        position: var(--overlay-close-button-position);
+        top: var(--overlay-close-button-top);
+        right: var(--overlay-close-button-right);
+        background-color: var(--overlay-close-button-bg-color);
+        border: var(--overlay-close-button-border);
+    }
 
-.overlay__conclusion {
-    margin: var(--overlay-conclusion-margin);
-}
+    .overlay__conclusion {
+        margin: var(--overlay-conclusion-margin);
+    }
 
-.overlay__background {
-    position: var(--overlay-background-image-position);
-    top: var(--overlay-background-image-top);
-    left: var(--overlay-background-image-left);
-    height: var(--overlay-background-image-height);
-    width: var(--overlay-background-image-width);
-    object-fit: var(--overlay-background-image-object-fit);
-}
+    .overlay__background {
+        position: var(--overlay-background-image-position);
+        top: var(--overlay-background-image-top);
+        left: var(--overlay-background-image-left);
+        height: var(--overlay-background-image-height);
+        width: var(--overlay-background-image-width);
+        object-fit: var(--overlay-background-image-object-fit);
+    }
 
-@media (hover: hover) {
-    .overlay__close-button:hover .icon {
-        --icon-color: var(--color-primary);
+    @media (hover: hover) {
+        .overlay__close-button:hover .icon {
+            --icon-color: var(--color-primary);
+        }
     }
 }

@@ -1,54 +1,56 @@
-.indexedsearch-header {
-    --indexedsearch-header-width: 100%;
-    --indexedsearch-header-display: flex;
-    --indexedsearch-header-flex-flow: column wrap;
-    --indexedsearch-header-align-items: flex-start;
-    --indexedsearch-header-justify-content: flex-start;
-    --indexedsearch-header-gap: 0;
-
-    --indexedsearch-header-headline-margin: 0;
-    --indexedsearch-header-headline-color: var(--color-font);
-    --indexedsearch-header-headline-font-size: var(--font-size-m);
-    --indexedsearch-header-headline-font-weight: var(--font-weight-text-bold);
-
-    --indexedsearch-header-headline-word-color: var(--color-primary);
-
-    --indexedsearch-header-amount-margin: 0;
-
-    --indexedsearch-header-amount-count-font-weight: var(--font-weight-text-bold);
-
-    width: var(--indexedsearch-header-width);
-    display: var(--indexedsearch-header-display);
-    flex-flow: var(--indexedsearch-header-flex-flow);
-    align-items: var(--indexedsearch-header-align-items);
-    justify-content: var(--indexedsearch-header-justify-content);
-    gap: var(--indexedsearch-header-gap);
-}
-
-.indexedsearch-header__headline {
-    margin: var(--indexedsearch-header-headline-margin);
-    color: var(--indexedsearch-header-headline-color);
-    font-size: var(--indexedsearch-header-headline-font-size);
-    font-weight: var(--indexedsearch-header-headline-font-weight);
-}
-
-.indexedsearch-header__headline-word {
-    color: var(--indexedsearch-header-headline-word-color);
-}
-
-.indexedsearch-header__amount {
-    margin: var(--indexedsearch-header-amount-margin);
-}
-
-.indexedsearch-header__amount-count {
-    font-weight: var(--indexedsearch-header-amount-count-font-weight);
-}
-
-@media screen and (min-width: 640px) {
+@layer components {
     .indexedsearch-header {
-        --indexedsearch-header-flex-flow: row wrap;
-        --indexedsearch-header-gap: 0 var(--spacing-l);
-        --indexedsearch-header-align-items: center;
-        --indexedsearch-header-justify-content: space-between;
+        --indexedsearch-header-width: 100%;
+        --indexedsearch-header-display: flex;
+        --indexedsearch-header-flex-flow: column wrap;
+        --indexedsearch-header-align-items: flex-start;
+        --indexedsearch-header-justify-content: flex-start;
+        --indexedsearch-header-gap: 0;
+
+        --indexedsearch-header-headline-margin: 0;
+        --indexedsearch-header-headline-color: var(--color-font);
+        --indexedsearch-header-headline-font-size: var(--font-size-m);
+        --indexedsearch-header-headline-font-weight: var(--font-weight-text-bold);
+
+        --indexedsearch-header-headline-word-color: var(--color-primary);
+
+        --indexedsearch-header-amount-margin: 0;
+
+        --indexedsearch-header-amount-count-font-weight: var(--font-weight-text-bold);
+
+        width: var(--indexedsearch-header-width);
+        display: var(--indexedsearch-header-display);
+        flex-flow: var(--indexedsearch-header-flex-flow);
+        align-items: var(--indexedsearch-header-align-items);
+        justify-content: var(--indexedsearch-header-justify-content);
+        gap: var(--indexedsearch-header-gap);
+    }
+
+    .indexedsearch-header__headline {
+        margin: var(--indexedsearch-header-headline-margin);
+        color: var(--indexedsearch-header-headline-color);
+        font-size: var(--indexedsearch-header-headline-font-size);
+        font-weight: var(--indexedsearch-header-headline-font-weight);
+    }
+
+    .indexedsearch-header__headline-word {
+        color: var(--indexedsearch-header-headline-word-color);
+    }
+
+    .indexedsearch-header__amount {
+        margin: var(--indexedsearch-header-amount-margin);
+    }
+
+    .indexedsearch-header__amount-count {
+        font-weight: var(--indexedsearch-header-amount-count-font-weight);
+    }
+
+    @media screen and (min-width: 640px) {
+        .indexedsearch-header {
+            --indexedsearch-header-flex-flow: row wrap;
+            --indexedsearch-header-gap: 0 var(--spacing-l);
+            --indexedsearch-header-align-items: center;
+            --indexedsearch-header-justify-content: space-between;
+        }
     }
 }

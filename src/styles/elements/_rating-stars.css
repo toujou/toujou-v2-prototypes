@@ -1,29 +1,31 @@
-.rating-stars {
-    --rating-stars-letter-spacing: -.2em;
-    --rating-stars-color: var(--color-gold);
-    --rating-stars-font-size: var(--font-size-normal);
+@layer components {
+    .rating-stars {
+        --rating-stars-letter-spacing: -.2em;
+        --rating-stars-color: var(--color-gold);
+        --rating-stars-font-size: var(--font-size-normal);
 
-    font-size: var(--rating-stars-font-size);
-    letter-spacing: var(--rating-stars-letter-spacing);
-    color: var(--rating-stars-color);
-}
+        font-size: var(--rating-stars-font-size);
+        letter-spacing: var(--rating-stars-letter-spacing);
+        color: var(--rating-stars-color);
+    }
 
-.rating-stars[rating-entity-size="s"] {
-    --rating-stars-font-size: var(--font-size-s);
-}
+    .rating-stars[rating-entity-size="s"] {
+        --rating-stars-font-size: var(--font-size-s);
+    }
 
-.rating-stars[rating-entity-size="m"] {
-    --rating-stars-font-size: var(--font-size-m);
-}
+    .rating-stars[rating-entity-size="m"] {
+        --rating-stars-font-size: var(--font-size-m);
+    }
 
-.rating-stars[rating-entity-size="l"] {
-    --rating-stars-font-size: var(--font-size-l);
-}
+    .rating-stars[rating-entity-size="l"] {
+        --rating-stars-font-size: var(--font-size-l);
+    }
 
-.rating-stars[rating-entity-size="xl"] {
-    --rating-stars-font-size: var(--font-size-xl);
-}
+    .rating-stars[rating-entity-size="xl"] {
+        --rating-stars-font-size: var(--font-size-xl);
+    }
 
-.rating-stars[rating-entity-size="xxl"] {
-    --rating-stars-font-size: var(--font-size-xxl);
+    .rating-stars[rating-entity-size="xxl"] {
+        --rating-stars-font-size: var(--font-size-xxl);
+    }
 }

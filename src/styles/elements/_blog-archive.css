@@ -1,11 +1,13 @@
-.blog-archive {
-    --blog-archive-width: var(--content-width-with-padding);
-    --blog-archive-max-width: var(--content-max-width);
-    --blog-archive-border-radius: var(--border-radius-default);
-    --blog-archive-margin: var(--spacing-between-consecutive-elements-normal) auto;
+@layer components {
+    .blog-archive {
+        --blog-archive-width: var(--content-width-with-padding);
+        --blog-archive-max-width: var(--content-max-width);
+        --blog-archive-border-radius: var(--border-radius-default);
+        --blog-archive-margin: var(--spacing-between-consecutive-elements-normal) auto;
 
-    width: var(--blog-archive-width);
-    max-width: var(--blog-archive-max-width);
-    border-radius: var(--blog-archive-border-radius);
-    margin: var(--blog-archive-margin);
+        width: var(--blog-archive-width);
+        max-width: var(--blog-archive-max-width);
+        border-radius: var(--blog-archive-border-radius);
+        margin: var(--blog-archive-margin);
+    }
 }

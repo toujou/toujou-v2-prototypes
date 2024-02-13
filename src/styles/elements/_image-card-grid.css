@@ -1,34 +1,36 @@
-.image-card-grid {
-    --image-card-grid-display: flex;
-    --image-card-grid-flex-wrap: wrap;
-    --image-card-grid-align-items: center;
-    --image-card-grid-gap: var(--content-spacing-between-columns);
-    --image-card-grid-width: var(--content-width-with-padding);
-    --image-card-grid-max-width: var(--content-wide-max-width);
-    --image-card-grid-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
-    --image-card-grid-z-index: var(--z-index-content);
+@layer components {
+    .image-card-grid {
+        --image-card-grid-display: flex;
+        --image-card-grid-flex-wrap: wrap;
+        --image-card-grid-align-items: center;
+        --image-card-grid-gap: var(--content-spacing-between-columns);
+        --image-card-grid-width: var(--content-width-with-padding);
+        --image-card-grid-max-width: var(--content-wide-max-width);
+        --image-card-grid-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+        --image-card-grid-z-index: var(--z-index-content);
 
-    display: var(--image-card-grid-display);
-    grid-gap: var(--image-card-grid-gap);
-    flex-wrap: var(--image-card-grid-flex-wrap);
-    align-items: var(--image-card-title-align-items);
-    justify-content: var(--image-card-grid-align-items);
-    width: var(--image-card-grid-width);
-    max-width: var(--image-card-grid-max-width);
-    margin: var(--image-card-grid-margin);
-    z-index: var(--image-card-grid-z-index);
-}
+        display: var(--image-card-grid-display);
+        grid-gap: var(--image-card-grid-gap);
+        flex-wrap: var(--image-card-grid-flex-wrap);
+        align-items: var(--image-card-title-align-items);
+        justify-content: var(--image-card-grid-align-items);
+        width: var(--image-card-grid-width);
+        max-width: var(--image-card-grid-max-width);
+        margin: var(--image-card-grid-margin);
+        z-index: var(--image-card-grid-z-index);
+    }
 
-.image-card-grid + .image-card-grid {
-    --image-card-grid-margin: var(--spacing-xl) auto 0;
-}
+    .image-card-grid + .image-card-grid {
+        --image-card-grid-margin: var(--spacing-xl) auto 0;
+    }
 
-.image-card-grid[fullwidth] {
-    --image-card-grid-width: 100%;
-    --image-card-grid-max-width: 100%;
-}
+    .image-card-grid[fullwidth] {
+        --image-card-grid-width: 100%;
+        --image-card-grid-max-width: 100%;
+    }
 
-:is(h1, h2, h3, h4, h5) + .image-card-grid,
-.image-card-grid:first-child {
-    --image-card-grid-margin: 0 auto;
+    :is(h1, h2, h3, h4, h5) + .image-card-grid,
+    .image-card-grid:first-child {
+        --image-card-grid-margin: 0 auto;
+    }
 }

@@ -1,140 +1,142 @@
-.contact-box {
-    --contact-box-position: fixed;
-    --contact-box-top: 0;
-    --contact-box-left: 0;
-    --contact-box-height: 100vh;
-    --contact-box-width: 100%;
-    --contact-box-background-color: var(--color-black-o-75);
-    --contact-box-display: none;
-    --contact-box-align-items: center;
-    --contact-box-justify-content: center;
-    --contact-box-padding: var(--spacing-normal);
-    --contact-box-pointer-events: none;
-    --contact-box-visibility: hidden;
-    --contact-box-z-index: var(--z-index-contact-box);
-    --contact-box-outline: none;
+@layer components {
+    .contact-box {
+        --contact-box-position: fixed;
+        --contact-box-top: 0;
+        --contact-box-left: 0;
+        --contact-box-height: 100vh;
+        --contact-box-width: 100%;
+        --contact-box-background-color: var(--color-black-o-75);
+        --contact-box-display: none;
+        --contact-box-align-items: center;
+        --contact-box-justify-content: center;
+        --contact-box-padding: var(--spacing-normal);
+        --contact-box-pointer-events: none;
+        --contact-box-visibility: hidden;
+        --contact-box-z-index: var(--z-index-contact-box);
+        --contact-box-outline: none;
 
-    --contact-box-card-background-color: var(--color-bg);
-    --contact-box-card-padding: var(--spacing-l);
-    --contact-box-card-border-radius: var(--border-radius-default);
-    --contact-box-card-position: relative;
-    --contact-box-card-width: auto;
-    --contact-box-card-max-width: 100%;
+        --contact-box-card-background-color: var(--color-bg);
+        --contact-box-card-padding: var(--spacing-l);
+        --contact-box-card-border-radius: var(--border-radius-default);
+        --contact-box-card-position: relative;
+        --contact-box-card-width: auto;
+        --contact-box-card-max-width: 100%;
 
-    --contact-box-close-margin-left: auto;
-    --contact-box-close-display: flex;
-    --contact-box-close-align-items: center;
-    --contact-box-close-justify-content: center;
-    --contact-box-close-color-active: var(--color-primary);
-    --contact-box-close-cursor: pointer;
-    --contact-box-close-height: var(--spacing-l);
-    --contact-box-close-width: var(--spacing-l);
-    --contact-box-close-position: absolute;
-    --contact-box-close-top: var(--spacing-s);
-    --contact-box-close-right: var(--spacing-s);
-    --contact-box-close-background: transparent;
-    --contact-box-close-border: none;
+        --contact-box-close-margin-left: auto;
+        --contact-box-close-display: flex;
+        --contact-box-close-align-items: center;
+        --contact-box-close-justify-content: center;
+        --contact-box-close-color-active: var(--color-primary);
+        --contact-box-close-cursor: pointer;
+        --contact-box-close-height: var(--spacing-l);
+        --contact-box-close-width: var(--spacing-l);
+        --contact-box-close-position: absolute;
+        --contact-box-close-top: var(--spacing-s);
+        --contact-box-close-right: var(--spacing-s);
+        --contact-box-close-background: transparent;
+        --contact-box-close-border: none;
 
-    --contact-box-headline-text-align: center;
-    --contact-box-headline-color: var(--color-font);
+        --contact-box-headline-text-align: center;
+        --contact-box-headline-color: var(--color-font);
 
-    --contact-box-items-display: flex;
-    --contact-box-items-flex-direction: column;
-    --contact-box-items-aling-items: flex-start;
-    --contact-box-items-justify-content: flex-start;
-    --contact-box-items-gap: var(--spacing-s);
-    --contact-box-items-width: fit-content;
-    --contact-box-items-margin: 0 auto;
+        --contact-box-items-display: flex;
+        --contact-box-items-flex-direction: column;
+        --contact-box-items-aling-items: flex-start;
+        --contact-box-items-justify-content: flex-start;
+        --contact-box-items-gap: var(--spacing-s);
+        --contact-box-items-width: fit-content;
+        --contact-box-items-margin: 0 auto;
 
-    --contact-box-item-display: flex;
-    --contact-box-item-align-items: center;
-    --contact-box-item-justify-content: center;
-    --contact-box-item-gap: var(--spacing-normal);
-    --contact-box-item-font-family: var(--font-family-text);
-    --contact-box-item-font-weight: var(--font-weight-text-normal);
-    --contact-box-item-color: var(--color-font);
+        --contact-box-item-display: flex;
+        --contact-box-item-align-items: center;
+        --contact-box-item-justify-content: center;
+        --contact-box-item-gap: var(--spacing-normal);
+        --contact-box-item-font-family: var(--font-family-text);
+        --contact-box-item-font-weight: var(--font-weight-text-normal);
+        --contact-box-item-color: var(--color-font);
 
-    position: var(--contact-box-position);
-    top: var(--contact-box-top);
-    left: var(--contact-box-left);
-    height: var(--contact-box-height);
-    width: var(--contact-box-width);
-    background-color: var(--contact-box-background-color);
-    display: var(--contact-box-display);
-    align-items: var(--contact-box-align-items);
-    justify-content: var(--contact-box-justify-content);
-    padding: var(--contact-box-padding);
-    pointer-events: var(--contact-box-pointer-events);
-    visibility: var(--contact-box-visibility);
-    z-index: var(--contact-box-z-index);
-    outline: var(--contact-box-outline);
-}
+        position: var(--contact-box-position);
+        top: var(--contact-box-top);
+        left: var(--contact-box-left);
+        height: var(--contact-box-height);
+        width: var(--contact-box-width);
+        background-color: var(--contact-box-background-color);
+        display: var(--contact-box-display);
+        align-items: var(--contact-box-align-items);
+        justify-content: var(--contact-box-justify-content);
+        padding: var(--contact-box-padding);
+        pointer-events: var(--contact-box-pointer-events);
+        visibility: var(--contact-box-visibility);
+        z-index: var(--contact-box-z-index);
+        outline: var(--contact-box-outline);
+    }
 
-#contact-state:checked ~ .contact-box {
-    --contact-box-display: flex;
-    --contact-box-pointer-events: all;
-    --contact-box-visibility: visible;
-}
+    #contact-state:checked ~ .contact-box {
+        --contact-box-display: flex;
+        --contact-box-pointer-events: all;
+        --contact-box-visibility: visible;
+    }
 
-.contact-box__card {
-    background-color: var(--contact-box-card-background-color);
-    padding: var(--contact-box-card-padding);
-    border-radius: var(--contact-box-card-border-radius);
-    position: var(--contact-box-card-position);
-    width: var(--contact-box-card-width);
-    max-width: var(--contact-box-card-max-width);
-}
+    .contact-box__card {
+        background-color: var(--contact-box-card-background-color);
+        padding: var(--contact-box-card-padding);
+        border-radius: var(--contact-box-card-border-radius);
+        position: var(--contact-box-card-position);
+        width: var(--contact-box-card-width);
+        max-width: var(--contact-box-card-max-width);
+    }
 
-.contact-box__close {
-    margin-left: var(--contact-box-close-margin-left);
-    display: var(--contact-box-close-display);
-    align-items: var(--contact-box-close-align-items);
-    justify-content: var(--contact-box-close-justify-content);
-    cursor: var(--contact-box-close-cursor);
-    height: var(--contact-box-close-height);
-    width: var(--contact-box-close-width);
-    position: var(--contact-box-close-position);
-    top: var(--contact-box-close-top);
-    right: var(--contact-box-close-right);
-    background: var(--contact-box-close-background);
-    border: var(--contact-box-close-border);
-}
+    .contact-box__close {
+        margin-left: var(--contact-box-close-margin-left);
+        display: var(--contact-box-close-display);
+        align-items: var(--contact-box-close-align-items);
+        justify-content: var(--contact-box-close-justify-content);
+        cursor: var(--contact-box-close-cursor);
+        height: var(--contact-box-close-height);
+        width: var(--contact-box-close-width);
+        position: var(--contact-box-close-position);
+        top: var(--contact-box-close-top);
+        right: var(--contact-box-close-right);
+        background: var(--contact-box-close-background);
+        border: var(--contact-box-close-border);
+    }
 
-.contact-box__close:focus-visible {
-    border: var(--focus-outline-width) solid var(--focus-outline-color);
-}
+    .contact-box__close:focus-visible {
+        border: var(--focus-outline-width) solid var(--focus-outline-color);
+    }
 
-.contact-box__close:focus-visible .icon {
-    --icon-color: var(--contact-box-close-color-active);
-}
-
-.contact-box__headline {
-    text-align: var(--contact-box-headline-text-align);
-    color: var(--contact-box-headline-color);
-}
-
-.contact-box__items {
-    display: var(--contact-box-items-display);
-    flex-direction: var(--contact-box-items-flex-direction);
-    align-items: var(--contact-box-items-aling-items);
-    justify-content: var(--contact-box-items-justify-content);
-    gap: var(--contact-box-items-gap);
-    width: var(--contact-box-items-width);
-    margin: var(--contact-box-items-margin);
-}
-
-.contact-box__item {
-    display: var(--contact-box-item-display);
-    align-items: var(--contact-box-item-align-items);
-    justify-content: var(--contact-box-item-justify-content);
-    gap: var(--contact-box-item-gap);
-    font-family: var(--contact-box-item-font-family);
-    font-weight: var(--contact-box-item-font-weight);
-    color: var(--contact-box-item-color);
-}
-
-@media (hover: hover) {
-    .contact-box__close:hover .icon {
+    .contact-box__close:focus-visible .icon {
         --icon-color: var(--contact-box-close-color-active);
+    }
+
+    .contact-box__headline {
+        text-align: var(--contact-box-headline-text-align);
+        color: var(--contact-box-headline-color);
+    }
+
+    .contact-box__items {
+        display: var(--contact-box-items-display);
+        flex-direction: var(--contact-box-items-flex-direction);
+        align-items: var(--contact-box-items-aling-items);
+        justify-content: var(--contact-box-items-justify-content);
+        gap: var(--contact-box-items-gap);
+        width: var(--contact-box-items-width);
+        margin: var(--contact-box-items-margin);
+    }
+
+    .contact-box__item {
+        display: var(--contact-box-item-display);
+        align-items: var(--contact-box-item-align-items);
+        justify-content: var(--contact-box-item-justify-content);
+        gap: var(--contact-box-item-gap);
+        font-family: var(--contact-box-item-font-family);
+        font-weight: var(--contact-box-item-font-weight);
+        color: var(--contact-box-item-color);
+    }
+
+    @media (hover: hover) {
+        .contact-box__close:hover .icon {
+            --icon-color: var(--contact-box-close-color-active);
+        }
     }
 }

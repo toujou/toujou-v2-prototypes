@@ -1,4 +1,4 @@
 /* Import the Photoswipe styles from the node module */
 
 /* stylelint-disable-next-line import-notation */
-@import "photoswipe/dist/photoswipe.css";
+@import "photoswipe/dist/photoswipe.css" layer(components);

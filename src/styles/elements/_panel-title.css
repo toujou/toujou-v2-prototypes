@@ -1,7 +1,9 @@
-.panel-title {
-    --panel-title-link-text-decoration: none;
-}
+@layer components {
+    .panel-title {
+        --panel-title-link-text-decoration: none;
+    }
 
-.panel-title__link {
-    text-decoration: var(--panel-title-link-text-decoration);
+    .panel-title__link {
+        text-decoration: var(--panel-title-link-text-decoration);
+    }
 }

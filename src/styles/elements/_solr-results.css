@@ -1,30 +1,32 @@
-.solr-results .card-collection {
-    --card-collection-gap: var(--spacing-normal);
-    --card-collection-width: 100%;
-}
-
-.card-collection.solr-results__card-collection {
-    --card-collection-justify-content: flex-start;
-}
-
-.solr[view-mode="map"] .solr-results__card-collection {
-    --card-collection-display: none;
-}
-
-@media screen and (min-width: 840px) {
+@layer components {
     .solr-results .card-collection {
-        --card-collection-margin: 0;
+        --card-collection-gap: var(--spacing-normal);
+        --card-collection-width: 100%;
     }
-}
 
-@media screen and (min-width: 960px) {
-    .solr-results .card-collection__item {
-        --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
+    .card-collection.solr-results__card-collection {
+        --card-collection-justify-content: flex-start;
     }
-}
 
-@media screen and (min-width: 1024px) {
-    .solr-results .card-collection__item {
-        --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap) * 2) / 3);
+    .solr[view-mode="map"] .solr-results__card-collection {
+        --card-collection-display: none;
+    }
+
+    @media screen and (min-width: 840px) {
+        .solr-results .card-collection {
+            --card-collection-margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .solr-results .card-collection__item {
+            --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .solr-results .card-collection__item {
+            --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap) * 2) / 3);
+        }
     }
 }
