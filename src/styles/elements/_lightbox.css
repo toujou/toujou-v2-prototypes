@@ -20,6 +20,7 @@
 
 .pswp__img {
     padding: var(--lightbox-image-padding);
+    object-fit: contain;
 }
 
 .pswp__caption {
