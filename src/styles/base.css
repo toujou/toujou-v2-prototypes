@@ -1,5 +1,3 @@
-@layer variables, base, components, customization;
-
 @import "./globals/_reset.css" layer(variables);
 @import "./globals/_variables.css" layer(variables);
 @import "./globals/_old-variables.css" layer(variables);
@@ -41,6 +39,7 @@
 @import "./globals/_exit-warning.css" layer(base);
 @import "./globals/_fav-count.css" layer(base);
 @import "./globals/_grid.css" layer(base);
+@import './elements/_icon.css' layer(base);
 @import "./globals/_main.css" layer(base);
 @import "./globals/_modal.css" layer(base);
 @import "./globals/_search.css" layer(base);
