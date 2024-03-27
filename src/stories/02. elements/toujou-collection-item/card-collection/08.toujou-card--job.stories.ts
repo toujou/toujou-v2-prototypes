@@ -60,8 +60,8 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <span class="collection-item__subtitle">Hiring organization</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -93,8 +93,8 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -126,8 +126,8 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -159,8 +159,8 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>

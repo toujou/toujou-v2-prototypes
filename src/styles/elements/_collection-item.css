@@ -105,6 +105,9 @@
         --collection-item-subtitle-color: var(--collection-item-text-color);
         --collection-item-subtitle-font-style: italic;
 
+        --collection-item-separated-list-color: var(--collection-item-text-color);
+        --collection-item-separated-list-line-height: var(--line-height-s);
+
         --collection-item-info-display: grid;
         --collection-item-info-grid-template-columns: auto 1fr;
         --collection-item-info-grid-gap: var(--spacing-s);
@@ -347,6 +350,15 @@
     .collection-item__subtitle + .collection-item__subtitle::before {
         content: var(--collection-item-subtitles-separator);
         margin: 0 var(--spacing-xs);
+    }
+
+    .collection-item__subtitles + .collection-item__subheading {
+        margin-top: var(--spacing-xs);
+    }
+
+    .collection-item__separated-list {
+        color: var(--collection-item-separated-list-color);
+        line-height: var(--collection-item-separated-list-line-height);
     }
 
     .collection-item__info {
