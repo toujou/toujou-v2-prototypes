@@ -24,8 +24,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -57,8 +57,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -90,8 +90,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -123,8 +123,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -171,8 +171,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -204,8 +204,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -237,8 +237,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -270,8 +270,8 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
                             <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -293,4 +293,4 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-
         </ul>
     \`;
 }`,...(o=(l=e.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const g=["CardJob"];export{e as CardJob,g as __namedExportsOrder,p as default};
-//# sourceMappingURL=08.toujou-card--job.stories-2801e7d4.js.map
+//# sourceMappingURL=08.toujou-card--job.stories-6d4f8587.js.map
