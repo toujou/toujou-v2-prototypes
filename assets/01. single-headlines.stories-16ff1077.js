@@ -45,4 +45,3 @@ const u={title:"TESTS/Type Tests"},a=()=>`
         </toujou-text-block>
     \`;
 }`,...(o=(t=i.parameters)==null?void 0:t.docs)==null?void 0:o.source}}};const n=["SingleHeadlines"];export{i as SingleHeadlines,n as __namedExportsOrder,u as default};
-//# sourceMappingURL=01. single-headlines.stories-16ff1077.js.map

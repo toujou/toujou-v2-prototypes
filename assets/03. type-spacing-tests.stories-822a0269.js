@@ -581,4 +581,3 @@ const s={title:"TESTS/Type Spacing Tests"},a=()=>`
         </main>
     \`;
 }`,...(i=(o=e.parameters)==null?void 0:o.docs)==null?void 0:i.source}}};const u=["TypeSpacingTests"];export{e as TypeSpacingTests,u as __namedExportsOrder,s as default};
-//# sourceMappingURL=03. type-spacing-tests.stories-822a0269.js.map
