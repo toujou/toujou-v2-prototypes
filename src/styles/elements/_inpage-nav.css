@@ -163,7 +163,8 @@
     .inpage-nav[element-width="fullwidth"] {
         --inpage-nav-width: var(--content-fullwidth);
         --inpage-nav-max-width: var(--content-fullwidth);
-        --inpage-nav-border-radius: var(--border-radius-0);
+
+        border-radius: var(--border-radius-0) !important;
     }
 
     .inpage-nav[is-sticky] {
