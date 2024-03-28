@@ -3,15 +3,15 @@ import { Meta } from '@storybook/web-components';
 export default {
     title: 'TOKENS/ZIndex',
     argTypes: {}
-} as Meta;
+} satisfies Meta;
 
 
 const ZIndexTemplate = () => {
-    return `        
+    return `
         <h1 class="tokens-demo__title">Z-index tokens</h1>
-        
+
         <p>We have the following z-index tokens:</p>
-        
+
         <ul>
             <li><code style="z-index: var(--z-index-content);">--z-index-content: 1;</code></li>
             <li><code style="z-index: var(--z-index-pn-nav);">--z-index-pn-nav: 30;</code></li>
@@ -28,12 +28,12 @@ const ZIndexTemplate = () => {
             <li><code style="z-index: var(--z-index-consent);">--z-index-consent: 15000;</code></li>
             <li><code style="z-index: var(--z-index-overlay);">--z-index-overlay: 50000;</code></li>
             <li><code style="z-index: var(--z-index-important);">--z-index-important: 2147483647;</code> (use only if really necessary)</li>
-        </ul>             
-        
+        </ul>
+
         <br>
-        
+
         <p>We should still research and find a good system for organizing our z-index</p>
-        
+
         <ul class="list">
             <li>
                 <a href="https://tailwindcss.com/docs/z-index">Tailwind z-index</a>

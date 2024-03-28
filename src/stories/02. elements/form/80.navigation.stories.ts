@@ -14,7 +14,7 @@ export default {
     },
     argTypes: {},
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -25,13 +25,13 @@ const Template = () => {
         </style>
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true"
         >
-            
+
             <toujou-input-group class="input-group input-group--text input-group--required">
                 <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                 <span class="input-description">This is a description</span>
@@ -44,7 +44,7 @@ const Template = () => {
                        value="">
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <div class="form-navigation" role="toolbar">
                 <span class="form-navigation__submit">
                     <button is="toujou-button" class="button form-navigation__button" button-variant="primary" type="submit"  name="tx_form_formframework[kontaktformular-8][__currentPage]" value="2">
@@ -54,7 +54,7 @@ const Template = () => {
                 <span class="form-navigation__previous">
                     <button is="toujou-button" formnovalidate="formnovalidate" class="button form-navigation__button" button-variant="primary" button-type="border" type="submit" name="tx_form_formframework[kontaktformular-8][__currentPage]" value="0">Cancel</button>
                 </span>
-            </div>	
+            </div>
         </form>
     `;
 };

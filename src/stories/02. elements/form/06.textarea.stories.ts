@@ -27,7 +27,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface ToujouTextareaStoryProps {
     state: string;

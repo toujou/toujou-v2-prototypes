@@ -3,7 +3,7 @@ import { Meta } from '@storybook/web-components';
 export default {
     title: 'TOKENS/Color',
     argTypes: {}
-} as Meta;
+} satisfies Meta;
 
 
 const ColorsTemplate = () => {
@@ -29,7 +29,7 @@ const ColorsTemplate = () => {
         <div class="tokens-demo__color-stripe bg-color-old-success">Success</div>
         <div class="tokens-demo__color-stripe bg-color-old-error">Error</div>
         <div class="tokens-demo__color-stripe bg-color-old-warning">Warning</div>
-        
+
     `;
 }
 

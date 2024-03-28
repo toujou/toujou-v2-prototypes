@@ -2,7 +2,7 @@ import { Meta } from '@storybook/web-components';
 
 export default {
     title: 'TESTS/Type Tests',
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `

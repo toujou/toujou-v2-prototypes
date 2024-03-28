@@ -14,7 +14,7 @@ export default {
     },
     argTypes: {},
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -23,10 +23,10 @@ const Template = () => {
                 background-color: var(--color-bg);
             }
         </style>
-        
+
         <toujou-form-progress class="form-progress">
             <h3 class="form-progress__headline">Schritt 3 von 4</h3>
-    
+
             <ul class="form-progress-bar">
                 <li class="form-progress__item" completed >
                     <span class="form-progress__index">1</span>
@@ -42,17 +42,17 @@ const Template = () => {
                 </li>
             </ul>
         </toujou-form-progress>
-     
+
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-            
+
             <h3 class="form-step__title">Step 3</h3>
-            
+
             <toujou-input-group class="input-group input-group--text">
                 <label for="testform-1000091-text-1" class="input-label">Nice label</label>
                 <span class="input-description">This is a description</span>
@@ -65,7 +65,7 @@ const Template = () => {
                        value="">
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <toujou-input-group class="input-group input-group--email input-group--email">
                 <label for="testform-1000091-email-1" class="input-label">Email address</label>
                 <span class="input-description">This is a description</span>
@@ -79,14 +79,14 @@ const Template = () => {
                        value="">
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-            
+
             <nav class="form-navigation" role="toolbar">
                 <span class="form-navigation__submit">
                     <button is="toujou-button"
                             class="button form-navigation__button"
                             button-variant="primary"
                             button-icon-position="right"
-                            type="submit" 
+                            type="submit"
                             name="tx_form_formframework[kontaktformular-8][__currentPage]"
                             value="2">
                         <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
@@ -107,9 +107,9 @@ const Template = () => {
                         Previous step
                     </button>
                 </span>
-            </nav>	
+            </nav>
         </form>
-        
+
          <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">

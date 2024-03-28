@@ -13,10 +13,10 @@ export default {
         }
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
-    return `       
+    return `
         <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -25,7 +25,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-column-count="2">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -40,7 +40,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-column-count="3">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -61,7 +61,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-block-column-count="4">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">

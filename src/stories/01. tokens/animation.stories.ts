@@ -3,13 +3,13 @@ import { Meta } from '@storybook/web-components';
 export default {
     title: 'TOKENS/Animation',
     argTypes: {}
-} as Meta;
+} satisfies Meta;
 
 
 const ShadowsTemplate = () => {
-    return `        
+    return `
         <h1 class="tokens-demo__title">Animation tokens</h1>
-        
+
         <div class="tokens-demo__animation-container">
             <div class="tokens-demo__animation-track">
                 <div class="tokens-demo__animation-box animation-slow">Slow</div>
@@ -23,8 +23,8 @@ const ShadowsTemplate = () => {
             <div class="tokens-demo__animation-track">
                 <div class="tokens-demo__animation-box animation-very-fast">Very fast</div>
             </div>
-        </div>       
-        
+        </div>
+
         <br>
         <p>The transition and animation are turned off if the user as set <code>prefers-reduced-motion: reduce</code>. You can try it with the browser reduced-motion emulator</p>
     `;

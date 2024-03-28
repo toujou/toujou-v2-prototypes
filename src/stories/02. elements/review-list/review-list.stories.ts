@@ -14,7 +14,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -64,7 +64,7 @@ const Template = () => {
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
-            
+
             <article class="review" no-media>
                 <header class="review__header">
                     <h3 class="review__title">Amazing sightseeing trip</h3>
@@ -107,7 +107,7 @@ const Template = () => {
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
-            
+
             <article class="review">
                 <header class="review__header">
                     <h3 class="review__title">Our dream trip</h3>
@@ -159,7 +159,7 @@ const Template = () => {
                                     <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                                 </button>
                             </div>
-                            
+
                             <div class="splide__track slider__track">
                                 <ul class="splide__list slider__list">
                                     <li class="splide__slide slider-slide">
@@ -178,12 +178,12 @@ const Template = () => {
                                         </toujou-single-media>
                                     </li>
                                 </ul>
-                            </div>      
+                            </div>
                             <div class="splide__progress slider-progress">
                                 <div class="splide__progress__bar slider-progress__bar"></div>
                             </div>
                         </div>
-                        
+
                         <toujou-slider-count class="slider-count">
                             <span class="slider-count__current"></span>
                             <span class="slider-count__separator">of</span>
@@ -203,7 +203,7 @@ const Template = () => {
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
-            
+
             <article class="review" no-media>
                 <header class="review__header">
                     <h3 class="review__title">Amazing sightseeing trip</h3>

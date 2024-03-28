@@ -66,7 +66,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 function createImageCardLink(imageFormat: string, cardVariant: string): string {
     return `

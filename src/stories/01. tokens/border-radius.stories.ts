@@ -3,13 +3,13 @@ import { Meta } from '@storybook/web-components';
 export default {
     title: 'TOKENS/BorderRadius',
     argTypes: {}
-} as Meta;
+} satisfies Meta;
 
 
 const BorderRadiusTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Border radius tokens</h1>
-                
+
         <div class="tokens-demo__border-radius-container">
             <div class="tokens-demo__border-radius-box border-radius-0">0</div>
             <div class="tokens-demo__border-radius-box border-radius-xs">XS</div>
@@ -22,8 +22,8 @@ const BorderRadiusTemplate = () => {
             <div class="tokens-demo__border-radius-box border-radius-xxxl">XXXL</div>
             <div class="tokens-demo__border-radius-box border-radius-xxxxl">XXXXL</div>
             <div class="tokens-demo__border-radius-box border-radius-circle">Circle</div>
-        </div>  
-   
+        </div>
+
     `;
 }
 

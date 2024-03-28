@@ -42,7 +42,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface SingleMediaStoryProps {
     mediaType: string;

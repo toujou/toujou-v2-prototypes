@@ -37,7 +37,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface SolrSearchStoryProps {
     showMobileFilters: boolean,

@@ -39,7 +39,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface HeroMediaStoryProps {
     headerSize: string,

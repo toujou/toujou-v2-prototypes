@@ -7,16 +7,16 @@ export default {
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
     },
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
-        
+
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
-            
+
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
@@ -45,7 +45,7 @@ const Template = () => {
                 </li>
             </ol>
         </toujou-breadcrumb>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -54,7 +54,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="3">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -75,7 +75,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-slider class="slider slider" element-design="primary">
             <div class="slider__top">
                 <div class="slider__frame glider draggable" data-autoslide="0" data-slideinterval="6">
@@ -107,7 +107,7 @@ const Template = () => {
                 </button>
             </toujou-bullets>
         </toujou-slider>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -116,7 +116,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="2">
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
@@ -125,7 +125,7 @@ const Template = () => {
                 </blockquote>
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
-            
+
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical">
                 <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
                 <blockquote slot="quote" class="blockquote__blockquote">
@@ -135,7 +135,7 @@ const Template = () => {
             </toujou-blockquote>
 
         </toujou-blockquote-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">

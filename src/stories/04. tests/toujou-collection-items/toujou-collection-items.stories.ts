@@ -7,7 +7,7 @@ export default {
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
     },
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -20,7 +20,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical">
@@ -131,7 +131,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
         </ul>
-        
+
         <ol class="item-collection">
             <li class="item-collection__item" item-type="default">
                 <toujou-collection-item class="collection-item" item-orientation="horizontal">
@@ -214,7 +214,7 @@ const Template = () => {
                 </toujou-collection-item>
             </li>
         </ol>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">

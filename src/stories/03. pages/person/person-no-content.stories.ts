@@ -15,7 +15,7 @@ export default {
         layout: "fullwidth"
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -33,7 +33,7 @@ const Template = () => {
                     </toujou-text-block-column>
                 </toujou-text-block>
             </section>
-            
+
             <section class="chapter chapter--default fragment__section">
                 <toujou-fragment-teaser role="article" class="fragment-teaser">
                     <div class="fragment-teaser__content">

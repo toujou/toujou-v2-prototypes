@@ -100,7 +100,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface HeaderThreeToOneStoryProps {
     isTitleOnly: boolean,

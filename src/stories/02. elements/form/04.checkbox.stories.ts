@@ -27,7 +27,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface ToujouCheckboxStoryProps {
     state: string;

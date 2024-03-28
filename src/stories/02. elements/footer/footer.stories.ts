@@ -14,11 +14,11 @@ export default {
         layout: "fullscreen",
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 
 const Template = () => {
-    return `       
+    return `
         <footer class="footer">
             <footer-content class="footer-content">
                 <footer-column class="footer-column" column-name="logo">
@@ -69,7 +69,7 @@ const Template = () => {
                         <p class="footer__address-text footer__address-text--street">Gustav-Weißkopf-Straße 5</p>
                         <p class="footer__address-text footer__address-text--city">90768 Fürth</p>
                         <p class="footer__address-text footer__address-text--phone">
-                            <toujou-icon class="icon" icon-name="telephone" icon-size="ms"></toujou-icon> 
+                            <toujou-icon class="icon" icon-name="telephone" icon-size="ms"></toujou-icon>
                             Tel: <a class="footer__address-link" href="tel:+1 (291) 264-9318">+1 (291) 264-9318</a>
                         </p>
                         <p class="footer__address-text footer__address-text--fax">

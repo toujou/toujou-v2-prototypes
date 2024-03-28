@@ -13,7 +13,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     window.addEventListener('click', (event: Event) => {
@@ -33,7 +33,7 @@ const Template = () => {
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
             warningvisible="false">
-    
+
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
                 <p class="consent-widget__description">
@@ -52,7 +52,7 @@ const Template = () => {
                             button-variant="font"
                         >Einstellungen</span>
                     </summary>
-                    <div class="consent-widget__consent-elements">                
+                    <div class="consent-widget__consent-elements">
                         <toujou-consent
                             class="consent"
                             consenttype="tracking"
@@ -71,7 +71,7 @@ const Template = () => {
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-                        
+
                         <toujou-consent
                             class="consent"
                             consenttype="video"
@@ -80,17 +80,17 @@ const Template = () => {
                             listento="change"
                             listenon="#videoInput-box"
                             prechecked="0"
-                        >                        
+                        >
                             <toujou-input-group class="input-group" input-group-type="checkbox">
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="videoInput-box" type="checkbox">
                                     <label class="checkbox-group__label" for="videoInput-box">
-                                        <span class="consent__span">Externe Videos erlauben <span class="consent__duration">(30 Tage)</span></span>                                    
+                                        <span class="consent__span">Externe Videos erlauben <span class="consent__duration">(30 Tage)</span></span>
                                     </label>
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-        
+
                         <toujou-consent
                             class="consent"
                             consenttype="maps"
@@ -104,12 +104,12 @@ const Template = () => {
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="mapsInput-box" type="checkbox">
                                     <label class="checkbox-group__label" for="mapsInput-box">
-                                        <span class="consent__span">Externe Karten erlauben <span class="consent__duration">(30 Tage)</span></span>                                    
+                                        <span class="consent__span">Externe Karten erlauben <span class="consent__duration">(30 Tage)</span></span>
                                     </label>
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-        
+
                         <toujou-consent
                             class="consent"
                             consenttype="html"
@@ -123,19 +123,19 @@ const Template = () => {
                                 <div class="checkbox-group">
                                     <input class="checkbox checkbox--single consent__checkbox" id="htmlInput-box" type="checkbox">
                                     <label class="checkbox-group__label" for="htmlInput-box">
-                                       <span class="consent__span">Externe HTML-Inhalte erlauben <span class="consent__duration">(30 Tage)</span></span>                                    
+                                       <span class="consent__span">Externe HTML-Inhalte erlauben <span class="consent__duration">(30 Tage)</span></span>
                                     </label>
                                 </div>
                             </toujou-input-group>
                         </toujou-consent>
-    
+
                     </div>
                 </details>
-        
+
                 <button id="consentAcceptAllButton" accept-all="" class="button consent-widget__button" button-type="default" button-size="small" button-variant="primary">Alles akzeptieren</button>
                 <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">OK</button>
             </div>
-        </toujou-consent-widget>        
+        </toujou-consent-widget>
      `;
 };
 

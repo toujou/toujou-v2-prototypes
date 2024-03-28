@@ -95,7 +95,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface ButtonStoryProps {
     buttonVariant: string;

@@ -27,7 +27,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface BlogPostStoryProps {
     hasAvatar: boolean
@@ -47,7 +47,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                     </toujou-text-block-column>
                 </toujou-text-block>
             </section>
-            
+
             <div class="post-data">
                 <a href="#" class="post-data__author">
                     ${args.hasAvatar
@@ -58,7 +58,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                         `
                         : `<toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="account"></toujou-icon>`
                     }
-                        
+
                     <span class="post-data__author-name">Luke Skywalker</span>
                 </a>
                 <time class="post-data__date" datetime="T09:00P11H">
@@ -71,15 +71,15 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                         <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="bookmark-filled"></toujou-icon>
                             <span class="post-data__category-name">Category 1</span>
                         </a>
-                    </li> 
+                    </li>
                     <li class="post-data__category">
                         <a href="#" class="post-data__category-link">
                             <span class="post-data__category-name">Category 2</span>
                         </a>
-                    </li> 
+                    </li>
                 </ul>
-            </div> 
-            
+            </div>
+
             <section>
                 <toujou-text-block class="text-block" text-block-column-count="1">
                     <toujou-text-block-column class="text-block-column">
@@ -91,7 +91,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-                
+
                 <toujou-text-block class="text-block" text-block-column-count="2" text-block-media-position="above">
                     <toujou-text-block-column class="text-block-column">
                         <figure class="text-block__figure">
@@ -131,7 +131,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                     </toujou-text-block-column>
                 </toujou-text-block>
             </section>
-            
+
             <ul class="post-tags">
                 <li class="post-tags__item">
                     <a href="#" class="post-tags__link">
@@ -150,7 +150,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                     </a>
                 </li>
             </ul>
-                
+
             <section class="post-comments">
                 <h3 class="post-comments__title">Comments</h3>
                 <ul class="post-comments__list">
@@ -182,10 +182,10 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                         </p>
                     </li>
                 </ul>
-                
+
                 <form class="form post-comments__form">
                     <h4 class="post-comments__title">Write comment</h4>
-                    
+
                     <toujou-input-group class="input-group input-group--text input-group--required">
                         <label for="testform-1000091-text-1" class="input-label">Name</label>
                         <input placeholder="Max Mustermann"
@@ -196,7 +196,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                                type="text" name="tx_form_formframework[testform-1000091][text-1]"
                                value="">
                     </toujou-input-group>
-            
+
                     <toujou-input-group class="input-group input-group--text input-group--required">
                         <label for="testform-1000091-text-2" class="input-label">Email</label>
                         <input placeholder="max.mustermann@mail.com"
@@ -207,7 +207,7 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                                type="email" name="tx_form_formframework[testform-1000091][text-2]"
                                value="">
                     </toujou-input-group>
-                    
+
                     <toujou-input-group class="input-group input-group--textarea">
                         <label class="input-label" for="testform-1000091-textarea-1">Comment</label>
                         <textarea placeholder="Your comment"
@@ -217,26 +217,26 @@ const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                                   id="testform-1000091-textarea-1"
                                   name="tx_form_formframework[testform-1000091][textarea-1]"></textarea>
                     </toujou-input-group>
-                    
+
                     <nav class="form-navigation" role="toolbar">
                         <span class="form-navigation__submit">
                             <button is="toujou-button"
                                     class="button form-navigation__button"
                                     button-variant="primary"
                                     button-icon-position="right"
-                                    type="submit" 
+                                    type="submit"
                                     name="tx_form_formframework[kontaktformular-8][__currentPage]"
                                     value="2">
                                 Submit
                             </button>
                         </span>
-                    </nav>	
+                    </nav>
                 </form>
-                
+
             </section>
-                
+
         </div>
-        
+
     `;
 };
 

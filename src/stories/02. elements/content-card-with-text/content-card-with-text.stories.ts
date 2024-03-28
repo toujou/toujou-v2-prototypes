@@ -28,7 +28,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface ContentCardWithTextStoryProps {
     direction: string

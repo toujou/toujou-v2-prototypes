@@ -85,7 +85,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface InpageNavStoryProps {
     width: string,

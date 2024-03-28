@@ -13,7 +13,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const secondsRemainingVar = "${secondsRemaining}";
 const targetUrlVar = "${targetUrl}";
@@ -22,7 +22,7 @@ const Template = () => {
     return `
         <h1>EXIT WARNING</h1>
         <p>click on this <a href="https://www.google.com" target="toujou-exit-warning">link</a> to "leave the page" and open the exit warning</p>
-        
+
         <exit-warning title="Sie sind dabei die Seite zu verlassen">
             <template>
                 <span id="c283"></span>

@@ -14,13 +14,13 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
         <main>
             <h3 class="post-list-title">Latest posts</h3>
-            
+
             <ul class="card-collection post-list__card-collection">
                 <li class="card-collection__item">
                     <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="vertical" role="article">

@@ -8,7 +8,7 @@ export default {
         badges: [TOUJOU_BADGES.DONE],
         layout: 'fullscreen',
     },
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -27,7 +27,7 @@ const Template = () => {
             </div>
 
         </header>
-        
+
         <main>
             <toujou-text-block class="text-block" text-block-media-position="beside-right">
                     <toujou-text-block-column class="text-block-column">
@@ -47,7 +47,7 @@ const Template = () => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-            
+
             <section class="chapter chapter--primary">
                 <toujou-slider
                     class="slider"
@@ -76,7 +76,7 @@ const Template = () => {
                                 <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
                             </button>
                         </div>
-                    
+
                         <div class="splide__track slider__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" aria-live="polite" aria-atomic="true" style="padding-left: 0px; padding-right: 0px;">
                             <ul class="splide__list slider__list" id="splide01-list" role="presentation" style="transform: translateX(-926px);">
                                 <li class="splide__slide slider-slide" data-splide-interval="1000" id="splide01" role="tabpanel" aria-roledescription="slide" aria-label="3 of 4" style="margin-right: 0px; height: 260.438px;" aria-hidden="true">
@@ -87,7 +87,7 @@ const Template = () => {
                                         <div class="teaser__content">
                                             <h3>Nice headline</h3>
                                             <p>This is a simple element containing a headline and this text. There are no restrictions for the amount of content. So feel free to add as much information as long as it helps your story or your customer.</p>
-                                        </div> 
+                                        </div>
                                     </toujou-teaser>
                                 </li>
                                 <li class="splide__slide slider-slide" data-splide-interval="1000" id="splide02" role="tabpanel" aria-roledescription="slide" aria-label="4 of 4" style="margin-right: 0px; height: 260.438px;" aria-hidden="true">
@@ -98,7 +98,7 @@ const Template = () => {
                                         <div class="teaser__content">
                                             <h3>Nice headline</h3>
                                             <p>This is a simple element containing a headline and this text. There are no restrictions for the amount of content. So feel free to add as much information as long as it helps your story or your customer.</p>
-                                        </div> 
+                                        </div>
                                     </toujou-teaser>
                                 </li>
                                 <li class="splide__slide slider-slide" data-splide-interval="1000" id="splide03" role="tabpanel" aria-roledescription="slide" aria-label="1 of 4" style="margin-right: 0px; height: 260.438px;">
@@ -109,13 +109,13 @@ const Template = () => {
                                         <div class="teaser__content">
                                             <h3>Nice headline</h3>
                                             <p>This is a simple element containing a headline and this text. There are no restrictions for the amount of content. So feel free to add as much information as long as it helps your story or your customer.</p>
-                                        </div> 
+                                        </div>
                                     </toujou-teaser>
                                 </li>
                             </ul>
-                        </div>      
+                        </div>
                     </div>
-                
+
                     <toujou-slider-count class="slider-count">
                         <span class="slider-count__current">1</span>
                         <span class="slider-count__separator">of</span>
@@ -123,7 +123,7 @@ const Template = () => {
                     </toujou-slider-count>
                 </toujou-slider>
             </section>
-            
+
             <section class="chapter chapter--light-grey">
                 <toujou-text-block class="text-block" text-block-column-count="1">
                     <toujou-text-block-column class="text-block-column">
@@ -154,7 +154,7 @@ const Template = () => {
                     </toujou-text-block-column>
                 </toujou-text-block>
             </section>
-            
+
             <section class="chapter">
                 <toujou-text-block class="text-block" text-block-column-count="1">
                     <toujou-text-block-column class="text-block-column">
@@ -163,13 +163,13 @@ const Template = () => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-                
+
                 <toujou-media-grid class="media-grid" media-grid-column-number="1">
                     <toujou-single-media class="single-media">
                         <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
                     </toujou-single-media>
                 </toujou-media-grid>
-                
+
                 <toujou-text-block class="text-block" text-block-column-count="3">
                     <toujou-text-block-column class="text-block-column">
                         <div class="text-block__content">
@@ -196,7 +196,7 @@ const Template = () => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-                
+
                 <toujou-text-block class="text-block" text-block-column-count="3">
                     <toujou-text-block-column class="text-block-column">
                         <div class="text-block__content">
@@ -223,7 +223,7 @@ const Template = () => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-                
+
                 <toujou-text-block class="text-block" text-block-column-count="1">
                     <toujou-text-block-column class="text-block-column">
                         <div class="text-block__content">
@@ -231,7 +231,7 @@ const Template = () => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-                
+
                 <toujou-text-block class="text-block" text-block-column-count="1">
                     <toujou-text-block-column class="text-block-column">
                         <div class="text-block__content">
@@ -250,7 +250,7 @@ const Template = () => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-                
+
                 <toujou-text-block class="text-block" text-block-column-count="1">
                     <toujou-text-block-column class="text-block-column">
                         <div class="text-block__content">
@@ -258,7 +258,7 @@ const Template = () => {
                         </div>
                     </toujou-text-block-column>
                 </toujou-text-block>
-                
+
                 <toujou-details-accordion class="details-accordion" single-expand-mode>
                     <toujou-details id="details-1" class="details" is-open>
                         <h3 slot="summary" class="details__title">Warum sollte ich mich für toujou entscheiden?</h3>
@@ -294,10 +294,10 @@ const Template = () => {
                             <a href="#" class="button" button-type="border" button-size="small" button-variant="primary">Demo anfragen</a>
                         </p>
                     </toujou-details>
-                    
+
                 </toujou-details-accordion>
             </section>
-            
+
             <section class="chapter chapter--light-grey">
                 <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical">
                     <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image">
@@ -307,7 +307,7 @@ const Template = () => {
                     <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
                 </toujou-blockquote>
             </section>
-            
+
             <section class="chapter chapter--primary">
                 <toujou-text-block class="text-block" text-block-media-position="beside-right">
                     <toujou-text-block-column class="text-block-column">
@@ -323,7 +323,7 @@ const Template = () => {
                     </toujou-text-block-column>
                 </toujou-text-block>
             </section>
-            
+
             <section class="chapter">
                 <ul class="card-collection">
                     <li class="card-collection__item">
@@ -409,9 +409,9 @@ const Template = () => {
                     </li>
                 </ul>
             </section>
-            
+
         </main>
-        
+
         <footer class="footer">
             <footer-content class="footer-content">
                 <footer-column class="footer-column" column-name="logo">
@@ -462,7 +462,7 @@ const Template = () => {
                         <p class="footer__address-text footer__address-text--street">Gustav-Weißkopf-Straße 5</p>
                         <p class="footer__address-text footer__address-text--city">90768 Fürth</p>
                         <p class="footer__address-text footer__address-text--phone">
-                            <toujou-icon class="icon" icon-name="telephone" icon-size="ms"></toujou-icon> 
+                            <toujou-icon class="icon" icon-name="telephone" icon-size="ms"></toujou-icon>
                             Tel: <a class="footer__address-link" href="tel:+1 (291) 264-9318">+1 (291) 264-9318</a>
                         </p>
                         <p class="footer__address-text footer__address-text--fax">

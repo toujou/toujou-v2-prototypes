@@ -7,7 +7,7 @@ export default {
     parameters: {
         layout: "fullscreen",
     },
-} as Meta;
+} satisfies Meta;
 
 const Template: Story = () => {
     return `
@@ -17,9 +17,9 @@ const Template: Story = () => {
                     <div class="text-block__content">
                         <h1>Section Links</h1>
                         <p>
-                            <a href="#section-one">Section One</a> &nbsp; | &nbsp; 
+                            <a href="#section-one">Section One</a> &nbsp; | &nbsp;
                             <a href="#section-two">Section Two</a> &nbsp; | &nbsp;
-                            <a href="#section-three">Section Three</a> 
+                            <a href="#section-three">Section Three</a>
                         </p>
                     </div>
                 </toujou-text-block-column>
@@ -81,7 +81,7 @@ const Template: Story = () => {
                 </toujou-text-block-column>
             </toujou-text-block>
         </section>
-        
+
     `;
 };
 

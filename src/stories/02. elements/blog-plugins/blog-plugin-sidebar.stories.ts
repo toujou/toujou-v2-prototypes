@@ -14,7 +14,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -36,7 +36,7 @@ const Template = () => {
                     </a>
                 </div>
             </div>
-            
+
             <div class="blog-sidebar__column" column-type="categories">
                 <h5 class="blog-sidebar__title">Kategorien</h5>
                 <div class="blog-sidebar__categories">
@@ -72,7 +72,7 @@ const Template = () => {
                     </a>
                 </div>
             </div>
-            
+
             <div class="blog-sidebar__column" column-type="tags">
                 <h5 class="blog-sidebar__title">Tags</h5>
                 <div class="blog-sidebar__tags">
@@ -108,7 +108,7 @@ const Template = () => {
                     </a>
                 </div>
             </div>
-            
+
             <div class="blog-sidebar__column" column-type="comments">
                 <h5 class="blog-sidebar__title">Neuesten Kommentare</h5>
                 <div class="blog-sidebar__comments">
@@ -158,7 +158,7 @@ const Template = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div class="blog-sidebar__column" column-type="archive">
                 <h5 class="blog-sidebar__title">Archive</h5>
                 <div class="blog-sidebar__archive-container">

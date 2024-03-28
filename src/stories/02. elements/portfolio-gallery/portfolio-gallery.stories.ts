@@ -17,7 +17,7 @@ export default {
         layout: 'fullscreen',
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 
 const Template = () => {
@@ -39,13 +39,13 @@ const Template = () => {
                 arrow-prev-aria-label="Go to previous slide"
                 arrow-next-aria-label="Go to next slide"
             >
-                <div class="splide slider__slider">                   
+                <div class="splide slider__slider">
                     <div class="splide__track slider__track">
                         <ul class="splide__list slider__list">
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/900" 
-                                    data-pswp-width="1600" 
-                                    data-pswp-height="900" 
+                                <a href="https://picsum.photos/1600/900"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="900"
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
                                     title="This is a beautiful caption"
@@ -57,11 +57,11 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
-                                    data-pswp-width="1600" 
+                                <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                    data-pswp-width="1600"
                                     data-pswp-height="901"
                                     data-pswp-video-src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                                    data-pswp-type="video" 
+                                    data-pswp-type="video"
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link portfolio-gallery__link--video"
                                     title="Nice image"
@@ -73,9 +73,9 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/902" 
-                                    data-pswp-width="1600" 
-                                    data-pswp-height="902" 
+                                <a href="https://picsum.photos/1600/902"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="902"
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
                                     lightbox-item-id="3"
@@ -86,9 +86,9 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/903" 
-                                    data-pswp-width="1600" 
-                                    data-pswp-height="903" 
+                                <a href="https://picsum.photos/1600/903"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="903"
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
                                     title="Bazinga!"
@@ -100,9 +100,9 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/904" 
-                                    data-pswp-width="1600" 
-                                    data-pswp-height="904" 
+                                <a href="https://picsum.photos/1600/904"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="904"
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
                                     lightbox-item-id="5"
@@ -113,9 +113,9 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/905" 
-                                    data-pswp-width="1600" 
-                                    data-pswp-height="905" 
+                                <a href="https://picsum.photos/1600/905"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="905"
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
                                     lightbox-item-id="6"
@@ -126,9 +126,9 @@ const Template = () => {
                                 </a>
                             </li>
                             <li class="splide__slide slider-slide">
-                                <a href="https://picsum.photos/1600/906" 
-                                    data-pswp-width="1600" 
-                                    data-pswp-height="906" 
+                                <a href="https://picsum.photos/1600/906"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="906"
                                     target="_blank"
                                     class="slider__item portfolio-gallery__link"
                                     title="This is a realy well thought caption"
@@ -140,9 +140,9 @@ const Template = () => {
                                 </a>
                             </li>
                         </ul>
-                    </div>      
+                    </div>
                 </div>
-                
+
                 <toujou-slider-count class="slider-count">
                     <span class="slider-count__current"></span>
                     <span class="slider-count__separator">of</span>
@@ -153,7 +153,7 @@ const Template = () => {
                 <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="image-collection"></toujou-icon>
                 <span class="portfolio-gallery__button-text">See all</span>
             </button>
-        </toujou-portfolio-gallery>  
+        </toujou-portfolio-gallery>
     `;
 };
 

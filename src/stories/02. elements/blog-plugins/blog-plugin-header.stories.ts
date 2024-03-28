@@ -15,7 +15,7 @@ export default {
         layout: 'fullwidth'
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -24,7 +24,7 @@ const Template = () => {
 
             <div class="blog-header__content">
                 <h1 class="blog-header__content-title">This is the blog title</h1>
-            </div>            
+            </div>
         </header>
     `;
 };

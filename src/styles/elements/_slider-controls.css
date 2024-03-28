@@ -18,12 +18,12 @@
         --slider-controls-aspect-ratio: var(--aspect-ratio-16-9);
     }
 
-    .slider[content-type="logos"],
     .header .slider {
         --slider-controls-height: 100%;
         --slider-controls-aspect-ratio: auto;
     }
 
+    .slider[content-type="logos"],
     .slider[content-type="card-collection"] {
         --slider-controls-aspect-ratio: auto;
         --slider-controls-top: unset;
@@ -54,6 +54,7 @@
     }
 
     @media screen and (min-width: 840px) {
+        .slider[content-type="logos"],
         .slider[content-type="card-collection"],
         .slider[content-type="teaser"] {
             --slider-controls-bottom: var(--spacing-s);

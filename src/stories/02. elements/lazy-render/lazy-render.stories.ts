@@ -14,7 +14,7 @@ export default {
         layout: "fullscreen",
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 
 const Template = () => {

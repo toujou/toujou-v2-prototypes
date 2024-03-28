@@ -40,11 +40,11 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
-        <toujou-location-finder 
+        <toujou-location-finder
             class="location-finder"
             bounds="[[7.22852, 46.321555], [11.573955, 50.898213]]"
             teaserurl="/placesteaser.html?details=name%2Cbranch_code%2Ctelephone%2Clogo"
@@ -53,7 +53,7 @@ const Template = () => {
             map-style="mapbox://styles/mapbox/light-v10"
             access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
         >
-        
+
             <button
                 is="toujou-button"
                 class="button location-finder__map-toggle"

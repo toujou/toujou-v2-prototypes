@@ -14,7 +14,7 @@ export default {
     },
     argTypes: {},
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -23,10 +23,10 @@ const Template = () => {
                 background-color: var(--color-bg);
             }
         </style>
-        
+
         <toujou-form-progress class="form-progress">
             <h3 class="form-progress__headline">Schritt 4 von 4</h3>
-    
+
             <ul class="form-progress-bar">
                 <li class="form-progress__item" completed >
                     <span class="form-progress__index">1</span>
@@ -42,17 +42,17 @@ const Template = () => {
                 </li>
             </ul>
         </toujou-form-progress>
-     
+
         <form
             enctype="multipart/form-data"
-            method="post" 
-            class="form" 
-            id="testform-1000091" 
+            method="post"
+            class="form"
+            id="testform-1000091"
             action="#"
             novalidate="true">
-            
+
             <h3 class="form-step__title">Summary</h3>
-            
+
             <toujou-table-container class="table-container">
                 <table text-alignment="left" class="table">
                     <tr>
@@ -69,14 +69,14 @@ const Template = () => {
                     </tr>
                 </table>
             </toujou-table-container>
-            
+
             <nav class="form-navigation" role="toolbar">
                 <span class="form-navigation__submit">
                     <button is="toujou-button"
                             class="button form-navigation__button"
                             button-variant="primary"
                             button-icon-position="right"
-                            type="submit" 
+                            type="submit"
                             name="tx_form_formframework[kontaktformular-8][__currentPage]"
                             value="2">
                         <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
@@ -97,7 +97,7 @@ const Template = () => {
                         Previous step
                     </button>
                 </span>
-            </nav>	
+            </nav>
         </form>
     `;
 };

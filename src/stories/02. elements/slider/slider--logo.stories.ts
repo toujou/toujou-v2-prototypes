@@ -1,4 +1,5 @@
 import { StoryFn, Meta } from '@storybook/web-components';
+
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -60,7 +61,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface SliderStoryProps {
     designColor: string;
@@ -85,6 +86,7 @@ const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
             slider-gap="var(--slider-slides-gap)"
             slides-to-show="5"
             slider-breakpoints='{"640":{"perPage":2},"768":{"perPage":3},"840":{"perPage":4},"1024":{"perPage":4}}'
+            slider-aspect-ratio="auto"
             arrow-first-aria-label="Go to first logo"
             arrow-last-aria-label="Go to last logo"
             arrow-prev-aria-label="Go to previous logo"

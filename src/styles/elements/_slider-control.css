@@ -30,17 +30,17 @@
         --slider-control-inset: 50% auto auto var(--slider-control-distance-to-margin);
     }
 
-    .slider[content-type="logos"] button.slider-control--prev {
-        --slider-control-inset: var(--slider-control-top) auto auto var(--slider-control-distance-to-margin);
-    }
+    /*.slider[content-type="logos"] button.slider-control--prev {*/
+    /*    --slider-control-inset: var(--slider-control-top) auto auto var(--slider-control-distance-to-margin);*/
+    /*}*/
 
     button.slider-control--next {
         --slider-control-inset: 50% var(--slider-control-distance-to-margin) auto auto;
     }
 
-    .slider[content-type="logos"] button.slider-control--next {
-        --slider-control-inset: var(--slider-control-top) var(--slider-control-distance-to-margin) auto auto;
-    }
+    /*.slider[content-type="logos"] button.slider-control--next {*/
+    /*    --slider-control-inset: var(--slider-control-top) var(--slider-control-distance-to-margin) auto auto;*/
+    /*}*/
 
     .slider[slider-fullwidth] button.slider-control {
         --slider-control-height: 92px;

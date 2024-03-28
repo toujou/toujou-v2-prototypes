@@ -17,7 +17,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 window.addEventListener('click', (event: Event) => {
     const clickTarget = event.target as HTMLElement;

@@ -7,7 +7,7 @@ export default {
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
     },
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `

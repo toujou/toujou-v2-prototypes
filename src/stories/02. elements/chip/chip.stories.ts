@@ -98,7 +98,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface ChipStoryProps {
     hasIcon: string | boolean;

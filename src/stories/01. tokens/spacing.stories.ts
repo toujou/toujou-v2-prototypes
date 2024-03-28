@@ -3,15 +3,15 @@ import { Meta } from '@storybook/web-components';
 export default {
     title: 'TOKENS/Spacing',
     argTypes: {}
-} as Meta;
+} satisfies Meta;
 
 
 const SpacingTemplate = () => {
-    return `       
+    return `
         <h1 class="tokens-demo__title">Spacing tokens</h1>
-        
+
         <p>Example of squares with the size of the spacing tokens</p>
-        
+
         <div class="tokens-demo__spacing-square-container">
             <div class="tokens-demo__spacing-square-box size-xxxxl"></div>
             <div class="tokens-demo__spacing-square-box size-xxxl"></div>
@@ -25,10 +25,10 @@ const SpacingTemplate = () => {
             <div class="tokens-demo__spacing-square-box size-xxs"></div>
             <div class="tokens-demo__spacing-square-box size-2px"></div>
             <div class="tokens-demo__spacing-square-box size-1px"></div>
-        </div>  
-        
+        </div>
+
         <p>Example of the spacing tokens applied to the padding of the boxes</p>
-        
+
         <div class="tokens-demo__spacing-container">
             <div class="tokens-demo__spacing-box padding-1px">1px</div>
             <div class="tokens-demo__spacing-box padding-xs">XS</div>
@@ -40,7 +40,7 @@ const SpacingTemplate = () => {
             <div class="tokens-demo__spacing-box padding-xxl">XXL</div>
             <div class="tokens-demo__spacing-box padding-xxxl">XXXL</div>
             <div class="tokens-demo__spacing-box padding-xxxxl">XXXXL</div>
-        </div>        
+        </div>
     `;
 }
 

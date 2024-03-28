@@ -7,7 +7,7 @@ export default {
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
     },
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -15,7 +15,7 @@ const Template = () => {
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
-            
+
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
@@ -44,7 +44,7 @@ const Template = () => {
                 </li>
             </ol>
         </toujou-breadcrumb>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -53,13 +53,13 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <div class="media-grid" media-grid-column-number="1">
                 <toujou-single-media class="single-media">
                     <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
             </toujou-single-media>
         </div>
-        
+
         <div class="media-grid" media-grid-column-number="2">
             <toujou-single-media class="single-media">
                 <img class="single-media__image" src="https://picsum.photos/1599/900" alt="Nice image">
@@ -68,7 +68,7 @@ const Template = () => {
                 <img class="single-media__image" src="https://picsum.photos/1599/900" alt="Nice image">
             </toujou-single-media>
         </div>
-        
+
         <div class="media-grid" media-grid-column-number="3">
             <toujou-single-media class="single-media">
                 <img class="single-media__image" src="https://picsum.photos/1598/900" alt="Nice image">
@@ -80,7 +80,7 @@ const Template = () => {
                 <img class="single-media__image" src="https://picsum.photos/1598/900" alt="Nice image">
             </toujou-single-media>
         </div>
-        
+
         <div class="media-grid" media-grid-column-number="4">
             <toujou-single-media class="single-media">
                 <img class="single-media__image" src="https://picsum.photos/1596/900" alt="Nice image">
@@ -95,7 +95,7 @@ const Template = () => {
                 <img class="single-media__image" src="https://picsum.photos/1596/900" alt="Nice image">
             </toujou-single-media>
         </div>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">

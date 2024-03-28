@@ -51,7 +51,7 @@ export default {
         },
     },
     tags: ['autodocs']
-} as Meta;
+} satisfies Meta;
 
 interface ContentCardStoryProps {
     columnCount: number;
@@ -86,7 +86,7 @@ const Template: Story<ContentCardStoryProps> = (args: ContentCardStoryProps) => 
                 ` : `
                     <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
                 `}
-                
+
                 ${args.hasLink ? `
                     <span class="content-card__button">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>

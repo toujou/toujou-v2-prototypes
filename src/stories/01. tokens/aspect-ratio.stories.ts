@@ -3,13 +3,13 @@ import { Meta } from '@storybook/web-components';
 export default {
     title: 'TOKENS/AspectRatio',
     argTypes: {}
-} as Meta;
+} satisfies Meta;
 
 
 const ShadowsTemplate = () => {
-    return `        
+    return `
         <h1 class="tokens-demo__title">Aspect ratio tokens</h1>
-        
+
         <div class="tokens-demo__ratios-container">
             <div class="tokens-demo__ratio-box ratio-auto">Auto</div>
             <div class="tokens-demo__ratio-box ratio-square">Square</div>
@@ -17,7 +17,7 @@ const ShadowsTemplate = () => {
             <div class="tokens-demo__ratio-box ratio-golden">Golden</div>
             <div class="tokens-demo__ratio-box ratio-16-9">16 / 9</div>
             <div class="tokens-demo__ratio-box ratio-3-1">3 / 1</div>
-        </div>        
+        </div>
     `;
 }
 

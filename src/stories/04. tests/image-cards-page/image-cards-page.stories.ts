@@ -7,7 +7,7 @@ export default {
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
     },
-} as Meta;
+} satisfies Meta;
 
 const Template = () => {
     return `
@@ -15,7 +15,7 @@ const Template = () => {
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
-            
+
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
@@ -44,7 +44,7 @@ const Template = () => {
                 </li>
             </ol>
         </toujou-breadcrumb>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -53,7 +53,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-image-card-grid class="image-card-grid">
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
@@ -64,7 +64,7 @@ const Template = () => {
                     Beautiful title
                 </h3>
             </a>
-        
+
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
                     <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
@@ -74,7 +74,7 @@ const Template = () => {
                     Beautiful title
                 </h3>
             </a>
-        
+
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
                     <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
@@ -84,7 +84,7 @@ const Template = () => {
                     Beautiful title
                 </h3>
             </a>
-        
+
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
                     <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
@@ -95,7 +95,7 @@ const Template = () => {
                 </h3>
             </a>
         </toujou-image-card-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -103,7 +103,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-image-card-grid class="image-card-grid">
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
@@ -114,7 +114,7 @@ const Template = () => {
                     Beautiful title
                 </h3>
             </a>
-        
+
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
                     <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
@@ -124,7 +124,7 @@ const Template = () => {
                     Beautiful title
                 </h3>
             </a>
-        
+
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
                     <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
@@ -135,7 +135,7 @@ const Template = () => {
                 </h3>
             </a>
         </toujou-image-card-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -143,7 +143,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-image-card-grid class="image-card-grid">
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
@@ -154,7 +154,7 @@ const Template = () => {
                     Beautiful title
                 </h3>
             </a>
-        
+
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
                     <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
@@ -165,7 +165,7 @@ const Template = () => {
                 </h3>
             </a>
         </toujou-image-card-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -173,7 +173,7 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
+
         <toujou-image-card-grid class="image-card-grid">
             <a class="image-card" href="#" image-format="16-9" card-variant="default">
                 <figure class="image-card__figure">
@@ -185,7 +185,7 @@ const Template = () => {
                 </h3>
             </a>
         </toujou-image-card-grid>
-        
+
         <toujou-text-block class="text-block" text-blocks-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -193,8 +193,8 @@ const Template = () => {
                 </div>
             </toujou-text-block-column>
         </toujou-text-block>
-        
-        
+
+
 
     `;
 };

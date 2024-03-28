@@ -3,13 +3,13 @@ import { Meta } from '@storybook/web-components';
 export default {
     title: 'TOKENS/Color',
     argTypes: {}
-} as Meta;
+} satisfies Meta;
 
 
 const ColorsTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Color tokens</h1>
-        
+
         <h2 class="tokens-demo__subtitle">Secondary color</h2>
         <div class="tokens-demo__color-stripe bg-color-secondary">Secondary</div>
         <div class="tokens-demo__swatch">
@@ -54,7 +54,7 @@ const ColorsTemplate = () => {
             <div class="tokens-demo__swatch-item bg-color-secondary custom-color-s-10"></div>
             <div class="tokens-demo__swatch-item bg-color-secondary custom-color-s-0"></div>
         </div>
-        
+
         <h2 class="tokens-demo__subtitle margin-top-xl">Secondary light</h2>
         <div class="tokens-demo__color-stripe bg-color-secondary-light">Secondary light</div>
         <div class="tokens-demo__swatch">
@@ -99,7 +99,7 @@ const ColorsTemplate = () => {
             <div class="tokens-demo__swatch-item bg-color-secondary-light custom-color-s-10"></div>
             <div class="tokens-demo__swatch-item bg-color-secondary-light custom-color-s-0"></div>
         </div>
-        
+
         <h2 class="tokens-demo__subtitle margin-top-xl">Secondary dark</h2>
         <div class="tokens-demo__color-stripe bg-color-secondary-dark">Secondary dark</div>
         <div class="tokens-demo__swatch">
