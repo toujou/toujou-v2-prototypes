@@ -60,7 +60,7 @@ describe('alert - warning', () => {
     it('has correct warning styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'warning');
         cy.get('toujou-alert').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorWarningDarken15}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorWarningO25);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorWarningO15);
     });
 })
 
@@ -72,7 +72,7 @@ describe('alert - error', () => {
     it('has correct warning styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'error');
         cy.get('toujou-alert').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorErrorDarken15}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorErrorO25Alpha);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorErrorDarken25);
     });
 })
 
@@ -84,7 +84,7 @@ describe('alert - success', () => {
     it('has correct success styles', () => {
         cy.get('toujou-alert').invoke('attr', 'alert-variant').should('eq', 'success');
         cy.get('toujou-alert').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorSuccessDarken15}`);
-        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorSuccessO25Alpha);
+        cy.get('toujou-alert').should('have.css', 'background-color', colors.colorSuccessDarken25);
     });
 })
 

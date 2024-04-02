@@ -3,6 +3,9 @@ import * as path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    optimizeDeps: {
+        entries: ['./src/tests/**/cy.ts']
+    },
     build: {
         rollupOptions: {
             input: {
