@@ -1,7 +1,6 @@
 import '../src/js/globals';
 import "../src/components/toujou-blockquote/toujou-blockquote";
 import "../src/components/toujou-breadcrumb/toujou-breadcrumb";
-import "../src/components/toujou-button/toujou-button";
 import "../src/components/toujou-details/toujou-details";
 import "../src/components/toujou-details-accordion/toujou-details-accordion";
 import "../src/components/toujou-slider/toujou-slider";
@@ -20,6 +19,7 @@ import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
 import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
 
 // ELEMENTS FROM @TOUJOU/UI-COMPONENTS
+import "@toujou/toujou-button/lib";
 import "@toujou/toujou-contact-box/lib";
 import "@toujou/toujou-estimated-reading-time/lib";
 import "@toujou/toujou-exit-warning/lib";

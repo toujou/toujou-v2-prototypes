@@ -2,11 +2,12 @@
 import './globals';
 import '../components/copied/toujou-modal/toujou-modal';
 // JS from @toujou/ui-components
-import '@toujou/toujou-spinner/lib/index';
-import '@toujou/toujou-snackbar/lib/index';
+import '@toujou/toujou-button/lib/index';
+import '@toujou/toujou-estimated-reading-time/lib/index';
 import '@toujou/toujou-exit-warning/lib/index';
 import '@toujou/toujou-lazy-render/lib/index';
-import '@toujou/toujou-estimated-reading-time/lib/index';
+import '@toujou/toujou-snackbar/lib/index';
+import '@toujou/toujou-spinner/lib/index';
 
 
 
