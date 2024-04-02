@@ -57,14 +57,17 @@
 
     .blockquote[element-design="primary"] {
         --blockquote-background-color: var(--color-primary);
+        --blockquote-text-color: var(--color-bg);
     }
 
     .blockquote[element-design="secondary"] {
         --blockquote-background-color: var(--color-secondary);
+        --blockquote-text-color: var(--color-bg);
     }
 
     .blockquote[element-design="inverted"] {
         --blockquote-background-color: var(--color-font);
+        --blockquote-text-color: var(--color-bg);
     }
 
     .blockquote__image {
@@ -134,12 +137,22 @@
     }
 
     .blockquote__author {
+        --blockquote-font-family: var(--font-family-text);
+        --blockquote-font-size: var(--font-size-normal);
+        --blockquote-text-color: var(--color-font);
+        --blockquote-line-height: var(--line-height-normal);
+        --blockquote-author-grid-column: 2;
+
         font-family: var(--blockquote-font-family);
         font-size: var(--blockquote-font-size);
         color: var(--blockquote-text-color);
         line-height: var(--blockquote-line-height);
         grid-column: var(--blockquote-author-grid-column);
         grid-area: blockquoteAuthor;
+    }
+
+    :is(.blockquote[element-design="primary"], .blockquote[element-design="secondary"], .blockquote[element-design="inverted"]) .blockquote__author {
+        --blockquote-text-color: var(--color-bg);
     }
 
     .blockquote__author::before {

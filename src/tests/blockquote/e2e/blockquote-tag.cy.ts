@@ -30,8 +30,8 @@ describe('blockquote tag', () => {
         cy.get('blockquote + .blockquote__author').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('blockquote + .blockquote__author').should('have.css', 'color', colors.colorFont);
         cy.get('blockquote + .blockquote__author').should('have.css', 'line-height', tokens.type.lineHeight.normal);
-        cy.get('blockquote + .blockquote__author').should('have.css', 'grid-column', 'blockquoteAuthor / blockquoteAuthor');
-        cy.get('blockquote + .blockquote__author').should('have.css', 'grid-area', 'blockquoteAuthor / blockquoteAuthor / blockquoteAuthor / blockquoteAuthor');
+        cy.get('blockquote + .blockquote__author').should('have.css', 'grid-column', 'blockquoteAuthor');
+        cy.get('blockquote + .blockquote__author').should('have.css', 'grid-area', 'blockquoteAuthor');
     });
 })
 
