@@ -18,12 +18,14 @@ export default {
 
 const Template = () => {
     return `
-        <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
-            <span slot="label" class="estimated-reading-time__label">
-                <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
-            Estimated reading time:
-            </span>
-        </toujou-estimated-reading-time>
+        <toujou-text-block class="text-block" text-block-column-count="1">
+            <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
+                <span slot="label" class="estimated-reading-time__label">
+                    <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
+                Estimated reading time:
+                </span>
+            </toujou-estimated-reading-time>
+        </toujou-text-block>
         <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
