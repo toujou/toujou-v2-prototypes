@@ -4,7 +4,7 @@
 describe('toujou-button expanded [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-button--button&args=isExpanded:true');
+        cy.visit('/iframe.html?viewMode=story&id=components-button--button&args=isExpanded:!true');
         // @ts-ignore
         cy.get('.button').resetRealHover();
     });

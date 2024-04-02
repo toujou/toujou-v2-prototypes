@@ -3,7 +3,7 @@
 
 describe('toujou-button expanded', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-button--button&args=isExpanded:true');
+        cy.visit('/iframe.html?viewMode=story&id=components-button--button&args=isExpanded:!true');
         // @ts-ignore
         cy.get('.button').resetRealHover();
     });
