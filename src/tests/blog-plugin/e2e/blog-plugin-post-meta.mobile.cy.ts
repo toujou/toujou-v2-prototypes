@@ -24,7 +24,7 @@ describe('blog plugin: post meta [mobile]', () => {
         cy.get('.post-meta .post-meta__group:nth-child(5) .post-meta__text').should('exist');
     });
 
-    it('has correct header styles', () => {
+    it('has correct post meta styles', () => {
         cy.get('.post-meta').should('have.css', 'background-color', colors.colorBlackO05);
         cy.get('.post-meta').should('have.css', 'padding', tokens.spacing.m);
         cy.get('.post-meta').should('have.css', 'width', '311px');

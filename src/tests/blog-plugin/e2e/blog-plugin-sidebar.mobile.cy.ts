@@ -35,7 +35,7 @@ describe('blog plugin: sidebar [mobile]', () => {
 
     it('has correct "Neueste Beiträge" styles', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1)').invoke('attr', 'column-type').should('eq', 'posts');
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1)').should('have.css', 'grid-area', 'posts / posts / posts / posts');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1)').should('have.css', 'grid-area', 'posts');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) h5').invoke('attr', 'class').should('eq', 'blog-sidebar__title');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) h5').should('have.css', 'font-size', tokens.type.size.m);
@@ -116,7 +116,7 @@ describe('blog plugin: sidebar [mobile]', () => {
     it('has correct "Neuesten Kommentare" styles', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4)').invoke('attr', 'column-type').should('eq', 'comments');
 
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4)').should('have.css', 'grid-area', 'comments / comments / comments / comments');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4)').should('have.css', 'grid-area', 'comments');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) h5').invoke('attr', 'class').should('eq', 'blog-sidebar__title');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) h5').should('have.css', 'font-size', tokens.type.size.m);
@@ -144,7 +144,7 @@ describe('blog plugin: sidebar [mobile]', () => {
     it('has correct "Archive" styles', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5)').invoke('attr', 'column-type').should('eq', 'archive');
 
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5)').should('have.css', 'grid-area', 'archive / archive / archive / archive');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5)').should('have.css', 'grid-area', 'archive');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) h5').invoke('attr', 'class').should('eq', 'blog-sidebar__title');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) h5').should('have.css', 'font-size', tokens.type.size.m);

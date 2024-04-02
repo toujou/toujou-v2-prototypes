@@ -66,7 +66,7 @@ describe('blog plugin: authors [mobile]', () => {
         cy.get('.post-author:first-child .post-author__meta').should('have.css', 'align-self', 'center');
         cy.get('.post-author:first-child .post-author__meta').should('have.css', 'flex-wrap', 'wrap');
         cy.get('.post-author:first-child .post-author__meta').should('have.css', 'gap', `${tokens.spacing.xxs} ${tokens.spacing.s}`);
-        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'grid-area', 'meta / meta / meta / meta');
+        cy.get('.post-author:first-child .post-author__meta').should('have.css', 'grid-area', 'meta');
 
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.post-author:first-child .post-author__name').should('have.css', 'font-size', tokens.type.size.normal);
@@ -77,7 +77,7 @@ describe('blog plugin: authors [mobile]', () => {
         cy.get('.post-author:first-child .post-author__info').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.post-author:first-child .post-author__info').should('have.css', 'color', colors.colorFont);
 
-        cy.get('.post-author:first-child .post-author__description').should('have.css', 'grid-area', 'description / description / description / description');
+        cy.get('.post-author:first-child .post-author__description').should('have.css', 'grid-area', 'description');
     });
 })
 

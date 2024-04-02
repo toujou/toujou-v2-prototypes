@@ -16,7 +16,7 @@ describe('blog plugin: posts lists', () => {
         cy.get('.card-collection').children('.card-collection__item').should('have.length', 4);
     });
 
-    it('has correct header styles', () => {
+    it('has correct post list styles', () => {
         cy.get('.post-list-title').should('have.css', 'color', colors.colorPrimary);
         cy.get('.post-list-title').should('have.css', 'font-size', tokens.type.size.xl);
     });
