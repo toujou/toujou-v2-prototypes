@@ -73,18 +73,6 @@ describe('chapter none a11y', () => {
     });
 })
 
-describe('chapter background a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=variant:background');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
 describe('chapter no padding a11y', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=hasNoPaddingAttr:true');

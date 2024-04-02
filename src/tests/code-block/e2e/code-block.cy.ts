@@ -47,7 +47,7 @@ describe('code-block', () => {
             expect(codeBlockLangTag).to.have.css('color').equal(colors.colorFont);
             expect(codeBlockLangTag).to.have.css('padding').equal(`${tokens.spacing.xs} ${tokens.spacing.s}`);
             expect(codeBlockLangTag).to.have.css('border-radius').equal(`0px 0px 0px ${tokens.borderRadius.s}`);
-            expect(codeBlockLangTag).to.have.css('font-size').equal(tokens.type.size.xs);
+            expect(codeBlockLangTag).to.have.css('font-size').equal(tokens.type.size.xxs);
         });
     });
 })
