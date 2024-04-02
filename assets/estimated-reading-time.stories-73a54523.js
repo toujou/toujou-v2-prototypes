@@ -1,55 +1,57 @@
-import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-runtime-6a2ad889.js";import{u as l}from"./index-1b6e96e1.js";import"./index-56d4de0b.js";import"./_commonjsHelpers-042e6b4d.js";function a(t){const i={code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",pre:"pre",...l(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(i.h1,{id:"estimated-reading-time",children:"Estimated reading time"}),`
-`,e.jsxs(i.p,{children:["The ",e.jsx(i.code,{children:"toujou-estimated-reading-time"})," is an element that estimated the time needed to read a document (in minutes) depending on a reading speed."]}),`
-`,e.jsx(i.h2,{id:"markup-example",children:"Markup example"}),`
-`,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main">
+import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-runtime-6a2ad889.js";import{u as l}from"./index-1b6e96e1.js";import"./index-56d4de0b.js";import"./_commonjsHelpers-042e6b4d.js";function a(i){const t={code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",pre:"pre",...l(),...i.components};return e.jsxs(e.Fragment,{children:[e.jsx(t.h1,{id:"estimated-reading-time",children:"Estimated reading time"}),`
+`,e.jsxs(t.p,{children:["The ",e.jsx(t.code,{children:"toujou-estimated-reading-time"})," is an element that estimated the time needed to read a document (in minutes) depending on a reading speed."]}),`
+`,e.jsx(t.h2,{id:"markup-example",children:"Markup example"}),`
+`,e.jsx(t.pre,{children:e.jsx(t.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main">
         <span slot="label">Estimated reading time:</span>
     </toujou-estimated-reading-time>
 `})}),`
-`,e.jsx(i.h2,{id:"attributes",children:"Attributes"}),`
-`,e.jsxs(i.h3,{id:"class-required",children:["class ",e.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,e.jsxs(i.p,{children:["The ",e.jsx(i.code,{children:"estimated-reading-time"})," class is required for the element to be displayed correctly"]}),`
-`,e.jsxs(i.h3,{id:"target-selector-required",children:["target-selector ",e.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,e.jsxs(i.p,{children:["The ",e.jsx(i.code,{children:"target-selector"})," attribute defines the container from which we will get the word count to estimate the reading time"]}),`
-`,e.jsx(i.h3,{id:"reading-speed",children:"reading-speed"}),`
-`,e.jsxs(i.p,{children:["With the ",e.jsx(i.code,{children:"reading-speed"})," attribute we can set a different reading speed."]}),`
-`,e.jsx(i.p,{children:"The default is 250 words per minute"}),`
-`,e.jsx(i.h3,{id:"minutes-singular-text",children:"minutes-singular-text"}),`
-`,e.jsxs(i.p,{children:["The ",e.jsx(i.code,{children:"minutes-singular-text"})," attribute gives us the opportunity to set custom text for the word ",e.jsx(i.code,{children:"minute"}),"."]}),`
-`,e.jsxs(i.p,{children:["Default is ",e.jsx(i.code,{children:"minute"})]}),`
-`,e.jsx(i.p,{children:"Example:"}),`
-`,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main" minutes-singular-text="Minuto">
+`,e.jsx(t.h2,{id:"attributes",children:"Attributes"}),`
+`,e.jsxs(t.h3,{id:"class-required",children:["class ",e.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,e.jsxs(t.p,{children:["The ",e.jsx(t.code,{children:"estimated-reading-time"})," class is required for the element to be displayed correctly"]}),`
+`,e.jsxs(t.h3,{id:"target-selector-required",children:["target-selector ",e.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,e.jsxs(t.p,{children:["The ",e.jsx(t.code,{children:"target-selector"})," attribute defines the container from which we will get the word count to estimate the reading time"]}),`
+`,e.jsx(t.h3,{id:"reading-speed",children:"reading-speed"}),`
+`,e.jsxs(t.p,{children:["With the ",e.jsx(t.code,{children:"reading-speed"})," attribute we can set a different reading speed."]}),`
+`,e.jsx(t.p,{children:"The default is 250 words per minute"}),`
+`,e.jsx(t.h3,{id:"minutes-singular-text",children:"minutes-singular-text"}),`
+`,e.jsxs(t.p,{children:["The ",e.jsx(t.code,{children:"minutes-singular-text"})," attribute gives us the opportunity to set custom text for the word ",e.jsx(t.code,{children:"minute"}),"."]}),`
+`,e.jsxs(t.p,{children:["Default is ",e.jsx(t.code,{children:"minute"})]}),`
+`,e.jsx(t.p,{children:"Example:"}),`
+`,e.jsx(t.pre,{children:e.jsx(t.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main" minutes-singular-text="Minuto">
         <span slot="label">Estimated reading time:</span>
     </toujou-estimated-reading-time>
 
 renders: "Estimated reading time: 1 Minuto"
 `})}),`
-`,e.jsx(i.h3,{id:"minutes-plural-text",children:"minutes-plural-text"}),`
-`,e.jsxs(i.p,{children:["The ",e.jsx(i.code,{children:"minutes-plural-text"})," attribute gives us the opportunity to set custom text for the word ",e.jsx(i.code,{children:"minutes"}),`
+`,e.jsx(t.h3,{id:"minutes-plural-text",children:"minutes-plural-text"}),`
+`,e.jsxs(t.p,{children:["The ",e.jsx(t.code,{children:"minutes-plural-text"})," attribute gives us the opportunity to set custom text for the word ",e.jsx(t.code,{children:"minutes"}),`
 .`]}),`
-`,e.jsxs(i.p,{children:["Default is ",e.jsx(i.code,{children:"minutes "}),`
+`,e.jsxs(t.p,{children:["Default is ",e.jsx(t.code,{children:"minutes "}),`
 Example:`]}),`
-`,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main" minutes-plural-text="Minutos">
+`,e.jsx(t.pre,{children:e.jsx(t.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main" minutes-plural-text="Minutos">
         <span slot="label">Estimated reading time:</span>
     </toujou-estimated-reading-time>
 
 renders: "Estimated reading time: 2 Minutos"
 `})}),`
-`,e.jsx(i.h3,{id:"less-than-text",children:"less-than-text"}),`
-`,e.jsxs(i.p,{children:["The ",e.jsx(i.code,{children:"less-than-text"})," attribute gives us the opportunity to set custom text for the word ",e.jsx(i.code,{children:"under"}),"."]}),`
-`,e.jsxs(i.p,{children:["Default is ",e.jsx(i.code,{children:"under"})]}),`
-`,e.jsx(i.p,{children:"Example:"}),`
-`,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main" minutes-singular-text="minuto" less-than-text="Menos de">
+`,e.jsx(t.h3,{id:"less-than-text",children:"less-than-text"}),`
+`,e.jsxs(t.p,{children:["The ",e.jsx(t.code,{children:"less-than-text"})," attribute gives us the opportunity to set custom text for the word ",e.jsx(t.code,{children:"under"}),"."]}),`
+`,e.jsxs(t.p,{children:["Default is ",e.jsx(t.code,{children:"under"})]}),`
+`,e.jsx(t.p,{children:"Example:"}),`
+`,e.jsx(t.pre,{children:e.jsx(t.code,{className:"language-html",children:`    <toujou-estimated-reading-time class="estimated-reading-time" target-selector="main" minutes-singular-text="minuto" less-than-text="Menos de">
         <span slot="label">Estimated reading time:</span>
     </toujou-estimated-reading-time>
 
 renders: "Estimated reading time: Menos de 1 minuto"
-`})})]})}function c(t={}){const{wrapper:i}={...l(),...t.components};return i?e.jsx(i,{...t,children:e.jsx(a,{...t})}):a(t)}const b={title:"COMPONENTS/EstimatedReadingTime",parameters:{badges:[r.DONE],docs:{page:c}},tags:["autodocs"]},d=()=>`
-        <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
-            <span slot="label" class="estimated-reading-time__label">
-                <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
-            Estimated reading time:
-            </span>
-        </toujou-estimated-reading-time>
+`})})]})}function c(i={}){const{wrapper:t}={...l(),...i.components};return t?e.jsx(t,{...i,children:e.jsx(a,{...i})}):a(i)}const b={title:"COMPONENTS/EstimatedReadingTime",parameters:{badges:[r.DONE],docs:{page:c}},tags:["autodocs"]},d=()=>`
+        <toujou-text-block class="text-block" text-block-column-count="1">
+            <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
+                <span slot="label" class="estimated-reading-time__label">
+                    <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
+                Estimated reading time:
+                </span>
+            </toujou-estimated-reading-time>
+        </toujou-text-block>
         <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -94,12 +96,14 @@ renders: "Estimated reading time: Menos de 1 minuto"
         </toujou-text-block>
     `,s=d.bind({});var n,u,o;s.parameters={...s.parameters,docs:{...(n=s.parameters)==null?void 0:n.docs,source:{originalSource:`() => {
   return \`
-        <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
-            <span slot="label" class="estimated-reading-time__label">
-                <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
-            Estimated reading time:
-            </span>
-        </toujou-estimated-reading-time>
+        <toujou-text-block class="text-block" text-block-column-count="1">
+            <toujou-estimated-reading-time class="estimated-reading-time" target-selector="body">
+                <span slot="label" class="estimated-reading-time__label">
+                    <toujou-icon class="icon" icon-name="clock-circle" icon-size="ms" icon-color="font"></toujou-icon>
+                Estimated reading time:
+                </span>
+            </toujou-estimated-reading-time>
+        </toujou-text-block>
         <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
