@@ -30,7 +30,6 @@ export default defineConfig({
 
                 // components from the @toujou/ui-components
                 'toujou-contact-box': path.resolve(__dirname, 'node_modules/@toujou/toujou-contact-box/lib'),
-                'toujou-estimated-reading-time': path.resolve(__dirname, 'node_modules/@toujou/toujou-estimated-reading-time/lib'),
                 'toujou-inpage-nav': path.resolve(__dirname, 'node_modules/@toujou/toujou-inpage-nav/lib'),
                 'toujou-input-password-toggle': path.resolve(__dirname, 'node_modules/@toujou/toujou-input-password-toggle/lib'),
                 'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/lib'),

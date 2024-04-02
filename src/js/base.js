@@ -6,5 +6,7 @@ import '@toujou/toujou-spinner/lib/index';
 import '@toujou/toujou-snackbar/lib/index';
 import '@toujou/toujou-exit-warning/lib/index';
 import '@toujou/toujou-lazy-render/lib/index';
+import '@toujou/toujou-estimated-reading-time/lib/index';
+
 
 

@@ -97,7 +97,6 @@
 @import "./elements/_blog-archive.css" layer(components);
 @import "./elements/_blog-footer.css" layer(components);
 @import "./elements/_blog-header.css" layer(components);
-@import "./elements/_estimated-reading-time.css" layer(components);
 @import "./elements/_rating-stars.css" layer(components);
 @import "./elements/_reviews.css" layer(components);
 @import "./elements/_review.css" layer(components);
