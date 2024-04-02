@@ -1,4 +1,4 @@
-import{_ as l}from"./tslib.es6-d64b32d8.js";import{i as p,s as r,y as c}from"./lit-element-6fe74b4f.js";import{e as d}from"./custom-element-73470d87.js";import{e as u}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";var a,i,o,b=p(a||(i=[` .open-button {
+import{_ as l}from"./tslib.es6-c85c2c5e.js";import{i as p,s as r,y as c}from"./lit-element-6fe74b4f.js";import{e as d}from"./custom-element-73470d87.js";import{e as u}from"./property-1027a1df.js";import"./query-assigned-elements-acf341e1.js";var a,i,o,b=p(a||(i=[` .open-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
