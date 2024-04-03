@@ -20,7 +20,7 @@ describe('consent widget [mobile]', () => {
 
     it('has correct correct styles', () => {
         cy.get('.consent-widget').then((consentWidget) => {
-            expect(consentWidget).to.have.css('position').equal('absolute');
+            expect(consentWidget).to.have.css('position').equal('fixed');
             expect(consentWidget).to.have.css('bottom').equal(tokens.spacing.normal);
             expect(consentWidget).to.have.css('left').equal(tokens.spacing.normal);
             expect(consentWidget).to.have.css('margin-top').equal('0px');
