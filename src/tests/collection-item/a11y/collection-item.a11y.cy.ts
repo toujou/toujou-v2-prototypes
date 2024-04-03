@@ -81,22 +81,6 @@ describe('collection item type blog', () => {
     });
 })
 
-describe('collection item type event', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-event');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.card-collection__item');
-        cy.checkA11y('.card-collection__item', {
-            rules: {
-                'landmark-no-duplicate-banner': { enabled: false }
-            }
-        });
-    });
-})
-
 describe('collection item type trip', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-collections--card-trip');

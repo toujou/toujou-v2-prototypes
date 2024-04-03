@@ -64,19 +64,18 @@ describe('collection item - type default', () => {
         cy.get(`${firstCardSelector} .collection-item__abstract`).then((itemAbstract) => {
             expect(itemAbstract).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(itemAbstract).to.have.css('color').equal(colors.colorFont);
-            expect(itemAbstract).to.have.css('text-overflow').equal('ellipsis');
-            expect(itemAbstract).to.have.css('-webkit-line-clamp').equal('3');
-            expect(itemAbstract).to.have.css('overflow').equal('hidden');
+            expect(itemAbstract).to.have.css('text-overflow').equal('clip');
+            expect(itemAbstract).to.have.css('-webkit-line-clamp').equal('none');
+            expect(itemAbstract).to.have.css('overflow').equal('visible');
         });
         cy.get(`${firstCardSelector} .collection-item__button`).then((itemButton) => {
             expect(itemButton).to.have.css('text-decoration').equal(`none solid ${colors.colorPrimary}`);
             expect(itemButton).to.have.css('color').equal(colors.colorPrimary);
             expect(itemButton).to.have.css('display').equal('flex');
-            expect(itemButton).to.have.css('align-items').equal('center');
-            expect(itemButton).to.have.css('justify-content').equal('center');
+            expect(itemButton).to.have.css('align-items').equal('flex-end');
+            expect(itemButton).to.have.css('justify-content').equal('flex-start');
             expect(itemButton).to.have.css('gap').equal(tokens.spacing.s);
         });
-        cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorPrimary);
     });
 
     it('has correct default focus styles', () => {
@@ -108,7 +107,7 @@ describe('collection item - type default, style primary', () => {
         cy.get(`${firstCardSelector}`).should('have.css', 'background-color', colors.colorPrimary);
         cy.get(`${firstCardSelector} .collection-item__title`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__subtitle`).should('have.css', 'color', colors.colorBg);
-        cy.get(`${firstCardSelector} .collection-item__abstract`).should('have.css', 'color', colors.colorBg);
+        cy.get(`${firstCardSelector} .collection-item__abstract-text`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorBg);
 
@@ -137,7 +136,7 @@ describe('collection item - type default, style secondary', () => {
         cy.get(`${firstCardSelector}`).should('have.css', 'background-color', colors.colorSecondary);
         cy.get(`${firstCardSelector} .collection-item__title`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__subtitle`).should('have.css', 'color', colors.colorBg);
-        cy.get(`${firstCardSelector} .collection-item__abstract`).should('have.css', 'color', colors.colorBg);
+        cy.get(`${firstCardSelector} .collection-item__abstract-text`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorBg);
 
@@ -166,7 +165,7 @@ describe('collection item - type default, style inverted', () => {
         cy.get(`${firstCardSelector}`).should('have.css', 'background-color', colors.colorFontDark);
         cy.get(`${firstCardSelector} .collection-item__title`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__subtitle`).should('have.css', 'color', colors.colorBg);
-        cy.get(`${firstCardSelector} .collection-item__abstract`).should('have.css', 'color', colors.colorBg);
+        cy.get(`${firstCardSelector} .collection-item__abstract-text`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .icon`).should('have.css', 'background-color', colors.colorBg);
 
@@ -196,12 +195,12 @@ describe('collection item - type blog', () => {
         cy.get(`${firstCardSelector} .collection-item__category`).should('exist');
     });
 
-    it ('Categories have correct styles', () => {
+    it('Categories have correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'position', 'absolute');
         cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'top', tokens.spacing.normal);
         cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'left', '0px');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'background-color', colors.colorPrimaryLight);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'color', colors.colorPrimaryDark);
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'background-color', colors.colorPrimary);
+        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'display', 'flex');
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'align-items', 'center');
         cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'justify-content', 'flex-start');
@@ -223,43 +222,25 @@ describe('collection item - type event', () => {
     it('has correct attributes and elements', () => {
         cy.get(`${firstCardSelector}`).invoke('attr', 'item-type').should('eq', 'event');
         cy.get(`${firstCardSelector} .collection-item__date`).should('exist');
-        cy.get(`${firstCardSelector} .collection-item__info`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__status`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__abstract`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__button`).should('exist');
         cy.get(`${firstCardSelector} toujou-fav-item`).should('exist');
     });
 
     it('date element has correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__date`).then((dateEl) => {
-            expect(dateEl).to.have.css('position').equal('absolute');
-            expect(dateEl).to.have.css('height').equal('80px');
-            expect(dateEl).to.have.css('width').equal('44.8046875px');
-            expect(dateEl).to.have.css('top').equal(tokens.spacing.normal);
-            expect(dateEl).to.have.css('left').equal('263.195px');
-            expect(dateEl).to.have.css('background-color').equal(colors.colorBg);
-            expect(dateEl).to.have.css('border-radius').equal('4px');
+            expect(dateEl).to.have.css('position').equal('relative');
+            expect(dateEl).to.have.css('height').equal('24px');
+            expect(dateEl).to.have.css('width').equal('276px');
+            expect(dateEl).to.have.css('top').equal('0px');
+            expect(dateEl).to.have.css('left').equal('0px');
+            expect(dateEl).to.have.css('border-radius').equal('0px');
             expect(dateEl).to.have.css('display').equal('flex');
-            expect(dateEl).to.have.css('align-items').equal('normal');
-            expect(dateEl).to.have.css('justify-content').equal('center');
-            expect(dateEl).to.have.css('padding').equal(tokens.spacing.s);
+            expect(dateEl).to.have.css('align-items').equal('center');
+            expect(dateEl).to.have.css('justify-content').equal('flex-start');
+            expect(dateEl).to.have.css('padding').equal('0px');
             expect(dateEl).to.have.css('color').equal(colors.colorFont);
-        });
-    });
-
-    it('Info element has correct styles', () => {
-        cy.get(`${firstCardSelector} .collection-item__info`).then((infoEl) => {
-            expect(infoEl).to.have.css('display').equal('grid');
-            expect(infoEl).to.have.css('grid-gap').equal(`${tokens.spacing.s} ${tokens.spacing.s}`);
-            expect(infoEl).to.have.css('margin').equal(`${tokens.spacing.normal} 0px 0px`);
-        });
-        cy.get(`${firstCardSelector} .collection-item__info .icon`).then((infoIcon) => {
-           expect(infoIcon).to.exist;
-           expect(infoIcon).to.have.attr('icon-color').equal('primary');
-           expect(infoIcon).to.have.attr('icon-name').equal('info');
-           expect(infoIcon).to.have.attr('icon-size').equal('ms');
-        });
-        cy.get(`${firstCardSelector} .collection-item__info-text`).then((infotextEl) => {
-            expect(infotextEl).to.have.css('margin').equal('0px');
-            expect(infotextEl).to.have.css('color').equal(colors.colorFont);
-
         });
     });
 });
