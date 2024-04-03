@@ -98,17 +98,17 @@ describe('Portfolio gallery', () => {
     });
 
     it('has correct small image styles', () => {
-        cy.get('.portfolio-gallery .slider-slide:nth-child(2)').should('have.css', 'grid-row', '1 / auto');
-        cy.get('.portfolio-gallery .slider-slide:nth-child(2)').should('have.css', 'grid-column', '2 / auto');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(2)').should('have.css', 'grid-row', '1');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(2)').should('have.css', 'grid-column', '2');
 
-        cy.get('.portfolio-gallery .slider-slide:nth-child(3)').should('have.css', 'grid-row', '1 / auto');
-        cy.get('.portfolio-gallery .slider-slide:nth-child(3)').should('have.css', 'grid-column', '3 / auto');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(3)').should('have.css', 'grid-row', '1');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(3)').should('have.css', 'grid-column', '3');
 
-        cy.get('.portfolio-gallery .slider-slide:nth-child(4)').should('have.css', 'grid-row', '2 / auto');
-        cy.get('.portfolio-gallery .slider-slide:nth-child(4)').should('have.css', 'grid-column', '2 / auto');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(4)').should('have.css', 'grid-row', '2');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(4)').should('have.css', 'grid-column', '2');
 
-        cy.get('.portfolio-gallery .slider-slide:nth-child(5)').should('have.css', 'grid-row', '2 / auto');
-        cy.get('.portfolio-gallery .slider-slide:nth-child(5)').should('have.css', 'grid-column', '3 / auto');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(5)').should('have.css', 'grid-row', '2');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(5)').should('have.css', 'grid-column', '3');
     });
 
     it('has correct image hover styles', () => {

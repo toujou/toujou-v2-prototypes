@@ -16,7 +16,7 @@ describe('product grid', () => {
     it('has correct structure', () => {
         cy.get('.image-card-grid').should('exist');
         cy.get('.image-card-grid').children('.image-card').should('have.length', 4);
-        cy.get('.image-card-grid .image-card').invoke('attr', 'image-format').should('eq', tokens.aspectRatio.sixteenToNine);
+        cy.get('.image-card-grid .image-card').invoke('attr', 'image-format').should('eq', '16-9');
         cy.get('.image-card-grid .image-card').invoke('attr', 'card-variant').should('eq', 'default');
         cy.get('.image-card-grid .image-card__figure').should('exist');
         cy.get('.image-card-grid .image-card__image').should('exist');

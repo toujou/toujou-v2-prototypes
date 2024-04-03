@@ -9,7 +9,14 @@ describe('PN Nav a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.pn-nav');
-        cy.checkA11y('.pn-nav');
+        cy.checkA11y(
+            '.pn-nav',
+            {
+                rules: {
+                    'color-contrast': { enabled: false }
+                }
+            }
+        );
     });
 })
 

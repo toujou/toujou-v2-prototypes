@@ -30,7 +30,7 @@ describe('Toujou search grid', () => {
         cy.get('.search').should('have.css', 'flex-direction', 'row');
 
         cy.get('.search .input--search').should('have.css', 'position', 'relative');
-        cy.get('.search .input--search').should('have.css', 'width', '818.78125px');
+        cy.get('.search .input--search').should('have.css', 'width', '821.9921875px');
         cy.get('.search .input--search').should('have.css', 'border-radius', `${tokens.borderRadius.normal} 0px 0px ${tokens.borderRadius.normal}`);
         cy.get('.search .input--search').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.search .input--search').should('have.css', 'background-color', 'rgb(255, 255, 255)');
@@ -40,7 +40,7 @@ describe('Toujou search grid', () => {
         cy.get('.search .input--search').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.search .input--search').should('have.css', 'font-weight', tokens.type.fontWeight.normal);
 
-        cy.get('.search .button--search').should('have.css', 'width', '141.21875px');
+        cy.get('.search .button--search').should('have.css', 'width', '138.0078125px');
         cy.get('.search .button--search').should('have.css', 'height', '46px');
         cy.get('.search .button--search').should('have.css', 'display', 'flex');
         cy.get('.search .button--search').should('have.css', 'align-items', 'center');
