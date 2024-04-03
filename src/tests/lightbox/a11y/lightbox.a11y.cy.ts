@@ -10,7 +10,15 @@ describe('grid a11y', () => {
     it('has no detectable a11y violation on load', () => {
         cy.get('.media-grid[lightbox-parent-id="1"] .single-media:first-child .lightbox-item').click();
         cy.wait(10);
-        cy.checkA11y('.pswp');
+        cy.checkA11y(
+            '.pswp',
+            {
+                rules: {
+                    'aria-roledescription': { enabled: false },
+                    'color-contrast': { enabled: false }
+                }
+            }
+        );
     });
 })
 

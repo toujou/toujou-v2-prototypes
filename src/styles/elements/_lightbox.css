@@ -3,6 +3,8 @@
 /* stylelint-disable-next-line import-notation */
 @layer components {
     .pswp {
+        --lightbox-z-index: var(--z-index-modal);
+
         --lightbox-image-padding: var(--spacing-xl);
 
         --lightbox-caption-padding: var(--spacing-s);
@@ -17,6 +19,8 @@
         --lightbox-counter-font-family: var(--font-family-text);
         --lightbox-counter-font-size: var(--font-size-normal);
         --lightbox-counter-color: var(--color-white);
+
+        z-index: var(--lightbox-z-index);
     }
 
     .pswp__img {
