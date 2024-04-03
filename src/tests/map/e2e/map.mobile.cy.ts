@@ -34,7 +34,7 @@ describe('Map [mobile]', () => {
         });
         cy.get('.map-contact .map-contact__map-container').then((mapContainer) => {
             expect(mapContainer).to.have.css('overflow').equal('hidden');
-            expect(mapContainer).to.have.css('grid-area').equal('map / map / map / map');
+            expect(mapContainer).to.have.css('grid-area').equal('map');
             expect(mapContainer).to.have.css('aspect-ratio').equal('1 / 1');
         });
         cy.get('.map-contact .map-contact__image').then((mapImage) => {
@@ -42,7 +42,7 @@ describe('Map [mobile]', () => {
             expect(mapImage).to.have.css('object-fit').equal('cover');
         });
         cy.get('.map-contact .map-contact__content').then((mapContent) => {
-            expect(mapContent).to.have.css('grid-area').equal('address / address / address / address');
+            expect(mapContent).to.have.css('grid-area').equal('address');
         });
         cy.get('.map-contact .map-contact__headline').then((mapHeadline) => {
             expect(mapHeadline).to.have.css('color').equal(colors.colorFontDark);

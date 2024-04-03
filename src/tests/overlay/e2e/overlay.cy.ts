@@ -24,7 +24,7 @@ describe('overlay', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.overlay').should('have.css', 'background-color', colors.colorBgO75);
+        cy.get('.overlay').should('have.css', 'background-color', colors.colorBlackO75);
         cy.get('.overlay').should('have.css', 'position', 'fixed');
         cy.get('.overlay').should('have.css', 'top', '0px');
         cy.get('.overlay').should('have.css', 'left', '0px');
@@ -44,7 +44,7 @@ describe('overlay', () => {
         cy.get('.overlay .overlay__infos').should('have.css', 'box-shadow', tokens.shadow.normal);
         cy.get('.overlay .overlay__infos').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('.overlay .overlay__infos').should('have.css', 'background-color', colors.colorBg);
-        cy.get('.overlay .overlay__infos').should('have.css', 'max-width', 'min(100% - 48px, 0% + 640px)');
+        cy.get('.overlay .overlay__infos').should('have.css', 'max-width', 'min(100% - 48px, 640px)');
 
         cy.get('.overlay .overlay__title').should('have.css', 'margin', '0px');
 

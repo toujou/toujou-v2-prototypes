@@ -33,7 +33,7 @@ describe('Map', () => {
         });
         cy.get('.map-contact .map-contact__map-container').then((mapContainer) => {
             expect(mapContainer).to.have.css('overflow').equal('hidden');
-            expect(mapContainer).to.have.css('grid-area').equal('map / map / map / map');
+            expect(mapContainer).to.have.css('grid-area').equal('map');
             expect(mapContainer).to.have.css('aspect-ratio').equal('1 / 1');
         });
         cy.get('.map-contact .map-contact__image').then((mapImage) => {
@@ -41,7 +41,7 @@ describe('Map', () => {
             expect(mapImage).to.have.css('object-fit').equal('cover');
         });
         cy.get('.map-contact .map-contact__content').then((mapContent) => {
-            expect(mapContent).to.have.css('grid-area').equal('address / address / address / address');
+            expect(mapContent).to.have.css('grid-area').equal('address');
         });
         cy.get('.map-contact .map-contact__headline').then((mapHeadline) => {
             expect(mapHeadline).to.have.css('color').equal(colors.colorFontDark);
@@ -50,7 +50,7 @@ describe('Map', () => {
             expect(mapAddress).to.have.css('color').equal(colors.colorFont);
             expect(mapAddress).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(mapAddress).to.have.css('font-style').equal('normal');
-            expect(mapAddress).to.have.css('line-height').equal(tokens.type.lineHeight.notmal);
+            expect(mapAddress).to.have.css('line-height').equal('24px');
         });
         cy.get('.map-contact .map-contact__socials').then((mapSocials) => {
             expect(mapSocials).to.have.css('margin').equal(`${tokens.spacing.normal} 0px 0px`);
