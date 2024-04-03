@@ -6,7 +6,6 @@
         --timeline-accent-color-hover: var(--color-primary);
         --timeline-line-width: var(--spacing-2px);
 
-        /*--timeline-width: var(--content-width-with-padding);*/
         --timeline-position: relative;
         --timeline-width: var(--content-width-with-padding);
         --timeline-display: block;
@@ -127,7 +126,6 @@
         }
 
         .timeline[timeline-direction="vertical"][timeline-show-legend] {
-            /*--timeline-width: var(--content-max-width);*/
             --timeline-legend-width: 4.75rem;
             --timeline-width: calc(var(--content-max-width) + var(--timeline-legend-width) + var(--timeline-gap));
         }

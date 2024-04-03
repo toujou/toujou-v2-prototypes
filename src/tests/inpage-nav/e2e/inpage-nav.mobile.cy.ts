@@ -12,6 +12,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('has correct structure', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('toujou-inpage-nav').invoke('prop', 'tagName').should('eq', 'TOUJOU-INPAGE-NAV');
         cy.get('toujou-inpage-nav').invoke('attr', 'class').should('eq', 'inpage-nav');
@@ -31,6 +32,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').then((nav) => {
             expect(nav).to.have.css('display').eq('grid');
@@ -44,6 +46,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('toggle has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav__toggle').then((toggle) => {
             expect(toggle).to.have.css('display').eq('flex');
@@ -57,6 +60,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('label has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav__label').then((label) => {
             expect(label).to.have.css('grid-area').eq('label');
@@ -69,6 +73,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav list is not visible and has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav__list').then((list) => {
             expect(list).to.have.css('list-style').eq('outside none none');
@@ -80,6 +85,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav list items have correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav__item').then((item) => {
             expect(item).to.have.css('display').eq('flex');
@@ -88,6 +94,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav links have correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').then((link) => {
             expect(link).to.have.css('position').eq('relative');
@@ -101,6 +108,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('active nav links have correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav[ismobile] .inpage-nav__item[active] .inpage-nav__link').then((link) => {
             expect(link).to.have.css('color').eq(colors.colorPrimaryDark);
@@ -108,6 +116,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('cta button has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav__cta').then((cta) => {
             expect(cta).to.have.css('margin').eq(`${tokens.spacing.s} 0px`);
@@ -116,6 +125,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('can toggle list visibility', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav__list').should('have.css', 'visibility', 'hidden');
         cy.get('.inpage-nav__toggle').click();
@@ -134,6 +144,7 @@ describe('inpage-nav mobile - primary', () => {
     });
 
     it('has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
@@ -153,6 +164,7 @@ describe('inpage-nav mobile - secondary', () => {
     });
 
     it('has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
@@ -172,6 +184,7 @@ describe('inpage-nav mobile - inverted', () => {
     });
 
     it('has correct styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorFont);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
@@ -191,6 +204,7 @@ describe('inpage-nav mobile - text width', () => {
     });
 
     it('has correct attributes', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'text');
     });
@@ -210,11 +224,13 @@ describe('inpage-nav mobile - wide', () => {
     });
 
     it('has correct attributes', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'wide');
     });
 
     it('has correct wide styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'width', '311px');
 
@@ -230,11 +246,13 @@ describe('inpage-nav mobile - fullwidth', () => {
     });
 
     it('has correct attributes', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'fullwidth');
     });
 
     it('has correct wide styles', () => {
+        // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'width', '343px');
 

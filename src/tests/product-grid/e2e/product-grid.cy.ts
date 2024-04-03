@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-const tokens = Cypress.env('tokens');
-
 describe('product grid', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-product-grid--product-grid');
@@ -21,7 +19,6 @@ describe('product grid', () => {
         cy.get('.image-card-grid .image-card__figure').should('exist');
         cy.get('.image-card-grid .image-card__image').should('exist');
         cy.get('.image-card-grid .image-card__title').should('exist');
-
     });
 })
 

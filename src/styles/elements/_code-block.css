@@ -131,6 +131,7 @@
         color: var(--code-block-code-name-color);
     }
 
+    /* stylelint-disable-next-line max-line-length */
     .code-block :is(.hljs-subst, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-symbol, .hljs-template-tag, .hljs-template-variable, .hljs-addition) {
         color: var(--code-block-code-builtin-color);
     }

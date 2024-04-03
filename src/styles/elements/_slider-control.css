@@ -1,6 +1,11 @@
 @layer components {
     .slider[slider-fullwidth] button.slider-control {
         --slider-control-top: 50%;
+        --slider-control-height: 92px;
+        --slider-control-width: calc(var(--slider-control-height) / 2);
+
+        height: var(--slider-control-height);
+        width: var(--slider-control-width);
     }
 
     button.slider-control {
@@ -30,24 +35,8 @@
         --slider-control-inset: 50% auto auto var(--slider-control-distance-to-margin);
     }
 
-    /*.slider[content-type="logos"] button.slider-control--prev {*/
-    /*    --slider-control-inset: var(--slider-control-top) auto auto var(--slider-control-distance-to-margin);*/
-    /*}*/
-
     button.slider-control--next {
         --slider-control-inset: 50% var(--slider-control-distance-to-margin) auto auto;
-    }
-
-    /*.slider[content-type="logos"] button.slider-control--next {*/
-    /*    --slider-control-inset: var(--slider-control-top) var(--slider-control-distance-to-margin) auto auto;*/
-    /*}*/
-
-    .slider[slider-fullwidth] button.slider-control {
-        --slider-control-height: 92px;
-        --slider-control-width: calc(var(--slider-control-height) / 2);
-
-        height: var(--slider-control-height);
-        width: var(--slider-control-width);
     }
 
     .slider[slider-fullwidth] button.slider-control--prev {

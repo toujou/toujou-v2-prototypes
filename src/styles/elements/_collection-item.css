@@ -489,7 +489,6 @@
         color: var(--color-font-light);
     }
 
-
     @media (hover: hover) {
         a.collection-item__button:hover {
             --collection-item-button-text-decoration: underline;

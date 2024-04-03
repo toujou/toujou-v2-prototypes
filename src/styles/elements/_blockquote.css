@@ -151,6 +151,7 @@
         grid-area: blockquoteAuthor;
     }
 
+    /* stylelint-disable-next-line max-line-length */
     :is(.blockquote[element-design="primary"], .blockquote[element-design="secondary"], .blockquote[element-design="inverted"]) .blockquote__author {
         --blockquote-text-color: var(--color-bg);
     }

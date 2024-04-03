@@ -53,7 +53,6 @@
     }
 
     .event-schedule-item__title-step {
-        /*color: var(--event-schedule-item-title-step-color);*/
         font-weight: var(--event-schedule-item-title-step-font-weight);
     }
 

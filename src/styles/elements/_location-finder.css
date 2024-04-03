@@ -46,6 +46,7 @@
         --toujou-location-finder-search-left: var(--toujou-location-finder-padding);
         --toujou-location-finder-search-input-border-radius: var(--border-radius-normal);
         --toujou-location-finder-search-input-border: none;
+        /* stylelint-disable-next-line max-line-length */
         --toujou-location-finder-search-input-padding: var(--spacing-s) var(--spacing-s) var(--spacing-s) var(--spacing-xl);
 
         --toujou-location-finder-sidebar-width: var(--toujou-location-finder-panel-width);

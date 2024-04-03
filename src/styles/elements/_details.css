@@ -115,6 +115,7 @@
         transform: var(--details-chevron-active-transform);
     }
 
+    /* stylelint-disable-next-line max-line-length */
     .details .text-block:first-child > .text-block-column:first-child > .text-block__content:first-child > p:first-child {
         margin-top: 0;
     }

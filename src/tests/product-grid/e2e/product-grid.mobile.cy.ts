@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-const tokens = Cypress.env('tokens');
-
 describe('product grid [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
@@ -22,7 +20,6 @@ describe('product grid [mobile]', () => {
         cy.get('.image-card-grid .image-card__figure').should('exist');
         cy.get('.image-card-grid .image-card__image').should('exist');
         cy.get('.image-card-grid .image-card__title').should('exist');
-
     });
 })
 

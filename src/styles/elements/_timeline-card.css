@@ -73,6 +73,7 @@
     .timeline[timeline-direction="vertical"] .timeline-card {
         --timeline-card-before-top: 50%;
         --timeline-card-before-left: 0;
+        /* stylelint-disable-next-line max-line-length */
         --timeline-card-before-transform: translate(calc(calc(var(--timeline-distance-from-line) + calc(var(--timeline-bullet-size) / 2)) * -1 + 1px), -50%);
         --timeline-card-height: 100%;
     }

@@ -94,6 +94,7 @@ describe('top button', () => {
         cy.get('.topbutton').then(() => {
             // @ts-ignore
             expect(cy.state('window').scrollY).to.eq(0);
+            // @ts-ignore
             expect(document.activeElement).to.eq(document.querySelector('body'));
         });
     });
@@ -109,6 +110,7 @@ describe('top button', () => {
         cy.get('.topbutton').then(() => {
             // @ts-ignore
             expect(cy.state('window').scrollY).to.eq(0);
+            // @ts-ignore
             expect(document.activeElement).to.eq(document.querySelector('body'));
         });
     });
@@ -124,6 +126,7 @@ describe('top button', () => {
         cy.get('.topbutton').then(() => {
             // @ts-ignore
             expect(cy.state('window').scrollY).to.eq(0);
+            // @ts-ignore
             expect(document.activeElement).to.eq(document.querySelector('body'));
         });
     });

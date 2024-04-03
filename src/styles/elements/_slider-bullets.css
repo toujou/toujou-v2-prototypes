@@ -14,6 +14,7 @@
         --slider-bullets-bullet-align-items: center;
         --slider-bullets-bullet-justify-content: center;
         --slider-bullets-bullet-size: var(--font-size-m);
+        /* stylelint-disable-next-line max-line-length */
         --slider-bullets-bullet-border: var(--border-radius-s) solid var(--slider-bullets-bullet-default-background-color);
         --slider-bullets-bullet-background-color: transparent;
 

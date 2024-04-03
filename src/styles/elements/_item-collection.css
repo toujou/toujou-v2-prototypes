@@ -15,7 +15,6 @@
 
         --item-collection-item-width: 100%;
         --item-collection-item-max-width: 100%;
-        /*--item-collection-item-padding: var(--spacing-normal) 0 0;*/
 
         display: var(--item-collection-display);
         flex-wrap: var(--item-collection-flex-wrap);
