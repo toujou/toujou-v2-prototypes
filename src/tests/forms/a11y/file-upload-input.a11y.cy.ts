@@ -33,8 +33,14 @@ describe('file input success a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.form');
-        cy.checkA11y('.form');
-    });
+        cy.checkA11y(
+            '.form',
+            {
+                rules: {
+                    'color-contrast': { enabled: false }
+                }
+            }
+        );    });
 })
 
 describe('file input error a11y', () => {

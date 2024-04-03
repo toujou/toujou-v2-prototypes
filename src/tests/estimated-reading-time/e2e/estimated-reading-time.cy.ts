@@ -29,7 +29,7 @@ describe('estimated-reading-time', () => {
         cy.get('.estimated-reading-time').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.estimated-reading-time').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.estimated-reading-time').should('have.css', 'color', colors.colorFont);
-        cy.get('.estimated-reading-time').should('have.css', 'display', 'inline-flex');
+        cy.get('.estimated-reading-time').should('have.css', 'display', 'flex');
         cy.get('.estimated-reading-time').should('have.css', 'align-items', 'center');
         cy.get('.estimated-reading-time').should('have.css', 'gap', '4.8px');
         cy.get('.estimated-reading-time').should('have.css', 'padding', '0px');

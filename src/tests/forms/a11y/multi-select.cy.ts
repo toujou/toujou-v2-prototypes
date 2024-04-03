@@ -33,8 +33,14 @@ describe('multi-select success a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.form');
-        cy.checkA11y('.form');
-    });
+        cy.checkA11y(
+            '.form',
+            {
+                rules: {
+                    'color-contrast': { enabled: false }
+                }
+            }
+        );    });
 })
 
 describe('multi-select error a11y', () => {

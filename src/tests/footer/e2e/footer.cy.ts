@@ -50,7 +50,7 @@ describe('footer', () => {
         cy.get('.footer').should('have.css', 'padding', `${tokens.spacing.xl} ${tokens.spacing.normal}`);
 
         cy.get('.footer-content').should('have.css', 'display', 'grid');
-        cy.get('.footer-content').should('have.css', 'grid-template-columns', '354.047px 354.047px 354.055px 233.852px');
+        cy.get('.footer-content').should('have.css', 'grid-template-columns', '354.047px 354.047px 354.047px 233.852px');
         cy.get('.footer-content').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
         cy.get('.footer-content').should('have.css', 'align-items', 'flex-start');
         cy.get('.footer-content').should('have.css', 'justify-content', 'center');

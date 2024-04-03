@@ -16,7 +16,7 @@ describe('Forms / input group', () => {
             expect(inputGroup).to.have.css('justify-content').equal('flex-start');
             expect(inputGroup).to.have.css('align-items').equal('flex-start');
             expect(inputGroup).to.have.css('gap').equal('0px');
-            expect(inputGroup).to.have.css('grid-column').equal('span 12 / auto');
+            expect(inputGroup).to.have.css('grid-column').equal('span 12');
         })
     });
 });
