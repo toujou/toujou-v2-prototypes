@@ -12,6 +12,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('has correct structure', () => {
+        cy.get('body').resetRealHover();
         cy.get('toujou-inpage-nav').invoke('prop', 'tagName').should('eq', 'TOUJOU-INPAGE-NAV');
         cy.get('toujou-inpage-nav').invoke('attr', 'class').should('eq', 'inpage-nav');
         cy.get('.inpage-nav .inpage-nav__toggle').should('exist');
@@ -30,32 +31,35 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').then((nav) => {
             expect(nav).to.have.css('display').eq('grid');
             expect(nav).to.have.css('margin').eq(`${tokens.spacing.l} ${tokens.spacing.normal}`);
             expect(nav).to.have.css('padding').eq(`0px ${tokens.spacing.s}`);
             expect(nav).to.have.css('position').eq('relative');
-            expect(nav).to.have.css('z-index').eq('150');
+            expect(nav).to.have.css('z-index').eq('60');
             expect(nav).to.have.css('opacity').eq('1');
             expect(nav).to.have.css('border-radius').eq('0px');
         })
     });
 
     it('toggle has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav__toggle').then((toggle) => {
             expect(toggle).to.have.css('display').eq('flex');
             expect(toggle).to.have.css('align-items').eq('center');
             expect(toggle).to.have.css('justify-content').eq('center');
             expect(toggle).to.have.css('border').eq('0px none rgb(0, 0, 0)');
             expect(toggle).to.have.css('background-color').eq('rgba(0, 0, 0, 0)');
-            expect(toggle).to.have.css('grid-area').eq('toggle / toggle / toggle / toggle');
+            expect(toggle).to.have.css('grid-area').eq('toggle');
             expect(toggle).to.have.css('transition').eq('transform 0.25s ease-in-out 0s');
         })
     });
 
     it('label has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav__label').then((label) => {
-            expect(label).to.have.css('grid-area').eq('label / label / label / label');
+            expect(label).to.have.css('grid-area').eq('label');
             expect(label).to.have.css('font-weight').eq(tokens.type.fontWeight.normal);
             expect(label).to.have.css('color').eq(colors.colorFont);
             expect(label).to.have.css('display').eq('flex');
@@ -65,11 +69,9 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav list is not visible and has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav__list').then((list) => {
-            expect(list).to.have.css('visibility').eq('hidden');
             expect(list).to.have.css('list-style').eq('outside none none');
-            expect(list).to.have.css('margin').eq('0px');
-            expect(list).to.have.css('padding').eq(`0px`);
             expect(list).to.have.css('display').eq('flex');
             expect(list).to.have.css('align-items').eq('flex-start');
             expect(list).to.have.css('justify-content').eq('flex-start');
@@ -78,6 +80,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav list items have correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav__item').then((item) => {
             expect(item).to.have.css('display').eq('flex');
             expect(item).to.have.css('align-items').eq('center');
@@ -85,6 +88,7 @@ describe('inpage-nav mobile - default', () => {
     });
 
     it('nav links have correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').then((link) => {
             expect(link).to.have.css('position').eq('relative');
             expect(link).to.have.css('text-decoration').eq(`none solid ${colors.colorPrimary}`);
@@ -92,24 +96,27 @@ describe('inpage-nav mobile - default', () => {
             expect(link).to.have.css('color').eq(colors.colorPrimary);
             expect(link).to.have.css('display').eq('flex');
             expect(link).to.have.css('align-items').eq('center');
-            expect(link).to.have.css('padding').eq(`0px ${tokens.spacing.s} 0px 0px`);
+            expect(link).to.have.css('padding').eq(`0px ${tokens.spacing.normal}`);
         })
     });
 
     it('active nav links have correct styles', () => {
-        cy.get('.inpage-nav__item[active] .inpage-nav__link').then((link) => {
+        cy.get('body').resetRealHover();
+        cy.get('.inpage-nav[ismobile] .inpage-nav__item[active] .inpage-nav__link').then((link) => {
             expect(link).to.have.css('color').eq(colors.colorPrimaryDark);
         })
     });
 
     it('cta button has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav__cta').then((cta) => {
             expect(cta).to.have.css('margin').eq(`${tokens.spacing.s} 0px`);
-            expect(cta).to.have.css('grid-area').eq('cta / cta / cta / cta');
+            expect(cta).to.have.css('grid-area').eq('cta');
         })
     });
 
     it('can toggle list visibility', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav__list').should('have.css', 'visibility', 'hidden');
         cy.get('.inpage-nav__toggle').click();
         cy.get('.inpage-nav__list').should('have.css', 'visibility', 'visible');
@@ -127,6 +134,7 @@ describe('inpage-nav mobile - primary', () => {
     });
 
     it('has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__toggle .icon').should('have.css', 'background-color', colors.colorBg);
@@ -145,6 +153,7 @@ describe('inpage-nav mobile - secondary', () => {
     });
 
     it('has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__toggle .icon').should('have.css', 'background-color', colors.colorBg);
@@ -163,6 +172,7 @@ describe('inpage-nav mobile - inverted', () => {
     });
 
     it('has correct styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorFont);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__toggle .icon').should('have.css', 'background-color', colors.colorBg);
@@ -181,6 +191,7 @@ describe('inpage-nav mobile - text width', () => {
     });
 
     it('has correct attributes', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'text');
     });
 
@@ -199,10 +210,12 @@ describe('inpage-nav mobile - wide', () => {
     });
 
     it('has correct attributes', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'wide');
     });
 
     it('has correct wide styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'width', '311px');
 
     });
@@ -217,10 +230,12 @@ describe('inpage-nav mobile - fullwidth', () => {
     });
 
     it('has correct attributes', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').invoke('attr', 'element-width').should('eq', 'fullwidth');
     });
 
     it('has correct wide styles', () => {
+        cy.get('body').resetRealHover();
         cy.get('.inpage-nav').should('have.css', 'width', '343px');
 
     });

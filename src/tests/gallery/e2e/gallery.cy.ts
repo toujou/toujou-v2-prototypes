@@ -25,7 +25,7 @@ describe('gallery', () => {
 
     it('has correct styles', () => {
         cy.get('.gallery').should('have.css', 'display', 'grid');
-        cy.get('.gallery').should('have.css', 'grid-template-columns', '314.664px 314.664px 314.672px');
+        cy.get('.gallery').should('have.css', 'grid-template-columns', '314.664px 314.664px 314.664px');
         cy.get('.gallery').should('have.css', 'grid-gap', `${tokens.spacing.s} ${tokens.spacing.s}`);
         cy.get('.gallery').should('have.css', 'width', '960px');
         cy.get('.gallery').should('have.css', 'max-width', '960px');

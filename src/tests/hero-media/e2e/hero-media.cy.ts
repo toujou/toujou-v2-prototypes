@@ -29,7 +29,7 @@ describe('hero media', () => {
         cy.get('.hero-media').should('have.css', 'display', 'block');
         cy.get('.hero-media').should('have.css', 'position', 'relative');
         cy.get('.hero-media').should('have.css', 'padding', '0px');
-        cy.get('.hero-media').should('have.css', 'margin', '0px 224px');
+        cy.get('.hero-media').should('have.css', 'margin', '0px');
         cy.get('.hero-media').should('have.css', 'z-index', tokens.zIndex.content);
         cy.get('.hero-media').should('have.css', 'width', '1440px');
         cy.get('.hero-media').should('have.css', 'max-width', '1440px');
@@ -47,7 +47,7 @@ describe('hero media', () => {
         cy.get('.hero-media .hero-media__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.hero-media .hero-media__title').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.hero-media .hero-media__title').should('have.css', 'right', '447.867px');
-        cy.get('.hero-media .hero-media__title').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -136, -36)');
+        cy.get('.hero-media .hero-media__title').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -136.066, -36)');
         cy.get('.hero-media .hero-media__title').should('have.css', 'margin', '0px');
         cy.get('.hero-media .hero-media__title').should('have.css', 'color', colors.colorBg);
         cy.get('.hero-media .hero-media__title').should('have.css', 'padding', `${tokens.spacing.normal} ${tokens.spacing.xl}`);

@@ -36,7 +36,7 @@ describe('inpage-nav desktop - default', () => {
             expect(nav).to.have.css('padding').eq(`0px ${tokens.spacing.s}`);
             expect(nav).to.have.css('position').eq('relative');
             expect(nav).to.have.css('border-bottom').eq(`${tokens.border.normal} solid rgba(0, 0, 0, 0)`);
-            expect(nav).to.have.css('z-index').eq('150');
+            expect(nav).to.have.css('z-index').eq('60');
             expect(nav).to.have.css('opacity').eq('1');
             expect(nav).to.have.css('border-radius').eq('0px');
         })
@@ -49,14 +49,14 @@ describe('inpage-nav desktop - default', () => {
             expect(toggle).to.have.css('justify-content').eq('center');
             expect(toggle).to.have.css('border').eq('0px none rgb(0, 0, 0)');
             expect(toggle).to.have.css('background-color').eq('rgba(0, 0, 0, 0)');
-            expect(toggle).to.have.css('grid-area').eq('toggle / toggle / toggle / toggle');
+            expect(toggle).to.have.css('grid-area').eq('toggle');
             expect(toggle).to.have.css('transition').eq('transform 0.25s ease-in-out 0s');
         })
     });
 
     it('label has correct styles', () => {
         cy.get('.inpage-nav__label').then((label) => {
-            expect(label).to.have.css('grid-area').eq('label / label / label / label');
+            expect(label).to.have.css('grid-area').eq('label');
             expect(label).to.have.css('font-weight').eq(tokens.type.fontWeight.headline);
             expect(label).to.have.css('color').eq(colors.colorFont);
             expect(label).to.have.css('display').eq('flex');
@@ -117,7 +117,7 @@ describe('inpage-nav desktop - default', () => {
     it('cta button has correct styles', () => {
         cy.get('.inpage-nav__cta').then((cta) => {
             expect(cta).to.have.css('margin').eq('8px 0px');
-            expect(cta).to.have.css('grid-area').eq('cta / cta / cta / cta');
+            expect(cta).to.have.css('grid-area').eq('cta');
         })
     });
 
