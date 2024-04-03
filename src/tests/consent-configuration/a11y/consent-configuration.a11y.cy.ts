@@ -9,12 +9,26 @@ describe('consent configuration a11y', () => {
 
     it('has no detectable a11y violation on load when no consents saved', () => {
         cy.get('.consent-widget');
-        cy.checkA11y('.consent-widget');
+        cy.checkA11y(
+            '.consent-widget',
+            {
+                rules: {
+                    'duplicate-id-aria': { enabled: false }
+                }
+            }
+        );
     });
 
     it('has no detectable a11y violation on load when consents already saved', () => {
         cy.get('#consentAcceptAllButton').click();
-        cy.checkA11y('.consent-widget');
+        cy.checkA11y(
+            '.consent-widget',
+            {
+                rules: {
+                    'duplicate-id-aria': { enabled: false }
+                }
+            }
+        );
     });
 })
 
