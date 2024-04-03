@@ -141,7 +141,6 @@
         --blockquote-font-size: var(--font-size-normal);
         --blockquote-text-color: var(--color-font);
         --blockquote-line-height: var(--line-height-normal);
-        --blockquote-author-grid-column: 2;
 
         font-family: var(--blockquote-font-family);
         font-size: var(--blockquote-font-size);
@@ -167,6 +166,7 @@
         --blockquote-grid-template-columns: var(--blockquote-image-size) 1fr;
         --blockquote-grid-template-areas: "blockquoteImage blockquoteQuote" "blockquoteImage blockquoteAuthor";
         --blockquote-image-size: 70px;
+        --blockquote-author-grid-column: 2;
         --blockquote-image-margin-top: var(--spacing-m);
 
         grid-template-rows: auto auto;
