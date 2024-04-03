@@ -24,7 +24,7 @@ describe('slider--logo [mobile]', () => {
         cy.get('toujou-slider').invoke('attr', 'arrow-prev-aria-label').should('eq', 'Go to previous logo');
         cy.get('toujou-slider').invoke('attr', 'slider-padding').should('eq', '0');
         cy.get('toujou-slider').invoke('attr', 'slider-focus-center').should('eq', 'false');
-        cy.get('toujou-slider').invoke('attr', 'slider-aspect-ratio').should('eq', '0.5625');
+        cy.get('toujou-slider').invoke('attr', 'slider-aspect-ratio').should('eq', 'auto');
     });
 
     it('has correct default design colors', () => {
@@ -180,7 +180,7 @@ describe('slider--logo [mobile]', () => {
             const styles = win.getComputedStyle(el[0]);
             const sliderControlInset = styles.getPropertyValue('--slider-control-inset');
             const sliderControlIconTransform = styles.getPropertyValue('--slider-control-icon-transform');
-            expect(sliderControlInset.trim()).to.eq('calc(calc(100% - 2rem) / 2) auto auto 0');
+            expect(sliderControlInset.trim()).to.eq('50% auto auto 0');
             expect(sliderControlIconTransform.trim()).to.eq('translate(-65%, -50%)');
         });
     });

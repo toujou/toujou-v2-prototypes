@@ -199,7 +199,7 @@ describe('Slider - mobile', () => {
             const styles = win.getComputedStyle(el[0]);
             const sliderControlInset = styles.getPropertyValue('--slider-control-inset');
             const sliderControlIconTransform = styles.getPropertyValue('--slider-control-icon-transform');
-            expect(sliderControlInset.trim()).to.eq('calc(calc(100% - 2rem) / 2) auto auto 0');
+            expect(sliderControlInset.trim()).to.eq('50% auto auto 0');
             expect(sliderControlIconTransform.trim()).to.eq('translate(-65%, -50%)');
         });
     });

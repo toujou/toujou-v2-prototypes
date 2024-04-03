@@ -17,7 +17,7 @@ const ZIndexTemplate = () => {
             <li><code style="z-index: var(--z-index-pn-nav);">--z-index-pn-nav: 30;</code></li>
             <li><code style="z-index: var(--z-index-top-button);">--z-index-top-button: 50;</code></li>
             <li><code style="z-index: var(--z-index-spinner);">--z-index-spinner: 75;</code></li>
-            <li><code style="z-index: var(--z-index-inpage-nav);">--z-index-inpage-nav: 150;</code></li>
+            <li><code style="z-index: var(--z-index-inpage-nav);">--z-index-inpage-nav: 60;</code></li>
             <li><code style="z-index: var(--z-index-sticky-nav);">--z-index-sticky-nav: 200;</code></li>
             <li><code style="z-index: var(--z-index-topbar);">--z-index-topbar: 500;</code></li>
             <li><code style="z-index: var(--z-index-nav);">--z-index-nav: 1000;</code></li>

@@ -47,7 +47,7 @@ describe('teaser-slider', () => {
         cy.get('.teaser').should('have.css', 'overflow', 'hidden');
 
         cy.get('.teaser .teaser__figure').should('exist');
-        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1 / auto');
+        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1');
         cy.get('.teaser .teaser__figure').should('have.css', 'border-radius', '4px');
         cy.get('.teaser .teaser__figure').should('have.css', 'overflow', 'hidden');
         cy.get('.teaser .teaser__figure').should('have.css', 'position', 'relative');

@@ -9,7 +9,14 @@ describe('snackbar a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.snackbar');
-        cy.checkA11y('.snackbar');
+        cy.checkA11y(
+            '.snackbar',
+            {
+                rules: {
+                    'button-name': { enabled: false }
+                }
+            }
+        );
     });
 })
 

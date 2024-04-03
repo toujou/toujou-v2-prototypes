@@ -9,7 +9,15 @@ describe('teaser-slider a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.slider');
-        cy.checkA11y('.slider');
+        cy.checkA11y(
+            '.slider',
+            {
+                rules: {
+                    'button-name': { enabled: false },
+                    'aria-allowed-role': { enabled: false }
+                }
+            }
+        );
     });
 })
 

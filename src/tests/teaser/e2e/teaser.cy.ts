@@ -34,7 +34,7 @@ describe('teaser', () => {
         cy.get('.teaser').should('have.css', 'overflow', 'hidden');
 
         cy.get('.teaser .teaser__figure').should('exist');
-        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1 / auto');
+        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1');
         cy.get('.teaser .teaser__figure').should('have.css', 'border-radius', '4px');
         cy.get('.teaser .teaser__figure').should('have.css', 'overflow', 'hidden');
         cy.get('.teaser .teaser__figure').should('have.css', 'position', 'relative');
@@ -65,7 +65,7 @@ describe('teaser - image 33% left', () => {
 
     it('has correct styles', () => {
         cy.get('.teaser').should('have.css', 'grid-template-columns', '464px 928px');
-        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1 / auto');
+        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1');
         cy.get('.teaser .teaser__figure').should('have.css', 'width', '464px');
         cy.get('.teaser .teaser__image').should('have.css', 'width', '464px');
         cy.get('.teaser .teaser__image').should('have.css', 'height', '286.7734375px');
@@ -86,7 +86,7 @@ describe('teaser - image 33% right', () => {
 
     it('has correct styles', () => {
         cy.get('.teaser').should('have.css', 'grid-template-columns', '928px 464px');
-        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '2 / auto');
+        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '2');
         cy.get('.teaser .teaser__figure').should('have.css', 'width', '464px');
         cy.get('.teaser .teaser__image').should('have.css', 'width', '464px');
         cy.get('.teaser .teaser__image').should('have.css', 'height', '286.7734375px');
@@ -107,7 +107,7 @@ describe('teaser - image 66% left', () => {
 
     it('has correct styles', () => {
         cy.get('.teaser').should('have.css', 'grid-template-columns', '928px 464px');
-        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1 / auto');
+        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '1');
         cy.get('.teaser .teaser__figure').should('have.css', 'width', '928px');
         cy.get('.teaser .teaser__image').should('have.css', 'width', '928px');
         cy.get('.teaser .teaser__image').should('have.css', 'height', '573.546875px');
@@ -128,7 +128,7 @@ describe('teaser - image 66% right', () => {
 
     it('has correct styles', () => {
         cy.get('.teaser').should('have.css', 'grid-template-columns', '464px 928px');
-        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '2 / auto');
+        cy.get('.teaser .teaser__figure').should('have.css', 'grid-column', '2');
         cy.get('.teaser .teaser__figure').should('have.css', 'width', '928px');
         cy.get('.teaser .teaser__image').should('have.css', 'width', '928px');
         cy.get('.teaser .teaser__image').should('have.css', 'height', '573.546875px');
