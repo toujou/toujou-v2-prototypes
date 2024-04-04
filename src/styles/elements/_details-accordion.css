@@ -13,6 +13,11 @@
         z-index: var(--details-accordion-z-index);
     }
 
+    span:not(:first-child) + .details-accordion,
+    .text-block + .details-accordion {
+        --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+    }
+
     .details-accordion .details:not(:first-child) {
         --toujou-details-border-top: none;
     }
@@ -24,9 +29,5 @@
 
     .details-accordion:first-child {
         --details-accordion-margin: 0 auto;
-    }
-
-    .text-block + .details-accordion {
-        --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     }
 }

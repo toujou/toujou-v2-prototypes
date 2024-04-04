@@ -71,7 +71,7 @@
     }
 
     .slider[content-type="logos"] {
-        --slider-margin: 0 auto var(--spacing-normal);
+        --slider-margin: var(--spacing-between-consecutive-elements-normal) auto;
         --slider-slides-gap: var(--spacing-l);
     }
 

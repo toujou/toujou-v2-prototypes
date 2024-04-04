@@ -3367,7 +3367,7 @@ p > .button {
     --chapter-background-color: var(--color-white);
 }
 
-.chapter > *:not(hr, .divider, blockquote),
+.chapter > *:not(hr, .divider, blockquote):first-child,
 .chapter > span:first-child + * {
     margin-top: 0 !important;
 }
@@ -4869,8 +4869,7 @@ span:first-child + .text-block {
     --text-block-margin: 0 auto;
 }
 
-.text-block + .text-block,
-.media-grid + .text-block {
+:is(.text-block, .media-grid, .details-accordion) + .text-block {
     --text-block-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 }
 
