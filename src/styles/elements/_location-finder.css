@@ -25,6 +25,15 @@
         --toujou-location-finder-search-shadow: none;
         --toujou-location-finder-search-padding: var(--input-padding);
 
+        --toujou-location-finder-map-padding-mobile-top: 16;
+        --toujou-location-finder-map-padding-mobile-bottom: 16;
+        --toujou-location-finder-map-padding-mobile-left: 16;
+        --toujou-location-finder-map-padding-mobile-right: 16;
+        --toujou-location-finder-map-padding-desktop-top: 16;
+        --toujou-location-finder-map-padding-desktop-bottom: 16;
+        --toujou-location-finder-map-padding-desktop-left: 352;
+        --toujou-location-finder-map-padding-desktop-right: 16;
+
         /* --toujou-location-finder-search-border: var(--border-width-normal) solid var(--border-color-default); */
         --toujou-location-finder-loading-bar-bg-color: var(--color-primary);
 
