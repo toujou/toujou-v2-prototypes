@@ -42,7 +42,7 @@
             transform var(--animation-duration-normal) var(--animation-easing-normal),
             background-color var(--animation-duration-normal) var(--animation-easing-normal);
 
-        --pn-nav-title-color: var(--color-primary-dark);
+        --pn-nav-title-color: var(--color-bg);
         --pn-nav-title-font-family: var(--font-family-headline);
         --pn-nav-title-font-size: var(--font-size-normal);
         --pn-nav-title-margin: 0;
@@ -158,15 +158,6 @@
     }
 
     @media (hover: hover) {
-        .pn-nav__link:hover {
-            --pn-nav-button-bg-color: var(--color-primary-light);
-            --pn-nav-content-background-color: var(--color-primary-light);
-        }
-
-        .pn-nav__link:hover .icon {
-            --icon-color: var(--color-primary-dark);
-        }
-
         .pn-nav__link[button-direction="prev"]:hover {
             --pn-nav-content-transform: translateX(calc(var(--pn-nav-button-width) * -1));
         }
