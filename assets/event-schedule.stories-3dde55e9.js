@@ -33,7 +33,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             <event-schedule-year class="event-schedule-year">
                 <h3 class="event-schedule-year__headline">2023</h3>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -66,7 +66,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -93,7 +93,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -124,7 +124,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             <event-schedule-year class="event-schedule-year">
                 <h3 class="event-schedule-year__headline">2024</h3>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -157,7 +157,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -183,7 +183,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -209,7 +209,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -239,7 +239,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             <event-schedule-year class="event-schedule-year">
                 <h3 class="event-schedule-year__headline">2023</h3>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -272,7 +272,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -299,7 +299,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -330,7 +330,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
             <event-schedule-year class="event-schedule-year">
                 <h3 class="event-schedule-year__headline">2024</h3>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -363,7 +363,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -389,7 +389,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
@@ -415,7 +415,7 @@ import{T as h}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                     </ul>
                 </event-schedule-day>
 
-                <event-schedule-day class="event-schedule-day" role="list">
+                <event-schedule-day class="event-schedule-day">
                     <div class="calendar-pages event-schedule-day__calendar-page" aria-label="calendar page with date / time information">
                         <time class="calendar-page" datetime="2025-11-14" single-day>
                             <div class="calendar-page__date">
