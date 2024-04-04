@@ -118,8 +118,11 @@
     .blockquote__blockquote * {
         font-size: var(--blockquote-text-font-size);
         line-height: var(--blockquote-text-line-height);
-        margin: var(--blockquote-text-margin);
         color: var(--blockquote-text-color);
+    }
+
+    :is(.blockquote__content, .blockquote__blockquote) *:not(ul, ol) {
+        margin: var(--blockquote-text-margin);
     }
 
     .blockquote__content a {
