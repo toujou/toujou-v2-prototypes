@@ -34,7 +34,7 @@ export default {
                     matcher: {
                         name: 'placesTeaser',
                         url: 'begin:/placesteaser.html',
-                    },sdfsdf
+                    },
                     response: (url: any, options: any, request: any) => {
                         printMockInfo('placesTeaser', url, options, request);
                         return placesTeaserMockResp_all
