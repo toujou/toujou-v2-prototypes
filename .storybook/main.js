@@ -8,7 +8,8 @@ export default {
         "@storybook/addon-docs",
         "@storybook/addon-essentials",
         "@storybook/addon-a11y",
-        "@geometricpanda/storybook-addon-badges"
+        "@geometricpanda/storybook-addon-badges",
+        "storybook-addon-fetch-mock"
     ],
     "framework": {
         name: "@storybook/web-components-vite",
