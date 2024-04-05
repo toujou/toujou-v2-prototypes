@@ -73,6 +73,8 @@
         --toujou-location-finder-popup-width: 100%;
         --toujou-location-finder-popup-max-width: 100%;
         --toujou-location-finder-popup-margin: 0;
+
+        --toujou-location-finder-teasers-max-height: 100%;
     }
 
     .location-finder {
