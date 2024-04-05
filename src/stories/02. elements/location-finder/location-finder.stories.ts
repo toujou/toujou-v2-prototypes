@@ -10,8 +10,6 @@ import '@toujou/toujou-location-finder/lib'
 import { placesGeoMockResp } from "./mocks/placesgeo.mock";
 import { placesTeaserMockResp_all } from "./mocks/placesteaser.mock";
 
-import fetchMock from 'fetch-mock';
-
 export default {
     title: 'COMPONENTS/LocationFinder',
     parameters: {
@@ -21,15 +19,13 @@ export default {
         },
         layout: "fullscreen",
         fetchMock: {
-            // "fetchMock.mocks" is a list of mocked
-            // API endpoints.
             mocks: [
                 {
                     matcher: {
                         name: 'placesGeo',
                         url: 'begin:/placesgeo.json',
                     },
-                    response: (url, options, request) => {
+                    response: (url: any, options: any, request: any) => {
                         printMockInfo('placesGeo', url, options, request);
                         return placesGeoMockResp
                     },
@@ -38,8 +34,8 @@ export default {
                     matcher: {
                         name: 'placesTeaser',
                         url: 'begin:/placesteaser.html',
-                    },
-                    response: (url, options, request) => {
+                    },sdfsdf
+                    response: (url: any, options: any, request: any) => {
                         printMockInfo('placesTeaser', url, options, request);
                         return placesTeaserMockResp_all
                     },
