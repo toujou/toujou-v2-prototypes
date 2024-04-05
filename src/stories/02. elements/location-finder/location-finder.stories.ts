@@ -7,9 +7,10 @@ import locationFinderDocs from './location-finder.docs.mdx';
 
 import '@toujou/toujou-location-finder/lib'
 
-import { rest } from "msw";
-import { placesgeoMockUrl, placesgeoMockRes } from "./mocks/placesgeo.mock";
-import { placesteaserMockRes, placesteaserMockUrl } from "./mocks/placesteaser.mock";
+import { placesGeoMockResp } from "./mocks/placesgeo.mock";
+import { placesTeaserMockResp_all } from "./mocks/placesteaser.mock";
+
+import fetchMock from 'fetch-mock';
 
 export default {
     title: 'COMPONENTS/LocationFinder',
@@ -19,30 +20,66 @@ export default {
             page: locationFinderDocs,
         },
         layout: "fullscreen",
-        msw: {
-            handlers: [
-                rest.get(placesgeoMockUrl, (_req, res, ctx) => {
-                    console.info('%c LOCATION FINDER: Mocking the request to /placesgeo...', 'color: #29B6F6;');
-                    return res(
-                        ctx.status(200),
-                        ctx.json(placesgeoMockRes)
-                    )
-                }),
-                rest.get(placesteaserMockUrl, (_req, res, ctx) => {
-                    console.info('%c LOCATION FINDER: Mocking the request to /placesteaser...', 'color: #29B6F6;');
-                    return res(
-                        ctx.status(200),
-                        ctx.set('Content-Type', 'text/html'),
-                        ctx.text(placesteaserMockRes)
-                    )
-                }),
+        fetchMock: {
+            // "fetchMock.mocks" is a list of mocked
+            // API endpoints.
+            mocks: [
+                {
+                    matcher: {
+                        name: 'placesGeo',
+                        url: 'begin:/placesgeo.json',
+                    },
+                    response: (url, options, request) => {
+                        printMockInfo('placesGeo', url, options, request);
+                        return placesGeoMockResp
+                    },
+                },
+                {
+                    matcher: {
+                        name: 'placesTeaser',
+                        url: 'begin:/placesteaser.html',
+                    },
+                    response: (url, options, request) => {
+                        printMockInfo('placesTeaser', url, options, request);
+                        return placesTeaserMockResp_all
+                    },
+                },
             ],
         },
     },
     tags: ['autodocs']
 } satisfies Meta;
 
+/* Print mock info to the console because requests are not always visible on the Network panel */
+function printMockInfo(mockName: string, url: string, options: any, request: any) {
+    console.groupCollapsed(`%c====== MOCK REQUEST: ${mockName} ======`, 'color: #4DB6AC; font-weight: bold;');
+
+    console.log(`%cURL: %c${url}`, 'color: #E57373; font-weight: bold;', 'color: #4DB6AC');
+    console.log(`%cOptions %c${options}`, 'color: #E57373; font-weight: bold;', 'color: #4DB6AC');
+    console.log(`%cRequest %c${request}`, 'color: #E57373; font-weight: bold;', 'color: #4DB6AC');
+    console.groupEnd();
+}
+
+/* Debug mock routes */
+async function testMocks() {
+    console.log('=== Testing mocks ===');
+    const [placesGeoReq, placesTeaserReq] = await Promise.all([
+        fetch('/placesgeo.json?north=85.05112899999995&south=-85.05112899999997&east=180.00000255247056&west=-180.0000025524718&pagetypes=34&pages=1000435&recursive=2&hmac=3e4c316ebf46da7e82bcb3c911655e561fb95f52'),
+        fetch('/placesteaser.html?details=name%2Cbranch_code%2Ctelephone%2Clogo')
+    ]);
+
+    const [placesGeoResp, placesTeaserResp] = await Promise.all([
+        placesGeoReq.json(),
+        placesTeaserReq.json()
+    ])
+
+    console.log('GEO', placesGeoResp);
+    console.log('TEASER', placesTeaserResp);
+}
+
 const Template = () => {
+    // testMocks();
+
     return `
         <toujou-location-finder
             class="location-finder"

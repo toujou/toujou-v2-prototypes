@@ -43,25 +43,6 @@ import { customViewports } from "./configUtils/customViewports.js";
 
 import toujouTheme from "./toujouTheme";
 
-// Service worker for the mocks
-import { initialize, mswDecorator } from "msw-storybook-addon";
-
-let workerOptions = {
-    onUnhandledRequest: 'bypass',
-};
-
-if (location.hostname === "toujou.github.io") {
-    workerOptions.serviceWorker = {
-        url: "/toujou-v2-prototypes/assets/mockServiceWorker.js"
-    }
-}
-
-// When the msw is working, some stories don't work correctly (for instance slider) when the inspector is open
-// Somehow the msw trigger a page refresh when the inspector is open
-// initialize(workerOptions);
-
-export const decorators = [mswDecorator];
-
 export const parameters = {
     docs: {
         theme: toujouTheme,
