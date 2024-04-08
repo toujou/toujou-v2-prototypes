@@ -8,7 +8,7 @@ import locationFinderDocs from './location-finder.docs.mdx';
 import '@toujou/toujou-location-finder/lib'
 
 import { placesGeoMockResp } from "./mocks/placesgeo.mock";
-import { placesTeaserMockResp_all } from "./mocks/placesteaser.mock";
+import { placesTeaserMockResp_all, placesTeaserMockResp_singleTeaser } from "./mocks/placesteaser.mock";
 
 export default {
     title: 'COMPONENTS/LocationFinder',
@@ -37,7 +37,13 @@ export default {
                     },
                     response: (url: any, options: any, request: any) => {
                         printMockInfo('placesTeaser', url, options, request);
-                        return placesTeaserMockResp_all
+                        const urlParams = new URLSearchParams(url)
+                        if (!urlParams) return;
+
+                        const paramIds = urlParams.get("ids");
+                        return (paramIds && paramIds.split(",").length > 1)
+                            ? placesTeaserMockResp_all
+                            : placesTeaserMockResp_singleTeaser;
                     },
                 },
             ],
@@ -56,7 +62,7 @@ function printMockInfo(mockName: string, url: string, options: any, request: any
     console.groupEnd();
 }
 
-/* Debug mock routes */
+/* Debug mock routes *//*
 async function testMocks() {
     console.log('=== Testing mocks ===');
     const [placesGeoReq, placesTeaserReq] = await Promise.all([
@@ -72,6 +78,7 @@ async function testMocks() {
     console.log('GEO', placesGeoResp);
     console.log('TEASER', placesTeaserResp);
 }
+*/
 
 const Template = () => {
     // testMocks();
