@@ -1414,6 +1414,10 @@ figure {
     margin-top: var(--fieldset-margin-top);
 }
 
+:is(.input-group, .form__row, input[hidden], .fieldset) + .fieldset {
+    margin-top: var(--form-successive-groups-distance);
+}
+
 .fieldset--disabled {
     --fieldset-legend-color: var(--color-font-light);
 }
