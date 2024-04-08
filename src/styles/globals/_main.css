@@ -9,6 +9,7 @@ main:first-child,
     padding-top: var(--main-padding-top);
 }
 
-main > *:not(span, .breadcrumb, .chapter):first-child {
+main > *:not(span, .breadcrumb, .chapter):first-child,
+main > span:first-child + *:not(.breadcrumb, .chapter) {
     margin-top: var(--spacing-between-elements-normal);
 }
