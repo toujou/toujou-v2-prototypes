@@ -3,7 +3,7 @@
         --slider-display: block;
         --slider-width: var(--content-width-with-padding);
         --slider-max-width: var(--content-max-width);
-        --slider-margin: var(--spacing-between-elements-normal) auto 0;
+        --slider-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
         --slider-aspect-ratio: var(--aspect-ratio-16-9);
         --slider-position: relative;
         --slider-z-index: var(--z-index-content);
@@ -48,6 +48,10 @@
         max-width: var(--slider-max-width);
         margin: var(--slider-margin);
         z-index: var(--slider-z-index);
+    }
+
+    span:first-child + .slider {
+        --slider-margin: var(--spacing-between-elements-normal) auto 0;
     }
 
     .text-block__figure .slider {
