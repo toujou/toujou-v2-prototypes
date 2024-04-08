@@ -83,7 +83,7 @@
         --toujou-location-finder-display: grid;
         --toujou-location-finder-height: auto;
         --toujou-location-finder-width: var(--content-width-with-padding);
-        --toujou-location-finder-max-width: var(--content-max-width);
+        --toujou-location-finder-max-width: var(--content-wide-max-width);
         --toujou-location-finder-aspect-ratio: var(--aspect-ratio-square);
         --toujou-location-finder-margin: var(--spacing-between-elements-normal) auto 0;
         --toujou-location-finder-grid-z-index: var(--z-index-content);
