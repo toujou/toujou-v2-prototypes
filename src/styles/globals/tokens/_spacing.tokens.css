@@ -27,5 +27,6 @@
     ::before,
     ::after {
         --spacing-between-elements-normal: var(--spacing-xxxl);
+        --spacing-between-consecutive-elements-normal: var(--spacing-xl);
     }
 }
