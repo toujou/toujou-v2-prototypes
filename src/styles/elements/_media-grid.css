@@ -19,16 +19,12 @@
     }
 
     .media-grid:first-child {
-        --media-grid-margin: 0 auto;
+        --media-grid-margin: var(--spacing-between-elements-normal) auto 0;
     }
 
     .media-grid[media-grid-column-number="3"],
     .media-grid[media-grid-column-number="4"] {
         --media-grid-max-width: var(--content-wide-max-width);
-    }
-
-    .text-block + .media-grid {
-        --media-grid-margin: 0 auto var(--spacing-between-consecutive-elements-normal);
     }
 
     @media screen and (min-width: 640px) {
