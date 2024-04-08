@@ -125,7 +125,7 @@ h6,
     .font--epsilon,
     .font--omega
 ):not(:first-child) {
-    margin-top: var(--spacing-between-elements-normal);
+    margin-top: var(--spacing-between-consecutive-elements-normal);
 }
 
 :is(main, .chapter) > :is(
