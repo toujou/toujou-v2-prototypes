@@ -75,6 +75,9 @@ export const parameters = {
             ],
         }
     },
+    fetchMock: {
+        debug: true,
+    }
 }
 
 console.clear();
