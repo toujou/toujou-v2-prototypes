@@ -3,7 +3,7 @@
         --blockquote-grid-columns-count: 100%;
         --blockquote-grid-gap: var(--spacing-normal);
         --blockquote-grid-z-index: var(--z-index-content);
-        --blockquote-grid-margin: var(--spacing-between-elements-normal) auto;
+        --blockquote-grid-margin: var(--spacing-between-consecutive-elements-normal) auto;
         --blockquote-grid-width: var(--content-width-with-padding);
         --blockquote-grid-max-width: var(--content-wide-max-width);
 
