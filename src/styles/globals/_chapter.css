@@ -10,6 +10,10 @@
     padding: var(--chapter-padding);
 }
 
+*:not(span) + .chapter:not(:first-child) {
+    margin-top: var(--spacing-between-elements-normal);
+}
+
 .chapter--primary {
     --chapter-background-color: var(--color-primary);
 }
