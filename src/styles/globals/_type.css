@@ -66,7 +66,7 @@ table {
 ul,
 ol {
     padding-left: 0;
-    margin: var(--spacing-normal) 0 var(--spacing-normal) calc(var(--spacing-normal) + var(--spacing-xs));
+    margin: var(--spacing-normal) 0 var(--spacing-normal);
 }
 
 main > :is(ul, ol) {
@@ -224,11 +224,17 @@ a:not(.button):focus-visible {
 }
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */
-:is(main, .chapter, .html-container) > :is(p, ul:not(.card-collection), ol, h1, h2, h3, h4, h5, h6, a) {
+:is(main, .chapter, .html-container) > :is(p, h1, h2, h3, h4, h5, h6, a) {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
     margin-left: auto;
     margin-right: auto;
+}
+
+:is(main, .chapter, .html-container) > :is(p, ul:not(.card-collection), ol) {
+    width: var(--content-width-with-padding);
+    max-width: var(--content-max-width);
+    margin-inline: auto;
 }
 
 *[type-alignment="left"],
