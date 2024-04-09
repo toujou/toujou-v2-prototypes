@@ -139,6 +139,79 @@ const Template = () => {
 
 
     </section>
+
+    <section class="chapter  chapter--default" id="default-874e50f6b51aaf5b238ffc4cb61907dd">
+
+
+
+<span id="c2570"></span>
+
+
+
+
+
+
+
+
+    <toujou-text-block class="text-block" text-block-column-count="2" text-block-media-position="">
+
+
+                <toujou-text-block-column class="text-block-column">
+
+
+                    <div class="text-block__content">
+
+
+
+\t
+\t\t<h2 data-da-header="true" data-da-id="128" data-da-next="129" data-da-prev="127" data-da-focused="false" data-da-right="134" data-da-down="140" data-da-up="127"><strong>Beratung und Unterstützung findet in&nbsp;folgenden Bereichen statt</strong></h2><ul class="list" data-da-list="true" data-da-id="129" data-da-next="130" data-da-prev="128" data-da-focused="false"> \t<li data-da-list-item="true" data-da-id="130" data-da-next="131" data-da-prev="129" data-da-focused="false">bei der Aufnahme und Gestaltung persönlicher, sozialer Beziehungen</li> \t<li data-da-list-item="true" data-da-id="131" data-da-next="132" data-da-prev="130" data-da-focused="false">bei der Selbstversorgung und beim Wohnen</li> \t<li data-da-list-item="true" data-da-id="132" data-da-next="133" data-da-prev="131" data-da-focused="false">bei der Tagesgestaltung, Freizeit und der Teilnahme am gesellschaftlichen Leben</li> \t<li data-da-list-item="true" data-da-id="133" data-da-next="134" data-da-prev="132" data-da-focused="false">beim Umgang mit den Auswirkungen der Beeinträchtigung</li> </ul>
+\t
+
+
+
+
+
+                    </div>
+                </toujou-text-block-column>
+
+
+
+                <toujou-text-block-column class="text-block-column">
+
+
+                    <div class="text-block__content">
+
+
+
+\t
+\t\t<h2 data-da-header="true" data-da-id="134" data-da-next="135" data-da-prev="133" data-da-focused="false" data-da-down="140" data-da-left="128" data-da-up="126"><strong>Voraussetzungen für die Aufnahme ins Gemeinschaftliche Wohnen</strong></h2><ul class="list" data-da-list="true" data-da-id="135" data-da-next="136" data-da-prev="134" data-da-focused="false"> \t<li data-da-list-item="true" data-da-id="136" data-da-next="137" data-da-prev="135" data-da-focused="false">Das Mindestalter beträgt 18 Jahre</li> \t<li data-da-list-item="true" data-da-id="137" data-da-next="138" data-da-prev="136" data-da-focused="false">Es muss vorrangig eine geistige Behinderung im Sinne des&nbsp;§&nbsp;2&nbsp;SGB&nbsp;IX&nbsp;vorliegen</li> \t<li data-da-list-item="true" data-da-id="138" data-da-next="139" data-da-prev="137" data-da-focused="false">Tagsüber muss einer Beschäftigung in einer Werkstatt&nbsp;für behinderte Menschen oder auf dem freien Arbeitsmarkt nachgegangen werden, bzw. eine tagesstrukturierende Maßnahme in Ansbach, Herrieden oder Feuchtwangen besucht werden</li> \t<li data-da-list-item="true" data-da-id="139" data-da-next="140" data-da-prev="138" data-da-focused="false">Die Notwendigkeit einer Heimunterbringung muss gegeben sein</li> </ul>
+\t
+
+
+
+
+
+                    </div>
+                </toujou-text-block-column>
+
+
+    </toujou-text-block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
         </main>
     `;
 };

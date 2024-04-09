@@ -275,7 +275,8 @@ a:not(.button):focus-visible {
 }
 
 ul, ol {
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 1.1rem;
 }
 
 :where(ul, ol) li::marker {
