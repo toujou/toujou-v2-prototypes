@@ -1,4 +1,4 @@
-const s={title:"TESTS/Type Spacing Tests"},a=()=>`
+const s={title:"TESTS/Type Tests"},a=()=>`
         <main id="main" skippy-links-label="Inhaltsbereich">
             <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
