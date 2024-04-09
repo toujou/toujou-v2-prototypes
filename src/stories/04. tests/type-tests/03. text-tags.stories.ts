@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/web-components';
 
 export default {
-    title: 'TESTS/Type Spacing Tests',
+    title: 'TESTS/Type Tests',
 } satisfies Meta;
 
 const Template = () => {

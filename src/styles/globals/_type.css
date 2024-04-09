@@ -268,6 +268,16 @@ a:not(.button):focus-visible {
     color: var(--color-font-light);
 }
 
+ul, ol {
+    list-style-position: inside;
+}
+
+:where(ul, ol) li::marker {
+    margin-right: var(--spacing-xxl);
+    display: inline-block;
+    width: 4rem;
+}
+
 /* stylelint-disable-next-line selector-no-vendor-prefix */
 a:-webkit-any-link:focus-visible {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
