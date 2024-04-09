@@ -139,7 +139,7 @@
     --content-wide-max-width: 1440px;
     --content-padding-to-border: var(--spacing-normal);
     --content-spacing-between-elements: var(--spacing-xl);
-    --content-spacing-between-columns: var(--spacing-l);
+    --content-spacing-between-columns: var(--spacing-between-consecutive-elements-normal);
     --topbar-height-small: 54px;
     --topbar-height-medium: 64px;
     --topbar-height-large: 80px;
@@ -390,6 +390,7 @@
     ::before,
     ::after {
         --spacing-between-elements-normal: var(--spacing-xxxl);
+        --spacing-between-consecutive-elements-normal: var(--spacing-xl);
     }
 }
 
@@ -1833,7 +1834,7 @@ h6,
     .font--epsilon,
     .font--omega
 ):not(:first-child) {
-    margin-top: var(--spacing-between-elements-normal);
+    margin-top: var(--spacing-between-consecutive-elements-normal);
 }
 
 :is(main, .chapter) > :is(
@@ -1935,7 +1936,7 @@ a:not(.button):focus-visible {
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */
 
-:is(main, .chapter) > :is(p, ul:not(.card-collection), ol, h1, h2, h3, h4, h5, h6, a) {
+:is(main, .chapter, .html-container) > :is(p, ul:not(.card-collection), ol, h1, h2, h3, h4, h5, h6, a) {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
     margin-left: auto;
