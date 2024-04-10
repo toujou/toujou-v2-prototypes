@@ -9,7 +9,7 @@
         --gallery-grid-gap: var(--spacing-s);
         --gallery-width: var(--content-width-with-padding);
         --gallery-max-width: var(--content-max-width);
-        --gallery-margin: var(--spacing-between-elements-normal) auto 0;
+        --gallery-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 
         --gallery-item-aspect-ratio: var(--aspect-ratio-default);
 
