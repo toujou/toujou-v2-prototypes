@@ -7,7 +7,7 @@
         --item-collection-gap: 0;
         --item-collection-width: var(--content-width-with-padding);
         --item-collection-max-width: var(--content-max-width);
-        --item-collection-margin: var(--spacing-between-elements-normal) auto 0;
+        --item-collection-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
         --item-collection-list-style: none;
         --item-collection-padding: 0;
         --item-collection-z-index: var(--z-index-content);
