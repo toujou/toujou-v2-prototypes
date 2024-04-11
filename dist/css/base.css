@@ -4595,6 +4595,13 @@ input[type="search"]::-webkit-search-cancel-button:is(:hover, :focus-visible) {
     overflow: var(--single-media-overflow);
 }
 
+.slider .single-media__image {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
 .single-media:first-child,
 .media-grid .single-media {
     --single-media-margin: 0 auto;

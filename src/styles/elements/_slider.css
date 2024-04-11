@@ -37,10 +37,14 @@
         --slider-control-icon-transform: translate(-50%, -50%);
 
         --slider-item-width: 100%;
+        --slider-item-height: 100%;
         --slider-item-margin: 0;
         --slider-item-position: relative;
         --slider-item-border-radius: var(--border-radius-default);
         --slider-item-overflow: hidden;
+        --slider-item-display: flex;
+        --slider-item-align-items: center;
+        --slider-item-justify-content: center;
 
         display: var(--slider-display);
         position: var(--slider-position);
@@ -134,10 +138,14 @@
 
     .slider__item {
         width: var(--slider-item-width);
+        height: var(--slider-item-height);
         margin: var(--slider-item-margin);
         position: var(--slider-item-position);
         border-radius: var(--slider-item-border-radius);
         overflow: var(--slider-item-overflow);
+        display: var(--slider-item-display);
+        align-items: var(--slider-item-align-items);
+        justify-content: var(--slider-item-justify-content);
     }
 
     /* Header slider height */

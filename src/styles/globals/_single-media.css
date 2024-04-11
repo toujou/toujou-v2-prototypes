@@ -25,6 +25,11 @@
     overflow: var(--single-media-overflow);
 }
 
+.slider .single-media__image {
+    height: fit-content;
+    width: fit-content;
+}
+
 .single-media:first-child,
 .media-grid .single-media {
     --single-media-margin: 0 auto;
