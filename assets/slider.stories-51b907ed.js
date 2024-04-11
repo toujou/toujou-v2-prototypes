@@ -49,7 +49,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="${i.autoplayInterval*1e3}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <img class="toujou-single-media__image" src="https://picsum.photos/1602/902" alt="Nice image">
+                                <img class="single-media__image" src="https://picsum.photos/400/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="${i.autoplayInterval*1e3}">
@@ -127,7 +127,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="\${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <img class="toujou-single-media__image" src="https://picsum.photos/1602/902" alt="Nice image">
+                                <img class="single-media__image" src="https://picsum.photos/400/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="\${args.autoplayInterval * 1000}">
