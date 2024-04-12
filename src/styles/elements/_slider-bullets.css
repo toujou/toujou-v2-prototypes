@@ -31,7 +31,13 @@
         z-index: var(--slider-bullets-z-index);
     }
 
-    :is(.slider[content-type="logos"], .slider[content-type="teaser"]) ul.slider-bullets {
+    .slider[content-type="logos"] ul.slider-bullets {
+        --slider-bullets-position: relative;
+        --slider-bullets-inset: unset;
+        --slider-bullets-margin: var(--spacing-l) 0 var(--spacing-normal);
+    }
+
+    :is(.slider[content-type="teaser"]) ul.slider-bullets {
         --slider-bullets-position: relative;
         --slider-bullets-inset: unset;
         --slider-bullets-margin: var(--spacing-normal) 0;

@@ -81,6 +81,7 @@
     .slider[content-type="logos"] {
         --slider-margin: var(--spacing-between-consecutive-elements-normal) auto;
         --slider-slides-gap: var(--spacing-l);
+        --slider-control-distance-to-margin: 0;
     }
 
     .slider[content-type="review"] {
