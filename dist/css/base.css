@@ -5396,6 +5396,11 @@ a:not(.button):focus-visible {
     margin-inline: auto;
 }
 
+:where(h1, h2, h3, h4, h5, h6) + span + *,
+:where(h1, h2, h3, h4,  h5, h6) + *:not(span, h1, h2, h3, h4, h5, h6, .chapter) {
+    margin-top: calc(var(--spacing-between-consecutive-elements-normal) / 2);
+}
+
 *[type-alignment="left"],
 .font--align-left {
     text-align: left;
