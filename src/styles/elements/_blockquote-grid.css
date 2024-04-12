@@ -1,7 +1,7 @@
 @layer components {
     .blockquote-grid {
         --blockquote-grid-columns-count: 100%;
-        --blockquote-grid-gap: var(var(--content-spacing-between-columns));
+        --blockquote-grid-gap: var(--content-spacing-between-columns);
         --blockquote-grid-z-index: var(--z-index-content);
         --blockquote-grid-margin: var(--spacing-between-consecutive-elements-normal) auto;
         --blockquote-grid-width: var(--content-width-with-padding);
