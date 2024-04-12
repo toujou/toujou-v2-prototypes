@@ -6,7 +6,7 @@
         --hero-media-display: block;
         --hero-media-position: relative;
         --hero-media-padding: 0;
-        --hero-media-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+        --hero-media-margin: var(--spacing-between-consecutive-elements-normal) auto;
         --hero-media-z-index: var(--z-index-content);
         --hero-media-border-radius: var(--border-radius-default);
 
