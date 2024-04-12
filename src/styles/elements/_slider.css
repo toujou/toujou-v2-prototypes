@@ -76,6 +76,7 @@
     .slider[content-type="teaser"] {
         --slider-max-width: var(--content-wide-max-width);
         --slider-aspect-ratio: var(--aspect-ratio-default);
+        --slider-margin: var(--spacing-between-consecutive-elements-normal) auto calc(var(--slider-control-size) + var(--spacing-l));
     }
 
     .slider[content-type="logos"] {
@@ -166,6 +167,10 @@
     @media screen and (min-width: 840px) {
         .slider[content-type="logos"] {
             --slider-slides-gap: var(--spacing-xxl);
+        }
+
+        .slider[content-type="teaser"] {
+            --slider-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
         }
 
         .header .slider {
