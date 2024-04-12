@@ -9,7 +9,8 @@ export default {
         "@storybook/addon-essentials",
         "@storybook/addon-a11y",
         "@geometricpanda/storybook-addon-badges",
-        "storybook-addon-fetch-mock"
+        "storybook-addon-fetch-mock",
+        "@chromatic-com/storybook"
     ],
     "framework": {
         name: "@storybook/web-components-vite",
