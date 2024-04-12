@@ -1,8 +1,8 @@
 .single-media {
     --single-media-position: relative;
+    --single-media-height: fit-content;
     --single-media-width: 100%;
     --single-media-max-width: 100%;
-    --single-media-height: fit-content;
     --single-media-margin: var(--spacing-between-elements-normal) auto 0;
     --single-media-display: block;
     --single-media-max-height: 100%;
@@ -26,8 +26,11 @@
 }
 
 .slider .single-media__image {
-    height: fit-content;
-    width: fit-content;
+    --single-media-media-height: 100%;
+    --single-media-media-width: 100%;
+    --single-media-media-object-fix: cover;
+
+    object-fit: var(--single-media-media-object-fix);
 }
 
 .single-media:first-child,
