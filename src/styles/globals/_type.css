@@ -239,7 +239,8 @@ a:not(.button):focus-visible {
 
 :where(h1, h2, h3, h4, h5, h6) + span + *,
 :where(h1, h2, h3, h4,  h5, h6) + *:not(span, h1, h2, h3, h4, h5, h6, .chapter) {
-    margin-top: calc(var(--spacing-between-consecutive-elements-normal) / 2);
+    /* important needed because of different css layers */
+    margin-top: calc(var(--spacing-between-consecutive-elements-normal) / 2) !important;
 }
 
 *[type-alignment="left"],
