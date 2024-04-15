@@ -3,6 +3,7 @@ import { StoryFn, Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
+import { renderCardCategoryChips } from "./helpers/_renderCardCategoriChips";
 
 export default {
     title: 'COMPONENTS/Collections',
@@ -43,10 +44,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials', 'Tests', 'Frontend', 'UI-UX', 'Web-Design'], args.elementDesign)}
                         </div>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
@@ -84,10 +82,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -115,10 +110,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -146,10 +138,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                     </div>
                     <div class="collection-item__bottom">

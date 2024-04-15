@@ -3,6 +3,7 @@ import { Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
+import { renderCardCategoryChips } from "../card-collection/helpers/_renderCardCategoriChips";
 
 export default {
     title: 'COMPONENTS/Collections',
@@ -24,6 +25,10 @@ const Template = () => {
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
+                        <div class="collection-item__categories">
+                            ${renderCardCategoryChips(['Tutorials', 'New', 'Web-design', "A11y"], 'primary')}
+                        </div>
 
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">

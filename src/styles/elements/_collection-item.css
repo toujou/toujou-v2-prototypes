@@ -37,7 +37,11 @@
 
         --collection-item-categories-position: absolute;
         --collection-item-categories-top: var(--spacing-normal);
-        --collection-item-categories-left: 0;
+        --collection-item-categories-left: var(--spacing-normal);
+        --collection-item-categories-display: flex;
+        --collection-item-categories-flex-flow: row wrap;
+        --collection-item-categories-gap: var(--spacing-xs);
+        --collection-item-categories-padding: 0 var(--spacing-xl) 0 0;
 
         --collection-item-category-background-color: var(--color-primary);
         --collection-item-category-color: var(--color-bg);
@@ -245,6 +249,10 @@
         position: var(--collection-item-categories-position);
         top: var(--collection-item-categories-top);
         left: var(--collection-item-categories-left);
+        display: var(--collection-item-categories-display);
+        flex-flow: var(--collection-item-categories-flex-flow);
+        gap: var(--collection-item-categories-gap);
+        padding: var(--collection-item-categories-padding);
     }
 
     .collection-item__category {

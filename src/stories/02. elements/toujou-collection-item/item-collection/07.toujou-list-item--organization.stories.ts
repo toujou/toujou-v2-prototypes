@@ -3,6 +3,7 @@ import { Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
+import { renderCardCategoryChips } from "../card-collection/helpers/_renderCardCategoriChips";
 
 export default {
     title: 'COMPONENTS/Collections',
@@ -24,6 +25,7 @@ const Template = () => {
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -35,10 +37,7 @@ const Template = () => {
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                New
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -95,10 +94,7 @@ const Template = () => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Rabatt
-                            </a>
+                            ${renderCardCategoryChips(['Rabatt'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
