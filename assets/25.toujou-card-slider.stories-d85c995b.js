@@ -1,4 +1,4 @@
-import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
+import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"

@@ -1,4 +1,4 @@
-import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s,r as e}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:s}},tags:["autodocs"]},a=()=>`
+import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s,r as e}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:s}},tags:["autodocs"]},a=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
