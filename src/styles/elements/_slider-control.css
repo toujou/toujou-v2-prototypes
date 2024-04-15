@@ -35,7 +35,8 @@
         --slider-control-inset: 50% auto auto var(--slider-control-distance-to-margin);
     }
 
-    .slider[content-type="card-collection"] button:is(.slider-control--prev, .slider-control--next) {
+    .slider[content-type="card-collection"] button:is(.slider-control--prev, .slider-control--next),
+    .slider[content-type="teaser"] button:is(.slider-control--prev, .slider-control--next) {
         --slider-control-distance-to-margin: 0;
     }
 
