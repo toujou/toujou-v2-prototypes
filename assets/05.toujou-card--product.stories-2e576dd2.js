@@ -1,4 +1,4 @@
-import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as a,r as o}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:a}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},s=e=>`
+import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as a}from"./toujou-collection-item.docs-8f740b30.js";import{r as o}from"./_renderCardCategoriChips-1ee0e70d.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const h={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:a}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},s=e=>`
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
@@ -134,4 +134,4 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as a,r as o}from"./
             </li>
         </ul>
     \`;
-}`,...(l=(c=t.parameters)==null?void 0:c.docs)==null?void 0:l.source}}};const h=["CardProduct"];export{t as CardProduct,h as __namedExportsOrder,p as default};
+}`,...(l=(c=t.parameters)==null?void 0:c.docs)==null?void 0:l.source}}};const f=["CardProduct"];export{t as CardProduct,f as __namedExportsOrder,h as default};

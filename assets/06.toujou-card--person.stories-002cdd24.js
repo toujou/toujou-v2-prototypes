@@ -1,4 +1,4 @@
-import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s,r as a}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const f={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=e=>`
+import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-collection-item.docs-8f740b30.js";import{r as a}from"./_renderCardCategoriChips-1ee0e70d.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const g={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=e=>`
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
@@ -386,4 +386,4 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s,r as a}from"./
             </li>
         </ul>
     \`;
-}`,...(t=(i=o.parameters)==null?void 0:i.docs)==null?void 0:t.source}}};const g=["CardPerson"];export{o as CardPerson,g as __namedExportsOrder,f as default};
+}`,...(t=(i=o.parameters)==null?void 0:i.docs)==null?void 0:t.source}}};const h=["CardPerson"];export{o as CardPerson,h as __namedExportsOrder,g as default};

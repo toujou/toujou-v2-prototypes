@@ -1,4 +1,4 @@
-import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
+import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-8f740b30.js";import{r as s}from"./_renderCardCategoriChips-1ee0e70d.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const g={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
@@ -498,4 +498,4 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
             </toujou-slider-count>
         </toujou-slider>
     \`;
-}`,...(l=(t=e.parameters)==null?void 0:t.docs)==null?void 0:l.source}}};const g=["CollectionSlider"];export{e as CollectionSlider,g as __namedExportsOrder,p as default};
+}`,...(l=(t=e.parameters)==null?void 0:t.docs)==null?void 0:l.source}}};const h=["CollectionSlider"];export{e as CollectionSlider,h as __namedExportsOrder,g as default};

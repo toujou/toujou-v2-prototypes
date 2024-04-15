@@ -1,16 +1,14 @@
-import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:l}},tags:["autodocs"]},s=()=>`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-collection-item.docs-8f740b30.js";import{r as i}from"./_renderCardCategoriChips-1ee0e70d.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const b={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},a=e=>`
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
                         <div class="collection-item__categories">
-                            ${c(["Tutorials","New","Web-design","A11y"],"primary")}
+                            ${i(["Tutorials","Tests","Frontend","UI-UX","Web-Design"],e.elementDesign)}
                         </div>
-
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -25,11 +23,12 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -39,17 +38,21 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            ${i(["Tutorials"],e.elementDesign)}
+                        </div>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -63,21 +66,25 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            ${i(["Tutorials"],e.elementDesign)}
+                        </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                        <h3 class="collection-item__title">Short headline</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                Short description
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -87,17 +94,21 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
-                    <header class="collection-item__top">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
+                    <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                    </header>
+                        <div class="collection-item__categories">
+                            ${i(["Tutorials"],e.elementDesign)}
+                        </div>
+                    </div>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -111,21 +122,19 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-        </ol>
-    `,e=s.bind({});var t,i,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
+        </ul>
+    `,t=a.bind({});t.args={elementDesign:"default"};var o,n,l;t.parameters={...t.parameters,docs:{...(o=t.parameters)==null?void 0:o.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
                         <div class="collection-item__categories">
-                            \${renderCardCategoryChips(['Tutorials', 'New', 'Web-design', "A11y"], 'primary')}
+                            \${renderCardCategoryChips(['Tutorials', 'Tests', 'Frontend', 'UI-UX', 'Web-Design'], args.elementDesign)}
                         </div>
-
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -140,11 +149,12 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -154,17 +164,21 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
+                        </div>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -178,21 +192,25 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
+                        </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                        <h3 class="collection-item__title">Short headline</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                Short description
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -202,17 +220,21 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
-                    <header class="collection-item__top">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="blog" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
+                    <div class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                    </header>
+                        <div class="collection-item__categories">
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
+                        </div>
+                    </div>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                            <span class="collection-item__subtitle">11.03.2022</span>
+                            <span class="collection-item__subtitle">Jerôme Grad</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -226,6 +248,6 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-        </ol>
+        </ul>
     \`;
-}`,...(o=(i=e.parameters)==null?void 0:i.docs)==null?void 0:o.source}}};const g=["ListItemDefault"];export{e as ListItemDefault,g as __namedExportsOrder,d as default};
+}`,...(l=(n=t.parameters)==null?void 0:n.docs)==null?void 0:l.source}}};const h=["CardBlog"];export{t as CardBlog,h as __namedExportsOrder,b as default};

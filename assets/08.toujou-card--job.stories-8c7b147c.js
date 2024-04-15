@@ -1,14 +1,14 @@
-import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[l.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-collection-item.docs-8f740b30.js";import{r as a}from"./_renderCardCategoriChips-1ee0e70d.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const h={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},c=e=>`
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
 
                         <div class="collection-item__categories">
-                            ${s(["Tutorials"],"primary")}
+                            ${a(["Tutorials"],e.elementDesign)}
                         </div>
 
                         <toujou-media-info class="media-info">
@@ -23,13 +23,14 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                         </toujou-media-info>
                     </header>
                     <div class="collection-item__bottom">
+
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hiring organization</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -38,7 +39,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -48,21 +49,21 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                        <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -71,7 +72,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -81,8 +82,8 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -94,30 +95,8 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                             <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
                         </p>
 
-                        <p class="collection-item__abstract">
-                            <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
-                            </span>
-                        </p>
-                        <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            zur Beschreibung
-                        </a>
-                    </div>
-                </toujou-collection-item>
-            </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
-                    <header class="collection-item__top">
-                        <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
-                        </figure>
-                    </header>
-                    <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
-
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -136,19 +115,52 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-        </ol>
-    `,e=c.bind({});var t,i,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
+                    <header class="collection-item__top">
+                        <figure class="collection-item__figure">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                        </figure>
+                    </header>
+                    <div class="collection-item__bottom">
+                        <h3 class="collection-item__title">Nice headline</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
+                        </p>
+
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
+                                <li class="separated-list__item">Part-time</li>
+                                <li class="separated-list__item">Volunteer</li>
+                                <li class="separated-list__item">Immediate start</li>
+                            </ul>
+                        </div>
+
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                            </span>
+                        </p>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            zur Beschreibung
+                        </a>
+                    </div>
+                </toujou-collection-item>
+            </li>
+        </ul>
+    `,t=c.bind({});t.args={elementDesign:"default"};var i,l,o;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
 
                         <div class="collection-item__categories">
-                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
 
                         <toujou-media-info class="media-info">
@@ -163,13 +175,14 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                         </toujou-media-info>
                     </header>
                     <div class="collection-item__bottom">
+
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hiring organization</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -178,7 +191,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -188,21 +201,21 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                        <h3 class="collection-item__title">Headline</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
                         </p>
 
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -211,7 +224,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -221,8 +234,8 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -234,30 +247,8 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                             <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
                         </p>
 
-                        <p class="collection-item__abstract">
-                            <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
-                            </span>
-                        </p>
-                        <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            zur Beschreibung
-                        </a>
-                    </div>
-                </toujou-collection-item>
-            </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
-                    <header class="collection-item__top">
-                        <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
-                        </figure>
-                    </header>
-                    <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
-
-                        <div class="card-collection__subheading">
-                            <ul class="separated-list" list-separator="comma" type-weight="bold">
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
                                 <li class="separated-list__item">Part-time</li>
                                 <li class="separated-list__item">Volunteer</li>
                                 <li class="separated-list__item">Immediate start</li>
@@ -276,6 +267,39 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-        </ol>
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="event" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
+                    <header class="collection-item__top">
+                        <figure class="collection-item__figure">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                        </figure>
+                    </header>
+                    <div class="collection-item__bottom">
+                        <h3 class="collection-item__title">Nice headline</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
+                        </p>
+
+                        <div class="collection-item__subheading">
+                            <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
+                                <li class="separated-list__item">Part-time</li>
+                                <li class="separated-list__item">Volunteer</li>
+                                <li class="separated-list__item">Immediate start</li>
+                            </ul>
+                        </div>
+
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                            </span>
+                        </p>
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            zur Beschreibung
+                        </a>
+                    </div>
+                </toujou-collection-item>
+            </li>
+        </ul>
     \`;
-}`,...(o=(i=e.parameters)==null?void 0:i.docs)==null?void 0:o.source}}};const g=["ListItemJob"];export{e as ListItemJob,g as __namedExportsOrder,d as default};
+}`,...(o=(l=t.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const b=["CardJob"];export{t as CardJob,b as __namedExportsOrder,h as default};

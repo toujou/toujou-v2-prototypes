@@ -1,16 +1,23 @@
-import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./_renderCardCategoriChips-d4ece652.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:l}},tags:["autodocs"]},s=()=>`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
+import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./toujou-collection-item.docs-8f740b30.js";import{r as t}from"./_renderCardCategoriChips-1ee0e70d.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const f={title:"COMPONENTS/Collections",parameters:{badges:[l.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},a=i=>`
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
                         <div class="collection-item__categories">
-                            ${i(["Tutorials","New"],"primary")}
+                            ${t(["Tutorials"],i.elementDesign)}
                         </div>
-
+                        <div class="collection-item__location">
+                            <h4 class="collection-item__location-city">
+                                Marbella
+                            </h4>
+                            <h5 class="collection-item__location-country">
+                                Spanien
+                            </h5>
+                        </div>
+                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -21,15 +28,6 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__location">
-                            <h4 class="collection-item__location-city">
-                                Marbella
-                            </h4>
-                            <h5 class="collection-item__location-country">
-                                Spanien
-                            </h5>
-                        </div>
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
@@ -39,7 +37,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
 
@@ -61,14 +59,14 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            ${i(["Tutorials"],"primary")}
+                            ${t(["Tutorials"],i.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -81,7 +79,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                        <h3 class="collection-item__title">Musterreise</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
@@ -110,14 +108,14 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            ${i(["Tutorials"],"primary")}
+                            ${t(["Tutorials"],i.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -131,6 +129,50 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Hotel name</span>
+                        </p>
+
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                            </span>
+                        </p>
+
+                        <p class="collection-item__trip-price">
+                            <span class="collection-item__trip-price-prefix">ab</span>
+                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                            <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                        </p>
+
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            zur Beschreibung
+                        </a>
+                    </div>
+                </toujou-collection-item>
+            </li>
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
+                    <header class="collection-item__top">
+                        <figure class="collection-item__figure">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                        </figure>
+                        <div class="collection-item__categories">
+                            ${t(["Tutorials"],i.elementDesign)}
+                        </div>
+                        <div class="collection-item__location">
+                            <h4 class="collection-item__location-city">
+                                Marbella
+                            </h4>
+                            <h5 class="collection-item__location-country">
+                                Spanien
+                            </h5>
+                        </div>
+                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                    </header>
+                    <div class="collection-item__bottom">
+                        <h3 class="collection-item__title">Musterreise</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
@@ -154,62 +196,29 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
-                    <header class="collection-item__top">
-                        <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
-                        </figure>
-                        <div class="collection-item__categories">
-                            ${i(["Tutorials"],"primary")}
-                        </div>
-                        <div class="collection-item__location">
-                            <h4 class="collection-item__location-city">
-                                Marbella
-                            </h4>
-                            <h5 class="collection-item__location-country">
-                                Spanien
-                            </h5>
-                        </div>
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </header>
-                    <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+        </ul>
 
-                        <p class="collection-item__abstract">
-                            <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
-                            </span>
-                        </p>
-
-                        <p class="collection-item__trip-price">
-                            <span class="collection-item__trip-price-prefix">ab</span>
-                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
-                            <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
-                        </p>
-
-                        <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            zur Beschreibung
-                        </a>
-                    </div>
-                </toujou-collection-item>
-            </li>
-        </ol>
-    `,e=s.bind({});var t,o,n;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
+    `,e=a.bind({});e.args={elementDesign:"default"};var o,n,c;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
                         <div class="collection-item__categories">
-                            \${renderCardCategoryChips(['Tutorials', 'New'], 'primary')}
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
-
+                        <div class="collection-item__location">
+                            <h4 class="collection-item__location-city">
+                                Marbella
+                            </h4>
+                            <h5 class="collection-item__location-country">
+                                Spanien
+                            </h5>
+                        </div>
+                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -220,15 +229,6 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__location">
-                            <h4 class="collection-item__location-city">
-                                Marbella
-                            </h4>
-                            <h5 class="collection-item__location-country">
-                                Spanien
-                            </h5>
-                        </div>
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
@@ -238,7 +238,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
 
@@ -260,14 +260,14 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -280,7 +280,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                         <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                        <h3 class="collection-item__title">Musterreise</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
@@ -309,14 +309,14 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -330,6 +330,50 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Hotel name</span>
+                        </p>
+
+                        <p class="collection-item__abstract">
+                            <span class="collection-item__abstract-text">
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                            </span>
+                        </p>
+
+                        <p class="collection-item__trip-price">
+                            <span class="collection-item__trip-price-prefix">ab</span>
+                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                            <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                        </p>
+
+                        <a href="#" class="collection-item__button">
+                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            zur Beschreibung
+                        </a>
+                    </div>
+                </toujou-collection-item>
+            </li>
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
+                    <header class="collection-item__top">
+                        <figure class="collection-item__figure">
+                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                        </figure>
+                        <div class="collection-item__categories">
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
+                        </div>
+                        <div class="collection-item__location">
+                            <h4 class="collection-item__location-city">
+                                Marbella
+                            </h4>
+                            <h5 class="collection-item__location-country">
+                                Spanien
+                            </h5>
+                        </div>
+                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                    </header>
+                    <div class="collection-item__bottom">
+                        <h3 class="collection-item__title">Musterreise</h3>
                         <p class="collection-item__subtitles">
                             <span class="collection-item__subtitle">Hotel name</span>
                         </p>
@@ -353,47 +397,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
-                    <header class="collection-item__top">
-                        <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
-                        </figure>
-                        <div class="collection-item__categories">
-                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
-                        </div>
-                        <div class="collection-item__location">
-                            <h4 class="collection-item__location-city">
-                                Marbella
-                            </h4>
-                            <h5 class="collection-item__location-country">
-                                Spanien
-                            </h5>
-                        </div>
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
-                    </header>
-                    <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
+        </ul>
 
-                        <p class="collection-item__abstract">
-                            <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
-                            </span>
-                        </p>
-
-                        <p class="collection-item__trip-price">
-                            <span class="collection-item__trip-price-prefix">ab</span>
-                            <span class="collection-item__trip-price-amount">1.500,00 €</span>
-                            <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
-                        </p>
-
-                        <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                            zur Beschreibung
-                        </a>
-                    </div>
-                </toujou-collection-item>
-            </li>
-        </ol>
     \`;
-}`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const h=["ListItemTrip"];export{e as ListItemTrip,h as __namedExportsOrder,d as default};
+}`,...(c=(n=e.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};const h=["CardTrip"];export{e as CardTrip,h as __namedExportsOrder,f as default};

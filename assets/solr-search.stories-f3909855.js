@@ -1,4 +1,4 @@
-import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-87b2c1dd.js";import{u as c}from"./index-af127bdc.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";function a(e){const i={h1:"h1",...c(),...e.components};return o.jsx(i.h1,{id:"solr-search",children:"SOLR search"})}function u(e={}){const{wrapper:i}={...c(),...e.components};return i?o.jsx(i,{...e,children:o.jsx(a,{...e})}):a(e)}const h={title:"COMPONENTS/solr",parameters:{badges:[r.TESTING],docs:{page:u}},argTypes:{showMobileFilters:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show mobile filters",description:"Toggle visibility of the mobile filters",control:{type:"boolean"},defaultValue:[!1],required:!0},showMap:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show map",description:"Toggle visibility of the search map",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},p=e=>`
+import{T as p}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-runtime-87b2c1dd.js";import{u as r}from"./index-af127bdc.js";import{r as t}from"./_renderCardCategoriChips-1ee0e70d.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";function n(e){const a={h1:"h1",...r(),...e.components};return o.jsx(a.h1,{id:"solr-search",children:"SOLR search"})}function u(e={}){const{wrapper:a}={...r(),...e.components};return a?o.jsx(a,{...e,children:o.jsx(n,{...e})}):n(e)}const v={title:"COMPONENTS/solr",parameters:{badges:[p.TESTING],docs:{page:u}},argTypes:{showMobileFilters:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show mobile filters",description:"Toggle visibility of the mobile filters",control:{type:"boolean"},defaultValue:[!1],required:!0},showMap:{table:{category:"Solr search settings",defaultValue:{summary:!1}},name:"Show map",description:"Toggle visibility of the search map",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},d=e=>`
         <toujou-solr-search class="solr" view-mode="${e.showMap?"map":"grid"}">
             <div id="solr-filters" class="solr-filters" ${e.showMobileFilters?"is-visible":""}>
                 <div class="solr-filters__mobile-header">
@@ -777,14 +777,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    ${t(["Tutorials"],"primary")}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -829,14 +822,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    ${t(["Neu","Rabatt"],"primary")}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -881,14 +867,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                  ${t(["Tutorials"],"primary")}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -933,14 +912,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    ${t(["Tutorials"],"primary")}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -985,14 +957,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    ${t(["Tutorials"],"primary")}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -1037,14 +1002,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    ${t(["Tutorials"],"primary")}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -1146,7 +1104,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
             </div>
             <!---->
         </toujou-solr-search>
-     `,t=p.bind({});t.args={showMobileFilters:!1,showMap:!1};var n,s,l;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:`(args: SolrSearchStoryProps) => {
+     `,i=d.bind({});i.args={showMobileFilters:!1,showMap:!1};var s,l,c;i.parameters={...i.parameters,docs:{...(s=i.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SolrSearchStoryProps) => {
   return \`
         <toujou-solr-search class="solr" view-mode="\${args.showMap ? 'map' : 'grid'}">
             <div id="solr-filters" class="solr-filters" \${args.showMobileFilters ? 'is-visible' : ''}>
@@ -1926,14 +1884,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    \${renderCardCategoryChips(['Tutorials'], 'primary')}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -1978,14 +1929,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    \${renderCardCategoryChips(['Neu', 'Rabatt'], 'primary')}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -2030,14 +1974,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                  \${renderCardCategoryChips(['Tutorials'], 'primary')}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -2082,14 +2019,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    \${renderCardCategoryChips(['Tutorials'], 'primary')}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -2134,14 +2064,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    \${renderCardCategoryChips(['Tutorials'], 'primary')}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -2186,14 +2109,7 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
                                     <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                 </figure>
                                 <div class="collection-item__categories">
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Neu
-                                    </a>
-                                    <a href="#" class="collection-item__category">
-                                        <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="font"></toujou-icon>
-                                        Jetzt 30% Rabatt
-                                    </a>
+                                    \${renderCardCategoryChips(['Tutorials'], 'primary')}
                                 </div>
                                 <div class="collection-item__location">
                                     <h4 class="collection-item__location-city">
@@ -2296,4 +2212,4 @@ import{T as r}from"./badgeCustomConfig-e7a687d5.js";import{j as o}from"./jsx-run
             <!---->
         </toujou-solr-search>
      \`;
-}`,...(l=(s=t.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};const b=["SolrSearch"];export{t as SolrSearch,b as __namedExportsOrder,h as default};
+}`,...(c=(l=i.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const x=["SolrSearch"];export{i as SolrSearch,x as __namedExportsOrder,v as default};
