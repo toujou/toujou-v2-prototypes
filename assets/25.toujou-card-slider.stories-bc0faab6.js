@@ -1,4 +1,4 @@
-import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-e0418d16.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},s=()=>`
+import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n,r as s}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[o.DONE],docs:{page:n}},tags:["autodocs"]},c=()=>`
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
@@ -33,6 +33,11 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                                     <figure class="collection-item__figure">
                                         <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                     </figure>
+
+                                    <div class="collection-item__categories">
+                                        ${s(["Tutorials"],"primary")}
+                                    </div>
+
                                     <toujou-media-info class="media-info">
                                         <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                             <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -242,7 +247,7 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                 <span class="slider-count__total"></span>
             </toujou-slider-count>
         </toujou-slider>
-    `,e=s.bind({});var i,t,l;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,e=c.bind({});var i,t,l;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
   return \`
         <toujou-slider
             class="slider"
@@ -278,6 +283,11 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                                     <figure class="collection-item__figure">
                                         <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                                     </figure>
+
+                                    <div class="collection-item__categories">
+                                        \${renderCardCategoryChips(['Tutorials'], 'primary')}
+                                    </div>
+
                                     <toujou-media-info class="media-info">
                                         <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                             <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -488,4 +498,4 @@ import{T as o}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             </toujou-slider-count>
         </toujou-slider>
     \`;
-}`,...(l=(t=e.parameters)==null?void 0:t.docs)==null?void 0:l.source}}};const p=["CollectionSlider"];export{e as CollectionSlider,p as __namedExportsOrder,d as default};
+}`,...(l=(t=e.parameters)==null?void 0:t.docs)==null?void 0:l.source}}};const g=["CollectionSlider"];export{e as CollectionSlider,g as __namedExportsOrder,p as default};

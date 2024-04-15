@@ -1,4 +1,4 @@
-import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-e0418d16.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:n}},tags:["autodocs"]},l=()=>`
+import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as i}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:l}},tags:["autodocs"]},s=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="trip" element-design="default" item-orientation="horizontal" role="article">
@@ -6,6 +6,11 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
+                        <div class="collection-item__categories">
+                            ${i(["Tutorials","New"],"primary")}
+                        </div>
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -16,16 +21,6 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
-                        </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
                                 Marbella
@@ -73,14 +68,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            ${i(["Tutorials"],"primary")}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -129,14 +117,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            ${i(["Tutorials"],"primary")}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -180,14 +161,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            ${i(["Tutorials"],"primary")}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -222,7 +196,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ol>
-    `,i=l.bind({});var o,e,t;i.parameters={...i.parameters,docs:{...(o=i.parameters)==null?void 0:o.docs,source:{originalSource:`() => {
+    `,e=s.bind({});var t,o,n;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
@@ -231,6 +205,11 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
+                        <div class="collection-item__categories">
+                            \${renderCardCategoryChips(['Tutorials', 'New'], 'primary')}
+                        </div>
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -241,16 +220,6 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
-                        </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
                                 Marbella
@@ -298,14 +267,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -354,14 +316,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -405,14 +360,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -448,4 +396,4 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             </li>
         </ol>
     \`;
-}`,...(t=(e=i.parameters)==null?void 0:e.docs)==null?void 0:t.source}}};const f=["ListItemTrip"];export{i as ListItemTrip,f as __namedExportsOrder,p as default};
+}`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const h=["ListItemTrip"];export{e as ListItemTrip,h as __namedExportsOrder,d as default};

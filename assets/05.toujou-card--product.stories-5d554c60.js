@@ -1,4 +1,4 @@
-import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-collection-item.docs-e0418d16.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[l.DONE],docs:{page:n}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},a=e=>`
+import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as a,r as o}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:a}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},s=e=>`
         <ul class="card-collection">
             <li class="card-collection__item">
                 <toujou-collection-item class="collection-item" item-type="product" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
@@ -7,10 +7,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                New
-                            </a>
+                            ${o(["Tutorials"],e.elementDesign)}
                         </div>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
@@ -35,10 +32,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Rabatt
-                            </a>
+                            ${o(["Rabatt"],e.elementDesign)}
                         </div>
                     </header>
                     <a href="#" class="collection-item__bottom">
@@ -71,7 +65,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ul>
-    `,o=a.bind({});o.args={elementDesign:"default"};var i,t,c;o.parameters={...o.parameters,docs:{...(i=o.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
+    `,t=s.bind({});t.args={elementDesign:"default"};var i,c,l;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
         <ul class="card-collection">
             <li class="card-collection__item">
@@ -81,10 +75,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                New
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
@@ -109,10 +100,7 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Rabatt'], args.elementDesign)}
                         </div>
                     </header>
                     <a href="#" class="collection-item__bottom">
@@ -146,4 +134,4 @@ import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as n}from"./toujou-
             </li>
         </ul>
     \`;
-}`,...(c=(t=o.parameters)==null?void 0:t.docs)==null?void 0:c.source}}};const p=["CardProduct"];export{o as CardProduct,p as __namedExportsOrder,d as default};
+}`,...(l=(c=t.parameters)==null?void 0:c.docs)==null?void 0:l.source}}};const h=["CardProduct"];export{t as CardProduct,h as __namedExportsOrder,p as default};

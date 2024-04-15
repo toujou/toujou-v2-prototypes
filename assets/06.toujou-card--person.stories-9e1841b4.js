@@ -1,11 +1,14 @@
-import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-collection-item.docs-e0418d16.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:t}},tags:["autodocs"]},s=()=>`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s,r as a}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const f={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=e=>`
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            ${a(["Tutorials"],e.elementDesign)}
+                        </div>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -16,21 +19,16 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                New
-                            </a>
-                        </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
 
@@ -70,25 +68,22 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Rabatt
-                            </a>
-                        </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
 
@@ -128,17 +123,18 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -168,15 +164,18 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -191,16 +190,19 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-        </ol>
-    `,o=s.bind({});var i,e,n;o.parameters={...o.parameters,docs:{...(i=o.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+        </ul>
+    `,o=l.bind({});o.args={elementDesign:"default"};var n,i,t;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
-        <ol class="item-collection">
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+        <ul class="card-collection">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
+                        <div class="collection-item__categories">
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
+                        </div>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -211,21 +213,16 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-                        <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                New
-                            </a>
-                        </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel and some more text to make sure it is long enough.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                             </span>
                         </p>
 
@@ -265,25 +262,22 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
-                        <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Rabatt
-                            </a>
-                        </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
 
@@ -323,17 +317,18 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -363,15 +358,18 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-            <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
+            <li class="card-collection__item">
+                <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
-                            <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Adidas AG</h3>
+                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Team-Lead</span>
+                        </p>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -386,6 +384,6 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./toujou-
                     </div>
                 </toujou-collection-item>
             </li>
-        </ol>
+        </ul>
     \`;
-}`,...(n=(e=o.parameters)==null?void 0:e.docs)==null?void 0:n.source}}};const p=["ListItemOrganization"];export{o as ListItemOrganization,p as __namedExportsOrder,d as default};
+}`,...(t=(i=o.parameters)==null?void 0:i.docs)==null?void 0:t.source}}};const g=["CardPerson"];export{o as CardPerson,g as __namedExportsOrder,f as default};

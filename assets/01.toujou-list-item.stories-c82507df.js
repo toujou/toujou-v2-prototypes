@@ -1,11 +1,16 @@
-import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-collection-item.docs-e0418d16.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:c}},tags:["autodocs"]},l=()=>`
+import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l,r as c}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:l}},tags:["autodocs"]},s=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
+                        <div class="collection-item__categories">
+                            ${c(["Tutorials","New","Web-design","A11y"],"primary")}
+                        </div>
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -16,22 +21,11 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">FourEver Tournee</span>
-                        </p>
-
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025</span>
-                        </time>
-
-                        <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -46,27 +40,16 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">FourEver Tournee</span>
-                        </p>
-
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025, 08:30 - 22:00</span>
-                        </time>
-
-                        <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -81,29 +64,20 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">FourEver Tournee</span>
-                        </p>
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025 - 30.12.2025</span>
-                        </time>
-                        <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -114,19 +88,17 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025, 08:30 - 30.12.2025, 22:00</span>
-                        </time>
+                        <h3 class="collection-item__title">Headline</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                        </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
@@ -140,15 +112,20 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ol>
-    `,e=l.bind({});var i,t,o;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,e=s.bind({});var t,i,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
+                        <div class="collection-item__categories">
+                            \${renderCardCategoryChips(['Tutorials', 'New', 'Web-design', "A11y"], 'primary')}
+                        </div>
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -159,22 +136,11 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
-
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">FourEver Tournee</span>
-                        </p>
-
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025</span>
-                        </time>
-
-                        <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -189,27 +155,16 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">FourEver Tournee</span>
-                        </p>
-
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025, 08:30 - 22:00</span>
-                        </time>
-
-                        <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -224,29 +179,20 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
                         <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                         <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">FourEver Tournee</span>
-                        </p>
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025 - 30.12.2025</span>
-                        </time>
-                        <p class="collection-item__status">
-                            <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
                         </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
@@ -257,19 +203,17 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="item-collection__item">
-                <toujou-collection-item class="collection-item" item-type="event" element-design="default" item-orientation="horizontal" role="article">
+                <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
-                        <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                        <time class="collection-item__date" datetime="2025-11-14" inline single-day>
-                            <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
-                            <span class="collection-item__date-text">24.12.2025, 08:30 - 30.12.2025, 22:00</span>
-                        </time>
+                        <h3 class="collection-item__title">Headline</h3>
+                        <p class="collection-item__subtitles">
+                            <span class="collection-item__subtitle">Dies ist ein Untertitel</span>
+                        </p>
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
                                 Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
@@ -284,4 +228,4 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
             </li>
         </ol>
     \`;
-}`,...(o=(t=e.parameters)==null?void 0:t.docs)==null?void 0:o.source}}};const d=["ListItemEvent"];export{e as ListItemEvent,d as __namedExportsOrder,p as default};
+}`,...(o=(i=e.parameters)==null?void 0:i.docs)==null?void 0:o.source}}};const g=["ListItemDefault"];export{e as ListItemDefault,g as __namedExportsOrder,d as default};

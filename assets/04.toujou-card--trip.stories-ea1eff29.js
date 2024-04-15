@@ -1,20 +1,13 @@
-import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-collection-item.docs-e0418d16.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const f={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:l}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},a=o=>`
+import{T as l}from"./badgeCustomConfig-e7a687d5.js";import{M as s,r as t}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const g={title:"COMPONENTS/Collections",parameters:{badges:[l.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},a=i=>`
         <ul class="card-collection">
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            ${t(["Tutorials"],i.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -67,20 +60,13 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            ${t(["Tutorials"],i.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -123,20 +109,13 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            ${t(["Tutorials"],i.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -174,20 +153,13 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                 </toujou-collection-item>
             </li>
             <li class="card-collection__item">
-                <toujou-collection-item class="collection-item" item-type="trip" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                <toujou-collection-item class="collection-item" item-type="trip" element-design="${i.elementDesign}" item-orientation="vertical" role="article">
                     <header class="collection-item__top">
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            ${t(["Tutorials"],i.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -226,7 +198,7 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
             </li>
         </ul>
 
-    `,i=a.bind({});i.args={elementDesign:"default"};var e,t,c;i.parameters={...i.parameters,docs:{...(e=i.parameters)==null?void 0:e.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
+    `,e=a.bind({});e.args={elementDesign:"default"};var o,n,c;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
         <ul class="card-collection">
             <li class="card-collection__item">
@@ -236,14 +208,7 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -302,14 +267,7 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -358,14 +316,7 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -409,14 +360,7 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Neu
-                            </a>
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Jetzt 30% Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                         </div>
                         <div class="collection-item__location">
                             <h4 class="collection-item__location-city">
@@ -456,4 +400,4 @@ import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as l}from"./toujou-
         </ul>
 
     \`;
-}`,...(c=(t=i.parameters)==null?void 0:t.docs)==null?void 0:c.source}}};const g=["CardTrip"];export{i as CardTrip,g as __namedExportsOrder,f as default};
+}`,...(c=(n=e.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};const f=["CardTrip"];export{e as CardTrip,f as __namedExportsOrder,g as default};

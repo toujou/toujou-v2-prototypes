@@ -1,4 +1,4 @@
-import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-collection-item.docs-e0418d16.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[t.DONE],docs:{page:c}},tags:["autodocs"]},s=()=>`
+import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{M as s,r as i}from"./_renderCardCategoriChips-3ad4f39c.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const p={title:"COMPONENTS/Collections",parameters:{badges:[c.DONE],docs:{page:s}},tags:["autodocs"]},a=()=>`
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="organisation" element-design="default" item-orientation="horizontal" role="article">
@@ -6,6 +6,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -17,17 +18,13 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                New
-                            </a>
+                            ${i(["Tutorials"],"primary")}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -78,21 +75,15 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Rabatt
-                            </a>
+                            ${i(["Rabatt"],"primary")}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
                             </span>
                         </p>
 
@@ -140,14 +131,13 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
 
@@ -181,7 +171,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -197,7 +187,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                 </toujou-collection-item>
             </li>
         </ol>
-    `,o=s.bind({});var e,i,n;o.parameters={...o.parameters,docs:{...(e=o.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
+    `,o=a.bind({});var e,n,t;o.parameters={...o.parameters,docs:{...(e=o.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
   return \`
         <ol class="item-collection">
             <li class="item-collection__item">
@@ -206,6 +196,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         <figure class="collection-item__figure">
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
+
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -217,17 +208,13 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                New
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -278,21 +265,15 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Rabatt
-                            </a>
+                            \${renderCardCategoryChips(['Rabatt'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht.
                             </span>
                         </p>
 
@@ -340,14 +321,13 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
-                        <p class="collection-item__subtitles">
-                            <span class="collection-item__subtitle">Team-Lead</span>
-                        </p>
+                        <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
-                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                             </span>
                         </p>
 
@@ -381,7 +361,7 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
                         </figure>
                     </header>
                     <div class="collection-item__bottom">
-                        <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                        <h3 class="collection-item__title">Adidas AG</h3>
 
                         <p class="collection-item__abstract">
                             <span class="collection-item__abstract-text">
@@ -398,4 +378,4 @@ import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as c}from"./toujou-
             </li>
         </ol>
     \`;
-}`,...(n=(i=o.parameters)==null?void 0:i.docs)==null?void 0:n.source}}};const p=["ListItemPerson"];export{o as ListItemPerson,p as __namedExportsOrder,d as default};
+}`,...(t=(n=o.parameters)==null?void 0:n.docs)==null?void 0:t.source}}};const f=["ListItemOrganization"];export{o as ListItemOrganization,f as __namedExportsOrder,p as default};
