@@ -23,11 +23,16 @@
         --slider-controls-aspect-ratio: auto;
     }
 
-    .slider[content-type="logos"],
     .slider[content-type="card-collection"] {
         --slider-controls-aspect-ratio: auto;
         --slider-controls-top: unset;
         --slider-controls-bottom: calc(var(--spacing-l) * -1);
+    }
+
+    .slider[content-type="logos"] {
+        --slider-controls-aspect-ratio: auto;
+        --slider-controls-top: unset;
+        --slider-controls-bottom: calc(var(--spacing-s));
     }
 
     .slider[content-type="teaser"] {
