@@ -97,23 +97,23 @@ describe('list item - type blog', () => {
     it('has correct attributes and elements', () => {
         cy.get(`${firstCardSelector}`).invoke('attr', 'item-type').should('eq', 'blog');
         cy.get(`${firstCardSelector} .collection-item__categories`).should('exist');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('exist');
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('exist');
     });
 
     it('Categories have correct styles', () => {
         cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'position', 'absolute');
         cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'top', tokens.spacing.normal);
-        cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'left', '0px');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'background-color', colors.colorPrimary);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'color', colors.colorBg);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'display', 'flex');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'align-items', 'center');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'justify-content', 'flex-start');
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'gap', tokens.spacing.xs);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'padding', `${tokens.spacing.xs} ${tokens.spacing.normal} ${tokens.spacing.xs} ${tokens.spacing.s}`);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'border-radius', `0px ${tokens.borderRadius.xxxl} ${tokens.borderRadius.xxxl} 0px`);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'font-size', tokens.type.size.s);
-        cy.get(`${firstCardSelector} .collection-item__category`).should('have.css', 'margin', `0px 0px ${tokens.spacing.xs}`);
+        cy.get(`${firstCardSelector} .collection-item__categories`).should('have.css', 'left', tokens.spacing.normal);
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'background-color', colors.colorPrimary);
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'color', colors.colorBg);
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'display', 'inline-flex');
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'align-items', 'center');
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'justify-content', 'center');
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'gap', tokens.spacing.s);
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'padding', `${tokens.spacing.xs} ${tokens.spacing.normal} ${tokens.spacing.xs} ${tokens.spacing.s}`);
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'border-radius', `${tokens.borderRadius.xxxl}`);
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'font-size', tokens.type.size.xs);
+        cy.get(`${firstCardSelector} .collection-item__category-chip`).should('have.css', 'margin', `0px`);
     });
 });
 
