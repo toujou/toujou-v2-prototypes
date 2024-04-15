@@ -39,7 +39,7 @@
         --collection-item-categories-top: var(--spacing-normal);
         --collection-item-categories-left: var(--spacing-normal);
         --collection-item-categories-display: flex;
-        --collection-item-categories-flex-flow: row wrap;
+        --collection-item-categories-flex-flow: column;
         --collection-item-categories-gap: var(--spacing-xs);
         --collection-item-categories-padding: 0 var(--spacing-xl) 0 0;
 
