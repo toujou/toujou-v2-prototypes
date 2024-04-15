@@ -35,6 +35,11 @@
         --slider-controls-bottom: calc(var(--spacing-s));
     }
 
+    .slider[slider-fullwidth][content-type="logos"] {
+        --slider-controls-top: calc(50% - calc(var(--slider-control-size) / 2));
+        --slider-controls-bottom: unset;
+    }
+
     .slider[content-type="teaser"] {
         --slider-controls-aspect-ratio: auto;
         --slider-controls-top: unset;
