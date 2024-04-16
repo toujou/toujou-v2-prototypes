@@ -31,6 +31,7 @@
         --card-collection-flex-wrap: nowrap;
     }
 
+    .grid-column .card-collection,
     .card-collection:first-child {
         --card-collection-margin: 0 auto;
     }
