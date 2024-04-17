@@ -30,6 +30,11 @@
     --text-block-max-width: var(--content-max-width);
 }
 
+.html-container .text-block {
+    --text-block-width: 100%;
+    --text-block-max-width: 100%;
+}
+
 .text-block:first-child,
 span:first-child + .text-block {
     --text-block-margin: 0 auto;
