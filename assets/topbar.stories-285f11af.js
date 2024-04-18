@@ -308,6 +308,12 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
                     <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Contact</span>
+                        <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
                         <span class="topbar__actions-text">Like</span>
                         <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
@@ -706,6 +712,12 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             </a>
 
             <ul class="topbar__actions">
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Contact</span>
+                        <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
                 <li class="topbar__actions-item">
                     <a href="#" class="topbar__actions-link">
                         <span class="topbar__actions-text">Like</span>
