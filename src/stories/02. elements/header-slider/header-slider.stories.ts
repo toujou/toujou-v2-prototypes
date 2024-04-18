@@ -141,7 +141,7 @@ const Template: StoryFn<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps)
                             <li class="splide__slide slider__slide" data-splide-interval="1000">
                                 <div class="slider__item" slot="slider-item">
                                     <toujou-single-media class="single-media">
-                                        <img class="single-media__image" src="https://picsum.photos/2001" alt="Nice image">
+                                        <img class="single-media__image" src="https://picsum.photos/400/400" alt="Nice image">
                                     </toujou-single-media>
                                     <div class="header-content"
                                        accent-color="${args.accentColor}"

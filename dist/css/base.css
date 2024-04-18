@@ -4658,6 +4658,10 @@ main .single-media__video[video-extension="vimeo"] {
 
     aspect-ratio: var(--single-media-youtube-videos-aspect-ratio);
 }
+
+.single-media > picture {
+    display: contents;
+}
 }
 
 @layer base {
