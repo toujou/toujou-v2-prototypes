@@ -134,7 +134,7 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 <a href="#" class="service-nav__link">Datenschutz</a>
             </nav>
 
-            <nav id="mainNavigation" class="main-nav" is="toujou-main-nav" aria-label="Main navigation">
+            <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
                         <a href="#" class="main-nav__link" aria-current="page">

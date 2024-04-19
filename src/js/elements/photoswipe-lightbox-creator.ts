@@ -96,7 +96,7 @@ function _handleChange(el: HTMLElement, lightbox: PhotoSwipeLightbox): void {
 /**
  * Wait for the page to completely load before initializing the photoswipe-lightbox-creator script
  */
-if (document.readyState === "complete" || document.readyState === "interactive") {
+if (document.readyState !== "loading") {
     setTimeout(() => {
         initPhotoswipeLightboxCreator();
     });

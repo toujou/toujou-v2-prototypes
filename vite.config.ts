@@ -24,7 +24,9 @@ export default defineConfig({
                 'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
                 'toujou-consent': path.resolve(__dirname, 'src/components/copied/toujou-consent/toujou-consent'),
                 'toujou-consent-widget': path.resolve(__dirname, 'src/components/copied/toujou-consent-widget/toujou-consent-widget'),
-                'toujou-main-nav': path.resolve(__dirname, 'src/components/toujou-main-nav/toujou-main-nav'),
+
+                // JS Elements
+                'main-nav': path.resolve(__dirname, 'src/js/elements/main-nav'),
                 'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/js/elements/photoswipe-lightbox-creator'),
 
                 // Skippy links must be exported, so we can import it on the skip-links partial

@@ -10,7 +10,6 @@ import "../src/components/toujou-burger-button/toujou-burger-button";
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../src/components/toujou-clamped-content/toujou-clamped-content";
-import "../src/components/toujou-main-nav/toujou-main-nav";
 
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-modal/toujou-modal";
@@ -37,11 +36,13 @@ import "@toujou/toujou-topbutton/lib";
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
 
+// Config
 import { badgeCustomConfig } from "./configUtils/badgeCustomConfig.js";
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { customViewports } from "./configUtils/customViewports.js";
 
 import toujouTheme from "./toujouTheme";
+import { initMainNav } from "../src/js/elements/main-nav";
 
 export const parameters = {
     docs: {
@@ -79,5 +80,15 @@ export const parameters = {
         debug: false,
     }
 }
+
+// Hack no initialize the main nav inside Storybook
+setTimeout(() => {
+    console.log('initing Preview.js custom mainNav initialization');
+
+    const mainNavEl = document.querySelector('.main-nav');
+
+    if (!mainNavEl || mainNavEl.mainNav) return;
+    initMainNav();
+}, 500)
 
 console.clear();

@@ -1,12 +1,21 @@
+/* Polyfills */
+import '@ungap/custom-elements';
+
 /* JS Elements */
 import { initSmoothScroll } from "./globals/_smooth-scroll";
+import { initMainNav } from "./elements/main-nav";
 
-if (document.readyState === "complete" || document.readyState === "interactive") {
+function initGlobalsScripts() {
+    initMainNav();
+    initSmoothScroll();
+}
+
+if (document.readyState !== "loading") {
     setTimeout(() => {
-        initSmoothScroll();
+        initGlobalsScripts();
     });
 } else {
     document.addEventListener("DOMContentLoaded", () => {
-        initSmoothScroll();
+        initGlobalsScripts();
     });
 }

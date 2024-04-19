@@ -1,9 +1,6 @@
-import { LitElement } from 'lit'
-import { property } from 'lit/decorators.js'
-
-export class ToujouMainNav extends LitElement {
-    @property({ type: Array })
-    navListItems: MainNavListItem[] = [];
+export class MainNav {
+    private mainNavEl: MainNavElement;
+    private navListItems: MainNavListItem[] = [];
 
     protected readonly listItemSelector = '.main-nav__list-item';
     protected readonly hasSubNavAttribute = 'has-subnav';
@@ -11,28 +8,19 @@ export class ToujouMainNav extends LitElement {
     protected readonly listItemLevelAttribute = 'nav-item-level';
     protected readonly listItemChevronSelector = 'main-nav__chevron';
 
-    constructor() {
-        super();
-    }
-
-    connectedCallback() {
-        super.connectedCallback();
-
+    constructor(mainNavEl: MainNavElement) {
+        this.mainNavEl = mainNavEl;
         this._getNavListItems();
 
         // @ts-ignore
         window.addEventListener('keyup', this._handleKeyUp);
     }
 
-    protected createRenderRoot(): Element | ShadowRoot {
-        return this;
-    }
-
     /**
      * Get list of all the main navigation list items and start listening for click events
      */
     _getNavListItems = () => {
-        this.navListItems = [...this.querySelectorAll(this.listItemSelector)] as MainNavListItem[];
+        this.navListItems = [...this.mainNavEl.querySelectorAll(this.listItemSelector)] as MainNavListItem[];
 
         if (!this.navListItems) {
             console.warn("TOUJOU: Main navigation has no list items!");
@@ -133,17 +121,22 @@ export class ToujouMainNav extends LitElement {
     }
 }
 
-declare global {
-    interface HTMLElementTagNameMap {
-        'toujou-main-nav': ToujouMainNav
-    }
+export function initMainNav() {
+    const mainNavEl = document.querySelector('.main-nav') as MainNavElement;
+    if (!mainNavEl || mainNavEl.mainNav) return;
 
+    mainNavEl.mainNav = new MainNav(mainNavEl);
+}
+
+declare global {
     interface MainNavListItem extends HTMLElement {
         hasSubNav: boolean,
         isOpen: boolean,
         level: string | null,
         toggleEl: HTMLElement
     }
-}
 
-customElements.define('toujou-main-nav', ToujouMainNav, { extends: 'nav' });
+    interface MainNavElement extends HTMLElement {
+        mainNav: MainNav,
+    }
+}
