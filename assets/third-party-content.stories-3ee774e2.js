@@ -76,12 +76,21 @@ On the other hand, some elements can only be styled using CSS Custom Properties`
 | --toujou-third-party-content-iframe-width | Set `,e.jsx(t.code,{children:"width"}),` of iframe inside the element | 100% |
 | --toujou-third-party-content-html-iframe-position | Set `,e.jsx(t.code,{children:"position"}),' of iframe inside the element with attribute [contenttype="html"]| relative |']}),`
 `,e.jsxs(t.p,{children:[`Please notice that some content elements need different properties according to the content type (because of the content's own styles and requirements).
-An example if the `,e.jsx(t.code,{children:"iframe position"})," property for video, maps and for html elements."]})]})}function u(n={}){const{wrapper:t}={...r(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(s,{...n})}):s(n)}const y={title:"COMPONENTS/Third Party Content",parameters:{badges:[l.DONE],docs:{page:u}},tags:["autodocs"]};window.addEventListener("click",n=>{n.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.location.reload())});const p=()=>`
+An example if the `,e.jsx(t.code,{children:"iframe position"})," property for video, maps and for html elements."]})]})}function u(n={}){const{wrapper:t}={...r(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(s,{...n})}):s(n)}const _={title:"COMPONENTS/Third Party Content",parameters:{badges:[l.DONE],docs:{page:u}},argTypes:{showPoster:{table:{category:"third party content settings",defaultValue:{summary:!1}},name:"Show poster image",description:"Show a poster image as background",control:{type:"boolean"},defaultValue:[!1],required:!0},isVideo:{table:{category:"third party content settings",defaultValue:{summary:!1}},name:"Video content",description:"Emulate element with video element content",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]};window.addEventListener("click",n=>{n.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.location.reload())});const p=()=>`
+        background-image: url(https://picsum.photos/2000);
+        background-size: cover;
+    `,d=n=>`
 
         <p>With this button you can remove all consents from the local storage. For test purposes only</p>
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
-        <toujou-third-party-content class="third-party-content" contentType="maps">
+        <toujou-third-party-content
+            class="third-party-content"
+            contentType="${n.isVideo?"video":"maps"}"
+            ${n.showPoster?`style="${p()}"`:""}
+            ${n.showPoster?"has-poster-image":""}
+
+        >
         <!--   The content of the template element must be inside html comments -->
         <template>
             <!--{htmlElements.html.content -> f:format.raw()}-->
@@ -200,13 +209,19 @@ An example if the `,e.jsx(t.code,{children:"iframe position"})," property for vi
                 <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">OK</button>
             </div>
         </toujou-consent-widget>
-    `,o=p.bind({});var c,a,i;o.parameters={...o.parameters,docs:{...(c=o.parameters)==null?void 0:c.docs,source:{originalSource:`() => {
+    `,o=d.bind({});o.args={showPoster:!1,isVideo:!1};var c,a,i;o.parameters={...o.parameters,docs:{...(c=o.parameters)==null?void 0:c.docs,source:{originalSource:`(args: ThirdPartyContentStoryProps) => {
   return \`
 
         <p>With this button you can remove all consents from the local storage. For test purposes only</p>
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
-        <toujou-third-party-content class="third-party-content" contentType="maps">
+        <toujou-third-party-content
+            class="third-party-content"
+            contentType="\${args.isVideo ? 'video' : 'maps'}"
+            \${args.showPoster ? \`style="\${posterImageStyles()}"\` : ''}
+            \${args.showPoster ? \`has-poster-image\` : ''}
+
+        >
         <!--   The content of the template element must be inside html comments -->
         <template>
             <!--{htmlElements.html.content -> f:format.raw()}-->
@@ -326,4 +341,4 @@ An example if the `,e.jsx(t.code,{children:"iframe position"})," property for vi
             </div>
         </toujou-consent-widget>
     \`;
-}`,...(i=(a=o.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};const _=["ThirdPartyContent"];export{o as ThirdPartyContent,_ as __namedExportsOrder,y as default};
+}`,...(i=(a=o.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};const x=["ThirdPartyContent"];export{o as ThirdPartyContent,x as __namedExportsOrder,_ as default};
