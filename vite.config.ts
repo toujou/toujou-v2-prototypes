@@ -38,7 +38,6 @@ export default defineConfig({
                 'toujou-input-password-toggle': path.resolve(__dirname, 'node_modules/@toujou/toujou-input-password-toggle/lib'),
                 'toujou-location-finder': path.resolve(__dirname, 'node_modules/@toujou/toujou-location-finder/lib'),
                 'toujou-map': path.resolve(__dirname, 'node_modules/@toujou/toujou-map/lib'),
-                'toujou-media-info': path.resolve(__dirname, 'node_modules/@toujou/toujou-media-info/lib'),
                 'toujou-rating-stars': path.resolve(__dirname, 'node_modules/@toujou/toujou-rating-stars/lib'),
                 'toujou-timeline': path.resolve(__dirname, 'node_modules/@toujou/toujou-timeline/lib'),
                 'toujou-topbutton': path.resolve(__dirname, 'node_modules/@toujou/toujou-topbutton/lib'),

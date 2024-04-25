@@ -1,0 +1,36 @@
+.chips-list {
+    --chips-list-width: var(--content-width-with-padding);
+    --chips-list-max-width: var(--content-max-width);
+    --chips-list-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+
+    --chips-list-list-style: none;
+    --chips-list-list-display: flex;
+    --chips-list-list-flex-wrap: wrap;
+    --chips-list-list-gap: var(--spacing-normal);
+    --chips-list-list-margin: 0;
+
+    --chips-list-title-margin-bottom: var(--spacing-m);
+
+    --chips-list-link-text-decoration: none;
+
+    width: var(--chips-list-width);
+    max-width: var(--chips-list-max-width);
+    margin: var(--chips-list-margin);
+}
+
+.chips-list__list {
+    list-style: var(--chips-list-list-style);
+    display: var(--chips-list-list-display);
+    flex-wrap: var(--chips-list-list-flex-wrap);
+    gap: var(--chips-list-list-gap);
+    margin: var(--chips-list-list-margin);
+}
+
+.chips-list__link {
+    text-decoration: var(--chips-list-link-text-decoration);
+}
+
+.chips-list__title {
+    margin-bottom: var(--chips-list-title-margin-bottom);
+}
+
