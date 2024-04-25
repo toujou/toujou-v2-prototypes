@@ -1,7 +1,7 @@
 /// <reference lib="dom" />
 /// <reference lib="dom.iterable" />
 
-import { Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -16,8 +16,37 @@ export default {
             page: thirdPartyContentDocs,
         },
     },
+    argTypes: {
+        showPoster: {
+            table: {
+                category: "third party content settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Show poster image',
+            description: "Show a poster image as background",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
+        isVideo: {
+            table: {
+                category: "third party content settings",
+                defaultValue: { summary: false },
+            },
+            name: 'Video content',
+            description: "Emulate element with video element content",
+            control: { type: 'boolean' },
+            defaultValue: [false],
+            required: true,
+        },
+    },
     tags: ['autodocs']
 } satisfies Meta;
+
+interface ThirdPartyContentStoryProps {
+    showPoster: boolean;
+    isVideo: boolean;
+}
 
 window.addEventListener('click', (event: Event) => {
     const clickTarget = event.target as HTMLElement;
@@ -27,13 +56,27 @@ window.addEventListener('click', (event: Event) => {
     }
 })
 
-const Template = () => {
+const posterImageStyles = () => {
+    return `
+        background-image: url(https://picsum.photos/2000);
+        background-size: cover;
+    `
+}
+
+
+const Template: StoryFn<ThirdPartyContentStoryProps> = (args: ThirdPartyContentStoryProps) => {
     return `
 
         <p>With this button you can remove all consents from the local storage. For test purposes only</p>
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
-        <toujou-third-party-content class="third-party-content" contentType="maps">
+        <toujou-third-party-content
+            class="third-party-content"
+            contentType="${args.isVideo ? 'video' : 'maps'}"
+            ${args.showPoster ? `style="${posterImageStyles()}"` : ''}
+            ${args.showPoster ? `has-poster-image` : ''}
+
+        >
         <!--   The content of the template element must be inside html comments -->
         <template>
             <!--{htmlElements.html.content -> f:format.raw()}-->
@@ -157,4 +200,7 @@ const Template = () => {
 
 export const ThirdPartyContent = Template.bind({});
 
-
+ThirdPartyContent.args = {
+    showPoster: false,
+    isVideo: false
+}
