@@ -4371,31 +4371,30 @@ hr[divider-type="grey"],
 }
 
 @layer base {
-@layer components {
-    .estimated-reading-time {
-        --estimated-reading-time-font-family: var(--font-family-text);
-        --estimated-reading-time-font-size: var(--font-size-normal);
-        --estimated-reading-time-color: var(--color-font);
-        --estimated-reading-time-display: inline-flex;
-        --estimated-reading-time-flex-align-items: center;
-        --estimated-reading-time-gap: .5ch;
 
-        --estimated-reading-time-label-display: flex;
-        --estimated-reading-time-label-align-items: center;
+.estimated-reading-time {
+    --estimated-reading-time-font-family: var(--font-family-text);
+    --estimated-reading-time-font-size: var(--font-size-normal);
+    --estimated-reading-time-color: var(--color-font);
+    --estimated-reading-time-display: inline-flex;
+    --estimated-reading-time-flex-align-items: center;
+    --estimated-reading-time-gap: .5ch;
 
-        font-family: var(--estimated-reading-time-font-family);
-        font-size: var(--estimated-reading-time-font-size);
-        color: var(--estimated-reading-time-color);
-        display: var(--estimated-reading-time-display);
-        align-items: var(--estimated-reading-time-flex-align-items);
-        gap: var(--estimated-reading-time-gap);
-    }
+    --estimated-reading-time-label-display: flex;
+    --estimated-reading-time-label-align-items: center;
 
-    .estimated-reading-time__label {
-        display: var(--estimated-reading-time-label-display);
-        align-items: var(--estimated-reading-time-label-align-items);
-        gap: var(--estimated-reading-time-gap);
-    }
+    font-family: var(--estimated-reading-time-font-family);
+    font-size: var(--estimated-reading-time-font-size);
+    color: var(--estimated-reading-time-color);
+    display: var(--estimated-reading-time-display);
+    align-items: var(--estimated-reading-time-flex-align-items);
+    gap: var(--estimated-reading-time-gap);
+}
+
+.estimated-reading-time__label {
+    display: var(--estimated-reading-time-label-display);
+    align-items: var(--estimated-reading-time-label-align-items);
+    gap: var(--estimated-reading-time-gap);
 }
 }
 
