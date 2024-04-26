@@ -1706,6 +1706,13 @@ td {
     padding: var(--table-cell-padding);
 }
 
+:root {
+    /* Fallback values for the font weight vars, needed when "Font set: Provided via CSS" is selected */
+    --font-weight-text-normal: normal;
+    --font-weight-text-bold: bold;
+    --font-weight-headline: bold;
+}
+
 h1,
 *[type-size="font--alpha"],
 .font--alpha {
