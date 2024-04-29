@@ -73,6 +73,10 @@
         overflow: var(--content-card-figure-overflow);
     }
 
+    .content-card > .content-card__figure:only-child {
+        --content-card-figure-flex: 0 0 100%;
+    }
+
     .content-card__image {
         height: var(--content-card-image-height);
         width: var(--content-card-image-width);
@@ -84,6 +88,10 @@
         padding: var(--content-card-content-padding);
         flex: var(--content-card-content-flex);
         width: var(--content-card-content-width);
+    }
+
+    .content-card > .content-card__content:only-child {
+        --content-card-content-flex: 0 0 100%;
     }
 
     .content-card__title {
