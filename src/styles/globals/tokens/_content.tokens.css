@@ -17,6 +17,10 @@
     --inpage-nav-height: 0px;
 }
 
+:root:has(.inpage-nav) {
+    --inpage-nav-height: var(--inpage-nav-height-closed);
+}
+
 :root:has(.topbar[logo-size="small"]) {
     --topbar-height: var(--topbar-height-small);
 }

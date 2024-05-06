@@ -1,6 +1,9 @@
 @layer components {
-    .inpage-nav {
+    :root {
         --inpage-nav-height-closed: 3rem;
+    }
+
+    .inpage-nav {
         --inpage-nav-height: var(--inpage-nav-height-closed);
         --inpage-nav-position: relative;
         --inpage-nav-display: grid;
