@@ -74,7 +74,7 @@ interface TopbarStoryProps {
 
 const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
     // @ts-ignore
-    document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
+    // document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
 
     return `
         <toujou-topbar

@@ -264,8 +264,16 @@ figure {
     --inpage-nav-height: 0px;
 }
 
-:root:has(.topbar) {
+:root:has(.topbar[logo-size="small"]) {
+    --topbar-height: var(--topbar-height-small);
+}
+
+:root:has(.topbar[logo-size="medium"]) {
     --topbar-height: var(--topbar-height-medium);
+}
+
+:root:has(.topbar[logo-size="large"]) {
+    --topbar-height: var(--topbar-height-large);
 }
 }
 
