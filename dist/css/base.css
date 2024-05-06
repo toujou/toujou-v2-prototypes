@@ -259,8 +259,13 @@ figure {
     --topbar-height-small: 54px;
     --topbar-height-medium: 64px;
     --topbar-height-large: 80px;
-    --topbar-height: var(--topbar-height-medium);
+    --topbar-height: 0px;
     --service-nav-height: var(--spacing-xl);
+    --inpage-nav-height: 0px;
+}
+
+:root:has(.topbar) {
+    --topbar-height: var(--topbar-height-medium);
 }
 }
 
@@ -5758,27 +5763,35 @@ main .single-media__video[video-extension="vimeo"] {
 @layer base {
 
 :root {
-    /* Toujou smooth scroll docs: https://guide.dfau.de/doc/smooth-scroll-vuoCqfeMJP */
-    --toujou-scroll-padding-offset: var(--spacing-l);   /* Must be valid css distance value */
-    --toujou-scroll-behavior: smooth;                   /* Must be value smooth-scroll value */
-
-    /* --toujou-scroll-top-padding: var(--spacing-l); */
+    --toujou-scroll-behavior: smooth;
+    --toujou-scroll-snap-align: start;
+    --toujou-scroll-top-padding-fallback: var(--spacing-l);
+    --toujou-scroll-top-padding-gap: var(--spacing-normal);
+    /* stylelint-disable-next-line max-line-length */
+    --toujou-scroll-top-padding: calc(var(--topbar-height) + var(--inpage-nav-height) + var(--toujou-scroll-top-padding-gap));
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--toujou-scroll-padding-offset);
-    scroll-margin-top: var(--toujou-scroll-padding-offset);
-    scroll-snap-align: start;
+    scroll-behavior: var(--toujou-scroll-behavior);
+    scroll-snap-align: var(--toujou-scroll-snap-align);
+    scroll-padding-top: var(--toujou-scroll-top-padding, var(--toujou-scroll-top-padding-fallback));
 }
-
-/* Disable smooth scroll for user that want reduced motion */
 }
 
 @layer base {
+
+@media screen and (min-width: 840px) {
+    :root {
+        --toujou-scroll-top-padding-gap: var(--spacing-l);
+    }
+}
+}
+
+@layer base {
+
 @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+    :root {
+        --toujou-scroll-behavior: auto;
     }
 }
 }

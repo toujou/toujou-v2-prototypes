@@ -143,8 +143,13 @@
     --topbar-height-small: 54px;
     --topbar-height-medium: 64px;
     --topbar-height-large: 80px;
-    --topbar-height: var(--topbar-height-medium);
+    --topbar-height: 0px;
     --service-nav-height: var(--spacing-xl);
+    --inpage-nav-height: 0px;
+}
+
+:root:has(.topbar) {
+    --topbar-height: var(--topbar-height-medium);
 }
 
 @media screen and (min-width: 840px) {
