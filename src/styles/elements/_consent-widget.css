@@ -17,10 +17,18 @@
         --consent-widget-title-margin: 0 0 var(--spacing-normal);
 
         --consent-widget-bottom-display: flex;
-        --consent-widget-bottom-align-items: flex-end;
-        --consent-widget-bottom-justify-content: flex-start;
-        --consent-widget-bottom-gap: var(--spacing-normal);
+        --consent-widget-bottom-align-items: flex-start;
+        --consent-widget-bottom-justify-content: space-between;
+        --consent-widget-bottom-gap: var(--spacing-s);
         --consent-widget-bottom-margin: var(--spacing-normal) 0 0;
+
+        --consent-widget-bottom-buttons-display: flex;
+        --consent-widget-bottom-buttons-flex-flow: row wrap;
+        --consent-widget-bottom-buttons-align-items: flex-start;
+        --consent-widget-bottom-buttons-justify-content: flex-end;
+        --consent-widget-bottom-buttons-gap: var(--spacing-s);
+
+        --consent-widget-details-flex-shrink: 0;
 
         --consent-widget-summary-list-style: none;
 
@@ -77,10 +85,23 @@
 
     .consent-widget__bottom {
         display: var(--consent-widget-bottom-display);
+        flex-flow: var(--consent-widget-bottom-flex-flow);
         align-items: var(--consent-widget-bottom-align-items);
         justify-content: var(--consent-widget-bottom-justify-content);
         gap: var(--consent-widget-bottom-gap);
         margin: var(--consent-widget-bottom-margin);
+    }
+
+    .consent-widget__bottom-buttons {
+        display: var(--consent-widget-bottom-buttons-display);
+        flex-flow: var(--consent-widget-bottom-buttons-flex-flow);
+        align-items: var(--consent-widget-bottom-buttons-align-items);
+        justify-content: var(--consent-widget-bottom-buttons-justify-content);
+        gap: var(--consent-widget-bottom-buttons-gap);
+    }
+
+    .consent-widget__details {
+        flex-shrink: var(--consent-widget-details-flex-shrink);
     }
 
     .consent-widget__details-summary {
@@ -92,7 +113,8 @@
     }
 
     .consent-widget__details[open] #consentSettingsButton,
-    .consent-widget__details[open] #consentAcceptAllButton {
+    .consent-widget__details[open] #consentAcceptAllButton,
+    .consent-widget__details[open] #consentDenyAllButton {
         display: none;
     }
 
@@ -134,6 +156,13 @@
 
     .consent-widget[warningvisible="false"] .consent-widget__warning {
         display: none;
+    }
+
+    @media screen and (max-width: 419px) {
+        .consent-widget {
+            --consent-widget-bottom-flex-flow: column wrap;
+            --consent-widget-bottom-buttons-justify-content: flex-start;
+        }
     }
 
     @media screen and (min-width: 840px) {
