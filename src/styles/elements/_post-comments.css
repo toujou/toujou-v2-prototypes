@@ -8,6 +8,7 @@
 
         --post-comments-list-list-style: none;
         --post-comments-list-list-margin: 0;
+        --post-comments-list-list-padding: 0;
         --post-comments-list-list-display: flex;
         --post-comments-list-list-flex-direction: column;
         --post-comments-list-list-align-items: flex-start;
@@ -47,6 +48,7 @@
     .post-comments__list {
         list-style: var(--post-comments-list-list-style);
         margin: var(--post-comments-list-list-margin);
+        padding: var(--post-comments-list-list-padding);
         display: var(--post-comments-list-list-display);
         flex-direction: var(--post-comments-list-list-flex-direction);
         align-items: var(--post-comments-list-list-align-items);

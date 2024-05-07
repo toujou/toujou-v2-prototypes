@@ -36,6 +36,10 @@
         margin-top: 0;
     }
 
+    .blog-footer .chips-list__list {
+        padding: 0;
+    }
+
     @media screen and (min-width: 840px) {
         .blog-footer {
             --blog-footer-content-grid-template-columns: 1fr 1fr;
