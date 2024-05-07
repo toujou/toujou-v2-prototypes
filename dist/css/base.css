@@ -3530,7 +3530,7 @@ p > .button {
 
 .chip[chip-bg-color="primary-light"] {
     --toujou-chip-color-bg: var(--color-primary-light);
-    --toujou-chip-text-color: var(--color-font);
+    --toujou-chip-text-color: var(--color-bg);
 }
 
 .chip[chip-bg-color="primary-very-light"] {
@@ -3545,7 +3545,7 @@ p > .button {
 
 .chip[chip-bg-color="secondary-light"] {
     --toujou-chip-color-bg: var(--color-secondary-light);
-    --toujou-chip-text-color: var(--color-font);
+    --toujou-chip-text-color: var(--color-bg);
 }
 
 .chip[chip-bg-color="secondary-very-light"] {

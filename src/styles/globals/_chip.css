@@ -42,7 +42,7 @@
 
 .chip[chip-bg-color="primary-light"] {
     --toujou-chip-color-bg: var(--color-primary-light);
-    --toujou-chip-text-color: var(--color-font);
+    --toujou-chip-text-color: var(--color-bg);
 }
 
 .chip[chip-bg-color="primary-very-light"] {
@@ -57,7 +57,7 @@
 
 .chip[chip-bg-color="secondary-light"] {
     --toujou-chip-color-bg: var(--color-secondary-light);
-    --toujou-chip-text-color: var(--color-font);
+    --toujou-chip-text-color: var(--color-bg);
 }
 
 .chip[chip-bg-color="secondary-very-light"] {
