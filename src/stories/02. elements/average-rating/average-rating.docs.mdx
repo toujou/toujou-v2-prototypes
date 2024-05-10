@@ -1,77 +1,29 @@
 # Rating-stars
 
-The rating stars element allows us to quickly add a "rating" element without having to deal with images for the different values.
+The average-rating element shows the average value of the selected reviews
 
-The rating element is configurable: we can change the color, the "rating entity", size, number of elements, ...
+| ⚠️ Note: the templates and partials are mostly inherited from the Reviews Extension
 
 ## Markup Example
 ```html
-<toujou-rating-stars
-    class="rating-stars"
-    rating-entity="★"
-    rating-total="5"
-    rating-value="4.4"
-    rating-entity-size="xl"
->
-</toujou-rating-stars>
+<div class="average-rating">
+    <h3 class="average-rating__title">This is the average rating header</h3>
+    <p class="average-rating__text">This is the average rating content element custom text</p>
+    <div class="average-rating__rating">
+        <p class="average-rating__rating-text">3.7</p>
+
+        <toujou-rating-stars
+            class="rating-stars average-rating__rating-stars"
+            rating-total="5"
+            rating-value="3.7">
+        </toujou-rating-stars>
+
+        <p class="average-rating__count">
+            <a href="#" title="Nice rating link" target="_blank" class="average-rating__link">
+                3 Bewertungen
+            </a>
+        </p>
+    </div>
+</div>
 ```
 
-## Attributes
-
-### class <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
-The rating stars element must have the `rating-stars`
-
-### rating-value <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
-The `rating-value` defined the value that should be shown on the element.
-
-This value is used together with the `rating-total` to calculate the rate percentage
-
-### rating-entity
-The `rating-entity` attribute you may define the "symbol" to show on the element.
-
-If not available, the default value is `★`
-
-Example:
-```html
-<toujou-rating-stars class="rating-stars" rating-entity="👍" rating-value="4.4">
-```
-
-| ⚠️ Depending on the symbol used, we may need to adjust the letter-spacing on the element, which you can do with the `--rating-stars-letter-spacing` css variable |
-|:-------------------------------------------------------|
-
-### rating-total
-The `rating-total` allows us to show a ratings element with a different number of items, for instance for a 0 - 10 rating.
-
-If not available, the default value if 5
-
-```html
-<toujou-rating-stars class="rating-stars" rating-entity="★" rating-total="10" rating-value="7">
-```
-
-### rating-entity-size
-The `rating-entity-size` defines how big the "symbols" on the element are.
-
-If not available, the default value is `--font-size-normal`.
-
-Available values are `s`, `normal`, `m`, `l`, `xl`, and `xxl`.
-
-If needed, you can directly set the `--rating-stars-font-size` to give it a custom size.
-
-Example:
-```html
-<toujou-rating-stars class="rating-stars" rating-value="7" rating-entity-size="xxl">
-```
-or
-```css
-.rating-stars {
-    --rating-stars-font-size: 100px;
-}
-```
-
-## CSS Variables
-
-CSS Variables allow you to adjust the looks of the element to meet your needs
-
-- `--rating-stars-letter-spacing`
-- `--rating-stars-color`
-- `--rating-stars-font-size`
