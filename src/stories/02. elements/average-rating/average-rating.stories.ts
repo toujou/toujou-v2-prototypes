@@ -14,32 +14,15 @@ export default {
         },
     },
     argTypes: {
-        rating: {
+        showMaxRating: {
             table: {
-                category: "Rating stars",
-                defaultValue: { summary: '4.4' },
+                category: "Average rating settings",
+                defaultValue: { summary: 'false' },
             },
-            name: 'Rating value',
-            description: "Set a value for the rating",
-            control: {
-                type: 'number',
-                min: 0,
-                max: 5,
-                step: 0.1
-            },
-            defaultValue: ['4.7'],
-            required: true,
-        },
-        size: {
-            table: {
-                category: "Rating stars",
-                defaultValue: { summary: 'xl' },
-            },
-            name: 'Size',
-            description: "Set the rating stars size",
-            options: ['s', 'normal', 'm', 'l', 'xl', 'xxl'],
-            control: { type: 'radio' },
-            defaultValue: ['normal'],
+            name: 'Show rating max value',
+            description: "Show the maximum possible value for the ratings",
+            control: { type: 'boolean' },
+            defaultValue: ['false'],
             required: true,
         },
     },
@@ -47,8 +30,7 @@ export default {
 } satisfies Meta;
 
 interface AverageRatingProps {
-    rating: number,
-    size: string
+    showMaxRating: boolean
 }
 
 const Template: StoryFn<AverageRatingProps> = (args: AverageRatingProps) => {
@@ -57,7 +39,7 @@ const Template: StoryFn<AverageRatingProps> = (args: AverageRatingProps) => {
             <h3 class="average-rating__title">This is the average rating header</h3>
             <p class="average-rating__text">This is the average rating content element custom text</p>
             <div class="average-rating__rating">
-                <p class="average-rating__rating-text">3.7</p>
+                <p class="average-rating__rating-text">3.7 ${args.showMaxRating ? '/ 5' : ''}</p>
 
                 <toujou-rating-stars
                     class="rating-stars average-rating__rating-stars"
@@ -66,7 +48,7 @@ const Template: StoryFn<AverageRatingProps> = (args: AverageRatingProps) => {
                 </toujou-rating-stars>
 
                 <p class="average-rating__count">
-                    <a href="/" title="Nice rating link" target="_blank" class="average-rating__link">
+                    <a href="#" title="Nice rating link" target="_blank" class="average-rating__link">
                         3 Bewertungen
                     </a>
                 </p>
@@ -78,6 +60,5 @@ const Template: StoryFn<AverageRatingProps> = (args: AverageRatingProps) => {
 export const AverageRating = Template.bind({});
 
 AverageRating.args = {
-    rating: 4.4,
-    size: 'xl'
+    showMaxRating: false
 }
