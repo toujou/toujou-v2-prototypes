@@ -49,7 +49,7 @@ import{T as c}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 `,e.jsx(t.li,{children:e.jsx(t.code,{children:"--rating-stars-letter-spacing"})}),`
 `,e.jsx(t.li,{children:e.jsx(t.code,{children:"--rating-stars-color"})}),`
 `,e.jsx(t.li,{children:e.jsx(t.code,{children:"--rating-stars-font-size"})}),`
-`]})]})}function d(n={}){const{wrapper:t}={...o(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(s,{...n})}):s(n)}const p={title:"COMPONENTS/RatingStars",parameters:{badges:[c.DONE],docs:{page:d}},argTypes:{rating:{table:{category:"Rating stars",defaultValue:{summary:"4.4"}},name:"Rating value",description:"Set a value for the rating",control:{type:"number",min:0,max:5,step:.1},defaultValue:["4.7"],required:!0},size:{table:{category:"Rating stars",defaultValue:{summary:"xl"}},name:"Size",description:"Set the rating stars size",options:["s","normal","m","l","xl","xxl"],control:{type:"radio"},defaultValue:["normal"],required:!0}},tags:["autodocs"]},h=n=>`
+`]})]})}function d(n={}){const{wrapper:t}={...o(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(s,{...n})}):s(n)}const p={title:"COMPONENTS/Rating Stars",parameters:{badges:[c.DONE],docs:{page:d}},argTypes:{rating:{table:{category:"Rating stars",defaultValue:{summary:"4.4"}},name:"Rating value",description:"Set a value for the rating",control:{type:"number",min:0,max:5,step:.1},defaultValue:["4.7"],required:!0},size:{table:{category:"Rating stars",defaultValue:{summary:"xl"}},name:"Size",description:"Set the rating stars size",options:["s","normal","m","l","xl","xxl"],control:{type:"radio"},defaultValue:["normal"],required:!0}},tags:["autodocs"]},h=n=>`
         <toujou-rating-stars
             class="rating-stars"
             rating-entity="★"

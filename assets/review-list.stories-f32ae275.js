@@ -44,7 +44,7 @@ import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 </div>
 `})}),`
 `,e.jsx(i.p,{children:`The card's "content" section will be clamped to 3 lines if it has enough content. In this case, there will be a "content toggle" button visible, which will expand / clamp the content.`}),`
-`,e.jsx(i.p,{children:"Each review card can also show a comment from the website owner."})]})}function c(t={}){const{wrapper:i}={...l(),...t.components};return i?e.jsx(i,{...t,children:e.jsx(a,{...t})}):a(t)}const b={title:"COMPONENTS/ReviewList",parameters:{badges:[u.DONE],docs:{page:c}},tags:["autodocs"]},d=()=>`
+`,e.jsx(i.p,{children:"Each review card can also show a comment from the website owner."})]})}function c(t={}){const{wrapper:i}={...l(),...t.components};return i?e.jsx(i,{...t,children:e.jsx(a,{...t})}):a(t)}const b={title:"COMPONENTS/Reviews/Review List",parameters:{badges:[u.DONE],docs:{page:c}},tags:["autodocs"]},d=()=>`
         <div class="reviews">
             <article class="review">
                 <header class="review__header">
