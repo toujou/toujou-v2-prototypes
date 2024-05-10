@@ -4,6 +4,7 @@
 @import 'demo/_demo-variables.css' layer(base);
 @import 'demo/_animation.css' layer(base);
 @import 'demo/_aspect-ratio.css' layer(base);
+@import 'demo/_average-rating.css' layer(base);
 @import 'demo/_border.css' layer(base);
 @import 'demo/_border-radius.css' layer(base);
 @import 'demo/_color.css' layer(base);
@@ -25,6 +26,7 @@
 @import './base.css';
 
 /* ELEMENTS */
+@import './elements/_average-rating.css';
 @import './elements/_blockquote.css';
 @import './elements/_blockquote-grid.css';
 @import './elements/_breadcrumb.css';

@@ -3,10 +3,10 @@ import { Meta, StoryFn } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 // @ts-ignore
-import ratingStarsDocs from './rating-stars.docs.mdx';
+import ratingStarsDocs from './average-rating.docs.mdx';
 
 export default {
-    title: 'COMPONENTS/Rating Stars',
+    title: 'COMPONENTS/Reviews/Average Rating',
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
         docs: {
@@ -46,27 +46,38 @@ export default {
     tags: ['autodocs']
 } satisfies Meta;
 
-interface RatingStarsStoryProps {
+interface AverageRatingProps {
     rating: number,
     size: string
 }
 
-const Template: StoryFn<RatingStarsStoryProps> = (args: RatingStarsStoryProps) => {
+const Template: StoryFn<AverageRatingProps> = (args: AverageRatingProps) => {
     return `
-        <toujou-rating-stars
-            class="rating-stars"
-            rating-entity="★"
-            rating-total="5"
-            rating-value="${args.rating}"
-            rating-entity-size="${args.size}"
-        >
-        </toujou-rating-stars>
+        <div class="average-rating">
+            <h3 class="average-rating__title">This is the average rating header</h3>
+            <p class="average-rating__text">This is the average rating content element custom text</p>
+            <div class="average-rating__rating">
+                <p class="average-rating__rating-text">3.7</p>
+
+                <toujou-rating-stars
+                    class="rating-stars average-rating__rating-stars"
+                    rating-total="5"
+                    rating-value="3.7">
+                </toujou-rating-stars>
+
+                <p class="average-rating__count">
+                    <a href="/" title="Nice rating link" target="_blank" class="average-rating__link">
+                        3 Bewertungen
+                    </a>
+                </p>
+            </div>
+        </div>
     `;
 };
 
-export const RatingStars = Template.bind({});
+export const AverageRating = Template.bind({});
 
-RatingStars.args = {
+AverageRating.args = {
     rating: 4.4,
     size: 'xl'
 }
