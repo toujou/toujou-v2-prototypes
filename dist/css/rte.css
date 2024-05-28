@@ -1797,8 +1797,15 @@ table {
 
 ul,
 ol {
-    padding-left: 0;
+    padding-left: 1.1rem;
     margin: var(--spacing-normal) 0 var(--spacing-normal);
+    list-style-position: outside;
+}
+
+:where(ul, ol) li::marker {
+    margin-right: var(--spacing-xxl);
+    display: inline-block;
+    width: 4rem;
 }
 
 main > :is(ul, ol) {
@@ -2014,17 +2021,6 @@ a:not(.button):focus-visible {
 
 *[type-color="font-light"] {
     color: var(--color-font-light);
-}
-
-ul, ol {
-    list-style-position: outside;
-    padding-left: 1.1rem;
-}
-
-:where(ul, ol) li::marker {
-    margin-right: var(--spacing-xxl);
-    display: inline-block;
-    width: 4rem;
 }
 
 /* stylelint-disable-next-line selector-no-vendor-prefix */

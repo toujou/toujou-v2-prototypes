@@ -1,5 +1,4 @@
-// import { themes } from '@storybook/theming';
-import { addons } from "@storybook/addons";
+import { addons } from '@storybook/manager-api';
 import toujouTheme from "./toujouTheme";
 
 /* Add custom theme settings */

@@ -53,6 +53,7 @@
         font-size: var(--average-rating-text-font-size);
     }
 
+    /* stylelint-disable declaration-block-no-redundant-longhand-properties */
     .average-rating__rating {
         display: var(--average-rating-rating-display);
         grid-template-columns: var(--average-rating-rating-grid-template-columns);
@@ -63,6 +64,7 @@
         align-items: var(--average-rating-rating-align-items);
         margin: var(--average-rating-rating-margin);
     }
+    /* stylelint-enable declaration-block-no-redundant-longhand-properties */
 
     .average-rating__rating-text {
         font-size: var(--average-rating-rating-text-font-size);
