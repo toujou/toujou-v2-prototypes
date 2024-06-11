@@ -1,4 +1,4 @@
-import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as i}from"./jsx-runtime-2d96f316.js";import{u as r}from"./index-9d38a655.js";import"./photoswipe-lightbox-creator-73ab1683.js";import"./index-b6937ee2.js";import"./_commonjsHelpers-725317a4.js";function t(s){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",ul:"ul",...r(),...s.components};return i.jsxs(i.Fragment,{children:[i.jsx(e.h1,{id:"portfolio-gallery",children:"Portfolio gallery"}),`
+import{T as d}from"./badgeCustomConfig-e7a687d5.js";import{j as i}from"./jsx-runtime-2d96f316.js";import{u as r}from"./index-9d38a655.js";import"./photoswipe-lightbox-creator-250643cc.js";import"./index-b6937ee2.js";import"./_commonjsHelpers-725317a4.js";function t(s){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",ul:"ul",...r(),...s.components};return i.jsxs(i.Fragment,{children:[i.jsx(e.h1,{id:"portfolio-gallery",children:"Portfolio gallery"}),`
 `,i.jsxs(e.ul,{children:[`
 `,i.jsx(e.li,{children:'The portfolio gallery render a slider on mobile and an "image grid" on desktop devices.'}),`
 `,i.jsx(e.li,{children:'On mobile it shows a "counter" element'}),`
