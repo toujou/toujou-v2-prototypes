@@ -58,6 +58,15 @@ function _initLightbox(parent: HTMLElement) {
     lightbox.init();
 
     pswpLightboxCreator.lightboxes.add(lightbox);
+
+    parent.dispatchEvent(new CustomEvent('toujou-lightbox-init', {
+        bubbles: true,
+        composed: true,
+        detail: {
+            el: parent,
+            lightbox: lightbox
+        }
+    }))
 }
 
 /**
