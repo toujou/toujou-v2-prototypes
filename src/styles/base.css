@@ -61,3 +61,6 @@
 @import "./globals/_type.css" layer(base);
 @import "./globals/_wrap-iframe.css" layer(base);
 @import "./globals/_wrap-plugin-page.css" layer(base);
+@import "./globals/_footer.css" layer(base);
+@import "./globals/_footer-column.css" layer(base);
+@import "./globals/_footer-content.css" layer(base);
