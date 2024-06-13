@@ -43,6 +43,9 @@
 @import "./globals/_estimated-reading-time.css" layer(base);
 @import "./globals/_exit-warning.css" layer(base);
 @import "./globals/_fav-count.css" layer(base);
+@import "./globals/_footer.css" layer(base);
+@import "./globals/_footer-column.css" layer(base);
+@import "./globals/_footer-content.css" layer(base);
 @import "./globals/_grid.css" layer(base);
 @import './elements/_icon.css' layer(base);
 @import "./globals/_main.css" layer(base);
@@ -52,6 +55,7 @@
 @import "./globals/_separated-list.css" layer(base);
 @import "./globals/_single-media.css" layer(base);
 @import "./globals/_smooth-scroll.css" layer(base);
+@import './globals/_social-media-bar.css' layer(base);
 @import "./globals/_snackbar.css" layer(base);
 @import "./globals/_state-inputs.css" layer(base);
 @import "./globals/_table.css" layer(base);
@@ -61,6 +65,3 @@
 @import "./globals/_type.css" layer(base);
 @import "./globals/_wrap-iframe.css" layer(base);
 @import "./globals/_wrap-plugin-page.css" layer(base);
-@import "./globals/_footer.css" layer(base);
-@import "./globals/_footer-column.css" layer(base);
-@import "./globals/_footer-content.css" layer(base);
