@@ -1,1 +1,0 @@
-import{j as e}from"./jsx-runtime-2d96f316.js";import{u as s}from"./index-9d38a655.js";function o(n){const t={h1:"h1",...s(),...n.components};return e.jsx(t.h1,{id:"local-business-page",children:"Local Business page"})}function a(n={}){const{wrapper:t}={...s(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(o,{...n})}):o(n)}export{a as M};

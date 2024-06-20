@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime-2d96f316.js";import{u as c}from"./index-9d38a655.js";function e(n){const o={h1:"h1",...c(),...n.components};return t.jsx(o.h1,{id:"accommodation-page",children:"Accommodation page"})}function s(n={}){const{wrapper:o}={...c(),...n.components};return o?t.jsx(o,{...n,children:t.jsx(e,{...n})}):e(n)}export{s as M};
