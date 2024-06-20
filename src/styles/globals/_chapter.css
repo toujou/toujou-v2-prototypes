@@ -2,7 +2,19 @@
     --chapter-position: relative;
     --chapter-background-color: var(--color-bg);
     --chapter-margin: 0;
-    --chapter-padding: var(--spacing-between-elements-normal) 0;
+    --chapter-padding: 0;
+    --chapter-font-color: var(--font-color);
+
+    --chapter-bg-color-original: var(--color-bg);
+    --chapter-primary-color-original: var(--color-primary);
+    --chapter-primary-color-light-original: var(--color-primary-light);
+    --chapter-primary-color-dark-original: var(--color-primary-dark);
+    --chapter-secondary-color-original: var(--color-secondary);
+    --chapter-secondary-color-light-original: var(--color-secondary-light);
+    --chapter-secondary-color-dark-original: var(--color-secondary-dark);
+    --chapter-font-color-original: var(--color-font);
+    --chapter-font-color-light-original: var(--color-font-light);
+    --chapter-font-color-dark-original: var(--color-font-dark);
 
     position: relative;
     background-color: var(--chapter-background-color);
@@ -10,24 +22,82 @@
     padding: var(--chapter-padding);
 }
 
-*:not(span) + .chapter:not(:first-child) {
+*:not(span, .chapter) + .chapter:not(:first-child) {
     margin-top: var(--spacing-between-elements-normal);
 }
 
-.chapter--primary {
-    --chapter-background-color: var(--color-primary);
+.chapter[background-color] {
+    --chapter-padding: var(--spacing-between-elements-normal) 0;
 }
 
-.chapter--secondary {
-    --chapter-background-color: var(--color-secondary);
+.chapter[background-color="background"] + span + .chapter[background-color="background"],
+.chapter[background-color="primary"] + span + .chapter[background-color="primary"],
+.chapter[background-color="primary-light"] + span + .chapter[background-color="primary-light"],
+.chapter[background-color="primary-dark"] + span + .chapter[background-color="primary-dark"],
+.chapter[background-color="secondary"] + span + .chapter[background-color="secondary"],
+.chapter[background-color="secondary-light"] + span + .chapter[background-color="secondary-light"],
+.chapter[background-color="secondary-dark"] + span + .chapter[background-color="secondary-dark"],
+.chapter[background-color="font"] + span + .chapter[background-color="font"],
+.chapter[background-color="font-light"] + span + .chapter[background-color="font-light"],
+.chapter[background-color="font-dark"] + span + .chapter[background-color="font-dark"] {
+    padding-top: var(--spacing-normal);
 }
 
-.chapter--inverted {
-    --chapter-background-color: var(--color-font);
+.chapter[background-color="background"]:has(+ span + .chapter[background-color="background"]),
+.chapter[background-color="primary"]:has(+ span + .chapter[background-color="primary"]),
+.chapter[background-color="primary-light"]:has(+ span + .chapter[background-color="primary-light"]),
+.chapter[background-color="primary-dark"]:has(+ span + .chapter[background-color="primary-dark"]),
+.chapter[background-color="secondary"]:has(+ span + .chapter[background-color="secondary"]),
+.chapter[background-color="secondary-light"]:has(+ span + .chapter[background-color="secondary-light"]),
+.chapter[background-color="secondary-dark"]:has(+ span + .chapter[background-color="secondary-dark"]),
+.chapter[background-color="font"]:has(+ span + .chapter[background-color="font"]),
+.chapter[background-color="font-light"]:has(+ span + .chapter[background-color="font-light"]),
+.chapter[background-color="font-dark"]:has(+ span + .chapter[background-color="font-dark"]) {
+    padding-bottom: var(--spacing-normal);
 }
 
-.chapter--background {
-    --chapter-background-color: var(--color-font-o-10);
+.chapter--primary,
+.chapter[background-color="primary"] {
+    --chapter-background-color: var(--chapter-primary-color-original);
+}
+
+.chapter[background-color="primary-light"] {
+    --chapter-background-color: var(--chapter-primary-color-light-original);
+}
+
+.chapter[background-color="primary-dark"] {
+    --chapter-background-color: var(--chapter-primary-color-dark-original);
+}
+
+.chapter--secondary,
+.chapter[background-color="secondary"] {
+    --chapter-background-color: var(--chapter-secondary-color-original);
+}
+
+.chapter[background-color="secondary-light"] {
+    --chapter-background-color: var(--chapter-secondary-color-light-original);
+}
+
+.chapter[background-color="secondary-dark"] {
+    --chapter-background-color: var(--chapter-secondary-color-dark-original);
+}
+
+.chapter--inverted,
+.chapter[background-color="font"] {
+    --chapter-background-color: var(--chapter-font-color-original);
+}
+
+.chapter[background-color="font-light"] {
+    --chapter-background-color: var(--chapter-font-color-light-original);
+}
+
+.chapter[background-color="font-dark"] {
+    --chapter-background-color: var(--chapter-font-color-dark-original);
+}
+
+.chapter--background,
+.chapter[background-color="background"] {
+    --chapter-background-color: var(--color-bg);
 }
 
 .chapter--primary,
@@ -66,4 +136,138 @@
 .chapter > *:not(hr, .divider, blockquote):first-child,
 .chapter > span:first-child + * {
     margin-top: 0 !important;
+}
+
+.chapter[font-color="background"] > * {
+    --color-headline: var(--bg-color);
+    --color-font: var(--bg-color);
+    --color-link: var(--bg-color);
+    --color-link-hover: var(--color-primary);
+}
+
+.chapter[font-color="primary"] > * {
+    --color-headline: var(--color-primary);
+    --color-font: var(--color-primary);
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-primary-dark);
+}
+
+.chapter[font-color="primary-light"] > * {
+    --color-headline: var(--color-primary-light);
+    --color-font: var(--color-primary-light);
+    --color-link: var(--color-primary-light);
+    --color-link-hover: var(--color-primary-dark);
+}
+
+.chapter[font-color="primary-dark"] > * {
+    --color-headline: var(--color-primary-dark);
+    --color-font: var(--color-primary-dark);
+    --color-link: var(--color-primary-dark);
+    --color-link-hover: var(--color-primary-light);
+}
+
+.chapter[font-color="secondary"] > * {
+    --color-headline: var(--color-secondary);
+    --color-font: var(--color-secondary);
+    --color-link: var(--color-secondary);
+    --color-link-hover: var(--color-secondary-dark);
+}
+
+.chapter[font-color="secondary-light"] > * {
+    --color-headline: var(--color-secondary-light);
+    --color-font: var(--color-secondary-light);
+    --color-link: var(--color-secondary-light);
+    --color-link-hover: var(--color-secondary-dark);
+}
+
+.chapter[font-color="secondary-dark"] > * {
+    --color-headline: var(--color-secondary-dark);
+    --color-font: var(--color-secondary-dark);
+    --color-link: var(--color-secondary-dark);
+    --color-link-hover: var(--color-secondary-light);
+}
+
+.chapter[font-color="font"] > * {
+    --color-headline: var(--color-font);
+}
+
+.chapter[font-color="font-light"] > * {
+    --color-headline: var(--color-font-light);
+    --color-font: var(--color-font-light);
+    --color-link: var(--color-font-light);
+    --color-link-hover: var(--color-font-dark);
+}
+
+.chapter[font-color="font-dark"] > * {
+    --color-headline: var(--color-font-dark);
+    --color-font: var(--color-font-dark);
+    --color-link: var(--color-font-dark);
+    --color-link-hover: var(--color-font-light);
+}
+
+.chapter[min-height="full"] {
+    min-height: 100dvh;
+}
+
+.chapter[min-height="half"] {
+    min-height: 50dvh;
+}
+
+.chapter[min-height="third"] {
+    min-height: calc(100dvh / 3);
+}
+
+.chapter[min-height="fourth"] {
+    min-height: 25dvh;
+}
+
+.chapter[vertical-position] {
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter[vertical-position="middle"] {
+    justify-content: center;
+}
+
+.chapter[vertical-position="bottom"] {
+    justify-content: flex-end;
+}
+
+.chapter[attachment-type="fixed"] {
+    --chapter-attachment-type: fixed;
+}
+
+.chapter[has-background-media] {
+    --chapter-bg-current-image: var(--chapter-bg-image-mobile);
+
+    background-image: var(--chapter-bg-current-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: var(--chapter-attachment-type);
+}
+
+@media screen and (min-width: 480px) {
+    .chapter[has-background-media] {
+        --chapter-bg-current-image: var(--chapter-bg-image-tablet);
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .chapter[has-background-media] {
+        --chapter-bg-current-image: var(--chapter-bg-image-desktop);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .chapter[has-background-media] {
+        --chapter-bg-current-image: var(--chapter-bg-image-wide);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .chapter[has-background-media] {
+        --chapter-bg-current-image: var(--chapter-bg-image-original);
+    }
 }

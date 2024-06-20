@@ -212,7 +212,7 @@ strong {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-link);
 }
 
 h1,
@@ -234,7 +234,7 @@ p > a.button {
 }
 
 a:not(.button):focus-visible {
-    color: var(--color-primary-dark);
+    color: var(--color-link-hover);
 }
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */

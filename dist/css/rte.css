@@ -116,6 +116,8 @@
     --color-white-o-75: hsl(0 100% 100% / 75%);
 
     --color-headline: var(--color-primary);
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-primary-dark);
 
     --color-gold-h: 44deg;
     --color-gold-s: 100%;
@@ -1939,7 +1941,7 @@ strong {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-link);
 }
 
 h1,
@@ -1962,7 +1964,7 @@ p > a.button {
 }
 
 a:not(.button):focus-visible {
-    color: var(--color-primary-dark);
+    color: var(--color-link-hover);
 }
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */

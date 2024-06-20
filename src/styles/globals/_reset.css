@@ -61,6 +61,10 @@ iframe {
     text-shadow: none;
 }
 
+.chapter[background-color="primary"] ::selection {
+    background-color: var(--color-primary-dark);
+}
+
 /* For images to not be able to exceed their container */
 img {
     max-width: 100%;

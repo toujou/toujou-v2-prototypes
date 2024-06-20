@@ -53,6 +53,8 @@
     --color-white-o-75: hsl(0 100% 100% / 75%);
 
     --color-headline: var(--color-primary);
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-primary-dark);
 
     --color-gold-h: 44deg;
     --color-gold-s: 100%;

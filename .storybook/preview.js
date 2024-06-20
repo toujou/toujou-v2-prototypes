@@ -92,3 +92,4 @@ setTimeout(() => {
 }, 500)
 
 console.clear();
+export const tags = ["autodocs"];
