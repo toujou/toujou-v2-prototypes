@@ -64,6 +64,7 @@ or
             attachment-type="${o.attachmentType}"
             style="${u}"
             ${o.showBackgroundImage?"has-background-media":""}
+            is-test-target
         >
             ${a("Test chapter",!1)}
         </section>
@@ -98,6 +99,7 @@ or
             attachment-type="\${args.attachmentType}"
             style="\${chapterStyles}"
             \${args.showBackgroundImage ? 'has-background-media' : ''}
+            is-test-target
         >
             \${renderDummyContent('Test chapter', false)}
         </section>
