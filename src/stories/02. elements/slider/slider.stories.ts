@@ -39,7 +39,6 @@ export default {
         showCount: {
             table: {
                 category: "Slider settings",
-                defaultValue: { summary: true },
             },
             name: 'Show count',
             description: "Show the count element",
@@ -61,12 +60,23 @@ export default {
         autoplayInterval: {
             table: {
                 category: "Slider settings",
-                defaultValue: { summary: 6 },
             },
             name: 'autoplay interval',
             description: "Interval for the autoplay function (in seconds)",
             control: { type: 'number' },
             defaultValue: 6,
+            required: true,
+        },
+        sliderType: {
+            table: {
+                category: "Slider settings",
+                defaultValue: { summary: 'loop' },
+            },
+            name: 'Slider type',
+            description: "Set the slider's animation type",
+            options: ['loop', 'slide'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
             required: true,
         },
     },
@@ -79,6 +89,7 @@ interface SliderStoryProps {
     isFullwidth: boolean;
     autoplay: boolean;
     autoplayInterval: number;
+    sliderType: string;
 }
 
 const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
@@ -92,6 +103,7 @@ const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
             ${args.autoplay ? 'auto-play' : ''}
             auto-play-interval="${args.autoplayInterval}"
             slides-to-show="1"
+            slider-type="${args.sliderType}"
             slider-gap="var(--slider-slides-gap)"
             slider-aspect-ratio="0.5625"
             arrow-first-aria-label="Go to first slide"
@@ -170,5 +182,6 @@ Slider.args = {
     isFullwidth: false,
     autoplay: false,
     autoplayInterval: 6,
+    sliderType: 'loop',
 }
 

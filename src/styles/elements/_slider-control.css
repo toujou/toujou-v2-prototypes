@@ -23,7 +23,8 @@
     }
 
     button.slider-control[disabled] {
-        opacity: var(--slider-control-disabled-opacity);
+        opacity: var(--slider-control-disabled-opacity) !important;
+        pointer-events: none;
     }
 
     button.slider-control:focus-visible {

@@ -204,4 +204,40 @@ describe('Slider - desktop', () => {
     });
 })
 
+describe('Slider - desktop - type "slide"', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-media--slider&args=sliderType:slide');
+    });
+
+    it('has correct attributes', () => {
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'opacity', '0');
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'pointer-events', 'none');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'opacity', '1');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'pointer-events', 'all');
+        cy.get('.slider-bullets li:last-child .slider-bullets__bullet').click();
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'opacity', '1');
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'pointer-events', 'all');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'opacity', '0');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'pointer-events', 'none');
+    });
+})
+
+describe('Slider - desktop - type "loop"', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-media--slider&args=sliderType:loop');
+    });
+
+    it.only('has correct attributes', () => {
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'opacity', '1');
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'pointer-events', 'all');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'opacity', '1');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'pointer-events', 'all');
+        cy.get('.slider-bullets li:last-child .slider-bullets__bullet').click();
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'opacity', '1');
+        cy.get('toujou-slider .slider-control--prev').should('have.css', 'pointer-events', 'all');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'opacity', '1');
+        cy.get('toujou-slider .slider-control--next').should('have.css', 'pointer-events', 'all');
+    });
+})
+
 export {}
