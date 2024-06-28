@@ -227,7 +227,7 @@ describe('Slider - desktop - type "loop"', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-media--slider&args=sliderType:loop');
     });
 
-    it.only('has correct attributes', () => {
+    it('has correct attributes', () => {
         cy.get('toujou-slider .slider-control--prev').should('have.css', 'opacity', '1');
         cy.get('toujou-slider .slider-control--prev').should('have.css', 'pointer-events', 'all');
         cy.get('toujou-slider .slider-control--next').should('have.css', 'opacity', '1');

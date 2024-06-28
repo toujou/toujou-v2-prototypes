@@ -143,6 +143,7 @@ const Template: StoryFn<ChapterStoryProps> = (args: ChapterStoryProps) => {
             attachment-type="${args.attachmentType}"
             style="${chapterStyles}"
             ${args.showBackgroundImage ? 'has-background-media': ''}
+            is-test-target
         >
             ${renderDummyContent('Test chapter', false)}
         </section>
