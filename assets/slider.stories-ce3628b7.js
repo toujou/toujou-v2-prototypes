@@ -1,13 +1,14 @@
-import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.docs-58b823cc.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const _={title:"COMPONENTS/Media",parameters:{badges:[a.DONE],docs:{page:t}},argTypes:{designColor:{table:{category:"Slider settings",defaultValue:{summary:"default"}},name:"Slider design",description:"Set the slider's design color",options:["default","primary","secondary","light-grey"],control:{type:"radio"},defaultValue:["default"],required:!0},isFullwidth:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"Fullwidth",description:"Show slider in fullwidth",control:{type:"boolean"},defaultValue:"false",required:!0},showCount:{table:{category:"Slider settings",defaultValue:{summary:!0}},name:"Show count",description:"Show the count element",control:{type:"boolean"},defaultValue:!0,required:!0},autoplay:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"autoplay",description:"Slide automatically",control:{type:"boolean"},defaultValue:"false",required:!0},autoplayInterval:{table:{category:"Slider settings",defaultValue:{summary:6}},name:"autoplay interval",description:"Interval for the autoplay function (in seconds)",control:{type:"number"},defaultValue:6,required:!0}},tags:["autodocs"]},r=i=>`
+import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.docs-58b823cc.js";import"./jsx-runtime-87b2c1dd.js";import"./index-afb52020.js";import"./_commonjsHelpers-725317a4.js";import"./index-af127bdc.js";const _={title:"COMPONENTS/Media",parameters:{badges:[a.DONE],docs:{page:t}},argTypes:{designColor:{table:{category:"Slider settings",defaultValue:{summary:"default"}},name:"Slider design",description:"Set the slider's design color",options:["default","primary","secondary","light-grey"],control:{type:"radio"},defaultValue:["default"],required:!0},isFullwidth:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"Fullwidth",description:"Show slider in fullwidth",control:{type:"boolean"},defaultValue:"false",required:!0},showCount:{table:{category:"Slider settings"},name:"Show count",description:"Show the count element",control:{type:"boolean"},defaultValue:!0,required:!0},autoplay:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"autoplay",description:"Slide automatically",control:{type:"boolean"},defaultValue:"false",required:!0},autoplayInterval:{table:{category:"Slider settings"},name:"autoplay interval",description:"Interval for the autoplay function (in seconds)",control:{type:"number"},defaultValue:6,required:!0},sliderType:{table:{category:"Slider settings",defaultValue:{summary:"loop"}},name:"Slider type",description:"Set the slider's animation type",options:["loop","slide"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},r=e=>`
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
-            element-design="${i.designColor}"
-            ${i.isFullwidth?"slider-fullwidth":""}
-            ${i.showCount?"show-count":""}
-            ${i.autoplay?"auto-play":""}
-            auto-play-interval="${i.autoplayInterval}"
+            element-design="${e.designColor}"
+            ${e.isFullwidth?"slider-fullwidth":""}
+            ${e.showCount?"show-count":""}
+            ${e.autoplay?"auto-play":""}
+            auto-play-interval="${e.autoplayInterval}"
             slides-to-show="1"
+            slider-type="${e.sliderType}"
             slider-gap="var(--slider-slides-gap)"
             slider-aspect-ratio="0.5625"
             arrow-first-aria-label="Go to first slide"
@@ -27,7 +28,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
 
                 <div class="splide__track slider__track">
                     <ul class="splide__list slider__list">
-                        <li class="splide__slide slider-slide" data-splide-interval="${i.autoplayInterval*1e3}">
+                        <li class="splide__slide slider-slide" data-splide-interval="${e.autoplayInterval*1e3}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
 <!--                                <toujou-media-info class="media-info">-->
@@ -42,22 +43,22 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
 <!--                                </toujou-media-info>-->
                             </toujou-single-media>
                         </li>
-                        <li class="splide__slide slider-slide" data-splide-interval="${i.autoplayInterval*1e3}">
+                        <li class="splide__slide slider-slide" data-splide-interval="${e.autoplayInterval*1e3}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
                             </toujou-single-media>
                         </li>
-                        <li class="splide__slide slider-slide" data-splide-interval="${i.autoplayInterval*1e3}">
+                        <li class="splide__slide slider-slide" data-splide-interval="${e.autoplayInterval*1e3}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/400/200" alt="Nice image">
                             </toujou-single-media>
                         </li>
-                        <li class="splide__slide slider-slide" data-splide-interval="${i.autoplayInterval*1e3}">
+                        <li class="splide__slide slider-slide" data-splide-interval="${e.autoplayInterval*1e3}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1603/904" alt="Nice image">
                             </toujou-single-media>
                         </li>
-                        <li class="splide__slide slider-slide" data-splide-interval="${i.autoplayInterval*1e3}">
+                        <li class="splide__slide slider-slide" data-splide-interval="${e.autoplayInterval*1e3}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1600/910" alt="Nice image">
                             </toujou-single-media>
@@ -75,7 +76,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
                 <span class="slider-count__total"></span>
             </toujou-slider-count>
         </toujou-slider>
-    `,e=r.bind({});e.args={designColor:"default",showCount:!0,isFullwidth:!1,autoplay:!1,autoplayInterval:6};var s,l,o;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SliderStoryProps) => {
+    `,i=r.bind({});i.args={designColor:"default",showCount:!0,isFullwidth:!1,autoplay:!1,autoplayInterval:6,sliderType:"loop"};var s,l,o;i.parameters={...i.parameters,docs:{...(s=i.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SliderStoryProps) => {
   return \`
         <toujou-slider
             class="slider"
@@ -86,6 +87,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
             \${args.autoplay ? 'auto-play' : ''}
             auto-play-interval="\${args.autoplayInterval}"
             slides-to-show="1"
+            slider-type="\${args.sliderType}"
             slider-gap="var(--slider-slides-gap)"
             slider-aspect-ratio="0.5625"
             arrow-first-aria-label="Go to first slide"
@@ -154,4 +156,4 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
             </toujou-slider-count>
         </toujou-slider>
     \`;
-}`,...(o=(l=e.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const g=["Slider"];export{e as Slider,g as __namedExportsOrder,_ as default};
+}`,...(o=(l=i.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const g=["Slider"];export{i as Slider,g as __namedExportsOrder,_ as default};
