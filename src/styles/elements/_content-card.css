@@ -20,6 +20,7 @@
         --content-card-figure-flex: 0 0 auto;
         --content-card-figure-border-radius: 0;
         --content-card-figure-overflow: hidden;
+        --content-card-figure-width: 100%;
 
         --content-card-image-width: 100%;
         --content-card-image-height: 100%;
@@ -71,6 +72,7 @@
         flex: var(--content-card-figure-flex);
         border-radius: var(--content-card-figure-border-radius);
         overflow: var(--content-card-figure-overflow);
+        width: var(--content-card-figure-width);
     }
 
     .content-card > .content-card__figure:only-child {
