@@ -108,6 +108,8 @@
 @import "./elements/_indexedsearch-results.css";
 @import "./elements/_indexedsearch-result.css";
 @import "./elements/_indexedsearch-pagination.css";
+@import "./elements/_counter-grid.css";
+@import "./elements/_counter.css";
 
 @import "elements/_facet-details.css";
 @import "elements/_panel-title.css";

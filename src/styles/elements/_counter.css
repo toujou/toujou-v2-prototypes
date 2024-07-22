@@ -1,0 +1,130 @@
+.counter {
+    --counter-display: flex;
+    --counter-flex-direction: column;
+    --counter-align-items: center;
+    --counter-justify-content: center;
+    --counter-align-self: stretch;
+    --counter-border-radius: var(--border-radius-normal);
+    --counter-flex: 0 0 var(--counter-width);
+    --counter-padding: var(--spacing-m);
+    --counter-background-color: transparent;
+    --counter-width: 100%;
+    --counter-image-size: 48px;
+    --counter-text-color: var(--font-color);
+
+    --counter-figure-height: fit-content;
+    --counter-figure-width: fit-content;
+    --counter-figure-margin: 0 auto var(--spacing-normal);
+    --counter-figure-border-radius: var(--border-radius-default);
+    --counter-figure-overflow: hidden;
+
+    --counter-image-display: block;
+    --counter-image-height: var(--counter-image-size);
+    --counter-image-width: var(--counter-image-size);
+    --counter-image-object-fit: cover;
+    --counter-image-margin: 0;
+
+    --counter-number-font-family: var(--font-family-headline);
+    --counter-number-font-size: var(--font-size-l);
+    --counter-number-font-weight: var(--font-weight-headline);
+    --counter-number-color: var(--counter-text-color);
+
+    --counter-title-margin: 0;
+    --counter-title-font-family: var(--font-family-text);
+    --counter-title-font-size: var(--font-size-ms);
+    --counter-title-font-weight: var(--font-weight-text-normal);
+    --counter-title-text-align: center;
+    --counter-title-color: var(--counter-text-color);
+
+    /* Animation duration in ms. Used by the toujou-counter web component */
+    --counter-animation-duration-slow: 6000;
+    --counter-animation-duration-medium: 3000;
+    --counter-animation-duration-fast: 1500;
+
+    display: var(--counter-display);
+    flex-direction: var(--counter-flex-direction);
+    align-items: var(--counter-align-items);
+    justify-content: var(--counter-justify-content);
+    padding: var(--counter-padding);
+    background-color: var(--counter-background-color);
+    width: var(--counter-width);
+    flex: var(--counter-flex);
+    align-self: var(--counter-align-self);
+    border-radius: var(--counter-border-radius);
+}
+
+.counter[element-design="primary"] {
+    --counter-background-color: var(--color-primary);
+    --counter-text-color: var(--color-bg);
+}
+
+.counter[element-design="secondary"] {
+    --counter-background-color: var(--color-secondary);
+    --counter-text-color: var(--color-bg);
+}
+
+.counter[element-design="inverted"] {
+    --counter-background-color: var(--color-font);
+    --counter-text-color: var(--color-bg);
+}
+
+.counter__figure {
+    height: var(--counter-figure-height);
+    width: var(--counter-figure-width);
+    margin: var(--counter-figure-margin);
+    border-radius: var(--counter-figure-border-radius);
+    overflow: var(--counter-figure-overflow);
+}
+
+.counter__image {
+    display: var(--counter-image-display);
+    height: var(--counter-image-height);
+    width: var(--counter-image-width);
+    object-fit: var(--counter-image-object-fit);
+    margin: var(--counter-image-margin);
+}
+
+.counter__number {
+    font-family: var(--counter-number-font-family);
+    font-size: var(--counter-number-font-size);
+    font-weight: var(--counter-number-font-weight);
+    color: var(--counter-number-color);
+}
+
+.counter__title {
+    margin: var(--counter-title-margin);
+    font-family: var(--counter-title-font-family);
+    font-size: var(--counter-title-font-size);
+    font-weight: var(--counter-title-font-weight);
+    text-align: var(--counter-title-text-align);
+    color: var(--counter-title-color);
+}
+
+@media screen and (min-width: 640px) {
+    .counter {
+        --counter-image-size: 64px;
+        --counter-width: calc(calc(100% - var(--content-spacing-between-columns)) / 2);
+    }
+
+    .counter-grid[number-of-items="1"] .counter {
+        --counter-width: 100%;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .counter {
+        --counter-width: calc(calc(100% - calc(var(--content-spacing-between-columns) * 3)) / 4);
+    }
+
+    .counter-grid[number-of-items="1"] .counter {
+        --counter-width: 100%;
+    }
+
+    .counter-grid[number-of-items="2"] .counter {
+        --counter-width: calc(calc(100% - var(--content-spacing-between-columns)) / 2);
+    }
+
+    .counter-grid[number-of-items="3"] .counter {
+        --counter-width: calc(calc(100% - calc(var(--content-spacing-between-columns) * 2)) / 3);
+    }
+}
