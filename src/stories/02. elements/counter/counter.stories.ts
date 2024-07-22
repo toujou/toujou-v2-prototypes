@@ -79,7 +79,6 @@ export default {
         showPrefix: {
             table: {
                 category: "Counter Settings",
-                defaultValue: { summary: false },
             },
             name: 'Show prefix',
             description: "Show the value prefix",
@@ -90,7 +89,6 @@ export default {
         showSuffix: {
             table: {
                 category: "Counter Settings",
-                defaultValue: { summary: true },
             },
             name: 'Show suffix',
             description: "Show the value suffix",

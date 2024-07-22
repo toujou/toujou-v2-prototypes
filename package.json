@@ -87,7 +87,7 @@
   "dependencies": {
     "@toujou/toujou-button": "^3.8.2",
     "@toujou/toujou-contact-box": "^2.0.21",
-    "@toujou/toujou-counter": "file:../ui-components/packages/toujou-counter",
+    "@toujou/toujou-counter": "^3.9.0",
     "@toujou/toujou-estimated-reading-time": "^3.6.0",
     "@toujou/toujou-exit-warning": "^2.0.20",
     "@toujou/toujou-inpage-nav": "^2.0.19",
