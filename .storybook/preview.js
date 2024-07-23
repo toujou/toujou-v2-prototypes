@@ -31,6 +31,7 @@ import "@toujou/toujou-timeline/lib";
 import "@toujou/toujou-topbutton/lib";
 import "@toujou/toujou-counter/lib";
 import "@toujou/toujou-consent/lib";
+import "@toujou/toujou-iframe-resizer/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
