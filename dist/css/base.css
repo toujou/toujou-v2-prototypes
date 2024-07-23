@@ -7205,14 +7205,17 @@ a:-webkit-any-link:focus-visible {
     --consent-widget-bottom-display: flex;
     --consent-widget-bottom-align-items: flex-start;
     --consent-widget-bottom-justify-content: space-between;
+    --consent-widget-bottom-flex-flow: column nowrap;
     --consent-widget-bottom-gap: var(--spacing-s);
     --consent-widget-bottom-margin: var(--spacing-normal) 0 0;
 
     --consent-widget-bottom-buttons-display: flex;
     --consent-widget-bottom-buttons-flex-flow: row wrap;
     --consent-widget-bottom-buttons-align-items: flex-start;
-    --consent-widget-bottom-buttons-justify-content: flex-end;
+    --consent-widget-bottom-buttons-justify-content: flex-start;
     --consent-widget-bottom-buttons-gap: var(--spacing-s);
+    --consent-widget-bottom-buttons-margin: 0;
+    --consent-widget-bottom-buttons-align-self: flex-start;
 
     --consent-widget-details-flex-shrink: 0;
 
@@ -7284,6 +7287,8 @@ a:-webkit-any-link:focus-visible {
     align-items: var(--consent-widget-bottom-buttons-align-items);
     justify-content: var(--consent-widget-bottom-buttons-justify-content);
     gap: var(--consent-widget-bottom-buttons-gap);
+    margin: var(--consent-widget-bottom-buttons-margin);
+    align-self: var(--consent-widget-bottom-buttons-align-self);
 }
 
 .consent-widget__details {
@@ -7299,16 +7304,16 @@ a:-webkit-any-link:focus-visible {
 }
 
 .consent-widget__details[open] #consentSettingsButton,
-.consent-widget__details[open] #consentAcceptAllButton,
-.consent-widget__details[open] #consentDenyAllButton {
+.consent-widget__details[open] + .consent-widget__bottom-buttons :where(#consentSettingsButton, #consentAcceptAllButton, #consentDenyAllButton, #consentSettingsButton) {
     display: none;
 }
 
 #consentSaveButton {
     display: none;
+    margin-top: 1rem;
 }
 
-.consent-widget__details[open] #consentSaveButton {
+.consent-widget__details[open] + .consent-widget__bottom-buttons #consentSaveButton {
     display: block;
     margin-left: auto;
 }
@@ -7343,13 +7348,17 @@ a:-webkit-any-link:focus-visible {
 .consent-widget[warningvisible="false"] .consent-widget__warning {
     display: none;
 }
+}
 
-/*@media screen and (max-width: 640px) {*/
-/*    .consent-widget {*/
-/*        --consent-widget-bottom-flex-flow: column wrap;*/
-/*        --consent-widget-bottom-buttons-justify-content: flex-start;*/
-/*    }*/
-/*}*/
+@layer base {
+
+@media screen and (min-width: 520px) {
+    .consent-widget {
+        --consent-widget-bottom-flex-flow: row nowrap;
+        --consent-widget-bottom-buttons-justify-content: flex-end;
+        --consent-widget-bottom-buttons-align-self: flex-end;
+    }
+}
 }
 
 @layer base {
