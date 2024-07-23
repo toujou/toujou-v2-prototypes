@@ -7308,7 +7308,7 @@ a:-webkit-any-link:focus-visible {
     display: none;
 }
 
-.consent-widget[open] #consentSaveButton {
+.consent-widget__details[open] #consentSaveButton {
     display: block;
     margin-left: auto;
 }
@@ -7343,16 +7343,13 @@ a:-webkit-any-link:focus-visible {
 .consent-widget[warningvisible="false"] .consent-widget__warning {
     display: none;
 }
-}
 
-@layer base {
-
-@media screen and (max-width: 640px) {
-    .consent-widget {
-        --consent-widget-bottom-flex-flow: column wrap;
-        --consent-widget-bottom-buttons-justify-content: flex-start;
-    }
-}
+/*@media screen and (max-width: 640px) {*/
+/*    .consent-widget {*/
+/*        --consent-widget-bottom-flex-flow: column wrap;*/
+/*        --consent-widget-bottom-buttons-justify-content: flex-start;*/
+/*    }*/
+/*}*/
 }
 
 @layer base {
