@@ -152,7 +152,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
                 <div class="consent-widget__bottom-buttons">
                     <button id="consentDenyAllButton" deny-all="" class="button consent-widget__button" button-type="border" button-size="small" button-variant="primary">Alles ablehnen</button>
                     <button id="consentAcceptAllButton" accept-all="" class="button consent-widget__button" button-type="default" button-size="small" button-variant="primary">Alles akzeptieren</button>
-                    <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">Ales ablehnen</button>
+                    <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">OK</button>
                 </div>
             </div>
         </toujou-consent-widget>
@@ -319,7 +319,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
                 <div class="consent-widget__bottom-buttons">
                     <button id="consentDenyAllButton" deny-all="" class="button consent-widget__button" button-type="border" button-size="small" button-variant="primary">Alles ablehnen</button>
                     <button id="consentAcceptAllButton" accept-all="" class="button consent-widget__button" button-type="default" button-size="small" button-variant="primary">Alles akzeptieren</button>
-                    <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">Ales ablehnen</button>
+                    <button id="consentSaveButton" class="button consent-widget__button" button-size="small" button-variant="primary" button-type="default">OK</button>
                 </div>
             </div>
         </toujou-consent-widget>
