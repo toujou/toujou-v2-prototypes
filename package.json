@@ -86,6 +86,7 @@
   },
   "dependencies": {
     "@toujou/toujou-button": "^3.8.2",
+    "@toujou/toujou-consent": "^3.5.3",
     "@toujou/toujou-contact-box": "^2.0.21",
     "@toujou/toujou-counter": "^3.9.1",
     "@toujou/toujou-estimated-reading-time": "^3.6.0",

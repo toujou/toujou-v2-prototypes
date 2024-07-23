@@ -13,9 +13,6 @@ import "../src/components/toujou-clamped-content/toujou-clamped-content";
 
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-modal/toujou-modal";
-import "../src/components/copied/toujou-consent/toujou-consent";
-import "../src/components/copied/toujou-consent-widget/toujou-consent-widget";
-import "../src/components/copied/toujou-third-party-content/toujou-third-party-content";
 
 // ELEMENTS FROM @TOUJOU/UI-COMPONENTS
 import "@toujou/toujou-button/lib";
@@ -33,6 +30,7 @@ import "@toujou/toujou-snackbar/lib";
 import "@toujou/toujou-timeline/lib";
 import "@toujou/toujou-topbutton/lib";
 import "@toujou/toujou-counter/lib";
+import "@toujou/toujou-consent/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";

@@ -30,7 +30,6 @@
 @import './elements/_blockquote-grid.css';
 @import './elements/_breadcrumb.css';
 @import './elements/_code-block.css';
-@import './elements/_consent-widget.css';
 @import './elements/_content-card.css';
 @import './elements/_contact-box.css';
 @import './elements/_content-card-grid.css';
@@ -62,7 +61,6 @@
 @import './elements/_sliderPswpStyles.css';
 
 @import './elements/_teaser.css';
-@import './elements/_third-party-content.css';
 @import './elements/_skip-links.css';
 @import './elements/_location-finder.css';
 @import './elements/_location-finder-teaser.css';

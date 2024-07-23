@@ -1,0 +1,172 @@
+
+.consent-widget {
+    --consent-widget-position: fixed;
+    --consent-widget-bottom: var(--spacing-normal);
+    --consent-widget-left: var(--spacing-normal);
+    --consent-widget-border: 1px solid var(--color-font-light);
+    --consent-widget-padding: var(--spacing-normal);
+    --consent-widget-border-radius: var(--border-radius-default);
+    --consent-widget-width: var(--content-width-with-padding);
+    --consent-widget-max-width: 560px;
+    --consent-widget-background-color: var(--color-bg);
+    --consent-widget-display: block;
+    --consent-widget-margin: 0;
+    --consent-widget-z-index: var(--z-index-consent);
+
+    --consent-widget-title-color: var(--color-font);
+    --consent-widget-title-margin: 0 0 var(--spacing-normal);
+
+    --consent-widget-bottom-display: flex;
+    --consent-widget-bottom-align-items: flex-start;
+    --consent-widget-bottom-justify-content: space-between;
+    --consent-widget-bottom-gap: var(--spacing-s);
+    --consent-widget-bottom-margin: var(--spacing-normal) 0 0;
+
+    --consent-widget-bottom-buttons-display: flex;
+    --consent-widget-bottom-buttons-flex-flow: row wrap;
+    --consent-widget-bottom-buttons-align-items: flex-start;
+    --consent-widget-bottom-buttons-justify-content: flex-end;
+    --consent-widget-bottom-buttons-gap: var(--spacing-s);
+
+    --consent-widget-details-flex-shrink: 0;
+
+    --consent-widget-summary-list-style: none;
+
+    --consent-widget-summary-marker-display: none;
+
+    --consent-widget-elements-display: flex;
+    --consent-widget-elements-flex-grow: 1;
+    --consent-widget-elements-flex-direction: column;
+    --consent-widget-elements-gap: var(--spacing-xs);
+
+    --consent-widget-warning-color: var(--color-font-dark);
+    --consent-widget-warning-border: var(--border-width-normal) solid var(--color-warning);
+    --consent-widget-warning-padding: var(--spacing-normal);
+    --consent-widget-warning-border-radius: var(--border-radius-default);
+    --consent-widget-warning-display: flex;
+    --consent-widget-warning-align-items: center;
+    --consent-widget-warning-jusity-content: center;
+    --consent-widget-warning-gap: var(--spacing-normal);
+    --consent-widget-warning-width: 100%;
+    --consent-widget-warning-margin: 0;
+    --consent-widget-warning-font-family: var(--font-family-text);
+
+    display: var(--consent-widget-display);
+    position: var(--consent-widget-position);
+    bottom: var(--consent-widget-bottom);
+    left: var(--consent-widget-left);
+    border: var(--consent-widget-border);
+    padding: var(--consent-widget-padding);
+    margin: var(--consent-widget-margin);
+    border-radius: var(--consent-widget-border-radius);
+    width: var(--consent-widget-width);
+    max-width: var(--consent-widget-max-width);
+    background-color: var(--consent-widget-background-color);
+    z-index: var(--consent-widget-z-index);
+}
+
+.consent-widget[in-page] {
+    --consent-widget-position: relative;
+    --consent-widget-bottom: unset;
+    --consent-widget-left: unset;
+    --consent-widget-max-width: var(--content-max-width);
+    --consent-widget-margin: 0 auto;
+    --consent-widget-z-index: var(--z-index-content);
+}
+
+.consent-widget:not([in-page])[hidden] {
+    --consent-widget-display: none;
+}
+
+.consent-widget__title {
+    color: var(--consent-widget-title-color);
+    margin: var(--consent-widget-title-margin);
+}
+
+.consent-widget__bottom {
+    display: var(--consent-widget-bottom-display);
+    flex-flow: var(--consent-widget-bottom-flex-flow);
+    align-items: var(--consent-widget-bottom-align-items);
+    justify-content: var(--consent-widget-bottom-justify-content);
+    gap: var(--consent-widget-bottom-gap);
+    margin: var(--consent-widget-bottom-margin);
+}
+
+.consent-widget__bottom-buttons {
+    display: var(--consent-widget-bottom-buttons-display);
+    flex-flow: var(--consent-widget-bottom-buttons-flex-flow);
+    align-items: var(--consent-widget-bottom-buttons-align-items);
+    justify-content: var(--consent-widget-bottom-buttons-justify-content);
+    gap: var(--consent-widget-bottom-buttons-gap);
+}
+
+.consent-widget__details {
+    flex-shrink: var(--consent-widget-details-flex-shrink);
+}
+
+.consent-widget__details-summary {
+    list-style: var(--consent-widget-summary-list-style);
+}
+
+.consent-widget__details-summary::-webkit-details-marker {
+    display: var(--consent-widget-summary-marker-display);
+}
+
+.consent-widget__details[open] #consentSettingsButton,
+.consent-widget__details[open] #consentAcceptAllButton,
+.consent-widget__details[open] #consentDenyAllButton {
+    display: none;
+}
+
+#consentSaveButton {
+    display: none;
+}
+
+.consent-widget[open] #consentSaveButton {
+    display: block;
+    margin-left: auto;
+}
+
+.consent-widget__consent-elements {
+    display: var(--consent-widget-elements-display);
+    flex-direction: var(--consent-widget-elements-flex-direction);
+    flex-grow: var(--consent-widget-elements-flex-grow);
+    gap: var(--consent-widget-elements-gap);
+}
+
+.consent-widget__warning {
+    display: var(--consent-widget-warning-display);
+    align-items: var(--consent-widget-warning-align-items);
+    justify-content: var(--consent-widget-warning-jusity-content);
+    gap: var(--consent-widget-warning-gap);
+    color: var(--consent-widget-warning-color);
+    padding: var(--consent-widget-warning-padding);
+    border: var(--consent-widget-warning-border);
+    border-radius: var(--consent-widget-warning-border-radius);
+    width: var(--consent-widget-warning-width);
+    margin: var(--consent-widget-warning-margin);
+    font-family: var(--consent-widget-warning-font-family);
+    background-color: var(--color-warning-o-25);
+}
+
+.consent-widget[warningvisible="true"] .consent-widget__description,
+.consent-widget[warningvisible="true"] .consent-widget__bottom {
+    display: none;
+}
+
+.consent-widget[warningvisible="false"] .consent-widget__warning {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .consent-widget {
+        --consent-widget-bottom-flex-flow: column wrap;
+        --consent-widget-bottom-buttons-justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .consent-widget {
+        --consent-widget-padding: var(--spacing-m);
+    }
+}

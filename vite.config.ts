@@ -21,9 +21,6 @@ export default defineConfig({
                 'toujou-topbar': path.resolve(__dirname, 'src/components/toujou-topbar/toujou-topbar.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-clamped-content': path.resolve(__dirname, 'src/components/toujou-clamped-content/toujou-clamped-content'),
-                'toujou-third-party-content': path.resolve(__dirname, 'src/components/copied/toujou-third-party-content/toujou-third-party-content'),
-                'toujou-consent': path.resolve(__dirname, 'src/components/copied/toujou-consent/toujou-consent'),
-                'toujou-consent-widget': path.resolve(__dirname, 'src/components/copied/toujou-consent-widget/toujou-consent-widget'),
 
                 // JS Elements
                 'main-nav': path.resolve(__dirname, 'src/js/elements/main-nav'),

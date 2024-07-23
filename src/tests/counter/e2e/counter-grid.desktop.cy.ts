@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
 describe('counter-grid', () => {
