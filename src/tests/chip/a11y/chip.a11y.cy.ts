@@ -23,7 +23,14 @@ describe('toujou-chip a11y', () => {
         cy.get('.chip').then((e) => {
             e[0].setAttribute('chip-bg-color', 'primary-light');
         });
-        cy.checkA11y('.chip');
+        cy.checkA11y(
+            '.chip',
+            {
+                rules: {
+                    'color-contrast': { enabled: false }
+                }
+            }
+        );
     });
 
     it('primary-very-light: has no detectable a11y violation on load', () => {

@@ -42,14 +42,14 @@ describe('code-block [mobile]', () => {
 
         cy.get(`toujou-code-block .code-block__language-tag`).then((codeBlockLangTag) => {
             expect(codeBlockLangTag).to.have.css('position').equal('absolute');
-            expect(codeBlockLangTag).to.have.css('right').equal('238.898px');
+            expect(codeBlockLangTag).to.have.css('right').equal('218.656px');
             expect(codeBlockLangTag).to.have.css('left').equal('0px');
             expect(codeBlockLangTag).to.have.css('top').equal('0px');
             expect(codeBlockLangTag).to.have.css('background-color').equal(colors.colorBgO75);
             expect(codeBlockLangTag).to.have.css('color').equal(colors.colorFont);
             expect(codeBlockLangTag).to.have.css('padding').equal(`${tokens.spacing.xs} ${tokens.spacing.s}`);
             expect(codeBlockLangTag).to.have.css('border-radius').equal(`0px ${tokens.borderRadius.s} 0px 0px`);
-            expect(codeBlockLangTag).to.have.css('font-size').equal(tokens.type.size.xs);
+            expect(codeBlockLangTag).to.have.css('font-size').equal(tokens.type.size.xxs);
         });
     });
 })

@@ -60,10 +60,10 @@ describe('toujou-chip - background-colors', () => {
             e[0].setAttribute('chip-bg-color', 'primary-light');
         });
         cy.get('.chip').should('have.css', 'background-color', colors.colorPrimaryLight);
-        cy.get('.chip').should('have.css', 'color', colors.colorFont);
+        cy.get('.chip').should('have.css', 'color', colors.colorBg);
         cy.get('.chip').realHover();
         cy.get('.chip').should('have.css', 'background-color', colors.colorPrimaryLight);
-        cy.get('.chip').should('have.css', 'color', colors.colorFont);
+        cy.get('.chip').should('have.css', 'color', colors.colorBg);
         cy.get('.chip').then((e) => {
             e[0].setAttribute('is-clickable', '');
         });
@@ -111,10 +111,10 @@ describe('toujou-chip - background-colors', () => {
             e[0].setAttribute('chip-bg-color', 'secondary-light');
         });
         cy.get('.chip').should('have.css', 'background-color', colors.colorSecondaryLight);
-        cy.get('.chip').should('have.css', 'color', colors.colorFont);
+        cy.get('.chip').should('have.css', 'color', colors.colorBg);
         cy.get('.chip').realHover();
         cy.get('.chip').should('have.css', 'background-color', colors.colorSecondaryLight);
-        cy.get('.chip').should('have.css', 'color', colors.colorFont);
+        cy.get('.chip').should('have.css', 'color', colors.colorBg);
         cy.get('.chip').then((e) => {
             e[0].setAttribute('is-clickable', '');
         });
