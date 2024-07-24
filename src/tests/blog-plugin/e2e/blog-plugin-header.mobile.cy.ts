@@ -34,7 +34,7 @@ describe('blog plugin: header [mobile]', () => {
         cy.get('.blog-header .blog-header__content').should('have.css', 'position', 'absolute');
         cy.get('.blog-header .blog-header__content').should('have.css', 'top', '266.797px');
         cy.get('.blog-header .blog-header__content').should('have.css', 'left', '187.5px');
-        cy.get('.blog-header .blog-header__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -171.5, -78)');
+        cy.get('.blog-header .blog-header__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -171.5, -70)');
         cy.get('.blog-header .blog-header__content').should('have.css', 'width', '343px');
         cy.get('.blog-header .blog-header__content').should('have.css', 'max-width', 'calc(100% - 32px)');
         cy.get('.blog-header .blog-header__content').should('have.css', 'display', 'flex');

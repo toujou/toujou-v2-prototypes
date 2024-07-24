@@ -37,7 +37,7 @@ describe('blog plugin: authors', () => {
         cy.get('.post-authors').should('have.css', 'display', 'flex');
         cy.get('.post-authors').should('have.css', 'flex-direction', 'column');
         cy.get('.post-authors').should('have.css', 'gap', tokens.spacing.normal);
-        cy.get('.post-authors').should('have.css', 'margin', '32px 464px 0px');
+        cy.get('.post-authors').should('have.css', 'margin', '48px 464px 0px');
         cy.get('.post-authors').should('have.css', 'width', '960px');
         cy.get('.post-authors').should('have.css', 'max-width', '960px');
 

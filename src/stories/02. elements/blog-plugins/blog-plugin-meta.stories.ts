@@ -25,17 +25,17 @@ const Template = () => {
             </div>
             <div class="post-meta__group" group-type="categories">
                 <toujou-chip class="chip" chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
-                    <toujou-icon class="icon" icon-name="bookmark-filled" icon-size="ms" icon-color="font"></toujou-icon>
+                    <toujou-icon class="icon" icon-name="bookmark-filled" icon-size="ms" icon-color="bg"></toujou-icon>
                     Tutorials
                 </toujou-chip>
             </div>
             <div class="post-meta__group" group-type="tags">
                 <toujou-chip class="chip" chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
-                    <toujou-icon class="icon" icon-name="tag-filled" icon-size="ms" icon-color="font"></toujou-icon>
+                    <toujou-icon class="icon" icon-name="tag-filled" icon-size="ms" icon-color="bg"></toujou-icon>
                     TYPO3
                 </toujou-chip>
                 <toujou-chip class="chip" chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal" is-clickable>
-                    <toujou-icon class="icon" icon-name="tag-filled" icon-size="ms" icon-color="font"></toujou-icon>
+                    <toujou-icon class="icon" icon-name="tag-filled" icon-size="ms" icon-color="bg"></toujou-icon>
                     Hacks
                 </toujou-chip>
             </div>

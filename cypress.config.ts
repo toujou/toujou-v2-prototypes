@@ -13,6 +13,7 @@ export default defineConfig({
         viewportWidth: desktopViewportWidth,
         viewportHeight: desktopViewportHeight,
         modifyObstructiveCode: false,
+        experimentalRunAllSpecs: true,
     },
     env: {
         colors: {

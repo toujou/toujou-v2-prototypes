@@ -10,7 +10,7 @@ describe('iframe resizer', () => {
         cy.get('toujou-iframe-resizer').should('have.prop', 'tagName').should('eq', 'TOUJOU-IFRAME-RESIZER');
     });
 
-    it.only('has correct styles on load', () => {
+    it('has correct styles on load', () => {
         cy.wait(4000);
 
         cy.get('toujou-iframe-resizer').should('have.css', 'display', 'inline');

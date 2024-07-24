@@ -33,7 +33,7 @@ describe('blog plugin: header', () => {
         cy.get('.blog-header .blog-header__content').should('have.css', 'position', 'absolute');
         cy.get('.blog-header .blog-header__content').should('have.css', 'top', '432px');
         cy.get('.blog-header .blog-header__content').should('have.css', 'left', '960px');
-        cy.get('.blog-header .blog-header__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -936, -51)');
+        cy.get('.blog-header .blog-header__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -936, -43)');
         cy.get('.blog-header .blog-header__content').should('have.css', 'width', '1872px');
         cy.get('.blog-header .blog-header__content').should('have.css', 'max-width', 'calc(100% - 48px)');
         cy.get('.blog-header .blog-header__content').should('have.css', 'display', 'flex');

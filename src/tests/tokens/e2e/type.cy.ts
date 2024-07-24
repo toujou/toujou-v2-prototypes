@@ -72,7 +72,7 @@ describe('Tokens - type font-styles', () => {
         cy.visit('/iframe.html?viewMode=story&id=tokens-type--font-styles');
     });
 
-    it.only('has correct values for the headline font styles variables', () => {
+    it('has correct values for the headline font styles variables', () => {
         cy.get('.font-style-normal').should('have.css', 'font-style', 'normal');
         cy.get('.font-style-bold').should('have.css', 'font-weight', tokens.type.fontWeight.bold);
         cy.get('.font-style-italic').should('have.css', 'font-style', 'italic');

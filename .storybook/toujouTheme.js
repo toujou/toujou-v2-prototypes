@@ -9,8 +9,8 @@ const bgColor = '#383838';
 export default create({
     base: 'dark',
     brandTitle: 'Kojo Theme',
-    brandUrl: 'https://toujou.de',
-    brandTarget: '_self',
+    brandUrl: 'https://meet-kojo.toujou.net/',
+    brandTarget: '_blank',
 
     appBg: bgColor,
     barBg: bgColor,

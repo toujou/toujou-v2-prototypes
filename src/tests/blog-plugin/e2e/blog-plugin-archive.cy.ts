@@ -31,14 +31,14 @@ describe('blog plugin: archive', () => {
         cy.get('.blog-archive').should('have.css', 'width', '960px');
         cy.get('.blog-archive').should('have.css', 'max-width', '960px');
         cy.get('.blog-archive').should('have.css', 'border-radius', tokens.borderRadius.normal);
-        cy.get('.blog-archive').should('have.css', 'margin', `${tokens.spacing.l} 464px`);
+        cy.get('.blog-archive').should('have.css', 'margin', `${tokens.spacing.xl} 464px`);
 
         cy.get('.blog-archive__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.blog-archive__title').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.blog-archive__title').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.blog-archive__title').should('have.css', 'line-height', '40px');
         cy.get('.blog-archive__title').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-archive__title').should('have.css', 'margin-bottom', tokens.type.size.normal);
+        cy.get('.blog-archive__title').should('have.css', 'margin-bottom', '0px');
         cy.get('.blog-archive__title').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
 
         cy.get('.archive-year__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
