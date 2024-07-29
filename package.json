@@ -91,7 +91,7 @@
     "@toujou/toujou-counter": "^3.9.1",
     "@toujou/toujou-estimated-reading-time": "^3.6.0",
     "@toujou/toujou-exit-warning": "^2.0.20",
-    "@toujou/toujou-iframe-resizer": "file:../ui-components/packages/toujou-iframe-resizer",
+    "@toujou/toujou-iframe-resizer": "^3.10.0",
     "@toujou/toujou-inpage-nav": "^2.0.19",
     "@toujou/toujou-input-password-toggle": "^2.0.23",
     "@toujou/toujou-lazy-render": "^3.5.0",
