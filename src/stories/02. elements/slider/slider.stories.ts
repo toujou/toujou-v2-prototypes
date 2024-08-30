@@ -158,8 +158,54 @@ const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
                                 <img class="single-media__image" src="https://picsum.photos/1600/910" alt="Nice image">
                             </toujou-single-media>
                         </li>
+                        <li class="splide__slide slider-slide" data-splide-interval="${args.autoplayInterval * 1000}">
+                            <toujou-collection-item
+                                class="collection-item"
+                                item-type="gastro"
+                                element-design="default"
+                                item-orientation="vertical"
+                                role="article"
+                            >
+                                <header class="collection-item__top">
+                                    <figure class="collection-item__figure">
+                                        <img
+                                            class="collection-item__image"
+                                            alt="Burgerfabrik_HUB_3.jpg"
+                                            loading="lazy"
+                                            src="https://picsum.photos/1600/911"
+                                        >
+                                        <toujou-fav-item tabindex="0" class="collection-item__fav-item" code="t3://d1i?itemtype=3&amp;itemid=100021771" add-label="Add to favorites" remove-label="Add to favorites" role="switch" aria-checked="false" aria-label="Add to favorites"></toujou-fav-item>
+                                        <span class="collection-item__type-icon" aria-hidden="true">
+                                            <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="food"></toujou-icon>
+                                        </span>
+                                    </figure>
+                                </header>
+
+                                <div class="collection-item__bottom">
+                                    <a href="#" class="collection-item__figure-link">
+                                        <h3 class="collection-item__title">Burgerfabrik - burger &amp; more</h3>
+                                    </a>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">Wenn Sie viel Wert auf frisch zubereitete Burger und Pommes legen und gerne auch mal vegane Varianten ausprobieren möchten, dann sind Sie in der Peiner BurgerFabrik genau richtig. Auch Salatfreunde kommen hier auf ihre Kosten. Im Sommer können Sie hervorragend bei uns vor der Tür sitzen und beim Schlemmen das bunte Treiben in der Innenstadt beobachten.</span>
+                                    </p>
+                                    <div class="collection-item__chips">
+                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bistro</toujou-chip>
+                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bringdienst</toujou-chip>
+                                    </div>
+                                    <div class="card-collection__infos">
+                                        <p class="collection-item__info collection-item__info--with-icon collection-item__info--location">
+                                            <toujou class="icon" icon-name="location" icon-color="font-color" icon-size="ms"></toujou>
+                                            <span class="collection-item__info-text">
+                                                Schützenstraße 2, Peine
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </toujou-collection-item>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>

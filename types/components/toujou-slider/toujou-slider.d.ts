@@ -108,6 +108,11 @@ export declare class ToujouSlider extends LitElement {
      */
     private _handleSliderMount;
     /**
+     * Remove the "tabpanel" role from slides to fix accessibility error
+     * @private
+     */
+    private _removeSlidesTabpanelRole;
+    /**
      * Get the DOM elements that are used to display the count information
      */
     private _getCountInfo;

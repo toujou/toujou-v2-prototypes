@@ -197,7 +197,8 @@ export class ToujouSlider extends LitElement {
                 next: this.arrowNextAriaLabel,
                 first: this.arrowFirstAriaLabel,
                 last: this.arrowLastAriaLabel,
-            }
+            },
+            focusableNodes: '*'
         }
 
         if (this.sliderFocusCenter === 'true') {
@@ -232,6 +233,7 @@ export class ToujouSlider extends LitElement {
     private _handleSliderMount() {
         this._getCountInfo();
         this._initCount();
+        this._removeSlidesTabpanelRole();
 
         this.dispatchEvent(new CustomEvent('toujou-slider-mounted', {
             bubbles: true,
@@ -240,6 +242,19 @@ export class ToujouSlider extends LitElement {
                 el: this.splideSlider
             }
         }));
+    }
+
+    /**
+     * Remove the "tabpanel" role from slides to fix accessibility error
+     * @private
+     */
+    private _removeSlidesTabpanelRole() {
+        const elsWithPanelTabRole = this.splideSlider.root.querySelectorAll('*[role="tabpanel"]');
+        if (!elsWithPanelTabRole) return;
+
+        elsWithPanelTabRole.forEach((el: HTMLElement) => {
+            el.removeAttribute('role');
+        });
     }
 
     /**
