@@ -1,4 +1,4 @@
-import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-runtime-689cd42e.js";import{u as t}from"./index-8a890fec.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";function c(a){const r={code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",ul:"ul",...t(),...a.components};return e.jsxs(e.Fragment,{children:[e.jsx(r.h1,{id:"toujou-breadcrumb",children:"<toujou-breadcrumb>"}),`
+import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-runtime-689cd42e.js";import{u as t}from"./index-8a890fec.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";function l(a){const r={code:"code",h1:"h1",h2:"h2",li:"li",p:"p",pre:"pre",ul:"ul",...t(),...a.components};return e.jsxs(e.Fragment,{children:[e.jsx(r.h1,{id:"toujou-breadcrumb",children:"<toujou-breadcrumb>"}),`
 `,e.jsxs(r.p,{children:["The ",e.jsx(r.code,{children:"<toujou-breadcrumb>"})," is a custom element that renders a breadcrumb navigation."]}),`
 `,e.jsx(r.h2,{id:"toujou-breadcrumb-modes",children:"toujou breadcrumb modes"}),`
 `,e.jsxs(r.p,{children:["The ",e.jsx(r.code,{children:"<toujou-breadcrumb>"}),' has two render modes: a "normal" and a "mobile" mode.']}),`
@@ -43,13 +43,13 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
 `,e.jsxs(r.ul,{children:[`
 `,e.jsxs(r.li,{children:["The ",e.jsx(r.code,{children:"<toujou-breadcrumb>"})," element needs the ",e.jsx(r.code,{children:'role="navigation"'})," and ",e.jsx(r.code,{children:'aria-label="Breadcrumb"'})," attributes"]}),`
 `,e.jsxs(r.li,{children:["The item for the current page needs the ",e.jsx(r.code,{children:'aria-current="page"'})," attribute"]}),`
-`]})]})}function b(a={}){const{wrapper:r}={...t(),...a.components};return r?e.jsx(r,{...a,children:e.jsx(c,{...a})}):c(a)}const j={title:"COMPONENTS/Breadcrumb",parameters:{badges:[i.DONE],docs:{page:b}},tags:["autodocs"]},u=()=>`
+`]})]})}function b(a={}){const{wrapper:r}={...t(),...a.components};return r?e.jsx(r,{...a,children:e.jsx(l,{...a})}):l(a)}const j={title:"COMPONENTS/Breadcrumb",parameters:{badges:[i.DONE],docs:{page:b}},tags:["autodocs"]},u=()=>`
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
-            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
+            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open" aria-label="Open breadcrumb menu">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
 
-            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
+            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close" aria-label="Close breadcrumb menu">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
 
@@ -77,14 +77,14 @@ import{T as i}from"./badgeCustomConfig-e7a687d5.js";import{j as e}from"./jsx-run
                 </li>
             </ol>
         </toujou-breadcrumb>
-    `,n=u.bind({});var l,o,s;n.parameters={...n.parameters,docs:{...(l=n.parameters)==null?void 0:l.docs,source:{originalSource:`() => {
+    `,n=u.bind({});var c,o,s;n.parameters={...n.parameters,docs:{...(c=n.parameters)==null?void 0:c.docs,source:{originalSource:`() => {
   return \`
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
-            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
+            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open" aria-label="Open breadcrumb menu">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
 
-            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
+            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close" aria-label="Close breadcrumb menu">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
 
