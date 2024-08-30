@@ -11,7 +11,7 @@
     "dev": "vite",
     "build": "tsc && vite build --config vite.config.ts",
     "postbuild": "npm run build:css && npm run copy:all",
-    "build:css": "NODE_ENV=production npm run build:css:elements && npm run build:css:base && npm run build:css:rte && npm run build:css:print",
+    "build:css": "NODE_ENV=production npm run build:css:elements && NODE_ENV=production npm run build:css:base && NODE_ENV=production npm run build:css:rte && NODE_ENV=production npm run build:css:print",
     "build:css:elements": "postcss ./src/styles/elements/*.css -d ./dist/css",
     "build:css:base": "postcss ./src/styles/base.css -d ./dist/css/",
     "build:css:rte": "postcss ./src/styles/rte.css -d ./dist/css/",

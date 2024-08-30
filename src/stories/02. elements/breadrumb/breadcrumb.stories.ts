@@ -20,11 +20,11 @@ const Template = () => {
 
     return `
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
-            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
+            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open" aria-label="Open breadcrumb menu">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
             </button>
 
-            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close">
+            <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--close" aria-label="Close breadcrumb menu">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="close"></toujou-icon>
             </button>
 
