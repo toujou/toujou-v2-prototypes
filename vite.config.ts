@@ -57,5 +57,11 @@ export default defineConfig({
                 sourcemap: true,
             },
         },
+        minify: 'terser',
+        terserOptions: {
+            output: {
+                comments: false,
+            }
+        }
     },
 })
