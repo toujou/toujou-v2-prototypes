@@ -1,4 +1,4 @@
-import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.docs-1e9a0512.js";import"./jsx-runtime-689cd42e.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";import"./index-8a890fec.js";const _={title:"COMPONENTS/Media",parameters:{badges:[a.DONE],docs:{page:t}},argTypes:{designColor:{table:{category:"Slider settings",defaultValue:{summary:"default"}},name:"Slider design",description:"Set the slider's design color",options:["default","primary","secondary","light-grey"],control:{type:"radio"},defaultValue:["default"],required:!0},isFullwidth:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"Fullwidth",description:"Show slider in fullwidth",control:{type:"boolean"},defaultValue:"false",required:!0},showCount:{table:{category:"Slider settings"},name:"Show count",description:"Show the count element",control:{type:"boolean"},defaultValue:!0,required:!0},autoplay:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"autoplay",description:"Slide automatically",control:{type:"boolean"},defaultValue:"false",required:!0},autoplayInterval:{table:{category:"Slider settings"},name:"autoplay interval",description:"Interval for the autoplay function (in seconds)",control:{type:"number"},defaultValue:6,required:!0},sliderType:{table:{category:"Slider settings",defaultValue:{summary:"loop"}},name:"Slider type",description:"Set the slider's animation type",options:["loop","slide"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},r=e=>`
+import{T as t}from"./badgeCustomConfig-e7a687d5.js";import{M as a}from"./slider.docs-1e9a0512.js";import"./jsx-runtime-689cd42e.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";import"./index-8a890fec.js";const _={title:"COMPONENTS/Media",parameters:{badges:[t.DONE],docs:{page:a}},argTypes:{designColor:{table:{category:"Slider settings",defaultValue:{summary:"default"}},name:"Slider design",description:"Set the slider's design color",options:["default","primary","secondary","light-grey"],control:{type:"radio"},defaultValue:["default"],required:!0},isFullwidth:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"Fullwidth",description:"Show slider in fullwidth",control:{type:"boolean"},defaultValue:"false",required:!0},showCount:{table:{category:"Slider settings"},name:"Show count",description:"Show the count element",control:{type:"boolean"},defaultValue:!0,required:!0},autoplay:{table:{category:"Slider settings",defaultValue:{summary:"false"}},name:"autoplay",description:"Slide automatically",control:{type:"boolean"},defaultValue:"false",required:!0},autoplayInterval:{table:{category:"Slider settings"},name:"autoplay interval",description:"Interval for the autoplay function (in seconds)",control:{type:"number"},defaultValue:6,required:!0},sliderType:{table:{category:"Slider settings",defaultValue:{summary:"loop"}},name:"Slider type",description:"Set the slider's animation type",options:["loop","slide"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},n=e=>`
         <toujou-slider
             class="slider"
             aria-label="Toujou slider example"
@@ -63,8 +63,54 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
                                 <img class="single-media__image" src="https://picsum.photos/1600/910" alt="Nice image">
                             </toujou-single-media>
                         </li>
+                        <li class="splide__slide slider-slide" data-splide-interval="${e.autoplayInterval*1e3}">
+                            <toujou-collection-item
+                                class="collection-item"
+                                item-type="gastro"
+                                element-design="default"
+                                item-orientation="vertical"
+                                role="article"
+                            >
+                                <header class="collection-item__top">
+                                    <figure class="collection-item__figure">
+                                        <img
+                                            class="collection-item__image"
+                                            alt="Burgerfabrik_HUB_3.jpg"
+                                            loading="lazy"
+                                            src="https://picsum.photos/1600/911"
+                                        >
+                                        <toujou-fav-item tabindex="0" class="collection-item__fav-item" code="t3://d1i?itemtype=3&amp;itemid=100021771" add-label="Add to favorites" remove-label="Add to favorites" role="switch" aria-checked="false" aria-label="Add to favorites"></toujou-fav-item>
+                                        <span class="collection-item__type-icon" aria-hidden="true">
+                                            <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="food"></toujou-icon>
+                                        </span>
+                                    </figure>
+                                </header>
+
+                                <div class="collection-item__bottom">
+                                    <a href="#" class="collection-item__figure-link">
+                                        <h3 class="collection-item__title">Burgerfabrik - burger &amp; more</h3>
+                                    </a>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">Wenn Sie viel Wert auf frisch zubereitete Burger und Pommes legen und gerne auch mal vegane Varianten ausprobieren möchten, dann sind Sie in der Peiner BurgerFabrik genau richtig. Auch Salatfreunde kommen hier auf ihre Kosten. Im Sommer können Sie hervorragend bei uns vor der Tür sitzen und beim Schlemmen das bunte Treiben in der Innenstadt beobachten.</span>
+                                    </p>
+                                    <div class="collection-item__chips">
+                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bistro</toujou-chip>
+                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bringdienst</toujou-chip>
+                                    </div>
+                                    <div class="card-collection__infos">
+                                        <p class="collection-item__info collection-item__info--with-icon collection-item__info--location">
+                                            <toujou class="icon" icon-name="location" icon-color="font-color" icon-size="ms"></toujou>
+                                            <span class="collection-item__info-text">
+                                                Schützenstraße 2, Peine
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </toujou-collection-item>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>
@@ -76,7 +122,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
                 <span class="slider-count__total"></span>
             </toujou-slider-count>
         </toujou-slider>
-    `,i=r.bind({});i.args={designColor:"default",showCount:!0,isFullwidth:!1,autoplay:!1,autoplayInterval:6,sliderType:"loop"};var s,l,o;i.parameters={...i.parameters,docs:{...(s=i.parameters)==null?void 0:s.docs,source:{originalSource:`(args: SliderStoryProps) => {
+    `,i=n.bind({});i.args={designColor:"default",showCount:!0,isFullwidth:!1,autoplay:!1,autoplayInterval:6,sliderType:"loop"};var l,o,s;i.parameters={...i.parameters,docs:{...(l=i.parameters)==null?void 0:l.docs,source:{originalSource:`(args: SliderStoryProps) => {
   return \`
         <toujou-slider
             class="slider"
@@ -142,8 +188,54 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
                                 <img class="single-media__image" src="https://picsum.photos/1600/910" alt="Nice image">
                             </toujou-single-media>
                         </li>
+                        <li class="splide__slide slider-slide" data-splide-interval="\${args.autoplayInterval * 1000}">
+                            <toujou-collection-item
+                                class="collection-item"
+                                item-type="gastro"
+                                element-design="default"
+                                item-orientation="vertical"
+                                role="article"
+                            >
+                                <header class="collection-item__top">
+                                    <figure class="collection-item__figure">
+                                        <img
+                                            class="collection-item__image"
+                                            alt="Burgerfabrik_HUB_3.jpg"
+                                            loading="lazy"
+                                            src="https://picsum.photos/1600/911"
+                                        >
+                                        <toujou-fav-item tabindex="0" class="collection-item__fav-item" code="t3://d1i?itemtype=3&amp;itemid=100021771" add-label="Add to favorites" remove-label="Add to favorites" role="switch" aria-checked="false" aria-label="Add to favorites"></toujou-fav-item>
+                                        <span class="collection-item__type-icon" aria-hidden="true">
+                                            <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="food"></toujou-icon>
+                                        </span>
+                                    </figure>
+                                </header>
+
+                                <div class="collection-item__bottom">
+                                    <a href="#" class="collection-item__figure-link">
+                                        <h3 class="collection-item__title">Burgerfabrik - burger &amp; more</h3>
+                                    </a>
+                                    <p class="collection-item__abstract">
+                                        <span class="collection-item__abstract-text">Wenn Sie viel Wert auf frisch zubereitete Burger und Pommes legen und gerne auch mal vegane Varianten ausprobieren möchten, dann sind Sie in der Peiner BurgerFabrik genau richtig. Auch Salatfreunde kommen hier auf ihre Kosten. Im Sommer können Sie hervorragend bei uns vor der Tür sitzen und beim Schlemmen das bunte Treiben in der Innenstadt beobachten.</span>
+                                    </p>
+                                    <div class="collection-item__chips">
+                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bistro</toujou-chip>
+                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bringdienst</toujou-chip>
+                                    </div>
+                                    <div class="card-collection__infos">
+                                        <p class="collection-item__info collection-item__info--with-icon collection-item__info--location">
+                                            <toujou class="icon" icon-name="location" icon-color="font-color" icon-size="ms"></toujou>
+                                            <span class="collection-item__info-text">
+                                                Schützenstraße 2, Peine
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </toujou-collection-item>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="splide__progress slider-progress">
                     <div class="splide__progress__bar slider-progress__bar"></div>
                 </div>
@@ -156,4 +248,4 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as t}from"./slider.
             </toujou-slider-count>
         </toujou-slider>
     \`;
-}`,...(o=(l=i.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const g=["Slider"];export{i as Slider,g as __namedExportsOrder,_ as default};
+}`,...(s=(o=i.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};const g=["Slider"];export{i as Slider,g as __namedExportsOrder,_ as default};
