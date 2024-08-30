@@ -254,6 +254,7 @@ export class ToujouSlider extends LitElement {
 
         elsWithPanelTabRole.forEach((el: HTMLElement) => {
             el.removeAttribute('role');
+            el.removeAttribute('aria-label');
         });
     }
 
