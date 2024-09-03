@@ -15,7 +15,7 @@ describe('image-card-grid', () => {
 
     it('has correct styles', () => {
         cy.get('toujou-image-card-grid').should('have.css', 'display', 'flex');
-        cy.get('toujou-image-card-grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
+        cy.get('toujou-image-card-grid').should('have.css', 'grid-gap', `${tokens.spacing.xl}`);
         cy.get('toujou-image-card-grid').should('have.css', 'flex-wrap', 'wrap');
         cy.get('toujou-image-card-grid').should('have.css', 'align-items', 'normal');
         cy.get('toujou-image-card-grid').should('have.css', 'justify-content', 'center');
