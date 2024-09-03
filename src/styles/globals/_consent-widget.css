@@ -50,7 +50,7 @@
     --consent-widget-warning-jusity-content: center;
     --consent-widget-warning-gap: var(--spacing-normal);
     --consent-widget-warning-width: 100%;
-    --consent-widget-warning-margin: 0;
+    --consent-widget-warning-margin: var(--spacing-normal) 0 0;
     --consent-widget-warning-font-family: var(--font-family-text);
 
     display: var(--consent-widget-display);
@@ -67,7 +67,7 @@
     z-index: var(--consent-widget-z-index);
 }
 
-.consent-widget[in-page] {
+.consent-widget[inPage] {
     --consent-widget-position: relative;
     --consent-widget-bottom: unset;
     --consent-widget-left: unset;
@@ -76,7 +76,7 @@
     --consent-widget-z-index: var(--z-index-content);
 }
 
-.consent-widget:not([in-page])[hidden] {
+.consent-widget:not([inPage])[hidden] {
     --consent-widget-display: none;
 }
 

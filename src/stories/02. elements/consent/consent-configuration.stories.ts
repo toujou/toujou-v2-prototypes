@@ -19,7 +19,6 @@ export default {
         showError: {
             table: {
                 category: "Consent configuration settings",
-                defaultValue: { summary: false},
             },
             name: 'Show error',
             description: "Show the consent configuration error",
@@ -51,12 +50,12 @@ const Template: StoryFn<ConsentConfigurationStoryProps> = (args: ConsentConfigur
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
         <toujou-consent-widget
-            class="consent-widget"
+            class="consent-widget aaaaaaa"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
             warningvisible="${args.showError}"
-            in-page>
-
+            inPage
+        >
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
                 <p class="consent-widget__description">
@@ -65,13 +64,7 @@ const Template: StoryFn<ConsentConfigurationStoryProps> = (args: ConsentConfigur
             </div>
 
             <div class="consent-widget__bottom">
-                ${args.showError ? `
-                    <p class="consent-widget__warning" slot="consentWarning">
-                        <toujou-icon class="icon" icon-name="tools" icon-color="warning" icon-size="normal"></toujou-icon>
-                        Bitte speichern Sie Ihre Datenschutzeinstellungen zunächst im Dialogfenster.
-                    </p>
-                `: `
-                    <div class="consent-widget__consent-elements">
+                <div class="consent-widget__consent-elements">
                     <toujou-consent class="consent" consenttype="tracking" consentlifetime="1" snackbarmessage="" listento="change" listenon="#trackingInput-box" prechecked="1">
                         <toujou-input-group class="input-group" input-group-type="checkbox">
                             <div class="checkbox-group">
@@ -117,7 +110,6 @@ const Template: StoryFn<ConsentConfigurationStoryProps> = (args: ConsentConfigur
                     </toujou-consent>
 
                 </div>
-                `}
             </div>
             <span class="consent-widget__warning" slot="consentWarning">
                 <toujou-icon class="icon" icon-name="warning" icon-color="warning" icon-size="normal"></toujou-icon>
