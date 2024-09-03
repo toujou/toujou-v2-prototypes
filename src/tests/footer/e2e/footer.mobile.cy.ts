@@ -52,7 +52,7 @@ describe('footer [mobile]', () => {
 
         cy.get('.footer-content').should('have.css', 'display', 'grid');
         cy.get('.footer-content').should('have.css', 'grid-template-columns', '328px');
-        cy.get('.footer-content').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
+        cy.get('.footer-content').should('have.css', 'grid-gap', `${tokens.spacing.l}`);
         cy.get('.footer-content').should('have.css', 'align-items', 'flex-start');
         cy.get('.footer-content').should('have.css', 'justify-content', 'center');
         cy.get('.footer-content').should('have.css', 'max-width', '1440px');
@@ -64,23 +64,23 @@ describe('footer [mobile]', () => {
         cy.get('.footer-column').should('have.css', 'justify-content', 'flex-start');
 
 
-        cy.get('footer .footer-column:nth-child(1) .footer__logo').should('have.css', 'max-width', '180px');
+        cy.get('footer .footer-column:nth-child(1) .footer__logo').should('have.css', 'max-width', '100%');
 
         cy.get('footer .footer-column:nth-child(2) .footer__list').should('have.css', 'list-style', 'outside none none');
         cy.get('footer .footer-column:nth-child(2) .footer__list').should('have.css', 'padding', '0px');
         cy.get('footer .footer-column:nth-child(2) .footer__list').should('have.css', 'margin', '0px');
         cy.get('footer .footer-column:nth-child(2) .footer__list').should('have.css', 'text-align', 'left');
 
-        cy.get('footer .footer-column:nth-child(2) .footer__list .footer__list-link').should('have.css', 'color', colors.colorPrimaryLight);
-        cy.get('footer .footer-column:nth-child(2) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline solid ${colors.colorPrimaryLight}`);
+        cy.get('footer .footer-column:nth-child(2) .footer__list .footer__list-link').should('have.css', 'color', colors.colorBg);
+        cy.get('footer .footer-column:nth-child(2) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline solid ${colors.colorBg}`);
 
         cy.get('footer .footer-column:nth-child(3) .footer__list').should('have.css', 'list-style', 'outside none none');
         cy.get('footer .footer-column:nth-child(3) .footer__list').should('have.css', 'padding', '0px');
         cy.get('footer .footer-column:nth-child(3) .footer__list').should('have.css', 'margin', '0px');
         cy.get('footer .footer-column:nth-child(3) .footer__list').should('have.css', 'text-align', 'left');
 
-        cy.get('footer .footer-column:nth-child(3) .footer__list .footer__list-link').should('have.css', 'color', colors.colorPrimaryLight);
-        cy.get('footer .footer-column:nth-child(3) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline solid ${colors.colorPrimaryLight}`);
+        cy.get('footer .footer-column:nth-child(3) .footer__list .footer__list-link').should('have.css', 'color', colors.colorBg);
+        cy.get('footer .footer-column:nth-child(3) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline solid ${colors.colorBg}`);
 
         cy.get('footer .footer-column:nth-child(4) .footer__address').should('have.css', 'margin', `0px 0px ${tokens.spacing.l}`);
         cy.get('footer .footer-column:nth-child(4) .footer__address-title').should('have.css', 'color', colors.colorBg);
