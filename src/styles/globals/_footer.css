@@ -9,9 +9,9 @@
 
     --footer-logo-max-width: 180px;
 
-    --footer-link-color: var(--color-primary-light);
-    --footer-link-hover-color: var(--color-bg);
-    --footer-link-focus-color: var(--color-bg);
+    --footer-link-color: var(--color-bg);
+    --footer-link-hover-color: var(--color-primary-light);
+    --footer-link-focus-color: var(--color-primary-light);
 
     --footer-list-link-text-decoration: underline;
 
