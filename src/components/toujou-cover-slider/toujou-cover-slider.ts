@@ -77,7 +77,7 @@ export class ToujouCoverSlider extends LitElement {
      * Initialize the cover slider element with the correct options
      * @private
      */
-    private _initSlider() {
+    private _initSlider = () => {
         this._slidesThatFitIntoScreen = this._calculateSlidesThatFitIntoScreen();
 
         const sliderOptions = {
@@ -103,13 +103,31 @@ export class ToujouCoverSlider extends LitElement {
 
         // @ts-ignore
         this.splideSlider = new Splide(this.splideContainer, sliderOptions);
+
+        this.splideSlider!.on('mounted', this._handleSliderMount);
+
         this.splideSlider!.mount();
+    }
+
+    /**
+     * Setup the count element when the element first mounts
+     */
+    private _handleSliderMount = () => {
+        this._removeSlidesTabpanelRole();
+
+        this.dispatchEvent(new CustomEvent('toujou-cover-slider-mounted', {
+            bubbles: true,
+            composed: true,
+            detail: {
+                el: this.splideSlider
+            }
+        }));
     }
 
     /**
      * Update the slider options by destroying it and creating it again
      */
-    private _updateSliderOptions() {
+    private _updateSliderOptions = () => {
         if (this.splideSlider) {
             this.splideSlider.destroy();
             this._initSlider();
@@ -149,5 +167,19 @@ export class ToujouCoverSlider extends LitElement {
     private _calculatePadding() {
         const numberOfParts = this._slidesThatFitIntoScreen! * 2;
         return `${100 / numberOfParts}%`;
+    }
+
+    /**
+     * Remove the "tabpanel" role from slides to fix accessibility error
+     * @private
+     */
+    private _removeSlidesTabpanelRole() {
+        const elsWithPanelTabRole = this.splideSlider.root.querySelectorAll('*[role="tabpanel"]');
+        if (!elsWithPanelTabRole) return;
+
+        elsWithPanelTabRole.forEach((el: HTMLElement) => {
+            el.removeAttribute('role');
+            el.removeAttribute('aria-label');
+        });
     }
 }

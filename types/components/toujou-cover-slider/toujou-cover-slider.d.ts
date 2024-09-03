@@ -24,6 +24,10 @@ export declare class ToujouCoverSlider extends LitElement {
      */
     private _initSlider;
     /**
+     * Setup the count element when the element first mounts
+     */
+    private _handleSliderMount;
+    /**
      * Update the slider options by destroying it and creating it again
      */
     private _updateSliderOptions;
@@ -43,4 +47,9 @@ export declare class ToujouCoverSlider extends LitElement {
      * Calculate padding percentage, so we can show half a card on the right side of the screen
      */
     private _calculatePadding;
+    /**
+     * Remove the "tabpanel" role from slides to fix accessibility error
+     * @private
+     */
+    private _removeSlidesTabpanelRole;
 }
