@@ -1,14 +1,14 @@
-import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent.docs-890e7e9b.js";import"./jsx-runtime-689cd42e.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";import"./index-8a890fec.js";const _={title:"COMPONENTS/Consent",parameters:{badges:[a.DONE],docs:{page:i}},argTypes:{showError:{table:{category:"Consent configuration settings",defaultValue:{summary:!1}},name:"Show error",description:"Show the consent configuration error",control:{type:"boolean"},defaultValue:!1,required:!0}},tags:["autodocs"]},u=e=>(window.addEventListener("click",c=>{c.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.cookie="consentsState= : expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/;",document.location.reload())}),`
+import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent.docs-890e7e9b.js";import"./jsx-runtime-689cd42e.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";import"./index-8a890fec.js";const _={title:"COMPONENTS/Consent",parameters:{badges:[a.DONE],docs:{page:i}},argTypes:{showError:{table:{category:"Consent configuration settings"},name:"Show error",description:"Show the consent configuration error",control:{type:"boolean"},defaultValue:!1,required:!0}},tags:["autodocs"]},u=s=>(window.addEventListener("click",c=>{c.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.cookie="consentsState= : expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/;",document.location.reload())}),`
         <p>With this button you can remove all consents from the local storage. For test purposes only</p>
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
         <toujou-consent-widget
-            class="consent-widget"
+            class="consent-widget aaaaaaa"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="${e.showError}"
-            in-page>
-
+            warningvisible="${s.showError}"
+            inPage
+        >
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
                 <p class="consent-widget__description">
@@ -17,13 +17,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
             </div>
 
             <div class="consent-widget__bottom">
-                ${e.showError?`
-                    <p class="consent-widget__warning" slot="consentWarning">
-                        <toujou-icon class="icon" icon-name="tools" icon-color="warning" icon-size="normal"></toujou-icon>
-                        Bitte speichern Sie Ihre Datenschutzeinstellungen zunächst im Dialogfenster.
-                    </p>
-                `:`
-                    <div class="consent-widget__consent-elements">
+                <div class="consent-widget__consent-elements">
                     <toujou-consent class="consent" consenttype="tracking" consentlifetime="1" snackbarmessage="" listento="change" listenon="#trackingInput-box" prechecked="1">
                         <toujou-input-group class="input-group" input-group-type="checkbox">
                             <div class="checkbox-group">
@@ -69,7 +63,6 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
                     </toujou-consent>
 
                 </div>
-                `}
             </div>
             <span class="consent-widget__warning" slot="consentWarning">
                 <toujou-icon class="icon" icon-name="warning" icon-color="warning" icon-size="normal"></toujou-icon>
@@ -156,7 +149,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
                 </div>
             </div>
         </toujou-consent-widget>
-     `),n=u.bind({});var t,o,s;n.parameters={...n.parameters,docs:{...(t=n.parameters)==null?void 0:t.docs,source:{originalSource:`(args: ConsentConfigurationStoryProps) => {
+     `),n=u.bind({});var e,t,o;n.parameters={...n.parameters,docs:{...(e=n.parameters)==null?void 0:e.docs,source:{originalSource:`(args: ConsentConfigurationStoryProps) => {
   window.addEventListener('click', (event: Event) => {
     const clickTarget = (event.target as HTMLElement);
     if (clickTarget.getAttribute('id') === "clearConsentsButton") {
@@ -170,12 +163,12 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
         <toujou-consent-widget
-            class="consent-widget"
+            class="consent-widget aaaaaaa"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
             warningvisible="\${args.showError}"
-            in-page>
-
+            inPage
+        >
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
                 <p class="consent-widget__description">
@@ -184,13 +177,7 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
             </div>
 
             <div class="consent-widget__bottom">
-                \${args.showError ? \`
-                    <p class="consent-widget__warning" slot="consentWarning">
-                        <toujou-icon class="icon" icon-name="tools" icon-color="warning" icon-size="normal"></toujou-icon>
-                        Bitte speichern Sie Ihre Datenschutzeinstellungen zunächst im Dialogfenster.
-                    </p>
-                \` : \`
-                    <div class="consent-widget__consent-elements">
+                <div class="consent-widget__consent-elements">
                     <toujou-consent class="consent" consenttype="tracking" consentlifetime="1" snackbarmessage="" listento="change" listenon="#trackingInput-box" prechecked="1">
                         <toujou-input-group class="input-group" input-group-type="checkbox">
                             <div class="checkbox-group">
@@ -236,7 +223,6 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
                     </toujou-consent>
 
                 </div>
-                \`}
             </div>
             <span class="consent-widget__warning" slot="consentWarning">
                 <toujou-icon class="icon" icon-name="warning" icon-color="warning" icon-size="normal"></toujou-icon>
@@ -324,4 +310,4 @@ import{T as a}from"./badgeCustomConfig-e7a687d5.js";import{M as i}from"./consent
             </div>
         </toujou-consent-widget>
      \`;
-}`,...(s=(o=n.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};const k=["ConsentConfiguration"];export{n as ConsentConfiguration,k as __namedExportsOrder,_ as default};
+}`,...(o=(t=n.parameters)==null?void 0:t.docs)==null?void 0:o.source}}};const k=["ConsentConfiguration"];export{n as ConsentConfiguration,k as __namedExportsOrder,_ as default};
