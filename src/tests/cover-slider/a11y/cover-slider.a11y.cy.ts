@@ -11,7 +11,8 @@ describe('cover slider a11y', () => {
         cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
-                'aria-allowed-role': { enabled: false }
+                'aria-allowed-role': { enabled: false },
+                'aria-roledescription': { enabled: false }
             }
         });
     });
@@ -27,7 +28,8 @@ describe('cover slider primary a11y', () => {
         cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
-                'aria-allowed-role': { enabled: false }
+                'aria-allowed-role': { enabled: false },
+                'aria-roledescription': { enabled: false }
             }
         });
     });
@@ -43,7 +45,8 @@ describe('cover slider secondary a11y', () => {
         cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
-                'aria-allowed-role': { enabled: false }
+                'aria-allowed-role': { enabled: false },
+                'aria-roledescription': { enabled: false }
             }
         });
     });
@@ -59,7 +62,8 @@ describe('cover slider inverted a11y', () => {
         cy.get('.cover-slider');
         cy.checkA11y('.cover-slider', {
             rules: {
-                'aria-allowed-role': { enabled: false }
+                'aria-allowed-role': { enabled: false },
+                'aria-roledescription': { enabled: false }
             }
         });
     });

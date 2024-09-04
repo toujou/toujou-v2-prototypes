@@ -58,7 +58,7 @@
         --cover-slider-title-margin: 0;
         --cover-slider-title-padding: var(--spacing-normal);
         --color-slider-title-color: var(--color-bg);
-        --color-slider-title-color-hover: var(--color-primary-light);
+        --color-slider-title-color-hover: var(--color-primary);
         --cover-slider-title-font-size: var(--font-size-m);
         --cover-slider-title-z-index: 1;
 
@@ -81,19 +81,26 @@
         overflow: var(--cover-slider-item-overflow);
     }
 
+    .cover-slider__item[element-design="primary"],
+    .cover-slider__item[element-design="secondary"],
+    .cover-slider__item[element-design="inverted"] {
+        --color-slider-title-color: var(--color-bg);
+        --color-slider-title-color-hover: var(--color-bg);
+    }
+
     .cover-slider__item[element-design="primary"] {
-        --color-slider-title-color: var(--color-primary);
-        --color-slider-title-color-hover: var(--color-primary-light);
+        --color-slider-title-bg-color: var(--color-primary);
+        --color-slider-title-bg-color-hover: var(--color-primary-dark);
     }
 
     .cover-slider__item[element-design="secondary"] {
-        --color-slider-title-color: var(--color-secondary);
-        --color-slider-title-color-hover: var(--color-secondary-light);
+        --color-slider-title-bg-color: var(--color-secondary);
+        --color-slider-title-bg-color-hover: var(--color-secondary-dark);
     }
 
     .cover-slider__item[element-design="inverted"] {
-        --color-slider-title-color: var(--color-font);
-        --color-slider-title-color-hover: var(--color-font-light);
+        --color-slider-title-bg-color: var(--color-font-light);
+        --color-slider-title-bg-color-hover: var(--color-font-dark);
     }
 
     .cover-slider[is-slider]:hover {
@@ -142,11 +149,12 @@
         margin: var(--cover-slider-title-margin);
         padding: var(--cover-slider-title-padding);
         color: var(--color-slider-title-color);
+        background-color: var(--color-slider-title-bg-color);
         font-size: var(--cover-slider-title-font-size);
         z-index: var(--cover-slider-title-z-index);
     }
 
-    .cover-slider__title::before {
+    .cover-slider__item[element-design="default"] .cover-slider__title::before {
         content: "";
         position: absolute;
         left: 0;
@@ -173,6 +181,7 @@
 
         .cover-slider__link:hover .cover-slider__title {
             color: var(--color-slider-title-color-hover);
+            background-color: var(--color-slider-title-bg-color-hover);
         }
 
         .cover-slider__link:hover .cover-slider__media {
