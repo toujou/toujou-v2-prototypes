@@ -38,7 +38,7 @@ const Template: StoryFn<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStory
         <toujou-text-block class="text-block" text-block-media-position="beside-left">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1800/3200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
                     <toujou-media-info class="media-info">
                         <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                             <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -60,7 +60,7 @@ const Template: StoryFn<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStory
         <toujou-text-block class="text-block" text-block-media-position="beside-right">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1800/3200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
                     <toujou-media-info class="media-info">
                         <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                             <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -82,7 +82,7 @@ const Template: StoryFn<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStory
         <toujou-text-block class="text-block" text-block-media-position="inside-left">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1800/3200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>
@@ -94,7 +94,7 @@ const Template: StoryFn<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStory
         <toujou-text-block class="text-block" text-block-media-position="inside-right">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">
-                    <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                    <img src="https://picsum.photos/1800/3200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
                 </figure>
                 <div class="text-block__content">
                     <h3>Left aligned H3 headline</h3>

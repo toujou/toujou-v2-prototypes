@@ -60,6 +60,7 @@
 
     .text-block__figure .slider {
         --slider-width: var(--content-fullwidth);
+        --slider-margin: 0 auto;
     }
 
     .header .slider,

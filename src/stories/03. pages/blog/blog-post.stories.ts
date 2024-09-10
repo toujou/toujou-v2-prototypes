@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/web-components';
+import { Meta, StoryFn } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -33,7 +33,7 @@ interface BlogPostStoryProps {
     hasAvatar: boolean
 }
 
-const Template: Story<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
+const Template: StoryFn<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
     console.log(args)
     return `
         <div class="blog-post">
