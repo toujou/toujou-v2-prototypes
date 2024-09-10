@@ -1,16 +1,4 @@
-import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as t}from"./jsx-runtime-689cd42e.js";import{u as l}from"./index-8a890fec.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";function i(e){const o={h1:"h1",li:"li",p:"p",ul:"ul",...l(),...e.components};return t.jsxs(t.Fragment,{children:[t.jsx(o.h1,{id:"blog-post",children:"Blog post"}),`
-`,t.jsx(o.p,{children:"Layout for the blog post pages."}),`
-`,t.jsx(o.p,{children:"These pages render a couple of extra elements, depending on them being available and the typoscript settings for the website:"}),`
-`,t.jsxs(o.ul,{children:[`
-`,t.jsxs(o.li,{children:["blog post data",`
-`,t.jsxs(o.ul,{children:[`
-`,t.jsx(o.li,{children:"Post creation date"}),`
-`,t.jsx(o.li,{children:"Post author"}),`
-`]}),`
-`]}),`
-`,t.jsx(o.li,{children:"Comments"}),`
-`,t.jsx(o.li,{children:"Categories list"}),`
-`]})]})}function r(e={}){const{wrapper:o}={...l(),...e.components};return o?t.jsx(o,{...e,children:t.jsx(i,{...e})}):i(e)}const f={title:"PAGES/BlogPost",parameters:{badges:[u.DONE],docs:{page:r}},argTypes:{hasAvatar:{table:{category:"Blog post Settings",defaultValue:{summary:"true"}},name:"Author has avatar",description:"Toggle between a post page where author avatar is or isn't available",control:{type:"boolean"},defaultValue:["true"],required:!0}},tags:["autodocs"]},m=e=>(console.log(e),`
+import{T as n}from"./badgeCustomConfig-e7a687d5.js";import{M as s}from"./blog-post.docs-38807c31.js";import"./jsx-runtime-689cd42e.js";import"./index-ab13a269.js";import"./_commonjsHelpers-725317a4.js";import"./index-8a890fec.js";const g={title:"PAGES/BlogPost",parameters:{badges:[n.DONE],docs:{page:s}},argTypes:{hasAvatar:{table:{category:"Blog post Settings",defaultValue:{summary:"true"}},name:"Author has avatar",description:"Toggle between a post page where author avatar is or isn't available",control:{type:"boolean"},defaultValue:["true"],required:!0}},tags:["autodocs"]},c=o=>(console.log(o),`
         <div class="blog-post">
             <section>
                 <toujou-text-block class="text-block" text-block-column-count="1">
@@ -25,7 +13,7 @@ import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as t}from"./jsx-run
 
             <div class="post-data">
                 <a href="#" class="post-data__author">
-                    ${e.hasAvatar?`
+                    ${o.hasAvatar?`
                         <figure class="post-data__author-figure">
                             <img src="https://i.pravatar.cc/80?img=27" alt="Post author avatar" class="post-data__author-avatar">
                         </figure>
@@ -209,7 +197,7 @@ import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as t}from"./jsx-run
 
         </div>
 
-    `),a=m.bind({});a.args={hasAvatar:!0};var n,s,c;a.parameters={...a.parameters,docs:{...(n=a.parameters)==null?void 0:n.docs,source:{originalSource:`(args: BlogPostStoryProps) => {
+    `),t=c.bind({});t.args={hasAvatar:!0};var e,a,i;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`(args: BlogPostStoryProps) => {
   console.log(args);
   return \`
         <div class="blog-post">
@@ -411,4 +399,4 @@ import{T as u}from"./badgeCustomConfig-e7a687d5.js";import{j as t}from"./jsx-run
         </div>
 
     \`;
-}`,...(c=(s=a.parameters)==null?void 0:s.docs)==null?void 0:c.source}}};const x=["BlogPost"];export{a as BlogPost,x as __namedExportsOrder,f as default};
+}`,...(i=(a=t.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};const _=["BlogPost"];export{t as BlogPost,_ as __namedExportsOrder,g as default};
