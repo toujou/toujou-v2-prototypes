@@ -287,11 +287,15 @@ a:not(.button):focus-visible {
 *[type-color="font--grey"],
 *[type-color="font"],
 .font--grey {
-    color: var(--color-font);
+    color: var(--color-font-light);
 }
 
 *[type-color="font-light"] {
     color: var(--color-font-light);
+}
+
+*[type-color="default"] {
+    color: var(--color-font);
 }
 
 /* stylelint-disable-next-line selector-no-vendor-prefix */

@@ -94,7 +94,7 @@
     --collection-item-bottom-flex-grow: 1;
 
     --collection-item-title-font-size: var(--font-size-ms);
-    --collection-item-title-color: var(--color-font-dark);
+    --collection-item-title-color: var(--color-font);
     --collection-item-title-margin: 0 0 var(--spacing-xs);
     --collection-item-title-font-family: var(--font-family-text);
     --collection-item-title-font-weight: var(--font-weight-text-bold);
