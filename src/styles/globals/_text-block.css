@@ -5,7 +5,7 @@
     --text-block-width: var(--content-width-with-padding);
     --text-block-max-width: var(--content-medium-max-width);
     --text-block-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
-    --text-block-image-aspect-ratio: var(--aspect-ratio-default);
+    --text-block-image-aspect-ratio: auto;
     --text-block-image-border-radius: var(--border-radius-default);
     --text-block-image-object-fit: cover;
     --text-block-media-inside-image-width: 50%;
