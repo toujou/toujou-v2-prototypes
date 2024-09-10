@@ -58,7 +58,7 @@
         --slider-margin: var(--spacing-between-elements-normal) auto 0;
     }
 
-    .text-block__figure .slider {
+    .text-block__figure .slider[content-type="teaser"] {
         --slider-width: var(--content-fullwidth);
         --slider-margin: 0 auto;
     }
@@ -161,7 +161,7 @@
         height: var(--header-height) !important;
     }
 
-    /* hide the clone that gets generated on some occasions, even of the clones are set to 0 */
+    /* hide the clone that gets generated on some occasions, even if the clones mount is set to 0 */
     .slider[slider-clones-amount="0"] li.splide__slide--clone {
         display: none !important;
     }
@@ -177,6 +177,11 @@
 
         .header .slider {
             --slider-control-distance-to-margin: var(--spacing-xl);
+        }
+
+        .text-block__figure .slider[content-type="teaser"] {
+            --slider-width: var(--content-fullwidth);
+            --slider-margin: 0 auto;
         }
     }
 }
