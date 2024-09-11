@@ -41,7 +41,6 @@ export default {
         showLabel: {
             table: {
                 category: "Inpage nav settings",
-                defaultValue: { summary: true },
             },
             name: 'Show label',
             description: "Toggle the label's visibility",
@@ -52,7 +51,6 @@ export default {
         showCTA: {
             table: {
                 category: "Inpage nav settings",
-                defaultValue: { summary: true },
             },
             name: 'Show CTA',
             description: "Toggle the CTA button visibility",
@@ -63,7 +61,6 @@ export default {
         isSticky: {
             table: {
                 category: "Inpage nav settings",
-                defaultValue: { summary: false },
             },
             name: 'Is sticky',
             description: "Should the inpage nav scroll with the content or stay sticky. PLease test on a page with a topbar and content",
