@@ -1,0 +1,5 @@
+:root,
+::before,
+::after {
+    --a11y-min-target-size: 24px;
+}

@@ -132,6 +132,9 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
             <nav class="service-nav">
                 <a href="#" class="service-nav__link">Impressum</a>
                 <a href="#" class="service-nav__link">Datenschutz</a>
+                <a href="#" class="service-nav__link">Kontakt</a>
+                <a href="#" class="service-nav__link">About us</a>
+                <a href="#" class="service-nav__link">Gender at work</a>
             </nav>
 
             <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
