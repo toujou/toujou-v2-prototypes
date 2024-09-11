@@ -23,6 +23,7 @@ const HeadlineH1Template = () => {
         <h1 type-alignment="left" type-color="font--grey">Headline h1 | left | grey color | 100%</h1>
         <h1 type-alignment="left" type-color="font--primary">Headline h1 | left | primary color | 100%</h1>
         <h1 type-alignment="left" type-color="font--secondary">Headline h1 | left | secondary color | 100%</h1>
+        <h1 type-alignment="left" type-color="font--font">Headline h1 | left | font color | 100%</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--alpha">Headline h1 | left | default color | alpha</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--beta">Headline h1 | left | default color | beta</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--gamma">Headline h1 | left | default color | gamma</h1>
@@ -40,6 +41,7 @@ const HeadlineH2Template = () => {
         <h2 type-alignment="left" type-color="font--grey">Headline h2 | left | grey color | 100%</h2>
         <h2 type-alignment="left" type-color="font--primary">Headline h2 | left | primary color | 100%</h2>
         <h2 type-alignment="left" type-color="font--secondary">Headline h2 | left | secondary color | 100%</h2>
+        <h2 type-alignment="left" type-color="font--font">Headline h2 | left | font color | 100%</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--alpha">Headline h2 | left | default color | alpha</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--beta">Headline h2 | left | default color | beta</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--gamma">Headline h2 | left | default color | gamma</h2>
@@ -57,6 +59,7 @@ const HeadlineH3Template = () => {
         <h3 type-alignment="left" type-color="font--grey">Headline h3 | left | grey color | 100%</h3>
         <h3 type-alignment="left" type-color="font--primary">Headline h3 | left | primary color | 100%</h3>
         <h3 type-alignment="left" type-color="font--secondary">Headline h3 | left | secondary color | 100%</h3>
+        <h3 type-alignment="left" type-color="font--font">Headline h3 | left | font color | 100%</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--alpha">Headline h3 | left | default color | alpha</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--beta">Headline h3 | left | default color | beta</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--gamma">Headline h3 | left | default color | gamma</h3>
@@ -74,6 +77,7 @@ const HeadlineH4Template = () => {
         <h4 type-alignment="left" type-color="font--grey">Headline h4 | left | grey color | 100%</h4>
         <h4 type-alignment="left" type-color="font--primary">Headline h4 | left | primary color | 100%</h4>
         <h4 type-alignment="left" type-color="font--secondary">Headline h4 | left | secondary color | 100%</h4>
+        <h4 type-alignment="left" type-color="font--font">Headline h4 | left | font color | 100%</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--alpha">Headline h4 | left | default color | alpha</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--beta">Headline h4 | left | default color | beta</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--gamma">Headline h4 | left | default color | gamma</h4>
@@ -91,6 +95,7 @@ const HeadlineH5Template = () => {
         <h5 type-alignment="left" type-color="font--grey">Headline h5 | left | grey color | 100%</h5>
         <h5 type-alignment="left" type-color="font--primary">Headline h5 | left | primary color | 100%</h5>
         <h5 type-alignment="left" type-color="font--secondary">Headline h5 | left | secondary color | 100%</h5>
+        <h5 type-alignment="left" type-color="font--font">Headline h5 | left | font color | 100%</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--alpha">Headline h5 | left | default color | alpha</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--beta">Headline h5 | left | default color | beta</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--gamma">Headline h5 | left | default color | gamma</h5>
@@ -108,6 +113,7 @@ const HeadlineH6Template = () => {
         <h6 type-alignment="left" type-color="font--grey">Headline h6 | left | grey color | 100%</h6>
         <h6 type-alignment="left" type-color="font--primary">Headline h6 | left | primary color | 100%</h6>
         <h6 type-alignment="left" type-color="font--secondary">Headline h6 | left | secondary color | 100%</h6>
+        <h6 type-alignment="left" type-color="font--font">Headline h6 | left | font color | 100%</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--alpha">Headline h6 | left | default color | alpha</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--beta">Headline h6 | left | default color | beta</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--gamma">Headline h6 | left | default color | gamma</h6>
@@ -125,6 +131,7 @@ const HeadlinePTemplate = () => {
         <p type-alignment="left" type-color="font--grey">Headline p | left | grey color | 100%</p>
         <p type-alignment="left" type-color="font--primary">Headline p | left | primary color | 100%</p>
         <p type-alignment="left" type-color="font--secondary">Headline p | left | secondary color | 100%</p>
+        <p type-alignment="left" type-color="font--font">Headline p | left | font color | 100%</p>
         <p type-alignment="left" type-color="default" type-size="font--alpha">Headline p | left | default color | alpha</p>
         <p type-alignment="left" type-color="default" type-size="font--beta">Headline p | left | default color | beta</p>
         <p type-alignment="left" type-color="default" type-size="font--gamma">Headline p | left | default color | gamma</p>

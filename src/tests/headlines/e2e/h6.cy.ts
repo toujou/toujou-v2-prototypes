@@ -35,7 +35,7 @@ describe('headline h6', () => {
     });
 
     it('has correct grey color', () => {
-        cy.get('#storybook-root > h6:nth-child(4)').should('have.css', 'color', colors.colorFont);
+        cy.get('#storybook-root > h6:nth-child(4)').should('have.css', 'color', colors.colorFontLight);
     });
 
     it('has correct primary color', () => {
@@ -46,32 +46,36 @@ describe('headline h6', () => {
         cy.get('#storybook-root > h6:nth-child(6)').should('have.css', 'color', colors.colorSecondary);
     });
 
+    it('has correct font color', () => {
+        cy.get('#storybook-root > h6:nth-child(7)').should('have.css', 'color', colors.colorFont);
+    });
+
     it('has correct default size', () => {
         cy.get('#storybook-root > h6:nth-child(1)').should('have.css', 'font-size', tokens.type.size.ms);
     });
 
     it('has correct alpha size', () => {
-        cy.get('#storybook-root > h6:nth-child(7)').should('have.css', 'font-size', tokens.type.size.xxxl);
+        cy.get('#storybook-root > h6:nth-child(8)').should('have.css', 'font-size', tokens.type.size.xxxl);
     });
 
     it('has correct beta size', () => {
-        cy.get('#storybook-root > h6:nth-child(8)').should('have.css', 'font-size', tokens.type.size.xxl);
+        cy.get('#storybook-root > h6:nth-child(9)').should('have.css', 'font-size', tokens.type.size.xxl);
     });
 
     it('has correct gamma size', () => {
-        cy.get('#storybook-root > h6:nth-child(9)').should('have.css', 'font-size', tokens.type.size.xl);
+        cy.get('#storybook-root > h6:nth-child(10)').should('have.css', 'font-size', tokens.type.size.xl);
     });
 
     it('has correct delta size', () => {
-        cy.get('#storybook-root > h6:nth-child(10)').should('have.css', 'font-size', tokens.type.size.l);
+        cy.get('#storybook-root > h6:nth-child(11)').should('have.css', 'font-size', tokens.type.size.l);
     });
 
     it('has correct epsilon size', () => {
-        cy.get('#storybook-root > h6:nth-child(11)').should('have.css', 'font-size', tokens.type.size.m);
+        cy.get('#storybook-root > h6:nth-child(12)').should('have.css', 'font-size', tokens.type.size.m);
     });
 
     it('has correct omega size', () => {
-        cy.get('#storybook-root > h6:nth-child(12)').should('have.css', 'font-size', tokens.type.size.ms);
+        cy.get('#storybook-root > h6:nth-child(13)').should('have.css', 'font-size', tokens.type.size.ms);
     });
 })
 
