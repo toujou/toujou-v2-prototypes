@@ -43,6 +43,7 @@ Accepted values are`]}),`
         <h1 type-alignment="left" type-color="font--grey">Headline h1 | left | grey color | 100%</h1>
         <h1 type-alignment="left" type-color="font--primary">Headline h1 | left | primary color | 100%</h1>
         <h1 type-alignment="left" type-color="font--secondary">Headline h1 | left | secondary color | 100%</h1>
+        <h1 type-alignment="left" type-color="font--font">Headline h1 | left | font color | 100%</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--alpha">Headline h1 | left | default color | alpha</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--beta">Headline h1 | left | default color | beta</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--gamma">Headline h1 | left | default color | gamma</h1>
@@ -56,6 +57,7 @@ Accepted values are`]}),`
         <h2 type-alignment="left" type-color="font--grey">Headline h2 | left | grey color | 100%</h2>
         <h2 type-alignment="left" type-color="font--primary">Headline h2 | left | primary color | 100%</h2>
         <h2 type-alignment="left" type-color="font--secondary">Headline h2 | left | secondary color | 100%</h2>
+        <h2 type-alignment="left" type-color="font--font">Headline h2 | left | font color | 100%</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--alpha">Headline h2 | left | default color | alpha</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--beta">Headline h2 | left | default color | beta</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--gamma">Headline h2 | left | default color | gamma</h2>
@@ -69,6 +71,7 @@ Accepted values are`]}),`
         <h3 type-alignment="left" type-color="font--grey">Headline h3 | left | grey color | 100%</h3>
         <h3 type-alignment="left" type-color="font--primary">Headline h3 | left | primary color | 100%</h3>
         <h3 type-alignment="left" type-color="font--secondary">Headline h3 | left | secondary color | 100%</h3>
+        <h3 type-alignment="left" type-color="font--font">Headline h3 | left | font color | 100%</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--alpha">Headline h3 | left | default color | alpha</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--beta">Headline h3 | left | default color | beta</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--gamma">Headline h3 | left | default color | gamma</h3>
@@ -82,6 +85,7 @@ Accepted values are`]}),`
         <h4 type-alignment="left" type-color="font--grey">Headline h4 | left | grey color | 100%</h4>
         <h4 type-alignment="left" type-color="font--primary">Headline h4 | left | primary color | 100%</h4>
         <h4 type-alignment="left" type-color="font--secondary">Headline h4 | left | secondary color | 100%</h4>
+        <h4 type-alignment="left" type-color="font--font">Headline h4 | left | font color | 100%</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--alpha">Headline h4 | left | default color | alpha</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--beta">Headline h4 | left | default color | beta</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--gamma">Headline h4 | left | default color | gamma</h4>
@@ -95,6 +99,7 @@ Accepted values are`]}),`
         <h5 type-alignment="left" type-color="font--grey">Headline h5 | left | grey color | 100%</h5>
         <h5 type-alignment="left" type-color="font--primary">Headline h5 | left | primary color | 100%</h5>
         <h5 type-alignment="left" type-color="font--secondary">Headline h5 | left | secondary color | 100%</h5>
+        <h5 type-alignment="left" type-color="font--font">Headline h5 | left | font color | 100%</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--alpha">Headline h5 | left | default color | alpha</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--beta">Headline h5 | left | default color | beta</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--gamma">Headline h5 | left | default color | gamma</h5>
@@ -108,6 +113,7 @@ Accepted values are`]}),`
         <h6 type-alignment="left" type-color="font--grey">Headline h6 | left | grey color | 100%</h6>
         <h6 type-alignment="left" type-color="font--primary">Headline h6 | left | primary color | 100%</h6>
         <h6 type-alignment="left" type-color="font--secondary">Headline h6 | left | secondary color | 100%</h6>
+        <h6 type-alignment="left" type-color="font--font">Headline h6 | left | font color | 100%</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--alpha">Headline h6 | left | default color | alpha</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--beta">Headline h6 | left | default color | beta</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--gamma">Headline h6 | left | default color | gamma</h6>
@@ -121,13 +127,14 @@ Accepted values are`]}),`
         <p type-alignment="left" type-color="font--grey">Headline p | left | grey color | 100%</p>
         <p type-alignment="left" type-color="font--primary">Headline p | left | primary color | 100%</p>
         <p type-alignment="left" type-color="font--secondary">Headline p | left | secondary color | 100%</p>
+        <p type-alignment="left" type-color="font--font">Headline p | left | font color | 100%</p>
         <p type-alignment="left" type-color="default" type-size="font--alpha">Headline p | left | default color | alpha</p>
         <p type-alignment="left" type-color="default" type-size="font--beta">Headline p | left | default color | beta</p>
         <p type-alignment="left" type-color="default" type-size="font--gamma">Headline p | left | default color | gamma</p>
         <p type-alignment="left" type-color="default" type-size="font--delta">Headline p | left | default color | delta</p>
         <p type-alignment="left" type-color="default" type-size="font--epsilon">Headline p | left | default color | epsilon</p>
         <p type-alignment="left" type-color="default" type-size="font--omega">Headline p | left | default color | omega</p>
-    `,n=P.bind({}),o=k.bind({}),a=W.bind({}),r=X.bind({}),f=U.bind({}),i=B.bind({}),p=F.bind({});var h,c,y;n.parameters={...n.parameters,docs:{...(h=n.parameters)==null?void 0:h.docs,source:{originalSource:`() => {
+    `,n=P.bind({}),o=k.bind({}),a=W.bind({}),f=X.bind({}),r=U.bind({}),i=B.bind({}),p=F.bind({});var h,c,y;n.parameters={...n.parameters,docs:{...(h=n.parameters)==null?void 0:h.docs,source:{originalSource:`() => {
   return \`
         <h1 type-alignment="left" type-color="default">Headline h1 | left | default color | 100%</h1>
         <h1 type-alignment="center" type-color="default">Headline h1 | center | default color | 100%</h1>
@@ -135,6 +142,7 @@ Accepted values are`]}),`
         <h1 type-alignment="left" type-color="font--grey">Headline h1 | left | grey color | 100%</h1>
         <h1 type-alignment="left" type-color="font--primary">Headline h1 | left | primary color | 100%</h1>
         <h1 type-alignment="left" type-color="font--secondary">Headline h1 | left | secondary color | 100%</h1>
+        <h1 type-alignment="left" type-color="font--font">Headline h1 | left | font color | 100%</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--alpha">Headline h1 | left | default color | alpha</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--beta">Headline h1 | left | default color | beta</h1>
         <h1 type-alignment="left" type-color="default" type-size="font--gamma">Headline h1 | left | default color | gamma</h1>
@@ -150,6 +158,7 @@ Accepted values are`]}),`
         <h2 type-alignment="left" type-color="font--grey">Headline h2 | left | grey color | 100%</h2>
         <h2 type-alignment="left" type-color="font--primary">Headline h2 | left | primary color | 100%</h2>
         <h2 type-alignment="left" type-color="font--secondary">Headline h2 | left | secondary color | 100%</h2>
+        <h2 type-alignment="left" type-color="font--font">Headline h2 | left | font color | 100%</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--alpha">Headline h2 | left | default color | alpha</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--beta">Headline h2 | left | default color | beta</h2>
         <h2 type-alignment="left" type-color="default" type-size="font--gamma">Headline h2 | left | default color | gamma</h2>
@@ -165,6 +174,7 @@ Accepted values are`]}),`
         <h3 type-alignment="left" type-color="font--grey">Headline h3 | left | grey color | 100%</h3>
         <h3 type-alignment="left" type-color="font--primary">Headline h3 | left | primary color | 100%</h3>
         <h3 type-alignment="left" type-color="font--secondary">Headline h3 | left | secondary color | 100%</h3>
+        <h3 type-alignment="left" type-color="font--font">Headline h3 | left | font color | 100%</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--alpha">Headline h3 | left | default color | alpha</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--beta">Headline h3 | left | default color | beta</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--gamma">Headline h3 | left | default color | gamma</h3>
@@ -172,7 +182,7 @@ Accepted values are`]}),`
         <h3 type-alignment="left" type-color="default" type-size="font--epsilon">Headline h3 | left | default color | epsilon</h3>
         <h3 type-alignment="left" type-color="default" type-size="font--omega">Headline h3 | left | default color | omega</h3>
     \`;
-}`,...(z=(H=a.parameters)==null?void 0:H.docs)==null?void 0:z.source}}};var x,j,b;r.parameters={...r.parameters,docs:{...(x=r.parameters)==null?void 0:x.docs,source:{originalSource:`() => {
+}`,...(z=(H=a.parameters)==null?void 0:H.docs)==null?void 0:z.source}}};var x,j,b;f.parameters={...f.parameters,docs:{...(x=f.parameters)==null?void 0:x.docs,source:{originalSource:`() => {
   return \`
         <h4 type-alignment="left" type-color="default">Headline h4 | left | default color | 100%</h4>
         <h4 type-alignment="center" type-color="default">Headline h4 | center | default color | 100%</h4>
@@ -180,6 +190,7 @@ Accepted values are`]}),`
         <h4 type-alignment="left" type-color="font--grey">Headline h4 | left | grey color | 100%</h4>
         <h4 type-alignment="left" type-color="font--primary">Headline h4 | left | primary color | 100%</h4>
         <h4 type-alignment="left" type-color="font--secondary">Headline h4 | left | secondary color | 100%</h4>
+        <h4 type-alignment="left" type-color="font--font">Headline h4 | left | font color | 100%</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--alpha">Headline h4 | left | default color | alpha</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--beta">Headline h4 | left | default color | beta</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--gamma">Headline h4 | left | default color | gamma</h4>
@@ -187,7 +198,7 @@ Accepted values are`]}),`
         <h4 type-alignment="left" type-color="default" type-size="font--epsilon">Headline h4 | left | default color | epsilon</h4>
         <h4 type-alignment="left" type-color="default" type-size="font--omega">Headline h4 | left | default color | omega</h4>
     \`;
-}`,...(b=(j=r.parameters)==null?void 0:j.docs)==null?void 0:b.source}}};var T,S,v;f.parameters={...f.parameters,docs:{...(T=f.parameters)==null?void 0:T.docs,source:{originalSource:`() => {
+}`,...(b=(j=f.parameters)==null?void 0:j.docs)==null?void 0:b.source}}};var T,S,v;r.parameters={...r.parameters,docs:{...(T=r.parameters)==null?void 0:T.docs,source:{originalSource:`() => {
   return \`
         <h5 type-alignment="left" type-color="default">Headline h5 | left | default color | 100%</h5>
         <h5 type-alignment="center" type-color="default">Headline h5 | center | default color | 100%</h5>
@@ -195,6 +206,7 @@ Accepted values are`]}),`
         <h5 type-alignment="left" type-color="font--grey">Headline h5 | left | grey color | 100%</h5>
         <h5 type-alignment="left" type-color="font--primary">Headline h5 | left | primary color | 100%</h5>
         <h5 type-alignment="left" type-color="font--secondary">Headline h5 | left | secondary color | 100%</h5>
+        <h5 type-alignment="left" type-color="font--font">Headline h5 | left | font color | 100%</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--alpha">Headline h5 | left | default color | alpha</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--beta">Headline h5 | left | default color | beta</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--gamma">Headline h5 | left | default color | gamma</h5>
@@ -202,7 +214,7 @@ Accepted values are`]}),`
         <h5 type-alignment="left" type-color="default" type-size="font--epsilon">Headline h5 | left | default color | epsilon</h5>
         <h5 type-alignment="left" type-color="default" type-size="font--omega">Headline h5 | left | default color | omega</h5>
     \`;
-}`,...(v=(S=f.parameters)==null?void 0:S.docs)==null?void 0:v.source}}};var D,M,O;i.parameters={...i.parameters,docs:{...(D=i.parameters)==null?void 0:D.docs,source:{originalSource:`() => {
+}`,...(v=(S=r.parameters)==null?void 0:S.docs)==null?void 0:v.source}}};var D,M,O;i.parameters={...i.parameters,docs:{...(D=i.parameters)==null?void 0:D.docs,source:{originalSource:`() => {
   return \`
         <h6 type-alignment="left" type-color="default">Headline h6 | left | default color | 100%</h6>
         <h6 type-alignment="center" type-color="default">Headline h6 | center | default color | 100%</h6>
@@ -210,6 +222,7 @@ Accepted values are`]}),`
         <h6 type-alignment="left" type-color="font--grey">Headline h6 | left | grey color | 100%</h6>
         <h6 type-alignment="left" type-color="font--primary">Headline h6 | left | primary color | 100%</h6>
         <h6 type-alignment="left" type-color="font--secondary">Headline h6 | left | secondary color | 100%</h6>
+        <h6 type-alignment="left" type-color="font--font">Headline h6 | left | font color | 100%</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--alpha">Headline h6 | left | default color | alpha</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--beta">Headline h6 | left | default color | beta</h6>
         <h6 type-alignment="left" type-color="default" type-size="font--gamma">Headline h6 | left | default color | gamma</h6>
@@ -225,6 +238,7 @@ Accepted values are`]}),`
         <p type-alignment="left" type-color="font--grey">Headline p | left | grey color | 100%</p>
         <p type-alignment="left" type-color="font--primary">Headline p | left | primary color | 100%</p>
         <p type-alignment="left" type-color="font--secondary">Headline p | left | secondary color | 100%</p>
+        <p type-alignment="left" type-color="font--font">Headline p | left | font color | 100%</p>
         <p type-alignment="left" type-color="default" type-size="font--alpha">Headline p | left | default color | alpha</p>
         <p type-alignment="left" type-color="default" type-size="font--beta">Headline p | left | default color | beta</p>
         <p type-alignment="left" type-color="default" type-size="font--gamma">Headline p | left | default color | gamma</p>
@@ -232,4 +246,4 @@ Accepted values are`]}),`
         <p type-alignment="left" type-color="default" type-size="font--epsilon">Headline p | left | default color | epsilon</p>
         <p type-alignment="left" type-color="default" type-size="font--omega">Headline p | left | default color | omega</p>
     \`;
-}`,...(C=(A=p.parameters)==null?void 0:A.docs)==null?void 0:C.source}}};const K=["HeadlineH1","HeadlineH2","HeadlineH3","HeadlineH4","HeadlineH5","HeadlineH6","HeadlineP"];export{n as HeadlineH1,o as HeadlineH2,a as HeadlineH3,r as HeadlineH4,f as HeadlineH5,i as HeadlineH6,p as HeadlineP,K as __namedExportsOrder,I as default};
+}`,...(C=(A=p.parameters)==null?void 0:A.docs)==null?void 0:C.source}}};const K=["HeadlineH1","HeadlineH2","HeadlineH3","HeadlineH4","HeadlineH5","HeadlineH6","HeadlineP"];export{n as HeadlineH1,o as HeadlineH2,a as HeadlineH3,f as HeadlineH4,r as HeadlineH5,i as HeadlineH6,p as HeadlineP,K as __namedExportsOrder,I as default};
