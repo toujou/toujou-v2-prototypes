@@ -30,15 +30,25 @@
     --chapter-padding: var(--spacing-between-elements-normal) 0;
 }
 
+.chapter[background-color="background"] + .chapter[background-color="background"],
 .chapter[background-color="background"] + span + .chapter[background-color="background"],
+.chapter[background-color="primary"] + .chapter[background-color="primary"],
 .chapter[background-color="primary"] + span + .chapter[background-color="primary"],
+.chapter[background-color="primary-light"] + .chapter[background-color="primary-light"],
 .chapter[background-color="primary-light"] + span + .chapter[background-color="primary-light"],
+.chapter[background-color="primary-dark"] + .chapter[background-color="primary-dark"],
 .chapter[background-color="primary-dark"] + span + .chapter[background-color="primary-dark"],
+.chapter[background-color="secondary"] + .chapter[background-color="secondary"],
 .chapter[background-color="secondary"] + span + .chapter[background-color="secondary"],
+.chapter[background-color="secondary-light"] + .chapter[background-color="secondary-light"],
 .chapter[background-color="secondary-light"] + span + .chapter[background-color="secondary-light"],
+.chapter[background-color="secondary-dark"] + .chapter[background-color="secondary-dark"],
 .chapter[background-color="secondary-dark"] + span + .chapter[background-color="secondary-dark"],
+.chapter[background-color="font"] + .chapter[background-color="font"],
 .chapter[background-color="font"] + span + .chapter[background-color="font"],
+.chapter[background-color="font-light"] + .chapter[background-color="font-light"],
 .chapter[background-color="font-light"] + span + .chapter[background-color="font-light"],
+.chapter[background-color="font-dark"] + .chapter[background-color="font-dark"],
 .chapter[background-color="font-dark"] + span + .chapter[background-color="font-dark"] {
     padding-top: var(--spacing-normal);
 }
