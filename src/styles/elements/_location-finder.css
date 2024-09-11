@@ -83,8 +83,7 @@
         /* element variables */
         --toujou-location-finder-position: relative;
         --toujou-location-finder-display: grid;
-        --toujou-location-finder-height: auto;
-        --toujou-location-finder-min-height: fit-content;
+        --toujou-location-finder-height: fit-content;
         --toujou-location-finder-width: var(--content-width-with-padding);
         --toujou-location-finder-max-width: var(--content-wide-max-width);
         --toujou-location-finder-aspect-ratio: var(--aspect-ratio-square);
@@ -96,7 +95,6 @@
 
         display: var(--toujou-location-finder-display);
         height: var(--toujou-location-finder-height);
-        min-height: var(--toujou-location-finder-min-height);
         width: var(--toujou-location-finder-width);
         max-width: var(--toujou-location-finder-max-width);
         aspect-ratio: var(--toujou-location-finder-aspect-ratio);
@@ -105,6 +103,15 @@
         position: var(--toujou-location-finder-position);
         margin: var(--toujou-location-finder-margin);
         z-index: var(--toujou-location-finder-grid-z-index);
+    }
+
+    /* Target only Safari */
+    @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+        .location-finder {
+            --toujou-location-finder-min-height: fit-content;
+
+            min-height: var(--toujou-location-finder-min-height);
+        }
     }
 
     .location-finder[ismobile] {
