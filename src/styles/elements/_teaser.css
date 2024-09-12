@@ -42,6 +42,20 @@
         overflow: var(--teaser-overflow);
     }
 
+    .chapter:where(
+        [background-color="primary"],
+        [background-color="primary-light"],
+        [background-color="primary-dark"],
+        [background-color="secondary"],
+        [background-color="secondary-light"],
+        [background-color="secondary-dark"],
+        [background-color="font"],
+        [background-color="font-light"],
+        [background-color="font-dark"]
+    ) .teaser {
+        --teaser-content-padding: 0 var(--spacing-normal) var(--spacing-normal);
+    }
+
     .teaser:first-child,
     .slider .teaser {
         --teaser-margin: 0 auto;
@@ -129,6 +143,34 @@
         }
 
         .teaser:not([element-design="default"])[image-side="left"] .teaser__content {
+            --teaser-content-padding: var(--spacing-m) var(--spacing-m) var(--spacing-m) 0;
+        }
+
+        .chapter:where(
+            [background-color="primary"],
+            [background-color="primary-light"],
+            [background-color="primary-dark"],
+            [background-color="secondary"],
+            [background-color="secondary-light"],
+            [background-color="secondary-dark"],
+            [background-color="font"],
+            [background-color="font-light"],
+            [background-color="font-dark"]
+        ) .teaser[image-side="right"] {
+            --teaser-content-padding: var(--spacing-m) 0 var(--spacing-m) var(--spacing-m);
+        }
+
+        .chapter:where(
+            [background-color="primary"],
+            [background-color="primary-light"],
+            [background-color="primary-dark"],
+            [background-color="secondary"],
+            [background-color="secondary-light"],
+            [background-color="secondary-dark"],
+            [background-color="font"],
+            [background-color="font-light"],
+            [background-color="font-dark"]
+        ) .teaser[image-side="left"] {
             --teaser-content-padding: var(--spacing-m) var(--spacing-m) var(--spacing-m) 0;
         }
 

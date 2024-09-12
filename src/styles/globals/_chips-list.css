@@ -8,6 +8,7 @@
     --chips-list-list-flex-wrap: wrap;
     --chips-list-list-gap: var(--spacing-normal);
     --chips-list-list-margin: 0;
+    --chips-list-list-padding: 0;
 
     --chips-list-title-margin-bottom: var(--spacing-m);
 
@@ -24,6 +25,7 @@
     flex-wrap: var(--chips-list-list-flex-wrap);
     gap: var(--chips-list-list-gap);
     margin: var(--chips-list-list-margin);
+    padding: var(--chips-list-list-padding)
 }
 
 .chips-list__link {
