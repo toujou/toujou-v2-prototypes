@@ -148,67 +148,67 @@
     margin-top: 0 !important;
 }
 
-.chapter[font-color="background"] > * {
+.chapter[font-color="background"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--bg-color);
     --color-font: var(--bg-color);
     --color-link: var(--bg-color);
     --color-link-hover: var(--color-primary);
 }
 
-.chapter[font-color="primary"] > * {
+.chapter[font-color="primary"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-primary);
     --color-font: var(--color-primary);
     --color-link: var(--color-primary);
     --color-link-hover: var(--color-primary-dark);
 }
 
-.chapter[font-color="primary-light"] > * {
+.chapter[font-color="primary-light"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-primary-light);
     --color-font: var(--color-primary-light);
     --color-link: var(--color-primary-light);
     --color-link-hover: var(--color-primary-dark);
 }
 
-.chapter[font-color="primary-dark"] > * {
+.chapter[font-color="primary-dark"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-primary-dark);
     --color-font: var(--color-primary-dark);
     --color-link: var(--color-primary-dark);
     --color-link-hover: var(--color-primary-light);
 }
 
-.chapter[font-color="secondary"] > * {
+.chapter[font-color="secondary"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-secondary);
     --color-font: var(--color-secondary);
     --color-link: var(--color-secondary);
     --color-link-hover: var(--color-secondary-dark);
 }
 
-.chapter[font-color="secondary-light"] > * {
+.chapter[font-color="secondary-light"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-secondary-light);
     --color-font: var(--color-secondary-light);
     --color-link: var(--color-secondary-light);
     --color-link-hover: var(--color-secondary-dark);
 }
 
-.chapter[font-color="secondary-dark"] > * {
+.chapter[font-color="secondary-dark"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-secondary-dark);
     --color-font: var(--color-secondary-dark);
     --color-link: var(--color-secondary-dark);
     --color-link-hover: var(--color-secondary-light);
 }
 
-.chapter[font-color="font"] > * {
+.chapter[font-color="font"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-font);
 }
 
-.chapter[font-color="font-light"] > * {
+.chapter[font-color="font-light"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-font-light);
     --color-font: var(--color-font-light);
     --color-link: var(--color-font-light);
     --color-link-hover: var(--color-font-dark);
 }
 
-.chapter[font-color="font-dark"] > * {
+.chapter[font-color="font-dark"] > :is(h1, h2, h3, h4, h5, h6, p, ul, ol) {
     --color-headline: var(--color-font-dark);
     --color-font: var(--color-font-dark);
     --color-link: var(--color-font-dark);
