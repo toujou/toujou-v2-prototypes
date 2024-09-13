@@ -1,0 +1,13 @@
+.list li::marker {
+    --list-marker-color: var(--color-primary);
+
+    color: var(--list-marker-color);
+}
+
+.list--font li::marker {
+    --list-marker-color: var(--color-font);
+}
+
+.list--secondary li::marker {
+    --list-marker-color: var(--color-secondary);
+}

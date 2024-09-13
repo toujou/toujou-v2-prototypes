@@ -46,6 +46,7 @@
 @import "./globals/_footer.css" layer(base);
 @import "./globals/_footer-column.css" layer(base);
 @import "./globals/_footer-content.css" layer(base);
+@import "./globals/_list.css" layer(base);
 @import "./globals/_grid.css" layer(base);
 @import './elements/_icon.css' layer(base);
 @import "./globals/_main.css" layer(base);
