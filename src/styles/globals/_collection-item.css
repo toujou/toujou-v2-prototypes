@@ -172,6 +172,7 @@
 
 .collection-item[item-orientation="horizontal"] {
     --collection-item-bottom-padding: var(--spacing-m) 0;
+    --collection-item-top-margin: var(--spacing-m) 0 0;
     --collection-item-flex-direction: column;
     --collection-item-shadow: none;
     --collection-item-figure-border-radius: var(--border-radius-default);
