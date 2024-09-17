@@ -188,6 +188,7 @@
     --collection-item-text-color: var(--color-bg);
     --collection-item-title-color: var(--color-bg);
     --collection-item-button-text-color: var(--color-bg);
+    --collection-item-button-text-color-hover: var(--collection-item-text-color);
 }
 
 .collection-item[element-design="primary"] {
@@ -432,8 +433,7 @@ a.collection-item__category:focus-visible {
     gap: var(--collection-item-button-gap);
 }
 
-a.collection-item__button:focus,
-a.collection-item__button:focus-visible {
+a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
     --collection-item-button-text-decoration: underline;
 
     color: var(--collection-item-button-text-color-hover);
