@@ -31,9 +31,9 @@ export default {
                 category: "Topbar settings",
                 defaultValue: { summary: 'logo' },
             },
-            name: 'Page title type',
-            description: "Toggle between logo or text for the topbar page title",
-            options: ['logo', 'text'],
+            name: 'Mobile page title type',
+            description: "Toggle between logo or text for the topbar page title on mobile devices",
+            options: ['logo', 'title'],
             control: { type: 'radio' },
             defaultValue: ['logo'],
             required: true,
@@ -84,13 +84,13 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
             logo-size="${args.logoSize}"
             ${args.noTransitions ? 'no-transitions' : ''}
         >
-            <a href="#" class="topbar__logo-link">
-                ${args.titleType === 'logo' ? `
-                    <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
-                ` : `
-                    <span class="topbar__title">Nice title</span>
-                `}
+
+        <nav aria-label="Topbar Logo" style="display: contents;">
+            <a aria-label="Zur Startseite" show-title-on-mobile="${args.titleType === 'title'}" class="topbar__logo-link" href="/">
+                <span class="topbar__title">toujou Installation</span>
+                <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
             </a>
+        </nav>
 
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">

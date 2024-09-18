@@ -29,9 +29,11 @@
         --topbar-logo-link-align-items: center;
         --topbar-logo-link-text-decoration: none;
 
+        --topbar-logo-display: block;
         --topbar-logo-height: 100%;
         --topbar-logo-width: auto;
 
+        --topbar-title-display: none;
         --topbar-title-font-family: var(--font-family-text);
         --topbar-title-font-size: var(--font-size-l);
         --topbar-title-font-weight: var(--font-weight-text-bold);
@@ -129,6 +131,7 @@
     .topbar__logo {
         height: var(--topbar-logo-height);
         width: var(--topbar-logo-width);
+        display: var(--topbar-logo-display);
     }
 
     .topbar__logo-link:focus-visible {
@@ -137,6 +140,7 @@
     }
 
     .topbar__title {
+        display: var(--topbar-title-display);
         font-family: var(--topbar-title-font-family);
         font-size: var(--topbar-title-font-size);
         font-weight: var(--topbar-title-font-weight);
@@ -211,6 +215,13 @@
     @media (hover: hover) and (min-width: 840px) {
         .topbar {
             --topbar-icons-active-color: var(--color-primary-dark);
+        }
+    }
+
+    @media screen and (max-width: 839px) {
+        .topbar:has(.topbar__logo-link[show-title-on-mobile="true"]) {
+            --topbar-title-display: block;
+            --topbar-logo-display: none;
         }
     }
 
