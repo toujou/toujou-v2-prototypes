@@ -49,12 +49,12 @@
 
     /* TEXT BLOCK MEDIA LEFT INSIDE */
     .text-block[text-block-media-position="inside-left"] .text-block-column {
-        transform: translateX(var(--text-block-grid-gap));
+        /*transform: translateX(var(--text-block-grid-gap));*/
     }
 
     /* TEXT BLOCK MEDIA RIGHT INSIDE */
     .text-block[text-block-media-position="inside-right"] .text-block-column {
-        transform: translateX(calc(var(--text-block-grid-gap) * -1));
+        /*transform: translateX(calc(var(--text-block-grid-gap) * -1));*/
     }
 
     .text-block[text-block-media-position="inside-left"] .text-block__content,
@@ -67,10 +67,10 @@
 
 @media screen and (min-width: 1200px) {
     .text-block[text-block-media-position="inside-left"] .text-block-column {
-        transform: translateX(calc(var(--text-block-grid-gap) / 2));
+        /*transform: translateX(calc(var(--text-block-grid-gap) / 2));*/
     }
 
     .text-block[text-block-media-position="inside-right"] .text-block-column {
-        transform: translateX(calc(var(--text-block-grid-gap) * -.5));
+        /*transform: translateX(calc(var(--text-block-grid-gap) * -.5));*/
     }
 }

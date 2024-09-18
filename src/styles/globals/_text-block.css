@@ -145,24 +145,22 @@ span:first-child + .text-block {
 
     .text-block[text-block-media-position="inside-left"] .text-block__figure {
         float: left;
-        margin-right: calc(var(--text-block-grid-gap) / 2);
-        transform: translateX(calc(var(--text-block-grid-gap) * -1));
+        padding-right: calc(var(--text-block-grid-gap) / 2);
+        margin-right: calc(var(--text-block-grid-gap) / 2) !important;
     }
 
     .text-block[text-block-media-position="inside-left"] .text-block__content {
         padding-left: var(--text-block-media-inside-offset);
-        padding-right: var(--text-block-grid-gap);
     }
 
     .text-block[text-block-media-position="inside-right"] .text-block__figure {
         float: right;
-        margin-left: calc(var(--text-block-grid-gap) / 2);
-        transform: translateX(var(--text-block-grid-gap));
+        padding-left: calc(var(--text-block-grid-gap) / 2);
+        margin-left: calc(var(--text-block-grid-gap) / 2) !important;
     }
 
     .text-block[text-block-media-position="inside-right"] .text-block__content {
         padding-right: var(--text-block-media-inside-offset);
-        padding-left: var(--text-block-grid-gap);
     }
 }
 
@@ -188,22 +186,6 @@ span:first-child + .text-block {
 @media screen and (min-width: 1200px) {
     .text-block[text-block-column-count="4"] {
         --text-block-grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .text-block[text-block-media-position="inside-left"] .text-block__figure {
-        transform: translateX(calc(var(--text-block-grid-gap) * -.5));
-    }
-
-    .text-block[text-block-media-position="inside-left"] .text-block__content {
-        margin-right: calc(var(--text-block-grid-gap) / 2);
-    }
-
-    .text-block[text-block-media-position="inside-right"] .text-block__figure {
-        transform: translateX(calc(var(--text-block-grid-gap) / 2));
-    }
-
-    .text-block[text-block-media-position="inside-right"] .text-block__content {
-        margin-left: calc(var(--text-block-grid-gap) / 2);
     }
 
     .details .text-block[text-block-media-position="inside-right"] .text-block__figure + .text-block__content {
