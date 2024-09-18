@@ -57,6 +57,30 @@ const Template: StoryFn<TextBlocksMediaStoryProps> = (args: TextBlocksMediaStory
             </toujou-text-block-column>
         </toujou-text-block>
 
+        <toujou-text-block class="text-block" text-block-media-position="beside-left">
+            <toujou-text-block-column class="text-block-column">
+                <figure class="text-block__figure">
+                    <a href="#">
+                        <img src="https://picsum.photos/1800/3200" alt="beautiful image" class="text-block__image text-block__image--${args.imageAspectRatio}">
+                        <toujou-media-info class="media-info">
+                            <button slot="open-button" class="media-info__toggle" aria-label="Medien Beschriftung / Copyright umschalten">
+                                <toujou-icon class="icon " icon-name="info" icon-color="background" icon-size="ms"></toujou-icon>
+                            </button>
+                            <button slot="close-button" class="media-info__toggle" aria-label="Medien Beschriftung / Copyright umschalten">
+                                <toujou-icon class="icon " icon-name="close" icon-color="background" icon-size="ms"></toujou-icon>
+                            </button>
+                            <figpaction slot="figcaption" class="media-info__figcaption"></figpaction>
+                            <small slot="copyright" class="media-info__copyright">© dfbsdfhsdghsfgjs</small>
+                        </toujou-media-info>
+                    </a>
+                </figure>
+                <div class="text-block__content">
+                    <h3>Linked image</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </toujou-text-block-column>
+        </toujou-text-block>
+
         <toujou-text-block class="text-block" text-block-media-position="beside-right">
             <toujou-text-block-column class="text-block-column">
                 <figure class="text-block__figure">

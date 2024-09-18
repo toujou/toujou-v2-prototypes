@@ -6,15 +6,18 @@
     --text-block-max-width: var(--content-medium-max-width);
     --text-block-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
     --text-block-image-aspect-ratio: auto;
-    --text-block-image-border-radius: var(--border-radius-default);
+    --text-block-figure-border-radius: var(--border-radius-default);
     --text-block-image-object-fit: cover;
+    --text-block-image-transform: scale(1);
+    --text-block-image-transition: var(--focus-image-transform-transition);
     --text-block-media-inside-image-width: 50%;
     --text-block-media-inside-offset: calc(100% / 8);
     --text-block-column-display: block;
     --text-block-column-grid-template-columns: unset;
     --text-block-column-gap: var(--spacing-m);
-    --text-block-overflow: hidden;
+    --text-block-overflow: visible;
     --text-block-z-index: var(--z-index-content);
+
 
     display: var(--text-block-display);
     grid-template-columns: var(--text-block-grid-template-columns);
@@ -67,6 +70,22 @@ span:first-child + .text-block {
     position: relative;
     margin: 0;
     height: fit-content;
+    overflow: hidden;
+    border-radius: var(--text-block-figure-border-radius);
+}
+
+.text-block__figure:has(a:is(:hover, :focus-visible)) {
+    --text-block-image-transform: var(--focus-image-transform);
+}
+
+.text-block__figure:has(a:focus-visible) {
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
+
+.text-block__image {
+    transform: var(--text-block-image-transform);
+    transition: var(--text-block-image-transition);
 }
 
 .text-block__image,
@@ -75,7 +94,6 @@ span:first-child + .text-block {
     object-fit: var(--text-block-image-object-fit);
     height: auto;
     width: 100%;
-    border-radius: var(--text-block-image-border-radius);
 }
 
 .text-block__image--square {

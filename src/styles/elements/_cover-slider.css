@@ -47,7 +47,7 @@
         --cover-slider-image-height: 100%;
         --cover-slider-image-width: 100%;
         --cover-slider-image-transform: scale(1);
-        --cover-slider-image-transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
+        --cover-slider-image-transition: var(--focus-image-transform-transition);
         --cover-slider-image-object-fit: cover;
 
         /* title */
@@ -185,7 +185,7 @@
         }
 
         .cover-slider__link:hover .cover-slider__media {
-            --cover-slider-image-transform: scale(1.1);
+            --cover-slider-image-transform: var(--focus-image-transform);
         }
     }
 }

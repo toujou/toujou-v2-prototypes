@@ -4,4 +4,6 @@
     --focus-outline-width: var(--spacing-2px);
     --focus-outline-offset: var(--spacing-2px);
     --focus-outline-color: var(--color-primary);
+    --focus-image-transform: scale(1.1);
+    --focus-image-transform-transition: transform var(--animation-duration-fast) var(--animation-easing-normal);
 }
