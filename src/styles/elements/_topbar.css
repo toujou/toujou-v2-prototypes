@@ -218,7 +218,7 @@
         }
     }
 
-    @media screen and (max-width: 839px) {
+    @media screen and (max-width: 639px) {
         .topbar:has(.topbar__logo-link[show-title-on-mobile="true"]) {
             --topbar-title-display: block;
             --topbar-logo-display: none;
