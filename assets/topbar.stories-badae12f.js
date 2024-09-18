@@ -289,7 +289,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 `,n.jsx("br",{}),`
 `,n.jsx("br",{}),`
 `,n.jsx("a",{id:"burger-button"}),`
-`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(c,{...e})}):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Page title type",description:"Toggle between logo or text for the topbar page title",options:["logo","text"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},q=e=>`
+`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(c,{...e})}):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Mobile page title type",description:"Toggle between logo or text for the topbar page title on mobile devices",options:["logo","title"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},q=e=>`
         <toujou-topbar
             id="topbar"
             class="topbar"
@@ -297,13 +297,13 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             logo-size="${e.logoSize}"
             ${e.noTransitions?"no-transitions":""}
         >
-            <a href="#" class="topbar__logo-link">
-                ${e.titleType==="logo"?`
-                    <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
-                `:`
-                    <span class="topbar__title">Nice title</span>
-                `}
+
+        <nav aria-label="Topbar Logo" style="display: contents;">
+            <a aria-label="Zur Startseite" show-title-on-mobile="${e.titleType==="title"}" class="topbar__logo-link" href="/">
+                <span class="topbar__title">toujou Installation</span>
+                <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
             </a>
+        </nav>
 
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
@@ -707,13 +707,13 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             logo-size="\${args.logoSize}"
             \${args.noTransitions ? 'no-transitions' : ''}
         >
-            <a href="#" class="topbar__logo-link">
-                \${args.titleType === 'logo' ? \`
-                    <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
-                \` : \`
-                    <span class="topbar__title">Nice title</span>
-                \`}
+
+        <nav aria-label="Topbar Logo" style="display: contents;">
+            <a aria-label="Zur Startseite" show-title-on-mobile="\${args.titleType === 'title'}" class="topbar__logo-link" href="/">
+                <span class="topbar__title">toujou Installation</span>
+                <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
             </a>
+        </nav>
 
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
