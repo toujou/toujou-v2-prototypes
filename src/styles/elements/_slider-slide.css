@@ -15,14 +15,14 @@
         width: 100% !important;
     }
 
-    .slider[content-type="teaser"] .slider-slide {
-        width: 100% !important;
-        height: auto;
-        aspect-ratio: var(--slider-aspect-ratio);
-    }
-
     .slider[content-type="logos"] .slider-slide {
         align-self: center;
+    }
+
+    .slider[content-type="teaser"] .slider__slide {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: var(--slider-aspect-ratio);
     }
 
     .slider[content-type="review"] .slider-slide {
