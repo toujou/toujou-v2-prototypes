@@ -51,7 +51,6 @@
     }
 
     @media screen and (min-width: 840px) {
-        .slider[content-type="teaser"] .slider-progress,
         .slider[content-type="review"] .slider-progress {
             width: calc(calc(100% - var(--spacing-xl)) / 2);
         }
