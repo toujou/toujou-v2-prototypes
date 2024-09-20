@@ -1,9 +1,9 @@
 @layer components {
     .media-placeholder {
         --media-placeholder-display: block;
-        --media-placeholder-height: 100%;
-        --media-placeholder-width: 100%;
-        --media-placeholder-background-color: var(--color-font-light);
+        --media-placeholder-height: max(var(--media-placeholder-icon-size), 100%);
+        --media-placeholder-width: max(var(--media-placeholder-icon-size), 100%);
+        --media-placeholder-background-color: var(--color-primary-o-10);
         --media-placeholder-opacity: 1;
         --media-placeholder-border-radius: var(--border-radius-default);
 
@@ -18,6 +18,11 @@
         opacity: var(--media-placeholder-opacity);
         position: relative;
         border-radius: var(--media-placeholder-border-radius);
+    }
+
+    .topbar__logo-link .media-placeholder {
+        height: var(--media-placeholder-icon-size);
+        width: var(--media-placeholder-icon-size);
     }
 
     .media-placeholder::after {
