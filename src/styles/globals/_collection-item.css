@@ -549,10 +549,14 @@ a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
 @media screen and (min-width: 640px) {
     .collection-item[item-orientation="horizontal"] {
         --collection-item-flex-direction: row;
-        --collection-item-top-margin: var(--spacing-m) var(--spacing-normal);
         --collection-item-figure-border-radius: var(--border-radius-default);
         /* stylelint-disable-next-line max-line-length */
         --collection-item-location-border-radius: 0 0 var(--collection-item-figure-border-radius) var(--collection-item-figure-border-radius);
+    }
+
+    .chapter[background-color] .collection-item[item-orientation="horizontal"] {
+        --collection-item-top-margin: var(--spacing-m) var(--spacing-normal);
+        --collection-item-bottom-padding: var(--spacing-m) 0;
     }
 
     .collection-item[item-orientation="horizontal"] .collection-item__top {
