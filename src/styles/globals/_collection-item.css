@@ -552,7 +552,6 @@ a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
         --collection-item-figure-border-radius: var(--border-radius-default);
         /* stylelint-disable-next-line max-line-length */
         --collection-item-location-border-radius: 0 0 var(--collection-item-figure-border-radius) var(--collection-item-figure-border-radius);
-        --collection-item-bottom-padding: var(--spacing-m);
     }
 
     .collection-item[item-orientation="horizontal"] .collection-item__top {
