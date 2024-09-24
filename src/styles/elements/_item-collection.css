@@ -29,6 +29,10 @@
         z-index: var(--item-collection-z-index);
     }
 
+    .chapter[background-color] .item-collection {
+        --item-collection-gap: calc(var(--content-spacing-between-columns) / 2);
+    }
+
     .item-collection:first-child {
         --item-collection-margin: 0 auto;
     }
