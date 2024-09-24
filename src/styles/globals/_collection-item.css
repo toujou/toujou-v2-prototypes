@@ -172,7 +172,6 @@
 
 .collection-item[item-orientation="horizontal"] {
     --collection-item-bottom-padding: var(--spacing-m) 0;
-    --collection-item-top-margin: 0;
     --collection-item-flex-direction: column;
     --collection-item-shadow: none;
     --collection-item-figure-border-radius: var(--border-radius-default);
@@ -180,6 +179,7 @@
 
 .chapter[background-color] .collection-item[item-orientation="horizontal"] {
     --collection-item-bottom-padding: var(--spacing-m);
+    --collection-item-top-margin: 0;
 }
 
 .slider[content-type="card-collection"] .collection-item {
