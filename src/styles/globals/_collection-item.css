@@ -173,7 +173,7 @@
 .collection-item[item-orientation="horizontal"] {
     --collection-item-bottom-padding: var(--spacing-m) 0;
     --collection-item-flex-direction: column;
-    --collection-item-top-margin: var(--spacing-m) 0 0;
+    --collection-item-top-margin: var(--spacing-m) var(--spacing-normal);
     --collection-item-shadow: none;
     --collection-item-figure-border-radius: var(--border-radius-default);
 }
@@ -552,6 +552,7 @@ a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
         --collection-item-figure-border-radius: var(--border-radius-default);
         /* stylelint-disable-next-line max-line-length */
         --collection-item-location-border-radius: 0 0 var(--collection-item-figure-border-radius) var(--collection-item-figure-border-radius);
+        --collection-item-bottom-padding: var(--spacing-m);
     }
 
     .chapter[background-color] .collection-item[item-orientation="horizontal"] {
