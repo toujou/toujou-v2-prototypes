@@ -7,7 +7,7 @@
         --event-schedule-day-grid-gap: var(--spacing-xs);
         --event-schedule-day-padding: var(--spacing-s);
         --event-schedule-day-background-color: var(--color-bg);
-        --event-schedule-day-border-radius: var(--border-radius-default);
+        --event-schedule-day-border-radius: 0;
 
         --event-schedule-day-list-list-style: none;
         --event-schedule-day-list-margin: 0;
@@ -28,6 +28,7 @@
     .chapter[background-color] .event-schedule-day {
         --event-schedule-day-border-top: none;
         --event-schedule-day-border-bottom: none;
+        --event-schedule-day-border-radius: var(--border-radius-default);
     }
 
     .event-schedule-year__headline + .event-schedule-day {
