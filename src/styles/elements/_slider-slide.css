@@ -19,10 +19,10 @@
         align-self: center;
     }
 
-    .slider[content-type="teaser"] .slider__slide {
+    .slider[content-type="teaser"] .slider-slide {
         width: 100% !important;
         height: auto !important;
-        aspect-ratio: var(--slider-aspect-ratio);
+        aspect-ratio: auto;
     }
 
     .slider[content-type="review"] .slider-slide {
