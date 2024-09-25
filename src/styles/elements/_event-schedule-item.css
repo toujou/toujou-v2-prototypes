@@ -9,6 +9,7 @@
         --event-schedule-item-padding: var(--spacing-s) var(--spacing-xs);
         --event-schedule-item-text-decoration: none;
         --event-schedule-item-background-color: transparent;
+        --event-schedule-item-border-radius: var(--border-radius-default);
 
         --event-schedule-item-time-margin: 0;
         --event-schedule-item-time-font-numeric-variant: tabular-nums;
@@ -31,6 +32,7 @@
         padding: var(--event-schedule-item-padding);
         text-decoration: var(--event-schedule-item-text-decoration);
         background-color: var(--event-schedule-item-background-color);
+        border-radius: var(--event-schedule-item-border-radius);
     }
 
     a.event-schedule-item:is(:hover, :focus-visible) {

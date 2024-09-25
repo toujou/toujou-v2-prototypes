@@ -6,6 +6,8 @@
         --event-schedule-day-grid-template-columns: 1fr;
         --event-schedule-day-grid-gap: var(--spacing-xs);
         --event-schedule-day-padding: var(--spacing-s);
+        --event-schedule-day-background-color: var(--color-bg);
+        --event-schedule-day-border-radius: var(--border-radius-default);
 
         --event-schedule-day-list-list-style: none;
         --event-schedule-day-list-margin: 0;
@@ -19,6 +21,13 @@
         border-top: var(--event-schedule-day-border-top);
         border-bottom: var(--event-schedule-day-border-bottom);
         padding: var(--event-schedule-day-padding);
+        background-color: var(--event-schedule-day-background-color);
+        border-radius: var(--event-schedule-day-border-radius);
+    }
+
+    .chapter[background-color] .event-schedule-day {
+        --event-schedule-day-border-top: none;
+        --event-schedule-day-border-bottom: none;
     }
 
     .event-schedule-year__headline + .event-schedule-day {
