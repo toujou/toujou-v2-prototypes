@@ -7,6 +7,8 @@
         --average-rating-padding: 0;
         --average-rating-z-index: var(--z-index-content);
         --average-rating-font-family: var(--font-family-text);
+        --average-rating-background-color: transparent;
+        --average-rating-border-radius: 0;
 
         --average-rating-text-color: var(--color-font);
         --average-rating-text-font-size: var(--font-size-normal);
@@ -41,10 +43,19 @@
         padding: var(--average-rating-padding);
         z-index: var(--average-rating-z-index);
         font-family: var(--average-rating-font-family);
+        background-color: var(--average-rating-background-color);
+        border-radius: var(--average-rating-border-radius);
     }
 
     .average-rating:first-child {
         --average-rating-margin: 0 auto;
+    }
+
+    .chapter[background-color]:not([background-color="bg"]) .average-rating,
+    .chapter[has-background-media] .average-rating {
+        --average-rating-background-color: var(--color-bg);
+        --average-rating-padding: var(--spacing-m);
+        --average-rating-border-radius: var(--border-radius-default);
     }
 
     .average-rating__text {

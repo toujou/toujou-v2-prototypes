@@ -74,7 +74,9 @@ export const parameters = {
                 'TOKENS',
                 'PAGES',
             ],
-        }
+        },
+        // Select which addon panel is selected by default
+        selectedPanel: 'storybook/controls/panel'
     },
     fetchMock: {
         debug: false,
