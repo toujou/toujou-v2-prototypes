@@ -45,7 +45,7 @@ export default {
             },
             name: 'Minimum height',
             description: "Choose a minimum height for the chapter",
-            options: ['auto', 'full', 'half', 'third', 'fourth'],
+            options: ['auto', 'full', 'half', 'third', 'quarter'],
             control: { type: 'radio' },
             defaultValue: ['none'],
             required: true,

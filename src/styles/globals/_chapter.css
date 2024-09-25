@@ -227,7 +227,7 @@
     min-height: calc(100dvh / 3);
 }
 
-.chapter[min-height="fourth"] {
+.chapter[min-height="quarter"] {
     min-height: 25dvh;
 }
 
