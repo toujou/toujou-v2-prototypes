@@ -25,7 +25,8 @@
         border-radius: var(--event-schedule-day-border-radius);
     }
 
-    .chapter[background-color] .event-schedule-day {
+    .chapter[background-color] .event-schedule-day,
+    .chapter[has-background-media] .event-schedule-day {
         --event-schedule-day-border-top: none;
         --event-schedule-day-border-bottom: none;
         --event-schedule-day-border-radius: var(--border-radius-default);
