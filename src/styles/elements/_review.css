@@ -2,6 +2,8 @@
     .review {
         --review-border-bottom: var(--border-width-normal) solid var(--border-color-default);
         --review-padding: var(--spacing-m) 0;
+        --review-background-color: transparent;
+        --review-border-radius: 0;
 
         --review-header-infos-display: flex;
         --review-header-infos-flex-direction: column;
@@ -59,6 +61,17 @@
 
         padding: var(--review-padding);
         border-bottom: var(--review-border-bottom);
+        background-color: var(--review-background-color);
+        border-radius: var(--review-border-radius);
+    }
+
+    .chapter[background-color]:not([background-color="bg"]) .review,
+    .chapter[has-background-media] .review {
+        --review-border-bottom: none;
+        --review-border-top: none;
+        --review-background-color: var(--color-bg);
+        --review-border-radius: var(--border-radius-default);
+        --review-padding: var(--spacing-m);
     }
 
     .review[no-media] {

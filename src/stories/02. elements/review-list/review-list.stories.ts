@@ -16,7 +16,7 @@ export default {
     tags: ['autodocs']
 } satisfies Meta;
 
-const Template = () => {
+const reviewsComponent = () => {
     return `
         <div class="reviews">
             <article class="review">
@@ -247,6 +247,16 @@ const Template = () => {
                 </footer>
             </article>
         </div>
+    `;
+}
+
+const Template = () => {
+    return `
+        ${reviewsComponent()}
+
+        <section class="chapter" background-color="primary" font-color="primary-light">
+            ${reviewsComponent()}
+        </section>
     `;
 };
 

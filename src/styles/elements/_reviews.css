@@ -3,9 +3,20 @@
         --reviews-width: var(--content-width-with-padding);
         --reviews-max-width: var(--content-max-width);
         --reviews-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+        --reviews-display: flex;
+        --reviews-flex-direction: column;
+        --reviews-gap: 0;
 
         width: var(--reviews-width);
         max-width: var(--reviews-max-width);
         margin: var(--reviews-margin);
+        display: var(--reviews-display);
+        flex-direction: var(--reviews-flex-direction);
+        gap: var(--reviews-gap);
+    }
+
+    .chapter[background-color]:not([background-color="bg"]) .reviews,
+    .chapter[has-background-media] .reviews {
+        --reviews-gap: var(--content-spacing-between-columns);
     }
 }
