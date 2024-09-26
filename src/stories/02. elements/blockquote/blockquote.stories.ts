@@ -47,7 +47,7 @@ interface BlockquoteStoryProps {
     elementDesign: string;
 }
 
-const Template: StoryFn<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
+const blockquoteComponent = (args: BlockquoteStoryProps) => {
     return `
         <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="${args.elementDesign}">
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
@@ -58,6 +58,16 @@ const Template: StoryFn<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => 
             </blockquote>
             <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
         </toujou-blockquote>
+    `;
+}
+
+const Template: StoryFn<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
+    return `
+        ${blockquoteComponent(args)}
+
+        <section class="chapter" background-color="primary">
+            ${blockquoteComponent(args)}
+        </section>
     `;
 };
 

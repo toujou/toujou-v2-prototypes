@@ -47,7 +47,7 @@ interface BlockquoteGridStoryProps {
     direction: string;
 }
 
-const Template: StoryFn<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProps) => {
+const blockquoteGridBlock = (args: BlockquoteGridStoryProps) => {
     return `
         <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="${args.gridCount}">
             <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="default">
@@ -81,8 +81,17 @@ const Template: StoryFn<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryPr
                 </blockquote>
                 <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
             </toujou-blockquote>
-
         </toujou-blockquote-grid>
+    `;
+}
+
+const Template: StoryFn<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProps) => {
+    return `
+        ${blockquoteGridBlock(args)}
+
+        <section class="chapter" background-color="primary">
+            ${blockquoteGridBlock(args)}
+        </section>
     `;
 };
 

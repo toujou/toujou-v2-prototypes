@@ -51,7 +51,7 @@ function renderText() {
     `
 }
 
-const Template: StoryFn<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTextStoryProps) => {
+const blockquoteWithTextBlock = (args: BlockquoteWithTextStoryProps) => {
     return `
         <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}" fullwidth>
             <toujou-grid-column class="grid-column">
@@ -61,6 +61,16 @@ const Template: StoryFn<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTex
                 ${args.columnsLayout === 'third-left' ? renderText() : renderBlockquote()}
             </toujou-grid-column>
         </toujou-grid>
+    `;
+}
+
+const Template: StoryFn<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTextStoryProps) => {
+    return `
+        ${blockquoteWithTextBlock(args)}
+
+        <section class="chapter" background-color="primary">
+            ${blockquoteWithTextBlock(args)}
+        </section>
     `
 };
 

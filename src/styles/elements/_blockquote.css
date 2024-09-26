@@ -47,6 +47,11 @@
         padding: 0;
     }
 
+    .chapter[background-color]:not([background-color="bg"]) .blockquote,
+    .chapter[has-background-media] .blockquote {
+        --blockquote-padding: var(--content-inner-padding);
+    }
+
     .blockquote:not([element-design="default"]) {
         --blockquote-padding: var(--spacing-l);
         --blockquote-icon-color: var(--color-bg);

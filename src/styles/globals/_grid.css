@@ -3,6 +3,9 @@
     --grid-number-of-columns: 1;
     --grid-template-columns: repeat(var(--grid-number-of-columns), 1fr);
     --grid-gap: var(--content-spacing-between-columns);
+    --grid-background-color: transparent;
+    --grid-padding: 0;
+    --grid-border-radius: 0;
     --grid-width: var(--content-width-with-padding);
     --grid-max-width: var(--content-max-width);
     --grid-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
@@ -11,10 +14,20 @@
     display: var(--grid-display);
     grid-template-columns: var(--grid-template-columns);
     grid-gap: var(--grid-gap);
+    background-color: var(--grid-background-color);
+    padding: var(--grid-padding);
+    border-radius: var(--grid-border-radius);
     width: var(--grid-width);
     max-width: var(--grid-max-width);
     margin: var(--grid-margin);
     z-index: var(--grid-z-index);
+}
+
+.chapter[background-color]:not([background-color="bg"]) > .grid,
+.chapter[has-background-media] > .grid {
+    --grid-background-color: var(--color-bg);
+    --grid-padding: var(--content-inner-padding);
+    --grid-border-radius: var(--border-radius-default);
 }
 
 .grid:first-child {
