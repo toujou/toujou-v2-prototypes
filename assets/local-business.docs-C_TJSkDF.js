@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-DPda6Ybg.js";import{useMDXComponents as s}from"./index-4_AlzpT7.js";function o(n){const t={h1:"h1",...s(),...n.components};return e.jsx(t.h1,{id:"local-business-page",children:"Local Business page"})}function i(n={}){const{wrapper:t}={...s(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(o,{...n})}):o(n)}export{i as M};
