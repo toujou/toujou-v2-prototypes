@@ -116,8 +116,9 @@
     display: var(--consent-widget-summary-marker-display);
 }
 
-.consent-widget__details[open] #consentSettingsButton,
-.consent-widget__details[open] + .consent-widget__bottom-buttons :where(#consentSettingsButton, #consentAcceptAllButton, #consentDenyAllButton, #consentSettingsButton) {
+/* stylelint-disable-next-line max-line-length */
+.consent-widget__details[open] + .consent-widget__bottom-buttons :where(#consentSettingsButton, #consentAcceptAllButton, #consentDenyAllButton, #consentSettingsButton),
+.consent-widget__details[open] #consentSettingsButton {
     display: none;
 }
 
@@ -172,6 +173,6 @@
 
 @media screen and (min-width: 840px) {
     .consent-widget {
-        --consent-widget-padding: var(--spacing-m);
+        --consent-widget-padding: var(--content-inner-padding);
     }
 }

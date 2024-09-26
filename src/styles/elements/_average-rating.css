@@ -54,7 +54,7 @@
     .chapter[background-color]:not([background-color="bg"]) .average-rating,
     .chapter[has-background-media] .average-rating {
         --average-rating-background-color: var(--color-bg);
-        --average-rating-padding: var(--spacing-m);
+        --average-rating-padding: var(--content-inner-padding);
         --average-rating-border-radius: var(--border-radius-default);
     }
 

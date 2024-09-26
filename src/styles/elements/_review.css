@@ -1,7 +1,7 @@
 @layer components {
     .review {
         --review-border-bottom: var(--border-width-normal) solid var(--border-color-default);
-        --review-padding: var(--spacing-m) 0;
+        --review-padding: var(--content-inner-padding) 0;
         --review-background-color: transparent;
         --review-border-radius: 0;
 
@@ -48,7 +48,7 @@
         --review-object-fit: cover;
 
         --review-footer-color: var(--color-primary);
-        --review-footer-padding: var(--spacing-m);
+        --review-footer-padding: var(--content-inner-padding);
         --review-footer-backgorund-color: var(--color-primary-o-10);
         --review-footer-margin: var(--spacing-m) 0 0;
 
@@ -71,7 +71,7 @@
         --review-border-top: none;
         --review-background-color: var(--color-bg);
         --review-border-radius: var(--border-radius-default);
-        --review-padding: var(--spacing-m);
+        --review-padding: var(--content-inner-padding);
     }
 
     .review[no-media] {

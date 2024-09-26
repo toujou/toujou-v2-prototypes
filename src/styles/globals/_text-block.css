@@ -18,7 +18,6 @@
     --text-block-overflow: visible;
     --text-block-z-index: var(--z-index-content);
 
-
     display: var(--text-block-display);
     grid-template-columns: var(--text-block-grid-template-columns);
     grid-gap: var(--text-block-grid-gap);

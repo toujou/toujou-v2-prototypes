@@ -25,7 +25,7 @@
     flex-wrap: var(--chips-list-list-flex-wrap);
     gap: var(--chips-list-list-gap);
     margin: var(--chips-list-list-margin);
-    padding: var(--chips-list-list-padding)
+    padding: var(--chips-list-list-padding);
 }
 
 .chips-list__link {
