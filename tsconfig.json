@@ -22,10 +22,16 @@
         "useDefineForClassFields": false,
         "skipLibCheck": true,
         "target": "ES6",
+        "baseUrl": ".",
         "types": [
             "cypress",
             "cypress-axe"
-        ]
+        ],
+        "paths": {
+            "@/utils/*": [
+                "utils/*"
+            ]
+        }
     },
     "include": [
         "src/**/*.ts"
@@ -38,10 +44,5 @@
         {
             "path": "./tsconfig.node.json"
         }
-    ],
-    "paths": {
-        "@/utils/*": [
-            "utils/*"
-        ]
-    }
+    ]
 }
