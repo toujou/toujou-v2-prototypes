@@ -73,7 +73,15 @@
         --map-contact-address-color: var(--color-bg);
         --map-contact-social-icon-color: var(--color-bg);
         --map-contact-border-radius: var(--border-radius-default);
-        --map-contact-padding: var(--spacing-xl);
+        --map-contact-padding: var(--content-inner-padding);
+    }
+
+    .chapter[background-color]:not([background-color="bg"]) .map-contact[element-design="default"],
+    .chapter[has-background-media] .map-contact[element-design="default"] {
+        --map-contact-content-padding: 0 var(--spacing-normal) var(--spacing-normal);
+        --map-contact-background-color: var(--color-bg);
+        --map-contact-border-radius: var(--border-radius-default);
+        --map-contact-padding: var(--content-inner-padding);
     }
 
     .map-contact:not([element-design="default"]) a {

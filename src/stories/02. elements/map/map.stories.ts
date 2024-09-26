@@ -60,7 +60,7 @@ interface mapStoryProps {
     elementDesign: string;
 }
 
-const Template: StoryFn<mapStoryProps> = (args: mapStoryProps) => {
+const mapComponent = (args: mapStoryProps) => {
     return `
         <toujou-map-contact class="map-contact" direction="${args.direction}" map-aspect-ratio="${args.mapAspectRatio}" element-design="${args.elementDesign}">
             <div class="map-contact__map-container">
@@ -87,6 +87,16 @@ const Template: StoryFn<mapStoryProps> = (args: mapStoryProps) => {
                 </div>
             </div>
         </toujou-map-contact>
+    `;
+}
+
+const Template: StoryFn<mapStoryProps> = (args: mapStoryProps) => {
+    return `
+        ${mapComponent(args)}
+
+        <section class="chapter" background-color="primary">
+            ${mapComponent(args)}
+        </section>
     `;
 };
 
