@@ -305,6 +305,27 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </a>
             </nav>
 
+            <ul class="topbar__actions">
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Contact</span>
+                        <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Like</span>
+                        <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Suche</span>
+                        <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+            </ul>
+
             ${e.showLanguagePicker?`
                 <nav class="language-picker" aria-label="Language picker">
                     <ul class="language-picker__list">
@@ -345,27 +366,6 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                     </ul>
                 </nav>
             `:""}
-
-            <ul class="topbar__actions">
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
-                        <span class="topbar__actions-text">Contact</span>
-                        <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
-                        <span class="topbar__actions-text">Like</span>
-                        <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
-                        <span class="topbar__actions-text">Suche</span>
-                        <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-            </ul>
 
             <toujou-burger-button
                 class="burger-button"
@@ -756,6 +756,27 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </a>
             </nav>
 
+            <ul class="topbar__actions">
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Contact</span>
+                        <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Like</span>
+                        <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+                <li class="topbar__actions-item">
+                    <a href="#" class="topbar__actions-link">
+                        <span class="topbar__actions-text">Suche</span>
+                        <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    </a>
+                </li>
+            </ul>
+
             \${args.showLanguagePicker ? \`
                 <nav class="language-picker" aria-label="Language picker">
                     <ul class="language-picker__list">
@@ -796,27 +817,6 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                     </ul>
                 </nav>
             \` : ''}
-
-            <ul class="topbar__actions">
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
-                        <span class="topbar__actions-text">Contact</span>
-                        <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
-                        <span class="topbar__actions-text">Like</span>
-                        <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
-                        <span class="topbar__actions-text">Suche</span>
-                        <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-            </ul>
 
             <toujou-burger-button
                 class="burger-button"
