@@ -289,7 +289,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 `,n.jsx("br",{}),`
 `,n.jsx("br",{}),`
 `,n.jsx("a",{id:"burger-button"}),`
-`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(c,{...e})}):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Mobile page title type",description:"Toggle between logo or text for the topbar page title on mobile devices",options:["logo","title"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},defaultValue:[!1],required:!0}},tags:["autodocs"]},q=e=>`
+`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(c,{...e})}):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Mobile page title type",description:"Toggle between logo or text for the topbar page title on mobile devices",options:["logo","title"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},defaultValue:[!1],required:!0},showLanguagePicker:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"Show language picker",description:"Show the language picker element",control:{type:"boolean"},defaultValue:[!0],required:!0}},tags:["autodocs"]},q=e=>`
         <toujou-topbar
             id="topbar"
             class="topbar"
@@ -298,12 +298,53 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             ${e.noTransitions?"no-transitions":""}
         >
 
-        <nav aria-label="Topbar Logo" style="display: contents;">
-            <a aria-label="Zur Startseite" show-title-on-mobile="${e.titleType==="title"}" class="topbar__logo-link" href="/">
-                <span class="topbar__title">toujou Installation</span>
-                <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
-            </a>
-        </nav>
+            <nav aria-label="Topbar Logo" style="display: contents;">
+                <a aria-label="Zur Startseite" show-title-on-mobile="${e.titleType==="title"}" class="topbar__logo-link" href="/">
+                    <span class="topbar__title">toujou Installation</span>
+                    <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
+                </a>
+            </nav>
+
+            ${e.showLanguagePicker?`
+                <nav class="language-picker" aria-label="Language picker">
+                    <ul class="language-picker__list">
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="en"
+                                hreflang="en"
+                                aria-current="true"
+                                aria-label="English"
+                            >
+                                <span class="language-picker__ico-code">EN</span>
+                            </a>
+                        </li>
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="de"
+                                hreflang="de"
+                                aria-label="Deutsch"
+                            >
+                                <span class="language-picker__ico-code">DE</span>
+                            </a>
+                        </li>
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="pt"
+                                hreflang="pt"
+                                aria-label="Português"
+                            >
+                                <span class="language-picker__ico-code">PT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            `:""}
 
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
@@ -695,7 +736,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </toujou-text-block-column>
             </toujou-text-block>
         </main>
-    `,t=q.bind({});t.args={navigationTheme:"light",titleType:"logo",logoSize:"medium",noTransitions:!1};var r,u,m;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
+    `,t=q.bind({});t.args={navigationTheme:"light",titleType:"logo",logoSize:"medium",noTransitions:!1,showLanguagePicker:!0};var r,u,m;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
   // @ts-ignore
   // document.documentElement.style.setProperty('--topbar-height', \`var(--topbar-height-\${args.logoSize})\`);
 
@@ -708,12 +749,53 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
             \${args.noTransitions ? 'no-transitions' : ''}
         >
 
-        <nav aria-label="Topbar Logo" style="display: contents;">
-            <a aria-label="Zur Startseite" show-title-on-mobile="\${args.titleType === 'title'}" class="topbar__logo-link" href="/">
-                <span class="topbar__title">toujou Installation</span>
-                <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
-            </a>
-        </nav>
+            <nav aria-label="Topbar Logo" style="display: contents;">
+                <a aria-label="Zur Startseite" show-title-on-mobile="\${args.titleType === 'title'}" class="topbar__logo-link" href="/">
+                    <span class="topbar__title">toujou Installation</span>
+                    <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
+                </a>
+            </nav>
+
+            \${args.showLanguagePicker ? \`
+                <nav class="language-picker" aria-label="Language picker">
+                    <ul class="language-picker__list">
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="en"
+                                hreflang="en"
+                                aria-current="true"
+                                aria-label="English"
+                            >
+                                <span class="language-picker__ico-code">EN</span>
+                            </a>
+                        </li>
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="de"
+                                hreflang="de"
+                                aria-label="Deutsch"
+                            >
+                                <span class="language-picker__ico-code">DE</span>
+                            </a>
+                        </li>
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="pt"
+                                hreflang="pt"
+                                aria-label="Português"
+                            >
+                                <span class="language-picker__ico-code">PT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            \` : ''}
 
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
