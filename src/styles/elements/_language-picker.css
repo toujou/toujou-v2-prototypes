@@ -1,0 +1,106 @@
+@layer components {
+    .language-picker {
+        --language-picker-z-index: var(--topbar-languague-picker-z-index);
+
+        --language-picker-list-list-style: none;
+        --language-picker-list-display: flex;
+        --language-picker-list-flex-flow: row nowrap;
+        --language-picker-list-gap: var(--spacing-normal);
+        --language-picker-list-padding: 0;
+        --language-picker-list-margin: 0 0 0 var(--spacing-normal);
+
+
+        --language-picker-link-font-size: var(--topbar-actions-text-font-size);
+        --language-picker-link-font-family: var(--font-family-text);
+        --language-picker-link-text-decoration: none;
+        --language-picker-list-item-color: var(--topbar-actions-text-color);
+        --language-picker-list-item-hover-color: var(--topbar-icons-active-color);
+        --language-picker-list-item-selected-color: var(--color-primary);
+
+        grid-area: language-picker;
+        z-index: var(--language-picker-z-index);
+    }
+
+    .topbar[navigation-theme="dark"] .language-picker {
+        --language-picker-list-item-color: var(--color-bg);
+        --language-picker-list-item-hover-color: var(--color-primary-light);
+        --language-picker-list-item-selected-color: var(--color-primary-light);
+    }
+
+    .language-picker__list {
+        list-style: var(--language-picker-list-list-style);
+        display: var(--language-picker-list-display);
+        flex-flow: var(--language-picker-list-flex-flow);
+        justify-content: var(--language-picker-list-justify-content);
+        gap: var(--language-picker-list-gap);
+        padding: var(--language-picker-list-padding);
+        margin: var(--language-picker-list-margin);
+    }
+
+    .language-picker__item {
+        color: var(--language-picker-list-item-color);
+    }
+
+    .language-picker__link {
+        font-size: var(--language-picker-link-font-size);
+        font-family: var(--language-picker-link-font-family);
+        color: var(--language-picker-list-item-color);
+        text-decoration: var(--language-picker-link-text-decoration);
+    }
+
+    .language-picker__link:is(:hover, :focus-visible) {
+        color: var(--language-picker-list-item-hover-color) !important;
+    }
+
+    .language-picker__link[aria-current="true"] {
+        color: var(--language-picker-list-item-selected-color) !important;
+        pointer-events: none;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .language-picker {
+            --language-picker-position: fixed;
+            --language-picker-padding: 0 var(--spacing-normal);
+            --language-picker-top: calc(var(--topbar-height) + var(--spacing-normal));
+            --language-picker-left: 0;
+            --language-picker-width: 100%;
+            --language-picker-pointer-events: none;
+            --language-picker-opacity: 0;
+            --language-picker-transition: transform var(--animation-duration-normal) var(--animation-easing-normal),
+            opacity var(--animation-duration-normal) var(--animation-easing-normal);
+
+            --language-picker-list-justify-content: flex-end;
+
+            --language-picker-link-font-size: var(--font-size-normal);
+            --language-picker-list-item-color: var(--color-bg);
+            --language-picker-list-item-hover-color: var(--color-primary-dark);
+            --language-picker-list-item-selected-color: var(--color-primary-dark);
+
+            position: var(--language-picker-position);
+            padding: var(--language-picker-padding);
+            top: var(--language-picker-top);
+            left: var(--language-picker-left);
+            width: var(--language-picker-width);
+            pointer-events: var(--language-picker-pointer-events);
+            opacity: var(--language-picker-opacity);
+            transition: var(--language-picker-transition);
+        }
+
+        .topbar[open-nav] .language-picker {
+            --language-picker-pointer-events: all;
+            --language-picker-opacity: 1;
+            --language-picker-transition: transform var(--animation-duration-normal) var(--animation-easing-normal),
+            opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
+        }
+
+        .topbar:not([open-nav]) .service-nav > * {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .language-picker {
+            --language-picker-list-justify-content: flex-start;
+        }
+    }
+}

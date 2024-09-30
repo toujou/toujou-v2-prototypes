@@ -116,10 +116,14 @@
     rotate: -180deg;
 }
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 1023px) {
     /* For accessibility we hide the content of the main-nav when not open */
     .topbar:not([open-nav]) .main-nav > * {
         display: none;
+    }
+
+    .topbar:has(.language-picker) .main-nav {
+        --main-nav-padding: var(--spacing-xxl) var(--spacing-normal) calc(var(--service-nav-height) + var(--spacing-l)) var(--spacing-normal)
     }
 }
 

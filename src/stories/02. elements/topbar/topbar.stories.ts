@@ -61,6 +61,17 @@ export default {
             defaultValue: [false],
             required: true,
         },
+        showLanguagePicker: {
+            table: {
+                category: "Topbar settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: 'Show language picker',
+            description: "Show the language picker element",
+            control: { type: 'boolean' },
+            defaultValue: [true],
+            required: true,
+        },
     },
     tags: ['autodocs']
 } satisfies Meta;
@@ -70,6 +81,7 @@ interface TopbarStoryProps {
     titleType: string
     logoSize: string
     noTransitions: boolean
+    showLanguagePicker: boolean
 }
 
 const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
@@ -85,12 +97,53 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
             ${args.noTransitions ? 'no-transitions' : ''}
         >
 
-        <nav aria-label="Topbar Logo" style="display: contents;">
-            <a aria-label="Zur Startseite" show-title-on-mobile="${args.titleType === 'title'}" class="topbar__logo-link" href="/">
-                <span class="topbar__title">toujou Installation</span>
-                <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
-            </a>
-        </nav>
+            <nav aria-label="Topbar Logo" style="display: contents;">
+                <a aria-label="Zur Startseite" show-title-on-mobile="${args.titleType === 'title'}" class="topbar__logo-link" href="/">
+                    <span class="topbar__title">toujou Installation</span>
+                    <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
+                </a>
+            </nav>
+
+            ${args.showLanguagePicker ? `
+                <nav class="language-picker" aria-label="Language picker">
+                    <ul class="language-picker__list">
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="en"
+                                hreflang="en"
+                                aria-current="true"
+                                aria-label="English"
+                            >
+                                <span class="language-picker__ico-code">EN</span>
+                            </a>
+                        </li>
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="de"
+                                hreflang="de"
+                                aria-label="Deutsch"
+                            >
+                                <span class="language-picker__ico-code">DE</span>
+                            </a>
+                        </li>
+                        <li class="language-picker__item">
+                            <a
+                                href="#"
+                                class="language-picker__link"
+                                lang="pt"
+                                hreflang="pt"
+                                aria-label="Português"
+                            >
+                                <span class="language-picker__ico-code">PT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            ` : ''}
 
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
@@ -492,4 +545,5 @@ Topbar.args = {
     titleType: 'logo',
     logoSize: 'medium',
     noTransitions: false,
+    showLanguagePicker: true,
 }
