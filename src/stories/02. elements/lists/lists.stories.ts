@@ -15,10 +15,49 @@ export default {
     tags: ['autodocs']
 } satisfies Meta;
 
-const Template = () => {
+const renderLists = () => {
     return `
         <h3>Default list</h3>
         <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+        </ul>
+
+        <ol>
+            <li>List item a</li>
+            <li>List item b</li>
+            <li>List item c</li>
+        </ol>
+
+        <h3>Primary list</h3>
+        <ul class="list list--primary">
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+        </ul>
+
+        <ol class="list list--primary">
+            <li>List item a</li>
+            <li>List item b</li>
+            <li>List item c</li>
+        </ol>
+
+        <h3>Secondary list</h3>
+        <ul class="list list--secondary">
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+        </ul>
+
+        <ol class="list list--secondary">
+            <li>List item a</li>
+            <li>List item b</li>
+            <li>List item c</li>
+        </ol>
+
+        <h3>Font list</h3>
+        <ul class="list list--font">
             <li>List item one</li>
             <li>List item two</li>
             <li>List item three</li>
@@ -30,6 +69,12 @@ const Template = () => {
             <li class="separated-list__item">List item two</li>
             <li class="separated-list__item">List item three</li>
         </ul>
+
+        <ol class="list list--font">
+            <li>List item a</li>
+            <li>List item b</li>
+            <li>List item c</li>
+        </ol>
 
         <h3>Separated list - comma</h3>
         <ul class="separated-list" list-separator="comma">
@@ -51,6 +96,16 @@ const Template = () => {
             <li class="separated-list__item">List item two</li>
             <li class="separated-list__item">List item three</li>
         </ul>
+    `;
+}
+
+const Template = () => {
+    return `
+        ${renderLists()}
+
+        <section class="chapter" background-color="primary" font-color="background">
+            ${renderLists()}
+        </section>
     `;
 };
 

@@ -219,6 +219,10 @@
     --color-link-hover: var(--color-font-light);
 }
 
+.chapter[font-color] > :is(ul:not(.card-collection), ol:not(.item-collection)) li::marker {
+    --list-marker-color: var(--color-font);
+}
+
 .chapter[min-height="full"] {
     min-height: 100dvh;
 }
