@@ -9,12 +9,11 @@
         --language-picker-list-padding: 0;
         --language-picker-list-margin: 0 0 0 var(--spacing-normal);
 
-
         --language-picker-link-font-size: var(--topbar-actions-text-font-size);
-        --language-picker-link-font-family: var(--font-family-text);
+        --language-picker-link-font-family: var(--font-family-headline);
         --language-picker-link-text-decoration: none;
-        --language-picker-list-item-color: var(--topbar-actions-text-color);
-        --language-picker-list-item-hover-color: var(--topbar-icons-active-color);
+        --language-picker-list-item-color: var(--color-font);
+        --language-picker-list-item-hover-color: var(--color-font);
         --language-picker-list-item-selected-color: var(--color-primary);
 
         grid-area: language-picker;
@@ -23,7 +22,7 @@
 
     .topbar[navigation-theme="dark"] .language-picker {
         --language-picker-list-item-color: var(--color-bg);
-        --language-picker-list-item-hover-color: var(--color-primary-light);
+        --language-picker-list-item-hover-color: var(--color-bg);
         --language-picker-list-item-selected-color: var(--color-primary-light);
     }
 
@@ -49,6 +48,8 @@
     }
 
     .language-picker__link:is(:hover, :focus-visible) {
+        --language-picker-link-text-decoration: underline;
+
         color: var(--language-picker-list-item-hover-color) !important;
     }
 
@@ -73,7 +74,7 @@
 
             --language-picker-link-font-size: var(--font-size-normal);
             --language-picker-list-item-color: var(--color-bg);
-            --language-picker-list-item-hover-color: var(--color-primary-dark);
+            --language-picker-list-item-hover-color: var(--color-bg);
             --language-picker-list-item-selected-color: var(--color-primary-dark);
 
             position: var(--language-picker-position);
