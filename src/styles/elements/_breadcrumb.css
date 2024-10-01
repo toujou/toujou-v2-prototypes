@@ -9,14 +9,14 @@
         --breadcrumb-width: var(--content-width-with-padding);
         --breadcrumb-home-icon: var(--icon-home-smooth);
         --breadcrumb-home-icon-size: var(--font-size-ms);
-        --breadcrumb-active-item-color: var(--color-primary);
+        --breadcrumb-active-item-color: var(--color-font);
         --breadcrumb-toggle-icon-size: var(--spacing-m);
         --breadcrumb-toggle-icon-color: var(--color-font);
         --breadcrumb-toggle-background-color: transparent;
         --breadcrumb-link-font-size: var(--font-size-normal);
         --breadcrumb-font-family: var(--font-family-text);
-        --breadcrumb-link-color: var(--color-font);
-        --breadcrumb-link-color-active: var(--color-primary);
+        --breadcrumb-link-color: var(--color-primary);
+        --breadcrumb-link-color-active: var(--color-primary-dark);
         --breadcrumb-link-text-decoration: none;
         --breadcrumb-max-width: var(--content-wide-max-width);
         --breadcrumb-margin: 0 auto;
