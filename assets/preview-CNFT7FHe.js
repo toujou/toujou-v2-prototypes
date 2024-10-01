@@ -20,62 +20,63 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
  * Copyright 2021 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */var yi;((yi=window.HTMLSlotElement)===null||yi===void 0?void 0:yi.prototype.assignedElements)!=null;const Na=Vt`
-  :host {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .breadcrumb__fake-list {
-    display: none;
-    list-style: none;
-    position: relative;
-    border-radius: var(--breadcrumb-fake-list-border-radius);
-  }
-  
-  .breadcrumb__fake-list::before {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: var(--spacing-s);
-    border-left: var(--breadcrumb-fake-list-triangle-size) solid transparent;
-    border-right: var(--breadcrumb-fake-list-triangle-size) solid transparent;
-    border-bottom: var(--breadcrumb-fake-list-triangle-size) solid var(--breadcrumb-mobile-menu-bg-color);
-    transform: translateY(-100%);
-  }
-  
-  .breadcrumb__fake-list .breadcrumb__link {
-    color: var(--breadcrumb-link-color);
-    font-size: var(--breadcrumb-font-size);
-    font-family: var(--breadcrumb-font-family);
-    text-decoration: var(--breadcrumb-link-text-decoration);
-  }
-  
-  :host([ismobile][mobilemenuisopen]) .breadcrumb__fake-list {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: var(--breadcrumb-mobile-menu-list-gap);
-    padding: var(--breadcrumb-mobile-menu-padding);
-    position: absolute;
-    top: var(--breadcrumb-mobile-menu-top);
-    left: 0;
-    background-color: var(--breadcrumb-mobile-menu-bg-color);
-    box-shadow: var(--breadcrumb-mobile-menu-shadow);
-  }
-
-  .breadcrumb__fake-list .breadcrumb__link:focus {
-    color: var(--breadcrumb-link-color-active, var(--color-primary));
-  }
-  
-  @media (hover: hover) {
-    .breadcrumb__fake-list .breadcrumb__link:hover {
-      color: var(--breadcrumb-link-color-active, var(--color-primary));
+    :host {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-  }
+
+    .breadcrumb__fake-list {
+        display: none;
+        list-style: none;
+        position: relative;
+        border-radius: var(--breadcrumb-fake-list-border-radius);
+    }
+
+    .breadcrumb__fake-list::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: var(--spacing-s);
+        border-left: var(--breadcrumb-fake-list-triangle-size) solid transparent;
+        border-right: var(--breadcrumb-fake-list-triangle-size) solid transparent;
+        border-bottom: var(--breadcrumb-fake-list-triangle-size) solid var(--breadcrumb-mobile-menu-bg-color);
+        transform: translateY(-100%);
+    }
+
+    .breadcrumb__fake-list .breadcrumb__link {
+        color: var(--breadcrumb-link-color);
+        font-size: var(--breadcrumb-font-size);
+        font-family: var(--breadcrumb-font-family);
+        text-decoration: var(--breadcrumb-link-text-decoration);
+    }
+
+    :host([ismobile][mobilemenuisopen]) .breadcrumb__fake-list {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--breadcrumb-mobile-menu-list-gap);
+        padding: var(--breadcrumb-mobile-menu-padding);
+        position: absolute;
+        top: var(--breadcrumb-mobile-menu-top);
+        left: 0;
+        background-color: var(--breadcrumb-mobile-menu-bg-color);
+        box-shadow: var(--breadcrumb-mobile-menu-shadow);
+    }
+
+    .breadcrumb__fake-list .breadcrumb__link:focus {
+        color: var(--breadcrumb-link-color-active, var(--color-primary));
+    }
+
+    @media (hover: hover) {
+        .breadcrumb__fake-list .breadcrumb__link:hover {
+            color: var(--breadcrumb-link-color-active, var(--color-primary));
+            text-decoration: underline;
+        }
+    }
 `;var Ra=Object.defineProperty,Ba=Object.getOwnPropertyDescriptor,Ye=(n,t,e,i)=>{for(var o=i>1?void 0:i?Ba(t,e):t,r=n.length-1,a;r>=0;r--)(a=n[r])&&(o=(i?a(t,e,o):a(o))||o);return i&&o&&Ra(t,e,o),o};const Da=16;let Ae=class extends mt{constructor(){super(),this.breakpoint=0,this.isMobile=!1,this.list=null,this.listItems=[],this.toggleButtons=[],this.mobileMenuIsOpen=!1,this._handleToggleClick=this._handleToggleClick.bind(this)}render(){return bt`
             <slot name="toggle-buttons" @click="${this._handleToggleClick}"></slot>
             <slot name="list"></slot>
