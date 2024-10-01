@@ -45,12 +45,12 @@
 
 .topbar[navigation-theme="light"] .service-nav {
     --service-nav-background-color: var(--color-primary);
-    --service-nav-link-color-active: var(--color-primary-dark);
+    --service-nav-link-color-active: var(--color-bg);
 }
 
 .topbar[navigation-theme="dark"] .service-nav {
     --service-nav-background-color: var(--color-primary-dark);
-    --service-nav-link-color-active: var(--color-primary-light);
+    --service-nav-link-color-active: var(--color-bg);
 }
 
 .topbar[no-transitions] .service-nav {
@@ -89,6 +89,8 @@
 
 @media (hover: hover) {
     a.service-nav__link:hover {
+        --service-nav-link-text-decoration: underline;
+
         color: var(--service-nav-link-color-active) !important;
     }
 }
