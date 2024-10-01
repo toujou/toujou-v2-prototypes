@@ -24,6 +24,8 @@
 }
 
 .main-nav__link[aria-current="page"] {
+    --main-nav-link-text-decoration: underline;
+
     color: var(--main-nav-link-color-hover) !important;
 }
 

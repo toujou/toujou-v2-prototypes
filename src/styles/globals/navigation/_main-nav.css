@@ -62,13 +62,13 @@
 
 .topbar[navigation-theme="light"] .main-nav {
     --main-nav-bg-color: var(--color-primary);
-    --main-nav-link-color-hover: var(--color-primary-dark);
+    --main-nav-link-color-hover: var(--color-bg);
 }
 
 .topbar[navigation-theme="dark"] .main-nav {
     --main-nav-chevron-color: var(--bg-color);
     --main-nav-bg-color: var(--color-primary-dark);
-    --main-nav-link-color-hover: var(--color-primary-light);
+    --main-nav-link-color-hover: var(--color-bg);
 }
 
 .topbar[open-nav] .main-nav {
@@ -157,13 +157,13 @@
     .topbar[navigation-theme="dark"] .main-nav__back-button:hover .icon {
         --icon-color: var(--color-primary-light);
     }
+
+    .main-nav__link:hover {
+        --main-nav-link-text-decoration: underline;
+    }
 }
 
 @media (hover: hover) and (min-width: 1024px) {
-    .main-nav__link:hover {
-        color: var(--color-primary-dark);
-    }
-
     .main-nav__chevron:hover .icon {
         --main-nav-chevron-color: var(--color-primary-dark);
     }
@@ -220,11 +220,15 @@
 
     .topbar[navigation-theme="light"] .main-nav {
         --main-nav-bg-color: var(--color-bg);
+        --main-nav-link-color: var(--color-primary);
+        --main-nav-link-color-hover: var(--color-primary);
     }
 
     .topbar[navigation-theme="dark"] .main-nav {
         --main-nav-link-color: var(--color-bg);
         --main-nav-list-bg-color: var(--color-primary-dark);
+        --main-nav-link-color: var(--color-bg);
+        --main-nav-link-color-hover: var(--color-bg);
     }
 
     .topbar[navigation-theme="dark"] .main-nav__list[nav-list-level="2"] {
@@ -274,10 +278,6 @@
     .main-nav__list-item {
         position: var(--main-nav-list-item-position);
         height: var(--main-nav-list-item-height);
-    }
-
-    .main-nav__list[nav-list-level="2"] .main-nav__link {
-        /*font-size: 50px;*/
     }
 
     .main-nav__list[nav-list-level="2"] .main-nav__text {
