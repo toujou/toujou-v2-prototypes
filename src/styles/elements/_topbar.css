@@ -96,6 +96,7 @@
         --topbar-icons-active-color: var(--color-primary-light);
         --topbar-bg-color: var(--color-primary-dark);
         --topbar-actions-text-color: var(--color-bg);
+        --focus-outline-color: var(--color-bg);
     }
 
     .topbar::before {
@@ -127,7 +128,7 @@
         z-index: var(--topbar-logo-link-z-index);
         display: var(--topbar-logo-link-display);
         align-items: var(--topbar-logo-link-align-items);
-        text-decoration: var(--topbar-logo-link-text-decoration);
+        text-decoration: var(--topbar-logo-link-text-decoration) !important;
     }
 
     .topbar__logo {
@@ -165,7 +166,7 @@
         align-items: var(--topbar-actions-link-align-items);
         justify-content: var(--topbar-actions-link-justify-content);
         gap: var(--topbar-actions-link-gap);
-        text-decoration: none;
+        text-decoration: var(--topbar-actions-link-text-decoration);
     }
 
     .topbar__actions-link:focus-visible {
@@ -201,16 +202,19 @@
     }
 
     @media (hover: hover) {
-        .topbar__actions-link:hover .icon {
-            --icon-color: var(--topbar-icons-active-color);
-        }
-
         .topbar__logo-link:hover .topbar__title {
             --topbar-title-color: var(--topbar-icons-active-color);
         }
 
         .topbar__actions-link:hover {
+            --topbar-actions-link-text-decoration: underline;
             --topbar-actions-text-color: var(--topbar-icons-active-color);
+
+            text-decoration-color: var(--topbar-actions-text-color);
+        }
+
+        .topbar__actions-link:hover .icon {
+            --icon-color: var(--topbar-icons-active-color);
         }
     }
 
@@ -236,10 +240,11 @@
 
         .topbar[navigation-theme="light"] {
             --topbar-icons-color: var(--color-font);
-            --topbar-icons-active-color: var(--color-primary);
+            --topbar-icons-active-color: var(--color-font);
         }
 
         .topbar[navigation-theme="dark"] {
+            --topbar-icons-active-color: var(--color-bg);
             --topbar-bg-color: var(--color-primary-dark);
         }
 

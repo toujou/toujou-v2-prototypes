@@ -9,8 +9,6 @@
         --burger-button-line-left: 1px;
         --burger-button-line-height: 3px;
         --burger-button-line-width: calc(var(--burger-button-size));
-        --burger-button-line-color: var(--topbar-icons-color, var(--color-primary));
-        --burger-button-line-color-active: var(--topbar-icons-active-color, var(--color-primary-dark));
         /* stylelint-disable-next-line max-line-length */
         --burger-button-line-animation-settings: var(--animation-duration-normal) var(--animation-easing-normal) 0s 1 normal forwards;
         --burger-button-line-border-radius: calc(var(--burger-button-line-height) / 2);
@@ -20,6 +18,23 @@
         height: var(--burger-button-size);
         width: var(--burger-button-size);
         display: var(--burger-button-display);
+        cursor: pointer;
+    }
+
+    .topbar[navigation-theme="light"] .burger-button {
+        --burger-button-line-color: var(--color-primary);
+    }
+
+    .topbar[navigation-theme="light"][open-nav] .burger-button {
+        --burger-button-line-color: var(--color-bg);
+    }
+
+    .topbar[navigation-theme="dark"] .burger-button {
+        --burger-button-line-color: var(--color-bg);
+    }
+
+    .topbar[navigation-theme="dark"][open-nav] .burger-button {
+        --burger-button-line-color: var(--color-bg);
     }
 
     .topbar[no-transitions] .burger-button {
@@ -27,9 +42,7 @@
         --burger-button-line-transition: none !important;
     }
 
-    .burger-button:focus-visible {
-        --burger-button-line-color: var(--burger-button-line-color-active);
-
+    .topbar[navigation-theme="light"] .burger-button:focus-visible {
         outline: var(--focus-outline-width) solid var(--focus-outline-color);
         outline-offset: var(--focus-outline-offset);
     }
@@ -193,14 +206,6 @@
         100% {
             top: 10px;
             transform: rotate(45deg);
-        }
-    }
-
-    @media (hover: hover) {
-        .burger-button:hover {
-            --burger-button-line-color: var(--burger-button-line-color-active);
-
-            cursor: pointer;
         }
     }
 

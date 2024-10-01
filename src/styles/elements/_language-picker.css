@@ -23,7 +23,7 @@
     .topbar[navigation-theme="dark"] .language-picker {
         --language-picker-list-item-color: var(--color-bg);
         --language-picker-list-item-hover-color: var(--color-bg);
-        --language-picker-list-item-selected-color: var(--color-primary-light);
+        --language-picker-list-item-selected-color: var(--color-bg);
     }
 
     .language-picker__list {
@@ -56,6 +56,7 @@
     .language-picker__link[aria-current="true"] {
         color: var(--language-picker-list-item-selected-color) !important;
         pointer-events: none;
+        text-decoration: underline;
     }
 
     @media screen and (max-width: 1023px) {
@@ -75,7 +76,7 @@
             --language-picker-link-font-size: var(--font-size-normal);
             --language-picker-list-item-color: var(--color-bg);
             --language-picker-list-item-hover-color: var(--color-bg);
-            --language-picker-list-item-selected-color: var(--color-primary-dark);
+            --language-picker-list-item-selected-color: var(--color-bg);
 
             position: var(--language-picker-position);
             padding: var(--language-picker-padding);
@@ -94,7 +95,7 @@
             opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
         }
 
-        .topbar:not([open-nav]) .service-nav > * {
+        .topbar:not([open-nav]) .language-picker > * {
             display: none;
         }
     }
