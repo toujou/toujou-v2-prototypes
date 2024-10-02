@@ -252,7 +252,16 @@
     width: var(--consent-widget-warning-width);
     margin: var(--consent-widget-warning-margin);
     font-family: var(--consent-widget-warning-font-family);
-    background-color: var(--color-warning-o-25);
+    background-color: transparent;
+}
+
+.consent-widget[element-design]:not([element-design="default"]) .consent-widget__warning {
+    background-color: var(--color-warning);
+    color: var(--bg-color);
+}
+
+.consent-widget[element-design]:not([element-design="default"]) .consent-widget__warning .icon {
+    --icon-color: var(--color-bg);
 }
 
 .consent-widget[warningvisible="true"] .consent-widget__description,
