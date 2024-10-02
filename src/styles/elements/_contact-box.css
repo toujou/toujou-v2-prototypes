@@ -50,7 +50,7 @@
         --contact-box-items-justify-content: flex-start;
         --contact-box-items-gap: var(--spacing-normal);
         --contact-box-items-width: fit-content;
-        --contact-box-items-margin: 0 auto;
+        --contact-box-items-margin: var(--spacing-l) auto 0;
 
         --contact-box-item-display: flex;
         --contact-box-item-align-items: center;
