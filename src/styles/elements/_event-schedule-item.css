@@ -6,7 +6,7 @@
         --event-schedule-item-grid-gap: var(--spacing-xs);
         --event-schedule-item-align-items: flex-start;
         --event-schedule-item-margin: 0;
-        --event-schedule-item-padding: var(--spacing-s) var(--spacing-xs);
+        --event-schedule-item-padding: var(--spacing-s);
         --event-schedule-item-text-decoration: none;
         --event-schedule-item-background-color: transparent;
         --event-schedule-item-border-radius: var(--border-radius-default);
