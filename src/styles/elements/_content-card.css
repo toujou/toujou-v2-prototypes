@@ -166,9 +166,9 @@
             --content-card-flex-direction: row;
             --content-card-align-items: flex-start;
             --content-card-gap: var(--spacing-normal);
-            --content-card-padding: var(--spacing-normal) var(--spacing-m);
-            --content-card-figure-flex: 0 0 50%;
-            --content-card-content-flex: 0 0 50%;
+            --content-card-padding: var(--spacing-normal);
+            --content-card-figure-flex: 0 0 calc(50% - calc(var(--content-card-padding) / 2));
+            --content-card-content-flex: 0 0 calc(50% - calc(var(--content-card-padding) / 2));
             --content-card-content-padding: 0;
         }
     }
