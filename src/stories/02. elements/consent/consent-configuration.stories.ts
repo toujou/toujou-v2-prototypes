@@ -26,12 +26,25 @@ export default {
             defaultValue: false,
             required: true,
         },
+        design: {
+            table: {
+                category: "Consent Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Element design',
+            description: "Set the consent element design",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'select' },
+            defaultValue: ['primary'],
+            required: true,
+        },
     },
     tags: ['autodocs']
 } satisfies Meta;
 
 interface ConsentConfigurationStoryProps {
     showError: boolean;
+    design: string;
 }
 
 const Template: StoryFn<ConsentConfigurationStoryProps> = (args: ConsentConfigurationStoryProps) => {
@@ -50,10 +63,11 @@ const Template: StoryFn<ConsentConfigurationStoryProps> = (args: ConsentConfigur
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
         <toujou-consent-widget
-            class="consent-widget aaaaaaa"
+            class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
             warningvisible="${args.showError}"
+            element-design="${args.design}"
             inPage
         >
             <div class="consent-widget__header" slot="consentWidgetHeader">
@@ -121,7 +135,9 @@ const Template: StoryFn<ConsentConfigurationStoryProps> = (args: ConsentConfigur
             class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="false">
+            warningvisible="false"
+            element-design="${args.design}"
+        >
 
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
@@ -200,3 +216,8 @@ const Template: StoryFn<ConsentConfigurationStoryProps> = (args: ConsentConfigur
 };
 
 export const ConsentConfiguration = Template.bind({});
+
+ConsentConfiguration.args = {
+    showError: true,
+    design: 'default',
+}

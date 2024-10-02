@@ -22,6 +22,8 @@
     --consent-widget-bottom-gap: var(--spacing-s);
     --consent-widget-bottom-margin: var(--spacing-normal) 0 0;
 
+    --consent-widget-description-color: var(--color-font);
+
     --consent-widget-bottom-buttons-display: flex;
     --consent-widget-bottom-buttons-flex-flow: row wrap;
     --consent-widget-bottom-buttons-align-items: flex-start;
@@ -76,6 +78,95 @@
     --consent-widget-z-index: var(--z-index-content);
 }
 
+.consent-widget[element-design="primary"] {
+    --consent-widget-background-color: var(--color-primary);
+}
+
+.consent-widget[element-design="secondary"] {
+    --consent-widget-background-color: var(--color-secondary);
+}
+
+.consent-widget[element-design="inverted"] {
+    --consent-widget-background-color: var(--color-font);
+}
+
+.consent-widget[element-design]:not([element-design="default"]) {
+    --color-link: var(--color-bg);
+    --focus-outline-color: var(--color-bg);
+    --consent-widget-title-color: var(--color-bg);
+    --consent-widget-description-color: var(--color-bg);
+}
+
+.consent-widget[element-design="primary"] .consent-widget__button[button-variant="font"] {
+    --button-color-bg: var(--color-primary-dark);
+}
+
+.consent-widget[element-design="primary"] .consent-widget__button[button-variant="primary"][button-type="border"] {
+    --button-border-color: var(--color-bg);
+    --button-color-text: var(--color-bg);
+}
+
+.consent-widget[element-design="primary"] .consent-widget__button[button-variant="primary"][button-type="default"] {
+    --button-color-bg: var(--color-bg);
+    --button-color-text: var(--color-primary);
+}
+
+.consent-widget[element-design="secondary"] .consent-widget__button[button-variant="font"] {
+    --button-color-bg: var(--color-secondary-dark);
+}
+
+.consent-widget[element-design="secondary"] .consent-widget__button[button-variant="primary"][button-type="border"] {
+    --button-border-color: var(--color-bg);
+    --button-color-text: var(--color-bg);
+}
+
+.consent-widget[element-design="secondary"] .consent-widget__button[button-variant="primary"][button-type="default"] {
+    --button-color-bg: var(--color-bg);
+    --button-color-text: var(--color-secondary);
+}
+
+.consent-widget[element-design="inverted"] .consent-widget__button[button-variant="font"] {
+    --button-color-bg: var(--color-font-dark);
+}
+
+.consent-widget[element-design="inverted"] .consent-widget__button[button-variant="primary"][button-type="border"] {
+    --button-border-color: var(--color-bg);
+    --button-color-text: var(--color-bg);
+}
+
+.consent-widget[element-design="inverted"] .consent-widget__button[button-variant="primary"][button-type="default"] {
+    --button-color-bg: var(--color-bg);
+    --button-color-text: var(--color-font);
+}
+
+.consent-widget[element-design]:not([element-design="default"]) .consent-widget__button[button-variant="font"]:is(:hover, :focus-visible),
+.consent-widget[element-design]:not([element-design="default"]) .consent-widget__button[button-variant="primary"][button-type="border"]:is(:hover, :focus-visible),
+.consent-widget[element-design]:not([element-design="default"]) .consent-widget__button[button-variant="primary"][button-type="default"]:is(:hover, :focus-visible) {
+    --button-color-bg: var(--color-font-dark);
+    --button-color-text: var(--color-bg);
+    --button-border-color: var(--color-font-dark);
+}
+
+.consent-widget[element-design]:not([element-design="default"]) {
+    --color-link: var(--color-bg);
+    --focus-outline-color: var(--color-bg);
+    --consent-widget-title-color: var(--color-bg);
+    --consent-widget-description-color: var(--color-bg);
+}
+
+.consent-widget[element-design]:not([element-design="default"]) a:not(.button):is(:hover, :focus-visible) {
+    --color-link: var(--color-bg);
+
+    color: var(--color-link);
+}
+
+.consent-widget[element-design]:not([element-design="default"])[inpage] .consent-widget__details,
+.consent-widget[element-design]:not([element-design="default"]) .consent-widget__details[open] {
+    background-color: var(--color-bg);
+    padding: var(--spacing-s);
+    border-radius: var(--border-radius-default);
+}
+
 .consent-widget:not([inPage])[hidden] {
     --consent-widget-display: none;
 }
@@ -92,6 +183,16 @@
     justify-content: var(--consent-widget-bottom-justify-content);
     gap: var(--consent-widget-bottom-gap);
     margin: var(--consent-widget-bottom-margin);
+}
+
+.consent-widget[element-design]:not([element-design="default"])[inpage] .consent-widget__bottom {
+    background-color: var(--bg-color);
+    padding: var(--spacing-s);
+    border-radius: var(--border-radius-default);
+}
+
+.consent-widget__description {
+    color: var(--consent-widget-description-color);
 }
 
 .consent-widget__bottom-buttons {

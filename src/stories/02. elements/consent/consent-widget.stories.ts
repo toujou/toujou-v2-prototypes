@@ -1,4 +1,4 @@
-import {  Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
@@ -12,10 +12,28 @@ export default {
             page: consentDocs,
         },
     },
+    argTypes: {
+        design: {
+            table: {
+                category: "Consent Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Element design',
+            description: "Set the consent element design",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'select' },
+            defaultValue: ['primary'],
+            required: true,
+        },
+    },
     tags: ['autodocs']
 } satisfies Meta;
 
-const Template = () => {
+interface ConsentWidgetProps {
+    design: string,
+}
+
+const Template: StoryFn<ConsentWidgetProps> = (args: ConsentWidgetProps) => {
     window.addEventListener('click', (event: Event) => {
         const clickTarget = event.target as HTMLElement;
         if (clickTarget.getAttribute('id') === "clearConsentsButton") {
@@ -32,7 +50,9 @@ const Template = () => {
             class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="false">
+            warningvisible="false"
+            element-design="${args.design}"
+        >
 
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
@@ -143,3 +163,7 @@ const Template = () => {
 };
 
 export const ConsentWidget = Template.bind({});
+
+ConsentWidget.args = {
+    design: 'default',
+}
