@@ -1,4 +1,4 @@
-import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{j as i}from"./jsx-runtime-DPda6Ybg.js";import{useMDXComponents as l}from"./index-4_AlzpT7.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";function a(t){const e={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...l(),...t.components};return i.jsxs(i.Fragment,{children:[i.jsx(e.h1,{id:"contact-box",children:"contact box"}),`
+import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{j as i}from"./jsx-runtime-DPda6Ybg.js";import{useMDXComponents as l}from"./index-4_AlzpT7.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";function a(t){const e={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...l(),...t.components};return i.jsxs(i.Fragment,{children:[i.jsx(e.h1,{id:"contact-box",children:"contact box"}),`
 `,i.jsx(e.p,{children:'The contact box is and element that displays the contact information and is shown automatically on most pages (pages with "default" rendering style).'}),`
 `,i.jsx(e.p,{children:"It can be open for instance by clicking the contact button on the topbar."}),`
 `,i.jsx(e.p,{children:"It can be closed by either clicking the close button or the contact-box backdrop."}),`
@@ -38,7 +38,7 @@ import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{j as i}from"./jsx-run
 `,i.jsx(e.h2,{id:"focus-trap",children:"Focus trap"}),`
 `,i.jsx(e.p,{children:"We trap the focus inside the contact box, which means the users cannot focus on any background elements, they can only focus and cycle focus on the contact box focusable elements (close buttons and links)"}),`
 `,i.jsx(e.h2,{id:"body-scroll",children:"Body scroll"}),`
-`,i.jsxs(e.p,{children:["When the contact box open we add the ",i.jsx(e.code,{children:"contact-box-is-open"})," attribute to the body tag, which prevents the body from scrolling"]})]})}function s(t={}){const{wrapper:e}={...l(),...t.components};return e?i.jsx(e,{...t,children:i.jsx(a,{...t})}):a(t)}const f={title:"COMPONENTS/Contact Box",parameters:{badges:[r.DONE],docs:{page:s}},tags:["autodocs"]},d=()=>`
+`,i.jsxs(e.p,{children:["When the contact box open we add the ",i.jsx(e.code,{children:"contact-box-is-open"})," attribute to the body tag, which prevents the body from scrolling"]})]})}function r(t={}){const{wrapper:e}={...l(),...t.components};return e?i.jsx(e,{...t,children:i.jsx(a,{...t})}):a(t)}const f={title:"COMPONENTS/Contact Box",parameters:{badges:[s.DONE],docs:{page:r}},tags:["autodocs"]},d=()=>`
         <input type="checkbox" name="contact-state" id="contact-state" class="state-input" aria-hidden="true">
         <label for="contact-state" class="button">Open contact box</label>
         <p>Some example content! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -59,6 +59,7 @@ import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{j as i}from"./jsx-run
 
                 <div class="contact-box__content" slot="content">
                     <h3 class="contact-box__headline">Kontakt</h3>
+                    <p class="contact-box__message">This is the contact box message</p>
                     <div class="contact-box__items">
                         <div class="contact-box__item">
                             <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
@@ -98,6 +99,7 @@ import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{j as i}from"./jsx-run
 
                 <div class="contact-box__content" slot="content">
                     <h3 class="contact-box__headline">Kontakt</h3>
+                    <p class="contact-box__message">This is the contact box message</p>
                     <div class="contact-box__items">
                         <div class="contact-box__item">
                             <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
