@@ -55,6 +55,7 @@
         /* stylelint-disable-next-line max-line-length */
         --topbar-actions-link-icon-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
         --topbar-actions-link-text-decoration: none;
+        --topbar-actions-link-cursor: pointer;
 
         --topbar-actions-text-display: none;
         --topbar-actions-text-z-index: 1;
@@ -167,6 +168,7 @@
         justify-content: var(--topbar-actions-link-justify-content);
         gap: var(--topbar-actions-link-gap);
         text-decoration: var(--topbar-actions-link-text-decoration);
+        cursor: var(--topbar-actions-link-cursor);
     }
 
     .topbar__actions-link:focus-visible {
@@ -240,7 +242,7 @@
 
         .topbar[navigation-theme="light"] {
             --topbar-icons-color: var(--color-font);
-            --topbar-icons-active-color: var(--color-font);
+            --topbar-icons-active-color: var(--color-primary);
         }
 
         .topbar[navigation-theme="dark"] {

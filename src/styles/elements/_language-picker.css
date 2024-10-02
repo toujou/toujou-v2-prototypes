@@ -13,7 +13,7 @@
         --language-picker-link-font-family: var(--font-family-headline);
         --language-picker-link-text-decoration: none;
         --language-picker-list-item-color: var(--color-font);
-        --language-picker-list-item-hover-color: var(--color-font);
+        --language-picker-list-item-hover-color: var(--color-primary);
         --language-picker-list-item-selected-color: var(--color-primary);
 
         grid-area: language-picker;
