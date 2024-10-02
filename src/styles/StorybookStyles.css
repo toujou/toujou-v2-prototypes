@@ -1,5 +1,5 @@
 /* DEMO */
-@import 'demo/_be-variables.css'; /* These are the variables that com from the theme settings in BE */
+@import 'demo/_be-variables.css'; /* These are the variables that come from the theme settings in BE */
 @import 'demo/_contact-box.css' layer(base);
 @import 'demo/_demo-variables.css' layer(base);
 @import 'demo/_animation.css' layer(base);
@@ -126,7 +126,7 @@
 @import "elements/_solr-view-mode.css";
 
 /* print css for testing purposes */
-@import "./print.css";
+/*@import "./print.css";*/
 
 body {
     background-color: var(--demo-color-grey-light);

@@ -19,8 +19,8 @@
         --contact-box-card-padding: var(--spacing-l);
         --contact-box-card-border-radius: var(--border-radius-default);
         --contact-box-card-position: relative;
-        --contact-box-card-width: auto;
-        --contact-box-card-max-width: 100%;
+        --contact-box-card-width: 100%;
+        --contact-box-card-max-width: 640px;
 
         --contact-box-close-margin-left: auto;
         --contact-box-close-display: flex;
@@ -39,11 +39,16 @@
         --contact-box-headline-text-align: center;
         --contact-box-headline-color: var(--color-font);
 
+        --contact-box-message-font-family: var(--font-family-text);
+        --contact-box-message-font-size: var(--font-size-normal);
+        --contact-box-message-color: var(--color-font);
+        --contact-box-message-text-align: center;
+
         --contact-box-items-display: flex;
         --contact-box-items-flex-direction: column;
         --contact-box-items-aling-items: flex-start;
         --contact-box-items-justify-content: flex-start;
-        --contact-box-items-gap: var(--spacing-s);
+        --contact-box-items-gap: var(--spacing-normal);
         --contact-box-items-width: fit-content;
         --contact-box-items-margin: 0 auto;
 
@@ -112,6 +117,13 @@
     .contact-box__headline {
         text-align: var(--contact-box-headline-text-align);
         color: var(--contact-box-headline-color);
+    }
+
+    .contact-box__message {
+        font-family: var(--contact-box-message-font-family);
+        font-size: var(--contact-box-message-font-size);
+        color: var(--contact-box-message-color);
+        text-align: var(--contact-box-message-text-align);
     }
 
     .contact-box__items {

@@ -38,6 +38,7 @@ const Template = () => {
 
                 <div class="contact-box__content" slot="content">
                     <h3 class="contact-box__headline">Kontakt</h3>
+                    <p class="contact-box__message">This is the contact box message</p>
                     <div class="contact-box__items">
                         <div class="contact-box__item">
                             <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
