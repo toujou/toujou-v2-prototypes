@@ -1,12 +1,13 @@
-import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent.docs-BLTDYHnS.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const _={title:"COMPONENTS/Consent",parameters:{badges:[a.DONE],docs:{page:i}},argTypes:{showError:{table:{category:"Consent configuration settings"},name:"Show error",description:"Show the consent configuration error",control:{type:"boolean"},defaultValue:!1,required:!0}},tags:["autodocs"]},u=s=>(window.addEventListener("click",c=>{c.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.cookie="consentsState= : expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/;",document.location.reload())}),`
+import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent.docs-BLTDYHnS.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const _={title:"COMPONENTS/Consent",parameters:{badges:[a.DONE],docs:{page:i}},argTypes:{showError:{table:{category:"Consent configuration settings"},name:"Show error",description:"Show the consent configuration error",control:{type:"boolean"},defaultValue:!1,required:!0},design:{table:{category:"Consent Settings",defaultValue:{summary:"default"}},name:"Element design",description:"Set the consent element design",options:["default","primary","secondary","inverted"],control:{type:"select"},defaultValue:["primary"],required:!0}},tags:["autodocs"]},u=n=>(window.addEventListener("click",c=>{c.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.cookie="consentsState= : expires = Thu, 01 Jan 1970 00:00:00 GMT; path=/;",document.location.reload())}),`
         <p>With this button you can remove all consents from the local storage. For test purposes only</p>
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
         <toujou-consent-widget
-            class="consent-widget aaaaaaa"
+            class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="${s.showError}"
+            warningvisible="${n.showError}"
+            element-design="${n.design}"
             inPage
         >
             <div class="consent-widget__header" slot="consentWidgetHeader">
@@ -74,7 +75,9 @@ import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent
             class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="false">
+            warningvisible="false"
+            element-design="${n.design}"
+        >
 
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
@@ -149,7 +152,7 @@ import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent
                 </div>
             </div>
         </toujou-consent-widget>
-     `),n=u.bind({});var e,t,o;n.parameters={...n.parameters,docs:{...(e=n.parameters)==null?void 0:e.docs,source:{originalSource:`(args: ConsentConfigurationStoryProps) => {
+     `),e=u.bind({});e.args={showError:!0,design:"default"};var t,o,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`(args: ConsentConfigurationStoryProps) => {
   window.addEventListener('click', (event: Event) => {
     const clickTarget = event.target as HTMLElement;
     if (clickTarget.getAttribute('id') === "clearConsentsButton") {
@@ -163,10 +166,11 @@ import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
         <toujou-consent-widget
-            class="consent-widget aaaaaaa"
+            class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
             warningvisible="\${args.showError}"
+            element-design="\${args.design}"
             inPage
         >
             <div class="consent-widget__header" slot="consentWidgetHeader">
@@ -234,7 +238,9 @@ import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent
             class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="false">
+            warningvisible="false"
+            element-design="\${args.design}"
+        >
 
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
@@ -310,4 +316,4 @@ import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent
             </div>
         </toujou-consent-widget>
      \`;
-}`,...(o=(t=n.parameters)==null?void 0:t.docs)==null?void 0:o.source}}};const k=["ConsentConfiguration"];export{n as ConsentConfiguration,k as __namedExportsOrder,_ as default};
+}`,...(s=(o=e.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};const k=["ConsentConfiguration"];export{e as ConsentConfiguration,k as __namedExportsOrder,_ as default};

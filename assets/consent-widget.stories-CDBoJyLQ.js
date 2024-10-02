@@ -1,4 +1,4 @@
-import{T as c}from"./badgeCustomConfig-oxGPBDYz.js";import{M as a}from"./consent.docs-BLTDYHnS.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const _={title:"COMPONENTS/Consent",parameters:{badges:[c.DONE],docs:{page:a}},tags:["autodocs"]},u=()=>(window.addEventListener("click",s=>{s.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.location.reload())}),`
+import{T as a}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./consent.docs-BLTDYHnS.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const m={title:"COMPONENTS/Consent",parameters:{badges:[a.DONE],docs:{page:i}},argTypes:{design:{table:{category:"Consent Settings",defaultValue:{summary:"default"}},name:"Element design",description:"Set the consent element design",options:["default","primary","secondary","inverted"],control:{type:"select"},defaultValue:["primary"],required:!0}},tags:["autodocs"]},u=s=>(window.addEventListener("click",c=>{c.target.getAttribute("id")==="clearConsentsButton"&&(localStorage.removeItem("consentsState"),document.location.reload())}),`
         <p>With this button you can remove all consents from the local storage. For test purposes only</p>
         <p><button class="button" id="clearConsentsButton">Remove all consents</button></p>
 
@@ -6,7 +6,9 @@ import{T as c}from"./badgeCustomConfig-oxGPBDYz.js";import{M as a}from"./consent
             class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="false">
+            warningvisible="false"
+            element-design="${s.design}"
+        >
 
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
@@ -113,7 +115,7 @@ import{T as c}from"./badgeCustomConfig-oxGPBDYz.js";import{M as a}from"./consent
                 </div>
             </div>
         </toujou-consent-widget>
-     `),t=u.bind({});var e,n,o;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
+     `),t=u.bind({});t.args={design:"default"};var e,n,o;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`(args: ConsentWidgetProps) => {
   window.addEventListener('click', (event: Event) => {
     const clickTarget = event.target as HTMLElement;
     if (clickTarget.getAttribute('id') === "clearConsentsButton") {
@@ -129,7 +131,9 @@ import{T as c}from"./badgeCustomConfig-oxGPBDYz.js";import{M as a}from"./consent
             class="consent-widget"
             listento="click"
             listenon="#consentSaveButton,#consentAcceptAllButton"
-            warningvisible="false">
+            warningvisible="false"
+            element-design="\${args.design}"
+        >
 
             <div class="consent-widget__header" slot="consentWidgetHeader">
                 <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
@@ -237,4 +241,4 @@ import{T as c}from"./badgeCustomConfig-oxGPBDYz.js";import{M as a}from"./consent
             </div>
         </toujou-consent-widget>
      \`;
-}`,...(o=(n=t.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const h=["ConsentWidget"];export{t as ConsentWidget,h as __namedExportsOrder,_ as default};
+}`,...(o=(n=t.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const h=["ConsentWidget"];export{t as ConsentWidget,h as __namedExportsOrder,m as default};
