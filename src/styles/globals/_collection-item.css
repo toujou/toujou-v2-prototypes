@@ -120,8 +120,6 @@
     --collection-item-info-icon-color: var(--color-primary);
     --collection-item-info-text-color: var(--collection-item-text-color);
 
-    --collection-item-abstract-flex-grow: 1;
-
     --collection-item-abstract-text-color: var(--collection-item-text-color);
     --collection-item-abstract-text-number-of-lines: 3;
 
@@ -392,10 +390,6 @@ a.collection-item__category:focus-visible {
 .collection-item__info-text {
     margin: var(--collection-item-info-text-margin);
     color: var(--collection-item-info-text-color);
-}
-
-.collection-item__abstract {
-    flex-grow: var(--collection-item-abstract-flex-grow);
 }
 
 .collection-item__abstract-text {
