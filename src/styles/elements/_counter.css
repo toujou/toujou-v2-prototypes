@@ -100,7 +100,7 @@
     color: var(--counter-title-color);
 }
 
-@media screen and (min-width: 640px) {
+@container (min-width: 640px) {
     .counter {
         --counter-image-size: 64px;
         --counter-width: calc(calc(100% - var(--content-spacing-between-columns)) / 2);
@@ -111,7 +111,7 @@
     }
 }
 
-@media screen and (min-width: 840px) {
+@container (min-width: 840px) {
     .counter {
         --counter-width: calc(calc(100% - calc(var(--content-spacing-between-columns) * 3)) / 4);
     }
