@@ -153,7 +153,7 @@
         gap: var(--fragment-teaser-ctas-gap);
     }
 
-    @media screen and (min-width: 480px) {
+    @container (min-width: 480px) {
         .fragment-teaser__block[number-of-columns="2"] {
             --fragment-teaser-block-grid-template-columns: 1fr 1fr;
         }
@@ -177,7 +177,7 @@
         }
     }
 
-    @media screen and (min-width: 840px) {
+    @container (min-width: 840px) {
         .fragment-teaser {
             --fragment-teaser-grid-template-columns: 1fr 1fr;
         }

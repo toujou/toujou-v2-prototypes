@@ -58,7 +58,7 @@
         position: var(--fragment-map-position);
     }
 
-    @media screen and (min-width: 840px) {
+    @container (min-width: 840px) {
         .fragment {
             --fragment-intro-logo-width: 6rem;
         }
