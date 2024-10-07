@@ -30,7 +30,7 @@
         --blockquote-grid-max-width: var(--content-wide-max-width);
     }
 
-    @media screen and (min-width: 640px) {
+    @container (min-width: 640px) {
         .blockquote-grid {
             --blockquote-grid-gap: var(--content-spacing-between-columns);
         }
@@ -40,7 +40,7 @@
         }
     }
 
-    @media screen and (min-width: 840px) {
+    @container (min-width: 840px) {
         .blockquote-grid[blockquote-grid-count="3"] {
             --blockquote-grid-columns-count: 4;
         }
@@ -54,7 +54,7 @@
         }
     }
 
-    @media screen and (min-width: 1240px) {
+    @container and (min-width: 1240px) {
         .blockquote-grid[blockquote-grid-count="3"] {
             --blockquote-grid-columns-count: 3;
         }
