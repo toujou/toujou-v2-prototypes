@@ -55,7 +55,7 @@
     display: contents;
 }
 
-@media screen and (min-width: 840px) {
+@container (min-width: 840px) {
     .grid[number-of-columns="2"] {
         --grid-number-of-columns: 2;
     }
@@ -77,7 +77,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@container (min-width: 1024px) {
     .grid[number-of-columns="4"] {
         --grid-number-of-columns: 4;
     }
