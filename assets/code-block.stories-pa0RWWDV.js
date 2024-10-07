@@ -93,7 +93,7 @@ greeting(<span class="hljs-string">"Leia"</span>);
                 <span class="code-block__language-tag">Javascript</span>
             `:""}
         </toujou-code-block>
-    `,l=i.bind({});var c,t,p;l.parameters={...l.parameters,docs:{...(c=l.parameters)==null?void 0:c.docs,source:{originalSource:`(args: CodeBlockStoryProps) => {
+    `,l=i.bind({});l.args={showLanguageTag:!1};var c,t,p;l.parameters={...l.parameters,docs:{...(c=l.parameters)==null?void 0:c.docs,source:{originalSource:`(args: CodeBlockStoryProps) => {
   return \`
         <toujou-code-block class="code-block">
             <pre class="code-block__pre">        <code class="code-block__code hljs javascript"><span class="hljs-comment">/* This is a comment */</span>
