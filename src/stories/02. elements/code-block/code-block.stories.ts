@@ -114,4 +114,6 @@ greeting(<span class="hljs-string">"Leia"</span>);
 
 export const CodeBlock = Template.bind({});
 
-
+CodeBlock.args = {
+    showLanguageTag: false,
+}

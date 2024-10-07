@@ -136,7 +136,7 @@
         color: var(--code-block-code-builtin-color);
     }
 
-    @media screen and (min-width: 640px) {
+    @container (min-width: 640px) {
         .code-block {
             --code-block-code-padding: var(--spacing-normal);
 
