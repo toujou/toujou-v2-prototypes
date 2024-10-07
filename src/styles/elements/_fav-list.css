@@ -49,13 +49,13 @@
         align-self: var(--card-collection-item-align-self);
     }
 
-    @media screen and (min-width: 640px) {
+    @container (min-width: 640px) {
         .fav-list .collection-item {
             --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
         }
     }
 
-    @media screen and (min-width: 960px) {
+    @container (min-width: 960px) {
         .fav-list .collection-item {
             --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap) * 3) / 4);
         }
