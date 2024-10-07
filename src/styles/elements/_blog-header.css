@@ -59,7 +59,7 @@
         max-width: var(--blog-header-meta-max-width);
     }
 
-    @media screen and (min-width: 840px) {
+    @container (min-width: 840px) {
         .blog-header {
             --blog-header-content-max-width: calc(100% - var(--spacing-xl));
             --blog-header-content-title-padding: var(--spacing-normal) var(--spacing-l);
