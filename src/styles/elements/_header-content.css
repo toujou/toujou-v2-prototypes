@@ -137,7 +137,7 @@
         margin-right: auto;
     }
 
-    @media screen and (min-width: 840px) {
+    @container (min-width: 840px) {
         .header-content {
             --header-content-padding: var(--spacing-l);
         }
