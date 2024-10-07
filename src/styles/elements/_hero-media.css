@@ -91,7 +91,7 @@
         }
     }
 
-    @media screen and (min-width: 840px) {
+    @container (min-width: 840px) {
         .hero-media {
             --hero-media-title-padding: var(--spacing-normal) var(--spacing-xl);
         }
