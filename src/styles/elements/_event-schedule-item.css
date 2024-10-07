@@ -62,7 +62,7 @@
         grid-area: status;
     }
 
-    @media screen and (min-width: 480px) {
+    @container (min-width: 480px) {
         .event-schedule-item {
             --event-schedule-item-grid-template-columns: auto 1fr;
             --event-schedule-item-grid-template-areas: "time status" "title title";
@@ -70,7 +70,7 @@
         }
     }
 
-    @media screen and (min-width: 640px) {
+    @container (min-width: 640px) {
         .event-schedule-item {
             --event-schedule-item-grid-template-columns: 7rem 1fr auto;
             --event-schedule-item-grid-template-areas: "time title status";

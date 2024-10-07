@@ -46,7 +46,7 @@
         margin: var(--event-schedule-day-calendar-page-margin);
     }
 
-    @media screen and (min-width: 540px) {
+    @container (min-width: 540px) {
         .event-schedule-day {
             --event-schedule-day-grid-template-columns: 3.5rem 1fr;
             --event-schedule-day-grid-gap: var(--spacing-normal);

@@ -83,7 +83,7 @@
         top: var(--event-table-card-icon-top);
     }
 
-    @media screen and (max-width: 539px) {
+    @container (max-width: 539px) {
         .event-table-card {
             --event-table-card-grid-template-columns: auto 1fr;
             --event-table-card-grid-template-rows: auto;
@@ -94,7 +94,7 @@
         }
     }
 
-    @media screen and (min-width: 640px) {
+    @container (min-width: 640px) {
         .event-table-card {
             --event-table-card-grid-template-columns: var(--event-table-date-width) 1fr auto;
             --event-table-card-grid-template-rows: auto;
