@@ -27,7 +27,7 @@
         --media-grid-max-width: var(--content-wide-max-width);
     }
 
-    @media screen and (width >= 640px) {
+    @container (width >= 640px) {
         .media-grid[media-grid-column-number="2"],
         .media-grid[media-grid-column-number="4"] {
             --media-grid-number-of-columns: 2;
@@ -38,7 +38,7 @@
         }
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .media-grid[media-grid-column-number="4"] {
             --media-grid-number-of-columns: 4;
         }
