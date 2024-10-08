@@ -83,6 +83,7 @@
         top: 0;
         right: 0;
         bottom: 0;
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
         left: 0;
         width: 20px;
     }
@@ -348,6 +349,7 @@
         top: 0;
         right: .5em;
         bottom: 0;
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
         left: auto;
     }
 }

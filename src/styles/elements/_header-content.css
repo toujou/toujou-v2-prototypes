@@ -26,6 +26,7 @@
         top: var(--header-content-top);
         bottom: var(--header-content-bottom);
         right: var(--header-content-right);
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
         left: var(--header-content-left);
         transform: var(--header-content-transform);
         width: var(--header-content-width);
