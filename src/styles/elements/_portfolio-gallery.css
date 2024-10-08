@@ -120,7 +120,7 @@
         }
     }
 
-    @media screen and (width >= 840px) {
+    @mcontainer (width >= 840px) {
         .portfolio-gallery {
             --portfolio-gallery-grid-gap: var(--spacing-s);
 
