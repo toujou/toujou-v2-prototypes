@@ -23,8 +23,10 @@
         --header-cta-margins: 0 auto;
 
         position: var(--header-content-position);
-        /* stylelint-disable-next-line max-line-length */
-        inset: var(--header-content-top) var(--header-content-right) var(--header-content-bottom) var(--header-content-left);
+        top: var(--header-content-top);
+        bottom: var(--header-content-bottom);
+        right: var(--header-content-right);
+        left: var(--header-content-left);
         transform: var(--header-content-transform);
         width: var(--header-content-width);
         max-width: var(--header-content-max-width);
