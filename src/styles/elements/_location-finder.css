@@ -162,7 +162,7 @@
         padding: 4rem;
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .location-finder {
             --toujou-location-finder-display: block;
             --toujou-location-finder-aspect-ratio: var(--aspect-ratio-default);
