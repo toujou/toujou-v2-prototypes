@@ -41,7 +41,7 @@
     align-self: var(--card-collection-item-align-self);
 }
 
-@media screen and (width >= 640px) {
+@container (width >= 640px) {
     .card-collection__item {
         --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
     }
@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (width >= 960px) {
+@container (width >= 960px) {
     .card-collection__item {
         --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap) * 3) / 4);
     }
