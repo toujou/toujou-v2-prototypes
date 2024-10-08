@@ -24,7 +24,7 @@
     font-size: var(--main-nav-level-3-list-item-font-size);
 }
 
-@media screen and (min-width: 1024px) {
+@container (width >= 1024px) {
     .main-nav__list[nav-list-level="3"] {
         --main-nav-level-3-list-item-font-size: var(--font-size-s);
         --main-nav-level-3-list-padding: 0 0 var(--spacing-s) var(--spacing-normal);

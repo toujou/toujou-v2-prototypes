@@ -116,7 +116,7 @@
     rotate: -180deg;
 }
 
-@container body (max-width: 1023px) {
+@container body (width < 1024px) {
     /* For accessibility we hide the content of the main-nav when not open */
     .topbar:not([open-nav]) .main-nav > * {
         display: none;
@@ -171,7 +171,7 @@
     }
 }
 
-@container body (min-width: 1024px) {
+@container body (width >= 1024px) {
     .main-nav {
         --main-nav-position: absolute;
         --main-nav-top: unset;
