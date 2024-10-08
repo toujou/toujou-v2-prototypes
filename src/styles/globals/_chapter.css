@@ -277,25 +277,25 @@
     background-attachment: var(--chapter-attachment-type);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (width >= 480px) {
     .chapter[has-background-media] {
         --chapter-bg-current-image: var(--chapter-bg-image-tablet);
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
     .chapter[has-background-media] {
         --chapter-bg-current-image: var(--chapter-bg-image-desktop);
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (width >= 1280px) {
     .chapter[has-background-media] {
         --chapter-bg-current-image: var(--chapter-bg-image-wide);
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (width >= 1920px) {
     .chapter[has-background-media] {
         --chapter-bg-current-image: var(--chapter-bg-image-original);
     }

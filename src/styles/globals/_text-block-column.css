@@ -19,7 +19,7 @@
     margin-top: var(--text-block-column-gap);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
     .text-block[text-block-media-position="inside-left"],
     .text-block[text-block-media-position="inside-right"],
     .text-block[text-block-media-position="beside-left"],

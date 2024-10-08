@@ -88,7 +88,7 @@
     height: 100%;
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
     .third-party-content {
         --third-party-content-message-margin: 0 0 var(--spacing-l);
     }

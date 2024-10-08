@@ -1,18 +1,18 @@
 {
-  "extends": "stylelint-config-standard",
-  "rules": {
-    "custom-property-empty-line-before": null,
-    "custom-property-pattern": null,
-    "indentation": 4,
-    "no-descending-specificity": null,
-    "number-leading-zero": null,
-    "selector-class-pattern": null,
-    "selector-id-pattern": null,
-    "value-keyword-case": [
-      "lower",
-      {
-        "camelCaseSvgKeywords": true
-      }
-    ]
-  }
+    "extends": [
+        "stylelint-config-standard"
+    ],
+    "rules": {
+        "custom-property-empty-line-before": null,
+        "custom-property-pattern": null,
+        "no-descending-specificity": null,
+        "selector-class-pattern": null,
+        "selector-id-pattern": null,
+        "value-keyword-case": [
+            "lower",
+            {
+                "camelCaseSvgKeywords": true
+            }
+        ]
+    }
 }

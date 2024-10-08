@@ -100,13 +100,13 @@
         max-width: var(--timeline-container-max-width);
     }
 
-    @media screen and (min-width: 520px) {
+    @media screen and (width >= 520px) {
         .timeline {
             --timeline-margin: var(--spacing-between-elements-normal) auto var(--spacing-xl);
         }
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .timeline {
             --timeline-max-width: min(var(--content-width-with-padding), var(--content-wide-max-width));
             --timeline-width: fit-content;
@@ -150,13 +150,13 @@
         }
     }
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (width >= 1170px) {
         .timeline[timeline-direction="vertical"][timeline-show-legend] {
             transform: translateX(calc(calc(var(--timeline-legend-width) + var(--timeline-gap)) / 2 * -1));
         }
     }
 
-    @media screen and (min-width: 1240px) {
+    @media screen and (width >= 1240px) {
         .timeline[timeline-direction="vertical"] {
             --timeline-gap: var(--spacing-l);
         }

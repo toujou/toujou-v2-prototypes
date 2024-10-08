@@ -94,10 +94,7 @@
 .media-info__toggle {
     display: var(--media-info-toggle-display);
     position: var(--media-info-toggle-position);
-    top: var(--media-info-toggle-top);
-    bottom: var(--media-info-toggle-bottom);
-    left: var(--media-info-toggle-left);
-    right: var(--media-info-toggle-right);
+    inset: var(--media-info-toggle-top) var(--media-info-toggle-right) var(--media-info-toggle-bottom) var(--media-info-toggle-left);
     height: var(--media-info-toggle-size);
     width: var(--media-info-toggle-size);
     padding: var(--media-info-toggle-padding);
@@ -144,7 +141,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
     .text-block[text-block-media-position*="inside"] .media-info {
         --media-info-width: calc(100% - calc(var(--text-block-grid-gap) / 2));
     }

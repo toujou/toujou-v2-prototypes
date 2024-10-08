@@ -59,7 +59,7 @@
         color: var(--timeline-accent-color-hover);
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .timeline[timeline-show-legend] .timeline-legend {
             --timeline-legend-display: flex;
 

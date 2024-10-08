@@ -147,13 +147,6 @@
     --button-border-color: var(--color-font-dark);
 }
 
-.consent-widget[element-design]:not([element-design="default"]) {
-    --color-link: var(--color-bg);
-    --focus-outline-color: var(--color-bg);
-    --consent-widget-title-color: var(--color-bg);
-    --consent-widget-description-color: var(--color-bg);
-}
-
 .consent-widget[element-design]:not([element-design="default"]) a:not(.button):is(:hover, :focus-visible) {
     --color-link: var(--color-bg);
 
@@ -273,7 +266,7 @@
     display: none;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (width >= 520px) {
     .consent-widget {
         --consent-widget-bottom-flex-flow: row nowrap;
         --consent-widget-bottom-buttons-justify-content: flex-end;
@@ -281,7 +274,7 @@
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
     .consent-widget {
         --consent-widget-padding: var(--content-inner-padding);
     }

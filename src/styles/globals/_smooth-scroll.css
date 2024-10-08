@@ -13,7 +13,7 @@ html {
     scroll-padding-top: var(--toujou-scroll-top-padding, var(--toujou-scroll-top-padding-fallback));
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
     :root {
         --toujou-scroll-top-padding-gap: var(--spacing-l);
     }

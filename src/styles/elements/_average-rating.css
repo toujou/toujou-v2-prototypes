@@ -16,6 +16,8 @@
         --average-rating-rating-display: grid;
         --average-rating-rating-grid-template-columns: auto auto;
         --average-rating-rating-grid-template-rows: auto auto;
+
+        /* prettier-ignore */
         --average-rating-rating-grid-template-areas:
             "rating stars"
             "count count";

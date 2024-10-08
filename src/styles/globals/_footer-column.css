@@ -10,13 +10,13 @@
     justify-content: var(--footer-column-justify-content);
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (width >= 640px) {
     .footer-column[column-name="logo"] {
         grid-column: 1 / -1;
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (width >= 960px) {
     .footer-column[column-name="logo"] {
         grid-column: 1;
     }

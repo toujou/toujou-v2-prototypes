@@ -49,7 +49,7 @@
         border-top: var(--item-collection-item-border);
     }
 
-    @media screen and (min-width: 640px) {
+    @media screen and (width >= 640px) {
         .item-collection {
             --item-collection-item-padding: 0;
         }

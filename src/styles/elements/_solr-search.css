@@ -20,7 +20,7 @@
         padding: var(--solr-search-search-group-padding);
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .solr-search {
             --solr-search-padding: 0;
         }

@@ -45,7 +45,7 @@
         font-weight: var(--indexedsearch-header-amount-count-font-weight);
     }
 
-    @media screen and (min-width: 640px) {
+    @media screen and (width >= 640px) {
         .indexedsearch-header {
             --indexedsearch-header-flex-flow: row wrap;
             --indexedsearch-header-gap: 0 var(--spacing-l);

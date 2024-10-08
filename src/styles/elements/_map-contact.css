@@ -176,7 +176,7 @@
         }
     }
 
-    @media screen and (min-width: 640px) {
+    @media screen and (width >= 640px) {
         .map-contact {
             --map-contact-grid-template-columns: 1fr 1fr;
             --map-contact-grid-gap: var(--spacing-l);
@@ -204,7 +204,7 @@
         }
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .map-contact {
             --map-contact-grid-gap: var(--spacing-xl);
         }

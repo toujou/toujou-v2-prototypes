@@ -165,7 +165,7 @@
         color: var(--timeline-card-button-text-color-hover) !important;
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .timeline[timeline-direction="vertical"] .timeline-card {
             grid-column: 1;
         }

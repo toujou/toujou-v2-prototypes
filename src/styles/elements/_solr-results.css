@@ -12,19 +12,19 @@
         --card-collection-display: none;
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .solr-results .card-collection {
             --card-collection-margin: 0;
         }
     }
 
-    @media screen and (min-width: 960px) {
+    @media screen and (width >= 960px) {
         .solr-results .card-collection__item {
             --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap)) / 2);
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (width >= 1024px) {
         .solr-results .card-collection__item {
             --card-collection-item-max-width: calc(calc(100% - var(--card-collection-gap) * 2) / 3);
         }

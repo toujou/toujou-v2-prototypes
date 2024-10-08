@@ -165,7 +165,7 @@
         display: none !important;
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .slider[content-type="logos"] {
             --slider-slides-gap: var(--spacing-xxl);
         }

@@ -106,39 +106,23 @@
     align-items: center;
     justify-content: center;
     font-size: var(--font-size-normal);
-    animation:
-        animation-box-slide
-        var(--animation-duration-normal)
-        var(--animation-easing-normal)
-        infinite
-        alternate-reverse;
+    /* stylelint-disable-next-line max-line-length */
+    animation: animation-box-slide var(--animation-duration-normal) var(--animation-easing-normal) infinite alternate-reverse;
 }
 
 .tokens-demo__animation-box.animation-slow {
-    animation:
-        animation-box-slide
-        var(--animation-duration-slow)
-        var(--animation-easing-normal)
-        infinite
-        alternate-reverse;
+    /* stylelint-disable-next-line max-line-length */
+    animation: animation-box-slide var(--animation-duration-slow) var(--animation-easing-normal) infinite alternate-reverse;
 }
 
 .tokens-demo__animation-box.animation-fast {
-    animation:
-        animation-box-slide
-        var(--animation-duration-fast)
-        var(--animation-easing-normal)
-        infinite
-        alternate-reverse;
+    /* stylelint-disable-next-line max-line-length */
+    animation: animation-box-slide var(--animation-duration-fast) var(--animation-easing-normal) infinite alternate-reverse;
 }
 
 .tokens-demo__animation-box.animation-very-fast {
-    animation:
-        animation-box-slide
-        var(--animation-duration-very-fast)
-        var(--animation-easing-normal)
-        infinite
-        alternate-reverse;
+    /* stylelint-disable-next-line max-line-length */
+    animation: animation-box-slide var(--animation-duration-very-fast) var(--animation-easing-normal) infinite alternate-reverse;
 }
 
 @keyframes animation-box-slide {

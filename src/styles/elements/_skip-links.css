@@ -26,7 +26,7 @@
         font-weight: var(--skip-links-font-weight);
     }
 
-    @media screen and (min-width: 640px) {
+    @media screen and (width >= 640px) {
         skippy-links {
             --skip-links-min-width: 320px;
         }

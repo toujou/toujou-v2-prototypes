@@ -4,7 +4,7 @@
     ::after {
         /* webcomponent variables */
         --toujou-location-finder-breakpoint: 840px;
-        --toujou-location-finder-transition-settings: .25s ease-in-out;
+        --toujou-location-finder-transition-settings: 0.25s ease-in-out;
 
         --toujou-location-finder-map-point-color: var(--color-primary);
         --toujou-location-finder-map-point-color-hover: var(--color-primary-dark);
@@ -162,7 +162,7 @@
         padding: 4rem;
     }
 
-    @media screen and (min-width: 840px) {
+    @media screen and (width >= 840px) {
         .location-finder {
             --toujou-location-finder-display: block;
             --toujou-location-finder-aspect-ratio: var(--aspect-ratio-default);
