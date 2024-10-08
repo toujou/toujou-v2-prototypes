@@ -22,6 +22,10 @@
     padding: var(--chapter-padding);
 }
 
+.chapter#initial {
+    display: contents;
+}
+
 *:not(span, .chapter) + .chapter:not(:first-child) {
     margin-top: var(--spacing-between-elements-normal);
 }
