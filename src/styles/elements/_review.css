@@ -178,13 +178,13 @@
         margin: var(--review-footer-title-margin);
     }
 
-    @media screen and (width >= 640px) {
+    @container (width >= 640px) {
         .review {
             --review-content-grid-template-columns: 1fr 2fr;
         }
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .review {
             --review-rating-text-align: right;
         }
