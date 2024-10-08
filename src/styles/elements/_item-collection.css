@@ -15,6 +15,7 @@
 
         --item-collection-item-width: 100%;
         --item-collection-item-max-width: 100%;
+        --item-collection-item-padding: 0;
 
         display: var(--item-collection-display);
         flex-wrap: var(--item-collection-flex-wrap);
@@ -47,11 +48,5 @@
 
     .item-collection__item:first-child {
         border-top: var(--item-collection-item-border);
-    }
-
-    @media screen and (width >= 640px) {
-        .item-collection {
-            --item-collection-item-padding: 0;
-        }
     }
 }
