@@ -1,5 +1,6 @@
 @layer components {
     .blockquote {
+        border: 10px solid red !important;
         --blockquote-image-size: 112px;
         --blockquote-image-border-radius: 50%;
         --blockquote-icon-size: var(--spacing-xl);
