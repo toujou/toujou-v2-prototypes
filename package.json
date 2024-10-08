@@ -22,7 +22,7 @@
     "build:fix": "sh shell-scripts/sb-postbuild.sh",
     "copy:icons-folder": "sh shell-scripts/copy-icons-folder.sh",
     "copy:all": "npm run copy:icons-folder",
-    "deploy:sb": "gh-pages -d storybook-static",
+    "deploy:sb": "gh-pages -d storybook-static -t true",
     "deploy:full": "npm run build && npm run build:sb && npm run deploy:sb",
     "test:unit": "web-test-runner",
     "test:e2e": "cypress open",
