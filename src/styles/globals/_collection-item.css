@@ -540,7 +540,7 @@ a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
     }
 }
 
-@media screen and (width >= 640px) {
+@container (width >= 640px) {
     .collection-item[item-orientation="horizontal"] {
         --collection-item-flex-direction: row;
         --collection-item-figure-border-radius: var(--border-radius-default);
@@ -561,7 +561,7 @@ a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
     }
 }
 
-@media screen and (width >= 640px) and (width <= 960px) {
+@container (width >= 640px) and (width <= 960px) {
     .collection-item[item-orientation="horizontal"][item-type="trip"] {
         --collection-item-location-transform: translateY(100%);
         --collection-item-location-gradient: none;
