@@ -71,7 +71,7 @@
         border: var(--timeline-item-year-before-border);
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .timeline[timeline-direction="vertical"] .timeline-item {
             --timeline-item-max-width: var(--content-max-width);
             --timeline-item-display: grid;
