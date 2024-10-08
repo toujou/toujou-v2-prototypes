@@ -16,7 +16,7 @@
    width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@container (width >= 480px) {
    .form-navigation {
       --form-navigation-flex-direction: row-reverse;
       --form-navigation-justify-content: space-between;

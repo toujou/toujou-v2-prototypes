@@ -22,14 +22,14 @@
     grid-column: var(--multi-checkbox-group-label-column);
 }
 
-@media screen and (min-width: 640px) {
+@container (width >= 640px) {
     .input-group.multi-checkbox-group {
         --multi-checkbox-group-grid-column-count: 2;
         --multi-checkbox-group-grid-gap: 0 var(--spacing-normal);
     }
 }
 
-@media screen and (min-width: 960px) {
+@container (width >= 960px) {
     .input-group.multi-checkbox-group {
         --multi-checkbox-group-grid-column-count: 3;
     }

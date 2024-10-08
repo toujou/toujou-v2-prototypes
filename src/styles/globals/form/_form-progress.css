@@ -22,6 +22,10 @@
     --form-progress-item-background-color: var(--color-white);
     --form-progress-item-font-color: var(--color-font-light);
 
+    --form-progress-index-display: flex;
+    --form-progress-index-align-items: center;
+    --form-progress-index-justify-content: center;
+
     --form-progress-item-active-background-color: var(--color-primary);
     --form-progress-item-active-font-color: var(--color-bg);
 
@@ -79,6 +83,9 @@
     border: var(--form-progress-item-border-width) solid var(--form-progress-item-border-color);
     color: var(--form-progress-item-font-color);
     box-sizing: content-box;
+    display: var(--form-progress-index-display);
+    align-items: var(--form-progress-index-align-items);
+    justify-content: var(--form-progress-index-justify-content);
 }
 
 .form-progress__item[completed] .form-progress__index {
@@ -115,7 +122,7 @@
     background: var(--color-primary);
 }
 
-@media screen and (min-width: 840px) {
+@container (width >= 840px) {
     .form-progress {
         --form-progress-space-between-items: var(--spacing-m);
         --form-progress-background-position: relative;

@@ -61,13 +61,13 @@
     width: var(--radio-group-option-label-width);
 }
 
-@media screen and (min-width: 640px) {
+@container (width >= 640px) {
     .radio-group {
         --radio-group-grid-column-count: 2;
     }
 }
 
-@media screen and (min-width: 960px) {
+@container (width >= 960px) {
     .radio-group {
         --radio-group-grid-column-count: 3;
     }

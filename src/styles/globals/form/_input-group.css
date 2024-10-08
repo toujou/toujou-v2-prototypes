@@ -128,7 +128,7 @@
     grid-column: span 12;
 }
 
-@media screen and (min-width: 480px) {
+@container (width >= 480px) {
     .input-group--sm-1 {
         grid-column: span 1;
     }
@@ -178,7 +178,7 @@
     }
 }
 
-@media screen and (min-width: 640px) {
+@container (width >= 640px) {
     .input-group--md-1 {
         grid-column: span 1;
     }
@@ -228,7 +228,7 @@
     }
 }
 
-@media screen and (min-width: 840px) {
+@container (width >= 840px) {
     .input-group--lg-1 {
         grid-column: span 1;
     }
@@ -278,7 +278,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@container (width >= 1024px) {
     .input-group--xl-1 {
         grid-column: span 1;
     }
@@ -328,7 +328,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@container (width >= 1200px) {
     .input-group--xxl-1 {
         grid-column: span 1;
     }
