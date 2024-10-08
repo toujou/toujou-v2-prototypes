@@ -111,7 +111,7 @@
         }
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .slider[content-type="card-collection"] ul.slider-bullets,
         .slider[content-type="teaser"] ul.slider-bullets {
             --slider-bullets-display: flex;

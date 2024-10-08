@@ -51,19 +51,19 @@
         --slider-controls-display: none;
     }
 
-    @media screen and (width >= 540px) {
+    @container (width >= 540px) {
         .slider[content-type="card-collection"][slides-count="2"] .slider-controls {
             --slider-controls-display: none;
         }
     }
 
-    @media screen and (width >= 768px) {
+    @container (width >= 768px) {
         .slider[content-type="card-collection"][slides-count="3"] .slider-controls {
             --slider-controls-display: none;
         }
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .slider[content-type="logos"],
         .slider[content-type="card-collection"],
         .slider[content-type="teaser"] {

@@ -50,7 +50,7 @@
         overflow: hidden;
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .slider[content-type="review"] .slider-progress {
             width: calc(calc(100% - var(--spacing-xl)) / 2);
         }
