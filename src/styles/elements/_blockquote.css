@@ -1,6 +1,5 @@
 @layer components {
     .blockquote {
-        border: 10px solid red !important;
         --blockquote-image-size: 112px;
         --blockquote-image-border-radius: 50%;
         --blockquote-icon-size: var(--spacing-xl);
@@ -42,6 +41,7 @@
         border-radius: var(--blockquote-border-radius);
         background-color: var(--blockquote-background-color);
         z-index: var(--blockquote-z-index);
+        border: 10px solid red !important;
     }
 
     .blockquote[is-column] {
