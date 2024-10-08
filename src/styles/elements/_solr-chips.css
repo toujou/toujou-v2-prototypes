@@ -5,13 +5,13 @@
         display: var(--solr-chips-search-display);
     }
 
-    @media screen and (width >= 480px) {
+    @container (width >= 480px) {
         .solr-chips--search {
             --solr-chips-search-display: block;
         }
     }
 
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .solr-chips--search {
             --solr-chips-search-display: none;
         }

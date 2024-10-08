@@ -1,5 +1,5 @@
 @layer components {
-    @media screen and (width >= 840px) {
+    @container (width >= 840px) {
         .solr-filter-button {
             --solr-filter-button-display: none;
 
