@@ -76,13 +76,13 @@
         margin: var(--image-card-title-margin);
     }
 
-    @media screen and (width >= 640px) {
+    @container (width >= 640px) {
         .image-card {
             --image-card-max-width: calc(calc(100% - var(--image-card-grid-gap)) / 2);
         }
     }
 
-    @media screen and (width >= 960px) {
+    @container (width >= 960px) {
         .image-card {
             --image-card-max-width: calc(calc(100% - var(--image-card-grid-gap) * 3) / 4);
         }
