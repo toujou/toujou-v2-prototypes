@@ -127,7 +127,7 @@ span:first-child + .text-block {
     --text-block-column-gap: 0;
 }
 
-@media screen and (width >= 768px) {
+@container (width >= 768px) {
     .text-block[text-block-media-position="beside-right"] .text-block__figure {
         grid-column: 2;
     }
@@ -163,7 +163,7 @@ span:first-child + .text-block {
     }
 }
 
-@media screen and (width >= 840px) {
+@container (width >= 840px) {
     .text-block[text-block-column-count="2"],
     .text-block[text-block-column-count="4"] {
         --text-block-grid-template-columns: 1fr 1fr;
@@ -182,7 +182,7 @@ span:first-child + .text-block {
     }
 }
 
-@media screen and (width >= 1200px) {
+@container (width >= 1200px) {
     .text-block[text-block-column-count="4"] {
         --text-block-grid-template-columns: 1fr 1fr 1fr 1fr;
     }
