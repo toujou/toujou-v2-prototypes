@@ -141,7 +141,7 @@
     }
 }
 
-@media screen and (width >= 768px) {
+@container (width >= 768px) {
     .text-block[text-block-media-position*="inside"] .media-info {
         --media-info-width: calc(100% - calc(var(--text-block-grid-gap) / 2));
     }
