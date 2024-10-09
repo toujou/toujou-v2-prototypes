@@ -33,19 +33,23 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
             <toujou-input-group class="input-group input-group--date-jquery" data-format="Y-m-d">
                 <label class="input-label" for="testform-1000091-datepicker-2">Date picker (jQuery)</label>
                 <span class="input-description">This is a description</span>
-                <input data-pristine-required-message-de="The given subject was empty."
-                       data-pristine-pattern-message-de="You must enter a valid date."
-                       data-pristine-date-min-message-de="You must select a date after 1."
-                       data-pristine-date-max-message-de="You must select a date before 1."
-                       class="form-control date-dummy input input--date flatpickr-input date-dummy--empty"
-                       id="testform-1000091-datepicker-2"
-                       type="text"
-                       name="tx_form_formframework[testform-1000091][datepicker-2][date]"
-                       placeholder="Y-m-d"
-                       readonly="readonly">
-                   <input type="hidden" name="tx_form_formframework[testform-1000091][datepicker-2][dateFormat]" value="Y-m-d">
+
+                 <toujou-datepicker
+                    date-format="d.m.Y"
+                    minDate="today"
+                    class="datepicker"
+                >
+                    <input
+                        name="dateFrom"
+                        class="form-control input input--datepicker"
+                        placeholder="Select a date"
+                        type="text"
+                    />
+                </toujou-datepicker>
+
                    <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
+
         </form>
     `,e=o.bind({});var t,a,r;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
@@ -83,19 +87,23 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
             <toujou-input-group class="input-group input-group--date-jquery" data-format="Y-m-d">
                 <label class="input-label" for="testform-1000091-datepicker-2">Date picker (jQuery)</label>
                 <span class="input-description">This is a description</span>
-                <input data-pristine-required-message-de="The given subject was empty."
-                       data-pristine-pattern-message-de="You must enter a valid date."
-                       data-pristine-date-min-message-de="You must select a date after \${1}."
-                       data-pristine-date-max-message-de="You must select a date before \${1}."
-                       class="form-control date-dummy input input--date flatpickr-input date-dummy--empty"
-                       id="testform-1000091-datepicker-2"
-                       type="text"
-                       name="tx_form_formframework[testform-1000091][datepicker-2][date]"
-                       placeholder="Y-m-d"
-                       readonly="readonly">
-                   <input type="hidden" name="tx_form_formframework[testform-1000091][datepicker-2][dateFormat]" value="Y-m-d">
+
+                 <toujou-datepicker
+                    date-format="d.m.Y"
+                    minDate="today"
+                    class="datepicker"
+                >
+                    <input
+                        name="dateFrom"
+                        class="form-control input input--datepicker"
+                        placeholder="Select a date"
+                        type="text"
+                    />
+                </toujou-datepicker>
+
                    <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
+
         </form>
     \`;
 }`,...(r=(a=e.parameters)==null?void 0:a.docs)==null?void 0:r.source}}};const f=["DateInputs"];export{e as DateInputs,f as __namedExportsOrder,c as default};
