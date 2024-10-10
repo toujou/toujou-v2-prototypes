@@ -64,12 +64,6 @@
         border-color: var(--color-font-light) !important;
     }
 
-    .flatpickr-day.inRange,
-    .flatpickr-day.prevMonthDay.inRange,
-    .flatpickr-day.nextMonthDay.inRange,
-    .flatpickr-day.today.inRange,
-    .flatpickr-day.prevMonthDay.today.inRange,
-    .flatpickr-day.nextMonthDay.today.inRange,
     .flatpickr-day:hover,
     .flatpickr-day.prevMonthDay:hover,
     .flatpickr-day.nextMonthDay:hover,
@@ -81,6 +75,12 @@
         color: var(--color-primary) !important;
     }
 
+    .flatpickr-day.prevMonthDay.inRange,
+    .flatpickr-day.nextMonthDay.inRange,
+    .flatpickr-day.today.inRange,
+    .flatpickr-day.prevMonthDay.today.inRange,
+    .flatpickr-day.nextMonthDay.today.inRange,
+    .flatpickr-day.inRange,
     .flatpickr-day.selected,
     .flatpickr-day.startRange,
     .flatpickr-day.endRange,
@@ -102,6 +102,16 @@
         background-color: var(--color-primary) !important;
         color: var(--color-bg) !important;
         border-color: var(--color-primary) !important;
+    }
+
+    .flatpickr-day.inRange {
+        box-shadow: -5px 0 0 var(--color-primary), 5px 0 0 var(--color-primary) !important;
+    }
+
+    .flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)),
+    .flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)),
+    .flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1)) {
+        box-shadow: -10px 0 0 var(--color-primary) !important;
     }
 
     .numInput.cur-year {

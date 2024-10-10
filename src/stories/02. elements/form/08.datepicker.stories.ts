@@ -102,6 +102,7 @@ const Template: StoryFn<DatepickerProps> = (args: DatepickerProps) => {
                     date-format="${args.dateFormat}"
                     minDate="${formattedMinDate}"
                     maxDate="${formattedMaxDate}"
+                    mode="range"
                     ${args.showTime ? 'enableTime' : ''}
                 >
                     <input
