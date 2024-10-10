@@ -1,4 +1,4 @@
-import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./form.docs-DVjkPWBU.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const a={"YYYY.MM.DD":"yyyy.mm.dd","YYYY/MM/DD":"yyyy/mm/dd","DD.MM.YYYY":"dd.mm.yyyy","DD/MM/YYYY":"dd/mm/yyyy"},y={title:"COMPONENTS/Forms",parameters:{badges:[s.DONE],docs:{page:i}},argTypes:{dateFormat:{name:"Date format",description:"Set the date format",options:Object.values(a),control:{type:"radio"},defaultValue:a["YYYY.MM.DD"],required:!0},minDate:{name:"Earliest date",description:"Earliest selectable date",control:{type:"date"}},maxDate:{name:"Latest date",description:"Latest selectable date",control:{type:"date"}}},tags:["autodocs"]},p=e=>(console.log("minDate",e.minDate),console.log("maxDate",e.maxDate),`
+import{T as i}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.docs-DVjkPWBU.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const a={"YYYY.MM.DD":"Y.m.d","YYYY/MM/DD":"Y/m/d","DD.MM.YYYY":"d.m.Y","DD/MM/YYYY":"d/m/Y"},f={title:"COMPONENTS/Forms",parameters:{badges:[i.DONE],docs:{page:n}},argTypes:{dateFormat:{name:"Date format",description:"Set the date format",options:Object.values(a),control:{type:"radio"},defaultValue:a["YYYY.MM.DD"],required:!0},minDate:{name:"Earliest date",description:"Earliest selectable date",control:{type:"date"}},maxDate:{name:"Latest date",description:"Latest selectable date",control:{type:"date"}},showTime:{name:"Show time",description:"Show time on the datepicker",control:{type:"boolean"},defaultValue:["false"],required:!0}},tags:["autodocs"]},p=e=>(console.log("minDate",e.minDate),console.log("maxDate",e.maxDate),`
         <link rel="stylesheet" type="text/css" href="../../../../node_modules/flatpickr/dist/themes/light.css">
 
         <style>
@@ -19,10 +19,11 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./form.do
                 <span class="input-description">This is a description</span>
 
                  <toujou-datepicker
+                    class="datepicker"
                     date-format="${e.dateFormat}"
                     minDate="${e.minDate}"
                     maxDate="${e.maxDate}"
-                    class="datepicker"
+                    ${e.showTime?"enableTime":""}
                 >
                     <input
                         name="dateFrom"
@@ -36,7 +37,7 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./form.do
             </toujou-input-group>
 
         </form>
-    `),t=p.bind({});t.args={dateFormat:a["YYYY.MM.DD"],minDate:new Date(Date.now()).toISOString(),maxDate:new Date(Date.now()+864e5*365).toISOString()};var r,o,n;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: DatepickerProps) => {
+    `),t=p.bind({});t.args={dateFormat:a["YYYY.MM.DD"],minDate:new Date(Date.now()).toISOString(),maxDate:new Date(Date.now()+864e5*365).toISOString(),showTime:!1};var o,r,s;t.parameters={...t.parameters,docs:{...(o=t.parameters)==null?void 0:o.docs,source:{originalSource:`(args: DatepickerProps) => {
   console.log('minDate', args.minDate);
   console.log('maxDate', args.maxDate);
   return \`
@@ -60,10 +61,11 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./form.do
                 <span class="input-description">This is a description</span>
 
                  <toujou-datepicker
+                    class="datepicker"
                     date-format="\${args.dateFormat}"
                     minDate="\${args.minDate}"
                     maxDate="\${args.maxDate}"
-                    class="datepicker"
+                    \${args.showTime ? 'enableTime' : ''}
                 >
                     <input
                         name="dateFrom"
@@ -78,4 +80,4 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as i}from"./form.do
 
         </form>
     \`;
-}`,...(n=(o=t.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const f=["DatePicker"];export{t as DatePicker,f as __namedExportsOrder,y as default};
+}`,...(s=(r=t.parameters)==null?void 0:r.docs)==null?void 0:s.source}}};const g=["DatePicker"];export{t as DatePicker,g as __namedExportsOrder,f as default};
