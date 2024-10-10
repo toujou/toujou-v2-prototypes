@@ -11,6 +11,11 @@ const DATE_FORMATS = {
     'DD/MM/YYYY': 'd/m/Y',
 }
 
+const MODES = {
+    'single': 'single',
+    'range': 'range'
+}
+
 export default {
     title: 'COMPONENTS/Forms',
     parameters: {
@@ -45,6 +50,14 @@ export default {
             defaultValue: ['false'],
             required: true,
         },
+        type: {
+            name: 'Type',
+            description: "Set the input type",
+            options: Object.values(MODES),
+            control: { type: 'radio' },
+            defaultValue: MODES.single,
+            required: true,
+        },
     },
     tags: ['autodocs']
 } satisfies Meta;
@@ -54,6 +67,7 @@ interface DatepickerProps {
     minDate: number;
     maxDate: number;
     showTime: boolean;
+    type: typeof MODES[keyof typeof MODES],
 }
 
 function formatTimestamp(timestamp: number): string {
@@ -102,7 +116,7 @@ const Template: StoryFn<DatepickerProps> = (args: DatepickerProps) => {
                     date-format="${args.dateFormat}"
                     minDate="${formattedMinDate}"
                     maxDate="${formattedMaxDate}"
-                    mode="range"
+                    mode="${args.type}"
                     ${args.showTime ? 'enableTime' : ''}
                 >
                     <input
@@ -127,4 +141,5 @@ DatePicker.args = {
     minDate: Date.now(), // Today's date
     maxDate: Date.now() + (86400000 * 365), // Default to one year later
     showTime: false,
+    type: MODES.single,
 }

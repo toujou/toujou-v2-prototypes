@@ -35,6 +35,10 @@
         border: 1px solid var(--flatpickr-header-bg-color);
     }
 
+    .numInput {
+        font-family: var(--flatpickr-font-family) !important;
+    }
+
     .flatpickr-months .numInputWrapper:hover {
         border: 1px solid var(--flatpickr-header-color);
         background: var(--flatpickr-header-bg-color) !important;

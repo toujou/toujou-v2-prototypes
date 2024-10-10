@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 
 import '../../../../node_modules/skippy-links/dist/skippy-links'
 
@@ -9,7 +9,7 @@ export default {
     },
 } satisfies Meta;
 
-const Template: Story = () => {
+const Template: StoryFn = () => {
     return `
         <section class="chapter">
             <toujou-text-block class="text-block" text-block-column-count="1">
