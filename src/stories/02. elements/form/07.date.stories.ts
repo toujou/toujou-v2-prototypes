@@ -33,7 +33,6 @@ const Template = () => {
             action="#"
             novalidate="true">
 
-
             <toujou-input-group class="input-group input-group--date">
 				<label class="input-label" for="testform-1000091-date-1">Date</label>
 				<span class="input-description">This is a description</span>
@@ -51,28 +50,8 @@ const Template = () => {
                     <span class="pristine-error form__error">This is an error message!</span>
         	</toujou-input-group>
 
-            <toujou-input-group class="input-group input-group--date-jquery" data-format="Y-m-d">
-				<label class="input-label" for="testform-1000091-datepicker-2">Date picker (jQuery)</label>
-				<span class="input-description">This is a description</span>
-
-		         <toujou-datepicker
-		            date-format="d.m.Y"
-		            minDate="today"
-		            class="datepicker"
-                >
-                    <input
-                        name="dateFrom"
-                        class="form-control input input--datepicker"
-                        placeholder="Select a date"
-                        type="text"
-                    />
-                </toujou-datepicker>
-
-                   <span class="pristine-error form__error">This is an error message!</span>
-	        </toujou-input-group>
-
         </form>
     `;
 };
 
-export const DateInputs = Template.bind({});
+export const Date = Template.bind({});

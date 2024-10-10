@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -17,7 +17,6 @@ export default {
         columnCount: {
             table: {
                 category: "Content card settings",
-                defaultValue: { summary: 4},
             },
             name: 'Column count',
             description: "Number of columns",
@@ -59,7 +58,7 @@ interface ContentCardStoryProps {
     hasLink: boolean;
 }
 
-const Template: Story<ContentCardStoryProps> = (args: ContentCardStoryProps) => {
+const Template: StoryFn<ContentCardStoryProps> = (args: ContentCardStoryProps) => {
 
     const contentCardGrid = document.createElement('toujou-content-card-grid');
     contentCardGrid.classList.add('content-card-grid');
