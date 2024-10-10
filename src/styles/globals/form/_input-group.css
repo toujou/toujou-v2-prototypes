@@ -70,8 +70,7 @@
 .input-group--number,
 .input-group--multi-select,
 .input-group--single-select,
-.input-group--date,
-.input-group--date-jquery {
+.input-group--date {
     --input-group-icon-right: var(--spacing-l);
 }
 
