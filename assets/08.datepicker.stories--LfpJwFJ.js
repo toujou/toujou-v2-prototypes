@@ -37,7 +37,7 @@ import{T as d}from"./badgeCustomConfig-oxGPBDYz.js";import{M as l}from"./form.do
             </toujou-input-group>
 
         </form>
-    `},a=u.bind({});a.args={dateFormat:r["YYYY.MM.DD"],minDate:new Date(Date.now()).toISOString(),maxDate:new Date(Date.now()+864e5*365).toISOString(),showTime:!1};var i,n,m;a.parameters={...a.parameters,docs:{...(i=a.parameters)==null?void 0:i.docs,source:{originalSource:`(args: DatepickerProps) => {
+    `},a=u.bind({});a.args={dateFormat:r["YYYY.MM.DD"],minDate:Date.now(),maxDate:Date.now()+864e5*365,showTime:!1};var i,n,m;a.parameters={...a.parameters,docs:{...(i=a.parameters)==null?void 0:i.docs,source:{originalSource:`(args: DatepickerProps) => {
   console.log('minDate', args.minDate);
   const formattedMinDate = formatTimestamp(args.minDate);
   console.log('maxDate', args.maxDate);
