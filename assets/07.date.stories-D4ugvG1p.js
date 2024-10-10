@@ -14,7 +14,6 @@ import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
             action="#"
             novalidate="true">
 
-
             <toujou-input-group class="input-group input-group--date">
                 <label class="input-label" for="testform-1000091-date-1">Date</label>
                 <span class="input-description">This is a description</span>
@@ -32,28 +31,8 @@ import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
                     <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
 
-            <toujou-input-group class="input-group input-group--date-jquery" data-format="Y-m-d">
-                <label class="input-label" for="testform-1000091-datepicker-2">Date picker (jQuery)</label>
-                <span class="input-description">This is a description</span>
-
-                 <toujou-datepicker
-                    date-format="d.m.Y"
-                    minDate="today"
-                    class="datepicker"
-                >
-                    <input
-                        name="dateFrom"
-                        class="form-control input input--datepicker"
-                        placeholder="Select a date"
-                        type="text"
-                    />
-                </toujou-datepicker>
-
-                   <span class="pristine-error form__error">This is an error message!</span>
-            </toujou-input-group>
-
         </form>
-    `,e=o.bind({});var t,a,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
+    `,e=o.bind({});var t,s,a;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
         <link rel="stylesheet" type="text/css" href="../../../../node_modules/flatpickr/dist/themes/light.css">
 
@@ -69,7 +48,6 @@ import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
             id="testform-1000091"
             action="#"
             novalidate="true">
-
 
             <toujou-input-group class="input-group input-group--date">
                 <label class="input-label" for="testform-1000091-date-1">Date</label>
@@ -88,26 +66,6 @@ import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
                     <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
 
-            <toujou-input-group class="input-group input-group--date-jquery" data-format="Y-m-d">
-                <label class="input-label" for="testform-1000091-datepicker-2">Date picker (jQuery)</label>
-                <span class="input-description">This is a description</span>
-
-                 <toujou-datepicker
-                    date-format="d.m.Y"
-                    minDate="today"
-                    class="datepicker"
-                >
-                    <input
-                        name="dateFrom"
-                        class="form-control input input--datepicker"
-                        placeholder="Select a date"
-                        type="text"
-                    />
-                </toujou-datepicker>
-
-                   <span class="pristine-error form__error">This is an error message!</span>
-            </toujou-input-group>
-
         </form>
     \`;
-}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const f=["DateInputs"];export{e as DateInputs,f as __namedExportsOrder,c as default};
+}`,...(a=(s=e.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const f=["Date"];export{e as Date,f as __namedExportsOrder,c as default};
