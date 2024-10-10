@@ -18,6 +18,8 @@ export default {
 
 const Template = () => {
     return `
+        <link rel="stylesheet" type="text/css" href="../../../../node_modules/flatpickr/dist/themes/light.css">
+
         <style>
             body {
                 background-color: var(--color-bg);
@@ -52,19 +54,23 @@ const Template = () => {
             <toujou-input-group class="input-group input-group--date-jquery" data-format="Y-m-d">
 				<label class="input-label" for="testform-1000091-datepicker-2">Date picker (jQuery)</label>
 				<span class="input-description">This is a description</span>
-		        <input data-pristine-required-message-de="The given subject was empty."
-                       data-pristine-pattern-message-de="You must enter a valid date."
-                       data-pristine-date-min-message-de="You must select a date after ${1}."
-                       data-pristine-date-max-message-de="You must select a date before ${1}."
-                       class="form-control date-dummy input input--date flatpickr-input date-dummy--empty"
-                       id="testform-1000091-datepicker-2"
-                       type="text"
-                       name="tx_form_formframework[testform-1000091][datepicker-2][date]"
-                       placeholder="Y-m-d"
-                       readonly="readonly">
-                   <input type="hidden" name="tx_form_formframework[testform-1000091][datepicker-2][dateFormat]" value="Y-m-d">
+
+		         <toujou-datepicker
+		            date-format="d.m.Y"
+		            minDate="today"
+		            class="datepicker"
+                >
+                    <input
+                        name="dateFrom"
+                        class="form-control input input--datepicker"
+                        placeholder="Select a date"
+                        type="text"
+                    />
+                </toujou-datepicker>
+
                    <span class="pristine-error form__error">This is an error message!</span>
 	        </toujou-input-group>
+
         </form>
     `;
 };

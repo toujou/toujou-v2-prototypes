@@ -10,6 +10,7 @@
 
 @import "./globals/form/_checkbox.css" layer(base);
 @import "./globals/form/_checkbox-group.css" layer(base);
+@import "./globals/form/_datepicker.css" layer(base);
 @import "./globals/form/_fieldset.css" layer(base);
 @import "./globals/form/_form.css" layer(base);
 @import "./globals/form/_form-navigation.css" layer(base);

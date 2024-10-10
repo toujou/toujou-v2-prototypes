@@ -32,6 +32,7 @@ import "@toujou/toujou-topbutton/lib";
 import "@toujou/toujou-counter/lib";
 import "@toujou/toujou-consent/lib";
 import "@toujou/toujou-iframe-resizer/lib";
+import "@toujou/toujou-datepicker/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
@@ -85,8 +86,6 @@ export const parameters = {
 
 // Hack no initialize the main nav inside Storybook
 setTimeout(() => {
-    console.log('initing Preview.js custom mainNav initialization');
-
     const mainNavEl = document.querySelector('.main-nav');
 
     if (!mainNavEl || mainNavEl.mainNav) return;
