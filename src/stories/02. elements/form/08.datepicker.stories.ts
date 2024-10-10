@@ -51,8 +51,8 @@ export default {
 
 interface DatepickerProps {
     dateFormat: typeof DATE_FORMATS[keyof typeof DATE_FORMATS],
-    minDate: Date;
-    maxDate: Date;
+    minDate: number;
+    maxDate: number;
     showTime: boolean;
 }
 
@@ -123,7 +123,7 @@ export const DatePicker = Template.bind({});
 
 DatePicker.args = {
     dateFormat: DATE_FORMATS['YYYY.MM.DD'],
-    minDate: new Date(Date.now()).toISOString(), // Today's date
-    maxDate: new Date(Date.now() + (86400000 * 365)).toISOString(), // Default to one year later
+    minDate: Date.now(), // Today's date
+    maxDate: Date.now() + (86400000 * 365), // Default to one year later
     showTime: false,
 }

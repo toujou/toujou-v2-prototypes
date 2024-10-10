@@ -16,6 +16,7 @@
         box-shadow: var(--flatpickr-calendar-box-shadow) !important;
         cursor: pointer;
         border-radius: var(--flatpickr-calendar-border-radius) !important;
+        background-color: var(--flatpickr-calendar-bg-color);
     }
 
     .flatpickr-innerContainer {
