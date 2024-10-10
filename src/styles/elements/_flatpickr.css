@@ -13,6 +13,7 @@
 
         font-family: var(--flatpickr-font-family);
         box-shadow: var(--flatpickr-calendar-box-shadow) !important;
+        cursor: pointer;
     }
 
     .flatpickr-innerContainer {
