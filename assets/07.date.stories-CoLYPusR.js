@@ -1,4 +1,6 @@
-import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.docs-DVjkPWBU.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const c={title:"COMPONENTS/Forms",parameters:{badges:[s.DONE],docs:{page:n}},argTypes:{},tags:["autodocs"]},o=()=>`
+import{T as r}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.docs-DVjkPWBU.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const c={title:"COMPONENTS/Forms",parameters:{badges:[r.DONE],docs:{page:n}},argTypes:{},tags:["autodocs"]},o=()=>`
+        <link rel="stylesheet" type="text/css" href="../../../../node_modules/flatpickr/dist/themes/light.css">
+
         <style>
             body {
                 background-color: var(--color-bg);
@@ -51,8 +53,10 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
             </toujou-input-group>
 
         </form>
-    `,e=o.bind({});var t,a,r;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
+    `,e=o.bind({});var t,a,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
+        <link rel="stylesheet" type="text/css" href="../../../../node_modules/flatpickr/dist/themes/light.css">
+
         <style>
             body {
                 background-color: var(--color-bg);
@@ -106,4 +110,4 @@ import{T as s}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./form.do
 
         </form>
     \`;
-}`,...(r=(a=e.parameters)==null?void 0:a.docs)==null?void 0:r.source}}};const f=["DateInputs"];export{e as DateInputs,f as __namedExportsOrder,c as default};
+}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const f=["DateInputs"];export{e as DateInputs,f as __namedExportsOrder,c as default};
