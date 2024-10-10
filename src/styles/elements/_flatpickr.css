@@ -103,6 +103,10 @@
         border-color: var(--color-primary) !important;
     }
 
+    .numInput.cur-year {
+        color: var(--flatpickr-header-color) !important;
+    }
+
     .flatpickr-calendar.arrowTop::before,
     .flatpickr-calendar.arrowTop::after {
         border-bottom-color: var(--flatpickr-header-bg-color) !important;

@@ -56,9 +56,27 @@ interface DatepickerProps {
     showTime: boolean;
 }
 
+function formatTimestamp(timestamp: number): string {
+    if (isNaN(timestamp)) return ''; // Invalid timestamp
+
+    const date = new Date(timestamp);
+
+    if (isNaN(date.getTime())) return ''; // Invalid timestamp
+
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
 const Template: StoryFn<DatepickerProps> = (args: DatepickerProps) => {
     console.log('minDate', args.minDate);
+
+    const formattedMinDate = formatTimestamp(args.minDate);
+
     console.log('maxDate', args.maxDate);
+    const formattedMaxDate = formatTimestamp(args.maxDate);
+
     return `
         <link rel="stylesheet" type="text/css" href="../../../../node_modules/flatpickr/dist/themes/light.css">
 
@@ -82,8 +100,8 @@ const Template: StoryFn<DatepickerProps> = (args: DatepickerProps) => {
 		         <toujou-datepicker
                     class="datepicker"
                     date-format="${args.dateFormat}"
-                    minDate="${args.minDate}"
-                    maxDate="${args.maxDate}"
+                    minDate="${formattedMinDate}"
+                    maxDate="${formattedMaxDate}"
                     ${args.showTime ? 'enableTime' : ''}
                 >
                     <input
