@@ -189,7 +189,6 @@ span:first-child + .text-block {
 
     .details .text-block[text-block-media-position="inside-right"] .text-block__figure + .text-block__content {
         margin-left: 0;
-        padding-left: var(--spacing-m);
     }
 
     .details .text-block[text-block-media-position="inside-right"] .text-block__content {
