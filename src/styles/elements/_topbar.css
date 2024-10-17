@@ -78,8 +78,6 @@
         background-color: var(--topbar-bg-color);
         transition: var(--topbar-transition);
         z-index: var(--topbar-z-index);
-        container-name: topbar;
-        container-type: inline-size;
     }
 
     .topbar[no-transitions] {

@@ -59,7 +59,7 @@
         text-decoration: underline;
     }
 
-    @container (width < 1024px) {
+    @media screen and (width < 1024px) {
         .language-picker {
             --language-picker-position: fixed;
             --language-picker-padding: 0 var(--spacing-normal);
@@ -106,7 +106,7 @@
         }
     }
 
-    @container (width >= 1024px) {
+    @media screen and (width >= 1024px) {
         .language-picker {
             --language-picker-list-justify-content: flex-start;
         }
