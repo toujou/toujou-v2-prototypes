@@ -100,7 +100,7 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
             <nav aria-label="Topbar Logo" style="display: contents;">
                 <a aria-label="Zur Startseite" show-title-on-mobile="${args.titleType === 'title'}" class="topbar__logo-link" href="/">
                     <span class="topbar__title">toujou Installation</span>
-                    <img class="topbar__logo topbar__logo--svg" src="https://via.placeholder.com/300x150.png?text=Logo">
+                    <img class="topbar__logo topbar__logo--svg" src="https://picsum.photos/300/150">
                 </a>
             </nav>
 

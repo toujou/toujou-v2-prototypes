@@ -1,7 +1,5 @@
 body {
     background-color: var(--color-bg);
-    container-name: body;
-    container-type: inline-size;
 }
 
 body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {

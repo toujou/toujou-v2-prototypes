@@ -16,6 +16,8 @@
         height: var(--header-height);
         width: var(--header-width);
         z-index: var(--header-z-index);
+        container-name: header;
+        container-type: inline-size;
     }
 
     .topbar + .header {

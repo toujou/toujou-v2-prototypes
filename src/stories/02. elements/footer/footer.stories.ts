@@ -22,7 +22,7 @@ const Template = () => {
         <footer class="footer">
             <footer-content class="footer-content">
                 <footer-column class="footer-column" column-name="logo">
-                    <img class="footer__logo" src="https://via.placeholder.com/240x80/cccccc/969696?text=Logo" alt="quote image" />
+                    <img class="footer__logo" src="https://picsum.photos/248/80" alt="quote image" />
                 </footer-column>
                 <footer-column class="footer-column" column-name="service-nav">
                     <ul class="footer__list">

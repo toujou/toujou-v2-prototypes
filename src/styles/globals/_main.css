@@ -1,5 +1,7 @@
 main {
     padding-bottom: var(--spacing-between-elements-normal);
+    container-name: main;
+    container-type: inline-size;
 }
 
 main:first-child,

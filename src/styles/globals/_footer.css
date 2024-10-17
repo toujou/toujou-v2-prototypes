@@ -36,6 +36,8 @@
 
     background-color: var(--footer-bg-color);
     padding: var(--footer-padding);
+    container-name: footer;
+    container-type: inline-size;
 }
 
 .footer__logo {

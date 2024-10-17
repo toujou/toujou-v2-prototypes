@@ -27,14 +27,14 @@
     --content-width-with-padding: 100%;
 }
 
-@container(width >= 640px) {
+@container (width >= 640px) {
     .footer-content {
         --footer-content-grid-template-columns: 1fr 1fr auto;
         --footer-content-grid-gap: var(--spacing-xxl);
     }
 }
 
-@container(width >= 960px) {
+@container (width >= 960px) {
     .footer-content {
         --footer-content-grid-template-columns: 1fr 1fr 1fr auto;
         --footer-content-grid-gap: var(--spacing-xl);
