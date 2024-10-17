@@ -220,14 +220,14 @@
         }
     }
 
-    @media screen and (max-width: 639px) {
+    @media screen and (width < 640px) {
         .topbar:has(.topbar__logo-link[show-title-on-mobile="true"]) {
             --topbar-title-display: block;
             --topbar-logo-display: none;
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (width >= 1024px) {
         .topbar {
             --topbar-padding: 0 max(var(--spacing-normal), calc(calc(100% - var(--content-wide-max-width)) / 2));
             --topbar-grid-template-columns: auto 1fr;

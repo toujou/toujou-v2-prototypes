@@ -1,7 +1,6 @@
 @import url("../../../node_modules/flatpickr/dist/themes/light.css") layer(components);
 
 @layer components {
-
     .flatpickr-calendar {
         --flatpickr-font-family: var(--font-family-text);
         --flatpickr-calendar-bg-color: var(--color-bg);
@@ -44,11 +43,11 @@
         background: var(--flatpickr-header-bg-color) !important;
     }
 
-    .flatpickr-months .flatpickr-current-month .numInputWrapper span.arrowUp:after {
+    .flatpickr-months .flatpickr-current-month .numInputWrapper span.arrowUp::after {
         border-bottom-color: var(--flatpickr-header-icon-color) !important;
     }
 
-    .flatpickr-months .flatpickr-current-month .numInputWrapper span.arrowDown:after {
+    .flatpickr-months .flatpickr-current-month .numInputWrapper span.arrowDown::after {
         border-top-color: var(--flatpickr-header-icon-color) !important;
     }
 
