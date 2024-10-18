@@ -67,15 +67,16 @@ const Template: StoryFn<BlogPostStoryProps> = (args: BlogPostStoryProps) => {
                 </time>
                 <ul class="post-data__categories">
                     <li class="post-data__category">
-                        <a href="#" class="post-data__category-link">
-                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="bookmark-filled"></toujou-icon>
-                            <span class="post-data__category-name">Category 1</span>
-                        </a>
+                        <toujou-chip class="chip " chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal">
+                            <toujou-icon class="icon " icon-name="bookmark-filled" icon-color="bg" icon-size="ms"></toujou-icon>
+                            Nice category
+                        </toujou-chip>
                     </li>
-                    <li class="post-data__category">
-                        <a href="#" class="post-data__category-link">
-                            <span class="post-data__category-name">Category 2</span>
-                        </a>
+                    <li>
+                        <toujou-chip class="chip " chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal">
+                            <toujou-icon class="icon " icon-name="bookmark-filled" icon-color="bg" icon-size="ms"></toujou-icon>
+                            Test category
+                        </toujou-chip>
                     </li>
                 </ul>
             </div>
