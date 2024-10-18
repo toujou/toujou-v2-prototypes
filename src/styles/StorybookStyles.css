@@ -8,7 +8,7 @@
 @import 'demo/_border-radius.css' layer(base);
 @import 'demo/_color.css' layer(base);
 @import 'demo/_font.css' layer(base);
-@import 'demo/_hljs-code-highlighting.css' layer(base);
+/*@import 'demo/_hljs-code-highlighting.css' layer(base);*/
 @import 'demo/_padding.css' layer(base);
 @import 'demo/_shadow.css' layer(base);
 @import 'demo/_size.css' layer(base);
