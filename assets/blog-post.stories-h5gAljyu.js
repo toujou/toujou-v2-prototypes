@@ -1,4 +1,4 @@
-import{T as n}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blog-post.docs-i9NIhF1E.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const g={title:"PAGES/BlogPost",parameters:{badges:[n.DONE],docs:{page:s}},argTypes:{hasAvatar:{table:{category:"Blog post Settings",defaultValue:{summary:"true"}},name:"Author has avatar",description:"Toggle between a post page where author avatar is or isn't available",control:{type:"boolean"},defaultValue:["true"],required:!0}},tags:["autodocs"]},c=o=>(console.log(o),`
+import{T as n}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blog-post.docs-i9NIhF1E.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const g={title:"PAGES/BlogPost",parameters:{badges:[n.DONE],docs:{page:s}},argTypes:{hasAvatar:{table:{category:"Blog post Settings",defaultValue:{summary:"true"}},name:"Author has avatar",description:"Toggle between a post page where author avatar is or isn't available",control:{type:"boolean"},defaultValue:["true"],required:!0}},tags:["autodocs"]},c=t=>(console.log(t),`
         <div class="blog-post">
             <section>
                 <toujou-text-block class="text-block" text-block-column-count="1">
@@ -13,7 +13,7 @@ import{T as n}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blog-po
 
             <div class="post-data">
                 <a href="#" class="post-data__author">
-                    ${o.hasAvatar?`
+                    ${t.hasAvatar?`
                         <figure class="post-data__author-figure">
                             <img src="https://i.pravatar.cc/80?img=27" alt="Post author avatar" class="post-data__author-avatar">
                         </figure>
@@ -27,15 +27,16 @@ import{T as n}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blog-po
                 </time>
                 <ul class="post-data__categories">
                     <li class="post-data__category">
-                        <a href="#" class="post-data__category-link">
-                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="bookmark-filled"></toujou-icon>
-                            <span class="post-data__category-name">Category 1</span>
-                        </a>
+                        <toujou-chip class="chip " chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal">
+                            <toujou-icon class="icon " icon-name="bookmark-filled" icon-color="bg" icon-size="ms"></toujou-icon>
+                            Nice category
+                        </toujou-chip>
                     </li>
-                    <li class="post-data__category">
-                        <a href="#" class="post-data__category-link">
-                            <span class="post-data__category-name">Category 2</span>
-                        </a>
+                    <li>
+                        <toujou-chip class="chip " chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal">
+                            <toujou-icon class="icon " icon-name="bookmark-filled" icon-color="bg" icon-size="ms"></toujou-icon>
+                            Test category
+                        </toujou-chip>
                     </li>
                 </ul>
             </div>
@@ -197,7 +198,7 @@ import{T as n}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blog-po
 
         </div>
 
-    `),t=c.bind({});t.args={hasAvatar:!0};var e,a,i;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`(args: BlogPostStoryProps) => {
+    `),o=c.bind({});o.args={hasAvatar:!0};var e,i,a;o.parameters={...o.parameters,docs:{...(e=o.parameters)==null?void 0:e.docs,source:{originalSource:`(args: BlogPostStoryProps) => {
   console.log(args);
   return \`
         <div class="blog-post">
@@ -228,15 +229,16 @@ import{T as n}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blog-po
                 </time>
                 <ul class="post-data__categories">
                     <li class="post-data__category">
-                        <a href="#" class="post-data__category-link">
-                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="bookmark-filled"></toujou-icon>
-                            <span class="post-data__category-name">Category 1</span>
-                        </a>
+                        <toujou-chip class="chip " chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal">
+                            <toujou-icon class="icon " icon-name="bookmark-filled" icon-color="bg" icon-size="ms"></toujou-icon>
+                            Nice category
+                        </toujou-chip>
                     </li>
-                    <li class="post-data__category">
-                        <a href="#" class="post-data__category-link">
-                            <span class="post-data__category-name">Category 2</span>
-                        </a>
+                    <li>
+                        <toujou-chip class="chip " chip-icon-position="left" chip-bg-color="primary-light" chip-border-radius="round" chip-size="normal">
+                            <toujou-icon class="icon " icon-name="bookmark-filled" icon-color="bg" icon-size="ms"></toujou-icon>
+                            Test category
+                        </toujou-chip>
                     </li>
                 </ul>
             </div>
@@ -399,4 +401,4 @@ import{T as n}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blog-po
         </div>
 
     \`;
-}`,...(i=(a=t.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};const _=["BlogPost"];export{t as BlogPost,_ as __namedExportsOrder,g as default};
+}`,...(a=(i=o.parameters)==null?void 0:i.docs)==null?void 0:a.source}}};const _=["BlogPost"];export{o as BlogPost,_ as __namedExportsOrder,g as default};
