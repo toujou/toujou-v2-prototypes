@@ -1,0 +1,70 @@
+.test-topbar {
+    --test-topbar-height: 5rem;
+
+    border-bottom: 2px solid var(--color-primary);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1rem;
+    grid-template-areas:
+        "logo actions language"
+        "logo mainnav mainnav";
+    align-items: center;
+    padding: 0 var(--spacing-normal);
+    height: var(--test-topbar-height);
+}
+
+/* LOGO */
+.test-topbar-logo {
+    height: fit-content;
+    width: fit-content;
+    grid-area: logo;
+    border: 2px solid red;
+}
+
+.test-topbar-logo__link {
+    height: calc(var(--test-topbar-height) - var(--spacing-normal));
+    display: block;
+    margin: 0;
+}
+
+.test-topbar-logo__logo {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+/* ACTIONS */
+.test-topbar-actions {
+    grid-area: actions;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-normal);
+    list-style: none;
+    margin: 0;
+}
+
+/* LANGUAGES */
+.test-language-picker {
+    grid-area: language;
+}
+
+.test-language-picker__list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-normal);
+    list-style: none;
+    margin: 0;
+}
+
+/* MAIN NAV */
+.test-main-nav {
+    grid-area: mainnav;
+}
+
+.test-main-nav__list{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-normal);
+    list-style: none;
+    margin: 0;
+}
