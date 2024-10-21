@@ -1,4 +1,4 @@
-import{T as l}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blockquote.docs-BOxMyvWQ.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const k={title:"COMPONENTS/Blockquote",parameters:{badges:[l.DONE],docs:{page:s}},argTypes:{columnsLayout:{table:{category:"Grid settings",defaultValue:{summary:"third-right"}},name:"Two columns layout",description:"Define layout of the grid columns",options:["third-right","third-left"],control:{type:"radio"},defaultValue:["third-right"],required:!0}},tags:["autodocs"]};function e(){return`
+import{T as l}from"./badgeCustomConfig-oxGPBDYz.js";import{M as n}from"./blockquote.docs-BOxMyvWQ.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const k={title:"COMPONENTS/Blockquote",parameters:{badges:[l.DONE],docs:{page:n}},argTypes:{columnsLayout:{table:{category:"Grid settings",defaultValue:{summary:"third-right"}},name:"Two columns layout",description:"Define layout of the grid columns",options:["third-right","third-left"],control:{type:"radio"},defaultValue:["third-right"],required:!0}},tags:["autodocs"]};function e(){return`
         <toujou-blockquote role="figure" class="blockquote" blockquote-direction="vertical" element-design="default" is-column>
             <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
             <blockquote slot="quote" class="blockquote__blockquote">
@@ -17,18 +17,22 @@ import{T as l}from"./badgeCustomConfig-oxGPBDYz.js";import{M as s}from"./blockqu
                 ${o.columnsLayout==="third-left"?i():e()}
             </toujou-grid-column>
         </toujou-grid>
-    `,n=o=>`
-        ${u(o)}
-
-        <section class="chapter" background-color="primary">
+    `,s=o=>`
+        <main>
             ${u(o)}
-        </section>
-    `,t=n.bind({});t.args={columnsLayout:"third-right"};var r,a,c;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: BlockquoteWithTextStoryProps) => {
-  return \`
-        \${blockquoteWithTextBlock(args)}
 
-        <section class="chapter" background-color="primary">
+            <section class="chapter" background-color="primary">
+                ${u(o)}
+            </section>
+        </main>
+    `,t=s.bind({});t.args={columnsLayout:"third-right"};var r,a,c;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: BlockquoteWithTextStoryProps) => {
+  return \`
+        <main>
             \${blockquoteWithTextBlock(args)}
-        </section>
+
+            <section class="chapter" background-color="primary">
+                \${blockquoteWithTextBlock(args)}
+            </section>
+        </main>
     \`;
 }`,...(c=(a=t.parameters)==null?void 0:a.docs)==null?void 0:c.source}}};const b=["BlockquoteWithText"];export{t as BlockquoteWithText,b as __namedExportsOrder,k as default};

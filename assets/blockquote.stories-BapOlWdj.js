@@ -9,25 +9,29 @@ import{T as i}from"./badgeCustomConfig-oxGPBDYz.js";import{M as a}from"./blockqu
             <figcaption slot="author" class="blockquote__author">Jack Handey</figcaption>
         </toujou-blockquote>
     `,l=o=>`
-        <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
-            ${t(o)}
-        </toujou-blockquote-grid>
-
-        <section class="chapter" background-color="primary">
+        <main>
             <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
                 ${t(o)}
             </toujou-blockquote-grid>
-        </section>
+
+            <section class="chapter" background-color="primary">
+                <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
+                    ${t(o)}
+                </toujou-blockquote-grid>
+            </section>
+        </main>
     `,e=l.bind({});e.args={direction:"vertical",elementDesign:"default"};var r,c,u;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`(args: BlockquoteStoryProps) => {
   return \`
-        <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
-            \${blockquoteComponent(args)}
-        </toujou-blockquote-grid>
-
-        <section class="chapter" background-color="primary">
+        <main>
             <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
                 \${blockquoteComponent(args)}
             </toujou-blockquote-grid>
-        </section>
+
+            <section class="chapter" background-color="primary">
+                <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
+                    \${blockquoteComponent(args)}
+                </toujou-blockquote-grid>
+            </section>
+        </main>
     \`;
 }`,...(u=(c=e.parameters)==null?void 0:c.docs)==null?void 0:u.source}}};const b=["Blockquote"];export{e as Blockquote,b as __namedExportsOrder,g as default};
