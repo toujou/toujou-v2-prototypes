@@ -102,14 +102,16 @@ function renderText() {
 
 const Template: StoryFn<DetailsAccordionStoryProps> = (args: DetailsAccordionStoryProps) => {
     return `
-        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}">
-            <toujou-grid-column class="grid-column">
-                ${args.columnsLayout === 'third-right' ? renderAccordion(args) : renderText()}
-            </toujou-grid-column>
-            <toujou-grid-column class="grid-column">
-                ${args.columnsLayout === 'third-right' ? renderText() : renderAccordion(args)}
-            </toujou-grid-column>
-        </toujou-grid>
+        <main>
+            <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.columnsLayout}">
+                <toujou-grid-column class="grid-column">
+                    ${args.columnsLayout === 'third-right' ? renderAccordion(args) : renderText()}
+                </toujou-grid-column>
+                <toujou-grid-column class="grid-column">
+                    ${args.columnsLayout === 'third-right' ? renderText() : renderAccordion(args)}
+                </toujou-grid-column>
+            </toujou-grid>
+        </main>
     `
 };
 
