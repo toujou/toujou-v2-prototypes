@@ -4,10 +4,11 @@
     border-bottom: 2px solid var(--color-primary);
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto 1rem;
+    grid-template-rows: 1fr auto;
     grid-template-areas:
         "logo actions language"
         "logo mainnav mainnav";
+    grid-gap: var(--spacing-s) var(--spacing-normal);
     align-items: center;
     padding: 0 var(--spacing-normal);
     height: var(--test-topbar-height);
@@ -18,7 +19,6 @@
     height: fit-content;
     width: fit-content;
     grid-area: logo;
-    border: 2px solid red;
 }
 
 .test-topbar-logo__link {
@@ -38,6 +38,7 @@
     grid-area: actions;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     gap: var(--spacing-normal);
     list-style: none;
     margin: 0;
@@ -58,13 +59,143 @@
 
 /* MAIN NAV */
 .test-main-nav {
+    --test-main-nav-height: 2rem;
+    --test-main-nav-toggle-size: 2rem;
+
     grid-area: mainnav;
+    height: var(--test-main-nav-height);
 }
 
-.test-main-nav__list{
-    display: flex;
+.test-main-nav__list {
     flex-direction: row;
-    gap: var(--spacing-normal);
+    justify-content: flex-end;
+    gap: var(--spacing-m);
     list-style: none;
     margin: 0;
+    position: relative;
+}
+
+.test-main-nav__link {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: var(--test-main-nav-height);
+}
+
+/* FIRST LEVEL */
+.test-main-nav__list[nav-level="1"] {
+    display: flex;
+    height: var(--test-main-nav-height);
+}
+
+.test-main-nav__list[nav-level="1"] > .test-main-nav__item {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.test-main-nav__subnav-toggle {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    height: var(--test-main-nav-toggle-size);
+    width: var(--test-main-nav-toggle-size);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.test-main-nav__list[nav-level="1"] > .test-main-nav__item:has(.test-main-nav__list[nav-level="2"]:popover-open) > .test-main-nav__subnav-toggle {
+    rotate: 180deg;
+}
+
+/* SECOND LEVEL */
+.test-main-nav__list[nav-level="2"] {
+    inset: unset;
+    position: fixed;
+    position-try-fallbacks: --second-level-bottom-center, --second-level-bottom-right;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+}
+
+@position-try --second-level-bottom-center {
+    top: anchor(bottom);
+    left: anchor(start);
+    right: unset;
+}
+
+@position-try --second-level-bottom-right {
+    top: anchor(bottom);
+    left: unset;
+    right: anchor(end)
+}
+
+.test-main-nav__list[nav-level="2"] > .test-main-nav__item {
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.test-main-nav__list[nav-level="2"] > .test-main-nav__item:hover,
+.test-main-nav__list[nav-level="2"] > .test-main-nav__item:has(> .test-main-nav__list[nav-level="3"]:popover-open) {
+    background-color: var(--color-primary-o-10);
+}
+
+.test-main-nav__list[nav-level="2"] > .test-main-nav__item > .test-main-nav__link {
+    flex-grow: 1;
+}
+
+.test-main-nav__list[nav-level="2"] > .test-main-nav__item:has(> .test-main-nav__list) {
+    padding-right: 0;
+}
+
+.test-main-nav__list:popover-open {
+    display: flex;
+    border: 2px solid var(--primary-color);
+}
+
+/* THIRD LEVEL */
+.test-main-nav__list[nav-level="3"] {
+    position: fixed;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    inset: unset;
+    position-try-fallbacks: --third-level-bottom-center, --third-level-bottom-right;
+    transform: translateY(-2px);
+}
+
+@position-try --third-level-bottom-center {
+    top: anchor(top);
+    left: anchor(end);
+    right: unset;
+}
+
+@position-try --third-level-bottom-right {
+    top: anchor(top);
+    left: unset;
+    right: anchor(start)
+}
+
+.test-main-nav__list[nav-level="3"] > .test-main-nav__item {
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 140px;
+}
+
+.test-main-nav__list[nav-level="3"] > .test-main-nav__item:hover {
+    background-color: var(--color-primary-o-10);
+}
+
+.test-main-nav__list[nav-level="2"] > .test-main-nav__item > .test-main-nav__subnav-toggle {
+    rotate: -90deg;
+}
+
+.test-main-nav__list[nav-level="2"] > .test-main-nav__item:has(.test-main-nav__list[nav-level="3"]:popover-open) > .test-main-nav__subnav-toggle {
+    rotate: 90deg;
 }

@@ -10,6 +10,8 @@ import "../src/components/toujou-burger-button/toujou-burger-button";
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../src/components/toujou-clamped-content/toujou-clamped-content";
+import "../src/components/t-main-nav-popup-toggle/t-main-nav-popup-toggle";
+import "../src/components/t-main-nav-li-with-popover-subnav/t-main-nav-li-with-popover-subnav";
 
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-modal/toujou-modal";
@@ -36,6 +38,11 @@ import "@toujou/toujou-datepicker/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";
+
+if (!("anchorName" in document.documentElement.style)) {
+    console.log('Importing the css-anchor-positioning polyfill!!');
+    import("https://unpkg.com/@oddbird/css-anchor-positioning");
+}
 
 // Config
 import { badgeCustomConfig } from "./configUtils/badgeCustomConfig.js";

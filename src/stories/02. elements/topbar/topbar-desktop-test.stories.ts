@@ -13,9 +13,7 @@ export default {
         },
         layout: "fullscreen",
     },
-    argTypes: {
-
-    },
+    argTypes: {},
     tags: ['autodocs']
 } satisfies Meta;
 
@@ -78,11 +76,117 @@ const renderLanguagePicker = () => {
 const renderMainMenu = () => {
     return `
         <nav class="test-main-nav">
-            <ul class="test-main-nav__list">
-                <li class="test-main-nav-list__item">One</li>
-                <li class="test-main-nav-list__item">Two</li>
-                <li class="test-main-nav-list__item">Three</li>
-                <li class="test-main-nav-list__item">Four</li>
+            <ul class="test-main-nav__list" nav-level="1">
+                <li class="test-main-nav__item" id="lev-1-id-1" is="t-main-nav-li-with-popover-subnav">
+                    <a href="#" class="test-main-nav__link">One</a>
+                    <button
+                        class="test-main-nav__subnav-toggle"
+                        is="t-main-nav-toggle"
+                    >
+                        <toujou-icon class="icon" icon-name="chevron-down" icon-color="font" icon-size="normal"></toujou-icon>
+                    </button>
+                    <ul
+                        id="sub-nav-level-2-id-1"
+                        class="test-main-nav__list"
+                        nav-level="2"
+                        popover
+                    >
+                        <li class="test-main-nav__item" id="lev-2-id-1">
+                            <a href="#" class="test-main-nav__link">Porto</a>
+                        </li>
+                        <li class="test-main-nav__item" id="lev-2-id-2" is="t-main-nav-li-with-popover-subnav">
+                            <a href="#" class="test-main-nav__link">Munich</a>
+                            <button
+                                class="test-main-nav__subnav-toggle"
+                                is="t-main-nav-toggle"
+                            >
+                                <toujou-icon class="icon" icon-name="chevron-down" icon-color="font" icon-size="normal"></toujou-icon>
+                            </button>
+                            <ul
+                                id="sub-nav-level-2-id-2"
+                                class="test-main-nav__list" nav-level="3"
+                                popover
+                            >
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Dark Blue</a>
+                                </li>
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Dark yellow</a>
+                                </li>
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Light Green</a>
+                                </li>
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Purple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="test-main-nav__item" id="lev-2-id-3">
+                            <a href="#" class="test-main-nav__link">London</a>
+                        </li>
+                        <li class="test-main-nav__item" id="lev-2-id-4">
+                            <a href="#" class="test-main-nav__link">New York</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="test-main-nav__item" id="lev-1-id-2">
+                    <a href="#" class="test-main-nav__link">Two</a>
+                </li>
+                <li class="test-main-nav__item" id="lev-1-id-3">
+                    <a href="#" class="test-main-nav__link">Three</a>
+                </li>
+                <li class="test-main-nav__item" id="lev-1-id-4" is="t-main-nav-li-with-popover-subnav">
+                    <a href="#" class="test-main-nav__link">A very long 4th item</a>
+                    <button
+                        class="test-main-nav__subnav-toggle"
+                        is="t-main-nav-toggle"
+                    >
+                        <toujou-icon class="icon" icon-name="chevron-down" icon-color="font" icon-size="normal"></toujou-icon>
+                    </button>
+                    <ul
+                        id="sub-nav-level-2-id-5"
+                        class="test-main-nav__list"
+                        nav-level="2"
+                        popover
+                    >
+                        <li class="test-main-nav__item" id="lev-2-id-5">
+                            <a href="#" class="test-main-nav__link">Porto</a>
+                        </li>
+                        <li class="test-main-nav__item" id="lev-2-id-6" is="t-main-nav-li-with-popover-subnav">
+                            <a href="#" class="test-main-nav__link">Munich</a>
+                            <button
+                                class="test-main-nav__subnav-toggle"
+                                is="t-main-nav-toggle"
+                            >
+                                <toujou-icon class="icon" icon-name="chevron-down" icon-color="font" icon-size="normal"></toujou-icon>
+                            </button>
+                            <ul
+                                id="sub-nav-level-2-id-8"
+                                class="test-main-nav__list" nav-level="3"
+                                popover
+                            >
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Very Very Dark Blue</a>
+                                </li>
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Very Very Dark yellow</a>
+                                </li>
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Light Green</a>
+                                </li>
+                                <li class="test-main-nav__item">
+                                    <a href="#" class="test-main-nav__link">Purple</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="test-main-nav__item" id="lev-2-id-7">
+                            <a href="#" class="test-main-nav__link">London</a>
+                        </li>
+                        <li class="test-main-nav__item" id="lev-2-id-8">
+                            <a href="#" class="test-main-nav__link">New York</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     `;
