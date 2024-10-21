@@ -45,23 +45,27 @@ import{T as u}from"./badgeCustomConfig-oxGPBDYz.js";import{M as l}from"./details
     `}function o(){return`
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     `}const d=i=>`
-        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${i.columnsLayout}">
-            <toujou-grid-column class="grid-column">
-                ${i.columnsLayout==="third-right"?t(i):o()}
-            </toujou-grid-column>
-            <toujou-grid-column class="grid-column">
-                ${i.columnsLayout==="third-right"?o():t(i)}
-            </toujou-grid-column>
-        </toujou-grid>
-    `,e=d.bind({});e.args={columnsLayout:"third-right",elementDesign:"default"};var s,a,n;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`(args: DetailsAccordionStoryProps) => {
+        <main>
+            <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${i.columnsLayout}">
+                <toujou-grid-column class="grid-column">
+                    ${i.columnsLayout==="third-right"?t(i):o()}
+                </toujou-grid-column>
+                <toujou-grid-column class="grid-column">
+                    ${i.columnsLayout==="third-right"?o():t(i)}
+                </toujou-grid-column>
+            </toujou-grid>
+        </main>
+    `,e=d.bind({});e.args={columnsLayout:"third-right",elementDesign:"default"};var a,s,n;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`(args: DetailsAccordionStoryProps) => {
   return \`
-        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="\${args.columnsLayout}">
-            <toujou-grid-column class="grid-column">
-                \${args.columnsLayout === 'third-right' ? renderAccordion(args) : renderText()}
-            </toujou-grid-column>
-            <toujou-grid-column class="grid-column">
-                \${args.columnsLayout === 'third-right' ? renderText() : renderAccordion(args)}
-            </toujou-grid-column>
-        </toujou-grid>
+        <main>
+            <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="\${args.columnsLayout}">
+                <toujou-grid-column class="grid-column">
+                    \${args.columnsLayout === 'third-right' ? renderAccordion(args) : renderText()}
+                </toujou-grid-column>
+                <toujou-grid-column class="grid-column">
+                    \${args.columnsLayout === 'third-right' ? renderText() : renderAccordion(args)}
+                </toujou-grid-column>
+            </toujou-grid>
+        </main>
     \`;
-}`,...(n=(a=e.parameters)==null?void 0:a.docs)==null?void 0:n.source}}};const y=["DetailsAccordionWithText"];export{e as DetailsAccordionWithText,y as __namedExportsOrder,q as default};
+}`,...(n=(s=e.parameters)==null?void 0:s.docs)==null?void 0:n.source}}};const y=["DetailsAccordionWithText"];export{e as DetailsAccordionWithText,y as __namedExportsOrder,q as default};
