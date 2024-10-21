@@ -109,7 +109,7 @@ const Template: StoryFn<TimelineStoryProps> = (args: TimelineStoryProps) => {
                             <h4 class="timeline-card__subtitle">12 november</h4>
                             <p class="timeline-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             <a href="#" class="timeline-card__button">
-                                <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                 Home
                             </a>
                         </div>
@@ -137,7 +137,7 @@ const Template: StoryFn<TimelineStoryProps> = (args: TimelineStoryProps) => {
                             <h4 class="timeline-card__subtitle">Subtitle two</h4>
                             <p class="timeline-card__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <a href="#" class="timeline-card__button">
-                                <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                 Home
                             </a>
                         </div>
@@ -155,7 +155,7 @@ const Template: StoryFn<TimelineStoryProps> = (args: TimelineStoryProps) => {
                             <h4 class="timeline-card__subtitle">Some subtitle</h4>
                             <p class="timeline-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <a href="#" class="timeline-card__button">
-                                <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                 Home
                             </a>
                         </div>

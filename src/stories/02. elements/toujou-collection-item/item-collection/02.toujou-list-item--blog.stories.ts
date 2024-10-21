@@ -18,6 +18,7 @@ export default {
 
 const Template = () => {
     return `
+        <main>
         <ol class="item-collection">
             <li class="item-collection__item">
                 <toujou-collection-item class="collection-item" item-type="blog" element-design="default" item-orientation="horizontal" role="article">
@@ -51,7 +52,7 @@ const Template = () => {
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -82,7 +83,7 @@ const Template = () => {
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -113,7 +114,7 @@ const Template = () => {
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -140,13 +141,14 @@ const Template = () => {
                             </span>
                         </p>
                         <a href="#" class="collection-item__button">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
                 </toujou-collection-item>
             </li>
         </ol>
+    </main>
     `
 };
 

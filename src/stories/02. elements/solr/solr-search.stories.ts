@@ -17,7 +17,6 @@ export default {
         showMobileFilters: {
             table: {
                 category: "Solr search settings",
-                defaultValue: { summary: false },
             },
             name: 'Show mobile filters',
             description: "Toggle visibility of the mobile filters",
@@ -28,7 +27,6 @@ export default {
         showMap: {
             table: {
                 category: "Solr search settings",
-                defaultValue: { summary: false },
             },
             name: 'Show map',
             description: "Toggle visibility of the search map",
@@ -731,7 +729,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                             aria-checked="${!args.showMap}"
                             tabindex="0"
                         >
-                            <toujou-icon class="icon button__icon" icon-name="grid"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="grid"></toujou-icon>
                              Raster
                          </button>
                           <button
@@ -746,7 +744,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                             aria-checked="${args.showMap}"
                             tabindex="0"
                         >
-                            <toujou-icon class="icon button__icon" icon-name="map"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="map"></toujou-icon>
                              Karte
                          </button>
                     </div>
@@ -857,7 +855,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                                 </p>
 
                                 <a href="#" class="collection-item__button">
-                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
                                 </a>
                             </div>
@@ -902,7 +900,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                                 </p>
 
                                 <a href="#" class="collection-item__button">
-                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
                                 </a>
                             </div>
@@ -947,7 +945,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                                 </p>
 
                                 <a href="#" class="collection-item__button">
-                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
                                 </a>
                             </div>
@@ -992,7 +990,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                                 </p>
 
                                 <a href="#" class="collection-item__button">
-                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
                                 </a>
                             </div>
@@ -1037,7 +1035,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                                 </p>
 
                                 <a href="#" class="collection-item__button">
-                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
                                 </a>
                             </div>
@@ -1082,7 +1080,7 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                                 </p>
 
                                 <a href="#" class="collection-item__button">
-                                    <toujou-icon class="icon button__icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                    <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                     zur Beschreibung
                                 </a>
                             </div>

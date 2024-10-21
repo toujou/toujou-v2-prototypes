@@ -93,10 +93,6 @@ p > .button {
     --button-padding: var(--spacing-s) var(--spacing-normal) var(--spacing-s) var(--spacing-m);
 }
 
-.icon.button__icon {
-    --icon-size: var(--button-icon-size);
-}
-
 .button[button-size="tiny"] .icon.button__icon {
     --button-icon-size: var(--font-size-s);
 }

@@ -43,7 +43,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -70,7 +70,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -97,7 +97,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -124,7 +124,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -147,7 +147,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -167,7 +167,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -187,7 +187,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>
@@ -207,7 +207,7 @@ const Template = () => {
                         </p>
                         <p class="collection-item__abstract">Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.</p>
                         <a href="#" class="button collection-item__button" button-variant="primary" button-type="ghost" button-size="normal" button-icon-position="left">
-                            <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                            <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                             zur Beschreibung
                         </a>
                     </div>

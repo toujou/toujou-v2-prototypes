@@ -79,7 +79,7 @@ const Template = () => {
                             type="submit"
                             name="tx_form_formframework[kontaktformular-8][__currentPage]"
                             value="2">
-                        <toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon>
+                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
                         Next step
                     </button>
                 </span>
@@ -93,7 +93,7 @@ const Template = () => {
                             type="submit"
                             name="tx_form_formframework[kontaktformular-8][__currentPage]"
                             value="0">
-                        <toujou-icon class="icon button__icon" icon-name="arrow-left"></toujou-icon>
+                        <toujou-icon class="icon" icon-name="arrow-left"></toujou-icon>
                         Previous step
                     </button>
                 </span>

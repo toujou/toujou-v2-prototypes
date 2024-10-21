@@ -19,7 +19,6 @@ export default {
         mediaType: {
             table: {
                 category: "Single media settings",
-                defaultValue: { summary: 2 },
             },
             name: 'Media type',
             description: "Choose media type to display",

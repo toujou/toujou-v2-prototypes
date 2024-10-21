@@ -124,7 +124,7 @@ const Template: StoryFn<ButtonStoryProps> = (args: ButtonStoryProps) => {
     buttonEl.disabled = args.isDisabled === 'true' || args.isDisabled === true;
 
     if (args.hasIcon === 'true' || args.hasIcon === true) {
-        buttonEl.innerHTML = `<toujou-icon class="icon button__icon" icon-name="arrow-right"></toujou-icon> ${DEFAULT_BUTTON_TEXT}`;
+        buttonEl.innerHTML = `<toujou-icon class="icon" icon-name="arrow-right"></toujou-icon> ${DEFAULT_BUTTON_TEXT}`;
         buttonEl.setAttribute(`button-icon-position`, args.iconPosition);
     } else {
         buttonEl.textContent = DEFAULT_BUTTON_TEXT;
