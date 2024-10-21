@@ -27,11 +27,13 @@ const blockquoteTagComponent = () => {
 
 const Template = () => {
     return `
-        ${blockquoteTagComponent()}
-
-        <section class="chapter" background-color="primary">
+        <main>
             ${blockquoteTagComponent()}
-        </section>
+
+            <section class="chapter" background-color="primary">
+                ${blockquoteTagComponent()}
+            </section>
+        </main>
     `;
 };
 

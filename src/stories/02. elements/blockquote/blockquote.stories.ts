@@ -63,15 +63,17 @@ const blockquoteComponent = (args: BlockquoteStoryProps) => {
 
 const Template: StoryFn<BlockquoteStoryProps> = (args: BlockquoteStoryProps) => {
     return `
-        <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
-            ${blockquoteComponent(args)}
-        </toujou-blockquote-grid>
-
-        <section class="chapter" background-color="primary">
+        <main>
             <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
                 ${blockquoteComponent(args)}
             </toujou-blockquote-grid>
-        </section>
+
+            <section class="chapter" background-color="primary">
+                <toujou-blockquote-grid class="blockquote-grid" blockquote-grid-count="1">
+                    ${blockquoteComponent(args)}
+                </toujou-blockquote-grid>
+            </section>
+        </main>
     `;
 };
 

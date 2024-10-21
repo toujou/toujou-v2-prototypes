@@ -66,11 +66,13 @@ const blockquoteWithTextBlock = (args: BlockquoteWithTextStoryProps) => {
 
 const Template: StoryFn<BlockquoteWithTextStoryProps> = (args: BlockquoteWithTextStoryProps) => {
     return `
-        ${blockquoteWithTextBlock(args)}
-
-        <section class="chapter" background-color="primary">
+        <main>
             ${blockquoteWithTextBlock(args)}
-        </section>
+
+            <section class="chapter" background-color="primary">
+                ${blockquoteWithTextBlock(args)}
+            </section>
+        </main>
     `
 };
 

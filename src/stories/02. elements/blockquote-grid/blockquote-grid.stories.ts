@@ -87,11 +87,13 @@ const blockquoteGridBlock = (args: BlockquoteGridStoryProps) => {
 
 const Template: StoryFn<BlockquoteGridStoryProps> = (args: BlockquoteGridStoryProps) => {
     return `
-        ${blockquoteGridBlock(args)}
-
-        <section class="chapter" background-color="primary">
+        <main>
             ${blockquoteGridBlock(args)}
-        </section>
+
+            <section class="chapter" background-color="primary">
+                ${blockquoteGridBlock(args)}
+            </section>
+        </main>
     `;
 };
 

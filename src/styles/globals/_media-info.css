@@ -94,7 +94,14 @@
 .media-info__toggle {
     display: var(--media-info-toggle-display);
     position: var(--media-info-toggle-position);
-    inset: var(--media-info-toggle-top) var(--media-info-toggle-right) var(--media-info-toggle-bottom) var(--media-info-toggle-left);
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    top: var(--media-info-toggle-top);
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    bottom: var(--media-info-toggle-bottom);
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    left: var(--media-info-toggle-left);
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    right: var(--media-info-toggle-right);
     height: var(--media-info-toggle-size);
     width: var(--media-info-toggle-size);
     padding: var(--media-info-toggle-padding);
