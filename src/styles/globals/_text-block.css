@@ -85,6 +85,7 @@ span:first-child + .text-block {
 .text-block__image {
     transform: var(--text-block-image-transform);
     transition: var(--text-block-image-transition);
+    border-radius: var(--text-block-figure-border-radius);
 }
 
 .text-block__image,
