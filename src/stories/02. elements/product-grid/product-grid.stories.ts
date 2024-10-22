@@ -65,15 +65,18 @@ function createImageCardLink(imageFormat: string, cardVariant: string): string {
 
 const Template: StoryFn<ProductGridStoryProps> = (args: ProductGridStoryProps) => {
     const colNumber = 4;
-        const toujouImageCardGrid = document.createElement('toujou-image-card-grid');
-        toujouImageCardGrid.classList.add('image-card-grid');
+    const toujouImageCardGrid = document.createElement('toujou-image-card-grid');
+    toujouImageCardGrid.classList.add('image-card-grid');
 
-        for (let i = 0; i < colNumber; i++) {
-            const imageCard = createImageCardLink(args.imageFormat, args.cardVariant)
-            toujouImageCardGrid.insertAdjacentHTML('beforeend', imageCard);
-        }
+    for (let i = 0; i < colNumber; i++) {
+        const imageCard = createImageCardLink(args.imageFormat, args.cardVariant)
+        toujouImageCardGrid.insertAdjacentHTML('beforeend', imageCard);
+    }
 
-        return toujouImageCardGrid;
+    const main = document.createElement('main');
+    main.appendChild(toujouImageCardGrid);
+
+    return main;
 };
 
 export const ProductGrid = Template.bind({});
