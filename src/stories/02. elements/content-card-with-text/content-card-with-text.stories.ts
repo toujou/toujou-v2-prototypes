@@ -77,11 +77,13 @@ const contentCardWithTextBLock = (args: ContentCardWithTextStoryProps) => {
 
 const Template: StoryFn<ContentCardWithTextStoryProps> = (args: ContentCardWithTextStoryProps) => {
     return `
-        ${contentCardWithTextBLock(args)}
-
-        <section class="chapter" background-color="primary">
+        <main>
             ${contentCardWithTextBLock(args)}
-        </section>
+
+            <section class="chapter" background-color="primary">
+                ${contentCardWithTextBLock(args)}
+            </section>
+        </main>
     `;
 };
 

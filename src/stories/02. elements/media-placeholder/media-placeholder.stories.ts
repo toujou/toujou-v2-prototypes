@@ -17,7 +17,6 @@ export default {
         mediaType: {
             table: {
                 category: "Single media settings",
-                defaultValue: { summary: 2 },
             },
             name: 'Media type',
             description: "Choose media type to display",
@@ -36,9 +35,11 @@ interface MediaPlaceholdderStoryProps {
 
 const Template: StoryFn<MediaPlaceholdderStoryProps> = (args: MediaPlaceholdderStoryProps) => {
     return `
-        <div class="demo-media-placeholder-container">
-            <toujou-media-placeholder media-type="${args.mediaType}" class="media-placeholder"></toujou-media-placeholder>
-        </div>
+        <main>
+            <div class="demo-media-placeholder-container">
+                <toujou-media-placeholder media-type="${args.mediaType}" class="media-placeholder"></toujou-media-placeholder>
+            </div>
+        </main>
     `;
 };
 

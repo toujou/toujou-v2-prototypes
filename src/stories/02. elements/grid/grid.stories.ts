@@ -84,7 +84,10 @@ const Template: StoryFn<GridStoryProps> = (args: GridStoryProps) => {
         gridEl.appendChild(col);
     }
 
-    return gridEl;
+    const mainEl = document.createElement('main');
+    mainEl.appendChild(gridEl);
+
+    return mainEl;
 };
 
 export const Grid = Template.bind({});

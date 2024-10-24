@@ -17,7 +17,6 @@ export default {
         direction: {
             table: {
                 category: "Image card settings",
-                defaultValue: { direction: 'left'},
             },
             name: 'Direction',
             description: "Set the column where the text will be shown",
@@ -60,14 +59,16 @@ function renderCardColumn() {
 
 const Template: StoryFn<ImageCardWithTextStoryProps> = (args: ImageCardWithTextStoryProps) => {
     return `
-        <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.direction === 'left' ? 'third-right' : 'third-left'}">
-             <toujou-grid-column class="grid-column">
-                ${args.direction === 'left' ? renderTextColumn() : renderCardColumn()}
-            </toujou-grid-column>
-            <toujou-grid-column class="grid-column">
-                ${args.direction === 'left' ? renderCardColumn() : renderTextColumn()}
-            </toujou-grid-column>
-        </toujou-grid>
+        <main>
+            <toujou-grid class="grid" number-of-columns="2" grid-type="default" column-layout="${args.direction === 'left' ? 'third-right' : 'third-left'}">
+                 <toujou-grid-column class="grid-column">
+                    ${args.direction === 'left' ? renderTextColumn() : renderCardColumn()}
+                </toujou-grid-column>
+                <toujou-grid-column class="grid-column">
+                    ${args.direction === 'left' ? renderCardColumn() : renderTextColumn()}
+                </toujou-grid-column>
+            </toujou-grid>
+        </main>
     `;
 };
 

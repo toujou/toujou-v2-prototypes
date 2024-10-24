@@ -32,7 +32,6 @@ export default {
         cardsAreLinks: {
             table: {
                 category: "Image card settings",
-                defaultValue: { summary: true },
             },
             name: 'Cards are links',
             description: "Choose if the cards should be a link or not",
@@ -43,7 +42,6 @@ export default {
         columnCount: {
             table: {
                 category: "Image card settings",
-                defaultValue: { summary: 4},
             },
             name: 'Column count',
             description: "Number of columns",
@@ -115,7 +113,10 @@ const Template: StoryFn<ToujouImageCardStoryProps> = (args: ToujouImageCardStory
         toujouImageCardGrid.insertAdjacentHTML('beforeend', imageCard);
     }
 
-    return toujouImageCardGrid;
+    const mainEl = document.createElement('main');
+    mainEl.appendChild(toujouImageCardGrid);
+
+    return mainEl;
 };
 
 export const ImageCard = Template.bind({});

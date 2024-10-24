@@ -252,11 +252,13 @@ const reviewsComponent = () => {
 
 const Template = () => {
     return `
-        ${reviewsComponent()}
-
-        <section class="chapter" background-color="primary" font-color="primary-light">
+        <main>
             ${reviewsComponent()}
-        </section>
+
+            <section class="chapter" background-color="primary" font-color="primary-light">
+                ${reviewsComponent()}
+            </section>
+        </main>
     `;
 };
 

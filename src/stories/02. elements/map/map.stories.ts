@@ -92,11 +92,13 @@ const mapComponent = (args: mapStoryProps) => {
 
 const Template: StoryFn<mapStoryProps> = (args: mapStoryProps) => {
     return `
-        ${mapComponent(args)}
-
-        <section class="chapter" background-color="primary">
+        <main>
             ${mapComponent(args)}
-        </section>
+
+            <section class="chapter" background-color="primary">
+                ${mapComponent(args)}
+            </section>
+        </main>
     `;
 };
 

@@ -98,7 +98,10 @@ const Template: StoryFn<ContentCardStoryProps> = (args: ContentCardStoryProps) =
         contentCardGrid.appendChild(contentCard);
     }
 
-    return contentCardGrid;
+    const mainEl = document.createElement('main');
+    mainEl.appendChild(contentCardGrid);
+
+    return mainEl;
 };
 
 export const VerticalContentCard = Template.bind({});

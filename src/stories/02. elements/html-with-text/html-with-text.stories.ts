@@ -123,9 +123,11 @@ const Template: StoryFn<HtmlWithTextStoryProps> = (args: HtmlWithTextStoryProps)
     }
 
     return `
-        <toujou-grid class="grid" grid-type="default" number-of-columns="${numberOfColumns}" column-layout="${columnLayout}">
-            ${numberOfColumns === 2 ? renderTwoColumns(htmlOnTheLeft) : renderThreeColumns(htmlOnTheLeft)}
-        </toujou-grid>
+        <main>
+            <toujou-grid class="grid" grid-type="default" number-of-columns="${numberOfColumns}" column-layout="${columnLayout}">
+                ${numberOfColumns === 2 ? renderTwoColumns(htmlOnTheLeft) : renderThreeColumns(htmlOnTheLeft)}
+            </toujou-grid>
+        </main>
     `
 };
 

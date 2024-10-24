@@ -34,92 +34,94 @@ interface CoverSliderStoryProps {
 
 const Template: StoryFn<CoverSliderStoryProps> = (args: CoverSliderStoryProps) => {
     return `
-        <toujou-cover-slider class="cover-slider" aria-label="Toujou cover slider example">
-            <div class="splide slider__slider">
-                <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
-                        <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
-                    </button>
-                    <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
-                        <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
-                    </button>
-                </div>
+        <main>
+            <toujou-cover-slider class="cover-slider" aria-label="Toujou cover slider example">
+                <div class="splide slider__slider">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
+                            <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next slider-control slider-control--next" aria-label="Next slide">
+                            <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
+                        </button>
+                    </div>
 
-                <div class="splide__track slider__track">
-                    <ul class="splide__list slider__list">
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="default">
-                            <a href="#" class="cover-slider__link">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                                <h3 class="cover-slider__title">Default</h3>
-                            </a>
-                        </li>
-                        ${args.isSlider ? `
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="primary">
+                    <div class="splide__track slider__track">
+                        <ul class="splide__list slider__list">
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="default">
                                 <a href="#" class="cover-slider__link">
                                     <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
                                         <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
                                     </toujou-single-media>
-                                <h3 class="cover-slider__title">Primary design</h3>
+                                    <h3 class="cover-slider__title">Default</h3>
                                 </a>
                             </li>
-                        ` : ''}
-                        <li class="splide__slide slider-slide cover-slider__item" element-design="secondary">
-                            <a href="#" class="cover-slider__link">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                                <h3 class="cover-slider__title">Secondary design</h3>
-                            </a>
-                        </li>
-                        ${args.isSlider ? `
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="inverted">
+                            ${args.isSlider ? `
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="primary">
+                                    <a href="#" class="cover-slider__link">
+                                        <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                            <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                        </toujou-single-media>
+                                    <h3 class="cover-slider__title">Primary design</h3>
+                                    </a>
+                                </li>
+                            ` : ''}
+                            <li class="splide__slide slider-slide cover-slider__item" element-design="secondary">
                                 <a href="#" class="cover-slider__link">
                                     <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
                                         <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
                                     </toujou-single-media>
-                                    <h3 class="cover-slider__title">Inverted design</h3>
+                                    <h3 class="cover-slider__title">Secondary design</h3>
                                 </a>
                             </li>
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="default">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                                <h3 class="cover-slider__title">Default</h3>
-                            </li>
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="default">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                                <h3 class="cover-slider__title">Some very long title to test line breaks</h3>
-                            </li>
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="default">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                            </li>
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="default">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                            </li>
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="primary">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                            </li>
-                            <li class="splide__slide slider-slide cover-slider__item" element-design="inverted">
-                                <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
-                                    <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
-                                </toujou-single-media>
-                            </li>
-                        ` : ''}
+                            ${args.isSlider ? `
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="inverted">
+                                    <a href="#" class="cover-slider__link">
+                                        <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                            <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                        </toujou-single-media>
+                                        <h3 class="cover-slider__title">Inverted design</h3>
+                                    </a>
+                                </li>
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="default">
+                                    <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                        <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                    </toujou-single-media>
+                                    <h3 class="cover-slider__title">Default</h3>
+                                </li>
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="default">
+                                    <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                        <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                    </toujou-single-media>
+                                    <h3 class="cover-slider__title">Some very long title to test line breaks</h3>
+                                </li>
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="default">
+                                    <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                        <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                    </toujou-single-media>
+                                </li>
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="default">
+                                    <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                        <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                    </toujou-single-media>
+                                </li>
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="primary">
+                                    <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                        <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                    </toujou-single-media>
+                                </li>
+                                <li class="splide__slide slider-slide cover-slider__item" element-design="inverted">
+                                    <toujou-single-media class="single-media cover-slider__media" slot="slider-item">
+                                        <img class="single-media__image cover-slider__image" src="https://picsum.photos/400" alt="Nice image">
+                                    </toujou-single-media>
+                                </li>
+                            ` : ''}
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </toujou-cover-slider>
+            </toujou-cover-slider>
+        </main>
     `;
 };
 

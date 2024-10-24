@@ -20,7 +20,6 @@ export default {
         columnCount: {
             table: {
                 category: "Content card settings",
-                defaultValue: { summary: 2},
             },
             name: 'Column count',
             description: "Number of columns",
@@ -98,7 +97,10 @@ const Template: StoryFn<ContentCardStoryProps> = (args: ContentCardStoryProps) =
         contentCardGrid.appendChild(contentCard);
     }
 
-    return contentCardGrid;
+    const mainEl = document.createElement('main');
+    mainEl.appendChild(contentCardGrid);
+
+    return mainEl;
 };
 
 export const HorizontalContentCard = Template.bind({});

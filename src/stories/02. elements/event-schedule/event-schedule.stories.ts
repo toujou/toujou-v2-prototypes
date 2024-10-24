@@ -227,11 +227,13 @@ const eventScheduleComponent = () => {
 
 const Template = () => {
     return `
-        ${eventScheduleComponent()}
-
-        <section class="chapter" background-color="primary" font-color="primary-light">
+        <main>
             ${eventScheduleComponent()}
-        </section>
+
+            <section class="chapter" background-color="primary" font-color="primary-light">
+                ${eventScheduleComponent()}
+            </section>
+        </main>
     `
 };
 

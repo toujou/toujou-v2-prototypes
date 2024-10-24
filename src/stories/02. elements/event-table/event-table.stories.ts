@@ -138,11 +138,13 @@ const eventTableComponent = () => {
 
 const Template = () => {
     return `
-        ${eventTableComponent()}
-
-        <section class="chapter" background-color="primary" font-color="primary-light">
+        <main>
             ${eventTableComponent()}
-        </section>
+
+            <section class="chapter" background-color="primary" font-color="primary-light">
+                ${eventTableComponent()}
+            </section>
+        </main>
     `
 };
 

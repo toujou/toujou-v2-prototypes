@@ -40,7 +40,6 @@ export default {
         showMarker: {
             table: {
                 category: "Maxbox settings",
-                defaultValue: { summary: true },
             },
             name: 'Show marker',
             description: "Toggle marker's visibility",
