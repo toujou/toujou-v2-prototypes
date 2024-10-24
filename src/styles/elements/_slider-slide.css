@@ -5,6 +5,10 @@
         width: 100%;
     }
 
+    .slider[content-type="default"] .slider-slide {
+        height: fit-content !important;
+    }
+
     .slider[content-type="logos"] .slider-slide,
     .slider[content-type="review"] .slider-slide {
         aspect-ratio: auto;
