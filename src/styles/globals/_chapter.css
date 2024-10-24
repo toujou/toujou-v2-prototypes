@@ -281,6 +281,13 @@
     background-attachment: var(--chapter-attachment-type);
 }
 
+@supports (-webkit-touch-callout: none) {
+    /* iOS-specific styles */
+    .chapter[has-background-media] {
+        --chapter-attachment-type: scroll;
+    }
+}
+
 @container (width >= 480px) {
     .chapter[has-background-media] {
         --chapter-bg-current-image: var(--chapter-bg-image-tablet);
