@@ -4,30 +4,30 @@
 
 @keyframes viewTransitionSlideToLeft {
     from {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     to {
-        transform: translateY(-100vw);
+        transform: translateX(-100vw);
     }
 }
 
 @keyframes viewTransitionSlideFromRight {
     from {
-        transform: translateY(100vw);
+        transform: translateX(100vw);
     }
 
     to {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
 /* Custom animation for the page-title element */
 ::view-transition-old(root) {
-    animation: var(--animation-duration-normal) var(--animation-easing-normal) both viewTransitionSlideToLeft !important;
+    animation: 2s var(--animation-easing-normal) both viewTransitionSlideToLeft !important;
 }
 
 ::view-transition-new(root) {
-    animation: var(--animation-duration-normal) var(--animation-easing-normal) both viewTransitionSlideFromRight !important;
+    animation: 2s var(--animation-easing-normal) both viewTransitionSlideFromRight !important;
 }
 

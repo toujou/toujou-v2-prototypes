@@ -5,6 +5,7 @@ export class ToujouPnNav extends HTMLElement {
         super();
 
         this._onLinkClick = this._onLinkClick.bind(this);
+        console.log('constructor');
     }
 
     protected createRenderRoot(): HTMLElement | DocumentFragment {
@@ -13,12 +14,14 @@ export class ToujouPnNav extends HTMLElement {
 
     connectedCallback() {
         this.links = this.querySelectorAll('.pn-nav__link');
+        console.log('links', this.links);
         if (!this.links) {
             console.error('TOUJOU: Could not get the prev-nav links');
             return;
         }
 
         this.links.forEach((link) => {
+            console.log('link', link);
             link.addEventListener('click', this._onLinkClick);
         });
     }
@@ -32,10 +35,12 @@ export class ToujouPnNav extends HTMLElement {
     }
 
     _onLinkClick = (event: MouseEvent) => {
+        console.log('click');
         event.preventDefault();
 
         const link = event.currentTarget as HTMLElement;
         const targetUrl = link.getAttribute('href');
+        console.log('targetUrl', targetUrl);
         if (!targetUrl) {
             console.error('TOUJOU: Could not get the target URL from the link', link);
             return;
@@ -43,9 +48,11 @@ export class ToujouPnNav extends HTMLElement {
 
         if (document.startViewTransition) {
             document.startViewTransition(() => {
+                console.log('starting transition...');
                 window.location.href = targetUrl;
             });
         } else {
+            console.log('transitions not supported...');
             window.location.href = targetUrl;
         }
     }
