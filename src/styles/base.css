@@ -65,6 +65,7 @@
 @import "./globals/_text-block.css" layer(base);
 @import "./globals/_text-block-column.css" layer(base);
 @import "./globals/_type.css" layer(base);
+@import "./globals/_view-transitions.css" layer(base);
 @import "./globals/_wrap-iframe.css" layer(base);
 @import "./globals/_wrap-plugin-page.css" layer(base);
 @import "./globals/_consent-widget.css" layer(base);

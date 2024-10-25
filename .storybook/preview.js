@@ -10,6 +10,7 @@ import "../src/components/toujou-burger-button/toujou-burger-button";
 import "../src/components/toujou-topbar/toujou-topbar";
 import "../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../src/components/toujou-clamped-content/toujou-clamped-content";
+import "../src/components/toujou-pn-nav/toujou-pn-nav";
 
 // COPIED COMPONENTS FROM TOUJOU
 import "../src/components/copied/toujou-modal/toujou-modal";
