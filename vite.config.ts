@@ -21,7 +21,6 @@ export default defineConfig({
                 'toujou-topbar': path.resolve(__dirname, 'src/components/toujou-topbar/toujou-topbar.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-clamped-content': path.resolve(__dirname, 'src/components/toujou-clamped-content/toujou-clamped-content'),
-                'toujou-pn-nav': path.resolve(__dirname, 'src/components/toujou-pn-nav/toujou-pn-nav'),
 
                 // JS Elements
                 'main-nav': path.resolve(__dirname, 'src/js/elements/main-nav'),
