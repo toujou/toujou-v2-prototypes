@@ -22,12 +22,19 @@
     }
 }
 
-/* Custom animation for the page-title element */
-::view-transition-old(root) {
-    animation: 2s var(--animation-easing-normal) both viewTransitionSlideToLeft !important;
+:root:has(.pn-nav) ::view-transition-old(body > header) {
+    animation: var(--animation-duration-normal) ease-in-out both viewTransitionSlideToLeft;
 }
 
-::view-transition-new(root) {
-    animation: 2s var(--animation-easing-normal) both viewTransitionSlideFromRight !important;
+:root:has(.pn-nav) ::view-transition-new(body > header) {
+    animation: var(--animation-duration-normal) ease-in-out both viewTransitionSlideFromRight;
+}
+
+:root:has(.pn-nav) ::view-transition-old(body > main) {
+    animation: var(--animation-duration-normal) ease-in-out both viewTransitionSlideToLeft;
+}
+
+:root:has(.pn-nav) ::view-transition-new(body > main) {
+    animation: var(--animation-duration-normal) ease-in-out both viewTransitionSlideFromRight;
 }
 
