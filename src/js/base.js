@@ -1,7 +1,6 @@
 /* This is the JS that needs to be loaded on all pages */
 import './globals';
 import '../components/copied/toujou-modal/toujou-modal';
-import '../components/toujou-pn-nav/toujou-pn-nav'
 
 // JS from @toujou/ui-components
 import '@toujou/toujou-button/lib/index';
