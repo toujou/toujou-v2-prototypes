@@ -135,7 +135,7 @@
     --collection-item-button-text-color-hover: var(--color-primary-dark);
     --collection-item-button-display: flex;
     --collection-item-button-flex-grow: 1;
-    --collection-item-button-align-items: center;
+    --collection-item-button-align-items: flex-end;
     --collection-item-button-justify-content: flex-start;
     --collection-item-button-width: fit-content;
     --collection-item-button-gap: var(--spacing-s);
