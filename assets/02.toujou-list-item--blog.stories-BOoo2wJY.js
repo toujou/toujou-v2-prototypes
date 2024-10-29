@@ -1,4 +1,4 @@
-import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as s}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const d={title:"COMPONENTS/Collections",parameters:{badges:[l.DONE],docs:{page:c}},tags:["autodocs"]},n=()=>`
+import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as s}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const d={title:"COMPONENTS/Collections/Lists",parameters:{badges:[l.DONE],docs:{page:c}},tags:["autodocs"]},n=()=>`
         <main>
         <ol class="item-collection">
             <li class="item-collection__item">

@@ -1,4 +1,4 @@
-import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as a}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const h={title:"COMPONENTS/Collections",parameters:{badges:[n.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},c=e=>`
+import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{M as l}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as s}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const h={title:"COMPONENTS/Collections/Cards",parameters:{badges:[c.DONE],docs:{page:l}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},a=e=>`
         <main>
             <ul class="card-collection">
                 <li class="card-collection__item">
@@ -9,7 +9,7 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             </figure>
 
                             <div class="collection-item__categories">
-                                ${a(["Tutorials"],e.elementDesign)}
+                                ${s(["Tutorials"],e.elementDesign)}
                             </div>
 
                             <toujou-media-info class="media-info">
@@ -22,22 +22,24 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
+
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
 
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
 
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025</span>
+                            </time>
 
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="success" chip-border-radius="normal" chip-size="small">Event geplannt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
@@ -56,21 +58,21 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Headline</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
-
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
-
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025, 10:30 - 18:30</span>
+                            </time>
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
@@ -89,21 +91,22 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
 
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025 - 30.12.2025</span>
+                            </time>
 
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
@@ -122,21 +125,22 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Nice headline</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
 
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025, 08:30 - 30.12.2025, 22:00</span>
+                            </time>
 
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="warning" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
@@ -151,7 +155,7 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                 </li>
             </ul>
         </main>
-    `,t=c.bind({});t.args={elementDesign:"default"};var i,l,o;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
+    `,i=a.bind({});i.args={elementDesign:"default"};var t,o,n;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
         <main>
             <ul class="card-collection">
@@ -176,22 +180,24 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
+
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
 
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
 
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025</span>
+                            </time>
 
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="success" chip-border-radius="normal" chip-size="small">Event geplannt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
@@ -210,21 +216,21 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Headline</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
-
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
-
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025, 10:30 - 18:30</span>
+                            </time>
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
@@ -243,21 +249,22 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
 
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025 - 30.12.2025</span>
+                            </time>
 
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="error" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
@@ -276,21 +283,22 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Nice headline</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
 
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025, 08:30 - 30.12.2025, 22:00</span>
+                            </time>
 
+                            <p class="collection-item__status">
+                                <toujou-chip class="chip" chip-bg-color="warning" chip-border-radius="normal" chip-size="small">Event abgesagt</toujou-chip>
+                            </p>
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
@@ -306,4 +314,4 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
             </ul>
         </main>
     \`;
-}`,...(o=(l=t.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const b=["CardJob"];export{t as CardJob,b as __namedExportsOrder,h as default};
+}`,...(n=(o=i.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const f=["CardEvent"];export{i as CardEvent,f as __namedExportsOrder,h as default};

@@ -1,17 +1,15 @@
-import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as a}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const f={title:"COMPONENTS/Collections",parameters:{badges:[t.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=o=>`
+import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as a}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const g={title:"COMPONENTS/Collections/Cards",parameters:{badges:[c.DONE],docs:{page:s}},argTypes:{elementDesign:{table:{category:"Toujou card settings",defaultValue:{summary:"default"}},name:"Element Design",description:"Choose element design for the cards",options:["default","primary","secondary","inverted"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]},l=e=>`
         <main>
             <ul class="card-collection">
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
-
                             <div class="collection-item__categories">
-                                ${a(["Tutorials"],o.elementDesign)}
+                                ${a(["Tutorials"],e.elementDesign)}
                             </div>
-
                             <toujou-media-info class="media-info">
                                 <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                     <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -24,9 +22,10 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             </toujou-media-info>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
@@ -71,16 +70,17 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
@@ -125,20 +125,21 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
-                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                                 </span>
                             </p>
 
@@ -165,16 +166,17 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${o.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="${e.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
@@ -191,21 +193,19 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                 </li>
             </ul>
         </main>
-    `,e=l.bind({});e.args={elementDesign:"default"};var i,n,c;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
+    `,o=l.bind({});o.args={elementDesign:"default"};var n,i,t;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:`(args: ToujouCardStoryProps) => {
   return \`
         <main>
             <ul class="card-collection">
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
-
                             <div class="collection-item__categories">
                                 \${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                             </div>
-
                             <toujou-media-info class="media-info">
                                 <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                     <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -218,9 +218,10 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                             </toujou-media-info>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
@@ -265,16 +266,17 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
@@ -319,20 +321,21 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
-                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                                 </span>
                             </p>
 
@@ -359,16 +362,17 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="person" element-design="\${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
                             </figure>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Adidas AG</h3>
+                            <h3 class="collection-item__title">Dr. Max Mustermann</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Team-Lead</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
@@ -386,4 +390,4 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-
             </ul>
         </main>
     \`;
-}`,...(c=(n=e.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};const h=["CardOrganization"];export{e as CardOrganization,h as __namedExportsOrder,f as default};
+}`,...(t=(i=o.parameters)==null?void 0:i.docs)==null?void 0:t.source}}};const h=["CardPerson"];export{o as CardPerson,h as __namedExportsOrder,g as default};
