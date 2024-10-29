@@ -33,6 +33,7 @@ import "@toujou/toujou-counter/lib";
 import "@toujou/toujou-consent/lib";
 import "@toujou/toujou-iframe-resizer/lib";
 import "@toujou/toujou-datepicker/lib";
+import "@toujou/toujou-collection-load-more/lib";
 
 // custom styles for the storybook website
 import "../src/styles/StorybookStyles.css";

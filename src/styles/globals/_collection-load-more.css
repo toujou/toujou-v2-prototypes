@@ -1,0 +1,21 @@
+.collection-load-more {
+    --collection-load-more-position: relative;
+    --collection-load-more-display: flex;
+    --collection-load-more-width: 100%;
+    --collection-load-more-max-width: 100%;
+    --collection-load-more-height: fit-content;
+    --collection-load-more-z-index: var(--z-index-content);
+
+    position: var(--collection-load-more-position);
+    display: var(--collection-load-more-display);
+    width: var(--collection-load-more-width);
+    max-width: var(--collection-load-more-max-width);
+    height: var(--collection-load-more-height);
+    z-index: var(--collection-load-more-z-index);
+}
+
+.card-collection + .collection-load-more {
+    --collection-load-more-margin-top: var(--spacing-l);
+
+    margin-top: var(--collection-load-more-margin-top);
+}

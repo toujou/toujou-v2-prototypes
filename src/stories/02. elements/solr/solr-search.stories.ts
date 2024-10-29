@@ -3,7 +3,7 @@ import { StoryFn, Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import solrSearchDocs from "./solr-search.docs.mdx";
-import { renderCardCategoryChips } from "../toujou-collection-item/card-collection/helpers/_renderCardCategoriChips";
+import { renderCardCategoryChips } from "../toujou-collection-item/01. helpers/_renderCardCategoriChips";
 
 export default {
     title: 'COMPONENTS/solr',

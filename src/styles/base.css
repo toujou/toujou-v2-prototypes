@@ -40,6 +40,7 @@
 @import "./globals/_chip.css" layer(base);
 @import "./globals/_chips-list.css" layer(base);
 @import "./globals/_collection-item.css" layer(base);
+@import "./globals/_collection-load-more.css" layer(base);
 @import "./globals/_divider.css" layer(base);
 @import "./globals/_estimated-reading-time.css" layer(base);
 @import "./globals/_exit-warning.css" layer(base);

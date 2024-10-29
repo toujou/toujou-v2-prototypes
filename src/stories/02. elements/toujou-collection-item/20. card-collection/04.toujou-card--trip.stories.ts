@@ -3,10 +3,10 @@ import { StoryFn, Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
-import { renderCardCategoryChips } from "./helpers/_renderCardCategoriChips";
+import { renderCardCategoryChips } from "../01. helpers/_renderCardCategoriChips";
 
 export default {
-    title: 'COMPONENTS/Collections',
+    title: 'COMPONENTS/Collections/Cards',
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
         docs: {
@@ -39,16 +39,23 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
         <main>
             <ul class="card-collection">
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="trip" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
-
                             <div class="collection-item__categories">
                                 ${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                             </div>
-
+                            <div class="collection-item__location">
+                                <h4 class="collection-item__location-city">
+                                    Marbella
+                                </h4>
+                                <h5 class="collection-item__location-country">
+                                    Spanien
+                                </h5>
+                            </div>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                             <toujou-media-info class="media-info">
                                 <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                     <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -61,25 +68,28 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             </toujou-media-info>
                         </header>
                         <div class="collection-item__bottom">
-
-                            <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                            <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization</span>
+                                <span class="collection-item__subtitle">Hotel name</span>
                             </p>
-
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                                 </span>
                             </p>
+
+                            <div class="collection-item__trip-infos">
+                                <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                            </div>
+
+                            <p class="collection-item__trip-price">
+                                <span class="collection-item__trip-price-prefix">ab</span>
+                                <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                            </p>
+
                             <a href="#" class="collection-item__button">
                                 <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                 zur Beschreibung
@@ -88,64 +98,47 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="trip" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+                            <div class="collection-item__categories">
+                                ${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
+                            </div>
+                            <div class="collection-item__location">
+                                <h4 class="collection-item__location-city">
+                                    Marbella
+                                </h4>
+                                <h5 class="collection-item__location-country">
+                                    Spanien
+                                </h5>
+                            </div>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
-                            <h3 class="collection-item__title">Headline</h3>
+                            <h3 class="collection-item__title">Musterreise</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Employment unit</span>
+                                <span class="collection-item__subtitle">Hotel name</span>
                             </p>
-
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
-
-                            <p class="collection-item__abstract">
-                                <span class="collection-item__abstract-text">
-                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
-                                </span>
-                            </p>
-                            <a href="#" class="collection-item__button">
-                                <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                                zur Beschreibung
-                            </a>
-                        </div>
-                    </toujou-collection-item>
-                </li>
-                <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                        <header class="collection-item__top">
-                            <figure class="collection-item__figure">
-                                <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
-                            </figure>
-                        </header>
-                        <div class="collection-item__bottom">
-                            <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                            <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Augsburg</span>
-                            </p>
-
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
-                            </div>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                                 </span>
                             </p>
+
+                            <div class="collection-item__trip-infos">
+                                <p class="collection-item__trip-info">14 Tage Gruppenreise</p>
+                                <p class="collection-item__trip-info">1 bis 8 Teilnehmner</p>
+                            </div>
+
+                            <p class="collection-item__trip-price">
+                                <span class="collection-item__trip-price-prefix">ab</span>
+                                <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                            </p>
+
                             <a href="#" class="collection-item__button">
                                 <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                 zur Beschreibung
@@ -154,31 +147,86 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="trip" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+                            <div class="collection-item__categories">
+                                ${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
+                            </div>
+                            <div class="collection-item__location">
+                                <h4 class="collection-item__location-city">
+                                    Marbella
+                                </h4>
+                                <h5 class="collection-item__location-country">
+                                    Spanien
+                                </h5>
+                            </div>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
-                            <h3 class="collection-item__title">Nice headline</h3>
+                            <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
                             <p class="collection-item__subtitles">
-                                <span class="collection-item__subtitle">Hiring organization • Employment unit • Augsburg</span>
+                                <span class="collection-item__subtitle">Hotel name</span>
                             </p>
 
-                            <div class="collection-item__subheading">
-                                <ul class="separated-list collection-item__separated-list" list-separator="comma" type-weight="bold">
-                                    <li class="separated-list__item">Part-time</li>
-                                    <li class="separated-list__item">Volunteer</li>
-                                    <li class="separated-list__item">Immediate start</li>
-                                </ul>
+                            <p class="collection-item__abstract">
+                                <span class="collection-item__abstract-text">
+                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
+                                </span>
+                            </p>
+
+                            <p class="collection-item__trip-price">
+                                <span class="collection-item__trip-price-prefix">ab</span>
+                                <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                            </p>
+
+                            <a href="#" class="collection-item__button">
+                                <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                zur Beschreibung
+                            </a>
+                        </div>
+                    </toujou-collection-item>
+                </li>
+                <li class="card-collection__item">
+                    <toujou-collection-item class="collection-item" item-type="trip" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                        <header class="collection-item__top">
+                            <figure class="collection-item__figure">
+                                <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            </figure>
+                            <div class="collection-item__categories">
+                                ${renderCardCategoryChips(['Tutorials'], args.elementDesign)}
                             </div>
+                            <div class="collection-item__location">
+                                <h4 class="collection-item__location-city">
+                                    Marbella
+                                </h4>
+                                <h5 class="collection-item__location-country">
+                                    Spanien
+                                </h5>
+                            </div>
+                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                        </header>
+                        <div class="collection-item__bottom">
+                            <h3 class="collection-item__title">Musterreise</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">Hotel name</span>
+                            </p>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                                 </span>
                             </p>
+
+                            <p class="collection-item__trip-price">
+                                <span class="collection-item__trip-price-prefix">ab</span>
+                                <span class="collection-item__trip-price-amount">1.500,00 €</span>
+                                <span class="collection-item__trip-price-suffix">(inkl. Flug)</span>
+                            </p>
+
                             <a href="#" class="collection-item__button">
                                 <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
                                 zur Beschreibung
@@ -191,8 +239,8 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
     `
 };
 
-export const CardJob = Template.bind({});
+export const CardTrip = Template.bind({});
 
-CardJob.args = {
+CardTrip.args = {
     elementDesign: 'default',
 }

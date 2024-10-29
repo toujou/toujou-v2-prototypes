@@ -3,10 +3,10 @@ import { StoryFn, Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
-import { renderCardCategoryChips } from "./helpers/_renderCardCategoriChips";
+import { renderCardCategoryChips } from "../01. helpers/_renderCardCategoriChips";
 
 export default {
-    title: 'COMPONENTS/Collections',
+    title: 'COMPONENTS/Collections/Cards',
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
         docs: {
