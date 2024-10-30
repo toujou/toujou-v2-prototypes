@@ -107,13 +107,13 @@
         color: var(--header-title-color) !important;
     }
 
-    .header-content__text,
-    .header-content > p {
+    .header > .header__content .header-content__text,
+    .header > .header__content .header-content > p {
         text-align: var(--header-text-alignment);
     }
 
-    .header > .header__content .header-content__text:first-child,
-    .header > .header__content .header-content > p:first-child {
+    .header-content__text:first-child,
+    .header-content > p:first-child {
         margin-top: 0;
     }
 
