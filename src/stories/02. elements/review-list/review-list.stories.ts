@@ -6,7 +6,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 import reviewListDocs from './review-list.docs.mdx';
 
 export default {
-    title: 'COMPONENTS/Reviews/Review List',
+    title: 'COMPONENTS/Review List',
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
         docs: {

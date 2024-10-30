@@ -6,7 +6,7 @@ import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
 import { renderCardCategoryChips } from "../01. helpers/_renderCardCategoriChips";
 
 export default {
-    title: 'COMPONENTS/Collections/SelectedPages',
+    title: 'COMPONENTS/SelectedPages',
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
         docs: {

@@ -6,7 +6,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 import ratingStarsDocs from './average-rating.docs.mdx';
 
 export default {
-    title: 'COMPONENTS/Reviews/Average Rating',
+    title: 'COMPONENTS/Average Rating',
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
         docs: {
