@@ -121,6 +121,11 @@
 
     .blockquote__content *,
     .blockquote__blockquote * {
+        color: var(--blockquote-text-color);
+    }
+
+    .blockquote__content *:not(h1, h2, h3, [class*="font--"]),
+    .blockquote__blockquote *:not(h1, h2, h3, [class*="font--"]) {
         font-size: var(--blockquote-text-font-size);
         line-height: var(--blockquote-text-line-height);
         color: var(--blockquote-text-color);
