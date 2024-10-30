@@ -1,4 +1,4 @@
-import{T as o}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as c}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const g={title:"COMPONENTS/Collections/Cards",parameters:{badges:[o.DONE],docs:{page:s}},tags:["autodocs"]},a=()=>`
+import{T as o}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-collection-item.docs-g3XyL0zL.js";import{r as c}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-DPda6Ybg.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-4_AlzpT7.js";const g={title:"COMPONENTS/CollectionCards",parameters:{badges:[o.DONE],docs:{page:s}},tags:["autodocs"]},a=()=>`
         <main>
             <toujou-slider
                 class="slider"

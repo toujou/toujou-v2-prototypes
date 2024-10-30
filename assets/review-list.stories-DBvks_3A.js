@@ -1,4 +1,4 @@
-import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-DPda6Ybg.js";import{useMDXComponents as c}from"./index-4_AlzpT7.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";function s(t){const i={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...c(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(i.h1,{id:"review-list",children:"review-list"}),`
+import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-DPda6Ybg.js";import{useMDXComponents as c}from"./index-4_AlzpT7.js";import"./index-DhrokLn_.js";import"./_commonjsHelpers-Cpj98o6Y.js";function n(t){const i={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...c(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(i.h1,{id:"review-list",children:"review-list"}),`
 `,e.jsx(i.p,{children:'The review-list element renders a list of "review" cards'}),`
 `,e.jsx(i.h2,{id:"markup-example",children:"Markup example"}),`
 `,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`<div class="reviews">
@@ -44,7 +44,7 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
 </div>
 `})}),`
 `,e.jsx(i.p,{children:`The card's "content" section will be clamped to 3 lines if it has enough content. In this case, there will be a "content toggle" button visible, which will expand / clamp the content.`}),`
-`,e.jsx(i.p,{children:"Each review card can also show a comment from the website owner."})]})}function d(t={}){const{wrapper:i}={...c(),...t.components};return i?e.jsx(i,{...t,children:e.jsx(s,{...t})}):s(t)}const f={title:"COMPONENTS/Reviews/Review List",parameters:{badges:[u.DONE],docs:{page:d}},tags:["autodocs"]},n=()=>`
+`,e.jsx(i.p,{children:"Each review card can also show a comment from the website owner."})]})}function d(t={}){const{wrapper:i}={...c(),...t.components};return i?e.jsx(i,{...t,children:e.jsx(n,{...t})}):n(t)}const f={title:"COMPONENTS/Review List",parameters:{badges:[u.DONE],docs:{page:d}},tags:["autodocs"]},s=()=>`
         <div class="reviews">
             <article class="review">
                 <header class="review__header">
@@ -276,10 +276,10 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
         </div>
     `,p=()=>`
         <main>
-            ${n()}
+            ${s()}
 
             <section class="chapter" background-color="primary" font-color="primary-light">
-                ${n()}
+                ${s()}
             </section>
         </main>
     `,a=p.bind({});var o,r,l;a.parameters={...a.parameters,docs:{...(o=a.parameters)==null?void 0:o.docs,source:{originalSource:`() => {
