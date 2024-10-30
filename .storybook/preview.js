@@ -8,7 +8,7 @@ import './componentImports/kojo-components';
 // Config
 import { parametersConfig } from "./config/parametersConfig";
 import { previewConfig } from "./config/previewConfig";
-import { decoratorsConfig } from "./config/decoratorsConfig";
+// import { decoratorsConfig } from "./config/decoratorsConfig";
 
 // Hacks
 import './configUtils/mainNavHack';
@@ -16,7 +16,7 @@ import './configUtils/mainNavHack';
 // Exports
 const preview = previewConfig;
 export const parameters = parametersConfig;
-export const decorators = decoratorsConfig;
+// export const decorators = decoratorsConfig;
 
 export const tags = ["autodocs"];
 export default preview;
