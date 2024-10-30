@@ -19,7 +19,7 @@ export default {
                 category: "Load more button settings",
             },
             name: 'Is Loading',
-            description: "Fake the 'isLoding' state on the button",
+            description: "Fake the 'isLoading' state on the button",
             control: { type: 'boolean' },
             defaultValue: [false],
             required: true,
