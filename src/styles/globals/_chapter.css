@@ -23,6 +23,10 @@
 }
 
 .chapter#initial {
+    --chapter-padding: var(--spacing-between-elements-normal) 0;
+}
+
+.breadcrumb ~ .chapter#initial {
     --chapter-padding: calc(var(--spacing-between-elements-normal) / 2) 0 var(--spacing-between-elements-normal);
 }
 
