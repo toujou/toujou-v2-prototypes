@@ -23,15 +23,15 @@
 }
 
 .chapter#initial {
-    display: contents;
-}
-
-*:not(span, .chapter) + .chapter:not(:first-child) {
-    margin-top: var(--spacing-between-elements-normal);
+    --chapter-padding: calc(var(--spacing-between-elements-normal) / 2) 0 var(--spacing-between-elements-normal);
 }
 
 .chapter[background-color] {
     --chapter-padding: var(--spacing-between-elements-normal) 0;
+}
+
+*:not(span, .chapter) + .chapter:not(:first-child) {
+    margin-top: var(--spacing-between-elements-normal);
 }
 
 .chapter[background-color="background"] + .chapter[background-color="background"],
