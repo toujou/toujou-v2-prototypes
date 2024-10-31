@@ -14,6 +14,15 @@ Components and styles for the kojo theme
 - `npm run deploy:full` build and deploy to github
 - `npm run test` run the js tests
 
+## How to add changes for Kojo Theme
+1. `nvm use && npm ci`
+2. Make desired changes
+3. `npm run lint:css`
+4. `npm run deploy:full`
+5. commit changes
+6. Then on Kojo theme:
+   6.1. Update changes (JS and CSS) with `nvm use && npm run update:styles`
+
 ## How to create a new webcomponent [DEPRECATED: we should use the ui-components package!!!]
 1. Create a new component folder inside `src`, like `toujou-example`
 2. Create the `.ts` file for your component, like `toujou-example.ts`
