@@ -533,6 +533,10 @@
         mask-image: var(--icon-sm-pinterest-circle);
     }
 
+    .icon[icon-name="sm-snapchat"] {
+        mask-image: var(--icon-sm-snapchat);
+    }
+
     .icon[icon-name="sm-twitter"] {
         mask-image: var(--icon-sm-twitter);
     }
@@ -547,6 +551,10 @@
 
     .icon[icon-name="sm-tiktok-circle"] {
         mask-image: var(--icon-sm-tiktok-circle);
+    }
+
+    .icon[icon-name="sm-whatsapp"] {
+        mask-image: var(--icon-sm-whatsapp);
     }
 
     .icon[icon-name="sm-xing"] {
