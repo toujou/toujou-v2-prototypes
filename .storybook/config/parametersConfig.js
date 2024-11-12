@@ -24,19 +24,15 @@ export const parametersConfig = {
     },
     /* Sort stories in correct order. Components children are sorted so "Docs" is always the last element */
     options: {
-        // storySort: {
-        //     method: 'alphabetic',
-        //     includeNames: true,
-        //     order: [
-        //         'COMPONENTS',
-        //         ["*", ["*", "Docs"]],
-        //         'TOKENS',
-        //         'PAGES',
-        //     ],
-        // },
-        options: {
-            storySort: (a, b) =>
-                a.id === b.id ? 0 : a.id.localeCompare(b.id, undefined, { numeric: true }),
+        storySort: {
+            method: 'alphabetical',
+            includeNames: true,
+            order: [
+                'COMPONENTS',
+                ["*", ["*", "Docs"]],
+                'TOKENS',
+                'PAGES',
+            ],
         },
         // Select which addon panel is selected by default
         selectedPanel: 'storybook/controls/panel'

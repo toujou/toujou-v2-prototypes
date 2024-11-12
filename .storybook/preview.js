@@ -22,4 +22,4 @@ export const parameters = parametersConfig;
 export const tags = ["autodocs"];
 export default preview;
 
-console.clear();
+// console.clear();
