@@ -19,7 +19,7 @@ export default {
                 category: "Topbar settings",
                 defaultValue: { summary: 'default' },
             },
-            name: 'Navigation theme',
+            name: 'Navigation color',
             description: "Set the navigation color",
             options: ['default', 'primary', 'secondary', 'font'],
             control: { type: 'radio' },
