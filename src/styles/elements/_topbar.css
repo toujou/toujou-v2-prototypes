@@ -12,6 +12,7 @@
         --topbar-shadow: var(--shadow-normal);
         --topbar-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
         --topbar-z-index: var(--z-index-topbar);
+        --topbar-bg-color: var(--color-bg);
 
         --topbar-before-position: absolute;
         --topbar-before-top: 0;
@@ -65,6 +66,9 @@
 
         --topbar-languague-picker-z-index: 2;
 
+        --topbar-icons-color: var(--color-primary);
+        --topbar-icons-active-color: var(--color-primary-dark);
+
         display: var(--topbar-display);
         position: var(--topbar-position);
         top: var(--topbar-top);
@@ -86,18 +90,25 @@
         --topbar-actions-link-icon-transition: none;
     }
 
-    .topbar[navigation-theme="light"] {
-        --topbar-icons-color: var(--color-primary);
-        --topbar-icons-active-color: var(--color-primary-dark);
-        --topbar-bg-color: var(--color-bg);
-        --topbar-actions-text-color: var(--color-font);
+    [navigation-color="primary"] .topbar {
+        --topbar-bg-color: var(--color-primary);
+        --topbar-icons-color: var(--color-bg);
+        --topbar-icons-active-color: var(--color-bg-o-75);
+        --focus-outline-color: var(--color-bg);
+
     }
 
-    .topbar[navigation-theme="dark"] {
+    [navigation-color="secondary"] .topbar {
+        --topbar-bg-color: var(--color-secondary);
         --topbar-icons-color: var(--color-bg);
-        --topbar-icons-active-color: var(--color-primary-light);
-        --topbar-bg-color: var(--color-primary-dark);
-        --topbar-actions-text-color: var(--color-bg);
+        --topbar-icons-active-color: var(--color-bg-o-75);
+        --focus-outline-color: var(--color-bg);
+    }
+
+    [navigation-color="font"] .topbar {
+        --topbar-bg-color: var(--color-font);
+        --topbar-icons-color: var(--color-bg);
+        --topbar-icons-active-color: var(--color-bg-o-75);
         --focus-outline-color: var(--color-bg);
     }
 
@@ -111,15 +122,6 @@
         background-color: var(--topbar-bg-color);
         z-index: var(--topbar-before-z-index);
         transition: var(--topbar-transition);
-    }
-
-    .topbar[navigation-theme="light"][open-nav] {
-        --topbar-bg-color: var(--color-primary);
-        --topbar-icons-color: var(--color-bg);
-    }
-
-    .topbar[navigation-theme="dark"][open-nav] {
-        --topbar-bg-color: var(--color-primary-dark);
     }
 
     .topbar__logo-link {
@@ -171,6 +173,7 @@
         text-decoration: var(--topbar-actions-link-text-decoration);
         cursor: var(--topbar-actions-link-cursor);
         margin: var(--topbar-actions-link-margin);
+        color: var(--topbar-icons-color)
     }
 
     .topbar__actions-link:focus-visible {
@@ -240,16 +243,6 @@
             --topbar-actions-text-display: block;
             --topbar-actions-padding: var(--spacing-s) 0 0;
             --topbar-actions-align-self: baseline;
-        }
-
-        .topbar[navigation-theme="light"] {
-            --topbar-icons-color: var(--color-font);
-            --topbar-icons-active-color: var(--color-primary);
-        }
-
-        .topbar[navigation-theme="dark"] {
-            --topbar-icons-active-color: var(--color-bg);
-            --topbar-bg-color: var(--color-primary-dark);
         }
 
         .topbar:has(.language-picker) {
