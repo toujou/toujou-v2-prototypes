@@ -20,12 +20,6 @@
         z-index: var(--language-picker-z-index);
     }
 
-    .topbar[navigation-theme="dark"] .language-picker {
-        --language-picker-list-item-color: var(--color-bg);
-        --language-picker-list-item-hover-color: var(--color-bg);
-        --language-picker-list-item-selected-color: var(--color-bg);
-    }
-
     .language-picker__list {
         list-style: var(--language-picker-list-list-style);
         display: var(--language-picker-list-display);
@@ -109,6 +103,15 @@
     @media screen and (width >= 1024px) {
         .language-picker {
             --language-picker-list-justify-content: flex-start;
+            --language-picker-list-item-color: var(--color-bg);
+            --language-picker-list-item-hover-color: var(--color-bg);
+            --language-picker-list-item-selected-color: var(--color-bg);
+        }
+
+        [navigation-color="default"] .language-picker {
+            --language-picker-list-item-color: var(--color-primary);
+            --language-picker-list-item-hover-color: var(--color-primary);
+            --language-picker-list-item-selected-color: var(--color-primary);
         }
     }
 }

@@ -6,6 +6,8 @@
         --burger-button-grid-area: burger;
 
         --burger-button-line-position: absolute;
+        --burger-button-line-color: var(--color-primary);
+        --burger-button-line-color-active: var(--color-primary-dark);
         --burger-button-line-left: 1px;
         --burger-button-line-height: 3px;
         --burger-button-line-width: calc(var(--burger-button-size));
@@ -21,20 +23,22 @@
         cursor: pointer;
     }
 
-    .topbar[navigation-theme="light"] .burger-button {
-        --burger-button-line-color: var(--color-primary);
+    [navigation-color="primary"] .burger-button {
+        --burger-button-line-color: var(--color-bg);
+        --burger-button-line-color-active: var(--color-bg-o-75);
+        --focus-outline-color: var(--color-bg);
     }
 
-    .topbar[navigation-theme="light"][open-nav] .burger-button {
+    [navigation-color="secondary"] .burger-button {
         --burger-button-line-color: var(--color-bg);
+        --burger-button-line-color-active: var(--color-bg-o-75);
+        --focus-outline-color: var(--color-bg);
     }
 
-    .topbar[navigation-theme="dark"] .burger-button {
+    [navigation-color="font"] .burger-button {
         --burger-button-line-color: var(--color-bg);
-    }
-
-    .topbar[navigation-theme="dark"][open-nav] .burger-button {
-        --burger-button-line-color: var(--color-bg);
+        --burger-button-line-color-active: var(--color-bg-o-75);
+        --focus-outline-color: var(--color-bg);
     }
 
     .topbar[no-transitions] .burger-button {
@@ -42,13 +46,9 @@
         --burger-button-line-transition: none !important;
     }
 
-    .topbar[navigation-theme="light"] .burger-button:focus-visible {
+    .burger-button:focus-visible {
         outline: var(--focus-outline-width) solid var(--focus-outline-color);
         outline-offset: var(--focus-outline-offset);
-    }
-
-    .topbar[open-nav] .burger-button:focus-visible {
-        --focus-outline-color: var(--color-bg);
     }
 
     .burger-button__line[line-position="top"] {
@@ -91,6 +91,10 @@
         animation: var(--burger-button-line-animation);
         border-radius: var(--burger-button-line-border-radius);
         transition: var(--burger-button-line-transition);
+    }
+
+    .burger-button:is(:hover, :focus-visible) {
+        --burger-button-line-color: var(--burger-button-line-color-active);
     }
 
     @keyframes line-top-deactivate {
