@@ -43,13 +43,23 @@
     pointer-events: var(--service-nav-pointer-events);
 }
 
-.topbar[navigation-theme="light"] .service-nav {
+[navigation-color="default"] .service-nav {
     --service-nav-background-color: var(--color-primary);
     --service-nav-link-color-active: var(--color-bg);
 }
 
-.topbar[navigation-theme="dark"] .service-nav {
-    --service-nav-background-color: var(--color-primary-dark);
+[navigation-color="primary"] .service-nav {
+    --service-nav-background-color: var(--color-primary);
+    --service-nav-link-color-active: var(--color-bg);
+}
+
+[navigation-color="secondary"] .service-nav {
+    --service-nav-background-color: var(--color-secondary);
+    --service-nav-link-color-active: var(--color-bg);
+}
+
+[navigation-color="font"] .service-nav {
+    --service-nav-background-color: var(--color-font);
     --service-nav-link-color-active: var(--color-bg);
 }
 

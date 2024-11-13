@@ -51,8 +51,6 @@
         --main-nav-level-2-list-left: 0;
         --main-nav-level-2-list-transform: translate(-1.5rem, 100%);
 
-        --main-nav-link-color: var(--color-primary);
-
         --main-nav-text-display: flex;
         --main-nav-text-align-items: center;
         --main-nav-text-gap: var(--spacing-s);
