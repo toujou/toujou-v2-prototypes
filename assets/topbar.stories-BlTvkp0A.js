@@ -417,7 +417,17 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                     </li>
                                     <li class="main-nav__list-item" nav-item-level="3">
                                         <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
+                                            <span class="main-nav__text">Item three with a test very loooooong litle</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item four</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item five</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -474,7 +484,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Berufsausbildung</span>
+                                    <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
                                 </a>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
@@ -868,7 +878,17 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                     </li>
                                     <li class="main-nav__list-item" nav-item-level="3">
                                         <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
+                                            <span class="main-nav__text">Item three with a test very loooooong litle</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item four</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item five</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -925,7 +945,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Berufsausbildung</span>
+                                    <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
                                 </a>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
