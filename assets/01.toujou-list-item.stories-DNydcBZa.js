@@ -1,4 +1,4 @@
-import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-collection-item.docs-CWpSWowu.js";import{r as s}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-CS_Wz6c_.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-C8FVCAkB.js";const g={title:"COMPONENTS/CollectionLists",parameters:{badges:[l.DONE],docs:{page:c}},tags:["autodocs"]},n=()=>`
+import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-collection-item.docs-CWpSWowu.js";import{r as s}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-CS_Wz6c_.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-C8FVCAkB.js";const d={title:"COMPONENTS/CollectionLists",parameters:{badges:[l.DONE],docs:{page:c}},tags:["autodocs"]},n=()=>`
         <main>
             <ol class="item-collection">
                 <li class="item-collection__item">
@@ -41,7 +41,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="item-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+                    <toujou-collection-item class="collection-item" item-type="default" element-design="primary" item-orientation="horizontal" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -65,7 +65,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="item-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+                    <toujou-collection-item class="collection-item" item-type="default" element-design="secondary" item-orientation="horizontal" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -89,7 +89,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="item-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+                    <toujou-collection-item class="collection-item" item-type="default" element-design="font" item-orientation="horizontal" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -158,7 +158,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="item-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+                    <toujou-collection-item class="collection-item" item-type="default" element-design="primary" item-orientation="horizontal" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -182,7 +182,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="item-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+                    <toujou-collection-item class="collection-item" item-type="default" element-design="secondary" item-orientation="horizontal" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -206,7 +206,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                     </toujou-collection-item>
                 </li>
                 <li class="item-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="default" element-design="default" item-orientation="horizontal" role="article">
+                    <toujou-collection-item class="collection-item" item-type="default" element-design="font" item-orientation="horizontal" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
@@ -232,4 +232,4 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
             </ol>
         </main>
     \`;
-}`,...(o=(i=e.parameters)==null?void 0:i.docs)==null?void 0:o.source}}};const h=["ListItemDefault"];export{e as ListItemDefault,h as __namedExportsOrder,g as default};
+}`,...(o=(i=e.parameters)==null?void 0:i.docs)==null?void 0:o.source}}};const h=["ListItemDefault"];export{e as ListItemDefault,h as __namedExportsOrder,d as default};
