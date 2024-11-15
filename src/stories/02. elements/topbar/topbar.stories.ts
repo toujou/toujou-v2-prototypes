@@ -100,26 +100,26 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
             <nav aria-label="Topbar Logo" style="display: contents;">
                 <a aria-label="Zur Startseite" show-title-on-mobile="${args.titleType === 'title'}" class="topbar__logo-link" href="/">
                     <span class="topbar__title">toujou Installation</span>
-                    <img class="topbar__logo topbar__logo--svg" src="https://picsum.photos/300/150">
+                    <img class="topbar__logo topbar__logo--svg" src="https://picsum.photos/300/150" alt="Logo">
                 </a>
             </nav>
 
             <ul class="topbar__actions">
                 <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
+                    <a href="#" class="topbar__actions-link" aria-label="Contact">
                         <span class="topbar__actions-text">Contact</span>
                         <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
                 <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
+                    <a href="#" class="topbar__actions-link" aria-label="Like">
                         <span class="topbar__actions-text">Like</span>
                         <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
                 <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link">
-                        <span class="topbar__actions-text">Suche</span>
+                    <a href="#" class="topbar__actions-link" aria-label="Search">
+                        <span class="topbar__actions-text">Search</span>
                         <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                     </a>
                 </li>
