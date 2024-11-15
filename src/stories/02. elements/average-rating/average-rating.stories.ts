@@ -33,9 +33,9 @@ interface AverageRatingProps {
     showMaxRating: boolean
 }
 
-const averageRatingComponent = (args: AverageRatingProps) => {
+const averageRatingComponent = (args: AverageRatingProps, isTestTarget: boolean) => {
     return `
-        <div class="average-rating">
+        <div class="average-rating" ${isTestTarget ? 'is-test-target': ''}>
             <h3 class="average-rating__title">This is the average rating header</h3>
             <p class="average-rating__text">This is the average rating content element custom text</p>
             <div class="average-rating__rating">
@@ -59,14 +59,14 @@ const averageRatingComponent = (args: AverageRatingProps) => {
 
 const Template: StoryFn<AverageRatingProps> = (args: AverageRatingProps) => {
     return `
-        ${averageRatingComponent(args)}
+        ${averageRatingComponent(args, false)}
 
         <section
             class="chapter"
             background-color="font-light"
             font-color="primary-light"
         >
-            ${averageRatingComponent(args)}
+            ${averageRatingComponent(args, true)}
         </section>
 
         <section
@@ -82,7 +82,7 @@ const Template: StoryFn<AverageRatingProps> = (args: AverageRatingProps) => {
                 --chapter-bg-image-original: url(https://picsum.photos/1200/1200);
             "
         >
-            ${averageRatingComponent(args)}
+            ${averageRatingComponent(args, false)}
         </section>
     `;
 };
