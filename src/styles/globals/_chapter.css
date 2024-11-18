@@ -65,6 +65,14 @@
     --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) / 2) !important;
 }
 
+.chapter[padding-top="base"] {
+    --chapter-padding-top: var(--spacing-between-elements-normal) !important;
+}
+
+.chapter[padding-bottom="base"] {
+    --chapter-padding-bottom: var(--spacing-between-elements-normal) !important;
+}
+
 .chapter[padding-top="m"] {
     --chapter-padding-top: calc(var(--spacing-between-elements-normal) * 1.5) !important;
 }
@@ -89,12 +97,6 @@
     --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) * 3) !important;
 }
 
-
-
-
-
-
-
 .chapter[margin-top="none"] {
     --chapter-margin-top: 0 !important;
 }
@@ -117,6 +119,14 @@
 
 .chapter[margin-bottom="s"] {
     --chapter-margin-bottom: calc(var(--spacing-between-elements-normal) / 2) !important;
+}
+
+.chapter[margin-top="base"] {
+    --chapter-margin-top: var(--spacing-between-elements-normal) !important;
+}
+
+.chapter[margin-bottom="base"] {
+    --chapter-margin-bottom: var(--spacing-between-elements-normal) !important;
 }
 
 .chapter[margin-top="m"] {
