@@ -30,5 +30,14 @@
         --toujou-location-finder-teaser-image-size: var(--spacing-xl);
 
         --toujou-location-finder-teaser-border-bottom: var(--border-width-normal) solid var(--color-font-o-20);
+
+        --toujou-location-finder-teaser-branch-font-size: var(--font-size-normal);
+        --toujou-location-finder-teaser-branch-font-family: var(--font-family-text);
+        --toujou-location-finder-teaser-branch-color: var(--color-font);
+
+        --toujou-location-finder-teaser-description-font-size: var(--font-size-normal);
+        --toujou-location-finder-teaser-description-font-family: var(--font-family-text);
+        --toujou-location-finder-teaser-description-color: var(--color-font);
+
     }
 }

@@ -57,6 +57,7 @@
         --toujou-location-finder-search-input-border: none;
         /* stylelint-disable-next-line max-line-length */
         --toujou-location-finder-search-input-padding: var(--spacing-s) var(--spacing-s) var(--spacing-s) var(--spacing-xl);
+        --toujou-location-finder-search-input-font-family: var(--font-family-text);
 
         --toujou-location-finder-sidebar-width: var(--toujou-location-finder-panel-width);
 
