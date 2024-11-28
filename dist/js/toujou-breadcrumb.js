@@ -1,64 +1,8 @@
-import{i as e,s as t,y as r}from"./lit-element-BhLV4vUl.js";import{e as i}from"./custom-element-DPYutfhb.js";import{e as o}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const a=e`
-    :host {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .breadcrumb__fake-list {
-        display: none;
-        list-style: none;
-        position: relative;
-        border-radius: var(--breadcrumb-fake-list-border-radius);
-    }
-
-    .breadcrumb__fake-list::before {
-        content: "";
-        width: 0;
-        height: 0;
-        position: absolute;
-        top: 0;
-        left: var(--spacing-s);
-        border-left: var(--breadcrumb-fake-list-triangle-size) solid transparent;
-        border-right: var(--breadcrumb-fake-list-triangle-size) solid transparent;
-        border-bottom: var(--breadcrumb-fake-list-triangle-size) solid var(--breadcrumb-mobile-menu-bg-color);
-        transform: translateY(-100%);
-    }
-
-    .breadcrumb__fake-list .breadcrumb__link {
-        color: var(--breadcrumb-link-color);
-        font-size: var(--breadcrumb-font-size);
-        font-family: var(--breadcrumb-font-family);
-        text-decoration: var(--breadcrumb-link-text-decoration);
-    }
-
-    :host([ismobile][mobilemenuisopen]) .breadcrumb__fake-list {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: var(--breadcrumb-mobile-menu-list-gap);
-        padding: var(--breadcrumb-mobile-menu-padding);
-        position: absolute;
-        top: var(--breadcrumb-mobile-menu-top);
-        left: 0;
-        background-color: var(--breadcrumb-mobile-menu-bg-color);
-        box-shadow: var(--breadcrumb-mobile-menu-shadow);
-    }
-
-    .breadcrumb__fake-list .breadcrumb__link:focus {
-        color: var(--breadcrumb-link-color-active, var(--color-primary));
-    }
-
-    @media (hover: hover) {
-        .breadcrumb__fake-list .breadcrumb__link:hover {
-            color: var(--breadcrumb-link-color-active, var(--color-primary));
-            text-decoration: underline;
-        }
-    }
-`;var l=Object.defineProperty,s=Object.getOwnPropertyDescriptor,n=(e,t,r,i)=>{for(var o,a=i>1?void 0:i?s(t,r):t,n=e.length-1;n>=0;n--)(o=e[n])&&(a=(i?o(t,r,a):o(a))||a);return i&&a&&l(t,r,a),a};let b=class extends t{constructor(){super(),this.breakpoint=0,this.isMobile=!1,this.list=null,this.listItems=[],this.toggleButtons=[],this.mobileMenuIsOpen=!1,this._handleToggleClick=this._handleToggleClick.bind(this)}render(){return r`
-            <slot name="toggle-buttons" @click="${this._handleToggleClick}"></slot>
-            <slot name="list"></slot>
-            <div class="breadcrumb__fake-list"></div>
-        `}firstUpdated(){this.list=this.querySelector(".breadcrumb__list"),this.listItems=Array.from(this.querySelectorAll(".breadcrumb__item")),this._calculateBreakpoint(),this.breakpoint>0&&(this._mql=window.matchMedia(`(max-width: ${this.breakpoint}px)`),this._mql.addEventListener("change",(e=>{this.isMobile=e.matches,e.matches||(this.mobileMenuIsOpen=!1)})),this.isMobile=this._mql.matches),this._populateFakeList()}connectedCallback(){super.connectedCallback(),this.toggleButtons=Array.from(this.querySelectorAll(".breadcrumb__toggle")),this.dispatchEvent(new Event("toujou-breadcrumb-connected"))}_calculateBreakpoint(){let e=0;this.listItems.forEach((t=>{e+=t.getBoundingClientRect().width,e+=parseInt(window.getComputedStyle(t)["margin-right"]),e+=16})),this.breakpoint=Math.ceil(e)}_handleToggleClick(){this.mobileMenuIsOpen=!this.mobileMenuIsOpen}_populateFakeList(){var e;const t=this.shadowRoot.querySelector(".breadcrumb__fake-list");null==(e=this.listItems)||e.forEach(((e,r)=>{if(r<this.listItems.length-1){const r=e.cloneNode(!0);t.appendChild(r)}}))}};b.styles=[a],n([o({type:Number})],b.prototype,"breakpoint",2),n([o({type:Boolean,reflect:!0})],b.prototype,"isMobile",2),n([o({type:HTMLOListElement})],b.prototype,"list",2),n([o({type:Array})],b.prototype,"listItems",2),n([o({type:Array})],b.prototype,"toggleButtons",2),n([o({type:Boolean,reflect:!0})],b.prototype,"mobileMenuIsOpen",2),b=n([i("toujou-breadcrumb")],b);
+import{_ as e}from"./tslib.es6-Br7-PHSQ.js";import{L as t,x as i,i as n,s as r,y as o}from"./lit-element-D9Ui1_BQ.js";import{e as s}from"./custom-element-DPYutfhb.js";import{e as l}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";import{e as a,i as b,t as c}from"./directive-8Y9xgsp7.js";const{I:d}=t,u=()=>document.createComment(""),m=(e,t,i)=>{var n;const r=e._$AA.parentNode,o=void 0===t?e._$AB:t._$AA;if(void 0===i){const t=r.insertBefore(u(),o),n=r.insertBefore(u(),o);i=new d(t,n,e,e.options)}else{const t=i._$AB.nextSibling,s=i._$AM,l=s!==e;if(l){let t;null===(n=i._$AQ)||void 0===n||n.call(i,e),i._$AM=e,void 0!==i._$AP&&(t=e._$AU)!==s._$AU&&i._$AP(t)}if(t!==o||l){let e=i._$AA;for(;e!==t;){const t=e.nextSibling;r.insertBefore(e,o),e=t}}}return i},h=(e,t,i=e)=>(e._$AI(t,i),e),p={},_=e=>{var t;null===(t=e._$AP)||void 0===t||t.call(e,!1,!0);let i=e._$AA;const n=e._$AB.nextSibling;for(;i!==n;){const e=i.nextSibling;i.remove(),i=e}},f=(e,t,i)=>{const n=new Map;for(let r=t;r<=i;r++)n.set(e[r],r);return n},v=a(class extends b{constructor(e){if(super(e),e.type!==c.CHILD)throw Error("repeat() can only be used in text expressions")}ht(e,t,i){let n;void 0===i?i=t:void 0!==t&&(n=t);const r=[],o=[];let s=0;for(const l of e)r[s]=n?n(l,s):s,o[s]=i(l,s),s++;return{values:o,keys:r}}render(e,t,i){return this.ht(e,t,i).values}update(e,[t,n,r]){var o;const s=e._$AH,{values:l,keys:a}=this.ht(t,n,r);if(!Array.isArray(s))return this.ut=a,l;const b=null!==(o=this.ut)&&void 0!==o?o:this.ut=[],c=[];let d,u,v=0,E=s.length-1,g=0,k=l.length-1;for(;v<=E&&g<=k;)if(null===s[v])v++;else if(null===s[E])E--;else if(b[v]===a[g])c[g]=h(s[v],l[g]),v++,g++;else if(b[E]===a[k])c[k]=h(s[E],l[k]),E--,k--;else if(b[v]===a[k])c[k]=h(s[v],l[k]),m(e,c[k+1],s[v]),v++,k--;else if(b[E]===a[g])c[g]=h(s[E],l[g]),m(e,s[v],s[E]),E--,g++;else if(void 0===d&&(d=f(a,g,k),u=f(b,v,E)),d.has(b[v]))if(d.has(b[E])){const t=u.get(a[g]),i=void 0!==t?s[t]:null;if(null===i){const t=m(e,s[v]);h(t,l[g]),c[g]=t}else c[g]=h(i,l[g]),m(e,s[v],i),s[t]=null;g++}else _(s[E]),E--;else _(s[v]),v++;for(;g<=k;){const t=m(e,c[k+1]);h(t,l[g]),c[g++]=t}for(;v<=E;){const e=s[v++];null!==e&&_(e)}return this.ut=a,((e,t=p)=>{e._$AH=t})(e,c),i}});var E,g,k,y,A=n(E||(g=[':host {\n    position: relative;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n\n.breadcrumb__fake-list {\n    display: none;\n    list-style: none;\n    position: relative;\n    border-radius: var(--breadcrumb-fake-list-border-radius);\n}\n\n.breadcrumb__fake-list::before {\n    content: "";\n    width: 0;\n    height: 0;\n    position: absolute;\n    top: 0;\n    left: var(--spacing-s);\n    border-left: var(--breadcrumb-fake-list-triangle-size) solid transparent;\n    border-right: var(--breadcrumb-fake-list-triangle-size) solid transparent;\n    border-bottom: var(--breadcrumb-fake-list-triangle-size) solid var(--breadcrumb-mobile-menu-bg-color);\n    -webkit-transform: translateY(-100%);\n            transform: translateY(-100%);\n}\n\n.breadcrumb__fake-list .breadcrumb__link {\n    color: var(--breadcrumb-link-color);\n    font-size: var(--breadcrumb-font-size);\n    font-family: var(--breadcrumb-font-family);\n    -webkit-text-decoration: var(--breadcrumb-link-text-decoration);\n            text-decoration: var(--breadcrumb-link-text-decoration);\n}\n\n:host([ismobile][mobilemenuisopen]) .breadcrumb__fake-list {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: reverse;\n        -ms-flex-direction: column-reverse;\n            flex-direction: column-reverse;\n    gap: var(--breadcrumb-mobile-menu-list-gap);\n    padding: var(--breadcrumb-mobile-menu-padding);\n    position: absolute;\n    top: var(--breadcrumb-mobile-menu-top);\n    left: 0;\n    background-color: var(--breadcrumb-mobile-menu-bg-color);\n    -webkit-box-shadow: var(--breadcrumb-mobile-menu-shadow);\n            box-shadow: var(--breadcrumb-mobile-menu-shadow);\n}\n\n.breadcrumb__fake-list .breadcrumb__link:focus {\n    color: var(--breadcrumb-link-color-active, var(--color-primary));\n}\n\n@media (hover: hover) {\n    .breadcrumb__fake-list .breadcrumb__link:hover {\n        color: var(--breadcrumb-link-color-active, var(--color-primary));\n        text-decoration: underline;\n    }\n}\n\n'],k||(k=g.slice(0)),E=Object.freeze(Object.defineProperties(g,{raw:{value:Object.freeze(k)}}))));let M=y=class extends r{static get styles(){return A}render(){return o`
+      <slot name="toggle-buttons" @click="${this._handleToggleClick}"></slot>
+      <slot name="list"></slot>
+      <div class="breadcrumb__fake-list" part="fake-list">
+        ${this.listItems?v(this.listItems.slice(0,this.listItems.length-1),((e,t)=>t),(e=>o`${e.cloneNode(!0)}`)):null}
+      </div>
+    `}constructor(){super(),this.breakpoint=0,this.isMobile=!1,this.list=null,this.listItems=[],this.toggleButtons=[],this.mobileMenuIsOpen=!1,this._handleToggleClick=this._handleToggleClick.bind(this)}firstUpdated(){this._initListAndItems(),this._calculateBreakpoint(),this.toggleButtons=Array.from(this.querySelectorAll(y.SELECTORS.TOGGLE)),this.breakpoint>0&&(this._initMediaQueryListener(),this.isMobile=this._mql.matches)}connectedCallback(){super.connectedCallback(),this.dispatchEvent(new CustomEvent(y.EVENT_NAMES.CONNECTED,{bubbles:!0,composed:!0}))}_initListAndItems(){this.list=this.querySelector(y.SELECTORS.LIST),this.listItems=Array.from(this.querySelectorAll(y.SELECTORS.ITEM))}_initMediaQueryListener(){this._mql||(this._mql=window.matchMedia(`(max-width: ${this.breakpoint}px)`),this._mql.addEventListener("change",function(e,t){let i;return(...n)=>{clearTimeout(i),i=setTimeout((()=>e.apply(this,n)),t)}}(this._onMediaQueryChange.bind(this),y.DEBOUNCE_DELAY)))}_onMediaQueryChange(e){this.isMobile=e.matches,e.matches||(this.mobileMenuIsOpen=!1),this.dispatchEvent(new CustomEvent(y.EVENT_NAMES.MODE_CHANGE,{bubbles:!0,composed:!0,detail:{isMobile:this.isMobile,breakpoint:this.breakpoint}}))}_calculateBreakpoint(){var e;if(!this.listItems.length)return;let t=0;null===(e=this.listItems)||void 0===e||e.forEach((e=>{t+=e.getBoundingClientRect().width,t+=parseInt(window.getComputedStyle(e)["margin-right"]),t+=y.IS_MOBILE_BUFFER_PER_ITEM})),this.breakpoint=Math.ceil(t)}_handleToggleClick(){this.mobileMenuIsOpen=!this.mobileMenuIsOpen;const e=this.mobileMenuIsOpen?y.EVENT_NAMES.MENU_OPEN:y.EVENT_NAMES.MENU_CLOSE;this.dispatchEvent(new CustomEvent(e,{bubbles:!0,composed:!0}))}};M.DEBOUNCE_DELAY=150,M.IS_MOBILE_BUFFER_PER_ITEM=16,M.SELECTORS={LIST:".breadcrumb__list",ITEM:".breadcrumb__item",TOGGLE:".breadcrumb__toggle",FAKE_LIST:".breadcrumb__fake-list"},M.EVENT_NAMES={MODE_CHANGE:"toujou-breadcrumb-mode-change",CONNECTED:"toujou-breadcrumb-connected",MENU_OPEN:"toujou-breadcrumb-menu-open",MENU_CLOSE:"toujou-breadcrumb-menu-close"},e([l({type:Number})],M.prototype,"breakpoint",void 0),e([l({type:Boolean,reflect:!0})],M.prototype,"isMobile",void 0),e([l({type:HTMLOListElement})],M.prototype,"list",void 0),e([l({type:Array})],M.prototype,"listItems",void 0),e([l({type:Array})],M.prototype,"toggleButtons",void 0),e([l({type:Boolean,reflect:!0})],M.prototype,"mobileMenuIsOpen",void 0),M=y=e([s("toujou-breadcrumb")],M);
 //# sourceMappingURL=toujou-breadcrumb.js.map

@@ -1,4 +1,4 @@
-import{i as t,s as e,y as o}from"./lit-element-BhLV4vUl.js";import{e as s}from"./custom-element-DPYutfhb.js";import{e as a}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const i=t`
+import{i as t,s as e,y as o}from"./lit-element-D9Ui1_BQ.js";import{e as s}from"./custom-element-DPYutfhb.js";import{e as a}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const i=t`
   :host {
     --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
     --toujou-details-border-top: var(--toujou-details-border);

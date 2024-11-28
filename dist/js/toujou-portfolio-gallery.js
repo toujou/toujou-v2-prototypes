@@ -1,4 +1,4 @@
-import{i as e,s as t,y as r}from"./lit-element-BhLV4vUl.js";import{e as o}from"./custom-element-DPYutfhb.js";import{e as i}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const n=e`
+import{i as e,s as t,y as r}from"./lit-element-D9Ui1_BQ.js";import{e as o}from"./custom-element-DPYutfhb.js";import{e as i}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const n=e`
   * {
     box-sizing: border-box;
   }

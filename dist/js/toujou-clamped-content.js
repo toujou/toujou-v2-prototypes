@@ -1,4 +1,4 @@
-import{i as t,s as e,y as o}from"./lit-element-BhLV4vUl.js";import{e as n}from"./custom-element-DPYutfhb.js";import{e as s}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const a=t`
+import{i as t,s as e,y as o}from"./lit-element-D9Ui1_BQ.js";import{e as n}from"./custom-element-DPYutfhb.js";import{e as s}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const a=t`
   :host {
     --toujou-clamped-content-number-of-lines: 3;
     --toujou-clamped-content-word-break: 'none';
