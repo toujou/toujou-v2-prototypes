@@ -11,7 +11,6 @@ export default defineConfig({
             input: {
                 // single components, that will be imported via asset collector
                 'toujou-blockquote': path.resolve(__dirname, 'src/components/toujou-blockquote/toujou-blockquote.ts'),
-                'toujou-breadcrumb': path.resolve(__dirname, 'src/components/toujou-breadcrumb/toujou-breadcrumb.ts'),
                 'toujou-details': path.resolve(__dirname, 'src/components/toujou-details/toujou-details.ts'),
                 'toujou-details-accordion': path.resolve(__dirname, 'src/components/toujou-details-accordion/toujou-details-accordion.ts'),
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
@@ -30,6 +29,7 @@ export default defineConfig({
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
 
                 // components from the @toujou/ui-components
+                'toujou-breadcrumb': path.resolve(__dirname, 'node_modules/@toujou/toujou-breadcrumb/lib'),
                 'toujou-contact-box': path.resolve(__dirname, 'node_modules/@toujou/toujou-contact-box/lib'),
                 'toujou-counter': path.resolve(__dirname, 'node_modules/@toujou/toujou-counter/lib'),
                 'toujou-inpage-nav': path.resolve(__dirname, 'node_modules/@toujou/toujou-inpage-nav/lib'),
