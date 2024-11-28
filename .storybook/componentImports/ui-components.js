@@ -1,4 +1,5 @@
 // ELEMENTS FROM @TOUJOU/UI-COMPONENTS
+import "@toujou/toujou-breadcrumb/lib";
 import "@toujou/toujou-button/lib";
 import "@toujou/toujou-contact-box/lib";
 import "@toujou/toujou-estimated-reading-time/lib";
