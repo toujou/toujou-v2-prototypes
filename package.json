@@ -87,6 +87,7 @@
   },
   "dependencies": {
     "@toujou/toujou-breadcrumb": "^1.0.0",
+    "@toujou/toujou-burger-button": "file:../ui-components/packages/toujou-burger-button",
     "@toujou/toujou-button": "^3.8.2",
     "@toujou/toujou-collection-load-more": "^3.15.1",
     "@toujou/toujou-consent": "^3.14.0",
