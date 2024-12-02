@@ -1,64 +1,18 @@
-import{i as t,s as e,y as o}from"./lit-element-D9Ui1_BQ.js";import{e as s}from"./custom-element-DPYutfhb.js";import{e as a}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const i=t`
-  :host {
-    --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);
-    --toujou-details-border-top: var(--toujou-details-border);
-    --toujou-details-border-bottom: var(--toujou-details-border);
-    
-    --toujou-details-summary-padding: var(--spacing-normal) var(--spacing-s);
-    --toujou-details-summary-gap: 0;
-    --toujou-details-summary-display: grid;
-    --toujou-details-summary-grid-templte-columns: 1fr auto;
-    --toujou-details-summary-grid-templte-areas: 
-            "title chevron" 
-            "subtitle chevron";
-
-    --toujou-details-content-padding: var(--spacing-normal) var(--spacing-s);
-    
-    display: block;
-    border-bottom: var(--toujou-details-border-bottom);
-    border-top: var(--toujou-details-border-top);
-  }
-  
-  .details__summary {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: var(--toujou-details-summary-grid-templte-areas);
-    grid-gap: var(--toujou-details-summary-gap);
-    align-items: center;
-    padding: var(--toujou-details-summary-padding);
-  }
-  
-  :host(:focus) .details__summary {
-    outline: var(--focus-outline-width) solid var(--focus-outline-color);
-    outline-offset: var(--focus-outline-offset);
-  }
-  
-  .details__summary::-webkit-details-marker {
-    display: none;
-  }
-  
-  .details__content {
-    padding: var(--toujou-details-content-padding);
-  }
-  
-  @media (hover: hover) {
-    .details__summary:hover {
-      --details-title-color: var(--details-title-active-color);
-      --details-chevron-color: var(--details-chevron-active-color);
-      
-      cursor: pointer;
-    }
-  }
-`;var r=Object.defineProperty,l=Object.getOwnPropertyDescriptor,d=(t,e,o,s)=>{for(var a,i=s>1?void 0:s?l(e,o):e,d=t.length-1;d>=0;d--)(a=t[d])&&(i=(s?a(e,o,i):a(i))||i);return s&&i&&r(e,o,i),i};let n=class extends e{constructor(){super(),this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.detailsEl=null,this.isOpen=!1}connectedCallback(){super.connectedCallback(),this.isAccordionItem=!!this.closest(this.accordionParentTag),this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-connected",{bubbles:!0,composed:!0,detail:{detailsEl:this}})),window.matchMedia("print").matches&&(this.isOpen=!0)}firstUpdated(){var t;this.detailsEl=this.shadowRoot.querySelector(".details"),this.isOpen=(null==(t=this.detailsEl)?void 0:t.hasAttribute("open"))||!1}render(){return o`
-            <details class="details" ?open="${this.isOpen}" @toggle="${this._handleDetailsChange}">
-                <summary class="details__summary">
-                    <slot name="summary"></slot>
-                    <slot name="chevron"></slot>
-                </summary>
-                <section class="details__content">
-                    <slot name="content"></slot>
-                </section>
-            </details>
-        `}_handleDetailsChange(t){const e=t.target;this.isOpen=e.hasAttribute("open")||!1,this.isAccordionItem&&this.dispatchEvent(new CustomEvent("toujou-details-toggle",{bubbles:!0,composed:!0,detail:{detailsEl:this,state:this.isOpen}}))}};n.styles=[i],d([a({type:Boolean})],n.prototype,"isAccordionItem",2),d([a({type:HTMLDetailsElement})],n.prototype,"detailsEl",2),d([a({type:Boolean,reflect:!0,attribute:"is-open"})],n.prototype,"isOpen",2),n=d([s("toujou-details")],n);
+import{_ as t}from"./tslib.es6-Br7-PHSQ.js";import{i as e,s,y as o}from"./lit-element-D9Ui1_BQ.js";import{e as a}from"./custom-element-DPYutfhb.js";import{e as i}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";var n,l,r,d,u,c=e(n||(l=[':host {\n    --toujou-details-border: var(--border-width-normal) solid var(--color-font-light);\n    --toujou-details-border-top: var(--toujou-details-border);\n    --toujou-details-border-bottom: var(--toujou-details-border);\n\n    --toujou-details-summary-padding: var(--spacing-normal) var(--spacing-s);\n    --toujou-details-summary-gap: 0;\n    --toujou-details-summary-display: grid;\n    --toujou-details-summary-grid-templte-columns: 1fr auto;\n    --toujou-details-summary-grid-templte-areas: "title chevron" "subtitle chevron";\n\n    --toujou-details-content-padding: var(--spacing-normal) var(--spacing-s);\n\n    display: block;\n    border-bottom: var(--toujou-details-border-bottom);\n    border-top: var(--toujou-details-border-top);\n}\n\n.details__summary {\n    list-style: none;\n    display: grid;\n    grid-template-columns: 1fr auto;\n    grid-template-areas: var(--toujou-details-summary-grid-templte-areas);\n    grid-gap: var(--toujou-details-summary-gap);\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    padding: var(--toujou-details-summary-padding);\n}\n\n:host(:focus) .details__summary {\n    outline: var(--focus-outline-width) solid var(--focus-outline-color);\n    outline-offset: var(--focus-outline-offset);\n}\n\n.details__summary::-webkit-details-marker {\n    display: none;\n}\n\n.details__content {\n    padding: var(--toujou-details-content-padding);\n}\n\n@media (hover: hover) {\n    .details__summary:hover {\n        --details-title-color: var(--details-title-active-color);\n        --details-chevron-color: var(--details-chevron-active-color);\n\n        cursor: pointer;\n    }\n}\n'],r||(r=l.slice(0)),n=Object.freeze(Object.defineProperties(l,{raw:{value:Object.freeze(r)}}))));(u=d||(d={})).DETAILS_CONNECTED="toujou-details-connected",u.DETAILS_TOGGLE="toujou-details-toggle",u.DETAILS_ACCORDION_CONNECTED="toujou-details-accordion-connected";let m=class extends s{constructor(){super(...arguments),this.detailsEl=null,this.accordionParentTag="toujou-details-accordion",this.isAccordionItem=!1,this.isOpen=!1}static get styles(){return c}connectedCallback(){super.connectedCallback(),this.isAccordionItem=Boolean(this.closest(this.accordionParentTag)),this.isAccordionItem&&this.dispatchEvent(new CustomEvent(d.DETAILS_CONNECTED,{bubbles:!0,composed:!0,detail:{detailsEl:this}})),"undefined"!=typeof window&&window.matchMedia("print").matches&&(this.isOpen=!0)}firstUpdated(){var t,e;this.detailsEl=null===(t=this.shadowRoot)||void 0===t?void 0:t.querySelector(".details"),this.isOpen=(null===(e=this.detailsEl)||void 0===e?void 0:e.hasAttribute("open"))||!1}render(){return o`
+      <details
+        class="details"
+        part="details"
+        ?open="${this.isOpen}"
+        @toggle="${this._handleDetailsChange}"
+        exportparts="details details-summary details-content"
+      >
+        <summary class="details__summary" part="details-summary">
+          <slot name="summary"></slot>
+          <slot name="chevron"></slot>
+        </summary>
+        <section class="details__content" part="details-content">
+          <slot name="content"></slot>
+        </section>
+      </details>
+    `}_handleDetailsChange(t){const e=t.target;this.isOpen=e.hasAttribute("open")||!1,this.isAccordionItem&&this.dispatchEvent(new CustomEvent(d.DETAILS_TOGGLE,{bubbles:!0,composed:!0,detail:{detailsEl:this,state:this.isOpen}}))}};t([i({type:Boolean})],m.prototype,"isAccordionItem",void 0),t([i({type:Boolean,reflect:!0,attribute:"is-open"})],m.prototype,"isOpen",void 0),m=t([a("toujou-details")],m);let p=class extends s{constructor(){super(...arguments),this.singleExpandMode=!1,this.toujouDetailsElements=new Set}connectedCallback(){super.connectedCallback(),this.addEventListener(d.DETAILS_CONNECTED,this._handleDetailsConnected),this.addEventListener(d.DETAILS_TOGGLE,this._handleDetailsToggle),this.dispatchEvent(new CustomEvent(d.DETAILS_ACCORDION_CONNECTED,{bubbles:!0,composed:!0,detail:{accordionEl:this}}))}disconnectedCallback(){super.disconnectedCallback(),this.removeEventListener(d.DETAILS_CONNECTED,this._handleDetailsConnected),this.removeEventListener(d.DETAILS_TOGGLE,this._handleDetailsToggle)}_handleDetailsConnected(t){const e=t.detail.detailsEl;this.toujouDetailsElements.add(e)}_handleDetailsToggle(t){const e=t,{detailsEl:s,state:o}=e.detail;this.singleExpandMode&&o&&this.toujouDetailsElements.forEach((t=>{t!==s&&(t.isOpen=!1)}))}render(){return o`<slot></slot>`}};t([i({type:Boolean,attribute:"single-expand-mode"})],p.prototype,"singleExpandMode",void 0),t([i({attribute:!1})],p.prototype,"toujouDetailsElements",void 0),p=t([a("toujou-details-accordion")],p);
 //# sourceMappingURL=toujou-details.js.map

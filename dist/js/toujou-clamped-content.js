@@ -1,57 +1,8 @@
-import{i as t,s as e,y as o}from"./lit-element-D9Ui1_BQ.js";import{e as n}from"./custom-element-DPYutfhb.js";import{e as s}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";const a=t`
-  :host {
-    --toujou-clamped-content-number-of-lines: 3;
-    --toujou-clamped-content-word-break: 'none';
-    --toujou-clamped-content-button-visible-display: flex;
-    --toujou-clamped-content-button-hidden-display: none;
-    --toujou-clamped-content-button-slot-display: flex;
-    --toujou-clamped-content-button-slot-justify-content: flex-end;
-  }
-
-  :host([is-open]) {
-    --toujou-clamped-content-number-of-lines: 9999;
-  }
-
-  :host([clamp-disabled]) {
-    --toujou-clamped-content-number-of-lines: 9999;
-    --toujou-clamped-content-button-visible-display: none;
-  }
-
-  .clamped-content {
-    display: -webkit-box;
-    -webkit-line-clamp: var(--toujou-clamped-content-number-of-lines);
-    -webkit-box-orient: vertical;
-    word-break: var(--toujou-clamped-content-word-break);
-    overflow: hidden;
-    hyphens: auto;
-  }
-
-  :host slot[name="show-button"] {
-    display: var(--toujou-clamped-content-button-visible-display);
-  }
-
-  :host([is-open]) slot[name="show-button"] {
-    display: var(--toujou-clamped-content-button-hidden-display);
-  }
-
-  :host slot[name="hide-button"] {
-    display: var(--toujou-clamped-content-button-hidden-display);
-  }
-
-  :host([is-open]) slot[name="hide-button"] {
-    display: var(--toujou-clamped-content-button-visible-display);
-  }
-
-  .button-slot {
-    margin-top: var(--spacing-normal);
-    display: var(--toujou-clamped-content-button-slot-display);
-    justify-content: var(--toujou-clamped-content-button-slot-justify-content);
-  }
-`;var l,i,c,r=Object.defineProperty,u=Object.getOwnPropertyDescriptor,p=t=>{throw TypeError(t)},d=(t,e,o,n)=>{for(var s,a=n>1?void 0:n?u(e,o):e,l=t.length-1;l>=0;l--)(s=t[l])&&(a=(n?s(e,o,a):s(a))||a);return n&&a&&r(e,o,a),a},m=(t,e,o)=>e.has(t)||p("Cannot "+o),b=(t,e,o)=>(m(t,e,"read from private field"),o?o.call(t):e.get(t)),h=(t,e,o)=>e.has(t)?p("Cannot add the same private member more than once"):e instanceof WeakSet?e.add(t):e.set(t,o);let y=class extends e{constructor(){super(...arguments),h(this,i),this.isOpen=!1,this.clampDisabled=!1,h(this,l,(()=>{this.isOpen=!this.isOpen}))}render(){return o`
-            <div class="clamped-content">
-                <slot name="clamped-content"></slot>
-            </div>
-            <slot name="show-button" class="button-slot" @click="${b(this,l)}"></slot>
-            <slot name="hide-button" class="button-slot" @click="${b(this,l)}"></slot>
-        `}connectedCallback(){var t,e,o;super.connectedCallback(),(t=this,e=i,o=c,m(t,e,"access private method"),o).call(this)}};l=new WeakMap,i=new WeakSet,c=function(){requestAnimationFrame((()=>{const t=this.querySelector(".review__review");this.clampDisabled=!t||t.scrollHeight<=t.clientHeight}))},y.styles=[a],d([s({type:Boolean,attribute:"is-open",reflect:!0})],y.prototype,"isOpen",2),d([s({type:Boolean,attribute:"clamp-disabled",reflect:!0})],y.prototype,"clampDisabled",2),y=d([n("toujou-clamped-content")],y);
+import{_ as t}from"./tslib.es6-Br7-PHSQ.js";import{i as e,s as n,y as o}from"./lit-element-D9Ui1_BQ.js";import{e as s}from"./custom-element-DPYutfhb.js";import{e as l}from"./property-D5hxO1nL.js";import"./query-assigned-elements-CrfAJxAz.js";var a,i,p,c=e(a||(i=[':host {\n    --toujou-clamped-content-number-of-lines: 3;\n    --toujou-clamped-content-word-break: \'none\';\n    --toujou-clamped-content-button-visible-display: flex;\n    --toujou-clamped-content-button-hidden-display: none;\n    --toujou-clamped-content-button-slot-display: flex;\n    --toujou-clamped-content-button-slot-justify-content: flex-end;\n}\n\n:host([is-open]) {\n    --toujou-clamped-content-number-of-lines: 9999;\n}\n\n:host([clamp-disabled]) {\n    --toujou-clamped-content-number-of-lines: 9999;\n    --toujou-clamped-content-button-visible-display: none;\n}\n\n.clamped-content {\n    display: -webkit-box;\n    -webkit-line-clamp: var(--toujou-clamped-content-number-of-lines);\n    -webkit-box-orient: vertical;\n    word-break: var(--toujou-clamped-content-word-break);\n    overflow: hidden;\n    -ms-hyphens: auto;\n        hyphens: auto;\n}\n\n:host slot[name="show-button"] {\n    display: var(--toujou-clamped-content-button-visible-display);\n}\n\n:host([is-open]) slot[name="show-button"] {\n    display: var(--toujou-clamped-content-button-hidden-display);\n}\n\n:host slot[name="hide-button"] {\n    display: var(--toujou-clamped-content-button-hidden-display);\n}\n\n:host([is-open]) slot[name="hide-button"] {\n    display: var(--toujou-clamped-content-button-visible-display);\n}\n\n.button-slot {\n    margin-top: var(--spacing-normal);\n    display: var(--toujou-clamped-content-button-slot-display);\n    -webkit-box-pack: var(--toujou-clamped-content-button-slot-justify-content);\n        -ms-flex-pack: var(--toujou-clamped-content-button-slot-justify-content);\n            justify-content: var(--toujou-clamped-content-button-slot-justify-content);\n}\n'],p||(p=i.slice(0)),a=Object.freeze(Object.defineProperties(i,{raw:{value:Object.freeze(p)}}))));let d=class extends n{constructor(){super(...arguments),this.isOpen=!1,this.clampDisabled=!1,this.toggleIsOpen=()=>{this.isOpen=!this.isOpen,this.dispatchEvent(new CustomEvent("toujou-clamped-content-changed",{bubbles:!0,composed:!0,detail:{isOpen:this.isOpen}}))},this.updateClampEnabledState=()=>{var t;const e=null===(t=this.shadowRoot)||void 0===t?void 0:t.querySelector("slot[name=clamped-content]"),n=null==e?void 0:e.assignedElements({flatten:!0});if(n&&0!==n.length){const t=n[0];this.clampDisabled=t.scrollHeight<=t.clientHeight}else this.clampDisabled=!0;this.dispatchEvent(new CustomEvent("toujou-clamped-content-clamp-enabled-changed",{detail:{clampDisabled:this.clampDisabled},bubbles:!0,composed:!0}))}}static get styles(){return c}render(){return o`
+      <div class="clamped-content" part="clamped-content">
+        <slot name="clamped-content" @slotchange="${this.updateClampEnabledState}"></slot>
+      </div>
+      <slot name="show-button" class="button-slot" @click="${this.toggleIsOpen}"></slot>
+      <slot name="hide-button" class="button-slot" @click="${this.toggleIsOpen}"></slot>
+    `}firstUpdated(){this.updateClampEnabledState()}updated(t){super.updated(t),t.has("isOpen")&&this.setAttribute("aria-expanded",String(this.isOpen))}};t([l({type:Boolean,attribute:"is-open",reflect:!0})],d.prototype,"isOpen",void 0),t([l({type:Boolean,attribute:"clamp-disabled",reflect:!0})],d.prototype,"clampDisabled",void 0),d=t([s("toujou-clamped-content")],d);
 //# sourceMappingURL=toujou-clamped-content.js.map
