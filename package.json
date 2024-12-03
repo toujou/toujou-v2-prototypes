@@ -87,6 +87,7 @@
   },
   "dependencies": {
     "@toujou/toujou-breadcrumb": "^1.0.0",
+    "@toujou/toujou-burger-button": "^1.0.0",
     "@toujou/toujou-button": "^3.8.2",
     "@toujou/toujou-clamped-content": "^1.0.0",
     "@toujou/toujou-collection-load-more": "^3.15.1",

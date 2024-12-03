@@ -21,3 +21,4 @@ import "@toujou/toujou-datepicker/lib";
 import "@toujou/toujou-collection-load-more/lib";
 import "@toujou/toujou-details/lib";
 import "@toujou/toujou-clamped-content/lib";
+import "@toujou/toujou-burger-button/lib";
