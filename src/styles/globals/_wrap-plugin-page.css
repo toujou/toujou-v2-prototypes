@@ -1,3 +1,8 @@
+.wrap-plugin-page {
+    container-type: inline-size;
+    container-name: plugin-page;
+}
+
 .wrap-plugin-page:first-child,
 .topbar + .wrap-plugin-page,
 .wrap-navigation + .wrap--plugin-page {
