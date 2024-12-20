@@ -1,5 +1,6 @@
 /* This is the JS that needs to be loaded on all pages */
-import './globals';
+import './globals/contact-dialog';
+import '../components/copied/toujou-modal/toujou-modal';
 import '../components/copied/toujou-modal/toujou-modal';
 
 // JS from @toujou/ui-components
