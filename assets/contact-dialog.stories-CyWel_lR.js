@@ -38,7 +38,7 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as i}from"./jsx-run
 `,i.jsx(e.h2,{id:"focus-trap",children:"Focus trap"}),`
 `,i.jsx(e.p,{children:"We trap the focus inside the contact box, which means the users cannot focus on any background elements, they can only focus and cycle focus on the contact box focusable elements (close buttons and links)"}),`
 `,i.jsx(e.h2,{id:"body-scroll",children:"Body scroll"}),`
-`,i.jsxs(e.p,{children:["When the contact box open we add the ",i.jsx(e.code,{children:"contact-box-is-open"})," attribute to the body tag, which prevents the body from scrolling"]})]})}function r(t={}){const{wrapper:e}={...l(),...t.components};return e?i.jsx(e,{...t,children:i.jsx(a,{...t})}):a(t)}const f={title:"COMPONENTS/Contact Box",parameters:{badges:[s.DONE],docs:{page:r}},tags:["autodocs"]},d=()=>`
+`,i.jsxs(e.p,{children:["When the contact box open we add the ",i.jsx(e.code,{children:"contact-box-is-open"})," attribute to the body tag, which prevents the body from scrolling"]})]})}function r(t={}){const{wrapper:e}={...l(),...t.components};return e?i.jsx(e,{...t,children:i.jsx(a,{...t})}):a(t)}const g={title:"COMPONENTS/Contact Dialog",parameters:{badges:[s.DONE],docs:{page:r}},tags:["autodocs"]},d=()=>`
         <input type="checkbox" name="contact-state" id="contact-state" class="state-input" aria-hidden="true">
         <label for="contact-state" class="button">Open contact box</label>
         <p>Some example content! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -51,32 +51,30 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as i}from"./jsx-run
         <p>Some example content! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Some example content! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <toujou-contact-box class="contact-box">
-            <div class="contact-box__card">
-                <button class="contact-box__close" aria-label="Close contact box">
-                    <toujou-icon class="icon" icon-size="ms" icon-name="close" icon-color="font"></toujou-icon>
-                </button>
+        <dialog class="contact-dialog" id="contact-dialog">
+            <button class="contact-dialog__close" aria-label="Close contact box" autofocus>
+                <toujou-icon class="icon" icon-size="ms" icon-name="close" icon-color="font"></toujou-icon>
+            </button>
 
-                <div class="contact-box__content" slot="content">
-                    <h3 class="contact-box__headline">Kontakt</h3>
-                    <p class="contact-box__message">This is the contact box message</p>
-                    <div class="contact-box__items">
-                        <div class="contact-box__item">
-                            <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
-                            <a class="contact-box__link" href="#">0911 23980870</a>
-                        </div>
-                        <div class="contact-box__item">
-                            <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="email"></toujou-icon>
-                            <a class="contact-box__link" href="#">info@dfau.de</a>
-                        </div>
-                        <div class="contact-box__item">
-                            <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="calendar-day"></toujou-icon>
-                            <span class="contact-box__link">Mo. - Fr.: 9:00 - 18:00h</span>
-                        </div>
+            <div class="contact-dialog__content">
+                <h3 class="contact-dialog__headline">Kontakt</h3>
+                <p class="contact-dialog__message">This is the contact dialog message</p>
+                <div class="contact-dialog__items">
+                    <div class="contact-dialog__item">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
+                        <a class="contact-dialog__link" href="#">0911 23980870</a>
+                    </div>
+                    <div class="contact-dialog__item">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="email"></toujou-icon>
+                        <a class="contact-dialog__link" href="#">info@dfau.de</a>
+                    </div>
+                    <div class="contact-dialog__item">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="calendar-day"></toujou-icon>
+                        <span class="contact-dialog__link">Mo. - Fr.: 9:00 - 18:00h</span>
                     </div>
                 </div>
             </div>
-        </toujou-contact-box>
+        </dialog>
     `,o=d.bind({});var n,u,c;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:`() => {
   return \`
         <input type="checkbox" name="contact-state" id="contact-state" class="state-input" aria-hidden="true">
@@ -91,31 +89,29 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as i}from"./jsx-run
         <p>Some example content! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Some example content! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <toujou-contact-box class="contact-box">
-            <div class="contact-box__card">
-                <button class="contact-box__close" aria-label="Close contact box">
-                    <toujou-icon class="icon" icon-size="ms" icon-name="close" icon-color="font"></toujou-icon>
-                </button>
+        <dialog class="contact-dialog" id="contact-dialog">
+            <button class="contact-dialog__close" aria-label="Close contact box" autofocus>
+                <toujou-icon class="icon" icon-size="ms" icon-name="close" icon-color="font"></toujou-icon>
+            </button>
 
-                <div class="contact-box__content" slot="content">
-                    <h3 class="contact-box__headline">Kontakt</h3>
-                    <p class="contact-box__message">This is the contact box message</p>
-                    <div class="contact-box__items">
-                        <div class="contact-box__item">
-                            <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
-                            <a class="contact-box__link" href="#">0911 23980870</a>
-                        </div>
-                        <div class="contact-box__item">
-                            <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="email"></toujou-icon>
-                            <a class="contact-box__link" href="#">info@dfau.de</a>
-                        </div>
-                        <div class="contact-box__item">
-                            <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="calendar-day"></toujou-icon>
-                            <span class="contact-box__link">Mo. - Fr.: 9:00 - 18:00h</span>
-                        </div>
+            <div class="contact-dialog__content">
+                <h3 class="contact-dialog__headline">Kontakt</h3>
+                <p class="contact-dialog__message">This is the contact dialog message</p>
+                <div class="contact-dialog__items">
+                    <div class="contact-dialog__item">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
+                        <a class="contact-dialog__link" href="#">0911 23980870</a>
+                    </div>
+                    <div class="contact-dialog__item">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="email"></toujou-icon>
+                        <a class="contact-dialog__link" href="#">info@dfau.de</a>
+                    </div>
+                    <div class="contact-dialog__item">
+                        <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="calendar-day"></toujou-icon>
+                        <span class="contact-dialog__link">Mo. - Fr.: 9:00 - 18:00h</span>
                     </div>
                 </div>
             </div>
-        </toujou-contact-box>
+        </dialog>
     \`;
-}`,...(c=(u=o.parameters)==null?void 0:u.docs)==null?void 0:c.source}}};const v=["ContactBox"];export{o as ContactBox,v as __namedExportsOrder,f as default};
+}`,...(c=(u=o.parameters)==null?void 0:u.docs)==null?void 0:c.source}}};const f=["ContactDialog"];export{o as ContactDialog,f as __namedExportsOrder,g as default};

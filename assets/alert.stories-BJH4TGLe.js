@@ -19,7 +19,7 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
 | warning   | `,e.jsx(r.code,{children:'alert-variant="warning"'}),`   |
 | success   | `,e.jsx(r.code,{children:'alert-variant="success"'}),`   |
 | error     | `,e.jsx(r.code,{children:'alert-variant="success"'}),`   |
-| info      | `,e.jsx(r.code,{children:'alert-variant="info"'}),"      |"]})]})}function d(t={}){const{wrapper:r}={...l(),...t.components};return r?e.jsx(r,{...t,children:e.jsx(n,{...t})}):n(t)}const g={title:"COMPONENTS/Alert",parameters:{badges:[c.DONE],docs:{page:d}},argTypes:{alertVariant:{table:{category:"Alert Settings",defaultValue:{summary:"primary"}},name:"Alert variant",description:"Set the alert variant",options:["primary","secondary","warning","error","success","info"],control:{type:"radio"},defaultValue:["primary"],required:!0}},tags:["autodocs"]},u=t=>`
+| info      | `,e.jsx(r.code,{children:'alert-variant="info"'}),"      |"]})]})}function d(t={}){const{wrapper:r}={...l(),...t.components};return r?e.jsx(r,{...t,children:e.jsx(n,{...t})}):n(t)}const g={title:"COMPONENTS/Alert",parameters:{badges:[c.DONE],docs:{page:d}},argTypes:{alertVariant:{table:{category:"Alert Settings",defaultValue:{summary:"primary"}},name:"Alert variant",description:"Set the alert variant",options:["primary","secondary","warning","error","success","info"],control:{type:"radio"},required:!0}},tags:["autodocs"]},u=t=>`
         <toujou-alert class="alert" role="alert" alert-variant="${t.alertVariant}">
             This is an alert
         </toujou-alert>
