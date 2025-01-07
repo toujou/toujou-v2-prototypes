@@ -85,6 +85,50 @@ export default {
             defaultValue: ['none'],
             required: true,
         },
+        paddingTop: {
+            table: {
+                category: "Chapter settings",
+            },
+            name: 'Padding top',
+            description: "Choose the padding top for the chapter",
+            options: ['default', 'none', 'xs', 's', 'base', 'm', 'l', 'xl'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+        paddingBottom: {
+            table: {
+                category: "Chapter settings",
+            },
+            name: 'Padding bottom',
+            description: "Choose the padding bottom for the chapter",
+            options: ['default', 'none', 'xs', 's', 'base', 'm', 'l', 'xl'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+        marginTop: {
+            table: {
+                category: "Chapter settings",
+            },
+            name: 'Margin top',
+            description: "Choose the margin top for the chapter",
+            options: ['default', 'none', 'xs', 's', 'base', 'm', 'l', 'xl'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
+        marginBottom: {
+            table: {
+                category: "Chapter settings",
+            },
+            name: 'Margin bottom',
+            description: "Choose the margin bottom for the chapter",
+            options: ['default', 'none', 'xs', 's', 'base', 'm', 'l', 'xl'],
+            control: { type: 'radio' },
+            defaultValue: ['default'],
+            required: true,
+        },
     },
     tags: ['autodocs']
 } satisfies Meta;
@@ -95,7 +139,11 @@ interface ChapterStoryProps {
     minHeight: string,
     verticalPosition: string,
     showBackgroundImage: boolean,
-    attachmentType: string
+    attachmentType: string,
+    paddingTop: string,
+    paddingBottom: string,
+    marginTop: string,
+    marginBottom: string,
 }
 
 function renderDummyContent(headlineText: string, hasLongText: boolean) {
@@ -129,7 +177,7 @@ const Template: StoryFn<ChapterStoryProps> = (args: ChapterStoryProps) => {
 
     return `
         <span id="c1"></span>
-        <section class="chapter" background-color="background">
+        <section class="chapter" background-color="font-light">
             ${renderDummyContent('Dummy content', true)}
         </section>
 
@@ -143,6 +191,10 @@ const Template: StoryFn<ChapterStoryProps> = (args: ChapterStoryProps) => {
             attachment-type="${args.attachmentType}"
             style="${chapterStyles}"
             ${args.showBackgroundImage ? 'has-background-media': ''}
+            padding-top="${args.paddingTop}"
+            padding-bottom="${args.paddingBottom}"
+            margin-top="${args.marginTop}"
+            margin-bottom="${args.marginBottom}"
             is-test-target
         >
             ${renderDummyContent('Test chapter', false)}
@@ -163,5 +215,9 @@ Chapter.args = {
     minHeight: 'auto',
     verticalPosition: 'default',
     showBackgroundImage: false,
-    attachmentType: 'scroll'
+    attachmentType: 'scroll',
+    paddingTop: 'default',
+    paddingBottom: 'default',
+    marginTop: 'default',
+    marginBottom: 'default',
 }

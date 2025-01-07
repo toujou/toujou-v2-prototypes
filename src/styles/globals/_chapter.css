@@ -1,8 +1,12 @@
 .chapter {
     --chapter-position: relative;
     --chapter-background-color: var(--color-bg);
-    --chapter-margin: 0;
-    --chapter-padding: 0;
+    --chapter-margin-top: 0;
+    --chapter-margin-bottom: 0;
+    --chapter-margin: var(--chapter-margin-top) 0 var(--chapter-margin-bottom);
+    --chapter-padding-top: 0;
+    --chapter-padding-bottom: 0;
+    --chapter-padding: var(--chapter-padding-top) 0 var(--chapter-padding-bottom);
     --chapter-font-color: var(--font-color);
 
     --chapter-bg-color-original: var(--color-bg);
@@ -23,15 +27,130 @@
 }
 
 .chapter#initial {
-    --chapter-padding: var(--spacing-between-elements-normal) 0;
+    --chapter-padding-top: var(--spacing-between-elements-normal);
+    --chapter-padding-bottom: var(--spacing-between-elements-normal);
 }
 
 .breadcrumb ~ .chapter#initial {
-    --chapter-padding: calc(var(--spacing-between-elements-normal) / 2) 0 var(--spacing-between-elements-normal);
+    --chapter-padding-top: calc(var(--spacing-between-elements-normal) / 2);
+    --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) / 2);
 }
 
 .chapter[background-color] {
-    --chapter-padding: var(--spacing-between-elements-normal) 0;
+    --chapter-padding-top: var(--spacing-between-elements-normal);
+    --chapter-padding-bottom: var(--spacing-between-elements-normal);
+}
+
+.chapter[padding-top="none"] {
+    --chapter-padding-top: 0 !important;
+}
+
+.chapter[padding-bottom="none"] {
+    --chapter-padding-bottom: 0 !important;
+}
+
+.chapter[padding-top="xs"] {
+    --chapter-padding-top: calc(var(--spacing-between-elements-normal) / 4) !important;
+}
+
+.chapter[padding-bottom="xs"] {
+    --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) / 4) !important;
+}
+
+.chapter[padding-top="s"] {
+    --chapter-padding-top: calc(var(--spacing-between-elements-normal) / 2) !important;
+}
+
+.chapter[padding-bottom="s"] {
+    --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) / 2) !important;
+}
+
+.chapter[padding-top="base"] {
+    --chapter-padding-top: var(--spacing-between-elements-normal) !important;
+}
+
+.chapter[padding-bottom="base"] {
+    --chapter-padding-bottom: var(--spacing-between-elements-normal) !important;
+}
+
+.chapter[padding-top="m"] {
+    --chapter-padding-top: calc(var(--spacing-between-elements-normal) * 1.5) !important;
+}
+
+.chapter[padding-bottom="m"] {
+    --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) * 1.5) !important;
+}
+
+.chapter[padding-top="l"] {
+    --chapter-padding-top: calc(var(--spacing-between-elements-normal) * 2) !important;
+}
+
+.chapter[padding-bottom="l"] {
+    --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) * 2) !important;
+}
+
+.chapter[padding-top="xl"] {
+    --chapter-padding-top: calc(var(--spacing-between-elements-normal) * 3) !important;
+}
+
+.chapter[padding-bottom="xl"] {
+    --chapter-padding-bottom: calc(var(--spacing-between-elements-normal) * 3) !important;
+}
+
+.chapter[margin-top="none"] {
+    --chapter-margin-top: 0 !important;
+}
+
+.chapter[margin-bottom="none"] {
+    --chapter-margin-bottom: 0 !important;
+}
+
+.chapter[margin-top="xs"] {
+    --chapter-margin-top: calc(var(--spacing-between-elements-normal) / 4) !important;
+}
+
+.chapter[margin-bottom="xs"] {
+    --chapter-margin-bottom: calc(var(--spacing-between-elements-normal) / 4) !important;
+}
+
+.chapter[margin-top="s"] {
+    --chapter-margin-top: calc(var(--spacing-between-elements-normal) / 2) !important;
+}
+
+.chapter[margin-bottom="s"] {
+    --chapter-margin-bottom: calc(var(--spacing-between-elements-normal) / 2) !important;
+}
+
+.chapter[margin-top="base"] {
+    --chapter-margin-top: var(--spacing-between-elements-normal) !important;
+}
+
+.chapter[margin-bottom="base"] {
+    --chapter-margin-bottom: var(--spacing-between-elements-normal) !important;
+}
+
+.chapter[margin-top="m"] {
+    --chapter-margin-top: calc(var(--spacing-between-elements-normal) * 1.5) !important;
+}
+
+.chapter[margin-bottom="m"] {
+    --chapter-margin-bottom: calc(var(--spacing-between-elements-normal) * 1.5) !important;
+}
+
+.chapter[margin-top="l"] {
+    --chapter-margin-top: calc(var(--spacing-between-elements-normal) * 2) !important;
+}
+
+.chapter[margin-bottom="l"] {
+    --chapter-margin-bottom: calc(var(--spacing-between-elements-normal) * 2) !important;
+}
+
+.chapter[margin-top="xl"] {
+    --chapter-margin-top: calc(var(--spacing-between-elements-normal) * 3) !important;
+}
+
+.chapter[margin-bottom="xl"] {
+    --chapter-margin-bottom: calc(var(--spacing-between-elements-normal) * 3) !important;
 }
 
 *:not(span, .chapter) + .chapter:not(:first-child) {
