@@ -191,10 +191,10 @@ const Template: StoryFn<ChapterStoryProps> = (args: ChapterStoryProps) => {
             attachment-type="${args.attachmentType}"
             style="${chapterStyles}"
             ${args.showBackgroundImage ? 'has-background-media': ''}
-            padding-top="${args.paddingTop}"
-            padding-bottom="${args.paddingBottom}"
-            margin-top="${args.marginTop}"
-            margin-bottom="${args.marginBottom}"
+            chapter-padding-top="${args.paddingTop}"
+            chapter-padding-bottom="${args.paddingBottom}"
+            chapter-margin-top="${args.marginTop}"
+            chapter-margin-bottom="${args.marginBottom}"
             is-test-target
         >
             ${renderDummyContent('Test chapter', false)}
