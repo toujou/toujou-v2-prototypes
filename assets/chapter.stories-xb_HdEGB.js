@@ -1,4 +1,4 @@
-import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-runtime-CS_Wz6c_.js";import{useMDXComponents as l}from"./index-C8FVCAkB.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";function r(o){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",pre:"pre",...l(),...o.components};return t.jsxs(t.Fragment,{children:[t.jsx(e.h1,{id:"chapter",children:"Chapter"}),`
+import{T as p}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-runtime-CS_Wz6c_.js";import{useMDXComponents as l}from"./index-C8FVCAkB.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";function r(o){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",p:"p",pre:"pre",...l(),...o.components};return t.jsxs(t.Fragment,{children:[t.jsx(e.h1,{id:"chapter",children:"Chapter"}),`
 `,t.jsxs(e.p,{children:["The chapter content element renders a ",t.jsx(e.code,{children:"section"}),", which helps us separate the page's content, tell an effective story, and add custom styles to other content elements."]}),`
 `,t.jsx(e.h2,{id:"markup-example",children:"Markup example"}),`
 `,t.jsx(e.pre,{children:t.jsx(e.code,{className:"language-html",children:`<section class="chapter chapter--primary">
@@ -25,10 +25,16 @@ or
 
 <section class="chapter chapter--no-padding"></section>
 `})}),`
-`,t.jsx(e.h3,{id:"standard-modifiers",children:"Standard modifiers"}),`
-`,t.jsxs(e.p,{children:["We can choose between the standard modifiers: ",t.jsx(e.code,{children:"chapter--default"}),", ",t.jsx(e.code,{children:"chapter--primary"}),", ",t.jsx(e.code,{children:"chapter--secondary"}),", ",t.jsx(e.code,{children:"chapter--inverted"}),", ",t.jsx(e.code,{children:"chapter--white"}),",",t.jsx(e.code,{children:"chapter--background"}),"."]}),`
-`,t.jsx(e.p,{children:'The "background" variant has a "font color with 10% opacity" background.'}),`
-`,t.jsx(e.p,{children:`The "default" variant doesn't have any special styles, but can be used for customizing the page...`})]})}function p(o={}){const{wrapper:e}={...l(),...o.components};return e?t.jsx(e,{...o,children:t.jsx(r,{...o})}):r(o)}const k={title:"COMPONENTS/Chapter",parameters:{badges:[u.DONE],docs:{page:p},layout:"fullscreen"},argTypes:{backgroundColor:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Background color",description:"Choose a background-color for the chapter",options:["none","default","background","primary","primary-light","primary-dark","secondary","secondary-light","secondary-dark","font","font-light","font-dark"],control:{type:"radio"},defaultValue:["none"],required:!0},fontColor:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Font color",description:"Choose a font-color for the chapter",options:["none","default","background","primary","primary-light","primary-dark","secondary","secondary-light","secondary-dark","font","font-light","font-dark"],control:{type:"radio"},defaultValue:["none"],required:!0},minHeight:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Minimum height",description:"Choose a minimum height for the chapter",options:["auto","full","half","third","quarter"],control:{type:"radio"},defaultValue:["none"],required:!0},verticalPosition:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Vertical position",description:"Choose a vertical for the chapter's content",options:["default","top","middle","bottom"],control:{type:"radio"},defaultValue:["none"],required:!0},showBackgroundImage:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Show background image",description:"Show a background image on the chapter element",control:{type:"boolean"},defaultValue:["false"],required:!0},attachmentType:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Background attachment type",description:"Choose the attachment type for the background image",options:["scroll","fixed"],control:{type:"radio"},defaultValue:["none"],required:!0}},tags:["autodocs"]};function a(o,e){return`
+`,t.jsx(e.h3,{id:"chapter-background-color",children:"chapter background color"}),`
+`,t.jsx(e.h3,{id:"chapter-font-color",children:"chapter font color"}),`
+`,t.jsx(e.h3,{id:"chapter-minimum-height",children:"chapter minimum height"}),`
+`,t.jsx(e.h3,{id:"chapter-vertical-position",children:"chapter vertical position"}),`
+`,t.jsx(e.h3,{id:"chapter-background-media",children:"chapter background media"}),`
+`,t.jsx(e.h3,{id:"chapter-background-media-scroll-typ",children:"chapter background media scroll typ"}),`
+`,t.jsx(e.h3,{id:"chapter-padding-top",children:"chapter padding-top"}),`
+`,t.jsx(e.h3,{id:"chapter-padding-bottom",children:"chapter padding-bottom"}),`
+`,t.jsx(e.h3,{id:"chapter-margin-top",children:"chapter margin-top"}),`
+`,t.jsx(e.h3,{id:"chapter-margin-bottom",children:"chapter margin-bottom"})]})}function u(o={}){const{wrapper:e}={...l(),...o.components};return e?t.jsx(e,{...o,children:t.jsx(r,{...o})}):r(o)}const C={title:"COMPONENTS/Chapter",parameters:{badges:[p.DONE],docs:{page:u},layout:"fullscreen"},argTypes:{backgroundColor:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Background color",description:"Choose a background-color for the chapter",options:["none","default","background","primary","primary-light","primary-dark","secondary","secondary-light","secondary-dark","font","font-light","font-dark"],control:{type:"radio"},defaultValue:["none"],required:!0},fontColor:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Font color",description:"Choose a font-color for the chapter",options:["none","default","background","primary","primary-light","primary-dark","secondary","secondary-light","secondary-dark","font","font-light","font-dark"],control:{type:"radio"},defaultValue:["none"],required:!0},minHeight:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Minimum height",description:"Choose a minimum height for the chapter",options:["auto","full","half","third","quarter"],control:{type:"radio"},defaultValue:["none"],required:!0},verticalPosition:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Vertical position",description:"Choose a vertical for the chapter's content",options:["default","top","middle","bottom"],control:{type:"radio"},defaultValue:["none"],required:!0},showBackgroundImage:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Show background image",description:"Show a background image on the chapter element",control:{type:"boolean"},defaultValue:["false"],required:!0},attachmentType:{table:{category:"Chapter settings",defaultValue:{summary:"none"}},name:"Background attachment type",description:"Choose the attachment type for the background image",options:["scroll","fixed"],control:{type:"radio"},defaultValue:["none"],required:!0},paddingTop:{table:{category:"Chapter settings"},name:"Padding top",description:"Choose the padding top for the chapter",options:["default","none","xs","s","base","m","l","xl"],control:{type:"radio"},defaultValue:["default"],required:!0},paddingBottom:{table:{category:"Chapter settings"},name:"Padding bottom",description:"Choose the padding bottom for the chapter",options:["default","none","xs","s","base","m","l","xl"],control:{type:"radio"},defaultValue:["default"],required:!0},marginTop:{table:{category:"Chapter settings"},name:"Margin top",description:"Choose the margin top for the chapter",options:["default","none","xs","s","base","m","l","xl"],control:{type:"radio"},defaultValue:["default"],required:!0},marginBottom:{table:{category:"Chapter settings"},name:"Margin bottom",description:"Choose the margin bottom for the chapter",options:["default","none","xs","s","base","m","l","xl"],control:{type:"radio"},defaultValue:["default"],required:!0}},tags:["autodocs"]};function n(o,e){return`
         <toujou-text-block class="text-block" text-block-column-count="1">
             <toujou-text-block-column class="text-block-column">
                 <div class="text-block__content">
@@ -44,8 +50,8 @@ or
         </toujou-text-block>
     `}const h=o=>{const e=o.backgroundColor!=="none"?`background-color=${o.backgroundColor}`:"",d=o.fontColor!=="none"?`font-color=${o.fontColor}`:"";return`
         <span id="c1"></span>
-        <section class="chapter" background-color="background">
-            ${a("Dummy content",!0)}
+        <section class="chapter" background-color="font-light">
+            ${n("Dummy content",!0)}
         </section>
 
         <span id="c2"></span>
@@ -64,16 +70,20 @@ or
         --chapter-bg-image-original: url(https://picsum.photos/2400/2400);
     "
             ${o.showBackgroundImage?"has-background-media":""}
+            chapter-padding-top="${o.paddingTop}"
+            chapter-padding-bottom="${o.paddingBottom}"
+            chapter-margin-top="${o.marginTop}"
+            chapter-margin-bottom="${o.marginBottom}"
             is-test-target
         >
-            ${a("Test chapter",!1)}
+            ${n("Test chapter",!1)}
         </section>
 
         <span id="c2"></span>
         <section class="chapter" background-color="background">
-            ${a("Dummy content",!0)}
+            ${n("Dummy content",!0)}
         </section>
-    `},n=h.bind({});n.args={backgroundColor:"none",fontColor:"none",minHeight:"auto",verticalPosition:"default",showBackgroundImage:!1,attachmentType:"scroll"};var i,s,c;n.parameters={...n.parameters,docs:{...(i=n.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ChapterStoryProps) => {
+    `},a=h.bind({});a.args={backgroundColor:"none",fontColor:"none",minHeight:"auto",verticalPosition:"default",showBackgroundImage:!1,attachmentType:"scroll",paddingTop:"default",paddingBottom:"default",marginTop:"default",marginBottom:"default"};var i,s,c;a.parameters={...a.parameters,docs:{...(i=a.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ChapterStoryProps) => {
   const bgColorAttr = args.backgroundColor !== 'none' ? \`background-color=\${args.backgroundColor}\` : '';
   const fontColorAttr = args.fontColor !== 'none' ? \`font-color=\${args.fontColor}\` : '';
   const chapterStyles = \`
@@ -85,7 +95,7 @@ or
     \`;
   return \`
         <span id="c1"></span>
-        <section class="chapter" background-color="background">
+        <section class="chapter" background-color="font-light">
             \${renderDummyContent('Dummy content', true)}
         </section>
 
@@ -99,6 +109,10 @@ or
             attachment-type="\${args.attachmentType}"
             style="\${chapterStyles}"
             \${args.showBackgroundImage ? 'has-background-media' : ''}
+            chapter-padding-top="\${args.paddingTop}"
+            chapter-padding-bottom="\${args.paddingBottom}"
+            chapter-margin-top="\${args.marginTop}"
+            chapter-margin-bottom="\${args.marginBottom}"
             is-test-target
         >
             \${renderDummyContent('Test chapter', false)}
@@ -109,4 +123,4 @@ or
             \${renderDummyContent('Dummy content', true)}
         </section>
     \`;
-}`,...(c=(s=n.parameters)==null?void 0:s.docs)==null?void 0:c.source}}};const C=["Chapter"];export{n as Chapter,C as __namedExportsOrder,k as default};
+}`,...(c=(s=a.parameters)==null?void 0:s.docs)==null?void 0:c.source}}};const k=["Chapter"];export{a as Chapter,k as __namedExportsOrder,C as default};
