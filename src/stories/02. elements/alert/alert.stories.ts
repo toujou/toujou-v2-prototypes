@@ -23,7 +23,6 @@ export default {
             description: "Set the alert variant",
             options: ['primary', 'secondary', 'warning', 'error', 'success', 'info'],
             control: { type: 'radio' },
-            defaultValue: ['primary'],
             required: true,
         },
     },
