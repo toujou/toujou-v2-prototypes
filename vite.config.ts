@@ -26,7 +26,6 @@ export default defineConfig({
                 // components from the @toujou/ui-components
                 'toujou-breadcrumb': path.resolve(__dirname, 'node_modules/@toujou/toujou-breadcrumb/lib'),
                 'toujou-clamped-content': path.resolve(__dirname, 'node_modules/@toujou/toujou-clamped-content/lib'),
-                // 'toujou-contact-box': path.resolve(__dirname, 'node_modules/@toujou/toujou-contact-box/lib'),
                 'toujou-counter': path.resolve(__dirname, 'node_modules/@toujou/toujou-counter/lib'),
                 'toujou-inpage-nav': path.resolve(__dirname, 'node_modules/@toujou/toujou-inpage-nav/lib'),
                 'toujou-input-password-toggle': path.resolve(__dirname, 'node_modules/@toujou/toujou-input-password-toggle/lib'),

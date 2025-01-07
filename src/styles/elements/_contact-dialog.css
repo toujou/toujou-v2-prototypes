@@ -1,0 +1,120 @@
+@layer components {
+    .contact-dialog {
+        --contact-dialog-border-radius: var(--border-radius-default);
+        --contact-dialog-border: none;
+        --contact-dialog-background-color: var(--color-bg);
+        --contact-dialog-width: calc(100% - calc(var(--spacing-normal) * 2));
+        --contact-dialog-max-width: 640px;
+        --contact-dialog-padding: var(--spacing-l);
+        --contact-dialog-justify-content: center;
+        --contact-dialog-text-align: center;
+        --contact-dialog-display: none;
+
+        --contact-dialog-close-margin-left: auto;
+        --contact-dialog-close-display: flex;
+        --contact-dialog-close-align-items: center;
+        --contact-dialog-close-justify-content: center;
+        --contact-dialog-close-color-active: var(--color-primary);
+        --contact-dialog-close-cursor: pointer;
+        --contact-dialog-close-height: var(--spacing-l);
+        --contact-dialog-close-width: var(--spacing-l);
+        --contact-dialog-close-position: absolute;
+        --contact-dialog-close-top: var(--spacing-s);
+        --contact-dialog-close-right: var(--spacing-s);
+        --contact-dialog-close-background: transparent;
+        --contact-dialog-close-border: none;
+
+        --contact-dialog-headline-color: var(--color-font);
+
+        --contact-dialog-message-color: var(--color-font);
+        --contact-dialog-message-font-family: var(--font-family-text);
+        --contact-dialog-message-font-size: var(--font-size-normal);
+
+        --contact-dialog-items-display: flex;
+        --contact-dialog-items-flex-direction: column;
+        --contact-dialog-items-aling-items: flex-start;
+        --contact-dialog-items-justify-content: flex-start;
+        --contact-dialog-items-gap: var(--spacing-normal);
+        --contact-dialog-items-width: fit-content;
+        --contact-dialog-items-margin: var(--spacing-l) auto 0;
+
+        --contact-dialog-item-display: flex;
+        --contact-dialog-item-align-items: center;
+        --contact-dialog-item-justify-content: center;
+        --contact-dialog-item-gap: var(--spacing-normal);
+        --contact-dialog-item-font-family: var(--font-family-text);
+        --contact-dialog-item-font-weight: var(--font-weight-text-normal);
+        --contact-dialog-item-color: var(--color-font);
+
+        border-radius: var(--contact-dialog-border-radius);
+        border: var(--contact-dialog-border);
+        background-color: var(--contact-dialog-background-color);
+        width: var(--contact-dialog-width);
+        max-width: var(--contact-dialog-max-width);
+        padding: var(--contact-dialog-padding);
+        display: var(--contact-dialog-display);
+        justify-content: var(--contact-dialog-justify-content);
+        text-align: var(--contact-dialog-text-align);
+    }
+
+    .contact-dialog[open] {
+        --contact-dialog-display: flex;
+    }
+
+    .contact-dialog::backdrop {
+        background-color: var(--color-black-o-75);
+    }
+
+    .contact-dialog__close {
+        margin-left: var(--contact-dialog-close-margin-left);
+        display: var(--contact-dialog-close-display);
+        align-items: var(--contact-dialog-close-align-items);
+        justify-content: var(--contact-dialog-close-justify-content);
+        cursor: var(--contact-dialog-close-cursor);
+        height: var(--contact-dialog-close-height);
+        width: var(--contact-dialog-close-width);
+        position: var(--contact-dialog-close-position);
+        top: var(--contact-dialog-close-top);
+        right: var(--contact-dialog-close-right);
+        background: var(--contact-dialog-close-background);
+        border: var(--contact-dialog-close-border);
+    }
+
+    .contact-dialog__close:focus-visible {
+        border: var(--focus-outline-width) solid var(--focus-outline-color);
+    }
+
+    .contact-dialog__close:is(:hover, :focus-visible) .icon {
+        --icon-color: var(--contact-dialog-close-color-active);
+    }
+
+    .contact-dialog__headline {
+        color: var(--contact-dialog-headline-color);
+    }
+
+    .contact-dialog__message {
+        color: var(--contact-dialog-message-color);
+        font-family: var(--contact-dialog-message-font-family);
+        font-size: var(--contact-dialog-message-font-size);
+    }
+
+    .contact-dialog__items {
+        display: var(--contact-dialog-items-display);
+        flex-direction: var(--contact-dialog-items-flex-direction);
+        align-items: var(--contact-dialog-items-aling-items);
+        justify-content: var(--contact-dialog-items-justify-content);
+        gap: var(--contact-dialog-items-gap);
+        width: var(--contact-dialog-items-width);
+        margin: var(--contact-dialog-items-margin);
+    }
+
+    .contact-dialog__item {
+        display: var(--contact-dialog-item-display);
+        align-items: var(--contact-dialog-item-align-items);
+        justify-content: var(--contact-dialog-item-justify-content);
+        gap: var(--contact-dialog-item-gap);
+        font-family: var(--contact-dialog-item-font-family);
+        font-weight: var(--contact-dialog-item-font-weight);
+        color: var(--contact-dialog-item-color);
+    }
+}
