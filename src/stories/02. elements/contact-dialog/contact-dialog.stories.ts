@@ -3,21 +3,20 @@ import { Meta } from '@storybook/web-components';
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 // @ts-ignore
-import contactBoxDocs from './contact-box.docs.mdx';
+import contactDialogDocs from './contact-dialog.docs.mdx';
 
 export default {
-    title: 'COMPONENTS/Contact Box',
+    title: 'COMPONENTS/Contact Dialog',
     parameters: {
         badges: [TOUJOU_BADGES.DONE],
         docs: {
-            page: contactBoxDocs,
+            page: contactDialogDocs,
         },
     },
     tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {
-
     return `
         <input type="checkbox" name="contact-state" id="contact-state" class="state-input" aria-hidden="true">
         <label for="contact-state" class="button">Open contact box</label>
@@ -38,7 +37,7 @@ const Template = () => {
 
             <div class="contact-dialog__content">
                 <h3 class="contact-dialog__headline">Kontakt</h3>
-                <p class="contact-dialog__message">This is the contact box message</p>
+                <p class="contact-dialog__message">This is the contact dialog message</p>
                 <div class="contact-dialog__items">
                     <div class="contact-dialog__item">
                         <toujou-icon class="icon" icon-size="ms" icon-color="font" icon-name="telephone"></toujou-icon>
@@ -58,4 +57,4 @@ const Template = () => {
     `;
 };
 
-export const ContactBox = Template.bind({});
+export const ContactDialog = Template.bind({});
