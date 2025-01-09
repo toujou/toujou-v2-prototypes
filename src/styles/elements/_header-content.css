@@ -107,8 +107,8 @@
         color: var(--header-title-color) !important;
     }
 
-    .header > .header__content .header-content__text,
-    .header > .header__content .header-content > p {
+    .header > .header-content .header-content__text,
+    .header > .header-content .header-content > p {
         text-align: var(--header-text-alignment);
     }
 
