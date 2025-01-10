@@ -106,8 +106,6 @@ class ToujouModal extends LitElement {
             entries[0] && this.onPosition(entries[0]);
         });
         this.iframeResizerMap = new Map();
-
-        this.setAttribute('exportparts', 'scroller, content, modal-content, modal-header, headline, dog-ear-close, modal-header-close, progress-bar');
     }
 
     // eslint-disable-next-line class-methods-use-this
