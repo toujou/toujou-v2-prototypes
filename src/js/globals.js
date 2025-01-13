@@ -5,7 +5,6 @@ import '@ungap/custom-elements';
 import { initMainNav } from "./elements/main-nav";
 
 function initGlobalsScripts() {
-    console.log('11111');
     initMainNav();
 }
 
