@@ -145,8 +145,8 @@ span:first-child + .text-block {
 
     .text-block[text-block-media-position="inside-left"] .text-block__figure {
         float: left;
-        padding-right: calc(var(--text-block-grid-gap) / 2);
-        margin-right: calc(var(--text-block-grid-gap) / 2) !important;
+        padding-right: 0;
+        margin-right: var(--text-block-grid-gap) !important;
     }
 
     .text-block[text-block-media-position="inside-left"] .text-block__content {
@@ -155,8 +155,8 @@ span:first-child + .text-block {
 
     .text-block[text-block-media-position="inside-right"] .text-block__figure {
         float: right;
-        padding-left: calc(var(--text-block-grid-gap) / 2);
-        margin-left: calc(var(--text-block-grid-gap) / 2) !important;
+        padding-left: 0;
+        margin-left: var(--text-block-grid-gap) !important;
     }
 
     .text-block[text-block-media-position="inside-right"] .text-block__content {
