@@ -147,13 +147,3 @@
         --icon-color: var(--media-info-toggle-hover-color);
     }
 }
-
-@container (width >= 768px) {
-    .text-block[text-block-media-position*="inside"] .media-info {
-        --media-info-width: calc(100% - calc(var(--text-block-grid-gap) / 2));
-    }
-
-    .text-block[text-block-media-position="inside-right"] .media-info {
-        --media-info-left: calc(var(--text-block-grid-gap) / 2);
-    }
-}
