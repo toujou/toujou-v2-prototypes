@@ -1,3 +1,6 @@
+/* Globals */
+import './globals';
+
 /* This is the JS that needs to be loaded on all pages */
 import './globals/contact-dialog';
 import '../components/copied/toujou-modal/toujou-modal';
@@ -13,6 +16,3 @@ import '@toujou/toujou-spinner/lib/index';
 import '@toujou/toujou-media-info/lib/index';
 import '@toujou/toujou-consent/lib/index';
 import '@toujou/toujou-iframe-resizer/lib/index';
-
-
-
