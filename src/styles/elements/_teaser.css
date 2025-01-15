@@ -68,14 +68,20 @@
 
     .teaser[element-design="primary"] {
         --teaser-background-color: var(--color-primary);
+        --color-link: var(--color-bg);
+        --color-link-hover: var(--color-primary-dark);
     }
 
     .teaser[element-design="secondary"] {
         --teaser-background-color: var(--color-secondary);
+        --color-link: var(--color-bg);
+        --color-link-hover: var(--color-secondary-dark);
     }
 
     .teaser[element-design="inverted"] {
         --teaser-background-color: var(--color-font);
+        --color-link: var(--color-bg);
+        --color-link-hover: var(--color-font-light);
     }
 
     .slider .teaser {

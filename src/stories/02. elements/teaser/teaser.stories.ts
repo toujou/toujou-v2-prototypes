@@ -93,7 +93,7 @@ const Template: StoryFn<ToujouImageCardStoryProps> = (args: ToujouImageCardStory
                 </div>
                 <div class="teaser__content">
                     <h3>Nice headline</h3>
-                    <p>This is a simple element containing a headline and this text. There are no restrictions for the amount of content. So feel free to add as much information as long as it helps your story or your customer.</p>
+                    <p>This is a simple element containing a <a href="#">headline and this text</a>. There are no restrictions for the amount of content. So feel free to add as much information as long as it helps your story or your customer.</p>
                 </div>
             </toujou-teaser>
         </main>
