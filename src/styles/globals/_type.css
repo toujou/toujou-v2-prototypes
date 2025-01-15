@@ -312,6 +312,6 @@ a:-webkit-any-link:focus-visible {
 
 @media (hover: hover) {
     a:not(.button):hover {
-        color: var(--color-primary-dark);
+        color: var(--color-link-hover);
     }
 }

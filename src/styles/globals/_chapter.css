@@ -338,6 +338,8 @@
 .chapter[font-color="font"] > :is(h1, h2, h3, h4, h5, h6, p, ul:not(.card-collection), ol:not(.item-collection)),
 .chapter[font-color="font"] > .text-block :is(h1, h2, h3, h4, h5, h6, p, ul:not(.card-collection), ol:not(.item-collection)) {
     --color-headline: var(--color-font);
+    --color-link: var(--color-font);
+    --color-link-hover: var(--color-font-dark);
 }
 
 .chapter[font-color="font-light"] > :is(h1, h2, h3, h4, h5, h6, p, ul:not(.card-collection), ol:not(.item-collection)),
