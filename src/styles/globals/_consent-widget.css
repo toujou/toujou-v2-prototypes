@@ -6,7 +6,7 @@
     --consent-widget-padding: var(--spacing-normal);
     --consent-widget-border-radius: var(--border-radius-default);
     --consent-widget-width: var(--content-width-with-padding);
-    --consent-widget-max-width: 560px;
+    --consent-widget-max-width: 600px;
     --consent-widget-background-color: var(--color-bg);
     --consent-widget-display: block;
     --consent-widget-margin: 0;
