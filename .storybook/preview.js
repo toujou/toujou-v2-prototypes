@@ -71,7 +71,7 @@ export default {
             debug: false,
         }
     },
-    tags: ["autodocs"],
+    tags: ["autodocs", 'autodocs'],
     decorators: [
         // This is commented out because it works well on the preview, but not on the deployed storybook
         // (Because the files get different names, with hashes...)
