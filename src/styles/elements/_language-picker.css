@@ -1,6 +1,7 @@
 @layer components {
     .language-picker {
         --language-picker-z-index: var(--topbar-languague-picker-z-index);
+        --language-picker-list-align-self: baseline;
 
         --language-picker-list-list-style: none;
         --language-picker-list-display: flex;
@@ -18,6 +19,7 @@
 
         grid-area: language-picker;
         z-index: var(--language-picker-z-index);
+        align-self: var(--language-picker-list-align-self)
     }
 
     .topbar[navigation-theme="dark"] .language-picker {
