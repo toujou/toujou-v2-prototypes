@@ -10,7 +10,7 @@
         --topbar-align-items: center;
         --topbar-padding: 0 var(--spacing-normal);
         --topbar-shadow: var(--shadow-normal);
-        --topbar-transition: background-color var(--animation-duration-normal) var(--animation-easing-normal);
+        --topbar-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
         --topbar-z-index: var(--z-index-topbar);
 
         --topbar-before-position: absolute;
