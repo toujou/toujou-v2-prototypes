@@ -2,6 +2,8 @@
     --main-nav-level-2-list-margin: var(--spacing-normal) 0 0;
     --main-nav-level-2-list-padding: 0 0 var(--spacing-m) var(--spacing-m);
     --main-nav-level-2-list-width: 100%;
+    --main-nav-level-2-list-min-width: 100%;
+    --main-nav-level-2-list-max-width: auto;
     --main-nav-level-2-list-gap: var(--spacing-m);
 
     --main-nav-level-2-list-item-display: none;
@@ -18,6 +20,8 @@
     margin: var(--main-nav-level-2-list-margin);
     padding: var(--main-nav-level-2-list-padding);
     width: var(--main-nav-level-2-list-width);
+    min-width: var(--main-nav-level-2-list-min-width);
+    max-width: var(--main-nav-level-2-list-max-width);
 }
 
 .main-nav__list-item[is-open] > .main-nav__list[nav-list-level="2"] {
@@ -36,12 +40,14 @@
     .main-nav__list[nav-list-level="2"] {
         --main-nav-level-2-list-padding: var(--spacing-normal) var(--spacing-normal) var(--spacing-normal) var(--spacing-m);
         --main-nav-level-2-list-column-count: 2;
-        --main-nav-level-2-list-gap: var(--spacing-normal);
+        --main-nav-level-2-list-gap: var(--spacing-s);
         --main-nav-level-2-border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
         --main-nav-level-2-position: absolute;
         --main-nav-level-2-list-item-grid-template-columns: 1fr var(--main-nav-chevron-icon-desktop-size);
 
-        --main-nav-level-2-list-width: fit-content;
+        --main-nav-level-2-list-width: max-content;
+        --main-nav-level-2-list-min-width: 260px;
+        --main-nav-level-2-list-max-width: 320px;
         --main-nav-level-2-list-left: 0;
         --main-nav-level-2-list-transform: translate(-1.5rem, 100%);
 

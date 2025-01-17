@@ -293,5 +293,7 @@
         align-items: var(--main-nav-text-align-items);
         gap: var(--main-nav-text-gap);
         padding: var(--main-nav-text-padding);
+        white-space: wrap;
+        line-height: var(--line-height-s);
     }
 }
