@@ -15,8 +15,8 @@
     --service-nav-transform: translateY(-100vh);
     --service-nav-pointer-events: none;
     --service-nav-transition:
-            transform var(--animation-duration-normal) var(--animation-easing-normal),
-            opacity var(--animation-duration-normal) var(--animation-easing-normal);
+            transform var(--animation-duration-fast) var(--animation-easing-normal),
+            opacity var(--animation-duration-fast) var(--animation-easing-normal);
 
     --service-nav-link-font-family: var(--font-family-text);
     --service-nav-link-font-size: var(--font-size-normal);
@@ -70,8 +70,8 @@
     --service-nav-pointer-events: all;
     --service-nav-transform: translateY(0);
     --service-nav-transition:
-            transform var(--animation-duration-normal) var(--animation-easing-normal),
-            opacity var(--animation-duration-normal) var(--animation-easing-normal) .5s;
+            transform var(--animation-duration-fast) var(--animation-easing-normal),
+            opacity var(--animation-duration-fast) var(--animation-easing-normal) .25s;
 }
 
 @media screen and (width < 1024px) {
