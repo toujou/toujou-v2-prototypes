@@ -266,7 +266,7 @@
     display: none;
 }
 
-@container (width >= 520px) {
+@media screen and (width >= 520px) {
     .consent-widget {
         --consent-widget-bottom-flex-flow: row nowrap;
         --consent-widget-bottom-buttons-justify-content: flex-end;
@@ -274,7 +274,7 @@
     }
 }
 
-@container (width >= 840px) {
+@media screen and (width >= 840px) {
     .consent-widget {
         --consent-widget-padding: var(--content-inner-padding);
     }
