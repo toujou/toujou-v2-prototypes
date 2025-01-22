@@ -15,3 +15,7 @@ main > *:not(span, .breadcrumb, .chapter):first-child,
 main > span:first-child + *:not(.breadcrumb, .chapter) {
     margin-top: var(--spacing-between-elements-normal);
 }
+
+main:has(> .chapter[background-color]:last-child) {
+    padding-bottom: 0;
+}
