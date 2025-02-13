@@ -25,12 +25,12 @@
     grid-column: span 12;
 }
 
-:is(.input-group, .form__row, input[hidden], .fieldset) + .input-group {
+:is(.input-group, .form__row, input[hidden], .fieldset, .form__content-element-container) + .input-group {
     margin-top: var(--input-group-margin-between);
 }
 
 .form__row .input-group,
-.form__row :is(.input-group, .form__row, input[hidden], .fieldset) + .input-group {
+.form__row :is(.input-group, .form__row, input[hidden], .fieldset, .form__content-element-container) + .input-group {
     margin-top: 0;
 }
 

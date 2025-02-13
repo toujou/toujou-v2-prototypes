@@ -18,7 +18,7 @@
     margin-top: var(--fieldset-margin-top);
 }
 
-:is(.input-group, .form__row, input[hidden], .fieldset) + .fieldset {
+:is(.input-group, .form__row, input[hidden], .fieldset, .form__content-element-container) + .fieldset {
     margin-top: var(--form-successive-groups-distance);
 }
 
