@@ -34,6 +34,7 @@
 
 .main-nav__list-item[nav-item-level="2"] .main-nav__text {
     font-size: var(--main-nav-level-2-list-item-font-size);
+    white-space: normal;
 }
 
 @media screen and (width >= 1024px) {
@@ -44,14 +45,14 @@
         --main-nav-level-2-border-radius: 0 0 var(--border-radius-default) var(--border-radius-default);
         --main-nav-level-2-position: absolute;
         --main-nav-level-2-list-item-grid-template-columns: 1fr var(--main-nav-chevron-icon-desktop-size);
+        --main-nav-level-2-min-width: 16rem;
+        --main-nav-level-2-max-width: 20rem;
 
         --main-nav-level-2-list-width: max-content;
         --main-nav-level-2-list-min-width: 260px;
         --main-nav-level-2-list-max-width: 320px;
         --main-nav-level-2-list-left: 0;
         --main-nav-level-2-list-transform: translate(-1.5rem, 100%);
-
-        --main-nav-link-color: var(--color-primary);
 
         --main-nav-text-display: flex;
         --main-nav-text-align-items: center;
@@ -63,6 +64,8 @@
         --main-nav-text-before-display: block;
         --main-nav-text-before-icon: var(--icon-chevron-right);
 
+        --main-nav-level-2-link-line-height: 1.4;
+
         position: var(--main-nav-level-2-position);
         left: var(--main-nav-level-2-list-left);
         bottom: var(--main-nav-list-bottom);
@@ -73,6 +76,8 @@
         column-count: var(--main-nav-level-2-list-column-count);
         column-gap: var(--main-nav-level-2-list-gap);
         border-radius: var(--main-nav-level-2-border-radius);
+        min-width: var(--main-nav-level-2-min-width);
+        max-width: var(--main-nav-level-2-max-width);
     }
 
     .main-nav__list-item[nav-item-level="1"]:last-child .main-nav__list[nav-list-level="2"] {

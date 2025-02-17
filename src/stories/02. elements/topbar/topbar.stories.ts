@@ -14,16 +14,16 @@ export default {
         layout: "fullscreen",
     },
     argTypes: {
-        navigationTheme: {
+        navigationColor: {
             table: {
                 category: "Topbar settings",
-                defaultValue: { summary: 'light' },
+                defaultValue: { summary: 'default' },
             },
-            name: 'Navigation theme',
-            description: "Set the navigation theme",
-            options: ['light', 'dark'],
+            name: 'Navigation color',
+            description: "Set the navigation color",
+            options: ['default', 'primary', 'secondary', 'font'],
             control: { type: 'radio' },
-            defaultValue: ['light'],
+            defaultValue: ['default'],
             required: true,
         },
         titleType: {
@@ -77,7 +77,7 @@ export default {
 } satisfies Meta;
 
 interface TopbarStoryProps {
-    navigationTheme: string
+    navigationColor: string
     titleType: string
     logoSize: string
     noTransitions: boolean
@@ -88,11 +88,12 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
     // @ts-ignore
     // document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
 
+    document.documentElement.setAttribute('navigation-color', args.navigationColor);
+
     return `
         <toujou-topbar
             id="topbar"
             class="topbar"
-            navigation-theme="${args.navigationTheme}"
             logo-size="${args.logoSize}"
             ${args.noTransitions ? 'no-transitions' : ''}
         >
@@ -182,14 +183,6 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
             </toujou-burger-button>
 
-            <nav class="service-nav">
-                <a href="#" class="service-nav__link">Impressum</a>
-                <a href="#" class="service-nav__link">Datenschutz</a>
-                <a href="#" class="service-nav__link">Kontakt</a>
-                <a href="#" class="service-nav__link">About us</a>
-                <a href="#" class="service-nav__link">Gender at work</a>
-            </nav>
-
             <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
@@ -225,7 +218,17 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
                                     </li>
                                     <li class="main-nav__list-item" nav-item-level="3">
                                         <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
+                                            <span class="main-nav__text">Item three with a test very loooooong litle</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item four</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item five</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -282,7 +285,7 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Berufsausbildung</span>
+                                    <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
                                 </a>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
@@ -484,6 +487,14 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 </ul>
             </nav>
 
+             <nav class="service-nav">
+                <a href="#" class="service-nav__link">Impressum</a>
+                <a href="#" class="service-nav__link">Datenschutz</a>
+                <a href="#" class="service-nav__link">Kontakt</a>
+                <a href="#" class="service-nav__link">About us</a>
+                <a href="#" class="service-nav__link">Gender at work</a>
+            </nav>
+
         </toujou-topbar>
 
         <main>
@@ -541,7 +552,7 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
 export const Topbar = Template.bind({});
 
 Topbar.args = {
-    navigationTheme: 'light',
+    navigationColor: 'default',
     titleType: 'logo',
     logoSize: 'medium',
     noTransitions: false,

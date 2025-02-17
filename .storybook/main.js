@@ -17,5 +17,5 @@ export default {
         options: {}
     },
     "staticDirs": ["../assets"],
-    docs: {}
+    docs: {},
 };
