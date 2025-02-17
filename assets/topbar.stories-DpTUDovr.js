@@ -1,10 +1,10 @@
-import{T as d}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-runtime-CS_Wz6c_.js";import{useMDXComponents as i}from"./index-C8FVCAkB.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";const p=""+new URL("main-nav-mobile-09__OMUc.jpg",import.meta.url).href,v=""+new URL("main-nav-desktop-CmyqBTZx.jpg",import.meta.url).href;function s(e){const a={code:"code",h2:"h2",p:"p",pre:"pre",...i(),...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(a.h2,{id:"main-nav",children:"Main nav"}),`
-`,n.jsxs(a.p,{children:["The main navigation render a ",n.jsx(a.code,{children:"<nav>"})," element which allows the users to navigate between the different pages on the website."]}),`
-`,n.jsx(a.p,{children:"It is automatically generated according to the pages that are created on the BE."}),`
-`,n.jsx(a.p,{children:"On mobile it is visible by opening the navigation (click on the burger button), on desktop it is always visible."}),`
-`,n.jsx(a.p,{children:"The main navigation can show up to 3 nested navigation levels."}),`
-`,n.jsx(a.h2,{id:"markup-example",children:"Markup example:"}),`
-`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<nav id="mainNavigation" class="main-nav" aria-label="Main navigation" open-level="1">
+import{T as d}from"./badgeCustomConfig-DUXiHpL4.js";import{j as a}from"./jsx-runtime-CS_Wz6c_.js";import{useMDXComponents as i}from"./index-C8FVCAkB.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";const p=""+new URL("main-nav-mobile-09__OMUc.jpg",import.meta.url).href,v=""+new URL("main-nav-desktop-CmyqBTZx.jpg",import.meta.url).href;function s(n){const e={code:"code",h2:"h2",p:"p",pre:"pre",...i(),...n.components};return a.jsxs(a.Fragment,{children:[a.jsx(e.h2,{id:"main-nav",children:"Main nav"}),`
+`,a.jsxs(e.p,{children:["The main navigation render a ",a.jsx(e.code,{children:"<nav>"})," element which allows the users to navigate between the different pages on the website."]}),`
+`,a.jsx(e.p,{children:"It is automatically generated according to the pages that are created on the BE."}),`
+`,a.jsx(e.p,{children:"On mobile it is visible by opening the navigation (click on the burger button), on desktop it is always visible."}),`
+`,a.jsx(e.p,{children:"The main navigation can show up to 3 nested navigation levels."}),`
+`,a.jsx(e.h2,{id:"markup-example",children:"Markup example:"}),`
+`,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<nav id="mainNavigation" class="main-nav" aria-label="Main navigation" open-level="1">
     <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
         <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
         Zurück
@@ -45,23 +45,23 @@ import{T as d}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-run
     </ul>
 </nav>
 `})}),`
-`,n.jsx(a.p,{children:"The mobile main navigation requires click to navigate between the different menu levels"}),`
-`,n.jsx("img",{src:p}),`
-`,n.jsx(a.p,{children:"The desktop navigation open and closes on hover events"}),`
-`,n.jsx("img",{src:v}),`
-`,n.jsx(a.h2,{id:"active-menu-items",children:"Active menu items"}),`
-`,n.jsxs(a.p,{children:["The active menu items get an extra ",n.jsx(a.code,{children:"active"}),` attribute, which we use to style them accordingly
-Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1" has-subnav="" active>'})]})]})}function _(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(s,{...e})}):s(e)}const h=""+new URL("service-nav-mobile-D3QlnV6C.jpg",import.meta.url).href,b=""+new URL("service-nav-desktop-Qjwajety.jpg",import.meta.url).href;function l(e){const a={code:"code",h2:"h2",p:"p",pre:"pre",...i(),...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(a.h2,{id:"service-nav",children:"Service nav"}),`
-`,n.jsxs(a.p,{children:["The service navigation renders a ",n.jsx(a.code,{children:"nav"})," element, which allows users to quickly navigate to the most important service pages on the website."]}),`
-`,n.jsxs(a.p,{children:["It is automatically generated according to the pages added to the ",n.jsx(a.code,{children:"Service-Navigation"})," folder on the BE."]}),`
-`,n.jsx(a.p,{children:"On mobile it is visible inside the menu, which can be opened / closed with a burger button click. It is also rendered on the default footer"}),`
-`,n.jsx(a.h2,{id:"main-nav",children:"Main nav"}),`
-`,n.jsxs(a.p,{children:["The main navigation render a ",n.jsx(a.code,{children:"<nav>"})," element which allows the users to navigate between the different pages on the website."]}),`
-`,n.jsx(a.p,{children:"It is automatically generated according to the pages that are created on the BE."}),`
-`,n.jsx(a.p,{children:"On mobile it is visible by opening the navigation (click on the burger button), on desktop it is always visible."}),`
-`,n.jsx(a.p,{children:"The main navigation can show up to 3 nested navigation levels."}),`
-`,n.jsx(a.h2,{id:"markup-example",children:"Markup example:"}),`
-`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<nav id="mainNavigation" class="main-nav" aria-label="Main navigation" open-level="1">
+`,a.jsx(e.p,{children:"The mobile main navigation requires click to navigate between the different menu levels"}),`
+`,a.jsx("img",{src:p}),`
+`,a.jsx(e.p,{children:"The desktop navigation open and closes on hover events"}),`
+`,a.jsx("img",{src:v}),`
+`,a.jsx(e.h2,{id:"active-menu-items",children:"Active menu items"}),`
+`,a.jsxs(e.p,{children:["The active menu items get an extra ",a.jsx(e.code,{children:"active"}),` attribute, which we use to style them accordingly
+Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1" has-subnav="" active>'})]})]})}function _(n={}){const{wrapper:e}={...i(),...n.components};return e?a.jsx(e,{...n,children:a.jsx(s,{...n})}):s(n)}const h=""+new URL("service-nav-mobile-D3QlnV6C.jpg",import.meta.url).href,b=""+new URL("service-nav-desktop-Qjwajety.jpg",import.meta.url).href;function l(n){const e={code:"code",h2:"h2",p:"p",pre:"pre",...i(),...n.components};return a.jsxs(a.Fragment,{children:[a.jsx(e.h2,{id:"service-nav",children:"Service nav"}),`
+`,a.jsxs(e.p,{children:["The service navigation renders a ",a.jsx(e.code,{children:"nav"})," element, which allows users to quickly navigate to the most important service pages on the website."]}),`
+`,a.jsxs(e.p,{children:["It is automatically generated according to the pages added to the ",a.jsx(e.code,{children:"Service-Navigation"})," folder on the BE."]}),`
+`,a.jsx(e.p,{children:"On mobile it is visible inside the menu, which can be opened / closed with a burger button click. It is also rendered on the default footer"}),`
+`,a.jsx(e.h2,{id:"main-nav",children:"Main nav"}),`
+`,a.jsxs(e.p,{children:["The main navigation render a ",a.jsx(e.code,{children:"<nav>"})," element which allows the users to navigate between the different pages on the website."]}),`
+`,a.jsx(e.p,{children:"It is automatically generated according to the pages that are created on the BE."}),`
+`,a.jsx(e.p,{children:"On mobile it is visible by opening the navigation (click on the burger button), on desktop it is always visible."}),`
+`,a.jsx(e.p,{children:"The main navigation can show up to 3 nested navigation levels."}),`
+`,a.jsx(e.h2,{id:"markup-example",children:"Markup example:"}),`
+`,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<nav id="mainNavigation" class="main-nav" aria-label="Main navigation" open-level="1">
     <button is="toujou-button" class="button main-nav__back-button" button-type="default" button-size="normal" button-variant="primary" button-icon-position="left">
         <toujou-icon class="icon" icon-color="background" icon-size="m" icon-name="arrow-left"></toujou-icon>
         Zurück
@@ -102,13 +102,13 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
     </ul>
 </nav>
 `})}),`
-`,n.jsx(a.p,{children:"The mobile main navigation requires click to navigate between the different menu levels"}),`
-`,n.jsx("img",{src:h}),`
-`,n.jsx(a.p,{children:"The desktop navigation open and closes on hover events"}),`
-`,n.jsx("img",{src:b})]})}function g(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(l,{...e})}):l(e)}function o(e){const a={code:"code",h2:"h2",h3:"h3",p:"p",pre:"pre",...i(),...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(a.h2,{id:"burger-button",children:"Burger button"}),`
-`,n.jsx(a.p,{children:"The burger button is an element that allows us to open / close the main navigation menu on click"}),`
-`,n.jsx(a.h2,{id:"markup-example",children:"Markup example:"}),`
-`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<toujou-burger-button
+`,a.jsx(e.p,{children:"The mobile main navigation requires click to navigate between the different menu levels"}),`
+`,a.jsx("img",{src:h}),`
+`,a.jsx(e.p,{children:"The desktop navigation open and closes on hover events"}),`
+`,a.jsx("img",{src:b})]})}function g(n={}){const{wrapper:e}={...i(),...n.components};return e?a.jsx(e,{...n,children:a.jsx(l,{...n})}):l(n)}function o(n){const e={code:"code",h2:"h2",h3:"h3",p:"p",pre:"pre",...i(),...n.components};return a.jsxs(a.Fragment,{children:[a.jsx(e.h2,{id:"burger-button",children:"Burger button"}),`
+`,a.jsx(e.p,{children:"The burger button is an element that allows us to open / close the main navigation menu on click"}),`
+`,a.jsx(e.h2,{id:"markup-example",children:"Markup example:"}),`
+`,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<toujou-burger-button
     class="burger-button"
     role="button"
     aria-pressed="false"
@@ -123,40 +123,40 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
     <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
 </toujou-burger-button>
 `})}),`
-`,n.jsx(a.h2,{id:"attributes",children:"Attributes"}),`
-`,n.jsxs(a.h3,{id:"role-required",children:["role ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:['The "role" attribute must be set to ',n.jsx(a.code,{children:"button"}),". This greatly improves the element's accessibility."]}),`
-`,n.jsxs(a.h3,{id:"aria-pressed-required",children:["aria-pressed ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:['The "aria-pressed" must be set to ',n.jsx(a.code,{children:"false"})," to improve the element's accessibility. Will be updated by the webcomponent."]}),`
-`,n.jsxs(a.h3,{id:"aria-haspopup-required",children:["aria-haspopup ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:['The "aria-haspopup" must be set to ',n.jsx(a.code,{children:"true"})," to improve the element's accessibility. Will be updated by the webcomponent."]}),`
-`,n.jsxs(a.h3,{id:"aria-controls-required",children:["aria-controls ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:[`The "aria-controls" must be set to the same value as the main navigation's id, for instance `,n.jsx(a.code,{children:"mainNavigation"}),"."]}),`
-`,n.jsxs(a.h3,{id:"aria-expanded-required",children:["aria-expanded ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:['The "aria-expanded" must be set to ',n.jsx(a.code,{children:"false"})," to improve the element's accessibility. Will be updated by the webcomponent."]}),`
-`,n.jsxs(a.h3,{id:"aria-label-required",children:["aria-label ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:['The "aria-label" must be set to a value to explains the user what the button is or does, like for instance ',n.jsx(a.code,{children:"Menu button"})," or ",n.jsx(a.code,{children:"Button to toggle the main navigation's visibility"}),"."]}),`
-`,n.jsx(a.p,{children:"It should work with all different languages available on the website."}),`
-`,n.jsxs(a.h3,{id:"toggle-element-selector-required",children:["toggle-element-selector ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:["The ",n.jsx(a.code,{children:"toggle-element-selector"})," will be used by the webcomponent. This is the target element where the open navigation attribute will be added / removed."]}),`
-`,n.jsxs(a.p,{children:["This element must be a valid css selector for an element on the page. As default we should use the ",n.jsx(a.code,{children:"#topbar"})," selector."]}),`
-`,n.jsx(a.h2,{id:"events",children:"Events"}),`
-`,n.jsxs(a.p,{children:["The ",n.jsx(a.code,{children:"<burger-button>"})," element dispatches and reacts to some custom events."]}),`
-`,n.jsx(a.h3,{id:"click-event",children:"click event"}),`
-`,n.jsxs(a.p,{children:["The ",n.jsx(a.code,{children:"<burger-button>"})," dispatches a custom ",n.jsx(a.code,{children:"toujou-burger-button-click"})," event each time it is clicked."]}),`
-`,n.jsxs(a.p,{children:["The ",n.jsx(a.code,{children:"toujou-burger-button-click"})," event also has the current state available under ",n.jsx(a.code,{children:"event.detail.state"}),"."]}),`
-`,n.jsx(a.h3,{id:"topbar-breaking-point",children:"topbar breaking point"}),`
-`,n.jsxs(a.p,{children:["The ",n.jsx(a.code,{children:"<burger-button>"})," listens to the custom ",n.jsx(a.code,{children:"toujou-topbar-breakpoint-change"})," event (dispatched by the topbar element) and reacts by setting its ",n.jsx(a.code,{children:"state = false"})," whenever the window grows to desktop size."]}),`
-`,n.jsxs(a.p,{children:["The ",n.jsx(a.code,{children:"toujou-topbar-breakpoint-change"})," also carries the information if the new window is mobile on ",n.jsx(a.code,{children:"event.detail.state"}),". ",n.jsx(a.code,{children:"true"})," mean it is mobile"]})]})}function x(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(o,{...e})}):o(e)}const f=""+new URL("topbar-mobile-Di9Mhn-b.jpg",import.meta.url).href,j=""+new URL("topbar-desktop-U98wAP54.jpg",import.meta.url).href;function c(e){const a={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",ul:"ul",...i(),...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(a.h1,{id:"topbar",children:"Topbar"}),`
-`,n.jsx(a.p,{children:"The topbar is a complex element, which render a topbar possibly with a main navigation, service navigation, logo and burger button."}),`
-`,n.jsx(a.p,{children:"The topbar element is composed by different elements, which also have they own docs:"}),`
-`,n.jsxs(a.ul,{children:[`
-`,n.jsx(a.li,{children:n.jsx(a.a,{href:"#main-navigation",children:"main navigation"})}),`
-`,n.jsx(a.li,{children:n.jsx(a.a,{href:"#service-navigation",children:"service navigation"})}),`
-`,n.jsx(a.li,{children:n.jsx(a.a,{href:"#burger-button",children:"burger button"})}),`
+`,a.jsx(e.h2,{id:"attributes",children:"Attributes"}),`
+`,a.jsxs(e.h3,{id:"role-required",children:["role ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:['The "role" attribute must be set to ',a.jsx(e.code,{children:"button"}),". This greatly improves the element's accessibility."]}),`
+`,a.jsxs(e.h3,{id:"aria-pressed-required",children:["aria-pressed ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:['The "aria-pressed" must be set to ',a.jsx(e.code,{children:"false"})," to improve the element's accessibility. Will be updated by the webcomponent."]}),`
+`,a.jsxs(e.h3,{id:"aria-haspopup-required",children:["aria-haspopup ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:['The "aria-haspopup" must be set to ',a.jsx(e.code,{children:"true"})," to improve the element's accessibility. Will be updated by the webcomponent."]}),`
+`,a.jsxs(e.h3,{id:"aria-controls-required",children:["aria-controls ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:[`The "aria-controls" must be set to the same value as the main navigation's id, for instance `,a.jsx(e.code,{children:"mainNavigation"}),"."]}),`
+`,a.jsxs(e.h3,{id:"aria-expanded-required",children:["aria-expanded ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:['The "aria-expanded" must be set to ',a.jsx(e.code,{children:"false"})," to improve the element's accessibility. Will be updated by the webcomponent."]}),`
+`,a.jsxs(e.h3,{id:"aria-label-required",children:["aria-label ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:['The "aria-label" must be set to a value to explains the user what the button is or does, like for instance ',a.jsx(e.code,{children:"Menu button"})," or ",a.jsx(e.code,{children:"Button to toggle the main navigation's visibility"}),"."]}),`
+`,a.jsx(e.p,{children:"It should work with all different languages available on the website."}),`
+`,a.jsxs(e.h3,{id:"toggle-element-selector-required",children:["toggle-element-selector ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:["The ",a.jsx(e.code,{children:"toggle-element-selector"})," will be used by the webcomponent. This is the target element where the open navigation attribute will be added / removed."]}),`
+`,a.jsxs(e.p,{children:["This element must be a valid css selector for an element on the page. As default we should use the ",a.jsx(e.code,{children:"#topbar"})," selector."]}),`
+`,a.jsx(e.h2,{id:"events",children:"Events"}),`
+`,a.jsxs(e.p,{children:["The ",a.jsx(e.code,{children:"<burger-button>"})," element dispatches and reacts to some custom events."]}),`
+`,a.jsx(e.h3,{id:"click-event",children:"click event"}),`
+`,a.jsxs(e.p,{children:["The ",a.jsx(e.code,{children:"<burger-button>"})," dispatches a custom ",a.jsx(e.code,{children:"toujou-burger-button-click"})," event each time it is clicked."]}),`
+`,a.jsxs(e.p,{children:["The ",a.jsx(e.code,{children:"toujou-burger-button-click"})," event also has the current state available under ",a.jsx(e.code,{children:"event.detail.state"}),"."]}),`
+`,a.jsx(e.h3,{id:"topbar-breaking-point",children:"topbar breaking point"}),`
+`,a.jsxs(e.p,{children:["The ",a.jsx(e.code,{children:"<burger-button>"})," listens to the custom ",a.jsx(e.code,{children:"toujou-topbar-breakpoint-change"})," event (dispatched by the topbar element) and reacts by setting its ",a.jsx(e.code,{children:"state = false"})," whenever the window grows to desktop size."]}),`
+`,a.jsxs(e.p,{children:["The ",a.jsx(e.code,{children:"toujou-topbar-breakpoint-change"})," also carries the information if the new window is mobile on ",a.jsx(e.code,{children:"event.detail.state"}),". ",a.jsx(e.code,{children:"true"})," mean it is mobile"]})]})}function x(n={}){const{wrapper:e}={...i(),...n.components};return e?a.jsx(e,{...n,children:a.jsx(o,{...n})}):o(n)}const f=""+new URL("topbar-mobile-Di9Mhn-b.jpg",import.meta.url).href,j=""+new URL("topbar-desktop-U98wAP54.jpg",import.meta.url).href;function c(n){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",ul:"ul",...i(),...n.components};return a.jsxs(a.Fragment,{children:[a.jsx(e.h1,{id:"topbar",children:"Topbar"}),`
+`,a.jsx(e.p,{children:"The topbar is a complex element, which render a topbar possibly with a main navigation, service navigation, logo and burger button."}),`
+`,a.jsx(e.p,{children:"The topbar element is composed by different elements, which also have they own docs:"}),`
+`,a.jsxs(e.ul,{children:[`
+`,a.jsx(e.li,{children:a.jsx(e.a,{href:"#main-navigation",children:"main navigation"})}),`
+`,a.jsx(e.li,{children:a.jsx(e.a,{href:"#service-navigation",children:"service navigation"})}),`
+`,a.jsx(e.li,{children:a.jsx(e.a,{href:"#burger-button",children:"burger button"})}),`
 `]}),`
-`,n.jsx(a.h2,{id:"markup-example",children:"Markup example"}),`
-`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="medium">
+`,a.jsx(e.h2,{id:"markup-example",children:"Markup example"}),`
+`,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="medium">
     <a href="#" class="topbar__logo-link">
         <img src="https://via.placeholder.com/300x150.png?text=Logo" alt="logo" class="topbar__logo">
     </a>
@@ -233,73 +233,72 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
     </nav>
 </toujou-topbar>
 `})}),`
-`,n.jsx("br",{}),`
-`,n.jsx("br",{}),`
-`,n.jsx(a.h2,{id:"topbar-layout",children:"Topbar layout"}),`
-`,n.jsx(a.p,{children:"On mobile devices the topbar shows the logo / site title, the burger button and the topbar actions:"}),`
-`,n.jsx("img",{src:f}),`
-`,n.jsx(a.p,{children:"On desktop it shows the logo / site title, the main navigation and the topbar actions:"}),`
-`,n.jsx("img",{src:j}),`
-`,n.jsx("br",{}),`
-`,n.jsx("br",{}),`
-`,n.jsx(a.h2,{id:"options",children:"Options"}),`
-`,n.jsx(a.p,{children:"The topbar isn't a content element. It is automatically generate according to the page's content and settings."}),`
-`,n.jsx(a.p,{children:"There are some settings that change the way the topbar looks and behaves:"}),`
-`,n.jsx(a.h3,{id:"navigation-theme",children:"Navigation theme"}),`
-`,n.jsxs(a.p,{children:['The navigation theme can be set on the "toujou theme" module, on the "Theme" tab. We can set the "Enable light navigation colors" option either to ',n.jsx(a.code,{children:"dark navigation"})," or ",n.jsx(a.code,{children:"light navigation"})]}),`
-`,n.jsxs(a.p,{children:["This will in turn set the correct attribute (",n.jsx(a.code,{children:"navigation-theme"}),") value on the topbar element, and therefore giving the topbar the correct styles."]}),`
-`,n.jsxs(a.p,{children:["Example: ",n.jsx(a.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="medium">...<toujou-topbar>'})]}),`
-`,n.jsx(a.h3,{id:"page-title-type",children:"Page title type"}),`
-`,n.jsxs(a.p,{children:['On the "toujou theme" module, on the "Theme" tab we can choose between ',n.jsx(a.code,{children:"Site title"})," and ",n.jsx(a.code,{children:"Top bar logo"}),' on the "Mobile top bar content option.']}),`
-`,n.jsx(a.p,{children:"This will render either the logo or the site title on the topbar (not only on mobile, like the option name says)"}),`
-`,n.jsx(a.p,{children:"Example:"}),`
-`,n.jsx(a.pre,{children:n.jsx(a.code,{className:"language-html",children:`<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="medium">
+`,a.jsx("br",{}),`
+`,a.jsx("br",{}),`
+`,a.jsx(e.h2,{id:"topbar-layout",children:"Topbar layout"}),`
+`,a.jsx(e.p,{children:"On mobile devices the topbar shows the logo / site title, the burger button and the topbar actions:"}),`
+`,a.jsx("img",{src:f}),`
+`,a.jsx(e.p,{children:"On desktop it shows the logo / site title, the main navigation and the topbar actions:"}),`
+`,a.jsx("img",{src:j}),`
+`,a.jsx("br",{}),`
+`,a.jsx("br",{}),`
+`,a.jsx(e.h2,{id:"options",children:"Options"}),`
+`,a.jsx(e.p,{children:"The topbar isn't a content element. It is automatically generate according to the page's content and settings."}),`
+`,a.jsx(e.p,{children:"There are some settings that change the way the topbar looks and behaves:"}),`
+`,a.jsx(e.h3,{id:"navigation-theme",children:"Navigation theme"}),`
+`,a.jsxs(e.p,{children:['The navigation theme can be set on the "toujou theme" module, on the "Theme" tab. We can set the "Enable light navigation colors" option either to ',a.jsx(e.code,{children:"dark navigation"})," or ",a.jsx(e.code,{children:"light navigation"})]}),`
+`,a.jsxs(e.p,{children:["This will in turn set the correct attribute (",a.jsx(e.code,{children:"navigation-theme"}),") value on the topbar element, and therefore giving the topbar the correct styles."]}),`
+`,a.jsxs(e.p,{children:["Example: ",a.jsx(e.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="medium">...<toujou-topbar>'})]}),`
+`,a.jsx(e.h3,{id:"page-title-type",children:"Page title type"}),`
+`,a.jsxs(e.p,{children:['On the "toujou theme" module, on the "Theme" tab we can choose between ',a.jsx(e.code,{children:"Site title"})," and ",a.jsx(e.code,{children:"Top bar logo"}),' on the "Mobile top bar content option.']}),`
+`,a.jsx(e.p,{children:"This will render either the logo or the site title on the topbar (not only on mobile, like the option name says)"}),`
+`,a.jsx(e.p,{children:"Example:"}),`
+`,a.jsx(e.pre,{children:a.jsx(e.code,{className:"language-html",children:`<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="medium">
     <a href="#" class="topbar__logo-link">
         <span class="topbar__title">Nice title</span>
     </a>
     ...
 </toujou-topbar>
 `})}),`
-`,n.jsx(a.h3,{id:"logo-size",children:"Logo size"}),`
-`,n.jsxs(a.p,{children:['The logo size can be defined on the "toujou theme" module "Logo" tab. For the "Logo size" we can choose between ',n.jsx(a.code,{children:"small"}),", ",n.jsx(a.code,{children:"medium"})," and ",n.jsx(a.code,{children:"large"}),"."]}),`
-`,n.jsx(a.p,{children:"This will affect the height of the whole topbar, not only the logo size."}),`
-`,n.jsxs(a.p,{children:["Example: ",n.jsx(a.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="small">...</toujou-topbar>'})]}),`
-`,n.jsx("br",{}),`
-`,n.jsx("br",{}),`
-`,n.jsx(a.h2,{id:"attributes",children:"Attributes"}),`
-`,n.jsxs(a.h3,{id:"navigation-theme-required",children:["navigation-theme ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:["Change between light and dark theme. Valid values are ",n.jsx(a.code,{children:"light"})," and ",n.jsx(a.code,{children:"dark"})]}),`
-`,n.jsxs(a.p,{children:["Example: ",n.jsx(a.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="medium"></toujou-topbar>'})]}),`
-`,n.jsxs(a.h3,{id:"logo-size-required",children:["logo-size ",n.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
-`,n.jsxs(a.p,{children:["Change between the different logo sizes, which affects the topbar's height. Valie values are ",n.jsx(a.code,{children:"small"}),", ",n.jsx(a.code,{children:"medium"})," and ",n.jsx(a.code,{children:"large"})]}),`
-`,n.jsxs(a.p,{children:["Example: ",n.jsx(a.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="large"></toujou-topbar>'})]}),`
-`,n.jsx(a.h2,{id:"events",children:"Events"}),`
-`,n.jsxs(a.p,{children:["The ",n.jsx(a.code,{children:"<toujou-topbar>"})," element dispatches and reacts to some custom events."]}),`
-`,n.jsx(a.h3,{id:"toujou-topbar-breakpoint-change",children:"toujou-topbar-breakpoint-change"}),`
-`,n.jsxs(a.p,{children:["Whenever the window size changes and the breakpoint between mobile and desktop is crossed, the topbar dispatches a custom ",n.jsx(a.code,{children:"toujou-topbar-breakpoint-change"})," event."]}),`
-`,n.jsx(a.h3,{id:"toujou-burger-button-state-change",children:"toujou-burger-button-state-change"}),`
-`,n.jsxs(a.p,{children:["The topbar element reacts to the ",n.jsx(a.code,{children:"toujou-burger-button-state-change"})," by setting / removing the open navigation attribute on itself according to the received state"]}),`
-`,n.jsx(a.hr,{}),`
-`,n.jsx("a",{id:"main-navigation"}),`
-`,n.jsx(_,{}),`
-`,n.jsx("br",{}),`
-`,n.jsx("br",{}),`
-`,n.jsx("a",{id:"service-navigation"}),`
-`,n.jsx(g,{}),`
-`,n.jsx("br",{}),`
-`,n.jsx("br",{}),`
-`,n.jsx("a",{id:"burger-button"}),`
-`,n.jsx(x,{})]})}function k(e={}){const{wrapper:a}={...i(),...e.components};return a?n.jsx(a,{...e,children:n.jsx(c,{...e})}):c(e)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationTheme:{table:{category:"Topbar settings",defaultValue:{summary:"light"}},name:"Navigation theme",description:"Set the navigation theme",options:["light","dark"],control:{type:"radio"},defaultValue:["light"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Mobile page title type",description:"Toggle between logo or text for the topbar page title on mobile devices",options:["logo","title"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},defaultValue:[!1],required:!0},showLanguagePicker:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"Show language picker",description:"Show the language picker element",control:{type:"boolean"},defaultValue:[!0],required:!0}},tags:["autodocs"]},q=e=>`
+`,a.jsx(e.h3,{id:"logo-size",children:"Logo size"}),`
+`,a.jsxs(e.p,{children:['The logo size can be defined on the "toujou theme" module "Logo" tab. For the "Logo size" we can choose between ',a.jsx(e.code,{children:"small"}),", ",a.jsx(e.code,{children:"medium"})," and ",a.jsx(e.code,{children:"large"}),"."]}),`
+`,a.jsx(e.p,{children:"This will affect the height of the whole topbar, not only the logo size."}),`
+`,a.jsxs(e.p,{children:["Example: ",a.jsx(e.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="light" logo-size="small">...</toujou-topbar>'})]}),`
+`,a.jsx("br",{}),`
+`,a.jsx("br",{}),`
+`,a.jsx(e.h2,{id:"attributes",children:"Attributes"}),`
+`,a.jsxs(e.h3,{id:"navigation-theme-required",children:["navigation-theme ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:["Change between light and dark theme. Valid values are ",a.jsx(e.code,{children:"light"})," and ",a.jsx(e.code,{children:"dark"})]}),`
+`,a.jsxs(e.p,{children:["Example: ",a.jsx(e.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="medium"></toujou-topbar>'})]}),`
+`,a.jsxs(e.h3,{id:"logo-size-required",children:["logo-size ",a.jsx("toujou-chip",{class:"chip","chip-bg-color":"warning",children:"required"})]}),`
+`,a.jsxs(e.p,{children:["Change between the different logo sizes, which affects the topbar's height. Valie values are ",a.jsx(e.code,{children:"small"}),", ",a.jsx(e.code,{children:"medium"})," and ",a.jsx(e.code,{children:"large"})]}),`
+`,a.jsxs(e.p,{children:["Example: ",a.jsx(e.code,{children:'<toujou-topbar id="topbar" class="topbar" navigation-theme="dark" logo-size="large"></toujou-topbar>'})]}),`
+`,a.jsx(e.h2,{id:"events",children:"Events"}),`
+`,a.jsxs(e.p,{children:["The ",a.jsx(e.code,{children:"<toujou-topbar>"})," element dispatches and reacts to some custom events."]}),`
+`,a.jsx(e.h3,{id:"toujou-topbar-breakpoint-change",children:"toujou-topbar-breakpoint-change"}),`
+`,a.jsxs(e.p,{children:["Whenever the window size changes and the breakpoint between mobile and desktop is crossed, the topbar dispatches a custom ",a.jsx(e.code,{children:"toujou-topbar-breakpoint-change"})," event."]}),`
+`,a.jsx(e.h3,{id:"toujou-burger-button-state-change",children:"toujou-burger-button-state-change"}),`
+`,a.jsxs(e.p,{children:["The topbar element reacts to the ",a.jsx(e.code,{children:"toujou-burger-button-state-change"})," by setting / removing the open navigation attribute on itself according to the received state"]}),`
+`,a.jsx(e.hr,{}),`
+`,a.jsx("a",{id:"main-navigation"}),`
+`,a.jsx(_,{}),`
+`,a.jsx("br",{}),`
+`,a.jsx("br",{}),`
+`,a.jsx("a",{id:"service-navigation"}),`
+`,a.jsx(g,{}),`
+`,a.jsx("br",{}),`
+`,a.jsx("br",{}),`
+`,a.jsx("a",{id:"burger-button"}),`
+`,a.jsx(x,{})]})}function k(n={}){const{wrapper:e}={...i(),...n.components};return e?a.jsx(e,{...n,children:a.jsx(c,{...n})}):c(n)}const D={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationColor:{table:{category:"Topbar settings",defaultValue:{summary:"default"}},name:"Navigation color",description:"Set the navigation color",options:["default","primary","secondary","font"],control:{type:"radio"},defaultValue:["default"],required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Mobile page title type",description:"Toggle between logo or text for the topbar page title on mobile devices",options:["logo","title"],control:{type:"radio"},defaultValue:["logo"],required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},defaultValue:["medium"],required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},defaultValue:[!1],required:!0},showLanguagePicker:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"Show language picker",description:"Show the language picker element",control:{type:"boolean"},defaultValue:[!0],required:!0}},tags:["autodocs"]},q=n=>(document.documentElement.setAttribute("navigation-color",n.navigationColor),`
         <toujou-topbar
             id="topbar"
             class="topbar"
-            navigation-theme="${e.navigationTheme}"
-            logo-size="${e.logoSize}"
-            ${e.noTransitions?"no-transitions":""}
+            logo-size="${n.logoSize}"
+            ${n.noTransitions?"no-transitions":""}
         >
 
             <nav aria-label="Topbar Logo" style="display: contents;">
-                <a aria-label="Zur Startseite" show-title-on-mobile="${e.titleType==="title"}" class="topbar__logo-link" href="/">
+                <a aria-label="Zur Startseite" show-title-on-mobile="${n.titleType==="title"}" class="topbar__logo-link" href="/">
                     <span class="topbar__title">toujou Installation</span>
                     <img class="topbar__logo topbar__logo--svg" src="https://picsum.photos/300/150" alt="Logo">
                 </a>
@@ -326,7 +325,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </li>
             </ul>
 
-            ${e.showLanguagePicker?`
+            ${n.showLanguagePicker?`
                 <nav class="language-picker" aria-label="Language picker">
                     <ul class="language-picker__list">
                         <li class="language-picker__item">
@@ -383,14 +382,6 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
             </toujou-burger-button>
 
-            <nav class="service-nav">
-                <a href="#" class="service-nav__link">Impressum</a>
-                <a href="#" class="service-nav__link">Datenschutz</a>
-                <a href="#" class="service-nav__link">Kontakt</a>
-                <a href="#" class="service-nav__link">About us</a>
-                <a href="#" class="service-nav__link">Gender at work</a>
-            </nav>
-
             <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
@@ -426,7 +417,17 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                     </li>
                                     <li class="main-nav__list-item" nav-item-level="3">
                                         <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
+                                            <span class="main-nav__text">Item three with a test very loooooong litle</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item four</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item five</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -483,7 +484,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Berufsausbildung</span>
+                                    <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
                                 </a>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
@@ -685,6 +686,14 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </ul>
             </nav>
 
+             <nav class="service-nav">
+                <a href="#" class="service-nav__link">Impressum</a>
+                <a href="#" class="service-nav__link">Datenschutz</a>
+                <a href="#" class="service-nav__link">Kontakt</a>
+                <a href="#" class="service-nav__link">About us</a>
+                <a href="#" class="service-nav__link">Gender at work</a>
+            </nav>
+
         </toujou-topbar>
 
         <main>
@@ -736,15 +745,15 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </toujou-text-block-column>
             </toujou-text-block>
         </main>
-    `,t=q.bind({});t.args={navigationTheme:"light",titleType:"logo",logoSize:"medium",noTransitions:!1,showLanguagePicker:!0};var r,u,m;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
+    `),t=q.bind({});t.args={navigationColor:"default",titleType:"logo",logoSize:"medium",noTransitions:!1,showLanguagePicker:!0};var r,u,m;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`(args: TopbarStoryProps) => {
   // @ts-ignore
   // document.documentElement.style.setProperty('--topbar-height', \`var(--topbar-height-\${args.logoSize})\`);
 
+  document.documentElement.setAttribute('navigation-color', args.navigationColor);
   return \`
         <toujou-topbar
             id="topbar"
             class="topbar"
-            navigation-theme="\${args.navigationTheme}"
             logo-size="\${args.logoSize}"
             \${args.noTransitions ? 'no-transitions' : ''}
         >
@@ -834,14 +843,6 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
             </toujou-burger-button>
 
-            <nav class="service-nav">
-                <a href="#" class="service-nav__link">Impressum</a>
-                <a href="#" class="service-nav__link">Datenschutz</a>
-                <a href="#" class="service-nav__link">Kontakt</a>
-                <a href="#" class="service-nav__link">About us</a>
-                <a href="#" class="service-nav__link">Gender at work</a>
-            </nav>
-
             <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
                 <ul class="main-nav__list" nav-list-level="1">
                     <li class="main-nav__list-item" nav-item-level="1">
@@ -877,7 +878,17 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                     </li>
                                     <li class="main-nav__list-item" nav-item-level="3">
                                         <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
+                                            <span class="main-nav__text">Item three with a test very loooooong litle</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item four</span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__list-item" nav-item-level="3">
+                                        <a href="#" class="main-nav__link">
+                                            <span class="main-nav__text">Item five</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -934,7 +945,7 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
                                 <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Berufsausbildung</span>
+                                    <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
                                 </a>
                             </li>
                             <li class="main-nav__list-item" nav-item-level="2">
@@ -1134,6 +1145,14 @@ Ex: `,n.jsx(a.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                         </ul>
                     </li>
                 </ul>
+            </nav>
+
+             <nav class="service-nav">
+                <a href="#" class="service-nav__link">Impressum</a>
+                <a href="#" class="service-nav__link">Datenschutz</a>
+                <a href="#" class="service-nav__link">Kontakt</a>
+                <a href="#" class="service-nav__link">About us</a>
+                <a href="#" class="service-nav__link">Gender at work</a>
             </nav>
 
         </toujou-topbar>
