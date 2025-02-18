@@ -39,7 +39,7 @@
     }
 
     .header[image-height="3-1"] {
-        --header-height: calc(100 / 3 * 1vw);
+        --header-height: calc(100 / 3 * 1vh);
     }
 
     .header[image-height="hero-media"] {
