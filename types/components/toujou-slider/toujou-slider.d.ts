@@ -92,6 +92,7 @@ export declare class ToujouSlider extends LitElement {
     arrowNextAriaLabel: string;
     arrowFirstAriaLabel: string;
     arrowLastAriaLabel: string;
+    sliderMediaQuery: 'min' | 'max';
     constructor();
     /**
      * Disable shadow root

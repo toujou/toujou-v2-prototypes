@@ -142,6 +142,9 @@ export class ToujouSlider extends LitElement {
     @property({ attribute: 'arrow-last-aria-label' })
     arrowLastAriaLabel: string = '';
 
+    @property({ reflect: true, attribute: 'slider-media-query' })
+    sliderMediaQuery: 'min' | 'max' = 'max';
+
     constructor() {
         super();
 
@@ -186,6 +189,7 @@ export class ToujouSlider extends LitElement {
             perMove: this.slidesPerMove,
             gap: this.sliderGap,
             heightRatio: this.sliderAspectRatio,
+            mediaQuery: this.sliderMediaQuery,
             reducedMotion: {
                 speed: 0,
                 rewindSpeed: 0,
