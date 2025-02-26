@@ -65,10 +65,7 @@ const Template = () => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials'], 'secondary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -96,10 +93,7 @@ const Template = () => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -127,10 +121,7 @@ const Template = () => {
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">

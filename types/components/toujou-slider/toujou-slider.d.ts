@@ -92,6 +92,10 @@ export declare class ToujouSlider extends LitElement {
     arrowNextAriaLabel: string;
     arrowFirstAriaLabel: string;
     arrowLastAriaLabel: string;
+    /**
+     * If 'min', the media query for breakpoints will be min-width, or otherwise max-width.
+     * Docs: https://splidejs.com/guides/options/#mediaquery
+     */
     sliderMediaQuery: 'min' | 'max';
     constructor();
     /**
