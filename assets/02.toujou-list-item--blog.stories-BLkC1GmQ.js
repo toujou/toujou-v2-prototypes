@@ -1,4 +1,4 @@
-import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-collection-item.docs-CWpSWowu.js";import{r as s}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-CS_Wz6c_.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-C8FVCAkB.js";const d={title:"COMPONENTS/CollectionLists",parameters:{badges:[l.DONE],docs:{page:c}},tags:["autodocs"]},n=()=>`
+import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./toujou-collection-item.docs-CWpSWowu.js";import{r as e}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-CS_Wz6c_.js";import"./index-Dy2Ak0OH.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-C8FVCAkB.js";const d={title:"COMPONENTS/CollectionLists",parameters:{badges:[c.DONE],docs:{page:s}},tags:["autodocs"]},a=()=>`
         <main>
         <ol class="item-collection">
             <li class="item-collection__item">
@@ -8,7 +8,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            ${s(["Tutorials"],"primary")}
+                            ${e(["Tutorials"],"primary")}
                         </div>
                         <toujou-media-info class="media-info">
                             <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
@@ -46,10 +46,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${e(["Tutorials"],"secondary")}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -77,10 +74,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${e(["Tutorials"],"primary")}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -108,10 +102,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            ${e(["Tutorials"],"primary")}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -130,7 +121,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
             </li>
         </ol>
     </main>
-    `,e=n.bind({});var i,o,t;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`() => {
+    `,i=a.bind({});var t,o,l;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
         <main>
         <ol class="item-collection">
@@ -179,10 +170,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], 'secondary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -210,10 +198,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -241,10 +226,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                             <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                         </figure>
                         <div class="collection-item__categories">
-                            <a href="#" class="collection-item__category">
-                                <toujou-icon class="icon collection-item__icon" icon-name="bookmark-filled" icon-size="normal" icon-color="bg"></toujou-icon>
-                                Tutorials
-                            </a>
+                            \${renderCardCategoryChips(['Tutorials'], 'primary')}
                         </div>
                     </header>
                     <div class="collection-item__bottom">
@@ -264,4 +246,4 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
         </ol>
     </main>
     \`;
-}`,...(t=(o=e.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const h=["ListItemBlog"];export{e as ListItemBlog,h as __namedExportsOrder,d as default};
+}`,...(l=(o=i.parameters)==null?void 0:o.docs)==null?void 0:l.source}}};const h=["ListItemBlog"];export{i as ListItemBlog,h as __namedExportsOrder,d as default};
