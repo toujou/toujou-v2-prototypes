@@ -113,6 +113,7 @@
 @import "./elements/_counter.css";
 @import "./elements/_file-link.css";
 
+@import "./elements/_location-list.css";
 @import "./elements/_season-trigger.css";
 @import "./elements/_trip-description.css";
 @import "./elements/_trip-description-day.css";
