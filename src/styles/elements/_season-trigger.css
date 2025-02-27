@@ -1,0 +1,60 @@
+@layer components {
+    .season-switch {
+        --season-switch-display: block;
+        --season-switch-width: var(--content-width-with-padding);
+        --season-switch-max-width: var(--content-max-width);
+        --season-switch-margin: var(--spacing-between-elements-normal) auto 0;
+        --season-switch-padding: 0;
+        --season-switch-z-index: var(--z-index-content);
+
+        --season-switch-input-group-display: flex;
+        --season-switch-input-group-flex-flow: row wrap;
+        --season-switch-input-group-gap: var(--spacing-normal);
+        --season-switch-input-group-align-items: center;
+
+        --season-switch-label-position: relative;
+        --season-switch-label-top: unset;
+        --season-switch-label-left: unset;
+        --season-switch-label-font-family: var(--font-family-headline);
+        --season-switch-label-font-size: var(--font-size-l);
+
+        --season-switch-select-wrapper-position: relative;
+        --season-switch-select-width: fit-content;
+        --season-switch-select-flex-grow: 1;
+
+        --season-switch-select-padding: var(--spacing-normal) var(--spacing-s);
+
+        display: var(--season-switch-display);
+        width: var(--season-switch-width);
+        max-width: var(--season-switch-max-width);
+        padding: var(--season-switch-padding);
+        margin: var(--season-switch-margin);
+    }
+
+    .season-switch__input-group {
+        display: var(--season-switch-input-group-display);
+        flex-flow: var(--season-switch-input-group-flex-flow);
+        gap: var(--season-switch-input-group-gap);
+        align-items: var(--season-switch-input-group-align-items);
+    }
+
+    .season-switch__label {
+        --input-label-position: var(--season-switch-label-position);
+        --input-label-top: var(--season-switch-label-top);
+        --input-label-left: var(--season-switch-label-left);
+
+        font-family: var(--season-switch-label-font-family);
+        font-size: var(--season-switch-label-font-size);
+    }
+
+    .season-switch__select-wrapper {
+        position: var(--season-switch-select-wrapper-position);
+        width: var(--season-switch-select-width);
+        flex-grow: var(--season-switch-select-flex-grow);
+    }
+
+    .season-switch__select {
+        --input-padding: var(--season-switch-select-padding);
+
+    }
+}

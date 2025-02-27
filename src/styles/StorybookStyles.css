@@ -112,6 +112,8 @@
 @import "./elements/_counter-grid.css";
 @import "./elements/_counter.css";
 @import "./elements/_file-link.css";
+
+@import "./elements/_season-trigger.css";
 @import "./elements/_trip-description.css";
 @import "./elements/_trip-description-day.css";
 @import "./elements/_trip-description-options.css";

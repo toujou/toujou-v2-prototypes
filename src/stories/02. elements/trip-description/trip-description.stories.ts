@@ -6,7 +6,7 @@ import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomCon
 import tripDescriptionDocs from './trip-description.docs.mdx';
 
 export default {
-    title: 'COMPONENTS/Trip Description',
+    title: 'COMPONENTS/Tourism/Trip Description',
     parameters: {
         badges: [TOUJOU_BADGES.TESTING],
         docs: {
