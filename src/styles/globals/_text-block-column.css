@@ -47,6 +47,14 @@
         grid-auto-flow: dense;
     }
 
+    .text-block[text-block-media-position="beside-right"][column-layout="third"] .text-block-column {
+        --text-block-column-grid-template-columns: 2fr 1fr;
+    }
+
+    .text-block[text-block-media-position="beside-left"][column-layout="third"] .text-block-column {
+        --text-block-column-grid-template-columns: 1fr 2fr;
+    }
+
     .text-block[text-block-media-position="inside-left"] .text-block__content,
     .text-block[text-block-media-position="inside-right"] .text-block__content,
     .text-block[text-block-media-position="beside-left"] .text-block__content,

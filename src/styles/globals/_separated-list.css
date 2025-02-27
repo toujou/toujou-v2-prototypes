@@ -30,8 +30,16 @@
     --separated-list-separator: "|";
 }
 
+.separated-list[list-separator="dot"] {
+    --separated-list-separator: "•";
+}
+
 .separated-list[list-alignment="center"] {
     --separated-list-justify-content: center;
+}
+
+.separated-list[list-spacing="wide"] {
+    --separated-list-separator-gap: var(--spacing-normal);
 }
 
 .separated-list__item:not(:last-child)::after {

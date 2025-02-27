@@ -1,0 +1,68 @@
+@layer components {
+    .file-link {
+        --file-link-width: fit-content;
+        --file-link-display: flex;
+        --file-link-align-items: center;
+        --file-link-justify-content: flex-start;
+        --file-link-gap: var(--spacing-s);
+        --file-link-text-decoration: none;
+        --file-link-border: var(--border-width-normal) solid var(--border-color-default);
+        --file-link-padding: var(--spacing-xs) var(--spacing-s) var(--spacing-xs) var(--spacing-xs);
+        --file-link-border-radius: var(--border-radius-normal);
+
+        --file-link-texts-display: flex;
+        --file-link-texts-flex-direction: column;
+        --file-link-texts-gap: 0;
+
+        --file-link-title-font-family: var(--font-family-text);
+        --file-link-title-font-size: var(--font-size-normal);
+        --file-link-title-font-weight: var(--font-weight-text-normal);
+        --file-link-title-color: var(--color-primary);
+
+        --file-link-description-font-family: var(--font-family-text);
+        --file-link-description-font-size: var(--font-size-s);
+        --file-link-description-font-weight: var(--font-weight-text-normal);
+        --file-link-description-color: var(--color-font);
+
+        --file-link-icon-color: var(--color-font);
+
+        width: var(--file-link-width);
+        display: var(--file-link-display);
+        align-items: var(--file-link-align-items);
+        justify-content: var(--file-link-justify-content);
+        gap: var(--file-link-gap);
+        text-decoration: var(--file-link-text-decoration);
+        padding: var(--file-link-padding);
+        border: var(--file-link-border);
+        border-radius: var(--file-link-border-radius);
+    }
+
+    .file-link:is(:hover, :focus-visible) {
+        --file-link-border: var(--border-width-normal) solid var(--color-primary);
+        --file-link-icon-color: var(--color-primary);
+    }
+
+    .file-link__texts {
+        display: var(--file-link-texts-display);
+        flex-direction: var(--file-link-texts-flex-direction);
+        gap: var(--file-link-texts-gap);
+    }
+
+    .file-link__title {
+        font-family: var(--file-link-title-font-family);
+        font-size: var(--file-link-title-font-size);
+        font-weight: var(--file-link-title-font-weight);
+        color: var(--file-link-title-color);
+    }
+
+    .file-link__description {
+        font-family: var(--file-link-description-font-family);
+        font-size: var(--file-link-description-font-size);
+        font-weight: var(--file-link-description-font-weight);
+        color: var(--file-link-description-color);
+    }
+
+    .icon.file-link__icon {
+        --icon-color: var(--file-link-icon-color);
+    }
+}

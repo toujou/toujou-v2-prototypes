@@ -1,0 +1,30 @@
+@layer components {
+    .trip-description-options {
+        --trip-description-options-display: block;
+
+        --trip-description-options-list-list-style: none;
+        --trip-description-options-list-padding: 0;
+        --trip-description-options-list-margin: 0;
+        --trip-description-options-list-display: flex;
+        --trip-description-options-list-flex-flow: row wrap;
+        --trip-description-options-list-gap: var(--spacing-l);
+
+        --trip-description-options-item-display: flex;
+        --trip-description-options-item-align-items: center;
+        --trip-description-options-item-justify-content: flex-start;
+
+        --trip-description-options-icon-margin: 0 var(--spacing-s) 0 0;
+
+        display: var(--trip-description-options-display);
+    }
+
+    .trip-description-options__item {
+        display: var(--trip-description-options-item-display);
+        align-items: var(--trip-description-options-item-align-items);
+        justify-content: var(--trip-description-options-item-justify-content);
+    }
+
+    .trip-description-options__icon {
+        margin: var(--trip-description-options-icon-margin);
+    }
+}

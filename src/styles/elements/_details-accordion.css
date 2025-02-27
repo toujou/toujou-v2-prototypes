@@ -13,6 +13,12 @@
         z-index: var(--details-accordion-z-index);
     }
 
+    .trip-description .details-accordion {
+        --details-accordion-width: 100%;
+        --details-accordion-max-width: 100%;
+        --details-accordion-margin: 0;
+    }
+
     span:not(:first-child) + .details-accordion,
     .text-block + .details-accordion {
         --details-accordion-margin: var(--spacing-between-consecutive-elements-normal) auto 0;

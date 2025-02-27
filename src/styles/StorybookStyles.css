@@ -111,6 +111,10 @@
 @import "./elements/_indexedsearch-pagination.css";
 @import "./elements/_counter-grid.css";
 @import "./elements/_counter.css";
+@import "./elements/_file-link.css";
+@import "./elements/_trip-description.css";
+@import "./elements/_trip-description-day.css";
+@import "./elements/_trip-description-options.css";
 
 @import "elements/_facet-details.css";
 @import "elements/_panel-title.css";
