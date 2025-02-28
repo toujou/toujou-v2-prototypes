@@ -275,28 +275,32 @@ a:not(.button):focus-visible {
 *[type-color="font--primary"],
 *[type-color="primary"],
 .font--primary {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
 }
 
 *[type-color="font--secondary"],
 *[type-color="secondary"],
 .font--secondary {
-    color: var(--color-secondary);
+    color: var(--color-secondary) !important;
 }
 
 *[type-color="font--grey"],
 .font--grey {
-    color: var(--color-font-light);
+    color: var(--color-font-light) !important;
 }
 
 *[type-color="font-light"] {
-    color: var(--color-font-light);
+    color: var(--color-font-light) !important;
 }
 
 *[type-color="font--font"],
 *[type-color="font"],
 .font--font {
-    color: var(--color-font);
+    color: var(--color-font) !important;
+}
+
+*[type-color="warning"] {
+    color: var(--color-warning) !important;
 }
 
 /* stylelint-disable-next-line selector-no-vendor-prefix */
