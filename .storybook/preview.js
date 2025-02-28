@@ -60,7 +60,17 @@ export default {
                 includeNames: true,
                 order: [
                     'COMPONENTS',
-                    ["*", ["*", "Docs"]],
+                    [
+                        "*", // Any other component folders
+                        [
+                            "Tourism", // Specifically handle the "Tourism" folder
+                            [
+                                "*", // Any story within "Tourism"
+                                ["*", "Docs"] // Docs for each story within "Tourism"
+                            ]
+                        ],
+                        ["*", "Docs"] // Docs for components directly under "COMPONENTS"
+                    ],
                     'TOKENS',
                     'PAGES',
                 ],
