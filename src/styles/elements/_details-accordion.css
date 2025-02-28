@@ -13,7 +13,7 @@
         z-index: var(--details-accordion-z-index);
     }
 
-    .trip-description .details-accordion {
+    .details-accordion:is([is-trip-description], [is-trip-accommodations]) {
         --details-accordion-width: 100%;
         --details-accordion-max-width: 100%;
         --details-accordion-margin: 0;

@@ -32,8 +32,9 @@
     --text-block-max-width: var(--content-max-width);
 }
 
-.html-container .text-block {
+:is(.html-container, .details) .text-block {
     --text-block-width: 100%;
+    --text-block-max-width: 100%;
 }
 
 .text-block:first-child,

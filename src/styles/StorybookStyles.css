@@ -118,6 +118,7 @@
 @import "./elements/_departures-header.css";
 @import "./elements/_location-list.css";
 @import "./elements/_season-trigger.css";
+@import "./elements/_trip-accommodations.css";
 @import "./elements/_trip-description.css";
 @import "./elements/_trip-description-day.css";
 @import "./elements/_trip-description-options.css";
