@@ -113,6 +113,9 @@
 @import "./elements/_counter.css";
 @import "./elements/_file-link.css";
 
+@import "./elements/_departure.css";
+@import "./elements/_departures.css";
+@import "./elements/_departures-header.css";
 @import "./elements/_location-list.css";
 @import "./elements/_season-trigger.css";
 @import "./elements/_trip-description.css";

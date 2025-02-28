@@ -1,0 +1,196 @@
+@layer components {
+    .departure {
+        --departure-display: grid;
+        --departure-grid-template-columns: var(--departures-grid-template-columns);
+        --departure-grid-gap: var(--spacing-normal);
+        --departure-align-items: center;
+        --departure-font-family: var(--font-family-text);
+        --departure-padding: var(--spacing-normal);
+        --departure-border-radius: var(--border-radius-normal);
+        --departure-background-color-light: transparent;
+        --departure-background-color-dark: var(--color-font-o-05);
+
+        --departure-date-font-family: var(--font-family-text);
+        --departure-date-font-size: var(--font-size-ms);
+        --departure-date-font-weight: var(--font-weight-text-bold);
+        --departure-date-line-height: var(--font-size-normal);
+        --departure-date-margin: 0;
+
+        --departure-prices-display: grid;
+        --departure-prices-grid-template-columns: var(--departures-prices-grid-template-columns);
+        --departure-prices-grid-gap: var(--spacing-s);
+
+        --departure-price-display: flex;
+        --departure-price-align-items: center;
+        --departure-price-justify-content: space-between;
+        --departure-price-margin: 0;
+        --departure-price-font-family: var(--font-family-text);
+        --departure-price-font-size: var(--font-size-normal);
+
+        --departure-price-label-display: block;
+
+        --departure-price-value-font-weight: var(--font-weight-text-normal);
+
+        --departure-status-margin: 0;
+
+        --departure-status-text-display: flex;
+        --departure-status-text-gap: var(--spacing-s);
+        --departure-status-text-align-items: center;
+        --departure-status-text-justify-content: flex-start;
+        --departure-status-text-text-transform: uppercase;
+        --departure-status-text-font-family: var(--font-family-text);
+        --departure-status-text-font-weight: var(--font-weight-text-bold);
+        --departure-status-text-font-size: var(--font-size-s);
+        --departure-status-text-line-height: 1;
+
+        --departure-status-text-before-size: 1rem;
+        --departure-status-text-before-display: block;
+        --departure-status-text-before-border-radius: var(--border-radius-circle);
+        --departure-status-text-before-flex-shrink: 0;
+
+        --departure-status-info-font-family: var(--font-family-text);
+        --departure-status-info-font-size: var(--font-size-s);
+        --departure-status-info-line-height: var(--departure-status-info-font-size);
+        --departure-status-info-margin: var(--spacing-xs) 0 0;
+        --departure-status-display: inline-block;
+
+        --departure-cta-button-margin: 0 0 0 auto;
+        --departure-cta-button-width: fit-content;
+
+        --departure-footnote-display: grid;
+        --departure-footnote-grid-template-columns: auto 1fr;
+        --departure-footnote-grid-gap: var(--spacing-s);
+        --departure-footnote-padding: var(--spacing-s);
+        --departure-footnote-border: var(--border-width-normal) solid var(--border-color-default);
+        --departure-footnote-font-family: var(--font-family-text);
+        --departure-footnote-font-size: var(--font-size-normal);
+        --departure-footnote-font-weight: var(--font-weight-text-normal);
+        --departure-footnote-margin: 0;
+        --departure-footnote-border-radius: var(--border-radius-normal);
+        --departure-footnote-grid-column: 1 / -1;
+        --departure-footnote-background-color: var(--color-bg);
+
+        display: var(--departure-display);
+        grid-template-columns: var(--departure-grid-template-columns);
+        grid-gap: var(--departure-grid-gap);
+        align-items: var(--departure-align-items);
+        padding: var(--departure-padding);
+        border-radius: var(--departure-border-radius);
+        font-family: var(--departure-font-family);
+        background-color: var(--departure-background-color-dark);
+    }
+
+    .departure__date {
+        margin: var(--departure-date-margin);
+        font-family: var(--departure-date-font-family);
+        font-weight: var(--departure-date-font-weight);
+        font-size: var(--departure-date-font-size);
+        line-height: var(--departure-date-line-height);
+    }
+
+    .departure__prices {
+        display: var(--departure-prices-display);
+        grid-template-columns: var(--departure-prices-grid-template-columns);
+        grid-gap: var(--departure-prices-grid-gap);
+    }
+
+    .departure__price {
+        display: var(--departure-price-display);
+        align-items: var(--departure-price-align-items);
+        justify-content: var(--departure-price-justify-content);
+        margin: var(--departure-price-margin);
+        font-family: var(--departure-price-font-family);
+        font-size: var(--departure-price-font-size);
+    }
+
+    .departure__price-label {
+        display: var(--departure-price-label-display);
+    }
+
+    .departure__price-value {
+        font-weight: var(--departure-price-value-font-weight);
+    }
+
+    .departure__status {
+        margin: var(--departure-status-margin);
+    }
+
+    .departure__status-text {
+        --departure-status-text-before-background-color: var(--color-success);
+
+        display: var(--departure-status-text-display);
+        gap: var(--departure-status-text-gap);
+        align-items: var(--departure-status-text-align-items);
+        justify-content: var(--departure-status-text-justify-content);
+        text-transform: var(--departure-status-text-text-transform);
+        font-family: var(--departure-status-text-font-family);
+        font-weight: var(--departure-status-text-font-weight);
+        font-size: var(--departure-status-text-font-size);
+        line-height: var(--departure-status-text-line-height);
+    }
+
+    .departure__status-text--warning {
+        --departure-status-text-before-background-color: var(--color-warning);
+    }
+
+    .departure__status-text--error {
+        --departure-status-text-before-background-color: var(--color-error);
+    }
+
+    .departure__status-text::before {
+        content: "";
+        height: var(--departure-status-text-before-size);
+        width: var(--departure-status-text-before-size);
+        display: var(--departure-status-text-before-display);
+        border-radius: var(--departure-status-text-before-border-radius);
+        background-color: var(--departure-status-text-before-background-color);
+        flex-shrink: var(--departure-status-text-before-flex-shrink);
+    }
+
+    .departure__status-info {
+        display: var(--departure-status-display);
+        margin: var(--departure-status-info-margin);
+        font-family: var(--departure-status-info-font-family);
+        font-size: var(--departure-status-info-font-size);
+        line-height: var(--departure-status-info-line-height);
+    }
+
+    .departure__cta-button {
+        margin: var(--departure-cta-button-margin);
+        width: var(--departure-cta-button-width);
+    }
+
+    .departure__footnote {
+        display: var(--departure-footnote-display);
+        grid-template-columns: var(--departure-footnote-grid-template-columns);
+        grid-gap: var(--departure-footnote-grid-gap);
+        padding: var(--departure-footnote-padding);
+        border: var(--departure-footnote-border);
+        font-family: var(--departure-footnote-font-family);
+        font-size: var(--departure-footnote-font-size);
+        font-weight: var(--departure-footnote-font-weight);
+        margin: var(--departure-footnote-margin);
+        border-radius: var(--departure-footnote-border-radius);
+        grid-column: var(--departure-footnote-grid-column);
+        background-color: var(--departure-footnote-background-color);
+    }
+
+    @container (width < 840px) {
+        .departure {
+            --departure-cta-button-width: 100%;
+            --departure-price-value-font-weight: var(--font-weight-text-bold);
+        }
+
+        .departure__price:empty {
+            display: none;
+        }
+    }
+
+    @container (width >= 840px) {
+        .departure {
+            --departure-padding: var(--spacing-s) var(--spacing-normal);
+            --departure-date-font-size: var(--font-size-normal);
+            --departure-price-label-display: none;
+        }
+    }
+}
