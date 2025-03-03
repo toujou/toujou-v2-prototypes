@@ -57,19 +57,6 @@
         --departure-cta-button-margin: 0 0 0 auto;
         --departure-cta-button-width: fit-content;
 
-        --departure-footnote-display: grid;
-        --departure-footnote-grid-template-columns: auto 1fr;
-        --departure-footnote-grid-gap: var(--spacing-s);
-        --departure-footnote-padding: var(--spacing-s);
-        --departure-footnote-border: var(--border-width-normal) solid var(--border-color-default);
-        --departure-footnote-font-family: var(--font-family-text);
-        --departure-footnote-font-size: var(--font-size-normal);
-        --departure-footnote-font-weight: var(--font-weight-text-normal);
-        --departure-footnote-margin: 0;
-        --departure-footnote-border-radius: var(--border-radius-normal);
-        --departure-footnote-grid-column: 1 / -1;
-        --departure-footnote-background-color: var(--color-bg);
-
         display: var(--departure-display);
         grid-template-columns: var(--departure-grid-template-columns);
         grid-gap: var(--departure-grid-gap);
@@ -158,21 +145,6 @@
     .departure__cta-button {
         margin: var(--departure-cta-button-margin);
         width: var(--departure-cta-button-width);
-    }
-
-    .departure__footnote {
-        display: var(--departure-footnote-display);
-        grid-template-columns: var(--departure-footnote-grid-template-columns);
-        grid-gap: var(--departure-footnote-grid-gap);
-        padding: var(--departure-footnote-padding);
-        border: var(--departure-footnote-border);
-        font-family: var(--departure-footnote-font-family);
-        font-size: var(--departure-footnote-font-size);
-        font-weight: var(--departure-footnote-font-weight);
-        margin: var(--departure-footnote-margin);
-        border-radius: var(--departure-footnote-border-radius);
-        grid-column: var(--departure-footnote-grid-column);
-        background-color: var(--departure-footnote-background-color);
     }
 
     @container (width < 840px) {

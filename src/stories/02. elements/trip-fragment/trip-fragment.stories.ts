@@ -104,7 +104,7 @@ const Template: StoryFn<TripFragmentProps> = (args: TripFragmentProps) => {
                                 </div>
                             </div>
                             
-                            <p class="fragment-teaser__additional-info">
+                            <p class="additional-info">
                                 <toujou-icon class="icon " icon-name="campaign" icon-color="font" icon-size="m"></toujou-icon>
                                 This is some additional information about the trip
                             </p>

@@ -90,7 +90,7 @@ const Template = () => {
                                             linkText: 'Accommodation A',
                                         })}
                                         
-                                        <p class="trip-accommodations__additional-info">
+                                        <p class="additional-info">
                                             <toujou-icon class="icon" icon-color="font" icon-size="m" icon-name="info"></toujou-icon>
                                             This is some additional information!
                                         </p>
@@ -128,7 +128,7 @@ const Template = () => {
                                             linkText: 'Accommodation B',
                                         })}
                                         
-                                        <p class="trip-accommodations__additional-info">
+                                        <p class="additional-info">
                                             <toujou-icon class="icon" icon-color="font" icon-size="m" icon-name="info"></toujou-icon>
                                             We have some very interesting secret information for you...
                                         </p>
@@ -167,7 +167,7 @@ const Template = () => {
                                             linkText: 'Accommodation C',
                                         })}
                                         
-                                        <p class="trip-accommodations__additional-info">
+                                        <p class="additional-info">
                                             <toujou-icon class="icon" icon-color="font" icon-size="m" icon-name="info"></toujou-icon>
                                             This is some additional information!
                                         </p>

@@ -15,19 +15,6 @@
 
         --trip-accommodations-option-label-font-weight: var(--font-weight-text-bold);
 
-        --trip-accommodations-additional-info-display: grid;
-        --trip-accommodations-additional-info-grid-template-columns: auto 1fr;
-        --trip-accommodations-additional-info-grid-gap: var(--spacing-s);
-        --trip-accommodations-additional-info-padding: var(--spacing-s);
-        --trip-accommodations-additional-info-border: var(--border-width-normal) solid var(--border-color-default);
-        --trip-accommodations-additional-info-font-family: var(--font-family-text);
-        --trip-accommodations-additional-info-font-size: var(--font-size-normal);
-        --trip-accommodations-additional-info-font-weight: var(--font-weight-text-normal);
-        --trip-accommodations-additional-info-margin: var(--spacing-normal) 0 0;
-        --trip-accommodations-additional-info-border-radius: var(--border-radius-normal);
-        --trip-accommodations-additional-info-grid-column: 1 / -1;
-        --trip-accommodations-additional-info-background-color: var(--color-bg);
-
         display: var(--trip-accommodations-display);
         position: var(--trip-accommodations-position);
         width: var(--trip-accommodations-width);
@@ -54,20 +41,5 @@
 
     .trip-accommodations__option-label {
         font-weight: var(--trip-accommodations-option-label-font-weight);
-    }
-
-    .trip-accommodations__additional-info {
-        display: var(--trip-accommodations-additional-info-display);
-        grid-template-columns: var(--trip-accommodations-additional-info-grid-template-columns);
-        grid-gap: var(--trip-accommodations-additional-info-grid-gap);
-        padding: var(--trip-accommodations-additional-info-padding);
-        border: var(--trip-accommodations-additional-info-border);
-        font-family: var(--trip-accommodations-additional-info-font-family);
-        font-size: var(--trip-accommodations-additional-info-font-size);
-        font-weight: var(--trip-accommodations-additional-info-font-weight);
-        margin: var(--trip-accommodations-additional-info-margin);
-        border-radius: var(--trip-accommodations-additional-info-border-radius);
-        grid-column: var(--trip-accommodations-additional-info-grid-column);
-        background-color: var(--trip-accommodations-additional-info-background-color);
     }
 }

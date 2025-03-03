@@ -84,7 +84,7 @@ function renderDeparture(departure: DepartureProps, roomCount: number) {
             </div>
             
             ${departure.footnote ? `
-                <p class="departure__footnote">
+                <p class="additional-info">
                     <toujou-icon class="icon" icon-color="font" icon-size="m" icon-name="campaign"></toujou-icon>
                     ${departure.footnote}
                 </p>   

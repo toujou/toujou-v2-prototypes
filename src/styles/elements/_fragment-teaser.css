@@ -67,19 +67,6 @@
         --fragment-teaser-trip-price-suffix-font-weight: var(--font-weight-text-normal);
         --fragment-teaser-trip-price-suffix-color: var(--color-font-light);
 
-        --fragment-teaser-additional-info-display: grid;
-        --fragment-teaser-additional-info-grid-template-columns: auto 1fr;
-        --fragment-teaser-additional-info-grid-gap: var(--spacing-s);
-        --fragment-teaser-additional-info-padding: var(--spacing-s);
-        --fragment-teaser-additional-info-border: var(--border-width-normal) solid var(--border-color-default);
-        --fragment-teaser-additional-info-font-family: var(--font-family-text);
-        --fragment-teaser-additional-info-font-size: var(--font-size-normal);
-        --fragment-teaser-additional-info-font-weight: var(--font-weight-text-normal);
-        --fragment-teaser-additional-info-margin: var(--spacing-normal) 0 0;
-        --fragment-teaser-additional-info-border-radius: var(--border-radius-normal);
-        --fragment-teaser-additional-info-grid-column: 1 / -1;
-        --fragment-teaser-additional-info-background-color: var(--color-bg);
-
         display: var(--fragment-teaser-display);
         grid-template-columns: var(--fragment-teaser-grid-template-columns);
         gap: var(--fragment-teaser-grid-gap);
@@ -190,21 +177,6 @@
         font-size: var(--fragment-teaser-trip-price-suffix-font-size);
         font-weight: var(--fragment-teaser-trip-price-suffix-font-weight);
         color: var(--fragment-teaser-trip-price-suffix-color);
-    }
-
-    .fragment-teaser__additional-info {
-        display: var(--fragment-teaser-additional-info-display);
-        grid-template-columns: var(--fragment-teaser-additional-info-grid-template-columns);
-        grid-gap: var(--fragment-teaser-additional-info-grid-gap);
-        padding: var(--fragment-teaser-additional-info-padding);
-        border: var(--fragment-teaser-additional-info-border);
-        font-family: var(--fragment-teaser-additional-info-font-family);
-        font-size: var(--fragment-teaser-additional-info-font-size);
-        font-weight: var(--fragment-teaser-additional-info-font-weight);
-        margin: var(--fragment-teaser-additional-info-margin);
-        border-radius: var(--fragment-teaser-additional-info-border-radius);
-        grid-column: var(--fragment-teaser-additional-info-grid-column);
-        background-color: var(--fragment-teaser-additional-info-background-color);
     }
 
     @container (min-width: 480px) {

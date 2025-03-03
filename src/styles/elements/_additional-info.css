@@ -1,0 +1,29 @@
+@layer components {
+    .additional-info {
+        --additional-info-display: grid;
+        --additional-info-grid-template-columns: auto 1fr;
+        --additional-info-grid-gap: var(--spacing-s);
+        --additional-info-padding: var(--spacing-s);
+        --additional-info-border: var(--border-width-normal) solid var(--border-color-default);
+        --additional-info-font-family: var(--font-family-text);
+        --additional-info-font-size: var(--font-size-normal);
+        --additional-info-font-weight: var(--font-weight-text-normal);
+        --additional-info-margin: var(--spacing-normal) 0 0;
+        --additional-info-border-radius: var(--border-radius-normal);
+        --additional-info-grid-column: 1 / -1;
+        --additional-info-background-color: var(--color-bg);
+
+        display: var(--additional-info-display);
+        grid-template-columns: var(--additional-info-grid-template-columns);
+        grid-gap: var(--additional-info-grid-gap);
+        padding: var(--additional-info-padding);
+        border: var(--additional-info-border);
+        font-family: var(--additional-info-font-family);
+        font-size: var(--additional-info-font-size);
+        font-weight: var(--additional-info-font-weight);
+        margin: var(--additional-info-margin);
+        border-radius: var(--additional-info-border-radius);
+        grid-column: var(--additional-info-grid-column);
+        background-color: var(--additional-info-background-color);
+    }
+}

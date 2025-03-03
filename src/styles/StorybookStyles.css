@@ -25,6 +25,7 @@
 @import './base.css';
 
 /* ELEMENTS */
+@import './elements/_additional-info.css';
 @import './elements/_average-rating.css';
 @import './elements/_blockquote.css';
 @import './elements/_blockquote-grid.css';
