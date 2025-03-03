@@ -2,6 +2,7 @@
     --input-label-position: absolute;
     --input-label-top: var(--spacing-s);
     --input-label-left: var(--spacing-s);
+    --input-label-font-family: var(--font-family-text);
     --input-label-font-size: var(--font-size-xs);
     --input-label-color: var(--form-input-color);
     --input-label-required-content: var(--form-required-suffix);
@@ -11,6 +12,7 @@
     position: var(--input-label-position);
     top: var(--input-label-top);
     left: var(--input-label-left);
+    font-family: var(--input-label-font-family);
     font-size: var(--input-label-font-size);
     color: var(--input-label-color);
     z-index: var(--input-label-z-index);

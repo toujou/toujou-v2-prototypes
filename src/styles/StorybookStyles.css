@@ -123,6 +123,8 @@
 @import "./elements/_trip-description.css";
 @import "./elements/_trip-description-day.css";
 @import "./elements/_trip-description-options.css";
+@import "./elements/_header-with-quicksearch.css";
+@import "./elements/_quicksearch.css";
 
 @import "elements/_facet-details.css";
 @import "elements/_panel-title.css";

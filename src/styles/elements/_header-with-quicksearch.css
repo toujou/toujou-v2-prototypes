@@ -1,0 +1,9 @@
+@layer components {
+    .header-with-quicksearch {
+        --header-with-quicksearch-z-index: var(--z-index-content);
+
+        z-index: var(--header-with-quicksearch-z-index);
+        container-name: header-with-quicksearch;
+        container-type: inline-size;
+    }
+}
