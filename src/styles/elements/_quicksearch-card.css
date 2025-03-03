@@ -1,0 +1,33 @@
+@layer components {
+    .quicksearch-card {
+        --quicksearch-card-position: absolute;
+        --quicksearch-card-bottom: var(--spacing-m);
+        --quicksearch-card-width: calc(100% - var(--spacing-normal));
+        --quicksearch-card-max-width: 420px;
+        --quicksearch-card-background-color: var(--color-bg);
+        --quicksearch-card-border-radius: var(--border-radius-default);
+        --quicksearch-card-z-index: var(--z-index-content);
+
+        position: var(--quicksearch-card-position);
+        bottom: var(--quicksearch-card-bottom);
+        left: var(--quicksearch-card-left);
+        right: var(--quicksearch-card-right);
+        width: var(--quicksearch-card-width);
+        max-width: var(--quicksearch-card-max-width);
+        background-color: var(--quicksearch-card-background-color);
+        border-radius: var(--quicksearch-card-border-radius);
+        z-index: var(--quicksearch-card-z-index);
+        container-name: quicksearch-card;
+        container-type: inline-size;
+    }
+
+    .quicksearch-card[card-position='left'] {
+        --quicksearch-card-left: var(--spacing-s);
+        --quicksearch-card-right: unset;
+    }
+
+    .quicksearch-card[card-position='right'] {
+        --quicksearch-card-left: unset;
+        --quicksearch-card-right: var(--spacing-s);
+    }
+}

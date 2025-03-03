@@ -1,1 +1,1 @@
-@layer components{.header-with-quicksearch{--header-with-quicksearch-z-index:var(--z-index-content);container-name:header-with-quicksearch;container-type:inline-size;z-index:var(--header-with-quicksearch-z-index)}}
+@layer components{.header-with-quicksearch{--header-with-quicksearch-position:relative;--header-with-quicksearch-z-index:var(--z-index-content);container-name:header-with-quicksearch;container-type:inline-size;position:var(--header-with-quicksearch-position);z-index:var(--header-with-quicksearch-z-index)}}

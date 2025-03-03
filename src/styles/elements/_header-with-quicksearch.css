@@ -1,7 +1,9 @@
 @layer components {
     .header-with-quicksearch {
+        --header-with-quicksearch-position: relative;
         --header-with-quicksearch-z-index: var(--z-index-content);
 
+        position: var(--header-with-quicksearch-position);
         z-index: var(--header-with-quicksearch-z-index);
         container-name: header-with-quicksearch;
         container-type: inline-size;
