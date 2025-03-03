@@ -15,6 +15,9 @@
         --departures-header-note-display: block;
         --departures-header-note-font-size: var(--font-size-xs);
 
+        --departures-header-text-hidden-opacity: 0;
+        --departures-header-text-hidden-pointer-events: none;
+
         display: var(--departures-header-display);
         grid-template-columns: var(--departures-header-grid-template-columns);
         grid-gap: var(--departures-header-grid-gap);
@@ -33,6 +36,11 @@
     .departures-header__note {
         display: var(--departures-header-note-display);
         font-size: var(--departures-header-note-font-size);
+    }
+
+    .departures-header__text--hidden {
+        opacity: var(--departures-header-text-hidden-opacity);
+        pointer-events: var(--departures-header-text-hidden-pointer-events);
     }
 
     @container (width >= 840px) {

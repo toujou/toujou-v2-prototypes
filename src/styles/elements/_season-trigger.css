@@ -21,8 +21,7 @@
         --season-switch-select-wrapper-position: relative;
         --season-switch-select-width: fit-content;
         --season-switch-select-flex-grow: 1;
-
-        --season-switch-select-padding: var(--spacing-normal) var(--spacing-s);
+        --season-switch-select-padding: var(--spacing-normal) var(--spacing-l) var(--spacing-normal) var(--spacing-s);
 
         display: var(--season-switch-display);
         width: var(--season-switch-width);
@@ -55,6 +54,5 @@
 
     .season-switch__select {
         --input-padding: var(--season-switch-select-padding);
-
     }
 }

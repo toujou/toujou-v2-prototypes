@@ -16,8 +16,7 @@ export default {
     argTypes: {
         roomCount: {
             table: {
-                category: "Topbar settings",
-                defaultValue: { summary: 'default' },
+                category: "Trip dates settings",
             },
             name: 'Room count',
             description: "Number of rooms on the table",
@@ -56,7 +55,7 @@ function renderDeparture(departure: DepartureProps, roomCount: number) {
         <toujou-departure class="departure" role="row" aria-rowindex="2">
             <p class="departure__cell departure__date" role="cell" aria-colindex="1">${departure.date}</p>
             
-            <div class="departure__prices" role="rowgroup">
+            <div class="departure__prices">
                 ${departure.prices.map((price: DeparturePrice, i) => {
                     if (i >= roomCount) return;
                     return price.value
@@ -84,7 +83,7 @@ function renderDeparture(departure: DepartureProps, roomCount: number) {
             </div>
             
             ${departure.footnote ? `
-                <p class="additional-info">
+                <p class="additional-info" no-margins>
                     <toujou-icon class="icon" icon-color="font" icon-size="m" icon-name="campaign"></toujou-icon>
                     ${departure.footnote}
                 </p>   
@@ -113,7 +112,7 @@ const Template: StoryFn<TripDatesStoryProps> = (args: TripDatesStoryProps) => {
                         <div role="columnheader" aria-colindex="1">
                             <span class="departures-header__text">Departure Dates</span>
                         </div>
-                        <div class="departures-header__prices" role="rowgroup">
+                        <div class="departures-header__prices">
                             <div role="columnheader" aria-colindex="2">
                                 <span class="departures-header__text">${ROOM_TYPE.A}<span class="departures-header__note">(Pro Person)</span></span>
                             </div>
@@ -137,10 +136,10 @@ const Template: StoryFn<TripDatesStoryProps> = (args: TripDatesStoryProps) => {
                             ` : ''}
                         </div>
                         <div role="columnheader" aria-colindex="${2 + args.roomCount}">
-                            <span class="departures-header__text"></span>
+                            <span class="departures-header__text departures-header__text--hidden">Status</span>
                         </div>
                         <div role="columnheader" aria-colindex="${3 + args.roomCount}">
-                            <span class="departures-header__text"></span>
+                            <span class="departures-header__text departures-header__text--hidden">Action</span>
                         </div>
                     </toujou-departures-header>
                 </div>
@@ -278,5 +277,5 @@ const Template: StoryFn<TripDatesStoryProps> = (args: TripDatesStoryProps) => {
 export const Tripdates = Template.bind({});
 
 Tripdates.args = {
-    roomCount: 1
+    roomCount: 2
 }

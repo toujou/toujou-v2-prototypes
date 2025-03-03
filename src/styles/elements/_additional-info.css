@@ -26,4 +26,8 @@
         grid-column: var(--additional-info-grid-column);
         background-color: var(--additional-info-background-color);
     }
+
+    .additional-info[no-margins] {
+        --additional-info-margin: 0;
+    }
 }
