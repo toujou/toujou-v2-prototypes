@@ -15,7 +15,6 @@ export default {
         },
         layout: "fullscreen",
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template: StoryFn = () => {

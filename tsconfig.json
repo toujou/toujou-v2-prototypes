@@ -21,7 +21,7 @@
         "forceConsistentCasingInFileNames": true,
         "useDefineForClassFields": false,
         "skipLibCheck": true,
-        "target": "ES6",
+        "target": "es2021",
         "baseUrl": ".",
         "types": [
             "cypress",

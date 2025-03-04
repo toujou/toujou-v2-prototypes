@@ -59,20 +59,20 @@ export default {
                 method: 'alphabetic',
                 includeNames: true,
                 order: [
-                    'COMPONENTS',
+                    'COMPONENTS', // Sort COMPONENTS folder first
                     [
-                        "*", // Any other component folders
                         [
-                            "Tourism", // Specifically handle the "Tourism" folder
+                            "Tourism", // Sort the "Tourism" folder
                             [
-                                "*", // Any story within "Tourism"
-                                ["*", "Docs"] // Docs for each story within "Tourism"
-                            ]
+                                "*", // Sort stories within "Tourism" alphabetically
+                                ["*", "Docs"] // Place "Docs" after each story in "Tourism"
+                            ],
                         ],
-                        ["*", "Docs"] // Docs for components directly under "COMPONENTS"
+                        "*", // Then sort all other component folders
+                        ["*", "Docs"] // Place "Docs" after each of the other component folders
                     ],
-                    'TOKENS',
-                    'PAGES',
+                    'TOKENS', // Then TOKENS folder
+                    'PAGES', // Then PAGES folder
                 ],
             },
             selectedPanel: 'storybook/controls/panel',

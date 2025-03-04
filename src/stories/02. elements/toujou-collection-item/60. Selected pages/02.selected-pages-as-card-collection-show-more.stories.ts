@@ -150,7 +150,7 @@ const Template: StoryFn<SelectedPagesAsCardCollectionShowMoreProps> = (args: Sel
                 items-container-selector=".card-collection"
                 ${args.isLoading ? 'is-loading' : ''}
             >
-                <a href="" class="button collection-load-more__button">Show more</a>
+                <a href="#" class="button collection-load-more__button">Show more</a>
                 <toujou-spinner slot="spinner" class="collection-load-more__spinner"></toujou-spinner>
             </toujou-collection-load-more>
 

@@ -12,7 +12,6 @@ export default {
             page: topbuttonDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template: StoryFn = () => {

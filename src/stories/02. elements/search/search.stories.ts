@@ -12,7 +12,6 @@ export default {
             page: searchDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template: StoryFn = () => {

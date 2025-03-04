@@ -12,7 +12,6 @@ export default {
             page: buttonDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 

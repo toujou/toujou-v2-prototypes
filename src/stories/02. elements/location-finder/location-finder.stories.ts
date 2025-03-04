@@ -49,7 +49,6 @@ export default {
             ],
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 /* Print mock info to the console because requests are not always visible on the Network panel */

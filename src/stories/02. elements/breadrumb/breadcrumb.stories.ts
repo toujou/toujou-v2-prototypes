@@ -13,7 +13,6 @@ export default {
             page: breadcrumbDocs,
         }
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

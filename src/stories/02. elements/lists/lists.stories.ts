@@ -12,7 +12,6 @@ export default {
             page: ListsDocs,
         }
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const renderLists = () => {

@@ -13,7 +13,6 @@ export default {
             page: accommodationDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

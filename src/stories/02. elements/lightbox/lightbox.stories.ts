@@ -14,7 +14,6 @@ export default {
             page: lightboxDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

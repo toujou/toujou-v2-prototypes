@@ -12,7 +12,6 @@ export default {
             page: textBlockDocs,
         }
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

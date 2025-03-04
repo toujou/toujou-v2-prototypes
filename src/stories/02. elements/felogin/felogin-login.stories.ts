@@ -13,7 +13,6 @@ export default {
             page: feloginDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const feloginBlock = () => {

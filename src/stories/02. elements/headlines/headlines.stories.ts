@@ -12,7 +12,6 @@ export default {
             page: headlinesDocs,
         }
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const HeadlineH1Template = () => {

@@ -18,7 +18,6 @@ export default {
         isTitleOnly: {
             table: {
                 category: "Header Settings",
-                defaultValue: { summary: false },
             },
             name: 'Title only',
             description: "Show only the title",
@@ -111,7 +110,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface HeaderStoryProps {

@@ -13,7 +13,6 @@ export default {
             page: reviewListDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const reviewsComponent = () => {

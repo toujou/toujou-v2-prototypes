@@ -26,7 +26,6 @@ export default {
             description: "Set the snackbar variant style",
             options: ['info', 'success', 'warning', 'error'],
             control: { type: 'radio' },
-            defaultValue: ['info'],
             required: true,
         },
         snackbarType: {
@@ -44,7 +43,6 @@ export default {
         snackbarDuration: {
             table: {
                 category: "Snackbar settings",
-                defaultValue: { summary: 4000 },
             },
             name: 'Snackbar duration',
             description: "Set the snackbar visibility duration",
@@ -53,7 +51,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface SnackbarStoryProps {

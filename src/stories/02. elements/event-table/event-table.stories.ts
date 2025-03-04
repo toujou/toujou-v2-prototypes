@@ -13,7 +13,6 @@ export default {
             page: eventTableDocs,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const eventTableComponent = () => {
