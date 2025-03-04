@@ -57,12 +57,9 @@
     }
 
     .trip-description__summary .details__subtitle {
-        --details-subtitle-padding: 0;
-
         grid-column: 2;
         grid-row: 2;
     }
-
 
     .trip-description__files {
         display: var(--trip-description-files-display);
