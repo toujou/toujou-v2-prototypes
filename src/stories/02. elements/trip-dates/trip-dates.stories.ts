@@ -53,7 +53,7 @@ interface DepartureProps {
 function renderDeparture(departure: DepartureProps, roomCount: number) {
     return `
         <toujou-departure class="departure" role="row" aria-rowindex="2">
-            <p class="departure__cell departure__date" role="cell" aria-colindex="1">${departure.date}</p>
+            <time class="departure__cell departure__date" role="cell" aria-colindex="1" datetime="01.01.1999">${departure.date}</time>
             
             <div class="departure__prices">
                 ${departure.prices.map((price: DeparturePrice, i) => {
@@ -110,7 +110,7 @@ const Template: StoryFn<TripDatesStoryProps> = (args: TripDatesStoryProps) => {
                 <div class="departures__header-group" role="rowgroup">
                     <toujou-departures-header role="row" class="departures-header">
                         <div role="columnheader" aria-colindex="1">
-                            <span class="departures-header__text">Departure Dates</span>
+                            <span class="departures-header__text departures-header__text--appointment">Departure Dates</span>
                         </div>
                         <div class="departures-header__prices">
                             <div role="columnheader" aria-colindex="2">
@@ -136,10 +136,10 @@ const Template: StoryFn<TripDatesStoryProps> = (args: TripDatesStoryProps) => {
                             ` : ''}
                         </div>
                         <div role="columnheader" aria-colindex="${2 + args.roomCount}">
-                            <span class="departures-header__text departures-header__text--hidden">Status</span>
+                            <span class="departures-header__text departures-header__text--status departures-header__text--hidden">Status</span>
                         </div>
                         <div role="columnheader" aria-colindex="${3 + args.roomCount}">
-                            <span class="departures-header__text departures-header__text--hidden">Action</span>
+                            <span class="departures-header__text departures-header__text--action departures-header__text--hidden">Action</span>
                         </div>
                     </toujou-departures-header>
                 </div>

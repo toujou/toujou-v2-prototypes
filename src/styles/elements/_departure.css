@@ -103,7 +103,7 @@
     }
 
     .departure__status-text {
-        --departure-status-text-before-background-color: var(--color-success);
+        --departure-status-text-before-background-color: transparent;
 
         display: var(--departure-status-text-display);
         gap: var(--departure-status-text-gap);
@@ -114,6 +114,10 @@
         font-weight: var(--departure-status-text-font-weight);
         font-size: var(--departure-status-text-font-size);
         line-height: var(--departure-status-text-line-height);
+    }
+
+    .departure__status-text--success {
+        --departure-status-text-before-background-color: var(--color-success);
     }
 
     .departure__status-text--warning {
