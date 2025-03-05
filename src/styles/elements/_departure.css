@@ -102,6 +102,10 @@
         margin: var(--departure-status-margin);
     }
 
+    .departure__status[has-no-status] {
+        height: 0;
+    }
+
     .departure__status-text {
         --departure-status-text-before-background-color: transparent;
 
