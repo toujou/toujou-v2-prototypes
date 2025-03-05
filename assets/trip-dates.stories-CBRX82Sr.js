@@ -1,13 +1,13 @@
 import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as i}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function u(e){const a={h1:"h1",p:"p",...i(),...e.components};return t.jsxs(t.Fragment,{children:[t.jsx(a.h1,{id:"tripdates",children:"Tripdates"}),`
-`,t.jsx(a.p,{children:"Content element: Trip / Tripdates"})]})}function _(e={}){const{wrapper:a}={...i(),...e.components};return a?t.jsx(a,{...e,children:t.jsx(u,{...e})}):u(e)}const R={title:"COMPONENTS/Tourism/Trip Dates",parameters:{badges:[c.TESTING],docs:{page:_}},argTypes:{roomCount:{table:{category:"Trip dates settings"},name:"Room count",description:"Number of rooms on the table",control:{type:"range",min:1,max:4,step:1},required:!0}},tags:["autodocs"]};function r(e,a){return`
+`,t.jsx(a.p,{children:"Content element: Trip / Tripdates"})]})}function _(e={}){const{wrapper:a}={...i(),...e.components};return a?t.jsx(a,{...e,children:t.jsx(u,{...e})}):u(e)}const O={title:"COMPONENTS/Tourism/Trip Dates",parameters:{badges:[c.TESTING],docs:{page:_}},argTypes:{roomCount:{table:{category:"Trip dates settings"},name:"Room count",description:"Number of rooms on the table",control:{type:"range",min:1,max:4,step:1},required:!0}},tags:["autodocs"]};function r(e,a){return`
         <toujou-departure class="departure" role="row" aria-rowindex="2">
-            <p class="departure__cell departure__date" role="cell" aria-colindex="1">${e.date}</p>
+            <time class="departure__cell departure__date" role="cell" aria-colindex="1" datetime="01.01.1999">${e.date}</time>
             
             <div class="departure__prices">
-                ${e.prices.map((s,l)=>{if(!(l>=a))return s.value?`
+                ${e.prices.map((o,l)=>{if(!(l>=a))return o.value?`
                             <p class="departure__cell departure__price" role="cell" aria-colindex="${l+1}">
-                                <span class="departure__price-label">${s.label}</span>
-                                <span class="departure__price-value">${s.value}</span>
+                                <span class="departure__price-label">${o.label}</span>
+                                <span class="departure__price-value">${o.value}</span>
                             </p>
                         `:`
                             <p class="departure__cell departure__price" role="cell" aria-colindex="${l+1}" aria-hidden="true"></p>
@@ -38,7 +38,7 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                 <div class="departures__header-group" role="rowgroup">
                     <toujou-departures-header role="row" class="departures-header">
                         <div role="columnheader" aria-colindex="1">
-                            <span class="departures-header__text">Departure Dates</span>
+                            <span class="departures-header__text departures-header__text--appointment">Departure Dates</span>
                         </div>
                         <div class="departures-header__prices">
                             <div role="columnheader" aria-colindex="2">
@@ -64,10 +64,10 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                             `:""}
                         </div>
                         <div role="columnheader" aria-colindex="${2+e.roomCount}">
-                            <span class="departures-header__text departures-header__text--hidden">Status</span>
+                            <span class="departures-header__text departures-header__text--status departures-header__text--hidden">Status</span>
                         </div>
                         <div role="columnheader" aria-colindex="${3+e.roomCount}">
-                            <span class="departures-header__text departures-header__text--hidden">Action</span>
+                            <span class="departures-header__text departures-header__text--action departures-header__text--hidden">Action</span>
                         </div>
                     </toujou-departures-header>
                 </div>
@@ -89,14 +89,14 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                 </div>
             </toujou-departures>
         </main>
-    `,o=m.bind({});o.args={roomCount:2};var n,p,d;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:`(args: TripDatesStoryProps) => {
+    `,s=m.bind({});s.args={roomCount:2};var n,p,d;s.parameters={...s.parameters,docs:{...(n=s.parameters)==null?void 0:n.docs,source:{originalSource:`(args: TripDatesStoryProps) => {
   return \`
         <main>
             <toujou-departures class="departures" role="table" price-count="\${args.roomCount}" aria-label="Departure Dates">
                 <div class="departures__header-group" role="rowgroup">
                     <toujou-departures-header role="row" class="departures-header">
                         <div role="columnheader" aria-colindex="1">
-                            <span class="departures-header__text">Departure Dates</span>
+                            <span class="departures-header__text departures-header__text--appointment">Departure Dates</span>
                         </div>
                         <div class="departures-header__prices">
                             <div role="columnheader" aria-colindex="2">
@@ -122,10 +122,10 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                             \` : ''}
                         </div>
                         <div role="columnheader" aria-colindex="\${2 + args.roomCount}">
-                            <span class="departures-header__text departures-header__text--hidden">Status</span>
+                            <span class="departures-header__text departures-header__text--status departures-header__text--hidden">Status</span>
                         </div>
                         <div role="columnheader" aria-colindex="\${3 + args.roomCount}">
-                            <span class="departures-header__text departures-header__text--hidden">Action</span>
+                            <span class="departures-header__text departures-header__text--action departures-header__text--hidden">Action</span>
                         </div>
                     </toujou-departures-header>
                 </div>
@@ -286,4 +286,4 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
             </toujou-departures>
         </main>
     \`;
-}`,...(d=(p=o.parameters)==null?void 0:p.docs)==null?void 0:d.source}}};const x=["Tripdates"];export{o as Tripdates,x as __namedExportsOrder,R as default};
+}`,...(d=(p=s.parameters)==null?void 0:p.docs)==null?void 0:d.source}}};const R=["Tripdates"];export{s as Tripdates,R as __namedExportsOrder,O as default};
