@@ -155,6 +155,11 @@
         width: var(--departure-cta-button-width);
     }
 
+    .departure__cta-button[disabled] {
+        margin: var(--departure-cta-button-margin);
+        width: var(--departure-cta-button-width);
+    }
+
     @container (width < 840px) {
         .departure {
             --departure-cta-button-width: 100%;

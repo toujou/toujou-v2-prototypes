@@ -13,6 +13,7 @@
     --button-flex-direction: row;
     --button-text-decoration: none;
     --button-text-align: auto;
+    --button-opacity: 1;
 
     width: var(--button-width);
     display: flex;
@@ -31,6 +32,7 @@
     text-decoration: var(--button-text-decoration);
     cursor: pointer;
     text-align: var(--button-text-align);
+    opacity: var(--button-opacity);
 }
 
 p > .button {
@@ -191,8 +193,9 @@ p > .button {
 
 /* BUTTON DISABLED */
 .button[disabled] {
-    --button-color-bg: var(--color-font-light) !important;
-    --button-color-text: var(--color-font) !important;
+    --button-color-bg: var(--color-font) !important;
+    --button-color-text: var(--color-bg) !important;
+    --button-opacity: .5;
 
     cursor: not-allowed !important;
 }
