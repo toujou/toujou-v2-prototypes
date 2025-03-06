@@ -53,7 +53,7 @@ const renderTripDescriptionCalendar = (dayText: string) => {
 
 const renderTripDescriptionIncludedOptions = (includedOptions: TripDescriptionIncludedOption[]) => {
     return `
-        <trip-description-option class="trip-description-options">
+        <trip-description-options class="trip-description-options">
             <ul class="separated-list trip-description-options__list" list-separator="dot" list-spacing="wide">
                 ${includedOptions.map((includedOption: TripDescriptionIncludedOption) => {
                     return `
@@ -64,7 +64,7 @@ const renderTripDescriptionIncludedOptions = (includedOptions: TripDescriptionIn
                     `    
                 }).join('')}
             </ul>
-        </trip-description-option>
+        </trip-description-options>
     `
 }
 
