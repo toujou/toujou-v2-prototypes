@@ -58,7 +58,8 @@
         --slider-margin: var(--spacing-between-elements-normal) auto 0;
     }
 
-    .text-block__figure .slider[content-type="default"] {
+    .text-block__figure .slider[content-type="default"],
+    .text-block__figure .slider[content-type="accordion"] {
         --slider-width: var(--content-fullwidth);
         --slider-margin: 0 auto;
     }

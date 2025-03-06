@@ -5,7 +5,8 @@
         width: 100%;
     }
 
-    .slider[content-type="default"] .slider-slide {
+    .slider[content-type="default"] .slider-slide,
+    .slider[content-type="accordion"] .slider-slide {
         height: fit-content !important;
     }
 
