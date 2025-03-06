@@ -4,7 +4,7 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-run
             <p class="trip-description-day__day">${e}</p>
         </toujou-trip-description-day>
     `,a=e=>`
-        <trip-description-option class="trip-description-options">
+        <trip-description-options class="trip-description-options">
             <ul class="separated-list trip-description-options__list" list-separator="dot" list-spacing="wide">
                 ${e.map(t=>`
                         <li class="separated-list__item trip-description-options__item">
@@ -13,7 +13,7 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-run
                         </li>
                     `).join("")}
             </ul>
-        </trip-description-option>
+        </trip-description-options>
     `,r=e=>`
         <p class="trip-description__files">
             ${e.map(t=>`
