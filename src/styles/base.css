@@ -55,6 +55,7 @@
 @import "./globals/_media-info.css" layer(base);
 @import "./globals/_modal.css" layer(base);
 @import "./globals/_search.css" layer(base);
+@import "./globals/_season-trigger-action.css" layer(base);
 @import "./globals/_separated-list.css" layer(base);
 @import "./globals/_single-media.css" layer(base);
 @import "./globals/_smooth-scroll.css" layer(base);
