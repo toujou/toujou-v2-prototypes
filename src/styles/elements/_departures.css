@@ -27,6 +27,10 @@
         margin: var(--departures-margin);
     }
 
+    .departures.season-trigger-action[data-season]:not(.season-trigger-action--visible) {
+        --departures-display: none;
+    }
+
     .departures__dates {
         display: var(--departures-display);
         flex-direction: var(--departures-flex-direction);
