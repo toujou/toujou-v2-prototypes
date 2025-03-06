@@ -1,4 +1,4 @@
-import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as o}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function s(n){const t={code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",ul:"ul",...o(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(t.h1,{id:"rating-stars",children:"Rating-stars"}),`
+import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as o}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function a(n){const t={code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",ul:"ul",...o(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(t.h1,{id:"rating-stars",children:"Rating-stars"}),`
 `,e.jsx(t.p,{children:'The rating stars element allows us to quickly add a "rating" element without having to deal with images for the different values.'}),`
 `,e.jsx(t.p,{children:'The rating element is configurable: we can change the color, the "rating entity", size, number of elements, ...'}),`
 `,e.jsx(t.h2,{id:"markup-example",children:"Markup Example"}),`
@@ -49,16 +49,17 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
 `,e.jsx(t.li,{children:e.jsx(t.code,{children:"--rating-stars-letter-spacing"})}),`
 `,e.jsx(t.li,{children:e.jsx(t.code,{children:"--rating-stars-color"})}),`
 `,e.jsx(t.li,{children:e.jsx(t.code,{children:"--rating-stars-font-size"})}),`
-`]})]})}function d(n={}){const{wrapper:t}={...o(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(s,{...n})}):s(n)}const p={title:"COMPONENTS/Rating Stars",parameters:{badges:[c.DONE],docs:{page:d}},argTypes:{rating:{table:{category:"Rating stars",defaultValue:{summary:"4.4"}},name:"Rating value",description:"Set a value for the rating",control:{type:"number",min:0,max:5,step:.1},defaultValue:["4.7"],required:!0},size:{table:{category:"Rating stars",defaultValue:{summary:"xl"}},name:"Size",description:"Set the rating stars size",options:["s","normal","m","l","xl","xxl"],control:{type:"radio"},defaultValue:["normal"],required:!0}},tags:["autodocs"]},h=n=>`
+`]})]})}function d(n={}){const{wrapper:t}={...o(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(a,{...n})}):a(n)}const p={title:"COMPONENTS/Rating Stars",parameters:{badges:[c.DONE],docs:{page:d}},argTypes:{rating:{table:{category:"Rating stars",defaultValue:{summary:"4.4"}},name:"Rating value",description:"Set a value for the rating",control:{type:"number",min:0,max:5,step:.1},required:!0},suffix:{table:{category:"Rating stars"},name:"Rating suffix",description:"Set a suffix for the rating"},size:{table:{category:"Rating stars",defaultValue:{summary:"xl"}},name:"Size",description:"Set the rating stars size",options:["s","normal","m","l","xl","xxl"],control:{type:"radio"},required:!0}},tags:["autodocs"]},h=n=>`
         <toujou-rating-stars
             class="rating-stars"
             rating-entity="★"
             rating-total="5"
             rating-value="${n.rating}"
             rating-entity-size="${n.size}"
+            rating-suffix="${n.suffix}"
         >
         </toujou-rating-stars>
-    `,a=h.bind({});a.args={rating:4.4,size:"xl"};var r,i,l;a.parameters={...a.parameters,docs:{...(r=a.parameters)==null?void 0:r.docs,source:{originalSource:`(args: RatingStarsStoryProps) => {
+    `,s=h.bind({});s.args={rating:4.4,suffix:"",size:"xl"};var r,i,l;s.parameters={...s.parameters,docs:{...(r=s.parameters)==null?void 0:r.docs,source:{originalSource:`(args: RatingStarsStoryProps) => {
   return \`
         <toujou-rating-stars
             class="rating-stars"
@@ -66,7 +67,8 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
             rating-total="5"
             rating-value="\${args.rating}"
             rating-entity-size="\${args.size}"
+            rating-suffix="\${args.suffix}"
         >
         </toujou-rating-stars>
     \`;
-}`,...(l=(i=a.parameters)==null?void 0:i.docs)==null?void 0:l.source}}};const f=["RatingStars"];export{a as RatingStars,f as __namedExportsOrder,p as default};
+}`,...(l=(i=s.parameters)==null?void 0:i.docs)==null?void 0:l.source}}};const f=["RatingStars"];export{s as RatingStars,f as __namedExportsOrder,p as default};
