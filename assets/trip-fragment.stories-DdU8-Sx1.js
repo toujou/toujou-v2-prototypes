@@ -1,5 +1,5 @@
-import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as r}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function o(n){const t={h1:"h1",p:"p",...r(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(t.h1,{id:"trip-fragment",children:"Trip Fragment"}),`
-`,e.jsx(t.p,{children:"Introduction section that is shown on all trip pages, with some information about the trip"})]})}function m(n={}){const{wrapper:t}={...r(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(o,{...n})}):o(n)}const v={title:"COMPONENTS/Tourism/Fragment",parameters:{badges:[l.TESTING],docs:{page:m}},argTypes:{hideMap:{table:{category:"Trip page settings",defaultValue:{summary:"false"}},name:"Hide map image",description:"Hide the trip map image",control:{type:"boolean"},required:!0}},tags:["autodocs"]},u=n=>`
+import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as r}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function a(n){const t={h1:"h1",p:"p",...r(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(t.h1,{id:"trip-fragment",children:"Trip Fragment"}),`
+`,e.jsx(t.p,{children:"Introduction section that is shown on all trip pages, with some information about the trip"})]})}function m(n={}){const{wrapper:t}={...r(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(a,{...n})}):a(n)}const v={title:"COMPONENTS/Tourism/Fragment",parameters:{badges:[l.TESTING],docs:{page:m}},argTypes:{hideMap:{table:{category:"Trip page settings",defaultValue:{summary:"false"}},name:"Hide map image",description:"Hide the trip map image",control:{type:"boolean"},required:!0}},tags:["autodocs"]},u=n=>`
         <main>
             <div class="fragment" fragment-type="trip">
                 <section class="chapter fragment__section">
@@ -26,6 +26,19 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                                             <span class="fragment-teaser__trip-price-prefix">ab</span>
                                             375,00 €
                                             <span class="fragment-teaser__trip-price-suffix">(inkl. Flug)</span>
+                                        </data>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fragment-teaser__block" number-of-columns="1">
+                                <div class="fragment-teaser__column" align-items="bottom">
+                                    <toujou-icon class="icon" icon-name="briefcase" icon-color="font" icon-size="m"></toujou-icon>
+                                    <div class="fragment-teaser__column-content">
+                                        <data class="fragment-teaser__price fragment-teaser__info" value="375.00">
+                                            <span class="fragment-teaser__price-prefix">ab</span>
+                                            375,00 €
+                                            <span class="fragment-teaser__price-suffix">(inkl. Flug)</span>
                                         </data>
                                     </div>
                                 </div>
@@ -86,7 +99,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                 </section>
             </div>
         </main>
-    `,i=u.bind({});i.args={hideMap:!1};var a,s,c;i.parameters={...i.parameters,docs:{...(a=i.parameters)==null?void 0:a.docs,source:{originalSource:`(args: TripFragmentProps) => {
+    `,i=u.bind({});i.args={hideMap:!1};var o,s,c;i.parameters={...i.parameters,docs:{...(o=i.parameters)==null?void 0:o.docs,source:{originalSource:`(args: TripFragmentProps) => {
   return \`
         <main>
             <div class="fragment" fragment-type="trip">
@@ -114,6 +127,19 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                                             <span class="fragment-teaser__trip-price-prefix">ab</span>
                                             375,00 €
                                             <span class="fragment-teaser__trip-price-suffix">(inkl. Flug)</span>
+                                        </data>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fragment-teaser__block" number-of-columns="1">
+                                <div class="fragment-teaser__column" align-items="bottom">
+                                    <toujou-icon class="icon" icon-name="briefcase" icon-color="font" icon-size="m"></toujou-icon>
+                                    <div class="fragment-teaser__column-content">
+                                        <data class="fragment-teaser__price fragment-teaser__info" value="375.00">
+                                            <span class="fragment-teaser__price-prefix">ab</span>
+                                            375,00 €
+                                            <span class="fragment-teaser__price-suffix">(inkl. Flug)</span>
                                         </data>
                                     </div>
                                 </div>
