@@ -64,6 +64,19 @@ const Template: StoryFn<TripFragmentProps> = (args: TripFragmentProps) => {
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="fragment-teaser__block" number-of-columns="1">
+                                <div class="fragment-teaser__column" align-items="bottom">
+                                    <toujou-icon class="icon" icon-name="briefcase" icon-color="font" icon-size="m"></toujou-icon>
+                                    <div class="fragment-teaser__column-content">
+                                        <data class="fragment-teaser__price fragment-teaser__info" value="375.00">
+                                            <span class="fragment-teaser__price-prefix">ab</span>
+                                            375,00 €
+                                            <span class="fragment-teaser__price-suffix">(inkl. Flug)</span>
+                                        </data>
+                                    </div>
+                                </div>
+                            </div>
                             
                             <div class="fragment-teaser__block" number-of-columns="2">
                                 <div class="fragment-teaser__column">

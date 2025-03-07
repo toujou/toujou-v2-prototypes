@@ -57,15 +57,15 @@
         --fragment-teaser-ctas-flex-flow: row wrap;
         --fragment-teaser-ctas-gap: var(--spacing-s) var(--spacing-normal);
 
-        --fragment-teaser-trip-price-prefix-font-size: var(--font-size-normal);
-        --fragment-teaser-trip-price-prefix-font-weight: var(--font-weight-text-normal);
+        --fragment-teaser-price-prefix-font-size: var(--font-size-normal);
+        --fragment-teaser-price-prefix-font-weight: var(--font-weight-text-normal);
 
-        --fragment-teaser-trip-price-font-size: var(--font-size-l);
-        --fragment-teaser-trip-price-font-weight: var(--font-weight-text-bold);
+        --fragment-teaser-price-font-size: var(--font-size-l);
+        --fragment-teaser-price-font-weight: var(--font-weight-text-bold);
 
-        --fragment-teaser-trip-price-suffix-font-size: var(--font-size-normal);
-        --fragment-teaser-trip-price-suffix-font-weight: var(--font-weight-text-normal);
-        --fragment-teaser-trip-price-suffix-color: var(--color-font-light);
+        --fragment-teaser-price-suffix-font-size: var(--font-size-normal);
+        --fragment-teaser-price-suffix-font-weight: var(--font-weight-text-normal);
+        --fragment-teaser-price-suffix-color: var(--color-font-light);
 
         display: var(--fragment-teaser-display);
         grid-template-columns: var(--fragment-teaser-grid-template-columns);
@@ -163,20 +163,20 @@
         gap: var(--fragment-teaser-ctas-gap);
     }
 
-    .fragment-teaser__trip-price-prefix {
-        font-size: var(--fragment-teaser-trip-price-prefix-font-size);
-        font-weight: var(--fragment-teaser-trip-price-prefix-font-weight);
+    .fragment-teaser__price-prefix {
+        font-size: var(--fragment-teaser-price-prefix-font-size);
+        font-weight: var(--fragment-teaser-price-prefix-font-weight);
     }
 
-    .fragment-teaser__trip-price {
-        font-size: var(--fragment-teaser-trip-price-font-size);
-        font-weight: var(--fragment-teaser-trip-price-font-weight);
+    .fragment-teaser__price {
+        font-size: var(--fragment-teaser-price-font-size);
+        font-weight: var(--fragment-teaser-price-font-weight);
     }
 
-    .fragment-teaser__trip-price-suffix {
-        font-size: var(--fragment-teaser-trip-price-suffix-font-size);
-        font-weight: var(--fragment-teaser-trip-price-suffix-font-weight);
-        color: var(--fragment-teaser-trip-price-suffix-color);
+    .fragment-teaser__price-suffix {
+        font-size: var(--fragment-teaser-price-suffix-font-size);
+        font-weight: var(--fragment-teaser-price-suffix-font-weight);
+        color: var(--fragment-teaser-price-suffix-color);
     }
 
     @container (min-width: 480px) {
