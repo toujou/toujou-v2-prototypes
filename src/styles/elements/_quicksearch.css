@@ -57,12 +57,32 @@
 
     @container (min-width: 840px) {
         .quicksearch {
-            --quicksearch-grid-template-columns: 1fr 1fr 1fr 1fr auto;
+            --quicksearch-grid-template-columns: repeat(var(--quicksearch-column-count), 1fr) auto;
             --quicksearch-mode-grid-column: auto / span 1;
             --quicksearch-availability-grid-column: auto / span 1;
             --quicksearch-submit-grid-column: auto / span 1;
             --quicksearch-submit-height: 100%;
             --quicksearch-submit-button-height: 100%;
+        }
+
+        .quicksearch[column-count="1"] {
+            --quicksearch-column-count: 1;
+        }
+
+        .quicksearch[column-count="2"] {
+            --quicksearch-column-count: 2;
+        }
+
+        .quicksearch[column-count="3"] {
+            --quicksearch-column-count: 3;
+        }
+
+        .quicksearch[column-count="4"] {
+            --quicksearch-column-count: 4;
+        }
+
+        .quicksearch[column-count="5"] {
+            --quicksearch-column-count: 5;
         }
     }
 }
