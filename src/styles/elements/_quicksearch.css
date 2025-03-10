@@ -24,6 +24,10 @@
         align-items: var(--quicksearch-align-items);
     }
 
+    [media-info-child-is-open] .quicksearch {
+        --quicksearch-display: none;
+    }
+
     .quicksearch__input {
         grid-column: var(--quicksearch-input-grid-columns);
         margin: var(--quicksearch-input-margin);
