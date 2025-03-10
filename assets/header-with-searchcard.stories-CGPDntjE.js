@@ -32,7 +32,8 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./header.
             </header>
             
             <div class="quicksearch-card" card-position="${e.searchCardPosition}">
-                <form action="#" class="quicksearch quicksearch-card">
+                <p class="quicksearch-card__headline">Card Headline</p>
+                <form action="#" class="quicksearch quicksearch-card__form">
                 
                     <toujou-input-group class="input-group input-group--single-select quicksearch__input quicksearch__mode">
                         <label class="input-label" for="tx_rates_search[mode]">Mode</label>
@@ -140,7 +141,8 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as s}from"./header.
             </header>
             
             <div class="quicksearch-card" card-position="\${args.searchCardPosition}">
-                <form action="#" class="quicksearch quicksearch-card">
+                <p class="quicksearch-card__headline">Card Headline</p>
+                <form action="#" class="quicksearch quicksearch-card__form">
                 
                     <toujou-input-group class="input-group input-group--single-select quicksearch__input quicksearch__mode">
                         <label class="input-label" for="tx_rates_search[mode]">Mode</label>
