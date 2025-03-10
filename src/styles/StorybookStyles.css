@@ -16,7 +16,6 @@
 @import 'demo/_type.css' layer(base);
 @import 'demo/_icon-grid.css' layer(base);
 @import 'demo/_demo-grid.css' layer(base);
-@import 'demo/_fake-fav-icon.css' layer(base);
 @import 'demo/_chapter.css' layer(base);
 @import 'demo/_toujou-solr-styles.css' layer(base);
 @import 'demo/_demo-media-placeholder-container.css' layer(base);
@@ -97,6 +96,7 @@
 @import "./elements/_event-schedule-item.css";
 @import "./elements/_event-schedule-year.css";
 @import "./elements/_event-table-card.css";
+@import "./elements/_fav-icon.css";
 @import "./elements/_fav-list.css";
 @import "./elements/_felogin.css";
 @import "./elements/_flatpickr.css";

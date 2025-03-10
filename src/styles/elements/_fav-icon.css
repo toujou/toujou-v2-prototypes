@@ -1,4 +1,4 @@
-.fake-fav-item {
+.fav-item {
     position: absolute;
     bottom: 0;
     right: var(--spacing-normal);
@@ -11,7 +11,7 @@
     display: block;
 }
 
-.fake-fav-item::after {
+.fav-item::after {
     content: "";
     height: 60%;
     width: 60%;
@@ -20,50 +20,44 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* stylelint-disable property-no-vendor-prefix */
     mask-image: var(--icon-heart-stroke);
-    -webkit-mask-image: var(--icon-heart-stroke);
     mask-position: center;
-    -webkit-mask-position: center;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-size: contain;
-    -webkit-mask-size: contain;
-    /* stylelint-enable property-no-vendor-prefix */
     background-color: var(--color-font);
 }
 
 @media (hover: hover) {
-    .fake-fav-item:hover {
+    .fav-item:hover {
         background-color: var(--color-primary);
         cursor: pointer;
     }
 
-    .fake-fav-item:hover::after {
+    .fav-item:hover::after {
         background-color: var(--color-bg);
     }
 
-    .collection-item[element-design="primary"] .fake-fav-item:hover {
+    .collection-item[element-design="primary"] .fav-item:hover {
         background-color: var(--color-primary-light);
     }
 
-    .collection-item[element-design="primary"] .fake-fav-item:hover::after {
+    .collection-item[element-design="primary"] .fav-item:hover::after {
         background-color: var(--color-primary-dark);
     }
 
-    .collection-item[element-design="secondary"] .fake-fav-item:hover {
+    .collection-item[element-design="secondary"] .fav-item:hover {
         background-color: var(--color-secondary-light);
     }
 
-    .collection-item[element-design="secondary"] .fake-fav-item:hover::after {
+    .collection-item[element-design="secondary"] .fav-item:hover::after {
         background-color: var(--color-secondary-dark);
     }
 
-    .collection-item[element-design="inverted"] .fake-fav-item:hover {
+    .collection-item[element-design="inverted"] .fav-item:hover {
         background-color: var(--color-font-light);
     }
 
-    .collection-item[element-design="inverted"] .fake-fav-item:hover::after {
+    .collection-item[element-design="inverted"] .fav-item:hover::after {
         background-color: var(--color-font-dark);
     }
 }

@@ -55,7 +55,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                                     Spanien
                                 </h5>
                             </div>
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                             <toujou-media-info class="media-info">
                                 <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                     <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
@@ -114,7 +114,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                                     Spanien
                                 </h5>
                             </div>
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Musterreise</h3>
@@ -163,7 +163,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                                     Spanien
                                 </h5>
                             </div>
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Musterreise: Svastha medizinische Spezialkur</h3>
@@ -207,7 +207,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                                     Spanien
                                 </h5>
                             </div>
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Musterreise</h3>

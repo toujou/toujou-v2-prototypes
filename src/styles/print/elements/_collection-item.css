@@ -20,7 +20,7 @@
         background-color: black;
     }
 
-    .fake-fav-item {
+    .collection-item__fav-item {
         display: none;
     }
 

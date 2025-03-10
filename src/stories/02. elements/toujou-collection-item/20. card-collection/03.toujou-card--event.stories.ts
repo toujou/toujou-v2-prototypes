@@ -60,7 +60,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
 
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
 
@@ -96,7 +96,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
 
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Headline</h3>
@@ -128,7 +128,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
@@ -162,7 +162,7 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                             <figure class="collection-item__figure">
                                 <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
-                            <toujou-fav-item class="fake-fav-item"></toujou-fav-item>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Nice headline</h3>
