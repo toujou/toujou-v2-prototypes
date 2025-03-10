@@ -43,11 +43,16 @@
         .quicksearch {
             --quicksearch-grid-template-columns: 1fr 1fr;
             --quicksearch-mode-grid-column: 1 / -1;
+            --quicksearch-country-grid-column: 1 / -1;
             --quicksearch-availability-grid-column: 1 / -1;
         }
 
         .quicksearch__mode {
             grid-column: var(--quicksearch-mode-grid-column);
+        }
+
+        .quicksearch__country {
+            grid-column: var(--quicksearch-country-grid-column);
         }
 
         .quicksearch__availability {
@@ -59,6 +64,7 @@
         .quicksearch {
             --quicksearch-grid-template-columns: repeat(var(--quicksearch-column-count), 1fr) auto;
             --quicksearch-mode-grid-column: auto / span 1;
+            --quicksearch-country-grid-column: auto / span 1;
             --quicksearch-availability-grid-column: auto / span 1;
             --quicksearch-submit-grid-column: auto / span 1;
             --quicksearch-submit-height: 100%;
