@@ -2,8 +2,8 @@
     :root,
     ::before,
     ::after {
+        --toujou-location-finder-teaser-grid-columns: 1fr;
         --toujou-location-finder-teaser-highlighted-bg-color: var(--color-black-o-05);
-
         --toujou-location-finder-teaser-name-font-family: var(--font-family-text);
         --toujou-location-finder-teaser-name-font-size: var(--font-size-normal);
         --toujou-location-finder-teaser-name-color: var(--color-primary);
@@ -38,6 +38,5 @@
         --toujou-location-finder-teaser-description-font-size: var(--font-size-normal);
         --toujou-location-finder-teaser-description-font-family: var(--font-family-text);
         --toujou-location-finder-teaser-description-color: var(--color-font);
-
     }
 }
