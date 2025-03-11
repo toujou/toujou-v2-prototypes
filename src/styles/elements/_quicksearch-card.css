@@ -2,7 +2,7 @@
     .quicksearch-card {
         --quicksearch-card-position: absolute;
         --quicksearch-card-bottom: var(--spacing-m);
-        --quicksearch-card-width: calc(100% - var(--spacing-normal));
+        --quicksearch-card-width: calc(100% - calc(var(--spacing-normal) * 2));
         --quicksearch-card-max-width: 420px;
         --quicksearch-card-background-color: var(--color-bg);
         --quicksearch-card-border-radius: var(--border-radius-default);
