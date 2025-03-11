@@ -337,7 +337,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                 aria-current="true"
                                 aria-label="English"
                             >
-                                <span class="language-picker__ico-code">EN</span>
+                                <span class="language-picker__iso-code">EN</span>
                             </a>
                         </li>
                         <li class="language-picker__item">
@@ -348,7 +348,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                 hreflang="de"
                                 aria-label="Deutsch"
                             >
-                                <span class="language-picker__ico-code">DE</span>
+                                <span class="language-picker__iso-code">DE</span>
                             </a>
                         </li>
                         <li class="language-picker__item">
@@ -359,7 +359,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                 hreflang="pt"
                                 aria-label="Português"
                             >
-                                <span class="language-picker__ico-code">PT</span>
+                                <span class="language-picker__iso-code">PT</span>
                             </a>
                         </li>
                     </ul>
@@ -798,7 +798,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                 aria-current="true"
                                 aria-label="English"
                             >
-                                <span class="language-picker__ico-code">EN</span>
+                                <span class="language-picker__iso-code">EN</span>
                             </a>
                         </li>
                         <li class="language-picker__item">
@@ -809,7 +809,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                 hreflang="de"
                                 aria-label="Deutsch"
                             >
-                                <span class="language-picker__ico-code">DE</span>
+                                <span class="language-picker__iso-code">DE</span>
                             </a>
                         </li>
                         <li class="language-picker__item">
@@ -820,7 +820,7 @@ Ex: `,a.jsx(e.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                                 hreflang="pt"
                                 aria-label="Português"
                             >
-                                <span class="language-picker__ico-code">PT</span>
+                                <span class="language-picker__iso-code">PT</span>
                             </a>
                         </li>
                     </ul>
