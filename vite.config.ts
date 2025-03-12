@@ -15,6 +15,7 @@ export default defineConfig({
                 'toujou-portfolio-gallery': path.resolve(__dirname, 'src/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
                 'toujou-overlay': path.resolve(__dirname, 'src/components/toujou-overlay/toujou-overlay.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
+                'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
 
                 // JS Elements
                 'main-nav': path.resolve(__dirname, 'src/js/elements/main-nav'),
