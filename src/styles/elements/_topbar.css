@@ -245,7 +245,7 @@
             --topbar-actions-align-self: baseline;
         }
 
-        .topbar:has(.language-picker) {
+        .topbar:has(.language-picker, .language-picker-dropdown) {
             --topbar-grid-template-areas: "logo actions language-picker" "logo main-nav main-nav";
         }
 

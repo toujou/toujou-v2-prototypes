@@ -137,7 +137,7 @@
         display: none;
     }
 
-    .topbar:has(.language-picker) .main-nav {
+    .topbar:has(.language-picker, .language-picker-dropdown) .main-nav {
         --main-nav-padding: var(--spacing-xxl) var(--spacing-normal) calc(var(--service-nav-height) + var(--spacing-l)) var(--spacing-normal)
     }
 }

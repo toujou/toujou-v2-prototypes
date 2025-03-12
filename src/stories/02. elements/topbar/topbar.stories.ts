@@ -23,7 +23,6 @@ export default {
             description: "Set the navigation color",
             options: ['default', 'primary', 'secondary', 'font'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         titleType: {
@@ -35,7 +34,6 @@ export default {
             description: "Toggle between logo or text for the topbar page title on mobile devices",
             options: ['logo', 'title'],
             control: { type: 'radio' },
-            defaultValue: ['logo'],
             required: true,
         },
         logoSize: {
@@ -47,7 +45,6 @@ export default {
             description: "Set the logo size",
             options: ['small', 'medium', 'large'],
             control: { type: 'radio' },
-            defaultValue: ['medium'],
             required: true,
         },
         noTransitions: {
@@ -58,18 +55,16 @@ export default {
             name: 'No transitions',
             description: "Remove the transition from the topbar elements",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
-        showLanguagePicker: {
+        languagePickerType: {
             table: {
                 category: "Topbar settings",
-                defaultValue: { summary: 'false' },
             },
-            name: 'Show language picker',
-            description: "Show the language picker element",
-            control: { type: 'boolean' },
-            defaultValue: [true],
+            name: 'Language picker type',
+            description: "Choose which type of language picker to show",
+            options: ['none', 'inline', 'dropdown'],
+            control: { type: 'radio' },
             required: true,
         },
     },
@@ -80,422 +75,458 @@ interface TopbarStoryProps {
     titleType: string
     logoSize: string
     noTransitions: boolean
-    showLanguagePicker: boolean
+    languagePickerType: string
 }
 
-const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
-    // @ts-ignore
-    // document.documentElement.style.setProperty('--topbar-height', `var(--topbar-height-${args.logoSize})`);
-
-    document.documentElement.setAttribute('navigation-color', args.navigationColor);
-
+const renderLogoSection = (args: TopbarStoryProps) => {
     return `
-        <toujou-topbar
-            id="topbar"
-            class="topbar"
-            logo-size="${args.logoSize}"
-            ${args.noTransitions ? 'no-transitions' : ''}
-        >
+        <nav aria-label="Topbar Logo" style="display: contents;">
+            <a aria-label="Zur Startseite" show-title-on-mobile="${args.titleType === 'title'}" class="topbar__logo-link" href="/">
+                <span class="topbar__title">toujou Installation</span>
+                <img class="topbar__logo topbar__logo--svg" src="https://picsum.photos/300/150" alt="Logo">
+            </a>
+        </nav>
+    `
+}
 
-            <nav aria-label="Topbar Logo" style="display: contents;">
-                <a aria-label="Zur Startseite" show-title-on-mobile="${args.titleType === 'title'}" class="topbar__logo-link" href="/">
-                    <span class="topbar__title">toujou Installation</span>
-                    <img class="topbar__logo topbar__logo--svg" src="https://picsum.photos/300/150" alt="Logo">
+const renderActionsSection = () => {
+    return `
+        <ul class="topbar__actions">
+            <li class="topbar__actions-item">
+                <a href="#" class="topbar__actions-link" aria-label="Contact">
+                    <span class="topbar__actions-text">Contact</span>
+                    <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                 </a>
+            </li>
+            <li class="topbar__actions-item">
+                <a href="#" class="topbar__actions-link" aria-label="Like">
+                    <span class="topbar__actions-text">Like</span>
+                    <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                </a>
+            </li>
+            <li class="topbar__actions-item">
+                <a href="#" class="topbar__actions-link" aria-label="Search">
+                    <span class="topbar__actions-text">Search</span>
+                    <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                </a>
+            </li>
+        </ul>
+    `
+}
+
+const renderLanguagePickerList = () => {
+    return `
+        <ul class="language-picker__list">
+            <li class="language-picker__item">
+                <a
+                    href="#"
+                    class="language-picker__link"
+                    lang="en"
+                    hreflang="en"
+                    aria-current="true"
+                    aria-label="English"
+                >
+                    <span class="language-picker__iso-code">EN</span>
+                </a>
+            </li>
+            <li class="language-picker__item">
+                <a
+                    href="#"
+                    class="language-picker__link"
+                    lang="de"
+                    hreflang="de"
+                    aria-label="Deutsch"
+                >
+                    <span class="language-picker__iso-code">DE</span>
+                </a>
+            </li>
+            <li class="language-picker__item">
+                <a
+                    href="#"
+                    class="language-picker__link"
+                    lang="pt"
+                    hreflang="pt"
+                    aria-label="Português"
+                >
+                    <span class="language-picker__iso-code">PT</span>
+                </a>
+            </li>    
+        </ul>
+    `
+}
+
+const renderLanguagePickerElement = (languagePickerType: string) => {
+    if (languagePickerType === 'inline') {
+        return `
+            <nav class="language-picker" aria-label="Language picker">
+                ${renderLanguagePickerList()}
             </nav>
+        `
+    } else if (languagePickerType === 'dropdown') {
+        return `
+            <toujou-language-picker-dropdown role="nav" class="language-picker-dropdown" aria-label="Language picker">
+                <select name="language-picker" id="language-picker" class="language-picker-dropdown__select">
+                    <option value="#" selected>EN</option>
+                    <option value="#">DE</option>
+                    <option value="#">FI</option>
+                    <option value="#">PT</option>
+                    <option value="#">ES</option>
+                    <option value="#">FR</option>
+                    <option value="#">IT</option>
+                </select>
+                
+                <label class="language-picker-dropdown__label" title="Toggle the language picker" for="language-picker">
+                    <toujou-icon class="icon" icon-name="chevron-down" icon-color="background" icon-size="ms"></toujou-icon>
+                </label>
+            </toujou-language-picker-dropdown>
+        `
+    } else {
+        return '';
+    }
+}
 
-            <ul class="topbar__actions">
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link" aria-label="Contact">
-                        <span class="topbar__actions-text">Contact</span>
-                        <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link" aria-label="Like">
-                        <span class="topbar__actions-text">Like</span>
-                        <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-                <li class="topbar__actions-item">
-                    <a href="#" class="topbar__actions-link" aria-label="Search">
-                        <span class="topbar__actions-text">Search</span>
-                        <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
-                    </a>
-                </li>
-            </ul>
+const renderBurgerSection = () => {
+    return `
+        <toujou-burger-button
+            class="burger-button"
+            role="button"
+            aria-pressed="false"
+            aria-haspopup="true"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Menu button"
+            toggle-element-selector="#topbar"
+            tabindex="0"
+        >
+            <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
+            <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
+            <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
+        </toujou-burger-button>
+    `
+}
 
-            ${args.showLanguagePicker ? `
-                <nav class="language-picker" aria-label="Language picker">
-                    <ul class="language-picker__list">
-                        <li class="language-picker__item">
-                            <a
-                                href="#"
-                                class="language-picker__link"
-                                lang="en"
-                                hreflang="en"
-                                aria-current="true"
-                                aria-label="English"
-                            >
-                                <span class="language-picker__iso-code">EN</span>
+const renderMainNavSection = () => {
+    return `
+        <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
+            <ul class="main-nav__list" nav-list-level="1">
+                <li class="main-nav__list-item" nav-item-level="1">
+                    <a href="#" class="main-nav__link" aria-current="page">
+                        <span class="main-nav__text">Startseite</span>
+                    </a>
+                </li>
+                <li class="main-nav__list-item" nav-item-level="1" has-subnav>
+                    <a href="#" class="main-nav__link">
+                        <span class="main-nav__text">Bürgerservice</span>
+                    </a>
+                    <span class="main-nav__chevron" tabindex="0">
+                        <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                    </span>
+                    <ul class="main-nav__list" nav-list-level="2">
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Arbeit und Beruf</span>
+                            </a>
+                            <span class="main-nav__chevron">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                            </span>
+                            <ul class="main-nav__list" nav-list-level="3">
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item one</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item two</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item three with a test very loooooong litle</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item four</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item five</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Ausweise und Dokumente</span>
+                            </a>
+                            <span class="main-nav__chevron">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                            </span>
+                            <ul class="main-nav__list" nav-list-level="3">
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item one</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item two</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item three</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Bauen</span>
+                            </a>
+                            <span class="main-nav__chevron">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                            </span>
+                            <ul class="main-nav__list" nav-list-level="3">
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item one</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item two</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item three</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
                             </a>
                         </li>
-                        <li class="language-picker__item">
-                            <a
-                                href="#"
-                                class="language-picker__link"
-                                lang="de"
-                                hreflang="de"
-                                aria-label="Deutsch"
-                            >
-                                <span class="language-picker__iso-code">DE</span>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Erbschaft und Testament</span>
                             </a>
                         </li>
-                        <li class="language-picker__item">
-                            <a
-                                href="#"
-                                class="language-picker__link"
-                                lang="pt"
-                                hreflang="pt"
-                                aria-label="Português"
-                            >
-                                <span class="language-picker__iso-code">PT</span>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Familie und Partnerschaften</span>
+                            </a>
+                        </li><li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Freiwilligedienste</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Geburt</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Gesellschaft und Politik</span>
+                            </a>
+                        </li><li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Gesundheit und Vorsorge</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Heirat</span>
+                            </a>
+                        </li><li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Jugend</span>
+                            </a>
+                        </li><li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Kinderbetreeung</span>
+                            </a>
+                        </li><li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Kirchen und Religion</span>
+                            </a>
+                        </li><li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Kultur und Freizeit</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Leben mit Behinderung</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Mobilität</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Natur und Umwelt</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Notlagen- und Opferhilfen</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Online-Informationen</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Reisen</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Ruhestand</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Schule</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Sicherheit</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Sterbefall</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Steuern und Abgaben</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Studium</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Tierhaltung und Jagd</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Umzug</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Waren und Dienstleistungen</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Wohnen</span>
                             </a>
                         </li>
                     </ul>
-                </nav>
-            ` : ''}
+                </li>
+                <li class="main-nav__list-item" nav-item-level="1">
+                    <a href="#" class="main-nav__link">
+                        <span class="main-nav__text">Online-Terminvergabe</span>
+                    </a>
+                </li>
+                <li class="main-nav__list-item" nav-item-level="1"  has-subnav>
+                    <a href="#" class="main-nav__link">
+                        <span class="main-nav__text">Häufige Fragen</span>
+                    </a>
+                    <span class="main-nav__chevron" tabindex="0">
+                        <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                    </span>
+                    <ul class="main-nav__list" nav-list-level="2">
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Arbeit und Beruf</span>
+                            </a>
+                            <span class="main-nav__chevron">
+                                <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
+                            </span>
+                            <ul class="main-nav__list" nav-list-level="3">
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item one</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item two</span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__list-item" nav-item-level="3">
+                                    <a href="#" class="main-nav__link">
+                                        <span class="main-nav__text">Item three</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Ausweise und Dokumente</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Bauen</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Berufsausbildung</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Erbschaft und Testament</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
+                            <a href="#" class="main-nav__link">
+                                <span class="main-nav__text">Familie und Partnerschaften</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    `
+}
 
-            <toujou-burger-button
-                class="burger-button"
-                role="button"
-                aria-pressed="false"
-                aria-haspopup="true"
-                aria-controls="mainNavigation"
-                aria-expanded="false"
-                aria-label="Menu button"
-                toggle-element-selector="#topbar"
-                tabindex="0"
-            >
-                <span class="burger-button__line" line-position="top" aria-hidden="true" slot="content"></span>
-                <span class="burger-button__line" line-position="middle" aria-hidden="true" slot="content"></span>
-                <span class="burger-button__line" line-position="bottom" aria-hidden="true" slot="content"></span>
-            </toujou-burger-button>
+const renderServiceNavSection = () => {
+    return `
+        <nav class="service-nav">
+            <a href="#" class="service-nav__link">Impressum</a>
+            <a href="#" class="service-nav__link">Datenschutz</a>
+            <a href="#" class="service-nav__link">Kontakt</a>
+            <a href="#" class="service-nav__link">About us</a>
+            <a href="#" class="service-nav__link">Gender at work</a>
+        </nav>
+    `
+}
 
-            <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
-                <ul class="main-nav__list" nav-list-level="1">
-                    <li class="main-nav__list-item" nav-item-level="1">
-                        <a href="#" class="main-nav__link" aria-current="page">
-                            <span class="main-nav__text">Startseite</span>
-                        </a>
-                    </li>
-                    <li class="main-nav__list-item" nav-item-level="1" has-subnav>
-                        <a href="#" class="main-nav__link">
-                            <span class="main-nav__text">Bürgerservice</span>
-                        </a>
-                        <span class="main-nav__chevron" tabindex="0">
-                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                        </span>
-                        <ul class="main-nav__list" nav-list-level="2">
-                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Arbeit und Beruf</span>
-                                </a>
-                                <span class="main-nav__chevron">
-                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                                </span>
-                                <ul class="main-nav__list" nav-list-level="3">
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item one</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item two</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three with a test very loooooong litle</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item four</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item five</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Ausweise und Dokumente</span>
-                                </a>
-                                <span class="main-nav__chevron">
-                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                                </span>
-                                <ul class="main-nav__list" nav-list-level="3">
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item one</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item two</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Bauen</span>
-                                </a>
-                                <span class="main-nav__chevron">
-                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                                </span>
-                                <ul class="main-nav__list" nav-list-level="3">
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item one</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item two</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Erbschaft und Testament</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Familie und Partnerschaften</span>
-                                </a>
-                            </li><li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Freiwilligedienste</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Geburt</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Gesellschaft und Politik</span>
-                                </a>
-                            </li><li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Gesundheit und Vorsorge</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Heirat</span>
-                                </a>
-                            </li><li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Jugend</span>
-                                </a>
-                            </li><li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Kinderbetreeung</span>
-                                </a>
-                            </li><li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Kirchen und Religion</span>
-                                </a>
-                            </li><li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Kultur und Freizeit</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Leben mit Behinderung</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Mobilität</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Natur und Umwelt</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Notlagen- und Opferhilfen</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Online-Informationen</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Reisen</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Ruhestand</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Schule</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Sicherheit</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Sterbefall</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Steuern und Abgaben</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Studium</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Tierhaltung und Jagd</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Umzug</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Waren und Dienstleistungen</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Wohnen</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="main-nav__list-item" nav-item-level="1">
-                        <a href="#" class="main-nav__link">
-                            <span class="main-nav__text">Online-Terminvergabe</span>
-                        </a>
-                    </li>
-                    <li class="main-nav__list-item" nav-item-level="1"  has-subnav>
-                        <a href="#" class="main-nav__link">
-                            <span class="main-nav__text">Häufige Fragen</span>
-                        </a>
-                        <span class="main-nav__chevron" tabindex="0">
-                            <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                        </span>
-                        <ul class="main-nav__list" nav-list-level="2">
-                            <li class="main-nav__list-item" nav-item-level="2" has-subnav>
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Arbeit und Beruf</span>
-                                </a>
-                                <span class="main-nav__chevron">
-                                    <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                                </span>
-                                <ul class="main-nav__list" nav-list-level="3">
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item one</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item two</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-nav__list-item" nav-item-level="3">
-                                        <a href="#" class="main-nav__link">
-                                            <span class="main-nav__text">Item three</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Ausweise und Dokumente</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Bauen</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Berufsausbildung</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Erbschaft und Testament</span>
-                                </a>
-                            </li>
-                            <li class="main-nav__list-item" nav-item-level="2">
-                                <a href="#" class="main-nav__link">
-                                    <span class="main-nav__text">Familie und Partnerschaften</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-             <nav class="service-nav">
-                <a href="#" class="service-nav__link">Impressum</a>
-                <a href="#" class="service-nav__link">Datenschutz</a>
-                <a href="#" class="service-nav__link">Kontakt</a>
-                <a href="#" class="service-nav__link">About us</a>
-                <a href="#" class="service-nav__link">Gender at work</a>
-            </nav>
-
-        </toujou-topbar>
-
+const renderDummyContent = () => {
+    return `
         <main>
             <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
                 <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
@@ -545,6 +576,35 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
                 </toujou-text-block-column>
             </toujou-text-block>
         </main>
+    `
+}
+
+const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
+    document.documentElement.setAttribute('navigation-color', args.navigationColor);
+
+    return `
+        <toujou-topbar
+            id="topbar"
+            class="topbar"
+            logo-size="${args.logoSize}"
+            ${args.noTransitions ? 'no-transitions' : ''}
+        >
+
+            ${renderLogoSection(args)}
+            ${renderActionsSection()}
+            
+            ${args.languagePickerType != 'none' ? `
+                ${renderLanguagePickerElement(args.languagePickerType)}
+            ` : ''}
+            
+            ${renderBurgerSection()}
+            
+            ${renderMainNavSection()}
+
+            ${renderServiceNavSection()}
+        </toujou-topbar>
+
+        ${renderDummyContent()}
     `;
 };
 
@@ -555,5 +615,5 @@ Topbar.args = {
     titleType: 'logo',
     logoSize: 'medium',
     noTransitions: false,
-    showLanguagePicker: true,
+    languagePickerType: 'inline',
 }
