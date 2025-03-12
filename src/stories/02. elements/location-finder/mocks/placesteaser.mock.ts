@@ -11,10 +11,16 @@ export const placesTeaserMockResp_all = `
                 <span class="teaser__branch" part="teaser-branch">ABC123</span>
             </span>
         </h4>
-         <address class="teaser__address">
-            <span class="teaser__address-meta teaser__address-meta--telephone">Tel: +49 89 4132580-0</span>
-            <span class="teaser__address-meta teaser__address-meta--description" part="teaser-address-meta teaser-address-meta-description">This is the description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-        </address>
+        <p class="teaser__type" part="teaser-type">Teaser Type (Localbusiness)</p>
+        <p class="teaser__description" part="teaser-description">This is the disambiguating description</p>
+         <address class="teaser__address" part="teaser-address">
+             <span class="teaser__address-meta" part="teaser-address-meta teaser-address-meta-address">Blumenstraße 28, 90762 Fürth</span>
+             <span class="teaser__address-meta teaser__address-meta--region" part="teaser-address-meta teaser-address-meta-region">Bayern</span>
+             <span class="teaser__address-meta teaser__address-meta--country" part="teaser-address-meta teaser-address-meta-country">DE</span>
+             <span class="teaser__address-meta teaser__address-meta--telephone" part="teaser-address-meta teaser-address-meta-telephone">Tel: 123456789</span>
+             <span class="teaser__address-meta teaser__address-meta--email" part="teaser-address-meta teaser-address-meta-email">local@test.com</span>
+             <span class="teaser__address-meta teaser__address-meta--description" part="teaser-address-meta teaser-address-meta-description">This is the description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+         </address>
       </div>
       <figure class="teaser__logo-container">
         <img class="teaser__image teaser__image--logo" loading="lazy" src="https://fakeimg.pl/240x100/049bd6/ffffff?text=Logo" width="100" height="22" alt="" />
