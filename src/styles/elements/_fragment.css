@@ -14,6 +14,13 @@
         --fragment-map-height: auto;
         --fragment-map-aspect-ratio: var(--aspect-ratio-default);
         --fragment-map-position: relative;
+        --fragment-map-border-radius: var(--border-radius-default);
+
+        --fragment-map-image-width: 100%;
+        --fragment-map-image-height: auto;
+        --fragment-map-image-aspect-ratio: var(--aspect-ratio-default);
+        --fragment-map-image-position: relative;
+        --fragment-map-image-border-radius: var(--border-radius-default);
     }
 
     .fragment[map-aspect-ratio="default"] {
@@ -56,6 +63,15 @@
         height: var(--fragment-map-height);
         aspect-ratio: var(--fragment-map-aspect-ratio);
         position: var(--fragment-map-position);
+        border-radius: var(--fragment-map-border-radius);
+    }
+
+    .fragment__map-image {
+        width: var(--fragment-map-image-width);
+        height: var(--fragment-map-image-height);
+        aspect-ratio: var(--fragment-map-image-aspect-ratio);
+        position: var(--fragment-map-image-position);
+        border-radius: var(--fragment-map-image-border-radius);
     }
 
     @container (min-width: 840px) {
