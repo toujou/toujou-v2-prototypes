@@ -53,20 +53,20 @@ interface DepartureProps {
 function renderDeparture(departure: DepartureProps, roomCount: number) {
     return `
         <toujou-departure class="departure" role="row" aria-rowindex="2">
-            <time class="departure__cell departure__date" role="cell" aria-colindex="1" datetime="01.01.1999">${departure.date}</time>
+            <time class="departure__cell departure__title" role="cell" aria-colindex="1" datetime="01.01.1999">${departure.date}</time>
             
-            <div class="departure__prices">
+            <div class="departure__infos">
                 ${departure.prices.map((price: DeparturePrice, i) => {
                     if (i >= roomCount) return;
                     return price.value
                         ? `
-                            <p class="departure__cell departure__price" role="cell" aria-colindex="${i + 1}">
-                                <span class="departure__price-label">${price.label}</span>
-                                <span class="departure__price-value">${price.value}</span>
+                            <p class="departure__cell departure__info" role="cell" aria-colindex="${i + 1}">
+                                <span class="departure__info-label">${price.label}</span>
+                                <span class="departure__info-value">${price.value}</span>
                             </p>
                         `
                         : `
-                            <p class="departure__cell departure__price" role="cell" aria-colindex="${i + 1}" aria-hidden="true"></p>
+                            <p class="departure__cell departure__info" role="cell" aria-colindex="${i + 1}" aria-hidden="true"></p>
                         `;               
                 }).join('')}
             </div>

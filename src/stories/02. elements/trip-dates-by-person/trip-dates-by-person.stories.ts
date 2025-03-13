@@ -46,32 +46,26 @@ interface DepartureByPersonProps {
     footnote?: string;
 }
 
-
-/* todo: refactor the departures and departures person so we can use the same classes:
-   `departure__prices`  => `departure__infos`
-   `departure__price`  =>  `departure__info`
-   price-count attribute => info-count
-*/
 function renderDepartureByPerson(departure: DepartureByPersonProps) {
     return `
         <toujou-departure class="departure" role="row" aria-rowindex="2">
-            <p class="departure__cell departure__date" role="cell" aria-colindex="1">${departure.tripName}</p>
+            <p class="departure__cell departure__title" role="cell" aria-colindex="1">${departure.tripName}</p>
             
                       
-            <div class="departure__prices">
-                <p class="departure__cell departure__price" role="cell" aria-colindex="2">
-                    <span class="departure__price-label">${departure.country.label}</span>
-                    <span class="departure__price-value">${departure.country.value}</span>
+            <div class="departure__infos">
+                <p class="departure__cell departure__info" role="cell" aria-colindex="2">
+                    <span class="departure__info-label">${departure.country.label}</span>
+                    <span class="departure__info-value">${departure.country.value}</span>
                 </p>  
             
-                <p class="departure__cell departure__price" role="cell" aria-colindex="3">
-                    <span class="departure__price-label">${departure.date.label}</span>
-                    <time class="departure__price-value" role="cell" datetime="${departure.date.value}">${departure.date.value}</time>
+                <p class="departure__cell departure__info" role="cell" aria-colindex="3">
+                    <span class="departure__info-label">${departure.date.label}</span>
+                    <time class="departure__info-value" role="cell" datetime="${departure.date.value}">${departure.date.value}</time>
                 </p> 
                 
-                <p class="departure__cell departure__price" role="cell" aria-colindex="5">
-                    <span class="departure__price-label">${departure.price.label}</span>
-                    <time class="departure__price-value" role="cell" datetime="${departure.date.value}">${departure.price.value}</time>
+                <p class="departure__cell departure__info" role="cell" aria-colindex="5">
+                    <span class="departure__info-label">${departure.price.label}</span>
+                    <time class="departure__info-value" role="cell" datetime="${departure.date.value}">${departure.price.value}</time>
                 </p>
             </div>
              

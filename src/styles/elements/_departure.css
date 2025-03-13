@@ -10,26 +10,26 @@
         --departure-background-color-light: transparent;
         --departure-background-color-dark: var(--color-font-o-05);
 
-        --departure-date-font-family: var(--font-family-text);
-        --departure-date-font-size: var(--font-size-ms);
-        --departure-date-font-weight: var(--font-weight-text-bold);
-        --departure-date-line-height: var(--font-size-normal);
-        --departure-date-margin: 0;
+        --departure-title-font-family: var(--font-family-text);
+        --departure-title-font-size: var(--font-size-ms);
+        --departure-title-font-weight: var(--font-weight-text-bold);
+        --departure-title-line-height: var(--font-size-normal);
+        --departure-title-margin: 0;
 
-        --departure-prices-display: grid;
-        --departure-prices-grid-template-columns: var(--departures-prices-grid-template-columns);
-        --departure-prices-grid-gap: var(--spacing-s);
+        --departure-infos-display: grid;
+        --departure-infos-grid-template-columns: var(--departures-prices-grid-template-columns);
+        --departure-infos-grid-gap: var(--spacing-s);
 
-        --departure-price-display: flex;
-        --departure-price-align-items: center;
-        --departure-price-justify-content: space-between;
-        --departure-price-margin: 0;
-        --departure-price-font-family: var(--font-family-text);
-        --departure-price-font-size: var(--font-size-normal);
+        --departure-info-display: flex;
+        --departure-info-align-items: center;
+        --departure-info-justify-content: space-between;
+        --departure-info-margin: 0;
+        --departure-info-font-family: var(--font-family-text);
+        --departure-info-font-size: var(--font-size-normal);
 
-        --departure-price-label-display: block;
+        --departure-info-label-display: block;
 
-        --departure-price-value-font-weight: var(--font-weight-text-normal);
+        --departure-info-value-font-weight: var(--font-weight-text-normal);
 
         --departure-status-margin: 0;
 
@@ -67,35 +67,35 @@
         background-color: var(--departure-background-color-dark);
     }
 
-    .departure__date {
-        margin: var(--departure-date-margin);
-        font-family: var(--departure-date-font-family);
-        font-weight: var(--departure-date-font-weight);
-        font-size: var(--departure-date-font-size);
-        line-height: var(--departure-date-line-height);
+    .departure__title {
+        margin: var(--departure-title-margin);
+        font-family: var(--departure-title-font-family);
+        font-weight: var(--departure-title-font-weight);
+        font-size: var(--departure-title-font-size);
+        line-height: var(--departure-title-line-height);
     }
 
-    .departure__prices {
-        display: var(--departure-prices-display);
-        grid-template-columns: var(--departure-prices-grid-template-columns);
-        grid-gap: var(--departure-prices-grid-gap);
+    .departure__infos {
+        display: var(--departure-infos-display);
+        grid-template-columns: var(--departure-infos-grid-template-columns);
+        grid-gap: var(--departure-infos-grid-gap);
     }
 
-    .departure__price {
-        display: var(--departure-price-display);
-        align-items: var(--departure-price-align-items);
-        justify-content: var(--departure-price-justify-content);
-        margin: var(--departure-price-margin);
-        font-family: var(--departure-price-font-family);
-        font-size: var(--departure-price-font-size);
+    .departure__info {
+        display: var(--departure-info-display);
+        align-items: var(--departure-info-align-items);
+        justify-content: var(--departure-info-justify-content);
+        margin: var(--departure-info-margin);
+        font-family: var(--departure-info-font-family);
+        font-size: var(--departure-info-font-size);
     }
 
-    .departure__price-label {
-        display: var(--departure-price-label-display);
+    .departure__info-label {
+        display: var(--departure-info-label-display);
     }
 
-    .departure__price-value {
-        font-weight: var(--departure-price-value-font-weight);
+    .departure__info-value {
+        font-weight: var(--departure-info-value-font-weight);
     }
 
     .departure__status {
@@ -163,10 +163,10 @@
     @container (width < 840px) {
         .departure {
             --departure-cta-button-width: 100%;
-            --departure-price-value-font-weight: var(--font-weight-text-bold);
+            --departure-info-value-font-weight: var(--font-weight-text-bold);
         }
 
-        .departure__price:empty {
+        .departure__info:empty {
             display: none;
         }
     }
@@ -174,8 +174,8 @@
     @container (width >= 840px) {
         .departure {
             --departure-padding: var(--spacing-s) var(--spacing-normal);
-            --departure-date-font-size: var(--font-size-normal);
-            --departure-price-label-display: none;
+            --departure-title-font-size: var(--font-size-normal);
+            --departure-info-label-display: none;
         }
     }
 }
