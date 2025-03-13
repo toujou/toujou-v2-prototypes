@@ -16,7 +16,7 @@
         --season-switch-label-top: unset;
         --season-switch-label-left: unset;
         --season-switch-label-font-family: var(--font-family-headline);
-        --season-switch-label-font-size: var(--font-size-l);
+        --season-switch-label-font-size: var(--font-size-normal);
 
         --season-switch-select-wrapper-position: relative;
         --season-switch-select-width: fit-content;
