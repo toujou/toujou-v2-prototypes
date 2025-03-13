@@ -1,16 +1,16 @@
 import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as i}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function u(e){const a={h1:"h1",p:"p",...i(),...e.components};return t.jsxs(t.Fragment,{children:[t.jsx(a.h1,{id:"tripdates",children:"Tripdates"}),`
 `,t.jsx(a.p,{children:"Content element: Trip / Tripdates"})]})}function _(e={}){const{wrapper:a}={...i(),...e.components};return a?t.jsx(a,{...e,children:t.jsx(u,{...e})}):u(e)}const O={title:"COMPONENTS/Tourism/Trip Dates",parameters:{badges:[c.TESTING],docs:{page:_}},argTypes:{roomCount:{table:{category:"Trip dates settings"},name:"Room count",description:"Number of rooms on the table",control:{type:"range",min:1,max:4,step:1},required:!0}},tags:["autodocs"]};function r(e,a){return`
         <toujou-departure class="departure" role="row" aria-rowindex="2">
-            <time class="departure__cell departure__date" role="cell" aria-colindex="1" datetime="01.01.1999">${e.date}</time>
+            <time class="departure__cell departure__title" role="cell" aria-colindex="1" datetime="01.01.1999">${e.date}</time>
             
-            <div class="departure__prices">
-                ${e.prices.map((o,l)=>{if(!(l>=a))return o.value?`
-                            <p class="departure__cell departure__price" role="cell" aria-colindex="${l+1}">
-                                <span class="departure__price-label">${o.label}</span>
-                                <span class="departure__price-value">${o.value}</span>
+            <div class="departure__infos">
+                ${e.prices.map((s,l)=>{if(!(l>=a))return s.value?`
+                            <p class="departure__cell departure__info" role="cell" aria-colindex="${l+1}">
+                                <span class="departure__info-label">${s.label}</span>
+                                <span class="departure__info-value">${s.value}</span>
                             </p>
                         `:`
-                            <p class="departure__cell departure__price" role="cell" aria-colindex="${l+1}" aria-hidden="true"></p>
+                            <p class="departure__cell departure__info" role="cell" aria-colindex="${l+1}" aria-hidden="true"></p>
                         `}).join("")}
             </div>
             
@@ -89,7 +89,7 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                 </div>
             </toujou-departures>
         </main>
-    `,s=m.bind({});s.args={roomCount:2};var n,p,d;s.parameters={...s.parameters,docs:{...(n=s.parameters)==null?void 0:n.docs,source:{originalSource:`(args: TripDatesStoryProps) => {
+    `,o=m.bind({});o.args={roomCount:2};var n,p,d;o.parameters={...o.parameters,docs:{...(n=o.parameters)==null?void 0:n.docs,source:{originalSource:`(args: TripDatesStoryProps) => {
   return \`
         <main>
             <toujou-departures class="departures" role="table" price-count="\${args.roomCount}" aria-label="Departure Dates">
@@ -286,4 +286,4 @@ import{T as c}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
             </toujou-departures>
         </main>
     \`;
-}`,...(d=(p=s.parameters)==null?void 0:p.docs)==null?void 0:d.source}}};const R=["Tripdates"];export{s as Tripdates,R as __namedExportsOrder,O as default};
+}`,...(d=(p=o.parameters)==null?void 0:p.docs)==null?void 0:d.source}}};const R=["Tripdates"];export{o as Tripdates,R as __namedExportsOrder,O as default};

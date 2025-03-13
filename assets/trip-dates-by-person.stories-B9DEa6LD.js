@@ -1,23 +1,23 @@
 import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as a}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as i}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function l(e){const r={h1:"h1",p:"p",...i(),...e.components};return a.jsxs(a.Fragment,{children:[a.jsx(r.h1,{id:"tripdates-by-person",children:"Tripdates by person"}),`
-`,a.jsx(r.p,{children:"Content element: Trip / Tripdates by person"})]})}function o(e={}){const{wrapper:r}={...i(),...e.components};return r?a.jsx(r,{...e,children:a.jsx(l,{...e})}):l(e)}const b={title:"COMPONENTS/Tourism/Trip Dates By Person",parameters:{badges:[u.TESTING],docs:{page:o}},tags:["autodocs"]};function s(e){return`
+`,a.jsx(r.p,{children:"Content element: Trip / Tripdates by person"})]})}function p(e={}){const{wrapper:r}={...i(),...e.components};return r?a.jsx(r,{...e,children:a.jsx(l,{...e})}):l(e)}const b={title:"COMPONENTS/Tourism/Trip Dates By Person",parameters:{badges:[u.TESTING],docs:{page:p}},tags:["autodocs"]};function s(e){return`
         <toujou-departure class="departure" role="row" aria-rowindex="2">
-            <p class="departure__cell departure__date" role="cell" aria-colindex="1">${e.tripName}</p>
+            <p class="departure__cell departure__title" role="cell" aria-colindex="1">${e.tripName}</p>
             
                       
-            <div class="departure__prices">
-                <p class="departure__cell departure__price" role="cell" aria-colindex="2">
-                    <span class="departure__price-label">${e.country.label}</span>
-                    <span class="departure__price-value">${e.country.value}</span>
+            <div class="departure__infos">
+                <p class="departure__cell departure__info" role="cell" aria-colindex="2">
+                    <span class="departure__info-label">${e.country.label}</span>
+                    <span class="departure__info-value">${e.country.value}</span>
                 </p>  
             
-                <p class="departure__cell departure__price" role="cell" aria-colindex="3">
-                    <span class="departure__price-label">${e.date.label}</span>
-                    <time class="departure__price-value" role="cell" datetime="${e.date.value}">${e.date.value}</time>
+                <p class="departure__cell departure__info" role="cell" aria-colindex="3">
+                    <span class="departure__info-label">${e.date.label}</span>
+                    <time class="departure__info-value" role="cell" datetime="${e.date.value}">${e.date.value}</time>
                 </p> 
                 
-                <p class="departure__cell departure__price" role="cell" aria-colindex="5">
-                    <span class="departure__price-label">${e.price.label}</span>
-                    <time class="departure__price-value" role="cell" datetime="${e.date.value}">${e.price.value}</time>
+                <p class="departure__cell departure__info" role="cell" aria-colindex="5">
+                    <span class="departure__info-label">${e.price.label}</span>
+                    <time class="departure__info-value" role="cell" datetime="${e.date.value}">${e.price.value}</time>
                 </p>
             </div>
              
@@ -80,7 +80,7 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as a}from"./jsx-run
                 </div>
             </toujou-departures>
         </main>
-    `,t=c.bind({});var d,n,p;t.parameters={...t.parameters,docs:{...(d=t.parameters)==null?void 0:d.docs,source:{originalSource:`() => {
+    `,t=c.bind({});var d,n,o;t.parameters={...t.parameters,docs:{...(d=t.parameters)==null?void 0:d.docs,source:{originalSource:`() => {
   return \`
         <main>
             <toujou-departures class="departures departures-by-person" role="table" aria-label="Departure Dates">
@@ -180,4 +180,4 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as a}from"./jsx-run
             </toujou-departures>
         </main>
     \`;
-}`,...(p=(n=t.parameters)==null?void 0:n.docs)==null?void 0:p.source}}};const y=["TripdatesByPerson"];export{t as TripdatesByPerson,y as __namedExportsOrder,b as default};
+}`,...(o=(n=t.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const y=["TripdatesByPerson"];export{t as TripdatesByPerson,y as __namedExportsOrder,b as default};
