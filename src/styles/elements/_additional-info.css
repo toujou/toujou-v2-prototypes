@@ -11,7 +11,7 @@
         --additional-info-margin: var(--spacing-normal) 0 0;
         --additional-info-border-radius: var(--border-radius-normal);
         --additional-info-grid-column: 1 / -1;
-        --additional-info-background-color: var(--color-bg);
+        --additional-info-background-color: transparent;
 
         display: var(--additional-info-display);
         grid-template-columns: var(--additional-info-grid-template-columns);
