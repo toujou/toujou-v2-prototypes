@@ -130,6 +130,8 @@
     --collection-item-trip-price-suffix-font-size: var(--font-size-xs);
     --collection-item-trip-price-color: var(--collection-item-text-color);
 
+    --collection-item-rating-margin: 0;
+
     --collection-item-button-text-decoration: none;
     --collection-item-button-text-color: var(--color-primary);
     --collection-item-button-text-color-hover: var(--color-primary-dark);
@@ -360,6 +362,10 @@ a.collection-item__category:focus-visible {
 .collection-item__info-text {
     margin: var(--collection-item-info-text-margin);
     color: var(--collection-item-info-text-color);
+}
+
+.collection-item__rating {
+    margin: var(--collection-item-rating-margin);
 }
 
 .collection-item__abstract-text {
