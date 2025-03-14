@@ -86,7 +86,25 @@ interface InpageNavStoryProps {
     elementDesign: string,
 }
 
-const Template: StoryFn<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
+const sectionsData = [
+    {
+        id: 'one',
+        label: 'Section One',
+        bgColor: 'primary-light'
+    },
+    {
+        id: 'two',
+        label: 'Section Two',
+        bgColor: 'secondary-light'
+    },
+    {
+        id: 'three',
+        label: 'Section three',
+        bgColor: 'font-light'
+    }
+]
+
+const renderInpageNav = (args: InpageNavStoryProps) => {
     return `
         <toujou-inpage-nav
             class="inpage-nav"
@@ -110,16 +128,13 @@ const Template: StoryFn<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
 
             <nav id="nav-uid" class="inpage-nav__nav">
                 <ul class="inpage-nav__list">
-                    <li class="inpage-nav__item" active>
-                        <a class="inpage-nav__link" href="one">Link one</a>
-                    </li>
-                    <li class="inpage-nav__item">
-                        <a class="inpage-nav__link" href="two">Link two</a>
-                    </li>
-                    <li class="inpage-nav__item">
-                        <a class="inpage-nav__link" href="three">Link three</a>
-                    </li>
-
+                    ${sectionsData.map((sectionData) => {
+                        return `
+                            <li class="inpage-nav__item">
+                                <a class="inpage-nav__link" href="#${sectionData.id}">${sectionData.label}</a>
+                            </li>
+                        `
+                    }).join('')}
                 </ul>
             </nav>
 
@@ -128,14 +143,47 @@ const Template: StoryFn<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
             ` : ''}
 
         </toujou-inpage-nav>
+    `
+}
 
-        <section style="opacity: 0; pointer-events: none;">
-            <p id="one"></p>
-            <p id="two"></p>
-            <p id="three"></p>
-            <p id="four"></p>
-            <p id="five"></p>
-        </section>
+const renderDummySections = () => {
+    return `
+        ${sectionsData.map((sectionData) => {
+            return `
+                <section id="${sectionData.id}" class="chapter"  background-color="${sectionData.bgColor}">
+                    <toujou-text-block class="text-block" text-blocks-column-count="1">
+                        <toujou-text-block-column class="text-block-column">
+                            <div class="text-block__content">
+                                <h2>${sectionData.label}</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <h3>More content</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <h3>More extra content</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut blanditiis dolore dolorem ea est eum facilis fuga harum impedit magni, molestiae nihil nisi optio porro quibusdam repellendus rerum sit voluptas!</p>
+                            </div>
+                        </toujou-text-block-column>
+                    </toujou-text-block>
+                </section>
+            `
+        }).join('')}
+    `
+}
+
+const Template: StoryFn<InpageNavStoryProps> = (args: InpageNavStoryProps) => {
+    return `
+        <main>
+            ${renderInpageNav(args)}
+            ${renderDummySections()}
+        </main>
     `
 };
 
