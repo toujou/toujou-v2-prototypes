@@ -15,6 +15,7 @@
         --fragment-map-aspect-ratio: var(--aspect-ratio-default);
         --fragment-map-position: relative;
         --fragment-map-border-radius: var(--border-radius-default);
+        --fragment-map-overflow: hidden;
 
         --fragment-map-image-width: 100%;
         --fragment-map-image-height: auto;
@@ -64,6 +65,7 @@
         aspect-ratio: var(--fragment-map-aspect-ratio);
         position: var(--fragment-map-position);
         border-radius: var(--fragment-map-border-radius);
+        overflow: var(--fragment-map-overflow);
     }
 
     .fragment__map-image {
