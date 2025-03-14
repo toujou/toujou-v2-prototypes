@@ -25,7 +25,7 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
+    tags: ['autodocs'],
 } satisfies Meta;
 
 interface TripFragmentProps {

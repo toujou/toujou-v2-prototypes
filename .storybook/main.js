@@ -17,4 +17,7 @@ export default {
         options: {}
     },
     "staticDirs": ["../assets"],
+    "docs": {
+        "defaultName": "z_Docs" // stupid hack to make the Docs always come as last
+    }
 };
