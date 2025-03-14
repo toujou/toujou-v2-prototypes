@@ -5,7 +5,6 @@ export default {
     argTypes: {}
 } satisfies Meta;
 
-
 const ZIndexTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Z-index tokens</h1>

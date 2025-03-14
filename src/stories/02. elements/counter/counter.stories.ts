@@ -23,7 +23,6 @@ export default {
             description: "Set the counter's element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         animationDuration: {
@@ -35,7 +34,6 @@ export default {
             description: "Set the counter's number animation duration",
             options: ['slow', 'medium', 'fast'],
             control: { type: 'radio' },
-            defaultValue: ['medium'],
             required: true,
         },
         startValue: {
@@ -47,7 +45,6 @@ export default {
             control: {
                 type: 'number',
             },
-            defaultValue: 1,
             required: true,
         },
         endValue: {
@@ -59,7 +56,6 @@ export default {
             control: {
                 type: 'number',
             },
-            defaultValue: 123,
             required: true,
         },
         numberOfItems: {
@@ -73,7 +69,6 @@ export default {
                 min: 1,
                 max: 12,
             },
-            defaultValue: 1,
             required: true,
         },
         showPrefix: {
@@ -83,7 +78,6 @@ export default {
             name: 'Show prefix',
             description: "Show the value prefix",
             control: { type: 'boolean' },
-            defaultValue: false,
             required: true,
         },
         showSuffix: {
@@ -93,7 +87,6 @@ export default {
             name: 'Show suffix',
             description: "Show the value suffix",
             control: { type: 'boolean' },
-            defaultValue: true,
             required: true,
         },
     },
@@ -161,4 +154,3 @@ Counter.args = {
     showPrefix: false,
     showSuffix: true,
 }
-

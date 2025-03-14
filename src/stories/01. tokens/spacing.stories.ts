@@ -5,7 +5,6 @@ export default {
     argTypes: {}
 } satisfies Meta;
 
-
 const SpacingTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Spacing tokens</h1>

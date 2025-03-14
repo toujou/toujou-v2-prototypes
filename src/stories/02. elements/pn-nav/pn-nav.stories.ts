@@ -22,7 +22,6 @@ export default {
             name: 'Hide image',
                 description: "Hide the link image",
                 control: { type: 'boolean' },
-                defaultValue: [ false ],
                 required: true,
         },
         hideTitle: {
@@ -32,7 +31,6 @@ export default {
             name: 'Hide title',
             description: "Hide the link title",
             control: { type: 'boolean' },
-            defaultValue: [ false ],
             required: true,
         },
     },

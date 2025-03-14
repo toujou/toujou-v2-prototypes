@@ -23,7 +23,6 @@ export default {
             description: "Choose element design for the cards",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },

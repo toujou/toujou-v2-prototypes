@@ -21,7 +21,6 @@ export default {
             name: 'Show mobile filters',
             description: "Toggle visibility of the mobile filters",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
         showMap: {
@@ -31,7 +30,6 @@ export default {
             name: 'Show map',
             description: "Toggle visibility of the search map",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
     },
@@ -1160,4 +1158,3 @@ SolrSearch.args = {
     showMobileFilters: false,
     showMap: false,
 }
-

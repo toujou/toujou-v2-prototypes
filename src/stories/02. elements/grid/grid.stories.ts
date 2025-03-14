@@ -26,7 +26,6 @@ export default {
             description: "Set grid type",
             options: ['default', 'medium', 'wide', 'fullwidth', 'ignore'],
             control: { type: 'radio' },
-            defaultValue: ['normal'],
             required: true,
         },
         numberOfColumns: {
@@ -38,7 +37,6 @@ export default {
             description: "Set the number of columns",
             options: [1, 2, 3, 4],
             control: { type: 'radio' },
-            defaultValue: [1],
             required: true,
         },
         columnsLayout: {
@@ -50,7 +48,6 @@ export default {
             description: "Define layout of the grid columns",
             options: ['default', 'third-right', 'third-left'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
             if: { arg: 'numberOfColumns', eq: 2 }
         },

@@ -22,7 +22,6 @@ export default {
             description: "Set the alignment of the table's text",
             options: ['none', 'center', 'left', 'right'],
             control: { type: 'radio' },
-            defaultValue: ['none'],
             required: true,
         },
     },

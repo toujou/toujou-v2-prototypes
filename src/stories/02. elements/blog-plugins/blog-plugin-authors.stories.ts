@@ -22,7 +22,6 @@ export default {
             name: 'Has avatar',
             description: "Toggle between view with and without user avatar",
             control: { type: 'boolean' },
-            defaultValue: ['true'],
             required: true,
         },
     },

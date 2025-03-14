@@ -17,7 +17,7 @@ export default {
 
 const Template = () => {
     return `
-       <h1>Event page - no content</h1>
+       <h1>Accommodation page - no content</h1>
     `;
 };
 

@@ -22,7 +22,6 @@ export default {
             name: 'Author has avatar',
             description: "Toggle between a post page where author avatar is or isn't available",
             control: { type: 'boolean' },
-            defaultValue: ['true'],
             required: true,
         },
     },

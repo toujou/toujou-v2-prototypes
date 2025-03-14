@@ -22,7 +22,6 @@ export default {
             description: "Choose between the different divider types",
             options: ['background', 'primary', 'secondary', 'grey'],
             control: { type: 'radio' },
-            defaultValue: ['false'],
             required: true,
         },
     },

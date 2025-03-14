@@ -23,7 +23,6 @@ export default {
             description: "Set the slider's design color",
             options: ['default', 'primary', 'secondary', 'light-grey'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         isFullwidth: {
@@ -34,7 +33,6 @@ export default {
             name: 'Fullwidth',
             description: "Show slider in fullwidth",
             control: { type: 'boolean' },
-            defaultValue: 'false',
             required: true,
         },
         autoplay: {
@@ -45,18 +43,15 @@ export default {
             name: 'autoplay',
             description: "Slide automatically",
             control: { type: 'boolean' },
-            defaultValue: 'false',
             required: true,
         },
         autoplayInterval: {
             table: {
                 category: "Slider settings",
-                defaultValue: { summary: 6 },
             },
             name: 'autoplay interval',
             description: "Interval for the autoplay function (in seconds)",
             control: { type: 'number' },
-            defaultValue: 6,
             required: true,
         },
     },
@@ -161,4 +156,3 @@ SliderLogo.args = {
     autoplay: false,
     autoplayInterval: 6,
 }
-

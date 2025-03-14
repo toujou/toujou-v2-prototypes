@@ -23,7 +23,6 @@ export default {
             description: "Choose the teaser direction",
             options: ['right', 'left'],
             control: { type: 'radio' },
-            defaultValue: ['right'],
             required: true,
         }
     },

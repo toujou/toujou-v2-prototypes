@@ -59,4 +59,3 @@ const Template = () => {
 };
 
 export const FormNavigation = Template.bind({});
-

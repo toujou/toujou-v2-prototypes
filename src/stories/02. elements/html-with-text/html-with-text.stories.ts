@@ -22,7 +22,6 @@ export default {
             description: "Choose the HTML with text layout",
             options: ['33-left', '33-right', '50-left', '50-right', '66-left', '66-right', 'multicolumn-left', 'multicolumn-right'],
             control: { type: 'radio' },
-            defaultValue: ['33-left'],
             required: true,
         },
     },

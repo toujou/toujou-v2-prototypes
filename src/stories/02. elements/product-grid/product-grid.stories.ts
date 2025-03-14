@@ -25,7 +25,6 @@ export default {
             description: "Set the product grid cards image format",
             options: ['16-9', 'square'],
             control: { type: 'radio' },
-            defaultValue: ['cinema'],
             required: true,
         },
         cardVariant: {
@@ -37,7 +36,6 @@ export default {
             description: "Set the product grid cards element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },

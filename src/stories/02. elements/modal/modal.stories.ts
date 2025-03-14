@@ -23,5 +23,3 @@ const Template = () => {
 };
 
 export const Modal = Template.bind({});
-
-

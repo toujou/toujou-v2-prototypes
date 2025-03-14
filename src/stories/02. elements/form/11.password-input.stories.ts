@@ -22,7 +22,6 @@ export default {
             description: "Set the visible input state",
             options: ['default', 'disabled', 'success', 'error'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -73,11 +72,6 @@ const Template: StoryFn<ToujouTextInputsStoryProps> = (args: ToujouTextInputsSto
                 </toujou-input-password-toggle>
                 <span class="pristine-error form__error">This is an error message!</span>
             </toujou-input-group>
-
-
-
-
-
 
             <toujou-input-group class="input-group input-group-advanced-password input-group--advanced-password ${args.state === 'error' ? 'input-group--has-error' : ''} ${args.state === 'success' ? 'input-group--has-success' : ''} ${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <div class="input-group-advanced-password__group">

@@ -23,7 +23,6 @@ export default {
             description: "Set the header image height",
             options: ['default', 'full', 'half', 'quarter', '3-1'],
             control: { type: 'select' },
-            defaultValue: ['default'],
             required: true,
         },
         headerVerticalPos: {
@@ -35,7 +34,6 @@ export default {
             description: "Set the header's vertical position",
             options: ['top', 'mid', 'bottom'],
             control: { type: 'select' },
-            defaultValue: ['mid'],
             required: true,
         },
         headerHorizontalPos: {
@@ -47,7 +45,6 @@ export default {
             description: "Set the header's horizontal position",
             options: ['left', 'center', 'right'],
             control: { type: 'select' },
-            defaultValue: ['center'],
             required: true,
         },
         headerContentSize: {
@@ -59,7 +56,6 @@ export default {
             description: "Set the header's content width",
             options: ['full', 'half', 'third', 'quarter'],
             control: { type: 'select' },
-            defaultValue: ['half'],
             required: true,
         },
         accentColor: {
@@ -71,7 +67,6 @@ export default {
             description: "Set the header's accent color",
             options: ['default', 'primary', 'secondary', 'font'],
             control: { type: 'select' },
-            defaultValue: ['default'],
             required: true,
         },
         contentAlignment: {
@@ -83,7 +78,6 @@ export default {
             description: "Set the header's content alignment",
             options: ['default', 'left', 'center', 'right'],
             control: { type: 'select' },
-            defaultValue: ['default'],
             required: true,
         },
     },

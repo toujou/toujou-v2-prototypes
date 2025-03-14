@@ -23,7 +23,6 @@ export default {
             description: "Set the element's direction",
             options: ['normal', 'reverse'],
             control: { type: 'radio' },
-            defaultValue: ['normal'],
             required: true,
         },
         mapAspectRatio: {
@@ -35,7 +34,6 @@ export default {
             description: "Set the map's aspect ration",
             options: ['1-1', '16-9'],
             control: { type: 'radio' },
-            defaultValue: ['normal'],
             required: true,
         },
         elementDesign: {
@@ -47,7 +45,6 @@ export default {
             description: "Set the design for the element",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -108,4 +105,3 @@ Map.args = {
     mapAspectRatio: '1-1',
     elementDesign: 'default'
 }
-

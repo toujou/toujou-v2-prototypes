@@ -23,7 +23,6 @@ export default {
             description: "Choose a background-color for the chapter",
             options: ['none', 'default', 'background', 'primary', 'primary-light', 'primary-dark', 'secondary', 'secondary-light', 'secondary-dark', 'font', 'font-light', 'font-dark'],
             control: { type: 'radio' },
-            defaultValue: ['none'],
             required: true,
         },
         fontColor: {
@@ -35,7 +34,6 @@ export default {
             description: "Choose a font-color for the chapter",
             options: ['none', 'default', 'background', 'primary', 'primary-light', 'primary-dark', 'secondary', 'secondary-light', 'secondary-dark', 'font', 'font-light', 'font-dark'],
             control: { type: 'radio' },
-            defaultValue: ['none'],
             required: true,
         },
         minHeight: {
@@ -47,7 +45,6 @@ export default {
             description: "Choose a minimum height for the chapter",
             options: ['auto', 'full', 'half', 'third', 'quarter'],
             control: { type: 'radio' },
-            defaultValue: ['none'],
             required: true,
         },
         verticalPosition: {
@@ -59,7 +56,6 @@ export default {
             description: "Choose a vertical for the chapter's content",
             options: ['default', 'top', 'middle', 'bottom'],
             control: { type: 'radio' },
-            defaultValue: ['none'],
             required: true,
         },
         showBackgroundImage: {
@@ -70,7 +66,6 @@ export default {
             name: 'Show background image',
             description: "Show a background image on the chapter element",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
         attachmentType: {
@@ -82,7 +77,6 @@ export default {
             description: "Choose the attachment type for the background image",
             options: ['scroll', 'fixed'],
             control: { type: 'radio' },
-            defaultValue: ['none'],
             required: true,
         },
         paddingTop: {
@@ -104,7 +98,6 @@ export default {
             description: "Choose the padding bottom for the chapter",
             options: ['default', 'none', 'xs', 's', 'base', 'm', 'l', 'xl'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         marginTop: {
@@ -115,7 +108,6 @@ export default {
             description: "Choose the margin top for the chapter",
             options: ['default', 'none', 'xs', 's', 'base', 'm', 'l', 'xl'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         marginBottom: {
@@ -126,7 +118,6 @@ export default {
             description: "Choose the margin bottom for the chapter",
             options: ['default', 'none', 'xs', 's', 'base', 'm', 'l', 'xl'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },

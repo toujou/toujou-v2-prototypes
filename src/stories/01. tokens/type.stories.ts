@@ -5,7 +5,6 @@ export default {
     argTypes: {}
 } satisfies Meta;
 
-
 const FontFamiliesTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Type tokens</h1>

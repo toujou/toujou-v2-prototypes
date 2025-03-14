@@ -22,7 +22,6 @@ export default {
             description: "Choose between a vertical or horizontal timeline",
             options: ['vertical', 'horizontal'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         elementDesign: {
@@ -34,7 +33,6 @@ export default {
             description: "Set the element design for the timeline element",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         showLegend: {
@@ -45,7 +43,6 @@ export default {
             name: 'Show legend',
             description: "Show the legend element",
             control: { type: 'boolean' },
-            defaultValue: 'false',
             required: true,
         },
     },

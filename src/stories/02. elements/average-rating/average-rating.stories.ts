@@ -22,7 +22,6 @@ export default {
             name: 'Show rating max value',
             description: "Show the maximum possible value for the ratings",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
     },

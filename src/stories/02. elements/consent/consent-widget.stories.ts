@@ -22,7 +22,6 @@ export default {
             description: "Set the consent element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'select' },
-            defaultValue: ['primary'],
             required: true,
         },
     },

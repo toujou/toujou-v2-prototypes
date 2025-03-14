@@ -22,7 +22,6 @@ export default {
             description: "Set the visible input state",
             options: ['default', 'disabled', 'success', 'error'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },

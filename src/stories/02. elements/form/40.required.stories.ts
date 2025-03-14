@@ -21,7 +21,6 @@ export default {
             name: 'Required',
             description: "Toggle the inputs 'required' attribute",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
     },

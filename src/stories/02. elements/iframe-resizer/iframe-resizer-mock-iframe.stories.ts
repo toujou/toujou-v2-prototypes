@@ -29,6 +29,11 @@ const addMockContent = async () => {
 
     // @ts-ignore
     const contentSection = document.querySelector('#iframe-content-section');
+    if (!contentSection) {
+        console.log('Could not find content section');
+        return;
+    }
+
     contentSection.innerHTML = MOCK_CONTENT;
 }
 

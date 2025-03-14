@@ -24,7 +24,6 @@ export default {
             description: "Choose media type to display",
             options: ['image', 'video'],
             control: { type: 'radio' },
-            defaultValue: [2],
             required: true,
         },
         numberOfCols: {
@@ -36,7 +35,6 @@ export default {
             description: "Choose the number of columns for the media grid",
             options: [1, 2, 3, 4],
             control: { type: 'radio' },
-            defaultValue: ['image'],
             required: true,
         },
     },

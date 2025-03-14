@@ -22,29 +22,24 @@ export default {
             description: "Set the social media bar's design color",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         hideHeadline: {
             table: {
                 category: "Social media bar settings",
-                defaultValue: { summary: false },
             },
             name: 'Hide headline',
             description: "Hide the social media bar's headline",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
         isInline: {
             table: {
                 category: "Social media bar settings",
-                defaultValue: { summary: false },
             },
             name: 'Add the "inline" attribute',
             description: 'Adding the "inline" attribute allows us to place the social-media-bar inside other elements',
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         }
     },
@@ -87,4 +82,3 @@ SocialMediaBar.args = {
     hideHeadline: false,
     isInline: false,
 }
-

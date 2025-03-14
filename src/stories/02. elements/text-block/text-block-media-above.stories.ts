@@ -22,7 +22,6 @@ export default {
             description: "Set the image aspect ratio",
             options: ['auto', 'square', '4-3', '16-9', 'golden'],
             control: { type: 'radio' },
-            defaultValue: ['4-3'],
             required: true,
         },
     },

@@ -23,7 +23,6 @@ export default {
             description: "Set the blockquote's direction",
             options: ['vertical', 'horizontal'],
             control: { type: 'radio' },
-            defaultValue: ['vertical'],
             required: true,
         },
         elementDesign: {
@@ -35,7 +34,6 @@ export default {
             description: "Set the blockquote's element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -82,4 +80,3 @@ Blockquote.args = {
     direction: 'vertical',
     elementDesign: 'default',
 }
-

@@ -238,4 +238,3 @@ const Template = () => {
 };
 
 export const EventSchedule = Template.bind({});
-

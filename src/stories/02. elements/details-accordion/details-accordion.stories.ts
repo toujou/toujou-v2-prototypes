@@ -21,7 +21,6 @@ export default {
             name: 'Single expand mode',
             description: "Allow just one accordion items to be open at a time",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
         expandedItem: {
@@ -33,7 +32,6 @@ export default {
             description: "Define which accordion items are open when the page loads",
             options: ['none', 'first', 'all'],
             control: { type: 'radio' },
-            defaultValue: ['first'],
             required: true,
         },
         elementDesign: {
@@ -45,7 +43,6 @@ export default {
             description: "Set the element design for the accordion element",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },

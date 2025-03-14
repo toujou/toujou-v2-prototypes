@@ -16,12 +16,10 @@ export default {
         isCenteredOnPage: {
             table: {
                 category: "Spinner settings",
-                defaultValue: { summary: false },
             },
             name: 'Center on page',
             description: "Center the spinner on the page, on top of all content",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
     },

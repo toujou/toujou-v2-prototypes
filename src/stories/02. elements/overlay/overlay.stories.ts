@@ -26,7 +26,6 @@ export default {
             description: "Choose theme for the overlay",
             options: ['light', 'dark'],
             control: { type: 'radio' },
-            defaultValue: ['light'],
             required: true,
         },
         showLogo: {
@@ -36,7 +35,6 @@ export default {
             name: 'Show logo',
             description: "Toggle the logo visibility",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
         showCloseButton: {
@@ -46,7 +44,6 @@ export default {
             name: 'Show close button',
             description: "Toggle close button visibility",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
         showConclusionText: {
@@ -56,7 +53,6 @@ export default {
             name: 'Show conclusion text',
             description: "Toggle conclusion text visibility",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
         showBackgroundImage: {
@@ -66,7 +62,6 @@ export default {
             name: 'Show background image',
             description: "Toggle background image visibility",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
     },

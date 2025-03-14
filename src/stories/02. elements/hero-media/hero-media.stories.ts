@@ -22,7 +22,6 @@ export default {
             description: "Choose header size",
             options: ['default', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'omega'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         headerAlignment: {
@@ -34,7 +33,6 @@ export default {
             description: "Choose header alignment",
             options: ['default', 'center', 'right', 'left'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },

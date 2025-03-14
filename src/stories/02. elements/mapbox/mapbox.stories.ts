@@ -22,7 +22,6 @@ export default {
             name: 'Zoom level',
             description: "Choose the map's initial zoom level",
             control: { type: 'range',  min: 0, max: 22, step: 1},
-            defaultValue: ['14'],
             required: true,
         },
         style: {
@@ -34,7 +33,6 @@ export default {
             description: "Choose the map's style",
             control: { type: 'radio'},
             options: ['light-v10', 'dark-v10', 'streets-v11', 'outdoors-v11', 'satellite-v9', 'navigation-day-v1'],
-            defaultValue: ['light-v10'],
             required: true,
         },
         showMarker: {
@@ -44,7 +42,6 @@ export default {
             name: 'Show marker',
             description: "Toggle marker's visibility",
             control: { type: 'boolean'},
-            defaultValue: [true],
             required: true,
         },
     },

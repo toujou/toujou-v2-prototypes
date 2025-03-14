@@ -23,6 +23,7 @@ const Template = () => {
                 <footer-column class="footer-column" column-name="logo">
                     <img class="footer__logo" src="https://picsum.photos/248/80" alt="quote image" />
                 </footer-column>
+                
                 <footer-column class="footer-column" column-name="service-nav">
                     <ul class="footer__list">
                         <li class="footer__list-item">
@@ -42,6 +43,7 @@ const Template = () => {
                         </li>
                     </ul>
                 </footer-column>
+                
                 <footer-column class="footer-column" column-name="footer-nav">
                     <ul class="footer__list">
                         <li class="footer__list-item">
@@ -61,6 +63,7 @@ const Template = () => {
                         </li>
                     </ul>
                 </footer-column>
+                
                 <footer-column class="footer-column" column-name="address">
                     <address class="footer__address">
                         <p class="footer__address-title">Ein Service der:</p>
@@ -80,6 +83,7 @@ const Template = () => {
                             <a class="footer__address-link" href="mailto:cevijakesi@mailinator.com">cevijakesi@mailinator.com</a>
                         </p>
                     </address>
+                    
                     <div class="footer__socials">
                         <a href="#" class="footer__socials-link" aria-label="Our Facebook account">
                             <toujou-icon class="icon" icon-name="sm-facebook" icon-size="l"></toujou-icon>
@@ -104,5 +108,3 @@ const Template = () => {
 };
 
 export const Footer = Template.bind({});
-
-

@@ -23,7 +23,6 @@ export default {
             name: 'Hide image',
             description: "Hide the event image",
             control: { type: 'boolean' },
-            defaultValue: 'false',
             required: true,
         },
     },

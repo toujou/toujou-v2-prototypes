@@ -22,7 +22,6 @@ export default {
             description: "Set the element design for the accordion element",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -77,4 +76,3 @@ export const Details = Template.bind({});
 Details.args = {
     elementDesign: 'default',
 }
-

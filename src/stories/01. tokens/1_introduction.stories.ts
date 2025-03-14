@@ -9,7 +9,6 @@ export default {
     }
 } satisfies Meta;
 
-
 const ColorsTemplate = () => {
     return `
         <h1 class="tokens-demo__title">CSS Tokens</h1>

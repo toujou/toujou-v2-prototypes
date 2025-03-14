@@ -93,5 +93,3 @@ const Template = () => {
 };
 
 export const TextBlock = Template.bind({});
-
-

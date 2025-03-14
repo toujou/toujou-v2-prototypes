@@ -24,7 +24,6 @@ export default {
             description: "Set the button's variant",
             options: ['primary', 'secondary', 'font'],
             control: { type: 'radio' },
-            defaultValue: ['primary'],
             required: true,
         },
         buttonType: {
@@ -36,7 +35,6 @@ export default {
             description: "Set the button's type",
             options: ['default', 'border', 'ghost'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         isDisabled: {
@@ -68,7 +66,6 @@ export default {
             description: "Set the button's icon position",
             options: ['left', 'right',],
             control: { type: 'radio' },
-            defaultValue: ['left'],
             required: true,
         },
         size: {
@@ -80,7 +77,6 @@ export default {
             description: "Set the button text size",
             options: ['tiny', 'small', 'normal', 'large'],
             control: { type: 'radio' },
-            defaultValue: ['normal'],
             required: true,
         },
         isExpanded: {

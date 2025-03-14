@@ -102,4 +102,3 @@ const Template = () => {
 };
 
 export const FormSummary = Template.bind({});
-

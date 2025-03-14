@@ -23,7 +23,6 @@ export default {
             description: "Set the element's width",
             options: ['text', 'wide', 'fullwidth'],
             control: { type: 'radio' },
-            defaultValue: ['text'],
             required: true,
         },
         alignment: {
@@ -35,7 +34,6 @@ export default {
             description: "Set the Inpage nav alignment",
             options: ['left', 'center'],
             control: { type: 'radio' },
-            defaultValue: ['left'],
             required: true,
         },
         showLabel: {
@@ -45,7 +43,6 @@ export default {
             name: 'Show label',
             description: "Toggle the label's visibility",
             control: { type: 'boolean' },
-            defaultValue: [true],
             required: true,
         },
         showCTA: {
@@ -55,7 +52,6 @@ export default {
             name: 'Show CTA',
             description: "Toggle the CTA button visibility",
             control: { type: 'boolean' },
-            defaultValue: [true],
             required: true,
         },
         isSticky: {
@@ -65,7 +61,6 @@ export default {
             name: 'Is sticky',
             description: "Should the inpage nav scroll with the content or stay sticky. PLease test on a page with a topbar and content",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
         elementDesign: {
@@ -77,7 +72,6 @@ export default {
             description: "set the element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -155,4 +149,3 @@ InpageNav.args = {
     isSticky: false,
     elementDesign: 'default',
 }
-

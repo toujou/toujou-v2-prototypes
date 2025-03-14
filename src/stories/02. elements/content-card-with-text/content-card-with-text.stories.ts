@@ -23,7 +23,6 @@ export default {
             description: "Set the column where the text will be shown",
             options: ['left', 'right'],
             control: { type: 'radio' },
-            defaultValue: ['left'],
             required: true,
         },
     },
@@ -92,4 +91,3 @@ export const ContentCardWithText = Template.bind({});
 ContentCardWithText.args = {
     direction: 'left',
 }
-

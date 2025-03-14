@@ -5,7 +5,6 @@ export default {
     argTypes: {}
 } satisfies Meta;
 
-
 const BorderTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Border tokens</h1>

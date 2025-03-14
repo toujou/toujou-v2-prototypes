@@ -24,7 +24,6 @@ export default {
             description: "Set the chip's background-color",
             options: ['transparent', 'primary', 'primary-light', 'primary-very-light', 'secondary', 'secondary-light', 'secondary-very-light', 'font', 'font-light', 'font-very-light', 'success', 'warning', 'error'],
             control: { type: 'select' },
-            defaultValue: ['primary'],
             required: true,
         },
         borderRadius: {
@@ -36,7 +35,6 @@ export default {
             description: "Set the chip's border-radius",
             options: ['none', 'small', 'medium', 'round'],
             control: { type: 'select' },
-            defaultValue: ['small'],
             required: true,
         },
         size: {
@@ -48,7 +46,6 @@ export default {
             description: "Set the chip's size",
             options: ['extra-small', 'small', 'normal'],
             control: { type: 'select' },
-            defaultValue: ['small'],
             required: true,
         },
         isClickable: {
@@ -59,7 +56,6 @@ export default {
             name: 'Is clickable',
             description: "Set if the chip is clickable or not",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
         hasIcon: {
@@ -70,7 +66,6 @@ export default {
             name: 'With icon',
             description: "Toggle the chip's icon visibility",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
         iconPosition: {
@@ -82,7 +77,6 @@ export default {
             description: "Set the icon on the right or left side of the chip",
             options: ['left', 'right',],
             control: { type: 'radio' },
-            defaultValue: ['left'],
             required: true,
         },
         isUppercase: {
@@ -93,7 +87,6 @@ export default {
             name: 'Is uppercase',
             description: "Set the chip's text to all uppercase",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
     },
@@ -158,4 +151,3 @@ Chip.args = {
     iconPosition: 'left',
     isUppercase: false,
 }
-

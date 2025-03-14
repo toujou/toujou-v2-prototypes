@@ -160,4 +160,3 @@ const Template = () => {
 };
 
 export const PortfolioGallery = Template.bind({});
-

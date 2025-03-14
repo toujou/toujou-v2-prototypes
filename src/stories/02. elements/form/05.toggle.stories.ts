@@ -21,7 +21,6 @@ export default {
             name: 'disabled',
             description: "Toggle the \"disabled\" attribute",
             control: { type: 'boolean' },
-            defaultValue: false,
             required: true,
         },
     },

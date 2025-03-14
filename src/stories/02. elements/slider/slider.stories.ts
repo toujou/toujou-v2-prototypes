@@ -22,7 +22,6 @@ export default {
             description: "Set the slider's design color",
             options: ['default', 'primary', 'secondary', 'light-grey'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         isFullwidth: {
@@ -33,7 +32,6 @@ export default {
             name: 'Fullwidth',
             description: "Show slider in fullwidth",
             control: { type: 'boolean' },
-            defaultValue: 'false',
             required: true,
         },
         showCount: {
@@ -43,7 +41,6 @@ export default {
             name: 'Show count',
             description: "Show the count element",
             control: { type: 'boolean' },
-            defaultValue: true,
             required: true,
         },
         autoplay: {
@@ -64,7 +61,6 @@ export default {
             name: 'autoplay interval',
             description: "Interval for the autoplay function (in seconds)",
             control: { type: 'number' },
-            defaultValue: 6,
             required: true,
         },
         sliderType: {
@@ -76,7 +72,6 @@ export default {
             description: "Set the slider's animation type",
             options: ['loop', 'slide'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -229,4 +224,3 @@ Slider.args = {
     autoplayInterval: 6,
     sliderType: 'loop',
 }
-

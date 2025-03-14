@@ -21,7 +21,6 @@ export default {
             name: 'Is Slider',
             description: "It should only be a slider if it contains more items than it can fit on the page. Otherwise it should show the items centered on the page",
             control: { type: 'boolean' },
-            defaultValue: [true],
             required: true,
         },
     },
@@ -130,5 +129,3 @@ export const CoverSlider = Template.bind({});
 CoverSlider.args = {
     isSlider: true,
 }
-
-

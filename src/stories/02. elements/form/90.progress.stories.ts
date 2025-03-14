@@ -134,4 +134,3 @@ const Template = () => {
 };
 
 export const FormProgress = Template.bind({});
-

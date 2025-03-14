@@ -148,4 +148,3 @@ const Template = () => {
 };
 
 export const EventTable = Template.bind({});
-

@@ -37,7 +37,6 @@ export default {
             description: "Set the snackbar type",
             options: ['auto', 'action'],
             control: { type: 'radio' },
-            defaultValue: ['auto'],
             required: true,
         },
         snackbarDuration: {
@@ -47,7 +46,6 @@ export default {
             name: 'Snackbar duration',
             description: "Set the snackbar visibility duration",
             control: { type: 'number' },
-            defaultValue: 4000,
             required: true,
         },
     },
@@ -93,4 +91,3 @@ Snackbar.args = {
     snackbarType: 'auto',
     snackbarDuration: 4000,
 }
-

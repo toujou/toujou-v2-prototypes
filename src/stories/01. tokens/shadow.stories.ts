@@ -5,7 +5,6 @@ export default {
     argTypes: {}
 } satisfies Meta;
 
-
 const ShadowsTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Shadow tokens</h1>

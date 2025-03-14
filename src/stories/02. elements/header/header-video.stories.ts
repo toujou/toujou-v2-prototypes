@@ -24,7 +24,6 @@ export default {
             description: "Set the header image height",
             options: ['default', 'full', 'half', 'quarter', '3-1'],
             control: { type: 'select' },
-            defaultValue: ['default'],
             required: true,
         }
     },

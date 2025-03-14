@@ -22,7 +22,6 @@ export default {
             name: 'Is fullwidth',
             description: "Toggle between fullwidth and content width",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
     },

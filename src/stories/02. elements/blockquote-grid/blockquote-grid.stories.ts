@@ -23,7 +23,6 @@ export default {
             description: "Set the blockquote's direction",
             options: ['vertical', 'horizontal'],
             control: { type: 'radio' },
-            defaultValue: ['vertical'],
             required: true,
         },
         gridCount: {
@@ -35,7 +34,6 @@ export default {
             description: "Set the number of columns per row ond desktop",
             options: ['1', '2', '3'],
             control: { type: 'radio' },
-            defaultValue: ['1'],
             required: true,
         },
     },

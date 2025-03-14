@@ -22,7 +22,6 @@ export default {
             description: "Number of columns",
             options: [1, 2, 3, 4],
             control: { type: 'radio' },
-            defaultValue: [1],
             required: true,
         },
         cardVariant: {
@@ -34,7 +33,6 @@ export default {
             description: "Set the content  card element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
         hasLink: {
@@ -45,7 +43,6 @@ export default {
             name: 'Has link',
             description: "Set a link for the card",
             control: { type: 'boolean' },
-            defaultValue: false,
             required: true,
         },
     },
@@ -111,4 +108,3 @@ VerticalContentCard.args = {
     cardVariant: 'default',
     hasLink: false
 }
-

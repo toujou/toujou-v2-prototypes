@@ -22,7 +22,6 @@ export default {
             description: "Define layout of the grid columns",
             options: ['third-right', 'third-left'],
             control: { type: 'radio' },
-            defaultValue: ['third-right'],
             required: true,
         },
         elementDesign: {
@@ -34,7 +33,6 @@ export default {
             description: "Set the element design for the accordion element",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },

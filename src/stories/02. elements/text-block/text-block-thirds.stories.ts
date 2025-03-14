@@ -66,5 +66,3 @@ const Template = () => {
 };
 
 export const TextBlockThird = Template.bind({});
-
-

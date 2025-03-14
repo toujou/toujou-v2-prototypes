@@ -23,7 +23,6 @@ export default {
             description: "Choose the teaser type",
             options: ['cinema', 'media'],
             control: { type: 'radio' },
-            defaultValue: ['cinema'],
             required: true,
         },
         imageWidth: {
@@ -35,7 +34,6 @@ export default {
             description: "Choose the teaser's image width",
             options: ['50', '33', '66'],
             control: { type: 'radio' },
-            defaultValue: ['50'],
             required: true,
         },
         imageSide: {
@@ -47,7 +45,6 @@ export default {
             description: "Choose the teaser's image side",
             options: ['left', 'right'],
             control: { type: 'radio' },
-            defaultValue: ['left'],
             required: true,
         },
         elementDesign: {
@@ -59,7 +56,6 @@ export default {
             description: "Choose the teaser's element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -107,4 +103,3 @@ Teaser.args = {
     imageSide: 'left',
     elementDesign: 'default'
 }
-

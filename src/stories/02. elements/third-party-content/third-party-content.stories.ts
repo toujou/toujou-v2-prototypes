@@ -24,7 +24,6 @@ export default {
             name: 'Show poster image',
             description: "Show a poster image as background",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
         isVideo: {
@@ -34,7 +33,6 @@ export default {
             name: 'Video content',
             description: "Emulate element with video element content",
             control: { type: 'boolean' },
-            defaultValue: [false],
             required: true,
         },
     },

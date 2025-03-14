@@ -22,7 +22,6 @@ export default {
             description: "Choose media type to display",
             options: ['image', 'video', 'audio'],
             control: { type: 'radio' },
-            defaultValue: [2],
             required: true,
         },
     },

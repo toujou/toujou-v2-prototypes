@@ -22,7 +22,6 @@ export default {
             name: 'Show the language tag',
             description: "Show or hide the language tag",
             control: { type: 'boolean' },
-            defaultValue: ['true'],
             required: true,
         },
     },

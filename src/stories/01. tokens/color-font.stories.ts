@@ -5,7 +5,6 @@ export default {
     argTypes: {}
 } satisfies Meta;
 
-
 const ColorsTemplate = () => {
     return `
         <h1 class="tokens-demo__title">Color tokens</h1>

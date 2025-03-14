@@ -30,7 +30,6 @@ export default {
             description: "Set the date format",
             options: Object.values(DATE_FORMATS),
             control: { type: 'radio' },
-            defaultValue: DATE_FORMATS['YYYY.MM.DD'],
             required: true,
         },
         minDate: {
@@ -47,7 +46,6 @@ export default {
             name: 'Show time',
             description: "Show time on the datepicker",
             control: { type: 'boolean' },
-            defaultValue: ['false'],
             required: true,
         },
         type: {
@@ -55,7 +53,6 @@ export default {
             description: "Set the input type",
             options: Object.values(MODES),
             control: { type: 'radio' },
-            defaultValue: MODES.single,
             required: true,
         },
     },

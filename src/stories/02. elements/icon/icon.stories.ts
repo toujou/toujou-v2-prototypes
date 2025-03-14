@@ -25,7 +25,6 @@ export default {
             description: "Set the icon's color. If this class isn't set it defaults to 'currentColor'",
             options: ['font', 'font-dark', 'font-light', 'primary', 'primary-dark', 'primary-light', 'secondary', 'secondary-dark', 'secondary-light', 'background', 'success', 'warning', 'error'],
             control: { type: 'radio' },
-            defaultValue: ['font'],
             required: true,
         },
         iconSize: {
@@ -37,7 +36,6 @@ export default {
             description: "Set the icon's size. If the class isn't set it defaults to `ms`",
             options: ['xxxl', 'xxl', 'xl', 'l', 'm', 'ms', 'normal', 's', 'xs', 'xxs'],
             control: { type: 'select' },
-            defaultValue: ['ms'],
             required: true,
         },
     },
@@ -222,4 +220,3 @@ Icons.args = {
     iconColor: 'font',
     iconSize: 'ms',
 }
-

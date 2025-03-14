@@ -26,7 +26,6 @@ export default {
             description: "Set the image card's image format",
             options: ['16-9', 'square'],
             control: { type: 'radio' },
-            defaultValue: ['cinema'],
             required: true,
         },
         cardsAreLinks: {
@@ -36,7 +35,6 @@ export default {
             name: 'Cards are links',
             description: "Choose if the cards should be a link or not",
             control: { type: 'boolean' },
-            defaultValue: true,
             required: true,
         },
         columnCount: {
@@ -47,7 +45,6 @@ export default {
             description: "Number of columns",
             options: [1, 2, 3, 4],
             control: { type: 'radio' },
-            defaultValue: [1],
             required: true,
         },
         cardVariant: {
@@ -59,7 +56,6 @@ export default {
             description: "Set the image card element design",
             options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
-            defaultValue: ['default'],
             required: true,
         },
     },
@@ -101,7 +97,6 @@ interface ToujouImageCardStoryProps {
 }
 
 const Template: StoryFn<ToujouImageCardStoryProps> = (args: ToujouImageCardStoryProps) => {
-
     const toujouImageCardGrid = document.createElement('toujou-image-card-grid');
     toujouImageCardGrid.classList.add('image-card-grid');
 
@@ -126,4 +121,3 @@ ImageCard.args = {
     cardsAreLinks: true,
     cardVariant: 'default',
 }
-

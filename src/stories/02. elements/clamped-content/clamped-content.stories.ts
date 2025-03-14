@@ -52,5 +52,3 @@ const Template = () => {
 };
 
 export const ClampedContent = Template.bind({});
-
-
