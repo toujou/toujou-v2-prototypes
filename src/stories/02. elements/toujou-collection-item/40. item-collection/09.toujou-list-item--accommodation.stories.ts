@@ -41,8 +41,6 @@ const Template = () => {
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
@@ -95,8 +93,6 @@ const Template = () => {
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation B</h3>
@@ -149,8 +145,6 @@ const Template = () => {
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation C</h3>
@@ -200,8 +194,6 @@ const Template = () => {
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation D</h3>
