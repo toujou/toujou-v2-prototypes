@@ -489,7 +489,7 @@ a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
         --collection-item-figure-border-radius: var(--border-radius-default);
         /* stylelint-disable-next-line max-line-length */
         --collection-item-location-border-radius: 0 0 var(--collection-item-figure-border-radius) var(--collection-item-figure-border-radius);
-        --collection-item-bottom-padding: var(--content-inner-padding) 0;
+        --collection-item-bottom-padding: var(--content-inner-padding) var(--content-inner-padding) var(--content-inner-padding) 0;
         --collection-item-top-margin: var(--content-inner-padding);
     }
 
