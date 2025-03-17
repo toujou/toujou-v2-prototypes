@@ -1,4 +1,4 @@
-import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-collection-item.docs-BNMmCBJK.js";import{r as o}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-BjG_zV1W.js";import"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";const d={title:"COMPONENTS/CollectionLists",parameters:{badges:[n.DONE],docs:{page:c}},tags:["autodocs"]},s=()=>`
+import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-collection-item.docs-BNMmCBJK.js";import{r as o}from"./_renderCardCategoriChips-D3lhH8UM.js";import"./jsx-runtime-BjG_zV1W.js";import"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";const d={title:"COMPONENTS/CollectionLists",parameters:{badges:[n.DONE],docs:{page:c}},tags:["autodocs"]},l=()=>`
         <main>
             <ol class="item-collection">
                 <li class="item-collection__item">
@@ -22,8 +22,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
@@ -76,8 +74,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation B</h3>
@@ -130,8 +126,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation C</h3>
@@ -181,8 +175,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation D</h3>
@@ -216,7 +208,7 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                 </li>
             </ol>
         </main>
-    `,i=s.bind({});var t,e,a;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
+    `,i=l.bind({});var t,e,a;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`() => {
   return \`
         <main>
             <ol class="item-collection">
@@ -241,8 +233,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
@@ -295,8 +285,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation B</h3>
@@ -349,8 +337,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation C</h3>
@@ -400,8 +386,6 @@ import{T as n}from"./badgeCustomConfig-DUXiHpL4.js";import{M as c}from"./toujou-
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
-
-                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
                             <h3 class="collection-item__title">Accommodation D</h3>
