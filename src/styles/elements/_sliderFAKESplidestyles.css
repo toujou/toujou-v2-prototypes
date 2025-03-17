@@ -66,6 +66,10 @@
         -webkit-tap-highlight-color: transparent;
     }
 
+    [is-trip-acommodations] .splide__slide {
+        width: 100% !important;
+    }
+
     .splide__slide img {
         vertical-align: bottom;
     }
