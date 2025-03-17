@@ -20,7 +20,7 @@
         --inpage-nav-z-index: var(--z-index-inpage-nav);
         --inpage-nav-opacity: 1;
         --inpage-nav-transition: opacity var(--animation-duration-normal) var(--animation-easing-normal);
-        --inpage-nav-border-radius: var(--border-radius-0);
+        --inpage-nav-border-radius: var(--border-radius-default);
 
         /* toggle */
         --inpage-nav-toggle-display: none;
@@ -196,7 +196,6 @@
     .inpage-nav[element-design="secondary"]:not([ismobile]),
     .inpage-nav[element-design="inverted"]:not([ismobile]) {
         --inpage-nav-label-before-bg-color: var(--color-bg);
-        --inpage-nav-border-radius: var(--border-radius-default);
     }
 
     .inpage-nav[element-design="primary"]:not([ismobile]) {
