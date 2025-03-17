@@ -88,6 +88,7 @@ const iconNames = [
     'equalizer',
     'equalizer-circle-filled',
     'euro',
+    'external-link',
     'eye',
     'eye-off',
     'fax',

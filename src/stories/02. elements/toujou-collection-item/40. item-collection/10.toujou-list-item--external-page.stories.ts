@@ -52,7 +52,7 @@ const Template = () => {
                                 </span>
                             </p>
                             <a href="#" class="collection-item__button">
-                                <toujou-icon class="icon" icon-name="link" icon-size="ms"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="external-link" icon-size="ms"></toujou-icon>
                                 zur Beschreibung
                             </a>
                         </div>
@@ -76,7 +76,7 @@ const Template = () => {
                                 </span>
                             </p>
                             <a href="#" class="collection-item__button">
-                                <toujou-icon class="icon" icon-name="link" icon-size="ms"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="external-link" icon-size="ms"></toujou-icon>
                                 zur Beschreibung
                             </a>
                         </div>
@@ -100,7 +100,7 @@ const Template = () => {
                                 </span>
                             </p>
                             <a href="#" class="collection-item__button">
-                                <toujou-icon class="icon" icon-name="link" icon-size="ms"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="external-link" icon-size="ms"></toujou-icon>
                                 zur Beschreibung
                             </a>
                         </div>
@@ -124,7 +124,7 @@ const Template = () => {
                                 </span>
                             </p>
                             <a href="#" class="collection-item__button">
-                                <toujou-icon class="icon" icon-name="link" icon-size="ms"></toujou-icon>
+                                <toujou-icon class="icon" icon-name="external-link" icon-size="ms"></toujou-icon>
                                 zur Beschreibung
                             </a>
                         </div>

@@ -297,6 +297,10 @@
         mask-image: var(--icon-euro);
     }
 
+    .icon[icon-name="external-link"] {
+        mask-image: var(--icon-external-link);
+    }
+
     .icon[icon-name="eye"] {
         mask-image: var(--icon-eye);
     }
