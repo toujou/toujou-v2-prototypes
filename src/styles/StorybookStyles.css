@@ -32,6 +32,7 @@
 @import './elements/_code-block.css';
 @import './elements/_content-card.css';
 @import './elements/_contact-dialog.css';
+@import './elements/_contact-teaser.css';
 @import './elements/_content-card-grid.css';
 @import './elements/_cover-slider.css';
 @import './elements/_details.css';
@@ -127,6 +128,8 @@
 @import "./elements/_header-with-quicksearch.css";
 @import "./elements/_quicksearch.css";
 @import "./elements/_quicksearch-card.css";
+@import "./elements/_booking-summary.css";
+@import "./elements/_booking-sidebar.css";
 
 @import "elements/_facet-details.css";
 @import "elements/_panel-title.css";

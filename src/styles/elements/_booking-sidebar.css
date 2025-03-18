@@ -1,0 +1,12 @@
+@layer components {
+    .booking-sidebar {
+        --booking-sidebar-display: grid;
+        --booking-sidebar-grid-gap: var(--spacing-normal);
+
+        --booking-sidebar-headline-font-size: var(--font-size-m);
+
+        display: var(--booking-sidebar-display);
+        grid-gap: var(--booking-sidebar-grid-gap);
+        container-type: inline-size;
+    }
+}

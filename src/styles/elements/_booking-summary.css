@@ -1,0 +1,114 @@
+@layer components {
+    .booking-summary {
+        --booking-summary-background-color: var(--color-primary);
+        --booking-summary-padding: var(--spacing-normal);
+        --booking-summary-border-radius: var(--border-radius-default);
+
+        --booking-summary-title-color: var(--color-bg);
+        --booking-summary-title-font-size: var(--booking-sidebar-headline-font-size);
+
+
+        --booking-summary-list-list-style: none;
+        --booking-summary-list-margin: var(--spacing-normal) 0 0;
+        --booking-summary-list-padding: 0;
+
+        --booking-summary-item-font-family: var(--font-family-headline);
+        --booking-summary-item-font-size: var(--font-size-normal);
+        --booking-summary-item-font-weight: var(--font-weight-text-normal);
+        --booking-summary-item-color: var(--color-bg);
+        --booking-summary-item-display: grid;
+        --booking-summary-item-grid-template-columns: 1fr auto;
+        --booking-summary-item-grid-gap: var(--spacing-s);
+        --booking-summary-item-margin: 0 0 var(--spacing-xs);
+
+        --booking-summary-total-font-family: var(--font-family-headline);
+        --booking-summary-total-font-size: var(--font-size-normal);
+        --booking-summary-total-font-weight: var(--font-weight-text-normal);
+        --booking-summary-total-color: var(--color-bg);
+        --booking-summary-total-display: grid;
+        --booking-summary-total-grid-template-columns: 1fr auto;
+        --booking-summary-total-grid-gap: var(--spacing-s);
+        --booking-summary-total-border-top: var(--border-width-normal) solid var(--color-bg);
+        --booking-summary-total-padding: var(--spacing-normal) 0 0;
+
+        --booking-summary-total-value-font-size: var(--font-size-ms);
+
+        background-color: var(--booking-summary-background-color);
+        padding: var(--booking-summary-padding);
+        border-radius: var(--booking-summary-border-radius);
+    }
+
+    .booking-summary .details {
+        --toujou-details-border-top: none;
+        --toujou-details-border-bottom: var(--border-width-normal) solid transparent;
+        --toujou-details-summary-padding: 0;
+        --toujou-details-content-padding: 0;
+
+        --details-width: 100%;
+        --details-max-width: 100%;
+        --details-chevron-color: var(--color-bg);
+        --details-chevron-active-color: var(--color-primary-dark);
+    }
+
+    .booking-summary .details__title {
+        color: var(--booking-summary-title-color) !important;
+        font-size: var(--booking-summary-title-font-size);
+    }
+
+    .booking-summary__list {
+        list-style: var(--booking-summary-list-list-style);
+        margin: var(--booking-summary-list-margin);
+        padding: var(--booking-summary-list-padding);
+    }
+
+    .booking-summary__item {
+        font-size: var(--booking-summary-item-font-size);
+        font-family: var(--booking-summary-item-font-family);
+        font-weight: var(--booking-summary-item-font-weight);
+        color: var(--booking-summary-item-color);
+        display: var(--booking-summary-item-display);
+        grid-template-columns: var(--booking-summary-item-grid-template-columns);
+        grid-gap: var(--booking-summary-item-grid-gap);
+        margin: var(--booking-summary-item-margin);
+    }
+
+    .booking-summary__item:last-child {
+        --booking-summary-item-margin: 0;
+    }
+
+    .booking-summary__list-value {
+        font-weight: bold;
+    }
+
+    .booking-summary__total {
+        font-family: var(--booking-summary-total-font-family);
+        font-size: var(--booking-summary-total-font-size);
+        font-weight: var(--booking-summary-total-font-weight);
+        color: var(--booking-summary-total-color);
+        display: var(--booking-summary-total-display);
+        grid-template-columns: var(--booking-summary-total-grid-template-columns);
+        grid-gap: var(--booking-summary-total-grid-gap);
+        border-top: var(--booking-summary-total-border-top);
+        padding: var(--booking-summary-total-padding);
+    }
+
+    .booking-summary__total-value {
+        font-size: var(--booking-summary-total-value-font-size));
+    }
+
+    @media screen and (width < 840px) {
+        .booking-summary {
+            --booking-summary-position: fixed;
+            --booking-summary-bottom: 0;
+            --booking-summary-left: 0;
+            --booking-summary-width: 100%;
+            --booking-summary-border-radius-mobile: var(--booking-summary-border-radius) var(--booking-summary-border-radius) 0 0;
+
+            position: var(--booking-summary-position);
+            bottom: var(--booking-summary-bottom);
+            left: var(--booking-summary-left);
+            width: var(--booking-summary-width);
+            border-radius: var(--booking-summary-border-radius-mobile);
+        }
+    }
+}
