@@ -93,7 +93,7 @@
     }
 
     .booking-summary__total-value {
-        font-size: var(--booking-summary-total-value-font-size));
+        font-size: var(--booking-summary-total-value-font-size);
     }
 
     @media screen and (width < 840px) {
