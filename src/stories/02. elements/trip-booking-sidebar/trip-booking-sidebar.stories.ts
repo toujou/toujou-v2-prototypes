@@ -39,6 +39,7 @@ const renderContactTeaser = () => {
             </figure>
             <div class="contact-teaser__content">
                 <h3 class="contact-teaser__name">John Doe</h3>
+                <p class="contact-teaser__position">Nice position</p>
                 <p class="contact-teaser__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p class="contact-teaser__contact contact-teaser__contact--phone">
                     <toujou-icon class="icon" icon-name="telephone" icon-size="ms"></toujou-icon>

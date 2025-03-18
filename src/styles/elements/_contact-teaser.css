@@ -16,6 +16,8 @@
 
         --contact-teaser-name-font-size: var(--booking-sidebar-headline-font-size);
 
+        --contact-teaser-position-font-style: italic;
+
         --contact-teaser-contact-display: grid;
         --contact-teaser-contact-grid-template-columns: auto 1fr;
         --contact-teaser-contact-grid-gap: var(--spacing-s);
@@ -44,6 +46,10 @@
 
     .contact-teaser__name {
         font-size: var(--contact-teaser-name-font-size);
+    }
+
+    .contact-teaser__position {
+        font-style: var(--contact-teaser-position-font-style);
     }
 
     .contact-teaser__contact {
