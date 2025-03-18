@@ -1,5 +1,5 @@
-import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as a}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as c}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function e(o){const s={h1:"h1",p:"p",...c(),...o.components};return a.jsxs(a.Fragment,{children:[a.jsx(s.h1,{id:"trip-page-booking-sidebar",children:"Trip page booking sidebar"}),`
-`,a.jsx(s.p,{children:"Side bar rendered on teh trip booking page with a contact-teaser and a booking-summary sections"})]})}function u(o={}){const{wrapper:s}={...c(),...o.components};return s?a.jsx(s,{...o,children:a.jsx(e,{...o})}):e(o)}const f={title:"COMPONENTS/Tourism/Booking Sidebar",parameters:{badges:[m.TESTING],docs:{page:u}},tags:["autodocs"]},l=()=>`
+import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as s}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as c}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function e(o){const a={h1:"h1",p:"p",...c(),...o.components};return s.jsxs(s.Fragment,{children:[s.jsx(a.h1,{id:"trip-page-booking-sidebar",children:"Trip page booking sidebar"}),`
+`,s.jsx(a.p,{children:"Side bar rendered on teh trip booking page with a contact-teaser and a booking-summary sections"})]})}function l(o={}){const{wrapper:a}={...c(),...o.components};return a?s.jsx(a,{...o,children:s.jsx(e,{...o})}):e(o)}const f={title:"COMPONENTS/Tourism/Booking Sidebar",parameters:{badges:[m.TESTING],docs:{page:l}},tags:["autodocs"]},u=()=>`
         <h3>Fake booking form</h3>
     `,d=()=>`
         <sidebar class="booking-sidebar"> 
@@ -13,6 +13,7 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as a}from"./jsx-run
             </figure>
             <div class="contact-teaser__content">
                 <h3 class="contact-teaser__name">John Doe</h3>
+                <p class="contact-teaser__position">Nice position</p>
                 <p class="contact-teaser__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p class="contact-teaser__contact contact-teaser__contact--phone">
                     <toujou-icon class="icon" icon-name="telephone" icon-size="ms"></toujou-icon>
@@ -72,7 +73,7 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as a}from"./jsx-run
         <main>
             <toujou-grid class="grid booking-form-grid" number-of-columns="2" grid-type="default" column-layout="third-right">
                 <toujou-grid-column class="grid-column">
-                    ${l()}
+                    ${u()}
                 </toujou-grid-column>
                 
                 <toujou-grid-column class="grid-column">
