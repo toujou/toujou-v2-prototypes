@@ -377,6 +377,7 @@
         --inpage-nav-link-padding: 0 var(--spacing-s) 0 0;
         --inpage-nav-label-before-display: none;
         --inpage-nav-link-opacity: .75;
+        --inpage-nav-link-opacity-hover: 1;
         --inpage-nav-item-active-marker-size: var(--spacing-s);
         --inpage-nav-item-active-marker-border-radius: var(--border-radius-circle);
         --inpage-nav-item-active-marker-background-color: var(--color-primary);
@@ -408,6 +409,10 @@
 
     .inpage-nav[ismobile] .inpage-nav__item .inpage-nav__link {
         opacity: var(--inpage-nav-link-opacity);
+    }
+
+    .inpage-nav[ismobile] .inpage-nav__item .inpage-nav__link:is(:hover, :focus-visible) {
+        opacity: var(--inpage-nav-link-opacity-hover);
     }
 
     .inpage-nav[ismobile] .inpage-nav__item[active] .inpage-nav__link {
