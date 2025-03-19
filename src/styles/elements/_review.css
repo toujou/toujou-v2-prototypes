@@ -65,7 +65,7 @@
         border-radius: var(--review-border-radius);
     }
 
-    .chapter[background-color]:not([background-color="bg"]) .review,
+    .chapter[background-color]:not([background-color="background"]) .review,
     .chapter[has-background-media] .review {
         --review-border-bottom: none;
         --review-border-top: none;
