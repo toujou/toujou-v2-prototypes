@@ -12,6 +12,7 @@
     --chapter-bg-color-original: var(--color-bg);
     --chapter-primary-color-original: var(--color-primary);
     --chapter-primary-color-light-original: var(--color-primary-light);
+    --chapter-primary-color-o-10-original: var(--color-primary-o-10);
     --chapter-primary-color-dark-original: var(--color-primary-dark);
     --chapter-secondary-color-original: var(--color-secondary);
     --chapter-secondary-color-light-original: var(--color-secondary-light);
@@ -163,6 +164,8 @@
 .chapter[background-color="primary"] + span + .chapter[background-color="primary"],
 .chapter[background-color="primary-light"] + .chapter[background-color="primary-light"],
 .chapter[background-color="primary-light"] + span + .chapter[background-color="primary-light"],
+.chapter[background-color="primary-o-10"] + .chapter[background-color="primary-o-10"],
+.chapter[background-color="primary-o-10"] + span + .chapter[background-color="primary-o-10"],
 .chapter[background-color="primary-dark"] + .chapter[background-color="primary-dark"],
 .chapter[background-color="primary-dark"] + span + .chapter[background-color="primary-dark"],
 .chapter[background-color="secondary"] + .chapter[background-color="secondary"],
@@ -183,6 +186,7 @@
 .chapter[background-color="background"]:has(+ span + .chapter[background-color="background"]),
 .chapter[background-color="primary"]:has(+ span + .chapter[background-color="primary"]),
 .chapter[background-color="primary-light"]:has(+ span + .chapter[background-color="primary-light"]),
+.chapter[background-color="primary-o-10"]:has(+ span + .chapter[background-color="primary-o-10"]),
 .chapter[background-color="primary-dark"]:has(+ span + .chapter[background-color="primary-dark"]),
 .chapter[background-color="secondary"]:has(+ span + .chapter[background-color="secondary"]),
 .chapter[background-color="secondary-light"]:has(+ span + .chapter[background-color="secondary-light"]),
@@ -200,6 +204,10 @@
 
 .chapter[background-color="primary-light"] {
     --chapter-background-color: var(--chapter-primary-color-light-original);
+}
+
+.chapter[background-color="primary-o-10"] {
+    --chapter-background-color: var(--chapter-primary-color-o-10-original);
 }
 
 .chapter[background-color="primary-dark"] {
