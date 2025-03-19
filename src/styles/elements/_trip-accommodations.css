@@ -3,7 +3,7 @@
         --trip-accommodations-display: block;
         --trip-accommodations-position: relative;
         --trip-accommodations-width: var(--content-width-with-padding);
-        --trip-accommodations-max-width: var(--content-wide-max-width);
+        --trip-accommodations-max-width: var(--content-medium-max-width);
         --trip-accommodations-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 
         --trip-accommodations-summary-title-color: inherit;

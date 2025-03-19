@@ -3,7 +3,7 @@
         --trip-description-display: block;
         --trip-description-position: relative;
         --trip-description-width: var(--content-width-with-padding);
-        --trip-description-max-width: var(--content-wide-max-width);
+        --trip-description-max-width: var(--content-medium-max-width);
         --trip-description-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 
         --trip-description-summary-display: grid;

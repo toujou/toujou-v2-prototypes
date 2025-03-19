@@ -5,7 +5,7 @@
         --departures-gap: var(--spacing-s);
         --departures-position: relative;
         --departures-width: var(--content-width-with-padding);
-        --departures-max-width: var(--content-wide-max-width);
+        --departures-max-width: var(--content-medium-max-width);
         --departures-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
 
         --departures-dates-display: flex;
