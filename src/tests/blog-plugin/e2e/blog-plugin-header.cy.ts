@@ -33,19 +33,19 @@ describe('blog plugin: header', () => {
         cy.get('.blog-header .blog-header__content').should('have.css', 'position', 'absolute');
         cy.get('.blog-header .blog-header__content').should('have.css', 'top', '432px');
         cy.get('.blog-header .blog-header__content').should('have.css', 'left', '960px');
-        cy.get('.blog-header .blog-header__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -936, -43)');
-        cy.get('.blog-header .blog-header__content').should('have.css', 'width', '1872px');
-        cy.get('.blog-header .blog-header__content').should('have.css', 'max-width', 'calc(100% - 48px)');
+        cy.get('.blog-header .blog-header__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -944, -43)');
+        cy.get('.blog-header .blog-header__content').should('have.css', 'width', '1888px');
+        cy.get('.blog-header .blog-header__content').should('have.css', 'max-width', 'calc(100% - 32px)');
         cy.get('.blog-header .blog-header__content').should('have.css', 'display', 'flex');
         cy.get('.blog-header .blog-header__content').should('have.css', 'flex-direction', 'column');
         cy.get('.blog-header .blog-header__content').should('have.css', 'align-items', 'center');
         cy.get('.blog-header .blog-header__content').should('have.css', 'justify-content', 'center');
 
-        cy.get('.blog-header .blog-header__content-title').should('have.css', 'padding', `${tokens.spacing.normal} ${tokens.spacing.l}`);
+        cy.get('.blog-header .blog-header__content-title').should('have.css', 'padding', `${tokens.spacing.normal}`);
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'background-color', colors.colorBg);
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'color', colors.colorPrimary);
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'border-radius', tokens.borderRadius.normal);
-        cy.get('.blog-header .blog-header__content-title').should('have.css', 'width', '521.25px');
+        cy.get('.blog-header .blog-header__content-title').should('have.css', 'width', '489.25px');
         cy.get('.blog-header .blog-header__content-title').should('have.css', 'text-align', 'center');
     });
 });
