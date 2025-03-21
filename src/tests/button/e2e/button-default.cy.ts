@@ -90,9 +90,10 @@ describe('toujou-button default', () => {
             e[0].setAttribute('button-variant', 'primary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
-        cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFont);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`);
+        cy.get('.button').should('have.css', 'opacity', `0.5`);
     });
 
     it('has correct default disabled secondary styles', () => {
@@ -100,9 +101,10 @@ describe('toujou-button default', () => {
             e[0].setAttribute('button-variant', 'secondary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
-        cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFont);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`);
+        cy.get('.button').should('have.css', 'opacity', `0.5`);
     });
 
     it('has correct disabled font styles', () => {
@@ -110,9 +112,10 @@ describe('toujou-button default', () => {
             e[0].setAttribute('button-variant', 'secondary');
             e[0].setAttribute('disabled', '');
         });
-        cy.get('.button').should('have.css', 'background-color', colors.colorFontLight);
-        cy.get('.button').should('have.css', 'color', colors.colorFont);
-        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFontLight}`);
+        cy.get('.button').should('have.css', 'background-color', colors.colorFont);
+        cy.get('.button').should('have.css', 'color', colors.colorBg);
+        cy.get('.button').should('have.css', 'border', `${tokens.border.normal} solid ${colors.colorFont}`);
+        cy.get('.button').should('have.css', 'opacity', `0.5`);
     });
 
     it('has correct default font size', () => {

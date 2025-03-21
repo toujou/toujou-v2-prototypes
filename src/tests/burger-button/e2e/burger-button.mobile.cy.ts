@@ -88,7 +88,7 @@ describe('open burger-button [mobile]', () => {
         // top line
         cy.get('.burger-button .burger-button__line[line-position="top"]').should('have.css', 'animation-duration', '0.5s');
         cy.get('.burger-button .burger-button__line[line-position="top"]').should('have.css', 'animation-name', 'line-top-activate');
-        cy.get('.burger-button .burger-button__line[line-position="top"]').should('have.css', 'background-color', colors.colorBg);
+        cy.get('.burger-button .burger-button__line[line-position="top"]').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.burger-button .burger-button__line[line-position="top"]').should('have.css', 'border-radius', '1.5px');
         cy.get('.burger-button .burger-button__line[line-position="top"]').should('have.css', 'height', '3px');
         cy.get('.burger-button .burger-button__line[line-position="top"]').should('have.css', 'width', '24px');
@@ -100,7 +100,7 @@ describe('open burger-button [mobile]', () => {
         // middle line
         cy.get('.burger-button .burger-button__line[line-position="middle"]').should('have.css', 'animation-duration', '0.5s');
         cy.get('.burger-button .burger-button__line[line-position="middle"]').should('have.css', 'animation-name', 'line-middle-activate');
-        cy.get('.burger-button .burger-button__line[line-position="middle"]').should('have.css', 'background-color', colors.colorBg);
+        cy.get('.burger-button .burger-button__line[line-position="middle"]').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.burger-button .burger-button__line[line-position="middle"]').should('have.css', 'border-radius', '1.5px');
         cy.get('.burger-button .burger-button__line[line-position="middle"]').should('have.css', 'height', '3px');
         cy.get('.burger-button .burger-button__line[line-position="middle"]').should('have.css', 'width', '24px');
@@ -112,7 +112,7 @@ describe('open burger-button [mobile]', () => {
         // bottom line
         cy.get('.burger-button .burger-button__line[line-position="bottom"]').should('have.css', 'animation-duration', '0.5s');
         cy.get('.burger-button .burger-button__line[line-position="bottom"]').should('have.css', 'animation-name', 'line-bottom-activate');
-        cy.get('.burger-button .burger-button__line[line-position="bottom"]').should('have.css', 'background-color', colors.colorBg);
+        cy.get('.burger-button .burger-button__line[line-position="bottom"]').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.burger-button .burger-button__line[line-position="bottom"]').should('have.css', 'border-radius', '1.5px');
         cy.get('.burger-button .burger-button__line[line-position="bottom"]').should('have.css', 'height', '3px');
         cy.get('.burger-button .burger-button__line[line-position="bottom"]').should('have.css', 'width', '24px');

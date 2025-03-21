@@ -19,7 +19,7 @@ describe('toujou-button with icon [mobile]', () => {
     });
 
     it('has icon element', () => {
-        cy.get('.button .button__icon').should('exist');
+        cy.get('.button .icon').should('exist');
     });
 
     it('shows icon on the correct side', () => {
