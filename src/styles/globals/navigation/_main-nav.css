@@ -65,28 +65,28 @@
 [navigation-color="default"] .main-nav {
     --main-nav-bg-color: var(--color-primary);
     --main-nav-link-color: var(--color-bg);
-    --main-nav-link-color-hover: var(--color-primary-dark);
+    --main-nav-link-color-hover: var(--main-nav-link-color);
     --main-nav-list-bg-color: var(--color-primary-dark);
 }
 
 [navigation-color="primary"] .main-nav {
     --main-nav-bg-color: var(--color-primary);
     --main-nav-link-color: var(--color-bg);
-    --main-nav-link-color-hover: var(--color-primary-dark);
+    --main-nav-link-color-hover: var(--main-nav-link-color);
     --main-nav-list-bg-color: var(--color-primary-dark);
 }
 
 [navigation-color="secondary"] .main-nav {
     --main-nav-bg-color: var(--color-secondary);
     --main-nav-link-color: var(--color-bg);
-    --main-nav-link-color-hover: var(--color-secondary-dark);
+    --main-nav-link-color-hover: var(--main-nav-link-color);
     --main-nav-list-bg-color: var(--color-secondary-dark);
 }
 
 [navigation-color="font"] .main-nav {
     --main-nav-bg-color: var(--color-font);
     --main-nav-link-color: var(--color-bg);
-    --main-nav-link-color-hover: var(--color-font-dark);
+    --main-nav-link-color-hover: var(--main-nav-link-color);
     --main-nav-list-bg-color: var(--color-font-dark);
 }
 
@@ -123,10 +123,6 @@
     transition: var(--main-nav-chevron-transition);
 }
 
-.main-nav__chevron:focus-visible .icon {
-    background-color: var(--color-bg);
-}
-
 .main-nav__list-item[is-open] > .main-nav__chevron .icon {
     rotate: -180deg;
 }
@@ -139,6 +135,10 @@
 
     .topbar:has(.language-picker, .language-picker-dropdown) .main-nav {
         --main-nav-padding: var(--spacing-xxl) var(--spacing-normal) calc(var(--service-nav-height) + var(--spacing-l)) var(--spacing-normal)
+    }
+
+    .main-nav__chevron:focus-visible .icon {
+        background-color: var(--color-bg);
     }
 }
 
@@ -203,10 +203,11 @@
     [navigation-color="default"] .main-nav {
         --main-nav-bg-color: var(--color-bg);
         --main-nav-link-color: var(--color-primary);
-        --main-nav-link-color-hover: var(--color-primary);
+        --main-nav-link-color-hover: var(--color-primary-dark);
         --main-nav-list-bg-color: var(--color-bg);
         --main-nav-chevron-color: var(--color-primary);
-        --main-nav-chevron-color-hover: var(--color-primary);
+        --main-nav-chevron-color-hover: var(--main-nav-link-color-hover);
+        --focus-outline-color: var(--color-primary);
     }
 
     [navigation-color="primary"] .main-nav {
@@ -215,7 +216,7 @@
         --main-nav-link-color-hover: var(--color-bg);
         --main-nav-list-bg-color: var(--color-primary);
         --main-nav-chevron-color: var(--color-bg);
-        --main-nav-chevron-color-hover: var(--color-primary-dark);
+        --main-nav-chevron-color-hover: var(--main-nav-link-color-hover);
     }
 
     [navigation-color="secondary"] .main-nav {
@@ -224,7 +225,7 @@
         --main-nav-link-color-hover: var(--color-bg);
         --main-nav-list-bg-color: var(--color-secondary);
         --main-nav-chevron-color: var(--color-bg);
-        --main-nav-chevron-color-hover: var(--color-secondary-dark);
+        --main-nav-chevron-color-hover: var(--main-nav-link-color-hover);
     }
 
     [navigation-color="font"] .main-nav {
@@ -233,7 +234,7 @@
         --main-nav-link-color-hover: var(--color-bg);
         --main-nav-list-bg-color: var(--color-font);
         --main-nav-chevron-color: var(--color-bg);
-        --main-nav-chevron-color-hover: var(--color-font-light);
+        --main-nav-chevron-color-hover: var(--main-nav-link-color-hover);
     }
 
     .main-nav__link {
@@ -281,5 +282,9 @@
         padding: var(--main-nav-text-padding);
         white-space: wrap;
         line-height: var(--line-height-s);
+    }
+
+    a:not(.button).main-nav__link:is(:hover, :focus-visible) {
+        color: var(--main-nav-link-color-hover);
     }
 }
