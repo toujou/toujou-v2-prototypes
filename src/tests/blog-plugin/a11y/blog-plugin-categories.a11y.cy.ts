@@ -7,9 +7,9 @@ describe('blog-plugin: categories a11y', () => {
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', async () => { // Make the test async
         cy.get('.categories-list');
-        cy.checkA11y(
+        await cy.checkA11y( // Await the check
             '.categories-list',
             {
                 rules: {
@@ -18,6 +18,6 @@ describe('blog-plugin: categories a11y', () => {
             }
         );
     });
-})
+});
 
-export {}
+export {};

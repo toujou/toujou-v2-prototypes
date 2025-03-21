@@ -7,9 +7,9 @@ describe('blog-plugin: footer a11y', () => {
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', async () => {
         cy.get('.blog-footer');
-        cy.checkA11y(
+        await cy.checkA11y(
             '.blog-footer',
             {
                 rules: {

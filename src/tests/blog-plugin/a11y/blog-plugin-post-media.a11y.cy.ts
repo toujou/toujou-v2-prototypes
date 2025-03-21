@@ -7,9 +7,9 @@ describe('blog-plugin: post-meta a11y', () => {
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', async () => {
         cy.get('.post-meta');
-        cy.checkA11y(
+        await cy.checkA11y(
             '.post-meta',
             {
                 rules: {

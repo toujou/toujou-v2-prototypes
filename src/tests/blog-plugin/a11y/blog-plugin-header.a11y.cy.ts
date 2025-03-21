@@ -7,9 +7,9 @@ describe('blog-plugin: header a11y', () => {
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', async () => {
         cy.get('.blog-header');
-        cy.checkA11y('.blog-header');
+        await cy.checkA11y('.blog-header');
     });
 })
 

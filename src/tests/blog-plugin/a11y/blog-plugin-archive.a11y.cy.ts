@@ -7,9 +7,9 @@ describe('blog-plugin: archive a11y', () => {
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', async () => {
         cy.get('.blog-archive');
-        cy.checkA11y('.blog-archive');
+        await cy.checkA11y('.blog-archive');
     });
 })
 

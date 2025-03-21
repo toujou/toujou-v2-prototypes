@@ -1,54 +1,27 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-/// <reference types="cypress" />
+const blockquoteVariants = [
+    { name: 'default', url: '/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid' },
+    { name: '2 cols', url: '/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid&args=gridCount:2' },
+    { name: '3 cols', url: '/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid&args=gridCount:3' },
+    { name: 'horizontal', url: '/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid&args=direction:horizontal' }
+];
 
-describe('blockquote grid a11y', () => {
+describe('Blockquote grid accessibility tests', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid');
+        cy.visit('/');
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.blockquote-grid');
-        cy.checkA11y('.blockquote-grid');
+    blockquoteVariants.forEach(({ name, url }) => {
+        it(`has no detectable a11y violations for ${name} variant`, () => {
+            cy.visit(url);
+            cy.get('.blockquote-grid').should('exist');
+            cy.wait(1000); // Give the page time to fully render before running Axe
+            cy.checkA11y('.blockquote-grid');
+        });
     });
 });
 
-describe('blockquote grid - 2 cols a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid&args=gridCount:2');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.blockquote-grid');
-        cy.checkA11y('.blockquote-grid');
-    });
-});
-
-describe('blockquote grid - 3 cols a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid&args=gridCount:3');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.blockquote-grid');
-        cy.checkA11y('.blockquote-grid');
-    });
-});
-
-describe('blockquote grid - horizontal a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-blockquote--toujou-blockquote-grid&args=direction:horizontal');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.blockquote-grid');
-        cy.checkA11y('.blockquote-grid');
-    });
-});
-
-export {}
+export {};

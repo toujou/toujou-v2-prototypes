@@ -7,9 +7,9 @@ describe('blog-plugin: post-list a11y', () => {
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', async () => {
         cy.get('.collection-item');
-        cy.checkA11y('.collection-item');
+        await cy.checkA11y('.collection-item');
     });
 })
 

@@ -7,9 +7,9 @@ describe('blog-plugin: tags a11y', () => {
         cy.injectAxe();
     });
 
-    it('has no detectable a11y violation on load', () => {
+    it('has no detectable a11y violation on load', async () => {
         cy.get('.tags-list');
-        cy.checkA11y(
+        await cy.checkA11y(
             '.tags-list',
             {
                 rules: {
@@ -19,6 +19,5 @@ describe('blog-plugin: tags a11y', () => {
         );
     });
 })
-
 
 export {}
