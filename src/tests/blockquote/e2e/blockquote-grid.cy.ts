@@ -7,7 +7,7 @@ describe('blockquote grid', () => {
 
     it('has correct structure', () => {
         cy.get('toujou-blockquote-grid.blockquote-grid').should('exist');
-        cy.get('toujou-blockquote-grid.blockquote-grid').children('.blockquote').should('have.length', 4);
+        cy.get('toujou-blockquote-grid.blockquote-grid').children('.blockquote').should('have.length', 8);
     });
 });
 
@@ -29,7 +29,7 @@ describe('blockquote grid - 3 cols', () => {
 
     it('has correct structure', () => {
         cy.get('toujou-blockquote-grid.blockquote-grid').invoke('attr', 'blockquote-grid-count').should('eq', '3');
-        cy.get('toujou-blockquote-grid.blockquote-grid').should('have.css', 'grid-template-columns', '448px 448px 448px');
+        cy.get('toujou-blockquote-grid.blockquote-grid').should('have.css', 'grid-template-columns', '324px 324px 324px 324px');
     });
 });
 

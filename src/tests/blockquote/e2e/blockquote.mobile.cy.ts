@@ -30,7 +30,7 @@ describe('blockquote [mobile]', () => {
     it('has correct styles', () => {
         cy.get('toujou-blockquote').should('have.css', 'background-color', colors.colorBg);
         cy.get('toujou-blockquote').should('have.css', 'display', 'grid');
-        cy.get('toujou-blockquote').should('have.css', 'grid-template-columns', '343px');
+        cy.get('toujou-blockquote').should('have.css', 'grid-template-columns', '296px');
         cy.get('toujou-blockquote').should('have.css', 'z-index', tokens.zIndex.content);
         cy.get('toujou-blockquote').should('have.css', 'grid-template-areas', '"blockquoteImage" "blockquoteQuote" "blockquoteAuthor"');
     });

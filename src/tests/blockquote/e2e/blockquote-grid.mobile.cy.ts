@@ -8,7 +8,7 @@ describe('blockquote grid [mobile]', () => {
 
     it('has correct structure', () => {
         cy.get('toujou-blockquote-grid.blockquote-grid').should('exist');
-        cy.get('toujou-blockquote-grid.blockquote-grid').children('.blockquote').should('have.length', 4);
+        cy.get('toujou-blockquote-grid.blockquote-grid').children('.blockquote').should('have.length', 8);
     });
 });
 
