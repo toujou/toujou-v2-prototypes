@@ -22,16 +22,22 @@ describe('toujou-breadcrumb [desktop]', () => {
         cy.get('toujou-breadcrumb .breadcrumb__list').children().should('have.length', 7);
     });
 
-    it('last item is selected', () => {
+    it('has correct item link styles', () => {
+        cy.get('toujou-breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link').invoke('attr', 'aria-current').should('eq', undefined);
+        cy.get('toujou-breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link').should('have.css', 'color', colors.colorPrimary);
+        cy.get('toujou-breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link').should('have.css', 'pointer-events', 'auto');
+    });
+
+    it('has correct "current" item link styles', () => {
         cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').invoke('attr', 'aria-current').should('eq', 'page');
-        cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').should('have.css', 'color', colors.colorPrimary);
+        cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').should('have.css', 'color', colors.colorFont);
         cy.get('toujou-breadcrumb .breadcrumb__item:last-child .breadcrumb__link').should('have.css', 'pointer-events', 'none');
     });
 
     it('nav items have correct hover styles', () => {
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorFont);
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').realHover();
-        cy.get('toujou-breadcrumb .breadcrumb__item:first-child .breadcrumb__link').should('have.css', 'color', colors.colorPrimary);
+        cy.get('toujou-breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link').should('have.css', 'color', colors.colorPrimary);
+        cy.get('toujou-breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link').realHover();
+        cy.get('toujou-breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link').should('have.css', 'color', colors.colorPrimaryDark);
     });
 
     it('first item has "hover" icon', () => {
