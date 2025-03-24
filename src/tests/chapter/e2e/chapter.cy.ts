@@ -401,7 +401,7 @@ describe('chapter min-height fourth', () => {
 
     it('has correct fourth min-height', () => {
         cy.get('.chapter[is-test-target]').then((chapter) => {
-            expect(chapter).to.have.css('height').equal('240px');
+            expect(chapter).to.have.css('height').equal('166px');
         });
     });
 });

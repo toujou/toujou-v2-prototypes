@@ -3,7 +3,7 @@
 
 describe('button - a11y', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-default');
         cy.injectAxe();
     });
 

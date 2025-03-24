@@ -3,7 +3,7 @@
 describe('card-collection [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-default');
     });
 
     it('exists', () => {

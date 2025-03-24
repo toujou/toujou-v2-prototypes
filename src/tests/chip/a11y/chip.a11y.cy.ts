@@ -1,128 +1,42 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
+const chipVariants = [
+    'default',
+    'primary',
+    'primary-light',
+    'primary-very-light',
+    'primary-dark',
+    'secondary',
+    // 'secondary-light', // Commented out, but can be re-enabled
+    'secondary-very-light',
+    'secondary-dark',
+    'font',
+    'font-light',
+    'primary-font-very-light',
+    'font-dark',
+    // 'success', // Commented out
+    // 'warning', // Commented out
+    'error'
+];
+
 describe('toujou-chip a11y', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-chip--chip');
         cy.injectAxe();
     });
 
-    it('default: has no detectable a11y violation on load', () => {
-        cy.get('.chip');
-        cy.checkA11y('.chip');
-    });
-
-    it('primary: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'primary');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    it('primary-light: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'primary-light');
-        });
-        cy.checkA11y(
-            '.chip',
-            {
-                rules: {
-                    'color-contrast': { enabled: false }
-                }
+    Cypress._.each(chipVariants, (variant) => {
+        it(`${variant}: has no detectable a11y violation on load`, () => {
+            if (variant !== 'default') {
+                cy.get('.chip').invoke('attr', 'chip-bg-color', variant);
             }
-        );
-    });
 
-    it('primary-very-light: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'primary-very-light');
+            const options = variant === 'primary-light' ? { rules: { 'color-contrast': { enabled: false } } } : undefined;
+            // @ts-ignore
+            cy.checkA11yWithWait('.chip', options);
         });
-        cy.checkA11y('.chip');
     });
+});
 
-    it('primary-dark: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'primary-dark');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    it('secondary: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'secondary');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    // it('secondary-light: has no detectable a11y violation on load', () => {
-    //     cy.get('.chip').then((e) => {
-    //         e[0].setAttribute('chip-bg-color', 'secondary-light');
-    //     });
-    //     cy.checkA11y('.chip');
-    // });
-
-    it('secondary-very-light: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'secondary-very-light');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    it('secondary-dark: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'secondary-dark');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    it('font: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'font');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    it('font-light: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'font-light');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    it('primary-font-very-light: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'primary-font-very-light');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    it('font-dark: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'font-dark');
-        });
-        cy.checkA11y('.chip');
-    });
-
-    // it('success: has no detectable a11y violation on load', () => {
-    //     cy.get('.chip').then((e) => {
-    //         e[0].setAttribute('chip-bg-color', 'success');
-    //     });
-    //     cy.checkA11y('.chip');
-    // });
-
-    // it('warning: has no detectable a11y violation on load', () => {
-    //     cy.get('.chip').then((e) => {
-    //         e[0].setAttribute('chip-bg-color', 'warning');
-    //     });
-    //     cy.checkA11y('.chip');
-    // });
-
-    it('error: has no detectable a11y violation on load', () => {
-        cy.get('.chip').then((e) => {
-            e[0].setAttribute('chip-bg-color', 'error');
-        });
-        cy.checkA11y('.chip');
-    });
-})
-
-export {}
+export {};

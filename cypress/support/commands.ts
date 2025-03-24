@@ -107,8 +107,23 @@ Cypress.Commands.add("shouldHaveTrimmedText", { prevSubject: true },
     },
 );
 
+
+/**
+ * Custom Cypress command to check accessibility using axe-core, with a wait mechanism
+ * to ensure only one Axe run is executed at a time.
+ *
+ * @param {string} selector - The CSS selector of the element to check for accessibility violations.
+ * @param {object} [options] - Optional Axe options to customize the accessibility check (e.g., to disable specific rules).
+ *
+ * @example
+ * // Basic usage
+ * cy.checkA11yWithWait('.chip');
+ *
+ * // With custom options (e.g., disabling the color-contrast rule)
+ * cy.checkA11yWithWait('.chip', { rules: { 'color-contrast': { enabled: false } } });
+ */
 // @ts-ignore
-Cypress.Commands.add('checkA11yWithWait', (selector: string) => {
+Cypress.Commands.add('checkA11yWithWait', (selector: string, options?: object) => {
     cy.get(selector).should('exist').should('be.visible');
 
     cy.window().then(async (win) => {
@@ -121,7 +136,7 @@ Cypress.Commands.add('checkA11yWithWait', (selector: string) => {
             await new Promise((resolve) => setTimeout(resolve, 50));
         }
 
-        cy.checkA11y(selector);
+        cy.checkA11y(selector, options);
     });
 });
 

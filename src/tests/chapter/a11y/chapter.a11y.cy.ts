@@ -1,89 +1,28 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('chapter default a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=variant:default');
-        cy.injectAxe();
+const chapterVariants = [
+    { name: 'default', args: 'variant:default' },
+    { name: 'primary', args: 'variant:primary' },
+    { name: 'secondary', args: 'variant:secondary' },
+    { name: 'inverted', args: 'variant:inverted' },
+    { name: 'none', args: 'variant:none' },
+    { name: 'white', args: 'variant:white' },
+    { name: 'no padding', args: 'hasNoPaddingAttr:true' }
+];
+
+Cypress._.each(chapterVariants, (variant) => {
+    describe(`chapter ${variant.name} a11y`, () => {
+        beforeEach(() => {
+            cy.visit(`/iframe.html?viewMode=story&id=components-chapter--chapter&args=${variant.args}`);
+            cy.injectAxe();
+        });
+
+        it(`"${variant.name}" has no detectable a11y violations on load`, () => {
+            // @ts-ignore
+            cy.checkA11yWithWait('.chapter[is-test-target]');
+        });
     });
+});
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
-describe('chapter primary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=variant:primary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
-describe('chapter secondary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=variant:secondary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
-describe('chapter inverted a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=variant:inverted');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
-describe('chapter none a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=variant:none');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
-describe('chapter none a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=variant:white');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
-describe('chapter no padding a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-chapter--chapter&args=hasNoPaddingAttr:true');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.chapter');
-        cy.checkA11y('.chapter');
-    });
-})
-
-
-export {}
+export {};
