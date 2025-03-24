@@ -21,7 +21,7 @@ describe('estimated-reading-time', () => {
         // @ts-ignore
         cy.get('.estimated-reading-time').shouldHaveTrimmedText('Estimated reading time:');
         // @ts-ignore
-        cy.get('.estimated-reading-time').shadow().shouldHaveTrimmedText('3 minutes');
+        cy.get('.estimated-reading-time').shadow().shouldHaveTrimmedText('4 minutes');
 
     });
 

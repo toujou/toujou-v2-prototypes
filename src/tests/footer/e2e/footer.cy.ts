@@ -41,7 +41,7 @@ describe('footer', () => {
         cy.get('footer .footer-column:nth-child(4) .footer__address .footer__address-text--fax').should('exist');
         cy.get('footer .footer-column:nth-child(4) .footer__address .footer__address-text--mail').should('exist');
         cy.get('footer .footer-column:nth-child(4) .footer__socials').should('exist');
-        cy.get('footer .footer-column:nth-child(4) .footer__socials').children('.footer__socials-link').should('have.length', 3);
+        cy.get('footer .footer-column:nth-child(4) .footer__socials').children('.footer__socials-link').should('have.length', 5);
         cy.get('footer .footer-column:nth-child(4) .footer__socials .icon').should('exist');
     });
 
