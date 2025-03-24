@@ -7,7 +7,7 @@
         --sl-link-font-size: var(--skip-links-font-size);
         --sl-element-height: var(--topbar-height);
 
-        --skip-links-background-color: var(--color-error);
+        --skip-links-background-color: var(--color-primary);
         --skip-links-border: none;
         --skip-links-font-family: var(--font-family-text);
         --skip-links-font-size: var(--font-size-normal);
