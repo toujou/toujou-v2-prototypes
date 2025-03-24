@@ -3,13 +3,14 @@
 
 describe('list-item a11y', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-default');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-default');
         cy.injectAxe();
     });
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.item-collection');
-        cy.checkA11y('.item-collection', {
+        // @ts-ignore
+        cy.checkA11yWithWait('.item-collection', {
             rules: {
                 'landmark-no-duplicate-banner': { enabled: false }
             }

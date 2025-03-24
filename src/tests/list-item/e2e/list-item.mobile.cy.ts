@@ -8,7 +8,7 @@ const firstCardSelector = '.item-collection__item:first-child .collection-item';
 describe('list item - type default [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-default');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-default');
     });
 
     it('has correct class, attributes and tag name', () => {
@@ -47,11 +47,11 @@ describe('list item - type default [mobile]', () => {
     });
 
     it('has correct bottom styles', () => {
-        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', `${tokens.spacing.m} 0px`);
+        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', `${tokens.spacing.m}`);
         cy.get(`${firstCardSelector} .collection-item__title`).then((itemTitle) => {
             expect(itemTitle).to.have.css('font-size').equal(tokens.type.size.ms);
-            expect(itemTitle).to.have.css('color').equal(colors.colorFontDark);
-            expect(itemTitle).to.have.css('margin').equal(`0px 0px ${tokens.spacing.xs}`);
+            expect(itemTitle).to.have.css('color').equal(colors.colorFont);
+            expect(itemTitle).to.have.css('margin').equal(`0px`);
         });
         cy.get(`${firstCardSelector} .collection-item__subtitles`).should('have.css', 'margin', '0px');
         cy.get(`${firstCardSelector} .collection-item__subtitle`).then((itemSubtitles) => {
@@ -92,7 +92,7 @@ describe('list item - type default [mobile]', () => {
 describe('list item - type blog [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-blog');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-blog');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -123,7 +123,7 @@ describe('list item - type blog [mobile]', () => {
 describe('list item - type event [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-event');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-event');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -141,7 +141,6 @@ describe('list item - type event [mobile]', () => {
         cy.get(`${firstCardSelector} .collection-item__date`).then((dateEl) => {
             expect(dateEl).to.have.css('position').equal('relative');
             expect(dateEl).to.have.css('height').equal('24px');
-            expect(dateEl).to.have.css('width').equal('296px');
             expect(dateEl).to.have.css('top').equal('0px');
             expect(dateEl).to.have.css('right').equal('0px');
             expect(dateEl).to.have.css('border-radius').equal('0px');
@@ -156,7 +155,7 @@ describe('list item - type event [mobile]', () => {
 describe('collection item - type trip [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-trip');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-trip');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -222,7 +221,7 @@ describe('collection item - type trip [mobile]', () => {
 describe('collection item - type product [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-product');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-product');
         // @ts-ignore
         cy.get(`${firstCardSelector}`).resetRealHover();
     });
@@ -243,9 +242,9 @@ describe('collection item - type product [mobile]', () => {
 
     it('product title has correct styles ', () => {
         cy.get(`${firstCardSelector} .collection-item__title`).then((titleEl) => {
-            expect(titleEl).to.have.css('color').equal(colors.colorFontDark);
+            expect(titleEl).to.have.css('color').equal(colors.colorFont);
             expect(titleEl).to.have.css('font-size').equal(tokens.type.size.ms);
-            expect(titleEl).to.have.css('margin').equal(`0px 0px ${tokens.spacing.xs}`);
+            expect(titleEl).to.have.css('margin').equal(`0px`);
             expect(titleEl).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
         });
     });

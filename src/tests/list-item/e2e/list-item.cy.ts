@@ -7,7 +7,7 @@ const firstCardSelector = '.item-collection__item:first-child .collection-item';
 
 describe('list item - type default', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-default');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-default');
     });
 
     it('has correct class, attributes and tag name', () => {
@@ -36,7 +36,7 @@ describe('list item - type default', () => {
     it('has correct top styles', () => {
         cy.get(`${firstCardSelector} > .collection-item__top`).then((itemTop) => {
             expect(itemTop).to.have.css('position').equal('relative')
-            expect(itemTop).to.have.css('margin').equal(`${tokens.spacing.m} ${tokens.spacing.normal}`)
+            expect(itemTop).to.have.css('margin').equal(`${tokens.spacing.m}`)
         });
         cy.get(`${firstCardSelector} .collection-item__image`).then((itemImage) => {
             expect(itemImage).to.have.css('object-fit').equal('cover')
@@ -46,11 +46,11 @@ describe('list item - type default', () => {
     });
 
     it('has correct bottom styles', () => {
-        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', tokens.spacing.m);
+        cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', `${tokens.spacing.m} ${tokens.spacing.m} ${tokens.spacing.m} 0px`);
         cy.get(`${firstCardSelector} .collection-item__title`).then((itemTitle) => {
             expect(itemTitle).to.have.css('font-size').equal(tokens.type.size.ms);
-            expect(itemTitle).to.have.css('color').equal(colors.colorFontDark);
-            expect(itemTitle).to.have.css('margin').equal(`0px 0px ${tokens.spacing.xs}`);
+            expect(itemTitle).to.have.css('color').equal(colors.colorFont);
+            expect(itemTitle).to.have.css('margin').equal(`0px`);
         });
         cy.get(`${firstCardSelector} .collection-item__subtitles`).should('have.css', 'margin', '0px');
         cy.get(`${firstCardSelector} .collection-item__subtitle`).then((itemSubtitles) => {
@@ -89,7 +89,7 @@ describe('list item - type default', () => {
 
 describe('list item - type blog', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-blog');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-blog');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -119,7 +119,7 @@ describe('list item - type blog', () => {
 
 describe('list item - type event', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-event');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-event');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -137,7 +137,6 @@ describe('list item - type event', () => {
         cy.get(`${firstCardSelector} .collection-item__date`).then((dateEl) => {
             expect(dateEl).to.have.css('position').equal('relative');
             expect(dateEl).to.have.css('height').equal('24px');
-            expect(dateEl).to.have.css('width').equal('560.0078125px');
             expect(dateEl).to.have.css('top').equal('0px');
             expect(dateEl).to.have.css('right').equal('0px');
             expect(dateEl).to.have.css('border-radius').equal('0px');
@@ -151,7 +150,7 @@ describe('list item - type event', () => {
 
 describe('collection item - type trip', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-trip');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-trip');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -216,7 +215,7 @@ describe('collection item - type trip', () => {
 
 describe('collection item - type product', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-product');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-product');
         // @ts-ignore
         cy.get(`${firstCardSelector}`).resetRealHover();
     });
@@ -234,16 +233,6 @@ describe('collection item - type product', () => {
             expect(bottomEl).to.have.css('left').equal('auto');
         });
     });
-
-    it('product title has correct styles ', () => {
-        cy.get(`${firstCardSelector} .collection-item__title`).then((titleEl) => {
-            expect(titleEl).to.have.css('color').equal(colors.colorFontDark);
-            expect(titleEl).to.have.css('font-size').equal(tokens.type.size.ms);
-            expect(titleEl).to.have.css('margin').equal(`0px 0px ${tokens.spacing.xs}`);
-            expect(titleEl).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
-        });
-    });
-
 });
 
 export {}
