@@ -26,7 +26,7 @@ describe('gallery', () => {
     it('has correct styles', () => {
         cy.get('.gallery').should('have.css', 'display', 'grid');
         cy.get('.gallery').should('have.css', 'grid-template-columns', '314.664px 314.664px 314.664px');
-        cy.get('.gallery').should('have.css', 'grid-gap', `${tokens.spacing.s} ${tokens.spacing.s}`);
+        cy.get('.gallery').should('have.css', 'grid-gap', `${tokens.spacing.s}`);
         cy.get('.gallery').should('have.css', 'width', '960px');
         cy.get('.gallery').should('have.css', 'max-width', '960px');
         cy.get('.gallery').should('have.css', 'margin', '0px 464px');
@@ -61,7 +61,7 @@ describe('gallery', () => {
         // @ts-ignore
         cy.get('.gallery .gallery__item:first-child').before('opacity').should('eq', '0');
         // @ts-ignore
-        cy.get('.gallery .gallery__item:first-child').before('transition').should('eq', 'opacity 0.25s ease-in-out 0s');
+        cy.get('.gallery .gallery__item:first-child').before('transition').should('eq', 'opacity 0.25s ease-in-out');
 
         // @ts-ignore
         cy.get('.gallery .gallery__item:first-child').after('content').should('eq', '');
@@ -84,7 +84,7 @@ describe('gallery', () => {
         // @ts-ignore
         cy.get('.gallery .gallery__item:first-child').after('opacity').should('eq', '0');
         // @ts-ignore
-        cy.get('.gallery .gallery__item:first-child').after('transition').should('eq', 'opacity 0.25s ease-in-out 0s');
+        cy.get('.gallery .gallery__item:first-child').after('transition').should('eq', 'opacity 0.25s ease-in-out');
 
         cy.get('.gallery .gallery__item:first-child').realHover();
         cy.wait(300);
