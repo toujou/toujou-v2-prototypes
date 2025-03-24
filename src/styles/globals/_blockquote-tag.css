@@ -4,6 +4,7 @@ blockquote:not(.blockquote__blockquote) {
     --blockquote-tag-width: var(--content-width-with-padding);
     --blockquote-tag-max-width: var(--content-max-width);
     --blockquote-tag-position: relative;
+    --blockquote-tag-text-color: var(--color-font);
 
     --blockquote-tag-icon-color: var(--color-font-dark);
     --blockquote-tag-icon-size: var(--spacing-xl);
@@ -14,6 +15,12 @@ blockquote:not(.blockquote__blockquote) {
     width: var(--blockquote-tag-width);
     max-width: var(--blockquote-tag-max-width);
     position: var(--blockquote-tag-position);
+    color: var(--blockquote-tag-text-color);
+}
+
+.chapter[background-color]:not([background-color="bg"]) > blockquote:not(.blockquote__blockquote) {
+    --blockquote-tag-text-color: var(--color-bg);
+    --blockquote-tag-icon-color: var(--blockquote-tag-text-color);
 }
 
 blockquote:not(.blockquote__blockquote)::before {
@@ -32,16 +39,25 @@ blockquote:not(.blockquote__blockquote)::before {
     mask-image: var(--blockquote-tag-icon-image);
 }
 
-blockquote:not(.blockquote__blockquote) + .blockquote__author {
+blockquote:not(.blockquote__blockquote) + p.blockquote__author {
     font-family: var(--font-family-text);
     font-size: var(--font-size-normal);
-    color: var(--color-font);
+    color: var(--blockquote-tag-text-color);
     line-height: var(--line-height-normal);
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: var(--spacing-between-elements-normal);
+}
+
+.chapter[background-color]:not([background-color="bg"]) > blockquote:not(.blockquote__blockquote) + p.blockquote__author {
+    color: var(--color-bg) !important;
+}
+
+
+blockquote:not(.blockquote__blockquote) p {
+    color: var(--blockquote-tag-text-color);
 }
 
 blockquote:not(.blockquote__blockquote) + .blockquote__author::before {

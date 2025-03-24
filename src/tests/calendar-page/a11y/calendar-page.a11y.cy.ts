@@ -9,31 +9,18 @@ describe('Calendar page a11y', () => {
         cy.injectAxe();
     });
 
-    it('single day inline has no detectable a11y violation on load', () => {
-        cy.get(CALENDAR_PAGE_SELECTORS.SINGLE_DAY_INLINE);
-        cy.checkA11y(CALENDAR_PAGE_SELECTORS.SINGLE_DAY_INLINE);
+    [
+        { name: 'single day inline', selector: CALENDAR_PAGE_SELECTORS.SINGLE_DAY_INLINE },
+        { name: 'single day no time', selector: CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME },
+        { name: 'single day with time', selector: CALENDAR_PAGE_SELECTORS.SINGLE_DAY_WITH_TIME },
+        { name: 'multi day no time', selector: CALENDAR_PAGE_SELECTORS.MULTI_DAY_NO_TIME },
+        { name: 'multi day with time', selector: CALENDAR_PAGE_SELECTORS.MULTI_DAY_WITH_TIME }
+    ].forEach(({ name, selector }) => {
+        it(`${name} has no detectable a11y violation on load`, () => {
+            // @ts-ignore
+            cy.checkA11yWithWait(selector);
+        });
     });
-
-    it('single day no time has no detectable a11y violation on load', () => {
-        cy.get(CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME);
-        cy.checkA11y(CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME);
-    });
-
-    it('single day with time has no detectable a11y violation on load', () => {
-        cy.get(CALENDAR_PAGE_SELECTORS.SINGLE_DAY_WITH_TIME);
-        cy.checkA11y(CALENDAR_PAGE_SELECTORS.SINGLE_DAY_WITH_TIME);
-    });
-
-    it('multi day no time has no detectable a11y violation on load', () => {
-        cy.get(CALENDAR_PAGE_SELECTORS.MULTI_DAY_NO_TIME);
-        cy.checkA11y(CALENDAR_PAGE_SELECTORS.MULTI_DAY_NO_TIME);
-    });
-
-    it('multi day with time has no detectable a11y violation on load', () => {
-        cy.get(CALENDAR_PAGE_SELECTORS.MULTI_DAY_WITH_TIME);
-        cy.checkA11y(CALENDAR_PAGE_SELECTORS.MULTI_DAY_WITH_TIME);
-    });
-
-})
+});
 
 export {}

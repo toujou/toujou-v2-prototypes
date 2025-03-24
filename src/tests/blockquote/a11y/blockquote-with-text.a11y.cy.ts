@@ -9,7 +9,8 @@ describe('blockquote with text a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.grid');
-        cy.checkA11y('.grid');
+        // @ts-ignore
+        cy.checkA11yWithWait('.grid');
     });
 })
 

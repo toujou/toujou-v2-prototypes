@@ -9,7 +9,8 @@ describe('blog-plugin: archive a11y', () => {
 
     it('has no detectable a11y violation on load', async () => {
         cy.get('.blog-archive');
-        await cy.checkA11y('.blog-archive');
+        // @ts-ignore
+        await cy.checkA11yWithWait('.blog-archive');
     });
 })
 

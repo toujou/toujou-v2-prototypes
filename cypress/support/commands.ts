@@ -107,4 +107,22 @@ Cypress.Commands.add("shouldHaveTrimmedText", { prevSubject: true },
     },
 );
 
+// @ts-ignore
+Cypress.Commands.add('checkA11yWithWait', (selector: string) => {
+    cy.get(selector).should('exist').should('be.visible');
+
+    cy.window().then(async (win) => {
+        if (!win.axe) {
+            throw new Error('Axe is not loaded');
+        }
+
+        // Wait if another Axe run is in progress
+        while ((win.axe as any)._running) {
+            await new Promise((resolve) => setTimeout(resolve, 50));
+        }
+
+        cy.checkA11y(selector);
+    });
+});
+
 export {}

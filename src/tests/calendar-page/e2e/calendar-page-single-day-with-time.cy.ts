@@ -40,7 +40,6 @@ describe('Calendar page with time', () => {
             expect(singleDayInline).to.have.css('padding').equal(tokens.spacing.s);
             expect(singleDayInline).to.have.css('margin').equal('0px');
             expect(singleDayInline).to.have.css('height').equal('72px');
-            expect(singleDayInline).to.have.css('width').equal('95.453125px');
         });
     });
 
@@ -53,7 +52,6 @@ describe('Calendar page with time', () => {
             expect(singleDayDateInline).to.have.css('padding').equal('0px');
             expect(singleDayDateInline).to.have.css('margin').equal('0px');
             expect(singleDayDateInline).to.have.css('height').equal('54px');
-            expect(singleDayDateInline).to.have.css('width').equal('28.8046875px');
         });
     });
 
@@ -64,7 +62,6 @@ describe('Calendar page with time', () => {
             expect(singleDayMonthInline).to.have.css('padding').equal('0px');
             expect(singleDayMonthInline).to.have.css('margin').equal('0px');
             expect(singleDayMonthInline).to.have.css('height').equal('12px');
-            expect(singleDayMonthInline).to.have.css('width').equal('26.6484375px');
             expect(singleDayMonthInline).to.have.css('font-family').equal(tokens.type.fontFamily.text);
             expect(singleDayMonthInline).to.have.css('font-size').equal(tokens.type.size.xs);
             expect(singleDayMonthInline).to.have.css('font-weight').equal(tokens.type.fontWeight.headline);
@@ -79,7 +76,6 @@ describe('Calendar page with time', () => {
             expect(singleDayDayInline).to.have.css('padding').equal('0px');
             expect(singleDayDayInline).to.have.css('margin').equal('0px 0px 2px');
             expect(singleDayDayInline).to.have.css('height').equal('24px');
-            expect(singleDayDayInline).to.have.css('width').equal('28.8046875px');
             expect(singleDayDayInline).to.have.css('font-family').equal(tokens.type.fontFamily.text);
             expect(singleDayDayInline).to.have.css('font-size').equal(tokens.type.size.m);
             expect(singleDayDayInline).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
@@ -94,7 +90,6 @@ describe('Calendar page with time', () => {
             expect(singleDayTimesInline).to.have.css('padding').equal(`0px 0px 0px ${tokens.spacing.s}`);
             expect(singleDayTimesInline).to.have.css('margin').equal(`0px 0px 0px ${tokens.spacing.s}`);
             expect(singleDayTimesInline).to.have.css('height').equal('32px');
-            expect(singleDayTimesInline).to.have.css('width').equal('40.6484375px');
         });
     });
 

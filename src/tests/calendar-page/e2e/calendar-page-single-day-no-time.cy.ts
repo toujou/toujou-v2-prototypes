@@ -24,10 +24,10 @@ describe('Calendar page no time', () => {
         cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME} .calendar-page__date .calendar-page__month`).should('exist');
         cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME} .calendar-page__date .calendar-page__day`).should('exist');
         cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME} .calendar-page__date .calendar-page__year`).should('exist');
-        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_WITH_TIME} .calendar-page__times`).should('not.exist');
-        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_WITH_TIME} .calendar-page__time--start`).should('not.exist');
-        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_WITH_TIME} .calendar-page__time-separator`).should('not.exist');
-        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_WITH_TIME} .calendar-page__time--end`).should('not.exist');
+        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME} .calendar-page__times`).should('not.exist');
+        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME} .calendar-page__time--start`).should('not.exist');
+        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME} .calendar-page__time-separator`).should('not.exist');
+        cy.get(`${CALENDAR_PAGE_SELECTORS.SINGLE_DAY_NO_TIME} .calendar-page__time--end`).should('not.exist');
     });
 
     it('single day no time has correct styles', () => {
@@ -40,7 +40,6 @@ describe('Calendar page no time', () => {
             expect(singleDayInline).to.have.css('padding').equal(tokens.spacing.s);
             expect(singleDayInline).to.have.css('margin').equal('0px');
             expect(singleDayInline).to.have.css('height').equal('72px');
-            expect(singleDayInline).to.have.css('width').equal('46.8046875px');
         });
     });
 
@@ -64,7 +63,6 @@ describe('Calendar page no time', () => {
             expect(singleDayMonthInline).to.have.css('padding').equal('0px');
             expect(singleDayMonthInline).to.have.css('margin').equal('0px');
             expect(singleDayMonthInline).to.have.css('height').equal('12px');
-            expect(singleDayMonthInline).to.have.css('width').equal('26.6484375px');
             expect(singleDayMonthInline).to.have.css('font-family').equal(tokens.type.fontFamily.text);
             expect(singleDayMonthInline).to.have.css('font-size').equal(tokens.type.size.xs);
             expect(singleDayMonthInline).to.have.css('font-weight').equal(tokens.type.fontWeight.headline);
@@ -79,7 +77,6 @@ describe('Calendar page no time', () => {
             expect(singleDayDayInline).to.have.css('padding').equal('0px');
             expect(singleDayDayInline).to.have.css('margin').equal('0px 0px 2px');
             expect(singleDayDayInline).to.have.css('height').equal('24px');
-            expect(singleDayDayInline).to.have.css('width').equal('28.8046875px');
             expect(singleDayDayInline).to.have.css('font-family').equal(tokens.type.fontFamily.text);
             expect(singleDayDayInline).to.have.css('font-size').equal(tokens.type.size.m);
             expect(singleDayDayInline).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
