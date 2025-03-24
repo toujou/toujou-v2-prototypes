@@ -27,7 +27,7 @@ describe('html multicolumn text - left [mobile]', () => {
     it('has correct styles', () => {
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '296px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
+        cy.get('toujou-grid').should('have.css', 'grid-gap', `${tokens.spacing.l}`);
 
     });
 })
@@ -57,7 +57,7 @@ describe('html multicolumn text - right [mobile]', () => {
     it('has correct styles', () => {
         cy.get('toujou-grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid').should('have.css', 'grid-template-columns', '296px');
-        cy.get('toujou-grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
+        cy.get('toujou-grid').should('have.css', 'grid-gap', `${tokens.spacing.l}`);
 
     });
 })
