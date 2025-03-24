@@ -32,7 +32,7 @@ describe('header - image-height', () => {
     it('has correct full height', () => {
         cy.get('.header').then((e) => {
             e[0].setAttribute('image-height', 'full');
-            cy.get('.header').should('have.css', 'height', `${desktopViewportHeight - 80}px`);
+            cy.get('.header').should('have.css', 'height', `${desktopViewportHeight}px`);
         });
     });
 

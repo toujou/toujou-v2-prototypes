@@ -43,7 +43,7 @@ describe('header - image-height [mobile]', () => {
         cy.get('.header')
             .then((e) => {
             e[0].setAttribute('image-height', 'full');
-            cy.get('.header').should('have.css', 'height', `${mobileViewportHeight - 64}px`);
+            cy.get('.header').should('have.css', 'height', `${mobileViewportHeight}px`);
         });
     });
 
@@ -154,14 +154,14 @@ describe('header - horizontal position [mobile]', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'left');
         });
-        cy.get('.header-content').should('have.css', 'left', tokens.spacing.xxl);
+        cy.get('.header-content').should('have.css', 'left', tokens.spacing.normal);
     });
 
     it('has correct "right" horizontal position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'right');
         });
-        cy.get('.header-content').should('have.css', 'right', tokens.spacing.xxl);
+        cy.get('.header-content').should('have.css', 'right', tokens.spacing.normal);
     });
 });
 

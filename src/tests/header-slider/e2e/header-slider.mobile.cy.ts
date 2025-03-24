@@ -49,7 +49,7 @@ describe('header - image-height [mobile]', () => {
     it('has correct full height', () => {
         cy.get('.header').then((e) => {
             e[0].setAttribute('image-height', 'full');
-            cy.get('.header').should('have.css', 'height', `603px`);
+            cy.get('.header').should('have.css', 'height', `667px`);
         });
     });
 
@@ -153,14 +153,14 @@ describe('header - horizontal position [mobile]', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'left');
         });
-        cy.get('.header-content').should('have.css', 'left', '64px');
+        cy.get('.header-content').should('have.css', 'left', '16px');
     });
 
     it('has correct "right" horizontal position', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('horizontal-position', 'right');
         });
-        cy.get('.header-content').should('have.css', 'right', '64px');
+        cy.get('.header-content').should('have.css', 'right', '16px');
     });
 });
 
