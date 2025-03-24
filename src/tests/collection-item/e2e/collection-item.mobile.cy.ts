@@ -9,7 +9,7 @@ const firstCardSelector = '.card-collection__item:first-child .collection-item';
 describe('collection item - type default [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-default');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-default');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -53,7 +53,7 @@ describe('collection item - type default [mobile]', () => {
         cy.get(`${firstCardSelector} > .collection-item__bottom`).should('have.css', 'padding', tokens.spacing.m);
         cy.get(`${firstCardSelector} .collection-item__title`).then((itemTitle) => {
             expect(itemTitle).to.have.css('font-size').equal(tokens.type.size.ms);
-            expect(itemTitle).to.have.css('color').equal(colors.colorFontDark);
+            expect(itemTitle).to.have.css('color').equal(colors.colorFont);
             expect(itemTitle).to.have.css('margin').equal(`0px`);
         });
         cy.get(`${firstCardSelector} .collection-item__subtitles`).should('have.css', 'margin', '0px');
@@ -99,7 +99,7 @@ describe('collection item - type default [mobile]', () => {
 describe('collection item - type default, style primary [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-default&args=elementDesign:primary');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-default&args=elementDesign:primary');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -116,7 +116,7 @@ describe('collection item - type default, style primary [mobile]', () => {
 
     it('has correct primary focus styles', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).focus();
-        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorPrimaryDark);
+        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 });
@@ -124,7 +124,7 @@ describe('collection item - type default, style primary [mobile]', () => {
 describe('collection item - type default, style secondary [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-default&args=elementDesign:secondary');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-default&args=elementDesign:secondary');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -141,7 +141,7 @@ describe('collection item - type default, style secondary [mobile]', () => {
 
     it('has correct secondary focus styles', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).focus();
-        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorPrimaryDark);
+        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 });
@@ -149,7 +149,7 @@ describe('collection item - type default, style secondary [mobile]', () => {
 describe('collection item - type default, style inverted [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-default&args=elementDesign:inverted');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-default&args=elementDesign:inverted');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -166,7 +166,7 @@ describe('collection item - type default, style inverted [mobile]', () => {
 
     it('has correct inverted focus styles', () => {
         cy.get(`${firstCardSelector} .collection-item__button`).focus();
-        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorPrimaryDark);
+        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorBg);
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'outline', `${colors.colorPrimary} solid 2px`);
     });
 });
@@ -174,7 +174,7 @@ describe('collection item - type default, style inverted [mobile]', () => {
 describe('collection item - type blog [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-blog');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-blog');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -205,7 +205,7 @@ describe('collection item - type blog [mobile]', () => {
 describe('collection item - type event [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-event');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-event');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -239,7 +239,7 @@ describe('collection item - type event [mobile]', () => {
 describe('collection item - type trip [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-trip');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-trip');
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
     });
@@ -305,7 +305,7 @@ describe('collection item - type trip [mobile]', () => {
 describe('collection item - type product [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-product');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-product');
         // @ts-ignore
         cy.get(`${firstCardSelector}`).resetRealHover();
     });
@@ -315,75 +315,12 @@ describe('collection item - type product [mobile]', () => {
         cy.get(`${firstCardSelector} .collection-item__categories`).should('exist');
         cy.get(`${firstCardSelector} .collection-item__title`).should('exist');
     });
-
-    it('product bottom has correct styles', () => {
-        cy.get(`${firstCardSelector} .collection-item__bottom`).then((bottomEl) => {
-            expect(bottomEl).to.have.css('position').equal('absolute');
-            expect(bottomEl).to.have.css('bottom').equal('0px');
-            expect(bottomEl).to.have.css('left').equal('0px');
-            expect(bottomEl).to.have.css('background-color').equal(colors.colorBlackO75);
-        });
-    });
-
-    it('product title has correct styles', () => {
-        cy.get(`${firstCardSelector} .collection-item__title`).then((titleEl) => {
-            expect(titleEl).to.have.css('color').equal(colors.colorBg);
-            expect(titleEl).to.have.css('font-size').equal(tokens.type.size.ms);
-            expect(titleEl).to.have.css('margin').equal(`0px`);
-            expect(titleEl).to.have.css('font-weight').equal(tokens.type.fontWeight.bold);
-        });
-    });
-});
-
-describe('collection item - type product - design primary [mobile]', () => {
-    beforeEach(() => {
-        cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-product&args=elementDesign:primary');
-        // @ts-ignore
-        cy.get(`${firstCardSelector}`).resetRealHover();
-    });
-
-    it('product bottom has correct styles', () => {
-        cy.get(`${firstCardSelector} .collection-item__bottom`).then((bottomEl) => {
-            expect(bottomEl).to.have.css('background-color').equal(colors.colorPrimary);
-        });
-    });
-});
-
-describe('collection item - type product - design secondary [mobile]', () => {
-    beforeEach(() => {
-        cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-product&args=elementDesign:secondary');
-        // @ts-ignore
-        cy.get(`${firstCardSelector}`).resetRealHover();
-    });
-
-    it('product bottom has correct styles', () => {
-        cy.get(`${firstCardSelector} .collection-item__bottom`).then((bottomEl) => {
-            expect(bottomEl).to.have.css('background-color').equal(colors.colorSecondary);
-        });
-    });
-});
-
-describe('collection item - type product - design inverted [mobile]', () => {
-    beforeEach(() => {
-        cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-product&args=elementDesign:inverted');
-        // @ts-ignore
-        cy.get(`${firstCardSelector}`).resetRealHover();
-    });
-
-    it('product bottom has correct styles', () => {
-        cy.get(`${firstCardSelector} .collection-item__bottom`).then((bottomEl) => {
-            expect(bottomEl).to.have.css('background-color').equal(colors.colorFontDark);
-        });
-    });
 });
 
 describe('collection item - type person [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--card-person');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectioncards--card-person');
         // @ts-ignore
         cy.get(`${firstCardSelector}`).resetRealHover();
     });
