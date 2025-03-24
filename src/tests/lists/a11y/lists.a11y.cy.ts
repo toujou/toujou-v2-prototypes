@@ -7,35 +7,22 @@ describe('lists a11y', () => {
         cy.injectAxe();
     });
 
-    it('default ul', () => {
-        cy.get('ul.list');
-        cy.checkA11y('ul.list');
-    });
+    const lists = [
+        'ul.list',
+        'ul.list--secondary',
+        'ul.list--font',
+        'ol.list',
+        'ol.list--secondary',
+        'ol.list--font'
+    ];
 
-    it('secondary ul', () => {
-        cy.get('ul.list--secondary');
-        cy.checkA11y('ul.list--secondary');
+    lists.forEach((selector) => {
+        it(`a11y check for ${selector}`, () => {
+            cy.get(selector);
+            // @ts-ignore
+            cy.checkA11yWithWait(selector);
+        });
     });
+});
 
-    it('font ul', () => {
-        cy.get('ul.list--font');
-        cy.checkA11y('ul.list--font');
-    });
-
-    it('default ol', () => {
-        cy.get('ol.list');
-        cy.checkA11y('ol.list');
-    });
-
-    it('secondary ol', () => {
-        cy.get('ol.list--secondary');
-        cy.checkA11y('ol.list--secondary');
-    });
-
-    it('font ol', () => {
-        cy.get('ol.list--font');
-        cy.checkA11y('ol.list--font');
-    });
-})
-
-export {}
+export {};
