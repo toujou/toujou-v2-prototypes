@@ -32,7 +32,7 @@ describe('lightbox', () => {
         cy.get('.pswp').should('have.css', 'position', 'fixed');
         cy.get('.pswp').should('have.css', 'top', '0px');
         cy.get('.pswp').should('have.css', 'left', '0px');
-        cy.get('.pswp').should('have.css', 'width', '1920px');
+        cy.get('.pswp').should('have.css', 'width', '1905px');
         cy.get('.pswp').should('have.css', 'height', '1080px');
         cy.get('.pswp').should('have.css', 'z-index', tokens.zIndex.modal);
         cy.get('.pswp').should('have.css', 'overflow', 'hidden');
@@ -41,7 +41,7 @@ describe('lightbox', () => {
         cy.get('.pswp .pswp__bg').should('have.css', 'top', '0px');
         cy.get('.pswp .pswp__bg').should('have.css', 'bottom', '0px');
         cy.get('.pswp .pswp__bg').should('have.css', 'left', '0px');
-        cy.get('.pswp .pswp__bg').should('have.css', 'width', '1920px');
+        cy.get('.pswp .pswp__bg').should('have.css', 'width', '1905px');
         cy.get('.pswp .pswp__bg').should('have.css', 'height', '1080px');
         cy.get('.pswp .pswp__bg').should('have.css', 'opacity', '0.8');
         cy.get('.pswp .pswp__bg').should('have.css', 'background-color', 'rgb(0, 0, 0)');

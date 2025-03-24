@@ -2,7 +2,7 @@
 
 describe('item collection', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-collections--list-item-default');
+        cy.visit('/iframe.html?viewMode=story&id=components-collectionlists--list-item-default');
     });
 
     it('has correct structure', () => {
