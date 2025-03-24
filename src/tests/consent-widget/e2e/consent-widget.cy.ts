@@ -33,14 +33,14 @@ describe('consent widget', () => {
 
         cy.get('.consent-widget__title').then((consentWidgetTitle) => {
             expect(consentWidgetTitle).to.have.css('color').equal(colors.colorFont);
-            expect(consentWidgetTitle).to.have.css('margin').equal(`0px 0px ${tokens.spacing.normal}`);
+            expect(consentWidgetTitle).to.have.css('margin').equal(`0px`);
         });
 
         cy.get('.consent-widget__bottom').then((consentWidgetBottom) => {
             expect(consentWidgetBottom).to.have.css('display').equal('flex');
-            expect(consentWidgetBottom).to.have.css('align-items').equal('flex-end');
-            expect(consentWidgetBottom).to.have.css('justify-content').equal('flex-start');
-            expect(consentWidgetBottom).to.have.css('gap').equal(tokens.spacing.normal);
+            expect(consentWidgetBottom).to.have.css('align-items').equal('flex-start');
+            expect(consentWidgetBottom).to.have.css('justify-content').equal('space-between');
+            expect(consentWidgetBottom).to.have.css('gap').equal(tokens.spacing.s);
         });
 
         cy.get('#consentAcceptAllButton').then((acceptAllButton) => {

@@ -56,13 +56,13 @@ const Template: StoryFn<ConsentWidgetProps> = (args: ConsentWidgetProps) => {
                 <div class="consent-widget__header" slot="consentWidgetHeader">
                     <h4 class="consent-widget__title">Cookies &amp; Drittinhalte</h4>
                     <p class="consent-widget__description">
-                        Auf dieser Website werden Cookies und Drittinhalte verwendet. Im Folgenden können Sie Ihre Zustimmung geben oder widerrufen. Weitere Informationen finden Sie in unserer <a class="consent-widget__description-link" href="/datenschutz/">Datenschutzerklärung.</a>
+                        Auf dieser Website werden Cookies und Drittinhalte verwendet. Im Folgenden können Sie Ihre Zustimmung geben oder widerrufen. Weitere Informationen finden Sie in unserer <a class="consent-widget__description-link" title="Datenschutzerkluarung" href="/datenschutz/">Datenschutzerklärung.</a>
                     </p>
                 </div>
 
                 <div class="consent-widget__bottom">
                     <details class="consent-widget__details">
-                        <summary class="consent-widget__details-summary">
+                        <summary class="consent-widget__details-summary" aria-label="Open custom settings panel">
                             <span
                                 id="consentSettingsButton"
                                 class="button consent-widget__button"

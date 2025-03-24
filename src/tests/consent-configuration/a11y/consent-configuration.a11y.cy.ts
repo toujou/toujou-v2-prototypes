@@ -9,7 +9,8 @@ describe('consent configuration a11y', () => {
 
     it('has no detectable a11y violation on load when no consents saved', () => {
         cy.get('.consent-widget');
-        cy.checkA11y(
+        // @ts-ignore
+        cy.checkA11yWithWait(
             '.consent-widget',
             {
                 rules: {
@@ -21,7 +22,8 @@ describe('consent configuration a11y', () => {
 
     it('has no detectable a11y violation on load when consents already saved', () => {
         cy.get('#consentAcceptAllButton').click();
-        cy.checkA11y(
+        // @ts-ignore
+        cy.checkA11yWithWait(
             '.consent-widget',
             {
                 rules: {

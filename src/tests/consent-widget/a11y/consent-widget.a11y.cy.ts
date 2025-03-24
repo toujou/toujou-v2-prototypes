@@ -9,12 +9,15 @@ describe('consent widget a11y', () => {
 
     it('has no detectable a11y violation when closed', () => {
         cy.get('.consent-widget');
-        cy.checkA11y('.consent-widget');
+        // @ts-ignore
+        cy.checkA11yWithWait('.consent-widget');
     });
 
     it('has no detectable a11y violation when closed', () => {
+        cy.get('.consent-widget');
         cy.get('#consentSettingsButton').click();
-        cy.checkA11y('.consent-widget');
+        // @ts-ignore
+        cy.checkA11yWithWait('.consent-widget');
     });
 })
 
