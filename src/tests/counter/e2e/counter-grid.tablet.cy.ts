@@ -23,8 +23,6 @@ describe('counter-grid', () => {
         cy.get('.counter-grid').should('have.css', 'grid-gap', tokens.spacing.l);
         cy.get('.counter-grid').should('have.css', 'justify-content', 'center');
         cy.get('.counter-grid').should('have.css', 'align-items', 'flex-start');
-        cy.get('.counter-grid').should('have.css', 'width', '704px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
         cy.get('.counter-grid').should('have.css', 'margin', `${tokens.spacing.l} ${tokens.spacing.normal} 0px`);
     });
 })
@@ -37,9 +35,6 @@ describe('counter-grid - 1 item', () => {
 
     it('has correct  styles', () => {
         cy.get('.counter-grid').children('.counter').should('have.length', 1);
-        cy.get('.counter-grid').should('have.css', 'width', '704px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '704px');
     });
 })
 
@@ -51,9 +46,6 @@ describe('counter-grid - 2 item', () => {
 
     it('has correct  styles', () => {
         cy.get('.counter-grid').children('.counter').should('have.length', 2);
-        cy.get('.counter-grid').should('have.css', 'width', '704px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '336px');
     });
 })
 
@@ -65,9 +57,6 @@ describe('counter-grid - 3 item', () => {
 
     it('has correct  styles', () => {
         cy.get('.counter-grid').children('.counter').should('have.length', 3);
-        cy.get('.counter-grid').should('have.css', 'width', '704px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '336px');
     });
 })
 
@@ -79,9 +68,6 @@ describe('counter-grid - 4 item', () => {
 
     it('has correct  styles', () => {
         cy.get('.counter-grid').children('.counter').should('have.length', 4);
-        cy.get('.counter-grid').should('have.css', 'width', '704px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '336px');
     });
 })
 

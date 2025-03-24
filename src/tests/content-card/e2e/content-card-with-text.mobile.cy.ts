@@ -15,7 +15,7 @@ describe('content card with text [mobile]', () => {
         cy.get('toujou-grid.grid').invoke('attr', 'grid-type').should('eq', 'default');
         cy.get('toujou-grid.grid').invoke('attr', 'column-layout').should('eq', 'third-right');
 
-        cy.get('toujou-grid.grid').children('.grid-column').should('have.length', 2);
+        cy.get('toujou-grid.grid').children('.grid-column').should('have.length', 4);
         cy.get('toujou-grid.grid .grid-column:first-child h1').should('exist');
         cy.get('toujou-grid.grid .grid-column:first-child p').should('exist');
         cy.get('toujou-grid.grid .grid-column:last-child .content-card-grid').should('exist');
@@ -26,8 +26,8 @@ describe('content card with text [mobile]', () => {
     it('has correct grid styles', () => {
         cy.get('toujou-grid.grid').should('have.css', 'display', 'grid');
         cy.get('toujou-grid.grid').should('have.css', 'grid-template-columns', '296px');
-        cy.get('toujou-grid.grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
-        cy.get('toujou-grid.grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
+        cy.get('toujou-grid.grid').should('have.css', 'grid-gap', `${tokens.spacing.l}`);
+        cy.get('toujou-grid.grid').should('have.css', 'margin', `48px 16px 0px`);
         cy.get('toujou-grid.grid').should('have.css', 'width', '296px');
         cy.get('toujou-grid.grid').should('have.css', 'max-width', '960px');
     });

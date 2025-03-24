@@ -1,52 +1,29 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('counter a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-counter--counter');
-        cy.injectAxe();
-        cy.get('.counter');
-    });
+// Define test cases with their Storybook URLs
+const testCases = [
+    { name: 'default', storyId: 'components-counter--counter' },
+    { name: 'primary', storyId: 'components-counter--counter', args: 'elementDesign:primary' },
+    { name: 'secondary', storyId: 'components-counter--counter', args: 'elementDesign:secondary' },
+    { name: 'inverted warning', storyId: 'components-counter--counter', args: 'elementDesign:inverted' },
+];
 
-    it('has no detectable a11y violation on load', () => {
-        cy.checkA11y('.counter');
-    });
-})
+// Run tests for each variant/type
+testCases.forEach(({ name, storyId, args }) => {
+    describe(`Counter - ${name} a11y`, () => {
+        beforeEach(() => {
+            const url = args ? `/iframe.html?viewMode=story&id=${storyId}&args=${args}` : `/iframe.html?viewMode=story&id=${storyId}`;
+            cy.visit(url);
+            cy.injectAxe();
+            cy.get('.counter').should('exist').should('be.visible');
+        });
 
-describe('counter primary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=elementDesign:primary');
-        cy.injectAxe();
-        cy.get('.counter');
+        it('has no detectable a11y violations on load', () => {
+            // @ts-ignore
+            cy.checkA11yWithWait('.counter');
+        });
     });
+});
 
-    it('has no detectable a11y violation on load', () => {
-        cy.checkA11y('.counter');
-    });
-})
-
-describe('counter secondary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=elementDesign:secondary');
-        cy.injectAxe();
-        cy.get('.counter');
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.checkA11y('.counter');
-    });
-})
-
-describe('inverted warning a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=elementDesign:inverted');
-        cy.injectAxe();
-        cy.get('.counter');
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.checkA11y('.counter');
-    });
-})
-
-export {}
+export {};

@@ -3,6 +3,9 @@
 const colors = Cypress.env('colors');
 const tokens = Cypress.env('tokens');
 
+// @ts-ignore
+import ToujouCounter from '../../../../node_modules/@toujou/toujou-counter';
+
 describe('counter', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter');
@@ -36,16 +39,16 @@ describe('counter', () => {
     });
 
     it('has correct figure styles', () => {
-        cy.get('toujou-counter .counter__figure').should('have.css', 'height', '64px');
-        cy.get('toujou-counter .counter__figure').should('have.css', 'width', '64px');
-        cy.get('toujou-counter .counter__figure').should('have.css', 'margin', '0px 664px 16px');
+        cy.get('toujou-counter .counter__figure').should('have.css', 'height', '48px');
+        cy.get('toujou-counter .counter__figure').should('have.css', 'width', '48px');
+        cy.get('toujou-counter .counter__figure').should('have.css', 'margin', '0px 672px 16px');
         cy.get('toujou-counter .counter__figure').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('toujou-counter .counter__figure').should('have.css', 'overflow', 'hidden');
     });
 
     it('has correct image styles', () => {
-        cy.get('toujou-counter .counter__image').should('have.css', 'height', '64px');
-        cy.get('toujou-counter .counter__image').should('have.css', 'width', '64px');
+        cy.get('toujou-counter .counter__image').should('have.css', 'height', '48px');
+        cy.get('toujou-counter .counter__image').should('have.css', 'width', '48px');
         cy.get('toujou-counter .counter__image').should('have.css', 'margin', '0px');
         cy.get('toujou-counter .counter__image').should('have.css', 'object-fit', 'cover');
     });
@@ -169,7 +172,7 @@ describe('counter - speed animation', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter');
 
         cy.get('toujou-counter').then((counterEls) => {
-            const counterEl = counterEls[0];
+            const counterEl: ToujouCounter = counterEls[0];
 
             expect(counterEl._animationDuration).to.equal(3000);
         })
@@ -179,7 +182,7 @@ describe('counter - speed animation', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=animationDuration:slow');
 
         cy.get('toujou-counter').then((counterEls) => {
-            const counterEl = counterEls[0];
+            const counterEl: ToujouCounter = counterEls[0];
 
             expect(counterEl._animationDuration).to.equal(6000);
         })
@@ -189,7 +192,7 @@ describe('counter - speed animation', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=animationDuration:fast');
 
         cy.get('toujou-counter').then((counterEls) => {
-            const counterEl = counterEls[0];
+            const counterEl: ToujouCounter = counterEls[0];
 
             expect(counterEl._animationDuration).to.equal(1500);
         })
@@ -201,7 +204,7 @@ describe('counter - page lang', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter');
 
         cy.get('toujou-counter').then((counterEls) => {
-            const counterEl = counterEls[0];
+            const counterEl: ToujouCounter = counterEls[0];
 
             expect(counterEl._pageLang).to.equal('en');
         })
