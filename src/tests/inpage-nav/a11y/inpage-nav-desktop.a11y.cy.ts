@@ -9,7 +9,8 @@ describe('inpge-nav desktop a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.inpage-nav');
-        cy.checkA11y('.inpage-nav');
+        // @ts-ignore
+        cy.checkA11yWithWait('.inpage-nav');
     });
 })
 

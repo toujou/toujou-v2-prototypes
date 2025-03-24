@@ -15,7 +15,7 @@ describe('iframe resizer', () => {
 
         cy.get('toujou-iframe-resizer').should('have.css', 'display', 'inline');
         cy.get('toujou-iframe-resizer').should('have.css', 'width', '1489px');
-        cy.get('toujou-iframe-resizer').should('have.css', 'height', '1194px');
+        cy.get('toujou-iframe-resizer').should('have.css', 'height', '1234px');
     });
 })
 

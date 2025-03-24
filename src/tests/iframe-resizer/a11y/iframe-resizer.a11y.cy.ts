@@ -9,7 +9,8 @@ describe('iframe resizer a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
-        cy.checkA11y('toujou-iframe-resizer');
+        // @ts-ignore
+        cy.checkA11yWithWait('toujou-iframe-resizer');
     });
 })
 

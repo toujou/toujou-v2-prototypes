@@ -9,6 +9,7 @@ describe('inpage-nav mobile - default', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-inpage-nav--inpage-nav');
         // @ts-ignore
         cy.get('body').resetRealHover();
+        cy.wait(1000);
     });
 
     it('has correct structure', () => {
@@ -41,7 +42,7 @@ describe('inpage-nav mobile - default', () => {
             expect(nav).to.have.css('position').eq('relative');
             expect(nav).to.have.css('z-index').eq('60');
             expect(nav).to.have.css('opacity').eq('1');
-            expect(nav).to.have.css('border-radius').eq('0px');
+            expect(nav).to.have.css('border-radius').eq(tokens.borderRadius.normal);
         })
     });
 
@@ -55,7 +56,7 @@ describe('inpage-nav mobile - default', () => {
             expect(toggle).to.have.css('border').eq('0px none rgb(0, 0, 0)');
             expect(toggle).to.have.css('background-color').eq('rgba(0, 0, 0, 0)');
             expect(toggle).to.have.css('grid-area').eq('toggle');
-            expect(toggle).to.have.css('transition').eq('transform 0.25s ease-in-out 0s');
+            expect(toggle).to.have.css('transition').eq('transform 0.25s ease-in-out');
         })
     });
 
@@ -103,7 +104,7 @@ describe('inpage-nav mobile - default', () => {
             expect(link).to.have.css('color').eq(colors.colorPrimary);
             expect(link).to.have.css('display').eq('flex');
             expect(link).to.have.css('align-items').eq('center');
-            expect(link).to.have.css('padding').eq(`0px ${tokens.spacing.normal}`);
+            expect(link).to.have.css('padding').eq(`0px ${tokens.spacing.s} 0px 0px`);
         })
     });
 
@@ -111,7 +112,7 @@ describe('inpage-nav mobile - default', () => {
         // @ts-ignore
         cy.get('body').resetRealHover();
         cy.get('.inpage-nav[ismobile] .inpage-nav__item[active] .inpage-nav__link').then((link) => {
-            expect(link).to.have.css('color').eq(colors.colorPrimaryDark);
+            expect(link).to.have.css('color').eq(colors.colorPrimary);
         })
     });
 
@@ -149,9 +150,9 @@ describe('inpage-nav mobile - primary', () => {
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__toggle .icon').should('have.css', 'background-color', colors.colorBg);
-        cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimaryDark);
+        cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorBg);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorBg);
-        cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorPrimaryDark);
+        cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
     });
 });
 
@@ -169,9 +170,9 @@ describe('inpage-nav mobile - secondary', () => {
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__toggle .icon').should('have.css', 'background-color', colors.colorBg);
-        cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorSecondaryDark);
+        cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorBg);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorBg);
-        cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorSecondaryDark);
+        cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
     });
 });
 
@@ -189,9 +190,9 @@ describe('inpage-nav mobile - inverted', () => {
         cy.get('.inpage-nav').should('have.css', 'background-color', colors.colorFont);
         cy.get('.inpage-nav__label').should('have.css', 'color', colors.colorBg);
         cy.get('.inpage-nav__toggle .icon').should('have.css', 'background-color', colors.colorBg);
-        cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorPrimary);
+        cy.get('.inpage-nav__cta').should('have.css', 'background-color', colors.colorBg);
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').should('have.css', 'color', colors.colorBg);
-        cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorPrimary);
+        cy.get('.inpage-nav__item[active] .inpage-nav__link').should('have.css', 'color', colors.colorBg);
     });
 });
 
@@ -210,7 +211,7 @@ describe('inpage-nav mobile - text width', () => {
     });
 
     it('has correct wide styles', () => {
-        cy.get('.inpage-nav').should('have.css', 'width', '311px');
+        cy.get('.inpage-nav').should('have.css', 'width', '296px');
 
     });
 });
@@ -232,7 +233,7 @@ describe('inpage-nav mobile - wide', () => {
     it('has correct wide styles', () => {
         // @ts-ignore
         cy.get('body').resetRealHover();
-        cy.get('.inpage-nav').should('have.css', 'width', '311px');
+        cy.get('.inpage-nav').should('have.css', 'width', '296px');
 
     });
 });
@@ -254,7 +255,7 @@ describe('inpage-nav mobile - fullwidth', () => {
     it('has correct wide styles', () => {
         // @ts-ignore
         cy.get('body').resetRealHover();
-        cy.get('.inpage-nav').should('have.css', 'width', '343px');
+        cy.get('.inpage-nav').should('have.css', 'width', '328px');
 
     });
 });
