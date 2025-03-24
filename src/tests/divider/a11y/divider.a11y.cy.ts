@@ -1,64 +1,28 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('divider a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-divider--divider');
-        cy.injectAxe();
-    });
+const testCases = [
+    { name: 'default', storyId: 'components-divider--divider' },
+    { name: 'background', storyId: 'components-divider--divider', args: 'dividerType:background' },
+    { name: 'primary', storyId: 'components-divider--divider', args: 'dividerType:primary' },
+    { name: 'secondary', storyId: 'components-divider--divider', args: 'dividerType:secondary' },
+    { name: 'grey', storyId: 'components-divider--divider', args: 'dividerType:grey' },
+];
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.divider');
-        cy.checkA11y('.divider');
-    });
-})
+testCases.forEach(({ name, storyId, args }) => {
+    describe(`Divider - ${name} a11y`, () => {
+        beforeEach(() => {
+            const url = args ? `/iframe.html?viewMode=story&id=${storyId}&args=${args}` : `/iframe.html?viewMode=story&id=${storyId}`;
+            cy.visit(url);
+            cy.injectAxe();
+            cy.get('.divider').should('exist').should('be.visible');
+        });
 
-describe('divider background a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-divider--divider&args=dividerType:background');
-        cy.injectAxe();
+        it('has no detectable a11y violations on load', () => {
+            // @ts-ignore
+            cy.checkA11yWithWait('.divider');
+        });
     });
+});
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.divider');
-        cy.checkA11y('.divider');
-    });
-})
-
-describe('divider primary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-divider--divider&args=dividerType:primary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.divider');
-        cy.checkA11y('.divider');
-    });
-})
-
-describe('divider secondary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-divider--divider&args=dividerType:secondary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.divider');
-        cy.checkA11y('.divider');
-    });
-})
-
-describe('divider grey a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-divider--divider&args=dividerType:grey');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.divider');
-        cy.checkA11y('.divider');
-    });
-})
-
-export {}
+export {};

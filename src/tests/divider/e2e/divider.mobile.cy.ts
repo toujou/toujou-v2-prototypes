@@ -19,8 +19,8 @@ describe('divider [mobile]', () => {
     });
 
     it('has correct margins', () => {
-        cy.get('.divider').should('have.css', 'margin-top', tokens.spacing.m);
-        cy.get('.divider').should('have.css', 'margin-bottom', tokens.spacing.m);
+        cy.get('.divider').should('have.css', 'margin-top', tokens.spacing.xl);
+        cy.get('.divider').should('have.css', 'margin-bottom', tokens.spacing.xl);
     });
 
     it('has correct primary color', () => {

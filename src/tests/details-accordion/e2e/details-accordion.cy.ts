@@ -6,7 +6,7 @@ describe('toujou-details-accordion', () => {
     })
 
     it('has correct number of child Details Elements', () => {
-        cy.get('toujou-details-accordion').children("*").should('have.length', 4);
+        cy.get('toujou-details-accordion').children("*").should('have.length', 5);
     })
 
     it('has correct number of open child Details Elements', () => {

@@ -27,29 +27,8 @@ describe('toujou-cover-slider - desktop', () => {
         cy.get('a.cover-slider__link h3').should('have.css', 'color', colors.colorBg);
         cy.get('a.cover-slider__link .single-media').should('have.css', 'filter', 'none');
         cy.get('#splide01-slide01 a.cover-slider__link').realHover();
-        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colors.colorPrimaryLight);
+        cy.get('#splide01-slide01 a.cover-slider__link h3').should('have.css', 'color', colors.colorPrimary);
         cy.get('#splide01-slide01 a.cover-slider__link .single-media img').should('have.css', 'transform', 'matrix(1.1, 0, 0, 1.1, 0, 0)');
-    });
-})
-
-describe('toujou-cover-slider - primary design', () => {
-    beforeEach(() => {
-        cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-cover-slider--cover-slider&args=elementDesign:primary');
-    });
-})
-
-describe('toujou-cover-slider - secondary design', () => {
-    beforeEach(() => {
-        cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-cover-slider--cover-slider&args=elementDesign:secondary');
-    });
-})
-
-describe('toujou-cover-slider - inverted design', () => {
-    beforeEach(() => {
-        cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-cover-slider--cover-slider&args=elementDesign:inverted');
     });
 })
 

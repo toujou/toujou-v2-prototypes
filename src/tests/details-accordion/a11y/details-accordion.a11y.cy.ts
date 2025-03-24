@@ -9,7 +9,8 @@ describe('details-accordion a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.details-accordion');
-        cy.checkA11y('.details-accordion');
+        // @ts-ignore
+        cy.checkA11yWithWait('.details-accordion');
     });
 })
 

@@ -66,7 +66,7 @@ const Template: StoryFn<DetailsAccordionStoryProps> = (args: DetailsAccordionSto
                         <toujou-text-block class="text-block" text-block-media-position="inside-right">
                             <toujou-text-block-column class="text-block-column">
                                 <figure class="text-block__figure">
-                                    <img class="text-block__image" src="https://picsum.photos/800/800">
+                                    <img class="text-block__image" src="https://picsum.photos/800/800" alt="nice image">
                                 </figure>
                                 <div class="text-block__content">
                                     <h2>Headline</h2>
@@ -86,7 +86,7 @@ const Template: StoryFn<DetailsAccordionStoryProps> = (args: DetailsAccordionSto
                         <toujou-text-block class="text-block" text-block-media-position="inside-right">
                             <toujou-text-block-column class="text-block-column">
                                 <figure class="text-block__figure">
-                                    <img class="text-block__image" src="https://picsum.photos/800/800">
+                                    <img class="text-block__image" src="https://picsum.photos/800/800" alt="another nice image">
                                 </figure>
                                 <div class="text-block__content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet. A pellentesque sit amet porttitor eget. Feugiat nisl pretium fusce id velit. Justo donec enim diam vulputate ut pharetra sit. Enim diam vulputate ut pharetra sit amet aliquam. Viverra nam libero justo laoreet sit amet cursus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Magna etiam tempor orci eu lobortis elementum. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Massa vitae tortor condimentum lacinia. Sed risus pretium quam vulputate dignissim. Et ultrices neque ornare aenean euismod elementum nisi.</p>
