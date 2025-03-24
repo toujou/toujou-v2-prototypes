@@ -9,9 +9,9 @@ describe('form error a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.form');
-        cy.checkA11y('.form');
+        // @ts-ignore
+        cy.checkA11yWithWait('.form');
     });
 })
-
 
 export {}

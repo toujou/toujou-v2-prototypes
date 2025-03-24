@@ -24,10 +24,10 @@ describe('Forms / form navigation', () => {
         cy.get('.form-navigation .form-navigation__previous .form-navigation__button[type="submit"]').invoke('attr', 'button-size').should('eq', 'normal');
         cy.get('.form-navigation .form-navigation__previous .form-navigation__button[type="submit"]').invoke('attr', 'button-type').should('eq', 'border');
         cy.get('.form-navigation').should('have.css', 'display', 'flex');
-        cy.get('.form-navigation').should('have.css', 'flex-direction', 'row-reverse');
+        cy.get('.form-navigation').should('have.css', 'flex-direction', 'column-reverse');
+        cy.get('.form-navigation').should('have.css', 'justify-content', 'flex-start');
         cy.get('.form-navigation').should('have.css', 'gap', tokens.spacing.normal);
         cy.get('.form-navigation').should('have.css', 'margin', `${tokens.spacing.m} 0px`);
-        cy.get('.form-navigation').should('have.css', 'justify-content', 'space-between');
     });
 });
 

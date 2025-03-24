@@ -1,43 +1,29 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('fieldset a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-forms--fieldset');
-        cy.injectAxe();
-    });
+const testCases = [
+    { name: 'default', storyId: 'components-forms--fieldset' },
+    { name: 'disabled', storyId: 'components-forms--fieldset', args: 'state:disabled' },
+];
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.form');
-        cy.checkA11y(
-            '.form',
-            {
+testCases.forEach(({ name, storyId, args }) => {
+    describe(`Fieldset - ${name} a11y`, () => {
+        beforeEach(() => {
+            const url = args ? `/iframe.html?viewMode=story&id=${storyId}&args=${args}` : `/iframe.html?viewMode=story&id=${storyId}`;
+            cy.visit(url);
+            cy.injectAxe();
+            cy.get('.form').should('exist').should('be.visible');
+        });
+
+        it('has no detectable a11y violations on load', () => {
+            // @ts-ignore
+            cy.checkA11yWithWait('.form', {
                 rules: {
                     'color-contrast': { enabled: false }
                 }
-            }
-        );
+            });
+        });
     });
-})
+});
 
-describe('fieldset disabled a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-forms--fieldset&args=state:disabled');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.form');
-        cy.checkA11y(
-            '.form',
-            {
-                rules: {
-                    'color-contrast': { enabled: false }
-                }
-            }
-        );
-    });
-})
-
-
-export {}
+export {};

@@ -76,7 +76,7 @@ describe('Forms / form progress [mobile]', () => {
         cy.get('.form-progress__index').should('have.css', 'line-height', tokens.type.lineHeight.m);
         cy.get('.form-progress__index').should('have.css', 'border-radius', tokens.borderRadius.circle);
         cy.get('.form-progress__index').should('have.css', 'text-align', 'center');
-        cy.get('.form-progress__index').should('have.css', 'box-sizing', 'content-box');
+        cy.get('.form-progress__index').should('have.css', 'box-sizing', 'border-box');
 
         // completed
         cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);

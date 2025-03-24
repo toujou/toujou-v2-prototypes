@@ -9,7 +9,8 @@ describe('form progress a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.form-progress');
-        cy.checkA11y('.form-progress');
+        // @ts-ignore
+        cy.checkA11yWithWait('.form-progress');
     });
 })
 

@@ -9,7 +9,8 @@ describe('image upload input a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.input-group--image-upload');
-        cy.checkA11y('.input-group--image-upload');
+        // @ts-ignore
+        cy.checkA11yWithWait('.input-group--image-upload');
     });
 })
 

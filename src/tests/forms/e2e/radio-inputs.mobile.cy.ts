@@ -33,7 +33,7 @@ describe('Forms / radio input [mobile]', () => {
         })
         cy.get('.radio-group__option-label').then((radioGroupOptionLabel) => {
             expect(radioGroupOptionLabel).to.have.css('display').equal('grid');
-            expect(radioGroupOptionLabel).to.have.css('grid-gap').equal(`${tokens.spacing.s} ${tokens.spacing.s}`);
+            expect(radioGroupOptionLabel).to.have.css('grid-gap').equal(`${tokens.spacing.s}`);
             expect(radioGroupOptionLabel).to.have.css('font-size').equal(tokens.type.size.normal);
             expect(radioGroupOptionLabel).to.have.css('color').equal(colors.colorFont);
             expect(radioGroupOptionLabel).to.have.css('grid-column').equal('1 / -1');

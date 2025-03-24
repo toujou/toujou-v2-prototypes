@@ -1,41 +1,22 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-axe" />
 
-describe('input group a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs');
-        cy.injectAxe();
+const states = ["", "error", "success"];
+
+describe("input group a11y", () => {
+    states.forEach((state: string) => {
+        const url = state
+            ? `/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:${state}`
+            : "/iframe.html?viewMode=story&id=components-forms--text-inputs";
+
+        it(`has no detectable a11y violation on load${state ? ` (${state})` : ""}`, () => {
+            cy.visit(url);
+            cy.injectAxe();
+            cy.get(".form");
+            // @ts-ignore
+            cy.checkA11yWithWait(".form");
+        });
     });
+});
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.form');
-        cy.checkA11y('.form');
-    });
-})
-
-describe('input group with error a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:error');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.form');
-        cy.checkA11y('.form');
-    });
-})
-
-describe('input group with success a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-forms--text-inputs&args=state:success');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.form');
-        cy.checkA11y('.form');
-    });
-})
-
-
-export {}
+export {};

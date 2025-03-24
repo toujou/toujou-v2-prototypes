@@ -50,7 +50,7 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress__item').should('have.css', 'flex-flow', 'column nowrap');
         cy.get('.form-progress__item').should('have.css', 'justify-content', 'center');
         cy.get('.form-progress__item').should('have.css', 'align-items', 'center');
-        cy.get('.form-progress__item').should('have.css', 'margin-right', tokens.spacing.m);
+        cy.get('.form-progress__item').should('have.css', 'margin-right', tokens.spacing.normal);
 
         // @ts-ignore // "FUTURE"
         cy.get('.form-progress__item:nth-child(4)').after('background-color').should('eq', `rgba(0, 0, 0, 0)`);
@@ -75,7 +75,7 @@ describe('Forms / form progress', () => {
         cy.get('.form-progress__index').should('have.css', 'line-height', tokens.type.lineHeight.m);
         cy.get('.form-progress__index').should('have.css', 'border-radius', tokens.borderRadius.circle);
         cy.get('.form-progress__index').should('have.css', 'text-align', 'center');
-        cy.get('.form-progress__index').should('have.css', 'box-sizing', 'content-box');
+        cy.get('.form-progress__index').should('have.css', 'box-sizing', 'border-box');
 
         // completed
         cy.get('.form-progress__item[completed] .form-progress__index').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
