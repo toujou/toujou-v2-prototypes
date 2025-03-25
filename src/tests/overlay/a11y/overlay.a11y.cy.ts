@@ -9,7 +9,8 @@ describe('overlay a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('toujou-overlay');
-        cy.checkA11y('toujou-overlay');
+        // @ts-ignore
+        cy.checkA11yWithWait('toujou-overlay');
     });
 })
 

@@ -67,9 +67,9 @@ describe('PN Nav', () => {
         cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__content').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__content').should('have.css', 'padding', `${tokens.spacing.s} ${tokens.spacing.xl} ${tokens.spacing.s} ${tokens.spacing.s}`);
         cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, 275.188, 0)');
-        cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__content').should('have.css', 'transition', 'transform 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s');
+        cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__content').should('have.css', 'transition', 'transform 0.5s ease-in-out, background-color 0.5s ease-in-out');
 
-        cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__title').should('have.css', 'color', colors.colorPrimaryDark);
+        cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__title').should('have.css', 'color', colors.colorBg);
         cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__title').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.pn-nav .pn-nav__link[button-direction="next"] .pn-nav__title').should('have.css', 'margin', '0px');
@@ -84,7 +84,7 @@ describe('PN Nav', () => {
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').realHover();
         cy.wait(300)
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"] .pn-nav__content').should('have.css', 'transform', 'matrix(1, 0, 0, 1, -48, 0)');
-        cy.get('.pn-nav .pn-nav__link[button-direction="prev"] .pn-nav__content').should('have.css', 'background-color', colors.colorPrimaryLight);
+        cy.get('.pn-nav .pn-nav__link[button-direction="prev"] .pn-nav__content').should('have.css', 'background-color', colors.colorPrimary);
     });
 })
 

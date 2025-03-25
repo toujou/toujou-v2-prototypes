@@ -48,7 +48,7 @@ describe('Portfolio gallery', () => {
 
     it('has correct slider styles', () => {
         cy.get('.portfolio-gallery .slider').should('have.css', 'display', 'grid');
-        cy.get('.portfolio-gallery .slider').should('have.css', 'grid-gap', `${tokens.spacing.s} ${tokens.spacing.s}`);
+        cy.get('.portfolio-gallery .slider').should('have.css', 'grid-gap', `${tokens.spacing.s}`);
         cy.get('.portfolio-gallery .slider').should('have.css', 'width', '1920px');
         cy.get('.portfolio-gallery .slider').should('have.css', 'max-width', '100%');
         cy.get('.portfolio-gallery .slider').should('have.css', 'position', 'relative');
@@ -142,7 +142,7 @@ describe('Portfolio gallery', () => {
         // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('opacity').should('eq', '0');
         // @ts-ignore
-        cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('transition').should('eq', `opacity ${tokens.animation.durationFast} ${tokens.animation.easingNormal} 0s`);
+        cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('transition').should('eq', `opacity ${tokens.animation.durationFast} ${tokens.animation.easingNormal}`);
 
         // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('content').should('eq', '');
@@ -163,7 +163,7 @@ describe('Portfolio gallery', () => {
         // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('opacity').should('eq', '0');
         // @ts-ignore
-        cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('transition').should('eq', `opacity ${tokens.animation.durationFast} ${tokens.animation.easingNormal} 0s`);
+        cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link .single-media').after('transition').should('eq', `opacity ${tokens.animation.durationFast} ${tokens.animation.easingNormal}`);
 
         cy.get('.portfolio-gallery .slider-slide:nth-child(2) .portfolio-gallery__link').realHover();
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').realHover();

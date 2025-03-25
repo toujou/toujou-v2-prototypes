@@ -49,7 +49,7 @@ describe('Portfolio gallery [mobile]', () => {
 
     it('has correct slider styles', () => {
         cy.get('.portfolio-gallery .slider').should('have.css', 'display', 'block');
-        cy.get('.portfolio-gallery .slider').should('have.css', 'grid-gap', `normal normal`);
+        cy.get('.portfolio-gallery .slider').should('have.css', 'grid-gap', `normal`);
         cy.get('.portfolio-gallery .slider').should('have.css', 'width', '375px');
         cy.get('.portfolio-gallery .slider').should('have.css', 'max-width', '960px');
         cy.get('.portfolio-gallery .slider').should('have.css', 'position', 'relative');

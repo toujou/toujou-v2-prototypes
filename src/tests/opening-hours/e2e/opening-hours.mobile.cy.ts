@@ -24,7 +24,7 @@ describe('opening hours [mobile]', () => {
 
         cy.get('.opening-hours__row').should('have.css', 'display', 'grid');
         cy.get('.opening-hours__row').should('have.css', 'grid-template-columns', '136px 136px');
-        cy.get('.opening-hours__row').should('have.css', 'grid-gap', `${tokens.spacing.normal} ${tokens.spacing.normal}`);
+        cy.get('.opening-hours__row').should('have.css', 'grid-gap', `${tokens.spacing.normal}`);
 
         cy.get('.opening-hours__day').should('have.css', 'overflow-wrap', 'anywhere');
         cy.get('.opening-hours__day').should('have.css', 'hyphens', 'auto');

@@ -9,7 +9,8 @@ describe('PN Nav a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.portfolio-gallery');
-        cy.checkA11y('.portfolio-gallery', {
+        // @ts-ignore
+        cy.checkA11yWithWait('.portfolio-gallery', {
             rules: {
                 'aria-allowed-role': { enabled: false }
             }
