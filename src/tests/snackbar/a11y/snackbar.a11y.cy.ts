@@ -8,8 +8,11 @@ describe('snackbar a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.get('#snackbarTriggerButton').click();
         cy.get('.snackbar');
-        cy.checkA11y(
+
+        // @ts-ignore
+        cy.checkA11yWithWait(
             '.snackbar',
             {
                 rules: {

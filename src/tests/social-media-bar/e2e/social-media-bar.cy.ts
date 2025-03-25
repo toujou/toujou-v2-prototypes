@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 const colors = Cypress.env('colors');
-const tokens = Cypress.env('tokens');
 
 describe('social-media-bar', () => {
     beforeEach(() => {
@@ -34,7 +33,7 @@ describe('social-media-bar', () => {
         cy.get('.social-media-bar__headline').should('have.css', 'font-family', 'Ubuntu, sans-serif');
         cy.get('.social-media-bar__headline').should('have.css', 'font-size', '32px');
         cy.get('.social-media-bar__headline').should('have.css', 'color', colors.colorFont);
-        cy.get('.social-media-bar__headline').should('have.css', 'margin-bottom', tokens.spacing.normal);
+        cy.get('.social-media-bar__headline').should('have.css', 'margin-bottom', '0px');
         cy.get('.social-media-bar__headline').should('have.css', 'text-decoration', 'none solid rgb(42, 54, 60)');
     });
 

@@ -2,75 +2,24 @@
 /// <reference types="cypress-axe" />
 
 describe('social media bar a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-social-media-bar--social-media-bar');
-        cy.injectAxe();
-    });
+    const args = [
+        { name: 'default', url: '' },
+        { name: 'inline', url: '&args=isInline:true' },
+        { name: 'primary', url: '&args=elementDesign:primary' },
+        { name: 'secondary', url: '&args=elementDesign:secondary' },
+        { name: 'inverted', url: '&args=elementDesign:inverted' },
+        { name: 'no headline', url: '&args=hideHeadline:true' }
+    ];
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.social-media-bar');
-        cy.checkA11y('.social-media-bar');
+    args.forEach(({ name, url }) => {
+        it(`has no detectable a11y violations - ${name}`, () => {
+            cy.visit(`/iframe.html?viewMode=story&id=components-social-media-bar--social-media-bar${url}`);
+            cy.injectAxe(); // Ensure Axe is injected after visiting the page
+            cy.get('.social-media-bar');
+            // @ts-ignore
+            cy.checkA11yWithWait('.social-media-bar');
+        });
     });
-})
+});
 
-describe('social media bar inline a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-social-media-bar--social-media-bar&args=isInline:true');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.social-media-bar');
-        cy.checkA11y('.social-media-bar');
-    });
-})
-
-describe('social media bar primary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-social-media-bar--social-media-bar&args=elementDesign:primary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.social-media-bar');
-        cy.checkA11y('.social-media-bar');
-    });
-})
-
-describe('social media bar secondary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-social-media-bar--social-media-bar&args=elementDesign:secondary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.social-media-bar');
-        cy.checkA11y('.social-media-bar');
-    });
-})
-
-describe('social media bar inverted a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-social-media-bar--social-media-bar&args=elementDesign:inverted');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.social-media-bar');
-        cy.checkA11y('.social-media-bar');
-    });
-})
-
-describe('social media bar no headline a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-social-media-bar--social-media-bar&args=hideHeadline:true');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.social-media-bar');
-        cy.checkA11y('.social-media-bar');
-    });
-})
-
-export {}
+export {};

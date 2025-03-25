@@ -14,7 +14,9 @@ describe('Skip links a11y', () => {
         cy.realPress("Tab");
         cy.realPress("Tab");
         cy.wait(1000);
-        cy.checkA11y('skippy-links');
+
+        // @ts-ignore
+        cy.checkA11yWithWait('skippy-links');
     });
 })
 

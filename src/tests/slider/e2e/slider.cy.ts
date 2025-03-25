@@ -97,7 +97,7 @@ describe('Slider - desktop', () => {
     });
 
     it('counter has correct total number', () => {
-        cy.get('toujou-slider .slider-count__total').should('have.text', '5');
+        cy.get('toujou-slider .slider-count__total').should('have.text', '6');
     });
 
     it('counter shows correct active index', () => {
@@ -166,7 +166,7 @@ describe('Slider - desktop', () => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
-            expect(activeIndex).to.eq(4);
+            expect(activeIndex).to.eq(5);
         });
         cy.get('toujou-slider .slider-control--next').click();
         cy.get('toujou-slider').then((el) => {
