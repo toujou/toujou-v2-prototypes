@@ -8,8 +8,11 @@ describe('topbutton a11y', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
+        cy.scrollTo('bottom').wait(500);
+
         cy.get('.topbutton');
-        cy.checkA11y('.topbutton');
+        // @ts-ignore
+        cy.checkA11yWithWait('.topbutton');
     });
 })
 

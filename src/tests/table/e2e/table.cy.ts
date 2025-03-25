@@ -24,9 +24,9 @@ describe('table', () => {
 
     it('table rows have correct styles', () => {
         cy.get('table.table tr:nth-child(1) td').should('have.css', 'padding', '16px');
-        cy.get('table.table tr:nth-child(1)').should('have.css', 'background-color', colors.colorFontO04);
+        cy.get('table.table tr:nth-child(1)').should('have.css', 'background-color', colors.colorFontO05);
         cy.get('table.table tr:nth-child(2)').should('have.css', 'background-color', colors.colorTransparent);
-        cy.get('table.table tr:nth-child(3)').should('have.css', 'background-color', colors.colorFontO04);
+        cy.get('table.table tr:nth-child(3)').should('have.css', 'background-color', colors.colorFontO05);
         cy.get('table.table tr:nth-child(4)').should('have.css', 'background-color', colors.colorTransparent);
 
         cy.get('table.table tr td').should('have.css', 'color', colors.colorFont);

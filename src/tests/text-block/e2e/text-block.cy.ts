@@ -2,7 +2,7 @@
 
 describe('text block', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=tests-text-blocks--text-blocks');
+        cy.visit('/iframe.html?viewMode=story&id=components-text-elements--text-block');
     });
 
     it('has correct class and tag name', () => {

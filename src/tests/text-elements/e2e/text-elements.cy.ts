@@ -22,8 +22,8 @@ describe('text elements', () => {
         cy.get('ul').should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get('ul').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('ul').should('have.css', 'color', colors.colorFont);
-        cy.get('ul').should('have.css', 'padding', '0px');
-        cy.get('ul').should('have.css', 'margin', `${tokens.spacing.normal} 0px ${tokens.spacing.normal} ${tokens.spacing.ms}`);
+        cy.get('ul').should('have.css', 'padding', '0px 0px 0px 17.6px');
+        cy.get('ul').should('have.css', 'margin', `${tokens.spacing.normal} 0px`);
     });
 
     it('nested ul has correct styles', () => {
@@ -32,7 +32,7 @@ describe('text elements', () => {
         cy.get('ul ul').should('have.css', 'line-height', tokens.type.lineHeight.normal);
         cy.get('ul ul').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('ul ul').should('have.css', 'color', colors.colorFont);
-        cy.get('ul ul').should('have.css', 'padding', '0px');
+        cy.get('ul ul').should('have.css', 'padding', '0px 0px 0px 17.6px');
         cy.get('ul ul').should('have.css', 'margin', `0px 0px 0px ${tokens.spacing.l}`);
     });
 

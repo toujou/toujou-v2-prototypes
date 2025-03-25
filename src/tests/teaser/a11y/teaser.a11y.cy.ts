@@ -2,111 +2,27 @@
 /// <reference types="cypress-axe" />
 
 describe('teaser a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser');
-        cy.injectAxe();
-    });
+    const variants = [
+        { name: 'default', url: '' },
+        { name: 'image 33% right', url: '&args=imageWidth:33;imageSide:right' },
+        { name: 'image 33% left', url: '&args=imageWidth:33' },
+        { name: 'image 66% left', url: '&args=imageWidth:66;imageSide:left' },
+        { name: 'image 66% right', url: '&args=imageWidth:66;imageSide:right' },
+        { name: 'primary', url: '&args=elementDesign:primary' },
+        { name: 'secondary', url: '&args=elementDesign:secondary' },
+        { name: 'inverted', url: '&args=elementDesign:inverted' },
+        { name: 'media', url: '&args=teaserType:media' },
+    ];
 
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
+    variants.forEach(({ name, url }) => {
+        it(`has no detectable a11y violations - ${name}`, () => {
+            cy.visit(`/iframe.html?viewMode=story&id=components-teaser--teaser${url}`);
+            cy.injectAxe();
+            cy.get('.teaser');
+            // @ts-ignore
+            cy.checkA11yWithWait('.teaser');
+        });
     });
-})
+});
 
-describe('teaser image 33% right a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=imageWidth:33;imageSide:right');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-describe('teaser image 33% left a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=imageWidth:33');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-describe('teaser image 66% left a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=imageWidth:66;imageSide:left');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-describe('teaser image 66% right a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=imageWidth:66;imageSide:right');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-describe('teaser primary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=elementDesign:primary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-describe('teaser secondary a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=elementDesign:secondary');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-describe('teaser inverted a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=elementDesign:inverted');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-describe('teaser media a11y', () => {
-    beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-teaser--teaser&args=teaserType:media');
-        cy.injectAxe();
-    });
-
-    it('has no detectable a11y violation on load', () => {
-        cy.get('.teaser');
-        cy.checkA11y('.teaser');
-    });
-})
-
-export {}
+export {};

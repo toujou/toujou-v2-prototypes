@@ -29,6 +29,7 @@ export default defineConfig({
             colorFontLight: 'rgb(183, 197, 205)',
             colorFontDark: 'rgb(21, 27, 30)',
             colorFontO04: 'rgba(42, 54, 60, 0.04)',
+            colorFontO05: 'rgba(42, 54, 60, 0.05)',
             colorFontO10: 'rgba(42, 54, 60, 0.1)',
             colorFontO20: 'rgba(42, 54, 60, 0.2)',
             colorBg: 'rgb(255, 255, 255)',

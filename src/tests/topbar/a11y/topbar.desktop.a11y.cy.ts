@@ -9,7 +9,8 @@ describe('topbar a11y [desktop]', () => {
     });
 
     it('has no detectable a11y violation on load', () => {
-        cy.checkA11y('.topbar');
+        // @ts-ignore
+        cy.checkA11yWithWait('.topbar');
     });
 })
 

@@ -9,7 +9,8 @@ describe('text-block a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('body');
-        cy.checkA11y('body');
+        // @ts-ignore
+        cy.checkA11yWithWait('body');
     });
 })
 

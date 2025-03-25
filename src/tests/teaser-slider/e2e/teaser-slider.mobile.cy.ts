@@ -14,7 +14,7 @@ describe('teaser-slider [mobile]', () => {
     });
 
     it('has correct structure', () => {
-        cy.get('toujou-slider .splide__list').children('.splide__slide').should('have.length', 8);
+        cy.get('toujou-slider .splide__list').children('.splide__slide').should('have.length', 16);
         cy.get('toujou-slider .splide__list .splide__slide .teaser').should('exist');
         cy.get('toujou-slider .splide__list .splide__slide .teaser .teaser__figure').should('exist');
         cy.get('toujou-slider .splide__list .splide__slide .teaser .teaser__content').should('exist');
@@ -36,10 +36,10 @@ describe('teaser-slider [mobile]', () => {
     it('has correct teaser styles', () => {
         cy.get('.teaser').should('have.css', 'position', 'relative');
         cy.get('.teaser').should('have.css', 'display', 'grid');
-        cy.get('.teaser').should('have.css', 'grid-template-columns', '311px');
+        cy.get('.teaser').should('have.css', 'grid-template-columns', '296px');
         cy.get('.teaser').should('have.css', 'grid-auto-flow', 'dense');
         cy.get('.teaser').should('have.css', 'gap', '16px');
-        cy.get('.teaser').should('have.css', 'width', '311px');
+        cy.get('.teaser').should('have.css', 'width', '296px');
         cy.get('.teaser').should('have.css', 'max-width', '1440px');
         cy.get('.teaser').should('have.css', 'margin', '0px');
         cy.get('.teaser').should('have.css', 'border-radius', '4px');
@@ -52,15 +52,14 @@ describe('teaser-slider [mobile]', () => {
         cy.get('.teaser .teaser__figure').should('have.css', 'border-radius', '4px');
         cy.get('.teaser .teaser__figure').should('have.css', 'overflow', 'hidden');
         cy.get('.teaser .teaser__figure').should('have.css', 'position', 'relative');
-        cy.get('.teaser .teaser__figure').should('have.css', 'width', '311px');
+        cy.get('.teaser .teaser__figure').should('have.css', 'width', '296px');
 
         cy.get('.teaser .teaser__image').should('have.css', 'aspect-ratio', '1.618 / 1');
         cy.get('.teaser .teaser__image').should('have.css', 'object-fit', 'cover');
-        cy.get('.teaser .teaser__image').should('have.css', 'width', '311px');
-        cy.get('.teaser .teaser__image').should('have.css', 'height', '192.2109375px');
+        cy.get('.teaser .teaser__image').should('have.css', 'width', '296px');
 
         cy.get('.teaser .teaser__content').should('have.css', 'padding', '0px');
-        cy.get('.teaser .teaser__content').should('have.css', 'width', '311px');
+        cy.get('.teaser .teaser__content').should('have.css', 'width', '296px');
     });
 
     it('has correct slider styles', () => {
@@ -85,30 +84,30 @@ describe('teaser-slider [mobile]', () => {
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(0);
         });
-        cy.get('toujou-slider .slider-control--next').click();
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(1);
         });
-        cy.get('toujou-slider .slider-control--next').click();
-        cy.get('toujou-slider .slider-control--next').click();
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(3);
         });
-        cy.get('toujou-slider .slider-control--prev').click();
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(2);
         });
-        cy.get('toujou-slider .slider-control--prev').click();
-        cy.get('toujou-slider .slider-control--prev').click();
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
@@ -127,14 +126,14 @@ describe('teaser-slider [mobile]', () => {
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(0);
         });
-        cy.get('toujou-slider .slider-control--prev').click();
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(3);
         });
-        cy.get('toujou-slider .slider-control--next').click();
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore

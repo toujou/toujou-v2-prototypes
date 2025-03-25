@@ -3,7 +3,7 @@
 describe('text block [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=tests-text-blocks--text-blocks');
+        cy.visit('/iframe.html?viewMode=story&id=test-id="text-block-default"');
     });
 
     it('has correct class and tag name', () => {

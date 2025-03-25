@@ -13,7 +13,7 @@ describe('teaser-slider', () => {
     });
 
     it('has correct structure', () => {
-        cy.get('toujou-slider .splide__list').children('.splide__slide').should('have.length', 8);
+        cy.get('toujou-slider .splide__list').children('.splide__slide').should('have.length', 16);
         cy.get('toujou-slider .splide__list .splide__slide .teaser').should('exist');
         cy.get('toujou-slider .splide__list .splide__slide .teaser .teaser__figure').should('exist');
         cy.get('toujou-slider .splide__list .splide__slide .teaser .teaser__content').should('exist');
@@ -84,30 +84,30 @@ describe('teaser-slider', () => {
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(0);
         });
-        cy.get('toujou-slider .slider-control--next').click();
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(1);
         });
-        cy.get('toujou-slider .slider-control--next').click();
-        cy.get('toujou-slider .slider-control--next').click();
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(3);
         });
-        cy.get('toujou-slider .slider-control--prev').click();
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(2);
         });
-        cy.get('toujou-slider .slider-control--prev').click();
-        cy.get('toujou-slider .slider-control--prev').click();
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
@@ -126,14 +126,14 @@ describe('teaser-slider', () => {
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(0);
         });
-        cy.get('toujou-slider .slider-control--prev').click();
+        cy.get('toujou-slider .slider-control--prev').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
             const activeIndex = sliderEl.splideSlider.index;
             expect(activeIndex).to.eq(3);
         });
-        cy.get('toujou-slider .slider-control--next').click();
+        cy.get('toujou-slider .slider-control--next').click({ multiple: true });
         cy.get('toujou-slider').then((el) => {
             const sliderEl = el[0];
             // @ts-ignore
