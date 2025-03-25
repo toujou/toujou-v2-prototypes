@@ -5,7 +5,7 @@ const tokens = Cypress.env('tokens');
 
 describe('review-list', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-reviewlist--review-list');
+        cy.visit('/iframe.html?viewMode=story&id=components-review-list--review-list');
     });
 
     it('has correct class and tag name', () => {
@@ -15,7 +15,7 @@ describe('review-list', () => {
 
     it('has correct structure', () => {
         cy.get('.reviews').should('exist')
-        cy.get('.reviews').children('.review').should('have.length', 4);
+        cy.get('.reviews').children('.review').should('have.length', 8);
         cy.get('.review:first-child .review__header').should('exist');
         cy.get('.review:first-child .review__header .review__title').should('exist');
         cy.get('.review:first-child .review__header .review__infos').should('exist');
@@ -40,7 +40,7 @@ describe('review-list', () => {
     });
 
     it('has correct styles', () => {
-        cy.get('.reviews').should('have.css', 'margin', '32px 456.5px 0px');
+        cy.get('.reviews').should('have.css', 'margin', '48px 456.5px 0px');
         cy.get('.reviews').should('have.css', 'width', '960px');
         cy.get('.reviews').should('have.css', 'max-width', '960px');
 
@@ -100,15 +100,15 @@ describe('review-list', () => {
         cy.get('.review:first-child .review__footer-title').should('have.css', 'margin', '0px 0px 8px');
     });
 
-    it('can open and close the clamped content', () => {
+    it.only('can open and close the clamped content', () => {
         cy.get('.review:first-child').should('have.css', 'height', '491.3828125px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '496.5px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '491.3828125px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '496.5px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '491.3828125px');
     })
 

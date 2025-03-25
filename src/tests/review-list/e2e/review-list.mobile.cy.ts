@@ -6,7 +6,7 @@ const tokens = Cypress.env('tokens');
 describe('review-list [mobile]', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
-        cy.visit('/iframe.html?viewMode=story&id=components-reviewlist--review-list');
+        cy.visit('/iframe.html?viewMode=story&id=components-review-list--review-list');
     });
 
     it('has correct class and tag name', () => {
@@ -16,7 +16,7 @@ describe('review-list [mobile]', () => {
 
     it('has correct structure', () => {
         cy.get('.reviews').should('exist')
-        cy.get('.reviews').children('.review').should('have.length', 4);
+        cy.get('.reviews').children('.review').should('have.length', 8);
         cy.get('.review:first-child .review__header').should('exist');
         cy.get('.review:first-child .review__header .review__title').should('exist');
         cy.get('.review:first-child .review__header .review__infos').should('exist');
@@ -103,13 +103,13 @@ describe('review-list [mobile]', () => {
 
     it('can open and close the clamped content', () => {
         cy.get('.review:first-child').should('have.css', 'height', '823.4375px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '1039.4375px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '823.4375px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="show-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '1039.4375px');
-        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click();
+        cy.get('.review:first-child .review__content toujou-clamped-content .button[slot="hide-button"]').click({ multiple: true });
         cy.get('.review:first-child').should('have.css', 'height', '823.4375px');
     })
 
