@@ -5,7 +5,7 @@ const tokens = Cypress.env('tokens');
 
 describe('rating-stars', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars');
     });
 
     it('has correct class and tag name', () => {
@@ -25,7 +25,7 @@ describe('rating-stars', () => {
         cy.get('.rating-stars').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.rating-stars').should('have.css', 'letter-spacing', '-6.4px');
         cy.get('.rating-stars').should('have.css', 'color', colors.colorGold);
-        cy.get('.rating-stars').shadow().children('.entity').should('have.length', 5);
+        cy.get('.rating-stars').shadow().find('.entity').should('have.length', 5);
         cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'position', 'relative');
         cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'left', '-3.2px');
         cy.get('.rating-stars').shadow().get('.entity:first-child').should('have.have.css', 'font-size', tokens.type.size.xl);
@@ -44,7 +44,7 @@ describe('rating-stars', () => {
 
 describe('rating-stars - s', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:s');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=size:s');
     });
 
     it('has correct attributes', () => {
@@ -60,7 +60,7 @@ describe('rating-stars - s', () => {
 
 describe('rating-stars - normal', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:normal');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=size:normal');
     });
 
     it('has correct attributes', () => {
@@ -76,7 +76,7 @@ describe('rating-stars - normal', () => {
 
 describe('rating-stars - m', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:m');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=size:m');
     });
 
     it('has correct attributes', () => {
@@ -92,7 +92,7 @@ describe('rating-stars - m', () => {
 
 describe('rating-stars - l', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:l');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=size:l');
     });
 
     it('has correct attributes', () => {
@@ -108,7 +108,7 @@ describe('rating-stars - l', () => {
 
 describe('rating-stars - xl', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:xl');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=size:xl');
     });
 
     it('has correct attributes', () => {
@@ -124,7 +124,7 @@ describe('rating-stars - xl', () => {
 
 describe('rating-stars - xxl', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=size:xxl');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=size:xxl');
     });
 
     it('has correct attributes', () => {
@@ -140,7 +140,7 @@ describe('rating-stars - xxl', () => {
 
 describe('rating-stars - can set rating 3.5', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=rating:3.5');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=rating:3.5');
     });
 
     it('has correct attributes', () => {
@@ -154,7 +154,7 @@ describe('rating-stars - can set rating 3.5', () => {
 
 describe('rating-stars - can set rating 1.2', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=rating:1.2');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=rating:1.2');
     });
 
     it('has correct attributes', () => {
@@ -168,7 +168,7 @@ describe('rating-stars - can set rating 1.2', () => {
 
 describe('rating-stars - can set rating 5', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars&args=rating:5');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars&args=rating:5');
     });
 
     it('has correct attributes', () => {
@@ -182,7 +182,7 @@ describe('rating-stars - can set rating 5', () => {
 
 describe('rating-stars - can set rating total 8 with rating 6', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars');
     });
 
     it('has correct styles', () => {
@@ -196,7 +196,7 @@ describe('rating-stars - can set rating total 8 with rating 6', () => {
 
 describe('rating-stars - can set rating total 3 with rating 2.4', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars');
     });
 
     it('has correct styles', () => {
@@ -210,7 +210,7 @@ describe('rating-stars - can set rating total 3 with rating 2.4', () => {
 
 describe('rating-stars - can set rating total 10 with rating 7.6', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars');
     });
 
     it('has correct styles', () => {
@@ -224,7 +224,7 @@ describe('rating-stars - can set rating total 10 with rating 7.6', () => {
 
 describe('rating-stars - can set entity ', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-ratingstars--rating-stars');
+        cy.visit('/iframe.html?viewMode=story&id=components-rating-stars--rating-stars');
     });
 
     it('has correct styles', () => {

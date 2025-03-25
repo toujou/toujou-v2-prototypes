@@ -242,6 +242,7 @@ export class ToujouSlider extends LitElement {
         this._getCountInfo();
         this._initCount();
         this._removeSlidesTabpanelRole();
+        this._addAriaLabelToSliderContainer();
 
         this.dispatchEvent(new CustomEvent('toujou-slider-mounted', {
             bubbles: true,
@@ -264,6 +265,15 @@ export class ToujouSlider extends LitElement {
             el.removeAttribute('role');
             el.removeAttribute('aria-label');
         });
+    }
+
+    /**
+     * Add an aria-label attribute to the slider container element to fix a11y error
+     * @private
+     */
+    private _addAriaLabelToSliderContainer() {
+        const containerId = this.splideContainer?.id;
+        this.splideContainer?.setAttribute('aria-label', `Slider - ${containerId}`)
     }
 
     /**

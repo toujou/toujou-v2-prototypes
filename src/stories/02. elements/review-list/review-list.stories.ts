@@ -18,9 +18,9 @@ export default {
 const reviewsComponent = () => {
     return `
         <div class="reviews">
-            <article class="review">
+            <article class="review" title="review-title-1" aria-roledescription="Review" id="review-1">
                 <header class="review__header">
-                    <h3 class="review__title">Nice holiday</h3>
+                    <h3 class="review__title" id="review-title-1">Nice holiday</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>
@@ -64,9 +64,9 @@ const reviewsComponent = () => {
                 </footer>
             </article>
 
-            <article class="review" no-media>
+            <article class="review" title="review-title-2" no-media aria-roledescription="Review" id="review-2">
                 <header class="review__header">
-                    <h3 class="review__title">Amazing sightseeing trip</h3>
+                    <h3 class="review__title" id="review-title-2">Amazing sightseeing trip</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>
@@ -107,9 +107,9 @@ const reviewsComponent = () => {
                 </footer>
             </article>
 
-            <article class="review">
+            <article class="review" title="review-title-3" aria-roledescription="Review" id="review-3">
                 <header class="review__header">
-                    <h3 class="review__title">Our dream trip</h3>
+                    <h3 class="review__title" id="review-title-3">Our dream trip</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>
@@ -203,9 +203,9 @@ const reviewsComponent = () => {
                 </footer>
             </article>
 
-            <article class="review" no-media>
+            <article class="review" title="review-title-4" no-media aria-roledescription="Review" id="review-4">
                 <header class="review__header">
-                    <h3 class="review__title">Amazing sightseeing trip</h3>
+                    <h3 class="review__title" id="review-title-4">Amazing sightseeing trip</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>

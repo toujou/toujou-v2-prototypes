@@ -118,6 +118,11 @@ export declare class ToujouSlider extends LitElement {
      */
     private _removeSlidesTabpanelRole;
     /**
+     * Add an aria-label attribute to the slider container element to fix a11y error
+     * @private
+     */
+    private _addAriaLabelToSliderContainer;
+    /**
      * Get the DOM elements that are used to display the count information
      */
     private _getCountInfo;
