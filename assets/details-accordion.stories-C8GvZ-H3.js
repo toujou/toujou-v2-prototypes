@@ -1,4 +1,4 @@
-import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as o}from"./details-accordion.docs--zKgnySI.js";import"./jsx-runtime-BjG_zV1W.js";import"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";const g={title:"COMPONENTS/Accordion",parameters:{badges:[l.DONE],docs:{page:o}},argTypes:{singleExpandMode:{table:{category:"Details accordion Settings",defaultValue:{summary:"false"}},name:"Single expand mode",description:"Allow just one accordion items to be open at a time",control:{type:"boolean"},required:!0},expandedItem:{table:{category:"Details accordion Settings",defaultValue:{summary:"first"}},name:"Expanded items",description:"Define which accordion items are open when the page loads",options:["none","first","all"],control:{type:"radio"},required:!0},elementDesign:{table:{category:"Details Settings",defaultValue:{summary:"default"}},name:"Accordion element design",description:"Set the element design for the accordion element",options:["default","primary","secondary","inverted"],control:{type:"radio"},required:!0}},tags:["autodocs"]},a=e=>`
+import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as o}from"./details-accordion.docs--zKgnySI.js";import"./jsx-runtime-BjG_zV1W.js";import"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";const p={title:"COMPONENTS/Accordion",parameters:{badges:[l.DONE],docs:{page:o}},argTypes:{singleExpandMode:{table:{category:"Details accordion Settings",defaultValue:{summary:"false"}},name:"Single expand mode",description:"Allow just one accordion items to be open at a time",control:{type:"boolean"},required:!0},expandedItem:{table:{category:"Details accordion Settings",defaultValue:{summary:"first"}},name:"Expanded items",description:"Define which accordion items are open when the page loads",options:["none","first","all"],control:{type:"radio"},required:!0},elementDesign:{table:{category:"Details Settings",defaultValue:{summary:"default"}},name:"Accordion element design",description:"Set the element design for the accordion element",options:["default","primary","secondary","inverted"],control:{type:"radio"},required:!0}},tags:["autodocs"]},a=e=>`
         <main>
             <toujou-details-accordion class="details-accordion" ${e.singleExpandMode?"single-expand-mode":""}>
                 <toujou-details id="details-1" class="details" ${e.expandedItem==="first"||e.expandedItem==="all"?"is-open":""} element-design="${e.elementDesign}">
@@ -8,7 +8,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as o}from"./details
                         <toujou-text-block class="text-block" text-block-media-position="inside-right">
                             <toujou-text-block-column class="text-block-column">
                                 <figure class="text-block__figure">
-                                    <img class="text-block__image" src="https://picsum.photos/800/800">
+                                    <img class="text-block__image" src="https://picsum.photos/800/800" alt="nice image">
                                 </figure>
                                 <div class="text-block__content">
                                     <h2>Headline</h2>
@@ -28,7 +28,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as o}from"./details
                         <toujou-text-block class="text-block" text-block-media-position="inside-right">
                             <toujou-text-block-column class="text-block-column">
                                 <figure class="text-block__figure">
-                                    <img class="text-block__image" src="https://picsum.photos/800/800">
+                                    <img class="text-block__image" src="https://picsum.photos/800/800" alt="another nice image">
                                 </figure>
                                 <div class="text-block__content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet. A pellentesque sit amet porttitor eget. Feugiat nisl pretium fusce id velit. Justo donec enim diam vulputate ut pharetra sit. Enim diam vulputate ut pharetra sit amet aliquam. Viverra nam libero justo laoreet sit amet cursus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Magna etiam tempor orci eu lobortis elementum. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Massa vitae tortor condimentum lacinia. Sed risus pretium quam vulputate dignissim. Et ultrices neque ornare aenean euismod elementum nisi.</p>
@@ -167,7 +167,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as o}from"./details
                         <toujou-text-block class="text-block" text-block-media-position="inside-right">
                             <toujou-text-block-column class="text-block-column">
                                 <figure class="text-block__figure">
-                                    <img class="text-block__image" src="https://picsum.photos/800/800">
+                                    <img class="text-block__image" src="https://picsum.photos/800/800" alt="nice image">
                                 </figure>
                                 <div class="text-block__content">
                                     <h2>Headline</h2>
@@ -187,7 +187,7 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as o}from"./details
                         <toujou-text-block class="text-block" text-block-media-position="inside-right">
                             <toujou-text-block-column class="text-block-column">
                                 <figure class="text-block__figure">
-                                    <img class="text-block__image" src="https://picsum.photos/800/800">
+                                    <img class="text-block__image" src="https://picsum.photos/800/800" alt="another nice image">
                                 </figure>
                                 <div class="text-block__content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet. A pellentesque sit amet porttitor eget. Feugiat nisl pretium fusce id velit. Justo donec enim diam vulputate ut pharetra sit. Enim diam vulputate ut pharetra sit amet aliquam. Viverra nam libero justo laoreet sit amet cursus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Magna etiam tempor orci eu lobortis elementum. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Massa vitae tortor condimentum lacinia. Sed risus pretium quam vulputate dignissim. Et ultrices neque ornare aenean euismod elementum nisi.</p>
@@ -316,4 +316,4 @@ import{T as l}from"./badgeCustomConfig-DUXiHpL4.js";import{M as o}from"./details
             </toujou-details-accordion>
         </main>
     \`;
-}`,...(n=(s=i.parameters)==null?void 0:s.docs)==null?void 0:n.source}}};const h=["DetailsAccordion"];export{i as DetailsAccordion,h as __namedExportsOrder,g as default};
+}`,...(n=(s=i.parameters)==null?void 0:s.docs)==null?void 0:n.source}}};const h=["DetailsAccordion"];export{i as DetailsAccordion,h as __namedExportsOrder,p as default};

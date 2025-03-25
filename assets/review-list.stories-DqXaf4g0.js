@@ -46,9 +46,9 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
 `,e.jsx(i.p,{children:`The card's "content" section will be clamped to 3 lines if it has enough content. In this case, there will be a "content toggle" button visible, which will expand / clamp the content.`}),`
 `,e.jsx(i.p,{children:"Each review card can also show a comment from the website owner."})]})}function d(t={}){const{wrapper:i}={...c(),...t.components};return i?e.jsx(i,{...t,children:e.jsx(n,{...t})}):n(t)}const f={title:"COMPONENTS/Review List",parameters:{badges:[u.DONE],docs:{page:d}}},s=()=>`
         <div class="reviews">
-            <article class="review">
+            <article class="review" title="review-title-1" aria-roledescription="Review" id="review-1">
                 <header class="review__header">
-                    <h3 class="review__title">Nice holiday</h3>
+                    <h3 class="review__title" id="review-title-1">Nice holiday</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>
@@ -92,9 +92,9 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                 </footer>
             </article>
 
-            <article class="review" no-media>
+            <article class="review" title="review-title-2" no-media aria-roledescription="Review" id="review-2">
                 <header class="review__header">
-                    <h3 class="review__title">Amazing sightseeing trip</h3>
+                    <h3 class="review__title" id="review-title-2">Amazing sightseeing trip</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>
@@ -135,9 +135,9 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                 </footer>
             </article>
 
-            <article class="review">
+            <article class="review" title="review-title-3" aria-roledescription="Review" id="review-3">
                 <header class="review__header">
-                    <h3 class="review__title">Our dream trip</h3>
+                    <h3 class="review__title" id="review-title-3">Our dream trip</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>
@@ -231,9 +231,9 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                 </footer>
             </article>
 
-            <article class="review" no-media>
+            <article class="review" title="review-title-4" no-media aria-roledescription="Review" id="review-4">
                 <header class="review__header">
-                    <h3 class="review__title">Amazing sightseeing trip</h3>
+                    <h3 class="review__title" id="review-title-4">Amazing sightseeing trip</h3>
                     <div class="review__infos">
                         <p class="review__info review__info--name">
                             <span class="review__info-label">Name:</span>
