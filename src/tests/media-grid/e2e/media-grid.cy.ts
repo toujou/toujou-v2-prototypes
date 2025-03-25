@@ -25,11 +25,11 @@ describe('media grid', () => {
 
     it('has correct styles', () => {
         cy.get('.media-grid').should('have.css', 'display', 'grid');
-        cy.get('.media-grid').should('have.css', 'grid-gap', `${tokens.spacing.xl} ${tokens.spacing.xl}`);
+        cy.get('.media-grid').should('have.css', 'grid-gap', `${tokens.spacing.xl}`);
         cy.get('.media-grid').should('have.css', 'grid-template-columns', '456px 456px');
         cy.get('.media-grid').should('have.css', 'width', '960px');
         cy.get('.media-grid').should('have.css', 'max-width', '960px');
-        cy.get('.media-grid').should('have.css', 'margin', '0px 464px');
+        cy.get('.media-grid').should('have.css', 'margin', '96px 464px 0px');
     });
 })
 

@@ -26,11 +26,11 @@ describe('media grid [mobile]', () => {
 
     it('has correct styles', () => {
         cy.get('.media-grid').should('have.css', 'display', 'grid');
-        cy.get('.media-grid').should('have.css', 'grid-gap', `${tokens.spacing.l} ${tokens.spacing.l}`);
+        cy.get('.media-grid').should('have.css', 'grid-gap', `${tokens.spacing.l}`);
         cy.get('.media-grid').should('have.css', 'grid-template-columns', '311px');
         cy.get('.media-grid').should('have.css', 'width', '311px');
         cy.get('.media-grid').should('have.css', 'max-width', '960px');
-        cy.get('.media-grid').should('have.css', 'margin', `0px ${tokens.spacing.normal}`);
+        cy.get('.media-grid').should('have.css', 'margin', `48px ${tokens.spacing.normal} 0px`);
     });
 })
 

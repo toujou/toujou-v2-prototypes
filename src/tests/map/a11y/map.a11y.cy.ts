@@ -9,7 +9,8 @@ describe('map a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.map-contact');
-        cy.checkA11y('.map-contact');
+        // @ts-ignore
+        cy.checkA11yWithWait('.map-contact');
     });
 })
 

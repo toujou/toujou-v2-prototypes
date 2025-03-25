@@ -9,7 +9,8 @@ describe('hero-grid a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.media-grid');
-        cy.checkA11y('.media-grid');
+        // @ts-ignore
+        cy.checkA11yWithWait('.media-grid');
     });
 })
 

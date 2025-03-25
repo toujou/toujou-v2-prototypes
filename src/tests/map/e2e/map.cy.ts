@@ -20,7 +20,7 @@ describe('Map', () => {
         cy.get('toujou-map-contact .map-contact__content .map-contact__headline').should('exist');
         cy.get('toujou-map-contact .map-contact__content .map-contact__address').should('exist');
         cy.get('toujou-map-contact .map-contact__content .map-contact__socials').should('exist');
-        cy.get('toujou-map-contact .map-contact__content .map-contact__socials').children('.map-contact__social').should('have.length', 3);
+        cy.get('toujou-map-contact .map-contact__content .map-contact__socials').children('.map-contact__social').should('have.length', 6);
     });
 
     it('has correct styles', () => {
@@ -28,7 +28,7 @@ describe('Map', () => {
             expect(mapEl).to.have.css('display').equal('grid');
             expect(mapEl).to.have.css('margin-top').equal('0px');
             expect(mapEl).to.have.css('margin-bottom').equal('0px');
-            expect(mapEl).to.have.css('grid-gap').equal(`${tokens.spacing.xl} ${tokens.spacing.xl}`);
+            expect(mapEl).to.have.css('grid-gap').equal(`${tokens.spacing.xl}`);
             expect(mapEl).to.have.css('grid-template-areas').equal('"map address"');
         });
         cy.get('.map-contact .map-contact__map-container').then((mapContainer) => {
