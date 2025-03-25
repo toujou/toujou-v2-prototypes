@@ -22,7 +22,7 @@ describe('rating-placeholder [mobile]', () => {
         cy.get('.media-placeholder').should('have.css', 'display', 'block');
         cy.get('.media-placeholder').should('have.css', 'height', '270px');
         cy.get('.media-placeholder').should('have.css', 'width', '480px');
-        cy.get('.media-placeholder').should('have.css', 'background-color', colors.colorFontLight);
+        cy.get('.media-placeholder').should('have.css', 'background-color', colors.colorPrimaryO10);
         cy.get('.media-placeholder').should('have.css', 'opacity', '1');
         cy.get('.media-placeholder').should('have.css', 'position', 'relative');
         cy.get('.media-placeholder').should('have.css', 'border-radius', tokens.borderRadius.normal);

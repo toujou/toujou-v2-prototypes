@@ -9,7 +9,8 @@ describe('media-placeholder a11y', () => {
 
     it('has no detectable a11y violation on load', () => {
         cy.get('.media-placeholder');
-        cy.checkA11y('.media-placeholder');
+        // @ts-ignore
+        cy.checkA11yWithWait('.media-placeholder');
     });
 })
 
