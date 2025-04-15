@@ -37,28 +37,15 @@ export class MainNav {
             listItem.toggleEl.addEventListener('click', () => {
                 this._toggleListItemState(listItem);
             })
-            listItem.addEventListener('keyup', (event: KeyboardEvent) => {
-                // @ts-ignore
-                this._handleKeyUp(event, event.target);
-            });
+            listItem.addEventListener('keyup', this._handleKeyUp);
         })
     }
 
     /**
-     * - On Enter or Space click on a main nav chevron we toggle the nav item open / closed
      * - On Esc press close the open main navigation
      * @param   event
-     * @param   listItem
      */
-    _handleKeyUp = (event: KeyboardEvent, listItem: MainNavListItem) => {
-        // Open list item when there is "enter" or "space" press on the item chevron
-        if (event.key === 'Enter' || event.code === 'Enter' || event.code === 'Space' || event.key === ' ') {
-            if (listItem && listItem.classList.contains(this.listItemChevronSelector)) {
-                const parentListItem = listItem.closest(this.listItemSelector) as MainNavListItem;
-                this._toggleListItemState(parentListItem);
-            }
-        }
-
+    _handleKeyUp = (event: KeyboardEvent) => {
         // Close all nav items when "Escape" is pressed
         if (event.key === 'Escape' || event.code === 'Escape') {
             this._closeAllNavListItems();
@@ -67,10 +54,13 @@ export class MainNav {
 
     /**
      * Toggle the list item isOpen state and add / remove the isOpenAttribute accordingly
+     * Set the chevron element's aria-expanded attribute according to list item isOpen state
      * @param   listItem
      */
     _toggleListItemState = (listItem: MainNavListItem) => {
         listItem.isOpen = !listItem.isOpen;
+
+        listItem.querySelector(`.${this.listItemChevronSelector}`)?.setAttribute('aria-expanded', listItem.isOpen ? 'true' : 'false');
 
         if (listItem.isOpen) {
             listItem.setAttribute(this.isOpenAttribute, '')
