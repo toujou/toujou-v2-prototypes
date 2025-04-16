@@ -218,7 +218,7 @@ const renderMainNavSection = () => {
                     <a href="#" class="main-nav__link">
                         <span class="main-nav__text">Bürgerservice</span>
                     </a>
-                    <button class="main-nav__chevron" aria-label="Toggle menu Bürgerservice" aria-controls="nav2" aria-expanded="false">
+                    <button class="main-nav__chevron" aria-label="Toggle menu Bürgerservice" aria-controls="nav2" aria-expanded="false" aria-pressed="false">
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                     </button>
                     <ul class="main-nav__list" nav-list-level="2" id="nav2">
@@ -226,7 +226,7 @@ const renderMainNavSection = () => {
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Arbeit und Beruf</span>
                             </a>
-                            <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav2_1" aria-expanded="false">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav2_1" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
                             <ul class="main-nav__list" nav-list-level="3" id="nav2_1">
@@ -261,7 +261,7 @@ const renderMainNavSection = () => {
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Ausweise und Dokumente</span>
                             </a>
-                            <button class="main-nav__chevron" aria-label="Toggle menu Ausweise und Dokumente" aria-controls="nav2_2" aria-expanded="false">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Ausweise und Dokumente" aria-controls="nav2_2" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
                             <ul class="main-nav__list" nav-list-level="3" id="nav2_2">
@@ -286,7 +286,7 @@ const renderMainNavSection = () => {
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Bauen</span>
                             </a>
-                            <button class="main-nav__chevron" aria-label="Toggle menu Bauen" aria-controls="nav2_3" aria-expanded="false">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Bauen" aria-controls="nav2_3" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
                             <ul class="main-nav__list" nav-list-level="3" id="nav2_3">
@@ -458,7 +458,7 @@ const renderMainNavSection = () => {
                     <a href="#" class="main-nav__link">
                         <span class="main-nav__text">Häufige Fragen</span>
                     </a>
-                    <button class="main-nav__chevron" aria-label="Toggle menu Häufige Fragen" aria-controls="nav4" aria-expanded="false">
+                    <button class="main-nav__chevron" aria-label="Toggle menu Häufige Fragen" aria-controls="nav4" aria-expanded="false" aria-pressed="false">
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                     </button>
                     <ul class="main-nav__list" nav-list-level="2" id="nav4">
@@ -466,7 +466,7 @@ const renderMainNavSection = () => {
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Arbeit und Beruf</span>
                             </a>
-                            <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav4_1" aria-expanded="false">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav4_1" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
                             <ul class="main-nav__list" nav-list-level="3" id="nav4_1">

@@ -6,7 +6,7 @@ export class MainNav {
     protected readonly hasSubNavAttribute = 'has-subnav';
     protected readonly isOpenAttribute = 'is-open';
     protected readonly listItemLevelAttribute = 'nav-item-level';
-    protected readonly listItemChevronSelector = 'main-nav__chevron';
+    protected readonly listItemChevronSelector = '.main-nav__chevron';
 
     constructor(mainNavEl: MainNavElement) {
         this.mainNavEl = mainNavEl;
@@ -58,9 +58,12 @@ export class MainNav {
      * @param   listItem
      */
     _toggleListItemState = (listItem: MainNavListItem) => {
+        const listItemChevron = listItem.querySelector('.main-nav__chevron');
+
         listItem.isOpen = !listItem.isOpen;
 
-        listItem.querySelector(`.${this.listItemChevronSelector}`)?.setAttribute('aria-expanded', listItem.isOpen ? 'true' : 'false');
+        listItemChevron?.setAttribute('aria-expanded', listItem.isOpen ? 'true' : 'false');
+        listItemChevron?.setAttribute('aria-pressed', listItem.isOpen ? 'true' : 'false');
 
         if (listItem.isOpen) {
             listItem.setAttribute(this.isOpenAttribute, '')
