@@ -86,26 +86,9 @@ interface SliderStoryProps {
     sliderType: string;
 }
 
-const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
+const renderSliderContent = (args: SliderStoryProps) => {
     return `
-        <toujou-slider
-            class="slider"
-            aria-label="Toujou slider example"
-            element-design="${args.designColor}"
-            ${args.isFullwidth ? 'slider-fullwidth' : ''}
-            ${args.showCount ? 'show-count' : ''}
-            ${args.autoplay ? 'auto-play' : ''}
-            auto-play-interval="${args.autoplayInterval}"
-            slides-to-show="1"
-            slider-type="${args.sliderType}"
-            slider-gap="var(--slider-slides-gap)"
-            slider-aspect-ratio="0.5625"
-            arrow-first-aria-label="Go to first slide"
-            arrow-last-aria-label="Go to last slide"
-            arrow-prev-aria-label="Go to previous slide"
-            arrow-next-aria-label="Go to next slide"
-        >
-            <div class="splide slider__slider">
+        <div class="splide slider__slider">
                 <div class="splide__arrows slider-controls">
                     <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev">
                         <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
@@ -120,16 +103,6 @@ const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
                         <li class="splide__slide slider-slide" data-splide-interval="${args.autoplayInterval * 1000}">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
                                 <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
-<!--                                <toujou-media-info class="media-info">-->
-<!--                                    <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">-->
-<!--                                        <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>-->
-<!--                                    </button>-->
-<!--                                    <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">-->
-<!--                                        <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>-->
-<!--                                    </button>-->
-<!--                                    <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>-->
-<!--                                    <small slot="copyright" class="media-info__copyright">@Nice photographer</small>-->
-<!--                                </toujou-media-info>-->
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="${args.autoplayInterval * 1000}">
@@ -153,49 +126,14 @@ const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide" data-splide-interval="${args.autoplayInterval * 1000}">
-                            <toujou-collection-item
-                                class="collection-item"
-                                item-type="gastro"
-                                element-design="default"
-                                item-orientation="vertical"
-                                role="article"
-                            >
-                                <header class="collection-item__top">
-                                    <figure class="collection-item__figure">
-                                        <img
-                                            class="collection-item__image"
-                                            alt="Burgerfabrik_HUB_3.jpg"
-                                            loading="lazy"
-                                            src="https://picsum.photos/1600/911"
-                                        >
-                                        <toujou-fav-item tabindex="0" class="collection-item__fav-item" code="t3://d1i?itemtype=3&amp;itemid=100021771" add-label="Add to favorites" remove-label="Add to favorites" role="switch" aria-checked="false" aria-label="Add to favorites"></toujou-fav-item>
-                                        <span class="collection-item__type-icon" aria-hidden="true">
-                                            <toujou-icon class="icon" icon-color="background" icon-size="normal" icon-name="food"></toujou-icon>
-                                        </span>
-                                    </figure>
-                                </header>
-
-                                <div class="collection-item__bottom">
-                                    <a href="#" class="collection-item__figure-link">
-                                        <h3 class="collection-item__title">Burgerfabrik - burger &amp; more</h3>
-                                    </a>
-                                    <p class="collection-item__abstract">
-                                        <span class="collection-item__abstract-text">Wenn Sie viel Wert auf frisch zubereitete Burger und Pommes legen und gerne auch mal vegane Varianten ausprobieren möchten, dann sind Sie in der Peiner BurgerFabrik genau richtig. Auch Salatfreunde kommen hier auf ihre Kosten. Im Sommer können Sie hervorragend bei uns vor der Tür sitzen und beim Schlemmen das bunte Treiben in der Innenstadt beobachten.</span>
-                                    </p>
-                                    <div class="collection-item__chips">
-                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bistro</toujou-chip>
-                                        <toujou-chip class="chip" chip-bg-color="font-very-light" chip-size="extra-small">Bringdienst</toujou-chip>
-                                    </div>
-                                    <div class="card-collection__infos">
-                                        <p class="collection-item__info collection-item__info--with-icon collection-item__info--location">
-                                            <toujou class="icon" icon-name="location" icon-color="font-color" icon-size="ms"></toujou>
-                                            <span class="collection-item__info-text">
-                                                Schützenstraße 2, Peine
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </toujou-collection-item>
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <img class="single-media__image" src="https://picsum.photos/1600/916" alt="Nice image">
+                            </toujou-single-media>
+                        </li>
+                        <li class="splide__slide slider-slide" data-splide-interval="${args.autoplayInterval * 1000}">
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <img class="single-media__image" src="https://picsum.photos/1600/917" alt="Nice image">
+                            </toujou-single-media>
                         </li>
                     </ul>
                 </div>
@@ -210,6 +148,62 @@ const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
                 <span class="slider-count__separator">of</span>
                 <span class="slider-count__total"></span>
             </toujou-slider-count>
+    `
+}
+
+const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
+    return `
+        <h1 type-alignment="center">Single image slider</h1>
+        
+        <toujou-slider
+            class="slider"
+            aria-label="Toujou slider example"
+            element-design="${args.designColor}"
+            ${args.isFullwidth ? 'slider-fullwidth' : ''}
+            ${args.showCount ? 'show-count' : ''}
+            ${args.autoplay ? 'auto-play' : ''}
+            auto-play-interval="${args.autoplayInterval}"
+            slides-to-show="1"
+            slider-type="${args.sliderType}"
+            slider-gap="var(--slider-slides-gap)"
+            slider-aspect-ratio="0.5625"
+            arrow-first-aria-label="Go to first slide"
+            arrow-last-aria-label="Go to last slide"
+            arrow-prev-aria-label="Go to previous slide"
+            arrow-next-aria-label="Go to next slide"
+        >
+            ${renderSliderContent(args)}
+        </toujou-slider>
+        
+        <br>
+        
+        <br>
+        
+        <br>
+        
+        <h1 type-alignment="center">Single with breakpoints / multiple images</h1>
+        
+        <toujou-slider
+            class="slider"
+            content-type="media"
+            aria-label="Toujou slider example"
+            element-design="primary"
+            ${args.isFullwidth ? 'slider-fullwidth' : ''}
+            ${args.autoplay ? 'auto-play' : ''}
+            auto-play-interval="${args.autoplayInterval}"
+            slides-per-move="1"
+            slides-to-show="1"
+            slider-type="${args.sliderType}"
+            slider-gap="var(--slider-slides-gap)"
+            slider-media-query="min"
+            slider-breakpoints='{"640":{"perPage":2},"840":{"perPage":3},"1024":{"perPage":4}}'
+            slider-aspect-ratio="0.5625"
+            arrow-first-aria-label="Go to first logo"
+            arrow-last-aria-label="Go to last logo"
+            arrow-prev-aria-label="Go to previous logo"
+            arrow-next-aria-label="Go to next logo"
+        >
+            ${renderSliderContent(args)}
         </toujou-slider>
     `;
 };

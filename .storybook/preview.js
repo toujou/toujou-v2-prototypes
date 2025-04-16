@@ -92,4 +92,4 @@ export default {
     ]
 };
 
-// console.clear();
+console.clear();

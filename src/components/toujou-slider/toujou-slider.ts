@@ -206,7 +206,8 @@ export class ToujouSlider extends LitElement {
                 first: this.arrowFirstAriaLabel,
                 last: this.arrowLastAriaLabel,
             },
-            focusableNodes: '*'
+            focusableNodes: '*',
+            breakpoints: undefined
         }
 
         if (this.sliderFocusCenter === 'true') {
@@ -217,8 +218,11 @@ export class ToujouSlider extends LitElement {
         }
 
         if (this.sliderBreakpoints) {
-            // @ts-ignore
-            sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
+            try {
+                sliderOptions.breakpoints = JSON.parse(this.sliderBreakpoints);
+            } catch (error) {
+                console.error('Error parsing slider breakpoints JSON:', error, '\n', 'Received breakpoints JSON:', '\n', this.sliderBreakpoints);
+            }
         }
 
         if (this.sliderClonesAmount) {

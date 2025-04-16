@@ -31,7 +31,8 @@
         --slider-progress-bar-bg-color: var(--color-secondary-dark);
     }
 
-    .slider:not([content-type="logos"])[auto-play] .slider-progress {
+    .slider:not([content-type="logos"])[auto-play] .slider-progress,
+    .slider:not([content-type="media"])[auto-play] .slider-progress {
         --slider-progress-display: block;
     }
 

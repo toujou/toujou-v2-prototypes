@@ -16,6 +16,11 @@
         height: fit-content !important;
     }
 
+    .slider[content-type="media"] .slider-slide {
+        aspect-ratio: var(--slider-aspect-ratio);
+        height: fit-content !important;
+    }
+
     .header .slider[content-type="media"] .slider-slide {
         width: 100% !important;
     }
