@@ -42,13 +42,21 @@ export class MainNav {
     }
 
     /**
-     * - On Esc press close the open main navigation
+     * Close parent or all open navigation lists
      * @param   event
      */
     _handleKeyUp = (event: KeyboardEvent) => {
-        // Close all nav items when "Escape" is pressed
+        /* @ts-ignore */
+        const parentListItem = event.target?.offsetParent;
+
         if (event.key === 'Escape' || event.code === 'Escape') {
-            this._closeAllNavListItems();
+            // Close parent nav item if parent listItem is open
+            if (parentListItem?.hasAttribute('is-open')) {
+                event.stopPropagation();
+                this._toggleListItemState(parentListItem);
+            }
+            // Close all nav items when "Escape" is pressed
+            else this._closeAllNavListItems();
         }
     }
 
