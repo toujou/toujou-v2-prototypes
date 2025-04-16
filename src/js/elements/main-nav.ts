@@ -1,6 +1,7 @@
 export class MainNav {
     private mainNavEl: MainNavElement;
     private navListItems: MainNavListItem[] = [];
+    private activeSubNavs: MainNavListItem[] = [];
 
     protected readonly listItemSelector = '.main-nav__list-item';
     protected readonly hasSubNavAttribute = 'has-subnav';
@@ -42,20 +43,31 @@ export class MainNav {
     }
 
     /**
-     * Close parent or all open navigation lists
+     * Close parent or whole navigation
      * @param   event
      */
     _handleKeyUp = (event: KeyboardEvent) => {
-        /* @ts-ignore */
-        const parentListItem = event.target?.offsetParent;
-
         if (event.key === 'Escape' || event.code === 'Escape') {
-            if (parentListItem?.hasAttribute('is-open')) {
-                event.stopPropagation();
-                this._toggleListItemState(parentListItem);
-            }
-            else {
-                this._closeAllNavListItems();
+            const listItem = this.activeSubNavs.shift();
+
+            event.stopPropagation();
+
+            if(!listItem) {
+                const burgerButton = document.querySelector(
+                    `.burger-button[aria-controls="${this.mainNavEl.id}"][aria-expanded="true"]`);
+                if(!burgerButton) return;
+
+                /* @ts-ignore */
+                burgerButton.click();
+                /* @ts-ignore */
+                burgerButton.focus({ focusVisible: true });
+            } else {
+                this._toggleListItemState(listItem!);
+
+                listItem.parentElement?.querySelector(
+                    `${this.listItemChevronSelector}[aria-controls="${listItem.getAttribute('aria-owns')}"]`
+                /* @ts-ignore */
+                )?.focus({ focusVisible: true });
             }
         }
     }
@@ -76,6 +88,7 @@ export class MainNav {
         if (listItem.isOpen) {
             listItem.setAttribute(this.isOpenAttribute, '')
             this._closeOtherOpenListItems(listItem);
+            this.activeSubNavs.unshift(listItem);
             window.addEventListener('click', this._onWindowClick);
         } else {
             listItem.removeAttribute(this.isOpenAttribute);
