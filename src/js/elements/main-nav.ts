@@ -58,7 +58,7 @@ export class MainNav {
      * @param   listItem
      */
     _toggleListItemState = (listItem: MainNavListItem) => {
-        const listItemChevron = listItem.querySelector('.main-nav__chevron');
+        const listItemChevron = listItem.querySelector(this.listItemChevronSelector);
 
         listItem.isOpen = !listItem.isOpen;
 
