@@ -50,13 +50,13 @@ export class MainNav {
         const parentListItem = event.target?.offsetParent;
 
         if (event.key === 'Escape' || event.code === 'Escape') {
-            // Close parent nav item if parent listItem is open
             if (parentListItem?.hasAttribute('is-open')) {
                 event.stopPropagation();
                 this._toggleListItemState(parentListItem);
             }
-            // Close all nav items when "Escape" is pressed
-            else this._closeAllNavListItems();
+            else {
+                this._closeAllNavListItems();
+            }
         }
     }
 
