@@ -44,7 +44,8 @@ export class MainNav {
     }
 
     /**
-     * Close parent or whole navigation
+     * Handle keyup events
+     * - Escape: Close parent or whole navigation
      * @param   event
      */
     _handleKeyUp = (event: KeyboardEvent) => {
@@ -54,14 +55,7 @@ export class MainNav {
             event.stopPropagation();
 
             if(!listItem) {
-                const burgerButton = document.querySelector(
-                    `.burger-button[aria-controls="${this.mainNavEl.id}"][aria-expanded="true"]`);
-                if(!burgerButton) return;
-
-                /* @ts-ignore */
-                burgerButton.click();
-                /* @ts-ignore */
-                burgerButton.focus({ focusVisible: true });
+                this.mainNavEl.dispatchEvent(new CustomEvent('toujou-main-nav-close'));
             } else {
                 this._toggleListItemState(listItem!);
 
@@ -83,8 +77,8 @@ export class MainNav {
 
         listItem.isOpen = !listItem.isOpen;
 
-        listItemChevron?.setAttribute('aria-expanded', listItem.isOpen ? 'true' : 'false');
-        listItemChevron?.setAttribute('aria-pressed', listItem.isOpen ? 'true' : 'false');
+        listItemChevron?.setAttribute('aria-expanded', `${listItem.isOpen}`);
+        listItemChevron?.setAttribute('aria-pressed', `${listItem.isOpen}`);
 
         if (listItem.isOpen) {
             listItem.setAttribute(this.isOpenAttribute, '')
