@@ -214,7 +214,7 @@ const renderMainNavSection = () => {
                         <span class="main-nav__text">Startseite</span>
                     </a>
                 </li>
-                <li class="main-nav__list-item" nav-item-level="1" aria-owns="nav2" has-subnav>
+                <li class="main-nav__list-item" nav-item-level="1" has-subnav>
                     <a href="#" class="main-nav__link">
                         <span class="main-nav__text">Bürgerservice</span>
                     </a>
@@ -222,7 +222,7 @@ const renderMainNavSection = () => {
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                     </button>
                     <ul class="main-nav__list" nav-list-level="2" id="nav2">
-                        <li class="main-nav__list-item" nav-item-level="2" aria-owns="nav2_1" has-subnav>
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Arbeit und Beruf</span>
                             </a>
@@ -257,7 +257,7 @@ const renderMainNavSection = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2" aria-owns="nav2_2" has-subnav>
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Ausweise und Dokumente</span>
                             </a>
@@ -282,7 +282,7 @@ const renderMainNavSection = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2" aria-owns="nav2_3" has-subnav>
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Bauen</span>
                             </a>
@@ -454,7 +454,7 @@ const renderMainNavSection = () => {
                         <span class="main-nav__text">Online-Terminvergabe</span>
                     </a>
                 </li>
-                <li class="main-nav__list-item" nav-item-level="1" aria-owns="nav4" has-subnav>
+                <li class="main-nav__list-item" nav-item-level="1" has-subnav>
                     <a href="#" class="main-nav__link">
                         <span class="main-nav__text">Häufige Fragen</span>
                     </a>
@@ -462,7 +462,7 @@ const renderMainNavSection = () => {
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                     </button>
                     <ul class="main-nav__list" nav-list-level="2" id="nav4">
-                        <li class="main-nav__list-item" nav-item-level="2" aria-owns="nav4_1" has-subnav>
+                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Arbeit und Beruf</span>
                             </a>

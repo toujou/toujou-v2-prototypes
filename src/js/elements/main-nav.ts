@@ -8,6 +8,7 @@ export class MainNav {
     protected readonly isOpenAttribute = 'is-open';
     protected readonly listItemLevelAttribute = 'nav-item-level';
     protected readonly listItemChevronSelector = '.main-nav__chevron';
+    protected readonly listSelector = '.main-nav__list';
 
     constructor(mainNavEl: MainNavElement) {
         this.mainNavEl = mainNavEl;
@@ -65,7 +66,7 @@ export class MainNav {
                 this._toggleListItemState(listItem!);
 
                 listItem.parentElement?.querySelector(
-                    `${this.listItemChevronSelector}[aria-controls="${listItem.getAttribute('aria-owns')}"]`
+                    `${this.listItemChevronSelector}[aria-controls="${listItem.querySelector(this.listSelector)?.id}"]`
                 /* @ts-ignore */
                 )?.focus({ focusVisible: true });
             }
