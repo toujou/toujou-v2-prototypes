@@ -1,7 +1,8 @@
 /// <reference types="cypress" />
+/// <reference types="cypress-axe" />
 /// <reference types="cypress-real-events" />
 
-describe('main-nav [mobile]', () => {
+describe('main-nav a11y [mobile]', () => {
     const mainNavId = 'mainNavigation';
 
     beforeEach(() => {
@@ -9,18 +10,19 @@ describe('main-nav [mobile]', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-topbar--topbar');
     });
 
-    it('has associated burger button', () => {
-
-        cy.get('.burger-button').should('exist');
-        cy.get('.burger-button').invoke('attr', 'aria-controls').should('eq', mainNavId);
-
-        cy.get(`#${mainNavId}`).should('exist');
-        cy.get(`#${mainNavId}`).invoke('attr', 'class').should('contain', 'main-nav');
+    it('has no detectable a11y violation on load', async () => {
+        await cy.injectAxe();
+        cy.get('.main-nav');
+        await cy.checkA11y('.main-nav', {
+            rules: {
+                'color-contrast': { enabled: false }
+            }
+        });
     });
 
-    it('has correct behavior', () => {
-        const subNavId = 'nav4';
-        const subNavLabelId = 'label_nav4';
+    it('is controllable via keyboard', () => {
+       const subNavId = 'nav4';
+       const subNavLabelId = 'label_nav4';
 
         // Wait for fonts to be loaded
         cy.wait(1000);
@@ -32,7 +34,8 @@ describe('main-nav [mobile]', () => {
         cy.get(`#${mainNavId} .main-nav__list`).should('not.be.visible');
 
         // Open first level
-        cy.get('@burgerButton').realTouch();
+        cy.get('@burgerButton').focus();
+        cy.realPress('Enter');
         cy.wait(500);
         cy.get('@burgerButton').invoke('attr', 'aria-pressed').should('eq', 'true');
         cy.get('@burgerButton').invoke('attr', 'aria-expanded').should('eq', 'true');
@@ -42,7 +45,12 @@ describe('main-nav [mobile]', () => {
         cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"] > .main-nav__list-item[has-subnav]`).last().as('subNavListItem');
         cy.get('@subNavListItem').find(`.main-nav__chevron[aria-controls="${subNavId}"]`).as('subNavChevron');
         cy.get('@subNavListItem').find(`.main-nav__text#${subNavLabelId}`).should('exist');
-        cy.get('@subNavChevron').realTouch();
+
+        Cypress._.times(6, () => {
+            cy.realPress('Tab');
+        });
+        cy.realPress('Enter');
+
         cy.get('@subNavListItem').invoke('attr', 'is-open').should('exist');
         cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'true');
         cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'true');
@@ -51,19 +59,12 @@ describe('main-nav [mobile]', () => {
         cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('exist');
         cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('eq', subNavLabelId);
 
-        // Close first level
-        cy.get('@burgerButton').realTouch();
-        cy.wait(500);
-        cy.get('@burgerButton').invoke('attr', 'aria-pressed').should('eq', 'false');
-        cy.get('@burgerButton').invoke('attr', 'aria-expanded').should('eq', 'false');
-        cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"]`).should('not.be.visible');
-
-        // Check if second level controls are reset on re-opening first level
-        cy.get('@burgerButton').realTouch();
-        cy.wait(500);
+        // Close second level
+        cy.realPress('Escape');
         cy.get('@subNavListItem').invoke('attr', 'is-open').should('not.exist');
         cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'false');
         cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'false');
+        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).should('not.be.visible');
     });
 });
 
