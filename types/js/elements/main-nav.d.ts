@@ -1,25 +1,27 @@
 export declare class MainNav {
     private mainNavEl;
     private navListItems;
+    private activeSubNavs;
     protected readonly listItemSelector = ".main-nav__list-item";
     protected readonly hasSubNavAttribute = "has-subnav";
     protected readonly isOpenAttribute = "is-open";
     protected readonly listItemLevelAttribute = "nav-item-level";
-    protected readonly listItemChevronSelector = "main-nav__chevron";
+    protected readonly listItemChevronSelector = ".main-nav__chevron";
+    protected readonly listSelector = ".main-nav__list";
     constructor(mainNavEl: MainNavElement);
     /**
      * Get list of all the main navigation list items and start listening for click events
      */
     _getNavListItems: () => void;
     /**
-     * - On Enter or Space click on a main nav chevron we toggle the nav item open / closed
-     * - On Esc press close the open main navigation
+     * Handle keyup events
+     * - Escape: Close parent or whole navigation
      * @param   event
-     * @param   listItem
      */
-    _handleKeyUp: (event: KeyboardEvent, listItem: MainNavListItem) => void;
+    _handleKeyUp: (event: KeyboardEvent) => void;
     /**
      * Toggle the list item isOpen state and add / remove the isOpenAttribute accordingly
+     * Set the chevron element's aria-expanded attribute according to list item isOpen state
      * @param   listItem
      */
     _toggleListItemState: (listItem: MainNavListItem) => void;
