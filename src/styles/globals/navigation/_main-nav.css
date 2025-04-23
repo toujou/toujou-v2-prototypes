@@ -110,6 +110,9 @@
 
 .main-nav__chevron {
     display: flex;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 .main-nav__chevron:focus-visible {
@@ -190,7 +193,6 @@
         --main-nav-link-display: flex;
         --main-nav-align-items: center;
 
-        /*--main-nav-chevron-display: none;*/
         --main-nav-chevron-color: var(--color-primary);
 
         --main-nav-back-button-display: none;
