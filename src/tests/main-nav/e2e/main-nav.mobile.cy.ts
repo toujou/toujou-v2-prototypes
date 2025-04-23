@@ -46,10 +46,11 @@ describe('main-nav [mobile]', () => {
         cy.get('@subNavListItem').invoke('attr', 'is-open').should('exist');
         cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'true');
         cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'true');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).should('exist');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).scrollIntoView().should('be.visible');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('exist');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('eq', subNavLabelId);
+        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).as('subNavList');
+        cy.get('@subNavList').should('exist');
+        cy.get('@subNavList').scrollIntoView().should('be.visible');
+        cy.get('@subNavList').invoke('attr', 'aria-labelledby').should('exist');
+        cy.get('@subNavList').invoke('attr', 'aria-labelledby').should('eq', subNavLabelId);
 
         // Close first level
         cy.get('@burgerButton').realTouch();

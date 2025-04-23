@@ -1,8 +1,6 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-real-events" />
 
-const tokens = Cypress.env('tokens');
-
 describe('main-nav', () => {
    beforeEach(() => {
        cy.visit('/iframe.html?viewMode=story&id=components-topbar--topbar');
@@ -67,30 +65,32 @@ describe('main-nav', () => {
        cy.get('@subNavListItem').invoke('attr', 'is-open').should('exist');
        cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'true');
        cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'true');
-       cy.get(`.main-nav .main-nav__list#${subNavId}`).should('exist');
-       cy.get(`.main-nav .main-nav__list#${subNavId}`).should('be.visible');
-       cy.get(`.main-nav .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('exist');
-       cy.get(`.main-nav .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('eq', subNavLabelId);
+       cy.get(`.main-nav .main-nav__list#${subNavId}`).as('subNavList');
+       cy.get('@subNavList').should('exist');
+       cy.get('@subNavList').should('be.visible');
+       cy.get('@subNavList').invoke('attr', 'aria-labelledby').should('exist');
+       cy.get('@subNavList').invoke('attr', 'aria-labelledby').should('eq', subNavLabelId);
 
        // Open third level
-       cy.get(`.main-nav .main-nav__list#${subNavId}`).find(`.main-nav__list-item[has-subnav]:has([aria-controls="${subSubNavId}"])`).as('subSubNavListItem');
+       cy.get('@subNavList').find(`.main-nav__list-item[has-subnav]:has([aria-controls="${subSubNavId}"])`).as('subSubNavListItem');
        cy.get('@subSubNavListItem').find(`.main-nav__chevron[aria-controls="${subSubNavId}"]`).as('subSubNavChevron');
        cy.get('@subSubNavListItem').find(`.main-nav__text#${subSubNavLabelId}`).should('exist');
        cy.get('@subSubNavChevron').realClick();
        cy.get('@subSubNavListItem').invoke('attr', 'is-open').should('exist');
        cy.get('@subSubNavChevron').invoke('attr', 'aria-expanded').should('eq', 'true');
        cy.get('@subSubNavChevron').invoke('attr', 'aria-pressed').should('eq', 'true');
-       cy.get(`.main-nav .main-nav__list#${subSubNavId}`).should('exist');
-       cy.get(`.main-nav .main-nav__list#${subSubNavId}`).should('be.visible');
-       cy.get(`.main-nav .main-nav__list#${subSubNavId}`).invoke('attr', 'aria-labelledby').should('exist');
-       cy.get(`.main-nav .main-nav__list#${subSubNavId}`).invoke('attr', 'aria-labelledby').should('eq', subSubNavLabelId);
+       cy.get(`.main-nav .main-nav__list#${subSubNavId}`).as('subSubNavList');
+       cy.get('@subSubNavList').should('exist');
+       cy.get('@subSubNavList').should('be.visible');
+       cy.get('@subSubNavList').invoke('attr', 'aria-labelledby').should('exist');
+       cy.get('@subSubNavList').invoke('attr', 'aria-labelledby').should('eq', subSubNavLabelId);
 
        // Close third level
        cy.get('@subSubNavChevron').realClick();
        cy.get('@subSubNavListItem').invoke('attr', 'is-open').should('not.exist');
        cy.get('@subSubNavChevron').invoke('attr', 'aria-expanded').should('eq', 'false');
        cy.get('@subSubNavChevron').invoke('attr', 'aria-pressed').should('eq', 'false');
-       cy.get(`.main-nav .main-nav__list#${subSubNavId}`).should('not.be.visible');
+       cy.get('@subSubNavList').should('not.be.visible');
        cy.get('@subSubNavChevron').realClick();
 
        // Close second level
@@ -98,10 +98,10 @@ describe('main-nav', () => {
        cy.get('@subNavListItem').invoke('attr', 'is-open').should('not.exist');
        cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'false');
        cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'false');
-       cy.get(`.main-nav .main-nav__list#${subNavId}`).should('not.be.visible');
+       cy.get('@subNavList').should('not.be.visible');
 
        // Check if third level has also been closed
-       cy.get(`.main-nav .main-nav__list#${subSubNavId}`).should('not.be.visible');
+       cy.get('@subSubNavList').should('not.be.visible');
 
        // Check if third level controls are reset on re-opening second level
        cy.get('@subNavChevron').realClick();

@@ -33,38 +33,50 @@ describe('main-nav a11y [mobile]', () => {
 
         cy.get(`#${mainNavId} .main-nav__list`).should('not.be.visible');
 
-        // Open first level
-        cy.get('@burgerButton').focus();
-        cy.realPress('Enter');
-        cy.wait(500);
-        cy.get('@burgerButton').invoke('attr', 'aria-pressed').should('eq', 'true');
-        cy.get('@burgerButton').invoke('attr', 'aria-expanded').should('eq', 'true');
-        cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"]`).should('be.visible');
+        ['Enter', 'Space'].forEach(toggleKey => {
+            // Open first level
+            cy.get('@burgerButton').focus();
+            /* @ts-ignore */
+            cy.realPress(toggleKey);
+            cy.wait(500);
+            cy.get('@burgerButton').invoke('attr', 'aria-pressed').should('eq', 'true');
+            cy.get('@burgerButton').invoke('attr', 'aria-expanded').should('eq', 'true');
+            cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"]`).should('be.visible');
 
-        // Open second level
-        cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"] > .main-nav__list-item[has-subnav]`).last().as('subNavListItem');
-        cy.get('@subNavListItem').find(`.main-nav__chevron[aria-controls="${subNavId}"]`).as('subNavChevron');
-        cy.get('@subNavListItem').find(`.main-nav__text#${subNavLabelId}`).should('exist');
+            // Open second level
+            cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"] > .main-nav__list-item[has-subnav]`).last().as('subNavListItem');
+            cy.get('@subNavListItem').find(`.main-nav__chevron[aria-controls="${subNavId}"]`).as('subNavChevron');
+            cy.get('@subNavListItem').find(`.main-nav__text#${subNavLabelId}`).should('exist');
 
-        Cypress._.times(6, () => {
-            cy.realPress('Tab');
+            Cypress._.times(6, () => {
+                cy.realPress('Tab');
+            });
+            /* @ts-ignore */
+            cy.realPress(toggleKey);
+
+            cy.get('@subNavListItem').invoke('attr', 'is-open').should('exist');
+            cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'true');
+            cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'true');
+            cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).as('subNavList');
+            cy.get('@subNavList').should('exist');
+            cy.get('@subNavList').scrollIntoView().should('be.visible');
+            cy.get('@subNavList').invoke('attr', 'aria-labelledby').should('exist');
+            cy.get('@subNavList').invoke('attr', 'aria-labelledby').should('eq', subNavLabelId);
+
+            // Close second level
+            cy.realPress('Escape');
+            cy.get('@subNavListItem').invoke('attr', 'is-open').should('not.exist');
+            cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'false');
+            cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'false');
+            cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).should('not.be.visible');
+
+            // Close first level
+            Cypress._.times(6, () => {
+                cy.realPress(['Shift', 'Tab']);
+            })
+            /* @ts-ignore */
+            cy.realPress(toggleKey);
         });
-        cy.realPress('Enter');
-
-        cy.get('@subNavListItem').invoke('attr', 'is-open').should('exist');
-        cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'true');
-        cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'true');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).should('exist');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).scrollIntoView().should('be.visible');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('exist');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).invoke('attr', 'aria-labelledby').should('eq', subNavLabelId);
-
-        // Close second level
-        cy.realPress('Escape');
-        cy.get('@subNavListItem').invoke('attr', 'is-open').should('not.exist');
-        cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'false');
-        cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'false');
-        cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).should('not.be.visible');
     });
 });
 
