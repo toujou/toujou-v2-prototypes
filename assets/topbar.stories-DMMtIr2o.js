@@ -289,7 +289,7 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 `,e.jsx("br",{}),`
 `,e.jsx("br",{}),`
 `,e.jsx("a",{id:"burger-button"}),`
-`,e.jsx(x,{})]})}function k(a={}){const{wrapper:n}={...i(),...a.components};return n?e.jsx(n,{...a,children:e.jsx(r,{...a})}):r(a)}const B={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationColor:{table:{category:"Topbar settings",defaultValue:{summary:"default"}},name:"Navigation color",description:"Set the navigation color",options:["default","primary","secondary","font"],control:{type:"radio"},required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Mobile page title type",description:"Toggle between logo or text for the topbar page title on mobile devices",options:["logo","title"],control:{type:"radio"},required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},required:!0},languagePickerType:{table:{category:"Topbar settings"},name:"Language picker type",description:"Choose which type of language picker to show",options:["none","inline","dropdown"],control:{type:"radio"},required:!0}}},w=a=>`
+`,e.jsx(x,{})]})}function k(a={}){const{wrapper:n}={...i(),...a.components};return n?e.jsx(n,{...a,children:e.jsx(r,{...a})}):r(a)}const A={title:"COMPONENTS/Topbar",parameters:{badges:[d.DONE],docs:{page:k},layout:"fullscreen"},argTypes:{navigationColor:{table:{category:"Topbar settings",defaultValue:{summary:"default"}},name:"Navigation color",description:"Set the navigation color",options:["default","primary","secondary","font"],control:{type:"radio"},required:!0},titleType:{table:{category:"Topbar settings",defaultValue:{summary:"logo"}},name:"Mobile page title type",description:"Toggle between logo or text for the topbar page title on mobile devices",options:["logo","title"],control:{type:"radio"},required:!0},logoSize:{table:{category:"Topbar settings",defaultValue:{summary:"medium"}},name:"Logo size",description:"Set the logo size",options:["small","medium","large"],control:{type:"radio"},required:!0},noTransitions:{table:{category:"Topbar settings",defaultValue:{summary:"false"}},name:"No transitions",description:"Remove the transition from the topbar elements",control:{type:"boolean"},required:!0},languagePickerType:{table:{category:"Topbar settings"},name:"Language picker type",description:"Choose which type of language picker to show",options:["none","inline","dropdown"],control:{type:"radio"},required:!0}}},w=a=>`
         <nav aria-label="Topbar Logo" style="display: contents;">
             <a aria-label="Zur Startseite" show-title-on-mobile="${a.titleType==="title"}" class="topbar__logo-link" href="/">
                 <span class="topbar__title">toujou Installation</span>
@@ -400,20 +400,20 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                 </li>
                 <li class="main-nav__list-item" nav-item-level="1" has-subnav>
                     <a href="#" class="main-nav__link">
-                        <span class="main-nav__text">Bürgerservice</span>
+                        <span class="main-nav__text" id="label_nav2">Bürgerservice</span>
                     </a>
-                    <span class="main-nav__chevron" tabindex="0">
+                    <button class="main-nav__chevron" aria-label="Toggle menu Bürgerservice" aria-controls="nav2" aria-expanded="false" aria-pressed="false">
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                    </span>
-                    <ul class="main-nav__list" nav-list-level="2">
+                    </button>
+                    <ul class="main-nav__list" nav-list-level="2" id="nav2" aria-labelledby="label_nav2">
                         <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
-                                <span class="main-nav__text">Arbeit und Beruf</span>
+                                <span class="main-nav__text" id="label_nav2_1">Arbeit und Beruf</span>
                             </a>
-                            <span class="main-nav__chevron">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav2_1" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                            </span>
-                            <ul class="main-nav__list" nav-list-level="3">
+                            </button>
+                            <ul class="main-nav__list" nav-list-level="3" id="nav2_1" aria-labelledby="label_nav2_1">
                                 <li class="main-nav__list-item" nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
@@ -443,12 +443,12 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                         </li>
                         <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
-                                <span class="main-nav__text">Ausweise und Dokumente</span>
+                                <span class="main-nav__text" id="label_nav2_2">Ausweise und Dokumente</span>
                             </a>
-                            <span class="main-nav__chevron">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Ausweise und Dokumente" aria-controls="nav2_2" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                            </span>
-                            <ul class="main-nav__list" nav-list-level="3">
+                            </button>
+                            <ul class="main-nav__list" nav-list-level="3" id="nav2_2" aria-labelledby="label_nav2_2">
                                 <li class="main-nav__list-item" nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
@@ -468,12 +468,12 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                         </li>
                         <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
-                                <span class="main-nav__text">Bauen</span>
+                                <span class="main-nav__text" id="label_nav2_3">Bauen</span>
                             </a>
-                            <span class="main-nav__chevron">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Bauen" aria-controls="nav2_3" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                            </span>
-                            <ul class="main-nav__list" nav-list-level="3">
+                            </button>
+                            <ul class="main-nav__list" nav-list-level="3" id="nav2_3" aria-labelledby="label_nav2_3">
                                 <li class="main-nav__list-item" nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
@@ -505,7 +505,8 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Familie und Partnerschaften</span>
                             </a>
-                        </li><li class="main-nav__list-item" nav-item-level="2">
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Freiwilligedienste</span>
                             </a>
@@ -519,7 +520,8 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Gesellschaft und Politik</span>
                             </a>
-                        </li><li class="main-nav__list-item" nav-item-level="2">
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Gesundheit und Vorsorge</span>
                             </a>
@@ -528,19 +530,23 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Heirat</span>
                             </a>
-                        </li><li class="main-nav__list-item" nav-item-level="2">
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Jugend</span>
                             </a>
-                        </li><li class="main-nav__list-item" nav-item-level="2">
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Kinderbetreeung</span>
                             </a>
-                        </li><li class="main-nav__list-item" nav-item-level="2">
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Kirchen und Religion</span>
                             </a>
-                        </li><li class="main-nav__list-item" nav-item-level="2">
+                        </li>
+                        <li class="main-nav__list-item" nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Kultur und Freizeit</span>
                             </a>
@@ -632,22 +638,22 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
                         <span class="main-nav__text">Online-Terminvergabe</span>
                     </a>
                 </li>
-                <li class="main-nav__list-item" nav-item-level="1"  has-subnav>
+                <li class="main-nav__list-item" nav-item-level="1" has-subnav>
                     <a href="#" class="main-nav__link">
-                        <span class="main-nav__text">Häufige Fragen</span>
+                        <span class="main-nav__text" id="label_nav4">Häufige Fragen</span>
                     </a>
-                    <span class="main-nav__chevron" tabindex="0">
+                    <button class="main-nav__chevron" aria-label="Toggle menu Häufige Fragen" aria-controls="nav4" aria-expanded="false" aria-pressed="false">
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                    </span>
-                    <ul class="main-nav__list" nav-list-level="2">
+                    </button>
+                    <ul class="main-nav__list" nav-list-level="2" id="nav4" aria-labelledby="label_nav4">
                         <li class="main-nav__list-item" nav-item-level="2" has-subnav>
                             <a href="#" class="main-nav__link">
-                                <span class="main-nav__text">Arbeit und Beruf</span>
+                                <span class="main-nav__text" id="label_nav4_1">Arbeit und Beruf</span>
                             </a>
-                            <span class="main-nav__chevron">
+                            <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav4_1" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
-                            </span>
-                            <ul class="main-nav__list" nav-list-level="3">
+                            </button>
+                            <ul class="main-nav__list" nav-list-level="3" id="nav4_1" aria-labelledby="label_nav4_1">
                                 <li class="main-nav__list-item" nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
@@ -801,4 +807,4 @@ Ex: `,e.jsx(n.code,{children:'<li class="main-nav__list-item" nav-item-level="1"
 
         \${renderDummyContent()}
     \`;
-}`,...(m=(u=t.parameters)==null?void 0:u.docs)==null?void 0:m.source}}};const C=["Topbar"];export{t as Topbar,C as __namedExportsOrder,B as default};
+}`,...(m=(u=t.parameters)==null?void 0:u.docs)==null?void 0:m.source}}};const U=["Topbar"];export{t as Topbar,U as __namedExportsOrder,A as default};
