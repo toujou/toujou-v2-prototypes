@@ -8,6 +8,9 @@ import './componentImports/ui-components';
 // Kojo-specific components
 import './componentImports/kojo-components';
 
+// Mock components
+import './componentImports/mock-components';
+
 // Config
 import toujouBranding from "./configUtils/storybookToujouBranding";
 import { badgeCustomConfig } from "./configUtils/badgeCustomConfig";

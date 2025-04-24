@@ -1,67 +1,50 @@
 .fav-item {
+    --fav-item-bg-color: var(--color-bg);
+    --fav-item-bg-color-hover: var(--color-primary);
+    --fav-item-size: 2.5rem;
+    --fav-item-icon-size: 1.5rem;
+    --toujou-fav-item-icon-fill: var(--color-font);
+    --toujou-fav-item-icon-fill-hover: var(--color-bg);
+
     position: absolute;
+    height: var(--fav-item-size);
+    width: var(--fav-item-size);
     bottom: 0;
     right: var(--spacing-normal);
     transform: translateY(50%);
-    height: 2.5rem;
-    width: 2.5rem;
-    background-color: var(--color-bg);
+    background-color: var(--fav-item-bg-color);
     border-radius: var(--border-radius-circle);
     box-shadow: var(--shadow-normal);
     display: block;
+    cursor: pointer;
 }
 
-.fav-item::after {
-    content: "";
-    height: 60%;
-    width: 60%;
+.collection-item[element-design="primary"] .fav-item {
+    --fav-item-bg-color-hover: var(--color-primary-light);
+}
+
+.collection-item[element-design="secondary"] .fav-item {
+    --fav-item-bg-color-hover: var(--color-secondary-light);
+}
+
+.collection-item[element-design="inverted"] .fav-item {
+    --fav-item-bg-color-hover: var(--color-font-light);
+}
+
+.fav-item::part(pager) {
+    height: var(--fav-item-icon-size);
+    width: var(--fav-item-icon-size);
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    mask-image: var(--icon-heart-stroke);
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: var(--color-font);
-}
-
-.fav-item::part(pager) {
-    display: none;
+    margin: 0;
 }
 
 @media (hover: hover) {
     .fav-item:hover {
-        background-color: var(--color-primary);
-        cursor: pointer;
-    }
-
-    .fav-item:hover::after {
-        background-color: var(--color-bg);
-    }
-
-    .collection-item[element-design="primary"] .fav-item:hover {
-        background-color: var(--color-primary-light);
-    }
-
-    .collection-item[element-design="primary"] .fav-item:hover::after {
-        background-color: var(--color-primary-dark);
-    }
-
-    .collection-item[element-design="secondary"] .fav-item:hover {
-        background-color: var(--color-secondary-light);
-    }
-
-    .collection-item[element-design="secondary"] .fav-item:hover::after {
-        background-color: var(--color-secondary-dark);
-    }
-
-    .collection-item[element-design="inverted"] .fav-item:hover {
-        background-color: var(--color-font-light);
-    }
-
-    .collection-item[element-design="inverted"] .fav-item:hover::after {
-        background-color: var(--color-font-dark);
+        --fav-item-bg-color: var(--fav-item-bg-color-hover);
+        --toujou-fav-item-icon-fill: var(--toujou-fav-item-icon-fill-hover);
     }
 }
