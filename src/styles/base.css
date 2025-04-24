@@ -45,6 +45,8 @@
 @import "./globals/_estimated-reading-time.css" layer(base);
 @import "./globals/_exit-warning.css" layer(base);
 @import "./globals/_fav-count.css" layer(base);
+@import "./globals/_fav-item.css" layer(base);
+@import "./globals/_fav-list.css" layer(base);
 @import "./globals/_footer.css" layer(base);
 @import "./globals/_footer-column.css" layer(base);
 @import "./globals/_footer-content.css" layer(base);
