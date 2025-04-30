@@ -60,6 +60,7 @@
         height: var(--pn-nav-height);
         transform: var(--pn-nav-tranform);
         z-index: var(--pn-nav-z-index);
+        pointer-events: none;
     }
 
     .pn-nav__link {
@@ -68,6 +69,7 @@
         height: var(--pn-nav-link-height);
         display: var(--pn-nav-link-display);
         flex-direction: var(--pn-nav-link-flex-direction);
+        pointer-events: all;
     }
 
     .pn-nav__button {
@@ -80,6 +82,7 @@
         border-radius: var(--pn-nav-button-border-radius);
         z-index: var(--pn-nav-button-z-index);
         transition: var(--pn-nav-button-transition);
+        pointer-events: all;
     }
 
     .pn-nav__icon {
