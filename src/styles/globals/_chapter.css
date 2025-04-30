@@ -414,6 +414,11 @@
     background-attachment: var(--chapter-attachment-type);
 }
 
+/* hack to make the inpage nav sticky work when placed inside a chapter */
+.chapter:has(> span:first-child + .inpage-nav:last-child) {
+    display: contents;
+}
+
 @supports (-webkit-touch-callout: none) {
     /* iOS-specific styles */
     .chapter[has-background-media] {
