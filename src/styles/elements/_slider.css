@@ -87,7 +87,7 @@
         --slider-control-distance-to-margin: 0;
     }
 
-    .slider[content-type="media"] {
+    main .slider[content-type="media"] {
         --slider-margin: var(--spacing-between-consecutive-elements-normal) auto;
         --slider-slides-gap: var(--spacing-l);
     }
