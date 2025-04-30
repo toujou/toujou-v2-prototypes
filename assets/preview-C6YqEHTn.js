@@ -695,7 +695,7 @@ Please see https://iframe-resizer.com/upgrade for more details.
     padding: var(--toujou-details-summary-padding);
 }
 
-:host(:focus) .details__summary {
+:host(:focus-visible) .details__summary {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
 }
