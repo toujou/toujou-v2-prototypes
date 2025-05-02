@@ -277,43 +277,45 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as i}from"./jsx-run
             ${e?p():""}
         </div>
     `,p=()=>`
-        <ul class="pagination" role="navigation" aria-label="Pagination">
-            <li class="pagination__item pagination__item--next ">
-                <a
-                    href="#"
-                    class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev"
-                    aria-label="Previous page"
-                >
-                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
-                </a>
-            </li
-            <li class="pagination__pages-container">
-                
-                <ul class="pagination__pages">
-                    <li class="pagination__item">
-                        <a href="#" class="pagination__link" aria-current="page">1</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="#" class="pagination__link">2</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="#" class="pagination__link">3</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="#" class="pagination__link">4</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="pagination__item pagination__item--next ">
-                <a
-                    href="#"
-                    class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev"
-                    aria-label="Next page"
-                >
-                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
-                </a>
-            </li>
-        </ul>              
+        <nav class="pagination" aria-label="Pagination">
+            <ul class="pagination__list">
+                <li class="pagination__item pagination__item--prev">
+                    <a
+                        href="#"
+                        class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev"
+                        aria-label="Previous page"
+                    >
+                        <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
+                    </a>
+                </li
+                <li>
+                <li class="pagination__pages-container">           
+                    <ul class="pagination__pages">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link" aria-current="page">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pagination__item pagination__item--next ">
+                    <a
+                        href="#"
+                        class="button pagination__button pagination__link pagination__link--arrow pagination__link--next"
+                        aria-label="Next page"
+                    >
+                        <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
+                    </a>
+                </li>
+            </ul>              
+        </nav>
     `,_=e=>`
         <main>
             ${o(e.showPagination)}
