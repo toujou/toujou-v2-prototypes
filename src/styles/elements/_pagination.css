@@ -2,11 +2,14 @@
     .pagination {
         --pagination-padding: 0;
         --pagination-margin: var(--spacing-l) 0 0;
-        --pagination-list-style: none;
-        --pagination-list-display: flex;
-        --pagination-list-align-items: center;
-        --pagination-list-justify-content: space-between;
-        --pagination-list-gap: var(--spacing-s);
+
+        --pagination-list-padding: 0;
+        --pagination-list-margin: 0;
+        --pagination-list-list-style: none;
+        --pagination-list-list-display: flex;
+        --pagination-list-list-align-items: center;
+        --pagination-list-list-justify-content: space-between;
+        --pagination-list-list-gap: var(--spacing-s);
 
         --pagination-pages-list-style: none;
         --pagination-pages-display: flex;
@@ -38,11 +41,16 @@
 
         margin: var(--pagination-margin);
         padding: var(--pagination-padding);
-        list-style: var(--pagination-list-style);
-        display: var(--pagination-list-display);
-        align-items: var(--pagination-list-align-items);
-        justify-content: var(--pagination-list-justify-content);
-        gap: var(--pagination-list-gap);
+    }
+
+    .pagination__list {
+        margin: var(--pagination-list-margin);
+        padding: var(--pagination-list-padding);
+        list-style: var(--pagination-list-list-style);
+        display: var(--pagination-list-list-display);
+        align-items: var(--pagination-list-list-align-items);
+        justify-content: var(--pagination-list-list-justify-content);
+        gap: var(--pagination-list-list-gap);
     }
 
     .pagination__pages {
