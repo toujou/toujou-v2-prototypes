@@ -64,7 +64,7 @@
         --pagination-link-bg-color: transparent;
     }
 
-    .pagination__item--active {
+    .pagination__item:has(.pagination__link[aria-current="page"]) {
         --pagination-link-bg-color: var(--color-primary);
         --pagination-link-color: var(--color-bg);
 
