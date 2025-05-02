@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components';
 // @ts-ignore
 import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
@@ -12,10 +12,25 @@ export default {
         docs: {
             page: reviewListDocs,
         },
+        args: {
+            showPagination: {
+                table: {
+                    category: "review List Settings",
+                },
+                name: 'Show pagination',
+                description: "Show the review list pagination element",
+                control: { type: 'boolean' },
+                required: true,
+            },
+        }
     },
 } satisfies Meta;
 
-const reviewsComponent = () => {
+interface ReviewListProps {
+    showPagination: boolean
+}
+
+const reviewsComponent = (showPagination: boolean) => {
     return `
         <div class="reviews">
             <article class="review" title="review-title-1" aria-roledescription="Review" id="review-1">
@@ -245,20 +260,60 @@ const reviewsComponent = () => {
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
+            
+            ${showPagination ? renderReviewListPagination() : ''}
         </div>
     `;
 }
 
-const Template = () => {
+const renderReviewListPagination = () => {
+    return `
+        <ul class="pagination">
+            <li class="pagination__item pagination__item--last pagination__item--next ">
+                <a href="#" class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev">
+                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
+                </a>
+            </li
+            <li class="pagination__pages-container">
+                
+                <ul class="pagination__pages pagination__pages--desktop">
+                    <li class="pagination__item pagination__item--active">
+                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pagination__item pagination__item--last pagination__item--next ">
+                <a href="#" class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev">
+                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
+                </a>
+            </li>
+        </ul>              
+    `
+}
+
+const Template: StoryFn<ReviewListProps> = (args: ReviewListProps) => {
     return `
         <main>
-            ${reviewsComponent()}
+            ${reviewsComponent(args.showPagination)}
 
             <section class="chapter" background-color="primary" font-color="primary-light">
-                ${reviewsComponent()}
+                ${reviewsComponent(args.showPagination)}
             </section>
         </main>
     `;
 };
 
 export const ReviewList = Template.bind({});
+
+ReviewList.args = {
+    showPagination: false
+}
