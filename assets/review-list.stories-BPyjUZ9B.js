@@ -1,7 +1,7 @@
-import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as c}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function n(t){const i={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...c(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(i.h1,{id:"review-list",children:"review-list"}),`
-`,e.jsx(i.p,{children:'The review-list element renders a list of "review" cards'}),`
-`,e.jsx(i.h2,{id:"markup-example",children:"Markup example"}),`
-`,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`<div class="reviews">
+import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as i}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as c}from"./index-BcJeOPUZ.js";import"./index-B6tQ6Rz7.js";import"./_commonjsHelpers-Cpj98o6Y.js";function n(e){const t={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...c(),...e.components};return i.jsxs(i.Fragment,{children:[i.jsx(t.h1,{id:"review-list",children:"review-list"}),`
+`,i.jsx(t.p,{children:'The review-list element renders a list of "review" cards'}),`
+`,i.jsx(t.h2,{id:"markup-example",children:"Markup example"}),`
+`,i.jsx(t.pre,{children:i.jsx(t.code,{className:"language-html",children:`<div class="reviews">
     <article class="review">
         <header class="review__header">
             <h3 class="review__title">Nice holiday</h3>
@@ -43,8 +43,8 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
     </article>
 </div>
 `})}),`
-`,e.jsx(i.p,{children:`The card's "content" section will be clamped to 3 lines if it has enough content. In this case, there will be a "content toggle" button visible, which will expand / clamp the content.`}),`
-`,e.jsx(i.p,{children:"Each review card can also show a comment from the website owner."})]})}function d(t={}){const{wrapper:i}={...c(),...t.components};return i?e.jsx(i,{...t,children:e.jsx(n,{...t})}):n(t)}const f={title:"COMPONENTS/Review List",parameters:{badges:[u.DONE],docs:{page:d}}},s=()=>`
+`,i.jsx(t.p,{children:`The card's "content" section will be clamped to 3 lines if it has enough content. In this case, there will be a "content toggle" button visible, which will expand / clamp the content.`}),`
+`,i.jsx(t.p,{children:"Each review card can also show a comment from the website owner."})]})}function d(e={}){const{wrapper:t}={...c(),...e.components};return t?i.jsx(t,{...e,children:i.jsx(n,{...e})}):n(e)}const f={title:"COMPONENTS/Review List",parameters:{badges:[u.DONE],docs:{page:d},args:{showPagination:{table:{category:"review List Settings"},name:"Show pagination",description:"Show the review list pagination element",control:{type:"boolean"},required:!0}}}},o=e=>`
         <div class="reviews">
             <article class="review" title="review-title-1" aria-roledescription="Review" id="review-1">
                 <header class="review__header">
@@ -273,23 +273,55 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                     <p class="review__comment">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </footer>
             </article>
+            
+            ${e?p():""}
         </div>
     `,p=()=>`
+        <ul class="pagination">
+            <li class="pagination__item pagination__item--last pagination__item--next ">
+                <a href="#" class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev">
+                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
+                </a>
+            </li
+            <li class="pagination__pages-container">
+                
+                <ul class="pagination__pages pagination__pages--desktop">
+                    <li class="pagination__item pagination__item--active">
+                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pagination__item pagination__item--last pagination__item--next ">
+                <a href="#" class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev">
+                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
+                </a>
+            </li>
+        </ul>              
+    `,_=e=>`
         <main>
-            ${s()}
+            ${o(e.showPagination)}
 
             <section class="chapter" background-color="primary" font-color="primary-light">
-                ${s()}
+                ${o(e.showPagination)}
             </section>
         </main>
-    `,a=p.bind({});var o,r,l;a.parameters={...a.parameters,docs:{...(o=a.parameters)==null?void 0:o.docs,source:{originalSource:`() => {
+    `,a=_.bind({});a.args={showPagination:!1};var s,r,l;a.parameters={...a.parameters,docs:{...(s=a.parameters)==null?void 0:s.docs,source:{originalSource:`(args: ReviewListProps) => {
   return \`
         <main>
-            \${reviewsComponent()}
+            \${reviewsComponent(args.showPagination)}
 
             <section class="chapter" background-color="primary" font-color="primary-light">
-                \${reviewsComponent()}
+                \${reviewsComponent(args.showPagination)}
             </section>
         </main>
     \`;
-}`,...(l=(r=a.parameters)==null?void 0:r.docs)==null?void 0:l.source}}};const g=["ReviewList"];export{a as ReviewList,g as __namedExportsOrder,f as default};
+}`,...(l=(r=a.parameters)==null?void 0:r.docs)==null?void 0:l.source}}};const h=["ReviewList"];export{a as ReviewList,h as __namedExportsOrder,f as default};
