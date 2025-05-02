@@ -277,17 +277,21 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as i}from"./jsx-run
             ${e?p():""}
         </div>
     `,p=()=>`
-        <ul class="pagination">
-            <li class="pagination__item pagination__item--last pagination__item--next ">
-                <a href="#" class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev">
+        <ul class="pagination" role="navigation" aria-label="Pagination">
+            <li class="pagination__item pagination__item--next ">
+                <a
+                    href="#"
+                    class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev"
+                    aria-label="Previous page"
+                >
                     <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
                 </a>
             </li
             <li class="pagination__pages-container">
                 
-                <ul class="pagination__pages pagination__pages--desktop">
-                    <li class="pagination__item pagination__item--active">
-                        <a href="#" class="pagination__link pagination__link--active">1</a>
+                <ul class="pagination__pages">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link" aria-current="page">1</a>
                     </li>
                     <li class="pagination__item">
                         <a href="#" class="pagination__link">2</a>
@@ -300,8 +304,12 @@ import{T as u}from"./badgeCustomConfig-DUXiHpL4.js";import{j as i}from"./jsx-run
                     </li>
                 </ul>
             </li>
-            <li class="pagination__item pagination__item--last pagination__item--next ">
-                <a href="#" class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev">
+            <li class="pagination__item pagination__item--next ">
+                <a
+                    href="#"
+                    class="button pagination__button pagination__link pagination__link--arrow pagination__link--prev"
+                    aria-label="Next page"
+                >
                     <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
                 </a>
             </li>
