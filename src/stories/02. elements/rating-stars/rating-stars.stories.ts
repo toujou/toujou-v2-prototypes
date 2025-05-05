@@ -36,17 +36,6 @@ export default {
             name: 'Rating suffix',
             description: "Set a suffix for the rating",
         },
-        size: {
-            table: {
-                category: "Rating stars",
-                defaultValue: { summary: 'xl' },
-            },
-            name: 'Size',
-            description: "Set the rating stars size",
-            options: ['s', 'normal', 'm', 'l', 'xl', 'xxl'],
-            control: { type: 'radio' },
-            required: true,
-        },
     },
     tags: ['autodocs']
 } satisfies Meta;
@@ -54,20 +43,17 @@ export default {
 interface RatingStarsStoryProps {
     rating: number,
     suffix: string,
-    size: string
 }
 
 const Template: StoryFn<RatingStarsStoryProps> = (args: RatingStarsStoryProps) => {
     return `
         <toujou-rating-stars
             class="rating-stars"
-            rating-entity="★"
-            rating-total="5"
             rating-value="${args.rating}"
-            rating-entity-size="${args.size}"
+            rating-total="5"
             rating-suffix="${args.suffix}"
-        >
-        </toujou-rating-stars>
+            aria-label="${args.rating} out of 5 stars"
+        ></toujou-rating-stars>
     `;
 };
 
@@ -76,5 +62,4 @@ export const RatingStars = Template.bind({});
 RatingStars.args = {
     rating: 4.4,
     suffix: '',
-    size: 'xl'
 }
