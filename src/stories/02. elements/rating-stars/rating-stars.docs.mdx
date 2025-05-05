@@ -6,14 +6,13 @@ The rating element is configurable: we can change the color, the "rating entity"
 
 ## Markup Example
 ```html
-<toujou-rating-stars
+ <toujou-rating-stars
     class="rating-stars"
-    rating-entity="★"
+    rating-value="3.5"
     rating-total="5"
-    rating-value="4.4"
-    rating-entity-size="xl"
->
-</toujou-rating-stars>
+    rating-suffix="D"
+    aria-label="3.5 out of 5 stars"
+></toujou-rating-stars>
 ```
 
 ## Attributes
@@ -22,22 +21,9 @@ The rating element is configurable: we can change the color, the "rating entity"
 The rating stars element must have the `rating-stars`
 
 ### rating-value <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
-The `rating-value` defined the value that should be shown on the element.
+The `rating-value` defines the value that should be shown on the element.
 
 This value is used together with the `rating-total` to calculate the rate percentage
-
-### rating-entity
-The `rating-entity` attribute you may define the "symbol" to show on the element.
-
-If not available, the default value is `★`
-
-Example:
-```html
-<toujou-rating-stars class="rating-stars" rating-entity="👍" rating-value="4.4">
-```
-
-| ⚠️ Depending on the symbol used, we may need to adjust the letter-spacing on the element, which you can do with the `--rating-stars-letter-spacing` css variable |
-|:-------------------------------------------------------|
 
 ### rating-total
 The `rating-total` allows us to show a ratings element with a different number of items, for instance for a 0 - 10 rating.
@@ -45,33 +31,5 @@ The `rating-total` allows us to show a ratings element with a different number o
 If not available, the default value if 5
 
 ```html
-<toujou-rating-stars class="rating-stars" rating-entity="★" rating-total="10" rating-value="7">
+<toujou-rating-stars class="rating-stars" rating-total="10" rating-value="7">
 ```
-
-### rating-entity-size
-The `rating-entity-size` defines how big the "symbols" on the element are.
-
-If not available, the default value is `--font-size-normal`.
-
-Available values are `s`, `normal`, `m`, `l`, `xl`, and `xxl`.
-
-If needed, you can directly set the `--rating-stars-font-size` to give it a custom size.
-
-Example:
-```html
-<toujou-rating-stars class="rating-stars" rating-value="7" rating-entity-size="xxl">
-```
-or
-```css
-.rating-stars {
-    --rating-stars-font-size: 100px;
-}
-```
-
-## CSS Variables
-
-CSS Variables allow you to adjust the looks of the element to meet your needs
-
-- `--rating-stars-letter-spacing`
-- `--rating-stars-color`
-- `--rating-stars-font-size`
