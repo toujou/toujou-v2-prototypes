@@ -164,6 +164,7 @@
     .header:not(.header--portfolio-gallery) .splide__slide,
     .header:not(.header--portfolio-gallery) .slider__item {
         height: var(--header-height) !important;
+        width: var(--slider-width) !important;
     }
 
     /* hide the clone that gets generated on some occasions, even if the clones mount is set to 0 */
