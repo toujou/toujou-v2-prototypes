@@ -10,7 +10,7 @@
     --text-block-image-object-fit: cover;
     --text-block-image-transform: scale(1);
     --text-block-image-transition: var(--focus-image-transform-transition);
-    --text-block-media-inside-image-width: 50%;
+    --text-block-media-inside-image-width: calc(50% - calc(var(--text-block-column-gap) / 2));
     --text-block-media-inside-offset: calc(100% / 8);
     --text-block-column-display: block;
     --text-block-column-grid-template-columns: unset;
