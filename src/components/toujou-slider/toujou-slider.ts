@@ -318,8 +318,13 @@ export class ToujouSlider extends LitElement {
      * Update the count elements with the correct content
      */
     private _updateSliderCount() {
-        this._currentIndexCountElement!.textContent = String(this._activeSlideIndex);
-        this._totalSlidesCountElement!.textContent = String(this._numberOfSlides);
+        if (this._currentIndexCountElement) {
+            this._currentIndexCountElement.textContent = String(this._activeSlideIndex);
+        }
+
+        if (this._totalSlidesCountElement) {
+            this._totalSlidesCountElement.textContent = String(this._numberOfSlides);
+        }
     }
 }
 
