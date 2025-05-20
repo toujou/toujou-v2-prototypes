@@ -25,6 +25,11 @@
     grid-column: span 12;
 }
 
+.input-group--linked-checkbox {
+    --input-group-icon-top: 0;
+    border: 3px solid orange;
+}
+
 :is(.input-group, .form__row, input[hidden], .fieldset, .form__content-element-container) + .input-group {
     margin-top: var(--input-group-margin-between);
 }

@@ -42,13 +42,9 @@
     width: var(--checkbox-check-size);
     background-color: var(--checkbox-check-background-color);
     mask-position: center;
-    -webkit-mask-position: center;
     mask-size: contain;
-    -webkit-mask-size: contain;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-image: var(--icon-check);
-    -webkit-mask-image: var(--icon-check);
 }
 
 .checkbox:focus-visible {
@@ -76,13 +72,13 @@
 }
 
 .input-group.input-group--has-success .checkbox {
-    --checkbox-border-color: var(--color-success);
-    --checkbox-background-color: var(--color-success-o-25);
+    --checkbox-border-color: var(--color-primary);
+    --checkbox-background-color: var(--color-bg);
 }
 
 .input-group.input-group--has-success .checkbox:checked {
-    --checkbox-border-color: var(--color-success);
-    --checkbox-background-color: var(--color-success);
+    --checkbox-border-color: var(--color-primary);
+    --checkbox-background-color: var(--color-primary);
 }
 
 @media (hover: hover) {

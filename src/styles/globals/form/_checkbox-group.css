@@ -17,7 +17,6 @@
 
     --multi-check-group-row-margin: var(--form-radio-and-checkbox-option-margin) 0;
 
-
     display: var(--checkbox-group-display);
     grid-template-columns: var(--checkbox-group-grid-template-columns);
     grid-gap: var(--checkbox-group-grid-gap);

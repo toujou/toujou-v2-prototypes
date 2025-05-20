@@ -74,14 +74,14 @@
 }
 
 .input-group.input-group--has-success .radio:checked {
-    --radio-border-color: var(--color-success);
-    --radio-background-color: var(--color-success-o-25);
+    --radio-border-color: var(--color-primary);
+    --radio-background-color: var(--color-bg);
 }
 
 .input-group.input-group--has-success .radio:checked {
-    --radio-border-color: var(--color-success);
+    --radio-border-color: var(--color-primary);
     --radio-background-color: var(--color-bg);
-    --radio-check-background-color: var(--color-success);
+    --radio-check-background-color: var(--color-primary);
 }
 
 @media (hover: hover) {
