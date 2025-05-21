@@ -289,6 +289,179 @@ const Template = () => {
 	        </toujou-form-row>
 
         </form>
+        
+        <br>
+        <toujou-text-block class="text-block" text-block-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
+                    <h3>Form with some hidden fields</h3>
+                    <p>To simulate the honeypot hidden inputs</p>
+                </div>
+            </toujou-text-block-column>
+        </toujou-text-block>        
+    
+        <form
+            enctype="multipart/form-data"
+            method="post"
+            class="form"
+            id="testform-1000091"
+            action="#"
+            novalidate="true">
+
+        	<toujou-form-row class="row form__row">
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-2" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-2"
+                           type="text" name="tx_form_formframework[testform-1000091][text-2]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-3" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-3"
+                           type="text" name="tx_form_formframework[testform-1000091][text-3]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+	        </toujou-form-row>
+	        
+	        <toujou-form-row class="row form__row">
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-2" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-2"
+                           type="text" name="tx_form_formframework[testform-1000091][text-2]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-3" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-3"
+                           type="text" name="tx_form_formframework[testform-1000091][text-3]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+	        </toujou-form-row>
+	        
+	        <input
+	            autocomplete="off"
+	            aria-hidden="true"
+	            hidden=""
+	            id="kontakt-104-Y7LidRbxAlmt1yw"
+	            style="position:absolute; margin:0 0 0 -999em;"
+	            tabindex="-1"
+	            type="text"
+	            name="tx_form_formframework[kontakt-104][Y7LidRbxAlmt1yw]"
+            >
+
+	        <toujou-form-row class="row form__row">
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-2" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-2"
+                           type="text" name="tx_form_formframework[testform-1000091][text-2]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-3" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-3"
+                           type="text" name="tx_form_formframework[testform-1000091][text-3]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+	        </toujou-form-row>
+	        
+	        <toujou-form-row class="row form__row">
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-2" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-2"
+                           type="text" name="tx_form_formframework[testform-1000091][text-2]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+                <toujou-input-group
+                    class="input-group input-group--text input-group--xs-12 input-group--sm-12 input-group--md-6 input-group--lg-6 input-group--xl-6 input-group--xxl-6"
+                >
+                    <label for="testform-1000091-text-3" class="input-label">Nice label</label>
+                    <span class="input-description">This is a description</span>
+                    <input placeholder="This is a placeholder"
+                           required="required"
+                           data-pristine-required-message-de="The given subject was empty."
+                           class="input input--text"
+                           id="testform-1000091-text-3"
+                           type="text" name="tx_form_formframework[testform-1000091][text-3]"
+                           value="">
+                    <span class="pristine-error form__error">This is an error message!</span>
+                </toujou-input-group>
+
+	        </toujou-form-row>
+
+        </form>
+        
+        <br>
+        
+        <br>
+        
+        <br>
     `;
 };
 

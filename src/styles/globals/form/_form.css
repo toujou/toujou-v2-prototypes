@@ -12,6 +12,8 @@
     font-size: var(--form-font-size);
     font-weight: var(--form-font-weight);
     line-height: var(--form-line-height);
+    container-name: form;
+    container-type: inline-size;
 }
 
 .form:first-child {

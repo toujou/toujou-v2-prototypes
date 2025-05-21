@@ -12,10 +12,12 @@
     align-items: var(--form-row-align-items);
 }
 
-.input-group + .form__row {
+.input-group + .form__row,
+.input-group + input[aria-hidden="true"][hidden] + .form__row {
     margin-top: var(--spacing-normal);
 }
 
-.form__row + .form__row {
+.form__row + .form__row,
+.form__row + input[aria-hidden="true"][hidden] + .form__row {
     margin-top: var(--spacing-m);
 }
