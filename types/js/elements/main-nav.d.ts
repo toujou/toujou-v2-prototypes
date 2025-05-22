@@ -8,11 +8,18 @@ export declare class MainNav {
     protected readonly listItemLevelAttribute = "nav-item-level";
     protected readonly listItemChevronSelector = ".main-nav__chevron";
     protected readonly listSelector = ".main-nav__list";
+    protected readonly isOpenOnHoverAttribute = "is-open-on-hover";
     constructor(mainNavEl: MainNavElement);
     /**
      * Get list of all the main navigation list items and start listening for click events
      */
     _getNavListItems: () => void;
+    /**
+     * Handle mouse events
+     * - Mouseenter/Mouseleave: Toggle subnav of current MainNavListItem
+     * @param event
+     */
+    _handleMouseEvent: (event: MouseEvent) => void;
     /**
      * Handle keyup events
      * - Escape: Close parent or whole navigation

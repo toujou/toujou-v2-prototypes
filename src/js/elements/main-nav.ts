@@ -9,10 +9,21 @@ export class MainNav {
     protected readonly listItemLevelAttribute = 'nav-item-level';
     protected readonly listItemChevronSelector = '.main-nav__chevron';
     protected readonly listSelector = '.main-nav__list';
+    protected readonly isOpenOnHoverAttribute = 'is-open-on-hover';
 
     constructor(mainNavEl: MainNavElement) {
         this.mainNavEl = mainNavEl;
         this._getNavListItems();
+
+        if (this.mainNavEl.hasAttribute(this.isOpenOnHoverAttribute)) {
+            this.navListItems.forEach(navListItem => {
+                if(navListItem.hasSubNav) {
+                    navListItem.addEventListener('mouseenter', this._handleMouseEvent);
+                    navListItem.addEventListener('mouseleave', this._handleMouseEvent);
+                }
+            });
+            return;
+        }
 
         // @ts-ignore
         window.addEventListener('keyup', this._handleKeyUp);
@@ -41,6 +52,15 @@ export class MainNav {
             })
             listItem.addEventListener('keyup', this._handleKeyUp);
         })
+    }
+
+    /**
+     * Handle mouse events
+     * - Mouseenter/Mouseleave: Toggle subnav of current MainNavListItem
+     * @param event
+     */
+    _handleMouseEvent = (event: MouseEvent) => {
+        this._toggleListItemState(event.currentTarget as MainNavListItem);
     }
 
     /**
