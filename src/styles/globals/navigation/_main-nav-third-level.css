@@ -1,4 +1,4 @@
-.main-nav__list[nav-list-level="3"] {
+.main-nav__list[data-nav-list-level="3"] {
     --main-nav-level-3-list-margin: var(--spacing-normal) 0 0;
     --main-nav-level-3-list-padding: 0 0 var(--spacing-m) var(--spacing-m);
     --main-nav-level-3-list-gap: var(--spacing-normal);
@@ -16,16 +16,16 @@
     width: 100%;
 }
 
-.main-nav__list-item[is-open] > .main-nav__list[nav-list-level="3"] {
+.main-nav__list-item[data-is-open] > .main-nav__list[data-nav-list-level="3"] {
     --main-nav-level-3-list-item-display: grid;
 }
 
-.main-nav__list-item[nav-item-level="3"] .main-nav__text {
+.main-nav__list-item[data-nav-item-level="3"] .main-nav__text {
     font-size: var(--main-nav-level-3-list-item-font-size);
 }
 
 @media screen and (width >= 1024px) {
-    .main-nav__list[nav-list-level="3"] {
+    .main-nav__list[data-nav-list-level="3"] {
         --main-nav-level-3-list-item-font-size: var(--font-size-s);
         --main-nav-level-3-list-padding: 0 0 var(--spacing-s) var(--spacing-normal);
         --main-nav-level-3-list-margin: var(--spacing-s) 0 0;
