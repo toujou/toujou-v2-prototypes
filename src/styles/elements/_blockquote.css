@@ -25,6 +25,9 @@
         --blockquote-text-margin: var(--spacing-s) 0 0;
         --blockquote-z-index: var(--z-index-content);
 
+        --blockquote-image-transform: scale(1);
+        --blockquote-image-transition: var(--focus-image-transform-transition);
+
         --blockquote-icon-color: var(--color-font-dark);
 
         --blockquote-author-grid-column: 2;
@@ -75,6 +78,16 @@
         --blockquote-text-color: var(--color-bg);
     }
 
+    .blockquote__image-link {
+        height: var(--blockquote-image-size);
+        width: var(--blockquote-image-size);
+        border-radius: var(--blockquote-image-border-radius);
+        display: block;
+        margin: 0 auto;
+        grid-area: blockquoteImage;
+        overflow: hidden;
+    }
+
     .blockquote__image {
         height: var(--blockquote-image-size);
         width: var(--blockquote-image-size);
@@ -84,6 +97,8 @@
         margin: 0 auto;
         grid-area: blockquoteImage;
         justify-self: var(--blockquote-image-justify-self);
+        transform: var(--blockquote-image-transform);
+        transition: var(--blockquote-image-transition);
     }
 
     .blockquote__blockquote {
@@ -209,6 +224,12 @@
         .blockquote[blockquote-direction="horizontal"] {
             --blockquote-gap: var(--spacing-normal) var(--spacing-xl);
             --blockquote-image-size: 112px;
+        }
+    }
+
+    @media (hover: hover) {
+        .blockquote__image-link:hover {
+            --blockquote-image-transform: var(--focus-image-transform);
         }
     }
 }

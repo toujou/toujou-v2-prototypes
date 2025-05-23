@@ -47,7 +47,9 @@ interface BlockquoteStoryProps {
 const blockquoteComponent = (args: BlockquoteStoryProps) => {
     return `
         <toujou-blockquote role="figure" class="blockquote" blockquote-direction="${args.direction}" element-design="${args.elementDesign}">
-            <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
+            <a href="#" class="blockquote__image-link" slot="image">
+                <img slot="image" class="blockquote__image" src="https://picsum.photos/200/200" alt="quote image" />
+            </a>
             <blockquote slot="quote" class="blockquote__blockquote">
                 <div class="blockquote__content">
                     <p>Before you criticize someone, <a href="#">you should walk a mile</a> in their shoes. That way when you criticize them, you are a mile away from them and you have their shoes.</p>
