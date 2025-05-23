@@ -6,15 +6,17 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as n}from"./indexed
                     id="tx_indexedsearch_panel"
                     action="#"
                     class="indexedsearch-form"
-                    action="#"
+                    role="search"
                 >
                     <toujou-search class="search">
+                        <label for="tx_indexedsearch_pi2[search][sword]" class="search__label" is-visually-hidden>Search</label>
                         <input
                             class="input input--search indexedsearch-form__input"
                             name="tx_indexedsearch_pi2[search][sword]"
+                            id="tx_indexedsearch_pi2[search][sword]"
                             type="search"
                             placeholder="Search..."
-                            value="toujou"
+                            aria-label="Search"
                         >
                         <button
                             is="toujou-button"
@@ -200,15 +202,17 @@ import{T as t}from"./badgeCustomConfig-DUXiHpL4.js";import{M as n}from"./indexed
                     id="tx_indexedsearch_panel"
                     action="#"
                     class="indexedsearch-form"
-                    action="#"
+                    role="search"
                 >
                     <toujou-search class="search">
+                        <label for="tx_indexedsearch_pi2[search][sword]" class="search__label" is-visually-hidden>Search</label>
                         <input
                             class="input input--search indexedsearch-form__input"
                             name="tx_indexedsearch_pi2[search][sword]"
+                            id="tx_indexedsearch_pi2[search][sword]"
                             type="search"
                             placeholder="Search..."
-                            value="toujou"
+                            aria-label="Search"
                         >
                         <button
                             is="toujou-button"

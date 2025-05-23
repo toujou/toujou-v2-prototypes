@@ -20,7 +20,7 @@ glass icon with which to power search interactions.`]}),`
         <main>
             <form class="form" action="#" role="search">
               <toujou-search class="search">
-                <label for="search-input" class="search__label">Search</label>
+                <label for="search-input" class="search__label" is-visually-hidden>Search</label>
                 <input
                     id="search-input"
                     name="search-input"
@@ -43,12 +43,12 @@ glass icon with which to power search interactions.`]}),`
               </toujou-search>
             </form>
         </main>
-    `,t=h.bind({});var r,s,c;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`() => {
+    `,t=h.bind({});var s,r,c;t.parameters={...t.parameters,docs:{...(s=t.parameters)==null?void 0:s.docs,source:{originalSource:`() => {
   return \`
         <main>
             <form class="form" action="#" role="search">
               <toujou-search class="search">
-                <label for="search-input" class="search__label">Search</label>
+                <label for="search-input" class="search__label" is-visually-hidden>Search</label>
                 <input
                     id="search-input"
                     name="search-input"
@@ -72,4 +72,4 @@ glass icon with which to power search interactions.`]}),`
             </form>
         </main>
     \`;
-}`,...(c=(s=t.parameters)==null?void 0:s.docs)==null?void 0:c.source}}};const f=["Search"];export{t as Search,f as __namedExportsOrder,S as default};
+}`,...(c=(r=t.parameters)==null?void 0:r.docs)==null?void 0:c.source}}};const f=["Search"];export{t as Search,f as __namedExportsOrder,S as default};
