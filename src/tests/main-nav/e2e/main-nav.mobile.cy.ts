@@ -36,14 +36,14 @@ describe('main-nav [mobile]', () => {
         cy.wait(500);
         cy.get('@burgerButton').invoke('attr', 'aria-pressed').should('eq', 'true');
         cy.get('@burgerButton').invoke('attr', 'aria-expanded').should('eq', 'true');
-        cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"]`).should('be.visible');
+        cy.get(`#${mainNavId} .main-nav__list[data-nav-list-level="1"]`).should('be.visible');
 
         // Open second level
-        cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"] > .main-nav__list-item[has-subnav]`).last().as('subNavListItem');
+        cy.get(`#${mainNavId} .main-nav__list[data-nav-list-level="1"] > .main-nav__list-item[data-has-subnav]`).last().as('subNavListItem');
         cy.get('@subNavListItem').find(`.main-nav__chevron[aria-controls="${subNavId}"]`).as('subNavChevron');
         cy.get('@subNavListItem').find(`.main-nav__text#${subNavLabelId}`).should('exist');
         cy.get('@subNavChevron').realTouch();
-        cy.get('@subNavListItem').invoke('attr', 'is-open').should('exist');
+        cy.get('@subNavListItem').invoke('attr', 'data-is-open').should('exist');
         cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'true');
         cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'true');
         cy.get(`#${mainNavId} .main-nav__list#${subNavId}`).as('subNavList');
@@ -57,12 +57,12 @@ describe('main-nav [mobile]', () => {
         cy.wait(500);
         cy.get('@burgerButton').invoke('attr', 'aria-pressed').should('eq', 'false');
         cy.get('@burgerButton').invoke('attr', 'aria-expanded').should('eq', 'false');
-        cy.get(`#${mainNavId} .main-nav__list[nav-list-level="1"]`).should('not.be.visible');
+        cy.get(`#${mainNavId} .main-nav__list[data-nav-list-level="1"]`).should('not.be.visible');
 
         // Check if second level controls are reset on re-opening first level
         cy.get('@burgerButton').realTouch();
         cy.wait(500);
-        cy.get('@subNavListItem').invoke('attr', 'is-open').should('not.exist');
+        cy.get('@subNavListItem').invoke('attr', 'data-is-open').should('not.exist');
         cy.get('@subNavChevron').invoke('attr', 'aria-expanded').should('eq', 'false');
         cy.get('@subNavChevron').invoke('attr', 'aria-pressed').should('eq', 'false');
     });

@@ -208,306 +208,306 @@ const renderBurgerSection = () => {
 const renderMainNavSection = () => {
     return `
         <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
-            <ul class="main-nav__list" nav-list-level="1">
-                <li class="main-nav__list-item" nav-item-level="1">
+            <ul class="main-nav__list" data-nav-list-level="1">
+                <li class="main-nav__list-item" data-nav-item-level="1">
                     <a href="#" class="main-nav__link" aria-current="page">
                         <span class="main-nav__text">Startseite</span>
                     </a>
                 </li>
-                <li class="main-nav__list-item" nav-item-level="1" has-subnav>
+                <li class="main-nav__list-item" data-nav-item-level="1" data-has-subnav>
                     <a href="#" class="main-nav__link">
                         <span class="main-nav__text" id="label_nav2">Bürgerservice</span>
                     </a>
                     <button class="main-nav__chevron" aria-label="Toggle menu Bürgerservice" aria-controls="nav2" aria-expanded="false" aria-pressed="false">
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                     </button>
-                    <ul class="main-nav__list" nav-list-level="2" id="nav2" aria-labelledby="label_nav2">
-                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                    <ul class="main-nav__list" data-nav-list-level="2" id="nav2" aria-labelledby="label_nav2">
+                        <li class="main-nav__list-item" data-nav-item-level="2" data-has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text" id="label_nav2_1">Arbeit und Beruf</span>
                             </a>
                             <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav2_1" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
-                            <ul class="main-nav__list" nav-list-level="3" id="nav2_1" aria-labelledby="label_nav2_1">
-                                <li class="main-nav__list-item" nav-item-level="3">
+                            <ul class="main-nav__list" data-nav-list-level="3" id="nav2_1" aria-labelledby="label_nav2_1">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item two</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item three with a test very loooooong litle</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item four</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item five</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                        <li class="main-nav__list-item" data-nav-item-level="2" data-has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text" id="label_nav2_2">Ausweise und Dokumente</span>
                             </a>
                             <button class="main-nav__chevron" aria-label="Toggle menu Ausweise und Dokumente" aria-controls="nav2_2" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
-                            <ul class="main-nav__list" nav-list-level="3" id="nav2_2" aria-labelledby="label_nav2_2">
-                                <li class="main-nav__list-item" nav-item-level="3">
+                            <ul class="main-nav__list" data-nav-list-level="3" id="nav2_2" aria-labelledby="label_nav2_2">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item two</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item three</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                        <li class="main-nav__list-item" data-nav-item-level="2" data-has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text" id="label_nav2_3">Bauen</span>
                             </a>
                             <button class="main-nav__chevron" aria-label="Toggle menu Bauen" aria-controls="nav2_3" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
-                            <ul class="main-nav__list" nav-list-level="3" id="nav2_3" aria-labelledby="label_nav2_3">
-                                <li class="main-nav__list-item" nav-item-level="3">
+                            <ul class="main-nav__list" data-nav-list-level="3" id="nav2_3" aria-labelledby="label_nav2_3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item two</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item three</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">This is a 2nd level item with a very very long text</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Erbschaft und Testament</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Familie und Partnerschaften</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Freiwilligedienste</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Geburt</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Gesellschaft und Politik</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Gesundheit und Vorsorge</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Heirat</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Jugend</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Kinderbetreeung</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Kirchen und Religion</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Kultur und Freizeit</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Leben mit Behinderung</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Mobilität</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Natur und Umwelt</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Notlagen- und Opferhilfen</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Online-Informationen</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Reisen</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Ruhestand</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Schule</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Sicherheit</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Sterbefall</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Steuern und Abgaben</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Studium</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Tierhaltung und Jagd</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Umzug</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Waren und Dienstleistungen</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Wohnen</span>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="main-nav__list-item" nav-item-level="1">
+                <li class="main-nav__list-item" data-nav-item-level="1">
                     <a href="#" class="main-nav__link">
                         <span class="main-nav__text">Online-Terminvergabe</span>
                     </a>
                 </li>
-                <li class="main-nav__list-item" nav-item-level="1" has-subnav>
+                <li class="main-nav__list-item" data-nav-item-level="1" data-has-subnav>
                     <a href="#" class="main-nav__link">
                         <span class="main-nav__text" id="label_nav4">Häufige Fragen</span>
                     </a>
                     <button class="main-nav__chevron" aria-label="Toggle menu Häufige Fragen" aria-controls="nav4" aria-expanded="false" aria-pressed="false">
                         <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                     </button>
-                    <ul class="main-nav__list" nav-list-level="2" id="nav4" aria-labelledby="label_nav4">
-                        <li class="main-nav__list-item" nav-item-level="2" has-subnav>
+                    <ul class="main-nav__list" data-nav-list-level="2" id="nav4" aria-labelledby="label_nav4">
+                        <li class="main-nav__list-item" data-nav-item-level="2" data-has-subnav>
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text" id="label_nav4_1">Arbeit und Beruf</span>
                             </a>
                             <button class="main-nav__chevron" aria-label="Toggle menu Arbeit und Beruf" aria-controls="nav4_1" aria-expanded="false" aria-pressed="false">
                                 <toujou-icon class="icon" icon-size="l" icon-name="chevron-down" icon-color="background"></toujou-icon>
                             </button>
-                            <ul class="main-nav__list" nav-list-level="3" id="nav4_1" aria-labelledby="label_nav4_1">
-                                <li class="main-nav__list-item" nav-item-level="3">
+                            <ul class="main-nav__list" data-nav-list-level="3" id="nav4_1" aria-labelledby="label_nav4_1">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item one</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item two</span>
                                     </a>
                                 </li>
-                                <li class="main-nav__list-item" nav-item-level="3">
+                                <li class="main-nav__list-item" data-nav-item-level="3">
                                     <a href="#" class="main-nav__link">
                                         <span class="main-nav__text">Item three</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Ausweise und Dokumente</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Bauen</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Berufsausbildung</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Erbschaft und Testament</span>
                             </a>
                         </li>
-                        <li class="main-nav__list-item" nav-item-level="2">
+                        <li class="main-nav__list-item" data-nav-item-level="2">
                             <a href="#" class="main-nav__link">
                                 <span class="main-nav__text">Familie und Partnerschaften</span>
                             </a>

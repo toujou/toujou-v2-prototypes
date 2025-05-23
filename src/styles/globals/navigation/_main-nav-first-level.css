@@ -1,4 +1,4 @@
-.main-nav__list[nav-list-level="1"] {
+.main-nav__list[data-nav-list-level="1"] {
     --main-nav-level-1-list-item-display: grid;
     --main-nav-level-1-list-item-grid-template-columns: 1fr auto;
 
