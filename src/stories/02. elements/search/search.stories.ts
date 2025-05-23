@@ -17,9 +17,17 @@ export default {
 const Template: StoryFn = () => {
     return `
         <main>
-            <form class="form" action="#">
+            <form class="form" action="#" role="search">
               <toujou-search class="search">
-                <input class="input input--search" type="search" placeholder="Search...">
+                <label for="search-input" class="search__label">Search</label>
+                <input
+                    id="search-input"
+                    name="search-input"
+                    class="input input--search"
+                    type="search"
+                    placeholder="Search..."
+                    aria-label="Search"
+                >
                 <button
                     is="toujou-button"
                     class="button button--search"
