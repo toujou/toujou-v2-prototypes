@@ -16,4 +16,13 @@
     .indexedsearch-page .indexedsearch-form {
         --indexedsearch-form-width: 100%;
     }
+
+    .indexedsearch-form .search__label {
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        pointer-events: none;
+        user-select: none;
+    }
 }
