@@ -2,6 +2,8 @@
 @import "./globals/_variables.css" layer(variables);
 @import "./globals/_old-variables.css" layer(variables);
 
+@import "./globals/utilities/_is-visually-hidden.css" layer(base);
+
 @import "./globals/navigation/_main-nav.css" layer(base);
 @import "./globals/navigation/_main-nav-first-level.css" layer(base);
 @import "./globals/navigation/_main-nav-second-level.css" layer(base);

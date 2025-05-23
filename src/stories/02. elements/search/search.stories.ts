@@ -19,7 +19,7 @@ const Template: StoryFn = () => {
         <main>
             <form class="form" action="#" role="search">
               <toujou-search class="search">
-                <label for="search-input" class="search__label">Search</label>
+                <label for="search-input" class="search__label" is-visually-hidden>Search</label>
                 <input
                     id="search-input"
                     name="search-input"
