@@ -67,6 +67,16 @@ export default {
             control: { type: 'radio' },
             required: true,
         },
+        openOnHover: {
+            table: {
+                category: "Topbar settings",
+                defaultValue: { summary: 'false' },
+            },
+            name: "Open sub-nav on hover",
+            description: "Choose whether or not a mouseenter/mouseleave event will trigger toggling the sub-nav",
+            control: { type: 'boolean' },
+            required: true,
+        },
     },
 } satisfies Meta;
 
@@ -76,6 +86,7 @@ interface TopbarStoryProps {
     logoSize: string
     noTransitions: boolean
     languagePickerType: string
+    openOnHover: boolean
 }
 
 const renderLogoSection = (args: TopbarStoryProps) => {
@@ -205,9 +216,9 @@ const renderBurgerSection = () => {
     `
 }
 
-const renderMainNavSection = () => {
+const renderMainNavSection = (openOnHover: boolean) => {
     return `
-        <nav id="mainNavigation" class="main-nav" aria-label="Main navigation">
+        <nav id="mainNavigation" class="main-nav" aria-label="Main navigation" ${openOnHover ? `data-is-open-on-hover` : ''}>
             <ul class="main-nav__list" data-nav-list-level="1">
                 <li class="main-nav__list-item" data-nav-item-level="1">
                     <a href="#" class="main-nav__link" aria-current="page">
@@ -605,7 +616,7 @@ const Template: StoryFn<TopbarStoryProps> = (args: TopbarStoryProps) => {
             
             ${renderBurgerSection()}
             
-            ${renderMainNavSection()}
+            ${renderMainNavSection(args.openOnHover)}
 
             ${renderServiceNavSection()}
         </toujou-topbar>
@@ -622,4 +633,5 @@ Topbar.args = {
     logoSize: 'medium',
     noTransitions: false,
     languagePickerType: 'inline',
+    openOnHover: false
 }
