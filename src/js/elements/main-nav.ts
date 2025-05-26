@@ -22,7 +22,6 @@ export class MainNav {
                     navListItem.addEventListener('mouseleave', this._handleMouseEvent);
                 }
             });
-            return;
         }
 
         // @ts-ignore
@@ -60,7 +59,9 @@ export class MainNav {
      * @param event
      */
     _handleMouseEvent = (event: MouseEvent) => {
-        this._toggleListItemState(event.currentTarget as MainNavListItem);
+        if(event.type === 'mouseenter' || event.type === 'mouseleave') {
+            this._toggleListItemState(event.currentTarget as MainNavListItem);
+        }
     }
 
     /**
