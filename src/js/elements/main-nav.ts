@@ -6,7 +6,7 @@ export class MainNav {
     protected readonly listItemSelector = '.main-nav__list-item';
     protected readonly hasSubNavAttribute = 'data-has-subnav';
     protected readonly isOpenAttribute = 'data-is-open';
-    protected readonly listItemLevelAttribute = 'nav-item-level';
+    protected readonly listItemLevelAttribute = 'data-nav-item-level';
     protected readonly listItemChevronSelector = '.main-nav__chevron';
     protected readonly listSelector = '.main-nav__list';
     protected readonly isOpenOnHoverAttribute = 'data-is-open-on-hover';
