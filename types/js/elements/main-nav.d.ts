@@ -3,12 +3,12 @@ export declare class MainNav {
     private navListItems;
     private activeSubNavs;
     protected readonly listItemSelector = ".main-nav__list-item";
-    protected readonly hasSubNavAttribute = "has-subnav";
-    protected readonly isOpenAttribute = "is-open";
-    protected readonly listItemLevelAttribute = "nav-item-level";
+    protected readonly hasSubNavAttribute = "data-has-subnav";
+    protected readonly isOpenAttribute = "data-is-open";
+    protected readonly listItemLevelAttribute = "data-nav-item-level";
     protected readonly listItemChevronSelector = ".main-nav__chevron";
     protected readonly listSelector = ".main-nav__list";
-    protected readonly isOpenOnHoverAttribute = "is-open-on-hover";
+    protected readonly isOpenOnHoverAttribute = "data-is-open-on-hover";
     constructor(mainNavEl: MainNavElement);
     /**
      * Get list of all the main navigation list items and start listening for click events
