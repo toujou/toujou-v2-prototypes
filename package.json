@@ -103,7 +103,7 @@
     "@toujou/toujou-input-password-toggle": "^2.0.23",
     "@toujou/toujou-lazy-render": "^3.5.0",
     "@toujou/toujou-location-finder": "^3.17.1",
-    "@toujou/toujou-map": "^3.8.1",
+    "@toujou/toujou-map": "^3.9.0",
     "@toujou/toujou-media-info": "^2.0.6",
     "@toujou/toujou-rating-stars": "^3.1.1",
     "@toujou/toujou-snackbar": "^3.8.3",
