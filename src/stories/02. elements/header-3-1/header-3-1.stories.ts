@@ -119,27 +119,29 @@ const Template: StoryFn<HeaderThreeToOneStoryProps> = (args: HeaderThreeToOneSto
         <header class="header" image-height="3-1">
             <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />
 
-            <div class="header-content"
-                accent-color="${args.accentColor}"
-                vertical-position="${args.headerVerticalPos}"
-                horizontal-position="${args.headerHorizontalPos}"
-                content-size="${args.headerContentSize}"
-                text-alignment="${args.headerTextAlignment}"
-                ${args.isTitleOnly ? 'is-title-only' : ''}>
-                <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
-                ${args.isTitleOnly ? '' : getHeaderContentText(args.accentColor)}
+            <div class="header__content">
+                <div class="header-content"
+                    accent-color="${args.accentColor}"
+                    vertical-position="${args.headerVerticalPos}"
+                    horizontal-position="${args.headerHorizontalPos}"
+                    content-size="${args.headerContentSize}"
+                    text-alignment="${args.headerTextAlignment}"
+                    ${args.isTitleOnly ? 'is-title-only' : ''}>
+                    <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
+                    ${args.isTitleOnly ? '' : getHeaderContentText(args.accentColor)}
+                </div>
+    
+                <toujou-media-info class="media-info">
+                    <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                        <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                    </button>
+                    <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                        <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                    </button>
+                    <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                    <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                </toujou-media-info>
             </div>
-
-            <toujou-media-info class="media-info">
-                <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
-                    <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
-                </button>
-                <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
-                    <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
-                </button>
-                <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
-                <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
-            </toujou-media-info>
         </header>
     `
 };
