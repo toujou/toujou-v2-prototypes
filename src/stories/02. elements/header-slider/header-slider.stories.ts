@@ -102,7 +102,8 @@ const Template: StoryFn<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps)
                 aria-label="Toujou slider example"
                 element-design="primary"
                 slides-to-show="1"
-                slider-type="loop">
+                slider-type="loop"
+                slider-aspect-ratio="auto">
                 <div class="splide slider__slider">
                     <div class="splide__arrows slider-controls">
                         <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev" aria-label="Previous slide">
@@ -120,15 +121,17 @@ const Template: StoryFn<HeaderSliderStoryProps> = (args: HeaderSliderStoryProps)
                                     <toujou-single-media class="single-media">
                                         <img class="single-media__image" src="https://picsum.photos/2000" alt="Nice image">
                                     </toujou-single-media>
-                                    <div class="header-content"
-                                        accent-color="${args.accentColor}"
-                                        vertical-position="${args.headerVerticalPos}"
-                                        horizontal-position="${args.headerHorizontalPos}"
-                                        content-size="${args.headerContentSize}"
-                                        text-alignment="${args.contentAlignment}">
-                                        <h3>Slide 1.</h3>
-                                        <p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <button is="toujou-button" class="button" button-variant="${args.accentColor}" button-type="default" button-size="normal">Hello world</button>
+                                    <div class="header__content">
+                                        <div class="header-content"
+                                            accent-color="${args.accentColor}"
+                                            vertical-position="${args.headerVerticalPos}"
+                                            horizontal-position="${args.headerHorizontalPos}"
+                                            content-size="${args.headerContentSize}"
+                                            text-alignment="${args.contentAlignment}">
+                                            <h3>Slide 1.</h3>
+                                            <p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <button is="toujou-button" class="button" button-variant="${args.accentColor}" button-type="default" button-size="normal">Hello world</button>
+                                        </div>
                                     </div>
                                 </div>
                             </li>

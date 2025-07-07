@@ -163,7 +163,7 @@
     .header:not(.header--portfolio-gallery) .splide__list,
     .header:not(.header--portfolio-gallery) .splide__slide,
     .header:not(.header--portfolio-gallery) .slider__item {
-        height: var(--header-height) !important;
+        min-height: var(--header-min-height) !important;
         width: var(--slider-width) !important;
     }
 
