@@ -24,6 +24,15 @@ export default {
             control: { type: 'boolean' },
             required: true,
         },
+        showExtraLongContent: {
+            table: {
+                category: "Header Settings",
+            },
+            name: 'Extra long content',
+            description: "Show extra long content (header should grow)",
+            control: { type: 'boolean' },
+            required: true,
+        },
         imageHeight: {
             table: {
                 category: "Header Settings",
@@ -106,6 +115,7 @@ export default {
 
 interface HeaderStoryProps {
     isTitleOnly: boolean,
+    showExtraLongContent: boolean,
     imageHeight: string,
     headerVerticalPos: string,
     headerHorizontalPos: string,
@@ -115,12 +125,26 @@ interface HeaderStoryProps {
     accentColor: string,
 }
 
-function getHeaderContentText(accentColor: string) {
+function getHeaderContentText(accentColor: string, showExtraLongContent: boolean = false) {
     const buttonColor = accentColor === 'default' ? 'primary' : accentColor === 'grey' ? 'font' : accentColor;
 
     return `
         <p class="header-content__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            ${showExtraLongContent ? `
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            ` : ''}
+        </p>
         <a href="#" class="button header-content__cta" button-variant="${buttonColor}">Let's go</a>
     `
 }
@@ -130,15 +154,19 @@ const Template: StoryFn<HeaderStoryProps> = (args: HeaderStoryProps) => {
         <header class="header" image-height="${args.imageHeight}">
             <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />
 
-            <div class="header-content"
-                accent-color="${args.accentColor}"
-                vertical-position="${args.headerVerticalPos}"
-                horizontal-position="${args.headerHorizontalPos}"
-                content-size="${args.headerContentSize}"
-                text-alignment="${args.headerTextAlignment}"
-                ${args.isTitleOnly ? 'is-title-only' : ''}>
-                <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
-                ${args.isTitleOnly ? '' : getHeaderContentText(args.accentColor)}
+            <div class="header__content">
+                <div
+                    class="header-content"
+                    accent-color="${args.accentColor}"
+                    vertical-position="${args.headerVerticalPos}"
+                    horizontal-position="${args.headerHorizontalPos}"
+                    content-size="${args.headerContentSize}"
+                    text-alignment="${args.headerTextAlignment}"
+                    ${args.isTitleOnly ? 'is-title-only' : ''}
+                >
+                    <h1 class="header-content__title font--${args.headlineSize}">This is a headline</h1>
+                    ${args.isTitleOnly ? '' : getHeaderContentText(args.accentColor, args.showExtraLongContent)}    
+                </div>
             </div>
 
             <toujou-media-info class="media-info">
@@ -160,6 +188,7 @@ export const Header = Template.bind({});
 // @ts-ignore
 Header.args = {
     isTitleOnly: false,
+    showExtraLongContent: false,
     imageHeight: 'default',
     headerVerticalPos: 'mid',
     headerHorizontalPos: 'center',

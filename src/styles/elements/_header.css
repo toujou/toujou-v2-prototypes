@@ -1,7 +1,7 @@
 @layer components {
     .header {
         --header-position: relative;
-        --header-height: 80vh;
+        --header-min-height: 80vh;
         --header-width: 100%;
         --header-z-index: var(--z-index-content);
 
@@ -12,8 +12,10 @@
         --header-image-left: 0;
         --header-image-width-object-fit: cover;
 
+        --header-content-wrapper-padding: var(--spacing-xxl) var(--spacing-normal);
+
         position: var(--header-position);
-        height: var(--header-height);
+        min-height: var(--header-min-height);
         width: var(--header-width);
         z-index: var(--header-z-index);
         container-name: header;
@@ -27,27 +29,27 @@
     }
 
     .header[image-height="full"] {
-        --header-height: calc(100vh - var(--topbar-height));
+        --header-min-height: calc(100vh - var(--topbar-height));
     }
 
     .header[image-height="half"] {
-        --header-height: 50vh;
+        --header-min-height: 50vh;
     }
 
     .header[image-height="quarter"] {
-        --header-height: 25vh;
+        --header-min-height: 25vh;
     }
 
     .header[image-height="3-1"] {
-        --header-height: calc(100 / 3 * 1vw);
+        --header-min-height: calc(100 / 3 * 1vw);
     }
 
     .header[image-height="hero-media"] {
-        --header-height: auto;
+        --header-min-height: auto;
     }
 
     .header--portfolio-gallery {
-        --header-height: auto;
+        --header-min-height: auto;
     }
 
     .header__figure {
@@ -69,5 +71,24 @@
         height: 100%;
         max-height: 100%;
         object-fit: cover;
+    }
+
+    .header__content {
+        position: relative;
+        display: flex;
+        min-height: var(--header-min-height);
+        padding: var(--header-content-wrapper-padding);
+    }
+
+    @media screen and (width > 840px) {
+        .header {
+            --header-content-wrapper-padding: var(--spacing-xxl) var(--spacing-l);
+        }
+    }
+
+    @media screen and (width > 1280px) {
+        .header {
+            --header-content-wrapper-padding: var(--spacing-xxl);
+        }
     }
 }
