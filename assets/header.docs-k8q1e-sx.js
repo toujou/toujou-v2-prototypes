@@ -6,11 +6,13 @@ import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as t}from"
 `,e.jsx(n.pre,{children:e.jsx(n.code,{className:"language-html",children:`<header class="header" image-height="full">
     <img class="header__image" src="https://picsum.photos/2000" alt="quote image">
 
-    <div class="header-content" accent-color="grey" vertical-position="bottom" horizontal-position="right" content-size="full" text-alignment="left">
-        <h1 class="header-content__title font--delta">This is a headline</h1>
+    <div class="header__content">
+        <div class="header-content" accent-color="grey" vertical-position="bottom" horizontal-position="right" content-size="full" text-alignment="left">
+            <h1 class="header-content__title font--delta">This is a headline</h1>
 
-        <p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <a href="#" class="button header-content__cta" button-variant="font">Let's go</a>
+            <p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="button header-content__cta" button-variant="font">Let's go</a>
+        </div>
     </div>
 
     <toujou-media-info class="media-info">
