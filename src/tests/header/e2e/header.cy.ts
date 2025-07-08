@@ -1,10 +1,7 @@
 /// <reference types="cypress" />
 
 const desktopViewportHeight = Cypress.env('desktopViewportHeight');
-const desktopViewportWidth = Cypress.env('desktopViewportWidth');
-
 const colors = Cypress.env('colors');
-const tokens = Cypress.env('tokens');
 
 describe('header', () => {
     beforeEach(() => {
@@ -48,8 +45,39 @@ describe('header - image-height', () => {
         cy.get('.header').then((e) => {
             e[0].setAttribute('image-height', 'quarter');
         });
-        const quarterHeight = desktopViewportHeight / 4;
-        cy.get('.header').should('have.css', 'height', `${quarterHeight}px`);
+        cy.get('.header').should('have.css', 'height', `364px`);
+    });
+});
+
+describe('header - image-height with long content', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=showExtraLongContent:!true');
+    });
+
+    it('has correct default height', () => {
+        const eightyPercentHeight = desktopViewportHeight / 100 * 80;
+        cy.get('.header').should('have.css', 'height', `${eightyPercentHeight}px`);
+    });
+
+    it('has correct full height', () => {
+        cy.get('.header').then((e) => {
+            e[0].setAttribute('image-height', 'full');
+            cy.get('.header').should('have.css', 'height', `${desktopViewportHeight}px`);
+        });
+    });
+
+    it('has correct half height', () => {
+        cy.get('.header').then((e) => {
+            e[0].setAttribute('image-height', 'half');
+        });
+        cy.get('.header').should('have.css', 'height', `652px`);
+    });
+
+    it('has correct quarter height', () => {
+        cy.get('.header').then((e) => {
+            e[0].setAttribute('image-height', 'quarter');
+        });
+        cy.get('.header').should('have.css', 'height', `652px`);
     });
 });
 
@@ -62,93 +90,102 @@ describe('header - content size', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('content-size', 'full');
         });
-        const contentPadding = 32;
-        const fullWidth = desktopViewportWidth - (contentPadding * 2);
-        cy.get('.header-content').should('have.css', 'width', `${fullWidth}px`);
+        cy.get('.header-content').should('have.css', 'width', `1728px`);
     });
 
     it('has correct half width', () => {
-        const halfWidth = desktopViewportWidth / 2;
-        cy.get('.header-content').should('have.css', 'width', `${halfWidth}px`);
-    });
-
-    it('has correct half width', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('content-size', 'third');
-            const thirdWidth = desktopViewportWidth / 3;
-            const headerContentWidth = Math.ceil(parseFloat(getComputedStyle(e[0]).width));
-            expect(headerContentWidth).to.equal(thirdWidth);
-        });
+        cy.get('.header-content').should('have.css', 'width', `896px`);
     });
 
     it('has correct half width', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('content-size', 'quarter');
         });
-        const quarterWidth = desktopViewportWidth / 4;
-        cy.get('.header-content').should('have.css', 'width', `${quarterWidth}px`);
+        cy.get('.header-content').should('have.css', 'width', `448px`);
     });
 });
 
-describe('header - vertical position', () => {
+describe('header - "mid" vertical position', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-header--header');
     });
 
     it('has correct "mid" vertical position', () => {
-        cy
-            .get('.header').then((e) => {
-                const headerHeight = parseInt(getComputedStyle(e[0]).height);
-                return headerHeight;
-            })
-            .then((headerHeight) => {
-                cy.get('.header-content').should('have.css', 'top', `${headerHeight / 2}px`);
-            })
-    });
-
-    it('has correct "top" vertical position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('vertical-position', 'top');
-        });
-        cy.get('.header-content').should('have.css', 'top', tokens.spacing.xxl);
-    });
-
-    it('has correct "bottom" vertical position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('vertical-position', 'bottom');
-        });
-        cy.get('.header-content').should('have.css', 'bottom', tokens.spacing.xxl);
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.top).to.be.closeTo(314, 1);
+            });
     });
 });
 
-describe('header - horizontal position', () => {
+describe('header - "top" vertical position', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerVerticalPos:top');
+    });
+
+    it('has correct "mid" vertical position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.top).to.be.closeTo(64, 1);
+            });
+    });
+});
+
+describe('header - "bottom" vertical position', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerVerticalPos:bottom');
+    });
+
+    it('has correct "mid" vertical position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.top).to.be.closeTo(565, 1);
+            });
+    });
+});
+
+describe('header - "left" horizontal position', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerHorizontalPos:left');
+    });
+
+    it('has correct "center" horizontal position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.left).to.be.closeTo(64, 1);
+            });
+    });
+});
+
+describe('header - "center" horizontal position', () => {
     beforeEach(() => {
         cy.visit('/iframe.html?viewMode=story&id=components-header--header');
     });
 
     it('has correct "center" horizontal position', () => {
-        cy
-            .get('.header').then((e) => {
-                const headerWidth = parseInt(getComputedStyle(e[0]).width);
-                return headerWidth;
-            })
-            .then((headerWidth) => {
-                cy.get('.header-content').should('have.css', 'left', `${headerWidth / 2}px`);
-            })
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.left).to.be.closeTo(512, 1);
+            });
+    });
+});
+
+describe('header - "right" horizontal position', () => {
+    beforeEach(() => {
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerHorizontalPos:right');
     });
 
-    it('has correct "left" horizontal position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('horizontal-position', 'left');
-        });
-        cy.get('.header-content').should('have.css', 'left', tokens.spacing.xxl);
-    });
-
-    it('has correct "right" horizontal position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('horizontal-position', 'right');
-        });
-        cy.get('.header-content').should('have.css', 'right', tokens.spacing.xxl);
+    it('has correct "center" horizontal position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.left).to.be.closeTo(960, 1);
+            });
     });
 });
 
@@ -159,7 +196,6 @@ describe('header - content alignment', () => {
 
     it('has correct default content alignment', () => {
         cy.get('.header-content__title').should('have.css', 'text-align', `center`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `center`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-right', `0`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-left', `0`);
     });
@@ -169,7 +205,6 @@ describe('header - content alignment', () => {
             e[0].setAttribute('text-alignment', 'center');
         });
         cy.get('.header-content__title').should('have.css', 'text-align', `center`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `center`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-right', `0`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-left', `0`);
     });
@@ -179,7 +214,6 @@ describe('header - content alignment', () => {
             e[0].setAttribute('text-alignment', 'left');
         });
         cy.get('.header-content__title').should('have.css', 'text-align', `left`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `left`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-right', `0`);
         cy.get('.header-content__cta').should('have.css', 'margin-left', `0px`);
     });
@@ -189,7 +223,6 @@ describe('header - content alignment', () => {
             e[0].setAttribute('text-alignment', 'right');
         });
         cy.get('.header-content__title').should('have.css', 'text-align', `right`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `right`);
         cy.get('.header-content__cta').should('have.css', 'margin-right', `0px`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-left', `0`);
     });

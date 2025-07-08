@@ -40,36 +40,17 @@
 
 .header .single-media {
     --single-media-margin: 0 auto;
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .header :is(.single-media__image, .single-media__video) {
-    --single-media-media-width: 100%;
-    --single-media-media-height: 100%;
-
     object-fit: cover;
     object-position: center center;
 }
 
-.header[header-type="slider"] .single-media {
-    --single-media-width: 100vw;
-    --single-media-height: 80vh;
-    --single-media-max-height: 80vh;
-}
-
-.header[image-height="full"] .single-media {
-    --single-media-height: 80vh;
-    --single-media-max-height: 100vh;
-}
-
-.header[image-height="half"] .single-media {
-    --single-media-height: 50vh;
-    --single-media-max-height: 50vh;
-}
-
-.header[image-height="quarter"] .single-media {
-    --single-media-height: 25vh;
-    --single-media-max-height: 25vh;
-}
 
 .single-media__image,
 .single-media__video {

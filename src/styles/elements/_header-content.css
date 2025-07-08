@@ -1,16 +1,11 @@
 @layer components {
     .header-content {
-        --header-content-position: absolute;
-        --header-content-top: 50%;
-        --header-content-bottom: unset;
-        --header-content-right: unset;
-        --header-content-left: 50%;
-        --header-content-translate-x: -50%;
-        --header-content-translate-y: -50%;
+        --header-content-position: relative;
+        --header-content-vertical-position: center;
+        --header-content-margin-right: auto;
+        --header-content-margin-left: auto;
         --header-content-width: calc(100% - calc(var(--header-content-padding) * 2));
         --header-content-max-width: var(--header-content-width);
-        /* stylelint-disable-next-line max-line-length */
-        --header-content-transform: translate(var(--header-content-translate-x), var(--header-content-translate-y)) !important;
         --header-content-padding: var(--spacing-normal);
         --header-content-background-color: var(--color-bg);
         --header-content-border-radius: var(--border-radius-default);
@@ -23,18 +18,14 @@
         --header-cta-margins: 0 auto;
 
         position: var(--header-content-position);
-        top: var(--header-content-top);
-        bottom: var(--header-content-bottom);
-        right: var(--header-content-right);
-        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
-        left: var(--header-content-left);
-        transform: var(--header-content-transform);
         width: var(--header-content-width);
         max-width: var(--header-content-max-width);
         padding: var(--header-content-padding);
         background-color: var(--header-content-background-color);
         border-radius: var(--header-content-border-radius);
         z-index: var(--header-content-z-index);
+        align-self: var(--header-content-vertical-position);
+        margin-inline: var(--header-content-margin-left) var(--header-content-margin-right);
     }
 
     .header[header-type="slider"] .header-content {
@@ -71,14 +62,11 @@
     }
 
     .header-content[vertical-position="top"] {
-        --header-content-top: var(--spacing-xxl);
-        --header-content-translate-y: 0;
+        --header-content-vertical-position: flex-start;
     }
 
     .header-content[vertical-position="bottom"] {
-        --header-content-top: unset;
-        --header-content-bottom: var(--spacing-xxl);
-        --header-content-translate-y: 0;
+        --header-content-vertical-position: flex-end;
     }
 
     .header[header-type="slider"] .header-content[vertical-position="bottom"] {
@@ -86,16 +74,13 @@
     }
 
     .header-content[horizontal-position="left"] {
-        --header-content-left: var(--spacing-normal);
-        --header-content-translate-x: 0;
-        --header-content-width: calc(100% - calc(var(--header-content-left) * 2));
+        --header-content-margin-left: 0;
+        --header-content-margin-right: auto;
     }
 
     .header-content[horizontal-position="right"] {
-        --header-content-left: unset;
-        --header-content-right: var(--spacing-normal);
-        --header-content-translate-x: 0;
-        --header-content-width: calc(100% - calc(var(--header-content-right) * 2));
+        --header-content-margin-left: auto;
+        --header-content-margin-right: 0;
     }
 
     .header-content__title {
@@ -146,14 +131,6 @@
             --header-content-padding: var(--spacing-l);
         }
 
-        .header-content[horizontal-position="left"] {
-            --header-content-left: var(--spacing-l);
-        }
-
-        .header-content[horizontal-position="right"] {
-            --header-content-right: var(--spacing-l);
-        }
-
         .header[header-type="slider"] .header-content[content-size="full"] {
             --header-content-width: calc(100% - calc(var(--spacing-xxxl) * 3));
         }
@@ -176,16 +153,6 @@
 
         .header-content[content-size="quarter"] {
             --header-content-max-width: 25%;
-        }
-    }
-
-    @container (min-width: 1280px) {
-        .header-content[horizontal-position="left"] {
-            --header-content-left: var(--spacing-xxl);
-        }
-
-        .header-content[horizontal-position="right"] {
-            --header-content-right: var(--spacing-xxl);
         }
     }
 }

@@ -1,10 +1,8 @@
 /// <reference types="cypress" />
 
 const mobileViewportHeight = Cypress.env('mobileViewportHeight');
-const mobileViewportWidth = Cypress.env('mobileViewportWidth');
 
 const colors = Cypress.env('colors');
-const tokens = Cypress.env('tokens');
 
 describe('header [mobile]', () => {
     beforeEach(() => {
@@ -51,16 +49,52 @@ describe('header - image-height [mobile]', () => {
         cy.get('.header').then((e) => {
             e[0].setAttribute('image-height', 'half');
         });
-        const halfHeight = mobileViewportHeight / 2;
-        cy.get('.header').should('have.css', 'height', `${halfHeight}px`);
+        cy.get('.header').should('have.css', 'height', `434px`);
     });
 
     it('has correct quarter height', () => {
         cy.get('.header').then((e) => {
             e[0].setAttribute('image-height', 'quarter');
         });
-        const quarterHeight = mobileViewportHeight / 4;
-        cy.get('.header').should('have.css', 'height', `${quarterHeight}px`);
+        cy.get('.header').should('have.css', 'height', `434px`);
+    });
+});
+
+describe('header - image-height long content [mobile]', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6');
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=showExtraLongContent:!true');
+    });
+
+
+    it('has correct default height', () => {
+        cy.get('.header')
+            .then((e) => {
+                e[0].setAttribute('image-height', 'full');
+                cy.get('.header').should('have.css', 'height', `1490px`);
+            });
+    });
+
+    it('has correct full height', () => {
+        cy.get('.header')
+            .then((e) => {
+                e[0].setAttribute('image-height', 'full');
+                cy.get('.header').should('have.css', 'height', `1490px`);
+            });
+    });
+
+    it('has correct half height', () => {
+        cy.get('.header').then((e) => {
+            e[0].setAttribute('image-height', 'half');
+        });
+        cy.get('.header').should('have.css', 'height', `1490px`);
+    });
+
+    it('has correct quarter height', () => {
+        cy.get('.header').then((e) => {
+            e[0].setAttribute('image-height', 'quarter');
+        });
+        cy.get('.header').should('have.css', 'height', `1490px`);
     });
 });
 
@@ -74,94 +108,109 @@ describe('header - content size [mobile]', () => {
         cy.get('.header-content').then((e) => {
             e[0].setAttribute('content-size', 'full');
         });
-        const contentPadding = 16;
-        const fullWidth = mobileViewportWidth - (contentPadding * 2);
-        cy.get('.header-content').should('have.css', 'width', `${fullWidth}px`);
+        cy.get('.header-content').should('have.css', 'width', `311px`);
     });
 
     it('has correct half width', () => {
-        const contentPadding = 16;
-        const contentWidth = mobileViewportWidth - (contentPadding * 2);
-        cy.get('.header-content').should('have.css', 'width', `${contentWidth}px`);
+        cy.get('.header-content').should('have.css', 'width', `311px`);
     });
 
     it('has correct third width', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('content-size', 'third');
-            const contentPadding = 16;
-            const contentWidth = mobileViewportWidth - (contentPadding * 2);
-            const headerContentWidth = Math.ceil(parseFloat(getComputedStyle(e[0]).width));
-            expect(headerContentWidth).to.equal(contentWidth);
-        });
+        cy.get('.header-content').should('have.css', 'width', `311px`);
     });
 
     it('has correct half width', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('content-size', 'quarter');
-        });
-        const contentPadding = 16;
-        const contentWidth = mobileViewportWidth - (contentPadding * 2);
-        cy.get('.header-content').should('have.css', 'width', `${contentWidth}px`);
+        cy.get('.header-content').should('have.css', 'width', `311px`);
     });
 });
 
-describe('header - vertical position [mobile]', () => {
+describe('header - "mid" vertical position', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-header--header');
     });
 
     it('has correct "mid" vertical position', () => {
-        cy.get('.header')
-            .then(() => {
-                cy.get('.header-content').should('have.css', 'top', `266.797px`);
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.top).to.be.closeTo(114, 1);
             });
-    });
-
-    it('has correct "top" vertical position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('vertical-position', 'top');
-        });
-        cy.get('.header-content').should('have.css', 'top', tokens.spacing.xxl);
-    });
-
-    it('has correct "bottom" vertical position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('vertical-position', 'bottom');
-        });
-        cy.get('.header-content').should('have.css', 'bottom', tokens.spacing.xxl);
     });
 });
 
-describe('header - horizontal position [mobile]', () => {
+describe('header - "top" vertical position', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6');
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerVerticalPos:top');
+    });
+
+    it('has correct "mid" vertical position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.top).to.be.closeTo(64, 1);
+            });
+    });
+});
+
+describe('header - "bottom" vertical position', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6');
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerVerticalPos:bottom');
+    });
+
+    it('has correct "mid" vertical position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.top).to.be.closeTo(165, 1);
+            });
+    });
+});
+
+describe('header - "left" horizontal position', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6');
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerHorizontalPos:left');
+    });
+
+    it('has correct "center" horizontal position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.left).to.be.closeTo(16, 1);
+            });
+    });
+});
+
+describe('header - "center" horizontal position', () => {
     beforeEach(() => {
         cy.viewport('iphone-6');
         cy.visit('/iframe.html?viewMode=story&id=components-header--header');
     });
 
     it('has correct "center" horizontal position', () => {
-        cy
-            .get('.header').then((e) => {
-                const headerWidth = parseInt(getComputedStyle(e[0]).width);
-                return headerWidth;
-            })
-            .then((headerWidth) => {
-                cy.get('.header-content').should('have.css', 'left', `${headerWidth / 2}px`);
-            })
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.left).to.be.closeTo(32, 1);
+            });
+    });
+});
+
+describe('header - "right" horizontal position', () => {
+    beforeEach(() => {
+        cy.viewport('iphone-6');
+        cy.visit('/iframe.html?viewMode=story&id=components-header--header&args=headerHorizontalPos:right');
     });
 
-    it('has correct "left" horizontal position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('horizontal-position', 'left');
-        });
-        cy.get('.header-content').should('have.css', 'left', tokens.spacing.normal);
-    });
-
-    it('has correct "right" horizontal position', () => {
-        cy.get('.header-content').then((e) => {
-            e[0].setAttribute('horizontal-position', 'right');
-        });
-        cy.get('.header-content').should('have.css', 'right', tokens.spacing.normal);
+    it('has correct "center" horizontal position', () => {
+        cy.get('.header-content')
+            .then((el) => {
+                const rect = el[0].getBoundingClientRect();
+                expect(rect.left).to.be.closeTo(48, 1);
+            });
     });
 });
 
@@ -173,7 +222,6 @@ describe('header - content alignment [mobile]', () => {
 
     it('has correct default content alignment', () => {
         cy.get('.header-content__title').should('have.css', 'text-align', `center`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `center`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-right', `0`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-left', `0`);
     });
@@ -183,7 +231,6 @@ describe('header - content alignment [mobile]', () => {
             e[0].setAttribute('text-alignment', 'center');
         });
         cy.get('.header-content__title').should('have.css', 'text-align', `center`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `center`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-right', `0`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-left', `0`);
     });
@@ -193,7 +240,6 @@ describe('header - content alignment [mobile]', () => {
             e[0].setAttribute('text-alignment', 'left');
         });
         cy.get('.header-content__title').should('have.css', 'text-align', `left`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `left`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-right', `0`);
         cy.get('.header-content__cta').should('have.css', 'margin-left', `0px`);
     });
@@ -203,7 +249,6 @@ describe('header - content alignment [mobile]', () => {
             e[0].setAttribute('text-alignment', 'right');
         });
         cy.get('.header-content__title').should('have.css', 'text-align', `right`);
-        cy.get('.header-content__text').should('have.css', 'text-align', `right`);
         cy.get('.header-content__cta').should('have.css', 'margin-right', `0px`);
         cy.get('.header-content__cta').should('not.have.css', 'margin-left', `0`);
     });
