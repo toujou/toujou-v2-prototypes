@@ -114,29 +114,53 @@ const Template = () => {
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/900" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/901"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="901"
+                                > 
                                     <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/901" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/901"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="902"
+                                > 
                                     <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/902" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/902"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="902"
+                                >                        
                                     <img class="single-media__image" src="https://picsum.photos/1600/902" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/903" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
-                                    <img class="single-media__image" src="https://picsum.photos/1600/903" alt="Nice image">
+                                <a
+                                    href="https://picsum.photos/300/200"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="300"
+                                    data-pswp-height="200"
+                                >
+                                    <img class="single-media__image" src="https://picsum.photos/300/200" alt="Nice image">
                                 </a>    
                             </toujou-single-media>
                         </li>
