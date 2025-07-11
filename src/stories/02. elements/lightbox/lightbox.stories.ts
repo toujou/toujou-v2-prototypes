@@ -80,10 +80,80 @@ const Template = () => {
                     title="Another gallery"
                     lightbox-item-id="555"
                 >
-                    <img class="single-media__image" src="https://loremflickr.com/2504/1605" alt="Nice image">
+                    <img class="single-media__image" src="https://picsum.photos/2501/1605" alt="Nice image">
                 </a>
             </toujou-single-media>
         </toujou-media-grid>
+        
+        <h1>Slider</h1>
+         <toujou-slider
+            class="slider"
+            aria-label="Toujou slider example"
+            element-design="default"
+            slides-to-show="1"
+            slider-type="loop"
+            slider-gap="var(--slider-slides-gap)"
+            slider-aspect-ratio="0.5625"
+            arrow-first-aria-label="Go to first slide"
+            arrow-last-aria-label="Go to last slide"
+            arrow-prev-aria-label="Go to previous slide"
+            arrow-next-aria-label="Go to next slide"
+            lightbox-parent-id="3928"
+        >
+            <div class="splide slider__slider">
+                <div class="splide__arrows slider-controls">
+                    <button class="splide__arrow splide__arrow--prev slider-control slider-control--prev">
+                        <toujou-icon class="icon slider-control__icon slider-control__icon--prev" icon-name="arrow-left"></toujou-icon>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next slider-control slider-control--next">
+                        <toujou-icon class="icon slider-control__icon slider-control__icon--next" icon-name="arrow-right"></toujou-icon>
+                    </button>
+                </div>
+
+                <div class="splide__track slider__track">
+                    <ul class="splide__list slider__list">
+                        <li class="splide__slide slider-slide">
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <a href="https://picsum.photos/1600/900" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                    <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
+                                </a>
+                            </toujou-single-media>
+                        </li>
+                        <li class="splide__slide slider-slide">
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <a href="https://picsum.photos/1600/901" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                    <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
+                                </a>
+                            </toujou-single-media>
+                        </li>
+                        <li class="splide__slide slider-slide">
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <a href="https://picsum.photos/1600/902" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                    <img class="single-media__image" src="https://picsum.photos/1600/902" alt="Nice image">
+                                </a>
+                            </toujou-single-media>
+                        </li>
+                        <li class="splide__slide slider-slide">
+                            <toujou-single-media class="single-media slider__item" slot="slider-item">
+                                <a href="https://picsum.photos/1600/903" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                    <img class="single-media__image" src="https://picsum.photos/1600/903" alt="Nice image">
+                                </a>    
+                            </toujou-single-media>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="splide__progress slider-progress">
+                    <div class="splide__progress__bar slider-progress__bar"></div>
+                </div>
+            </div>
+
+            <toujou-slider-count class="slider-count">
+                <span class="slider-count__current"></span>
+                <span class="slider-count__separator">of</span>
+                <span class="slider-count__total"></span>
+            </toujou-slider-count>
+        </toujou-slider>
     `;
 };
 

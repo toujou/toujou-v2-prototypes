@@ -43,13 +43,12 @@ function _initParents() {
 function _initLightbox(parent: HTMLElement) {
     const allItems = Array.from(parent.querySelectorAll(`[${pswpLightboxCreator.itemIdAttribute}]`));
 
+    // Remove any "cloned" slider slides (created by the slider plugin to enable the looping option
     const filteredItems = allItems.filter(item => !item.closest('.splide__slide--clone'));
-
 
     const lightbox: PhotoSwipeLightbox = new PhotoSwipeLightbox({
         gallery: parent,
-        children: [],
-        dataSource: filteredItems,
+        children: filteredItems,
         pswpModule: PhotoSwipe,
         allowPanToNext: true,
         preloaderDelay: 0,
