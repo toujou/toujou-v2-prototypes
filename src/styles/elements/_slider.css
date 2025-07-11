@@ -69,6 +69,11 @@
         --slider-margin: 0 auto;
     }
 
+    .header[header-type="slider"]:has(.header__content) .slider {
+        position: absolute;
+        top: 0;
+    }
+
     .portfolio-gallery .slider {
         --slider-margin: 0 auto;
 
