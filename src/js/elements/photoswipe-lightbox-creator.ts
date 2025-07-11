@@ -18,6 +18,15 @@ const pswpLightboxCreator = {
  */
 function initPhotoswipeLightboxCreator() {
     pswpLightboxCreator.items = Array.from(document.querySelectorAll(`[${pswpLightboxCreator.itemIdAttribute}]`));
+    console.log('111', pswpLightboxCreator);
+
+    pswpLightboxCreator.items = Array.from(document.querySelectorAll(
+        `[${pswpLightboxCreator.itemIdAttribute}]`
+    )).filter((item): item is HTMLElement => {
+        return !item.closest('.splide__slide--clone');
+    });
+    console.log('22222', pswpLightboxCreator);
+
 
     pswpLightboxCreator.items.forEach((item) => {
         const itemLightboxParent = item.closest(`[${pswpLightboxCreator.parentIdAttribute}]`) as HTMLElement;
