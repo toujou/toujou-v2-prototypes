@@ -1,4 +1,4 @@
-import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as d}from"./index-DpH9cx3q.js";import"./photoswipe-lightbox-creator-DzxXRt-e.js";import"./index-DO8khQO4.js";import"./_commonjsHelpers-Cpj98o6Y.js";function l(i){const s={h1:"h1",...d(),...i.components};return t.jsx(s.h1,{id:"lightbox",children:"Lightbox"})}function m(i={}){const{wrapper:s}={...d(),...i.components};return s?t.jsx(s,{...i,children:t.jsx(l,{...i})}):l(i)}const x={title:"COMPONENTS/Lightbox",parameters:{badges:[r.DONE],docs:{page:m}}},c=()=>`
+import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as d}from"./index-DpH9cx3q.js";import"./photoswipe-lightbox-creator-DzxXRt-e.js";import"./index-DO8khQO4.js";import"./_commonjsHelpers-Cpj98o6Y.js";function l(i){const s={h1:"h1",...d(),...i.components};return t.jsx(s.h1,{id:"lightbox",children:"Lightbox"})}function p(i={}){const{wrapper:s}={...d(),...i.components};return s?t.jsx(s,{...i,children:t.jsx(l,{...i})}):l(i)}const w={title:"COMPONENTS/Lightbox",parameters:{badges:[r.DONE],docs:{page:p}}},m=()=>`
         <h1>Grid 1</h1>
         <toujou-media-grid class="media-grid" media-grid-column-number="2" lightbox-parent-id="1">
             <toujou-single-media class="single-media">
@@ -95,29 +95,53 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/900" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/901"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="901"
+                                > 
                                     <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/901" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/901"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="902"
+                                > 
                                     <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/902" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/902"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="902"
+                                >                        
                                     <img class="single-media__image" src="https://picsum.photos/1600/902" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/903" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
-                                    <img class="single-media__image" src="https://picsum.photos/1600/903" alt="Nice image">
+                                <a
+                                    href="https://picsum.photos/300/200"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="300"
+                                    data-pswp-height="200"
+                                >
+                                    <img class="single-media__image" src="https://picsum.photos/300/200" alt="Nice image">
                                 </a>    
                             </toujou-single-media>
                         </li>
@@ -135,7 +159,7 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                 <span class="slider-count__total"></span>
             </toujou-slider-count>
         </toujou-slider>
-    `,e=c.bind({});var a,o,n;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`() => {
+    `,e=m.bind({});var a,o,n;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`() => {
   return \`
         <h1>Grid 1</h1>
         <toujou-media-grid class="media-grid" media-grid-column-number="2" lightbox-parent-id="1">
@@ -233,29 +257,53 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
                     <ul class="splide__list slider__list">
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/900" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/901"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="901"
+                                > 
                                     <img class="single-media__image" src="https://picsum.photos/1600/900" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/901" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/901"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="902"
+                                > 
                                     <img class="single-media__image" src="https://picsum.photos/1600/901" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/902" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
+                                <a
+                                    href="https://picsum.photos/1600/902"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="1600"
+                                    data-pswp-height="902"
+                                >                        
                                     <img class="single-media__image" src="https://picsum.photos/1600/902" alt="Nice image">
                                 </a>
                             </toujou-single-media>
                         </li>
                         <li class="splide__slide slider-slide">
                             <toujou-single-media class="single-media slider__item" slot="slider-item">
-                                <a href="https://picsum.photos/1600/903" class="slider__lightbox-link lightbox-3928" lightbox-item-id="3928">
-                                    <img class="single-media__image" src="https://picsum.photos/1600/903" alt="Nice image">
+                                <a
+                                    href="https://picsum.photos/300/200"
+                                    class="slider__lightbox-link lightbox-3928"
+                                    lightbox-item-id="3928"
+                                    data-pswp-width="300"
+                                    data-pswp-height="200"
+                                >
+                                    <img class="single-media__image" src="https://picsum.photos/300/200" alt="Nice image">
                                 </a>    
                             </toujou-single-media>
                         </li>
@@ -274,4 +322,4 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as t}from"./jsx-run
             </toujou-slider-count>
         </toujou-slider>
     \`;
-}`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const j=["Lightbox"];export{e as Lightbox,j as __namedExportsOrder,x as default};
+}`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const x=["Lightbox"];export{e as Lightbox,x as __namedExportsOrder,w as default};
