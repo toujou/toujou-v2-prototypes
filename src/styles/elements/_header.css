@@ -56,6 +56,12 @@
         height: 100%;
     }
 
+    .header:has(.single-media__video) .header__figure {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
     .header__image,
     .header__figure .video {
         height: var(--header-image-height);
