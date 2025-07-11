@@ -165,6 +165,8 @@
     .header:not(.header--portfolio-gallery) .slider__item {
         min-height: var(--header-min-height) !important;
         width: var(--slider-width) !important;
+        height: fit-content !important;
+        aspect-ratio: auto;
     }
 
     /* hide the clone that gets generated on some occasions, even if the clones mount is set to 0 */
