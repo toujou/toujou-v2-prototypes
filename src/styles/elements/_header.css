@@ -12,7 +12,9 @@
         --header-image-left: 0;
         --header-image-width-object-fit: cover;
 
-        --header-content-wrapper-padding: var(--spacing-xxl) var(--spacing-normal);
+        --header-content-wrapper-padding-block: var(--spacing-xxl);
+        --header-content-wrapper-padding-inline: var(--spacing-normal);
+        --header-content-wrapper-padding: var(--header-content-wrapper-padding-block) var(--header-content-wrapper-padding-inline);
 
         position: var(--header-position);
         min-height: var(--header-min-height);
@@ -20,6 +22,10 @@
         z-index: var(--header-z-index);
         container-name: header;
         container-type: inline-size;
+    }
+
+    .header:has(.slider) {
+        --header-content-wrapper-padding-inline: var(--spacing-xxl);
     }
 
     .topbar + .header {
@@ -90,13 +96,17 @@
 
     @media screen and (width > 840px) {
         .header {
-            --header-content-wrapper-padding: var(--spacing-xxl) var(--spacing-l);
+            --header-content-wrapper-padding-inline: var(--spacing-l);
+        }
+
+        .header:has(.slider) {
+            --header-content-wrapper-padding-inline: var(--spacing-xxxxl);
         }
     }
 
     @media screen and (width > 1280px) {
         .header {
-            --header-content-wrapper-padding: var(--spacing-xxl);
+            --header-content-wrapper-padding-inline: var(--spacing-xxl);
         }
     }
 }
