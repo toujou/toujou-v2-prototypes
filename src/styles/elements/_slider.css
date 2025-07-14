@@ -174,7 +174,7 @@
         aspect-ratio: auto;
     }
 
-    .header:not(.header--portfolio-gallery) .header-content + .slider {
+    .header:not(.header--portfolio-gallery) .header__content + .slider {
         height: 100%;
     }
 
