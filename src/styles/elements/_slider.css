@@ -174,6 +174,10 @@
         aspect-ratio: auto;
     }
 
+    .header:not(.header--portfolio-gallery) .header-content + .slider {
+        height: 100%;
+    }
+
     /* hide the clone that gets generated on some occasions, even if the clones mount is set to 0 */
     .slider[slider-clones-amount="0"] li.splide__slide--clone {
         display: none !important;
