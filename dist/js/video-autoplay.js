@@ -1,2 +1,2 @@
-function e(){const e=window.matchMedia("(prefers-reduced-motion: reduce)").matches,t=document.querySelectorAll('video[data-is-autoplay="1"]');console.log("videos",t),t.forEach((t=>{e?t.setAttribute("controls",""):t.setAttribute("autoplay","")}))}"loading"!==document.readyState?setTimeout((()=>{e()})):document.addEventListener("DOMContentLoaded",(()=>{e()}));
+function e(){const e=window.matchMedia("(prefers-reduced-motion: reduce)").matches,t=document.querySelectorAll('video[data-is-autoplay="1"]');console.log("11",t,e),t.forEach((t=>{e?t.setAttribute("controls",""):t.setAttribute("autoplay","")}))}"loading"!==document.readyState?setTimeout((()=>{e()})):document.addEventListener("DOMContentLoaded",(()=>{e()}));
 //# sourceMappingURL=video-autoplay.js.map
