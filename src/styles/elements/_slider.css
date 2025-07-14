@@ -170,7 +170,7 @@
     .header:not(.header--portfolio-gallery) .slider__item {
         min-height: var(--header-min-height) !important;
         width: var(--slider-width) !important;
-        height: fit-content !important;
+        height: 100% !important;
         aspect-ratio: auto;
     }
 
