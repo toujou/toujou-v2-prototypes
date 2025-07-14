@@ -179,6 +179,10 @@
         display: none !important;
     }
 
+    .slider__lightbox-link {
+        width: 100%;
+    }
+
     @container (width >= 840px) {
         .slider[content-type="logos"] {
             --slider-slides-gap: var(--spacing-xxl);
