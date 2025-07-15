@@ -27,11 +27,13 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
 `,e.jsx(o.li,{children:e.jsx(o.code,{children:"center"})}),`
 `,e.jsx(o.li,{children:e.jsx(o.code,{children:"right"})}),`
 `,e.jsx(o.li,{children:e.jsx(o.code,{children:"left"})}),`
-`]})]})}function d(i={}){const{wrapper:o}={...c(),...i.components};return o?e.jsx(o,{...i,children:e.jsx(a,{...i})}):a(i)}const b={title:"COMPONENTS/Media",parameters:{badges:[r.DONE],docs:{page:d}},argTypes:{headerSize:{table:{category:"Hero Media settings",defaultValue:{summary:"default"}},name:"Header size",description:"Choose header size",options:["default","alpha","beta","gamma","delta","epsilon","omega"],control:{type:"radio"},required:!0},headerAlignment:{table:{category:"Hero Media settings",defaultValue:{summary:"default"}},name:"Header alignment",description:"Choose header alignment",options:["default","center","right","left"],control:{type:"radio"},required:!0}}},m=i=>`
+`]})]})}function d(i={}){const{wrapper:o}={...c(),...i.components};return o?e.jsx(o,{...i,children:e.jsx(a,{...i})}):a(i)}const b={title:"COMPONENTS/Media",parameters:{badges:[r.DONE],docs:{page:d},layout:"fullscreen"},argTypes:{headerSize:{table:{category:"Hero Media settings",defaultValue:{summary:"default"}},name:"Header size",description:"Choose header size",options:["default","alpha","beta","gamma","delta","epsilon","omega"],control:{type:"radio"},required:!0},headerAlignment:{table:{category:"Hero Media settings",defaultValue:{summary:"default"}},name:"Header alignment",description:"Choose header alignment",options:["default","center","right","left"],control:{type:"radio"},required:!0}}},m=i=>`
         <main>
             <a href="#" class="hero-media" headline-alignment="${i.headerAlignment}">
                 <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="hero-media__media">
-                <h3 class="hero-media__title font--${i.headerSize}">Hero Media</h3>
+                <div class="hero-media__content">
+                    <h3 class="hero-media__title font--${i.headerSize}">Hero Media</h3>
+                </div>
 
                 <toujou-media-info class="media-info">
                     <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
@@ -50,7 +52,9 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
         <main>
             <a href="#" class="hero-media" headline-alignment="\${args.headerAlignment}">
                 <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="hero-media__media">
-                <h3 class="hero-media__title font--\${args.headerSize}">Hero Media</h3>
+                <div class="hero-media__content">
+                    <h3 class="hero-media__title font--\${args.headerSize}">Hero Media</h3>
+                </div>
 
                 <toujou-media-info class="media-info">
                     <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
@@ -65,4 +69,4 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
             </a>
         </main>
     \`;
-}`,...(l=(s=n.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};const j=["HeroMedia"];export{n as HeroMedia,j as __namedExportsOrder,b as default};
+}`,...(l=(s=n.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};const _=["HeroMedia"];export{n as HeroMedia,_ as __namedExportsOrder,b as default};
