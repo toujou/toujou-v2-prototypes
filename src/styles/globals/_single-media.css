@@ -58,6 +58,11 @@
     height: var(--single-media-media-height);
 }
 
+.slider__item iframe.single-media__video {
+    height: 100%;
+    width: 100%;
+}
+
 main .single-media__video[video-extension="youtube"],
 main .single-media__video[video-extension="vimeo"] {
     --single-media-media-height: auto;

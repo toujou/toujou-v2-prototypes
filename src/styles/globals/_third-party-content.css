@@ -88,6 +88,11 @@
     height: 100%;
 }
 
+.slider__item .third-party-content[showingcontent] .toujou-third-party-content__templated-content {
+    height: 100%;
+    width: 100%;
+}
+
 @container (width >= 840px) {
     .third-party-content {
         --third-party-content-message-margin: 0 0 var(--spacing-l);
