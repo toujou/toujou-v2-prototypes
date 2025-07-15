@@ -10,7 +10,8 @@ export default {
         badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: heroMediaDocs,
-        }
+        },
+        layout: "fullscreen",
     },
     argTypes: {
         headerSize: {
@@ -48,7 +49,9 @@ const Template: StoryFn<HeroMediaStoryProps> = (args: HeroMediaStoryProps) => {
         <main>
             <a href="#" class="hero-media" headline-alignment="${args.headerAlignment}">
                 <img src="https://picsum.photos/1200/1200" alt="beautiful image" class="hero-media__media">
-                <h3 class="hero-media__title font--${args.headerSize}">Hero Media</h3>
+                <div class="hero-media__content">
+                    <h3 class="hero-media__title font--${args.headerSize}">Hero Media</h3>
+                </div>
 
                 <toujou-media-info class="media-info">
                     <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">

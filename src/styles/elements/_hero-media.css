@@ -2,26 +2,35 @@
     .hero-media {
         --hero-media-width: 100%;
         --hero-media-max-width: 100%;
-        --hero-media-aspect-ratio: var(--aspect-ratio-3-1);
+        --hero-media-aspect-ratio: auto;
         --hero-media-display: block;
         --hero-media-position: relative;
         --hero-media-padding: 0;
         --hero-media-margin: var(--spacing-between-consecutive-elements-normal) auto;
         --hero-media-z-index: var(--z-index-content);
         --hero-media-border-radius: var(--border-radius-default);
+        --hero-media-height: fit-content;
+        --hero-media-min-height: 33vw;
+        --hero-content-justify-content: center;
+        --hero-media-text-decoration: none;
 
         --hero-media-media-object-fit: cover;
         --hero-media-media-width: 100%;
-        --hero-media-media-height: auto;
+        --hero-media-media-height: 100%;
+        --hero-media-media-position: absolute;
+        --hero-media-media-inset: 0;
 
-        --hero-media-title-position: absolute;
-        --hero-media-title-top: 50%;
-        --hero-media-title-left: 50%;
-        --hero-media-title-right: unset;
-        --hero-media-transform: translate(-50%, -50%);
+        --hero-media-content-display: flex;
+        --hero-media-content-align-items: center;
+        --hero-media-content-justify-content: var(--hero-content-justify-content);
+        --hero-media-content-position: relative;
+        --hero-media-content-height: fit-content;
+        --hero-media-content-min-height: var(--hero-media-min-height);
+        --hero-media-content-width: 100%;
+        --hero-media-content-padding: var(--spacing-normal);
+
         --hero-media-title-margin: 0;
         --hero-media-title-color: var(--color-bg);
-        --hero-media-title-padding: var(--spacing-normal);
 
         aspect-ratio: var(--hero-media-aspect-ratio);
         display: var(--hero-media-display);
@@ -31,6 +40,9 @@
         width: var(--hero-media-width);
         max-width: var(--hero-media-max-width);
         z-index: var(--hero-media-z-index);
+        height: var(--hero-media-height);
+        min-height: var(--hero-media-min-height);
+        text-decoration: var(--hero-media-text-decoration);
     }
 
     :is(main, .chapter) > .hero-media {
@@ -45,14 +57,22 @@
     }
 
     .hero-media[headline-alignment="left"] {
-        --hero-media-title-left: var(--spacing-normal);
-        --hero-media-transform: translateY(-50%);
+        --hero-content-justify-content: flex-start;
     }
 
     .hero-media[headline-alignment="right"] {
-        --hero-media-title-left: unset;
-        --hero-media-title-right: var(--spacing-normal);
-        --hero-media-transform: translateY(-50%);
+        --hero-content-justify-content: flex-end;
+    }
+
+    .hero-media__content {
+        display: var(--hero-media-content-display);
+        align-items: var(--hero-media-content-align-items);
+        justify-content: var(--hero-media-content-justify-content);
+        position: var(--hero-media-content-position);
+        height: var(--hero-media-content-height);
+        min-height: var(--hero-media-content-min-height);
+        width: var(--hero-media-content-width);
+        padding: var(--hero-media-content-padding);
     }
 
     .hero-media__media {
@@ -60,17 +80,13 @@
         object-fit: var(--hero-media-media-object-fit);
         width: var(--hero-media-media-width);
         height: var(--hero-media-media-height);
+        position: var(--hero-media-media-position);
+        inset: var(--hero-media-media-inset);
     }
 
     .hero-media__title {
-        position: var(--hero-media-title-position);
-        top: var(--hero-media-title-top);
-        left: var(--hero-media-title-left);
-        right: var(--hero-media-title-right);
-        transform: var(--hero-media-transform);
         margin: var(--hero-media-title-margin);
         color: var(--hero-media-title-color);
-        padding: var(--hero-media-title-padding);
     }
 
     a.hero-media:focus-visible {
@@ -93,7 +109,7 @@
 
     @container (min-width: 840px) {
         .hero-media {
-            --hero-media-title-padding: var(--spacing-normal) var(--spacing-xl);
+            --hero-media-content-padding: var(--spacing-l);
         }
     }
 }
