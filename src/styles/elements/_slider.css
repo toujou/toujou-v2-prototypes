@@ -176,6 +176,8 @@
     }
 
     .header:not(.header--portfolio-gallery) .header__content + .slider {
+        position: absolute;
+        top: 0;
         height: 100%;
     }
 
