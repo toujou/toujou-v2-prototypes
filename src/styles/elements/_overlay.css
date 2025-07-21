@@ -40,6 +40,8 @@
 
         --overlay-warning-display: none;
         --overlay-warning-color: var(--color-warning);
+        --overlay-warning-font-family: var(--font-family-text);
+        --overlay-warning-font-size: var(--font-size-m);
 
         --overlay-close-button-position: absolute;
         --overlay-close-button-top: var(--spacing-xs);
@@ -123,6 +125,8 @@
     .overlay__warning {
         display: var(--overlay-warning-display);
         color: var(--overlay-warning-color);
+        font-family: var(--overlay-warning-font-family);
+        font-size: var(--overlay-warning-font-size);
     }
 
     .overlay__close-button {
