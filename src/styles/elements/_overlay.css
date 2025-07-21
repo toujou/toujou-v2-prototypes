@@ -6,14 +6,14 @@
         --overlay-left: 0;
         --overlay-height: 100%;
         --overlay-width: 100%;
-        --overlay-display: flex;
-        --overlay-align-items: center;
-        --overlay-justify-content: center;
-        --overlay-z-index: 2147483641;
+        --overlay-z-index: var(--z-index-overlay);
 
         --overlay-text-headline-margin-top: 0;
 
-        --overlay-infos-position: relative;
+        --overlay-infos-position: absolute;
+        --overlay-infos-top: 50%;
+        --overlay-infos-left: 50%;
+        --overlay-infos-transform: translate(-50%, -50%);
         --overlay-infos-display: flex;
         --overlay-infos-flex-direction: column;
         --overlay-infos-align-items: center;
@@ -62,14 +62,7 @@
         left: var(--overlay-left);
         height: var(--overlay-height);
         width: var(--overlay-width);
-        align-items: var(--overlay-align-items);
-        justify-content: var(--overlay-justify-content);
-        z-index: var(--overlay-z-index);
         display: none;
-    }
-
-    .overlay[state="open"] {
-        display: var(--overlay-display);
     }
 
     .overlay[warning-visible] {
@@ -83,6 +76,9 @@
 
     .overlay__infos {
         position: var(--overlay-infos-position);
+        top: var(--overlay-infos-top);
+        left: var(--overlay-infos-left);
+        transform: var(--overlay-infos-transform);
         display: var(--overlay-infos-display);
         flex-direction: var(--overlay-infos-flex-direction);
         align-items: var(--overlay-infos-align-items);
