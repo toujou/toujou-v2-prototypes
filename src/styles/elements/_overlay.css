@@ -42,10 +42,11 @@
         --overlay-warning-color: var(--color-warning);
 
         --overlay-close-button-position: absolute;
-        --overlay-close-button-top: var(--spacing-s);
-        --overlay-close-button-right: calc(var(--spacing-s) * -1);
+        --overlay-close-button-top: var(--spacing-xs);
+        --overlay-close-button-right: var(--spacing-xs);
         --overlay-close-button-bg-color: transparent;
         --overlay-close-button-border: none;
+        --overlay-close-button-padding: var(--spacing-xs);
 
         --overlay-conclusion-margin: 0;
 
@@ -130,6 +131,7 @@
         right: var(--overlay-close-button-right);
         background-color: var(--overlay-close-button-bg-color);
         border: var(--overlay-close-button-border);
+        padding: var(--overlay-close-button-padding);
     }
 
     .overlay__conclusion {
