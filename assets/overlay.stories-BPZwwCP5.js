@@ -1,21 +1,42 @@
 import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as l}from"./index-DpH9cx3q.js";import"./index-DO8khQO4.js";import"./_commonjsHelpers-Cpj98o6Y.js";function a(t){const i={code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",ul:"ul",...l(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(i.h1,{id:"overlay",children:"Overlay"}),`
 `,e.jsx(i.p,{children:"The overlay element allows ud to show a message or dialog on top of the content, for instance an age verification"}),`
 `,e.jsx(i.h2,{id:"example-markup",children:"Example markup"}),`
-`,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`<toujou-overlay id="super-overlay" class="overlay" overlay-theme="\${args.overlayTheme}">
+`,e.jsx(i.pre,{children:e.jsx(i.code,{className:"language-html",children:`<toujou-overlay
+    id="super-overlay"
+    class="overlay"
+    overlay-theme="\${args.overlayTheme}"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Overlay"
+>
     <section class="overlay__infos">
 
-        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
+        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" aria-label="Logo"/>
 
         <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
 
         <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
 
-<section class="overlay__buttons">
-            <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
-            <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
+        <section class="overlay__buttons">
+            <button
+                id="overlayButtonYes"
+                class="button overlay__button"
+                button-type="normal"
+                button-variant="primary"
+                data-overlay-value="yes"
+            >Ja, ich bin 18 Jahre oder älter</button>
+
+            <button
+                id="overlayButtonNo"
+                class="button overlay__button"
+                button-type="normal"
+                button-variant="primary"
+                data-overlay-value="no"
+            >Nein, ich bin unter 18 Jahre alt</button>
         </section>
 
     </section>
+
 </toujou-overlay>
 `})}),`
 `,e.jsx(i.h2,{id:"attributes",children:"Attributes"}),`
@@ -49,7 +70,14 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
             </section>
 
 
-            <toujou-overlay id="super-overlay" class="overlay" overlay-theme="${t.overlayTheme}">
+            <toujou-overlay
+                id="super-overlay"
+                class="overlay"
+                overlay-theme="${t.overlayTheme}"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Overlay"
+            >
                 ${t.showBackgroundImage?`
                     <img src="https://picsum.photos/2400/2400" class="overlay__background"/>
                 `:""}
@@ -57,15 +85,29 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                 <section class="overlay__infos">
 
                     ${t.showLogo?`
-                        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
+                        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" aria-label="Logo"/>
                     `:""}
 
                     <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
 
                     <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
+                    
                     <section class="overlay__buttons">
-                        <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
-                        <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
+                        <button
+                            id="overlayButtonYes"
+                            class="button overlay__button"
+                            button-type="normal"
+                            button-variant="primary"
+                            data-overlay-value="yes"
+                        >Ja, ich bin 18 Jahre oder älter</button>
+                        
+                        <button
+                            id="overlayButtonNo"
+                            class="button overlay__button"
+                            button-type="normal"
+                            button-variant="primary"
+                            data-overlay-value="no"
+                        >Nein, ich bin unter 18 Jahre alt</button>
                     </section>
 
                     ${t.showConclusionText?`
@@ -73,8 +115,8 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                     `:""}
 
                     ${t.showCloseButton?`
-                        <button class="button overlay__close-button">
-                            <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m"></toujou-icon>
+                        <button class="button overlay__close-button overlay-button-close-trigger" aria-label="Close overlay">
+                            <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m" aria-hidden="true"></toujou-icon>
                         </button>
                     `:""}
                 </section>
@@ -105,7 +147,14 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
             </section>
 
 
-            <toujou-overlay id="super-overlay" class="overlay" overlay-theme="\${args.overlayTheme}">
+            <toujou-overlay
+                id="super-overlay"
+                class="overlay"
+                overlay-theme="\${args.overlayTheme}"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Overlay"
+            >
                 \${args.showBackgroundImage ? \`
                     <img src="https://picsum.photos/2400/2400" class="overlay__background"/>
                 \` : ''}
@@ -113,15 +162,29 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                 <section class="overlay__infos">
 
                     \${args.showLogo ? \`
-                        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
+                        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" aria-label="Logo"/>
                     \` : \`\`}
 
                     <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
 
                     <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
+                    
                     <section class="overlay__buttons">
-                        <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
-                        <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
+                        <button
+                            id="overlayButtonYes"
+                            class="button overlay__button"
+                            button-type="normal"
+                            button-variant="primary"
+                            data-overlay-value="yes"
+                        >Ja, ich bin 18 Jahre oder älter</button>
+                        
+                        <button
+                            id="overlayButtonNo"
+                            class="button overlay__button"
+                            button-type="normal"
+                            button-variant="primary"
+                            data-overlay-value="no"
+                        >Nein, ich bin unter 18 Jahre alt</button>
                     </section>
 
                     \${args.showConclusionText ? \`
@@ -129,8 +192,8 @@ import{T as s}from"./badgeCustomConfig-DUXiHpL4.js";import{j as e}from"./jsx-run
                     \` : \`\`}
 
                     \${args.showCloseButton ? \`
-                        <button class="button overlay__close-button">
-                            <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m"></toujou-icon>
+                        <button class="button overlay__close-button overlay-button-close-trigger" aria-label="Close overlay">
+                            <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m" aria-hidden="true"></toujou-icon>
                         </button>
                     \` : ''}
                 </section>
