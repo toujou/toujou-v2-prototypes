@@ -63,6 +63,7 @@
         height: var(--overlay-height);
         width: var(--overlay-width);
         display: none;
+        z-index: var(--overlay-z-index);
     }
 
     .overlay[warning-visible] {
