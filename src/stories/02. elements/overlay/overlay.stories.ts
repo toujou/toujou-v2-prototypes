@@ -107,7 +107,14 @@ const Template: StoryFn<OverlayStoryProps> = (args: OverlayStoryProps) => {
             </section>
 
 
-            <toujou-overlay id="super-overlay" class="overlay" overlay-theme="${args.overlayTheme}">
+            <toujou-overlay
+                id="super-overlay"
+                class="overlay"
+                overlay-theme="${args.overlayTheme}"
+                role="dialog"
+                aria-modal="true"
+                aria-label="Overlay"
+            >
                 ${args.showBackgroundImage ? `
                     <img src="https://picsum.photos/2400/2400" class="overlay__background"/>
                 ` : ''}
@@ -115,15 +122,29 @@ const Template: StoryFn<OverlayStoryProps> = (args: OverlayStoryProps) => {
                 <section class="overlay__infos">
 
                     ${args.showLogo ? `
-                        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
+                        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" aria-label="Logo"/>
                     ` : ``}
 
                     <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
 
                     <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
+                    
                     <section class="overlay__buttons">
-                        <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
-                        <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
+                        <button
+                            id="overlayButtonYes"
+                            class="button overlay__button"
+                            button-type="normal"
+                            button-variant="primary"
+                            data-overlay-value="yes"
+                        >Ja, ich bin 18 Jahre oder älter</button>
+                        
+                        <button
+                            id="overlayButtonNo"
+                            class="button overlay__button"
+                            button-type="normal"
+                            button-variant="primary"
+                            data-overlay-value="no"
+                        >Nein, ich bin unter 18 Jahre alt</button>
                     </section>
 
                     ${args.showConclusionText ? `
@@ -131,8 +152,8 @@ const Template: StoryFn<OverlayStoryProps> = (args: OverlayStoryProps) => {
                     ` : ``}
 
                     ${args.showCloseButton ? `
-                        <button class="button overlay__close-button">
-                            <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m"></toujou-icon>
+                        <button class="button overlay__close-button overlay-button-close-trigger" aria-label="Close overlay">
+                            <toujou-icon class="icon" icon-name="close" icon-color="font" icon-size="m" aria-hidden="true"></toujou-icon>
                         </button>
                     ` : ''}
                 </section>

@@ -13,7 +13,6 @@ export default defineConfig({
                 'toujou-blockquote': path.resolve(__dirname, 'src/components/toujou-blockquote/toujou-blockquote.ts'),
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
                 'toujou-portfolio-gallery': path.resolve(__dirname, 'src/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
-                'toujou-overlay': path.resolve(__dirname, 'src/components/toujou-overlay/toujou-overlay.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
 
@@ -41,6 +40,7 @@ export default defineConfig({
                 'toujou-details': path.resolve(__dirname, 'node_modules/@toujou/toujou-details/lib'),
                 'toujou-burger-button': path.resolve(__dirname, 'node_modules/@toujou/toujou-burger-button/lib'),
                 'toujou-topbar': path.resolve(__dirname, 'node_modules/@toujou/toujou-topbar/lib'),
+                'toujou-overlay': path.resolve(__dirname, 'node_modules/@toujou/toujou-overlay/lib'),
 
                 // base js, which imports all other js that needs to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),

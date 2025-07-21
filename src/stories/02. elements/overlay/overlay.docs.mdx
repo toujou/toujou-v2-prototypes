@@ -4,21 +4,42 @@ The overlay element allows ud to show a message or dialog on top of the content,
 
 ## Example markup
 ```html
-<toujou-overlay id="super-overlay" class="overlay" overlay-theme="${args.overlayTheme}">
+<toujou-overlay
+    id="super-overlay"
+    class="overlay"
+    overlay-theme="${args.overlayTheme}"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Overlay"
+>
     <section class="overlay__infos">
 
-        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" />
+        <img class="overlay__logo" src="https://picsum.photos/640/320" alt="quote image" aria-label="Logo"/>
 
         <h1 class="font--delta overlay__title">Sind Sie 18 Jahre oder älter?</h1>
 
         <p class="overlay__warning">Leider haben Sie noch nicht das nötige Lebensalter erreicht.</p>
 
-<section class="overlay__buttons">
-            <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="yes">Ja, ich bin 18 Jahre oder älter</a>
-            <a href="" class="button" button-type="normal" button-variant="primary" data-overlay-value="no">Nein, ich bin unter 18 Jahre alt</a>
+        <section class="overlay__buttons">
+            <button
+                id="overlayButtonYes"
+                class="button overlay__button"
+                button-type="normal"
+                button-variant="primary"
+                data-overlay-value="yes"
+            >Ja, ich bin 18 Jahre oder älter</button>
+
+            <button
+                id="overlayButtonNo"
+                class="button overlay__button"
+                button-type="normal"
+                button-variant="primary"
+                data-overlay-value="no"
+            >Nein, ich bin unter 18 Jahre alt</button>
         </section>
 
     </section>
+
 </toujou-overlay>
 ```
 

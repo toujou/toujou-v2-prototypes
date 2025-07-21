@@ -105,6 +105,7 @@
     "@toujou/toujou-location-finder": "^3.17.1",
     "@toujou/toujou-map": "^3.10.0",
     "@toujou/toujou-media-info": "^2.0.6",
+    "@toujou/toujou-overlay": "^3.7.0",
     "@toujou/toujou-rating-stars": "^3.1.1",
     "@toujou/toujou-snackbar": "^3.8.3",
     "@toujou/toujou-spinner": "^2.0.6",
