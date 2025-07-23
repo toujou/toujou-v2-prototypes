@@ -9,6 +9,7 @@ export declare class MainNav {
     protected readonly listItemChevronSelector = ".main-nav__chevron";
     protected readonly listSelector = ".main-nav__list";
     protected readonly isOpenOnHoverAttribute = "data-is-open-on-hover";
+    protected readonly minWidthDesktop: number;
     constructor(mainNavEl: MainNavElement);
     /**
      * Get list of all the main navigation list items and start listening for click events
