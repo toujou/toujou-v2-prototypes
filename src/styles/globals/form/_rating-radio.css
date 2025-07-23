@@ -21,8 +21,8 @@ toujou-rating-radios {
 }
 
 .rating-radio__wrapper:focus-within {
-    outline: var(--focus-outline-width) solid var(--focus-outline-color);
-    outline-offset: var(--focus-outline-offset);
+    outline: var(--focus-outline-width) solid var(--focus-outline-color) !important;
+    outline-offset: var(--focus-outline-offset) !important;
 }
 
 .rating-radio {
