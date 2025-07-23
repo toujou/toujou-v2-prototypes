@@ -10,9 +10,11 @@ export class MainNav {
     protected readonly listItemChevronSelector = '.main-nav__chevron';
     protected readonly listSelector = '.main-nav__list';
     protected readonly isOpenOnHoverAttribute = 'data-is-open-on-hover';
+    protected readonly minWidthDesktop: number;
 
     constructor(mainNavEl: MainNavElement) {
         this.mainNavEl = mainNavEl;
+        this.minWidthDesktop = parseInt(getComputedStyle(mainNavEl).getPropertyValue('--main-nav-min-width-desktop')) || 1024;
         this._getNavListItems();
 
         if (this.mainNavEl.hasAttribute(this.isOpenOnHoverAttribute)) {
@@ -59,6 +61,8 @@ export class MainNav {
      * @param event
      */
     _handleMouseEvent = (event: MouseEvent) => {
+        if(window.innerWidth < this.minWidthDesktop) return;
+
         if(event.type === 'mouseenter' || event.type === 'mouseleave') {
             this._toggleListItemState(event.currentTarget as MainNavListItem);
         }
@@ -167,6 +171,6 @@ declare global {
     }
 
     interface MainNavElement extends HTMLElement {
-        mainNav: MainNav,
+        mainNav: MainNav
     }
 }
