@@ -1,0 +1,14 @@
+.rating-radios {
+    --rating-radios-fieldset-border: none;
+    --rating-radios-fieldset-padding: 0;
+    --rating-radios-input-margin-inline: 0;
+}
+
+.rating-radios__fieldset {
+    border: var(--rating-radios-fieldset-border);
+    padding: var(--rating-radios-fieldset-padding);
+}
+
+.rating-radios__input {
+    margin-inline: var(--rating-radios-input-margin-inline);
+}
