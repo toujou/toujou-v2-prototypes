@@ -20,11 +20,11 @@ toujou-rating-radios {
     padding: var(--rating-radios-fieldset-padding);
 }
 
-.rating-radio {
-    margin-inline: var(--rating-radios-input-margin-inline);
-}
-
-.rating-radio:focus-visible {
+.rating-radio__wrapper:focus-within {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
+}
+
+.rating-radio {
+    margin-inline: var(--rating-radios-input-margin-inline);
 }
