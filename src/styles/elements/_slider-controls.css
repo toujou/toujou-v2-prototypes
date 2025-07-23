@@ -37,9 +37,6 @@
 
     .slider[content-type="media"] {
         --slider-controls-aspect-ratio: auto;
-    }
-
-    .slider[content-type="media"] {
         --slider-controls-height: 100%;
     }
 

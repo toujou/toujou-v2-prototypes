@@ -332,12 +332,6 @@
         color: var(--inpage-nav-cta-color-hover);
     }
 
-    a.inpage-nav__link:is(:hover, :focus-visible) {
-        --inpage-nav-link-after-opacity: 1;
-
-        color: var(--inpage-nav-link-color-hover);
-    }
-
     .inpage-nav:not([ismobile], [element-design="default"]) .inpage-nav__link:is(:hover, :focus-visible) {
         --inpage-nav-link-after-opacity: 0;
     }

@@ -13,7 +13,6 @@
         --departures-dates-gap: var(--spacing-s);
 
         /* For the subgrids */
-        /*--departures-grid-template-columns: 15rem 1fr minmax(auto, 12rem) minmax(auto, 9rem);*/
         --departures-grid-template-columns: 1fr;
         --departures-prices-column-count: 1;
         --departures-prices-grid-template-columns: repeat(var(--departures-prices-column-count), 1fr);
