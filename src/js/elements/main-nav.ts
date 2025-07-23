@@ -14,7 +14,7 @@ export class MainNav {
 
     constructor(mainNavEl: MainNavElement) {
         this.mainNavEl = mainNavEl;
-        this.minWidthDesktop = parseInt(getComputedStyle(mainNavEl).getPropertyValue('--main-nav-min-width-desktop'));
+        this.minWidthDesktop = parseInt(getComputedStyle(mainNavEl).getPropertyValue('--main-nav-min-width-desktop')) || 1024;
         this._getNavListItems();
 
         if (this.mainNavEl.hasAttribute(this.isOpenOnHoverAttribute)) {
