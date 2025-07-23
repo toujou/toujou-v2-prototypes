@@ -23,3 +23,8 @@ toujou-rating-radios {
 .rating-radio {
     margin-inline: var(--rating-radios-input-margin-inline);
 }
+
+.rating-radio:focus-visible {
+    outline: var(--focus-outline-width) solid var(--focus-outline-color);
+    outline-offset: var(--focus-outline-offset);
+}
