@@ -1,0 +1,25 @@
+toujou-rating-radios {
+    --rating-radios-fieldset-border: none;
+    --rating-radios-fieldset-padding: 0;
+
+    --rating-radios-input-margin-inline: 0;
+}
+
+.input-label:has(+ toujou-rating-radios) {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: var(--radio-group-label-font-family);
+    font-size: var(--radio-group-label-font-size);
+    font-weight: var(--radio-group-label-font-weight);
+    color: var(--radio-group-label-color);
+}
+
+.rating-radio__wrapper {
+    border: var(--rating-radios-fieldset-border);
+    padding: var(--rating-radios-fieldset-padding);
+}
+
+.rating-radio {
+    margin-inline: var(--rating-radios-input-margin-inline);
+}

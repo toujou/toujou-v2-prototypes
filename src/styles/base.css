@@ -27,7 +27,7 @@
 @import "./globals/form/_multi-select.css" layer(base);
 @import "./globals/form/_radio.css" layer(base);
 @import "./globals/form/_radio-group.css" layer(base);
-@import "./globals/form/_rating-radios.css" layer(base);
+@import "./globals/form/_rating-radio.css" layer(base);
 @import "./globals/form/_select.css" layer(base);
 @import "./globals/form/_form-static-text.css" layer(base);
 @import "./globals/form/_toggle.css" layer(base);
