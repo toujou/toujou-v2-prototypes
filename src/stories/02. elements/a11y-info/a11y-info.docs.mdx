@@ -1,0 +1,27 @@
+# A11y-info
+The a11y-info component is a non-intrusive accessibility help panel intended for keyboard and assistive technology users.
+It behaves similarly to a skip link: it remains hidden visually and from mouse users but becomes visible when focused via keyboard navigation (typically by pressing Tab after the skip link).
+
+This panel provides:
+- A list of common keyboard shortcuts
+- Tips for navigating the page via keyboard
+
+It is typically placed immediately after skip links, making it easily discoverable by keyboard users.
+
+## Markup example
+```html
+<section class="a11y-info" tabindex="0" aria-labelledby="a11y-info-headline">
+    <h2 id="a11y-info-headline" class="a11y-info__headline">Accessibility Information</h2>
+    <p class="a11y-info__description">You can use the following keyboard shortcuts to navigate more quickly:</p>
+    <ul class="a11y-info__list">
+        <li class="a11y-info__item">
+            <kbd class="keyboard-key">Alt</kbd> + <kbd class="keyboard-key">Home</kbd>: Go to your homepage
+        </li>
+        <li class="a11y-info__item">
+            <kbd class="keyboard-key">Alt</kbd> + <kbd class="keyboard-key">Arrow Left</kbd>: Go back to the previous page
+        </li>
+        <li class="a11y-info__item">
+            <kbd class="keyboard-key">Alt</kbd> + <kbd class="keyboard-key">Arrow Right</kbd>: Go forward to the next page
+        </li>
+    </ul>
+</section>
