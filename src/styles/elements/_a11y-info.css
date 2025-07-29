@@ -9,6 +9,7 @@
         --a11y-info-transition: transform var(--animation-duration-normal) var(--animation-easing-normal);
         --a11y-info-overflow: hidden;
         --a11y-info-box-shadow: none;
+        --a11y-info-outline: none;
         --a11y-info-z-index: var(--z-index-notifications);
 
         --a11y-info-content-display: block;
@@ -46,6 +47,7 @@
         transition: var(--a11y-info-transition);
         overflow: var(--a11y-info-overflow);
         box-shadow: var(--a11y-info-box-shadow);
+        outline: var(--a11y-info-outline);
         z-index: var(--a11y-info-z-index);
     }
 
