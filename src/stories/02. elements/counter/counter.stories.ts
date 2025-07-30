@@ -14,6 +14,16 @@ export default {
         },
     },
     argTypes: {
+        numberOfItems: {
+            table: {
+                category: "Counter Settings",
+            },
+            name: 'number of Items',
+            description: "Set the number of counter items visible on the story",
+            options: [1, 2, 3, 4],
+            control: { type: 'radio' },
+            required: true,
+        },
         elementDesign: {
             table: {
                 category: "Counter Settings",
@@ -58,19 +68,6 @@ export default {
             },
             required: true,
         },
-        numberOfItems: {
-            table: {
-                category: "Counter Settings",
-            },
-            name: 'number of Items',
-            description: "Set the number of counter items visible on the story",
-            control: {
-                type: 'number',
-                min: 1,
-                max: 12,
-            },
-            required: true,
-        },
         showPrefix: {
             table: {
                 category: "Counter Settings",
@@ -93,11 +90,11 @@ export default {
 } satisfies Meta;
 
 interface counterStoryProps {
+    numberOfItems: number;
     elementDesign: any;
     animationDuration: string;
     startValue: number;
     endValue: number;
-    numberOfItems: number;
     showPrefix: boolean;
     showSuffix: boolean;
 }
@@ -107,28 +104,30 @@ const renderCounterItem = (args: counterStoryProps) => {
 
     for (let i = 0; i < args.numberOfItems; i++) {
         counterItems += `
-            <toujou-counter
-                class="counter"
-                aria-label="1000 - Default"
-                element-design="${args.elementDesign}"
-                start-number="${args.startValue}"
-                end-number="${args.endValue}"
-                animation-speed="${args.animationDuration}"
-                tabindex="0"
-                >
-
-                <figure class="counter__figure">
-                    <img class="counter__image" src="https://picsum.photos/84" alt="" loading="lazy">
-                </figure>
-
-                <span class="counter__number">
-                    ${args.showPrefix ? `<span class="counter__number-prefix">+</span>` : ''}
-                    <span class="counter__number-text">1.000</span>
-                    ${args.showSuffix ? `<span class="counter__number-suffix">Km</span>` : ''}
-                </span>
-
-                <p class="counter__title">Default</p>
-            </toujou-counter>
+            <li class="counter-grid__item">
+                <toujou-counter
+                    class="counter"
+                    aria-label="1000 - Default"
+                    element-design="${args.elementDesign}"
+                    start-number="${args.startValue}"
+                    end-number="${args.endValue}"
+                    animation-speed="${args.animationDuration}"
+                    tabindex="0"
+                    >
+    
+                    <figure class="counter__figure">
+                        <img class="counter__image" src="https://picsum.photos/84" alt="" loading="lazy">
+                    </figure>
+    
+                    <span class="counter__number">
+                        ${args.showPrefix ? `<span class="counter__number-prefix">+</span>` : ''}
+                        <span class="counter__number-text">1.000</span>
+                        ${args.showSuffix ? `<span class="counter__number-suffix">Km</span>` : ''}
+                    </span>
+    
+                    <p class="counter__title">Default</p>
+                </toujou-counter>
+            </li>
         `;
     }
 
@@ -137,20 +136,22 @@ const renderCounterItem = (args: counterStoryProps) => {
 
 const Template: StoryFn<counterStoryProps> = (args: counterStoryProps) => {
     return `
-        <div class="counter-grid" number-of-items="${args.numberOfItems.toString()}">
-            ${renderCounterItem(args)}
-        </div>
+        <main>
+            <ul class="counter-grid" number-of-items="${args.numberOfItems.toString()}">
+                ${renderCounterItem(args)}
+            </ul>
+        </main>
     `;
 };
 
 export const Counter = Template.bind({});
 
 Counter.args = {
+    numberOfItems: 1,
     elementDesign: 'default',
     animationDuration: 'medium',
     startValue: 1,
     endValue: 123,
-    numberOfItems: 1,
     showPrefix: false,
     showSuffix: true,
 }

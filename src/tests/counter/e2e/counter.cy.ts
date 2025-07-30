@@ -35,13 +35,13 @@ describe('counter', () => {
         cy.get('toujou-counter').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('toujou-counter').should('have.css', 'padding', tokens.spacing.m);
         cy.get('toujou-counter').should('have.css', 'background-color', 'rgba(0, 0, 0, 0)');
-        cy.get('toujou-counter').should('have.css', 'width', '1440px');
+        cy.get('toujou-counter').should('have.css', 'width', '324px');
     });
 
     it('has correct figure styles', () => {
         cy.get('toujou-counter .counter__figure').should('have.css', 'height', '48px');
         cy.get('toujou-counter .counter__figure').should('have.css', 'width', '48px');
-        cy.get('toujou-counter .counter__figure').should('have.css', 'margin', '0px 672px 16px');
+        cy.get('toujou-counter .counter__figure').should('have.css', 'margin', '0px 114px 16px');
         cy.get('toujou-counter .counter__figure').should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get('toujou-counter .counter__figure').should('have.css', 'overflow', 'hidden');
     });

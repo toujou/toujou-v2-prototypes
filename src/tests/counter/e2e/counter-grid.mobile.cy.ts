@@ -9,7 +9,7 @@ describe('counter-grid', () => {
     });
 
     it('has correct class and tag name', () => {
-        cy.get('.counter-grid').should('have.prop', 'tagName').should('eq', 'DIV');
+        cy.get('.counter-grid').should('have.prop', 'tagName').should('eq', 'UL');
         cy.get('.counter-grid').invoke('attr', 'class').should('eq', 'counter-grid');
     });
 
@@ -26,6 +26,7 @@ describe('counter-grid', () => {
         cy.get('.counter-grid').should('have.css', 'width', '311px');
         cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
         cy.get('.counter-grid').should('have.css', 'margin', `${tokens.spacing.l} ${tokens.spacing.normal} 0px`);
+        cy.get('.counter-grid').should('have.css', 'width', `311px`);
     });
 })
 
@@ -35,11 +36,12 @@ describe('counter-grid - 1 item', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter');
     });
 
+    it('has correct number of children', () => {
+        cy.get('.counter-grid').children('.counter-grid__item').should('have.length', 1);
+    });
+
     it('has correct  styles', () => {
-        cy.get('.counter-grid').children('.counter').should('have.length', 1);
-        cy.get('.counter-grid').should('have.css', 'width', '311px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '311px');
+        cy.get('.counter-grid .counter-grid__item').should('have.css', 'width', '311px');
     });
 })
 
@@ -49,11 +51,12 @@ describe('counter-grid - 2 item', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=numberOfItems:2');
     });
 
+    it('has correct number of children', () => {
+        cy.get('.counter-grid').children('.counter-grid__item').should('have.length', 2);
+    });
+
     it('has correct  styles', () => {
-        cy.get('.counter-grid').children('.counter').should('have.length', 2);
-        cy.get('.counter-grid').should('have.css', 'width', '311px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '311px');
+        cy.get('.counter-grid .counter-grid__item').should('have.css', 'width', '311px');
     });
 })
 
@@ -63,11 +66,12 @@ describe('counter-grid - 3 item', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=numberOfItems:3');
     });
 
+    it('has correct number of children', () => {
+        cy.get('.counter-grid').children('.counter-grid__item').should('have.length', 3);
+    });
+
     it('has correct  styles', () => {
-        cy.get('.counter-grid').children('.counter').should('have.length', 3);
-        cy.get('.counter-grid').should('have.css', 'width', '311px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '311px');
+        cy.get('.counter-grid .counter-grid__item').should('have.css', 'width', '296px');
     });
 })
 
@@ -77,11 +81,12 @@ describe('counter-grid - 4 item', () => {
         cy.visit('/iframe.html?viewMode=story&id=components-counter--counter&args=numberOfItems:4');
     });
 
+    it('has correct number of children', () => {
+        cy.get('.counter-grid').children('.counter-grid__item').should('have.length', 4);
+    });
+
     it('has correct  styles', () => {
-        cy.get('.counter-grid').children('.counter').should('have.length', 4);
-        cy.get('.counter-grid').should('have.css', 'width', '296px');
-        cy.get('.counter-grid').should('have.css', 'max-width', '1440px');
-        cy.get('.counter-grid .counter').should('have.css', 'width', '296px');
+        cy.get('.counter-grid .counter-grid__item').should('have.css', 'width', '296px');
     });
 })
 
