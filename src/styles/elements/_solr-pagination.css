@@ -39,7 +39,7 @@
         flex-direction: var(--solr-pagination-flex-direction);
         align-items: var(--solr-pagination-align-items);
         justify-content: var(--solr-pagination-justify-content);
-        padding: var(--solr-pagination-padding);
+        padding: var(--solr-pagination-padding) !important;
         margin: var(--solr-pagination-margin);
     }
 
