@@ -754,64 +754,67 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                             </template>
                         </toujou-lazy-render>
                     </div>
-                    <ul class="solr-pagination solr-pagination--above">
-                        <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                            <button aria-hidden="true" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
-                            <span class="solr-pagination__icon solr-pagination__icon--prev"></span>
-                            </button>
-                        </li>
-                        <li class="solr-pagination__pages-container">
-                            <div class="solr-pagination__pages solr-pagination__pages--mobile">
-                                <div class="select__wrapper solr-pagination__select-wrapper">
-                                    <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
-                                        <select class="form-control input select solr-pagination__select" name="tx_solr[page]" onchange="this.form.submit()">
-                                            <option value="1" selected="">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                        </select>
-                                    </form>
+                    
+                    <nav class="solr-pagination solr-pagination--above">
+                        <ul class="solr-pagination__list solr-pagination--above">
+                            <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                                <button aria-hidden="true" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                                <span class="solr-pagination__icon solr-pagination__icon--prev"></span>
+                                </button>
+                            </li>
+                            <li class="solr-pagination__pages-container">
+                                <div class="solr-pagination__pages solr-pagination__pages--mobile">
+                                    <div class="select__wrapper solr-pagination__select-wrapper">
+                                        <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
+                                            <select class="form-control input select solr-pagination__select" name="tx_solr[page]" onchange="this.form.submit()">
+                                                <option value="1" selected="">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <span class="solr-pagination__select-postfix">
+                                    von
+                                    </span>
                                 </div>
-                                <span class="solr-pagination__select-postfix">
-                                von
-                                </span>
-                            </div>
-                            <ul class="solr-pagination__pages solr-pagination__pages--desktop">
-                                <li class="solr-pagination__item solr-pagination__item--active">
-                                    <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
-                                </li>
-                                <li class="solr-pagination__item solr-pagination__item--ellipsis">
-                                    <a class="solr-pagination__link">...</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                            <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--next">
-                            <span class="solr-pagination__icon solr-pagination__icon--next"></span>
-                            </a>
-                        </li>
-                    </ul>
+                                <ul class="solr-pagination__pages solr-pagination__pages--desktop">
+                                    <li class="solr-pagination__item solr-pagination__item--active">
+                                        <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
+                                    </li>
+                                    <li class="solr-pagination__item solr-pagination__item--ellipsis">
+                                        <a class="solr-pagination__link">...</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                                <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--arrow solr-pagination__link--next">
+                                <span class="solr-pagination__icon solr-pagination__icon--next"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <ul class="card-collection solr-results__card-collection">
                         <li class="card-collection__item">
@@ -1086,65 +1089,68 @@ const Template: StoryFn<SolrSearchStoryProps> = (args: SolrSearchStoryProps) => 
                         </li>
                     </ul>
 
-                    <ul class="solr-pagination solr-pagination--below">
-                        <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                            <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
-                                <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
-                            </a>
-                        </li>
-                        <li class="solr-pagination__pages-container">
-                            <div class="solr-pagination__pages solr-pagination__pages--mobile">
-                                <div class="select__wrapper solr-pagination__select-wrapper">
-                                    <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
-                                        <toujou-input-group class="input-group input-group--single-select   ">
-                                            <div class="select__wrapper solr-pagination__select-wrapper">
-                                                <select data-pristine-required-message-de="The given subject was empty." class="form-control input select solr-pagination__select" id="testform-1000091-singleselect-1" name="tx_form_formframework[testform-1000091][singleselect-1]" name="tx_solr[page]" onchange="this.form.submit()">
-                                                    <option class="seclect__option" value="">1</option>
-                                                    <option class="seclect__option" value="2">2</option>
-                                                    <option class="seclect__option" value="3">3</option>
-                                                    <option class="seclect__option" value="4">4</option>
-                                                    <option class="seclect__option" value="5">5</option>
-                                                </select>
-                                            </div>
-                                            <span class="pristine-error form__error">This is an error message!</span>
-                                        </toujou-input-group>
-                                    </form>
+                    <nav class="solr-pagination solr-pagination--below">
+                        <ul class="solr-pagination__list">
+                    
+                            <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                                <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-left"></toujou-icon>
+                                </a>
+                            </li>
+                            <li class="solr-pagination__pages-container">
+                                <div class="solr-pagination__pages solr-pagination__pages--mobile">
+                                    <div class="select__wrapper solr-pagination__select-wrapper">
+                                        <form method="post" id="paginationSelectForm" action="/suche/?tx_solr%5Bq%5D=">
+                                            <toujou-input-group class="input-group input-group--single-select   ">
+                                                <div class="select__wrapper solr-pagination__select-wrapper">
+                                                    <select data-pristine-required-message-de="The given subject was empty." class="form-control input select solr-pagination__select" id="testform-1000091-singleselect-1" name="tx_form_formframework[testform-1000091][singleselect-1]" name="tx_solr[page]" onchange="this.form.submit()">
+                                                        <option class="seclect__option" value="">1</option>
+                                                        <option class="seclect__option" value="2">2</option>
+                                                        <option class="seclect__option" value="3">3</option>
+                                                        <option class="seclect__option" value="4">4</option>
+                                                        <option class="seclect__option" value="5">5</option>
+                                                    </select>
+                                                </div>
+                                                <span class="pristine-error form__error">This is an error message!</span>
+                                            </toujou-input-group>
+                                        </form>
+                                    </div>
+                                    <span class="solr-pagination__select-postfix">von</span>
                                 </div>
-                                <span class="solr-pagination__select-postfix">von</span>
-                            </div>
-                            <ul class="solr-pagination__pages solr-pagination__pages--desktop">
-                                <li class="solr-pagination__item solr-pagination__item--active">
-                                    <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
-                                </li>
-                                <li class="solr-pagination__item">
-                                    <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
-                                </li>
-                                <li class="solr-pagination__item solr-pagination__item--ellipsis">
-                                    <a class="solr-pagination__link">...</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
-                            <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
-                                <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
-                            </a>
-                        </li>
-                    </ul>
+                                <ul class="solr-pagination__pages solr-pagination__pages--desktop">
+                                    <li class="solr-pagination__item solr-pagination__item--active">
+                                        <a href="/suche/?tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link solr-pagination__link--active">1</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=2&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">2</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=3&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">3</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=4&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">4</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=5&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">5</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=6&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">6</a>
+                                    </li>
+                                    <li class="solr-pagination__item">
+                                        <a href="/suche/?tx_solr%5Bpage%5D=7&amp;tx_solr%5Bq%5D=" class="solr-ajaxified solr-pagination__link">7</a>
+                                    </li>
+                                    <li class="solr-pagination__item solr-pagination__item--ellipsis">
+                                        <a class="solr-pagination__link">...</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="solr-pagination__item solr-pagination__item--last solr-pagination__item--next ">
+                                <a href="#" class="button solr-ajaxified solr-pagination__button solr-pagination__link solr-pagination__link--arrow solr-pagination__link--prev">
+                                    <toujou-icon class="icon" icon-color="primary" icon-size="normal" icon-name="chevron-right"></toujou-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <!---->
             </toujou-solr-search>

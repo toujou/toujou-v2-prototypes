@@ -1,8 +1,22 @@
 @layer components {
     .solr-pagination {
+        --solr-pagination-width: 100%;
         --solr-pagination-border-top: var(--border-width-normal) solid var(--border-color-default);
+        --solr-pagination-display: flex;
+        --solr-pagination-flex-direction: row;
+        --solr-pagination-align-items: flex-start;
+        --solr-pagination-justify-content: space-between;
         --solr-pagination-padding: var(--spacing-m) 0 0;
         --solr-pagination-margin: var(--spacing-l) 0 0;
+
+        --solr-pagination-list-list-style: none;
+        --solr-pagination-list-display: flex;
+        --solr-pagination-list-flex-direction: row;
+        --solr-pagination-list-align-items: flex-start;
+        --solr-pagination-list-justify-content: space-between;
+        --solr-pagination-list-padding: 0;
+        --solr-pagination-list-margin: 0;
+        --solr-pagination-list-width: 100%;
 
         --solr-pagination-link-bg-color: var(--color-primary-o-10);
         --solr-pagination-link-border: none;
@@ -19,13 +33,29 @@
 
         --solr-pagination-select-postfix-display: none;
 
+        width: var(--solr-pagination-width);
         border-top: var(--solr-pagination-border-top);
-        margin: var(--solr-pagination-margin);
+        display: var(--solr-pagination-display);
+        flex-direction: var(--solr-pagination-flex-direction);
+        align-items: var(--solr-pagination-align-items);
+        justify-content: var(--solr-pagination-justify-content);
         padding: var(--solr-pagination-padding);
+        margin: var(--solr-pagination-margin);
     }
 
     .solr-pagination__button {
         --solr-pagination-link-bg-color: var(--color-primary-o-10);
+    }
+
+    .solr-pagination__list {
+        list-style: var(--solr-pagination-list-list-style);
+        display: var(--solr-pagination-list-display);
+        flex-direction: var(--solr-pagination-list-flex-direction);
+        align-items: var(--solr-pagination-list-align-items);
+        justify-content: var(--solr-pagination-list-justify-content);
+        padding: var(--solr-pagination-list-padding);
+        margin: var(--solr-pagination-list-margin);
+        width: var(--solr-pagination-list-width);
     }
 
     .solr-pagination__item {
