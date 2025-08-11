@@ -269,6 +269,10 @@
         mask-image: var(--icon-company);
     }
 
+    .icon[icon-name="cookie"] {
+        mask-image: var(--icon-cookie);
+    }
+
     .icon[icon-name="coronavirus"] {
         mask-image: var(--icon-coronavirus);
     }

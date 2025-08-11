@@ -81,6 +81,7 @@ const iconNames = [
     'cloud',
     'coffee',
     'company',
+    'cookie',
     'coronavirus',
     'dashboard',
     'drink',
@@ -219,5 +220,5 @@ export const Icons = Template.bind({});
 
 Icons.args = {
     iconColor: 'font',
-    iconSize: 'ms',
+    iconSize: 'xl',
 }
