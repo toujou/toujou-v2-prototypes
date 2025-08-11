@@ -9,6 +9,7 @@ function initAutoplayVideos(): void {
     videos.forEach((video: HTMLVideoElement) => {
         if (!isReduceMotion) {
             video.setAttribute('autoplay', '');
+            video.play().then(() => {});
         } else {
             video.setAttribute('controls', '');
         }
