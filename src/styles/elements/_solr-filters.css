@@ -11,7 +11,7 @@
 
     @media screen and (width < 840px) {
         .solr-filters {
-            padding-top: calc(var(--topbar-height) + var(--spacing-normal));
+            --toujou-solr-filters-padding: calc(var(--topbar-height) + var(--spacing-normal)) var(--spacing-normal) var(--spacing-normal);
         }
     }
 }
