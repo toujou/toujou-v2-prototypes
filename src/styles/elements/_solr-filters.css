@@ -8,4 +8,10 @@
     .solr-filters[is-visible] {
         --solr-filters-bg-color: var(--bg-color);
     }
+
+    @media screen and (width < 840px) {
+        .solr-filters {
+            padding-top: calc(var(--topbar-height) + var(--spacing-normal));
+        }
+    }
 }
