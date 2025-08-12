@@ -9,6 +9,10 @@
         --solr-filters-bg-color: var(--bg-color);
     }
 
+    .solr-filters__mobile-button--close {
+        cursor: pointer;
+    }
+
     @media screen and (width < 840px) {
         .solr-filters {
             --toujou-solr-filters-padding: calc(var(--topbar-height) + var(--spacing-normal)) var(--spacing-normal) var(--spacing-normal);
