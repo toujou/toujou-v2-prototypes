@@ -43,6 +43,10 @@
         margin: var(--solr-pagination-margin);
     }
 
+    .solr-pagination--load-more {
+        --solr-pagination-justify-content: center;
+    }
+
     .solr-pagination__button {
         --solr-pagination-link-bg-color: var(--color-primary-o-10);
     }
