@@ -44,7 +44,7 @@
     }
 
     .image-card[card-variant="inverted"] {
-        --image-card-title-background-color: var(--color-font-light);
+        --image-card-title-background-color: var(--color-font);
         --image-card-title-color: var(--color-bg);
     }
 
