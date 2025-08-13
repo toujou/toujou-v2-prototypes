@@ -1,6 +1,5 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import galleryDocs from "./gallery.docs.mdx";
 import '../../../js/elements/photoswipe-lightbox-creator'
@@ -8,7 +7,6 @@ import '../../../js/elements/photoswipe-lightbox-creator'
 export default {
     title: 'COMPONENTS/Media',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: galleryDocs,
         }

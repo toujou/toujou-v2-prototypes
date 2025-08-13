@@ -1,0 +1,18 @@
+[12:38:07.243] [INFO] Checking the health of your Storybook..
+[12:38:07.244] [DEBUG] Getting Storybook info...
+[12:38:07.244] [DEBUG] Loading main config...
+[12:38:07.335] [DEBUG] Getting stories paths...
+[12:38:07.352] [DEBUG] Getting package manager...
+[12:38:07.628] [DEBUG] Getting Storybook version...
+[12:38:08.905] [WARN] .storybook: 1 issue found
+[12:38:08.905] [INFO] You are currently using Storybook 9.1.2 but you have packages which are incompatible with it:
+
+- @geometricpanda/storybook-addon-badges@2.0.5 which depends on ^8.3.0
+
+Please consider updating your packages or contacting the maintainers for compatibility details.
+
+For more on Storybook 9 compatibility, see the linked GitHub issue:
+https://github.com/storybookjs/storybook/issues/30944
+[12:38:08.909] [INFO] Storybook doctor is complete!
+[12:38:08.909] [INFO] You can always recheck the health of your project(s) by running:
+npx storybook doctor

@@ -1,13 +1,10 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 // @ts-ignore
 import dividerDocs from './divider.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Divider',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: dividerDocs,
         },

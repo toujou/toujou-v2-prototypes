@@ -1,9 +1,7 @@
 /// <reference lib="dom" />
 /// <reference lib="dom.iterable" />
 
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import imageCardDocs from './image-card.docs.mdx';
@@ -11,7 +9,6 @@ import imageCardDocs from './image-card.docs.mdx';
 export default {
     title: 'COMPONENTS/Image Card',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: imageCardDocs,
         }

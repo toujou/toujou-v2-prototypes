@@ -1,9 +1,7 @@
 /// <reference lib="dom" />
 /// <reference lib="dom.iterable" />
 
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import thirdPartyContentDocs from './third-party-content.docs.mdx';
@@ -11,7 +9,6 @@ import thirdPartyContentDocs from './third-party-content.docs.mdx';
 export default {
     title: 'COMPONENTS/Third Party Content',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: thirdPartyContentDocs,
         },

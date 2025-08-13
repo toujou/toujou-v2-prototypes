@@ -1,11 +1,8 @@
-import {Meta} from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import {Meta} from '@storybook/web-components-vite';
 
 export default {
     title: 'TESTS/Container Queries',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
         layout: 'fullwidth',
     },
 } satisfies Meta;

@@ -1,16 +1,14 @@
 /// <reference lib="dom" />
 /// <reference lib="dom.iterable" />
 
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import iconDocs from './icon.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Icons',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: iconDocs,
         },

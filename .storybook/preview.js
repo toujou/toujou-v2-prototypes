@@ -13,13 +13,21 @@ import './componentImports/mock-components';
 
 // Config
 import toujouBranding from "./configUtils/storybookToujouBranding";
-import { badgeCustomConfig } from "./configUtils/badgeCustomConfig";
 import { customViewports } from "./configUtils/customViewports";
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 // import { setThemeStylesheets } from "./configUtils/setThemeStylesheets";
+
+// MSW imports
+import { initialize, mswLoader } from 'msw-storybook-addon';
+import { http, HttpResponse } from 'msw';
 
 // Hacks
 import './configUtils/mainNavHack';
+
+// Initialize MSW
+initialize({
+    onUnhandledRequest: 'bypass'
+});
 
 // Export everything in one default block
 export default {
@@ -50,7 +58,6 @@ export default {
             },
             expanded: true,
         },
-        badgesConfig: badgeCustomConfig,
         viewport: {
             viewports: {
                 ...customViewports,
@@ -80,11 +87,9 @@ export default {
             },
             selectedPanel: 'storybook/controls/panel',
         },
-        fetchMock: {
-            debug: false,
-        }
     },
     tags: ["autodocs", 'autodocs'],
+    loaders: [mswLoader],
     decorators: [
         // This is commented out because it works well on the preview, but not on the deployed storybook
         // (Because the files get different names, with hashes...)

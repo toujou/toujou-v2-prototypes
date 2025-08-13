@@ -1,6 +1,5 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import skipLinksDocs from './skip-links.docs.mdx';
 
@@ -9,7 +8,6 @@ import '../../../../node_modules/skippy-links/dist/skippy-links'
 export default {
     title: 'COMPONENTS/SkipLinks',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: skipLinksDocs,
         },
