@@ -1,6 +1,5 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import chipDocs from './chip.docs.mdx';
 
@@ -9,7 +8,6 @@ const DEFAULT_BUTTON_TEXT = 'Jetzt 30% Rabatt';
 export default {
     title: 'COMPONENTS/Chip',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: chipDocs,
         },

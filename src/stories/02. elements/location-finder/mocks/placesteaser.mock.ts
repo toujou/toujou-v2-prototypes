@@ -23,7 +23,7 @@ export const placesTeaserMockResp_all = `
          </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://fakeimg.pl/240x100/049bd6/ffffff?text=Logo" width="100" height="22" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="22" alt="" />
     </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -39,7 +39,7 @@ export const placesTeaserMockResp_all = `
         </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://fakeimg.pl/100x100/0da367/ffffff?text=Logo" width="99" height="100" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="99" height="100" alt="" />
         </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -57,7 +57,7 @@ export const placesTeaserMockResp_all = `
         </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://fakeimg.pl/100x100/a30c4d/ffffff?text=Logo" width="100" height="86" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="86" alt="" />
     </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -73,7 +73,7 @@ export const placesTeaserMockResp_all = `
         </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://fakeimg.pl/100x100/7b0ca3/ffffff?text=Logo" width="100" height="100" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="100" alt="" />
     </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -89,7 +89,7 @@ export const placesTeaserMockResp_all = `
         </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://fakeimg.pl/100x100/0ca38c/ffffff?text=Logo" width="100" height="100" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="100" alt="" />
     </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -105,7 +105,7 @@ export const placesTeaserMockResp_all = `
         </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="/fileadmin/_processed_/0/2/csm_gkmb_Logo_c4783b955c.png" width="100" height="75" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="75" alt="" />
     </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -121,7 +121,7 @@ export const placesTeaserMockResp_all = `
         </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="/fileadmin/_processed_/c/2/csm_GIGATEC_ea9c3ec783.png" width="100" height="21" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="21" alt="" />
     </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -137,7 +137,7 @@ export const placesTeaserMockResp_all = `
         </address>
       </div>
       <figure class="teaser__logo-container">
-        <img class="teaser__image teaser__image--logo" loading="lazy" src="/fileadmin/_processed_/7/c/csm_Goldwild_Logo_Schwarz_c1f876b007.png" width="100" height="80" alt="" />
+        <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="80" alt="" />
     </figure>
    </a>
 </toujou-location-finder-teaser>
@@ -155,7 +155,7 @@ export const placesTeaserMockResp_singleTeaser = `
             </address>
         </div>
         <figure class="teaser__logo-container">
-            <img class="teaser__image teaser__image--logo" loading="lazy" src="https://fakeimg.pl/100x100/049bd6/ffffff?text=Logo" width="100" height="22" alt="" />
+            <img class="teaser__image teaser__image--logo" loading="lazy" src="https://picsum.photos/100/100" width="100" height="22" alt="" />
         </figure>
     </a>
 </toujou-location-finder-teaser>

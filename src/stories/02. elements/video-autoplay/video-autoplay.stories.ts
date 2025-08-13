@@ -1,16 +1,11 @@
 /// <reference lib="dom" />
 /// <reference lib="dom.iterable" />
 
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js';
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 import '../../../js/elements/video-autoplay';
 
 export default {
     title: 'COMPONENTS/Media',
-    parameters: {
-        badges: [TOUJOU_BADGES.DONE],
-    },
     argTypes: {
         autoplay: {
             table: {

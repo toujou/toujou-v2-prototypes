@@ -1,11 +1,8 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 export default {
     title: 'TESTS/toujou.de',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         layout: 'fullscreen',
     },
 } satisfies Meta;
