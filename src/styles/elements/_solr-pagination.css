@@ -34,16 +34,17 @@
         --solr-pagination-select-postfix-display: none;
 
         width: var(--solr-pagination-width);
-        border-top: var(--solr-pagination-border-top);
-        display: var(--solr-pagination-display);
-        flex-direction: var(--solr-pagination-flex-direction);
-        align-items: var(--solr-pagination-align-items);
-        justify-content: var(--solr-pagination-justify-content);
+        border-top: var(--solr-pagination-border-top) !important;
+        display: var(--solr-pagination-display) !important;
+        flex-direction: var(--solr-pagination-flex-direction) !important;
+        align-items: var(--solr-pagination-align-items) !important;
+        justify-content: var(--solr-pagination-justify-content) !important;
         padding: var(--solr-pagination-padding) !important;
         margin: var(--solr-pagination-margin);
     }
 
     .solr-pagination--load-more {
+        --solr-pagination-border-top: none;
         --solr-pagination-justify-content: center;
     }
 
