@@ -1,13 +1,11 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import exitWarningDocs from './exit-warning.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Exit Warning',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: exitWarningDocs,
         },

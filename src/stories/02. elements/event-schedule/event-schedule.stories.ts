@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import eventScheduleDocs from './event-schedule.docs.mdx';
@@ -8,7 +6,6 @@ import eventScheduleDocs from './event-schedule.docs.mdx';
 export default {
     title: 'COMPONENTS/EventSchedule',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: eventScheduleDocs,
         },

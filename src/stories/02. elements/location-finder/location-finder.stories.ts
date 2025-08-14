@@ -1,6 +1,5 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
+import { http, HttpResponse } from 'msw';
 
 // @ts-ignore
 import locationFinderDocs from './location-finder.docs.mdx';
@@ -13,53 +12,30 @@ import { placesTeaserMockResp_all, placesTeaserMockResp_singleTeaser } from "./m
 export default {
     title: 'COMPONENTS/LocationFinder',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: locationFinderDocs,
         },
         layout: "fullscreen",
-        fetchMock: {
-            mocks: [
-                {
-                    matcher: {
-                        name: 'placesGeo',
-                        url: 'begin:/placesgeo.json',
-                    },
-                    response: (url: any, options: any, request: any) => {
-                        printMockInfo('placesGeo', url, options, request);
-                        return placesGeoMockResp
-                    },
-                },
-                {
-                    matcher: {
-                        name: 'placesTeaser',
-                        url: 'begin:/placesteaser.html',
-                    },
-                    response: (url: any, options: any, request: any) => {
-                        printMockInfo('placesTeaser', url, options, request);
-                        const urlParams = new URLSearchParams(url)
-                        if (!urlParams) return;
+        msw: {
+          handlers: [
+              http.get('/placesgeo.json', () => {
+                  return HttpResponse.json(placesGeoMockResp);
+              }),
+              http.get('/placesteaser.html', ({ request }) => {
+                  const urlParams = new URLSearchParams(request.url);
+                  if (!urlParams) return;
 
-                        const paramIds = urlParams.get("ids");
-                        return (paramIds && paramIds.split(",").length > 1)
-                            ? placesTeaserMockResp_all
-                            : placesTeaserMockResp_singleTeaser;
-                    },
-                },
-            ],
+                  const paramsIds = urlParams.get("ids");
+
+                  return (paramsIds && paramsIds.split(",").length > 1)
+                    ? HttpResponse.html(placesTeaserMockResp_all)
+                    : HttpResponse.html(placesTeaserMockResp_singleTeaser);
+              }),
+          ]
         },
     },
 } satisfies Meta;
 
-/* Print mock info to the console because requests are not always visible on the Network panel */
-function printMockInfo(mockName: string, url: string, options: any, request: any) {
-    console.groupCollapsed(`%c====== MOCK REQUEST: ${mockName} ======`, 'color: #4DB6AC; font-weight: bold;');
-
-    console.log(`%cURL: %c${url}`, 'color: #E57373; font-weight: bold;', 'color: #4DB6AC');
-    console.log(`%cOptions %c${options}`, 'color: #E57373; font-weight: bold;', 'color: #4DB6AC');
-    console.log(`%cRequest %c${request}`, 'color: #E57373; font-weight: bold;', 'color: #4DB6AC');
-    console.groupEnd();
-}
 
 /* Debug mock routes *//*
 async function testMocks() {
@@ -93,7 +69,6 @@ const Template = () => {
                 map-style="mapbox://styles/mapbox/light-v10"
                 access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
             >
-
                 <button
                     is="toujou-button"
                     class="button location-finder__map-toggle"

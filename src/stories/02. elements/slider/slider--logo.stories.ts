@@ -1,14 +1,11 @@
-import { StoryFn, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import sliderDocs from "./slider.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Media',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: sliderDocs,
         },

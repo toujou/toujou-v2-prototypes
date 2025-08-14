@@ -1,6 +1,4 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import contentCardWithTextDocs from '../content-card-with-text/content-card-with-text.docs.mdx';
@@ -8,7 +6,6 @@ import contentCardWithTextDocs from '../content-card-with-text/content-card-with
 export default {
     title: 'COMPONENTS/Content Card',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: contentCardWithTextDocs,
         }

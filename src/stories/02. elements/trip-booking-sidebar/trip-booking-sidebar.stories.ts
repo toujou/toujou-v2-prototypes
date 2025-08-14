@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import tripBookingSidebarDocs from './trip-booking-sidebar.docs.mdx';
@@ -8,7 +6,6 @@ import tripBookingSidebarDocs from './trip-booking-sidebar.docs.mdx';
 export default {
     title: 'COMPONENTS/Tourism/Booking Sidebar',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
         docs: {
             page: tripBookingSidebarDocs,
         },

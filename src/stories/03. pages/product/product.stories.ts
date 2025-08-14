@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import productDocs from './product.docs.mdx';
@@ -8,7 +6,6 @@ import productDocs from './product.docs.mdx';
 export default {
     title: 'PAGES/Product',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: productDocs,
         },

@@ -1,13 +1,10 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 // @ts-ignore
 import detailsAccordionDocs from './details-accordion.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Accordion',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: detailsAccordionDocs,
         },

@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import organizationDocs from './organization.docs.mdx';
@@ -8,7 +6,6 @@ import organizationDocs from './organization.docs.mdx';
 export default {
     title: 'PAGES/Organization',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: organizationDocs,
         },
