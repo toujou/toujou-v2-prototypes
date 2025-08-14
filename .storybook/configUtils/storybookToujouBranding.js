@@ -11,7 +11,6 @@ export default create({
     brandTitle: 'Kojo Theme',
     brandUrl: 'https://meet-kojo.toujou.net/',
     brandTarget: '_blank',
-
     appBg: bgColor,
     barBg: bgColor,
     inputBg: bgColor,
