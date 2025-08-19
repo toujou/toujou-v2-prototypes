@@ -1,6 +1,4 @@
 import { Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 
 // @ts-ignore
 import blogPluginsDocs from './blog-plugins.docs.mdx';
@@ -8,7 +6,6 @@ import blogPluginsDocs from './blog-plugins.docs.mdx';
 export default {
     title: 'COMPONENTS/Blog Plugin',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blogPluginsDocs,
         },
