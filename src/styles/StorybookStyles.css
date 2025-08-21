@@ -115,6 +115,8 @@
 @import "./elements/_counter.css";
 @import "./elements/_file-link.css";
 @import "./elements/_pagination.css";
+@import "./elements/_quick-link.css";
+@import "./elements/_quick-links.css";
 
 @import "./elements/_departure.css";
 @import "./elements/_departures.css";

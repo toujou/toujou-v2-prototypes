@@ -1,0 +1,52 @@
+# Quick links
+
+The Quick Links component renders a fixed-position navigation menu of floating action links.
+It helps users quickly access important areas of the site, and is always visible on the page.
+
+## Markup example
+```html
+<nav class="quick-links" aria-label="Quick links" data-vertical-position="bottom" data-horizontal-position="right">
+    <ul class="quick-links__list">
+        <li class="quick-links__item">
+            <a
+                href="#"
+                class="quick-link"
+                aria-label="This is a link"
+                data-bg-color="primary"
+                tabindex="0"
+            >
+                <figure class="quick-link__figure">
+                    <img class="icon quick-link__image" src="#"/>
+                </figure>
+                <span class="quick-link__text">First link</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+```
+
+## Attributes
+
+### data-vertical-position <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+
+Controls the vertical alignment of the quick links block. Possible values are "top", "middle" and "bottom"
+
+### data-horizontal-position <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+
+Controls the horizontal alignment of the quick links block. Possible values are "left" or "right"
+
+### data-bg-color <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+
+Defines the background design of each quick link. Possible values are "primary", "secondary" and "font"
+
+### iconOnly
+
+Defines whether the quick link displays only the icon, or both the icon and the text.
+
+When iconOnly is true, ttext element is omitted.
+
+## Accessibility notes
+
+Each link element must include an accessible aria-label if the visible text is hidden (icon-only mode).
+
+The quick-links nav element must have an aria-label="Quick links" or a similar descriptive label.
