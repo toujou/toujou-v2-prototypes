@@ -1,6 +1,4 @@
-import { Meta, StoryFn } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta, StoryFn } from '@storybook/web-components-vite';
 // @ts-ignore
 import PNNavDocs from './pn-nav.docs.mdx';
 
@@ -8,7 +6,6 @@ import PNNavDocs from './pn-nav.docs.mdx';
 export default {
     title: 'COMPONENTS/P N Nav',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: PNNavDocs,
         },

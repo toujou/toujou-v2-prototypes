@@ -1,6 +1,4 @@
-import { Meta, StoryFn } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta, StoryFn } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import blogPostDocs from './blog-post.docs.mdx';
@@ -8,7 +6,6 @@ import blogPostDocs from './blog-post.docs.mdx';
 export default {
     title: 'PAGES/BlogPost',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blogPostDocs,
         },

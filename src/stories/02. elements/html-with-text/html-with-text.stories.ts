@@ -1,13 +1,11 @@
-import { Meta, StoryFn } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta, StoryFn } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import htmlWithTextDocs from './html-with-text.docs.mdx';
 
 export default {
     title: 'COMPONENTS/HTML With Text',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: htmlWithTextDocs,
         },

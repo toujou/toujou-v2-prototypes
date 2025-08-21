@@ -1,17 +1,14 @@
 /// <reference lib="dom" />
 /// <reference lib="dom.iterable" />
 
-import { StoryFn, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
 // @ts-ignore
 import snackbarDocs from "./snackbar.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Snackbar',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: snackbarDocs,
         },

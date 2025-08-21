@@ -1,6 +1,5 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import headerDocs from './header.docs.mdx';
 
@@ -8,7 +7,6 @@ import headerDocs from './header.docs.mdx';
 export default {
     title: 'COMPONENTS/Header With Searchbar',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: headerDocs,
         },

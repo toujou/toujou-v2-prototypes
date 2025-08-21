@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import blockquoteTagDocs from './blockquote-tag.docs.mdx';
@@ -8,7 +6,6 @@ import blockquoteTagDocs from './blockquote-tag.docs.mdx';
 export default {
     title: 'COMPONENTS/Blockquote',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: blockquoteTagDocs,
         },

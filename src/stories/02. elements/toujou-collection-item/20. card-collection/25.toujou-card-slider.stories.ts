@@ -1,6 +1,5 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
 import { renderCardCategoryChips } from "../01. helpers/_renderCardCategoriChips";
@@ -8,7 +7,6 @@ import { renderCardCategoryChips } from "../01. helpers/_renderCardCategoriChips
 export default {
     title: 'COMPONENTS/CollectionCards',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: toujouCollectionItemDocs,
         },

@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import iframeResizerDocs from './iframe-resizer.docs.mdx';
@@ -8,7 +6,6 @@ import iframeResizerDocs from './iframe-resizer.docs.mdx';
 export default {
     title: 'COMPONENTS/IframeResizer',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: iframeResizerDocs,
         },

@@ -1,6 +1,5 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import solrSearchDocs from "./solr-search.docs.mdx";
 import { renderCardCategoryChips } from "../toujou-collection-item/01. helpers/_renderCardCategoriChips";
@@ -8,7 +7,6 @@ import { renderCardCategoryChips } from "../toujou-collection-item/01. helpers/_
 export default {
     title: 'COMPONENTS/solr',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
         docs: {
             page: solrSearchDocs,
         }
