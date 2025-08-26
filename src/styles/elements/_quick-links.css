@@ -33,7 +33,6 @@
     }
 
     .quick-links[data-vertical-position="bottom"] {
-
         bottom: var(--quick-links-vertical-position-bottom);
     }
 
