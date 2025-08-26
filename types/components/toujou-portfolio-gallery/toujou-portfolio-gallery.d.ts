@@ -7,7 +7,7 @@ export declare class ToujouPortfolioGallery extends LitElement {
     /**
      * Render the slots for the element's content
      */
-    render(): import("lit").TemplateResult<1>;
+    render(): import("lit-html").TemplateResult<1>;
     /**
      * Open lightbox when the button is clicked
      */
