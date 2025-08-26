@@ -164,9 +164,9 @@
     .header:not(.header--portfolio-gallery) .splide__list,
     .header:not(.header--portfolio-gallery) .splide__slide,
     .header:not(.header--portfolio-gallery) .slider__item {
-        min-height: var(--header-min-height) !important;
-        width: var(--slider-width) !important;
-        height: 100% !important;
+        min-height: var(--header-min-height);
+        width: var(--slider-width);
+        height: 100%;
         aspect-ratio: auto;
     }
 
