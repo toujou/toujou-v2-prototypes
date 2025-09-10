@@ -94,7 +94,7 @@
     "@toujou/toujou-consent": "^4.0.0",
     "@toujou/toujou-contact-box": "^3.5.0",
     "@toujou/toujou-counter": "^3.9.1",
-    "@toujou/toujou-datepicker": "^3.14.1",
+    "@toujou/toujou-datepicker": "^3.15.0",
     "@toujou/toujou-details": "^1.0.3",
     "@toujou/toujou-estimated-reading-time": "^3.6.0",
     "@toujou/toujou-exit-warning": "^3.6.0",
