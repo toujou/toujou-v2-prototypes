@@ -165,7 +165,7 @@
     .header:not(.header--portfolio-gallery) .splide__slide,
     .header:not(.header--portfolio-gallery) .slider__item {
         min-height: var(--header-min-height);
-        width: var(--slider-width);
+        width: var(--slider-width) !important;
         height: 100%;
         aspect-ratio: auto;
     }
@@ -176,7 +176,7 @@
         height: 100%;
     }
 
-    /* hide the clone that gets generated on some occasions, even if the clones mount is set to 0 */
+    /* hide the clones that get generated on some occasions, even if the clones amount is set to 0 */
     .slider[slider-clones-amount="0"] li.splide__slide--clone {
         display: none !important;
     }
