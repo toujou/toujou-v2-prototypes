@@ -149,9 +149,11 @@ const Template: StoryFn<TripDescriptionProps> = (args: TripDescriptionProps) => 
                                     <div class="text-block__content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet. A pellentesque sit amet porttitor eget. Feugiat nisl pretium fusce id velit. Justo donec enim diam vulputate ut pharetra sit. Enim diam vulputate ut pharetra sit amet aliquam. Viverra nam libero justo laoreet sit amet cursus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.</p>
                                         ${renderTripDescriptionIncludedOptions([
+                                            {iconName: 'infinity', text: 'All inclusive'},
                                             {iconName: 'coffee', text: 'Breakfast'},
                                             {iconName: 'food', text: 'Lunch'},
-                                            {iconName: 'drink', text: 'Dinner'}
+                                            {iconName: 'drink', text: 'Dinner'},
+                                            {iconName: 'cookie', text: 'Snack'},
                                         ])}
                                         
                                         ${renderTripDescriptionFiles([

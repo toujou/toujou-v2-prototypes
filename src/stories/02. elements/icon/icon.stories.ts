@@ -112,6 +112,7 @@ const iconNames = [
     'image-circle-filled',
     'image-collection',
     'image-collection-circle-filled',
+    'infinity',
     'info',
     'link',
     'list',

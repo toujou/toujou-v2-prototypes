@@ -393,6 +393,10 @@
         mask-image: var(--icon-image-collection-circle-filled);
     }
 
+    .icon[icon-name="infinity"] {
+        mask-image: var(--icon-infinity);
+    }
+
     .icon[icon-name="info"] {
         mask-image: var(--icon-info);
     }
