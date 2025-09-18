@@ -83,7 +83,7 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-run
                                     </figure>
                                     <div class="text-block__content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet. A pellentesque sit amet porttitor eget. Feugiat nisl pretium fusce id velit. Justo donec enim diam vulputate ut pharetra sit. Enim diam vulputate ut pharetra sit amet aliquam. Viverra nam libero justo laoreet sit amet cursus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.</p>
-                                        ${a([{iconName:"coffee",text:"Breakfast"},{iconName:"food",text:"Lunch"},{iconName:"drink",text:"Dinner"}])}
+                                        ${a([{iconName:"infinity",text:"All inclusive"},{iconName:"coffee",text:"Breakfast"},{iconName:"food",text:"Lunch"},{iconName:"drink",text:"Dinner"},{iconName:"cookie",text:"Snack"}])}
                                         
                                         ${r([{title:"File title",description:"This is a nice file description"},{title:"Our Guide"},{title:"Trip Infos",description:"Detailed information about your trip"}])}
                                     </div>
@@ -215,6 +215,9 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-run
                                     <div class="text-block__content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam vulputate ut pharetra sit amet. A pellentesque sit amet porttitor eget. Feugiat nisl pretium fusce id velit. Justo donec enim diam vulputate ut pharetra sit. Enim diam vulputate ut pharetra sit amet aliquam. Viverra nam libero justo laoreet sit amet cursus. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.</p>
                                         \${renderTripDescriptionIncludedOptions([{
+    iconName: 'infinity',
+    text: 'All inclusive'
+  }, {
     iconName: 'coffee',
     text: 'Breakfast'
   }, {
@@ -223,6 +226,9 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-run
   }, {
     iconName: 'drink',
     text: 'Dinner'
+  }, {
+    iconName: 'cookie',
+    text: 'Snack'
   }])}
                                         
                                         \${renderTripDescriptionFiles([{
@@ -300,4 +306,4 @@ import{T as m}from"./badgeCustomConfig-DUXiHpL4.js";import{j as n}from"./jsx-run
             </toujou-trip-description>
         </main>
     \`;
-}`,...(c=(u=i.parameters)==null?void 0:u.docs)==null?void 0:c.source}}};const j=["TripDescription"];export{i as TripDescription,j as __namedExportsOrder,v as default};
+}`,...(c=(u=i.parameters)==null?void 0:u.docs)==null?void 0:c.source}}};const x=["TripDescription"];export{i as TripDescription,x as __namedExportsOrder,v as default};
