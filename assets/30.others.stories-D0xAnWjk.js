@@ -1,4 +1,4 @@
-import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as u}from"./form.docs-Dn0kwJ_D.js";import"./jsx-runtime-BjG_zV1W.js";import"./index-DpH9cx3q.js";import"./index-DO8khQO4.js";import"./_commonjsHelpers-Cpj98o6Y.js";const f={title:"COMPONENTS/Forms",parameters:{badges:[r.DONE],docs:{page:u}},argTypes:{state:{table:{category:"Inputs settings",defaultValue:{summary:"default"}},name:"Input state",description:"Set the visible input state",options:["default","disabled","success","error"],control:{type:"radio"},required:!0}}},p=t=>{const s=t.state==="disabled"?"disabled":"";return`
+import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as p}from"./form.docs-Dn0kwJ_D.js";import"./jsx-runtime-BjG_zV1W.js";import"./index-DpH9cx3q.js";import"./index-DO8khQO4.js";import"./_commonjsHelpers-Cpj98o6Y.js";const f={title:"COMPONENTS/Forms",parameters:{badges:[r.DONE],docs:{page:p}},argTypes:{state:{table:{category:"Inputs settings",defaultValue:{summary:"default"}},name:"Input state",description:"Set the visible input state",options:["default","disabled","success","error"],control:{type:"radio"},required:!0}}},u=t=>{const o=t.state==="disabled"?"disabled":"";return`
         <style>
             body {
                 background-color: var(--color-bg);
@@ -21,7 +21,7 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as u}from"./form.do
                        accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.oasis.opendocument.text,application/pdf"
                        type="file"
                        name="tx_form_formframework[testform-1000091][fileupload-1]"
-                       ${s}>
+                       ${o}>
                    <span class="pristine-error form__error">The given subject was empty.</span>
             </toujou-input-group>
 
@@ -34,7 +34,7 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as u}from"./form.do
                        accept="image/jpeg,image/png,image/bmp"
                        type="file"
                        name="tx_form_formframework[testform-1000091][imageupload-1]"
-                       ${s}>
+                       ${o}>
                <span class="pristine-error form__error">The given subject was empty.</span>
             </toujou-input-group>
 
@@ -47,12 +47,17 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as u}from"./form.do
                         id="testform-1000091-multiselect-1"
                         multiple="multiple"
                         name="tx_form_formframework[testform-1000091][multiselect-1][]"
-                        ${s}>
+                        ${o}>
                     <option value="">first option</option>
                     <option value="aaaaa">aaaaa</option>
                     <option value="bbbbb">bbbbb</option>
                     <option value="ccccc">ccccc</option>
                     <option value="ddddd">ddddd</option>
+                    <option value="eeeee">eeeee</option>
+                    <option value="ggggg">ggggg</option>
+                    <option value="hhhhh">hhhhh</option>
+                    <option value="kkkkk">kkkkk</option>
+                    <option value="last">last option</option>
                 </select>
                <span class="pristine-error form__error">The given subject was empty.</span>
             </toujou-input-group>
@@ -64,7 +69,7 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as u}from"./form.do
             </toujou-input-group>
 
         </form>
-    `},e=p.bind({});e.args={state:"default"};var i,o,a;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouOtherInputStoryProps) => {
+    `},e=u.bind({});e.args={state:"default"};var i,a,s;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouOtherInputStoryProps) => {
   const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
   return \`
         <style>
@@ -121,6 +126,11 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as u}from"./form.do
                     <option value="bbbbb">bbbbb</option>
                     <option value="ccccc">ccccc</option>
                     <option value="ddddd">ddddd</option>
+                    <option value="eeeee">eeeee</option>
+                    <option value="ggggg">ggggg</option>
+                    <option value="hhhhh">hhhhh</option>
+                    <option value="kkkkk">kkkkk</option>
+                    <option value="last">last option</option>
                 </select>
                <span class="pristine-error form__error">The given subject was empty.</span>
             </toujou-input-group>
@@ -133,4 +143,4 @@ import{T as r}from"./badgeCustomConfig-DUXiHpL4.js";import{M as u}from"./form.do
 
         </form>
     \`;
-}`,...(a=(o=e.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const b=["OtherInputs"];export{e as OtherInputs,b as __namedExportsOrder,f as default};
+}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const b=["OtherInputs"];export{e as OtherInputs,b as __namedExportsOrder,f as default};
