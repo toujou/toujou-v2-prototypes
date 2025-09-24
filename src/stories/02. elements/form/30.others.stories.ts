@@ -89,6 +89,11 @@ const Template: StoryFn<ToujouOtherInputStoryProps> = (args: ToujouOtherInputSto
                     <option value="bbbbb">bbbbb</option>
                     <option value="ccccc">ccccc</option>
                     <option value="ddddd">ddddd</option>
+                    <option value="eeeee">eeeee</option>
+                    <option value="ggggg">ggggg</option>
+                    <option value="hhhhh">hhhhh</option>
+                    <option value="kkkkk">kkkkk</option>
+                    <option value="last">last option</option>
                 </select>
                <span class="pristine-error form__error">The given subject was empty.</span>
 	        </toujou-input-group>

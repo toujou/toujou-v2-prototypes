@@ -44,6 +44,18 @@
     width: calc(100% - var(--spacing-l))
 }
 
+.input-group--multi-select .input-label::before {
+    content: "";
+    display: block;
+    height: calc(100% + var(--input-label-top));
+    width: calc(100% + calc(var(--input-label-left) * 2) - 2px);
+    position: absolute;
+    top: calc(var(--input-label-top) * -1 + 1px);
+    left: calc(var(--input-label-left) * -1 + 2px);
+    background-color: var(--color-bg);
+    z-index: -1;
+}
+
 .input-group--rating-radios .input-label {
     --input-label-position: relative;
     --input-label-top: unset;
