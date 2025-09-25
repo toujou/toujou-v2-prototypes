@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import locationListDocs from './location-list.docs.mdx';
@@ -8,7 +6,6 @@ import locationListDocs from './location-list.docs.mdx';
 export default {
     title: 'COMPONENTS/Tourism/Location List',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
         docs: {
             page: locationListDocs,
         },

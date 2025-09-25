@@ -1,13 +1,11 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import lazyRenderDocs from "./lazy-render.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Lazy Render',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: lazyRenderDocs,
         },

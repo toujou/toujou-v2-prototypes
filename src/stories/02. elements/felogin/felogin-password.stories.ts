@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import feloginDocs from './felogin.docs.mdx';
@@ -8,7 +6,6 @@ import feloginDocs from './felogin.docs.mdx';
 export default {
     title: 'COMPONENTS/felogin',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
         docs: {
             page: feloginDocs,
         },

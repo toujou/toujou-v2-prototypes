@@ -1,13 +1,11 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
+
 // @ts-ignore
 import socialMediaBarDocs from "./social-media-bar.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Social Media Bar',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: socialMediaBarDocs,
         }

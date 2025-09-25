@@ -1,6 +1,4 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import tripFragmentDocs from './trip-fragment.docs.mdx';
@@ -8,7 +6,6 @@ import tripFragmentDocs from './trip-fragment.docs.mdx';
 export default {
     title: 'COMPONENTS/Tourism/Fragment',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
         docs: {
             page: tripFragmentDocs,
         },

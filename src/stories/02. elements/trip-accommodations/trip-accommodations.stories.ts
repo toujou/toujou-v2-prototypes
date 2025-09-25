@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import tripAccommodationsDocs from './trip-accommodations.docs.mdx';
@@ -8,7 +6,6 @@ import tripAccommodationsDocs from './trip-accommodations.docs.mdx';
 export default {
     title: 'COMPONENTS/Tourism/Accommodations',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: tripAccommodationsDocs,
         },

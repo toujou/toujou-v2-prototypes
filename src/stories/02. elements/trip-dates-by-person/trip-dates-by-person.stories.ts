@@ -1,6 +1,4 @@
-import { Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import tripDatesByPersonDocs from './trip-dates-by-person.docs.mdx';
@@ -8,7 +6,6 @@ import tripDatesByPersonDocs from './trip-dates-by-person.docs.mdx';
 export default {
     title: 'COMPONENTS/Tourism/Trip Dates By Person',
     parameters: {
-        badges: [TOUJOU_BADGES.TESTING],
         docs: {
             page: tripDatesByPersonDocs,
         },

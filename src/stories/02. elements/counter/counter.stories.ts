@@ -1,6 +1,4 @@
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
 // @ts-ignore
 import counterDocs from './counter.docs.mdx';
@@ -8,7 +6,6 @@ import counterDocs from './counter.docs.mdx';
 export default {
     title: 'COMPONENTS/Counter',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: counterDocs,
         },

@@ -1,4 +1,4 @@
-import { StoryFn, Meta } from '@storybook/web-components';
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
 import '../../../../node_modules/skippy-links/dist/skippy-links'
 

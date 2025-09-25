@@ -1,16 +1,13 @@
 /// <reference lib="dom" />
 /// <reference lib="dom.iterable" />
 
-import { StoryFn, Meta } from '@storybook/web-components';
-// @ts-ignore
-import { TOUJOU_BADGES } from '../../../../.storybook/configUtils/badgeCustomConfig.js'
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 // @ts-ignore
 import consentDocs from "./consent.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Consent',
     parameters: {
-        badges: [TOUJOU_BADGES.DONE],
         docs: {
             page: consentDocs,
         },
