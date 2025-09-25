@@ -41,6 +41,12 @@
     word-break: var(--checkbox-group-label-word-break);
 }
 
+input.checkbox[required="required"] + label.checkbox-group__label::after {
+    content: var(--form-required-suffix);
+    margin: var(--form-require-suffix-margin);
+}
+
+
 .input-group--disabled .checkbox-group__label {
     --checkbox-group-label-color: var(--color-font-light);
 
