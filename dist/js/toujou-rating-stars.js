@@ -1,4 +1,4 @@
-import{_ as t}from"./tslib.es6-Br7-PHSQ.js";import{s as r,x as s}from"./lit-element-DWV00rgf.js";import{e}from"./custom-element-DPYutfhb.js";import{n as i}from"./property-BjK_DIN0.js";import"./query-assigned-elements-DqqHV3QO.js";let a=class extends r{constructor(){super(...arguments),this.rating=0,this.total=5,this.suffix=""}createRenderRoot(){return this}render(){const t=[];for(let r=0;r<this.total;r++){let e=0;this.rating>=r+1?e=100:this.rating>r&&(e=Math.round(100*(this.rating-r))),t.push(s`
+import{_ as t}from"./tslib.es6-Br7-PHSQ.js";import{s as r,x as s}from"./lit-element-CHDbfp5U.js";import{e}from"./custom-element-DPYutfhb.js";import{n as i}from"./property-BjK_DIN0.js";import"./query-assigned-elements-DqqHV3QO.js";let a=class extends r{constructor(){super(...arguments),this.rating=0,this.total=5,this.suffix=""}createRenderRoot(){return this}render(){const t=[];for(let r=0;r<this.total;r++){let e=0;this.rating>=r+1?e=100:this.rating>r&&(e=Math.round(100*(this.rating-r))),t.push(s`
         <span class="rating-stars__star" aria-hidden="true" star-value="${e}"></span>
       `)}return s`
       ${t}
