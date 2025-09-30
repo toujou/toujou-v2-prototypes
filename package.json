@@ -2,7 +2,7 @@
   "name": "toujou-2-prototypes",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://github.com/toujou/toujou-v2-prototypes",
+  "homepage": "https://toujou.github.io/toujou-v2-prototypes",
   "files": [
     "dist",
     "types"

@@ -24,10 +24,22 @@ import { http, HttpResponse } from 'msw';
 // Hacks
 import './configUtils/mainNavHack';
 
+// Initialize MSW with proper service worker path for GitHub Pages
+// Detect if we're in production (GitHub Pages) or development
+const isProduction = window.location.hostname === 'toujou.github.io';
+const serviceWorkerUrl = isProduction
+    ? '/toujou-v2-prototypes/mockServiceWorker.js'
+    : '/mockServiceWorker.js';
+
+
 // Initialize MSW
 initialize({
-    onUnhandledRequest: 'bypass'
+    onUnhandledRequest: 'bypass',
+    serviceWorker: {
+        url: serviceWorkerUrl,
+    }
 });
+
 
 // Export everything in one default block
 export default {
