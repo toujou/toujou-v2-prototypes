@@ -15,31 +15,25 @@ import './componentImports/mock-components';
 import toujouBranding from "./configUtils/storybookToujouBranding";
 import { customViewports } from "./configUtils/customViewports";
 import { INITIAL_VIEWPORTS } from 'storybook/viewport';
-// import { setThemeStylesheets } from "./configUtils/setThemeStylesheets";
 
 // MSW imports
 import { initialize, mswLoader } from 'msw-storybook-addon';
-import { http, HttpResponse } from 'msw';
 
 // Hacks
 import './configUtils/mainNavHack';
 
-// Initialize MSW with proper service worker path for GitHub Pages
-// Detect if we're in production (GitHub Pages) or development
+// Initialize MSW with a correct service worker path for local / GitHub Pages
 const isProduction = window.location.hostname === 'toujou.github.io';
 const serviceWorkerUrl = isProduction
     ? '/toujou-v2-prototypes/mockServiceWorker.js'
     : '/mockServiceWorker.js';
 
-
-// Initialize MSW
 initialize({
     onUnhandledRequest: 'bypass',
     serviceWorker: {
         url: serviceWorkerUrl,
     }
 });
-
 
 // Export everything in one default block
 export default {
@@ -100,7 +94,7 @@ export default {
             selectedPanel: 'storybook/controls/panel',
         },
     },
-    tags: ["autodocs", 'autodocs'],
+    tags: ['autodocs'],
     loaders: [mswLoader],
     decorators: [
         // This is commented out because it works well on the preview, but not on the deployed storybook
