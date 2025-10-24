@@ -7,28 +7,6 @@ export default {
     },
 } satisfies Meta;
 
-const renderHeader = () => {
-    return `
-        <header class="header" image-height="half">
-            <img class="header__image" src="https://picsum.photos/2000" alt="quote image" />
-
-            <div class="header__content">
-                <div
-                    class="header-content"
-                    accent-color="default"
-                    vertical-position="mid"
-                    horizontal-position="center"
-                    content-size="half"
-                    text-alignment
-                    is-title-only
-                >
-                    <h1 class="header-content__title font--default">This is a headline</h1>
-                </div>
-            </div>
-        </header>
-    `;
-}
-
 const renderBreadcrumb = () => {
     return `
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
@@ -60,10 +38,18 @@ const renderBreadcrumb = () => {
 
 const renderIntroSection = () => {
     return `
-        <section class="chapter" background-color="background" chapter-margin-top="none" style="margin-top: 0 !important;">
-            <h3>Destination One GASTRO page</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </section>
+        <div class="fragment" fragment-type="d1i-gastro" map-aspect-ratio="default">
+            <section class="chapter fragment__section" background-color="background">
+            <toujou-text-block class="text-block" text-block-column-count="1">
+                <toujou-text-block-column class="text-block-column">
+                    <div class="text-block__content">
+                        <h1 class="fragment__intro-title" type-alignment="center">Destination One GASTRO page</h1>
+                        <p class="fragment__intro-description" type-alignment="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </toujou-text-block-column>
+            </toujou-text-block>
+            </section>
+        </div>
     `;
 }
 
@@ -76,27 +62,19 @@ const renderPageFragment = () => {
 
                         <div class="fragment-teaser__block" number-of-columns="1">
                             <div class="fragment-teaser__column">
-                                <toujou-icon class="icon " icon-name="star" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="fragment-teaser__column-content">
-                                    <p class="fragment-teaser__info">GASTRO</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="fragment-teaser__block" number-of-columns="1">
-                            <div class="fragment-teaser__column">
-                                <toujou-icon class="icon " icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
-                                <div class="fragment-teaser__column-content">
-                                    <address class="address">
-                                        <span class="fragment-teaser__address-line">Nice street</span>
-                                        <span class="fragment-teaser__address-line">Home town</span>
-                                        <span class="fragment-teaser__address-line">Nationality</span>
-                                    </address>
+                                <toujou-icon class="icon " icon-name="bookmark" icon-color="font" icon-size="m"></toujou-icon>
+                                <div class="fragment-teaser__column-content" data-is-flex>
+                                    <toujou-chip class="chip" chip-bg-color="font-light" chip-border-radius="round" chip-size="s">
+                                        Category 1
+                                    </toujou-chip>
+                                    <toujou-chip class="chip" chip-bg-color="font-light" chip-border-radius="round" chip-size="s">
+                                        Category 2
+                                    </toujou-chip>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="fragment-teaser__block" number-of-columns="1">
+                        <div class="fragment-teaser__block" number-of-columns="2">
                             <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="telephone" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
@@ -105,9 +83,14 @@ const renderPageFragment = () => {
                                     </address>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
+                                <toujou-icon class="icon" icon-name="fax" icon-color="font" icon-size="m"></toujou-icon>
+                                <div class="fragment-teaser__column-content">
+                                    <address class="address">
+                                        <a href="tel:987654321" class="fragment-teaser__link">987654321</a>
+                                    </address>
+                                </div>
+                            </div>
                             <div class="fragment-teaser__column">
                                 <toujou-icon class="icon" icon-name="email" icon-color="font" icon-size="m"></toujou-icon>
                                 <div class="fragment-teaser__column-content">
@@ -118,20 +101,117 @@ const renderPageFragment = () => {
                             </div>
                         </div>
 
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
+                                <toujou-icon class="icon " icon-name="link" icon-color="font" icon-size="m"></toujou-icon>
+                                <div class="fragment-teaser__column-content" data-is-flex>
+                                    <a href="#facebook" class="fragment-teaser__link" aria-label="Follow us on facebook">
+                                        <toujou-icon class="icon " icon-name="sm-facebook-circle" icon-color="primary" icon-size="m"></toujou-icon>
+                                    </a>
+                                    <a href="#instagram" class="fragment-teaser__link" aria-label="Follow us on instagram">
+                                        <toujou-icon class="icon " icon-name="sm-instagram-circle" icon-color="primary" icon-size="m"></toujou-icon>
+                                    </a>
+                                    <a href="#youtube" class="fragment-teaser__link" aria-label="Follow us on youtube">
+                                        <toujou-icon class="icon " icon-name="sm-youtube-circle" icon-color="primary" icon-size="m"></toujou-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="fragment-teaser__block" number-of-columns="2">
+                            <div class="fragment-teaser__column">
+                                <toujou-icon class="icon " icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
+                                <div class="fragment-teaser__column-content">
+                                    <address class="address">
+                                        <span class="fragment-teaser__address-line">Nice street</span>
+                                        <span class="fragment-teaser__address-line">Home town</span>
+                                        <span class="fragment-teaser__address-line">Nationality</span>
+                                    </address>
+                                </div>
+                            </div>
+                            
+                            <div class="fragment-teaser__column">
+                                <toujou-icon class="icon" icon-name="account" icon-color="font" icon-size="m"></toujou-icon>
+                                <div class="fragment-teaser__column-content">
+                                    <address class="address">
+                                        <span class="fragment-teaser__address-line">Ansprechpartner Name</span>
+                                        <span class="fragment-teaser__address-line">Home town</span>
+                                        <span class="fragment-teaser__address-line">Nationality</span>
+                                        <a href="tel:123456789" class="fragment-teaser__address-link">123456789</a>
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
+                                <toujou-icon class="icon " icon-name="clock-circle-filled" icon-color="font" icon-size="m"></toujou-icon>
+         
+                                <div class="fragment-teaser__column-content">
+                                    <toujou-opening-hours class="opening-hours">
+                                        <time class="opening-hours__row" datetime="T09:00P11H">
+                                            <span class="opening-hours__day">Montag</span>
+                                            <span class="opening-hours__time">08:00 - 18:00</span>
+                                        </time>
+                                    
+                                        <time class="opening-hours__row" datetime="T09:00P11H">
+                                            <span class="opening-hours__day">Dienstag</span>
+                                            <span class="opening-hours__time">08:00 - 18:00</span>
+                                        </time>
+                                    
+                                        <time class="opening-hours__row" datetime="T09:00P11H">
+                                            <span class="opening-hours__day">Mittwoch</span>
+                                            <span class="opening-hours__time">08:00 - 18:00</span>
+                                        </time>
+                                    
+                                        <time class="opening-hours__row" datetime="T09:00P11H">
+                                            <span class="opening-hours__day">Donnerstag</span>
+                                            <span class="opening-hours__time">08:00 - 18:00</span>
+                                        </time>
+                                    
+                                        <time class="opening-hours__row" datetime="T09:00P11H">
+                                            <span class="opening-hours__day">Freitag</span>
+                                            <span class="opening-hours__time">08:00 - 18:00</span>
+                                        </time>
+                                    
+                                        <time class="opening-hours__row" datetime="T09:00P11H">
+                                            <span class="opening-hours__day">Samstag</span>
+                                            <span class="opening-hours__time">08:00 - 18:00</span>
+                                        </time>
+                                    </toujou-opening-hours>
+                        
+                                    <p class="fragment-teaser__opening-hours-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="fragment-teaser__block" number-of-columns="1">
+                            <div class="fragment-teaser__column">
+                                <toujou-icon class="icon " icon-name="map" icon-color="font" icon-size="m"></toujou-icon>
+                                <div class="fragment-teaser__column-content">
+                                    <span class="fragment-teaser__info">Anreise planen</span>
+                                    <span class="fragment-teaser__info">
+                                        <a href="#" class="fragment-teaser__link">Google Maps</a>
+                                    </span>
+                                    <span class="fragment-teaser__info">
+                                        <a href="#" class="fragment-teaser__link">Open Street Map</a>
+                                    </span>
+                                    <span class="fragment-teaser__info">
+                                        <a href="#" class="fragment-teaser__link">Dutsche Bahm</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
             
 
                     <figure class="fragment-teaser__figure">
-                        <toujou-map
-                            class="map"
-                            center="[11.0762549, 49.4579779]"
-                            zoom="14"
-                            map-style="mapbox://styles/mapbox/light-v10"
-                            interactive=""
-                            access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
+                        <img
+                            class="fragment-teaser__image"
+                            src="https://picsum.photos/1280"
+                            alt=""
+                            loading="lazy"
                         >
-                            <toujou-map-marker coordinates="[11.0762549, 49.4579779]" color="var(--color-primary)"></toujou-map-marker>
-                        </toujou-map>
                     </figure>    
                 </toujou-fragment-teaser>
             </section>
@@ -221,7 +301,6 @@ const renderMain = () => {
 
 const Template = () => {
     return `
-       ${renderHeader()}
        ${renderMain()}
     `;
 };
