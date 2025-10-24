@@ -65,7 +65,7 @@ export default {
             expanded: true,
         },
         viewport: {
-            viewports: {
+            options: {
                 ...customViewports,
                 ...INITIAL_VIEWPORTS,
             }
