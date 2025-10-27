@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as r}from"./index-DiBHS0bC.js";function o(n){const e={h1:"h1",...r(),...n.components};return t.jsx(e.h1,{id:"indexed-search",children:"<indexed-search>"})}function i(n={}){const{wrapper:e}={...r(),...n.components};return e?t.jsx(e,{...n,children:t.jsx(o,{...n})}):o(n)}export{i as M};
