@@ -37,7 +37,7 @@ export default {
     tags: ['autodocs']
 } satisfies Meta;
 
-interface RatingStarsStoryProps {
+export interface RatingStarsStoryProps {
     rating: number,
     suffix: string,
 }

@@ -10,7 +10,7 @@ export default {
     argTypes: {
         mapAspectRatio: {
             table: {
-                category: "D1I POI Page Settings",
+                category: "D1I Hotel Page Settings",
                 defaultValue: { summary: 'default' },
             },
             name: 'Map Aspect Ratio',
@@ -22,7 +22,7 @@ export default {
     }
 } satisfies Meta;
 
-interface DestinationOnePoiProps {
+interface DestinationOneHotelProps {
     mapAspectRatio: string;
 }
 
@@ -206,6 +206,9 @@ const renderMapSection = () => {
 
 const renderPageContent = () => {
     return `
+        <h2>Section Overview</h2>
+        <p>seats, roomsExtraInfos</p>
+        
         <h2>Section Features</h2>
         <p>features</p>
         
@@ -215,13 +218,19 @@ const renderPageContent = () => {
         <h2>Section Prices</h2>
         <p>prices, priceInfo, acceptedPaymentTypes</p>
         
-        <h2>Section Getting There</h2>
-        <p>bundledDirections, directionsLink, parkingFee</p>
+        <h2>Section Seasons</h2>
+        <p>seasons</p>
+        
+        <h2>Section Distances</h2>
+        <p>distances</p>
         
         <h2>Section Media</h2>
         <p>media</p>
         
-        <h2>Section Infos</h2>
+        <h2>Section Certificates</h2>
+        <p>certificates</p>
+        
+        <h2>Section Additional Info</h2>
         <p>additionalInfos</p>
         
         <h2>Section Rating Platforms</h2>
@@ -229,12 +238,12 @@ const renderPageContent = () => {
     `;
 }
 
-const renderMain = (args: DestinationOnePoiProps) => {
+const renderMain = (args: DestinationOneHotelProps) => {
     return `
         <main id="main" skippy-links-label="Main content">
             ${renderBreadcrumbExampleBlock()}
-            <div class="fragment" fragment-type="d1i-poi" map-aspect-ratio="${args.mapAspectRatio}">
-                ${renderDi1PageIntroSection('POI')}
+            <div class="fragment" fragment-type="d1i-hotel" map-aspect-ratio="${args.mapAspectRatio}">
+                ${renderDi1PageIntroSection('HOTEL')}
                 ${renderPageFragment()}
                 ${renderMapSection()}
             </div>
@@ -243,14 +252,14 @@ const renderMain = (args: DestinationOnePoiProps) => {
     `;
 }
 
-const Template: StoryFn<DestinationOnePoiProps> = (args: DestinationOnePoiProps)=> {
+const Template: StoryFn<DestinationOneHotelProps> = (args: DestinationOneHotelProps)=> {
     return `
        ${renderMain(args)}
     `;
 };
 
-export const DestinationOnePoi = Template.bind({});
+export const DestinationOneHotel = Template.bind({});
 
-DestinationOnePoi.args = {
+DestinationOneHotel.args = {
     mapAspectRatio: 'default',
 }
