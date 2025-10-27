@@ -216,6 +216,7 @@ const renderMapSection = () => {
                     zoom="14"
                     map-style="mapbox://styles/mapbox/light-v10"
                     interactive
+                    fullscreen-control
                     access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
                 >
                     <toujou-map-marker coordinates="[11.0762549, 49.4579779]" color="#0079A8"></toujou-map-marker>
@@ -238,27 +239,27 @@ const renderPageContent = () => {
         <h2>Section Features</h2>
         <p>features</p>
         
-        <h2>Section Tour Infos</h2>
-        <p>tourInfos</p>
-        
         <h2>Section Getting There</h2>
         <p>bundledDirections, directionsLink, parkingFee</p>
         
         <h2>Section Seasons</h2>
         <p>seasons</p>
         
+        <h2>Section Additional Infos</h2>
+        <p>additionalInfos</p>
+        
+        <h2>Section Tour Infos</h2>
+        <p>tourInfos</p>
+        
         <h2>Section Path Description</h2>
         <h2>Section Path Signs</h2>
         <h2>Section Start / End</h2>
-        <h2>Section Author Tip</h2>
-        <h2>Section Literature</h2>
         <h2>Section Maps Infos</h2>
+        <h2>Section Literature</h2>
+        <h2>Section Author Tip</h2>
         
-        <h2>Section FeatureMedia</h2>
+        <h2>Section Media</h2>
         <p>media</p>
-        
-        <h2>Section Additional Infos</h2>
-        <p>additionalInfos</p>
         
         <h2>Section Rating Platforms</h2>
         <p>ratingPlatforms</p>
@@ -288,5 +289,5 @@ const Template: StoryFn<DestinationOneTourProps> = (args: DestinationOneTourProp
 export const DestinationOneTour = Template.bind({});
 
 DestinationOneTour.args = {
-    mapAspectRatio: 'default',
+    mapAspectRatio: '3-1',
 }

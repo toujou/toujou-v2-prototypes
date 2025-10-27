@@ -76,7 +76,13 @@
         border-radius: var(--fragment-map-image-border-radius);
     }
 
-    @container (min-width: 840px) {
+    @container (width < 840px) {
+        .fragment[map-aspect-ratio="3-1"] {
+            --fragment-map-aspect-ratio: var(--aspect-ratio-16-9);
+        }
+    }
+
+    @container (width >= 840px) {
         .fragment {
             --fragment-intro-logo-width: 6rem;
         }

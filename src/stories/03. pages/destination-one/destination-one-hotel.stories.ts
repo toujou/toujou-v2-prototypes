@@ -197,6 +197,7 @@ const renderMapSection = () => {
                     zoom="14"
                     map-style="mapbox://styles/mapbox/light-v10"
                     interactive
+                    fullscreen-control
                     access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg">
                     <toujou-map-marker coordinates="[11.0762549, 49.4579779]" color="#0079A8"></toujou-map-marker>
                 </toujou-map>
@@ -212,11 +213,8 @@ const renderPageContent = () => {
         <h2>Section Features</h2>
         <p>features</p>
         
-        <h2>Section Accessibility</h2>
-        <p>accessibility</p>
-        
-        <h2>Section Prices</h2>
-        <p>prices, priceInfo, acceptedPaymentTypes</p>
+        <h2>Section Getting there</h2>
+        <p>bundledDirections, directionsLink, parkingFee</p>
         
         <h2>Section Seasons</h2>
         <p>seasons</p>
@@ -224,14 +222,20 @@ const renderPageContent = () => {
         <h2>Section Distances</h2>
         <p>distances</p>
         
+        <h2>Section Accessibility</h2>
+        <p>accessibility</p>
+        
+        <h2>Section Prices</h2>
+        <p>prices, priceInfo, acceptedPaymentTypes</p>
+        
+        <h2>Section Additional Info</h2>
+        <p>additionalInfos</p>
+        
         <h2>Section Media</h2>
         <p>media</p>
         
         <h2>Section Certificates</h2>
         <p>certificates</p>
-        
-        <h2>Section Additional Info</h2>
-        <p>additionalInfos</p>
         
         <h2>Section Rating Platforms</h2>
         <p>ratingPlatforms</p>
@@ -261,5 +265,5 @@ const Template: StoryFn<DestinationOneHotelProps> = (args: DestinationOneHotelPr
 export const DestinationOneHotel = Template.bind({});
 
 DestinationOneHotel.args = {
-    mapAspectRatio: 'default',
+    mapAspectRatio: '3-1',
 }

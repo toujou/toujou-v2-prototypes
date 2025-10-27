@@ -197,6 +197,7 @@ const renderMapSection = () => {
                     zoom="14"
                     map-style="mapbox://styles/mapbox/light-v10"
                     interactive
+                    fullscreen-control
                     access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg">
                     <toujou-map-marker coordinates="[11.0762549, 49.4579779]" color="#0079A8"></toujou-map-marker>
                 </toujou-map>
@@ -206,20 +207,20 @@ const renderMapSection = () => {
 
 const renderPageContent = () => {
     return `
-        <h2>Section Prices</h2>
-        <p>prices, priceInfo, acceptedPaymentTypes</p>
-        
         <h2>Section Directions</h2>
         <p>bundledDirections, directionsLink, parkingFee</p>
+        
+        <h2>Section Services</h2>
+        <p>packageFeatures, services</p>
+        
+        <h2>Section Prices</h2>
+        <p>prices, priceInfo, acceptedPaymentTypes</p>
         
         <h2>Section Itinerary</h2>
         <p>itinerary</p>
         
         <h2>Section Media</h2>
         <p>media</p>
-        
-        <h2>Section Services</h2>
-        <p>packageFeatures, services</p>
         
         <h2>Section Certificates</h2>
         <p>certificates</p>
@@ -249,5 +250,5 @@ const Template: StoryFn<DestinationOnePackageProps> = (args: DestinationOnePacka
 export const DestinationOnePackage = Template.bind({});
 
 DestinationOnePackage.args = {
-    mapAspectRatio: 'default',
+    mapAspectRatio: '3-1',
 }
