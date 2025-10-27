@@ -1,7 +1,6 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 import { renderDi1PageIntroSection } from "./blocks/destinationOneIntroSection";
 import { renderBreadcrumbExampleBlock } from "../../02. elements/breadrumb/example-block/breadcrumb-example";
-import { renderRatingStarsExampleBlock } from "../../02. elements/rating-stars/example-block/rating-stars-example";
 
 export default {
     title: 'PAGES/DestinationOne',
@@ -11,7 +10,7 @@ export default {
     argTypes: {
         mapAspectRatio: {
             table: {
-                category: "D1I Tour Page Settings",
+                category: "D1I Package Page Settings",
                 defaultValue: { summary: 'default' },
             },
             name: 'Map Aspect Ratio',
@@ -23,7 +22,7 @@ export default {
     }
 } satisfies Meta;
 
-interface DestinationOneTourProps {
+interface DestinationOnePackageProps {
     mapAspectRatio: string;
 }
 
@@ -172,27 +171,9 @@ const renderPageFragment = () => {
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="fragment-teaser__block" number-of-columns="2">
-                        <div class="fragment-teaser__column">
-                            <toujou-icon class="icon " icon-name="star" icon-color="font" icon-size="m"></toujou-icon>
-                            <div class="fragment-teaser__column-content">
-                                <span class="fragment-teaser__info">
-                                    Panorama: ${renderRatingStarsExampleBlock(4.2)} 
-                                </span>
-                            </div>
-                        </div>
-                        
-                        <div class="fragment-teaser__column">
-                            <div class="fragment-teaser__column-content">
-                                <span class="fragment-teaser__info">
-                                    Kondition: ${renderRatingStarsExampleBlock(4.7)} 
-                                </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                
+        
+
                 <figure class="fragment-teaser__figure">
                     <img
                         class="fragment-teaser__image"
@@ -208,7 +189,7 @@ const renderPageFragment = () => {
 
 const renderMapSection = () => {
     return `
-        <toujou-grid class="grid fragment__map-section" number-of-columns="2" grid-type="medium" column-layout="default">
+        <toujou-grid class="grid fragment__map-section" number-of-columns="1" grid-type="medium" column-layout="default">
             <toujou-grid-column class="grid-column">
                 <toujou-map
                     class="fragment__map"
@@ -216,61 +197,41 @@ const renderMapSection = () => {
                     zoom="14"
                     map-style="mapbox://styles/mapbox/light-v10"
                     interactive
-                    access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg"
-                >
+                    access-token="pk.eyJ1IjoiZGZhdSIsImEiOiJjbDdyanc5aHUwZzA2M29wMmM4cjJud2IxIn0.EtfjXD2re5QUhatJJoKPYg">
                     <toujou-map-marker coordinates="[11.0762549, 49.4579779]" color="#0079A8"></toujou-map-marker>
                 </toujou-map>
-            </toujou-grid-column>
-            
-            <toujou-grid-column>
-                <img
-                    class="fragment-teaser__image"
-                    src="https://picsum.photos/1280"
-                    alt=""
-                    loading="lazy"
-                >
             </toujou-grid-column>
         </toujou-grid>`
 }
 
 const renderPageContent = () => {
     return `
-        <h2>Section Features</h2>
-        <p>features</p>
+        <h2>Section Prices</h2>
+        <p>prices, priceInfo, acceptedPaymentTypes</p>
         
-        <h2>Section Tour Infos</h2>
-        <p>tourInfos</p>
-        
-        <h2>Section Getting There</h2>
+        <h2>Section Directions</h2>
         <p>bundledDirections, directionsLink, parkingFee</p>
         
-        <h2>Section Seasons</h2>
-        <p>seasons</p>
+        <h2>Section Itinerary</h2>
+        <p>itinerary</p>
         
-        <h2>Section Path Description</h2>
-        <h2>Section Path Signs</h2>
-        <h2>Section Start / End</h2>
-        <h2>Section Author Tip</h2>
-        <h2>Section Literature</h2>
-        <h2>Section Maps Infos</h2>
-        
-        <h2>Section FeatureMedia</h2>
+        <h2>Section Media</h2>
         <p>media</p>
         
-        <h2>Section Additional Infos</h2>
-        <p>additionalInfos</p>
+        <h2>Section Services</h2>
+        <p>packageFeatures, services</p>
         
-        <h2>Section Rating Platforms</h2>
-        <p>ratingPlatforms</p>
+        <h2>Section Certificates</h2>
+        <p>certificates</p>
     `;
 }
 
-const renderMain = (args: DestinationOneTourProps) => {
+const renderMain = (args: DestinationOnePackageProps) => {
     return `
         <main id="main" skippy-links-label="Main content">
             ${renderBreadcrumbExampleBlock()}
-            <div class="fragment" fragment-type="d1i-tour" map-aspect-ratio="${args.mapAspectRatio}">
-                ${renderDi1PageIntroSection('TOUR')}
+            <div class="fragment" fragment-type="d1i-package" map-aspect-ratio="${args.mapAspectRatio}">
+                ${renderDi1PageIntroSection('PACKAGE')}
                 ${renderPageFragment()}
                 ${renderMapSection()}
             </div>
@@ -279,14 +240,14 @@ const renderMain = (args: DestinationOneTourProps) => {
     `;
 }
 
-const Template: StoryFn<DestinationOneTourProps> = (args: DestinationOneTourProps)=> {
+const Template: StoryFn<DestinationOnePackageProps> = (args: DestinationOnePackageProps)=> {
     return `
        ${renderMain(args)}
     `;
 };
 
-export const DestinationOneTour = Template.bind({});
+export const DestinationOnePackage = Template.bind({});
 
-DestinationOneTour.args = {
+DestinationOnePackage.args = {
     mapAspectRatio: 'default',
 }
