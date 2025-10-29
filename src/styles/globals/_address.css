@@ -6,6 +6,10 @@
     --address-font-style: normal;
 
     --address-item-margin: 0;
+    --address-item-display: flex;
+    --address-item-align-items: flex-start;
+    --address-item-justify-content: flex-start;
+    --address-item-gap: var(--spacing-normal);
 
     --address-link-display: flex;
     --address-link-align-items: center;
@@ -20,6 +24,10 @@
 }
 
 .address__item {
+    display: var(--address-item-display);
+    align-items: var(--address-item-align-items);
+    justify-content: var(--address-item-justify-content);
+    gap: var(--address-item-gap);
     margin: var(--address-item-margin);
 }
 

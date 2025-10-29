@@ -424,15 +424,15 @@ a:not(.button).collection-item__button:is(:hover, :focus, :focus-visible) {
     margin: var(--collection-item-address-margin);
 }
 
-.collection-item[element-design="primary"] .address__link,
-.collection-item[element-design="secondary"] .address__link,
-.collection-item[element-design="inverted"] .address__link {
+.collection-item[element-design="primary"] :is(.address__item, .address__link),
+.collection-item[element-design="secondary"] :is(.address__item, .address__link),
+.collection-item[element-design="inverted"] :is(.address__item, .address__link) {
     color: var(--color-bg);
 }
 
-.collection-item[element-design="primary"] .address__link .icon,
-.collection-item[element-design="secondary"] .address__link .icon,
-.collection-item[element-design="inverted"] .address__link .icon {
+.collection-item[element-design="primary"] :is(.address__item, .address__link) .icon,
+.collection-item[element-design="secondary"] :is(.address__item, .address__link) .icon,
+.collection-item[element-design="inverted"] :is(.address__item, .address__link) .icon {
     background-color: var(--color-bg);
 }
 
