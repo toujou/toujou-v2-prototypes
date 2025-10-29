@@ -36,10 +36,10 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
         <main>
             <ul class="card-collection">
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
-                                <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                                <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
 
                             <div class="collection-item__categories">
@@ -56,117 +56,121 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
                                 <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
                                 <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                             </toujou-media-info>
+
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
-                            <h3 class="collection-item__title">Gastro A</h3>
+                            <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
+                            </p>
+
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025</span>
+                            </time>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
                                 </span>
                             </p>
-
-                            <address class="address collection-item__address">
-                                <p class="address__item">
-                                    <toujou-icon class="icon" icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
-                                    Comödien-Platz 1, 90762 Fürth
-                                </p>
-                            </address>
-                            
                             <a href="#" class="collection-item__button">
                                 <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                                Mehr erfahren
+                                zur Beschreibung
                             </a>
                         </div>
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
-                                <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                                <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+                            <h3 class="collection-item__title">Headline</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
+                            </p>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025, 10:30 - 18:30</span>
+                            </time>
+                            <p class="collection-item__abstract">
+                                <span class="collection-item__abstract-text">
+                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz zu achten ist: Das erläutern wir in diesem Blogartikel.
+                                </span>
+                            </p>
+                            <a href="#" class="collection-item__button">
+                                <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
+                                zur Beschreibung
+                            </a>
+                        </div>
+                    </toujou-collection-item>
+                </li>
+                <li class="card-collection__item">
+                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                        <header class="collection-item__top">
+                            <figure class="collection-item__figure">
+                                <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
+                            </figure>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
+                        </header>
+                        <div class="collection-item__bottom">
+                            <h3 class="collection-item__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
+                            </p>
 
-                            <h3 class="collection-item__title">Gastro B</h3>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025 - 30.12.2025</span>
+                            </time>
 
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                                 </span>
                             </p>
-
-                            <address class="address collection-item__address">
-                                <p class="address__item">
-                                    <toujou-icon class="icon" icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
-                                    Comödien-Platz 1, 90762 Fürth
-                                </p>
-                            </address>
-                            
                             <a href="#" class="collection-item__button">
                                 <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                                Mehr erfahren
+                                zur Beschreibung
                             </a>
                         </div>
                     </toujou-collection-item>
                 </li>
                 <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
+                    <toujou-collection-item class="collection-item" item-type="event" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
                         <header class="collection-item__top">
                             <figure class="collection-item__figure">
-                                <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
+                                <img src="https://picsum.photos/640" alt="nice image" class="collection-item__image">
                             </figure>
+                            <toujou-fav-item class="fav-item"></toujou-fav-item>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Gastro C</h3>
-
-                            <p class="collection-item__abstract">
-                                <span class="collection-item__abstract-text">
-                                    Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen, worauf aus DSGVO-Sicht und für den Spamschutz.
-                                </span>
+                            <h3 class="collection-item__title">Nice headline</h3>
+                            <p class="collection-item__subtitles">
+                                <span class="collection-item__subtitle">FourEver Tournee</span>
                             </p>
 
-                            <address class="address collection-item__address">
-                                <p class="address__item">
-                                    <toujou-icon class="icon" icon-name="location" icon-color="font" icon-size="m"></toujou-icon>
-                                    Comödien-Platz 1
-                                </p>
-                            </address>
+                            <time class="collection-item__date" datetime="2025-11-14" inline single-day>
+                                <toujou-icon class="icon" icon-color="font" icon-name="calendar-lines" icon-size="ms" aria-hidden="true"></toujou-icon>
+                                <span class="collection-item__date-text">24.12.2025, 08:30 - 30.12.2025, 22:00</span>
+                            </time>
                             
-                            <a href="#" class="collection-item__button">
-                                <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                                Mehr erfahren
-                            </a>
-                        </div>
-                    </toujou-collection-item>
-                </li>
-                <li class="card-collection__item">
-                    <toujou-collection-item class="collection-item" item-type="organisation" element-design="${args.elementDesign}" item-orientation="vertical" role="article">
-                        <header class="collection-item__top">
-                            <figure class="collection-item__figure">
-                                <img src="https://picsum.photos/id/64/200/300" alt="nice image" class="collection-item__image">
-                            </figure>
-                        </header>
-                        <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
-
-                            <h3 class="collection-item__title">Gastro D</h3>
-
                             <p class="collection-item__abstract">
                                 <span class="collection-item__abstract-text">
                                     Wie Sie ein Kontaktformular (und andere Onlineformulare) erstellen.
                                 </span>
                             </p>
-
                             <a href="#" class="collection-item__button">
                                 <toujou-icon class="icon" icon-name="arrow-right" icon-size="ms"></toujou-icon>
-                                Mehr erfahren
+                                zur Beschreibung
                             </a>
                         </div>
                     </toujou-collection-item>
@@ -176,8 +180,8 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
     `
 };
 
-export const CardDestinationOneGastro = Template.bind({});
+export const CardMvkEvent = Template.bind({});
 
-CardDestinationOneGastro.args = {
+CardMvkEvent.args = {
     elementDesign: 'default',
 }

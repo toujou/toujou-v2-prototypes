@@ -228,8 +228,8 @@ const Template: StoryFn<ToujouCardStoryProps> = (args: ToujouCardStoryProps) => 
     `
 };
 
-export const DestinationOneEvent = Template.bind({});
+export const CardDestinationOneEvent = Template.bind({});
 
-DestinationOneEvent.args = {
+CardDestinationOneEvent.args = {
     elementDesign: 'default',
 }
