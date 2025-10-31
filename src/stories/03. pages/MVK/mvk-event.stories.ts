@@ -185,37 +185,127 @@ const renderMapSection = () => {
         </toujou-grid>`
 }
 
+const renderContentEventDatesSection = () => {
+    return `
+        <section class="chapter mvk-event-dates" id="mvkEventDatesSection" background-color="background">
+            <h3>Termine</h3>
+
+            <div class="mvk-event-dates__table">
+                <div class="mvk-event-dates__table-row">
+                    <p class="mvk-event-dates__dates">
+                        <span class="mvk-event-dates__start-day">21.11.2025 (Freitag)</span>
+                        <span class="mvk-event-dates__separator"> bis </span>
+                        <span class="mvk-event-dates__end-day">22.11.2025 (Samstag)</span>
+                    </p>
+
+                    <p class="mvk-event-dates__times">
+                        <span class="mvk-event-dates__start-day">21:00</span>
+                        <span class="mvk-event-dates__separator"> - </span>
+                        <span class="mvk-event-dates__end-day">02:00</span>
+                    </p>
+                </div>
+
+                <div class="mvk-event-dates__table-row">
+                    <p class="mvk-event-dates__dates">
+                        <span class="mvk-event-dates__start-day">20.12.2025 (Samstag)</span>
+                        <span class="mvk-event-dates__separator"> bis </span>
+                        <span class="mvk-event-dates__end-day">21.12.2025 (Sonntag)</span>
+                    </p>
+
+                    <p class="mvk-event-dates__times">
+                        <span class="mvk-event-dates__start-day">21:30</span>
+                        <span class="mvk-event-dates__separator"> - </span>
+                        <span class="mvk-event-dates__end-day">02:00</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    `
+}
+
+const renderContentAgeRecommendationSection = () => {
+    return `
+        <section id="mvkAgeRecommendationSection" class="chapter mvk-age-recommendation" background-color="background">
+            <h3>Altersempfehlung</h3>
+            <p class="mvk-age-recommendation__message">Keine Altersempfehlung vorhanden</p>
+        </section>
+    `
+}
+
+const renderContentGettingThereSection = () => {
+    return `
+        <section id="mvkGettingThereSection" class="chapter mvk-getting-there" background-color="background" chapter-margin-top="none">
+            <h3>Anreise</h3>
+            <p class="mvk-getting-there__direction">
+                <span class="mvk-getting-there__direction-title" type-weight="bold">Nächster Bahnhof</span>:
+                <span class="mvk-getting-there__direction-value">U-Bahn-Haltestelle Stadtgrenze oder Jakobinenstraße</span>
+            </p>
+        </section>
+    `
+}
+
+const renderContentA11ySection = () => {
+    return `
+        <section id="mvkAccessibilitySection" class="chapter mvk-accessibility" background-color="background">
+            <h3>Barrierefreiheit</h3>
+            <p>Mit einer Rampe oder ebenerdig zugänglich. Eine barrierefreie Toilette, jedoch nur über eine schmalere Tür zugänglich. Hilfe erforderlich.</p>
+        </section>
+    `
+}
+
+const renderContentPricesSection = () => {
+    return `
+        <section id="mvkPricesSection" class="chapter mvk-prices" background-color="background">
+            <h3>Preise</h3>
+
+            <h4 class="mvk-prices__label" type-size="font--omega">Kategorie 1</h4>
+            <p class="mvk-prices__name">
+                <span class="mvk-prices__info" type-weight="bold">Führung</span>:
+                <span class="mvk-prices__price">0,00 €</span>
+            </p>
+
+            <h4 class="mvk-prices__label" type-size="font--omega">Kategorie 1</h4>
+            <p class="mvk-prices__name">
+                <span class="mvk-prices__info" type-weight="bold">Führung</span> (Schüler, Studenten, Bundesfreiwilligendienstleistende, Azubis, Schwerbehinderte (bei Schwerbehinderten mit dem Eintrag "B" kann die notwendige Begleitperson kostenlos dabei sein), Besitzer der Ehrenamtskarte, der ZAC-Karte (gilt für zwei Personen) und Kinder ab 13 Jahre in Begleitung Erwachsener. Inhaber eines "Fürth-Passes" erhalten 50 % Ermäßigung. Tickets sind ausschließlich in der Tourist-Information erhältlich.):
+                <span class="mvk-prices__price">0,00 €</span>
+            </p>
+        </section>
+    `
+}
+
+const renderContentMediaSection = () => {
+    return `
+        <section class="chapter mvk-media" id="mvkMediaSection" background-color="background">
+
+            <h3>Bilder</h3>
+
+            <toujou-media-grid class="media-grid" media-grid-column-number="1">
+                <toujou-single-media class="single-media">
+                    <img src="https://picsum.photos/1600/900" class="single-media__image" alt="Bild zur Veranstaltung" loading="lazy">
+
+                    <toujou-media-info class="media-info">
+                        <button slot="open-button" class="media-info__toggle" aria-label="Medien Beschriftung / Copyright umschalten">
+                            <toujou-icon class="icon " icon-name="info" icon-color="background" icon-size="ms"></toujou-icon>
+                        </button>
+                        <button slot="close-button" class="media-info__toggle" aria-label="Medien Beschriftung / Copyright umschalten">
+                            <toujou-icon class="icon " icon-name="close" icon-color="background" icon-size="ms"></toujou-icon>
+                        </button>
+                        <figpaction slot="figcaption" class="media-info__figcaption">Bild zur Veranstaltung</figpaction>
+                    </toujou-media-info>
+                </toujou-single-media>
+            </toujou-media-grid>
+    </section>
+    `
+}
+
 const renderPageContent = () => {
     return `
-        <h2>Section Event Dates</h2>
-        <p>timeIntervals</p>
-        
-        <h2>Section Overview</h2>
-        <p>seats, roomsExtraInfos</p>
-        
-        <h2>Section Features</h2>
-        <p>features</p>
-        
-        <h2>Section Getting There</h2>
-        <p>bundledDirections, directionsLink, parkingFee</p>
-        
-        <h2>Section Prices</h2>
-        <p>prices, priceInfo, acceptedPaymentTypes</p>
-        
-        <h2>Section Additional Infos</h2>
-        <p>additionalInfos</p>
-        
-        <h2>Section media</h2>
-        <p>media</p>
-        
-        <h2>Section Rating Platforms</h2>
-        <p>ratingPlatforms</p>
-        
-        <h2>Section Booking Platforms</h2>
-        <p>bookingPlatforms</p>
-        
-        <h2>Section Tickets Sale</h2>
-        <p>ticketsSaleLink</p>
+        ${renderContentEventDatesSection()}
+        ${renderContentAgeRecommendationSection()}
+        ${renderContentGettingThereSection()}
+        ${renderContentA11ySection()}
+        ${renderContentPricesSection()}
+        ${renderContentMediaSection()}
     `;
 }
 
