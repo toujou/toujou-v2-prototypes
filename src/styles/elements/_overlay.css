@@ -24,6 +24,7 @@
         --overlay-infos-border-radius: var(--border-radius-default);
         --overlay-infos-bg-color: var(--color-bg);
         --overlay-infos-max-width: min(calc(100% - var(--spacing-xl)), 640px);
+        --overlay-infos-width: 100%;
 
         --overlay-logo-height: var(--spacing-xxl);
         --overlay-logo-width: auto;
@@ -93,6 +94,7 @@
         border-radius: var(--overlay-infos-border-radius);
         background-color: var(--overlay-bg-color, var(--color-bg)); /* "overlay-bg-color" set from the theme module */
         max-width: var(--overlay-infos-max-width);
+        width: var(--overlay-infos-width);
     }
 
     .overlay__logo {
