@@ -4,6 +4,7 @@
 @import "./globals/_alert.css";
 @import "./globals/_button.css";
 @import "./globals/_list.css";
+@import './elements/_list-in-columns.css';
 @import "./globals/_table.css";
 @import "./globals/_table-container.css";
 @import "./globals/_table-container.css";
