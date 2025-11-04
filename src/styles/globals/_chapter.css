@@ -154,7 +154,7 @@
     --chapter-margin-bottom: calc(var(--spacing-between-elements-normal) * 3) !important;
 }
 
-*:not(span, .chapter) + .chapter:not(:first-child) {
+*:not(span, .chapter, .fragment) + .chapter:not(:first-child) {
     margin-top: var(--spacing-between-elements-normal);
 }
 
