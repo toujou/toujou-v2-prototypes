@@ -138,7 +138,7 @@ const Template = () => {
                 <toujou-text-block-column class="text-block-column">
                     <div class="text-block__content">
                         <h3>UL list in 2 columns</h3>
-                        <ul class="list list-in-multiple-columns" data-list-column-count="2">
+                        <ul class="list list-in-columns list-in-columns--two">
                             <li>item one</li>
                             <li>item two</li>
                             <li>item three lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -153,7 +153,7 @@ const Template = () => {
                         </ul>
                         
                         <h3>UL list in 3 columns</h3>
-                        <ul class="list list-in-multiple-columns" data-list-column-count="3">
+                        <ul class="list list-in-columns list-in-columns--three">
                             <li>item one</li>
                             <li>item two</li>
                             <li>item three</li>
@@ -168,7 +168,7 @@ const Template = () => {
                         </ul>
                         
                         <h3>UL list in 4 columns</h3>
-                        <ul class="list list-in-multiple-columns" data-list-column-count="4">
+                        <ul class="list list-in-columns list-in-columns--four">
                             <li>item one</li>
                             <li>item two</li>
                             <li>item three</li>
@@ -183,7 +183,7 @@ const Template = () => {
                         </ul>
                         
                         <h3>OL list in 2 columns</h3>
-                        <ol class="list list-in-multiple-columns" data-list-column-count="2">
+                        <ol class="list list-in-columns list-in-columns--two">
                             <li>item one</li>
                             <li>item two</li>
                             <li>item three</li>
@@ -198,7 +198,7 @@ const Template = () => {
                         </ol>
                         
                         <h3>OL list in 3 columns</h3>
-                        <ol class="list list-in-multiple-columns" data-list-column-count="3">
+                        <ol class="list list-in-columns list-in-columns--three">
                             <li>item one</li>
                             <li>item two</li>
                             <li>item three</li>
@@ -213,7 +213,7 @@ const Template = () => {
                         </ol>
                         
                         <h3>OL list in 4 columns</h3>
-                        <ol class="list list-in-multiple-columns" data-list-column-count="4">
+                        <ol class="list list-in-columns list-in-columns--four">
                             <li>item one</li>
                             <li>item two</li>
                             <li>item three</li>

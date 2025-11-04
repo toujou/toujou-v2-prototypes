@@ -1,29 +1,28 @@
-.list-in-multiple-columns {
+.list-in-columns {
     --list-column-count: 1;
 
     column-gap: var(--content-spacing-between-columns);
     column-count: var(--list-column-count);
 }
 
-.list-in-multiple-columns > li {
+.list-in-columns > li {
     break-inside: avoid;
 }
 
 @container (width > 480px) {
-    .list-in-multiple-columns {
+    .list-in-columns {
         --list-column-count: 2;
     }
 }
 
 @container (width > 840px) {
-    .list-in-multiple-columns[data-list-column-count="3"],
-    .list-in-multiple-columns[data-list-column-count="4"] {
+    .list-in-columns.list-in-columns--three {
         --list-column-count: 3;
     }
 }
 
 @container (width > 1024px) {
-    .list-in-multiple-columns[data-list-column-count="4"] {
+    .list-in-columns.list-in-columns--four {
         --list-column-count: 4;
     }
 }
