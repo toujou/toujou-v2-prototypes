@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as s}from"./index-CfElQSRI.js";function o(t){const n={h1:"h1",...s(),...t.components};return e.jsx(n.h1,{id:"text-elements",children:"Text elements"})}function c(t={}){const{wrapper:n}={...s(),...t.components};return n?e.jsx(n,{...t,children:e.jsx(o,{...t})}):o(t)}export{c as M};
