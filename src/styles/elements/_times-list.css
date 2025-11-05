@@ -1,0 +1,17 @@
+.times-list {
+    --times-list-display: block;
+    --times-list-width: var(--content-width-with-padding);
+    --times-list-max-width: var(--content-max-width);
+    --times-list-margin: var(--spacing-between-elements-normal) auto 0;
+
+    --times-list-info-display: block;
+
+    display: var(--times-list-display);
+    width: var(--times-list-width);
+    max-width: var(--times-list-max-width);
+    margin: var(--times-list-margin);
+}
+
+.times-list__info {
+    display: var(--times-list-info-display);
+}
