@@ -23,3 +23,4 @@ import "@toujou/toujou-clamped-content/lib";
 import "@toujou/toujou-burger-button/lib";
 import "@toujou/toujou-topbar/lib";
 import "@toujou/toujou-overlay/lib";
+import "@toujou/toujou-read-more/lib";

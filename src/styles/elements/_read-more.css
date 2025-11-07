@@ -1,0 +1,28 @@
+.read-more {
+    --read-more-display: block;
+    --read-more-width: 100%;
+    --read-more-max-width: 100%;
+    --read-more-margin: 0 auto var(--spacing-between-consecutive-elements-normal);
+    --read-more-padding: 0;
+    --read-more-position: relative;
+
+    display: var(--read-more-display);
+    width: var(--read-more-width);
+    max-width: var(--read-more-max-width);
+    margin: var(--read-more-margin);
+    padding: var(--read-more-padding);
+    position: var(--read-more-position);
+}
+
+.read-more[is-inline] {
+    --read-more-margin: 0 auto var(--spacing-normal);
+}
+
+.read-more:last-child {
+    --read-more-margin: 0 auto;
+}
+
+main > .read-more {
+    --read-more-width: var(--content-width-with-padding);
+    --read-more-max-width: var(--content-max-width);
+}

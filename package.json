@@ -102,6 +102,7 @@
     "@toujou/toujou-media-info": "^3.0.0",
     "@toujou/toujou-overlay": "^3.7.0",
     "@toujou/toujou-rating-stars": "^3.1.1",
+    "@toujou/toujou-read-more": "^1.0.0",
     "@toujou/toujou-snackbar": "^3.8.4",
     "@toujou/toujou-spinner": "^3.0.0",
     "@toujou/toujou-timeline": "^3.0.0",
