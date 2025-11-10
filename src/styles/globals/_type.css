@@ -59,6 +59,12 @@ h6,
     --text-tag-margin-bottom: var(--spacing-normal);
 }
 
+*[type-size="s"],
+.font-size-s {
+    --text-tag-font-size: var(--font-size-s);
+    --text-tag-line-height: var(--line-height-s);
+}
+
 p,
 ul,
 ol,
