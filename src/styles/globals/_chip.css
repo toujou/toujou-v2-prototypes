@@ -72,7 +72,7 @@
 
 .chip[chip-bg-color="font-light"] {
     --toujou-chip-color-bg: var(--color-font-light);
-    --toujou-chip-text-color: var(--color-font-dark);
+    --toujou-chip-text-color: var(--color-bg);
 }
 
 .chip[chip-bg-color="font-very-light"] {
