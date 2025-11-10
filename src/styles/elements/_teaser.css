@@ -132,6 +132,10 @@
         color: var(--teaser-content-color);
     }
 
+    .teaser:not([element-design="default"]) .teaser__content .list li::marker {
+        --list-marker-color: var(--color-bg);
+    }
+
     .teaser__content > *:last-child {
         margin-bottom: 0;
     }
