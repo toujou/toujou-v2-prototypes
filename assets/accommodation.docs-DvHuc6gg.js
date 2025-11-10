@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as c}from"./index-C699k9hs.js";function e(n){const o={h1:"h1",...c(),...n.components};return t.jsx(o.h1,{id:"accommodation-page",children:"Accommodation page"})}function s(n={}){const{wrapper:o}={...c(),...n.components};return o?t.jsx(o,{...n,children:t.jsx(e,{...n})}):e(n)}export{s as M};
