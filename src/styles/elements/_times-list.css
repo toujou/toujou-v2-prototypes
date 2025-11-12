@@ -6,6 +6,10 @@
 
     --times-list-info-display: block;
 
+    --times-list-date-group-content: ",";
+    --times-list-date-group-display: inline-block;
+    --times-list-date-group-margin-left: -.4ch;
+
     display: var(--times-list-display);
     width: var(--times-list-width);
     max-width: var(--times-list-max-width);
@@ -14,4 +18,10 @@
 
 .times-list__info {
     display: var(--times-list-info-display);
+}
+
+.times-list__date-group::after {
+    content: var(--times-list-date-group-content);
+    display: var(--times-list-date-group-display);
+    margin-left: var(--times-list-date-group-margin-left);
 }
