@@ -1,1 +1,1 @@
-.mvk-prices__name:has(+.mvk-prices__additional){margin-bottom:0}.mvk-prices__name+.mvk-prices__additional{margin-top:0}
+.mvk-prices__name:has(+.mvk-prices__additional){margin-bottom:0}.mvk-prices__item:first-child>:first-child,.mvk-prices__name+.mvk-prices__additional{margin-top:0}

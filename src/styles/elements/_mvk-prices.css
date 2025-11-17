@@ -5,3 +5,7 @@
 .mvk-prices__name + .mvk-prices__additional {
     margin-top: 0;
 }
+
+.mvk-prices__item:first-child > *:first-child {
+    margin-top: 0;
+}
