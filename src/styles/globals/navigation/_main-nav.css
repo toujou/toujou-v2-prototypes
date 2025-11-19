@@ -140,6 +140,10 @@
     rotate: -180deg;
 }
 
+a:not(.button).main-nav__link:is(:hover, :focus-visible) {
+    color: var(--main-nav-link-color-hover);
+}
+
 a.main-nav__link:hover {
     --main-nav-link-text-decoration: underline;
 }
@@ -280,9 +284,5 @@ a.main-nav__link:hover {
         padding: var(--main-nav-text-padding);
         white-space: wrap;
         line-height: var(--line-height-s);
-    }
-
-    a:not(.button).main-nav__link:is(:hover, :focus-visible) {
-        color: var(--main-nav-link-color-hover);
     }
 }
