@@ -43,6 +43,7 @@
     --main-nav-back-button-border: none;
 
     --main-nav-chevron-color: var(--color-bg);
+    --main-nav-chevron-color-hover: var(--color-bg);
     --main-nav-chevron-icon-desktop-size: var(--font-size-ms);
     --main-nav-chevron-transition: rotate var(--animation-duration-fast) var(--animation-easing-normal);
 
@@ -116,9 +117,17 @@
     padding: 0;
 }
 
+.main-nav__chevron:hover {
+    cursor: pointer;
+}
+
 .main-nav__chevron:focus-visible {
     outline: var(--focus-outline-width) solid var(--focus-outline-color);
     outline-offset: var(--focus-outline-offset);
+}
+
+.main-nav__chevron:is(:hover, :focus-visible) .icon {
+    --main-nav-chevron-color: var(--main-nav-chevron-color-hover);
 }
 
 .main-nav__chevron .icon {
@@ -131,6 +140,10 @@
     rotate: -180deg;
 }
 
+a.main-nav__link:hover {
+    --main-nav-link-text-decoration: underline;
+}
+
 @media screen and (width < 1024px) {
     /* For accessibility we hide the content of the main-nav when not open */
     .topbar:not([open-nav]) .main-nav > * {
@@ -139,20 +152,6 @@
 
     .topbar:has(.language-picker, .language-picker-dropdown) .main-nav {
         --main-nav-padding: var(--spacing-xxl) var(--spacing-normal) calc(var(--service-nav-height) + var(--spacing-l)) var(--spacing-normal)
-    }
-
-    .main-nav__chevron:focus-visible .icon {
-        background-color: var(--color-bg);
-    }
-}
-
-@media (hover: hover) {
-    .main-nav__chevron:hover {
-        cursor: pointer;
-    }
-
-    .main-nav__link:hover {
-        --main-nav-link-text-decoration: underline;
     }
 }
 
@@ -251,10 +250,6 @@
         background-color: var(--main-nav-chevron-color);
         height: var(--main-nav-chevron-icon-desktop-size);
         width: var(--main-nav-chevron-icon-desktop-size);
-    }
-
-    .main-nav__chevron:is(:hover, :focus-visible) .icon {
-        --main-nav-chevron-color: var(--main-nav-chevron-color-hover);
     }
 
     .main-nav__list[data-nav-list-level="1"] {
