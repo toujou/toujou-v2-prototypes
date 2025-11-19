@@ -26,7 +26,7 @@
 
 @media screen and (width >= 1024px) {
     .main-nav__list[data-nav-list-level="3"] {
-        --main-nav-level-3-list-item-font-size: var(--font-size-s);
+        --main-nav-level-3-list-item-font-size: var(--font-size-normal);
         --main-nav-level-3-list-padding: 0 0 var(--spacing-s) var(--spacing-normal);
         --main-nav-level-3-list-margin: var(--spacing-s) 0 0;
         --main-nav-level-3-list-gap: var(--spacing-s);

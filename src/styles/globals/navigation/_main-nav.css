@@ -276,7 +276,7 @@ a.main-nav__link:hover {
     }
 
     .main-nav__list[data-nav-list-level="2"] .main-nav__text {
-        --main-nav-level-2-list-item-font-size: var(--font-size-s);
+        --main-nav-level-2-list-item-font-size: var(--font-size-normal);
 
         display: var(--main-nav-text-display);
         align-items: var(--main-nav-text-align-items);
