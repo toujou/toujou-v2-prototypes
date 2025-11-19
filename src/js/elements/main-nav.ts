@@ -80,7 +80,12 @@ export class MainNav {
             event.stopPropagation();
 
             if(!listItem) {
-                this.mainNavEl.dispatchEvent(new CustomEvent('toujou-main-nav-close'));
+                this.mainNavEl.dispatchEvent(
+                    new CustomEvent(
+                        'toujou-main-nav-close',
+                        { bubbles: true, composed: true }
+                    )
+                );
             } else {
                 this._toggleListItemState(listItem!);
 
