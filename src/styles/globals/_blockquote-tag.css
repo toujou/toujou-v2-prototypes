@@ -23,7 +23,7 @@ blockquote:not(.blockquote__blockquote) {
     --blockquote-tag-icon-color: var(--blockquote-tag-text-color);
 }
 
-blockquote:not(.blockquote__blockquote):not(:has(+ p.blockquote__author)) {
+blockquote:not(.blockquote__blockquote, :has(+ p.blockquote__author)) {
     margin-bottom: var(--spacing-l) !important;
 }
 
