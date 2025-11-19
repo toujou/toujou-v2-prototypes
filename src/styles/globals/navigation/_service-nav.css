@@ -75,6 +75,12 @@
     min-height: var(--service-nav-link-min-height);
 }
 
+a.service-nav__link:is(:hover, :focus-visible) {
+    --service-nav-link-text-decoration: underline;
+
+    color: var(--service-nav-link-color-active) !important;
+}
+
 .topbar[open-nav] .service-nav {
     --service-nav-opacity: 1;
     --service-nav-pointer-events: all;
@@ -94,13 +100,5 @@
 @media screen and (width >= 1024px) {
     .service-nav {
         --service-nav-display: none;
-    }
-}
-
-@media (hover: hover) {
-    a.service-nav__link:hover {
-        --service-nav-link-text-decoration: underline;
-
-        color: var(--service-nav-link-color-active) !important;
     }
 }
