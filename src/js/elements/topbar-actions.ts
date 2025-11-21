@@ -88,7 +88,6 @@ class TopbarActionLinkWithKeyboardBehaviour {
  * @returns {void}
  */
 export function initTopbarActionsKeyboardBehavior() {
-    console.log('1');
     const topbarActionElements = document.querySelectorAll<TopbarActionElement>('.topbar__actions-link');
 
     // Iterate over elements and initialize the behavior if not already present
