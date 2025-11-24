@@ -12,6 +12,6 @@
     }
 
     .solr[solr-results-only-slider] {
-        display: contents;
+        display: contents !important;
     }
 }
