@@ -66,3 +66,9 @@
     font-weight: var(--radio-group-label-font-weight);
     color: var(--radio-group-label-color);
 }
+
+.input-group--captcha .input-label {
+    --input-label-position: relative;
+    --input-label-top: unset;
+    --input-label-left: unset;
+}
