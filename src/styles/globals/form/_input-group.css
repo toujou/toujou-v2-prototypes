@@ -82,8 +82,8 @@
     margin-block: var(--spacing-s) var(--spacing-normal);
 }
 
-.input-group__captcha-image {
-    margin-top: var(--spacing-s);
+.input-group__captcha-image:has(+ .captcha__reload) {
+    margin-bottom: var(--spacing-s);
 }
 
 .input-group--disabled,
