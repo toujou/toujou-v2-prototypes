@@ -78,11 +78,11 @@
     --input-group-icon-right: var(--spacing-l);
 }
 
-.input--group__captcha-wrapper {
-    margin-bottom: var(--spacing-normal);
+.input-group__captcha-wrapper {
+    margin-block: var(--spacing-s) var(--spacing-normal);
 }
 
-.input--group__captcha-image {
+.input-group__captcha-image {
     margin-top: var(--spacing-s);
 }
 
