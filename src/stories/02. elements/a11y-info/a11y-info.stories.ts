@@ -20,7 +20,7 @@ const Template: StoryFn = () => {
             aria-labelledby="a11y-info-headline"
         >
             <div class="a11y-info__content">
-                <h2 id="a11y-info-headline" class="a11y-info__headline">Keyboard shortcuts</h2>
+                <p id="a11y-info-headline" class="a11y-info__headline">Keyboard shortcuts</p>
                 <p class="a11y-info__description">You can use the following keyboard shortcuts to navigate more quickly:</p>
                 <ul class="a11y-info__list">
                     <li class="a11y-info__item"><kbd class="keyboard-key">Alt</kbd> + <kbd class="keyboard-key">Home</kbd>: Go to your homepage</li>
