@@ -1,0 +1,1 @@
+import{j as o}from"./jsx-runtime-BjG_zV1W.js";import{useMDXComponents as r}from"./index-7lKrsJoK.js";function e(n){const t={h1:"h1",...r(),...n.components};return o.jsx(t.h1,{id:"felogin",children:"Felogin"})}function i(n={}){const{wrapper:t}={...r(),...n.components};return t?o.jsx(t,{...n,children:o.jsx(e,{...n})}):e(n)}export{i as M};
