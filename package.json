@@ -86,7 +86,7 @@
     "@toujou/toujou-button": "^3.8.2",
     "@toujou/toujou-clamped-content": "^1.0.0",
     "@toujou/toujou-collection-load-more": "^3.15.1",
-    "@toujou/toujou-consent": "^4.0.0",
+    "@toujou/toujou-consent": "^4.0.3",
     "@toujou/toujou-contact-box": "^3.5.0",
     "@toujou/toujou-counter": "^3.9.1",
     "@toujou/toujou-datepicker": "^3.15.0",
