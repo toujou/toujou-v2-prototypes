@@ -92,6 +92,8 @@ export declare class ToujouSlider extends LitElement {
     arrowNextAriaLabel: string;
     arrowFirstAriaLabel: string;
     arrowLastAriaLabel: string;
+    bulletsListAriaLabel: string;
+    singleBulletAriaLabel: string;
     /**
      * If 'min', the media query for breakpoints will be min-width, or otherwise max-width.
      * Docs: https://splidejs.com/guides/options/#mediaquery
@@ -103,6 +105,13 @@ export declare class ToujouSlider extends LitElement {
      */
     createRenderRoot(): this;
     firstUpdated(): void;
+    /**
+     * Build the i18n configuration object for Splide.
+     * Only aria-label strings that are explicitly provided via attributes are added to the returned object.
+     *
+     * @private
+     */
+    private _buildI18nOptions;
     /**
      * Initialize the slider with the correct options
      * Full list of options here: https://splidejs.com/guides/options/

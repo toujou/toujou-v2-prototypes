@@ -169,6 +169,8 @@ const Template: StoryFn<SliderStoryProps> = (args: SliderStoryProps) => {
             arrow-last-aria-label="Go to last slide"
             arrow-prev-aria-label="Go to previous slide"
             arrow-next-aria-label="Go to next slide"
+            bullets-list-aria-label="Slider pagination"
+            single-bullet-aria-label="Page"
         >
             ${renderSliderContent(args)}
         </toujou-slider>

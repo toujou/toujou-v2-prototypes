@@ -142,6 +142,12 @@ export class ToujouSlider extends LitElement {
     @property({ attribute: 'arrow-last-aria-label' })
     arrowLastAriaLabel: string = '';
 
+    @property({ attribute: 'bullets-list-aria-label' })
+    bulletsListAriaLabel: string = '';
+
+    @property({ attribute: 'single-bullet-aria-label' })
+    singleBulletAriaLabel: string = '';
+
     /**
      * If 'min', the media query for breakpoints will be min-width, or otherwise max-width.
      * Docs: https://splidejs.com/guides/options/#mediaquery
@@ -175,6 +181,42 @@ export class ToujouSlider extends LitElement {
     }
 
     /**
+     * Build the i18n configuration object for Splide.
+     * Only aria-label strings that are explicitly provided via attributes are added to the returned object.
+     *
+     * @private
+     */
+    private _buildI18nOptions() {
+        const i18n: Record<string, string> = {};
+
+        if (this.arrowPrevAriaLabel) {
+            i18n.prev = this.arrowPrevAriaLabel;
+        }
+
+        if (this.arrowNextAriaLabel) {
+            i18n.next = this.arrowNextAriaLabel;
+        }
+
+        if (this.arrowFirstAriaLabel) {
+            i18n.first = this.arrowFirstAriaLabel;
+        }
+
+        if (this.arrowLastAriaLabel) {
+            i18n.last = this.arrowLastAriaLabel;
+        }
+
+        if (this.bulletsListAriaLabel) {
+            i18n.select = this.bulletsListAriaLabel;
+        }
+
+        if (this.singleBulletAriaLabel) {
+            i18n.slideX = `${this.singleBulletAriaLabel} %s`;
+        }
+
+        return Object.keys(i18n).length ? i18n : undefined;
+    }
+
+    /**
      * Initialize the slider with the correct options
      * Full list of options here: https://splidejs.com/guides/options/
      */
@@ -200,14 +242,9 @@ export class ToujouSlider extends LitElement {
                 autoplay: 'pause'
             },
             padding: this.sliderPadding,
-            i18n: {
-                prev: this.arrowPrevAriaLabel,
-                next: this.arrowNextAriaLabel,
-                first: this.arrowFirstAriaLabel,
-                last: this.arrowLastAriaLabel,
-            },
+            i18n: this._buildI18nOptions(),
             focusableNodes: '*',
-            breakpoints: undefined
+            breakpoints: undefined,
         }
 
         if (this.sliderFocusCenter === 'true') {
