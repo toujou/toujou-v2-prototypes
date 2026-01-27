@@ -86,14 +86,15 @@
     .header-content__title {
         text-align: var(--header-text-alignment);
         color: var(--header-title-color) !important;
+        text-wrap: balance;
     }
 
     .header .slider :is(h1, h2, h3, h4, h5) {
         color: var(--header-title-color) !important;
     }
 
-    .header > .header-content .header-content__text,
-    .header > .header-content .header-content > p {
+    .header .header-content .header-content__text,
+    .header .header-content .header-content > p {
         text-align: var(--header-text-alignment);
     }
 
