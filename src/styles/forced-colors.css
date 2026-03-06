@@ -1,0 +1,3 @@
+@import "./forced-colors/_a11y-info.css" layer(forced-colors);
+@import "./forced-colors/_details.css" layer(forced-colors);
+@import "./forced-colors/_icon.css" layer(forced-colors);

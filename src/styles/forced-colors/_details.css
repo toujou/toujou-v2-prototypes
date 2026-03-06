@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .icon.details__chevron {
+        background-color: LinkText;
+    }
+}

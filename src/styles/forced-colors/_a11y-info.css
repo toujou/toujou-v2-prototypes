@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .a11y-info {
+        border: var(--border-width-l) solid CanvasText;
+    }
+}
