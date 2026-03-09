@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .quick-link {
+        border: var(--border-width-normal) solid CanvasText;
+    }
+}

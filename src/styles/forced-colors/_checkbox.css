@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .checkbox:checked {
+        --checkbox-check-background-color: CanvasText;
+    }
+}

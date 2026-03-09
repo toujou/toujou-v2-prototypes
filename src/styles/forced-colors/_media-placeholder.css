@@ -1,0 +1,9 @@
+@media (forced-colors: active) {
+    .media-placeholder {
+        border: var(--border-width-normal) solid CanvasText;
+    }
+
+    .media-placeholder::after {
+        background-color: CanvasText;
+    }
+}
