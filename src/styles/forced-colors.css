@@ -1,5 +1,8 @@
 @import "./forced-colors/_a11y-info.css" layer(forced-colors);
 @import "./forced-colors/_alert.css" layer(forced-colors);
 @import "./forced-colors/_blockquote.css" layer(forced-colors);
+@import "./forced-colors/_breadcrumb.css" layer(forced-colors);
+@import "./forced-colors/_chip.css" layer(forced-colors);
+@import "./forced-colors/_code-block.css" layer(forced-colors);
 @import "./forced-colors/_details.css" layer(forced-colors);
 @import "./forced-colors/_icon.css" layer(forced-colors);
