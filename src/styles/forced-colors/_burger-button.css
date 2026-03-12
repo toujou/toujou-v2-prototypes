@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .burger-button {
+        --burger-button-line-color: CanvasText;
+    }
+}

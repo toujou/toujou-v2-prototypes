@@ -1,0 +1,7 @@
+@media (forced-colors: active) {
+    .alert {
+        --alert-bg-color: Canvas;
+        --alert-border-color: Highlight;
+        --alert-text-color: CanvasText;
+    }
+}

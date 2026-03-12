@@ -1,0 +1,6 @@
+@media (forced-colors: active) {
+    .pn-nav__button,
+    .pn-nav__content {
+        border: var(--border-width-normal) solid CanvasText;
+    }
+}

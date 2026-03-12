@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .radio:checked {
+        --radio-check-background-color: CanvasText;
+    }
+}

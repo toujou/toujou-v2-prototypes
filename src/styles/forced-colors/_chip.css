@@ -1,0 +1,9 @@
+@media (forced-colors: active) {
+    .chip {
+        border: var(--border-width-normal) solid CanvasText;
+    }
+
+    .chip[is-clickable]:is(:hover, :focus-visible) {
+        border: var(--border-width-normal) solid Highlight;
+    }
+}

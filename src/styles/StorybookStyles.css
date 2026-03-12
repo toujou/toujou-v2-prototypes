@@ -149,6 +149,9 @@
 @import "elements/_solr-search.css";
 @import "elements/_solr-view-mode.css";
 
+/* Forced colors Loaded into new "forced-colors" layer, which should be implemented after the components layer */
+@import './forced-colors.css';
+
 /* print css for testing purposes */
 /*@import "./print.css";*/
 

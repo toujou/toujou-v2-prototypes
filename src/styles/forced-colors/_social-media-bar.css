@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .social-media-bar__link .icon {
+        background-color: LinkText !important;
+    }
+}
