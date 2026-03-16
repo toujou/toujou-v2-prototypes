@@ -93,6 +93,10 @@
         --slider-slides-gap: var(--spacing-l);
     }
 
+    .header[image-height="3-1"] .slider[content-type="header"] {
+        --slider-aspect-ratio: var(--aspect-ratio-3-1);
+    }
+
     .slider[content-type="review"] {
         --slider-width: 100%;
         --slider-max-width: var(--content-wide-max-width);
@@ -159,15 +163,25 @@
     }
 
     /* Header slider height */
-    .header:not(.header--portfolio-gallery) .splide,
-    .header:not(.header--portfolio-gallery) .splide__track,
-    .header:not(.header--portfolio-gallery) .splide__list,
-    .header:not(.header--portfolio-gallery) .splide__slide,
-    .header:not(.header--portfolio-gallery) .slider__item {
+    .header:not(.header--portfolio-gallery, [image-height="3-1"]) .splide,
+    .header:not(.header--portfolio-gallery, [image-height="3-1"]) .splide__track,
+    .header:not(.header--portfolio-gallery, [image-height="3-1"]) .splide__list,
+    .header:not(.header--portfolio-gallery, [image-height="3-1"]) .splide__slide,
+    .header:not(.header--portfolio-gallery, [image-height="3-1"]) .slider__item {
         min-height: var(--header-min-height);
         width: var(--slider-width) !important;
         height: 100%;
         aspect-ratio: auto;
+    }
+
+    .header[image-height="3-1"] .splide,
+    .header[image-height="3-1"] .splide__track,
+    .header[image-height="3-1"] .splide__list,
+    .header[image-height="3-1"] .splide__slide,
+    .header[image-height="3-1"] .slider__item {
+        min-height: var(--header-min-height);
+        width: var(--slider-width) !important;
+        aspect-ratio: var(--aspect-ratio-3-1);
     }
 
     .header:not(.header--portfolio-gallery) .header__content + .slider {
