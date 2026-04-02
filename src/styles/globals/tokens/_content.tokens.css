@@ -8,7 +8,7 @@
     --content-wide-max-width: 1440px;
     --content-padding-to-border: var(--spacing-normal);
     --content-spacing-between-elements: var(--spacing-xl);
-    --content-spacing-between-columns: var(--spacing-between-consecutive-elements-normal);
+    --content-spacing-between-columns: var(--spacing-l);
     --content-inner-padding: var(--spacing-m);
     --topbar-height-small: 54px;
     --topbar-height-medium: 64px;
