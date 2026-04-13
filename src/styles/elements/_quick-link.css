@@ -13,10 +13,11 @@
             background-color var(--animation-duration-fast) var(--animation-easing-normal);
         --quick-link-text-decoration: none;
 
-        --quick-link-figure-size: var(--quick-link-image-size);
-
-        --quick-link-image-size: 32px;
+        --quick-link-figure-size: var(--quick-link-icon-size);
         --quick-link-image-border-radius: var(--border-radius-normal);
+
+        --quick-link-icon-size: 32px;
+        --quick-link-icon-color: var(--color-bg);
 
         --quick-link-text-font-family: var(--font-family-text);
         --quick-link-text-font-size: var(--font-size-normal);
@@ -51,6 +52,7 @@
         outline-offset: var(--focus-outline-offset);
     }
 
+    .quick-link[data-element-design="default"],
     .quick-link[data-element-design="primary"] {
         --quick-link-bg-color: var(--color-primary);
         --quick-link-bg-color-hover: var(--color-primary-dark);
@@ -69,13 +71,13 @@
     .quick-links[data-horizontal-position="left"] .quick-link {
         --quick-link-flex-flow: row-reverse nowrap;
         --quick-link-border-radius: 0 var(--border-radius-normal) var(--border-radius-normal) 0;
-        --quick-link-translate-x: calc(-100% + var(--quick-link-image-size) + calc(var(--quick-link-padding) * 2));
+        --quick-link-translate-x: calc(-100% + var(--quick-link-icon-size) + calc(var(--quick-link-padding) * 2));
     }
 
     .quick-links[data-horizontal-position="right"] .quick-link {
         --quick-link-flex-flow: row nowrap;
         --quick-link-border-radius: var(--border-radius-normal) 0 0 var(--border-radius-normal);
-        --quick-link-translate-x: calc(100% - var(--quick-link-image-size) - calc(var(--quick-link-padding) * 2));
+        --quick-link-translate-x: calc(100% - var(--quick-link-icon-size) - calc(var(--quick-link-padding) * 2));
     }
 
     .quick-links[data-horizontal-position] .quick-link:is(:hover, :focus-visible) {
@@ -87,10 +89,15 @@
         width: var(--quick-link-figure-size);
     }
 
-    .quick-link__image {
-        height: var(--quick-link-image-size);
-        width: var(--quick-link-image-size);
-        border-radius: var(--quick-link-image-border-radius);
+    .quick-link__icon {
+        display: block;
+        height: var(--quick-link-icon-size);
+        width: var(--quick-link-icon-size);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-position: center;
+        mask-image: var(--quick-link-image-icon); /* Comes from the template as inline styles */
+        background-color: var(--quick-link-icon-color);
     }
 
     .quick-link__text {

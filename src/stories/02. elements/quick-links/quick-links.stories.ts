@@ -35,7 +35,7 @@ export default {
         bgColor: {
             name: 'Background color',
             description: "Set the background color / design for the element",
-            options: ['primary', 'secondary', 'font'],
+            options: ['default', 'primary', 'secondary', 'font'],
             control: { type: 'radio' },
             table: {
                 category: "Quick Links Settings",
@@ -95,7 +95,11 @@ const renderQuickLink = (args: QuickLinksStoryProps, text: string, iconName: str
             data-element-design="${args.bgColor || 'primary'}"
         >
             <figure class="quick-link__figure">
-                <toujou-icon class="icon quick-link__image" icon-color="background" icon-name="${iconName}"></toujou-icon>
+                <span
+                    class="quick-link__icon"
+                    style="--quick-link-image-icon: url('./assets/icons/icon-${iconName}.svg')"
+                    aria-hidden="true"
+                ></span>
             </figure>
             ${args.iconOnly ? '' : `<span class="quick-link__text">${text}</span>`}
         </a>
@@ -135,6 +139,6 @@ export const QuickLinks: StoryFn<QuickLinksStoryProps> = (args) => {
 QuickLinks.args = {
     verticalPos: 'bottom',
     horizontalPos: 'right',
-    bgColor: 'primary',
+    bgColor: 'default',
     iconOnly: false,
 };
