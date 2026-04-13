@@ -5,15 +5,19 @@ It helps users quickly access important areas of the site, and is always visible
 
 ## Markup example
 ```html
-<nav class="quick-links" aria-label="Quick links" data-vertical-position="bottom" data-horizontal-position="right">
+<nav
+    class="quick-links"
+    aria-label="Quick links"
+    data-vertical-position="bottom"
+    data-horizontal-position="right"
+>
     <ul class="quick-links__list">
         <li class="quick-links__item">
             <a
                 href="#"
                 class="quick-link"
-                aria-label="This is a link"
-                data-bg-color="primary"
-                tabindex="0"
+                title="This is a link"
+                data-element-design="primary"
             >
                 <figure class="quick-link__figure">
                     <img class="icon quick-link__image" src="#"/>
@@ -35,7 +39,7 @@ Controls the vertical alignment of the quick links block. Possible values are "t
 
 Controls the horizontal alignment of the quick links block. Possible values are "left" or "right"
 
-### data-bg-color <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
+### data-element <toujou-chip class="chip" chip-bg-color="warning">required</toujou-chip>
 
 Defines the background design of each quick link. Possible values are "primary", "secondary" and "font"
 
@@ -43,7 +47,7 @@ Defines the background design of each quick link. Possible values are "primary",
 
 Defines whether the quick link displays only the icon, or both the icon and the text.
 
-When iconOnly is true, ttext element is omitted.
+When iconOnly is true, text element is omitted.
 
 ## Accessibility notes
 
