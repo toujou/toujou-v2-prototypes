@@ -26,7 +26,6 @@ export default {
                     // Single teaser for popup — no comma or %2C in the ids
                     match: (url) => url.includes('ids=') && !url.includes('%2C') && !url.includes(','),
                     response: {
-                        // Assuming your teaser mock is a string/HTML fragment
                         text: () => placesTeaserMockResp_singleTeaser,
                     },
                 },
