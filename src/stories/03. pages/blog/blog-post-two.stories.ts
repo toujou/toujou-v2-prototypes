@@ -1,15 +1,7 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import blogPostTwoDocs from './blog-post.docs.mdx';
-
 export default {
     title: 'PAGES/BlogPostTwo',
-    parameters: {
-        docs: {
-            page: blogPostTwoDocs,
-        },
-    },
     argTypes: {
         hasAvatar: {
             table: {

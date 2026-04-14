@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import imageCardWithTextDocs from '../content-card-with-text/content-card-with-text.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Image Card',
-    parameters: {
-        docs: {
-            page: imageCardWithTextDocs,
-        }
-    },
     argTypes: {
         direction: {
             table: {
@@ -22,7 +14,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface ImageCardWithTextStoryProps {

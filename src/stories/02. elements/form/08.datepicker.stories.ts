@@ -1,8 +1,5 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import formDocs from './form.docs.mdx';
-
 const DATE_FORMATS = {
     'YYYY.MM.DD': 'Y.m.d',
     'YYYY/MM/DD': 'Y/m/d',
@@ -17,11 +14,6 @@ const MODES = {
 
 export default {
     title: 'COMPONENTS/Forms',
-    parameters: {
-        docs: {
-            page: formDocs,
-        }
-    },
     argTypes: {
         dateFormat: {
             name: 'Date format',

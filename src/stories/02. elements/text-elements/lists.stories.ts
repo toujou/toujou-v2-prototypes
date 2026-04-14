@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import TextElementsDocs from "./text-elements.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Text Elements',
-    parameters: {
-        docs: {
-            page: TextElementsDocs,
-        }
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

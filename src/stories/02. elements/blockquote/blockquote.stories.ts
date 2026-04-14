@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import blockquoteDocs from './blockquote.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Blockquote',
-    parameters: {
-        docs: {
-            page: blockquoteDocs,
-        },
-    },
     argTypes: {
         direction: {
             table: {

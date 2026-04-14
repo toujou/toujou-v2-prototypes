@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import TextElementsDocs from "./text-elements.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Text Elements',
-    parameters: {
-        docs: {
-            page: TextElementsDocs,
-        }
-    },
     argTypes: {
         tableAlignment: {
             table: {
@@ -23,7 +15,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface TableStoryProps {

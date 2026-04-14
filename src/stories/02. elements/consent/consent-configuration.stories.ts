@@ -2,16 +2,9 @@
 /// <reference lib="dom.iterable" />
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import consentDocs from "./consent.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Consent',
-    parameters: {
-        docs: {
-            page: consentDocs,
-        },
-    },
     argTypes: {
         showError: {
             table: {

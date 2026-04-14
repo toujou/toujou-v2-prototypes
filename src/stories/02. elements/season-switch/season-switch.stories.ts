@@ -1,17 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import seasonSwitchDocs from './season-switch.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Season Switch',
-    parameters: {
-        docs: {
-            page: seasonSwitchDocs,
-        },
-    },
-    argTypes: {},
-    tags: ['autodocs']
 } satisfies Meta;
 
 function tourismSeasonTriggerJSMock() {

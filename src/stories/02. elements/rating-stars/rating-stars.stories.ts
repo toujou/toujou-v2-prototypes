@@ -1,15 +1,7 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import ratingStarsDocs from './rating-stars.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Rating Stars',
-    parameters: {
-        docs: {
-            page: ratingStarsDocs,
-        },
-    },
     argTypes: {
         rating: {
             table: {
@@ -34,7 +26,6 @@ export default {
             description: "Set a suffix for the rating",
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 export interface RatingStarsStoryProps {

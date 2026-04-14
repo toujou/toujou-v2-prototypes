@@ -1,15 +1,7 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import ratingStarsDocs from './average-rating.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Average Rating',
-    parameters: {
-        docs: {
-            page: ratingStarsDocs,
-        },
-    },
     argTypes: {
         showMaxRating: {
             table: {

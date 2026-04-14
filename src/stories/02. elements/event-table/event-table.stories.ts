@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import eventTableDocs from './event-table.docs.mdx';
-
 export default {
     title: 'COMPONENTS/EventTable',
-    parameters: {
-        docs: {
-            page: eventTableDocs,
-        },
-    },
 } satisfies Meta;
 
 const eventTableComponent = () => {

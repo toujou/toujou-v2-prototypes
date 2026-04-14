@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import tripDatesDocs from './trip-dates.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Trip Dates',
-    parameters: {
-        docs: {
-            page: tripDatesDocs,
-        },
-    },
     argTypes: {
         roomCount: {
             table: {
@@ -26,7 +18,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface DeparturePrice {

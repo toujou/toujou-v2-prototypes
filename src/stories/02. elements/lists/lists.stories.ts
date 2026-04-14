@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import ListsDocs from "./lists.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Lists',
-    parameters: {
-        docs: {
-            page: ListsDocs,
-        }
-    },
 } satisfies Meta;
 
 const renderLists = () => {

@@ -16,24 +16,8 @@ import toujouBranding from "./configUtils/storybookToujouBranding";
 import { customViewports } from "./configUtils/customViewports";
 import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 
-// MSW imports
-import { initialize, mswLoader } from 'msw-storybook-addon';
-
 // Hacks
 import './configUtils/mainNavHack';
-
-// Initialize MSW with a correct service worker path for local / GitHub Pages
-const isProduction = window.location.hostname === 'toujou.github.io';
-const serviceWorkerUrl = isProduction
-    ? '/toujou-v2-prototypes/mockServiceWorker.js'
-    : '/mockServiceWorker.js';
-
-initialize({
-    onUnhandledRequest: 'bypass',
-    serviceWorker: {
-        url: serviceWorkerUrl,
-    }
-});
 
 // Export everything in one default block
 export default {
@@ -95,7 +79,6 @@ export default {
         },
     },
     tags: ['autodocs'],
-    loaders: [mswLoader],
     decorators: [
         // This is commented out because it works well on the preview, but not on the deployed storybook
         // (Because the files get different names, with hashes...)
@@ -105,5 +88,3 @@ export default {
         // },
     ]
 };
-
-console.clear();

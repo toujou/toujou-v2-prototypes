@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import breadcrumbDocs from './breadcrumb.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Breadcrumb',
-    parameters: {
-        docs: {
-            page: breadcrumbDocs,
-        }
-    },
 } satisfies Meta;
 
 const Template = () => {

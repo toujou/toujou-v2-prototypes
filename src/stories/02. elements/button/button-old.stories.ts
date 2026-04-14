@@ -1,14 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import buttonDocs from './button.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Button',
-    parameters: {
-        docs: {
-            page: buttonDocs,
-        },
-    },
 } satisfies Meta;
 
 

@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import eventScheduleDocs from './event-schedule.docs.mdx';
-
 export default {
     title: 'COMPONENTS/EventSchedule',
-    parameters: {
-        docs: {
-            page: eventScheduleDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const eventScheduleComponent = () => {

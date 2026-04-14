@@ -3,16 +3,9 @@
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import gridDocs from './grid.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Grid',
     parameters: {
-
-        docs: {
-            page: gridDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {

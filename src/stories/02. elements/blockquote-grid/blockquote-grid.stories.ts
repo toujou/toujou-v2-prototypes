@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import blockquoteGridDocs from './blockquote-grid.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Blockquote',
-    parameters: {
-        docs: {
-            page: blockquoteGridDocs,
-        },
-    },
     argTypes: {
         direction: {
             table: {
@@ -34,7 +26,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface BlockquoteGridStoryProps {

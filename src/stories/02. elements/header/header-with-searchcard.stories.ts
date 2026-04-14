@@ -1,15 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import headerDocs from './header.docs.mdx';
-
-
 export default {
     title: 'COMPONENTS/Header With Searchcard',
     parameters: {
-        docs: {
-            page: headerDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {
@@ -110,7 +103,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface HeaderStoryProps {

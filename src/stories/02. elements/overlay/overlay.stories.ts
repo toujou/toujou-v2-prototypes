@@ -2,15 +2,10 @@
 /// <reference lib="dom.iterable" />
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import overlayDocs from "./overlay.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Overlay',
     parameters: {
-        docs: {
-            page: overlayDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {

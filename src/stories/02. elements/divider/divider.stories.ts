@@ -1,14 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import dividerDocs from './divider.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Divider',
-    parameters: {
-        docs: {
-            page: dividerDocs,
-        },
-    },
     argTypes: {
         dividerType: {
             table: {

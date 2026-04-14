@@ -1,16 +1,9 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import solrSearchDocs from "./solr-search.docs.mdx";
 import { renderCardCategoryChips } from "../toujou-collection-item/01. helpers/_renderCardCategoriChips";
 
 export default {
     title: 'COMPONENTS/solr',
-    parameters: {
-        docs: {
-            page: solrSearchDocs,
-        }
-    },
     argTypes: {
         showMobileFilters: {
             table: {

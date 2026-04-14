@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import socialMediaBarDocs from "./social-media-bar.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Social Media Bar',
-    parameters: {
-        docs: {
-            page: socialMediaBarDocs,
-        }
-    },
     argTypes: {
         elementDesign: {
             table: {
@@ -41,7 +33,6 @@ export default {
             required: true,
         }
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface SliderStoryProps {

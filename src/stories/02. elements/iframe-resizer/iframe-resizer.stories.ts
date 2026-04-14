@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import iframeResizerDocs from './iframe-resizer.docs.mdx';
-
 export default {
     title: 'COMPONENTS/IframeResizer',
-    parameters: {
-        docs: {
-            page: iframeResizerDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

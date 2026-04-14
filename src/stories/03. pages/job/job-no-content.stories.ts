@@ -1,14 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import jobDocs from './job.docs.mdx';
-
 export default {
     title: 'PAGES/Job',
     parameters: {
-        docs: {
-            page: jobDocs,
-        },
         layout: "fullscreen"
     },
     argTypes: {

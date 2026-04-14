@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import favoritesListDocs from './favorites-list.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Favorites List',
-    parameters: {
-        docs: {
-            page: favoritesListDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

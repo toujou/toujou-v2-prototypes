@@ -1,17 +1,9 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import chipDocs from './chip.docs.mdx';
-
 const DEFAULT_BUTTON_TEXT = 'Jetzt 30% Rabatt';
 
 export default {
     title: 'COMPONENTS/Chip',
-    parameters: {
-        docs: {
-            page: chipDocs,
-        },
-    },
     argTypes: {
         bgColor: {
             table: {

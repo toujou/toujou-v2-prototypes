@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import exitWarningDocs from './exit-warning.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Exit Warning',
-    parameters: {
-        docs: {
-            page: exitWarningDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const secondsRemainingVar = "${secondsRemaining}";

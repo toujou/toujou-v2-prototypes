@@ -1,14 +1,8 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import organizationDocs from './organization.docs.mdx';
-
 export default {
     title: 'PAGES/Organization',
     parameters: {
-        docs: {
-            page: organizationDocs,
-        },
         layout: "fullwidth"
     },
 } satisfies Meta;

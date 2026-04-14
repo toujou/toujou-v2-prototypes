@@ -2,7 +2,6 @@ import { Meta } from '@storybook/web-components-vite';
 
 export default {
     title: 'COMPONENTS/ClampedContent',
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

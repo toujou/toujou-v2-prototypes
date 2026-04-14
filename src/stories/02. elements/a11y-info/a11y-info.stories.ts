@@ -1,13 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import skipLinksDocs from './a11y-info.docs.mdx';
 
 export default {
     title: 'COMPONENTS/A11yInfo',
     parameters: {
-        docs: {
-            page: skipLinksDocs,
-        },
         layout: "fullscreen",
     },
 } satisfies Meta;

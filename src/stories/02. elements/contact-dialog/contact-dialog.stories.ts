@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import contactDialogDocs from './contact-dialog.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Contact Dialog',
-    parameters: {
-        docs: {
-            page: contactDialogDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

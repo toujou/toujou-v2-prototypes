@@ -1,12 +1,11 @@
 export default {
     "stories": [
         "../src/**/*.stories.@(js|jsx|ts|tsx)",
+        "../src/**/*.docs.mdx",
     ],
     "addons": [
         "@storybook/addon-links",
-        "@storybook/addon-docs",
         "@storybook/addon-a11y",
-        "storybook-addon-fetch-mock",
         "@chromatic-com/storybook"
     ],
     "framework": {

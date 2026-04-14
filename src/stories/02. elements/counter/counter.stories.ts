@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import counterDocs from './counter.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Counter',
-    parameters: {
-        docs: {
-            page: counterDocs,
-        },
-    },
     argTypes: {
         numberOfItems: {
             table: {

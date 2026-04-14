@@ -1,14 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import eventDocs from './event.docs.mdx';
-
 export default {
     title: 'PAGES/Event',
     parameters: {
-        docs: {
-            page: eventDocs,
-        },
         layout: "fullscreen"
     },
     argTypes: {

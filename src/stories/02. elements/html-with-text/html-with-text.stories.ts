@@ -1,15 +1,7 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import htmlWithTextDocs from './html-with-text.docs.mdx';
-
 export default {
     title: 'COMPONENTS/HTML With Text',
-    parameters: {
-        docs: {
-            page: htmlWithTextDocs,
-        },
-    },
     argTypes: {
         layout: {
             table: {
@@ -23,7 +15,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface HtmlWithTextStoryProps {

@@ -1,14 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import detailsAccordionDocs from './details-accordion.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Accordion',
-    parameters: {
-        docs: {
-            page: detailsAccordionDocs,
-        },
-    },
     argTypes: {
         singleExpandMode: {
             table: {
@@ -43,7 +36,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface DetailsAccordionStoryProps {

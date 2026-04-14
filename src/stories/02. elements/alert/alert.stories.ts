@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import alertDocs from './alert.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Alert',
-    parameters: {
-        docs: {
-            page: alertDocs,
-        },
-    },
     argTypes: {
         alertVariant: {
             table: {

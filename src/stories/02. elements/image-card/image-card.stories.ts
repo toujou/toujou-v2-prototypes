@@ -3,16 +3,8 @@
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import imageCardDocs from './image-card.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Image Card',
-    parameters: {
-        docs: {
-            page: imageCardDocs,
-        }
-    },
     argTypes: {
         imageFormat: {
             table: {

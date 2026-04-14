@@ -3,16 +3,8 @@
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import contentCardDocs from './content-card.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Content Card',
-    parameters: {
-        docs: {
-            page: contentCardDocs,
-        }
-    },
     argTypes: {
         columnCount: {
             table: {
@@ -46,7 +38,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface ContentCardStoryProps {

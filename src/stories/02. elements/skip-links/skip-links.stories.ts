@@ -1,16 +1,10 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import skipLinksDocs from './skip-links.docs.mdx';
-
 import '../../../../node_modules/skippy-links/dist/skippy-links'
 
 export default {
     title: 'COMPONENTS/SkipLinks',
     parameters: {
-        docs: {
-            page: skipLinksDocs,
-        },
         layout: "fullscreen",
     },
 } satisfies Meta;

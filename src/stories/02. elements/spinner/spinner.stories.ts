@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import spinnerDocs from './spinner.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Spinner',
-    parameters: {
-        docs: {
-            page: spinnerDocs,
-        },
-    },
     argTypes: {
         isCenteredOnPage: {
             table: {

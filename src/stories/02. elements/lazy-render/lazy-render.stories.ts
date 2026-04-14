@@ -1,14 +1,8 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import lazyRenderDocs from "./lazy-render.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Lazy Render',
     parameters: {
-        docs: {
-            page: lazyRenderDocs,
-        },
         layout: "fullscreen",
     },
 } satisfies Meta;

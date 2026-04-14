@@ -1,14 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import heroMediaDocs from "./hero-media.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Media',
     parameters: {
-        docs: {
-            page: heroMediaDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {

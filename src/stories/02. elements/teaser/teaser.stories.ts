@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import TeaserDocs from './teaser.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Teaser',
-    parameters: {
-        docs: {
-            page: TeaserDocs,
-        }
-    },
     argTypes: {
         teaserType: {
             table: {

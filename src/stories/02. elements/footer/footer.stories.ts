@@ -1,14 +1,8 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import footerDocs from "./footer.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Footer',
     parameters: {
-        docs: {
-            page: footerDocs,
-        },
         layout: "fullscreen",
     },
 } satisfies Meta;

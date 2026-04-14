@@ -1,14 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import detailsDocs from './details.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Accordion',
-    parameters: {
-        docs: {
-            page: detailsDocs,
-        },
-    },
     argTypes: {
         elementDesign: {
             table: {

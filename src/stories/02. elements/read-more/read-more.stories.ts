@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import readMoreDocs from './read-more.docs.mdx';
-
 export default {
     title: 'COMPONENTS/ReadMore',
-    parameters: {
-        docs: {
-            page: readMoreDocs,
-        },
-    },
 } satisfies Meta;
 
 const renderPTag = () => {
