@@ -1,6 +1,7 @@
 @media (forced-colors: active) {
     .icon {
         --icon-color: CanvasText !important;
+
         background-color: CanvasText;
     }
 }
