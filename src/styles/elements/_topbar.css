@@ -22,7 +22,7 @@
         --topbar-before-z-index: 0;
 
         --topbar-logo-link-grid-area: logo;
-        --topbar-logo-link-height: calc(100% - var(--spacing-normal));
+        --topbar-logo-link-height: calc(var(--topbar-height) - var(--spacing-normal));
         --topbar-logo-link-max-height: calc(100% - var(--spacing-normal));
         --topbar-logo-link-width: fit-content;
         --topbar-logo-link-z-index: 1;
