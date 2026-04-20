@@ -63,7 +63,7 @@
         --quick-link-bg-color-hover: var(--color-secondary-dark);
     }
 
-    .quick-link[data-element-design="font"] {
+    .quick-link[data-element-design="inverted"] {
         --quick-link-bg-color: var(--color-font);
         --quick-link-bg-color-hover: var(--color-font-dark);
     }
