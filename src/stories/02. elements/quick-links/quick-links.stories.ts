@@ -35,7 +35,7 @@ export default {
         bgColor: {
             name: 'Background color',
             description: "Set the background color / design for the element",
-            options: ['default', 'primary', 'secondary', 'font'],
+            options: ['default', 'primary', 'secondary', 'inverted'],
             control: { type: 'radio' },
             table: {
                 category: "Quick Links Settings",
