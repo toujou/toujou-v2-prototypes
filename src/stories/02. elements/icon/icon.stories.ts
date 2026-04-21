@@ -3,16 +3,8 @@
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import iconDocs from './icon.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Icons',
-    parameters: {
-        docs: {
-            page: iconDocs,
-        },
-    },
     argTypes: {
         iconColor: {
             table: {

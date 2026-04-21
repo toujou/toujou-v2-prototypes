@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import additionalInfoDocs from './additional-info.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Additional Info',
-    parameters: {
-        docs: {
-            page: additionalInfoDocs,
-        },
-    },
     argTypes: {
         noMargins: {
             table: {
@@ -21,7 +13,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface AdditionalInfoProps {

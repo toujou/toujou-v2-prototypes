@@ -2,7 +2,6 @@ import { Meta } from '@storybook/web-components-vite';
 
 export default {
     title: 'COMPONENTS/IframeResizer',
-    tags: ['autodocs']
 } satisfies Meta;
 
 const AWAIT_TIME = 3000;

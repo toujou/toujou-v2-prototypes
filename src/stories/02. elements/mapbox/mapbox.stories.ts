@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import mapboxDocs from './mapbox.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Mapbox',
-    parameters: {
-        docs: {
-            page: mapboxDocs,
-        },
-    },
     argTypes: {
         zoomLevel: {
             table: {

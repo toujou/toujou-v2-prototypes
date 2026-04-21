@@ -1,15 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import headerDocs from './header.docs.mdx';
-
-
 export default {
     title: 'COMPONENTS/Header',
     parameters: {
-        docs: {
-            page: headerDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {

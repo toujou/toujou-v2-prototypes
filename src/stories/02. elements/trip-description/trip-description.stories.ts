@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import tripDescriptionDocs from './trip-description.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Trip Description',
-    parameters: {
-        docs: {
-            page: tripDescriptionDocs,
-        },
-    },
     argTypes: {
         showDayDate: {
             table: {
@@ -22,7 +14,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface TripDescriptionIncludedOption {

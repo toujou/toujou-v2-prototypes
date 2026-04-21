@@ -1,18 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import tripAccommodationsDocs from './trip-accommodations.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Accommodations',
-    parameters: {
-        docs: {
-            page: tripAccommodationsDocs,
-        },
-    },
-    argTypes: {
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface AccommodationOption {

@@ -1,16 +1,9 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import buttonDocs from './button.docs.mdx';
 
 const DEFAULT_BUTTON_TEXT = 'Hello world';
 
 export default {
     title: 'COMPONENTS/Button',
-    parameters: {
-        docs: {
-            page: buttonDocs,
-        },
-    },
     argTypes: {
         buttonVariant: {
             table: {

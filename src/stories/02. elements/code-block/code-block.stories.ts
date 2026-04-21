@@ -1,15 +1,7 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import codeBlockDocs from './code-block.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Code Block',
-    parameters: {
-        docs: {
-            page: codeBlockDocs,
-        },
-    },
     argTypes: {
         showLanguageTag: {
             table: {

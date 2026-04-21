@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import TableDocs from "./table.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Table',
-    parameters: {
-        docs: {
-            page: TableDocs,
-        }
-    },
     argTypes: {
         tableAlignment: {
             table: {

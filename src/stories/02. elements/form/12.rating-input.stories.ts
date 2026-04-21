@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import formDocs from './form.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Forms',
-    parameters: {
-        docs: {
-            page: formDocs,
-        }
-    },
 } satisfies Meta;
 
 const Template = () => {

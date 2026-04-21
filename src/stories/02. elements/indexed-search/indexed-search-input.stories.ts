@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import alertDocs from './indexed-search.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Indexed Search',
-    parameters: {
-        docs: {
-            page: alertDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

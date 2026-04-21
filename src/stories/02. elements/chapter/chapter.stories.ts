@@ -1,13 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import chapterDocs from "./chapter.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Chapter',
     parameters: {
-        docs: {
-            page: chapterDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {

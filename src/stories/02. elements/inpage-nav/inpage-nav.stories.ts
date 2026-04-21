@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import InpageNavDocs from './inpage-nav.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Inpage Nav',
-    parameters: {
-        docs: {
-            page: InpageNavDocs,
-        }
-    },
     argTypes: {
         width: {
             table: {

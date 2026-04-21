@@ -2,16 +2,9 @@
 /// <reference lib="dom.iterable" />
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import mediaGridDocs from "./media-grid.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Media',
-    parameters: {
-        docs: {
-            page: mediaGridDocs,
-        }
-    },
     argTypes: {
         mediaType: {
             table: {

@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import timelineDocs from "./timeline.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Timeline',
-    parameters: {
-        docs: {
-            page: timelineDocs,
-        },
-    },
     argTypes: {
         direction: {
             table: {

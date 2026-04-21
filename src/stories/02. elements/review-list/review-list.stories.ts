@@ -1,14 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import reviewListDocs from './review-list.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Review List',
     parameters: {
-        docs: {
-            page: reviewListDocs,
-        },
         args: {
             showPagination: {
                 table: {

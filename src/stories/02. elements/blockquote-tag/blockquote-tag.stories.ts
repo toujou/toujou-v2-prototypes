@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import blockquoteTagDocs from './blockquote-tag.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Blockquote',
-    parameters: {
-        docs: {
-            page: blockquoteTagDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const blockquoteTagComponent = () => {

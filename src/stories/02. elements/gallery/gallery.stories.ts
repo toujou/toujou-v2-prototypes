@@ -1,18 +1,9 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import galleryDocs from "./gallery.docs.mdx";
 import '../../../js/elements/photoswipe-lightbox-creator'
 
 export default {
     title: 'COMPONENTS/Media',
-    parameters: {
-        docs: {
-            page: galleryDocs,
-        }
-    },
-    argTypes: {
-    },
 } satisfies Meta;
 
 const Template = () => {

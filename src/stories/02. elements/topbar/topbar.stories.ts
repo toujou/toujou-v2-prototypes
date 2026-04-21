@@ -1,14 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import topbarDocs from "./topbar.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Topbar',
     parameters: {
-        docs: {
-            page: topbarDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {

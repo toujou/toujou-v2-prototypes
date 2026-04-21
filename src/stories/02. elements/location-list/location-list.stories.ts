@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import locationListDocs from './location-list.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Location List',
-    parameters: {
-        docs: {
-            page: locationListDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

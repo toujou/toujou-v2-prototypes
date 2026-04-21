@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import modalDocs from "./modal.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Modal',
-    parameters: {
-        docs: {
-            page: modalDocs,
-        },
-    },
 } satisfies Meta;
 
 const Template = () => {

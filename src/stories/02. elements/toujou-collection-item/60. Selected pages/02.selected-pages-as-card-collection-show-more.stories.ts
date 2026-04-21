@@ -1,16 +1,9 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import toujouCollectionItemDocs from '../toujou-collection-item.docs.mdx';
 import { renderCardCategoryChips } from "../01. helpers/_renderCardCategoriChips";
 
 export default {
     title: 'COMPONENTS/SelectedPages',
-    parameters: {
-        docs: {
-            page: toujouCollectionItemDocs,
-        },
-    },
     argTypes: {
         isLoading: {
             table: {
@@ -22,7 +15,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface SelectedPagesAsCardCollectionShowMoreProps {

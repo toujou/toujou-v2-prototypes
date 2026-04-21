@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import tripBookingSidebarDocs from './trip-booking-sidebar.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Booking Sidebar',
-    parameters: {
-        docs: {
-            page: tripBookingSidebarDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const renderFakeForm = () => {

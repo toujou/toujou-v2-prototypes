@@ -3,16 +3,8 @@
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import thirdPartyContentDocs from './third-party-content.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Third Party Content',
-    parameters: {
-        docs: {
-            page: thirdPartyContentDocs,
-        },
-    },
     argTypes: {
         showPoster: {
             table: {
@@ -33,7 +25,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface ThirdPartyContentStoryProps {

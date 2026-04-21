@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import tripDatesByPersonDocs from './trip-dates-by-person.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Trip Dates By Person',
-    parameters: {
-        docs: {
-            page: tripDatesByPersonDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface DepartureByPersonCountry {

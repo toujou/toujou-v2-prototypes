@@ -1,13 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import coverSliderDocs from "./cover-slider.docs.mdx";
 
 export default {
     title: 'COMPONENTS/Cover Slider',
     parameters: {
-        docs: {
-            page: coverSliderDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {
@@ -21,7 +16,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface CoverSliderStoryProps {

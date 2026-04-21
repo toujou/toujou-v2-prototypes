@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import feloginDocs from './felogin.docs.mdx';
-
 export default {
     title: 'COMPONENTS/felogin',
-    parameters: {
-        docs: {
-            page: feloginDocs,
-        },
-    },
 } satisfies Meta;
 
 const feloginBlock = () => {

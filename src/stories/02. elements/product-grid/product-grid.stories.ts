@@ -2,16 +2,9 @@
 /// <reference lib="dom.iterable" />
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import productGridDocs from './product-grid.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Product Grid',
-    parameters: {
-        docs: {
-            page: productGridDocs,
-        },
-    },
     argTypes: {
         imageFormat: {
             table: {
@@ -36,7 +29,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface ProductGridStoryProps {

@@ -1,14 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import headerSliderDocs from './header-slider.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Header',
     parameters: {
-        docs: {
-            page: headerSliderDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {
@@ -79,7 +73,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface HeaderSliderStoryProps {

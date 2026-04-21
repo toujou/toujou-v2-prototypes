@@ -1,16 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import calendarPagesDocs from './calendar-pages.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Calendar Pages',
-    parameters: {
-        docs: {
-            page: calendarPagesDocs,
-        },
-    },
-    argTypes: {},
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface CalendarPagesStoryProps {

@@ -3,16 +3,8 @@
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import snackbarDocs from "./snackbar.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Snackbar',
-    parameters: {
-        docs: {
-            page: snackbarDocs,
-        },
-    },
     argTypes: {
         snackbarVariant: {
             table: {

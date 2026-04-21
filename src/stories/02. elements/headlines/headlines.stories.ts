@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import headlinesDocs from "./headlines.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Headlines',
-    parameters: {
-        docs: {
-            page: headlinesDocs,
-        }
-    },
 } satisfies Meta;
 
 const HeadlineH1Template = () => {

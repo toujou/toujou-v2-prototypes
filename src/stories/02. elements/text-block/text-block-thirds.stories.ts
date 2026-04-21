@@ -1,15 +1,7 @@
 import {Meta} from '@storybook/web-components-vite';
 
-// @ts-ignore
-import textBlockDocs from './text-block.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Text Elements',
-    parameters: {
-        docs: {
-            page: textBlockDocs,
-        }
-    },
 } satisfies Meta;
 
 const Template = () => {

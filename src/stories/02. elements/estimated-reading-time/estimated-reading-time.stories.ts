@@ -1,16 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import estimatedReadingTimeDocs from './estimated-reading-time.docs.mdx';
-
 export default {
     title: 'COMPONENTS/EstimatedReadingTime',
-    parameters: {
-        docs: {
-            page: estimatedReadingTimeDocs,
-        },
-    },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

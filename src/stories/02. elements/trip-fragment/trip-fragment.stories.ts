@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import tripFragmentDocs from './trip-fragment.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Tourism/Fragment',
-    parameters: {
-        docs: {
-            page: tripFragmentDocs,
-        },
-    },
     argTypes: {
         hideMap: {
             table: {
@@ -22,7 +14,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs'],
 } satisfies Meta;
 
 interface TripFragmentProps {

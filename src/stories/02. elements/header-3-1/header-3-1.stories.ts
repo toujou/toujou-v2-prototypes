@@ -1,15 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import headerDocs from './header-3-1.docs.mdx';
-
-
 export default {
     title: 'COMPONENTS/Header',
     parameters: {
-        docs: {
-            page: headerDocs,
-        },
         layout: "fullscreen",
     },
     argTypes: {
@@ -36,7 +29,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface HeaderThreeToOneStoryProps {

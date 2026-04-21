@@ -1,15 +1,7 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import timesListDocs from './times-list.docs.mdx';
-
 export default {
     title: 'COMPONENTS/TimesList',
-    parameters: {
-        docs: {
-            page: timesListDocs,
-        },
-    },
 } satisfies Meta;
 
 const Template = () => {

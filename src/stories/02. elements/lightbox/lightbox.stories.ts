@@ -1,17 +1,9 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import lightboxDocs from './lightbox.docs.mdx';
-
 import '../../../js/elements/photoswipe-lightbox-creator';
 
 export default {
     title: 'COMPONENTS/Lightbox',
-    parameters: {
-        docs: {
-            page: lightboxDocs,
-        },
-    },
 } satisfies Meta;
 
 const Template = () => {

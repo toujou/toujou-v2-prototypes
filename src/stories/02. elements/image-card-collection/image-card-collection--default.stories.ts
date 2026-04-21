@@ -3,7 +3,6 @@
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-
 export default {
     title: 'COMPONENTS/CollectionImageCards',
     argTypes: {

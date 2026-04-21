@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import sliderDocs from "./slider.docs.mdx";
-
 export default {
     title: 'COMPONENTS/Media',
-    parameters: {
-        docs: {
-            page: sliderDocs,
-        },
-    },
     argTypes: {
         designColor: {
             table: {

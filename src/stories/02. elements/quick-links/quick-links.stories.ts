@@ -1,14 +1,8 @@
 import { StoryFn, Meta } from '@storybook/web-components';
 
-// @ts-ignore
-import quickLinksDocs from './quick-links.docs.mdx';
-
 export default {
     title: 'COMPONENTS/QuickLinks',
     parameters: {
-        docs: {
-            page: quickLinksDocs,
-        },
         layout: 'fullscreen', // Changed from fullwidth to fullscreen (standard SB value)
     },
     argTypes: {

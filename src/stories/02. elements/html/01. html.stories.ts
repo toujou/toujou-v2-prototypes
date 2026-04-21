@@ -1,14 +1,8 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import htmlDocs from './html.docs.mdx';
-
 export default {
     title: 'COMPONENTS/HTML',
     parameters: {
-        docs: {
-            page: htmlDocs,
-        },
         layout: 'fullwidth',
     },
     argTypes: {

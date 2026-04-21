@@ -1,14 +1,8 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import personDocs from './person.docs.mdx';
-
 export default {
     title: 'PAGES/Person',
     parameters: {
-        docs: {
-            page: personDocs,
-        },
         layout: "fullwidth"
     },
 } satisfies Meta;

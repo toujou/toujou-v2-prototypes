@@ -1,14 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-// @ts-ignore
-import searchDocs from './search.docs.mdx';
 
 export default {
     title: 'COMPONENTS/Search',
-    parameters: {
-        docs: {
-            page: searchDocs,
-        },
-    },
 } satisfies Meta;
 
 const Template: StoryFn = () => {

@@ -1,15 +1,7 @@
 import {  Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import mediaPlaceholderDocs from './media-placeholder.docs.mdx';
-
 export default {
     title: 'COMPONENTS/MediaPlaceholder',
-    parameters: {
-        docs: {
-            page: mediaPlaceholderDocs,
-        },
-    },
     argTypes: {
         mediaType: {
             table: {
@@ -22,7 +14,6 @@ export default {
             required: true,
         },
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface MediaPlaceholdderStoryProps {

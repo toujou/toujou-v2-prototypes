@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import mapDocs from './map.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Map',
-    parameters: {
-        docs: {
-            page: mapDocs,
-        },
-    },
     argTypes: {
         direction: {
             table: {

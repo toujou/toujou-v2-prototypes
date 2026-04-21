@@ -1,17 +1,10 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import blogPluginsDocs from './blog-plugins.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Blog Plugin',
     parameters: {
-        docs: {
-            page: blogPluginsDocs,
-        },
         layout: 'fullwidth'
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 const Template = () => {

@@ -1,15 +1,7 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import topbuttonDocs from './topbutton.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Topbutton',
-    parameters: {
-        docs: {
-            page: topbuttonDocs,
-        },
-    },
 } satisfies Meta;
 
 const Template: StoryFn = () => {

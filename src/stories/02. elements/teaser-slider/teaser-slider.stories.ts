@@ -1,15 +1,7 @@
 import { Meta, StoryFn } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import TeaserSliderDocs from './teaser-slider.docs.mdx';
-
 export default {
     title: 'COMPONENTS/Teaser',
-    parameters: {
-        docs: {
-            page: TeaserSliderDocs,
-        }
-    },
     argTypes: {
         teaserDirection: {
             table: {
@@ -23,7 +15,6 @@ export default {
             required: true,
         }
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 interface ToujouTeaserSliderProps {

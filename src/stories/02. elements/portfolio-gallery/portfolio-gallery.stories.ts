@@ -1,19 +1,12 @@
 import { Meta } from '@storybook/web-components-vite';
 
-// @ts-ignore
-import portfolioGalleryDocs from './portfolio-gallery.docs.mdx';
-
 import "../../../js/elements/photoswipe-lightbox-creator";
 
 export default {
     title: 'COMPONENTS/Portfolio Gallery',
     parameters: {
-        docs: {
-            page: portfolioGalleryDocs,
-        },
         layout: 'fullscreen',
     },
-    tags: ['autodocs']
 } satisfies Meta;
 
 
