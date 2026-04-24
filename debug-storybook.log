@@ -1,32 +1,33 @@
-[11:53:56.148] [INFO] storybook v10.3.5
-[11:53:56.440] [DEBUG] Getting package.json info for /Users/lpato/Sites/toujou-2-storybook/package.json...
-[11:53:56.921] [DEBUG] Serving static files from [36mnode_modules/@chromatic-com/storybook/assets[39m at [36m/addon-visual-tests-assets[39m
-[11:53:56.921] [DEBUG] Serving static files from [36massets[39m at [36m/[39m
-[11:53:56.927] [INFO] Starting...
-[11:53:57.495] [DEBUG] Starting preview..
-[11:53:57.544] [WARN] 🚨 Unable to index ./src/stories/02. elements/header/header-with-searchcard.stories.ts:
-  SyntaxError: Unexpected token (106:4)
-    at constructor (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:12171:21)
-    at Parser.raise (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:16356:71)
-    at Parser.unexpected (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:16373:20)
-    at Parser.parsePropertyName (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:19681:22)
-    at Parser.parsePropertyDefinition (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:19600:18)
-    at Parser.parseObjectLike (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:19576:73)
-    at Parser.parseExprAtom (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:19302:25)
-    at Parser.parseExprAtom (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:15093:181)
-    at Parser.parseExprSubscripts (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:19165:105)
-    at Parser.parseUpdate (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:19156:57)
-[11:53:57.548] [ERROR] Failed to build the preview
-[11:53:57.552] [ERROR] Error: Unable to index ./src/stories/02. elements/header/header-with-searchcard.stories.ts
+[14:04:39.389] [INFO] storybook v10.3.5
+[14:04:39.821] [DEBUG] Getting package.json info for /Users/lpato/Sites/toujou-2-storybook/package.json...
+[14:04:40.592] [DEBUG] Serving static files from [36mnode_modules/@chromatic-com/storybook/assets[39m at [36m/addon-visual-tests-assets[39m
+[14:04:40.592] [DEBUG] Serving static files from [36massets[39m at [36m/[39m
+[14:04:40.600] [INFO] Starting...
+[14:04:41.275] [DEBUG] Starting preview..
+[14:04:41.299] [WARN] 🚨 Unable to index ./src/stories/02. elements/alert/alert.docs.mdx:
+  Error: Unknown identifier AlertStories
+    at getOf (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/core-server/index.js:5746:15)
+    at file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/core-server/index.js:5799:191
+    at Array.forEach (<anonymous>)
+    at extractTitle (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/core-server/index.js:5793:69)
+    at file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/core-server/index.js:5818:123
+    at wrapped (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/mdx-N42X6CFJ-ODHTGV2Q.js:11571:27)
+    at next (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/mdx-N42X6CFJ-ODHTGV2Q.js:11553:44)
+    at done (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/mdx-N42X6CFJ-ODHTGV2Q.js:11584:29)
+    at then (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/mdx-N42X6CFJ-ODHTGV2Q.js:11587:5)
+    at wrapped (file:///Users/lpato/Sites/toujou-2-storybook/node_modules/storybook/dist/_node-chunks/mdx-N42X6CFJ-ODHTGV2Q.js:11581:122)
+[14:04:41.303] [ERROR] Failed to build the preview
+[14:04:41.306] [ERROR] Error: Unable to index ./src/stories/02. elements/alert/alert.docs.mdx
     at _StoryIndexGenerator.getIndexAndStats (file://./node_modules/storybook/dist/core-server/index.js:6282:15)
     at async _StoryIndexGenerator.getIndex (file://./node_modules/storybook/dist/core-server/index.js:6271:13)
     at async config (file://./node_modules/@storybook/builder-vite/dist/_node-chunks/chunk-FQ4EAKAD.js:184:19)
-    at async runConfigHook (file://./node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:66987:19)
-    at async resolveConfig (file://./node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:66428:12)
-    at async _createServer (file://./node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:62999:18)
+    at async runConfigHook (file://./node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:67004:19)
+    at async resolveConfig (file://./node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:66445:12)
+    at async _createServer (file://./node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:63015:18)
     at async Module.start (file://./node_modules/@storybook/builder-vite/dist/index.js:1557:17)
     at async storybookDevServer (file://./node_modules/storybook/dist/core-server/index.js:7503:83)
     at async buildOrThrow (file://./node_modules/storybook/dist/core-server/index.js:4508:12)
     at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:8033:41)
-[11:53:57.553] [WARN] Broken build, fix the error above.
+[14:04:41.310] [WARN] Broken build, fix the error above.
 You may need to refresh the browser.
+[14:04:47.429] [PROMPT] Would you like to send anonymous crash reports to improve Storybook and fix bugs faster? {"choice":true}

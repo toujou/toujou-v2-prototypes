@@ -1,3 +1,5 @@
+import { definePreview } from '@storybook/web-components-vite';
+
 // Import styles for the Storybook preview
 import '../src/js/globals';
 import '../src/styles/StorybookStyles.css';
@@ -20,7 +22,7 @@ import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 import './configUtils/mainNavHack';
 
 // Export everything in one default block
-export default {
+export default definePreview({
     globalTypes: {
         toujouTheme: {
             description: 'Theme',
@@ -78,7 +80,6 @@ export default {
             selectedPanel: 'storybook/controls/panel',
         },
     },
-    tags: ['autodocs'],
     decorators: [
         // This is commented out because it works well on the preview, but not on the deployed storybook
         // (Because the files get different names, with hashes...)
@@ -87,4 +88,4 @@ export default {
         //     return Story();
         // },
     ]
-};
+});

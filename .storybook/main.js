@@ -1,7 +1,7 @@
 export default {
     "stories": [
         "../src/**/*.stories.@(js|jsx|ts|tsx)",
-        "../src/**/*.docs.mdx",
+        // "../src/**/*.mdx",
     ],
     "addons": [
         "@storybook/addon-links",
@@ -13,7 +13,7 @@ export default {
         options: {}
     },
     "staticDirs": ["../assets"],
-    "docs": {
-        "defaultName": "z_Docs" // stupid hack to make the Docs always come as last
-    }
+    // "docs": {
+    //     "autodocs": "tag"
+    // }
 };

@@ -1,5 +1,4 @@
 import PhotoSwipe from 'photoswipe';
-// @ts-expect-error
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 // @ts-expect-error
 import PhotoSwipeVideoPlugin from 'photoswipe-video-plugin';
@@ -28,7 +27,7 @@ function initPhotoswipeLightboxCreator() {
 }
 
 /**
- * Initialize a lightbox element for each of the lightbox parent element
+ * Initialize a lightbox element for each of the lightbox parent elements
  */
 function _initParents() {
     pswpLightboxCreator.parents.forEach((parent) => {
@@ -37,11 +36,11 @@ function _initParents() {
 }
 
 /**
- * Initialize  single instance of a PhotoSwipe lightbox
+ * Initialize a single instance of a PhotoSwipe lightbox
  * @param {HTMLElement} parent
  */
 function _initLightbox(parent: HTMLElement) {
-    const allItems = Array.from(parent.querySelectorAll(`[${pswpLightboxCreator.itemIdAttribute}]`));
+    const allItems = Array.from(parent.querySelectorAll<HTMLElement>(`[${pswpLightboxCreator.itemIdAttribute}]`));
 
     // Remove any "cloned" slider slides (created by the slider plugin to enable the looping option
     const filteredItems = allItems.filter(item => !item.closest('.splide__slide--clone'));
@@ -56,6 +55,7 @@ function _initLightbox(parent: HTMLElement) {
 
     lightbox.on('uiRegister', () => _handleUiRegister(lightbox));
 
+    // @ts-expect-error
     lightbox.videoPlugin = new PhotoSwipeVideoPlugin(lightbox, {
         autoplay: false
     });
@@ -79,14 +79,14 @@ function _initLightbox(parent: HTMLElement) {
  * @param {PhotoSwipeLightbox} lightbox
  */
 function _handleUiRegister(lightbox: PhotoSwipeLightbox): void {
-    lightbox.pswp.ui.registerElement({
+    lightbox.pswp?.ui?.registerElement({
         name: 'caption',
         order: 9,
         isButton: false,
         appendTo: 'root',
         onInit: (el: HTMLElement) => {
-            lightbox.pswp.element.setAttribute('aria-label', 'Lightbox');
-            lightbox.pswp.on('change', () => _handleChange(el, lightbox));
+            lightbox.pswp?.element?.setAttribute('aria-label', 'Lightbox');
+            lightbox.pswp?.on('change', () => _handleChange(el, lightbox));
         },
     });
 }
@@ -98,10 +98,10 @@ function _handleUiRegister(lightbox: PhotoSwipeLightbox): void {
  */
 function _handleChange(el: HTMLElement, lightbox: PhotoSwipeLightbox): void {
     let captionText = '';
-    const currSlideElement = lightbox.pswp.currSlide.data.element;
+    const currSlideElement = lightbox.pswp?.currSlide?.data.element;
 
     if (currSlideElement) {
-        captionText = currSlideElement.getAttribute('title');
+        captionText = currSlideElement.getAttribute('title') ?? '';
     }
 
     el.textContent = captionText ? captionText : '';
