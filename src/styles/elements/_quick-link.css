@@ -12,6 +12,7 @@
             transform var(--animation-duration-fast) var(--animation-easing-normal),
             background-color var(--animation-duration-fast) var(--animation-easing-normal);
         --quick-link-text-decoration: none;
+        --quick-link-pointer-events: all;
 
         --quick-link-figure-size: var(--quick-link-icon-size);
         --quick-link-image-border-radius: var(--border-radius-normal);
@@ -39,6 +40,7 @@
         transform: translateX(var(--quick-link-translate-x));
         text-decoration: var(--quick-link-text-decoration);
         transition: var(--quick-link-transition);
+        pointer-events: var(--quick-link-pointer-events);
     }
 
     .quick-link:is(:hover, :focus-visible) {

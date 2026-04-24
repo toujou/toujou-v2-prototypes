@@ -7,6 +7,7 @@
         --quick-links-vertical-position-bottom: var(--spacing-xxxl);
         --quick-links-horizontal-position-left: 0;
         --quick-links-horizontal-position-right: 0;
+        --quick-links-pointer-events: none;
         --quick-links-z-index: var(--z-index-quick-links);
 
         --quick-links-list-list-style: none;
@@ -18,6 +19,7 @@
 
         position: var(--quick-links-position);
         display: var(--quick-links-display);
+        pointer-events: var(--quick-links-pointer-events);
         z-index: var(--quick-links-z-index);
     }
 
