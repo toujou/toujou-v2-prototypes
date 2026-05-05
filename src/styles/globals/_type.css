@@ -285,7 +285,8 @@ a:not(.button):focus-visible {
 
 /* stylelint-disable-next-line selector-list-comma-newline-after */
 :is(main, .chapter, .html-container) > :is(p, h1, h2, h3, h4, h5, h6, a),
-:is(main, .chapter, .html-container) > ve-content-element > :is(p, h1, h2, h3, h4, h5, h6, a) {
+:is(main, .chapter, .html-container) > ve-content-element > :is(p, h1, h2, h3, h4, h5, h6, a),
+:is(main, .chapter, .html-container) > ve-content-element[ctype="paragraph"] > ve-editable-rich-text > .ck-editor > .ck-editor__main {
     width: var(--content-width-with-padding);
     max-width: var(--content-max-width);
     margin-left: auto;
