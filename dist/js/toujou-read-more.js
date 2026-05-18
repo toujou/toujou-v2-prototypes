@@ -18,7 +18,7 @@ import{i as t,s as e,x as o}from"./lit-element-52TjfAhW.js";class s extends e{st
     }
 
     :host(:not([has-clamped-text])) .content {
-      -webkit-line-clamp: unset;
+      -webkit-line-clamp: var(--toujou-read-more-max-lines-when-open, 9999);
     }
 
     .content {
