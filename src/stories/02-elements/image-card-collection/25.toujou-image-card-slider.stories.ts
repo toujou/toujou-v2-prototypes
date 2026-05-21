@@ -1,10 +1,93 @@
-import { Meta } from '@storybook/web-components-vite';
+import { StoryFn, Meta } from '@storybook/web-components-vite';
 
 export default {
     title: 'COMPONENTS/CollectionImageCards',
+    argTypes: {
+        imageFormat: {
+            table: {
+                category: "Image card settings",
+                defaultValue: { summary: '16-9' },
+            },
+            name: 'Image format',
+            description: "Set the image card's image format",
+            options: ['16-9', 'square'],
+            control: { type: 'radio' },
+            required: true,
+        },
+        cardVariant: {
+            table: {
+                category: "Image card settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Card variant',
+            description: "Set the image card element design",
+            options: ['default', 'primary', 'secondary', 'inverted'],
+            control: { type: 'radio' },
+            required: true,
+        },
+    },
 } satisfies Meta;
 
-const Template = () => {
+type SliderItem = {
+    title: string,
+    imageURL: string
+}
+
+const sliderItems: SliderItem[] = [
+    {
+        title: "Beautiful title",
+        imageURL: "https://picsum.photos/400/400",
+    },
+    {
+        title: "Sunny day",
+        imageURL: "https://picsum.photos/400/401",
+    },
+    {
+        title: "Another nice title",
+        imageURL: "https://picsum.photos/400/402",
+    },
+    {
+        title: "Interesting very long title with multiple lines",
+        imageURL: "https://picsum.photos/400/403",
+    },
+    {
+        title: "Short",
+        imageURL: "https://picsum.photos/401/401",
+    },
+    {
+        title: "Cool title",
+        imageURL: "https://picsum.photos/401/402",
+    }
+];
+
+function createSliderItem(sliderItem: SliderItem, imageFormat: string, cardVariant: string) {
+    return `
+        <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
+            <a class="image-card" href="#" image-format="${imageFormat}" card-variant="${cardVariant}">
+                <figure class="image-card__figure">
+                    <img src="${sliderItem.imageURL}" alt="beautiful image" class="image-card__image">
+                </figure>
+                <h3 class="image-card__title">
+                    <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
+                    ${sliderItem.title}
+                </h3>
+            </a>
+        </li>
+    `;
+}
+
+function renderSliderItems(imageFormat: string, cardVariant: string) {
+    return sliderItems.map((sliderItem: SliderItem) => {
+        return createSliderItem(sliderItem, imageFormat, cardVariant)
+    }).join('');
+}
+
+interface ToujouImageCardSliderStoryProps {
+    imageFormat: string;
+    cardVariant: string
+}
+
+const Template: StoryFn<ToujouImageCardSliderStoryProps> = (args: ToujouImageCardSliderStoryProps) => {
     return `
         <main>
             <toujou-slider
@@ -21,7 +104,7 @@ const Template = () => {
                 arrow-last-aria-label="Go to last slide"
                 arrow-prev-aria-label="Go to previous slide"
                 arrow-next-aria-label="Go to next slide"
-                slides-count="8"
+                slides-count="${sliderItems.length}"
             >
                 <div class="splide slider__slider">
                     <div class="splide__arrows slider-controls">
@@ -35,83 +118,7 @@ const Template = () => {
 
                     <div class="splide__track slider__track">
                         <ul class="splide__list slider__list">
-                            <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
-                                <a class="image-card" href="#" image-format="16-9" card-variant="primary">
-                                    <figure class="image-card__figure">
-                                        <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
-                                    </figure>
-                                    <h3 class="image-card__title">
-                                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
-                                        Beautiful title
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
-                                <a class="image-card" href="#" image-format="16-9" card-variant="primary">
-                                    <figure class="image-card__figure">
-                                        <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
-                                    </figure>
-                                    <h3 class="image-card__title">
-                                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
-                                        Beautiful title
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
-                                <a class="image-card" href="#" image-format="16-9" card-variant="primary">
-                                    <figure class="image-card__figure">
-                                        <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
-                                    </figure>
-                                    <h3 class="image-card__title">
-                                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
-                                        Beautiful title
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
-                                <a class="image-card" href="#" image-format="16-9" card-variant="primary">
-                                    <figure class="image-card__figure">
-                                        <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
-                                    </figure>
-                                    <h3 class="image-card__title">
-                                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
-                                        Beautiful title
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
-                                <a class="image-card" href="#" image-format="16-9" card-variant="primary">
-                                    <figure class="image-card__figure">
-                                        <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
-                                    </figure>
-                                    <h3 class="image-card__title">
-                                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
-                                        Beautiful title
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
-                                <a class="image-card" href="#" image-format="16-9" card-variant="primary">
-                                    <figure class="image-card__figure">
-                                        <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
-                                    </figure>
-                                    <h3 class="image-card__title">
-                                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
-                                        Beautiful title
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="splide__slide slider-slide image-card-slider" data-splide-interval="6000">
-                                <a class="image-card" href="#" image-format="16-9" card-variant="primary">
-                                    <figure class="image-card__figure">
-                                        <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
-                                    </figure>
-                                    <h3 class="image-card__title">
-                                        <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
-                                        Beautiful title
-                                    </h3>
-                                </a>
-                            </li>
+                            ${renderSliderItems(args.imageFormat, args.cardVariant)}
                         </ul>
                     </div>
                     <div class="splide__progress slider-progress">
@@ -130,3 +137,8 @@ const Template = () => {
 };
 
 export const ImageCardSlider = Template.bind({});
+
+ImageCardSlider.args = {
+    imageFormat: '16-9',
+    cardVariant: 'default',
+}
