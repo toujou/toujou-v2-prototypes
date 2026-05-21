@@ -84,14 +84,6 @@
         flex-shrink: 0;
     }
 
-    .post-data__author:focus-visible {
-        --post-data-author-text-decoration: underline;
-    }
-
-    .post-data__author:focus-visible .post-data__author-name {
-        color: var(--post-data-author-name-color-hover);
-    }
-
     .post-data__author-avatar {
         display: block;
         height: var(--post-data-author-avatar-size);
@@ -153,14 +145,6 @@
     }
 
     @media (hover: hover) {
-        .post-data__author:hover {
-            --post-data-author-text-decoration: underline;
-        }
-
-        .post-data__author:hover .post-data__author-name {
-            color: var(--post-data-author-name-color-hover);
-        }
-
         .post-data__category-link:hover .post-data__category-name {
             color: var(--post-data-category-link-color-hover);
             text-decoration: underline;

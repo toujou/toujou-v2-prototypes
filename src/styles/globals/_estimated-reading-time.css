@@ -4,7 +4,7 @@
     --estimated-reading-time-color: var(--color-font);
     --estimated-reading-time-display: inline-flex;
     --estimated-reading-time-flex-align-items: center;
-    --estimated-reading-time-gap: .5ch;
+    --estimated-reading-time-gap: .5rem;
 
     --estimated-reading-time-label-display: flex;
     --estimated-reading-time-label-align-items: center;
