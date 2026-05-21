@@ -23,7 +23,7 @@
         --slider-controls-aspect-ratio: auto;
     }
 
-    .slider[content-type="card-collection"] {
+    :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"]) {
         --slider-controls-aspect-ratio: auto;
         --slider-controls-top: unset;
         --slider-controls-bottom: calc(var(--spacing-l) * -1);
@@ -51,31 +51,31 @@
         --slider-controls-bottom: calc(var(--spacing-l) * -1);
     }
 
-    .slider[content-type="card-collection"][slides-count="0"] .slider-controls,
-    .slider[content-type="card-collection"][slides-count="1"] .slider-controls {
+    :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="0"] .slider-controls,
+    :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="1"] .slider-controls {
         --slider-controls-display: none;
     }
 
     @container (width >= 540px) {
-        .slider[content-type="card-collection"][slides-count="2"] .slider-controls {
+        :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="2"] .slider-controls {
             --slider-controls-display: none;
         }
     }
 
     @container (width >= 768px) {
-        .slider[content-type="card-collection"][slides-count="3"] .slider-controls {
+        :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="3"] .slider-controls {
             --slider-controls-display: none;
         }
     }
 
     @container (width >= 840px) {
         .slider[content-type="logos"],
-        .slider[content-type="card-collection"],
+        :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"]),
         .slider[content-type="teaser"] {
             --slider-controls-bottom: var(--spacing-s);
         }
 
-        .slider[content-type="card-collection"][slides-count="4"] .slider-controls {
+        :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="4"] .slider-controls {
             --slider-controls-display: none;
         }
     }

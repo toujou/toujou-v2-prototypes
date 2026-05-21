@@ -37,6 +37,7 @@
     }
 
     .slider[content-type="card-collection"] button:is(.slider-control--prev, .slider-control--next),
+    .slider[content-type="image-card-collection"] button:is(.slider-control--prev, .slider-control--next),
     .slider[content-type="teaser"] button:is(.slider-control--prev, .slider-control--next) {
         --slider-control-distance-to-margin: 0;
     }

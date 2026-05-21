@@ -103,7 +103,8 @@
         --slider-aspect-ratio: var(--aspect-ratio-default);
     }
 
-    .slider[content-type="card-collection"] {
+    .slider[content-type="card-collection"],
+    .slider[content-type="image-card-collection"] {
         --slider-aspect-ratio: auto;
         --slider-max-width: var(--content-wide-max-width);
     }
@@ -146,7 +147,8 @@
         --slider-max-width: var(--content-fullwidth);
     }
 
-    .slider[content-type="card-collection"] .slider__track {
+    .slider[content-type="card-collection"] .slider__track,
+    .slider[content-type="image-card-collection"] .slider__track {
         padding: .5rem .25rem !important;
     }
 

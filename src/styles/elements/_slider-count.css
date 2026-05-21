@@ -31,31 +31,31 @@
         --slider-count-display: block;
     }
 
-    .slider[content-type="card-collection"] .slider-count {
+    :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"]) .slider-count {
         --slider-count-display: block;
 
         display: var(--slider-count-display);
     }
 
-    .slider[content-type="card-collection"][slides-count="0"] .slider-count,
-    .slider[content-type="card-collection"][slides-count="1"] .slider-count {
+    :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="0"] .slider-count,
+    :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="1"] .slider-count {
         --slider-count-display: none;
     }
 
     @container (width >= 540px) {
-        .slider[content-type="card-collection"][slides-count="2"] .slider-count {
+        :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="2"] .slider-count {
             --slider-count-display: none;
         }
     }
 
     @container (width >= 768px) {
-        .slider[content-type="card-collection"][slides-count="3"] .slider-count {
+        :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"])[slides-count="3"] .slider-count {
             --slider-count-display: none;
         }
     }
 
     @container (width >= 840px) {
-        .slider[content-type="card-collection"] .slider-count {
+        :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"]) .slider-count {
             --slider-count-display: none;
 
             display: var(--slider-count-display);
