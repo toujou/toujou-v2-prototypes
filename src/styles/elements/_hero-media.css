@@ -45,7 +45,8 @@
         text-decoration: var(--hero-media-text-decoration);
     }
 
-    :is(main, .chapter) > .hero-media {
+    :is(main, .chapter) > .hero-media,
+    :is(main, .chapter) > ve-content-element > .hero-media {
         width: var(--hero-media-width) !important;
         max-width: var(--content-wide-max-width) !important;
         border-radius: var(--hero-media-border-radius);
