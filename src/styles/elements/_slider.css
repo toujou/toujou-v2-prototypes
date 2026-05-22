@@ -197,7 +197,8 @@
         display: none !important;
     }
 
-    .slider__lightbox-link {
+    .slider__lightbox-link,
+    .slider__item-link {
         width: 100%;
         height: 100%;
     }
