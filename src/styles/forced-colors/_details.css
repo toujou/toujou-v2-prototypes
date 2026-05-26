@@ -1,5 +1,11 @@
 @media (forced-colors: active) {
+    .details {
+        --details-title-active-color: Highlight;
+        --details-chevron-color: LinkText;
+        --details-chevron-active-color: Highlight;
+    }
+
     .icon.details__chevron {
-        background-color: LinkText;
+        background-color: var(--details-chevron-color);
     }
 }
