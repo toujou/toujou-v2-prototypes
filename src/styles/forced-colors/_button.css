@@ -1,0 +1,11 @@
+@media (forced-colors: active) {
+    .button {
+        color: linktext;
+        border-color: linktext;
+    }
+
+    .button:is(:hover, :focus-visible) {
+        border-color: highlight !important;
+        color: highlight !important;
+    }
+}
