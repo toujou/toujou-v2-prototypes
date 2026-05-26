@@ -1,6 +1,32 @@
 @media (forced-colors: active) {
+    .breadcrumb {
+        --breadcrumb-link-color-active: Highlight;
+    }
+
     .breadcrumb__item:first-child::before,
     .breadcrumb__item:not(:last-child)::after {
         background-color: CanvasText;
+    }
+
+    .breadcrumb .breadcrumb__item:last-child .breadcrumb__link {
+        color: CanvasText;
+    }
+
+    .breadcrumb[ismobile][mobilemenuisopen]::part(fake-list) {
+        border: var(--border-width-normal) solid CanvasText;
+    }
+
+    .breadcrumb[ismobile][mobilemenuisopen]::part(fake-list)::before {
+        border-left: var(--breadcrumb-fake-list-triangle-size) solid Canvas;
+        border-right: var(--breadcrumb-fake-list-triangle-size) solid Canvas;
+        border-bottom: var(--breadcrumb-fake-list-triangle-size) solid CanvasText;
+    }
+
+    .breadcrumb__toggle .icon {
+        background-color: LinkText !important;
+    }
+
+    .breadcrumb__toggle:is(:hover, :focus-visible) .icon {
+        background-color: Highlight !important;
     }
 }
