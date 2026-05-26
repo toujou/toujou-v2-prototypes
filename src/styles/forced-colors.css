@@ -18,3 +18,4 @@
 @import "./forced-colors/_slider-progress.css" layer(forced-colors);
 @import "./forced-colors/_social-media-bar.css" layer(forced-colors);
 @import "./forced-colors/_timeline-card.css" layer(forced-colors);
+@import "./forced-colors/_type.css" layer(forced-colors);
