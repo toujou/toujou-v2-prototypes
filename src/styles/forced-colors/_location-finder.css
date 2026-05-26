@@ -1,4 +1,9 @@
 @media (forced-colors: active) {
+    .location-finder {
+        --toujou-location-finder-search-search-icon-color: CanvasText;
+        --toujou-location-finder-search-close-icon-opacity: 1;
+    }
+
     .location-finder::part(geocoder-container-locator-button)::after {
         background-color: CanvasText;
         opacity: 1;

@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .location-finder::part(teaser-component):is(:hover, :focus-visible) {
+        --toujou-location-finder-teaser-name-color: highlight;
+    }
+}
