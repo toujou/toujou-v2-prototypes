@@ -1,5 +1,9 @@
 @media (forced-colors: active) {
     .burger-button {
-        --burger-button-line-color: CanvasText;
+        --burger-button-line-color: LinkText;
+    }
+
+    .burger-button:is(:hover, :focus-visible) {
+        --burger-button-line-color: Highlight;
     }
 }

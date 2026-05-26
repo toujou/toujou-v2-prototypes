@@ -1,0 +1,14 @@
+@media (forced-colors: active) {
+    .topbar__actions-link {
+        --topbar-icons-color: Linktext;
+        --topbar-icons-active-color: Highlight;
+    }
+
+    .topbar__actions-link .icon {
+        background-color: LinkText;
+    }
+
+    .topbar__actions-link:is(:hover, :focus-visible) .icon {
+        background-color: Highlight;
+    }
+}

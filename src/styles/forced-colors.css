@@ -24,5 +24,6 @@
 @import "./forced-colors/_slider-progress.css" layer(forced-colors);
 @import "./forced-colors/_social-media-bar.css" layer(forced-colors);
 @import "./forced-colors/_timeline-card.css" layer(forced-colors);
+@import "./forced-colors/_topbar.css" layer(forced-colors);
 @import "./forced-colors/_toujou-location-finder-teaser.css" layer(forced-colors);
 @import "./forced-colors/_type.css" layer(forced-colors);
