@@ -16,6 +16,9 @@
 @import "./forced-colors/_pn-nav.css" layer(forced-colors);
 @import "./forced-colors/_quick-link.css" layer(forced-colors);
 @import "./forced-colors/_radio.css" layer(forced-colors);
+@import "./forced-colors/_slider-bullets.css" layer(forced-colors);
+@import "./forced-colors/_slider-control.css" layer(forced-colors);
+@import "./forced-colors/_slider-count.css" layer(forced-colors);
 @import "./forced-colors/_slider-progress.css" layer(forced-colors);
 @import "./forced-colors/_social-media-bar.css" layer(forced-colors);
 @import "./forced-colors/_timeline-card.css" layer(forced-colors);

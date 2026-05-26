@@ -1,0 +1,17 @@
+@media (forced-colors: active) {
+    .slider-control {
+        --slider-control-border: var(--border-width-normal) solid linktext;
+    }
+
+    .slider-control .icon {
+        background-color: linktext !important;
+    }
+
+    .slider-control:is(:hover, :focus-visible) {
+        --slider-control-border: var(--border-width-normal) solid highlight;
+    }
+
+    .slider-control:is(:hover, :focus-visible) .icon {
+        background-color: highlight !important;
+    }
+}

@@ -1,0 +1,16 @@
+@media (forced-colors: active) {
+    button.slider-bullets__bullet {
+        border-color: linktext;
+        background-color: linktext;
+    }
+
+    button.slider-bullets__bullet:is(:hover, :focus-visible) {
+        border-color: highlight;
+        background-color: highlight;
+    }
+
+    button.slider-bullets__bullet.is-active {
+        border-color: canvasText;
+        background-color: canvasText;
+    }
+}
