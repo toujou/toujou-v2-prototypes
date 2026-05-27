@@ -13,6 +13,7 @@
 @import "./forced-colors/_image-card.css" layer(forced-colors);
 @import "./forced-colors/_inpage-nav.css" layer(forced-colors);
 @import "./forced-colors/_location-finder.css" layer(forced-colors);
+@import "./forced-colors/_main-nav.css" layer(forced-colors);
 @import "./forced-colors/_map-contact.css" layer(forced-colors);
 @import "./forced-colors/_media-placeholder.css" layer(forced-colors);
 @import "./forced-colors/_pn-nav.css" layer(forced-colors);

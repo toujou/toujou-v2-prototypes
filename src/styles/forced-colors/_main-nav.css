@@ -1,0 +1,19 @@
+@media (forced-colors: active) {
+    .main-nav {
+        --main-nav-link-color-hover: Highlight;
+    }
+
+    .main-nav__chevron .icon {
+        background-color: LinkText;
+    }
+
+    .main-nav__chevron:is(:hover, :focus-visible) .icon {
+        background-color: Highlight;
+    }
+
+    @media screen and (width > 1024px) {
+        .main-nav__list[data-nav-list-level="2"] {
+            border: var(--border-width-normal) solid CanvasText;
+        }
+    }
+}
