@@ -1,0 +1,6 @@
+@media (forced-colors: active) {
+    .blog-sidebar__comment-link:is(:hover, :focus-visible),
+    .blog-sidebar__post-link:is(:hover, :focus-visible) {
+        color: Highlight;
+    }
+}
