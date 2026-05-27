@@ -1,6 +1,7 @@
 @media (forced-colors: active) {
     .inpage-nav {
         --inpage-nav-link-after-bg-color: Highlight;
+        --inpage-nav-label-before-bg-color: CanvasText;
     }
 
     .inpage-nav[ismobile] .inpage-nav__item[active] .inpage-nav__link,

@@ -1,0 +1,9 @@
+@media (forced-colors: active) {
+    .pswp {
+        --pswp-icon-color: LinkText;
+    }
+
+    .pswp__button:is(:hover, :focus-visible) {
+        --pswp-icon-color: Highlight;
+    }
+}
