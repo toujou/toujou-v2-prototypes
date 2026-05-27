@@ -13,40 +13,42 @@ const l={title:"COMPONENTS/Chapter",parameters:{layout:"fullscreen"},argTypes:{b
             </toujou-text-block-column>
         </toujou-text-block>
     `}const c=t=>{const o=t.backgroundColor!=="none"?`background-color=${t.backgroundColor}`:"",s=t.fontColor!=="none"?`font-color=${t.fontColor}`:"";return`
-        <span id="c1"></span>
-        <section class="chapter" background-color="font-light">
-            ${a("Dummy content",!0)}
-        </section>
-
-        <span id="c2"></span>
-        <section
-            class="chapter"
-            ${o}
-            ${s}
-            min-height="${t.minHeight}"
-            vertical-position="${t.verticalPosition}"
-            attachment-type="${t.attachmentType}"
-            style="
+        <main>
+            <span id="c1"></span>
+            <section class="chapter" background-color="font-light">
+                ${a("Dummy content",!0)}
+            </section>
+    
+            <span id="c2"></span>
+            <section
+                class="chapter"
+                ${o}
+                ${s}
+                min-height="${t.minHeight}"
+                vertical-position="${t.verticalPosition}"
+                attachment-type="${t.attachmentType}"
+                style="
         --chapter-bg-image-mobile: url(https://picsum.photos/840/840);
         --chapter-bg-image-tablet: url(https://picsum.photos/1024/1024);
         --chapter-bg-image-desktop: url(https://picsum.photos/1440/1440);
         --chapter-bg-image-wide: url(https://picsum.photos/1960/1960);
         --chapter-bg-image-original: url(https://picsum.photos/2400/2400);
     "
-            ${t.showBackgroundImage?"has-background-media":""}
-            chapter-padding-top="${t.paddingTop}"
-            chapter-padding-bottom="${t.paddingBottom}"
-            chapter-margin-top="${t.marginTop}"
-            chapter-margin-bottom="${t.marginBottom}"
-            is-test-target
-        >
-            ${a("Test chapter",!1)}
-        </section>
-
-        <span id="c2"></span>
-        <section class="chapter" background-color="background">
-            ${a("Dummy content",!0)}
-        </section>
+                ${t.showBackgroundImage?"has-background-media":""}
+                chapter-padding-top="${t.paddingTop}"
+                chapter-padding-bottom="${t.paddingBottom}"
+                chapter-margin-top="${t.marginTop}"
+                chapter-margin-bottom="${t.marginBottom}"
+                is-test-target
+            >
+                ${a("Test chapter",!1)}
+            </section>
+    
+            <span id="c2"></span>
+            <section class="chapter" background-color="background">
+                ${a("Dummy content",!0)}
+            </section>
+        </main>
     `},e=c.bind({});e.args={backgroundColor:"none",fontColor:"none",minHeight:"auto",verticalPosition:"default",showBackgroundImage:!1,attachmentType:"scroll",paddingTop:"default",paddingBottom:"default",marginTop:"default",marginBottom:"default"};var n,r,i;e.parameters={...e.parameters,docs:{...(n=e.parameters)==null?void 0:n.docs,source:{originalSource:`(args: ChapterStoryProps) => {
   const bgColorAttr = args.backgroundColor !== 'none' ? \`background-color=\${args.backgroundColor}\` : '';
   const fontColorAttr = args.fontColor !== 'none' ? \`font-color=\${args.fontColor}\` : '';
@@ -58,33 +60,35 @@ const l={title:"COMPONENTS/Chapter",parameters:{layout:"fullscreen"},argTypes:{b
         --chapter-bg-image-original: url(https://picsum.photos/2400/2400);
     \`;
   return \`
-        <span id="c1"></span>
-        <section class="chapter" background-color="font-light">
-            \${renderDummyContent('Dummy content', true)}
-        </section>
-
-        <span id="c2"></span>
-        <section
-            class="chapter"
-            \${bgColorAttr}
-            \${fontColorAttr}
-            min-height="\${args.minHeight}"
-            vertical-position="\${args.verticalPosition}"
-            attachment-type="\${args.attachmentType}"
-            style="\${chapterStyles}"
-            \${args.showBackgroundImage ? 'has-background-media' : ''}
-            chapter-padding-top="\${args.paddingTop}"
-            chapter-padding-bottom="\${args.paddingBottom}"
-            chapter-margin-top="\${args.marginTop}"
-            chapter-margin-bottom="\${args.marginBottom}"
-            is-test-target
-        >
-            \${renderDummyContent('Test chapter', false)}
-        </section>
-
-        <span id="c2"></span>
-        <section class="chapter" background-color="background">
-            \${renderDummyContent('Dummy content', true)}
-        </section>
+        <main>
+            <span id="c1"></span>
+            <section class="chapter" background-color="font-light">
+                \${renderDummyContent('Dummy content', true)}
+            </section>
+    
+            <span id="c2"></span>
+            <section
+                class="chapter"
+                \${bgColorAttr}
+                \${fontColorAttr}
+                min-height="\${args.minHeight}"
+                vertical-position="\${args.verticalPosition}"
+                attachment-type="\${args.attachmentType}"
+                style="\${chapterStyles}"
+                \${args.showBackgroundImage ? 'has-background-media' : ''}
+                chapter-padding-top="\${args.paddingTop}"
+                chapter-padding-bottom="\${args.paddingBottom}"
+                chapter-margin-top="\${args.marginTop}"
+                chapter-margin-bottom="\${args.marginBottom}"
+                is-test-target
+            >
+                \${renderDummyContent('Test chapter', false)}
+            </section>
+    
+            <span id="c2"></span>
+            <section class="chapter" background-color="background">
+                \${renderDummyContent('Dummy content', true)}
+            </section>
+        </main>
     \`;
 }`,...(i=(r=e.parameters)==null?void 0:r.docs)==null?void 0:i.source}}};const p=["Chapter"];export{e as Chapter,p as __namedExportsOrder,l as default};
