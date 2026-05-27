@@ -1,5 +1,6 @@
 @import "./forced-colors/_a11y-info.css" layer(forced-colors);
 @import "./forced-colors/_alert.css" layer(forced-colors);
+@import "./forced-colors/_average-rating.css" layer(forced-colors);
 @import "./forced-colors/_blockquote.css" layer(forced-colors);
 @import "./forced-colors/_breadcrumb.css" layer(forced-colors);
 @import "./forced-colors/_burger-button.css" layer(forced-colors);
