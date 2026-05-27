@@ -2,4 +2,12 @@
     a.map-contact__social {
         text-decoration: none;
     }
+
+    a.map-contact__social .icon {
+        background-color: LinkText;
+    }
+
+    a.map-contact__social:is(:hover, :focus-visible) .icon {
+        background-color: Highlight;
+    }
 }
