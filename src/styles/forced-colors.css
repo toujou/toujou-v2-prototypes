@@ -4,6 +4,7 @@
 @import "./forced-colors/_average-rating.css" layer(forced-colors);
 @import "./forced-colors/_blockquote.css" layer(forced-colors);
 @import "./forced-colors/_blog-sidebar.css" layer(forced-colors);
+@import "./forced-colors/_booking-sidebar.css" layer(forced-colors);
 @import "./forced-colors/_breadcrumb.css" layer(forced-colors);
 @import "./forced-colors/_burger-button.css" layer(forced-colors);
 @import "./forced-colors/_button.css" layer(forced-colors);
@@ -38,6 +39,7 @@
 @import "./forced-colors/_pswp.css" layer(forced-colors);
 @import "./forced-colors/_quick-link.css" layer(forced-colors);
 @import "./forced-colors/_radio.css" layer(forced-colors);
+@import "./forced-colors/_select.css" layer(forced-colors);
 @import "./forced-colors/_skippy-links.css" layer(forced-colors);
 @import "./forced-colors/_slider-bullets.css" layer(forced-colors);
 @import "./forced-colors/_slider-control.css" layer(forced-colors);
