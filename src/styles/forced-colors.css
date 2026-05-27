@@ -15,6 +15,7 @@
 @import "./forced-colors/_cover-slider.css" layer(forced-colors);
 @import "./forced-colors/_details.css" layer(forced-colors);
 @import "./forced-colors/_divider.css" layer(forced-colors);
+@import "./forced-colors/_event-schedule-item.css" layer(forced-colors);
 @import "./forced-colors/_fav-item.css" layer(forced-colors);
 @import "./forced-colors/_icon.css" layer(forced-colors);
 @import "./forced-colors/_image-card.css" layer(forced-colors);
