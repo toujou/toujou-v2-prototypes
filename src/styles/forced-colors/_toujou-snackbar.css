@@ -2,4 +2,8 @@
     .snackbar {
         --toujou-snackbar-info-button-color: LinkText;
     }
+
+    .snackbar::part(button):is(:hover, :focus-visible) {
+        color: Highlight;
+    }
 }
