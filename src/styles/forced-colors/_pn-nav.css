@@ -1,6 +1,25 @@
 @media (forced-colors: active) {
-    .pn-nav__button,
-    .pn-nav__content {
-        border: var(--border-width-normal) solid CanvasText;
+    .pn-nav__link:is(:hover, :focus-visible) {
+        --pn-nav-title-color: Highlight;
+    }
+
+    .pn-nav__button {
+        border: var(--border-width-normal) solid LinkText;
+    }
+
+    .pn-nav__link:is(:hover, :focus-visible) .pn-nav__button {
+        border: none;
+    }
+
+    .pn-nav__button .icon {
+        background-color: LinkText;
+    }
+
+    .pn-nav__link:is(:hover, :focus-visible) .pn-nav__button .icon {
+        background-color: Highlight;
+    }
+
+    .pn-nav__link:is(:hover, :focus-visible) .pn-nav__content {
+        border: var(--border-width-normal) solid Highlight;
     }
 }

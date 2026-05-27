@@ -33,6 +33,7 @@
 @import "./forced-colors/_map-contact.css" layer(forced-colors);
 @import "./forced-colors/_media-info.css" layer(forced-colors);
 @import "./forced-colors/_media-placeholder.css" layer(forced-colors);
+@import "./forced-colors/_overlay.css" layer(forced-colors);
 @import "./forced-colors/_pn-nav.css" layer(forced-colors);
 @import "./forced-colors/_pswp.css" layer(forced-colors);
 @import "./forced-colors/_quick-link.css" layer(forced-colors);
