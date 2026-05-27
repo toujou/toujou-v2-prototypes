@@ -2,4 +2,8 @@
     .social-media-bar__link .icon {
         background-color: LinkText !important;
     }
+
+    a.social-media-bar__link:is(:hover, :focus-visible) .icon {
+        background-color: Highlight !important;
+    }
 }

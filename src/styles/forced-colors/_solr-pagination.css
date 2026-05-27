@@ -1,0 +1,17 @@
+@media (forced-colors: active) {
+    a.solr-pagination__link {
+        color: LinkText;
+    }
+
+    .solr-pagination__item a.solr-pagination__link:is(:hover, :focus-visible) {
+        color: Highlight !important;
+    }
+
+    a.solr-pagination__link .icon {
+        background-color: LinkText !important;
+    }
+
+    a.solr-pagination__link:is(:hover, :focus-visible) .icon {
+        background-color: Highlight !important;
+    }
+}
