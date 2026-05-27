@@ -1,0 +1,7 @@
+@media (forced-colors: active) {
+    a.content-card:is(:hover, :focus-visible) {
+        --content-card-title-color: Highlight;
+        --content-card-text-color: Highlight;
+        --content-card-button-color: Highlight;
+    }
+}

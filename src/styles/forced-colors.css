@@ -10,6 +10,8 @@
 @import "./forced-colors/_checkbox.css" layer(forced-colors);
 @import "./forced-colors/_chip.css" layer(forced-colors);
 @import "./forced-colors/_code-block.css" layer(forced-colors);
+@import "./forced-colors/_contact-dialog.css" layer(forced-colors);
+@import "./forced-colors/_content-card.css" layer(forced-colors);
 @import "./forced-colors/_cover-slider.css" layer(forced-colors);
 @import "./forced-colors/_details.css" layer(forced-colors);
 @import "./forced-colors/_fav-item.css" layer(forced-colors);
