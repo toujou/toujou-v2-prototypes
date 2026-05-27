@@ -47,6 +47,7 @@
 @import "./forced-colors/_solr-pagination.css" layer(forced-colors);
 @import "./forced-colors/_timeline-card.css" layer(forced-colors);
 @import "./forced-colors/_topbar.css" layer(forced-colors);
+@import "./forced-colors/_topbutton.css" layer(forced-colors);
 @import "./forced-colors/_toujou-location-finder-teaser.css" layer(forced-colors);
 @import "./forced-colors/_toujou-modal.css" layer(forced-colors);
 @import "./forced-colors/_toujou-snackbar.css" layer(forced-colors);

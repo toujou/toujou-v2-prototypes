@@ -1,0 +1,17 @@
+@media (forced-colors: active) {
+    .topbutton {
+        --topbutton-border: var(--border-width-normal) solid LinkText;
+    }
+
+    .topbutton:is(:hover, :focus-visible) {
+        --topbutton-border: var(--border-width-normal) solid Highlight;
+    }
+
+    .topbutton .icon {
+        background-color: LinkText;
+    }
+
+    .topbutton:is(:hover, :focus-visible) .icon {
+        background-color: Highlight;
+    }
+}
