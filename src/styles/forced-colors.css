@@ -21,6 +21,7 @@
 @import "./forced-colors/_exit-warning.css" layer(forced-colors);
 @import "./forced-colors/_fav-item.css" layer(forced-colors);
 @import "./forced-colors/_felogin.css" layer(forced-colors);
+@import "./forced-colors/_footer.css" layer(forced-colors);
 @import "./forced-colors/_icon.css" layer(forced-colors);
 @import "./forced-colors/_image-card.css" layer(forced-colors);
 @import "./forced-colors/_inpage-nav.css" layer(forced-colors);

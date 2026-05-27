@@ -1,0 +1,18 @@
+@media (forced-colors: active) {
+    .footer {
+        --footer-link-focus-color: Highlight;
+    }
+
+    .footer__socials-link:is(:hover, :focus-visible) {
+        background-color: transparent;
+    }
+
+    .footer__socials-link .icon {
+        background-color: LinkText;
+    }
+
+    .footer__socials-link:is(:hover, :focus-visible) .icon {
+        background-color: Highlight;
+    }
+}
+
