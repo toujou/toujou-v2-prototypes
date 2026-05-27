@@ -25,6 +25,7 @@
 @import "./forced-colors/_hero-media.css" layer(forced-colors);
 @import "./forced-colors/_icon.css" layer(forced-colors);
 @import "./forced-colors/_image-card.css" layer(forced-colors);
+@import "./forced-colors/_indexedsearch-pagination.css" layer(forced-colors);
 @import "./forced-colors/_inpage-nav.css" layer(forced-colors);
 @import "./forced-colors/_language-picker.css" layer(forced-colors);
 @import "./forced-colors/_location-finder.css" layer(forced-colors);
