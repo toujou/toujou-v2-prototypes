@@ -1,5 +1,14 @@
 @media (forced-colors: active) {
     .quick-link {
-        border: var(--border-width-normal) solid CanvasText;
+        --quick-link-icon-color: LinkText;
+
+        border: var(--border-width-normal) solid LinkText;
+    }
+
+    a.quick-link:is(:hover, :focus-visible) {
+        --quick-link-text-color: Highlight;
+        --quick-link-icon-color: Highlight;
+
+        border: var(--border-width-normal) solid Highlight;
     }
 }
