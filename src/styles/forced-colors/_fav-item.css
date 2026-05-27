@@ -1,0 +1,13 @@
+@media (forced-colors: active) {
+    .fav-item {
+        --toujou-fav-item-icon-fill: LinkText;
+        --toujou-fav-item-icon-fill-faved: LinkText;
+        --toujou-fav-item-icon-fill-hover: Highlight;
+
+        border: var(--border-width-normal) solid var(--toujou-fav-item-icon-fill);
+    }
+
+    .fav-item:is(:hover, :focus-visible) {
+        --toujou-fav-item-icon-fill: var(--toujou-fav-item-icon-fill-hover);
+    }
+}
