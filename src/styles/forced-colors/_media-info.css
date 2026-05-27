@@ -1,0 +1,9 @@
+@media (forced-colors: active) {
+    .media-info__toggle .icon {
+        background-color: LinkText !important;
+    }
+
+    .media-info__toggle:is(:hover, :focus-visible) .icon {
+        background-color: Highlight !important;
+    }
+}

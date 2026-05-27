@@ -158,34 +158,36 @@ const Template: StoryFn<ChapterStoryProps> = (args: ChapterStoryProps) => {
     `
 
     return `
-        <span id="c1"></span>
-        <section class="chapter" background-color="font-light">
-            ${renderDummyContent('Dummy content', true)}
-        </section>
-
-        <span id="c2"></span>
-        <section
-            class="chapter"
-            ${bgColorAttr}
-            ${fontColorAttr}
-            min-height="${args.minHeight}"
-            vertical-position="${args.verticalPosition}"
-            attachment-type="${args.attachmentType}"
-            style="${chapterStyles}"
-            ${args.showBackgroundImage ? 'has-background-media': ''}
-            chapter-padding-top="${args.paddingTop}"
-            chapter-padding-bottom="${args.paddingBottom}"
-            chapter-margin-top="${args.marginTop}"
-            chapter-margin-bottom="${args.marginBottom}"
-            is-test-target
-        >
-            ${renderDummyContent('Test chapter', false)}
-        </section>
-
-        <span id="c2"></span>
-        <section class="chapter" background-color="background">
-            ${renderDummyContent('Dummy content', true)}
-        </section>
+        <main>
+            <span id="c1"></span>
+            <section class="chapter" background-color="font-light">
+                ${renderDummyContent('Dummy content', true)}
+            </section>
+    
+            <span id="c2"></span>
+            <section
+                class="chapter"
+                ${bgColorAttr}
+                ${fontColorAttr}
+                min-height="${args.minHeight}"
+                vertical-position="${args.verticalPosition}"
+                attachment-type="${args.attachmentType}"
+                style="${chapterStyles}"
+                ${args.showBackgroundImage ? 'has-background-media': ''}
+                chapter-padding-top="${args.paddingTop}"
+                chapter-padding-bottom="${args.paddingBottom}"
+                chapter-margin-top="${args.marginTop}"
+                chapter-margin-bottom="${args.marginBottom}"
+                is-test-target
+            >
+                ${renderDummyContent('Test chapter', false)}
+            </section>
+    
+            <span id="c2"></span>
+            <section class="chapter" background-color="background">
+                ${renderDummyContent('Dummy content', true)}
+            </section>
+        </main>
     `
 };
 
