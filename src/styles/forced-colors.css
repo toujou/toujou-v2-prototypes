@@ -38,6 +38,7 @@
 @import "./forced-colors/_pswp.css" layer(forced-colors);
 @import "./forced-colors/_quick-link.css" layer(forced-colors);
 @import "./forced-colors/_radio.css" layer(forced-colors);
+@import "./forced-colors/_skippy-links.css" layer(forced-colors);
 @import "./forced-colors/_slider-bullets.css" layer(forced-colors);
 @import "./forced-colors/_slider-control.css" layer(forced-colors);
 @import "./forced-colors/_slider-count.css" layer(forced-colors);
