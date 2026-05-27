@@ -2,4 +2,8 @@
     .timeline-card {
         border: var(--border-width-normal) solid CanvasText;
     }
+
+    a.timeline-card__button:is(:hover, :focus-visible) {
+        color: Highlight !important;
+    }
 }
