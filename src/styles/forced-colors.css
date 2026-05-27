@@ -7,6 +7,7 @@
 @import "./forced-colors/_breadcrumb.css" layer(forced-colors);
 @import "./forced-colors/_burger-button.css" layer(forced-colors);
 @import "./forced-colors/_button.css" layer(forced-colors);
+@import "./forced-colors/_calendar-pages.css" layer(forced-colors);
 @import "./forced-colors/_checkbox.css" layer(forced-colors);
 @import "./forced-colors/_chip.css" layer(forced-colors);
 @import "./forced-colors/_code-block.css" layer(forced-colors);
@@ -17,6 +18,7 @@
 @import "./forced-colors/_divider.css" layer(forced-colors);
 @import "./forced-colors/_event-schedule-item.css" layer(forced-colors);
 @import "./forced-colors/_event-table-card.css" layer(forced-colors);
+@import "./forced-colors/_exit-warning.css" layer(forced-colors);
 @import "./forced-colors/_fav-item.css" layer(forced-colors);
 @import "./forced-colors/_icon.css" layer(forced-colors);
 @import "./forced-colors/_image-card.css" layer(forced-colors);
@@ -38,4 +40,5 @@
 @import "./forced-colors/_timeline-card.css" layer(forced-colors);
 @import "./forced-colors/_topbar.css" layer(forced-colors);
 @import "./forced-colors/_toujou-location-finder-teaser.css" layer(forced-colors);
+@import "./forced-colors/_toujou-modal.css" layer(forced-colors);
 @import "./forced-colors/_type.css" layer(forced-colors);
