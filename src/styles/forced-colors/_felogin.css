@@ -1,0 +1,5 @@
+@media (forced-colors: active) {
+    .felogin__password-recover-link:is(:hover, :focus-visible) {
+        color: Highlight;
+    }
+}
