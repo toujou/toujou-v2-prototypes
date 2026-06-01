@@ -19,7 +19,7 @@ export default defineConfig({
         colors: {
             colorPrimary: 'rgb(0, 121, 168)',
             colorPrimaryLight: 'rgb(117, 227, 255)',
-            colorPrimaryDark: 'rgb(0, 121, 168)',
+            colorPrimaryDark: 'rgb(2, 55, 75)',
             colorPrimaryO10: 'rgba(0, 121, 168, 0.1)',
             colorSecondary: 'rgb(210, 45, 92)',
             colorSecondaryLight: 'rgb(224, 108, 143)',

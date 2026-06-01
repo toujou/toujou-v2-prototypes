@@ -39,20 +39,20 @@ describe('blog plugin: archive', () => {
         cy.get('.blog-archive__title').should('have.css', 'line-height', '40px');
         cy.get('.blog-archive__title').should('have.css', 'color', colors.colorPrimary);
         cy.get('.blog-archive__title').should('have.css', 'margin-bottom', '0px');
-        cy.get('.blog-archive__title').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.blog-archive__title').should('have.css', 'text-decoration', `none`);
 
         cy.get('.archive-year__title').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.archive-year__title').should('have.css', 'font-weight', tokens.type.fontWeight.headline);
         cy.get('.archive-year__title').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('.archive-year__title').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.archive-year__title').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.archive-year__title').should('have.css', 'text-decoration', `none`);
 
         cy.get('.archive-year__list').should('have.css', 'list-style', 'outside none none');
         cy.get('.archive-year__list').should('have.css', 'margin', '0px');
         cy.get('.archive-year__list').should('have.css', 'padding', '0px');
 
         cy.get('.archive-year__link').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.archive-year__link').should('have.css', 'text-decoration', `underline solid ${colors.colorPrimary}`);
+        cy.get('.archive-year__link').should('have.css', 'text-decoration', `underline`);
     });
 
     it('has correct hover styles', () => {

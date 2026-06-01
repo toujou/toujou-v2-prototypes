@@ -43,7 +43,7 @@ describe('blog plugin: post meta [mobile]', () => {
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'align-items', 'center');
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'justify-content', 'flex-start');
         cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'gap', tokens.spacing.s);
-        cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'text-decoration', 'none solid rgb(0, 0, 0)');
+        cy.get('.post-meta .post-meta__group:nth-child(1)').should('have.css', 'text-decoration', 'none');
 
         cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'height', tokens.spacing.xl);
         cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__author-avatar').should('have.css', 'width', tokens.spacing.xl);

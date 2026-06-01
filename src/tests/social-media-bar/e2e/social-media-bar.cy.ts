@@ -34,7 +34,7 @@ describe('social-media-bar', () => {
         cy.get('.social-media-bar__headline').should('have.css', 'font-size', '32px');
         cy.get('.social-media-bar__headline').should('have.css', 'color', colors.colorFont);
         cy.get('.social-media-bar__headline').should('have.css', 'margin-bottom', '0px');
-        cy.get('.social-media-bar__headline').should('have.css', 'text-decoration', 'none solid rgb(42, 54, 60)');
+        cy.get('.social-media-bar__headline').should('have.css', 'text-decoration', 'none');
     });
 
     it('has correct links styles', () => {

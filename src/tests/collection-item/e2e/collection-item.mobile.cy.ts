@@ -70,7 +70,7 @@ describe('collection item - type default [mobile]', () => {
             expect(itemAbstract).to.have.css('overflow').equal('visible');
         });
         cy.get(`${firstCardSelector} .collection-item__button`).then((itemButton) => {
-            expect(itemButton).to.have.css('text-decoration').equal(`none solid ${colors.colorPrimary}`);
+            expect(itemButton).to.have.css('text-decoration').equal(`none`);
             expect(itemButton).to.have.css('color').equal(colors.colorPrimary);
             expect(itemButton).to.have.css('display').equal('flex');
             expect(itemButton).to.have.css('align-items').equal('flex-end');
@@ -89,10 +89,10 @@ describe('collection item - type default [mobile]', () => {
         // @ts-ignore
         cy.get(`${firstCardSelector} .collection-item__button`).resetRealHover();
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorPrimary);
-        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `none`);
         cy.get(`${firstCardSelector} .collection-item__button`).realHover();
         cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'color', colors.colorPrimaryDark);
-        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `underline solid ${colors.colorPrimaryDark}`);
+        cy.get(`${firstCardSelector} .collection-item__button`).should('have.css', 'text-decoration', `underline`);
     });
 });
 

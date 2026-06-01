@@ -76,7 +76,7 @@ describe('Portfolio gallery [mobile]', () => {
         cy.get('.portfolio-gallery .portfolio-gallery__button').should('have.css', 'font-family', tokens.type.fontFamily.text);
         cy.get('.portfolio-gallery .portfolio-gallery__button').should('have.css', 'padding', `${tokens.spacing.s} ${tokens.spacing.m}`);
         cy.get('.portfolio-gallery .portfolio-gallery__button').should('have.css', 'border-radius', tokens.borderRadius.normal);
-        cy.get('.portfolio-gallery .portfolio-gallery__button').should('have.css', 'text-decoration', `none solid ${colors.colorBg}`);
+        cy.get('.portfolio-gallery .portfolio-gallery__button').should('have.css', 'text-decoration', `none`);
         cy.get('.portfolio-gallery .portfolio-gallery__button').should('have.css', 'cursor', 'pointer');
     });
 

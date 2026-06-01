@@ -15,7 +15,7 @@ describe('headlines [mobile]', () => {
         cy.get('.text-block h1').should('have.css', 'font-size', tokens.type.size.xxxl);
         cy.get('.text-block h1').should('have.css', 'margin', `0px`);
         cy.get('.text-block h1').should('have.css', 'line-height', '54px');
-        cy.get('.text-block h1').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.text-block h1').should('have.css', 'text-decoration', `none`);
         cy.get('.text-block h1').should('have.css', 'color', colors.colorPrimary);
     });
 
@@ -25,7 +25,7 @@ describe('headlines [mobile]', () => {
         cy.get('.text-block h2').should('have.css', 'font-size', tokens.type.size.xxl);
         cy.get('.text-block h2').should('have.css', 'margin', `0px`);
         cy.get('.text-block h2').should('have.css', 'line-height', '45px');
-        cy.get('.text-block h2').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.text-block h2').should('have.css', 'text-decoration', `none`);
         cy.get('.text-block h2').should('have.css', 'color', colors.colorPrimary);
     });
 
@@ -35,7 +35,7 @@ describe('headlines [mobile]', () => {
         cy.get('.text-block h3').should('have.css', 'font-size', tokens.type.size.xl);
         cy.get('.text-block h3').should('have.css', 'margin', `0px`);
         cy.get('.text-block h3').should('have.css', 'line-height', '40px');
-        cy.get('.text-block h3').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.text-block h3').should('have.css', 'text-decoration', `none`);
         cy.get('.text-block h3').should('have.css', 'color', colors.colorPrimary);
     });
 
@@ -45,7 +45,7 @@ describe('headlines [mobile]', () => {
         cy.get('.text-block h4').should('have.css', 'font-size', tokens.type.size.l);
         cy.get('.text-block h4').should('have.css', 'margin', `0px`);
         cy.get('.text-block h4').should('have.css', 'line-height', '35px');
-        cy.get('.text-block h4').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.text-block h4').should('have.css', 'text-decoration', `none`);
         cy.get('.text-block h4').should('have.css', 'color', colors.colorPrimary);
     });
 
@@ -55,7 +55,7 @@ describe('headlines [mobile]', () => {
         cy.get('.text-block h5').should('have.css', 'font-size', tokens.type.size.m);
         cy.get('.text-block h5').should('have.css', 'margin', `0px`);
         cy.get('.text-block h5').should('have.css', 'line-height', '30px');
-        cy.get('.text-block h5').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.text-block h5').should('have.css', 'text-decoration', `none`);
         cy.get('.text-block h5').should('have.css', 'color', colors.colorPrimary);
     });
 })

@@ -14,7 +14,7 @@ describe('headline h5', () => {
         cy.get('#storybook-root > h5:nth-child(1)').should('have.css', 'font-size', tokens.type.size.m);
         cy.get('#storybook-root > h5:nth-child(1)').should('have.css', 'margin', `0px`);
         cy.get('#storybook-root > h5:nth-child(1)').should('have.css', 'line-height', '30px');
-        cy.get('#storybook-root > h5:nth-child(1)').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('#storybook-root > h5:nth-child(1)').should('have.css', 'text-decoration', `none`);
         cy.get('#storybook-root > h5:nth-child(1)').should('have.css', 'color', colors.colorPrimary);
     });
 

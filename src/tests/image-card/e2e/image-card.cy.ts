@@ -53,7 +53,7 @@ describe('image-card', () => {
         cy.get(`${imageCard}`).should('have.css', 'max-width', `calc(25% - 36px)`);
         cy.get(`${imageCard}`).should('have.css', 'border-radius', tokens.borderRadius.normal);
         cy.get(`${imageCard}`).should('have.css', 'overflow', 'hidden');
-        cy.get(`${imageCard}`).should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get(`${imageCard}`).should('have.css', 'text-decoration', `none`);
         cy.get(`${imageCard}`).should('have.css', 'z-index', tokens.zIndex.content);
     });
 

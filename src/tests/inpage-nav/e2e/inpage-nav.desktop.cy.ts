@@ -88,7 +88,7 @@ describe('inpage-nav desktop - default', () => {
     it('nav links have correct styles', () => {
         cy.get('.inpage-nav__item:nth-child(2) .inpage-nav__link').then((link) => {
             expect(link).to.have.css('position').eq('relative');
-            expect(link).to.have.css('text-decoration').eq(`none solid ${colors.colorPrimary}`);
+            expect(link).to.have.css('text-decoration').eq(`none`);
             expect(link).to.have.css('font-weight').eq(tokens.type.fontWeight.bold);
             expect(link).to.have.css('color').eq(colors.colorPrimary);
             expect(link).to.have.css('display').eq('flex');

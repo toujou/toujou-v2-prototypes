@@ -71,7 +71,7 @@ describe('footer', () => {
         cy.get('footer .footer-column:nth-child(2) .footer__list').should('have.css', 'text-align', 'left');
 
         cy.get('footer .footer-column:nth-child(2) .footer__list .footer__list-link').should('have.css', 'color', colors.colorBg);
-        cy.get('footer .footer-column:nth-child(2) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline solid ${colors.colorBg}`);
+        cy.get('footer .footer-column:nth-child(2) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline`);
 
         cy.get('footer .footer-column:nth-child(3) .footer__list').should('have.css', 'list-style', 'outside none none');
         cy.get('footer .footer-column:nth-child(3) .footer__list').should('have.css', 'padding', '0px');
@@ -79,7 +79,7 @@ describe('footer', () => {
         cy.get('footer .footer-column:nth-child(3) .footer__list').should('have.css', 'text-align', 'left');
 
         cy.get('footer .footer-column:nth-child(3) .footer__list .footer__list-link').should('have.css', 'color', colors.colorBg);
-        cy.get('footer .footer-column:nth-child(3) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline solid ${colors.colorBg}`);
+        cy.get('footer .footer-column:nth-child(3) .footer__list .footer__list-link').should('have.css', 'text-decoration', `underline`);
 
         cy.get('footer .footer-column:nth-child(4) .footer__address').should('have.css', 'margin', `0px 0px ${tokens.spacing.l}`);
         cy.get('footer .footer-column:nth-child(4) .footer__address-title').should('have.css', 'color', colors.colorBg);

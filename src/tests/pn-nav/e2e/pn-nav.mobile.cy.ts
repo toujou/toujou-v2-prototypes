@@ -36,7 +36,7 @@ describe('PN Nav [mobile]', () => {
         cy.get('.pn-nav').should('have.css', 'z-index', tokens.zIndex.pnNav);
 
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').should('have.css', 'position', 'absolute');
-        cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').should('have.css', 'text-decoration', `none solid ${colors.colorPrimary}`);
+        cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').should('have.css', 'text-decoration', `none`);
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').should('have.css', 'height', '96px');
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').should('have.css', 'display', 'flex');
         cy.get('.pn-nav .pn-nav__link[button-direction="prev"]').should('have.css', 'flex-direction', 'row-reverse');

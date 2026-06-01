@@ -42,7 +42,7 @@ describe('blog plugin: sidebar', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) h5').should('have.css', 'margin-bottom', '0px');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) h5').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) h5').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) h5').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) h5').should('have.css', 'text-decoration', 'none');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts').should('exist');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts').children('.blog-sidebar__post-link').should('have.length', 3);
@@ -52,7 +52,7 @@ describe('blog plugin: sidebar', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts .blog-sidebar__post-link').should('have.css', 'grid-gap', `${tokens.spacing.normal}`);
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts .blog-sidebar__post-link').should('have.css', 'border-bottom', `${tokens.border.normal} solid ${colors.colorFontLight}`);
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts .blog-sidebar__post-link').should('have.css', 'padding', `${tokens.spacing.normal} 0px`);
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts .blog-sidebar__post-link').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts .blog-sidebar__post-link').should('have.css', 'text-decoration', 'none');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts .blog-sidebar__post-link .icon').invoke('attr', 'icon-name').should('eq', 'arrow-right');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(1) .blog-sidebar__posts .blog-sidebar__post-link .icon').invoke('attr', 'icon-size').should('eq', 'ms');
@@ -69,7 +69,7 @@ describe('blog plugin: sidebar', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(2) h5').should('have.css', 'margin-bottom', '0px');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(2) h5').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(2) h5').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(2) h5').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(2) h5').should('have.css', 'text-decoration', 'none');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(2) .blog-sidebar__categories').should('have.css', 'display', 'flex');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(2) .blog-sidebar__categories').should('have.css', 'flex-wrap', 'wrap');
@@ -95,7 +95,7 @@ describe('blog plugin: sidebar', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(3) h5').should('have.css', 'margin-bottom', '0px');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(3) h5').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(3) h5').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(3) h5').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(3) h5').should('have.css', 'text-decoration', 'none');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(3) .blog-sidebar__tags').should('have.css', 'display', 'flex');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(3) .blog-sidebar__tags').should('have.css', 'flex-wrap', 'wrap');
@@ -123,7 +123,7 @@ describe('blog plugin: sidebar', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) h5').should('have.css', 'margin-bottom', '0px');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) h5').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) h5').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) h5').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) h5').should('have.css', 'text-decoration', 'none');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) .blog-sidebar__comments .blog-sidebar__comment').should('have.css', 'display', 'grid');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(4) .blog-sidebar__comments .blog-sidebar__comment').should('have.css', 'grid-template-columns', '20px 1404px');
@@ -151,7 +151,7 @@ describe('blog plugin: sidebar', () => {
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) h5').should('have.css', 'margin-bottom', '0px');
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) h5').should('have.css', 'font-family', tokens.type.fontFamily.headline);
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) h5').should('have.css', 'color', colors.colorPrimary);
-        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) h5').should('have.css', 'text-decoration', 'none solid rgb(0, 121, 168)');
+        cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) h5').should('have.css', 'text-decoration', 'none');
 
         cy.get('.blog-sidebar .blog-sidebar__column:nth-child(5) .blog-sidebar__archive-container').children('.archive-year').should('have.length', 2);
     });
