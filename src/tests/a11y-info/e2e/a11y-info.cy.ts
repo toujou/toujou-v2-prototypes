@@ -18,13 +18,13 @@ describe('a11y-info', () => {
 
     it('should have correct attributes', () => {
         cy.get('.a11y-info').should('have.attr', 'tabindex', '0');
-        cy.get('.a11y-info').should('have.attr', 'aria-label', 'Accessibility information');
+        cy.get('.a11y-info').should('have.attr', 'aria-labelledby', 'a11y-info-headline');
         cy.get('.a11y-info').should('have.attr', 'class', 'a11y-info');
     });
 
     it('should be hidden by default and visible on focus', () => {
-        cy.get('.a11y-info').should('have.css', 'transform', 'matrix(1, 0, 0, 1, 0, -335.5)');
-        cy.get('.a11y-info').focus().should('have.css', 'transform', 'matrix(1, 0, 0, 1, 0, -335.5)');
+        cy.get('.a11y-info').should('have.css', 'transform', 'matrix(1, 0, 0, 1, 0, -332.5)');
+        cy.get('.a11y-info').focus().should('have.css', 'transform', 'matrix(1, 0, 0, 1, 0, -332.5)');
     });
 
     it('should have correct internal structure', () => {

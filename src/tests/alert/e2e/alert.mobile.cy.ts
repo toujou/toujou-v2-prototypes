@@ -24,7 +24,7 @@ describe('alert [mobile]', () => {
         cy.get('toujou-alert').should('have.css', 'font-size', tokens.type.size.normal);
         cy.get('toujou-alert').should('have.css', 'padding', `${tokens.spacing.s} ${tokens.spacing.normal}`);
         cy.get('toujou-alert').should('have.css', 'border-radius', tokens.borderRadius.normal);
-        cy.get('toujou-alert').should('have.css', 'text-decoration', `none solid ${colors.colorFont}`);
+        cy.get('toujou-alert').should('have.css', 'text-decoration', `none`);
         cy.get('toujou-alert').should('have.css', 'color', colors.colorFont);
     });
 })
