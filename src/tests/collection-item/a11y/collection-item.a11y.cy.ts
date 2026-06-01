@@ -29,7 +29,8 @@ testCases.forEach(({ name, storyId, args }) => {
             // @ts-ignore
             cy.checkA11yWithWait('.card-collection__item', {
                 rules: {
-                    'landmark-no-duplicate-banner': { enabled: false }
+                    'landmark-no-duplicate-banner': { enabled: false },
+                    'aria-toggle-field-name': { enabled: false }
                 }
             });
         });

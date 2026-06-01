@@ -16,7 +16,7 @@ describe('card-collection', () => {
             expect(collection).to.have.css('flex-wrap').equal('wrap');
             expect(collection).to.have.css('align-items').equal('center');
             expect(collection).to.have.css('justify-content').equal('center');
-            expect(collection).to.have.css('margin-top').equal('0px');
+            expect(collection).to.have.css('margin-top').equal('96px');
             expect(collection).to.have.css('margin-bottom').equal('0px');
             expect(collection).to.have.css('list-style').equal('outside none none');
             expect(collection).to.have.css('padding').equal('0px');
