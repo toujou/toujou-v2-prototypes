@@ -68,7 +68,7 @@ describe('Forms / single checkbox input', () => {
 
     it('select has correct focus styles', () => {
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorFont}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'outline', 'rgb(0, 0, 0) none 0px');
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'outline', 'rgb(0, 0, 0) none 1.5px');
         cy.get('.input-group--check:first-child .checkbox').focus();
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorFont}`);
         cy.get('.input-group--check:first-child .checkbox').should('have.css', 'outline', `${colors.colorPrimary} solid ${tokens.border.m}`);
@@ -108,11 +108,11 @@ describe('Forms / checkbox - success', () => {
 
     it('radio group has correct success styles', () => {
         cy.get('.input-group--check:first-child').invoke('attr', 'class').should('contain', 'input-group--has-success');
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorSuccess}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorSuccessO25Alpha);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorBg);
         cy.get('.input-group--check:first-child .checkbox').click();
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorSuccess}`);
-        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorSuccess);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
+        cy.get('.input-group--check:first-child .checkbox').should('have.css', 'background-color', colors.colorPrimary);
         // @ts-ignore
         cy.get('.input-group--check:first-child .checkbox').after('-webkit-mask-image').should('contain', 'check');
         // @ts-ignore

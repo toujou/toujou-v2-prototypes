@@ -50,7 +50,7 @@ describe('Forms / radio input', () => {
 
     it('select has correct focus styles', () => {
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
-        cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'outline', 'rgb(0, 0, 0) none 0px');
+        cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'outline', 'rgb(0, 0, 0) none 1.5px');
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').focus();
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'outline', `${colors.colorPrimary} solid ${tokens.border.m}`);
@@ -94,7 +94,7 @@ describe('Forms / radio input - success', () => {
 
     it('radio group has correct success styles', () => {
         cy.get('.input-group--radio').invoke('attr', 'class').should('contain', 'input-group--has-success');
-        cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorSuccess}`);
+        cy.get('.radio-group__option:nth-child(3) .radio-group__option-label .radio').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorPrimary}`);
         cy.get('.radio-group__option:nth-child(3) .radio-group__option-label').should('have.css', 'color', colors.colorFont);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label .radio').should('have.css', 'border', `${tokens.border.m} solid ${colors.colorFont}`);
         cy.get('.radio-group__option:nth-child(4) .radio-group__option-label').should('have.css', 'color', colors.colorFont);

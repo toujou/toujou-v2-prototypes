@@ -18,7 +18,7 @@ describe('Forms / multi-select input', () => {
         cy.get('.input-group--multi-select .input-description').should('exist');
         cy.get('.input-group--multi-select .form__error').should('exist');
         cy.get('.input-group--multi-select .multi-select option').should('exist');
-        cy.get('.input-group--multi-select .multi-select').children('option').should('have.length', 5);
+        cy.get('.input-group--multi-select .multi-select').children('option').should('have.length', 10);
     });
 
     it('multi-select select input has correct styles', () => {

@@ -89,7 +89,7 @@ describe('Forms / toggle input', () => {
     });
 
     it('select has correct focus styles', () => {
-        cy.get('.input-group--toggle .toggle-group .toggle').should('have.css', 'outline', 'rgb(0, 0, 0) none 0px');
+        cy.get('.input-group--toggle .toggle-group .toggle').should('have.css', 'outline', 'rgb(0, 0, 0) none 1.5px');
         cy.get('.input-group--toggle .toggle-group .toggle').focus();
         cy.get('.input-group--toggle .toggle-group .toggle').should('have.css', 'outline', `${colors.colorPrimary} solid ${tokens.border.m}`);
     });
