@@ -29,7 +29,7 @@ describe('quick-links - default', () => {
         cy.get(`${quickLinksSelector} > .quick-links__list > .quick-links__item`).should('have.length', 3);
         cy.get(`${quickLinksSelector} > .quick-links__list > .quick-links__item > .quick-link`).should('exist');
         cy.get(`${quickLinksSelector} .quick-link > .quick-link__figure`).should('exist');
-        cy.get(`${quickLinksSelector} .quick-link > .quick-link__figure > .quick-link__image`).should('exist');
+        cy.get(`${quickLinksSelector} .quick-link > .quick-link__figure > .quick-link__icon`).should('exist');
         cy.get(`${quickLinksSelector} .quick-link > .quick-link__text`).should('exist');
     });
 
@@ -75,7 +75,7 @@ describe('quick-links - default', () => {
             expect(figure).to.have.css('height', '32px');
             expect(figure).to.have.css('width', '32px');
         });
-        cy.get(`${firstQuickLinkSelector} .quick-link__image`).then((image) => {
+        cy.get(`${firstQuickLinkSelector} .quick-link__icon`).then((image) => {
             expect(image).to.have.css('height', '32px');
             expect(image).to.have.css('width', '32px');
         });
@@ -148,13 +148,13 @@ describe('quick-links - bgColor secondary', () => {
 
 describe('quick-links - bgColor font', () => {
     beforeEach(() => {
-        cy.visit('/iframe.html?viewMode=story&id=components-quicklinks--quick-links&args=bgColor:font');
+        cy.visit('/iframe.html?viewMode=story&id=components-quicklinks--quick-links&args=bgColor:inverted');
         // @ts-ignore
         cy.get(firstQuickLinkSelector).resetRealHover();
     });
 
     it('has correct font background color', () => {
-        cy.get(firstQuickLinkSelector).invoke('attr', 'data-element-design').should('eq', 'font');
+        cy.get(firstQuickLinkSelector).invoke('attr', 'data-element-design').should('eq', 'inverted');
         cy.get(firstQuickLinkSelector).should('have.css', 'background-color', colors.colorFont);
     });
 
@@ -306,7 +306,7 @@ describe('quick-links - iconOnly true', () => {
 
     it('still renders figures and icons', () => {
         cy.get(`${quickLinksSelector} .quick-link__figure`).should('exist');
-        cy.get(`${quickLinksSelector} .quick-link__image`).should('exist');
+        cy.get(`${quickLinksSelector} .quick-link__icon`).should('exist');
     });
 });
 
