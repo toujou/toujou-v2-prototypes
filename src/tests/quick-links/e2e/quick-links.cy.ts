@@ -118,7 +118,8 @@ describe('quick-links - bgColor primary', () => {
 
     it('has correct primary hover background color', () => {
         // @ts-ignore
-        cy.get(firstQuickLinkSelector).realHover();
+        cy.get(firstQuickLinkSelector).focus();
+        cy.wait(500);
         cy.get(firstQuickLinkSelector).should('have.css', 'background-color', colors.colorPrimaryDark);
     });
 });
@@ -139,7 +140,7 @@ describe('quick-links - bgColor secondary', () => {
 
     it('has correct secondary hover background color', () => {
         // @ts-ignore
-        cy.get(firstQuickLinkSelector).realHover();
+        cy.get(firstQuickLinkSelector).focus();
         cy.get(firstQuickLinkSelector).should('have.css', 'background-color', colors.colorSecondaryDark);
     });
 });
@@ -160,7 +161,7 @@ describe('quick-links - bgColor font', () => {
 
     it('has correct font hover background color', () => {
         // @ts-ignore
-        cy.get(firstQuickLinkSelector).realHover();
+        cy.get(firstQuickLinkSelector).focus();
         cy.get(firstQuickLinkSelector).should('have.css', 'background-color', colors.colorFontDark);
     });
 });
