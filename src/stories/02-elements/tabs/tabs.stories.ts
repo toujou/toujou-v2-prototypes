@@ -68,7 +68,7 @@ export default {
     title: 'COMPONENTS/Tabs',
     args: {
         elementDesign: 'default',
-        orientation: 'vertical',
+        orientation: 'horizontal',
         alignment: 'left',
     },
     argTypes: {
