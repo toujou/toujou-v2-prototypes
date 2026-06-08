@@ -7,7 +7,7 @@ const o=[{id:1,label:"Item One",content:"<h3>This is the content for Item One</h
         tabindex="${n===0?"0":"-1"}"
         class="tabs__button"
     >${e.label}</button>
-`).join(""),u=t=>t.map((e,n)=>`
+`).join(""),c=t=>t.map((e,n)=>`
     <div
         id="panel-${e.id}"
         role="tabpanel"
@@ -18,18 +18,19 @@ const o=[{id:1,label:"Item One",content:"<h3>This is the content for Item One</h
     >
         ${e.content}
     </div>
-`).join(""),c={title:"COMPONENTS/Tabs",args:{elementDesign:"default",layout:"vertical",buttonsAlignment:"left"},argTypes:{elementDesign:{name:"Element design",description:"Set the element design for the tabs element",options:["default","primary","secondary","inverted"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"default"}}},layout:{name:"Layout",description:"Set the tabs element layout",options:["vertical","horizontal"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"vertical"}}},buttonsAlignment:{name:"Buttons alignment",description:"Set the alignment for the tabs buttons",options:["left","center","right"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"left"}}}}},a=t=>`
+`).join(""),u={title:"COMPONENTS/Tabs",args:{elementDesign:"default",orientation:"vertical",alignment:"left"},argTypes:{elementDesign:{name:"Element design",description:"Set the element design for the tabs element",options:["default","primary","secondary","inverted"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"default"}}},orientation:{name:"Orientation",description:"Set the tabs element orientation",options:["vertical","horizontal"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"vertical"}}},alignment:{name:"Alignment",description:"Set the alignment for the tabs buttons",options:["left","center","right"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"left"}}}}},a=t=>`
     <main>
         <toujou-tabs
             class="tabs"
-            layout="${t.layout}"
+            data-orientation="${t.orientation}"
+            data-alignment="${t.alignment}"
             element-design="${t.elementDesign}"
-            buttons-alignment="${t.buttonsAlignment}"
         >
             <div class="tabs__header">
                 <button
                     class="tabs__scroll-button tabs__scroll-button--prev"
                     aria-hidden="true"
+                    aria-label="Scroll tab list left"
                     tabindex="-1"
                     hidden
                 >
@@ -43,6 +44,7 @@ const o=[{id:1,label:"Item One",content:"<h3>This is the content for Item One</h
                 <button
                     class="tabs__scroll-button tabs__scroll-button--next"
                     aria-hidden="true"
+                    aria-label="Scroll tab list right"
                     tabindex="-1"
                     hidden
                 >
@@ -51,22 +53,23 @@ const o=[{id:1,label:"Item One",content:"<h3>This is the content for Item One</h
             </div>
 
             <div class="tabs__panels">
-                ${u(o)}
+                ${c(o)}
             </div>
         </toujou-tabs>
     </main>
-`;var i,s,l;a.parameters={...a.parameters,docs:{...(i=a.parameters)==null?void 0:i.docs,source:{originalSource:`(args: TabsStoryArgs) => \`
+`;var i,l,s;a.parameters={...a.parameters,docs:{...(i=a.parameters)==null?void 0:i.docs,source:{originalSource:`(args: TabsStoryArgs) => \`
     <main>
         <toujou-tabs
             class="tabs"
-            layout="\${args.layout}"
+            data-orientation="\${args.orientation}"
+            data-alignment="\${args.alignment}"
             element-design="\${args.elementDesign}"
-            buttons-alignment="\${args.buttonsAlignment}"
         >
             <div class="tabs__header">
                 <button
                     class="tabs__scroll-button tabs__scroll-button--prev"
                     aria-hidden="true"
+                    aria-label="Scroll tab list left"
                     tabindex="-1"
                     hidden
                 >
@@ -80,6 +83,7 @@ const o=[{id:1,label:"Item One",content:"<h3>This is the content for Item One</h
                 <button
                     class="tabs__scroll-button tabs__scroll-button--next"
                     aria-hidden="true"
+                    aria-label="Scroll tab list right"
                     tabindex="-1"
                     hidden
                 >
@@ -92,4 +96,4 @@ const o=[{id:1,label:"Item One",content:"<h3>This is the content for Item One</h
             </div>
         </toujou-tabs>
     </main>
-\``,...(l=(s=a.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};const d=["Tabs"];export{a as Tabs,d as __namedExportsOrder,c as default};
+\``,...(s=(l=a.parameters)==null?void 0:l.docs)==null?void 0:s.source}}};const d=["Tabs"];export{a as Tabs,d as __namedExportsOrder,u as default};
