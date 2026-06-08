@@ -12,8 +12,9 @@
 
         --tabs-header-display: flex;
         --tabs-header-flex-direction: row;
+        --tabs-header-min-width: 0;
         --tabs-header-border-bottom: var(--border-width-normal) solid var(--tabs-border-color);
-        --tabs-vertical-layout-max-width: 12rem;
+        --tabs-header-vertical-layout-max-width: 12rem;
 
         --tabs-buttons-display: flex;
         --tabs-buttons-flex-direction: row;
@@ -25,8 +26,8 @@
         --tabs-button-color: var(--color-font);
         --tabs-button-color-hover: var(--color-primary);
         --tabs-button-color-active: var(--color-primary);
-        --tabs-button-border: none;
         --tabs-button-padding: var(--spacing-s) var(--spacing-normal);
+        --tabs-button-border: var(--border-width-m) solid transparent;
         --tabs-button-border-active-color: var(--color-primary);
         --tabs-button-border-active: var(--border-width-m) solid var(--tabs-button-border-active-color);
         --tabs-button-font-family: var(--font-family-text);
@@ -81,6 +82,10 @@
         --tabs-scroll-button-color-hover: var(--color-font-dark);
     }
 
+    .tabs[buttons-alignment="left"] {
+        --tabs-header-justify-content: start;
+    }
+
     .tabs[buttons-alignment="center"] {
         --tabs-header-justify-content: center;
     }
@@ -104,6 +109,7 @@
         justify-content: var(--tabs-header-justify-content);
         border-bottom: var(--tabs-header-border-bottom);
         width: 100%;
+        min-width: var(--tabs-header-min-width);
     }
 
     .tabs__buttons {
@@ -189,12 +195,15 @@
 
     @media screen and (min-width: 840px) {
         .tabs[layout="horizontal"] {
-            --tabs-grid-template-columns: fit-content(var(--tabs-vertical-layout-max-width)) 1fr;
+            --tabs-grid-template-columns: fit-content(var(--tabs-header-vertical-layout-max-width)) 1fr;
             --tabs-header-flex-direction: column;
             --tabs-header-justify-content: start;
             --tabs-buttons-flex-direction: column;
+            --tabs-button-padding: var(--spacing-normal);
+            --tab-panel-padding: var(--spacing-l);
 
             border-bottom: none;
+            border-right: var(--tabs-border);
         }
 
         .tabs[layout="horizontal"][buttons-alignment="left"] {
