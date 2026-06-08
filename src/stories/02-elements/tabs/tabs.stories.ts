@@ -8,8 +8,8 @@ interface TabItem {
 
 interface TabsStoryArgs {
     elementDesign: string;
-    layout: string;
-    buttonsAlignment: string;
+    orientation: string;
+    alignment: string;
 }
 
 const TAB_ITEMS: TabItem[] = [
@@ -68,8 +68,8 @@ export default {
     title: 'COMPONENTS/Tabs',
     args: {
         elementDesign: 'default',
-        layout: 'vertical',
-        buttonsAlignment: 'left',
+        orientation: 'vertical',
+        alignment: 'left',
     },
     argTypes: {
         elementDesign: {
@@ -82,9 +82,9 @@ export default {
                 defaultValue: { summary: 'default' },
             },
         },
-        layout: {
-            name: 'Layout',
-            description: 'Set the tabs element layout',
+        orientation: {
+            name: 'Orientation',
+            description: 'Set the tabs element orientation',
             options: ['vertical', 'horizontal'],
             control: { type: 'radio' },
             table: {
@@ -92,8 +92,8 @@ export default {
                 defaultValue: { summary: 'vertical' },
             },
         },
-        buttonsAlignment: {
-            name: 'Buttons alignment',
+        alignment: {
+            name: 'Alignment',
             description: 'Set the alignment for the tabs buttons',
             options: ['left', 'center', 'right'],
             control: { type: 'radio' },
@@ -109,14 +109,15 @@ export const Tabs: StoryFn<TabsStoryArgs> = (args: TabsStoryArgs) => `
     <main>
         <toujou-tabs
             class="tabs"
-            layout="${args.layout}"
+            data-orientation="${args.orientation}"
+            data-alignment="${args.alignment}"
             element-design="${args.elementDesign}"
-            buttons-alignment="${args.buttonsAlignment}"
         >
             <div class="tabs__header">
                 <button
                     class="tabs__scroll-button tabs__scroll-button--prev"
                     aria-hidden="true"
+                    aria-label="Scroll tab list left"
                     tabindex="-1"
                     hidden
                 >
@@ -130,6 +131,7 @@ export const Tabs: StoryFn<TabsStoryArgs> = (args: TabsStoryArgs) => `
                 <button
                     class="tabs__scroll-button tabs__scroll-button--next"
                     aria-hidden="true"
+                    aria-label="Scroll tab list right"
                     tabindex="-1"
                     hidden
                 >

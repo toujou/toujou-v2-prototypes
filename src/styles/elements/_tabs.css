@@ -82,15 +82,15 @@
         --tabs-scroll-button-color-hover: var(--color-font-dark);
     }
 
-    .tabs[buttons-alignment="left"] {
+    .tabs[data-alignment="left"] {
         --tabs-header-justify-content: start;
     }
 
-    .tabs[buttons-alignment="center"] {
+    .tabs[data-alignment="center"] {
         --tabs-header-justify-content: center;
     }
 
-    .tabs[buttons-alignment="right"] {
+    .tabs[data-alignment="right"] {
         --tabs-header-justify-content: end;
     }
 
@@ -194,7 +194,7 @@
     }
 
     @media screen and (min-width: 840px) {
-        .tabs[layout="vertical"] {
+        .tabs[data-orientation="vertical"] {
             --tabs-grid-template-columns: fit-content(var(--tabs-header-vertical-layout-max-width)) 1fr;
             --tabs-header-flex-direction: column;
             --tabs-header-justify-content: start;
@@ -207,31 +207,31 @@
             border-right: var(--tabs-border);
         }
 
-        .tabs[layout="vertical"][buttons-alignment="left"] {
+        .tabs[data-orientation="vertical"][data-alignment="left"] {
             --tabs-buttons-justify-content: start;
             --tabs-button-text-align: left;
         }
 
-        .tabs[layout="vertical"][buttons-alignment="center"] {
+        .tabs[data-orientation="vertical"][data-alignment="center"] {
             --tabs-button-justify-content: center;
             --tabs-button-text-align: center;
         }
 
-        .tabs[layout="vertical"][buttons-alignment="right"] {
+        .tabs[data-orientation="vertical"][data-alignment="right"] {
             --tabs-button-justify-content: end;
             --tabs-button-text-align: right;
         }
 
-        .tabs[layout="vertical"] .tabs__header {
+        .tabs[data-orientation="vertical"] .tabs__header {
             border-bottom: none;
             border-right: var(--tabs-border);
         }
 
-        .tabs[layout="vertical"] .tabs__button {
+        .tabs[data-orientation="vertical"] .tabs__button {
             width: 100%;
         }
 
-        .tabs[layout="vertical"] .tabs__button[aria-selected="true"] {
+        .tabs[data-orientation="vertical"] .tabs__button[aria-selected="true"] {
             border-bottom: none;
             border-right: var(--tabs-button-border-active);
         }
