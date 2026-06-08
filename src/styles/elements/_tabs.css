@@ -200,6 +200,7 @@
             --tabs-header-justify-content: start;
             --tabs-buttons-flex-direction: column;
             --tabs-button-padding: var(--spacing-normal);
+            --tabs-button-border: none;
             --tab-panel-padding: var(--spacing-l);
 
             border-bottom: none;
