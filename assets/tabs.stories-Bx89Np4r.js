@@ -18,7 +18,7 @@ const o=[{id:1,label:"Item One",content:"<h3>This is the content for Item One</h
     >
         ${e.content}
     </div>
-`).join(""),u={title:"COMPONENTS/Tabs",args:{elementDesign:"default",orientation:"vertical",alignment:"left"},argTypes:{elementDesign:{name:"Element design",description:"Set the element design for the tabs element",options:["default","primary","secondary","inverted"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"default"}}},orientation:{name:"Orientation",description:"Set the tabs element orientation",options:["vertical","horizontal"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"vertical"}}},alignment:{name:"Alignment",description:"Set the alignment for the tabs buttons",options:["left","center","right"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"left"}}}}},a=t=>`
+`).join(""),u={title:"COMPONENTS/Tabs",args:{elementDesign:"default",orientation:"horizontal",alignment:"left"},argTypes:{elementDesign:{name:"Element design",description:"Set the element design for the tabs element",options:["default","primary","secondary","inverted"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"default"}}},orientation:{name:"Orientation",description:"Set the tabs element orientation",options:["vertical","horizontal"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"vertical"}}},alignment:{name:"Alignment",description:"Set the alignment for the tabs buttons",options:["left","center","right"],control:{type:"radio"},table:{category:"Tabs Settings",defaultValue:{summary:"left"}}}}},a=t=>`
     <main>
         <toujou-tabs
             class="tabs"
