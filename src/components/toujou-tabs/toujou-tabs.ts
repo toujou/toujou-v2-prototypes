@@ -1,15 +1,33 @@
 import { LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
 
+export const TOUJOU_TABS_EVENTS = {
+    READY: 'toujou-tabs-ready',
+    CHANGE: 'toujou-tabs-change',
+    OVERFLOW_CHANGE: 'toujou-tabs-overflow-change',
+    SCROLL: 'toujou-tabs-scroll',
+} as const;
+
+/**
+ * Accessible tab component with keyboard navigation,
+ * scrollable tab headers, and overflow controls.
+ *
+ * Handles:
+ * - Tab activation (click + keyboard)
+ * - Panel visibility syncing
+ * - Horizontal scrolling for overflowing tab lists
+ * - Public events for integration
+ */
 @customElement('toujou-tabs')
 export class ToujouTabs extends LitElement {
     private tabsButtons: NodeListOf<HTMLButtonElement> | undefined;
-    private tabsPanels: NodeListOf<HTMLDivElement> | undefined;
+    private tabsPanels: NodeListOf<HTMLElement> | undefined;
     private currentActiveId: string | undefined;
     private scrollPrevButton: HTMLButtonElement | undefined;
     private scrollNextButton: HTMLButtonElement | undefined;
     private tabsButtonsContainer: HTMLElement | undefined;
     private resizeObserver: ResizeObserver | undefined;
+    private isOverflowing: boolean = false;
 
     connectedCallback() {
         super.connectedCallback();
@@ -20,10 +38,7 @@ export class ToujouTabs extends LitElement {
         this.scrollPrevButton = this.querySelector('.tabs__scroll-button--prev') as HTMLButtonElement;
         this.scrollNextButton = this.querySelector('.tabs__scroll-button--next') as HTMLButtonElement;
 
-        const initialActive = this.querySelector<HTMLButtonElement>('[aria-selected="true"]');
-        if (initialActive) {
-            this.currentActiveId = initialActive.id;
-        }
+        this._setActiveTab(this._getInitialActiveTab(), false);
 
         this.tabsButtons.forEach((tabButton) => {
             tabButton.addEventListener('click', this._onButtonClick);
@@ -34,11 +49,18 @@ export class ToujouTabs extends LitElement {
         this.scrollNextButton?.addEventListener('click', this._onScrollNextClick);
 
         this.resizeObserver = new ResizeObserver(() => this._updateScrollButtonVisibility());
-        this.resizeObserver.observe(this.tabsButtonsContainer);
-        this.tabsButtonsContainer.addEventListener('scroll', this._updateScrollButtonVisibility);
+
+        if (this.tabsButtonsContainer) {
+            this.resizeObserver.observe(this.tabsButtonsContainer);
+            this.tabsButtonsContainer.addEventListener('scroll', this._updateScrollButtonVisibility);
+        }
 
         this._updateScrollButtonVisibility();
-        this._updateUI();
+
+        this._dispatch(TOUJOU_TABS_EVENTS.READY, {
+            activeTabId: this.currentActiveId,
+            tabCount: this.tabsButtons.length,
+        });
     }
 
     disconnectedCallback() {
@@ -60,24 +82,46 @@ export class ToujouTabs extends LitElement {
         return this;
     }
 
-    set _currentActiveId(id: string) {
+    /**
+     * Determines initial active tab based on markup or fallback.
+     */
+    private _getInitialActiveTab(): string | undefined {
+        const initiallySelected = Array.from(this.tabsButtons ?? [])
+            .find(button => button.getAttribute('aria-selected') === 'true');
+
+        return initiallySelected?.id ?? this.tabsButtons?.[0]?.id;
+    }
+
+    /**
+     * Activates a tab and optionally emits change event.
+     */
+    private _setActiveTab(id: string | undefined, dispatchEvent: boolean = true): void {
+        if (!id) return;
+
+        const previousId = this.currentActiveId;
         this.currentActiveId = id;
         this._updateUI();
+
+        if (dispatchEvent) {
+            this._dispatch(TOUJOU_TABS_EVENTS.CHANGE, {
+                previousTabId: previousId,
+                activeTabId: id,
+            });
+        }
     }
 
-    get _currentActiveId(): string | undefined {
-        return this.currentActiveId;
-    }
-
-    _onButtonClick = (event: Event) => {
+    /** Handles tab click interaction */
+    private _onButtonClick = (event: Event) => {
         const clickedButton = event.currentTarget as HTMLButtonElement;
 
         if (this.currentActiveId === clickedButton.id) return;
 
-        this._currentActiveId = clickedButton.id;
+        this._setActiveTab(clickedButton.id);
+        this._scrollButtonIntoView(clickedButton);
     }
 
-    _onKeyDown = (event: KeyboardEvent) => {
+    /** Handles keyboard navigation between tabs */
+    private _onKeyDown = (event: KeyboardEvent) => {
         const buttons = Array.from(this.tabsButtons ?? []);
         const currentIndex = buttons.findIndex((btn) => btn.id === this.currentActiveId);
 
@@ -95,21 +139,26 @@ export class ToujouTabs extends LitElement {
 
         if (nextIndex !== undefined) {
             event.preventDefault();
-            this._currentActiveId = buttons[nextIndex].id;
+            this._setActiveTab(buttons[nextIndex].id);
             buttons[nextIndex].focus();
             this._scrollButtonIntoView(buttons[nextIndex]);
         }
     }
 
-    _onScrollPrevClick = () => {
+    /** Scrolls the tab list to a previous segment */
+    private _onScrollPrevClick = () => {
         this._scrollTabs('prev');
     }
 
-    _onScrollNextClick = () => {
+    /** Scrolls the tab list to the next segment */
+    private _onScrollNextClick = () => {
         this._scrollTabs('next');
     }
 
-    _scrollTabs = (direction: 'prev' | 'next') => {
+    /**
+     * Scrolls tab header container horizontally.
+     */
+    private _scrollTabs = (direction: 'prev' | 'next') => {
         if (!this.tabsButtonsContainer) return;
 
         const scrollAmount = this.tabsButtonsContainer.clientWidth * 0.75;
@@ -117,9 +166,14 @@ export class ToujouTabs extends LitElement {
             left: direction === 'next' ? scrollAmount : -scrollAmount,
             behavior: 'smooth',
         });
+
+        this._dispatch(TOUJOU_TABS_EVENTS.SCROLL, { direction });
     }
 
-    _scrollButtonIntoView = (button: HTMLButtonElement) => {
+    /**
+     * Ensures the active tab button is visible inside the scroll container.
+     */
+    private _scrollButtonIntoView = (button: HTMLButtonElement) => {
         if (!this.tabsButtonsContainer) return;
 
         const containerRect = this.tabsButtonsContainer.getBoundingClientRect();
@@ -138,7 +192,10 @@ export class ToujouTabs extends LitElement {
         }
     }
 
-    _updateScrollButtonVisibility = () => {
+    /**
+     * Updates visibility and state of scroll buttons based on overflow.
+     */
+    private _updateScrollButtonVisibility = () => {
         if (!this.tabsButtonsContainer || !this.scrollPrevButton || !this.scrollNextButton) return;
 
         const { scrollLeft, scrollWidth, clientWidth } = this.tabsButtonsContainer;
@@ -146,14 +203,17 @@ export class ToujouTabs extends LitElement {
         const isAtStart = scrollLeft <= 0;
         const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 1;
 
-        // Add/remove attribute on the host element for CSS targeting
+        if (hasOverflow !== this.isOverflowing) {
+            this.isOverflowing = hasOverflow;
+            this._dispatch(TOUJOU_TABS_EVENTS.OVERFLOW_CHANGE, { hasOverflow });
+        }
+
         if (hasOverflow) {
             this.setAttribute('data-overflowing', '');
         } else {
             this.removeAttribute('data-overflowing');
         }
 
-        // Always show both buttons when overflowing, disable when not needed
         this.scrollPrevButton.hidden = !hasOverflow;
         this.scrollNextButton.hidden = !hasOverflow;
 
@@ -174,7 +234,12 @@ export class ToujouTabs extends LitElement {
         }
     }
 
-    _updateUI = () => {
+    /**
+     * Updates tab buttons and panels to reflect the active state.
+     */
+    private _updateUI = () => {
+        if (!this.currentActiveId) return;
+
         const activeButton = this.querySelector<HTMLButtonElement>(`#${this.currentActiveId}`);
         const activeControls = activeButton?.getAttribute('aria-controls');
 
@@ -189,6 +254,17 @@ export class ToujouTabs extends LitElement {
                 ? tabPanel.removeAttribute('hidden')
                 : tabPanel.setAttribute('hidden', '');
         });
+    }
+
+    /**
+     * Dispatches a custom event with an optional payload.
+     */
+    private _dispatch = (eventName: string, detail: Record<string, unknown> = {}) => {
+        this.dispatchEvent(new CustomEvent(eventName, {
+            detail,
+            bubbles: true,
+            composed: true,
+        }));
     }
 }
 
