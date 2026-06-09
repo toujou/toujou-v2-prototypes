@@ -124,6 +124,10 @@
         display: none;
     }
 
+    button.tabs__button {
+        border-inline: none;
+    }
+
     .tabs__button {
         display: var(--tabs-button-display);
         justify-content: var(--tabs-button-justify-content);

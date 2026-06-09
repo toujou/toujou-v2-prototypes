@@ -104,6 +104,7 @@
     "@toujou/toujou-read-more": "^1.0.1",
     "@toujou/toujou-snackbar": "^3.8.6",
     "@toujou/toujou-spinner": "^3.0.0",
+    "@toujou/toujou-tabs": "^1.0.0",
     "@toujou/toujou-timeline": "^3.0.0",
     "@toujou/toujou-topbar": "^1.0.0",
     "@toujou/toujou-topbutton": "^3.0.0",
