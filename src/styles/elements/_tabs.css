@@ -30,8 +30,8 @@
         --tabs-button-border: var(--border-width-m) solid transparent;
         --tabs-button-border-active-color: var(--color-primary);
         --tabs-button-border-active: var(--border-width-m) solid var(--tabs-button-border-active-color);
-        --tabs-button-font-family: var(--font-family-text);
-        --tabs-button-font-size: var(--font-size-normal);
+        --tabs-button-font-family: var(--font-family-headline);
+        --tabs-button-font-size: var(--font-size-ms);
         --tabs-button-line-height: 1;
         --tabs-button-cursor: pointer;
         --tabs-button-flex-shrink: 0;
