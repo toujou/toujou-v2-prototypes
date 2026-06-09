@@ -9,7 +9,7 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                // single components, that will be imported via asset collector
+                // single components that will be imported via asset collector
                 'toujou-blockquote': path.resolve(__dirname, 'src/components/toujou-blockquote/toujou-blockquote.ts'),
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
                 'toujou-portfolio-gallery': path.resolve(__dirname, 'src/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
@@ -42,8 +42,9 @@ export default defineConfig({
                 'toujou-topbar': path.resolve(__dirname, 'node_modules/@toujou/toujou-topbar/lib'),
                 'toujou-overlay': path.resolve(__dirname, 'node_modules/@toujou/toujou-overlay/lib'),
                 'toujou-read-more': path.resolve(__dirname, 'node_modules/@toujou/toujou-read-more/lib'),
+                'toujou-tabs': path.resolve(__dirname, 'node_modules/@toujou/toujou-tabs/lib'),
 
-                // base js, which imports all other js that needs to be loaded on all pages
+                // base js, which imports all other JS files that need to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
             },
             output: {
