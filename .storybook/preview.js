@@ -2,7 +2,6 @@ import { definePreview } from '@storybook/web-components-vite';
 
 // Import styles for the Storybook preview
 import '../src/js/globals';
-import '../src/styles/StorybookStyles.css';
 
 // UI components
 import './componentImports/ui-components';
@@ -20,6 +19,8 @@ import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 
 // Hacks
 import './configUtils/mainNavHack';
+import { THEMES, DEFAULT_THEME } from './configUtils/themesConfig';
+import { setThemeStylesheets } from "./configUtils/setThemeStylesheets";
 
 // Export everything in one default block
 export default definePreview({
@@ -27,17 +28,14 @@ export default definePreview({
         toujouTheme: {
             description: 'Theme',
             toolbar: {
-                icon: 'box',
+                icon: 'lightning',
                 title: 'Theme',
-                items: [
-                    { value: 'toujou', title: 'Toujou' },
-                    { value: 'kojo', title: 'Kojo' },
-                ],
+                items: THEMES,
             },
         },
     },
     initialGlobals: {
-        toujouTheme: 'kojo',
+        toujouTheme: DEFAULT_THEME,
     },
     parameters: {
         docs: {
@@ -83,9 +81,9 @@ export default definePreview({
     decorators: [
         // This is commented out because it works well on the preview, but not on the deployed storybook
         // (Because the files get different names, with hashes...)
-        // (Story, context) => {
-        //     setThemeStylesheets(context);
-        //     return Story();
-        // },
+        (Story, context) => {
+            setThemeStylesheets(context);
+            return Story();
+        },
     ]
 });
