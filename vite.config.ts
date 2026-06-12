@@ -3,28 +3,28 @@ import * as path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    publicDir: 'src/themes/kojo/assets',
     optimizeDeps: {
-        entries: ['./src/tests/**/cy.ts']
+        entries: ['./src/themes/kojo/tests/**/*.cy.ts']
     },
     build: {
         rollupOptions: {
             input: {
-                // single components that will be imported via asset collector
+                // ─── Web Components ───────────────────────────────────────────
                 'toujou-blockquote': path.resolve(__dirname, 'src/components/toujou-blockquote/toujou-blockquote.ts'),
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
                 'toujou-portfolio-gallery': path.resolve(__dirname, 'src/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
 
-                // JS Elements
-                'main-nav': path.resolve(__dirname, 'src/js/elements/main-nav'),
-                'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/js/elements/photoswipe-lightbox-creator'),
-                'video-autoplay': path.resolve(__dirname, 'src/js/elements/video-autoplay'),
+                // ─── Kojo JS ──────────────────────────────────────────────────
+                'main-nav': path.resolve(__dirname, 'src/themes/kojo/js/elements/main-nav'),
+                'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/themes/kojo/js/elements/photoswipe-lightbox-creator'),
+                'video-autoplay': path.resolve(__dirname, 'src/themes/kojo/js/elements/video-autoplay'),
+                'base': path.resolve(__dirname, 'src/themes/kojo/js/base.js'),
 
-                // Skippy links must be exported, so we can import it on the skip-links partial
+                // ─── Third-party / Node Modules ───────────────────────────────
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
-
-                // components from the @toujou/ui-components
                 'toujou-breadcrumb': path.resolve(__dirname, 'node_modules/@toujou/toujou-breadcrumb/lib'),
                 'toujou-clamped-content': path.resolve(__dirname, 'node_modules/@toujou/toujou-clamped-content/lib'),
                 'toujou-counter': path.resolve(__dirname, 'node_modules/@toujou/toujou-counter/lib'),

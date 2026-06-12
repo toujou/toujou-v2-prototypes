@@ -3,8 +3,8 @@
  */
 
 // Import theme stylesheets
-import kojoStylesheetUrl from '../../src/styles/StorybookStyles.css?url';
-import toujouStylesheetUrl from '../../src/styles/StorybookTestToujouStyles.css?url';
+import kojoStylesheetUrl from '../../src/themes/kojo/styles/StorybookStyles.css?url';
+import toujouStylesheetUrl from '../../src/themes/toujou/styles/toujouStorybookStyles.css?url';
 
 /**
  * @typedef {Object} Theme
@@ -19,5 +19,5 @@ export const THEMES = [
     { value: 'toujou', title: 'Theme: Toujou', stylesheet: toujouStylesheetUrl },
 ];
 
-/** The theme value to activate on initial load */
+/** The theme value to activate on the initial load */
 export const DEFAULT_THEME = 'kojo';

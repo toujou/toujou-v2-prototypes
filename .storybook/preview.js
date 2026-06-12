@@ -1,7 +1,7 @@
 import { definePreview } from '@storybook/web-components-vite';
 
 // Import js for the Storybook preview
-import '../src/js/globals';
+import '../src/themes/kojo/js/globals';
 
 // UI components
 import './componentImports/ui-components';

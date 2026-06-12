@@ -1,4 +1,4 @@
-import { initMainNav } from "../../src/js/elements/main-nav";
+import { initMainNav } from "../../src/themes/kojo/js/elements/main-nav";
 
 const MAIN_NAV_HACK_DELAY = 500;
 
