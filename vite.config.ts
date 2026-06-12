@@ -1,30 +1,41 @@
 import { defineConfig } from 'vite'
 import * as path from "path";
 
-const FALLBACK_THEME = 'kojo'
+const FALLBACK_THEME = 'kojo';
 const CURRENT_THEME = process.env.VITE_THEME ?? FALLBACK_THEME;
 
-// https://vitejs.dev/config/
+const kojoBuildEntries = {
+    'main-nav': path.resolve(__dirname, `src/themes/kojo/js/elements/main-nav`),
+    'photoswipe-lightbox-creator': path.resolve(__dirname, `src/themes/kojo/js/elements/photoswipe-lightbox-creator`),
+    'video-autoplay': path.resolve(__dirname, `src/themes/kojo/js/elements/video-autoplay`),
+    'base': path.resolve(__dirname, `src/themes/kojo/js/base.js`),
+};
+
+const toujouBuildEntries = {};
+
+/** @type {Record<string, Record<string, string>>} */
+const THEME_ENTRIES: Record<string, Record<string, string>> = {
+    kojo: kojoBuildEntries,
+    toujou: toujouBuildEntries,
+};
+
 export default defineConfig({
     optimizeDeps: {
-        entries: ['./src/themes/kojo/tests/**/*.cy.ts']
+        entries: [`./src/themes/${CURRENT_THEME}/tests/**/*.cy.ts`]
     },
     build: {
-        outDir: `dist`,
+        outDir: 'dist',
         rollupOptions: {
             input: {
-                // ─── Web Components ───────────────────────────────────────────
+                // ─── Web Components (shared) ──────────────────────────────────
                 'toujou-blockquote': path.resolve(__dirname, 'src/components/toujou-blockquote/toujou-blockquote.ts'),
                 'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
                 'toujou-portfolio-gallery': path.resolve(__dirname, 'src/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
 
-                // ─── Kojo JS ──────────────────────────────────────────────────
-                'main-nav': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/elements/main-nav`),
-                'photoswipe-lightbox-creator': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/elements/photoswipe-lightbox-creator`),
-                'video-autoplay': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/elements/video-autoplay`),
-                'base': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/base.js`),
+                // ─── Theme-specific JS ────────────────────────────────────────
+                ...THEME_ENTRIES[CURRENT_THEME],
 
                 // ─── Third-party / Node Modules ───────────────────────────────
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
