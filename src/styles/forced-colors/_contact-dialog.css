@@ -6,6 +6,7 @@
     .contact-dialog__close:is(:hover, :focus-visible) .icon {
         background-color: Highlight !important;
     }
+
     .contact-dialog__link:is(:hover, :focus-visible) {
         color: Highlight !important;
     }

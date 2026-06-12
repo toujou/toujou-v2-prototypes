@@ -69,7 +69,7 @@ class TopbarActionLinkWithKeyboardBehaviour {
         const targetInput = document.getElementById(forId);
 
         if (targetInput) {
-            // Use a synthetic click event to trigger the associated contro
+            // Use a synthetic click event to trigger the associated control
             // This does not add focus to the targetInput (which using .click() would do)
             const event = new MouseEvent("click", {
                 bubbles: true,

@@ -31,7 +31,7 @@ export class MainNav {
     }
 
     /**
-     * Get list of all the main navigation list items and start listening for click events
+     * Get a list of all the main navigation list items and start listening for click events
      */
     _getNavListItems = () => {
         this.navListItems = [...this.mainNavEl.querySelectorAll(this.listItemSelector)] as MainNavListItem[];
@@ -57,13 +57,13 @@ export class MainNav {
 
     /**
      * Handle mouse events
-     * - Mouseenter/Mouseleave: Toggle subnav of current MainNavListItem
+     * - Mouseenter / Mouseleave: Toggle subnav of current MainNavListItem
      * @param event
      */
     _handleMouseEvent = (event: MouseEvent) => {
-        if(window.innerWidth < this.minWidthDesktop) return;
+        if (window.innerWidth < this.minWidthDesktop) return;
 
-        if(event.type === 'mouseenter' || event.type === 'mouseleave') {
+        if (event.type === 'mouseenter' || event.type === 'mouseleave') {
             this._toggleListItemState(event.currentTarget as MainNavListItem);
         }
     }
@@ -79,7 +79,7 @@ export class MainNav {
 
             event.stopPropagation();
 
-            if(!listItem) {
+            if (!listItem) {
                 this.mainNavEl.dispatchEvent(
                     new CustomEvent(
                         'toujou-main-nav-close',
@@ -121,7 +121,7 @@ export class MainNav {
     }
 
     /**
-     * Close other open list items so there aren't multiple lists open at the same time
+     * Close other open list items, so there are no multiple lists open at the same time
      * (only sibling or child lists will be closed)
      * @param   listItem
      */
