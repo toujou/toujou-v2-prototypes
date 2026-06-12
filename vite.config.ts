@@ -1,13 +1,16 @@
 import { defineConfig } from 'vite'
 import * as path from "path";
 
+const FALLBACK_THEME = 'kojo'
+const CURRENT_THEME = process.env.VITE_THEME ?? FALLBACK_THEME;
+
 // https://vitejs.dev/config/
 export default defineConfig({
-    publicDir: 'src/themes/kojo/assets',
     optimizeDeps: {
         entries: ['./src/themes/kojo/tests/**/*.cy.ts']
     },
     build: {
+        outDir: `dist`,
         rollupOptions: {
             input: {
                 // ─── Web Components ───────────────────────────────────────────
@@ -18,10 +21,10 @@ export default defineConfig({
                 'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
 
                 // ─── Kojo JS ──────────────────────────────────────────────────
-                'main-nav': path.resolve(__dirname, 'src/themes/kojo/js/elements/main-nav'),
-                'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/themes/kojo/js/elements/photoswipe-lightbox-creator'),
-                'video-autoplay': path.resolve(__dirname, 'src/themes/kojo/js/elements/video-autoplay'),
-                'base': path.resolve(__dirname, 'src/themes/kojo/js/base.js'),
+                'main-nav': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/elements/main-nav`),
+                'photoswipe-lightbox-creator': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/elements/photoswipe-lightbox-creator`),
+                'video-autoplay': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/elements/video-autoplay`),
+                'base': path.resolve(__dirname, `src/themes/${CURRENT_THEME}/js/base.js`),
 
                 // ─── Third-party / Node Modules ───────────────────────────────
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
@@ -52,13 +55,13 @@ export default defineConfig({
             output: {
                 assetFileNames: (assetInfo) => {
                     let extType = assetInfo?.name?.split('.')[1];
-                    if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+                    if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType ?? '')) {
                         extType = 'img';
                     }
-                    return `${extType}/[name]-[hash][extname]`;
+                    return `themes/${CURRENT_THEME}/${extType}/[name]-[hash][extname]`;
                 },
-                chunkFileNames: 'js/[name]-[hash].js',
-                entryFileNames: 'js/[name].js',
+                chunkFileNames: `themes/${CURRENT_THEME}/js/[name]-[hash].js`,
+                entryFileNames: `themes/${CURRENT_THEME}/js/[name].js`,
             },
         },
         sourcemap: true,
