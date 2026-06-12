@@ -7,7 +7,7 @@ export default defineConfig({
     e2e: {
         baseUrl: 'http://localhost:6006',
         includeShadowDom: true,
-        specPattern: 'src/themes/toujou/tests/cypress/**/*.cy.ts',
+        specPattern: 'src/themes/toujou/tests/**/*.cy.ts',
         viewportWidth: desktopViewportWidth,
         viewportHeight: desktopViewportHeight,
         modifyObstructiveCode: false,
