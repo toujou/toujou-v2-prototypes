@@ -1,4 +1,4 @@
-@import url("../../../node_modules/flatpickr/dist/themes/light.css") layer(components);
+@import url("../../../../../node_modules/flatpickr/dist/themes/light.css") layer(components);
 
 @layer components {
     .flatpickr-calendar {
