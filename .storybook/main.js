@@ -1,7 +1,6 @@
 export default {
     "stories": [
         "../src/**/*.stories.@(js|jsx|ts|tsx)",
-        // "../src/**/*.mdx",
     ],
     "addons": [
         "@storybook/addon-links",
@@ -13,7 +12,4 @@ export default {
         options: {}
     },
     "staticDirs": ["../assets"],
-    // "docs": {
-    //     "autodocs": "tag"
-    // }
 };

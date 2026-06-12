@@ -1,6 +1,6 @@
 import { definePreview } from '@storybook/web-components-vite';
 
-// Import styles for the Storybook preview
+// Import js for the Storybook preview
 import '../src/js/globals';
 
 // UI components
@@ -16,11 +16,11 @@ import './componentImports/mock-components';
 import toujouBranding from "./configUtils/storybookToujouBranding";
 import { customViewports } from "./configUtils/customViewports";
 import { INITIAL_VIEWPORTS } from 'storybook/viewport';
+import { THEMES, DEFAULT_THEME } from './configUtils/themesConfig';
+import { setThemeStylesheets } from "./configUtils/setThemeStylesheets";
 
 // Hacks
 import './configUtils/mainNavHack';
-import { THEMES, DEFAULT_THEME } from './configUtils/themesConfig';
-import { setThemeStylesheets } from "./configUtils/setThemeStylesheets";
 
 // Export everything in one default block
 export default definePreview({
@@ -79,8 +79,6 @@ export default definePreview({
         },
     },
     decorators: [
-        // This is commented out because it works well on the preview, but not on the deployed storybook
-        // (Because the files get different names, with hashes...)
         (Story, context) => {
             setThemeStylesheets(context);
             return Story();

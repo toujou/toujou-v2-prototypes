@@ -1,6 +1,11 @@
 /**
- * Create a list of custom viewports, so we can test for relevant device sizes
- * @type {{Mobile2: {name: string, styles: {width: string, height: string}}, Tablet1: {name: string, styles: {width: string, height: string}}, Web1: {name: string, styles: {width: string, height: string}}, Tablet2: {name: string, styles: {width: string, height: string}}, Mobile1: {name: string, styles: {width: string, height: string}}}}
+ * @typedef {{ name: string, styles: { width: string, height: string } }} Viewport
+ */
+
+/**
+ * Custom viewports for testing relevant device sizes in Storybook.
+ *
+ * @type {Record<string, Viewport>}
  */
 export const customViewports = {
     Mobile1: {
