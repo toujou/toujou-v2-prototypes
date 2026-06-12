@@ -12,4 +12,8 @@ export default {
         options: {}
     },
     "staticDirs": ["../assets"],
+    "features": {
+        // Disable interactive onboarding checklist widget on the sidebar
+        "sidebarOnboardingChecklist": false,
+    }
 };
