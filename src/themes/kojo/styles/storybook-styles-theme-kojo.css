@@ -1,5 +1,5 @@
 /* hack */
-@import 'elements/_sliderFAKESplidestyles.css' layer(base);
+@import './elements/_sliderFAKESplidestyles.css' layer(base);
 
 @import './base.css';
 
