@@ -32,7 +32,7 @@ const Template = () => {
                             </div>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+                            <img src="https://placehold.co/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
                             <h3 class="collection-item__title">Adidas AG</h3>
 
@@ -141,7 +141,7 @@ const Template = () => {
                             </figure>
                         </header>
                         <div class="collection-item__bottom">
-                            <img src="https://via.placeholder.com/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
+                            <img src="https://placehold.co/64x64/cccccc/969696?text=Logo" alt="" class="collection-item__logo">
 
                             <h3 class="collection-item__title">Adidas AG</h3>
 
