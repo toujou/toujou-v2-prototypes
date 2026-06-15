@@ -40,6 +40,12 @@ const loadStylesheet = (theme) => {
     link.type = 'text/css';
     link.href = url;
 
+    // Trigger a resize event once the stylesheet has loaded so layout-dependent
+    // components (e.g. Splide sliders) recalculate after styles are applied
+    link.addEventListener('load', () => {
+        window.dispatchEvent(new Event('resize'));
+    });
+
     document.head.appendChild(link);
 
     console.log(
