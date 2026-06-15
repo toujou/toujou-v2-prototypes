@@ -49,7 +49,7 @@ const mapComponent = (args: mapStoryProps) => {
     return `
         <toujou-map-contact class="map-contact" direction="${args.direction}" map-aspect-ratio="${args.mapAspectRatio}" element-design="${args.elementDesign}">
             <div class="map-contact__map-container">
-                <img src="https://via.placeholder.com/600x600.png?text=Map" alt="beautiful image" class="map-contact__image">
+                <img src="https://placehold.co/600x600.png?text=Map" alt="beautiful image" class="map-contact__image">
             </div>
             <div class="map-contact__content">
                 <h2 class="map-contact__headline">Wildlife adventures</h2>
