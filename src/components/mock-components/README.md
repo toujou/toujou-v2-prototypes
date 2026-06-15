@@ -26,5 +26,5 @@ They are only imported in Storybook, and **never** bundled with the production t
 ## Example
 
 ```js
-import '../mock_components/mock-toujou-fav-item.js';
+import '../mock-components/mock-toujou-fav-item.js';
 ```
