@@ -33,7 +33,7 @@ const Template: StoryFn<VideoAutoplayProps> = (args: VideoAutoplayProps) => {
             controls
             ${args.autoplay ? 'data-is-autoplay="1"' : ''}
             ${args.autoplay ? 'muted' : ''}
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            src="https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4"
         ></video>
 `;
 };
@@ -41,5 +41,5 @@ const Template: StoryFn<VideoAutoplayProps> = (args: VideoAutoplayProps) => {
 export const VideoAutoplay = Template.bind({});
 
 VideoAutoplay.args = {
-    autoplay: false,
+    autoplay: true,
 }

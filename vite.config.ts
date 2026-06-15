@@ -6,8 +6,6 @@ const CURRENT_THEME = process.env.VITE_THEME ?? FALLBACK_THEME;
 
 const kojoBuildEntries = {
     'main-nav': path.resolve(__dirname, `src/themes/kojo/js/elements/main-nav`),
-    'photoswipe-lightbox-creator': path.resolve(__dirname, `src/themes/kojo/js/elements/photoswipe-lightbox-creator`),
-    'video-autoplay': path.resolve(__dirname, `src/themes/kojo/js/elements/video-autoplay`),
     'base': path.resolve(__dirname, `src/themes/kojo/js/base.js`),
 };
 
@@ -33,6 +31,10 @@ export default defineConfig({
                 'toujou-portfolio-gallery': path.resolve(__dirname, 'src/shared/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
                 'toujou-cover-slider': path.resolve(__dirname, 'src/shared/components/toujou-cover-slider/toujou-cover-slider.ts'),
                 'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/shared/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
+
+                // ─── Utils (Shared js) ─-──────────────────────────────────────
+                'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/shared/js/photoswipe-lightbox-creator/photoswipe-lightbox-creator.js'),
+                'video-autoplay': path.resolve(__dirname, 'src/shared/js/video-autoplay/video-autoplay.js'),
 
                 // ─── Theme-specific JS ────────────────────────────────────────
                 ...THEME_ENTRIES[CURRENT_THEME],
