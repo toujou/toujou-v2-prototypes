@@ -1,4 +1,4 @@
-@import url('../demo/_hljs-code-highlighting.css') layer(base);
+@import url('../../../../shared/styles/storybook-stories-styles/elements/_hljs-code-highlighting.css') layer(base);
 
 @layer components {
     .code-block {

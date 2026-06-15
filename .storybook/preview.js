@@ -15,6 +15,9 @@ import './component-imports/web-components';
 import './component-imports/kojo-components';
 import './component-imports/mock-components';
 
+// ─── Shared demo styles (loaded for all themes) ────────────────────────────
+import '../src/shared/styles/storybook-stories-styles/storybook-stories-styles.css';
+
 // ─── Preview config ────────────────────────────────────────────────────────────
 export default definePreview({
     globalTypes: {
