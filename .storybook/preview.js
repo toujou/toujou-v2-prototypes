@@ -15,10 +15,13 @@ import './component-imports/web-components';
 import './component-imports/kojo-components';
 import './component-imports/mock-components';
 
-// ─── Shared demo styles (loaded for all themes) ────────────────────────────
+// ─── Shared demo styles ────────────────────────────────────────────────────────
 import '../src/shared/styles/storybook-stories-styles/storybook-stories-styles.css';
 
-// ─── Preview config ────────────────────────────────────────────────────────────
+// Block until the default theme stylesheet is ready.
+// Components that pass CSS variables to WebGL (e.g., toujou-map) need variables defined before mount
+await setThemeStylesheets({ globals: { toujouTheme: DEFAULT_THEME } });
+
 export default definePreview({
     globalTypes: {
         toujouTheme: {
@@ -57,10 +60,7 @@ export default definePreview({
                 order: [
                     'COMPONENTS',
                     [
-                        [
-                            'Tourism',
-                            ['*', ['*', 'Docs']],
-                        ],
+                        ['Tourism', ['*', ['*', 'Docs']]],
                         '*',
                         ['*', 'Docs'],
                     ],
@@ -73,8 +73,21 @@ export default definePreview({
     },
     decorators: [
         (Story, context) => {
-            setThemeStylesheets(context);
-            return Story();
+            // Return a container immediately so the web-components renderer gets a synchronous DOM node,
+            // then populate it once the stylesheet is ready
+            const container = document.createElement('div');
+            container.className = 'toujou-story-wrapper';
+
+            setThemeStylesheets(context).then(() => {
+                const result = Story();
+                if (typeof result === 'string') {
+                    container.innerHTML = result;
+                } else if (result instanceof HTMLElement || result instanceof DocumentFragment) {
+                    container.replaceChildren(result);
+                }
+            });
+
+            return container;
         },
     ],
 });

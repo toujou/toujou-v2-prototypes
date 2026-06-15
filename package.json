@@ -11,6 +11,8 @@
   "scripts": {
     "dev": "vite",
 
+    "clean:cache": "rm -rf node_modules/.cache/storybook node_modules/.vite",
+
     "build": "tsc && vite build --config vite.config.ts",
     "build:kojo": "VITE_THEME=kojo npm run build && npm run build:css:kojo && npm run copy:all",
     "build:toujou": "VITE_THEME=toujou npm run build && npm run build:css:toujou && npm run copy:all",
