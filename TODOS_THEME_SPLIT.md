@@ -1,9 +1,5 @@
-- refactor cypress.config files
-  - check shared config, ...
 - Update README
   - Information about the new folder structure
-  - add new npm tasks
   - Add information about where the build files are located (dist/themTHEME_NAME/...)
-- We will need to update Kojo to import the correct files (because of the new dist/ folder structure)
 
-- location finder map errir
+- We will need to update Kojo to import the correct files (because of the new dist/ folder structure)

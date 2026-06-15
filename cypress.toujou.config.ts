@@ -1,16 +1,3 @@
-import { defineConfig } from "cypress";
+import { createThemeConfig } from "./cypress/cypress.create-theme-config";
 
-const desktopViewportWidth = 1920;
-const desktopViewportHeight = 1080;
-
-export default defineConfig({
-    e2e: {
-        baseUrl: 'http://localhost:6006',
-        includeShadowDom: true,
-        specPattern: 'src/themes/toujou/tests/**/*.cy.ts',
-        viewportWidth: desktopViewportWidth,
-        viewportHeight: desktopViewportHeight,
-        modifyObstructiveCode: false,
-        experimentalRunAllSpecs: true,
-    },
-});
+export default createThemeConfig('toujou');
