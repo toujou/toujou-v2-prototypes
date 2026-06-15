@@ -28,11 +28,11 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 // ─── Web Components (shared) ──────────────────────────────────
-                'toujou-blockquote': path.resolve(__dirname, 'src/components/toujou-blockquote/toujou-blockquote.ts'),
-                'toujou-slider': path.resolve(__dirname, 'src/components/toujou-slider/toujou-slider.ts'),
-                'toujou-portfolio-gallery': path.resolve(__dirname, 'src/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
-                'toujou-cover-slider': path.resolve(__dirname, 'src/components/toujou-cover-slider/toujou-cover-slider.ts'),
-                'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
+                'toujou-blockquote': path.resolve(__dirname, 'src/shared/components/toujou-blockquote/toujou-blockquote.ts'),
+                'toujou-slider': path.resolve(__dirname, 'src/shared/components/toujou-slider/toujou-slider.ts'),
+                'toujou-portfolio-gallery': path.resolve(__dirname, 'src/shared/components/toujou-portfolio-gallery/toujou-portfolio-gallery.ts'),
+                'toujou-cover-slider': path.resolve(__dirname, 'src/shared/components/toujou-cover-slider/toujou-cover-slider.ts'),
+                'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/shared/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
 
                 // ─── Theme-specific JS ────────────────────────────────────────
                 ...THEME_ENTRIES[CURRENT_THEME],

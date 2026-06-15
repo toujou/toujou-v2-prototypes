@@ -2,7 +2,7 @@
 /// <reference lib="dom.iterable" />
 
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-import '../../../js/elements/video-autoplay';
+import '../../../shared/js/utils/video-autoplay/video-autoplay'
 
 export default {
     title: 'COMPONENTS/Media',
