@@ -221,6 +221,8 @@ export class ToujouSlider extends LitElement {
      * Full list of options here: https://splidejs.com/guides/options/
      */
     private _initSlider() {
+        const i18nOptions = this._buildI18nOptions();
+
         let sliderOptions = {
             classes: {
                 pagination: 'splide__pagination slider-bullets',
@@ -242,9 +244,10 @@ export class ToujouSlider extends LitElement {
                 autoplay: 'pause'
             },
             padding: this.sliderPadding,
-            i18n: this._buildI18nOptions(),
             focusableNodes: '*',
             breakpoints: undefined,
+            // Only spread i18n if we actually have custom labels — passing an empty object wipes Splide's I18N defaults
+            ...(i18nOptions ? { i18n: i18nOptions } : {}),
         }
 
         if (this.sliderFocusCenter === 'true') {

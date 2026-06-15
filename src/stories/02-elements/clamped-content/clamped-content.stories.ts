@@ -5,7 +5,6 @@ export default {
 } satisfies Meta;
 
 const Template = () => {
-    window.addEventListener('toujou-clamped-content-clamp-enabled-changed', event => { console.log(event)})
     return `
         <main>
             <toujou-text-block class="text-block" text-block-column-count="1">
