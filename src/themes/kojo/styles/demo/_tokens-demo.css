@@ -108,6 +108,7 @@
     font-size: var(--font-size-normal);
     /* stylelint-disable-next-line max-line-length */
     animation: animation-box-slide var(--animation-duration-normal) var(--animation-easing-normal) infinite alternate-reverse;
+    border: 1px solid var(--primary-color);
 }
 
 .tokens-demo__animation-box.animation-slow {
