@@ -1,35 +1,28 @@
 import { definePreview } from '@storybook/web-components-vite';
 
-// Import js for the Storybook preview
-import '../src/themes/kojo/js/globals';
+// ─── Theme config ──────────────────────────────────────────────────────────────
+import { THEMES, DEFAULT_THEME } from './config-utils/themes-config';
+import { setThemeStylesheets } from './config-utils/set-theme-stylesheets';
+import toujouBranding from './config-utils/storybook-branding.js';
 
-// UI components
-import './componentImports/ui-components';
-
-// Kojo-specific components
-import './componentImports/kojo-components';
-
-// Mock components
-import './componentImports/mock-components';
-
-// Config
-import toujouBranding from "./configUtils/storybookToujouBranding";
-import { customViewports } from "./configUtils/customViewports";
+// ─── Viewport config ───────────────────────────────────────────────────────────
+import { customViewports } from './config-utils/custom-viewports.js';
 import { INITIAL_VIEWPORTS } from 'storybook/viewport';
-import { THEMES, DEFAULT_THEME } from './configUtils/themesConfig';
-import { setThemeStylesheets } from "./configUtils/setThemeStylesheets";
 
-// Hacks
-import './configUtils/mainNavHack';
+// ─── Component imports ─────────────────────────────────────────────────────────
+import './component-imports/ui-components';
+import './component-imports/web-components';
+import './component-imports/kojo-components';
+import './component-imports/mock-components';
 
-// Export everything in one default block
+// ─── Preview config ────────────────────────────────────────────────────────────
 export default definePreview({
     globalTypes: {
         toujouTheme: {
             description: 'Theme',
             toolbar: {
                 icon: 'lightning',
-                title: 'Theme',
+                dynamicTitle: true,
                 items: THEMES,
             },
         },
@@ -52,27 +45,24 @@ export default definePreview({
             options: {
                 ...customViewports,
                 ...INITIAL_VIEWPORTS,
-            }
+            },
         },
         options: {
             storySort: {
                 method: 'alphabetic',
                 includeNames: true,
                 order: [
-                    'COMPONENTS', // Sort COMPONENTS folder first
+                    'COMPONENTS',
                     [
                         [
-                            "Tourism", // Sort the "Tourism" folder
-                            [
-                                "*", // Sort stories within "Tourism" alphabetically
-                                ["*", "Docs"] // Place "Docs" after each story in "Tourism"
-                            ],
+                            'Tourism',
+                            ['*', ['*', 'Docs']],
                         ],
-                        "*", // Then sort all other component folders
-                        ["*", "Docs"] // Place "Docs" after each of the other component folders
+                        '*',
+                        ['*', 'Docs'],
                     ],
-                    'TOKENS', // Then TOKENS folder
-                    'PAGES', // Then PAGES folder
+                    'TOKENS',
+                    'PAGES',
                 ],
             },
             selectedPanel: 'storybook/controls/panel',
@@ -83,5 +73,5 @@ export default definePreview({
             setThemeStylesheets(context);
             return Story();
         },
-    ]
+    ],
 });
