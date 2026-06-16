@@ -12,11 +12,12 @@
     "dev": "vite",
 
     "clean:cache": "rm -rf node_modules/.cache/storybook node_modules/.vite",
+    "clean:dist": "rm -rf dist",
 
     "build": "tsc && vite build --config vite.config.ts",
     "build:kojo": "VITE_THEME=kojo npm run build && npm run build:css:kojo && npm run copy:all",
     "build:toujou": "VITE_THEME=toujou npm run build && npm run build:css:toujou && npm run copy:all",
-    "build:all": "npm run build:kojo && npm run build:toujou",
+    "build:all": "npm run clean:dist && npm run build:kojo && npm run build:toujou",
 
     "build:css:kojo": "NODE_ENV=production npm run build:css:kojo:elements && NODE_ENV=production npm run build:css:kojo:base && NODE_ENV=production npm run build:css:kojo:rte && NODE_ENV=production npm run build:css:kojo:print && NODE_ENV=production npm run build:css:kojo:forced-colors",
     "build:css:kojo:elements": "postcss ./src/themes/kojo/styles/elements/*.css -d ./dist/themes/kojo/css",

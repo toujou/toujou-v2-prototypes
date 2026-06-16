@@ -33,8 +33,8 @@ export default defineConfig({
                 'toujou-language-picker-dropdown': path.resolve(__dirname, 'src/shared/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown.ts'),
 
                 // ─── Utils (Shared js) ─-──────────────────────────────────────
-                'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/shared/js/photoswipe-lightbox-creator/photoswipe-lightbox-creator.js'),
-                'video-autoplay': path.resolve(__dirname, 'src/shared/js/video-autoplay/video-autoplay.js'),
+                'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/shared/js/utils/photoswipe-lightbox-creator/photoswipe-lightbox-creator.ts'),
+                'video-autoplay': path.resolve(__dirname, 'src/shared/js/utils/video-autoplay/video-autoplay.ts'),
 
                 // ─── Theme-specific JS ────────────────────────────────────────
                 ...THEME_ENTRIES[CURRENT_THEME],
@@ -79,6 +79,7 @@ export default defineConfig({
         },
         sourcemap: true,
         minify: 'terser',
+        emptyOutDir: false, // prevent Vite from wiping the dist/ between theme builds
         terserOptions: {
             output: {
                 comments: false,

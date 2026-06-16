@@ -20,9 +20,12 @@ import '../src/shared/styles/storybook-stories-styles/storybook-stories-styles.c
 
 // Block until the default theme stylesheet is ready.
 // Components that pass CSS variables to WebGL (e.g., toujou-map) need variables defined before mount
-await setThemeStylesheets({ globals: { toujouTheme: DEFAULT_THEME } });
+// await setThemeStylesheets({ globals: { toujouTheme: DEFAULT_THEME } });
 
 export default definePreview({
+    async setup() {
+        await setThemeStylesheets({ globals: { toujouTheme: DEFAULT_THEME } });
+    },
     globalTypes: {
         toujouTheme: {
             description: 'Theme',
