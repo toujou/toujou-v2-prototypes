@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/web-components-vite';
 
-import '../../../shared/js/utils/phptoswipe-lightbox-creator/photoswipe-lightbox-creator'
+import '../../../shared/js/utils/photoswipe-lightbox-creator/photoswipe-lightbox-creator'
 
 export default {
     title: 'COMPONENTS/Portfolio Gallery',

@@ -1,5 +1,5 @@
 import { html, fixture, expect } from '@open-wc/testing';
-import { ToujouSlider } from "../../../../components/toujou-slider/toujou-slider";
+import { ToujouSlider } from "../../../../shared/components/toujou-slider/toujou-slider"
 
 describe('toujou-slider', () => {
     let sliderEl: ToujouSlider | null = null;
