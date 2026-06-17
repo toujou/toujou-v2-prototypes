@@ -17,7 +17,7 @@
         --overlay-infos-display: flex;
         --overlay-infos-flex-direction: column;
         --overlay-infos-align-items: center;
-        --overlay-infos-justify-content: center;
+        --overlay-infos-justify-content: flex-start;
         --overlay-infos-gap: var(--spacing-l);
         --overlay-infos-padding: var(--spacing-l);
         --overlay-infos-shadow: var(--shadow-normal);
@@ -95,6 +95,8 @@
         background-color: var(--overlay-bg-color, var(--color-bg)); /* "overlay-bg-color" set from the theme module */
         max-width: var(--overlay-infos-max-width);
         width: var(--overlay-infos-width);
+        max-height: calc(100% - var(--spacing-l));
+        overflow: auto;
     }
 
     .overlay__logo {
