@@ -4,12 +4,13 @@ interface TabItem {
     id: number;
     label: string;
     content: string;
+    image?: string;
 }
 
 interface TabsStoryArgs {
-    elementDesign: string;
-    orientation: string;
-    alignment: string;
+    elementDesign: 'default' | 'primary' | 'secondary' | 'inverted';
+    orientation: 'horizontal' | 'vertical';
+    alignment: 'left' | 'center' | 'right';
 }
 
 const TAB_ITEMS: TabItem[] = [
@@ -17,11 +18,12 @@ const TAB_ITEMS: TabItem[] = [
         id: 1,
         label: 'Item One',
         content: '<h3>This is the content for Item One</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>',
+        image: 'https://picsum.photos/seed/tab-1/800/500'
     },
     {
         id: 2,
         label: 'Item Two',
-        content: '<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
+        content: '<h3>This is item two!</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
     },
     {
         id: 3,
@@ -60,7 +62,19 @@ const renderTabPanels = (items: TabItem[]) => items.map((item, index) => `
         class="tabs__panel"
         ${index !== 0 ? 'hidden' : ''}
     >
-        ${item.content}
+        <toujou-text-block class="text-block" text-block-media-position="inside-right">
+            <toujou-text-block-column class="text-block-column">
+                ${item.image ? `
+                    <figure class="text-block__figure">
+                        <img class="text-block__image" src="${item.image}" alt="" title="" loading="lazy">
+                    </figure>
+                ` : ''}
+            
+                <div class="text-block__content">
+                    ${item.content}
+                </div>
+            </toujou-text-block-column>
+        </toujou-text-block>
     </div>
 `).join('');
 
