@@ -12,12 +12,12 @@ export declare class MainNav {
     protected readonly minWidthDesktop: number;
     constructor(mainNavEl: MainNavElement);
     /**
-     * Get list of all the main navigation list items and start listening for click events
+     * Get a list of all the main navigation list items and start listening for click events
      */
     _getNavListItems: () => void;
     /**
      * Handle mouse events
-     * - Mouseenter/Mouseleave: Toggle subnav of current MainNavListItem
+     * - Mouseenter / Mouseleave: Toggle subnav of current MainNavListItem
      * @param event
      */
     _handleMouseEvent: (event: MouseEvent) => void;
@@ -34,7 +34,7 @@ export declare class MainNav {
      */
     _toggleListItemState: (listItem: MainNavListItem) => void;
     /**
-     * Close other open list items so there aren't multiple lists open at the same time
+     * Close other open list items, so there are no multiple lists open at the same time
      * (only sibling or child lists will be closed)
      * @param   listItem
      */

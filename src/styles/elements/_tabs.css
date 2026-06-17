@@ -205,6 +205,10 @@
         margin-top: 0;
     }
 
+    .tabs .text-block__content:only-child {
+        padding-right: 0;
+    }
+
     @container (min-width: 840px) {
         .tabs .text-block-column {
             margin-top: var(--spacing-l);
