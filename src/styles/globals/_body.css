@@ -2,6 +2,6 @@ body {
     background-color: var(--color-bg);
 }
 
-body:is([overlay-open],[nav-is-open],[contact-box-is-open]) {
+body:is(.toujou-overlay-open,[nav-is-open],[contact-box-is-open]) {
     overflow: hidden !important;
 }
