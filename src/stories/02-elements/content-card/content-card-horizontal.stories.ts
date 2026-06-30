@@ -68,7 +68,7 @@ const Template: StoryFn<ContentCardStoryProps> = (args: ContentCardStoryProps) =
             </figure>
             <div class="content-card__content">
                 <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
 
                 ${args.hasLink ? `
                     <span class="content-card__button">

@@ -27,7 +27,7 @@ describe('content card - horizontal [mobile]', () => {
         cy.get('.content-card:first-child .content-card__figure .content-card__image').should('exist');
         cy.get('.content-card:first-child .content-card__content').should('exist');
         cy.get('.content-card:first-child .content-card__content .content-card__title').should('exist');
-        cy.get('.content-card:first-child .content-card__content .content-card__text').should('exist');
+        cy.get('.content-card:first-child .content-card__content .content-card__text p').should('exist');
     });
 
     it('card has correct attributes', () => {
@@ -66,10 +66,10 @@ describe('content card - horizontal [mobile]', () => {
         cy.get('.content-card:first-child .content-card__title').should('have.css', 'color', colors.colorFontDark);
         cy.get('.content-card:first-child .content-card__title').should('have.css', 'margin', `0px 0px ${tokens.spacing.normal}`);
 
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'margin', `${tokens.spacing.normal} 0px 0px`);
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-family', tokens.type.fontFamily.text);
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'font-size', tokens.type.size.normal);
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'color', colors.colorFont);
+        cy.get('.content-card:first-child .content-card__text p').should('have.css', 'margin', `${tokens.spacing.normal} 0px 0px`);
+        cy.get('.content-card:first-child .content-card__text p').should('have.css', 'font-family', tokens.type.fontFamily.text);
+        cy.get('.content-card:first-child .content-card__text p').should('have.css', 'font-size', tokens.type.size.normal);
+        cy.get('.content-card:first-child .content-card__text p').should('have.css', 'color', colors.colorFont);
     });
 });
 
@@ -84,7 +84,7 @@ describe('content card - horizontal - primary [mobile]', () => {
         cy.get('toujou-content-card').invoke('attr', 'card-variant').should('eq', 'primary');
         cy.get('.content-card:first-child').should('have.css', 'background-color', colors.colorPrimary);
         cy.get('.content-card:first-child .content-card__title').should('have.css', 'color', colors.colorBg);
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'color', colors.colorBg);
+        cy.get('.content-card:first-child .content-card__text p').should('have.css', 'color', colors.colorBg);
 
     });
 });
@@ -100,7 +100,7 @@ describe('content card - horizontal - secondary [mobile]', () => {
         cy.get('toujou-content-card').invoke('attr', 'card-variant').should('eq', 'secondary');
         cy.get('.content-card:first-child').should('have.css', 'background-color', colors.colorSecondary);
         cy.get('.content-card:first-child .content-card__title').should('have.css', 'color', colors.colorBg);
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'color', colors.colorBg);
+        cy.get('.content-card:first-child .content-card__text p').should('have.css', 'color', colors.colorBg);
 
     });
 });
@@ -116,7 +116,7 @@ describe('content card - horizontal - inverted [mobile]', () => {
         cy.get('toujou-content-card').invoke('attr', 'card-variant').should('eq', 'inverted');
         cy.get('.content-card:first-child').should('have.css', 'background-color', colors.colorFont);
         cy.get('.content-card:first-child .content-card__title').should('have.css', 'color', colors.colorBg);
-        cy.get('.content-card:first-child .content-card__text').should('have.css', 'color', colors.colorBg);
+        cy.get('.content-card:first-child .content-card__text p').should('have.css', 'color', colors.colorBg);
 
     });
 });
