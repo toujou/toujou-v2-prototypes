@@ -65,8 +65,7 @@
         border-radius: var(--poster-reveal-after-border-radius);
     }
 
-    .poster-reveal[content-type="youtube"] .poster-reveal__image,
-    .poster-reveal[content-type="vimeo"] .poster-reveal__image {
+    .poster-reveal__image {
         border-radius: var(--poster-reveal-image-border-radius);
     }
 
