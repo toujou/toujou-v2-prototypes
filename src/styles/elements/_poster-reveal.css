@@ -36,6 +36,7 @@
 
     .poster-reveal[content-type="youtube"],
     .poster-reveal[content-type="vimeo"] {
+        --poster-reveal-aspect-ratio: var(--aspect-ratio-16-9);
         --poster-reveal-button-bg-color: transparent;
         --poster-reveal-button-border: var(--border-width-l) solid var(--color-bg);
         --poster-reveal-button-border-radius: var(--border-radius-circle);
@@ -46,6 +47,9 @@
         --poster-reveal-button-align-items: center;
         --poster-reveal-button-justify-content: center;
         --poster-reveal-button-icon-size: var(--font-size-xxxl);
+
+        height: auto;
+        aspect-ratio: var(--poster-reveal-aspect-ratio);
     }
 
     .poster-reveal:not([activated])::after {
