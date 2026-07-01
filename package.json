@@ -101,6 +101,7 @@
     "@toujou/toujou-media-info": "^3.0.0",
     "@toujou/toujou-modal": "^1.0.0",
     "@toujou/toujou-overlay": "^3.7.0",
+    "@toujou/toujou-poster-reveal": "^1.0.0",
     "@toujou/toujou-rating-stars": "^3.1.1",
     "@toujou/toujou-read-more": "^1.0.1",
     "@toujou/toujou-snackbar": "^3.8.6",

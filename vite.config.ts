@@ -20,6 +20,7 @@ export default defineConfig({
                 'main-nav': path.resolve(__dirname, 'src/js/elements/main-nav'),
                 'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/js/elements/photoswipe-lightbox-creator'),
                 'video-autoplay': path.resolve(__dirname, 'src/js/elements/video-autoplay'),
+                'poster-reveal-listener': path.resolve(__dirname, 'src/js/elements/poster-reveal-listener'),
 
                 // Skippy links must be exported, so we can import it on the skip-links partial
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
@@ -43,14 +44,14 @@ export default defineConfig({
                 'toujou-overlay': path.resolve(__dirname, 'node_modules/@toujou/toujou-overlay/lib'),
                 'toujou-read-more': path.resolve(__dirname, 'node_modules/@toujou/toujou-read-more/lib'),
                 'toujou-tabs': path.resolve(__dirname, 'node_modules/@toujou/toujou-tabs/lib'),
+                'toujou-poster-reveal': path.resolve(__dirname, 'node_modules/@toujou/toujou-poster-reveal/lib'),
 
                 // base js, which imports all other JS files that need to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
             },
             output: {
                 assetFileNames: (assetInfo) => {
-                    let extType = assetInfo?.name?.split('.').at(1);
-                    // @ts-ignore
+                    let extType = assetInfo?.name?.split('.')[1];
                     if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
                         extType = 'img';
                     }
