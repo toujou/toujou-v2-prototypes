@@ -49,49 +49,31 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
                     </a>
                 </div>
             </toujou-content-card>
+        </toujou-content-card-grid>
 
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
-                <figure class="content-card__figure">
-                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
-                </figure>
-                <div class="content-card__content">
-                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-            </toujou-content-card>
+            </toujou-text-block-column>
+        </toujou-text-block>
 
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
+        <toujou-content-card-grid class="content-card-grid">
+            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
                     <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
-                <figure class="content-card__figure">
-                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
-                </figure>
-                <div class="content-card__content">
-                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -115,7 +97,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -129,7 +111,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -143,7 +125,21 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
+                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
+                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
+                        zur Beschreibung
+                    </a>
+                </div>
+            </toujou-content-card>
+
+            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
+                <figure class="content-card__figure">
+                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
+                </figure>
+                <div class="content-card__content">
+                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -161,13 +157,13 @@ const i={title:"TESTS/Content Cards"},c=()=>`
         </toujou-text-block>
 
         <toujou-content-card-grid class="content-card-grid">
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
+            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
                     <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -175,37 +171,13 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </div>
             </toujou-content-card>
 
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
+            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
                     <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-        </toujou-content-card-grid>
-
-        <toujou-text-block class="text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="text-block-column">
-                <div class="text-block__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </toujou-text-block-column>
-        </toujou-text-block>
-
-        <toujou-content-card-grid class="content-card-grid">
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
-                <figure class="content-card__figure">
-                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
-                </figure>
-                <div class="content-card__content">
-                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -222,7 +194,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
             </toujou-text-block-column>
         </toujou-text-block>
 
-    `,t=c.bind({});var e,n,o;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
+    `,t=c.bind({});var e,o,n;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
   return \`
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
@@ -274,49 +246,31 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
                     </a>
                 </div>
             </toujou-content-card>
+        </toujou-content-card-grid>
 
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
-                <figure class="content-card__figure">
-                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
-                </figure>
-                <div class="content-card__content">
-                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
+        <toujou-text-block class="text-block" text-blocks-column-count="1">
+            <toujou-text-block-column class="text-block-column">
+                <div class="text-block__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-            </toujou-content-card>
+            </toujou-text-block-column>
+        </toujou-text-block>
 
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
+        <toujou-content-card-grid class="content-card-grid">
+            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
                     <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
-                <figure class="content-card__figure">
-                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
-                </figure>
-                <div class="content-card__content">
-                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -340,7 +294,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -354,7 +308,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -368,31 +322,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
-                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
-                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
-                        zur Beschreibung
-                    </a>
-                </div>
-            </toujou-content-card>
-        </toujou-content-card-grid>
-
-        <toujou-text-block class="text-block" text-blocks-column-count="1">
-            <toujou-text-block-column class="text-block-column">
-                <div class="text-block__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </toujou-text-block-column>
-        </toujou-text-block>
-
-        <toujou-content-card-grid class="content-card-grid">
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
-                <figure class="content-card__figure">
-                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
-                </figure>
-                <div class="content-card__content">
-                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -406,7 +336,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -424,13 +354,27 @@ const i={title:"TESTS/Content Cards"},c=()=>`
         </toujou-text-block>
 
         <toujou-content-card-grid class="content-card-grid">
-            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="vertical">
+            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
                 <figure class="content-card__figure">
                     <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
+                    <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
+                        <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
+                        zur Beschreibung
+                    </a>
+                </div>
+            </toujou-content-card>
+
+            <toujou-content-card class="content-card" href="#" card-variant="default" card-direction="horizontal">
+                <figure class="content-card__figure">
+                    <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
+                </figure>
+                <div class="content-card__content">
+                    <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -448,4 +392,4 @@ const i={title:"TESTS/Content Cards"},c=()=>`
         </toujou-text-block>
 
     \`;
-}`,...(o=(n=t.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const a=["ContentCardsVertical"];export{t as ContentCardsVertical,a as __namedExportsOrder,i as default};
+}`,...(n=(o=t.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const a=["ContentCardsMixed"];export{t as ContentCardsMixed,a as __namedExportsOrder,i as default};

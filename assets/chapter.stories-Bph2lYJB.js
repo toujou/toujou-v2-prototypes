@@ -339,7 +339,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Lorem Ipsum</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
             <span class="content-card__button" aria-hidden="true">
@@ -391,7 +391,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Title</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
             <span class="content-card__button" aria-hidden="true">
@@ -439,7 +439,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Title</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
             <span class="content-card__button" aria-hidden="true">
@@ -490,7 +490,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Lorem Ipsum</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
     </div>
@@ -929,7 +929,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Lorem Ipsum</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
             <span class="content-card__button" aria-hidden="true">
@@ -981,7 +981,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Title</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
             <span class="content-card__button" aria-hidden="true">
@@ -1029,7 +1029,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Title</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
             <span class="content-card__button" aria-hidden="true">
@@ -1080,7 +1080,7 @@ const a={title:"TESTS/Chapter"},o=()=>`
             <h3 class="content-card__title">Lorem Ipsum</h3>
 
 
-            <p class=" content-card__text">Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p>
+            <div class="content-card__text"><p>Mit der Containerabfragespezifikation können Sie auch die Stilwerte eines übergeordneten Containers abfragen. Dies ist derzeit teilweise in Chrome 111 implementiert. Dort können Sie benutzerdefinierte CSS-Eigenschaften verwenden, um Containerstile anzuwenden.</p></div>
 
 
     </div>

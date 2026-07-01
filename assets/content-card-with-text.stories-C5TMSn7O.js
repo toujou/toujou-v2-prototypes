@@ -10,7 +10,7 @@ const c={title:"COMPONENTS/Content Card",argTypes:{direction:{table:{category:"C
 
                 <div class="content-card__content">
                     <h3 class="content-card__title">Lorem Ipsum</h3>
-                    <p class=" content-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
                     <span class="content-card__button">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         more

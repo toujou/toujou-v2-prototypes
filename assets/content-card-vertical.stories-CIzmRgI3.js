@@ -1,13 +1,13 @@
-const u={title:"COMPONENTS/Content Card",argTypes:{columnCount:{table:{category:"Content card settings"},name:"Column count",description:"Number of columns",options:[1,2,3,4],control:{type:"radio"},required:!0},cardVariant:{table:{category:"Content card settings",defaultValue:{summary:"default"}},name:"Card variant",description:"Set the content  card element design",options:["default","primary","secondary","inverted"],control:{type:"radio"},required:!0},hasLink:{table:{category:"Content card settings",defaultValue:{summary:"default"}},name:"Has link",description:"Set a link for the card",control:{type:"boolean"},required:!0}}},d=e=>{const r=document.createElement("toujou-content-card-grid");r.classList.add("content-card-grid");for(let a=0;a<e.columnCount;a++){const t=document.createElement(e.hasLink?"a":"toujou-content-card");t.classList.add("content-card"),t.setAttribute("card-variant",e.cardVariant),t.setAttribute("card-direction","vertical"),t.setAttribute("role","article"),e.hasLink&&t.setAttribute("href","#"),t.innerHTML=`
+const u={title:"COMPONENTS/Content Card",argTypes:{columnCount:{table:{category:"Content card settings"},name:"Column count",description:"Number of columns",options:[1,2,3,4],control:{type:"radio"},required:!0},cardVariant:{table:{category:"Content card settings",defaultValue:{summary:"default"}},name:"Card variant",description:"Set the content  card element design",options:["default","primary","secondary","inverted"],control:{type:"radio"},required:!0},hasLink:{table:{category:"Content card settings",defaultValue:{summary:"default"}},name:"Has link",description:"Set a link for the card",control:{type:"boolean"},required:!0}}},d=e=>{const r=document.createElement("toujou-content-card-grid");r.classList.add("content-card-grid");for(let i=0;i<e.columnCount;i++){const t=document.createElement(e.hasLink?"a":"toujou-content-card");t.classList.add("content-card"),t.setAttribute("card-variant",e.cardVariant),t.setAttribute("card-direction","vertical"),t.setAttribute("role","article"),e.hasLink&&t.setAttribute("href","#"),t.innerHTML=`
             <figure class="content-card__figure">
                 <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
             </figure>
             <div class="content-card__content">
                 <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                ${a==2?`
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                ${i==2?`
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                 `:`
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                 `}
 
                 ${e.hasLink?`
@@ -17,7 +17,7 @@ const u={title:"COMPONENTS/Content Card",argTypes:{columnCount:{table:{category:
                     </span>
                 `:""}
             </div>
-        `,r.appendChild(t)}const c=document.createElement("main");return c.appendChild(r),c},n=d.bind({});n.args={columnCount:4,cardVariant:"default",hasLink:!1};var i,o,s;n.parameters={...n.parameters,docs:{...(i=n.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ContentCardStoryProps) => {
+        `,r.appendChild(t)}const a=document.createElement("main");return a.appendChild(r),a},n=d.bind({});n.args={columnCount:4,cardVariant:"default",hasLink:!1};var c,o,s;n.parameters={...n.parameters,docs:{...(c=n.parameters)==null?void 0:c.docs,source:{originalSource:`(args: ContentCardStoryProps) => {
   const contentCardGrid = document.createElement('toujou-content-card-grid');
   contentCardGrid.classList.add('content-card-grid');
   for (let i = 0; i < args.columnCount; i++) {
@@ -36,9 +36,9 @@ const u={title:"COMPONENTS/Content Card",argTypes:{columnCount:{table:{category:
             <div class="content-card__content">
                 <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
                 \${i == 2 ? \`
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                 \` : \`
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                 \`}
 
                 \${args.hasLink ? \`

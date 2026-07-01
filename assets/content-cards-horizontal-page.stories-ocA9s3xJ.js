@@ -1,4 +1,4 @@
-const i={title:"TESTS/Content Cards"},c=()=>`
+const c={title:"TESTS/Content Cards"},i=()=>`
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
                 <toujou-icon class="icon breadcrumb__toggle-icon" icon-name="arrow-left"></toujou-icon>
@@ -49,7 +49,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -63,7 +63,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -87,7 +87,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -104,7 +104,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
             </toujou-text-block-column>
         </toujou-text-block>
 
-    `,t=c.bind({});var e,o,n;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
+    `,t=i.bind({});var e,o,n;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
   return \`
         <toujou-breadcrumb role="navigation" aria-label="Breadcrumb" class="breadcrumb">
             <button slot="toggle-buttons" class="breadcrumb__toggle breadcrumb__toggle--open">
@@ -156,7 +156,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -170,7 +170,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -194,7 +194,7 @@ const i={title:"TESTS/Content Cards"},c=()=>`
                 </figure>
                 <div class="content-card__content">
                     <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>
-                    <p class="content-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p>
+                    <div class="content-card__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur excepturi officiis.</p></div>
                     <a href="#" class="content-card__button" button-variant="primary" button-type="ghost" button-size="normal">
                         <toujou-icon class="icon" icon-name="arrow-right" icon-color="primary"></toujou-icon>
                         zur Beschreibung
@@ -212,4 +212,4 @@ const i={title:"TESTS/Content Cards"},c=()=>`
         </toujou-text-block>
 
     \`;
-}`,...(n=(o=t.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const a=["ContentCardsHorizontal"];export{t as ContentCardsHorizontal,a as __namedExportsOrder,i as default};
+}`,...(n=(o=t.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const a=["ContentCardsHorizontal"];export{t as ContentCardsHorizontal,a as __namedExportsOrder,c as default};
