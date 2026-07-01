@@ -2,7 +2,7 @@ import { StoryFn, Meta } from '@storybook/web-components-vite';
 import '../../../js/elements/poster-reveal-listener';
 
 export default {
-    title: 'COMPONENTS/Toujou Poster Reveal',
+    title: 'COMPONENTS/Poster Reveal',
     argTypes: {
         contentType: {
             table: {
@@ -53,7 +53,7 @@ function renderYoutubeContent() {
         <toujou-media-grid class="media-grid" media-grid-column-number="1" slot="content">
             <toujou-single-media class="single-media">
                 <iframe
-                    src="https://www.youtube-nocookie.com/embed/MRKy3kX8XUM?autohide=1&amp;controls=1&amp;loop=1&amp;playlist=MRKy3kX8XUM&amp;enablejsapi=1&amp;origin=${origin}&amp;mute=1"
+                    src="https://www.youtube-nocookie.com/embed/MRKy3kX8XUM?autohide=1&amp;controls=1&amp;loop=1&amp;playlist=MRKy3kX8XUM&amp;enablejsapi=1&amp;origin=${origin}"
                     allowfullscreen=""
                     playsinline=""
                     video-extension="youtube"
@@ -123,8 +123,8 @@ const Template: StoryFn<PosterRevealProps> = (args: PosterRevealProps) => {
     `;
 };
 
-export const ToujouPosterReveal = Template.bind({});
+export const PosterReveal = Template.bind({});
 
-ToujouPosterReveal.args = {
+PosterReveal.args = {
     contentType: 'youtube',
 }

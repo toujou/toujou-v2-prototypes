@@ -1,51 +1,56 @@
+type YouTubeCommand =
+    | 'mute'
+    | 'unMute'
+    | 'playVideo'
+    | 'pauseVideo'
+    | 'setVolume';
+
 /**
- * Ensures that an iframe URL contains `mute=1`.
+ * Sends a command to a YouTube iframe using the IFrame Player API.
  *
- * Muted playback is often required for autoplay to work reliably across browsers.
- *
- * @param src - The iframe source URL.
- * @returns The updated URL with `mute=1`.
+ * @param iframe - The YouTube iframe element.
+ * @param func - The YouTube API command to execute.
+ * @param args - Optional arguments for the command.
  */
-function ensureMuted(src: string): string {
-    const url = new URL(src);
-
-    if (!url.searchParams.has('mute')) {
-        url.searchParams.set('mute', '1');
-    }
-
-    return url.toString();
+function postYouTubeCommand(
+    iframe: HTMLIFrameElement,
+    func: YouTubeCommand,
+    args: unknown[] = [],
+): void {
+    iframe.contentWindow?.postMessage(
+        JSON.stringify({
+            event: 'command',
+            func,
+            args,
+        }),
+        '*',
+    );
 }
 
 /**
- * Starts playback of a YouTube iframe using the YouTube IFrame API.
+ * Plays a YouTube video inside an iframe and applies
+ * autoplay-safe settings (mute first, then adjust volume).
  *
  * @param iframe - The YouTube iframe element.
  */
 function playYouTube(iframe: HTMLIFrameElement): void {
-    if (!iframe.src) {
-        return;
-    }
-
-    const updatedSrc = ensureMuted(iframe.src);
-
-    if (iframe.src !== updatedSrc) {
-        iframe.src = updatedSrc;
-    }
+    if (!iframe.contentWindow) return;
 
     requestAnimationFrame(() => {
-        iframe.contentWindow?.postMessage(
-            JSON.stringify({
-                event: 'command',
-                func: 'playVideo',
-                args: [],
-            }),
-            '*',
-        );
+        // Required for autoplay policies in most browsers
+        postYouTubeCommand(iframe, 'mute');
+        postYouTubeCommand(iframe, 'playVideo');
+
+        // Slight delay ensures player is ready before state changes
+        setTimeout(() => {
+            postYouTubeCommand(iframe, 'setVolume', [30]);
+            postYouTubeCommand(iframe, 'unMute');
+        }, 200);
     });
 }
 
 /**
- * Starts playback of a Vimeo iframe using the Vimeo Player API.
+ * Plays a Vimeo video inside an iframe using the Vimeo Player API.
  *
  * @param iframe - The Vimeo iframe element.
  */
@@ -57,36 +62,53 @@ function playVimeo(iframe: HTMLIFrameElement): void {
 }
 
 /**
- * Starts playback for all supported embedded video iframes.
+ * Detects the video provider based on iframe source URL.
  *
- * @param iframes - A list of iframe elements to process.
+ * @param iframe - The iframe element.
+ * @returns 'youtube' | 'vimeo' | null
+ */
+function getVideoProvider(iframe: HTMLIFrameElement): 'youtube' | 'vimeo' | null {
+    const src = iframe.src;
+
+    if (src.includes('youtube')) return 'youtube';
+    if (src.includes('vimeo.com')) return 'vimeo';
+
+    return null;
+}
+
+/**
+ * Plays all supported embedded videos inside a NodeList of iframes.
+ *
+ * @param iframes - List of iframe elements containing embedded videos.
  */
 function playEmbeddedVideos(iframes: NodeListOf<HTMLIFrameElement>): void {
     iframes.forEach((iframe) => {
-        const src = iframe.src;
+        const provider = getVideoProvider(iframe);
 
-        if (src.includes('youtube')) {
-            playYouTube(iframe);
-            return;
-        }
+        switch (provider) {
+            case 'youtube':
+                playYouTube(iframe);
+                break;
 
-        if (src.includes('vimeo.com')) {
-            playVimeo(iframe);
+            case 'vimeo':
+                playVimeo(iframe);
+                break;
         }
     });
 }
 
 /**
- * Registers a global listener that reacts to poster reveal activation events.
+ * Initializes a global event listener for a poster reveal activation event.
  *
- * When a `<toujou-poster-reveal>` component is activated, all embedded
- * video iframes within the component are automatically started.
+ * When a `<toujou-poster-reveal>` element is activated, all embedded
+ * videos inside it are automatically started.
  */
 function initPosterRevealListener(): void {
     window.addEventListener('toujou-poster-reveal-activate', (event) => {
-        const posterRevealEl = event.target as HTMLElement;
-        const iframes = posterRevealEl.querySelectorAll('iframe');
+        const target = event.target as HTMLElement | null;
+        if (!target) return;
 
+        const iframes = target.querySelectorAll('iframe');
         playEmbeddedVideos(iframes);
     });
 }
