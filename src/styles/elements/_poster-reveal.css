@@ -47,6 +47,8 @@
         --poster-reveal-button-align-items: center;
         --poster-reveal-button-justify-content: center;
         --poster-reveal-button-icon-size: var(--font-size-xxxl);
+        --poster-reveal-button-size: calc(var(--poster-reveal-button-icon-size) + var(--spacing-normal));
+        --poster-reveal-button-padding: 0;
 
         height: auto;
         aspect-ratio: var(--poster-reveal-aspect-ratio);
@@ -93,6 +95,9 @@
         display: var(--poster-reveal-button-display);
         align-items: var(--poster-reveal-button-align-items);
         justify-content: var(--poster-reveal-button-justify-content);
+        padding: var(--poster-reveal-button-padding);
+        height: var(--poster-reveal-button-size);
+        width: var(--poster-reveal-button-size);
     }
 
     .poster-reveal[content-type="youtube"] .poster-reveal__button:is(:hover, :focus-visible),
@@ -105,6 +110,8 @@
     .poster-reveal[content-type="youtube"] .poster-reveal__button .icon,
     .poster-reveal[content-type="vimeo"] .poster-reveal__button .icon {
         --icon-size: var(--poster-reveal-button-icon-size);
+
+        pointer-events: none;
     }
 
     .poster-reveal[content-type="youtube"] .poster-reveal__button:is(:hover, :focus-visible) .icon,
