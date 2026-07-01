@@ -389,13 +389,13 @@ const Template = () => {
             <h3 class="content-card__title">Für ALLE gut</h3>
 
 
-            <p class=" content-card__text">ALLE profitieren von leicht zugänglichen Angeboten:</p>
-<p class=" content-card__text">Nicht nur an Handicaps denken</p>
-<p class=" content-card__text">- schlechte Internetverbindung oder technische Ausstattung</p>
-<p class=" content-card__text">- Kinder, &nbsp;alte Menschen</p>
-<p class=" content-card__text">- weniger erfahrene Menschen</p>
-<p class=" content-card__text">- Suchmaschinen</p>
-<p class=" content-card__text">- und vieles mehr</p>
+            <div class="content-card__text"><p>ALLE profitieren von leicht zugänglichen Angeboten:</p></div>
+<div class="content-card__text"><p>Nicht nur an Handicaps denken</p></div>
+<div class="content-card__text"><p>- schlechte Internetverbindung oder technische Ausstattung</p></div>
+<div class="content-card__text"><p>- Kinder, &nbsp;alte Menschen</p></div>
+<div class="content-card__text"><p>- weniger erfahrene Menschen</p></div>
+<div class="content-card__text"><p>- Suchmaschinen</p></div>
+<div class="content-card__text"><p>- und vieles mehr</p></div>
 
 
     </div>
@@ -432,10 +432,10 @@ const Template = () => {
             <h3 class="content-card__title">VERBESSERUNG als Ziel</h3>
 
 
-            <p class=" content-card__text">Verbesserungen auf vielen Ebenen:</p>
-<p class=" content-card__text">- Pagespeed</p>
-<p class=" content-card__text">- moderne Konzepte</p>
-<p class=" content-card__text">- …..</p>
+            <div class="content-card__text"><p>Verbesserungen auf vielen Ebenen:</p></div>
+<div class="content-card__text"><p>- Pagespeed</p></div>
+<div class="content-card__text"><p>- moderne Konzepte</p></div>
+<div class="content-card__text"><p>- …..</p></div>
 
 
 
@@ -475,8 +475,8 @@ const Template = () => {
             <h3 class="content-card__title">ecxellente Basis für CUSTOMIZATION</h3>
 
 
-            <p class=" content-card__text">- wenn die zukünftigen Anpassungen schon mitgedacht sind</p>
-<p class=" content-card__text">- …</p>
+            <div class="content-card__text"><p>- wenn die zukünftigen Anpassungen schon mitgedacht sind</p></div>
+<div class="content-card__text"><p>- …</p></div>
 
 
     </div>
