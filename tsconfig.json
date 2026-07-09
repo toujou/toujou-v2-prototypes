@@ -25,7 +25,8 @@
         "baseUrl": ".",
         "types": [
             "cypress",
-            "cypress-axe"
+            "cypress-axe",
+            "youtube"
         ],
         "paths": {
             "@/utils/*": [
