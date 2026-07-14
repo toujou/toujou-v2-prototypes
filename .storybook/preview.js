@@ -85,5 +85,3 @@ export default definePreview({
         },
     ]
 });
-
-console.clear();
