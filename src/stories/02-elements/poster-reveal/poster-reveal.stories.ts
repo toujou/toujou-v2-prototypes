@@ -118,16 +118,19 @@ function renderConditionalElements(contentType: string) {
 const Template: StoryFn<PosterRevealProps> = (args: PosterRevealProps) => {
     return `
         <main>
-            <toujou-poster-reveal class="poster-reveal" content-type="${args.contentType}">
-                <img
-                    src="https://picsum.photos/1600/900"
-                    alt="beautiful image"
-                    class="poster-reveal__image"
-                    slot="poster"
-                />
-                
-                ${renderConditionalElements(args.contentType)}
-            </toujou-poster-reveal>
+            <toujou-media-grid class="media-grid" media-grid-column-number="1">
+                <toujou-single-media class="single-media">
+                    <toujou-poster-reveal class="poster-reveal" content-type="${args.contentType}">
+                        <img
+                            src="https://picsum.photos/1600/900"
+                            alt="beautiful image"
+                            class="poster-reveal__image"
+                            slot="poster"
+                        />
+                        ${renderConditionalElements(args.contentType)}
+                    </toujou-poster-reveal>
+                </toujou-single-media>
+            </toujou-media-grid>
         </main>
     `;
 };
