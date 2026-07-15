@@ -2,9 +2,9 @@
     .poster-reveal {
         --poster-reveal-display: block;
         --poster-reveal-gap: var(--content-spacing-between-columns);
-        --poster-reveal-width: var(--content-width-with-padding);
-        --poster-reveal-max-width: var(--content-max-width);
-        --poster-reveal-margin: var(--spacing-between-consecutive-elements-normal) auto 0;
+        --poster-reveal-width: 100%;
+        --poster-reveal-max-width: 100%;
+        --poster-reveal-margin: 0;
         --poster-reveal-z-index: var(--z-index-content);
 
         --poster-reveal-after-position: absolute;
