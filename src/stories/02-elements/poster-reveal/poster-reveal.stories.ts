@@ -24,13 +24,22 @@ interface PosterRevealProps {
 
 function renderTextButton() {
     return `
-        <button button-variant="primary" class="button poster-reveal__button" slot="trigger">Show</button>
+        <button
+            button-variant="primary"
+            class="button poster-reveal__button"
+            aria-label="Reveal text content"
+            slot="trigger"
+        >Show</button>
     `;
 }
 
 function renderMediaButton() {
     return `
-        <button class="poster-reveal__button" slot="trigger">
+        <button
+            class="poster-reveal__button"
+            slot="trigger"
+            aria-label="Reveal video content"
+        >
             <toujou-icon class="icon" icon-color="background" icon-name="play" icon-size="xxxl"></toujou-icon>
         </button>
     `;

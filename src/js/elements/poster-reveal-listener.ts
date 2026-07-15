@@ -35,10 +35,11 @@ const REQUIRED_YOUTUBE_ALLOW_FEATURES = [
  */
 const YOUTUBE_IFRAME_API_URL = 'https://www.youtube.com/iframe_api';
 
-/*
- * Event dispatched by the toujou-poster-reveal webcomponent.
- */
+/* Custom Events */
 const POSTER_REVEAL_ACTIVATE_EVENT = 'toujou-poster-reveal-activate';
+const POSTER_REVEAL_VIDEO_PLAY_REQUESTED_EVENT = 'toujou-poster-reveal-video-play-requested';
+const POSTER_REVEAL_VIDEO_PLAYING_EVENT = 'toujou-poster-reveal-video-playing';
+const POSTER_REVEAL_VIDEO_ERROR_EVENT = 'toujou-poster-reveal-video-error';
 
 const YOUTUBE_HOSTS = [
     'youtube.com',
@@ -49,6 +50,13 @@ const YOUTUBE_HOSTS = [
 const VIMEO_HOSTS = [
     'vimeo.com',
 ];
+
+type PosterRevealVideoProvider = 'youtube' | 'vimeo';
+
+interface PosterRevealEventDetail {
+    provider: PosterRevealVideoProvider;
+    error?: unknown;
+}
 
 /**
  * Maximum time to wait for an iframe reload.
@@ -188,10 +196,16 @@ function reloadIframe(iframe: HTMLIFrameElement): Promise<void> {
 /**
  * Starts YouTube playback with autoplay-safe settings.
  *
+ * @param posterReveal - The toujou-poster-reveal element.
  * @param iframe - The YouTube iframe element.
  */
-async function playYouTube(iframe: HTMLIFrameElement): Promise<void> {
+async function playYouTube(
+    posterReveal: HTMLElement,
+    iframe: HTMLIFrameElement,
+): Promise<void> {
     try {
+        dispatchPosterRevealEvent(posterReveal, POSTER_REVEAL_VIDEO_PLAY_REQUESTED_EVENT, { provider: 'youtube' });
+
         if (ensureYouTubeAutoplayAllowed(iframe)) {
             await reloadIframe(iframe);
 
@@ -201,7 +215,11 @@ async function playYouTube(iframe: HTMLIFrameElement): Promise<void> {
 
         const player = await getYouTubePlayer(iframe);
         startYouTubePlayback(player);
+
+        dispatchPosterRevealEvent(posterReveal, POSTER_REVEAL_VIDEO_PLAYING_EVENT, { provider: 'youtube' });
     } catch (error) {
+        dispatchPosterRevealEvent(posterReveal, POSTER_REVEAL_VIDEO_ERROR_EVENT, { provider: 'youtube', error });
+
         console.warn(
             'Could not start YouTube video playback.',
             {
@@ -227,10 +245,18 @@ function startYouTubePlayback(player: YT.Player): void {
 /**
  * Plays a Vimeo video inside an iframe using the Vimeo Player API.
  *
+ * @param posterReveal - The toujou-poster-reveal element.
  * @param iframe - The Vimeo iframe element.
  */
-function playVimeo(iframe: HTMLIFrameElement): void {
+function playVimeo(
+    posterReveal: HTMLElement,
+    iframe: HTMLIFrameElement,
+): void {
+    dispatchPosterRevealEvent(posterReveal, POSTER_REVEAL_VIDEO_PLAY_REQUESTED_EVENT, { provider: 'vimeo' });
+
     iframe.contentWindow?.postMessage({ method: 'play' }, '*');
+
+    dispatchPosterRevealEvent(posterReveal, POSTER_REVEAL_VIDEO_PLAYING_EVENT, { provider: 'vimeo' });
 }
 
 /**
@@ -264,22 +290,39 @@ function getVideoProvider(iframe: HTMLIFrameElement): 'youtube' | 'vimeo' | null
 /**
  * Plays all supported embedded videos inside a NodeList of iframes.
  *
+ * @param posterReveal - The toujou-poster-reveal element.
  * @param iframes - List of iframe elements containing embedded videos.
  */
-function playEmbeddedVideos(iframes: NodeListOf<HTMLIFrameElement>): void {
+function playEmbeddedVideos(
+    posterReveal: HTMLElement,
+    iframes: NodeListOf<HTMLIFrameElement>,
+): void {
     iframes.forEach((iframe) => {
         const provider = getVideoProvider(iframe);
 
         switch (provider) {
             case 'youtube':
-                void playYouTube(iframe);
+                void playYouTube(posterReveal, iframe);
                 break;
 
             case 'vimeo':
-                playVimeo(iframe);
+                playVimeo(posterReveal, iframe);
                 break;
         }
     });
+}
+
+/**
+ * Dispatches a poster reveal event from the toujou-poster-reveal element.
+ */
+function dispatchPosterRevealEvent(
+    posterReveal: HTMLElement,
+    eventName: string,
+    detail?: PosterRevealEventDetail,
+): void {
+    posterReveal.dispatchEvent(
+        new CustomEvent(eventName, { bubbles: true, detail }),
+    );
 }
 
 /**
@@ -291,7 +334,8 @@ function initPosterRevealListener(): void {
         if (!target) return;
 
         const iframes = target.querySelectorAll('iframe');
-        playEmbeddedVideos(iframes);
+
+        playEmbeddedVideos(target, iframes);
     });
 }
 
