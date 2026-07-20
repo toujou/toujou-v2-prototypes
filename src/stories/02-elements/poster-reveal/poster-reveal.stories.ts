@@ -1,5 +1,4 @@
 import { StoryFn, Meta } from '@storybook/web-components-vite';
-import '../../../js/elements/poster-reveal-listener';
 
 export default {
     title: 'COMPONENTS/Poster Reveal',

@@ -20,7 +20,6 @@ export default defineConfig({
                 'main-nav': path.resolve(__dirname, 'src/js/elements/main-nav'),
                 'photoswipe-lightbox-creator': path.resolve(__dirname, 'src/js/elements/photoswipe-lightbox-creator'),
                 'video-autoplay': path.resolve(__dirname, 'src/js/elements/video-autoplay'),
-                'poster-reveal-listener': path.resolve(__dirname, 'src/js/elements/poster-reveal-listener'),
 
                 // Skippy links must be exported, so we can import it on the skip-links partial
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
