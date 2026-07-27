@@ -1,0 +1,146 @@
+@layer components {
+    .countdown {
+        --countdown-display: flex;
+        --countdown-align-items: center;
+        --countdown-justify-content: center;
+        --countdown-gap: var(--spacing-normal);
+        --countdown-flex-direction: column;
+        --countdown-font-family: var(--font-family-text);
+        --countdown-color: var(--color-font);
+
+        --countdown-counter-display: flex;
+        --countdown-counter-align-items: center;
+        --countdown-counter-justify-content: center;
+        --countdown-counter-gap: var(--spacing-s);
+        --countdown-counter-font-family: var(--font-family-text);
+
+        --countdown-item-display: flex;
+        --countdown-item-flex-direction: column;
+        --countdown-item-align-items: center;
+        --countdown-item-justify-content: center;
+        --countdown-item-gap: var(--spacing-normal);
+
+        --countdown-value-font-family: var(--font-family-headline);
+        --countdown-value-font-size: var(--spacing-l);
+        --countdown-value-line-height: 1;
+        --countdown-value-color: var(--countdown-color);
+
+        --countdown-label-font-size: var(--font-size-xs);
+        --countdown-label-text-transform: uppercase;
+        --countdown-label-line-height: 1;
+
+        --countdown-separator-height: var(--spacing-m);
+        --countdown-separator-max-height: 100%;
+        --countdown-separator-width: var(--border-width-normal);
+        --countdown-separator-color: var(--countdown-color);
+        --countdown-separator-opacity: .25;
+
+        --countdown-message-color: var(--countdown-color);
+        --countdown-message-display: none;
+
+        display: var(--countdown-display);
+        align-items: var(--countdown-align-items);
+        justify-content: var(--countdown-justify-content);
+        gap: var(--countdown-gap);
+        flex-direction: var(--countdown-flex-direction);
+        font-family: var(--countdown-font-family), sans-serif;
+        color: var(--countdown-color);
+    }
+
+    .countdown[element-design="default"] {
+        --countdown-value-color: var(--color-primary);
+    }
+
+    .countdown[element-design="primary"] {
+        --countdown-color: var(--color-primary);
+    }
+
+    .countdown[element-design="secondary"] {
+        --countdown-color: var(--color-secondary);
+    }
+
+    .countdown[element-design="inverted"] {
+        --countdown-color: var(--color-font);
+    }
+
+    .chapter[background-color]:not([background-color="bg"]) .countdown,
+    .chapter[has-background-media] .countdown {
+        --countdown-color: var(--color-bg);
+    }
+
+    .countdown[countdown-finished] {
+        --countdown-message-display: block;
+    }
+
+    .countdown[countdown-finished][hide-counter-when-finished] {
+        --countdown-counter-display: none;
+    }
+
+    .countdown__counter {
+        display: var(--countdown-counter-display);
+        align-items: var(--countdown-counter-align-items);
+        justify-content: var(--countdown-counter-justify-content);
+        gap: var(--countdown-counter-gap);
+    }
+
+    .countdown__item {
+        display: var(--countdown-item-display);
+        flex-direction: var(--countdown-item-flex-direction);
+        align-items: var(--countdown-item-align-items);
+        justify-content: var(--countdown-item-justify-content);
+        gap: var(--countdown-item-gap);
+    }
+
+    .countdown[hide-finished-days] .countdown__item[data-state="finished"] {
+        display: none;
+    }
+
+    .countdown__value {
+        font-family: var(--countdown-value-font-family), sans-serif;
+        font-size: var(--countdown-value-font-size);
+        font-variant-numeric: tabular-nums;
+        line-height: var(--countdown-value-line-height);
+        color: var(--countdown-value-color);
+    }
+
+    .countdown__label {
+        font-size: var(--countdown-label-font-size);
+        text-transform: var(--countdown-label-text-transform);
+        line-height: var(--countdown-label-line-height);
+    }
+
+    .countdown__separator {
+        height: var(--countdown-separator-height);
+        max-height: var(--countdown-separator-max-height);
+        width: var(--countdown-separator-width);
+        background-color: var(--countdown-separator-color);
+        opacity: var(--countdown-separator-opacity);
+    }
+
+    .countdown[hide-finished-days] .countdown__item[data-state="finished"] + .countdown__separator {
+        display: none;
+    }
+
+    .countdown__message {
+        color: var(--countdown-message-color);
+        display: var(--countdown-message-display);
+    }
+
+    @container (width >= 420px) {
+        .countdown {
+            --countdown-counter-gap: var(--spacing-normal);
+            --countdown-value-font-size: var(--spacing-xl);
+            --countdown-label-font-size: var(--font-size-s);
+            --countdown-separator-height: var(--spacing-l);
+        }
+    }
+
+    @container (width >= 840px) {
+        .countdown {
+            --countdown-counter-gap: var(--spacing-l);
+            --countdown-value-font-size: var(--spacing-xxl);
+            --countdown-label-font-size: var(--font-size-normal);
+            --countdown-separator-height: var(--spacing-xl);
+        }
+    }
+}

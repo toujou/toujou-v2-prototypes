@@ -43,7 +43,7 @@ const loadStylesheet = (theme) => {
     document.head.appendChild(link);
 
     console.log(
-        `%c 🎨 Theme stylesheet loaded: ${theme} `,
+        `%c 🎨 Theme stylesheet loaded: ${String(theme)} `,
         'background: #1565C0; color: #fff; font-weight: bold; border-radius: 4px; padding: 2px 6px;'
     );
 };

@@ -4,4 +4,5 @@ import "../../src/components/toujou-slider/toujou-slider";
 import "../../src/components/toujou-portfolio-gallery/toujou-portfolio-gallery";
 import "../../src/components/toujou-cover-slider/toujou-cover-slider";
 import "../../src/components/toujou-language-picker-dropdown/toujou-language-picker-dropdown";
+import "../../src/components/toujou-countdown/toujou-countdown";
 import "../../src/js/globals/contact-dialog";
