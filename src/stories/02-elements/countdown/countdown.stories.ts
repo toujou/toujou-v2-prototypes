@@ -93,7 +93,10 @@ const countdownTemplate = (targetDate: string, label: string, args: CountdownSto
             </span>
         </div>
         
-        <p class="countdown__message">This is the countdown success message!!!</p>
+        <div class="countdown__message">
+            <h3>Countdown finished!</h3>
+            <p>This is the countdown success message!!!</p>
+        </div>
     </toujou-countdown>
     
     <br>
