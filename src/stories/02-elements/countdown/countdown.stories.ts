@@ -93,7 +93,7 @@ const countdownTemplate = (targetDate: string, label: string, args: CountdownSto
             </span>
         </div>
         
-        <div class="countdown__message">
+        <div class="countdown__message" role="status">
             <h3>Countdown finished!</h3>
             <p>This is the countdown success message!!!</p>
         </div>
