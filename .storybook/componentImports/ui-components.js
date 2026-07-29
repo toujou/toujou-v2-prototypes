@@ -27,3 +27,4 @@ import "@toujou/toujou-read-more/lib";
 import "@toujou/toujou-tabs/lib";
 import "@toujou/toujou-modal/lib";
 import "@toujou/toujou-poster-reveal/lib";
+import "@toujou/toujou-countdown/lib";

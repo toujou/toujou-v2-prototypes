@@ -44,6 +44,7 @@ export default defineConfig({
                 'toujou-read-more': path.resolve(__dirname, 'node_modules/@toujou/toujou-read-more/lib'),
                 'toujou-tabs': path.resolve(__dirname, 'node_modules/@toujou/toujou-tabs/lib'),
                 'toujou-poster-reveal': path.resolve(__dirname, 'node_modules/@toujou/toujou-poster-reveal/lib'),
+                'toujou-countdown': path.resolve(__dirname, 'node_modules/@toujou/toujou-countdown/lib'),
 
                 // base js, which imports all other JS files that need to be loaded on all pages
                 'base': path.resolve(__dirname, 'src/js/base.js'),
