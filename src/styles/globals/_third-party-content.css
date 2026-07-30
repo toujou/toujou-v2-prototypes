@@ -26,6 +26,7 @@
 
     --third-party-content-message-margin: 0 0 var(--spacing-normal);
     --third-party-content-message-text-align: center;
+    --third-party-content-message-text-wrap: balance;
 
     position: var(--third-party-content-position);
     display: var(--third-party-content-display);
@@ -65,6 +66,7 @@
 .third-party-content__message {
     margin: var(--third-party-content-message-margin);
     text-align: var(--third-party-content-message-text-align);
+    text-wrap: var(--third-party-content-message-text-wrap);
 }
 
 .third-party-content__placeholder {
