@@ -147,6 +147,7 @@
 
     @container (width >= 840px) {
         .countdown {
+            --countdown-gap: var(--spacing-xl);
             --countdown-counter-gap: var(--spacing-l);
             --countdown-value-font-size: var(--spacing-xxl);
             --countdown-label-font-size: var(--font-size-normal);
