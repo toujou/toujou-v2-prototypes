@@ -7,6 +7,10 @@
         --countdown-flex-direction: column;
         --countdown-font-family: var(--font-family-text);
         --countdown-color: var(--color-font);
+        --countdown-width: var(--content-width-with-padding);
+        --countdown-max-width: var(--content-max-width);
+        --countdown-margin: var(--spacing-between-elements-normal) auto 0;
+        --countdown-z-index: var(--z-index-content);
 
         --countdown-counter-display: flex;
         --countdown-counter-align-items: center;
@@ -37,6 +41,7 @@
 
         --countdown-message-color: var(--countdown-color);
         --countdown-message-display: none;
+        --countdown-message-width: 100%;
 
         display: var(--countdown-display);
         align-items: var(--countdown-align-items);
@@ -45,6 +50,10 @@
         flex-direction: var(--countdown-flex-direction);
         font-family: var(--countdown-font-family), sans-serif;
         color: var(--countdown-color);
+        width: var(--countdown-width);
+        max-width: var(--countdown-max-width);
+        margin: var(--countdown-margin);
+        z-index: var(--countdown-z-index);
     }
 
     .countdown[element-design="default"] {
@@ -124,6 +133,7 @@
     .countdown__message {
         color: var(--countdown-message-color);
         display: var(--countdown-message-display);
+        width: var(--countdown-message-width);
     }
 
     @container (width >= 420px) {
