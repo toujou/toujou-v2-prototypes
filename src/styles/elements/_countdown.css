@@ -9,7 +9,7 @@
         --countdown-color: var(--color-font);
         --countdown-width: var(--content-width-with-padding);
         --countdown-max-width: var(--content-max-width);
-        --countdown-margin: var(--spacing-between-elements-normal) auto 0;
+        --countdown-margin: var(--spacing-between-elements-normal) auto;
         --countdown-z-index: var(--z-index-content);
 
         --countdown-counter-display: flex;
