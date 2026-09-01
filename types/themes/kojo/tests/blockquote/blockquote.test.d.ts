@@ -1,1 +1,1 @@
-import '../../components/toujou-blockquote/toujou-blockquote';
+import '../../../../shared/components/toujou-blockquote/toujou-blockquote';

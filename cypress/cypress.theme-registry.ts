@@ -1,4 +1,5 @@
 import { baseConfig } from './cypress.base.config';
+import { THEME_MANIFEST, THEME_KEYS, type ThemeKey } from '../themes/index';
 
 /** Recursively makes all nested object properties optional */
 type DeepPartial<T> = {
@@ -16,16 +17,18 @@ export type ThemeDefinition = {
 
 /**
  * Central registry of all supported themes.
- * To add a new theme, add an entry here — the Cypress config derives from it automatically.
+ * Theme identity (name + specPattern) is derived from the shared theme manifest,
+ * so adding a theme there automatically wires it into Cypress. Theme-specific
+ * test overrides (e.g. colors, viewports) are declared here.
  */
-export const themes: Record<string, ThemeDefinition> = {
+export const themes: Record<ThemeKey, ThemeDefinition> = {
     kojo: {
-        name: 'kojo',
-        specPattern: 'src/themes/kojo/tests/**/*.cy.ts',
+        name: THEME_MANIFEST.kojo.key,
+        specPattern: THEME_MANIFEST.kojo.specPattern,
     },
     toujou: {
-        name: 'toujou',
-        specPattern: 'src/themes/toujou/tests/**/*.cy.ts',
+        name: THEME_MANIFEST.toujou.key,
+        specPattern: THEME_MANIFEST.toujou.specPattern,
         env: {
             colors: {
                 colorPrimary: 'rgb(200, 50, 80)',
@@ -33,3 +36,6 @@ export const themes: Record<string, ThemeDefinition> = {
         },
     },
 };
+
+export const themeKeys = THEME_KEYS;
+

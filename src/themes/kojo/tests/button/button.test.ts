@@ -1,6 +1,6 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
-import '../../components/toujou-button/toujou-button';
+import '@toujou/toujou-button/lib/index';
 
 describe('toujou-button', () => {
     it('can create component', async () => {
