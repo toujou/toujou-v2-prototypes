@@ -1,33 +1,127 @@
-# TOUJOU STORYBOOK FOR THEME-KOJO
-Components and styles for the kojo theme
+# STORYBOOK FOR TOUJOU THEMES
+Stories, components, styles, assets and documentation for the Toujou themes.
+
+## Getting started
+1. `npm use` and `npm install` (or `npm ci`)
+2. Open Storybook with `npm run sb`
+
+
+## Theme architecture
+We Support multiple themes (e.g., 'kojo', 'toujou') built from a shared codebase.
+Currently only Kojo has been implemented, Toujou ist just a proof of concept for now
+
+Each theme can provide / override:
+- CSS
+- JS
+- Tests
+- Assets
+- build files
+
+
+### Simplified file structure
+```text
+assets/
+└── themes/
+    ├── kojo/
+    ├── toujou/
+src/
+└── shared/
+    ├── components/    # shared UI components (theme-agnostic)
+    ├── utils/         # shared JS utils, like the video-autoplay, ... (theme-agnostic)
+├── stories/           # shared Storybook stories (markup only)
+└── themes/
+    ├── kojo/          # Kojo-specific implementation
+    │   ├── js/
+    │   ├── styles/
+    │   └── tests/
+    ├── toujou/        # Other themes
+themes/
+└── index.ts           # Single source of truth for all themes (identity, build entries, spec patterns)
+```
+
+### Theme manifest
+
+`themes/index.ts` is the single source of truth for what a theme is. It declares each
+theme's key/root, Vite build entries and Cypress spec pattern. Vite
+(`vite.config.ts`) and Cypress (`cypress/cypress.theme-registry.ts`) derive their
+configuration from it, so adding a theme only requires editing this one file.
+
+### Build output
+
+Theme builds emit into `dist/themes/<theme>/...` — e.g. `dist/themes/kojo/js/base.js`,
+`dist/themes/kojo/css/...`. Theme assets (icons, images) are copied to
+`dist/assets/themes/<theme>/` and `storybook-static/assets/themes/<theme>/`, matching
+where the built CSS `url(../../../../assets/...)` references resolve.
+
+### How theming works
+Each theme is activated via an environment variable: `VITE_THEME=kojo`
+This affects:
+- Vite builds (`npm run build:kojo`)
+- Storybook builds ('npm run build:sb:kojo')
+- Theme-specific CSS/JS bundling
+- Cypress test selection
 
 ## Scripts
-- `npm run dev` runs the app (`index.html` file) in dev mode, which import the `.ts` files, hast Hot Module Replacement, ...
-- `npm run build` build the project files
-- `npm run sb` opens a Storybook instance where you can see all the components
-- `npm run build:sb` build the project files so they can be displayed on Storybook. This will also automatically run the `postbuild-sb` task
-- `npm run postbuild:sb` run a couple of tasks needed to make the static storybook work
-- `npm run build:fix` change absolute paths to relative paths on the storybook-static/iframe.html file
-- `npm run copy-icons-folder` copy the icons folder to the storybook-static/assets folder
-- `npm run deploy:sb` deploy storybook to github pages
-- `npm run deploy:full` build and deploy to github
-- `npm run test` run the js tests
 
-## How to add changes for Kojo Theme
-1. `nvm use && npm ci`
-2. Make desired changes
-3. `npm run lint:css`
-4. `npm run deploy:full`
-5. commit changes
-6. Then on Kojo theme:
-   6.1. Update changes (JS and CSS) with `nvm use && npm run update:styles`
+### 🦄 Development
+
+| Script                | Description                               |
+|-----------------------|-------------------------------------------|
+| `npm run dev`         | Run the app in dev mode with HMR          |
+| `npm run sb`          | Start Storybook on port 6006 (kojo theme) |
+| `npm run sb:kojo`     | Start Storybook with kojo theme           |
+| `npm run sb:toujou`   | Start Storybook with toujou theme         |
+| `npm run clean:cache` | Clear Storybook and Vite caches           |
+
+### 🧱 Build
+
+| Script                    | Description                         |
+|---------------------------|-------------------------------------|
+| `npm run build:kojo`      | Build JS + CSS for the kojo theme   |
+| `npm run build:toujou`    | Build JS + CSS for the toujou theme |
+| `npm run build:all`       | Build all themes sequentially       |
+| `npm run build:sb`        | Build Storybook static output       |
+| `npm run build:sb:kojo`   | Build Storybook for kojo theme      |
+| `npm run build:sb:toujou` | Build Storybook for toujou theme    |
+| `npm run build:sb:all`    | Build Storybook for all themes      |
+
+Each theme build runs a post-build step that copies the theme's assets (icons/images)
+into `dist/assets/themes/<theme>/` and `storybook-static/assets/themes/<theme>/`.
+
+### 🚀 Deploy
+
+| Script                | Description                                |
+|-----------------------|--------------------------------------------|
+| `npm run deploy:sb`   | Deploy `storybook-static/` to GitHub Pages |
+| `npm run deploy:full` | Build all themes + Storybook, then deploy  |
+
+### 🧪 Testing
+
+| Script                    | Description                         |
+|---------------------------|-------------------------------------|
+| `npm run test:unit`       | Run unit tests with Web Test Runner |
+| `npm run test:e2e:kojo`   | Open Cypress for kojo theme (interactive) |
+| `npm run test:e2e:toujou` | Open Cypress for toujou theme (interactive) |
+| `npm run test:e2e:run:kojo`   | Run kojo e2e tests headless (non-interactive) |
+| `npm run test:e2e:run:toujou` | Run toujou e2e tests headless (non-interactive) |
+| `npm run test:e2e:all`    | Open Cypress for all themes (interactive) |
+| `npm run test:all`        | Run unit + e2e tests headless (for CI) |
+
+### 🧹 Linting
+
+| Script             | Description                             |
+|--------------------|-----------------------------------------|
+| `npm run lint:css` | Lint all theme CSS files with Stylelint |
+
+
+## Troubleshooting
+1. **`node: --openssl-legacy-provider is not allowed in NODE_OPTIONS`**
+   Run `nvm use && npm install` before retrying.
+
+2. **Storybook showing stale output after refactor**
+   Clear the cache: `npm run clean:cache`
+
 
 ## Github page
-We can deploy storybook to a [github page](https://toujou.github.io/toujou-v2-prototypes/). Followed [this tutorial](https://medium.com/swlh/how-to-deploy-storybook-to-github-pages-4894097d49ab)
-
-> `npm run deploy::full` works well! It builds and deploys to github in 1 step!
-
-# Troubleshooting
-1. `node: --openssl-legacy-provider is not allowed in NODE_OPTIONS` error when running the `npm run sb` command or `npm run deploy:full`
-
-Please try `nvm use` and `npm install` before running the `npm run sb` command again
+We can deploy storybook to a [github page](https://toujou.github.io/toujou-v2-prototypes/).
+   `npm run deploy::full` → Build everything and deploy to github pages

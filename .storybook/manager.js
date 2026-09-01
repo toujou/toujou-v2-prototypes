@@ -1,5 +1,5 @@
 import { addons } from 'storybook/manager-api';
-import toujouBranding from "./configUtils/storybookToujouBranding";
+import toujouBranding from "./config-utils/storybook-branding";
 
 /* Add custom theme settings */
 addons.setConfig({

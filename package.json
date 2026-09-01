@@ -10,26 +10,51 @@
   ],
   "scripts": {
     "dev": "vite",
+
+    "clean:cache": "rm -rf node_modules/.cache/storybook node_modules/.vite",
+    "clean:dist": "rm -rf dist",
+
     "build": "tsc && vite build --config vite.config.ts",
-    "postbuild": "npm run build:css && npm run copy:all",
-    "build:css": "NODE_ENV=production npm run build:css:elements && NODE_ENV=production npm run build:css:base && NODE_ENV=production npm run build:css:rte && NODE_ENV=production npm run build:css:print && NODE_ENV=production npm run build:css:forced-colors",
-    "build:css:elements": "postcss ./src/styles/elements/*.css -d ./dist/css",
-    "build:css:base": "postcss ./src/styles/base.css -d ./dist/css/",
-    "build:css:rte": "postcss ./src/styles/rte.css -d ./dist/css/",
-    "build:css:print": "postcss ./src/styles/print.css -d ./dist/css/",
-    "build:css:forced-colors": "postcss ./src/styles/forced-colors.css -d ./dist/css/",
+    "build:kojo": "VITE_THEME=kojo npm run build && npm run build:css:kojo && npm run copy:all",
+    "build:toujou": "VITE_THEME=toujou npm run build && npm run build:css:toujou && npm run copy:all",
+    "build:all": "npm run clean:dist && npm run build:kojo && npm run build:toujou",
+
+    "build:css:kojo": "NODE_ENV=production npm run build:css:kojo:elements && NODE_ENV=production npm run build:css:kojo:base && NODE_ENV=production npm run build:css:kojo:rte && NODE_ENV=production npm run build:css:kojo:print && NODE_ENV=production npm run build:css:kojo:forced-colors",
+    "build:css:kojo:elements": "postcss ./src/themes/kojo/styles/elements/*.css -d ./dist/themes/kojo/css",
+    "build:css:kojo:base": "postcss ./src/themes/kojo/styles/base.css -d ./dist/themes/kojo/css/",
+    "build:css:kojo:rte": "postcss ./src/themes/kojo/styles/rte.css -d ./dist/themes/kojo/css/",
+    "build:css:kojo:print": "postcss ./src/themes/kojo/styles/print.css -d ./dist/themes/kojo/css/",
+    "build:css:kojo:forced-colors": "postcss ./src/themes/kojo/styles/forced-colors.css -d ./dist/themes/kojo/css/",
+
+    "build:css:toujou": "NODE_ENV=production npm run build:css:toujou:test",
+    "build:css:toujou:test": "postcss ./src/themes/toujou/styles/*.css -d ./dist/themes/toujou/css",
+
     "sb": "storybook dev -p 6006",
+    "sb:kojo": "VITE_THEME=kojo storybook dev -p 6006",
+    "sb:toujou": "VITE_THEME=toujou storybook dev -p 6006",
     "build:sb": "storybook build",
+    "build:sb:kojo": "VITE_THEME=kojo storybook build",
+    "build:sb:toujou": "VITE_THEME=toujou storybook build",
+    "build:sb:all": "npm run build:sb:kojo && npm run build:sb:toujou",
+
     "postbuild:sb": "npm run copy:all && npm run build:fix",
     "build:fix": "sh shell-scripts/sb-postbuild.sh",
     "copy:icons-folder": "sh shell-scripts/copy-icons-folder.sh",
     "copy:all": "npm run copy:icons-folder",
+
     "deploy:sb": "gh-pages -d storybook-static --dotfiles",
-    "deploy:full": "npm run build && npm run build:sb && npm run deploy:sb",
+    "deploy:full": "npm run build:all && npm run build:sb:all && npm run deploy:sb",
+
     "test:unit": "web-test-runner",
-    "test:e2e": "cypress open",
-    "test:all": "npm run test:unit && npm run test:e2e",
-    "lint:css": "npx stylelint ./src/styles/**/*.css"
+    "test:e2e:kojo": "cypress open --config-file cypress.kojo.config.ts",
+    "test:e2e:toujou": "cypress open --config-file cypress.toujou.config.ts",
+    "test:e2e:run:kojo": "cypress run --config-file cypress.kojo.config.ts",
+    "test:e2e:run:toujou": "cypress run --config-file cypress.toujou.config.ts",
+    "test:e2e:all": "npm run test:e2e:kojo && npm run test:e2e:toujou",
+    "test:e2e:run:all": "npm run test:e2e:run:kojo && npm run test:e2e:run:toujou",
+    "test:all": "npm run test:unit && npm run test:e2e:run:all",
+
+    "lint:css": "npx stylelint ./src/themes/**/*.css"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

@@ -91,7 +91,7 @@ const renderQuickLink = (args: QuickLinksStoryProps, text: string, iconName: str
             <figure class="quick-link__figure">
                 <span
                     class="quick-link__icon"
-                    style="--quick-link-image-icon: url('./assets/icons/icon-${iconName}.svg')"
+                    style="--quick-link-image-icon: url('/assets/themes/kojo/icons/icon-${iconName}.svg')"
                     aria-hidden="true"
                 ></span>
             </figure>

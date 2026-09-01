@@ -70,11 +70,7 @@ function formatTimestamp(timestamp: number): string {
 }
 
 const Template: StoryFn<DatepickerProps> = (args: DatepickerProps) => {
-    console.log('minDate', args.minDate);
-
     const formattedMinDate = formatTimestamp(args.minDate);
-
-    console.log('maxDate', args.maxDate);
     const formattedMaxDate = formatTimestamp(args.maxDate);
 
     return `
