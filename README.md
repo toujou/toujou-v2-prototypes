@@ -35,7 +35,23 @@ src/
     │   ├── styles/
     │   └── tests/
     ├── toujou/        # Other themes
+themes/
+└── index.ts           # Single source of truth for all themes (identity, build entries, spec patterns)
 ```
+
+### Theme manifest
+
+`themes/index.ts` is the single source of truth for what a theme is. It declares each
+theme's key/root, Vite build entries and Cypress spec pattern. Vite
+(`vite.config.ts`) and Cypress (`cypress/cypress.theme-registry.ts`) derive their
+configuration from it, so adding a theme only requires editing this one file.
+
+### Build output
+
+Theme builds emit into `dist/themes/<theme>/...` — e.g. `dist/themes/kojo/js/base.js`,
+`dist/themes/kojo/css/...`. Theme assets (icons, images) are copied to
+`dist/assets/themes/<theme>/` and `storybook-static/assets/themes/<theme>/`, matching
+where the built CSS `url(../../../../assets/...)` references resolve.
 
 ### How theming works
 Each theme is activated via an environment variable: `VITE_THEME=kojo`
@@ -69,6 +85,9 @@ This affects:
 | `npm run build:sb:toujou` | Build Storybook for toujou theme    |
 | `npm run build:sb:all`    | Build Storybook for all themes      |
 
+Each theme build runs a post-build step that copies the theme's assets (icons/images)
+into `dist/assets/themes/<theme>/` and `storybook-static/assets/themes/<theme>/`.
+
 ### 🚀 Deploy
 
 | Script                | Description                                |
@@ -81,10 +100,12 @@ This affects:
 | Script                    | Description                         |
 |---------------------------|-------------------------------------|
 | `npm run test:unit`       | Run unit tests with Web Test Runner |
-| `npm run test:e2e:kojo`   | Open Cypress for kojo theme         |
-| `npm run test:e2e:toujou` | Open Cypress for toujou theme       |
-| `npm run test:e2e:all`    | Run Cypress for all themes          |
-| `npm run test:all`        | Run unit + e2e tests for all themes |
+| `npm run test:e2e:kojo`   | Open Cypress for kojo theme (interactive) |
+| `npm run test:e2e:toujou` | Open Cypress for toujou theme (interactive) |
+| `npm run test:e2e:run:kojo`   | Run kojo e2e tests headless (non-interactive) |
+| `npm run test:e2e:run:toujou` | Run toujou e2e tests headless (non-interactive) |
+| `npm run test:e2e:all`    | Open Cypress for all themes (interactive) |
+| `npm run test:all`        | Run unit + e2e tests headless (for CI) |
 
 ### 🧹 Linting
 

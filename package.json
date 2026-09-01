@@ -48,8 +48,11 @@
     "test:unit": "web-test-runner",
     "test:e2e:kojo": "cypress open --config-file cypress.kojo.config.ts",
     "test:e2e:toujou": "cypress open --config-file cypress.toujou.config.ts",
+    "test:e2e:run:kojo": "cypress run --config-file cypress.kojo.config.ts",
+    "test:e2e:run:toujou": "cypress run --config-file cypress.toujou.config.ts",
     "test:e2e:all": "npm run test:e2e:kojo && npm run test:e2e:toujou",
-    "test:all": "npm run test:unit && npm run test:e2e:all",
+    "test:e2e:run:all": "npm run test:e2e:run:kojo && npm run test:e2e:run:toujou",
+    "test:all": "npm run test:unit && npm run test:e2e:run:all",
 
     "lint:css": "npx stylelint ./src/themes/**/*.css"
   },

@@ -1,21 +1,15 @@
 import { defineConfig } from 'vite'
 import * as path from "path";
+import { FALLBACK_THEME, THEME_MANIFEST, type ThemeKey } from './themes/index';
 
-const FALLBACK_THEME = 'kojo';
-const CURRENT_THEME = process.env.VITE_THEME ?? FALLBACK_THEME;
+const CURRENT_THEME: ThemeKey = (process.env.VITE_THEME as ThemeKey | undefined) ?? FALLBACK_THEME;
 
-const kojoBuildEntries = {
-    'main-nav': path.resolve(__dirname, `src/themes/kojo/js/elements/main-nav`),
-    'base': path.resolve(__dirname, `src/themes/kojo/js/base.js`),
-};
-
-const toujouBuildEntries = {};
-
-/** @type {Record<string, Record<string, string>>} */
-const THEME_ENTRIES: Record<string, Record<string, string>> = {
-    kojo: kojoBuildEntries,
-    toujou: toujouBuildEntries,
-};
+/** Build input entries (Vite-resolved) for the current theme. */
+const THEME_ENTRIES: Record<string, string> = Object.fromEntries(
+    Object.entries(THEME_MANIFEST[CURRENT_THEME].entries).map(([name, entry]) => {
+        return [name, path.resolve(__dirname, entry)];
+    })
+);
 
 export default defineConfig({
     optimizeDeps: {
@@ -37,7 +31,7 @@ export default defineConfig({
                 'video-autoplay': path.resolve(__dirname, 'src/shared/js/utils/video-autoplay/video-autoplay.ts'),
 
                 // ─── Theme-specific JS ────────────────────────────────────────
-                ...THEME_ENTRIES[CURRENT_THEME],
+                ...THEME_ENTRIES,
 
                 // ─── Third-party / Node Modules ───────────────────────────────
                 'skippy-links': path.resolve(__dirname, 'node_modules/skippy-links/dist/skippy-links'),
@@ -61,9 +55,6 @@ export default defineConfig({
                 'toujou-tabs': path.resolve(__dirname, 'node_modules/@toujou/toujou-tabs/lib'),
                 'toujou-poster-reveal': path.resolve(__dirname, 'node_modules/@toujou/toujou-poster-reveal/lib'),
                 'toujou-countdown': path.resolve(__dirname, 'node_modules/@toujou/toujou-countdown/lib'),
-
-                // base js, which imports all other JS files that need to be loaded on all pages
-                'base': path.resolve(__dirname, 'src/js/base.js'),
             },
             output: {
                 assetFileNames: (assetInfo) => {

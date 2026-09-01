@@ -1,1 +1,1 @@
-import '../../components/toujou-button/toujou-button';
+import '@toujou/toujou-button/lib/index';
