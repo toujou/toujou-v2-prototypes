@@ -29,6 +29,23 @@
     gap: var(--footer-layout-content-row-gap);
 }
 
+.footer-layout__column {
+    container-name: footer-layout-column;
+    container-type: inline-size;
+}
+
+.footer-layout :is(h1, h2, h3, h4, h5, p, ul, ol) {
+    color: var(--color-bg);
+}
+
+.footer-layout a {
+    color: var(--footer-link-color);
+}
+
+.footer-layout a:is(:hover, :focus-visible) {
+    color: var(--footer-link-focus-color);
+}
+
 @container footer-layout (width >= 640px) {
     .footer-layout[data-footer-column-count="2"] .footer-layout__row[data-row-name="content"],
     .footer-layout[data-footer-column-count="4"] .footer-layout__row[data-row-name="content"] {

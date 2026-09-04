@@ -54,7 +54,7 @@
     object-position: var(--footer-object-position);
 }
 
-.footer__list {
+:is(.footer__list, .footer ul, .footer ol) {
     list-style: var(--footer-list-style);
     padding: var(--footer-list-padding);
     margin: var(--footer-list-margin);

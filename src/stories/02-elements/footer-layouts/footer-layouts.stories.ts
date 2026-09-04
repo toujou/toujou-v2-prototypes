@@ -33,9 +33,14 @@ const Template: StoryFn<FooterLayoutsStoryProps> = (args: FooterLayoutsStoryProp
     const renderContentColumn = columnsData
         .slice(0, Number(args.columnCount))
         .map((column) => `
-            <div class="footer-layout__column"data-column-name="${column.name}">
+            <div class="footer-layout__column" data-column-name="${column.name}">
                 <span id="${column.id}"></span>
                 <h3>${column.title}</h3>
+                <ul>
+                    <li><a href="#">Link one</a></li>
+                    <li><a href="#">Link two</a></li>
+                    <li><a href="#">Link three</a></li>
+                </ul>
             </div>
         `)
         .join('');
