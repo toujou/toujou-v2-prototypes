@@ -1,0 +1,23 @@
+# footer layouts
+
+Element to render the different footer layout options available on the Backend Layout select options for the footer pages
+
+## Markup example
+```html
+<footer class="footer footer-layout" data-footer-layout="fourColumns" data-footer-column-count="4">
+    <div class="footer-layout__row" data-row-name="intro">
+        <div class="footer-layout__column" data-column-name="intro"></div>
+    </div>
+
+    <div class="footer-layout__row" data-row-name="content">
+        <div class="footer-layout__column" data-column-name="outer-left"></div>
+        <div class="footer-layout__column" data-column-name="inner-left"></div>
+        <div class="footer-layout__column" data-column-name="inner-right"></div>
+        <div class="footer-layout__column" data-column-name="outer-right"></div>
+    </div>
+
+    <div class="footer-layout__row" data-row-name="end">
+        <div class="footer-layout__column" data-column-name="end"></div>
+    </div>
+</footer>
+```

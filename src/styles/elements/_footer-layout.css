@@ -1,0 +1,66 @@
+.footer-layout {
+    --footer-layout-column-count: 1;
+
+    --footer-layout-content-max-width: var(--content-wide-max-width);
+    --footer-layout-content-margin: 0 auto;
+    --footer-layout-content-display: grid;
+    --footer-layout-content-grid-template-columns: 1fr;
+    --footer-layout-content-gap: var(--spacing-l);
+
+    container-name: footer-layout;
+    container-type: inline-size;
+}
+
+.footer-layout__content {
+    max-width: var(--footer-layout-content-max-width);
+    margin: var(--footer-layout-content-margin);
+    display: var(--footer-layout-content-display);
+    grid-template-columns: var(--footer-layout-content-grid-template-columns);
+    gap: var(--footer-layout-content-gap);
+}
+
+.footer-layout__row[data-row-name="content"] {
+    --footer-layout-content-row-display: grid;
+    --footer-layout-content-row-grid-template-columns: repeat(var(--footer-layout-column-count), minmax(0, 1fr));
+    --footer-layout-content-row-gap: var(--spacing-l);
+
+    display: var(--footer-layout-content-row-display);
+    grid-template-columns: var(--footer-layout-content-row-grid-template-columns);
+    gap: var(--footer-layout-content-row-gap);
+}
+
+.footer-layout__column {
+    container-name: footer-layout-column;
+    container-type: inline-size;
+}
+
+.footer-layout :is(h1, h2, h3, h4, h5, p, ul, ol) {
+    color: var(--color-bg);
+}
+
+.footer-layout a {
+    color: var(--footer-link-color);
+}
+
+.footer-layout a:is(:hover, :focus-visible) {
+    color: var(--footer-link-focus-color);
+}
+
+@container footer-layout (width >= 640px) {
+    .footer-layout[data-footer-column-count="2"] .footer-layout__row[data-row-name="content"],
+    .footer-layout[data-footer-column-count="4"] .footer-layout__row[data-row-name="content"] {
+        --footer-layout-column-count: 2;
+    }
+}
+
+@container footer-layout (width >= 840px) {
+    .footer-layout[data-footer-column-count="3"] .footer-layout__row[data-row-name="content"] {
+        --footer-layout-column-count: 3;
+    }
+}
+
+@container footer-layout (width >= 1024px) {
+    .footer-layout[data-footer-column-count="4"] .footer-layout__row[data-row-name="content"] {
+        --footer-layout-column-count: 4;
+    }
+}
