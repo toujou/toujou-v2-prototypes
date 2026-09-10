@@ -12,8 +12,6 @@
     --single-media-media-width: 100%;
     --single-media-media-height: auto;
 
-    --single-media-youtube-videos-aspect-ratio: var(--aspect-ratio-16-9);
-
     position: var(--single-media-position);
     display: var(--single-media-display);
     width: var(--single-media-width);
@@ -23,6 +21,11 @@
     max-height: var(--single-media-max-height);
     border-radius: var(--single-media-border-radius);
     overflow: var(--single-media-overflow);
+}
+
+.single-media,
+.single-media__video {
+    --single-media-youtube-videos-aspect-ratio: var(--aspect-ratio-16-9);
 }
 
 .slider .single-media__image {
