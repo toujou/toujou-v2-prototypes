@@ -18,6 +18,10 @@
         z-index: var(--media-grid-z-index);
     }
 
+    .footer-layout__column .media-grid {
+        --media-grid-margin: 0;
+    }
+
     .media-grid:first-child {
         --media-grid-margin: var(--spacing-between-elements-normal) auto 0;
     }

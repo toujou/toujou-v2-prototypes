@@ -39,6 +39,10 @@
     z-index: var(--social-media-bar-z-index);
 }
 
+.footer-layout__column .social-media-bar {
+    --social-media-bar-margin: 0 auto;
+}
+
 .social-media-bar:first-child {
     --social-media-bar-margin: 0 auto;
 }
