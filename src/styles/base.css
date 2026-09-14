@@ -77,3 +77,4 @@
 @import "./globals/_wrap-plugin-page.css" layer(base);
 @import "./globals/_consent-widget.css" layer(base);
 @import "./globals/_third-party-content.css" layer(base);
+@import "./globals/_rte-icon.css" layer(base);

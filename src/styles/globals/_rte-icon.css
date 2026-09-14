@@ -1,0 +1,59 @@
+.rte-icon {
+    --icon-color: var(--color-font);
+    --icon-base-size: 1em;
+    --icon-size-multiplier: 1;
+    --icon-size: calc(var(--icon-base-size) * var(--icon-size-multiplier));
+
+    position: relative;
+    display: inline-flex;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    vertical-align: middle;
+}
+
+.rte-icon::after {
+    content: "";
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: var(--icon-color);
+    mask-image: var(--icon-path);
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+}
+
+.rte-icon[data-icon-color="primary"] {
+    --icon-color: var(--color-primary);
+}
+
+.rte-icon[data-icon-color="secondary"] {
+    --icon-color: var(--color-secondary);
+}
+
+.rte-icon[data-icon-color="font"] {
+    --icon-color: var(--color-font);
+}
+
+.rte-icon[data-icon-color="background"] {
+    --icon-color: var(--color-bg);
+}
+
+.rte-icon[data-icon-size="s"] {
+    --icon-size-multiplier: 0.875;
+}
+
+.rte-icon[data-icon-size="m"] {
+    --icon-size-multiplier: 1.5;
+}
+
+.rte-icon[data-icon-size="l"] {
+    --icon-size-multiplier: 2;
+}
+
+.rte-icon[data-icon-size="xl"] {
+    --icon-size-multiplier: 3;
+}
+
+.rte-icon[data-icon-size="xxl"] {
+    --icon-size-multiplier: 4;
+}
