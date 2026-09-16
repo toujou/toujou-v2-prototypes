@@ -40,7 +40,7 @@ describe('rating-placeholder', () => {
         // @ts-ignore
         cy.get('.media-placeholder').after('-webkit-mask-repeat').should('eq', 'no-repeat');
         // @ts-ignore
-        cy.get('.media-placeholder').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-image-circle-filled.svg")');
+        cy.get('.media-placeholder').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-image-circle-filled.svg")');
     });
 })
 
@@ -55,7 +55,7 @@ describe('rating-placeholder - video', () => {
 
     it('has correct styles', () => {
         // @ts-ignore
-        cy.get('.media-placeholder').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-videocam-circle-filled.svg")');
+        cy.get('.media-placeholder').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-videocam-circle-filled.svg")');
     });
 })
 
@@ -70,7 +70,7 @@ describe('rating-placeholder - audio', () => {
 
     it('has correct styles', () => {
         // @ts-ignore
-        cy.get('.media-placeholder').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-audiotrack-circle-filled.svg")');
+        cy.get('.media-placeholder').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-audiotrack-circle-filled.svg")');
     });
 })
 

@@ -56,10 +56,10 @@ describe('blog plugin: post meta [mobile]', () => {
         cy.get('.post-meta .post-meta__group:nth-child(1) .post-meta__text').should('have.css', 'color', colors.colorFont);
 
         cy.get('.post-meta .post-meta__group:nth-child(4) .icon').should('have.css', 'background-color', colors.colorFont);
-        cy.get('.post-meta .post-meta__group:nth-child(4) .icon').should('have.css', '-webkit-mask-image', 'url("http://localhost:6006/assets/icons/icon-article.svg")');
+        cy.get('.post-meta .post-meta__group:nth-child(4) .icon').should('have.css', '-webkit-mask-image', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-article.svg")');
 
         cy.get('.post-meta .post-meta__group:nth-child(5) .icon').should('have.css', 'background-color', colors.colorFont);
-        cy.get('.post-meta .post-meta__group:nth-child(5) .icon').should('have.css', '-webkit-mask-image', 'url("http://localhost:6006/assets/icons/icon-calendar-lines.svg")');
+        cy.get('.post-meta .post-meta__group:nth-child(5) .icon').should('have.css', '-webkit-mask-image', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-calendar-lines.svg")');
     });
 });
 

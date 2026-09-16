@@ -136,7 +136,7 @@ describe('Portfolio gallery', () => {
         // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('-webkit-mask-repeat').should('eq', 'no-repeat');
         // @ts-ignore
-        cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-image-circle-filled.svg")');
+        cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-image-circle-filled.svg")');
         // @ts-ignore
         cy.get('.portfolio-gallery .slider-slide:nth-child(1) .portfolio-gallery__link').after('pointer-events').should('eq', 'none');
         // @ts-ignore

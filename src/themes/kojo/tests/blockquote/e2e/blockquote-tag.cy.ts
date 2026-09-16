@@ -14,7 +14,7 @@ describe('blockquote tag', () => {
         // @ts-ignore
         cy.get('blockquote').before().should('exist');
         // @ts-ignore
-        cy.get('blockquote').before('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-blockquote-round.svg")');
+        cy.get('blockquote').before('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-blockquote-round.svg")');
         cy.get('blockquote').should('have.class', '');
     });
 
