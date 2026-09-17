@@ -1,0 +1,5 @@
+- [x] Update README
+  - [x] Information about the new folder structure
+  - [x] Add information about where the build files are located (dist/themes/<theme>/...)
+- [ ] We will need to update Kojo to import the correct files (because of the new dist/ folder structure)
+  - This is a downstream consumer change in the consuming app, not fixable in this repo.

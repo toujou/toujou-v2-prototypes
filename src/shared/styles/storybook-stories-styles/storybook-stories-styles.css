@@ -1,0 +1,19 @@
+@import 'elements/_be-variables.css'; /* These are the variables that come from the theme settings in BE */
+@import 'elements/_contact-box.css' layer(base);
+@import 'elements/_demo-variables.css' layer(base);
+@import 'elements/_animation.css' layer(base);
+@import 'elements/_aspect-ratio.css' layer(base);
+@import 'elements/_border.css' layer(base);
+@import 'elements/_border-radius.css' layer(base);
+@import 'elements/_color.css' layer(base);
+@import 'elements/_font.css' layer(base);
+@import 'elements/_padding.css' layer(base);
+@import 'elements/_shadow.css' layer(base);
+@import 'elements/_size.css' layer(base);
+@import 'elements/_tokens-demo.css' layer(base);
+@import 'elements/_type.css' layer(base);
+@import 'elements/_icon-grid.css' layer(base);
+@import 'elements/_demo-grid.css' layer(base);
+@import 'elements/_chapter.css' layer(base);
+@import 'elements/_toujou-solr-styles.css' layer(base);
+@import 'elements/_demo-media-placeholder-container.css' layer(base);
