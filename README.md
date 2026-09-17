@@ -67,7 +67,7 @@ This affects:
 
 | Script                | Description                               |
 |-----------------------|-------------------------------------------|
-| `npm run dev`         | Run the app in dev mode with HMR          |
+| `npm run dev`         | Serve the legacy `index.html` shell (no components; use `sb`) |
 | `npm run sb`          | Start Storybook on port 6006 (kojo theme) |
 | `npm run sb:kojo`     | Start Storybook with kojo theme           |
 | `npm run sb:toujou`   | Start Storybook with toujou theme         |
@@ -124,4 +124,4 @@ into `dist/assets/themes/<theme>/` and `storybook-static/assets/themes/<theme>/`
 
 ## Github page
 We can deploy storybook to a [github page](https://toujou.github.io/toujou-v2-prototypes/).
-   `npm run deploy::full` → Build everything and deploy to github pages
+   `npm run deploy:full` → Build everything and deploy to github pages

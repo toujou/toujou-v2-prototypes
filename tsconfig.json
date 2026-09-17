@@ -27,12 +27,7 @@
             "cypress",
             "cypress-axe",
             "youtube"
-        ],
-        "paths": {
-            "@/utils/*": [
-                "utils/*"
-            ]
-        }
+        ]
     },
     "include": [
         "src/**/*.ts"
