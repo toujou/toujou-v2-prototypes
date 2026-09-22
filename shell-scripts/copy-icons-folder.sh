@@ -1,10 +1,11 @@
 # Copy the theme's assets (icons, images) into the places the built CSS/storybook serve them from.
 #
 # The default theme matches Vite's FALLBACK_THEME ('kojo'), so non-flagged builds behave the same.
-# The icon token urls (e.g. url('../../../../assets/themes/kojo/icons/...')) resolve relative to the
-# built CSS, which from dist/themes/<theme>/css lands on dist/assets/themes/<theme>/… Thus we copy
-# assets/themes/${THEME} into dist/assets and storybook-static/assets (mirroring the repo-root assets/
-# served via .storybook/main.js staticDirs).
+# The icon token urls (e.g. url('/assets/icons/...')) are served from the server root.
+# Dist layout: copy the theme's icons into dist/assets/icons (directly under dist/assets, no theme layer),
+# so the built CSS at dist/themes/<theme>/css resolves /assets/icons/… against the dist assets.
+# Storybook layout: copy assets/themes/${THEME} into storybook-static/assets (mirroring the repo-root
+# assets/ served via .storybook/main.js staticDirs and the /assets/icons staticDirs mount).
 #
 # A theme with no assets tree is skipped (currently only kojo ships assets).
 
@@ -16,7 +17,7 @@ NOCOLOR='\033[0m'
 THEME="${VITE_THEME:-kojo}"
 ORIGINAL_LOCATION="assets/themes/${THEME}"
 STORYBOOK_PARENT="storybook-static/assets/themes"
-DIST_PARENT="dist/assets/themes"
+DIST_PARENT="dist/assets"
 echo "📸 ${PURPLE}Start copying assets for theme '${THEME}'...${NOCOLOR}"
 
 if [ ! -d "${ORIGINAL_LOCATION}" ]; then
@@ -28,7 +29,7 @@ fi
 mkdir -p "${STORYBOOK_PARENT}"
 mkdir -p "${DIST_PARENT}"
 cp -R "${ORIGINAL_LOCATION}" "${STORYBOOK_PARENT}/"
-cp -R "${ORIGINAL_LOCATION}" "${DIST_PARENT}/"
+cp -R "${ORIGINAL_LOCATION}/icons" "${DIST_PARENT}/"
 
 # Output success message
 echo "🎉 ${GREEN}Successfully copied assets for theme '${THEME}'!${NOCOLOR}"

@@ -75,7 +75,7 @@ describe('blockquote [mobile]', () => {
         // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('background-color').should('eq', colors.colorFontDark);
         // @ts-ignore
-        cy.get('toujou-blockquote .blockquote__blockquote').before('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-blockquote-round.svg")');
+        cy.get('toujou-blockquote .blockquote__blockquote').before('-webkit-mask-image').should('eq', 'url("http://localhost:6006/assets/icons/icon-blockquote-round.svg")');
         // @ts-ignore
         cy.get('toujou-blockquote .blockquote__blockquote').before('-webkit-mask-position').should('eq', '50% 50%');
         // @ts-ignore

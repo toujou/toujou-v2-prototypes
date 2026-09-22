@@ -11,7 +11,10 @@ export default {
         name: "@storybook/web-components-vite",
         options: {}
     },
-    "staticDirs": ["../assets"],
+    "staticDirs": [
+        "../assets",
+        { "from": "../assets/themes/kojo/icons", "to": "/assets/icons" },
+    ],
     "features": {
         // Disable interactive onboarding checklist widget on the sidebar
         "sidebarOnboardingChecklist": false,

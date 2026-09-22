@@ -49,9 +49,10 @@ configuration from it, so adding a theme only requires editing this one file.
 ### Build output
 
 Theme builds emit into `dist/themes/<theme>/...` — e.g. `dist/themes/kojo/js/base.js`,
-`dist/themes/kojo/css/...`. Theme assets (icons, images) are copied to
-`dist/assets/themes/<theme>/` and `storybook-static/assets/themes/<theme>/`, matching
-where the built CSS `url(../../../../assets/...)` references resolve.
+`dist/themes/kojo/css/...`. Icons are copied to `dist/assets/icons/` (so the built CSS
+`url('/assets/icons/icon-*.svg')` references resolve against the dist assets) and the full
+theme assets (icons, images) to `storybook-static/assets/themes/<theme>/`, matching where
+the Storybook-served `/assets/...` references resolve.
 
 ### How theming works
 Each theme is activated via an environment variable: `VITE_THEME=kojo`
@@ -85,8 +86,8 @@ This affects:
 | `npm run build:sb:toujou` | Build Storybook for toujou theme    |
 | `npm run build:sb:all`    | Build Storybook for all themes      |
 
-Each theme build runs a post-build step that copies the theme's assets (icons/images)
-into `dist/assets/themes/<theme>/` and `storybook-static/assets/themes/<theme>/`.
+Each theme build runs a post-build step that copies the theme's icons into `dist/assets/icons/`
+and the theme's full assets (icons/images) into `storybook-static/assets/themes/<theme>/`.
 
 ### 🚀 Deploy
 

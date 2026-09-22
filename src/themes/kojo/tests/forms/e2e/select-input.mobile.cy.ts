@@ -34,7 +34,7 @@ describe('Forms / select input [mobile]', () => {
         // @ts-ignore
         cy.get('.input-group--single-select .select__wrapper').after('right').should('eq', tokens.spacing.s);
         // @ts-ignore
-        cy.get('.input-group--single-select .select__wrapper').after('-webkit-mask-image').should('contain', 'url("http://localhost:6006/assets/themes/kojo/icons/icon-chevron-down.svg")');
+        cy.get('.input-group--single-select .select__wrapper').after('-webkit-mask-image').should('contain', 'url("http://localhost:6006/assets/icons/icon-chevron-down.svg")');
     });
 
     it('select has correct hover styles', () => {
