@@ -1,0 +1,148 @@
+/* hack */
+@import url('./elements/_sliderFAKESplidestyles.css') layer(base);
+
+/* Base */
+@import url('./base.css');
+
+/* Elements */
+@import url('./elements/_a11y-info.css');
+@import url('./elements/_additional-info.css');
+@import url('./elements/_average-rating.css');
+@import url('./elements/_blockquote.css');
+@import url('./elements/_blockquote-grid.css');
+@import url('./elements/_breadcrumb.css');
+@import url('./elements/_code-block.css');
+@import url('./elements/_content-card.css');
+@import url('./elements/_contact-dialog.css');
+@import url('./elements/_contact-teaser.css');
+@import url('./elements/_content-card-grid.css');
+@import url('./elements/_cover-slider.css');
+@import url('./elements/_details.css');
+@import url('./elements/_details-accordion.css');
+@import url('./elements/_footer-layout.css');
+@import url('./elements/_gallery.css');
+@import url('./elements/_hero-media.css');
+@import url('./elements/_html-container.css');
+@import url('./elements/_image-card.css');
+@import url('./elements/_image-card-grid.css');
+@import url('./elements/_inpage-nav.css');
+@import url('./elements/_input-password-toggle.css');
+@import url('./elements/_item-collection.css');
+@import url('./elements/_language-picker.css');
+@import url('./elements/_language-picker-dropdown.css');
+@import url('./elements/_lightbox.css');
+@import url('./elements/_map-contact.css');
+@import url('./elements/_map.css');
+@import url('./elements/_media-grid.css');
+@import url('./elements/_overlay.css');
+@import url('./elements/_pn-nav.css');
+@import url('./elements/_portfolio-gallery.css');
+@import url('./elements/_slider.css');
+@import url('./elements/_slider-bullets.css');
+@import url('./elements/_slider-controls.css');
+@import url('./elements/_slider-control.css');
+@import url('./elements/_slider-count.css');
+@import url('./elements/_slider-progress.css');
+@import url('./elements/_slider-slide.css');
+@import url('./elements/_sliderPswpStyles.css');
+@import url('./elements/_teaser.css');
+@import url('./elements/_skip-links.css');
+@import url('./elements/_location-finder.css');
+@import url('./elements/_location-finder-teaser.css');
+@import url('./elements/_fragment.css');
+@import url('./elements/_fragment-teaser.css');
+@import url('./elements/_opening-hours.css');
+@import url("./elements/_burger-button.css");
+@import url("./elements/_calendar-page.css");
+@import url("./elements/_calendar-pages.css");
+@import url("./elements/_header.css");
+@import url("./elements/_header-content.css");
+@import url("./elements/_topbar.css");
+@import url("./elements/_media-placeholder.css");
+@import url("./elements/_topbutton.css");
+@import url("./elements/_post-data.css");
+@import url("./elements/_post-tags.css");
+@import url("./elements/_poster-reveal.css");
+@import url("./elements/_post-comments.css");
+@import url("./elements/_post-authors.css");
+@import url("./elements/_post-author.css");
+@import url("./elements/_post-meta.css");
+@import url("./elements/_post-list.css");
+@import url("./elements/_blog-sidebar.css");
+@import url("./elements/_archive-year.css");
+@import url("./elements/_blog-archive.css");
+@import url("./elements/_blog-footer.css");
+@import url("./elements/_blog-header.css");
+@import url("./elements/_rating-stars.css");
+@import url("./elements/_read-more.css");
+@import url("./elements/_reviews.css");
+@import url("./elements/_review.css");
+@import url("./elements/_event-schedule.css");
+@import url("./elements/_event-schedule-day.css");
+@import url("./elements/_event-schedule-item.css");
+@import url("./elements/_event-schedule-year.css");
+@import url("./elements/_event-table-card.css");
+@import url("./elements/_felogin.css");
+@import url("./elements/_flatpickr.css");
+@import url("./elements/_timeline.css");
+@import url("./elements/_timeline-card.css");
+@import url("./elements/_timeline-item.css");
+@import url("./elements/_timeline-legend.css");
+@import url("./elements/_times-list.css");
+@import url("./elements/_indexedsearch-form.css");
+@import url("./elements/_indexedsearch-page.css");
+@import url("./elements/_indexedsearch-header.css");
+@import url("./elements/_indexedsearch-results.css");
+@import url("./elements/_indexedsearch-result.css");
+@import url("./elements/_indexedsearch-pagination.css");
+@import url("./elements/_counter-grid.css");
+@import url("./elements/_counter.css");
+@import url("./elements/_file-link.css");
+@import url("./elements/_pagination.css");
+@import url("./elements/_quick-link.css");
+@import url("./elements/_quick-links.css");
+@import url("./elements/_tabs.css");
+@import url("./elements/_countdown.css");
+
+/* tourism */
+@import url("./elements/_departure.css");
+@import url("./elements/_departures.css");
+@import url("./elements/_departures-header.css");
+@import url("./elements/_location-list.css");
+@import url("./elements/_season-switch.css");
+@import url("./elements/_trip-accommodations.css");
+@import url("./elements/_trip-description.css");
+@import url("./elements/_trip-description-day.css");
+@import url("./elements/_trip-description-options.css");
+@import url("./elements/_header-with-quicksearch.css");
+@import url("./elements/_quicksearch.css");
+@import url("./elements/_quicksearch-card.css");
+@import url("./elements/_booking-summary.css");
+@import url("./elements/_booking-sidebar.css");
+
+/* Solr */
+@import url("elements/_facet-details.css");
+@import url("elements/_panel-title.css");
+@import url("elements/_solr.css");
+@import url("elements/_solr-chips.css");
+@import url("elements/_solr-facet.css");
+@import url("elements/_solr-facets-in-use.css");
+@import url("elements/_solr-filter-button.css");
+@import url("elements/_solr-filters.css");
+@import url("elements/_solr-header.css");
+@import url("elements/_solr-pagination.css");
+@import url("elements/_solr-results.css");
+@import url("elements/_solr-search.css");
+@import url("elements/_solr-view-mode.css");
+
+/* Forced colors Loaded into new "forced-colors" layer, which should be implemented after the components layer */
+@import url('./forced-colors.css');
+
+body {
+    background-color: var(--demo-color-grey-light);
+    min-height: 100%;
+}
+
+/* print css for testing purposes */
+
+/* @import url"./print.css"); */

@@ -2,7 +2,7 @@ import { Meta } from '@storybook/web-components-vite';
 
 import '@toujou/toujou-location-finder/lib'
 
-import { mockFetch, MockFetchRule } from '../../../js/utils/mockFetch/mockFetch';
+import { mockFetch, MockFetchRule } from "../../../shared/js/utils/mock-fetch/mock-fetch";
 import { placesGeoMockResp } from "./mocks/placesgeo.mock";
 import { placesTeaserMockResp_all, placesTeaserMockResp_singleTeaser } from "./mocks/placesteaser.mock";
 
