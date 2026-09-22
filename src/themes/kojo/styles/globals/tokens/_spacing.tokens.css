@@ -22,7 +22,7 @@
     --spacing-between-consecutive-elements-normal: var(--spacing-l);
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
     :root,
     ::before,
     ::after {

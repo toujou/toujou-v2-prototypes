@@ -44,14 +44,14 @@
     --color-info-darken-15: hsl(var(--color-info-h) var(--color-info-s) calc(var(--color-info-l) - 15%));
     --color-info-o-25: hsl(var(--color-info-h) var(--color-info-s) var(--color-info-l) / 25%);
 
-    --color-black-o-75: hsl(0 0% 0% / 75%);
-    --color-black-o-50: hsl(0 0% 0% / 50%);
-    --color-black-o-25: hsl(0 0% 0% / 25%);
-    --color-black-o-10: hsl(0 0% 0% / 10%);
-    --color-black-o-05: hsl(0 0% 0% / 5%);
+    --color-black-o-75: hsl(0deg 0% 0% / 75%);
+    --color-black-o-50: hsl(0deg 0% 0% / 50%);
+    --color-black-o-25: hsl(0deg 0% 0% / 25%);
+    --color-black-o-10: hsl(0deg 0% 0% / 10%);
+    --color-black-o-05: hsl(0deg 0% 0% / 5%);
 
-    --color-white: hsl(0 100% 100% / 100%);
-    --color-white-o-75: hsl(0 100% 100% / 75%);
+    --color-white: hsl(0deg 100% 100% / 100%);
+    --color-white-o-75: hsl(0deg 100% 100% / 75%);
 
     --color-headline: var(--color-primary);
     --color-link: var(--color-primary);

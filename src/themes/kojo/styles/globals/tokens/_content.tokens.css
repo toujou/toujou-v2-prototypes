@@ -34,7 +34,7 @@
     --topbar-height: var(--topbar-height-large);
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (width >= 840px) {
     :root,
     ::before,
     ::after {

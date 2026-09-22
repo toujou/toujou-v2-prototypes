@@ -47,13 +47,9 @@
     right: var(--input-group-icon-right);
     top: var(--input-group-icon-top);
     mask-position: center;
-    -webkit-mask-position: center;
     mask-size: contain;
-    -webkit-mask-size: contain;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-image: var(--input-group-icon-image);
-    -webkit-mask-image: var(--input-group-icon-image);
     background-color: var(--input-group-icon-background-color);
     pointer-events: none;
     z-index: 1;

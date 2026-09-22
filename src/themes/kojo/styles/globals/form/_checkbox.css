@@ -16,8 +16,6 @@
     --checkbox-check-left: calc(var(--checkbox-border-width) * -1);
 
     appearance: var(--checkbox-appearance);
-    -webkit-appearance: var(--checkbox-appearance);
-    -moz-appearance: var(--checkbox-appearance);
     display: var(--checkbox-display);
     height: var(--checkbox-size);
     width: var(--checkbox-size);

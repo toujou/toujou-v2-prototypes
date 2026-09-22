@@ -1,7 +1,7 @@
 :root,
 ::before,
 ::after {
-    /* FONT SIZE*/
+    /* FONT SIZE */
     --font-size-base: 1rem;                                    /* 16px */
     --font-size-xxxxl: calc(var(--font-size-base) * 3.875);    /* 62px */
     --font-size-xxxl: calc(var(--font-size-base) * 3);      /* 48px */

@@ -1,7 +1,5 @@
 .select {
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     cursor: pointer;
 }
 
@@ -32,12 +30,8 @@
     top: var(--select-chevron-top);
     right: var(--select-chevron-right);
     mask-position: center;
-    -webkit-mask-position: center;
     mask-size: contain;
-    -webkit-mask-size: contain;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-image: var(--select-chevron-image);
-    -webkit-mask-image: var(--select-chevron-image);
     pointer-events: none;
 }

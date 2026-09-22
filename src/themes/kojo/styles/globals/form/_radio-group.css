@@ -30,7 +30,6 @@
     font-size: var(--radio-group-label-font-size);
     font-weight: var(--radio-group-label-font-weight);
     color: var(--radio-group-label-color);
-
     grid-column: var(--radio-group-label-grid-column);
 }
 

@@ -8,7 +8,6 @@
     --toggle-track-position: absolute;
     --toggle-track-top: 50%;
     --toggle-track-transform: translateY(-50%);
-    /*--toggle-track-height: calc(var(--toggle-height) / 2);*/
     --toggle-track-height: 10px;
     --toggle-track-border-radius: calc(var(--toggle-track-height) / 2);
     --toggle-track-default-color: var(--color-font-light);
@@ -24,8 +23,6 @@
 
     position: var(--toggle-position);
     appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     height: var(--toggle-height);
     width: var(--toggle-width);
 }
