@@ -1,0 +1,7 @@
+<svg id="icon-image-collection-circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Gruppe_3624" data-name="Gruppe 3624">
+    <rect id="Rechteck_716" data-name="Rechteck 716" width="24" height="24" fill="none"/>
+  </g>
+  <path id="play_circle_outline_black_24dp" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.011,8.011,0,0,1,12,20Z"/>
+  <path id="Pfad_804" data-name="Pfad 804" d="M10.984,8.289V2.9a.9.9,0,0,0-.9-.9H4.7a.9.9,0,0,0-.9.9V8.289a.9.9,0,0,0,.9.9h5.391A.9.9,0,0,0,10.984,8.289ZM6.223,6.73l.732.979L8.114,6.263a.224.224,0,0,1,.35,0l1.33,1.662a.224.224,0,0,1-.175.364H5.145a.224.224,0,0,1-.18-.359l.9-1.2a.228.228,0,0,1,.359,0ZM2,4.246v5.84a.9.9,0,0,0,.9.9h5.84a.449.449,0,0,0,0-.9H3.348A.451.451,0,0,1,2.9,9.637V4.246a.449.449,0,0,0-.9,0Z" transform="translate(5.594 5.508)"/>
+</svg>
