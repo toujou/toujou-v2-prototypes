@@ -27,7 +27,7 @@
     --main-nav-list-item-text-display: flex;
     --main-nav-list-item-text-align-items: center;
     --main-nav-list-item-text-justify-content: space-between;
-    --main-nav-list-item-text-gap: var(--spacing-xs);
+    --main-nav-list-item-text-gap: 0;
 
     --main-nav-link-text-decoration: none;
     --main-nav-link-font-family: var(--font-family-text);
@@ -187,7 +187,6 @@ a.main-nav__link:hover {
 
         --main-nav-list-item-height: 100%;
         --main-nav-list-item-position: relative;
-        --main-nav-list-item-text-gap: var(--spacing-xs);
 
         --main-nav-link-font-size: var(--font-size-normal);
         --main-nav-link-font-weight: var(--font-weight-text-normal);
