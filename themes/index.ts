@@ -51,6 +51,7 @@ export const THIRD_PARTY_ENTRIES: ThemeEntries = {
     'toujou-counter': `node_modules/@toujou/toujou-counter/lib`,
     'toujou-inpage-nav': `node_modules/@toujou/toujou-inpage-nav/lib`,
     'toujou-input-password-toggle': `node_modules/@toujou/toujou-input-password-toggle/lib`,
+    'toujou-input-file-clearable': `node_modules/@toujou/toujou-input-file-clearable/lib`,
     'toujou-location-finder': `node_modules/@toujou/toujou-location-finder/lib`,
     'toujou-map': `node_modules/@toujou/toujou-map/lib`,
     'toujou-rating-stars': `node_modules/@toujou/toujou-rating-stars/lib`,
