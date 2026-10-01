@@ -5,6 +5,7 @@ import "@toujou/toujou-estimated-reading-time/lib";
 import "@toujou/toujou-exit-warning/lib";
 import "@toujou/toujou-inpage-nav/lib";
 import "@toujou/toujou-input-password-toggle/lib";
+import "@toujou/toujou-input-file-clearable/lib";
 import "@toujou/toujou-lazy-render/lib";
 import "@toujou/toujou-map/lib";
 import "@toujou/toujou-media-info/lib";
