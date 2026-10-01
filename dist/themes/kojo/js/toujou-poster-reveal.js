@@ -1,4 +1,4 @@
-import{_ as e}from"./tslib.es6-Br7-PHSQ.js";import{i as t,s as o,x as r}from"./lit-element-52TjfAhW.js";import{n}from"./property-BjK_DIN0.js";import"./query-assigned-elements-F9pHSIbK.js";var i=t`:host {
+import{_ as e}from"./tslib.es6-Br7-PHSQ.js";import{i as t,s as o,x as r}from"./lit-element-STRtOusB.js";import{n}from"./property-BjK_DIN0.js";import"./query-assigned-elements-F9pHSIbK.js";var i=t`:host {
     display: var(--toujou-poster-reveal-display, block);
     position: var(--toujou-poster-reveal-position, relative);
 }
