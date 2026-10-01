@@ -25,6 +25,11 @@
         --icon-color: var(--color-primary);
     }
 
+    .input-file-clearable__button:focus-visible {
+        outline: var(--focus-outline-width) solid var(--focus-outline-color);
+        outline-offset: calc(var(--focus-outline-offset) * -1);
+    }
+
     /* stylelint-disable-next-line max-line-length */
     .input-group:is(.input-group--has-success, .input-group--has-error) .input-file-clearable .input-file-clearable__button {
         /* prettier-ignore */
