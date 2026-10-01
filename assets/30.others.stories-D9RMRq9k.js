@@ -1,4 +1,4 @@
-const u={title:"COMPONENTS/Forms",argTypes:{state:{table:{category:"Inputs settings",defaultValue:{summary:"default"}},name:"Input state",description:"Set the visible input state",options:["default","disabled","success","error"],control:{type:"radio"},required:!0}}},r=t=>{const o=t.state==="disabled"?"disabled":"";return`
+const u={title:"COMPONENTS/Forms",argTypes:{state:{table:{category:"Inputs settings",defaultValue:{summary:"default"}},name:"Input state",description:"Set the visible input state",options:["default","disabled","success","error"],control:{type:"radio"},required:!0}}},r=e=>{const s=e.state==="disabled"?"disabled":"";return`
         <style>
             body {
                 background-color: var(--color-bg);
@@ -12,33 +12,7 @@ const u={title:"COMPONENTS/Forms",argTypes:{state:{table:{category:"Inputs setti
             action="#"
             novalidate="true">
 
-            <toujou-input-group class="input-group input-group--file-upload ${t.state==="error"?"input-group--has-error":""} ${t.state==="success"?"input-group--has-success":""} ${t.state==="disabled"?"input-group--disabled":""}">
-                <label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
-                <span class="input-description">This is a description</span>
-                <input data-pristine-required-message-de="The given subject was empty."
-                       class="input input--file-upload"
-                       id="testform-1000091-fileupload-1"
-                       accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.oasis.opendocument.text,application/pdf"
-                       type="file"
-                       name="tx_form_formframework[testform-1000091][fileupload-1]"
-                       ${o}>
-                   <span class="pristine-error form__error">The given subject was empty.</span>
-            </toujou-input-group>
-
-            <toujou-input-group class="input-group input-group--image-upload ${t.state==="error"?"input-group--has-error":""} ${t.state==="success"?"input-group--has-success":""} ${t.state==="disabled"?"input-group--disabled":""}">
-                <label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
-                <span class="input-description">This is a description</span>
-                <input data-pristine-required-message-de="The given subject was empty."
-                       class="input input--imageupload image-upload"
-                       id="testform-1000091-imageupload-1"
-                       accept="image/jpeg,image/png,image/bmp"
-                       type="file"
-                       name="tx_form_formframework[testform-1000091][imageupload-1]"
-                       ${o}>
-               <span class="pristine-error form__error">The given subject was empty.</span>
-            </toujou-input-group>
-
-            <toujou-input-group class="input-group input-group--multi-select ${t.state==="error"?"input-group--has-error":""} ${t.state==="success"?"input-group--has-success":""} ${t.state==="disabled"?"input-group--disabled":""}">
+            <toujou-input-group class="input-group input-group--multi-select ${e.state==="error"?"input-group--has-error":""} ${e.state==="success"?"input-group--has-success":""} ${e.state==="disabled"?"input-group--disabled":""}">
                 <label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
                 <span class="input-description">This is a description</span>
                 <input type="hidden" name="tx_form_formframework[testform-1000091][multiselect-1]" value="">
@@ -47,7 +21,7 @@ const u={title:"COMPONENTS/Forms",argTypes:{state:{table:{category:"Inputs setti
                         id="testform-1000091-multiselect-1"
                         multiple="multiple"
                         name="tx_form_formframework[testform-1000091][multiselect-1][]"
-                        ${o}>
+                        ${s}>
                     <option value="">first option</option>
                     <option value="aaaaa">aaaaa</option>
                     <option value="bbbbb">bbbbb</option>
@@ -69,7 +43,7 @@ const u={title:"COMPONENTS/Forms",argTypes:{state:{table:{category:"Inputs setti
             </toujou-input-group>
 
         </form>
-    `},e=r.bind({});e.args={state:"default"};var i,a,s;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`(args: ToujouOtherInputStoryProps) => {
+    `},t=r.bind({});t.args={state:"default"};var o,i,a;t.parameters={...t.parameters,docs:{...(o=t.parameters)==null?void 0:o.docs,source:{originalSource:`(args: ToujouOtherInputStoryProps) => {
   const disabledAttribute = args.state === 'disabled' ? 'disabled' : '';
   return \`
         <style>
@@ -84,32 +58,6 @@ const u={title:"COMPONENTS/Forms",argTypes:{state:{table:{category:"Inputs setti
             id="testform-1000091"
             action="#"
             novalidate="true">
-
-            <toujou-input-group class="input-group input-group--file-upload \${args.state === 'error' ? 'input-group--has-error' : ''} \${args.state === 'success' ? 'input-group--has-success' : ''} \${args.state === 'disabled' ? 'input-group--disabled' : ''}">
-                <label class="input-label" for="testform-1000091-fileupload-1">File upload</label>
-                <span class="input-description">This is a description</span>
-                <input data-pristine-required-message-de="The given subject was empty."
-                       class="input input--file-upload"
-                       id="testform-1000091-fileupload-1"
-                       accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.oasis.opendocument.text,application/pdf"
-                       type="file"
-                       name="tx_form_formframework[testform-1000091][fileupload-1]"
-                       \${disabledAttribute}>
-                   <span class="pristine-error form__error">The given subject was empty.</span>
-            </toujou-input-group>
-
-            <toujou-input-group class="input-group input-group--image-upload \${args.state === 'error' ? 'input-group--has-error' : ''} \${args.state === 'success' ? 'input-group--has-success' : ''} \${args.state === 'disabled' ? 'input-group--disabled' : ''}">
-                <label class="input-label" for="testform-1000091-imageupload-1">Image upload</label>
-                <span class="input-description">This is a description</span>
-                <input data-pristine-required-message-de="The given subject was empty."
-                       class="input input--imageupload image-upload"
-                       id="testform-1000091-imageupload-1"
-                       accept="image/jpeg,image/png,image/bmp"
-                       type="file"
-                       name="tx_form_formframework[testform-1000091][imageupload-1]"
-                       \${disabledAttribute}>
-               <span class="pristine-error form__error">The given subject was empty.</span>
-            </toujou-input-group>
 
             <toujou-input-group class="input-group input-group--multi-select \${args.state === 'error' ? 'input-group--has-error' : ''} \${args.state === 'success' ? 'input-group--has-success' : ''} \${args.state === 'disabled' ? 'input-group--disabled' : ''}">
                 <label class="input-label" for="testform-1000091-multiselect-1">Multi select</label>
@@ -143,4 +91,4 @@ const u={title:"COMPONENTS/Forms",argTypes:{state:{table:{category:"Inputs setti
 
         </form>
     \`;
-}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const p=["OtherInputs"];export{e as OtherInputs,p as __namedExportsOrder,u as default};
+}`,...(a=(i=t.parameters)==null?void 0:i.docs)==null?void 0:a.source}}};const l=["OtherInputs"];export{t as OtherInputs,l as __namedExportsOrder,u as default};
