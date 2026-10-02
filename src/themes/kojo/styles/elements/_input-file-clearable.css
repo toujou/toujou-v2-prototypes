@@ -1,9 +1,14 @@
 @layer components {
     .input-file-clearable {
         --input-clear-icon-size: var(--spacing-l);
+        --input-clear-button-display: flex;
 
         width: 100%;
         position: relative;
+    }
+
+    .input-file-clearable:not([has-file]) {
+        --input-clear-button-display: none;
     }
 
     .input-file-clearable__button {
@@ -16,7 +21,7 @@
         background-color: transparent;
         height: var(--input-clear-icon-size);
         width: var(--input-clear-icon-size);
-        display: flex;
+        display: var(--input-clear-button-display);
         align-items: center;
         justify-content: center;
     }
