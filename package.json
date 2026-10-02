@@ -106,7 +106,7 @@
     "@toujou/toujou-exit-warning": "^3.6.0",
     "@toujou/toujou-iframe-resizer": "^3.10.0",
     "@toujou/toujou-inpage-nav": "^3.1.1",
-    "@toujou/toujou-input-file-clearable": "^1.0.0",
+    "@toujou/toujou-input-file-clearable": "^1.0.1",
     "@toujou/toujou-input-password-toggle": "^3.0.0",
     "@toujou/toujou-lazy-render": "^3.5.0",
     "@toujou/toujou-location-finder": "^3.17.7",

@@ -1,4 +1,4 @@
-import{s as t,A as e,x as l}from"./lit-element-STRtOusB.js";class n extends t{static get is(){return"toujou-input-file-clearable"}static get properties(){return{hasFile:{type:Boolean,attribute:!1}}}constructor(){super(),this.hasFile=!1}render(){return l`
+import{s as t,A as e,x as l}from"./lit-element-STRtOusB.js";class n extends t{static get is(){return"toujou-input-file-clearable"}static get properties(){return{hasFile:{type:Boolean,attribute:"has-file",reflect:!0}}}constructor(){super(),this.hasFile=!1}render(){return l`
       <slot name="input" @change="${this.handleInputChange}"></slot>
       ${this.hasFile?l`
         <slot name="clear-button" @click="${this.handleButtonClick}"></slot>`:e}
