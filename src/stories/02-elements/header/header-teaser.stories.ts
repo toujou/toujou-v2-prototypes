@@ -115,7 +115,7 @@ const articlesData = [
 const renderArticleMedia = ({imgUrl}: articleMediaProps) => {
     return `
         <a href="#" class="header-teaser__media-link">
-            <figure class="header-teaser__figure" style="overflow: hidden;">
+            <figure class="header-teaser__figure">
                 <img class="header-teaser__image" src="${imgUrl}" alt="">
             </figure>
         </a>
@@ -154,7 +154,11 @@ const renderSingleArticle = (args: HeaderTeaserStoryProps) => {
     const article = articlesData[0];
 
     return `
-        <header class="header" data-headercontent-teaser-type="single" data-media-ratio="${args.mediaRatio}">
+        <header
+            class="header"
+            data-headercontent-teaser-type="single"
+            data-media-ratio="${args.mediaRatio}"
+        >
             ${renderArticle({
                 ...article,
                 elementDesign: args.elementDesign,
@@ -170,7 +174,11 @@ const renderMultipleArticles = (args: HeaderTeaserStoryProps) => {
     const slides = articlesData.slice(0, count);
 
     return `
-        <header class="header headercontent-teaser" data-headercontent-teaser-type="slider" data-media-ratio="${args.mediaRatio}">
+        <header
+            class="header headercontent-teaser"
+            data-headercontent-teaser-type="slider"
+            data-media-ratio="${args.mediaRatio}"
+        >
             <toujou-slider
                 class="slider"
                 content-type="header-teaser"
