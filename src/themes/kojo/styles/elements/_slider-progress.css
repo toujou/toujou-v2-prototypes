@@ -42,6 +42,7 @@
     }
 
     .slider[content-type="teaser"] .slider-progress,
+    .slider[content-type="header-teaser"] .slider-progress,
     .slider[content-type="review"] .slider-progress {
         --slider-progress-margin: calc(var(--slider-progress-height) * -1) 0 0;
         --slider-progress-bar-bg-color: transparent;

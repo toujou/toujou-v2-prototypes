@@ -104,6 +104,8 @@
 @import url("./elements/_quick-links.css");
 @import url("./elements/_tabs.css");
 @import url("./elements/_countdown.css");
+@import url("./elements/_headercontent-teaser.css");
+@import url("./elements/_header-teaser.css");
 
 /* tourism */
 @import url("./elements/_departure.css");
