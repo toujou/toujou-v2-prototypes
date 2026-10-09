@@ -175,4 +175,14 @@
             padding-right: calc(calc(100vw - var(--content-wide-max-width)) / 2);
         }
     }
+
+    @media screen and (width >= 1600px) {
+        .headercontent-teaser[data-headercontent-teaser-type="slider"] .header-teaser[data-teaser-layout="text_media"] .header-teaser__content {
+            padding-left: calc(calc(100vw - var(--content-wide-max-width)) / 2);
+        }
+
+        .headercontent-teaser[data-headercontent-teaser-type="slider"] .header-teaser[data-teaser-layout="media_text"] .header-teaser__content {
+            padding-right: calc(calc(100vw - var(--content-wide-max-width)) / 2);
+        }
+    }
 }
