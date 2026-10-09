@@ -117,6 +117,17 @@ const renderArticleMedia = ({imgUrl}: articleMediaProps) => {
         <a href="#" class="header-teaser__media-link">
             <figure class="header-teaser__figure">
                 <img class="header-teaser__image" src="${imgUrl}" alt="">
+                
+                <toujou-media-info class="media-info">
+                    <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                        <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+                    </button>
+                    <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                        <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+                    </button>
+                    <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                    <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+                </toujou-media-info>
             </figure>
         </a>
     `;
