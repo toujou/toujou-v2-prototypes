@@ -109,6 +109,10 @@
         --slider-max-width: var(--content-wide-max-width);
     }
 
+    .slider[content-type="header-teaser"] {
+        --slider-item-border-radius: 0;
+    }
+
     .slider[element-design="default"] {
         --slider-control-default-background-color: var(--color-font);
         --slider-control-hover-background-color: var(--color-font-light);
@@ -174,6 +178,14 @@
         width: var(--slider-width) !important;
         height: 100%;
         aspect-ratio: auto;
+    }
+
+    .headercontent-teaser .splide__slide {
+        height: auto !important;
+    }
+
+    .headercontent-teaser .slider__item {
+        height: 100%;
     }
 
     .header[image-height="3-1"] .splide,

@@ -1,0 +1,11 @@
+@layer components {
+    .headercontent-teaser {
+        --header-min-height: fit-content;
+    }
+
+    .topbar + .header {
+        --header-margin-top: var(--topbar-height);
+
+        margin-top: var(--header-margin-top) !important;
+    }
+}

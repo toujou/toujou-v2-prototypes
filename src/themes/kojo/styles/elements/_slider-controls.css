@@ -45,6 +45,7 @@
         --slider-controls-bottom: unset;
     }
 
+    .slider[content-type="header-teaser"],
     .slider[content-type="teaser"] {
         --slider-controls-aspect-ratio: auto;
         --slider-controls-top: unset;
@@ -71,7 +72,8 @@
     @container (width >= 840px) {
         .slider[content-type="logos"],
         :is(.slider[content-type="card-collection"], .slider[content-type="image-card-collection"]),
-        .slider[content-type="teaser"] {
+        .slider[content-type="teaser"],
+        .slider[content-type="header-teaser"] {
             --slider-controls-bottom: var(--spacing-s);
         }
 
