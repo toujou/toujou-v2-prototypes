@@ -1,3 +1,5 @@
-.headercontent-teaser {
-    --header-min-height: fit-content;
+@layer components {
+    .headercontent-teaser {
+        --header-min-height: fit-content;
+    }
 }
