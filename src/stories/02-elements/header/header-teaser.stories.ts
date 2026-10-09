@@ -11,7 +11,7 @@ export default {
                 category: "Header Teaser Settings",
                 defaultValue: { summary: '1' },
             },
-            name: 'Teaser layout',
+            name: 'Number of slides',
             description: "Set the number of items in the header teaser",
             options: ['1', '2', '3', '4'],
             control: { type: 'select' },
@@ -98,7 +98,7 @@ const articlesData = [
     },
     {
         headline: 'Zuverlässig im Einsatz',
-        contentText: 'Von der Planung bis zur Übergabe begleiten wir Sie persönlich.',
+        contentText: 'Von der Planung bis zur Übergabe begleiten wir Sie persönlich. Wir entwickeln und bauen Feuerwehrfahrzeuge, die präzise auf Ihre Anforderungen abgestimmt sind. Normkonform, bewährt und persönlich betreut. Wir entwickeln und bauen Feuerwehrfahrzeuge, die präzise auf Ihre Anforderungen abgestimmt sind. Normkonform, bewährt und persönlich betreut. Wir entwickeln und bauen Feuerwehrfahrzeuge, die präzise auf Ihre Anforderungen abgestimmt sind. Normkonform, bewährt und persönlich betreut. Wir entwickeln und bauen Feuerwehrfahrzeuge, die präzise auf Ihre Anforderungen abgestimmt sind. Normkonform, bewährt und persönlich betreut. Wir entwickeln und bauen Feuerwehrfahrzeuge, die präzise auf Ihre Anforderungen abgestimmt sind. Normkonform, bewährt und persönlich betreut. Wir entwickeln und bauen Feuerwehrfahrzeuge, die präzise auf Ihre Anforderungen abgestimmt sind. Normkonform, bewährt und persönlich betreut. Wir entwickeln und bauen Feuerwehrfahrzeuge, die präzise auf Ihre Anforderungen abgestimmt sind. Normkonform, bewährt und persönlich betreut.',
         imgUrl: 'https://picsum.photos/id/1018/2500/1600',
     },
     {
