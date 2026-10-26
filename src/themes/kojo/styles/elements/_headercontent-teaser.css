@@ -3,7 +3,7 @@
         --header-min-height: fit-content;
     }
 
-    .topbar + .header {
+    .topbar + .headercontent-teaser {
         --header-margin-top: var(--topbar-height);
 
         margin-top: var(--header-margin-top) !important;
