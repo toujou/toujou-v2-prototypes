@@ -29,6 +29,7 @@
         align-self: center;
     }
 
+    .slider[content-type="header-teaser"] .slider-slide,
     .slider[content-type="teaser"] .slider-slide {
         width: 100% !important;
         height: auto !important;
