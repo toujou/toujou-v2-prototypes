@@ -73,6 +73,7 @@ const iconNames = [
     'company',
     'cookie',
     'coronavirus',
+    'currency-usd',
     'dashboard',
     'drink',
     'email',

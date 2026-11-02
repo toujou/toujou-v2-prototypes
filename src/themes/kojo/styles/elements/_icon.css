@@ -277,6 +277,10 @@
         mask-image: var(--icon-coronavirus);
     }
 
+    .icon[icon-name="currency-usd"] {
+        mask-image: var(--icon-currency-usd);
+    }
+
     .icon[icon-name="dashboard"] {
         mask-image: var(--icon-dashboard);
     }
