@@ -43,6 +43,21 @@ interface ContentCardStoryProps {
     hasLink: boolean;
 }
 
+function createMediaInfoElement() {
+    return `
+        <toujou-media-info class="media-info">
+            <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+            </button>
+            <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+            </button>
+            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+            <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+        </toujou-media-info>
+    `;
+}
+
 const Template: StoryFn<ContentCardStoryProps> = (args: ContentCardStoryProps) => {
 
     const contentCardGrid = document.createElement('toujou-content-card-grid');
@@ -62,6 +77,7 @@ const Template: StoryFn<ContentCardStoryProps> = (args: ContentCardStoryProps) =
         contentCard.innerHTML = `
             <figure class="content-card__figure">
                 <img src="https://picsum.photos/640/640" alt="beautiful image" class="content-card__image">
+                ${createMediaInfoElement()}
             </figure>
             <div class="content-card__content">
                 <h3 class="content-card__title">Eine etwas längere Headline über zwei Zeilen</h3>

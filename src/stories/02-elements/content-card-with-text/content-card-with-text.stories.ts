@@ -21,6 +21,21 @@ interface ContentCardWithTextStoryProps {
     direction: string
 }
 
+function createMediaInfoElement() {
+    return `
+        <toujou-media-info class="media-info">
+            <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+            </button>
+            <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+            </button>
+            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+            <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+        </toujou-media-info>
+    `;
+}
+
 function renderTextColumn() {
     return `
         <h1>Please insert your Heading here!</h1>
@@ -34,6 +49,7 @@ function renderCardColumn() {
             <a href="/" class="content-card" card-direction="vertical" card-variant="default" fullwidth>
                 <figure class="content-card__figure">
                     <img class="content-card__image" src="https://picsum.photos/640/640" alt="nice image">
+                    ${createMediaInfoElement()}
                 </figure>
 
                 <div class="content-card__content">

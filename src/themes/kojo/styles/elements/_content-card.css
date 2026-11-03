@@ -17,6 +17,7 @@
         --content-card-text-decoration: none;
         --content-card-z-index: var(--z-index-content);
 
+        --content-card-figure-position: relative;
         --content-card-figure-flex: 0 0 auto;
         --content-card-figure-border-radius: 0;
         --content-card-figure-overflow: hidden;
@@ -69,6 +70,7 @@
     }
 
     .content-card__figure {
+        position: var(--content-card-figure-position);
         flex: var(--content-card-figure-flex);
         border-radius: var(--content-card-figure-border-radius);
         overflow: var(--content-card-figure-overflow);
