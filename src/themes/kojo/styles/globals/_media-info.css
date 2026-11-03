@@ -71,6 +71,7 @@
     --media-info-copyright-display: var(--toujou-media-copyright-display, block);
 }
 
+.image-card .media-info,
 .collection-item .media-info {
     --media-info-border-radius: var(--border-radius-default);
     --media-info-overflow: hidden;
@@ -111,6 +112,7 @@
     pointer-events: var(--media-info-toggle-pointer-events);
 }
 
+.image-card .media-info__toggle,
 .collection-item .media-info__toggle {
     --media-info-toggle-top: var(--spacing-normal);
     --media-info-toggle-bottom: unset;

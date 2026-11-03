@@ -50,11 +50,27 @@ export default {
     },
 } satisfies Meta;
 
+function createMediaInfoElement() {
+    return `
+        <toujou-media-info class="media-info">
+            <button slot="open-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                <toujou-icon class="icon" icon-color="background" icon-name="info" icon-size="ms"></toujou-icon>
+            </button>
+            <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
+                <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
+            </button>
+            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+            <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
+        </toujou-media-info>
+    `;
+}
+
 function createImageCardLink(imageFormat: string, cardVariant: string): string {
     return `
         <a class="image-card" href="#" image-format="${imageFormat}" card-variant="${cardVariant}">
             <figure class="image-card__figure">
                 <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
+                ${createMediaInfoElement()}
             </figure>
             <h3 class="image-card__title">
                 <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
@@ -69,6 +85,7 @@ function createImageCardElement(imageFormat: string, cardVariant: string): strin
         <toujou-image-card class="image-card" image-format="${imageFormat}" card-variant="${cardVariant}">
             <figure class="image-card__figure">
                 <img src="https://picsum.photos/400/400" alt="beautiful image" class="image-card__image">
+                ${createMediaInfoElement()}
             </figure>
             <h3 class="image-card__title">
                 <toujou-icon class="icon" icon-name="arrow-right"></toujou-icon>
