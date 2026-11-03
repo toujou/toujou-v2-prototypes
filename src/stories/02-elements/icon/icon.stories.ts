@@ -54,6 +54,7 @@ const iconNames = [
     'calendar-lines',
     'campaign',
     'cancel-circle-filled',
+    'cash',
     'chart',
     'check',
     'check-circle',

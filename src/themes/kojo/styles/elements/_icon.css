@@ -201,6 +201,10 @@
         mask-image: var(--icon-cancel-circle-filled);
     }
 
+    .icon[icon-name="cash"] {
+        mask-image: var(--icon-cash);
+    }
+
     .icon[icon-name="chart"] {
         mask-image: var(--icon-chart);
     }
