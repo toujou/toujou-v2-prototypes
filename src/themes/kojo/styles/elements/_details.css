@@ -35,6 +35,13 @@
         z-index: var(--details-z-index);
     }
 
+    .chapter[background-color]:not([background-color="default"]) .details[element-design="default"] {
+        --details-highlight-color: var(--color-bg-o-75);
+        --details-highlight-color-active: var(--color-bg);
+        --details-subtitle-color: var(--color-bg);
+        --color-headline: var(--details-highlight-color-active);
+    }
+
     .details[element-design="default"] {
         --details-highlight-color: var(--color-font-dark);
         --details-highlight-color-active: var(--color-primary);
