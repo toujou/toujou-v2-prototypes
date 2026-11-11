@@ -35,7 +35,7 @@
         z-index: var(--details-z-index);
     }
 
-    .chapter[background-color]:not([background-color="default"]) .details[element-design="default"] {
+    .chapter[background-color]:not([background-color="default"], [background-color="background"]) .details[element-design="default"] {
         --details-highlight-color: var(--color-bg-o-75);
         --details-highlight-color-active: var(--color-bg);
         --details-subtitle-color: var(--color-bg);

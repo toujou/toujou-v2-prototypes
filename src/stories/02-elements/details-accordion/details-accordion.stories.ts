@@ -45,7 +45,7 @@ export default {
             },
             name: 'Chapter color',
             description: "Simulate accordion inside a chapter with a background color",
-            options: ['default', 'primary', 'secondary', 'font'],
+            options: ['default', 'primary', 'secondary', 'font', 'background'],
             control: { type: 'radio' },
             required: true,
         },
