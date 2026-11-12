@@ -1,7 +1,7 @@
-const o={title:"COMPONENTS/Accordion",parameters:{layout:"fullscreen"},argTypes:{singleExpandMode:{table:{category:"Details accordion Settings",defaultValue:{summary:"false"}},name:"Single expand mode",description:"Allow just one accordion items to be open at a time",control:{type:"boolean"},required:!0},expandedItem:{table:{category:"Details accordion Settings",defaultValue:{summary:"first"}},name:"Expanded items",description:"Define which accordion items are open when the page loads",options:["none","first","all"],control:{type:"radio"},required:!0},elementDesign:{table:{category:"Details Settings",defaultValue:{summary:"default"}},name:"Accordion element design",description:"Set the element design for the accordion element",options:["default","primary","secondary","inverted"],control:{type:"radio"},required:!0},chapterBgColor:{table:{category:"Details Settings",defaultValue:{summary:"default"}},name:"Chapter color",description:"Simulate accordion inside a chapter with a background color",options:["default","primary","secondary","font","background"],control:{type:"radio"},required:!0}}},l=e=>`
+const l={title:"COMPONENTS/Accordion",parameters:{layout:"fullscreen"},argTypes:{singleExpandMode:{table:{category:"Details accordion Settings",defaultValue:{summary:"false"}},name:"Single expand mode",description:"Allow just one accordion items to be open at a time",control:{type:"boolean"},required:!0},expandedItem:{table:{category:"Details accordion Settings",defaultValue:{summary:"first"}},name:"Expanded items",description:"Define which accordion items are open when the page loads",options:["none","first","all"],control:{type:"radio"},required:!0},elementDesign:{table:{category:"Details Settings",defaultValue:{summary:"default"}},name:"Accordion element design",description:"Set the element design for the accordion element",options:["default","primary","secondary","inverted"],control:{type:"radio"},required:!0},chapterBgColor:{table:{category:"Details Settings",defaultValue:{summary:"default"}},name:"Chapter color",description:"Simulate accordion inside a chapter with a background color",options:["default","primary","primary-light","primary-dark","secondary","secondary-light","secondary-dark","font","font-light","font-dark","background"],control:{type:"radio"},required:!0},chapterFontColor:{table:{category:"Details Settings",defaultValue:{summary:"default"}},name:"Chapter font color",description:"Simulate accordion inside a chapter with a font color",options:["default","primary","primary-light","primary-dark","secondary","secondary-light","secondary-dark","font","font-light","font-dark","background"],control:{type:"radio"},required:!0}}},o=e=>`
         <main>
         
-            <section class="chapter" background-color="${e.chapterBgColor}">
+            <section class="chapter" background-color="${e.chapterBgColor}" font-color="${e.chapterFontColor}">
                 <toujou-details-accordion class="details-accordion" ${e.singleExpandMode?"single-expand-mode":""}>
                     <toujou-details id="details-1" class="details" ${e.expandedItem==="first"||e.expandedItem==="all"?"is-open":""} element-design="${e.elementDesign}">
                         <h3 slot="summary" class="details__title">This is the summary</h3>
@@ -159,11 +159,11 @@ const o={title:"COMPONENTS/Accordion",parameters:{layout:"fullscreen"},argTypes:
                 </toujou-details-accordion>
             </section>    
         </main>
-    `,i=l.bind({});i.args={singleExpandMode:!1,expandedItem:"first",elementDesign:"default",chapterBgColor:"default"};var t,s,n;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`(args: DetailsAccordionStoryProps) => {
+    `,i=o.bind({});i.args={singleExpandMode:!1,expandedItem:"first",elementDesign:"default",chapterBgColor:"default",chapterFontColor:"default"};var t,s,n;i.parameters={...i.parameters,docs:{...(t=i.parameters)==null?void 0:t.docs,source:{originalSource:`(args: DetailsAccordionStoryProps) => {
   return \`
         <main>
         
-            <section class="chapter" background-color="\${args.chapterBgColor}">
+            <section class="chapter" background-color="\${args.chapterBgColor}" font-color="\${args.chapterFontColor}">
                 <toujou-details-accordion class="details-accordion" \${args.singleExpandMode ? 'single-expand-mode' : ''}>
                     <toujou-details id="details-1" class="details" \${args.expandedItem === 'first' || args.expandedItem === 'all' ? 'is-open' : ''} element-design="\${args.elementDesign}">
                         <h3 slot="summary" class="details__title">This is the summary</h3>
@@ -322,4 +322,4 @@ const o={title:"COMPONENTS/Accordion",parameters:{layout:"fullscreen"},argTypes:
             </section>    
         </main>
     \`;
-}`,...(n=(s=i.parameters)==null?void 0:s.docs)==null?void 0:n.source}}};const a=["DetailsAccordion"];export{i as DetailsAccordion,a as __namedExportsOrder,o as default};
+}`,...(n=(s=i.parameters)==null?void 0:s.docs)==null?void 0:n.source}}};const a=["DetailsAccordion"];export{i as DetailsAccordion,a as __namedExportsOrder,l as default};
