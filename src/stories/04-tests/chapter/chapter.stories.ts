@@ -195,7 +195,7 @@ const Template = () => {
 
 
         </button>
-        <figpaction slot="figcaption" class="media-info__figcaption">This is the image description in fileadmin</figpaction>
+        <figcaption slot="figcaption" class="media-info__figcaption">This is the image description in fileadmin</figcaption>
 
             <small slot="copyright" class="media-info__copyright">© Cool photographer</small>
 

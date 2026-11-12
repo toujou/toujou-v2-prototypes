@@ -35,7 +35,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -54,7 +54,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -76,7 +76,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -95,7 +95,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -117,7 +117,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -136,7 +136,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -158,7 +158,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -177,7 +177,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -196,7 +196,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -218,7 +218,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -237,7 +237,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -256,7 +256,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>
@@ -275,7 +275,7 @@ const Template: StoryFn<TextBlockMediaBelowStoryProps> = (args: TextBlockMediaBe
                             <button slot="close-button" class="media-info__toggle" aria-label="Toggle the image caption and / or copyright">
                                 <toujou-icon class="icon" icon-color="background" icon-name="close" icon-size="ms"></toujou-icon>
                             </button>
-                            <figpaction slot="figcaption" class="media-info__figcaption">This is a beautiful description</figpaction>
+                            <figcaption slot="figcaption" class="media-info__figcaption">This is a beautiful description</figcaption>
                             <small slot="copyright" class="media-info__copyright">@Nice photographer</small>
                         </toujou-media-info>
                     </figure>

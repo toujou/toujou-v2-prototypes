@@ -290,7 +290,7 @@ const renderContentMediaSection = () => {
                         <button slot="close-button" class="media-info__toggle" aria-label="Medien Beschriftung / Copyright umschalten">
                             <toujou-icon class="icon " icon-name="close" icon-color="background" icon-size="ms"></toujou-icon>
                         </button>
-                        <figpaction slot="figcaption" class="media-info__figcaption">Bild zur Veranstaltung</figpaction>
+                        <figcaption slot="figcaption" class="media-info__figcaption">Bild zur Veranstaltung</figcaption>
                     </toujou-media-info>
                 </toujou-single-media>
             </toujou-media-grid>
