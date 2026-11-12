@@ -279,7 +279,7 @@
 }
 
 :is(.chapter--primary, .chapter--secondary, .chapter--inverted) > :is(h1, h2, h3, h4, h5, h6):not(.color--primary, .color--secondary, .color--font),
-.chapter[background-color]:not([background-color="default"], [background-color="background"]) > :is(h1, h2, h3, h4, h5, h6):not(.color--primary, .color--secondary, .color--font) {
+.chapter[background-color]:not([background-color="default"], [background-color="background"]):not([font-color]) > :is(h1, h2, h3, h4, h5, h6):not(.color--primary, .color--secondary, .color--font) {
     --color-headline: var(--chapter-bg-color-original);
 }
 
