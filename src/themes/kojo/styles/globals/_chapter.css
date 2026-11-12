@@ -258,22 +258,22 @@
 
 /* We need to separate the children from the chapter selector so the bg and font color variables don't collide! */
 :is(.chapter--primary, .chapter--secondary, .chapter--inverted) > :is(p, ul, ol, table),
-.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) :is(p, ul, ol, table) {
+.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) > :is(p, ul, ol, table) {
     --color-font: var(--color-bg);
 }
 
 :is(.chapter--primary, .chapter--secondary, .chapter--inverted) > p a,
-.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) p a {
+.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) > p a {
     color: var(--color-bg-o-75);
 }
 
 :is(.chapter--primary, .chapter--secondary, .chapter--inverted) > p a:is(:hover, :focus-visible),
-.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) p a:is(:hover, :focus-visible) {
+.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) > p a:is(:hover, :focus-visible) {
     color: var(--color-bg);
 }
 
 :is(.chapter--primary, .chapter--secondary, .chapter--inverted) > p a:focus-visible,
-.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) p a:focus-visible {
+.chapter:is([background-color="primary"], [background-color="primary-light"], [background-color="primary-dark"], [background-color="secondary"], [background-color="secondary-light"], [background-color="secondary-dark"], [background-color="font"], [background-color="font-light"], [background-color="font-dark"]) > p a:focus-visible {
     outline: var(--focus-outline-width) solid var(--color-bg);
     outline-offset: var(--focus-outline-offset);
 }
