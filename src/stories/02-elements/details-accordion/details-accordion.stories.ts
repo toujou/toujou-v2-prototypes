@@ -45,7 +45,18 @@ export default {
             },
             name: 'Chapter color',
             description: "Simulate accordion inside a chapter with a background color",
-            options: ['default', 'primary', 'secondary', 'font', 'background'],
+            options: ['default', 'primary', 'primary-light', 'primary-dark', 'secondary', 'secondary-light', 'secondary-dark', 'font', 'font-light', 'font-dark', 'background'],
+            control: { type: 'radio' },
+            required: true,
+        },
+        chapterFontColor: {
+            table: {
+                category: "Details Settings",
+                defaultValue: { summary: 'default' },
+            },
+            name: 'Chapter font color',
+            description: "Simulate accordion inside a chapter with a font color",
+            options: ['default', 'primary', 'primary-light', 'primary-dark', 'secondary', 'secondary-light', 'secondary-dark', 'font', 'font-light', 'font-dark', 'background'],
             control: { type: 'radio' },
             required: true,
         },
@@ -57,13 +68,14 @@ interface DetailsAccordionStoryProps {
     expandedItem: string;
     elementDesign: string;
     chapterBgColor: string;
+    chapterFontColor: string;
 }
 
 const Template: StoryFn<DetailsAccordionStoryProps> = (args: DetailsAccordionStoryProps) => {
     return `
         <main>
         
-            <section class="chapter" background-color="${args.chapterBgColor}">
+            <section class="chapter" background-color="${args.chapterBgColor}" font-color="${args.chapterFontColor}">
                 <toujou-details-accordion class="details-accordion" ${args.singleExpandMode ? 'single-expand-mode' : ''}>
                     <toujou-details id="details-1" class="details" ${args.expandedItem === 'first' || args.expandedItem === 'all' ? 'is-open' : ''} element-design="${args.elementDesign}">
                         <h3 slot="summary" class="details__title">This is the summary</h3>
@@ -231,4 +243,5 @@ DetailsAccordion.args = {
     expandedItem: 'first',
     elementDesign: 'default',
     chapterBgColor: 'default',
+    chapterFontColor: 'default',
 }

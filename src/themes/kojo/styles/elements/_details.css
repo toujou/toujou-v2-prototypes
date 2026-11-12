@@ -42,6 +42,66 @@
         --color-headline: var(--details-highlight-color-active);
     }
 
+    .chapter[background-color][font-color="primary"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-primary-o-75);
+        --details-highlight-color-active: var(--color-primary);
+        --details-subtitle-color: var(--color-primary);
+    }
+
+    .chapter[background-color][font-color="primary-light"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-primary-light-o-75);
+        --details-highlight-color-active: var(--color-primary-light);
+        --details-subtitle-color: var(--color-primary-light);
+    }
+
+    .chapter[background-color][font-color="primary-dark"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-primary-dark-o-75);
+        --details-highlight-color-active: var(--color-primary-dark);
+        --details-subtitle-color: var(--color-primary-dark);
+    }
+
+    .chapter[background-color][font-color="secondary"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-secondary-o-75);
+        --details-highlight-color-active: var(--color-secondary);
+        --details-subtitle-color: var(--color-secondary);
+    }
+
+    .chapter[background-color][font-color="secondary-light"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-secondary-light-o-75);
+        --details-highlight-color-active: var(--color-secondary-light);
+        --details-subtitle-color: var(--color-secondary-light);
+    }
+
+    .chapter[background-color][font-color="secondary-dark"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-secondary-dark-o-75);
+        --details-highlight-color-active: var(--color-secondary-dark);
+        --details-subtitle-color: var(--color-secondary-dark);
+    }
+
+    .chapter[background-color][font-color="font"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-font-o-75);
+        --details-highlight-color-active: var(--color-font);
+        --details-subtitle-color: var(--color-font);
+    }
+
+    .chapter[background-color][font-color="font-light"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-font-light-o-75);
+        --details-highlight-color-active: var(--color-font-light);
+        --details-subtitle-color: var(--color-font-light);
+    }
+
+    .chapter[background-color][font-color="font-dark"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-font-dark-o-75);
+        --details-highlight-color-active: var(--color-font-dark);
+        --details-subtitle-color: var(--color-font-dark);
+    }
+
+    .chapter[background-color][font-color="background"] .details[element-design="default"] {
+        --details-highlight-color: var(--color-bg-o-75);
+        --details-highlight-color-active: var(--color-bg);
+        --details-subtitle-color: var(--color-bg);
+    }
+
     .details[element-design="default"] {
         --details-highlight-color: var(--color-font-dark);
         --details-highlight-color-active: var(--color-primary);
