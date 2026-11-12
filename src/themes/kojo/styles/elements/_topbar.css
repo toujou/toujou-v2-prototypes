@@ -55,7 +55,7 @@
         --topbar-actions-link-gap: var(--spacing-s);
         /* stylelint-disable-next-line max-line-length */
         --topbar-actions-link-icon-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
-        --topbar-actions-link-title-decoration: none;
+        --topbar-actions-link-text-decoration: none;
         --topbar-actions-link-cursor: pointer;
         --topbar-actions-link-margin: 0;
 
@@ -175,7 +175,7 @@
         align-items: var(--topbar-actions-link-align-items);
         justify-content: var(--topbar-actions-link-justify-content);
         gap: var(--topbar-actions-link-gap);
-        text-decoration: var(--topbar-actions-link-title-decoration);
+        text-decoration: var(--topbar-actions-link-text-decoration);
         cursor: var(--topbar-actions-link-cursor);
         margin: var(--topbar-actions-link-margin);
         color: var(--topbar-actions-link-title-color)
@@ -240,7 +240,7 @@
         }
 
         .topbar__actions-link:hover {
-            --topbar-actions-link-title-decoration: underline;
+            --topbar-actions-link-text-decoration: underline;
             --topbar-actions-link-title-color: var(--topbar-actions-link-title-active-color);
 
             text-decoration-color: var(--topbar-actions-text-color);
