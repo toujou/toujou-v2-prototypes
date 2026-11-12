@@ -55,7 +55,7 @@
         --topbar-actions-link-gap: var(--spacing-s);
         /* stylelint-disable-next-line max-line-length */
         --topbar-actions-link-icon-transition: background-color var(--animation-duration-fast) var(--animation-easing-normal);
-        --topbar-actions-link-text-decoration: none;
+        --topbar-actions-link-title-decoration: none;
         --topbar-actions-link-cursor: pointer;
         --topbar-actions-link-margin: 0;
 
@@ -166,14 +166,40 @@
     }
 
     .topbar__actions-link {
+        --topbar-actions-link-title-color: var(--topbar-icons-color);
+        --topbar-actions-link-title-active-color: var(--topbar-icons-active-color);
+        --topbar-actions-link-icon-color: var(--topbar-icons-color);
+        --topbar-actions-link-icon-active-color: var(--topbar-icons-active-color);
+
         display: var(--topbar-actions-link-display);
         align-items: var(--topbar-actions-link-align-items);
         justify-content: var(--topbar-actions-link-justify-content);
         gap: var(--topbar-actions-link-gap);
-        text-decoration: var(--topbar-actions-link-text-decoration);
+        text-decoration: var(--topbar-actions-link-title-decoration);
         cursor: var(--topbar-actions-link-cursor);
         margin: var(--topbar-actions-link-margin);
-        color: var(--topbar-icons-color)
+        color: var(--topbar-actions-link-title-color)
+    }
+
+    .topbar__actions-link[data-element-design="primary"] {
+        --topbar-actions-link-title-color: var(--color-primary);
+        --topbar-actions-link-title-active-color: var(--color-primary-dark);
+        --topbar-actions-link-icon-color: var(--color-primary);
+        --topbar-actions-link-icon-active-color: var(--color-primary-dark);
+    }
+
+    .topbar__actions-link[data-element-design="secondary"] {
+        --topbar-actions-link-title-color: var(--color-secondary);
+        --topbar-actions-link-title-active-color: var(--color-secondary-dark);
+        --topbar-actions-link-icon-color: var(--color-secondary);
+        --topbar-actions-link-icon-active-color: var(--color-secondary-dark);
+    }
+
+    .topbar__actions-link[data-element-design="inverted"] {
+        --topbar-actions-link-title-color: var(--color-font);
+        --topbar-actions-link-title-active-color: var(--color-font-dark);
+        --topbar-actions-link-icon-color: var(--color-font);
+        --topbar-actions-link-icon-active-color: var(--color-font-dark);
     }
 
     .topbar__actions-link:focus-visible {
@@ -195,7 +221,7 @@
     }
 
     .topbar__actions-link .icon {
-        --icon-color: var(--topbar-icons-color);
+        --icon-color: var(--topbar-actions-link-icon-color);
 
         transition: var(--topbar-actions-link-icon-transition);
     }
@@ -210,18 +236,18 @@
 
     @media (hover: hover) {
         .topbar__logo-link:hover .topbar__title {
-            --topbar-title-color: var(--topbar-icons-active-color);
+            --topbar-actions-link-title-color: var(--topbar-actions-link-title-active-color);
         }
 
         .topbar__actions-link:hover {
-            --topbar-actions-link-text-decoration: underline;
-            --topbar-actions-text-color: var(--topbar-icons-active-color);
+            --topbar-actions-link-title-decoration: underline;
+            --topbar-actions-link-title-color: var(--topbar-actions-link-title-active-color);
 
             text-decoration-color: var(--topbar-actions-text-color);
         }
 
         .topbar__actions-link:hover .icon {
-            --icon-color: var(--topbar-icons-active-color);
+            --topbar-actions-link-icon-color: var(--topbar-actions-link-icon-active-color);
         }
     }
 
