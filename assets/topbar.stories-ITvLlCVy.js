@@ -8,21 +8,27 @@ const p={title:"COMPONENTS/Topbar",parameters:{layout:"fullscreen"},argTypes:{na
     `,s=()=>`
         <ul class="topbar__actions">
             <li class="topbar__actions-item">
-                <a href="#" class="topbar__actions-link" aria-label="Contact">
+                <a href="#" class="topbar__actions-link" aria-label="Contact" data-element-design="default">
                     <span class="topbar__actions-text">Contact</span>
                     <toujou-icon icon-name="telephone" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                 </a>
             </li>
             <li class="topbar__actions-item">
-                <a href="#" class="topbar__actions-link" aria-label="Like">
+                <a href="#" class="topbar__actions-link" aria-label="Like" data-element-design="primary">
                     <span class="topbar__actions-text">Like</span>
-                    <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    <toujou-icon icon-name="heart" icon-color="primary" icon-size="xl" class="icon"></toujou-icon>
                 </a>
             </li>
             <li class="topbar__actions-item">
-                <a href="#" class="topbar__actions-link" aria-label="Search">
+                <a href="#" class="topbar__actions-link" aria-label="Search" data-element-design="secondary">
                     <span class="topbar__actions-text">Search</span>
-                    <toujou-icon icon-name="search" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
+                    <toujou-icon icon-name="search" icon-color="secondary" icon-size="xl" class="icon"></toujou-icon>
+                </a>
+            </li>
+            <li class="topbar__actions-item">
+                <a href="#" class="topbar__actions-link" aria-label="Search" data-element-design="inverted">
+                    <span class="topbar__actions-text">Heart</span>
+                    <toujou-icon icon-name="heart" icon-color="font" icon-size="xl" class="icon"></toujou-icon>
                 </a>
             </li>
         </ul>
