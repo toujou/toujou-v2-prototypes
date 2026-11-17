@@ -321,16 +321,40 @@ a:not(.button):focus-visible {
     text-align: right;
 }
 
+*[type-color="font--bg"],
+*[type-color="bg"],
+.font--bg {
+    color: var(--color-bg) !important;
+}
+
+a:has(> *[type-color="font--bg"]),
+a:has(*[type-color="bg"]),
+a:has(> .font--bg) {
+    text-decoration-color: var(--color-bg);
+}
+
 *[type-color="font--primary"],
 *[type-color="primary"],
 .font--primary {
     color: var(--color-primary) !important;
 }
 
+a:has(> *[type-color="font--primary"]),
+a:has(*[type-color="primary"]),
+a:has(> .font--primary) {
+    text-decoration-color: var(--color-primary);
+}
+
 *[type-color="font--secondary"],
 *[type-color="secondary"],
 .font--secondary {
     color: var(--color-secondary) !important;
+}
+
+a:has(> *[type-color="font--secondary"]),
+a:has(*[type-color="secondary"]),
+a:has(> .font--secondary) {
+    text-decoration-color: var(--color-secondary);
 }
 
 *[type-color="font--grey"],
@@ -346,6 +370,12 @@ a:not(.button):focus-visible {
 *[type-color="font"],
 .font--font {
     color: var(--color-font) !important;
+}
+
+a:has(> *[type-color="font--font"]),
+a:has(*[type-color="font"]),
+a:has(> .font--font) {
+    text-decoration-color: var(--color-font);
 }
 
 *[type-color="warning"] {
