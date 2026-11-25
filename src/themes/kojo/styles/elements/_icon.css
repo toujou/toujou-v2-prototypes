@@ -293,6 +293,10 @@
         mask-image: var(--icon-drink);
     }
 
+    .icon[icon-name="download"] {
+        mask-image: var(--icon-download);
+    }
+
     .icon[icon-name="email"] {
         mask-image: var(--icon-email);
     }
