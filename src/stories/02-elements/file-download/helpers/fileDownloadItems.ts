@@ -42,10 +42,9 @@ export const fileDownloadItems: FileDownloadItem[] = [
         elementDesign: 'secondary',
         title: 'forest1 - secondary',
         description: 'And this is a custom description, with somewhat long test to see what happens when it breaks into multiple lines',
-        extension: 'jpeg',
+        extension: 'avi',
         size: '2 MB',
         href: '#',
-        thumbnail: 'https://picsum.photos/102',
     },
     {
         id: 6,
