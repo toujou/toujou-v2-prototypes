@@ -1,0 +1,93 @@
+# Toujou File Download
+
+The File Download component allows editors to display downloadable files in two different layouts (each a content element):
+
+- **File Download as List** – displays files in a vertical list.
+- **File Download as Grid** – displays files in a grid layout.
+
+Both content elements share the same functionality and available options. The only difference is how the files are arranged.
+
+## Markup example
+
+The File Download component uses a wrapper element with a list of downloadable files.
+
+```html
+<div class="file-download" data-file-download-layout="list">
+    <ul class="file-download__list">
+        <li class="file-download-item">
+            <div class="file-download-item__content">
+                <span
+                    class="file-type-icon file-download-item__icon"
+                    data-extension="pdf"
+                    data-mimetype="application/pdf"
+                    aria-hidden="true"
+                ></span>
+
+                <h3 class="file-download-item__title">Example document</h3>
+
+                <div class="file-download-item__meta" id="fd-meta-1">
+                    <span class="file-download-item__meta-info file-download-item__extension">
+                        <span class="visually-hidden">Dateityp</span>
+                        pdf
+                    </span>
+
+                    <span class="file-download-item__meta-info file-download-item__size">
+                        <span class="visually-hidden">Dateigröße</span>
+                        1 MB
+                    </span>
+                </div>
+
+                <a
+                    class="button button--primary button--shadow file-download-item__button"
+                    aria-label="Herunterladen: Example document"
+                    aria-describedby="fd-meta-1"
+                    download=""
+                    href="/fileadmin/example.pdf"
+                >
+                    Herunterladen
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+```
+
+## Layout
+
+The layout is controlled by the `data-file-download-layout` attribute on the wrapper element.
+
+| Layout | Attribute                          |
+|--------|------------------------------------|
+| List   | `data-file-download-layout="list"` |
+| Grid   | `data-file-download-layout="grid"` |
+
+## File item
+
+Each downloadable file is represented by a `<li>` element with the `file-download-item` class.
+
+### Thumbnail
+
+An optional thumbnail can be displayed instead of the file type icon.
+
+```html
+<img
+    class="file-download-item__thumbnail"
+    src="/fileadmin/example.jpg"
+    height="48"
+    width="48"
+    alt=""
+    aria-hidden="true"
+>
+```
+
+### Metadata
+
+The metadata displays the file extension and file size. It is associated with the download links through the `aria-describedby` attribute.
+
+### Description
+
+An optional description can be displayed below the file metadata.
+
+### Download button
+
+Each file item includes a download button with the `file-download-item__button` class. Its accessible label should identify the file being downloaded.

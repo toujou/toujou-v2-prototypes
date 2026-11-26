@@ -1,0 +1,221 @@
+.file-download-item {
+    --file-download-item-width: 100%;
+
+    --file-download-item-content-display: grid;
+    --file-download-item-content-grid-template-columns: auto minmax(0, 1fr);
+    --file-download-item-content-grid-template-areas:
+        "icon header"
+        "button button";
+    --file-download-item-content-gap: var(--spacing-normal);
+    --file-download-item-content-background-color: var(--color-bg);
+    --file-download-item-content-border-radius: var(--border-radius-default);
+    --file-download-item-content-padding: var(--content-inner-padding);
+
+    --file-download-item-icon-size: var(--spacing-xl);
+    --file-download-item-icon-border-radius: var(--border-radius-normal);
+    --file-download-item-icon-color: var(--color-font-light);
+
+    --file-download-item-title-text-decoration: none;
+    --file-download-item-title-color: var(--color-primary);
+    --file-download-item-title-font-size: var(--font-size-ms);
+
+    --file-download-item-meta-display: flex;
+    --file-download-item-meta-flex-flow: row nowrap;
+    --file-download-item-meta-gap: var(--spacing-normal);
+    --file-download-item-meta-font-size: var(--font-size-s);
+
+    --file-download-item-meta-info-position: relative;
+    --file-download-item-meta-info-color: var(--color-font-light);
+    --file-download-item-meta-info-text-transform: uppercase;
+    --file-download-item-meta-info-separator-display: block;
+    --file-download-item-meta-info-separator-size: var(--spacing-xs);
+    --file-download-item-meta-info-separator-border-radius: 50%;
+
+    --file-download-item-description-margin: 0;
+    --file-download-item-description-color: var(--color-font);
+
+    --file-download-item-button-color-bg: var(--color-primary);
+    --file-download-item-button-color-bg-hover: var(--color-primary-dark);
+    --file-download-item-button-color-text: var(--color-bg);
+    --file-download-item-button-color-text-hover: var(--color-bg);
+    --file-download-item-button-align-self: end;
+    --file-download-item-button-justify-self: end;
+
+    container-name: file-download-item;
+    container-type: inline-size;
+    border-bottom: var(--file-download-item-border);
+    padding: var(--file-download-item-padding);
+    box-shadow: var(--file-download-item-box-shadow);
+    width: var(--file-download-item-width);
+    max-width: var(--file-download-item-max-width);
+}
+
+.file-download-item:has(.file-download-item__description) {
+    --file-download-item-content-grid-template-areas:
+        "icon header"
+        "description description"
+        "button button";
+}
+
+.file-download-item:first-child {
+    border-top: var(--file-download-item-border);
+}
+
+.file-download-item[data-item-type="list"] {
+    --file-download-item-border: var(--border-width-normal) solid var(--border-color-default);
+    --file-download-item-padding: var(--spacing-normal) 0;
+    --file-download-item-box-shadow: none;
+    --file-download-item-max-width: 100%;
+}
+
+.file-download-item[data-item-type="grid"] {
+    --file-download-item-border: none;
+    --file-download-item-padding: 0;
+    --file-download-item-box-shadow: var(--shadow-s);
+}
+
+.file-download-item:not([data-element-design="default"]) {
+    --file-download-item-title-color: var(--color-bg);
+    --file-download-item-meta-info-color: var(--color-bg-o-75);
+    --file-download-item-description-color: var(--color-bg);
+    --file-download-item-button-color-bg: var(--color-bg);
+    --file-download-item-button-color-text-hover: var(--color-bg);
+    --file-download-item-icon-color: var(--color-bg);
+}
+
+.file-download-item[data-element-design="primary"] {
+    --file-download-item-content-background-color: var(--color-primary);
+    --file-download-item-button-color-bg-hover: var(--color-primary-dark);
+    --file-download-item-button-color-text: var(--color-primary);
+}
+
+.file-download-item[data-element-design="secondary"] {
+    --file-download-item-content-background-color: var(--color-secondary);
+    --file-download-item-button-color-bg-hover: var(--color-secondary-dark);
+    --file-download-item-button-color-text: var(--color-secondary);
+}
+
+.file-download-item[data-element-design="inverted"] {
+    --file-download-item-content-background-color: var(--color-font);
+    --file-download-item-button-color-bg-hover: var(--color-font-dark);
+    --file-download-item-button-color-text: var(--color-font);
+}
+
+.file-download-item__content {
+    display: var(--file-download-item-content-display);
+    grid-template-columns: var(--file-download-item-content-grid-template-columns);
+    grid-template-areas: var(--file-download-item-content-grid-template-areas);
+    gap: var(--file-download-item-content-gap);
+    background-color: var(--file-download-item-content-background-color);
+    border-radius: var(--file-download-item-content-border-radius);
+    padding: var(--file-download-item-content-padding);
+    height: 100%;
+}
+
+.file-download-item__title {
+    text-decoration: var(--file-download-item-title-text-decoration);
+    color: var(--file-download-item-title-color);
+    font-size: var(--file-download-item-title-font-size);
+}
+
+.file-download-item__thumbnail {
+    grid-area: icon;
+    height: var(--file-download-item-icon-size);
+    width: var(--file-download-item-icon-size);
+    border-radius: var(--file-download-item-icon-border-radius);
+    object-fit: contain;
+}
+
+.icon.file-download-item__icon {
+    --icon-color: var(--file-download-item-icon-color);
+
+    grid-area: icon;
+    height: var(--file-download-item-icon-size);
+    width: var(--file-download-item-icon-size);
+}
+
+.file-download-item__header {
+    grid-area: header;
+}
+
+.file-download-item__meta {
+    display: var(--file-download-item-meta-display);
+    flex-flow: var(--file-download-item-meta-flex-flow);
+}
+
+.file-download-item__meta-info {
+    color: var(--file-download-item-meta-info-color);
+    text-transform: var(--file-download-item-meta-info-text-transform);
+    position: var(--file-download-item-meta-info-position);
+    font-size: var(--file-download-item-meta-font-size);
+}
+
+.file-download-item__meta-info + .file-download-item__meta-info {
+    margin-left: calc(var(--file-download-item-meta-gap) / 2);
+    padding-left: calc(var(--file-download-item-meta-gap) / 2);
+}
+
+.file-download-item__meta-info + .file-download-item__meta-info::before {
+    content: '';
+    display: var(--file-download-item-meta-info-separator-display);
+    width: var(--file-download-item-meta-info-separator-size);
+    height: var(--file-download-item-meta-info-separator-size);
+    border-radius: var(--file-download-item-meta-info-separator-border-radius);
+    background-color: currentColor;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.file-download-item__description {
+    grid-area: description;
+    margin: var(--file-download-item-description-margin);
+    color: var(--file-download-item-description-color);
+}
+
+.button.file-download-item__button {
+    --button-color-bg: var(--file-download-item-button-color-bg);
+    --button-color-text: var(--file-download-item-button-color-text);
+
+    grid-area: button;
+    height: fit-content;
+    justify-self: var(--file-download-item-button-justify-self);
+    align-self: var(--file-download-item-button-align-self);
+}
+
+.button.file-download-item__button:is(:hover, :focus-visible) {
+    --button-color-bg: var(--file-download-item-button-color-bg-hover);
+    --button-color-text: var(--file-download-item-button-color-text-hover);
+}
+
+@container file-download (width >= 640px) {
+    .file-download-item[data-item-type="grid"] {
+        --file-download-item-max-width: calc((100% - var(--file-download-list-gap)) / 2);
+    }
+}
+
+@container file-download (width >= 1024px) {
+    .file-download-item[data-item-type="grid"] {
+        --file-download-item-max-width: calc(calc(100% - var(--file-download-list-gap) * 2) / 3);
+    }
+}
+
+@container file-download (width >= 1280px) {
+    .file-download-item[data-item-type="grid"] {
+        --file-download-item-max-width: calc(calc(100% - var(--file-download-list-gap) * 3) / 4);
+    }
+}
+
+@container file-download-item (width >= 640px) {
+    .file-download-item .file-download-item__content {
+        --file-download-item-content-grid-template-areas:
+            "icon header button";
+    }
+
+    .file-download-item:has(.file-download-item__description) .file-download-item__content {
+        --file-download-item-content-grid-template-areas:
+            "icon header button"
+            "icon description description";
+    }
+}

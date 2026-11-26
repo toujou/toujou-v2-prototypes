@@ -7,6 +7,7 @@
     --icon-accessiblity: url('../assets/icons/icon-accessibility.svg');
     --icon-account: url('../assets/icons/icon-account.svg');
     --icon-alarm: url('../assets/icons/icon-alarm.svg');
+    --icon-archive-outline: url('../assets/icons/icon-archive-outline.svg');
     --icon-arrow-down: url('../assets/icons/icon-arrow-down.svg');
     --icon-arrow-drop-down: url('../assets/icons/icon-arrow-drop-down.svg');
     --icon-arrow-left: url('../assets/icons/icon-arrow-left.svg');
@@ -57,7 +58,19 @@
     --icon-eye: url('../assets/icons/icon-eye.svg');
     --icon-eye-off: url('../assets/icons/icon-eye-off.svg');
     --icon-fax: url('../assets/icons/icon-fax.svg');
+    --icon-file-chart-outline: url('../assets/icons/icon-file-chart-outline.svg');
+    --icon-file-code-outline: url('../assets/icons/icon-file-code-outline.svg');
+    --icon-file-delimited-outline: url('../assets/icons/icon-file-delimited-outline.svg');
+    --icon-file-document-outline: url('../assets/icons/icon-file-document-outline.svg');
     --icon-file-download: url('../assets/icons/icon-file-download.svg');
+    --icon-file-eye-outline: url('../assets/icons/icon-file-eye-outline.svg');
+    --icon-file-image-outline: url('../assets/icons/icon-file-image-outline.svg');
+    --icon-file-lines: url('../assets/icons/icon-file-lines.svg');
+    --icon-file-music-outline: url('../assets/icons/icon-file-music-outline.svg');
+    --icon-file-star-outline: url('../assets/icons/icon-file-star-outline.svg');
+    --icon-file-table-outline: url('../assets/icons/icon-file-table-outline.svg');
+    --icon-file-text: url('../assets/icons/icon-file-text.svg');
+    --icon-file-video-outline: url('../assets/icons/icon-file-video-outline.svg');
     --icon-filter: url('../assets/icons/icon-filter.svg');
     --icon-flag: url('../assets/icons/icon-flag.svg');
     --icon-flower: url('../assets/icons/icon-flower.svg');

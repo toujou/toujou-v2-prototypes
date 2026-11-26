@@ -125,6 +125,10 @@
         mask-image: var(--icon-alarm);
     }
 
+    .icon[icon-name="archive-outline"] {
+        mask-image: var(--icon-archive-outline);
+    }
+
     .icon[icon-name="arrow-down"] {
         mask-image: var(--icon-arrow-down);
     }
@@ -325,8 +329,56 @@
         mask-image: var(--icon-fax);
     }
 
+    .icon[icon-name="file-chart-outline"] {
+        mask-image: var(--icon-file-chart-outline);
+    }
+
+    .icon[icon-name="file-code-outline"] {
+        mask-image: var(--icon-file-code-outline);
+    }
+
+    .icon[icon-name="file-delimited-outline"] {
+        mask-image: var(--icon-file-delimited-outline);
+    }
+
+    .icon[icon-name="file-document-outline"] {
+        mask-image: var(--icon-file-document-outline);
+    }
+
     .icon[icon-name="file-download"] {
         mask-image: var(--icon-file-download);
+    }
+
+    .icon[icon-name="file-eye-outline"] {
+        mask-image: var(--icon-file-eye-outline);
+    }
+
+    .icon[icon-name="file-image-outline"] {
+        mask-image: var(--icon-file-image-outline);
+    }
+
+    .icon[icon-name="file-lines"] {
+        mask-image: var(--icon-file-lines);
+    }
+
+    .icon[icon-name="file-music-outline"] {
+        mask-image: var(--icon-file-music-outline);
+    }
+
+    .icon[icon-name="file-star-outline"] {
+        mask-image: var(--icon-file-star-outline);
+    }
+
+    .icon[icon-name="file-table-outline"] {
+        mask-image: var(--icon-file-table-outline);
+    }
+
+    .icon[icon-name="file-text"] {
+        mask-image: var(--icon-file-text);
+    }
+
+    .icon[icon-name="file-video-outline"] {
+        mask-image: var(--icon-file-video-outline);
     }
 
     .icon[icon-name="filter"] {
