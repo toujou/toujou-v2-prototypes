@@ -191,7 +191,7 @@
 
 @container file-download (width >= 640px) {
     .file-download-item[data-item-type="grid"] {
-        --file-download-item-max-width: calc(calc(100% - var(--file-download-list-gap)) / 2)
+        --file-download-item-max-width: calc((100% - var(--file-download-list-gap)) / 2);
     }
 }
 
